@@ -1,4 +1,4 @@
-# HANDOVER · All-in · 2026-10-09 · captchas-full v3 DELIVERED · NEXT: AI black markets (own thread)
+# HANDOVER · All-in · 2026-10-09 · captchas-full v3 DELIVERED · AI black markets 1:30 SAMPLE delivered · NEXT: its full film
 Older history: `HANDOVER_archive.md` (read only if needed). Token-lean: S is on Pro (keep a session under ~120k tokens;
 grep and small scripts, never print whole transcripts or logs). Never read SCRATCH HOLY or other source projects.
 
@@ -24,26 +24,34 @@ Clean-up once the owner OKs the cut: `.cc-src/`, `.render-tmp/captchas-full_*`, 
 - Clean-up still open: `.cc-src/` (~480 MB of source talks; keep until the owner OKs the cut, then delete),
   `.render-tmp/captchas-full_*` chunks once the owner OKs it. Lessons: LEARNINGS 45-47, CLIPS.md "media.ccc.de".
 
-## NEXT: new topic (owner, 2026-10-08), in its own thread
-"the DARK REALITY of grey areas of AI and its practices in the black markets!"
-Owner: "dont make it too hard for the newbies watching. Do a fantastic job."
-1. Read `PLAYBOOK.md` (pipeline + QA gates), then `design-system/DESIGN.md`, `CLIPS.md`. Open `LEARNINGS.md` only by item.
-2. Slug suggestion: `ai-black-markets`. Copy `videos/captchas-full/gen_script.py` for the helpers; new visuals go in
-   `engine/src/visuals/<topic>.tsx` built from `engine/src/ds/` (39 line drawings in `kit.tsx` `IconName`).
-3. Research + clips together. Candidate open sources (verify each licence before use):
-   - media.ccc.de talks (CC BY 4.0, licence in mp4 tags): search the API for deepfake, voice cloning, scam, fraud,
-     darknet market, stolen accounts, AI phishing, jailbreak, model theft, data labeling. Transcribe the opus with
-     `tools/transcribe_src.py`, then mind the opus→mp4 offset (CLIPS.md) before `tools/cc_clips.py`.
-   - Wikimedia Commons video (search recipe in CLIPS.md); US government video is public domain (FBI, FTC, CISA, DoJ,
-     Europol is not PD: check). FTC/FBI PSAs on voice-clone and deepfake scams are good real-clip hooks.
-   - No news clips, no TED, no YouTube clips without an explicit CC BY mark.
-4. Newbie-friendly: one idea per act, plain words, every term (LLM, deepfake, dark web, crypto mixer) explained the first
-   time with a picture. Likely acts (draft, research decides): the hook (a cloned voice call) · what "grey area" means ·
-   stolen data and accounts for sale · jailbroken chatbots for crime (WormGPT-style tools) · deepfake and voice-clone
-   scams · fake reviews/likes and click farms (36C3 clip already cut: `engine/public/captchas/cc_f36_maria.mp4`) ·
-   who profits · how to protect yourself. Every fact gets a SOURCES.md row the same turn.
-5. Gates before the owner sees anything: lints in `build.py` (text, cues, clips), clip gaps ≤ ~40 s, stills sheet per act,
-   LICENCES.md with a risk column, compress < 20 MB for the thread.
+## AI black markets (owner topic 2026-10-08): 1:30 SAMPLE delivered 2026-10-09, full film NEXT
+Owner: "the DARK REALITY of grey areas of AI and its practices in the black markets!", "dont make it too hard for the
+newbies", "Do a fantastic job". Then (quota low): "only a sample", "only 1min30". Owner: NEVER wait for them, never ask.
+Owner standing rule: hand mechanical work (clip search, licence checks, transcribing, file ops, render babysitting) to
+Sonnet/Haiku subagents; keep script, creative choices and final review yourself.
+- Slug `ai-black-markets`; script `videos/ai-black-markets/gen_script.py` (VO / SHOTS / CLIPS / ORDER), SOURCES.md,
+  LICENCES.md, qa/cuts_all.jpg. Sample = 13 beats, 163 words, 3 clips, 1:33. Out: `videos/ai-black-markets/out/ai-black-markets_v3.mp4` (sent as `All-in_ai_black_markets_sample.mp4`, 5 MB). watch.py 0 FAIL.
+- New visuals `engine/src/visuals/aibm.tsx`: CallGrid (video call, red scan marks fakes), PhoneCall (incoming call,
+  waveform turns red + "ai voice"), ChatBox (refuses with ✕ / complies as redacted bars, never real content), Listing
+  (black-market shop card, red price, buy click), Shop (grid of listing tiles). Log them in VISUALS.md when the film is built.
+- New tool `tools/cc_cut.py <topic> <spec.json>`: cuts media.ccc.de excerpts and MEASURES the opus/mp3 → mp4 offset by
+  envelope cross-correlation (all four talks here: 0.0 s). Spec: `videos/ai-black-markets/clips_spec.json`.
+- Clips used: c01 hook `cc_nk_ai` (Simon Wijckmans, EMF 2026, CC BY-SA 4.0, "With AI these bad actors became way more
+  powerful..."), c02 `cc_id_shops` (Hock & Bernhard 38C3, CC BY 4.0, "a shop of shops", slide matches), c03
+  `cc_gai_voice` (Bunzel, GoD 2024, CC BY-SA 4.0, "only five to ten seconds of audio is needed"). Whisper dropped the
+  punctuation on c03: restored by hand in its words.json.
+- Talks found + licence-checked (all CC BY / BY-SA, in `.cc-src/aibm/cands.json`; transcripts `*.segments.txt` there for
+  north-korean, aitm-panels, genai-in-the-battle, identity-theft): AiTM panels and sellers (WHY2025, phishing kits rented
+  on Telegram, 250-300 €/month; speech is run-on, cut carefully), NEW IMPORTANT INSTRUCTIONS (37c3, prompt injection),
+  Scaling up victim notification (WHY2025, infostealers), criminal view of phishing panels (Hacker Hotel 2025), "But this
+  politician said xyz" (rc3, deepfakes), How LLMs work / can you hack them (Hacker Hotel 2025), Skynet Starter Kit (39c3,
+  robot jailbreak). Other candidates not yet checked: Light in the Dark(net) 39c3, Ecstasy 10x yellow Twitter 34c3
+  (darknet markets), Digital Rights & online gender-based violence (dgwk2025, deepfake abuse), Agentic ProbLLMs 39c3.
+- Full film (8 min+, ~1,250 words, 16+ clips) next: extend the sample's acts (grey zone · the shop · stolen accounts ·
+  crime chatbots · phishing kits as a subscription · deepfake calls · voice clones · fake job applicants / laptop farms
+  · who profits · how to protect yourself), open loop by 0:35, recap montage, flip line. Facts already sourced:
+  WormGPT (SlashNext 2023), Arup $25.6 M (HK police / CNN 2024), FBI IC3 2024 $16.6 B. Check the SlashNext post itself.
+- Clean-up once the owner OKs: `.cc-src/aibm/` audio (~100 MB), `.render-tmp/ai-black-markets_*`.
 
 ## Commands
 Always `PYTHONIOENCODING=utf-8`, `HF_HUB_OFFLINE=1` for Whisper. Patch with python scripts, not bash heredoc edits of

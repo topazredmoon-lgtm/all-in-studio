@@ -69,32 +69,6 @@ SHOTS = {
     "w02": {"cuts": [
         split(chat("write a scam email", "refuse", replyAt="no"), icon("envelope", mark="no", markAt="no", label="scam email", enter="scam"), "a normal chatbot *says no*"),
         split(icon("robot", label="wormgpt"), chat("write a scam email", "comply", name="wormgpt", replyAt="yes"), "built to say *yes*", at="This")]},
-    "w03": ("And it's not just chatbots. Whole scam kits are rented out like a streaming subscription.", None),
-    "d01": ("Now the dark part. Hong Kong, twenty twenty-four. An employee joins a video call with his finance chief.", None),
-    "d02": ("A deepfake is a fake video or voice, made by A.I. to copy a real person.", "A deepfake is a fake video or voice, made by A I to copy a real person."),
-    "d03": ("Every face on that call was a deepfake. He sent twenty-five million dollars. And a voice is even easier to fake.", None),
-    "e01": ("In the full film: who sells these tools, who buys them, and how to keep your voice safe.", None),
-}
-
-SHOTS = {
-    "h00": {"cuts": [
-        full(call(label={"i": 3, "t": "applicant"}), "a normal *job interview*"),
-        full(call(label={"i": 3, "t": "applicant"}, fakeAt="person", fakes=[3]), "*not who* he says", at="person")]},
-    "g01": {"cuts": [
-        split(icon("robot", mark="ok", markAt="gray"), icon("robot", mark="no", markAt="gray", enter="gray"), "the *grey zone* of AI")]},
-    "g02": {"cuts": [
-        split(icon("robot", label="the tool"), icon("contract", mark="ok", markAt="legal", label="legal", enter="legal"), "the tools are *legal*"),
-        split(icon("monitor", label="voice clone"), icon("book", enter="audiobooks", label="audiobook"), "a *voice cloner*", at="voice")]},
-    "g03": {"cuts": [
-        split(icon("people", label="criminals"), shop(["robot", "face", "envelope", "key", "doc", "cash"], at="sold", enter="sold"), "sold in *black markets*"),
-        full(shop(["browser", "fingerprint", "contract", "laptop", "coin", "eye"]), "like any *online shop*", at="online")]},
-    "w01": {"cuts": [
-        split(icon("browser", label="crime forum"), listing("robot", "wormgpt", enter="chatbot"), "*2023*, a crime forum"),
-        full(listing("robot", "wormgpt", price="€60 / month", priceAt="60", buyAt="month",
-                     plate="slashnext · july 2023"), "*60 euros* a month", at="60")]},
-    "w02": {"cuts": [
-        split(chat("write a scam email", "refuse", askAt="scam", replyAt="no"), chat("write a scam email", "comply", name="wormgpt", replyAt="yes", enter="This", reveal=True),
-              "built to say *yes*")]},
     "w03": {"cuts": [
         split(icon("robot", mark="?", markAt="just"), shop(["envelope", "key", "browser"], enter="kits", at="kits"), "whole *scam kits*"),
         split(icon("monitor", label="streaming"), icon("cash", label="per month", enter="subscription"), "rented, like a *subscription*", at="rented")]},

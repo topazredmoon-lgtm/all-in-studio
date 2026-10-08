@@ -252,8 +252,26 @@
        "surface": "bare",
        "ask": "write a scam email",
        "mode": "refuse",
-       "askAt": "scam",
        "replyAt": "no"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "envelope",
+       "mark": "no",
+       "markAt": "no",
+       "label": "scam email",
+       "enter": "scam"
+      },
+      "cap": "a normal chatbot *says no*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "label": "wormgpt"
       },
       "R": {
        "v": "ChatBox",
@@ -261,11 +279,10 @@
        "ask": "write a scam email",
        "mode": "comply",
        "name": "wormgpt",
-       "replyAt": "yes",
-       "enter": "This",
-       "reveal": true
+       "replyAt": "yes"
       },
-      "cap": "built to say *yes*"
+      "cap": "built to say *yes*",
+      "at": "This"
      }
     ],
     "act": "02 the shop"
