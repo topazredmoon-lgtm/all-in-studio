@@ -1,0 +1,50 @@
+{
+ "cc_nk_ai": {
+  "title": "North Korean agent looking for a job",
+  "author": "Simon Wijckmans · EMF Camp 2026 (media.ccc.de)",
+  "licence": "CC BY-SA 4.0",
+  "page": "https://media.ccc.de/v/emf2026-215-1-north-korean-agent-looking-for-a-job",
+  "source_from": 1248.41,
+  "source_to": 1256.91,
+  "offset": 0.01,
+  "speech_from": 0.6,
+  "speech_to": 7.9,
+  "words": "With AI, these bad actors became way more powerful, way more capable at bypassing all of your usual checks and questions."
+ },
+ "cc_gai_voice": {
+  "title": "GenAI in the Battle of Security: Attacks, Defenses, and the Laws Shaping AI's Future",
+  "author": "Niklas Bunzel, Raphael Antonius Frick · Fraunhofer SIT · GoD 2024 (media.ccc.de)",
+  "licence": "CC BY-SA 4.0",
+  "page": "https://media.ccc.de/v/god2024-56275-genai-in-the-battle-of-sec",
+  "source_from": 312.7,
+  "source_to": 331.8,
+  "offset": 0.0,
+  "speech_from": 0.6,
+  "speech_to": 18.5,
+  "words": "But actually, like, only five to ten seconds of audio is needed. So, you can just call somebody and say, hey, is, for example, Mary at home? I would like to speak with her. Unfortunately, I got the wrong number and so on. So, it's actually kind of easy to get hold of, like, just five seconds of audio."
+ },
+ "cc_aitm_wallets": {
+  "title": "AiTM panels and sellers",
+  "author": "Rik van Duijn, Wesley Neelen · WHY2025 (media.ccc.de)",
+  "licence": "CC BY 4.0",
+  "page": "https://media.ccc.de/v/why2025-167-aitm-panels-and-sellers",
+  "source_from": 1299.9,
+  "source_to": 1321.1,
+  "offset": 0.0,
+  "speech_from": 0.6,
+  "speech_to": 20.6,
+  "words": "(window; see words.json)"
+ },
+ "cc_id_shops": {
+  "title": "identity theft, credit card fraud and cloaking services – how state-sponsored propaganda makes use of the cyber criminal toolbox",
+  "author": "Alexej Hock, Max Bernhard · 38C3 (media.ccc.de)",
+  "licence": "CC BY 4.0",
+  "page": "https://media.ccc.de/v/38c3-identity-theft-credit-card-fraud-and-cloaking-services-how-state-sponsored-propaganda-makes-use-of-the-cyber-criminal-toolbox",
+  "source_from": 1308.9,
+  "source_to": 1340.6,
+  "offset": 0.0,
+  "speech_from": 0.6,
+  "speech_to": 31.1,
+  "words": "(window; see words.json)"
+ }
+}

@@ -1,0 +1,252 @@
+[   16.3-   23.2] yeah thank you and uh welcome everyone um so today we wanted to talk about double doppelganger
+[   23.2-   30.3] which is a russian disinformation campaign um it's been running for roughly two years now a bit
+[   30.3-   37.5] more actually we're almost going into the third year now so started briefly after the russian
+[   37.5-   45.1] invasion of ukraine and uh just to give you a brief introduction on the campaign um they mostly
+[   45.1-   55.7] use fake news websites uh so they imitate uh german both the french and u.s outlets um there's also
+[   55.7-   62.0] many other countries that are targeted but france and germany have always been sort of the focus of
+[   62.0-   70.2] the campaign um as you can see here there's you know a fake spiegel article a fake le parisian
+[   70.2-   81.9] and then fox news um i'm not sure why they felt like they had to fake that one um they also use
+[   81.9-   91.3] dedicated blogs and uh quote unquote news websites on the right uh sorry on your left you can see um
+[   92.1-   99.2] recently uh recent reliable news um that's one of their bigger news outlets they used to call
+[   99.2-  106.9] themselves reliable russian news um and then they changed their name maybe to be a bit less obvious
+[  108.0-  114.8] um they also use sort of um blogs that are made to look like independent media outlets
+[  115.5-  123.0] so you can see a english one um here in the middle called election watch and then a german one um called
+[  123.0-  132.8] grenze tank which if you speak german sounds a bit weird uh yeah and basically um we've known for a
+[  132.8-  138.8] while who's behind this campaign so there's uh three companies that have been identified
+[  139.6-  147.5] um we know that they're behind it from uh leaks but also um they've been sanctioned in the meantime by the
+[  147.5-  156.7] eu the u.s and the uk um and these three companies are struktura uh social design agency and aragon labs
+[  157.5-  167.2] um if you look at struktura they're also not very subtle about um sort of their motivation and uh
+[  167.8-  174.0] what we know from these leaks is that they report directly to the russian presidential administration
+[  174.0-  181.8] we also um found in our latest investigation a trace uh to the russian ministry of defense
+[  182.5-  193.9] so um there's also some evidence that the ministry is directly involved so um for this talk we kind of
+[  193.9-  201.6] tried to take the perspective of these companies you know you've just been tasked by the kremlin with this massive influence operation
+[  202.3-  210.2] so how do you begin you obviously need infrastructure for these websites so um where do you host them
+[  210.2-  217.4] where do you get the domains and um you also need some kind of redirection mechanism maybe to lead
+[  217.4-  223.5] people to these websites and a distribution mechanism so how do you spread them on social media
+[  224.4-  229.0] um what doppelganger also uses but we're not going into today
+[  229.0-  236.2] is sort of the less technical side of it so who's producing the content who are sort of maybe the
+[  236.2-  246.5] influencers they're paying to spread the stuff and uh alexei will talk about the infrastructure part of this
+[  246.5-  256.5] next yes um yeah so when we switch positions now uh the perspective we are now one of the companies
+[  256.5-  262.9] who got the task to set up such a disinformation campaign we have to consider a few things the first
+[  262.9-  271.1] of all is it's a hostile campaign against the west so we have to expect that it's being fought and so we
+[  271.1-  279.1] have to build a very solid infrastructure which is which is uh hard to fight and who knows how to do it
+[  279.1-  288.9] it's mostly uh criminals uh who are doing it for years for example i have here three screenshots from
+[  288.9-  295.5] x these are um ads which are posted there i know if you're on x maybe you have seen it
+[  296.2-  303.6] um i'm sure it's it's coming to blue sky as well soon but um this looks as well as uh
+[  303.6-  311.3] uh exactly as doppelganger we have we have these uh fake news articles and we have accounts which are
+[  311.3-  318.9] posting them um but it's it's not doppelganger it's a crypto scheme if you click on the links you land on
+[  318.9-  326.5] these fake uh articles which looks very similar to to target show or build or other outlets and then there
+[  326.5-  333.4] are links to like these crypto investment schemes where you just lose money if you look also on the
+[  333.4-  338.8] links it's you will see it later it's it's very similar to what we see from doppelganger so this is
+[  338.8-  349.3] a very good blueprint for our campaign and um curium is an ngo from sweden which with uh them we have
+[  349.3-  355.5] worked on this investigation very closely and they have looked on exactly these schemes along for a long
+[  355.5-  363.6] time and they did this um graphics so if you look at it you have in the middle you see the three uh
+[  363.6-  376.0] fields you have paid ads on facebook or x or wherever and um it's a chain when you click on that uh ad
+[  376.0-  381.5] you're being redirected through different stages and there is in the middle there is this traffic arbitrage
+[  381.5-  387.4] which filters traffic so it makes sure that only those who are you're targeting are landing on the
+[  387.4-  394.5] on the page you want them to land all the others like facebook moderation teams bots they land on a
+[  394.5-  401.7] white page and at the end you land on the fake in this case lemon page and then there are links where
+[  401.7-  411.8] you just go uh are being directed to to this uh crypto scheme investment portal so and this is
+[  411.8-  420.1] exactly what doppelganger did uh so they even have four redirection stages this is animated we have to wait
+[  420.1-  426.1] for the beginning just to see how it works because um the content is spread on social media here you see
+[  426.1-  432.3] it look at the links it looks very uh suspicious and when you click at it you look in the address bar
+[  432.3-  442.4] you're just it very quickly changes and at the end you land on this fake washington post page so here's
+[  442.4-  449.7] another um illustration here we just we just have the domain tree it's not chronological so it's you have
+[  449.7-  456.8] the different stages on different um um positions um but at the end on the second position you'll see
+[  456.8-  464.6] spiegel limited this is one of the last the end um new fake news outlets of doppelganger and before that
+[  464.6-  474.8] this this chain with uh traffic filtering etc and yeah we did a infographic for one of our um
+[  474.8-  482.9] um um pieces we we published in this summer and here are the four stages again so in the beginning in
+[  482.9-  490.0] the top left you have uh disposable domains this are these domains which you see on social media
+[  490.0-  497.0] which are very short living it's just throw away domain um and they're constantly changing and then
+[  497.0-  503.8] you're being redirected to an intermediary domain where is one traffic filtering behind that then
+[  503.8-  510.6] is there is a second um traffic filtering and it's called the ketaro domains and then at the end
+[  511.3-  522.0] um the final stage yeah and uh now i'll introduce some of the hosting infrastructure that we've
+[  522.0-  533.0] identified um doppelganger is using um so basically um we first looked at the first stage so these are
+[  533.0-  540.3] those sort of throw away throw away domains that doppelganger is using on the platforms those get
+[  540.3-  548.5] blocked relatively quickly so they need a constant supply of new domains um and what we found was that
+[  549.3-  559.2] there were around a dozen or two dozen um hosting companies and sort of uh autonomous systems um that
+[  559.2-  567.4] were set up by young russian individuals so they were often in their teens early 20s they would set up these
+[  567.4-  575.0] companies in the uk um usually all at the same address and then set up a hosting infrastructure
+[  576.0-  582.8] and what we found uh together with kurium is that they were all connected to one bigger hosting company
+[  582.8-  593.7] in russia called aiza um we also saw uh hetzner being used um in the intermediary domains so more for the
+[  593.7-  602.6] redirection part of this and a russian hosting company called vitsina um and then for the um sort of um
+[  603.5-  608.9] the destination domains so those are the blogs the fake news websites and so on
+[  608.9-  617.9] um a lot of them were using cloudflare and then they were hosted by hostinger which is a finnish company
+[  617.9-  626.8] i think and then some more sort of gray slash bulletproof hosting companies like shinjiro
+[  627.9-  637.9] zomro and stark industries and just to give you an example of one of these small hosting companies that
+[  637.9-  644.5] were set up by young russians um one of them is called tn security uh sorry there's a little typo in
+[  644.5-  653.1] the title um you can look this up in the uk companies register and it says it was set up by anastasia
+[  653.1-  665.2] beresina um who uh yeah is now almost 20 years old uh it said that that she was from latvia um we later
+[  665.2-  674.8] found out that she's actually russian and she set up this company um in august 2023 uh tn security is
+[  674.8-  683.1] one of the sort of main providers for doppelganger for these um sort of throwaway domains and uh what
+[  683.1-  690.7] was interesting was that uh we first of all we contacted her and she confirmed to us that that
+[  690.7-  699.2] was her and that she was russian um but also um on social media um a couple of days before the
+[  699.2-  705.0] company was set up she said that she was leaving her job as a hairdresser because she had found a
+[  705.0-  714.1] better paying job so um it's very doubtful that she actually runs the company and uh another interesting
+[  714.1-  724.5] thing after our first uh reports published tn security did a sort of switch and they're now uh exploit um
+[  725.9-  737.9] acquisition company offering up to three hundred thousand dollars for zero day exploits what we also
+[  737.9-  746.0] found were a lot of bulletproof hosting companies that allow a lot of stuff um as long as it doesn't
+[  746.0-  755.7] target the russian government so these are screenshots from a um kind of hacker forum um all translated
+[  755.7-  761.7] from russian obviously and you can see here um this is one of the come one of the hosting providers
+[  761.7-  768.5] called lethost and they have a list of what's allowed so fishing in the eu and us is allowed crypto
+[  768.5-  775.5] scams dealers botnets what's not allowed is illegal actions aimed at government bodies of the russian
+[  775.5-  786.1] federation um they also post screenshots of their abuse email inbox so if someone sends you a message
+[  786.1-  793.7] about your service being approved uh abused um they post screenshots of that to prove that they're not
+[  793.7-  801.2] responding to it um if you look very closely the resolution might not be good enough but you can see
+[  801.2-  809.6] an austrian cyber authority here um they confirmed to us that they had sent the abuse mail but they didn't
+[  809.6-  818.6] want to say whether anything had happened um and what we also found in the case of stark industries
+[  819.4-  827.3] which is a hosting company that was used um by rrn for example so this big uh fake news portal
+[  827.3-  837.3] um is that they were also used by other you know russia aligned or pro-russian um groups for example by a
+[  837.3-  846.8] hacktivist group called no name uh zero five seven sixteen um their group that um sort of targets ddos
+[  846.8-  854.8] attacks against um what they perceive to be enemies of russia um so that can be germany ukraine
+[  854.8-  864.1] uh switzerland northern cut nordic countries the u.s for example and uh the way they do it as a sort of um
+[  864.8-  874.4] competition so you can go to their telegram download the website uh the software or the script and then
+[  875.3-  883.0] whichever person sort of can prove that they had the biggest impact with their part of the ddos campaign
+[  883.0-  893.4] gets a little uh financial reward um stoic is also being used by fin7 which is a cyber criminal group
+[  893.4-  903.0] that's been around for a long time um was gone for a bit and then became active again and uh now i have
+[  903.0-  912.9] to say we'll talk about fake and stone identities yeah as max has showed you doppelganger does not only use
+[  912.9-  920.4] such uh shady bulletproof hosting companies but also western companies like hetzner or hostinger which
+[  920.4-  932.3] is lithuanian i think um but um yeah and for that um doppelganger needs uh identities which are looking
+[  932.3-  940.1] unsuspicious and um yeah one of our first steps in our investigations when we learned about
+[  940.1-  949.2] several top level domains with a with the dot de ending we just asked the danik who's behind them
+[  950.1-  957.1] and this is what we get as as a response all three domains which belong to doppelganger
+[  957.1-  981.1] um they were registered by um they were registered by this guy leonard reppen path catharn looks very funny and if you look at the the city which where where he's from it's it's also changes so it looks very like it's copy and pasted from somewhere where you don't really know how how the correct writing would be
+[  981.1-  989.6] and because this was so suspicious we just asked what domains were registered by this guy else and
+[  989.6-  995.7] on the left you see a very long list it's even longer than that of domains which were registered on that name
+[  996.5- 1005.8] and there are domains like uh i don't know uh cacao and backpack or crypto cruncher and stuff like that
+[ 1006.5- 1014.8] and we we digged a little further and discovered that there were fake shop registered where you have
+[ 1014.8- 1022.4] even a even a bank account in ireland which were registered by this guy and we also have a uk company
+[ 1022.4- 1032.6] registered by this guy and actually we we then we got curious and at the end we found um out that
+[ 1032.6- 1042.6] this guy really exists and for um a few years ago he was just uh he he was a victim of of identity theft
+[ 1042.6- 1051.1] and since then he just is getting harassed by post sendings and and bills and all stuff like that
+[ 1051.7- 1059.4] and um yeah so now doppelganger is using his identity as well it was very interesting for us to see that uh
+[ 1059.4- 1068.3] some months later um when the fbi um did a seizure of several doppelganger domains which were in the
+[ 1068.3- 1077.7] um legislation of of the us um they they published a very long document describing what what they found
+[ 1077.7- 1085.5] out and they also mentioned there the catherine persona which yeah you see here in the in the red
+[ 1085.5- 1092.6] circle and interestingly there are even more such personas like the camp coke pack persona or the
+[ 1092.6- 1102.0] caspar till persona which obviously also it looks very strange and i think caspar till is like it was
+[ 1102.0- 1108.7] somewhere in caspar till two names and then it looks now very funny but yeah so doppelganger uses also
+[ 1110.4- 1121.4] such stone identities which are previously have been used by cyber criminals and yeah and of course if
+[ 1121.4- 1130.6] you do payments um you also have to obfuscate where the money comes from and it's if you pay two heads now
+[ 1130.6- 1137.0] with from from from a russian account which is somewhere recorded for suspicious activities it's
+[ 1137.0- 1145.9] obvious so they also either used the credit cards which were which were issued by by real financial
+[ 1145.9- 1152.5] institutions to real persons or they just pay with cryptocurrencies which are coming from cyber
+[ 1152.5- 1171.0] criminal networks and yeah yeah and now max will tell you how we distribute all this uh content um yeah so
+[ 1171.0- 1182.6] basically uh what we also found was uh like um method to buy to bypass uh monitoring by um social networks um
+[ 1182.6- 1189.5] um maybe some of you have heard of this term before but we hadn't known it um it's called a cloaking
+[ 1189.5- 1199.5] service and basically what this does is when you post uh ads to facebook or x um these platforms will
+[ 1199.5- 1206.1] check you know even if you have a redirection link they will check usually or try will try to check where
+[ 1206.1- 1213.7] that link leads like what the actual destination is and with a service like this you can obfuscate the real
+[ 1213.7- 1224.9] destination um basically um they have a way of checking um uh where the request is coming from so is this uh
+[ 1224.9- 1231.5] someone from facebook's moderation team or is this like a bot that facebook is using for this purpose
+[ 1231.5- 1245.3] or is it an actual user um then we looked into this and we found that it's actually a huge business um so
+[ 1245.3- 1254.3] this is a russian uh forum called facebook killer and uh it's full of services you um might use to post
+[ 1254.3- 1264.3] illegal ads on facebook or x or other social networks so at the top you have a payments processor um this is a
+[ 1264.3- 1271.7] russian company that basically allows you to bypass bypass sanctions in a way because you can pay russian
+[ 1271.7- 1280.4] businesses with cryptocurrency anonymously um you then have uh bulletproof hosting companies advertising
+[ 1280.4- 1289.8] there you also can buy credit cards to buy facebook or google ads or tick tock ads um and then what you see
+[ 1289.8- 1300.8] at the bottom these are all different cloaking services um we also found another shop um that's probably used
+[ 1300.8- 1309.8] by doppelganger um this is uh uh we have this info thanks to researcher um thank you marcus he's probably
+[ 1309.8- 1318.5] watching um and uh this is uh not a single shop for stolen credentials and stolen accounts but it's a shop of
+[ 1318.5- 1328.4] shops so rents.ws allows you to create your own shop it's a bit like amazon or ebay um and as you can see
+[ 1328.4- 1339.2] here you can buy uh facebook twitter accounts gmail youtube tick tock uh whatever you need um what we
+[ 1339.2- 1346.7] found which was really surprising is that doppelganger was using a cloaking service called care and when we
+[ 1346.7- 1354.0] looked into this we actually found out that it was run by a ukrainian man um that turned out to be a bad
+[ 1354.0- 1371.0] choice because when we contacted him he immediately shut down their accounts um and uh the way it works is
+[ 1371.7- 1379.8] so care is this you know this cloaking service that helps you identify um the moderation by the networks
+[ 1379.8- 1389.2] um but you still need a lot of domains um because the domains you know once you post uh um the doppelganger
+[ 1389.2- 1396.8] ad on facebook or you post uh an ad for a scam they still get blocked maybe within a couple days
+[ 1397.4- 1404.6] so you need a constant supply of new domains so what these services do um is actually not buy the domains
+[ 1404.6- 1412.1] but just lease them for a limited amount of time and uh the service they used for that is called dmarket
+[ 1412.8- 1421.7] and it works closely together with care um we know for example that they lease the domains because um
+[ 1422.4- 1431.2] we found several of these domains like this one um ray dial vyanized shop um that was uh in march for
+[ 1431.2- 1438.8] example it was advertising a scam on facebook and then in october it was advertising a fake article by
+[ 1438.8- 1450.0] doppelganger so they basically get reused by these services until they get blocked and um we're almost
+[ 1450.0- 1465.2] at the end of our talk um yeah i think alexei is gonna take it from you yeah yeah so what we told you
+[ 1465.2- 1473.4] was a little bit the perspective from the company how they thought of setting this up we of course
+[ 1473.4- 1480.5] approached or approached the whole thing from the other side so we collected from what we have seen
+[ 1480.5- 1485.8] pieces and were investigating further and further and discovered all these companies which were involved
+[ 1485.8- 1498.2] in some way and we um of course we confronted all of them and and and um yeah this led to at least
+[ 1498.2- 1506.3] for the western the big companies that um the the most of the the big companies just shut the services
+[ 1506.3- 1513.5] down for for doppelganger and so for doppelganger it meant that they constantly had to find new services
+[ 1513.5- 1521.9] services uh to restructure and for some functions it it it was easy for them um but others like um
+[ 1522.8- 1530.8] like the um traffic filtering at the at the last stage which was hosted at hetzna and which used uh
+[ 1531.7- 1539.4] um um the katara software from estonian company and they really struggled to replace uh this stage at the
+[ 1539.4- 1546.6] end and so this led to uh had the effect that the whole redirection chain didn't work um the whole
+[ 1546.6- 1553.8] summer and autumn and all the links which were posted by bots and social media just led to nowhere because
+[ 1553.8- 1563.2] they just didn't know how to fix it or because um they just didn't care because they just have to report
+[ 1563.2- 1568.6] something to to the presidential administration and can just write what they want which is a usual
+[ 1568.6- 1584.0] practice in in russia i think and and our investigation meant for western societies that uh i mean we are
+[ 1584.0- 1593.6] we are journalists we are not an authority but only our um press inquiries led to to to the crash of of the
+[ 1593.6- 1603.5] whole redirection chain and uh this means now the campaign cannot um produce significant harm and for
+[ 1603.5- 1610.0] us it was interesting to see that the sanctions which are imposed by the european union or the us and
+[ 1610.0- 1616.6] now great britain they are working you have just to to help the companies a little bit just to to tell
+[ 1616.6- 1623.5] them that they are being used by for propaganda then they're cooperating and so this shows us that
+[ 1623.5- 1637.5] that there is a way to to contain such a campaign so this was just a quick overview if you want to
+[ 1637.5- 1647.2] go deeper into details these are the three main publication of this summer starting from a piece
+[ 1647.2- 1655.5] on stark industries which max mentioned and ending now in november we discovered that from the from ip
+[ 1655.5- 1663.6] addresses of the russian ministry of defense um their their they access to accounts of doppelganger in
+[ 1663.6- 1672.4] different um stages which was very interesting after that we got a ddos attack after we published it so but
+[ 1672.4- 1680.9] this is another story but just you can read it it's all in english and yeah that that was it
+[ 1680.9- 1688.8] um i'd like to thank again to kurim which helped us investigating this also we got many data from
+[ 1688.8- 1705.7] antibot for navalny and spam has helped us as well and yeah if you have questions please thank you so
+[ 1705.7- 1714.5] much alexei thank you so much max for sharing this important research and congratulations to the results
+[ 1714.5- 1722.5] that help us all and now i already see people lining up and i also see questions in the stream so we go
+[ 1722.5- 1730.3] to microphone four please uh yes gladly thank you for the amazing presentation it's yeah really scary
+[ 1730.3- 1739.6] topic with propaganda but um maybe comes across as a critic but i i think we guys are like flexible enough
+[ 1739.6- 1749.0] to every now and then take some critique uh i wonder what the necessity of disclosing i emphasize people's
+[ 1749.0- 1754.9] nationality in the topic is like why is it so important that the hairdresser was actually russian and
+[ 1754.9- 1761.1] what it means to be a russian is it withholding the passport is it the place of birth because of course we
+[ 1761.1- 1769.8] agree that no all russian people support russian government because you also emphasize that you
+[ 1769.8- 1781.4] disclose another nationality of a ukrainian man i wonder why does that matter um i think uh we pointed out
+[ 1781.4- 1788.3] that she was russian and living in russia because she gave false information when she set up a uk company
+[ 1788.3- 1799.8] um that i think that was mostly the the reason why we did that and it's relevant that he was ukrainian
+[ 1799.8- 1806.2] because that was his motivation for shutting down the accounts because he said uh you know he doesn't
+[ 1806.2- 1818.6] support propaganda against this country while it's being invaded thank you for the signal angel please
+[ 1818.6- 1826.6] uh there was a service called freedom that recently with a way that provided free domain do you know if
+[ 1826.6- 1839.8] this is in a relationship to to to the house to all this um i'm not really i i heard of that and i've seen
+[ 1839.8- 1847.8] it i think it's it's not related but it has been used by care for for setting up the whole demarket
+[ 1847.8- 1854.9] um system somehow in the past i'm not sure if they're using freedom um till now i think uh what
+[ 1854.9- 1860.6] they also do is they try to use old domains because they are less likely to be blocked so
+[ 1861.3- 1869.4] what you will often see is that you know some local bookshop had a website uh 10 years ago and they
+[ 1869.4- 1875.8] registered the domain and then they stopped using it and then they will repurpose that domain so they're
+[ 1876.3- 1882.8] they prefer having sort of domains with a bit of a history because that makes it less likely to be blocked
+[ 1884.5- 1893.9] thank you microphone one please hello thank you for your research uh i was wondering if it has come
+[ 1893.9- 1905.6] across you as um identity theft being a common source of these identities and like is it our failure to
+[ 1906.5- 1913.2] prosecute these crimes here that also allows this opportunity for tons of you know identities to be
+[ 1913.2- 1925.4] exploited for these purposes thank you um yeah i i think it's common practice because i've shown you only a
+[ 1925.4- 1932.0] few um few identities which have been used i think they're even more and
+[ 1932.0- 1941.4] uh we unfortunately we weren't we we we were searching for the source or the the the forum where
+[ 1941.4- 1949.9] this specific uh identity was sold we unfortunately we haven't found it um but um yeah i think of course
+[ 1949.9- 1959.6] it's a failure to prosecute i mean when we contacted the the family of of the cath horn guy i mean they
+[ 1959.6- 1967.5] were very desperate because for years they're fighting for like their i mean yeah they're fighting that
+[ 1967.5- 1976.8] their identity um i don't even know what what you what you can do if if the identity is being um stolen
+[ 1976.8- 1985.7] but yeah they're struggling and fighting and of course it's a failure thank you there's one more
+[ 1985.7- 1995.4] question microphone one yes i know that this is this was not the scope of your talk but can you say a few
+[ 1995.4- 2007.2] sentences about are these campaigns successful do they have impact on on on yeah on on how reality is
+[ 2007.2- 2018.3] perceived in the target countries or yeah um so it's hard to tell with doppelganger or in general with uh
+[ 2019.0- 2025.6] you know these disinformation campaigns because of course what they do is they will try to exploit
+[ 2025.6- 2033.7] existing narratives so they're not necessarily trying to set their own narratives um what we've seen with
+[ 2033.7- 2044.3] doppelganger is uh that most likely they're also not just lying to the audience but also to the kremlin
+[ 2044.3- 2053.2] who pays them um so there's some indication that they're faking their engagement numbers um yeah which
+[ 2053.2- 2060.4] might mean it's you know not not actually as successful as they make it seem um but of course because
+[ 2060.4- 2068.5] they want to keep getting paid and for them it's just a job they try to sort of uh make it yeah make
+[ 2068.5- 2078.4] it seem very successful um there's also a adjacent campaign to doppelganger called matryoshka um there's
+[ 2078.4- 2086.3] some evidence that they're actually the same um and what they do is they specifically target news and fact
+[ 2086.3- 2093.2] checking organizations and they will send them their fake content and say hey can you please verify
+[ 2093.2- 2099.6] us and write an article about it um we assume that is because then they can take these articles and be
+[ 2099.6- 2105.2] like look how successful we are uh they even wrote an article about this fake video we made
+[ 2107.2- 2117.4] yeah so in summary it's hard to tell yeah wow maybe one more question um around what kind of
+[ 2117.4- 2123.8] information are you interested in uh to get maybe from people watching this um what are you
+[ 2123.8- 2138.7] wanting to research further um yeah it's uh i don't know you have a specific topic um i mean in general
+[ 2138.7- 2146.8] if you have any information on these topics you know sort of uh stolen credentials stolen accounts where
+[ 2146.8- 2153.1] they are sold um one one one thing we never managed to do is find out where they buy these stolen
+[ 2153.1- 2165.0] identities or where they get them from um yeah also if you're you know if you're familiar with sort of hosting
+[ 2165.0- 2171.9] infrastructure autonomous systems ripe how that all works um we always love to learn more about that
+[ 2171.9- 2185.8] because it's a pretty still new field for us thank you do we have still one more no oh okay then
+[ 2185.8- 2191.5] everybody else who didn't want to be in the stream with their questions please come uh and talk to alexei
+[ 2191.5- 2199.9] and uh uh talk to max uh about it where can people find you in the time after the talk probably here but
+[ 2199.9- 2209.2] then also at the corrective booth maybe um maybe we just wait here a little bit and you can just come
+[ 2209.2- 2218.2] here we talk here or if not um you have our emails there and our blue sky accounts um i think in um
+[ 2219.2- 2227.7] in my profile uh for this talk you can also find my signal um yep okay wonderful thank you so much again
+[ 2227.7- 2237.4] for this presentation with your applause

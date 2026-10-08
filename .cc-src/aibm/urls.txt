@@ -1,0 +1,4 @@
+aitm-panels https://cdn.media.ccc.de/events/why2025/opus/why2025-167-eng-AiTM_panels_and_sellers_opus.opus
+identity-theft https://cdn.media.ccc.de/congress/2024/mp3/38c3-383-eng-identity_theft_credit_card_fraud_and_cloaking_services_-_how_state-sponsored_propaganda_makes_use_of_the_cyber_criminal_toolbox_mp3.mp3
+new_important https://cdn.media.ccc.de/congress/2023/opus/37c3-12292-eng-NEW_IMPORTANT_INSTRUCTIONS_opus.opus
+genai-in-the-battle https://cdn.media.ccc.de/events/god/2024/mp3/god2024-56275-eng-GenAI_in_the_Battle_of_Security_Attacks_Defenses_and_the_Laws_Shaping_AIs_Future_mp3.mp3

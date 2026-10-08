@@ -1,0 +1,1354 @@
+{
+ "id": "captchas-full",
+ "title": "THE DARK REALITY OF CAPTCHAS (full, grammar v4 modes)",
+ "pilot": false,
+ "grammar": 4,
+ "pace": {
+  "lead": 0.5,
+  "gap": 1.1,
+  "min_beat": 3.6,
+  "to_clip": 0.3,
+  "after_clip": 0.9,
+  "end_pad": 2.5
+ },
+ "voice": {
+  "engine": "kokoro",
+  "name": "af_heart",
+  "speed": 0.95
+ },
+ "allowRepeat": [
+  "billion",
+  "book",
+  "books",
+  "bot",
+  "bots",
+  "box",
+  "captchas",
+  "cookie",
+  "day",
+  "every",
+  "farm",
+  "google",
+  "hours",
+  "human",
+  "humans",
+  "labeling",
+  "luis",
+  "million",
+  "name",
+  "puzzle",
+  "puzzles",
+  "recaptcha",
+  "robot",
+  "robots",
+  "single",
+  "street",
+  "test",
+  "tests",
+  "thousand",
+  "time",
+  "tracking",
+  "two",
+  "word",
+  "words",
+  "years"
+ ],
+ "beats": [
+  {
+   "id": "c01",
+   "mode": "human",
+   "clip": {
+    "src": "captchas/clip2_wsj_inventor.mp4",
+    "from": 2.05,
+    "to": 9.0,
+    "hold": 8.8,
+    "plate": "Luis von Ahn · co-inventor of the CAPTCHA · Wall Street Journal"
+   }
+  },
+  {
+   "id": "a02",
+   "mode": "drama",
+   "vo": "He's not alone. We've all stared at that corner.",
+   "scene": "GridCorner",
+   "props": {
+    "imgs": [
+     "captchas/traffic_1.jpg",
+     "captchas/distract2.jpg",
+     "captchas/traffic_3.jpg",
+     "captchas/traffic_2.jpg",
+     "captchas/bus_1.jpg",
+     "captchas/distract1.jpg",
+     "captchas/stairs_1.jpg",
+     "captchas/traffic_4.jpg",
+     "captchas/distract3.jpg"
+    ],
+    "focus": 4,
+    "ringAt": "stared",
+    "slug": "reCAPTCHA v2 image challenge",
+    "no": "Exhibit 01"
+   }
+  },
+  {
+   "id": "a03",
+   "mode": "drama",
+   "vo": "Researchers at UC Irvine added it up. Eight hundred nineteen million hours on reCAPTCHA alone. That's more than ninety thousand years.",
+   "say": "Researchers at UC Irvine added it up. Eight hundred nineteen million hours on re-CAPTCHA alone. That's more than ninety thousand years.",
+   "scene": "Hours",
+   "props": {
+    "slug": "UC Irvine study, 2023",
+    "no": "Exhibit 02",
+    "source": "Searles, Prapty & Tsudik · UC Irvine · 2023"
+   }
+  },
+  {
+   "id": "a04",
+   "mode": "hook",
+   "vo": "All that time didn't just vanish. Someone put it to work.",
+   "scene": "Kinetic",
+   "props": {
+    "lines": [
+     {
+      "t": "All that time",
+      "at": "All"
+     },
+     {
+      "t": "didn't vanish.",
+      "at": "vanish"
+     },
+     {
+      "t": "Someone put it to *work*.",
+      "at": "Someone",
+      "size": 120
+     }
+    ]
+   }
+  },
+  {
+   "id": "a05",
+   "mode": "drama",
+   "vo": "This is the dark reality of CAPTCHAs.",
+   "scene": "Chapter2",
+   "props": {
+    "kicker": "not so dark times",
+    "no": "01",
+    "title": "The dark reality of *CAPTCHAs*",
+    "bg": "captchas/ch_b00_ia-book-scanner.jpg",
+    "titleAt": "dark",
+    "focus": "62% 50%",
+    "credit": "Photo: Dvortygirl · CC BY-SA 4.0"
+   }
+  },
+  {
+   "id": "o01",
+   "mode": "explain",
+   "vo": "It starts in the year two thousand, at Yahoo. Robots were signing up for millions of its free email accounts.",
+   "scene": "Flood",
+   "props": {
+    "botsAt": "robots",
+    "cap": "yahoo mail, *under siege*"
+   }
+  },
+  {
+   "id": "o02",
+   "mode": "drama",
+   "vo": "A first-year PhD student at Carnegie Mellon heard about it. His name was Luis von Ahn.",
+   "scene": "Portrait2",
+   "props": {
+    "img": "captchas/luis_wikimania_2.jpg",
+    "name": "Luis von Ahn",
+    "credit": "2015 · Jarek Tuszyński · CC BY 4.0",
+    "focus": "50% 30%",
+    "facts": [
+     [
+      "Role",
+      "First-year PhD student"
+     ],
+     [
+      "School",
+      "Carnegie Mellon"
+     ],
+     [
+      "Known for",
+      "Co-inventing the CAPTCHA"
+     ]
+    ],
+    "stamp": "Pittsburgh",
+    "stampSub": "2000",
+    "stampAt": "name",
+    "slug": "Subject file",
+    "no": "Exhibit 03"
+   }
+  },
+  {
+   "id": "o03",
+   "mode": "explain",
+   "vo": "His idea was simple. A test any human can pass, and no computer can.",
+   "scene": "WarpPair",
+   "props": {
+    "word": "overlooks",
+    "scrambled": "ove#lo0ks",
+    "humanAt": "human",
+    "computerAt": "computer",
+    "title": "",
+    "stamp": "Failed",
+    "stampAt": "computer",
+    "cap": "a test only *humans* pass"
+   }
+  },
+  {
+   "id": "o04",
+   "mode": "explain",
+   "vo": "By two thousand three, it even had a name. CAPTCHA.",
+   "scene": "VAcronym",
+   "props": {
+    "word": "CAPTCHA",
+    "long": "Completely Automated Public Turing test to tell Computers and Humans Apart",
+    "at": "name",
+    "source": "von Ahn, Blum, Hopper & Langford · Eurocrypt 2003",
+    "cap": "the name, *2003*"
+   }
+  },
+  {
+   "id": "o05",
+   "mode": "explain",
+   "vo": "Then Luis did the math. Ten seconds a puzzle, two hundred million puzzles a day.",
+   "scene": "VMath",
+   "props": {
+    "terms": [
+     {
+      "v": "10 s",
+      "l": "per puzzle",
+      "at": "10"
+     },
+     {
+      "v": "200M",
+      "l": "puzzles a day",
+      "at": "200"
+     }
+    ],
+    "result": {
+     "v": 63,
+     "unit": "yrs",
+     "l": "of human time",
+     "at": "day"
+    },
+    "cap": "luis does the *math*"
+   },
+   "say": "Then Louis did the math. Ten seconds a puzzle, two hundred million puzzles a day."
+  },
+  {
+   "id": "o06",
+   "mode": "hook",
+   "vo": "That's sixty-three years of human time. Every single day.",
+   "scene": "Kinetic",
+   "props": {
+    "lines": [
+     {
+      "t": "*63 years*",
+      "at": "63",
+      "size": 200
+     },
+     {
+      "t": "every single day.",
+      "at": "Every",
+      "size": 110
+     }
+    ],
+    "sub": "our arithmetic on von Ahn's figures"
+   }
+  },
+  {
+   "id": "o06b",
+   "mode": "drama",
+   "vo": "Luis said it himself, on stage. That number made him feel bad.",
+   "scene": "Doc2",
+   "props": {
+    "meta": "TED 2011 · transcript excerpt",
+    "title": "“So then I started ==feeling bad==.”",
+    "titleSize": 64,
+    "byline": "Luis von Ahn, on the hours lost to CAPTCHAs",
+    "hlAt": "feel",
+    "width": 980,
+    "rotate": -1.4
+   },
+   "say": "Louis said it himself, on stage. That number made him feel bad."
+  },
+  {
+   "id": "o07",
+   "mode": "explain",
+   "vo": "So he asked a dangerous question. What if all that effort did real work?",
+   "scene": "VBubble",
+   "props": {
+    "text": "What if all that effort did *real work*?",
+    "label": "the dangerous question",
+    "at": "What",
+    "cap": "the *dangerous* question"
+   }
+  },
+  {
+   "id": "b00",
+   "mode": "hook",
+   "vo": "And that's when the little box got a second job.",
+   "scene": "Kinetic",
+   "props": {
+    "lines": [
+     {
+      "t": "The little box",
+      "at": "little",
+      "size": 120
+     },
+     {
+      "t": "got a *second job*.",
+      "at": "second",
+      "size": 150
+     }
+    ]
+   }
+  },
+  {
+   "id": "b01",
+   "mode": "explain",
+   "vo": "Look at the old two-word puzzles. One word was the test. The other came from a scanned book.",
+   "scene": "VWordPair",
+   "props": {
+    "known": "overlooks",
+    "unknown": "inquiry",
+    "knownAt": "test",
+    "unknownAt": "book",
+    "cap": "one test, one *mystery*"
+   }
+  },
+  {
+   "id": "b02",
+   "mode": "explain",
+   "vo": "On older books, scanners missed about thirty percent of the words. Your eyes didn't.",
+   "scene": "VMissed",
+   "props": {
+    "pct": 30,
+    "label": "of words missed by scanners in older books",
+    "at": "30",
+    "source": "von Ahn · 2011",
+    "words": [
+     "It",
+     "was",
+     "the",
+     "best",
+     "of",
+     "times,",
+     "it",
+     "was",
+     "the",
+     "worst",
+     "of",
+     "times,",
+     "it",
+     "was",
+     "the",
+     "age",
+     "of",
+     "wisdom"
+    ],
+    "miss": [
+     3,
+     5,
+     9,
+     11,
+     15,
+     17
+    ],
+    "cap": "the machine *gives up*"
+   }
+  },
+  {
+   "id": "b03",
+   "mode": "explain",
+   "vo": "Type the known word right, and your guess on the mystery word counts. When enough strangers agree, the book gets its word.",
+   "scene": "VFlow",
+   "props": {
+    "nodes": [
+     {
+      "t": "known word",
+      "s": "typed right",
+      "at": "known"
+     },
+     {
+      "t": "mystery word",
+      "s": "your guess counts",
+      "at": "mystery"
+     },
+     {
+      "t": "strangers agree",
+      "s": "the same answer, again and again",
+      "at": "strangers"
+     },
+     {
+      "t": "the book gets its word",
+      "at": "book",
+      "hot": true
+     }
+    ],
+    "cap": "how a *crowd* reads a book"
+   }
+  },
+  {
+   "id": "b04",
+   "mode": "hook",
+   "vo": "Over a billion people have typed at least one word from a book.",
+   "scene": "Kinetic",
+   "props": {
+    "lines": [
+     {
+      "t": "*1.1 billion* people",
+      "at": "billion",
+      "size": 140
+     },
+     {
+      "t": "typed a word from a book.",
+      "at": "typed",
+      "size": 96
+     }
+    ],
+    "sub": "Luis von Ahn · Big Think"
+   }
+  },
+  {
+   "id": "c02",
+   "mode": "human",
+   "clip": {
+    "src": "captchas/clip2_vox_nyt.mp4",
+    "from": 0,
+    "to": 8.85,
+    "plate": "Vox · how reCAPTCHA read The New York Times"
+   }
+  },
+  {
+   "id": "b05",
+   "mode": "explain",
+   "vo": "Nobody signed up. Nobody got paid. Everybody thought they were just logging in.",
+   "scene": "VCard",
+   "props": {
+    "title": "the readers",
+    "tab": "unpaid",
+    "rows": [
+     {
+      "t": "signed up",
+      "mark": "x",
+      "at": "signed"
+     },
+     {
+      "t": "got paid",
+      "mark": "x",
+      "at": "paid"
+     },
+     {
+      "t": "thought: just logging in",
+      "mark": "check",
+      "at": "logging"
+     }
+    ],
+    "cap": "the *unpaid* library"
+   }
+  },
+  {
+   "id": "b06",
+   "vo": "And sometimes, pairing random words for strangers went horribly wrong. Luis tells this one himself. The scanned word was Christians. Harmless. The random word next to it? Not so much.",
+   "scene": "TwoWords",
+   "props": {
+    "known": "Christians",
+    "unknown": "▇▇▇▇▇▇",
+    "labelsAt": "random",
+    "unknownAt": "next",
+    "title": "two random words",
+    "leftLabel": "word one",
+    "rightLabel": "word two: random",
+    "cap": "random words, *real* chaos"
+   },
+   "mode": "explain"
+  },
+  {
+   "id": "b06b",
+   "vo": "And the website displaying this pair? It was called the Embassy of the Kingdom of God.",
+   "scene": "SiteFrame",
+   "props": {
+    "site": "Embassy of the Kingdom of God",
+    "known": "Christians",
+    "unknown": "▇▇▇▇▇▇",
+    "siteAt": "embassy",
+    "stamp": "oops",
+    "stampAt": "kingdom",
+    "source": "Luis von Ahn, TED talk, 2011"
+   },
+   "mode": "drama"
+  },
+  {
+   "id": "g01",
+   "mode": "drama",
+   "vo": "In two thousand nine, Google bought reCAPTCHA. In its own words, to improve its book and newspaper scanning.",
+   "say": "In two thousand nine, Google bought re-CAPTCHA. In its own words, to improve its book and newspaper scanning.",
+   "scene": "DocShot",
+   "props": {
+    "img": "captchas/google_blog_2009_top.jpg",
+    "ratio": 1.7778,
+    "w": 1180,
+    "hl": {
+     "x": 0.112,
+     "y": 0.425,
+     "w": 0.5,
+     "h": 0.06
+    },
+    "hlAt": "Google",
+    "quote": "improve our books and newspaper scanning process",
+    "quoteAt": "words",
+    "slug": "Official Google Blog, Sept 16 2009",
+    "no": "Exhibit 04",
+    "source": "googleblog.blogspot.com · 2009"
+   }
+  },
+  {
+   "id": "g02",
+   "mode": "explain",
+   "vo": "Google never said what it paid. But look at what came with it.",
+   "scene": "VReceipt",
+   "props": {
+    "title": "reCAPTCHA · sold 2009",
+    "rows": [
+     {
+      "k": "buyer",
+      "v": "Google",
+      "at": "Google"
+     },
+     {
+      "k": "price",
+      "v": "never disclosed",
+      "at": "paid",
+      "hot": false
+     },
+     {
+      "k": "included",
+      "v": "200M puzzles a day",
+      "at": "came",
+      "hot": true
+     }
+    ],
+    "cap": "the *real* price"
+   }
+  },
+  {
+   "id": "c03",
+   "mode": "human",
+   "clip": {
+    "src": "captchas/clip2_bt_luis.mp4",
+    "from": 0.3,
+    "to": 14.48,
+    "plate": "Luis von Ahn · Big Think"
+   }
+  },
+  {
+   "id": "g04",
+   "mode": "hook",
+   "vo": "And Luis? He ran the same play again. In twenty eleven, he co-founded Duolingo.",
+   "scene": "Kinetic",
+   "props": {
+    "lines": [
+     {
+      "t": "Same play.",
+      "at": "same",
+      "size": 150
+     },
+     {
+      "t": "New *app*.",
+      "at": "Duolingo",
+      "size": 150
+     }
+    ],
+    "sub": "duolingo · founded 2011"
+   },
+   "say": "And Louis? He ran the same play again. In twenty eleven, he co-founded Duolingo."
+  },
+  {
+   "id": "g05",
+   "mode": "explain",
+   "vo": "Learners translated real web articles. CNN and BuzzFeed paid for them.",
+   "scene": "VCard",
+   "props": {
+    "title": "duolingo, 2013",
+    "tab": "for a fee",
+    "rows": [
+     {
+      "t": "learners practise a language",
+      "mark": "dot",
+      "at": "Learners"
+     },
+     {
+      "t": "they translate real articles",
+      "mark": "dot",
+      "at": "translated"
+     },
+     {
+      "t": "CNN and BuzzFeed pay",
+      "mark": "check",
+      "at": "CNN"
+     },
+     {
+      "t": "learners get paid",
+      "mark": "x",
+      "at": "paid"
+     }
+    ],
+    "cap": "homework, *for sale*"
+   }
+  },
+  {
+   "id": "g03",
+   "mode": "hook",
+   "vo": "And books were only the beginning. Next, they needed eyes on the street.",
+   "scene": "Kinetic",
+   "props": {
+    "lines": [
+     {
+      "t": "Books were only",
+      "at": "books",
+      "size": 120
+     },
+     {
+      "t": "the *beginning*.",
+      "at": "beginning",
+      "size": 150
+     }
+    ],
+    "sub": "next: eyes on the street"
+   }
+  },
+  {
+   "id": "m01",
+   "mode": "explain",
+   "vo": "In twenty fourteen, Google tested its hardest distorted text. Humans got it right thirty-three percent of the time. Its AI? Ninety-nine point eight.",
+   "scene": "VBars",
+   "props": {
+    "title": "google's hardest distorted text, 2014",
+    "items": [
+     {
+      "label": "humans",
+      "value": 33,
+      "display": "33%",
+      "at": "Humans"
+     },
+     {
+      "label": "google's ai",
+      "value": 99.8,
+      "display": "99.8%",
+      "at": "AI",
+      "hot": true
+     }
+    ],
+    "source": "AI: Goodfellow et al., Google, 2014 · humans: via Vox",
+    "cap": "the student *beat* the teacher"
+   }
+  },
+  {
+   "id": "m02",
+   "vo": "So the words had to go. The first replacement came straight off the street. Blurry house numbers, shot by Google's Street View cars.",
+   "scene": "HouseNumbers",
+   "props": {
+    "nums": [
+     "1572",
+     "38",
+     "4410"
+    ],
+    "at": "blurry",
+    "cap": "your answer, *their* map"
+   },
+   "mode": "explain"
+  },
+  {
+   "id": "m03b",
+   "vo": "Next up, pictures. Funny thing, that was Luis's original idea. Show people a photo. Make them type what's in it.",
+   "scene": "NameIt",
+   "props": {
+    "src": "bus_3.jpg",
+    "answer": "bus",
+    "guesses": [
+     "buss",
+     "vehical",
+     "tire?"
+    ],
+    "typeAt": "idea",
+    "cap": "type what you *see*"
+   },
+   "mode": "explain",
+   "say": "Next up, pictures. Funny thing, that was Louis's original idea. Show people a photo. Make them type what's in it."
+  },
+  {
+   "id": "c13",
+   "clip": {
+    "src": "captchas/clip2_vox_spell.mp4",
+    "from": 0,
+    "to": 10.26,
+    "plate": "Luis von Ahn · Vox"
+   },
+   "mode": "human"
+  },
+  {
+   "id": "m03",
+   "vo": "So this time, nobody types. Select all squares with traffic lights.",
+   "scene": "Grid",
+   "props": {
+    "prompt": "Select all squares with traffic lights",
+    "imgs": [
+     "traffic_2.jpg",
+     "distract3.jpg",
+     "traffic_1.jpg",
+     "bus_4.jpg",
+     "traffic_4.jpg",
+     "stairs_2.jpg",
+     "distract1.jpg",
+     "traffic_3.jpg",
+     "bus_1.jpg"
+    ],
+    "picks": [
+     0,
+     2,
+     4,
+     7
+    ],
+    "cap": "the grid *arrives*"
+   },
+   "mode": "explain"
+  },
+  {
+   "id": "m04",
+   "mode": "hook",
+   "vo": "Buses. Traffic lights. Stairs. Fire hydrants. Ever notice they all look weirdly American?",
+   "scene": "Kinetic",
+   "props": {
+    "lines": [
+     {
+      "t": "Buses. Traffic lights.",
+      "at": "Buses",
+      "size": 110
+     },
+     {
+      "t": "Stairs. Hydrants.",
+      "at": "Stairs",
+      "size": 110
+     },
+     {
+      "t": "Weirdly *American*.",
+      "at": "American",
+      "size": 140
+     }
+    ]
+   }
+  },
+  {
+   "id": "m05",
+   "mode": "drama",
+   "vo": "Because they're street scenes. Exactly what a car's camera sees. And Google had launched Street View in two thousand seven.",
+   "scene": "Chapter2",
+   "props": {
+    "kicker": "Google Street View · 2007",
+    "title": "What a car's camera *sees*.",
+    "bg": "captchas/ch_r00_streetview-car-googleplex.jpg",
+    "titleAt": "camera",
+    "credit": "Kowloonese · public domain",
+    "no": "Exhibit 07"
+   }
+  },
+  {
+   "id": "c07",
+   "clip": {
+    "src": "captchas/clip2_vox_cars.mp4",
+    "from": 0,
+    "to": 17.06,
+    "plate": "Vox"
+   },
+   "mode": "human"
+  },
+  {
+   "id": "m06",
+   "vo": "Now, the famous fire hydrant. Does that sliver of metal count? What about the base?",
+   "scene": "Grid",
+   "props": {
+    "prompt": "Select all squares with a fire hydrant",
+    "sliced": "hydrant_4.jpg",
+    "picks": [
+     4
+    ],
+    "edge": [
+     1,
+     3,
+     5,
+     7
+    ],
+    "cap": "where does it *end*?"
+   },
+   "mode": "explain"
+  },
+  {
+   "id": "c08",
+   "clip": {
+    "src": "captchas/clip2_wsj_majority.mp4",
+    "from": 0.12,
+    "to": 10.58,
+    "plate": "The Wall Street Journal"
+   },
+   "mode": "human"
+  },
+  {
+   "id": "m07",
+   "vo": "So the edge is decided by votes. Where people hesitate, that's where the hydrant ends.",
+   "scene": "EdgeVotes",
+   "props": {
+    "src": "hydrant_4.jpg",
+    "outlineAt": "hesitate",
+    "cap": "your hesitation *was* the data"
+   },
+   "mode": "explain"
+  },
+  {
+   "id": "k00",
+   "mode": "hook",
+   "vo": "And then, the model went public. Your clicks became a product.",
+   "scene": "Kinetic",
+   "props": {
+    "lines": [
+     {
+      "t": "The model went *public*.",
+      "at": "public",
+      "size": 120
+     },
+     {
+      "t": "Your clicks became a product.",
+      "at": "clicks",
+      "size": 90
+     }
+    ]
+   }
+  },
+  {
+   "id": "k01",
+   "mode": "drama",
+   "vo": "In twenty twenty, Cloudflare moved its CAPTCHAs from reCAPTCHA to a rival called hCaptcha.",
+   "say": "In twenty twenty, Cloudflare moved its CAPTCHAs from re-CAPTCHA to a rival called H-captcha.",
+   "scene": "Doc2",
+   "props": {
+    "meta": "blog.cloudflare.com · April 8, 2020",
+    "title": "Moving from reCAPTCHA to ==hCaptcha==",
+    "titleSize": 72,
+    "byline": "Cloudflare's own announcement",
+    "hlAt": "rival",
+    "width": 1100,
+    "rotate": 1.2
+   }
+  },
+  {
+   "id": "k02",
+   "mode": "explain",
+   "vo": "Its pitch was blunt. Companies pay to get images labeled. Websites earn a cut for showing the puzzles. And you do the labeling.",
+   "scene": "VFlow",
+   "props": {
+    "nodes": [
+     {
+      "t": "companies pay",
+      "s": "to get images labelled",
+      "at": "Companies"
+     },
+     {
+      "t": "websites earn",
+      "s": "a cut for each puzzle shown",
+      "at": "Websites"
+     },
+     {
+      "t": "you label",
+      "s": "for free",
+      "at": "you",
+      "hot": true
+     }
+    ],
+    "cap": "the pitch, *blunt*"
+   }
+  },
+  {
+   "id": "k03",
+   "mode": "drama",
+   "vo": "Cloudflare later did the math on all this clicking. Humanity wastes about five hundred years. Every single day. That's a full human lifetime, every four hours.",
+   "scene": "Num2",
+   "props": {
+    "label": "human time spent on CAPTCHAs",
+    "value": 500,
+    "unit": "years / day",
+    "sub": "a full human lifetime, every four hours",
+    "source": "Cloudflare blog · May 13, 2021 · their estimate",
+    "at": "500"
+   }
+  },
+  {
+   "id": "u00",
+   "mode": "hook",
+   "vo": "Meanwhile, the bots never really lost. They found a workaround. Humans.",
+   "scene": "Kinetic",
+   "props": {
+    "lines": [
+     {
+      "t": "The bots never lost.",
+      "at": "bots",
+      "size": 110
+     },
+     {
+      "t": "The workaround: *humans*.",
+      "at": "workaround",
+      "size": 130
+     }
+    ]
+   }
+  },
+  {
+   "id": "u01",
+   "vo": "Captcha-solving farms. Rows of real people, paid to solve puzzles for bots, all day long.",
+   "scene": "Farm",
+   "props": {
+    "cap": "humans for *hire*"
+   },
+   "mode": "explain"
+  },
+  {
+   "id": "u02",
+   "mode": "drama",
+   "vo": "The price? Starting at fifty cents per thousand images. That's a twentieth of a cent per puzzle.",
+   "scene": "DocShot",
+   "props": {
+    "img": "captchas/anticaptcha_crop.jpg",
+    "ratio": 1.0667,
+    "w": 700,
+    "box": true,
+    "hl": {
+     "x": 0.047,
+     "y": 0.832,
+     "w": 0.4,
+     "h": 0.036
+    },
+    "hlAt": "price",
+    "quote": "Starting from 0.5USD per 1000 images",
+    "quoteAt": "50",
+    "quoteBy": "anti-captcha.com, 2026",
+    "slug": "A real solving service · homepage",
+    "no": "Exhibit 08",
+    "source": "anti-captcha.com · captured 2026",
+    "rotate": -1.0
+   }
+  },
+  {
+   "id": "u03",
+   "mode": "explain",
+   "vo": "A bot hits the box. It forwards the puzzle to a worker. They solve it in seconds. The bot walks right in.",
+   "scene": "VFlow",
+   "props": {
+    "nodes": [
+     {
+      "t": "bot hits the box",
+      "at": "bot"
+     },
+     {
+      "t": "puzzle forwarded",
+      "s": "to a paid worker",
+      "at": "forwards"
+     },
+     {
+      "t": "solved",
+      "s": "in seconds",
+      "at": "solve"
+     },
+     {
+      "t": "the bot walks in",
+      "at": "walks",
+      "hot": true
+     }
+    ],
+    "cap": "a *human* in the loop"
+   }
+  },
+  {
+   "id": "v00",
+   "mode": "hook",
+   "vo": "So Google changed the game again. And this time, you can't even see the test.",
+   "scene": "Kinetic",
+   "props": {
+    "lines": [
+     {
+      "t": "This time,",
+      "at": "time",
+      "size": 110
+     },
+     {
+      "t": "you can't even *see* the test.",
+      "at": "see",
+      "size": 110
+     }
+    ]
+   }
+  },
+  {
+   "id": "v01",
+   "vo": "Remember the famous checkbox? It launched in twenty fourteen. And the click was never the point.",
+   "scene": "Checkbox",
+   "props": {
+    "mode": "check",
+    "clickAt": "click",
+    "cap": "the click is a *decoy*"
+   },
+   "mode": "explain"
+  },
+  {
+   "id": "c09",
+   "clip": {
+    "src": "captchas/clip2_wsj_how.mp4",
+    "from": 0,
+    "to": 12.49,
+    "plate": "The Wall Street Journal"
+   },
+   "mode": "human"
+  },
+  {
+   "id": "v02",
+   "vo": "Your hand wobbles on its way to the box. A cheap bot glides in a perfect straight line.",
+   "scene": "MouseTrail",
+   "props": {
+    "botAt": "cheap",
+    "cap": "too *perfect* = bot"
+   },
+   "mode": "explain"
+  },
+  {
+   "id": "v03",
+   "mode": "drama",
+   "vo": "By twenty eighteen, reCAPTCHA version three dropped the puzzle completely. It just watches, and returns a score.",
+   "say": "By twenty eighteen, re-CAPTCHA version three dropped the puzzle completely. It just watches, and returns a score.",
+   "scene": "DocShot",
+   "props": {
+    "img": "captchas/recaptcha_v3_crop.jpg",
+    "ratio": 1.8604,
+    "w": 1240,
+    "hl": {
+     "x": 0.044,
+     "y": 0.85,
+     "w": 0.585,
+     "h": 0.05
+    },
+    "hlAt": "score",
+    "slug": "Google developers docs · reCAPTCHA v3",
+    "no": "Exhibit 09",
+    "source": "developers.google.com · captured 2026",
+    "rotate": 1.0
+   }
+  },
+  {
+   "id": "v04",
+   "vo": "Here's the twist. Privacy can lower your score. A VPN. Fresh cookies. A blank browsing history. To the box, you start looking like a bot.",
+   "scene": "ScoreMeter",
+   "props": {
+    "start": 0.9,
+    "items": [
+     {
+      "label": "VPN",
+      "delta": -0.3,
+      "at": "vpn"
+     },
+     {
+      "label": "fresh cookies",
+      "delta": -0.2,
+      "at": "fresh"
+     },
+     {
+      "label": "blank history",
+      "delta": -0.2,
+      "at": "blank"
+     }
+    ],
+    "cap": "privacy looks like *guilt*"
+   },
+   "mode": "explain"
+  },
+  {
+   "id": "v05",
+   "vo": "And when the system decides you're a robot, there's rarely an appeal button.",
+   "scene": "Lockout",
+   "props": {
+    "crossAt": "appeal",
+    "cap": "no *appeal*"
+   },
+   "mode": "explain"
+  },
+  {
+   "id": "r00",
+   "mode": "hook",
+   "vo": "So. Remember the question from the start? Who cashed in?",
+   "scene": "Kinetic",
+   "props": {
+    "lines": [
+     {
+      "t": "Who cashed *in*?",
+      "at": "cashed",
+      "size": 180
+     }
+    ]
+   }
+  },
+  {
+   "id": "r01",
+   "mode": "explain",
+   "vo": "Those eight hundred nineteen million hours? The same UC Irvine team put a price on them. About six point one billion dollars of free labor.",
+   "say": "Those eight hundred nineteen million hours? The same UC Irvine team put a price on them. About six point one billion dollars of free labor.",
+   "scene": "VReceipt",
+   "props": {
+    "title": "the bill · 2023",
+    "rows": [
+     {
+      "k": "sessions",
+      "v": "512 billion",
+      "at": "Those"
+     },
+     {
+      "k": "human time",
+      "v": "819M hours",
+      "at": "hours"
+     },
+     {
+      "k": "unpaid labor",
+      "v": "$6.1 billion",
+      "at": "$6",
+      "hot": true
+     }
+    ],
+    "cap": "the bill *nobody* sent"
+   }
+  },
+  {
+   "id": "r02",
+   "mode": "drama",
+   "vo": "Their verdict? A tracking cookie farm for profit, masquerading as a security service.",
+   "scene": "Doc2",
+   "props": {
+    "meta": "Searles et al. · UC Irvine · 2023",
+    "title": "“A ==tracking cookie farm== for advertising profit masquerading as a security service.”",
+    "titleSize": 58,
+    "byline": "the researchers' conclusion on reCAPTCHA v2",
+    "hlAt": "tracking",
+    "width": 1180,
+    "rotate": -1.2
+   }
+  },
+  {
+   "id": "r03",
+   "mode": "explain",
+   "vo": "Google says reCAPTCHA data isn't used for personalized ads. You decide who to believe.",
+   "scene": "VCard",
+   "props": {
+    "title": "who to believe?",
+    "tab": "your call",
+    "rows": [
+     {
+      "t": "google: not used for personalised ads",
+      "mark": "dot",
+      "at": "Google"
+     },
+     {
+      "t": "uc irvine: a tracking cookie farm",
+      "mark": "dot",
+      "at": "decide"
+     }
+    ],
+    "cap": "two stories, *one* box"
+   }
+  },
+  {
+   "id": "r03b",
+   "mode": "hook",
+   "vo": "Either way, you were never the customer. You were the product.",
+   "scene": "Kinetic",
+   "props": {
+    "lines": [
+     {
+      "t": "You were never the customer.",
+      "at": "never",
+      "size": 96
+     },
+     {
+      "t": "You were the *product*.",
+      "at": "product",
+      "size": 150
+     }
+    ]
+   }
+  },
+  {
+   "id": "r04",
+   "mode": "explain",
+   "vo": "And the cruelest part? Bots now pass these tests better than we do. Sometimes every single time.",
+   "scene": "VBars",
+   "props": {
+    "title": "who passes the test?",
+    "items": [
+     {
+      "label": "AI, 2024",
+      "value": 100,
+      "display": "100%",
+      "hot": true
+     },
+     {
+      "label": "bots, text",
+      "value": 99.8,
+      "display": "99.8%",
+      "hot": true,
+      "at": "bots"
+     },
+     {
+      "label": "humans",
+      "value": 84,
+      "display": "50–84%",
+      "at": "we"
+     }
+    ],
+    "max": 100,
+    "source": "ETH Zurich 2024 · Google 2014 · UC Irvine 2023",
+    "cap": "the bots *won*"
+   }
+  },
+  {
+   "id": "c10",
+   "clip": {
+    "src": "captchas/clip2_wsj_losing.mp4",
+    "from": 0,
+    "to": 5.67,
+    "plate": "The Wall Street Journal"
+   },
+   "mode": "human"
+  },
+  {
+   "id": "f00",
+   "vo": "So the industry is quietly moving on. Invisible tokens. Device checks. Face scans. Even iris scanners.",
+   "scene": "FutureGates",
+   "props": {
+    "gates": [
+     {
+      "glyph": "🎟️",
+      "name": "private tokens",
+      "sub": "your device vouches for you",
+      "at": "tokens"
+     },
+     {
+      "glyph": "📱",
+      "name": "device checks",
+      "sub": "is this a real phone?",
+      "at": "device"
+     },
+     {
+      "glyph": "🤳",
+      "name": "face scans",
+      "sub": "selfie verification",
+      "at": "face"
+     },
+     {
+      "glyph": "👁️",
+      "name": "iris orbs",
+      "sub": "scan your eye, get an ID",
+      "at": "iris"
+     }
+    ],
+    "cap": "next: prove *who* you are"
+   },
+   "mode": "explain"
+  },
+  {
+   "id": "f01",
+   "mode": "drama",
+   "vo": "And the man who started all of this? He thinks the ending is already written.",
+   "say": "And the man who started all of this? He thinks the ending is already written.",
+   "scene": "Portrait2",
+   "props": {
+    "img": "captchas/luis_wikimania_2.jpg",
+    "name": "Luis von Ahn",
+    "credit": "2015 · Jarek Tuszyński · CC BY 4.0",
+    "focus": "50% 30%",
+    "facts": [
+     [
+      "Then",
+      "Co-inventor of the CAPTCHA"
+     ],
+     [
+      "Now",
+      "CEO of Duolingo"
+     ],
+     [
+      "Verdict",
+      "In his own words, next"
+     ]
+    ],
+    "stamp": "Today",
+    "stampSub": "",
+    "stampAt": "ending",
+    "slug": "Subject file, revisited",
+    "no": "Exhibit 10"
+   }
+  },
+  {
+   "id": "c11",
+   "clip": {
+    "src": "captchas/clip2_vox_luis_end.mp4",
+    "from": 0,
+    "to": 9.68,
+    "plate": "Luis von Ahn · Vox"
+   },
+   "mode": "human"
+  },
+  {
+   "id": "f02",
+   "vo": "So look at that box one more time.",
+   "scene": "Checkbox",
+   "props": {
+    "mode": "idle",
+    "cap": "one *last* look"
+   },
+   "mode": "explain",
+   "gap": 0.5,
+   "min": 2.3
+  },
+  {
+   "id": "f03",
+   "mode": "hook",
+   "vo": "For over twenty years, it asked one question. Are you a robot? And every answer made the robots a little more human.",
+   "scene": "Kinetic",
+   "props": {
+    "lines": [
+     {
+      "t": "Are you a robot?",
+      "at": "robot",
+      "size": 130
+     },
+     {
+      "t": "Every answer made them",
+      "at": "every",
+      "size": 90
+     },
+     {
+      "t": "a little more *human*.",
+      "at": "human",
+      "size": 120
+     }
+    ]
+   }
+  },
+  {
+   "id": "f04",
+   "mode": "drama",
+   "vo": "You didn't fail the test. You trained the thing that passes it.",
+   "scene": "Chapter2",
+   "props": {
+    "kicker": "not so DARK TIMES",
+    "title": "You trained the thing that *passes* it.",
+    "bg": "captchas/ch_v00_hand-on-mouse.jpg",
+    "titleAt": "trained",
+    "credit": "Nenad Stojkovic · CC BY 2.0"
+   }
+  }
+ ]
+}

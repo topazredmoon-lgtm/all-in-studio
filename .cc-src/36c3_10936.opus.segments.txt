@@ -1,0 +1,451 @@
+[    1.4-   10.7] So inside the fake-like factories, I'm going to date myself, I remember it was like it was the
+[   10.7-   16.7] Congress around 1990 or 1991 or so where I was sitting together with some people who came over
+[   16.7-   23.6] to the states to visit the CCC Congress and we were kind of riffing on how great the internet is
+[   23.6-   28.3] going to make the world, you know, how it's going to bring world peace and truth will rule and
+[   28.3-   39.2] everything like that. Boy, were we naive. Boy, were we totally wrong. And today I'm going to be
+[   39.2-   47.3] schooled in how wrong I actually was because we have Svea, Dennis and Philip to tell us all about
+[   47.3-   54.8] the fake-like factories around the world. And with that, could you please help me in welcoming them
+[   54.8-   70.0] onto the stage? Svea, Dennis and Philip, thank you very much. Welcome to our talk inside the fake-like
+[   70.0-   78.4] factories. So my name is Philip, I'm an internet activist against disinformation and I'm also a
+[   78.4-   85.3] student of the University of Bamberg. Hi, thank you that you, yeah, that you listen to us tonight.
+[   85.3-   92.2] My name is Svea, I'm an investigative journalist freelance mostly for NDR and ARD. It's a public
+[   92.2-   99.0] broadcaster in Germany and I focus on tech issues and I had the pleasure to work with these two guys
+[   99.6-  106.2] on for me a journalistic project and for them on a scientific project. Yeah, hi everyone. My name is
+[  106.2-  114.5] Dennis. I'm a PhD student from University Bochum. I'm working as a research assistant for the chair for
+[  114.5-  121.3] system security and my research focuses on network security topics and internet measurements. And
+[  121.3-  128.2] as Svea said, Philip and myself, we are here for the scientific part and Svea is for the journalistic
+[  128.2-  137.2] part here. So here's our outline for today. So first, I'm going to briefly talk about our motivation
+[  138.1-  146.2] for our descent into the fake like factories and then we are going to show you how we got our hands on
+[  147.2-  154.3] 90,000 fake like campaigns of a major crowd working platform and we are also going to show you why we
+[  154.3-  162.7] think that they are 10 billion registered Facebook users today. So first, I'm going to talk about the
+[  162.7-  173.2] like button. The like button is the ultimate indicator for popularity on social media. It shows you how
+[  173.2-  181.2] trustworthy someone is. It shows how how popular someone is. It shows it is an indicator for economic
+[  181.2-  189.5] success of brands and it also influences the Facebook algorithm and as we are going to show now
+[  189.5-  197.2] how these kind of likes can be easily forged and manipulated. But the problem is that many users will
+[  197.2-  206.8] still prefer this bad info on Facebook about popularity of a project to no info at all. And so this is a real
+[  206.8-  217.2] problem and there's no no real solution to this. So first we are going to talk about the factories
+[  217.9-  224.6] and the workers in the fake like factories. That there are fake likes and that you can buy likes
+[  224.6-  232.7] everywhere. It's well known. So if you Google buying fake likes or even fake comments for Instagram or for
+[  232.7-  240.2] Facebook, then you will get like hundreds of results and you can buy them very cheap and very expensive.
+[  240.2-  246.4] It doesn't matter. You can buy them from every country. But when you think of this sport likes,
+[  247.0-  255.4] then you may think of this. So you may think of somebody sitting in China, Pakistan or India,
+[  255.4-  263.9] and you think of computers and machines doing all this and that they are fake and also that they can
+[  263.9-  271.3] easily be detected and that maybe they are not a big problem. But it's not always like this.
+[  272.1-  281.1] It also can be like this. So I want you to meet Maria. I met her in Berlin and Harald,
+[  281.1-  291.5] he lives near Mönchengladbach. So Maria is a former police officer. And as money is always short,
+[  292.2-  300.5] she is clicking Facebook likes for money. So she earns between two cents and six cents per like.
+[  301.4-  309.7] And Harald, he was a baker once. He is now getting social aid and he is also clicking
+[  309.7-  317.6] and liking and commenting the whole day. We met them during our research project and did some
+[  318.4-  325.5] interviews about their likes. And one platform they are clicking and working for is paid likes.
+[  325.5-  331.4] It's only one platform out of a universe, out of a cosmos. Paid likes, they are sitting just a couple of
+[  331.4-  338.1] minutes from here in Magdeburg. And they are offering that you can earn money with liking on different
+[  338.1-  344.2] platforms. And it looks like this. When you log into the platform with your Facebook account,
+[  344.2-  350.8] then you get in the morning, in the afternoon, in the evening, you get, we call it campaigns.
+[  350.8-  357.7] But these are pages, Facebook fan pages or Instagram pages or posts or comments. You can, you know,
+[  357.7-  363.2] you can work your way through them and click them. And I blurred, you see here the blue bar,
+[  363.2-  369.6] I blurred them because we don't want to get sued from all these companies, which you can see there.
+[  370.8-  379.9] To take you a little bit with me on the journey, Harald, he was okay with us coming by for television.
+[  380.6-  388.2] And he was okay that and we did a long interview with him. And I want to show you a very small piece
+[  388.2-  394.4] out of his daily life, sitting there, doing the household, the washing and the cleaning and clicking.
+[  395.2-  402.3] It's going on the whole day, so I have to really shut up my head, whether it's a pizzeria,
+[  402.3-  409.4] also on Instagram, a pizzeria from the Münchner room, that now makes a picture of his new pizza creation.
+[  409.4-  421.7] It's all possible. It's all possible. I don't know whether it's politicians or hundezüchter-vereine or karate-vereine.
+[  421.7-  427.6] Now I only have to click on the like button, and that's how I've earned money.
+[  429.6-  436.1] Come on. It could be like that. You click and you earn some money.
+[  436.7-  443.6] How did we meet him and all the others? Of course, because Philip and Dennis, they have a more scientific
+[  443.6-  448.0] approach, so it was also important not only to talk to one or two, but to talk to many.
+[  448.5-  454.9] So we created a Facebook fan page, which we call like a line under a line, because I thought,
+[  454.9-  461.8] okay, nobody would like this really. And then we did a post, this post, and we bought likes.
+[  461.8-  471.1] And you won't believe it, and it worked so well, 222 people, or the people I paid for, like this.
+[  472.0-  480.4] And then we wrote all of them. And we talked to many of them, some of them only in writing,
+[  480.4-  486.8] some of them only we just called or had a phone chat, but they gave us a lot of information about
+[  486.8-  494.9] their life as a click worker, which I will sum up. So what Paylix by itself says, they say that they
+[  494.9-  500.2] have 30,000 registered users, and it's really interesting, because you might think that they
+[  500.2-  506.3] are all registered with like 10 or 15 accounts, but most of them they are not. They are clicking with
+[  506.3-  517.0] their real account, which makes it really hard to detect them. So they even scan their ID,
+[  518.3-  525.2] so that the company knows that they are real, and they earn their money. And we met men, women,
+[  526.1-  533.2] stay-at-home moms, low-income earners, retirees, people who are getting social care. So,
+[  533.2-  541.6] basically anybody, so there was no kind of bias, and many of them are clicking for two and more
+[  541.6-  549.7] platforms. I didn't meet anybody who is only clicking for one platform. They all have a variety
+[  549.7-  555.4] of platforms where they are writing comments or clicking likes. And you can make, this is what
+[  555.4-  563.9] they told us, between 15 euro and 450 euro monthly, if you are a so-called power clicker, and you do this
+[  563.9-  571.6] some kind of professional. But these are only the workers, and maybe you are more interested in
+[  572.4-  580.0] who are the buyers, who benefits. Yeah, let's come to step two, who benefits from the campaigns.
+[  580.0-  589.1] So, I think you all remember this page. This is the screen. If you log into paid likes, and, yeah,
+[  589.1-  599.1] you see the campaigns with, yeah, you have to click in order to get a little bit of money. And by luck,
+[  599.1-  612.0] we noticed that if you go over a URL, we see in the left-button side of the browser a URL redirecting
+[  612.0-  622.1] to the campaign you have to click. And you see that every campaign is using a unique ID. It is just a
+[  622.1-  631.7] simple integer. And the good thing is, it is just incremented. So, now maybe some of you guys notice
+[  631.7-  641.2] what can we do with that. And, yeah, it is really easy with this constructed URL to implement a crawler
+[  641.2-  650.1] for data gathering. And our crawler simply requested all campaign IDs between 0 and 90,000. Maybe some of
+[  650.1-  658.1] you ask why 90,000. As I already said, we also registered as a click worker. And we see we saw
+[  658.1-  667.3] that the highest ID campaign used is about 88,000. So, we thought, OK, 90,000 is a good value. And we
+[  667.3-  674.2] checked for every request between these 90,000 requests, if it got resolved or not. And if it got
+[  674.2-  681.8] resolved, the redirected URL represents the source that should be liked or followed. And we did not
+[  681.8-  690.8] save the page sources from the resolved URLs. We only saved the resolved URLs in a list of campaigns.
+[  691.4-  700.1] And, yeah, this list was then the basis for our further analysis. And, yeah, here you see our list.
+[  700.1-  708.4] Yes, this was the point when Dennis and Philip, when they came to us and said, hey, we have a list.
+[  708.4-  716.0] So, what can you find? And, of course, we searched for AFD, it was one of the first search queries.
+[  716.9-  725.6] And, yeah, of course, AFD is also in that list. Maybe not so surprisingly for some.
+[  725.6-  737.2] And when you look, it is AFD Gelsenkirchen. And the fan page. And we asked AFD Gelsenkirchen,
+[  737.2-  745.8] did you buy likes? And they said, we don't know how we got on that list. But, however, we do not rule
+[  745.8-  756.2] out an anonymous donation. But now you would think, OK, they found AFD. This is very expected. But now,
+[  757.1-  763.6] all political parties, mostly with local and regional entities, showed up on that list. So,
+[  763.6-  774.0] we have CDU, CSU, we have had FDP, SPD, AFD, Die Grünen and Die Linke. But not that you think Angela Merkel or some
+[  774.7-  783.5] very big Facebook fan pages showed up. No, no. Very small entities with a couple of hundreds or maybe
+[  783.5-  791.4] 10,000 or 15,000 followers. And I think this makes perfectly sense because somebody who has already
+[  791.4-  800.8] very, very, very much, many fans probably would not buy them there at paid likes. And we asked many of
+[  800.8-  810.9] them. And mostly they could not explain it. They would never do something like that. Yeah, they were
+[  810.9-  818.7] completely over asked. But you have to think that we only saw the campaign, the campaigns, the Facebook
+[  818.7-  825.9] fan pages. We could not see who bought the likes. And as you can imagine, everybody could have done it.
+[  825.9-  836.2] Like the mother, the brother, the fan, you know, the dog. So, we would have needed a lot of luck to call
+[  836.2-  842.9] anybody out of the blue. And then he would say, oh, yes, I did this. And there were some politicians
+[  842.9-  848.8] who admitted it. And one of them, she did it also publicly and gave us an interview.
+[  850.4-  860.5] Is Tanja Kühne. She is a regional politician from Walzrode in Niedersachsen. And it was the case
+[  860.5-  866.0] that it was after election and she was not very happy with her fan page. That is what she told us.
+[  866.0-  871.6] She was very unlucky and she wanted, you know, to push herself and to boost it a little bit and get
+[  871.6-  878.8] more friends and followers and reach. And then she bought 500 followers. And then we had a nice
+[  878.8-  883.3] interview with her about that. Show you a small piece.
+[  883.3-  888.6] Wenn man sich jetzt sozusagen diese Likes kauft, würden Sie sagen, das ist Betrug?
+[  888.6-  902.3] Ich würde nicht sagen, das ist Betrug. Also es ist ja, es ist ein, es ist ein Mittel der Kommunikation.
+[  902.3-  911.9] Und wer die Fälschung nicht bemerke, dem mangele es an Medienkompetenz. Da ist das Thema Medienkompetenz
+[  911.9-  918.9] wirklich gefragt, sich wirklich zu überlegen, kann das denn überhaupt sein? Also es ist sozusagen
+[  918.9-  928.6] kein Betrug, wenn man Likes kauft. Nochmal, also warum Betrug? Betrug kann es ja nur sein, wenn wir als
+[  928.6-  936.2] Gesellschaft sagen, dass das das Maß oder der Maßstab für uns ist, für Beliebtheit.
+[  936.2-  944.0] Okay, so you see, Answers are pretty interesting and I think she was that courageous to speak out to us.
+[  944.0-  949.2] Many of others did too, but only on the phone and they didn't want to go on record.
+[  949.2-  954.2] But she's not the only one who answered like this, because of course, if you call through a list of
+[  954.2-  960.9] potential fake-like buyers, of course they answer like, no, it's not a scam. And I also think
+[  961.9-  969.7] from a jurisdictional way, it's also very hard to show that this is fraud and a scam and it's more
+[  970.5-  978.5] an ethical problem that you can see here, that it's manipulative if you buy likes.
+[  978.5-  986.0] We also found a guy from FTP from the Bundestag, but yeah, he ran away and didn't want to get
+[  986.0-  995.1] interviewed so I couldn't show him. Yeah, he bought or not probably. He was like 40 times in our list
+[  995.1- 1004.1] for various Facebook posts and videos and also for his Instagram account, but we could not get him on
+[ 1004.1- 1011.1] record. So what did others say? We, of course, confronted Facebook, Instagram and YouTube with
+[ 1011.1- 1018.9] this small research and they said, no, we don't want to fake likes on our platform. Paid likes is active
+[ 1018.9- 1028.0] since 2012, you know, so they waited seven years. But after our report, at least Facebook temporarily
+[ 1028.0- 1036.2] blocked paid likes. And of course, we asked them to and spoke to them and wrote with paid likes in
+[ 1036.2- 1041.7] Magdeburg and they said, of course, it's not a scam because the click workers, they are freely clicking
+[ 1041.7- 1048.5] on pages. So, yeah, kind of nobody cares. But paid likes, this is only the tip of the iceberg.
+[ 1048.5- 1062.5] So, we also wanted to dive a little bit into this fake like universe outside of paid likes and to see
+[ 1062.5- 1071.7] what else is out there. And so, we did an analysis of account creation on Facebook. So, what Facebook
+[ 1071.7- 1080.0] is saying about account creation is that they are very effective against fake accounts. So, they
+[ 1080.0- 1088.5] say they remove billions of accounts each year and that most of these accounts never reach any real
+[ 1088.5- 1096.2] users and they remove them before they get reported. So, what Facebook basically wants to tell you is
+[ 1096.2- 1104.8] that they have it under control. However, there are a number of reports that suggest otherwise. For example,
+[ 1104.8- 1115.4] recently NATO STRATCOM task force released a report where they actually bought 54,000 likes, 54,000
+[ 1115.4- 1125.0] social media interactions for just 300 euros. So, this is a very low price and I think you wouldn't expect
+[ 1125.0- 1132.1] such a low price if it would be hard to get that many interactions. They bought 3,500 comments,
+[ 1132.1- 1145.6] 25,000 likes, 20,000 views and 5,100 followers, everything for just 300 euros. So, you know the thing they have
+[ 1145.6- 1154.4] in common? They are cheap, the fake likes and the fake interactions. So, we also have and there was also
+[ 1154.4- 1164.0] another report from Vice Germany recently and they reported on some interesting facts about automated fake
+[ 1164.0- 1172.5] accounts. They reported on findings that suggest that actually people use internet or hacked internet
+[ 1172.5- 1181.5] of things devices and to use them to create these fake accounts and to manage them and so it's actually
+[ 1181.5- 1188.1] kind of interesting to think about this this way to say okay maybe next election your fridge is actually
+[ 1188.1- 1196.9] going to support the other candidate on Facebook and so we also wanted to look into this and we wanted
+[ 1196.9- 1207.1] to go a step further and to look at who these people are, who are they and what are they doing on Facebook
+[ 1207.1- 1216.5] and so we actually examined the profiles of purchased likes. For this we created four comments under arbitrary
+[ 1216.5- 1225.4] posts and then we bought likes for these comments and then we examined the resulting profiles of the fake likes.
+[ 1225.4- 1234.4] So, we it was pretty cheap to buy these likes. Comment likes are always a little bit more expensive than other likes
+[ 1235.0- 1247.6] and we found all these offerings on Google and we paid with PayPal. So, we actually used a pretty neat trick
+[ 1247.6- 1256.6] to estimate the age of these fake accounts. So, as you can see here the Facebook user ID is
+[ 1256.6- 1267.0] incremented. So, Facebook started in 2009 to use incremented Facebook IDs and they used this pattern of
+[ 1267.0- 1277.5] 100 and then the incremented number and as you can see in 2009 this incremented number was very close
+[ 1277.5- 1289.8] to zero and then today it is close to 40 billion and in this time period you can see that you can
+[ 1290.5- 1299.2] kind of get a rather fitting line through all these points and you can see that the likes are in fact
+[ 1299.2- 1306.9] incremented. The account IDs are in fact incremented over time. So, we can use this fact in reverse to
+[ 1306.9- 1313.3] estimate the creation date of an account where we know the Facebook ID and that's exactly what we did
+[ 1313.3- 1323.6] with these fake likes. So, we estimated the account creation dates and as you can see we get kind of
+[ 1323.6- 1331.8] different results from different services. For example, paid likes they had rather old accounts. So,
+[ 1331.8- 1339.7] this means they use very authentic accounts and we already know that because we talked to them. So,
+[ 1340.9- 1347.2] these are very authentic accounts also like service A over here also uses very very authentic accounts
+[ 1347.2- 1354.0] but on the other hand like service B uses very new accounts so they were all created in the last three
+[ 1354.0- 1361.3] years. So, if you look at the accounts and also from these numbers we think that these accounts were bots
+[ 1361.3- 1372.1] and on service C it's kind of not clear are these are these accounts bots or are these click workers. Maybe
+[ 1372.1- 1380.1] it's a mixture of both. We don't know exactly for sure but this is an interesting metric to measure the age
+[ 1380.1- 1388.2] of the accounts to determine if some of them might be bots and that's exactly what we did on this page. So,
+[ 1388.2- 1396.9] this is actually a page for garden furniture and we found it in our list that we got from paid likes. So,
+[ 1396.9- 1406.4] they bought obviously they were on this list for bought likes on paid likes and they caught our eye
+[ 1406.4- 1415.3] because they had one million likes and that's rather unusual for a shop for garden furniture in Germany.
+[ 1415.3- 1426.9] And so, we looked at this page further and we noticed other interesting things. For example,
+[ 1426.9- 1435.7] their posts all the time they got like thousands of likes and that's also kind of unusual for a garden
+[ 1435.7- 1442.9] furniture shop. And so, we looked into the likes and as you can see they all look like they come from
+[ 1442.9- 1452.5] Southeast Asia and they don't look very authentic. And we were actually able to estimate the creation
+[ 1452.5- 1458.4] dates of these accounts and we found that most of these accounts that were used for liking these posts
+[ 1458.4- 1468.1] on this page were actually created in the last three years. So, this is a page where everything from the number
+[ 1468.1- 1474.9] of people who like the page to the number of people who like the posts is complete fraud. So,
+[ 1474.9- 1483.5] nothing about this is real and it's obvious that this can happen on Facebook and that this is a really,
+[ 1483.5- 1491.1] really big problem. I mean, this is a shop for garden furniture. Obviously, they probably don't have
+[ 1491.1- 1499.3] such huge sums of money. So, it was probably very cheap to buy this amount of fake accounts and
+[ 1500.6- 1507.0] it's really shocking to see how big the scale is of this kind of operations.
+[ 1507.0- 1517.3] So, what we have to say is, okay, when Facebook says they have it under control, we have to doubt that.
+[ 1519.5- 1528.5] So, now we can look at the bigger picture. And what we are going to do here is we are going to use
+[ 1528.5- 1536.8] this same graph that we used before to estimate the creation dates but in a different way. So, we can
+[ 1536.8- 1544.6] actually see the lowest and the highest points of Facebook IDs in this graph. So, we know the newest
+[ 1544.6- 1554.5] Facebook ID by creating a new account and we know the lowest ID because it's zero. And then we know that
+[ 1554.5- 1563.7] there are 40 billion Facebook IDs. Now, in the next step, we took a sample, a random sample from these 40
+[ 1563.7- 1572.3] billion Facebook IDs. And inside of the sample, we checked if these accounts exist, if this ID
+[ 1572.3- 1577.9] corresponds to an existing account. And we do that because we obviously cannot check 40 billion
+[ 1577.9- 1586.3] accounts, 40 billion IDs, but we can check a small sample of these accounts, of these IDs, and estimate
+[ 1586.3- 1596.9] then the number of existing accounts on Facebook in total. So, for this we repeatedly accessed the same
+[ 1596.9- 1606.7] sample of one million random IDs over the course of one year. And we also pulled a sample of 10 million
+[ 1606.7- 1614.6] random IDs for closer analysis this July. And now Dennis is going to tell you how we did it.
+[ 1614.6- 1623.9] Yeah. Well, pretty interesting results so far, right? So, we again implemented a crawler the second time
+[ 1623.9- 1631.6] for gathering public Facebook information, public Facebook account data. And yeah, this was not so
+[ 1631.6- 1642.7] easy as in the first case. Yeah, as it's not surprising that Facebook is using a lot of measures to
+[ 1642.7- 1653.4] to block the automated crawling of the Facebook page, for example, with IP blocking or capture solving.
+[ 1654.0- 1663.1] But we were pretty easy, yeah, we could pretty easily solve this problem by using the Tor anonymity network.
+[ 1663.1- 1674.0] So, every time our IP got blocked by crawling the data, we just made a new Tor connection and changed the IP.
+[ 1674.5- 1685.2] And this is also with the captures. And with this easy method, we were able to crawl all the public Facebook data.
+[ 1685.2- 1697.4] So, let's have a look at two examples. The first example is facebook.com slash four. So, the very, very small Facebook ID.
+[ 1698.3- 1704.5] Yeah, in this case, we are redirected and check the response and find a valid account page.
+[ 1705.2- 1712.4] Does anyone know which account this is? Number four. Yeah, Mark Zuckerberg. Yeah, that's correct.
+[ 1712.4- 1719.6] Yeah, this is a public account from Mark Zuckerberg. Number four. As we see, as we already saw, the other
+[ 1720.5- 1728.6] IDs are really high, but he got the number four. The second example was, yeah, facebook.com slash three.
+[ 1729.2- 1737.3] In this case, we are not forwarded. And this means that it is an invalid account. And that was really easy to
+[ 1737.3- 1744.3] confirm with a quick Google search. And it was a test account from the beginning of Facebook.
+[ 1744.9- 1755.1] So, we did not get redirected. And it's just the login page from Facebook. And with these examples,
+[ 1755.1- 1764.5] we did a lot more experiments. And at the end, we were able to build this tree.
+[ 1764.5- 1772.3] And, yeah, this tree represents the high-level approach from our scraper. So, in the...
+[ 1772.3- 1778.0] What's that? Okay. Yes. Sleeping. Yeah.
+[ 1779.9- 1782.8] We have still time, right? So... Wait. It's...
+[ 1786.5- 1792.5] Okay. Everyone is waking up again. So, yeah. In the first step, we call the
+[ 1792.5- 1800.9] the... The domain, www.facebook.com slash FID. If we get redirected in this case,
+[ 1800.9- 1807.7] then we check if the... If the page is an account page. If it's an account page,
+[ 1807.7- 1816.3] then it's a public account, like the example four. And we were able to save the raw data,
+[ 1816.3- 1824.9] the raw HTTP source. If we... If it's not a account page, then everything is okay. It is not... It is
+[ 1824.9- 1833.4] not a public account. And we are not able to save any data. And if we call... If we do... If we do not
+[ 1833.4- 1840.7] get redirected in the first step, then we call the second domain, facebook.com slash profile dot php
+[ 1840.7- 1849.6] question mark ID equals the FID with the mobile user agent. And... If we get redirected, then... Then...
+[ 1849.6- 1856.9] Again, it is a non-public profile and we cannot save anything. But... And if we get not redirected,
+[ 1856.9- 1866.5] it is an invalid profile and it is most often... A deleted account. Yeah. And... Yeah. That's the
+[ 1866.5- 1873.8] high-level overview of our scraper and Philip will now give some more information on interesting results.
+[ 1874.9- 1883.5] So... The most interesting result of the scraping of the sample of Facebook IDs was that one in four
+[ 1883.5- 1892.7] Facebook IDs corresponds to a valid account. And... You can do the math. There are 40 billion Facebook
+[ 1892.7- 1900.6] IDs. So... There must be 10 billion registered users on Facebook. And... This means that there are more
+[ 1901.3- 1906.3] registered users on Facebook than there are humans on Earth. And... Also, it means that...
+[ 1909.0- 1914.1] It's... It's even worse than that because not everybody on Earth can have a Facebook account
+[ 1914.1- 1919.0] because not everybody... You need a smartphone for that. And... Many people don't have those.
+[ 1919.0- 1922.3] So... This is actually a pretty high number. And... It's very unexpected.
+[ 1923.1- 1931.0] So... July 2019, there were more than 10 billion Facebook accounts. Also, we did another research on
+[ 1931.0- 1939.4] the time frame between October 2018 and today, or this month. And we found that in this time frame,
+[ 1939.4- 1946.9] there were 2 billion new registered Facebook accounts. So... This is like the time frame of one year,
+[ 1946.9- 1954.9] more or less. And in a similar time frame, the monthly active user base rose by only 187 million.
+[ 1956.9- 1966.9] Facebook deleted 150 million older accounts between October 2018 and July 2019. And we know that
+[ 1966.9- 1973.9] because we pulled the same sample over a longer period of time. And then we watched for accounts that
+[ 1973.9- 1981.3] got deleted in the sample. And that enables us to estimate this number of 150 million accounts that got
+[ 1981.3- 1990.5] deleted that are basically older than our sample. So... I made some nice graphs for your viewing pleasure. So...
+[ 1990.5- 2004.9] Again, the older accounts were... Just 150 million were deleted since October 2018. These accounts that are older than last year.
+[ 2005.4- 2014.4] And Facebook claims that since then, about 7 billion accounts got deleted from their platform, which is vastly more than
+[ 2014.4- 2021.3] these older accounts. And that's why we think that Facebook mostly deleted these newer accounts.
+[ 2023.7- 2030.0] And if an account is older than a certain age, then it is very unlikely that it gets deleted.
+[ 2032.0- 2039.4] Also, I think you can see the scales here. So, of course, registered users are not the same thing as active users,
+[ 2039.4- 2048.0] but you can still see that there are much more registrations of new users than there are active users, than there are new active users
+[ 2048.6- 2056.9] during the last year. So, what does this all mean? Does it mean that Facebook gets flooded by fake accounts?
+[ 2059.3- 2061.9] We don't really know. We only know these numbers.
+[ 2061.9- 2070.1] What Facebook is telling us is that they only count and publish active users. As I already said,
+[ 2070.1- 2078.5] that there is a disconnect between the registered users and the active users. And Facebook only reports
+[ 2078.5- 2087.2] on the active users. Also, they say that users register accounts, but they don't verify them or they
+[ 2087.2- 2095.8] don't use them. And that's how this number gets so high. But I think that that's not really explaining
+[ 2095.8- 2106.1] these high numbers. Because that's just by orders of magnitude larger than anything that this could cause.
+[ 2106.7- 2114.7] Also, they say that they regularly delete fake accounts. But we have seen that these are mostly accounts
+[ 2114.7- 2121.7] that get deleted directly after their creation. And if they survive long enough, then they are getting
+[ 2121.7- 2133.9] through. So, what does this all mean? Okay. So, you got the full load, which I had, like,
+[ 2134.5- 2144.1] over two or three months. And what for me was, or for us, was one very big conclusion was that we have
+[ 2144.1- 2151.4] some kind of broken metric here. That all the likes and all the hearts on Instagram and the followers,
+[ 2151.4- 2157.8] that they can so easily be manipulated. And then it's so hard to tell. In some cases, it's so hard to
+[ 2157.8- 2166.7] tell if they are real or not real. And this opens the gate for manipulation and for untrueness and for
+[ 2166.7- 2173.9] economic losses, if you think as somebody who is investing money and or as an advertiser, for example.
+[ 2176.1- 2183.8] And in the very end, it is a case of eroding trust, which means that we cannot trust these numbers
+[ 2183.8- 2190.7] anymore. These numbers are, you know, they are so easily, they can be manipulated and why should we
+[ 2190.7- 2198.2] trust this? And this has a severe consequence for all the social networks if you are still in them.
+[ 2199.2- 2202.8] So, what can be a solution? And Philip, you thought about that.
+[ 2204.1- 2212.6] So, basically, we have two problems. One is click workers and one is fakes. The click workers are
+[ 2212.6- 2220.3] basically just hyperactive users and they are selling their hyperactivity. And so, what social
+[ 2220.3- 2228.0] networks could do is just make interactions scarce. So, just lower the value of more interactions.
+[ 2228.0- 2234.3] If you are hyperactive users, then your interaction should count less than the interactions of a less
+[ 2234.3- 2243.7] active user. That's kind of solvable, I think. The real problem is the authenticity. So, if you
+[ 2243.7- 2253.6] get stopped from posting or liking hundreds of pages a day, then maybe you just create multiple accounts
+[ 2253.6- 2261.2] and operate them simultaneously. And this can only be solved by authenticity. So, this can only be solved
+[ 2261.2- 2268.3] if you know that the person who is operating the account is just one person is operating one account.
+[ 2268.3- 2276.3] And this is really hard to do because Facebook doesn't know who is clicking. Is it a bot? Is it a click worker?
+[ 2276.3- 2284.3] Is it one click worker for 10 accounts? How does this work? And so, this is really hard for the social media companies to
+[ 2285.3- 2293.1] do. And you could say, okay, let's send in the passport or something like that to prove authenticity,
+[ 2293.1- 2298.7] but that's actually not a good idea because nobody wants to send their passport to Facebook. And so,
+[ 2298.7- 2305.6] this is really a hard problem that has to be solved if we want to use social media in a meaningful way.
+[ 2306.8- 2315.2] And so, this is what companies could do. And now, what you could do. Okay, of course, you can delete your
+[ 2315.2- 2321.7] Facebook account or your Instagram account and stop staying away from social media.
+[ 2324.0- 2331.7] But this maybe is not for all of us a solution. So, I think be aware, of course, spread the word,
+[ 2331.7- 2342.8] tell others. And if you like and you get more intelligence about that, we are really happy to
+[ 2342.8- 2350.3] dig deeper in these networks and we will go on investigating. And so, last but not least,
+[ 2350.3- 2360.0] it's to say thank you to you guys. Thank you very much for listening. And we did not do this alone.
+[ 2361.7- 2367.9] We are not three people. There are many more standing behind and doing this beautiful research.
+[ 2367.9- 2370.4] And we are opening now for questions, please.
+[ 2370.4- 2388.3] Yes. Please thank Svea, Phil and Dennis again. And we have microphones out here in the room,
+[ 2388.3- 2396.1] about nine of them actually. If you line up behind them to ask a question, remember that a question
+[ 2396.1- 2400.7] is a sentence with a question mark behind it. And I think I see somebody at number three,
+[ 2400.7- 2405.3] so let's start with that. Hi. I just have a little question.
+[ 2405.3- 2410.6] Wouldn't a dislike button, the concept of a dislike button, wouldn't that be a solution too,
+[ 2411.4- 2419.5] for all the problems? So, we thought about recommending that Facebook ditches the like
+[ 2419.5- 2424.8] button altogether. I think that would be a better solution than a dislike button, because a dislike
+[ 2424.8- 2430.2] button could also be manipulated. And it would be even worse, because you could actually manipulate
+[ 2430.2- 2439.4] the network into downranking posts or kind of not showing posts to somebody. And that, I think,
+[ 2439.4- 2447.9] would be even worse. I imagine what dictators would do with that. And so, I think the best option would be
+[ 2447.9- 2462.2] to actually make people not invest into these accounts if they become meaningless.
+[ 2464.5- 2469.9] I think I see a microphone seven up there. Hello. So, one question I had is,
+[ 2469.9- 2490.8] you assigned creation dates to IDs. How did you do this? So, we actually knew the creation date of
+[ 2490.8- 2498.7] some accounts, and then we kind of interpolated between the creation dates and the IDs. So,
+[ 2498.7- 2506.0] you see this black line there. That's actually our interpolation. And with this black line,
+[ 2506.0- 2514.4] we can then estimate the creation dates for IDs that we do not yet know because it kind of fills in the gaps.
+[ 2516.8- 2523.5] Follow-up question. Do you know why there are some points outside of this graph? No.
+[ 2525.5- 2531.6] Thank you. So, there was a question from the internet. Did you report your findings to Facebook
+[ 2531.6- 2542.2] and did they do anything? Because this research is very new. We just recently approached them and
+[ 2543.5- 2550.9] showed them the research and we got an answer, but I think we already showed the answer. It was that they
+[ 2552.5- 2559.0] I think, yeah, that they only count and publish active users. They didn't want to tell us how many
+[ 2559.0- 2565.4] registered users they have. That they say, oh, sometimes users register accounts, but don't use them or
+[ 2565.4- 2571.0] verify them, and that they regularly delete fake accounts. But we hope that we get into a closer
+[ 2571.0- 2582.8] discussion with them soon about this. Microphone two. When hunting down the buyers of the campaigns,
+[ 2582.8- 2591.0] did you dig out your own campaign, line below the line? No, because they stopped scraping in August.
+[ 2592.1- 2600.1] And you stopped scraping in August and then I started, you know, the whole project started
+[ 2600.1- 2606.5] with them coming to us with the list. And then we thought, oh, this is very interesting. And then the
+[ 2606.5- 2614.8] whole journalistic research started. But I think if we would do it again, of course, I think we would
+[ 2614.8- 2621.8] find us. We also found there was another magazine and they did also a test, a paid test a couple of
+[ 2621.8- 2629.2] years ago and we found their campaign. So we actually did another test and for the other test,
+[ 2629.2- 2640.4] I know that we also got this ID. And it worked to plug it into this URL and then we also got redirected to
+[ 2640.4- 2649.4] our own page. So that worked, yeah. Thank you. Microphone three. Hi. I'm Farhan. I'm a Pakistani journalist.
+[ 2649.4- 2653.8] And first of all, I would like to say that you were right when you said that there might be people
+[ 2653.8- 2660.2] sitting in Pakistan clicking on the likes. That does happen. But my question would be that Facebook
+[ 2660.2- 2668.4] does have its own ad program that it aggressively pushes. And in that ad program, there is also
+[ 2668.4- 2676.2] options whereby people can buy likes and comments and impressions and reactions. Did you, would you also
+[ 2676.2- 2684.4] consider those as fake? I mean, they're not fake per se, but they're still bought likes. So what's your
+[ 2685.8- 2697.1] view on those? Thank you. So when you buy ads on Facebook, then so what you actually want to have is
+[ 2697.1- 2702.8] fans for your page that are actually interested in your page. So that's kind of the difference, I think,
+[ 2702.8- 2711.4] to the paid likes system where the people themselves, they get paid for liking stuff that they wouldn't
+[ 2711.4- 2717.6] normally like. So I think that's the fundamental difference between the two programs. And that's
+[ 2717.6- 2725.0] why I think that one is unethical and one is not really that unethical. The very problem is if you
+[ 2725.0- 2733.0] if you buy this click workers, then you have many people in your fan page, they are not interested in
+[ 2733.0- 2737.7] you. They don't care about you, they don't look at your products, they don't look at your political
+[ 2737.7- 2747.0] party. And then often the people, they additionally, they make Facebook ads. And these ads, they are shown
+[ 2747.0- 2753.4] again, the click workers, and they don't look at them. So, you know, the people, they are burning money
+[ 2753.4- 2762.0] and money and money and money with this whole corrupt system. So, microphone two. Hi, thanks. Thanks for
+[ 2762.0- 2768.8] the talk and thanks for the effort of going through all of this project. From my understanding, this
+[ 2768.8- 2777.9] whole finding basically undermines the trust in Facebook's likes per se in general. So, I would expect
+[ 2777.9- 2786.1] now the price of likes to drop and the pay for click workers to drop as well. Do you have any
+[ 2786.1- 2795.7] metrics on that? The research just went public, I think, one week ago. So, what we have seen as an
+[ 2795.7- 2805.0] effect is that Facebook, they excluded paid likes for a moment. So, yes, of course, one platform is down, but I
+[ 2805.0- 2812.9] think there are so many outside, there are so many. So, I think... I meant the phenomenon of paid
+[ 2812.9- 2823.2] likes, not the company itself. Like the value of a like as a measure of credibility is declining now.
+[ 2823.2- 2830.1] That's my assumption. Yes, that's why many people are buying Instagram hearts now. So, yes, that's true.
+[ 2830.1- 2838.0] The like is not the fancy hot shit anymore, yes? And we also saw in the data that the likes for the fan
+[ 2838.0- 2845.7] pages, they rapidly went down and the likes for the posts and the comments, they went up. So, I think,
+[ 2845.7- 2852.7] yes, there is a shift and what we also saw in the data was that the Facebook likes, they went down
+[ 2852.7- 2860.4] until from 2016, they are rapidly down and what is growing and rising is YouTube and Instagram.
+[ 2860.4- 2866.9] Now, everything is about today, everything is about Instagram. Thanks. So, let's go to number one.
+[ 2867.9- 2873.9] Hello and thank you very much for this fascinating talk because I've been following this whole topic
+[ 2873.9- 2881.2] for a while and I was wondering if you were looking also into the demographics in terms of age groups
+[ 2881.2- 2887.8] and social class not of the people who are doing the actual liking but actually, you know, buying these
+[ 2887.8- 2894.9] likes because I think that what is changing is an entire social discourse on social capital and the
+[ 2894.9- 2902.8] bold U.S. kind of term because it can now be quantified. As a teacher, I hear of kids who buy likes
+[ 2902.8- 2908.3] to be more popular than their other schoolmates. So, I'm wondering if you're looking into that
+[ 2908.8- 2914.4] because I think that's a fascinating, fascinating area to actually come up with numbers about.
+[ 2914.4- 2923.3] It definitely is and we were also fascinated by this data set of 90,000 data points and what we did was
+[ 2923.3- 2930.7] and this was very hard and was that we tried first of all to look who is buying likes like are this
+[ 2930.7- 2942.9] automotive, you know, what kind of branches, who is in that. So, this was doable but to get more into
+[ 2942.9- 2952.4] demographics, you would have liked to crawl, to click every page and so we did not do this. What we did
+[ 2952.4- 2960.4] was, of course, that we were a team of three to ten people and manually looking into it and what we,
+[ 2960.4- 2966.4] of course, saw that on Instagram and on YouTube, you have many of these very young people, some of
+[ 2966.4- 2972.6] them I actually called them and they were like, yes, I bought likes, very bad idea. So, I think,
+[ 2972.6- 2979.3] yes, I think there is a demographic shift away from the companies and the automotive and industries
+[ 2979.3- 2986.4] buying Facebook fan page likes to Instagram and YouTube wannabe influencers.
+[ 2986.4- 2989.0] Influencer culture is obviously affected by this.
+[ 2989.0- 2996.7] And I have to admit, here we showed you the political side but we have to admit that the political
+[ 2996.7- 3004.4] likes, they were like this small in the numbers and the very, very vast majority of this data set
+[ 3004.4- 3013.2] is about wedding planners, photography, tattoo studios and influencers, influencers, influencers and
+[ 3013.2- 3016.1] YouTubers, of course, yes. Thank you so much.
+[ 3016.1- 3020.0] So, we have a lot of questions in the room. I'm going to get to you as soon as we can.
+[ 3020.0- 3021.5] I'd like to go to the internet first.
+[ 3023.2- 3028.1] Do you think this will get better or worse if people move to more decentralized platforms?
+[ 3031.0- 3032.4] If it get better or worse?
+[ 3035.0- 3036.2] Can you repeat that, please?
+[ 3037.2- 3042.3] Would this issue get better or worse if people move to more decentralized platform?
+[ 3042.3- 3043.0] Decentralized.
+[ 3043.0- 3044.2] Decentralized, okay.
+[ 3044.2- 3056.6] So, I mean, we can look at this slide, I think, and think about whether decentralized platforms would
+[ 3056.6- 3066.2] change any of these two points here and I fear I don't think so because they cannot solve the
+[ 3067.0- 3072.4] interactions problem that people can be hyperactive. Actually, that's kind of a normal thing in social
+[ 3072.4- 3079.0] media that a small portion of social media users is much more active than everybody else. You have
+[ 3079.0- 3085.8] that without paying for it. So, without even having paid likes, you will have to consider if social media
+[ 3085.8- 3093.8] is really kind of representative of the society. But, and the other thing is authenticity and also in a
+[ 3093.8- 3099.7] decentralized platform, you can have multiple accounts run by the same person.
+[ 3099.7- 3103.5] So, microphone seven, all the way back there.
+[ 3103.5- 3111.9] Hi. Do you know if Facebook even removes the likes when they delete fake accounts?
+[ 3111.9- 3114.0] Do you know that?
+[ 3114.0- 3118.2] No. We don't know that.
+[ 3118.2- 3125.3] No, we don't know. We know they delete fake accounts, but we don't know if they also delete the likes.
+[ 3125.3- 3131.3] I know from our research that the people we approached, they did not delete the click workers.
+[ 3132.5- 3133.3] They kept them.
+[ 3133.3- 3134.8] So, microphone two.
+[ 3135.9- 3142.8] Yeah. Hi. So, I have a question with respect to this. One out of four Facebook accounts are active
+[ 3142.8- 3148.0] in your test. Did you see any difference with respect to the age of the accounts? So,
+[ 3148.0- 3155.7] is it always one out of four through the entire sample or does it maybe change over the, like,
+[ 3155.7- 3159.0] going from a zero idea to, well, 10 billion or 40 billion?
+[ 3159.9- 3168.0] So, you're talking about the density of accounts in our IDs, kind of. So, there are changes over time.
+[ 3168.0- 3178.1] Yeah. So, I think now it's less than it was before. So, now they are less than four and before it was more.
+[ 3178.1- 3180.8] And so, I think it was, yeah, I don't know.
+[ 3181.5- 3186.9] But you didn't see anything specific that now only in the new accounts only one out of 10 is active
+[ 3186.9- 3190.9] or valid and before it was one out of two or something like that.
+[ 3190.9- 3194.4] It's not that extreme. So, it's less than that. It's kind of.
+[ 3195.3- 3199.8] We have to say we did not check this, but there were no special cases.
+[ 3200.9- 3206.9] But it changed over time. So, before it was less and before it was more and now it is less.
+[ 3207.5- 3213.7] And so, what we checked was whether an ID actually corresponds to an account. And so,
+[ 3213.7- 3218.9] this metric, yeah, and it changed a little bit over time, but not much. So,
+[ 3218.9- 3225.5] yeah. So, number three, please. Yeah. Thank you for a very interesting talk. At the end,
+[ 3225.5- 3231.5] you gave some recommendations how to fix the metrics, right? And it's always nice to have
+[ 3231.5- 3236.5] some metrics because then, well, we are the people who deal with numbers, so we want the metrics.
+[ 3236.5- 3242.5] But I want to raise the issue whether quantitative measure is actually the right thing to do. So,
+[ 3242.5- 3250.5] would you buy your furniture from store A with 300 likes against store B with 200 likes? Or would
+[ 3250.5- 3255.6] it not be better to have a more qualitative thing? And to what extent is the quantitative measure
+[ 3255.6- 3261.5] maybe also the source of a lot of bad developments we see in social media to begin with?
+[ 3262.4- 3267.5] Even not with bot farms and anything, but just people who go for the quick like and say,
+[ 3267.5- 3272.4] hooray for Trump and then you get whatever all the Trump is liking that and the others say,
+[ 3272.4- 3277.6] fuck Trump and you get all the non-Trump is like that and you get all the polarization, right?
+[ 3277.6- 3284.9] So, Instagram, I think they just don't display their like equivalent anymore in order to prevent
+[ 3284.9- 3292.0] that. So, could you maybe comment on that? I think this is a good idea to hide the likes, yes,
+[ 3292.0- 3298.7] but I, you know, we talked to many click workers and they do a lot of stuff and what they also do is
+[ 3299.5- 3307.4] taking comments and doing copy paste for comment section or for Amazon reviews. So, you know,
+[ 3307.4- 3313.3] I think it's really hard to get them out of the system because maybe if the likes are not shown and
+[ 3313.9- 3319.9] when the comments are counting, then you will have people who are copy pasting comments in the
+[ 3319.9- 3325.9] comments section. So, I really think that the networks, they really have an issue here.
+[ 3327.1- 3332.2] So, let's try to squeeze the last three questions now. First, number seven, really quick.
+[ 3332.2- 3339.7] Very quick. Thank you for the nice insights. And I have a question about the location of the users.
+[ 3339.7- 3345.8] So, you made your point that you could analyse by the metadata when the account was made,
+[ 3345.8- 3351.4] but how about the location of the followers? Is there any way to analyse that as well?
+[ 3351.4- 3359.9] So, we can only analyse that if the users agree to share it publicly and not all of them do that.
+[ 3361.3- 3368.9] I think often a name check is often a very good way to check where somebody is from for these fake likes,
+[ 3368.9- 3374.9] for example. But, as I said, it always depends on what the user himself is willing to share.
+[ 3377.5- 3384.4] Internet? Isn't this just a Western version of the Chinese social credit system? Where do we go from here?
+[ 3384.4- 3389.4] What is the future of all this? Yeah, that's dystopian, right?
+[ 3389.4- 3402.4] So, yeah, after this research, you know, for me, I deleted my Facebook account like one or two years ago.
+[ 3402.4- 3408.1] So, this, you know, this did not matter to me so much, but I stayed on Instagram.
+[ 3409.0- 3416.0] And when I saw all this bought likes and abonnements and followers and also YouTube, all these views,
+[ 3416.0- 3421.3] this because the click workers, they also watch YouTube videos. They have to stay on them like 40 seconds.
+[ 3421.3- 3427.2] It's really funny because they have hearing like techno music, rap music, all 40 seconds and then they go on.
+[ 3427.8- 3437.6] But when I sat next to Harald for two hours, three hours, I was so delusionated about all the social network
+[ 3437.6- 3445.7] things and I thought, okay, don't count on anything. Just if you like the content, follow them and look at them.
+[ 3446.0- 3451.5] But don't believe anything. That was my personal takeaway from this research.
+[ 3453.4- 3455.5] So, very last question, microphone two.
+[ 3456.8- 3463.2] A couple of days ago, the independent reported that Facebook, the Facebook app was activating the camera
+[ 3463.2- 3472.2] when reading a news feed. Could this be used in the context of detecting fake accounts?
+[ 3472.2- 3474.2] I don't know.
+[ 3476.2- 3487.3] So, I think that in this particular instance that it was probably a bug. So, I don't know, but I mean,
+[ 3488.5- 3493.3] the people who work at Facebook are not all of them are like crooks or anything that they will
+[ 3493.3- 3499.7] deliberately program this kind of stuff. So, they said that it was kind of a bug from an update that
+[ 3499.7- 3506.4] they did. And the question is whether we can actually detect fake accounts with the camera.
+[ 3507.0- 3516.5] And the problem is that I don't think that current face recognition technology is enough to detect
+[ 3518.9- 3522.6] that you are a unique person. So, there are so many people on the planet
+[ 3522.6- 3529.3] that there are probably another person who has the same face. And I think the new iPhone,
+[ 3529.3- 3535.9] they also have this much more sophisticated version of this technology. And even they say,
+[ 3535.9- 3541.3] okay, there's a chance of one in, I don't know, that there is somebody who can unlock your phone.
+[ 3542.1- 3550.0] So, I think it's really hard to do that with the current technology to actually prove that somebody is just one person.
+[ 3551.8- 3561.3] So, with that, would you please help me thank Svea, Dennis and Philip one more time for this fantastic
+[ 3562.3- 3568.5] presentation. Very interesting and very, very disturbing. Thank you very much.

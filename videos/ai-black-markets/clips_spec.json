@@ -1,0 +1,35 @@
+{
+ "cc_nk_ai": {
+  "mp4": "https://cdn.media.ccc.de/events/emf/2026/h264-hd/emf2026-21501-eng-North_Korean_agent_looking_for_a_job_hd.mp4",
+  "audio": ".cc-src/aibm/north-korean.m4a",
+  "t0": 1249.0,
+  "t1": 1256.3,
+  "title": "North Korean agent looking for a job",
+  "author": "Simon Wijckmans \u00b7 EMF Camp 2026 (media.ccc.de)",
+  "licence": "CC BY-SA 4.0",
+  "page": "https://media.ccc.de/v/emf2026-215-1-north-korean-agent-looking-for-a-job",
+  "words": "With AI, these bad actors became way more powerful, way more capable at bypassing all of your usual checks and questions."
+ },
+ "cc_gai_voice": {
+  "mp4": "https://cdn.media.ccc.de/events/god/2024/h264-hd/god2024-56275-eng-GenAI_in_the_Battle_of_Security_Attacks_Defenses_and_the_Laws_Shaping_AIs_Future_hd.mp4",
+  "audio": ".cc-src/aibm/genai-in-the-battle.mp3",
+  "t0": 313.3,
+  "t1": 331.2,
+  "title": "GenAI in the Battle of Security: Attacks, Defenses, and the Laws Shaping AI's Future",
+  "author": "Niklas Bunzel, Raphael Antonius Frick \u00b7 Fraunhofer SIT \u00b7 GoD 2024 (media.ccc.de)",
+  "licence": "CC BY-SA 4.0",
+  "page": "https://media.ccc.de/v/god2024-56275-genai-in-the-battle-of-sec",
+  "words": "But actually, like, only five to ten seconds of audio is needed. So, you can just call somebody and say, hey, is, for example, Mary at home? I would like to speak with her. Unfortunately, I got the wrong number and so on. So, it's actually kind of easy to get hold of, like, just five seconds of audio."
+ },
+ "cc_id_shops": {
+  "mp4": "https://cdn.media.ccc.de/congress/2024/h264-hd/38c3-383-eng-identity_theft_credit_card_fraud_and_cloaking_services_-_how_state-sponsored_propaganda_makes_use_of_the_cyber_criminal_toolbox.mp4",
+  "audio": ".cc-src/aibm/identity-theft.mp3",
+  "t0": 1309.5,
+  "t1": 1340.0,
+  "title": "identity theft, credit card fraud and cloaking services \u2013 how state-sponsored propaganda makes use of the cyber criminal toolbox",
+  "author": "Alexej Hock, Max Bernhard \u00b7 38C3 (media.ccc.de)",
+  "licence": "CC BY 4.0",
+  "page": "https://media.ccc.de/v/38c3-identity-theft-credit-card-fraud-and-cloaking-services-how-state-sponsored-propaganda-makes-use-of-the-cyber-criminal-toolbox",
+  "words": "(window; see words.json)"
+ }
+}

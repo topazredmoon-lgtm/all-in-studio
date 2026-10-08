@@ -1,0 +1,3646 @@
+{
+ "id": "captchas-full",
+ "title": "THE DARK REALITY OF CAPTCHAS · full film",
+ "voice": {
+  "engine": "kokoro",
+  "name": "af_heart",
+  "speed": 0.95
+ },
+ "pace": {
+  "lead": 0.2,
+  "gap": 0.45,
+  "min_beat": 2.4,
+  "to_clip": 0.25,
+  "after_clip": 0.45,
+  "end_pad": 2.5
+ },
+ "beats": [
+  {
+   "id": "h00",
+   "vo": "Select all squares with traffic lights. Simple, right?",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Captcha4",
+       "surface": "bare",
+       "img": "captchas/traffic_1.jpg",
+       "iw": 960,
+       "ih": 1536,
+       "crop": {
+        "x": 140,
+        "y": 100,
+        "s": 800
+       },
+       "target": "traffic lights",
+       "picks": [
+        0,
+        1,
+        4,
+        5,
+        9,
+        7,
+        11
+       ],
+       "pickAt": "traffic",
+       "every": 6
+      }
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Captcha4",
+       "surface": "bare",
+       "img": "captchas/traffic_1.jpg",
+       "iw": 960,
+       "ih": 1536,
+       "crop": {
+        "x": 140,
+        "y": 100,
+        "s": 800
+       },
+       "target": "traffic lights",
+       "picks": [
+        0,
+        1,
+        4,
+        5,
+        9,
+        7,
+        11
+       ],
+       "pickAt": -60,
+       "every": 0,
+       "ring": 10,
+       "ringAt": "right"
+      },
+      "cap": "simple, *right?*",
+      "at": "Simple"
+     }
+    ],
+    "sfx": [
+     {
+      "k": "click",
+      "at": "traffic",
+      "plus": 0
+     },
+     {
+      "k": "click",
+      "at": "traffic",
+      "plus": 6
+     },
+     {
+      "k": "click",
+      "at": "traffic",
+      "plus": 12
+     },
+     {
+      "k": "click",
+      "at": "traffic",
+      "plus": 18
+     },
+     {
+      "k": "click",
+      "at": "traffic",
+      "plus": 24
+     },
+     {
+      "k": "click",
+      "at": "traffic",
+      "plus": 30
+     },
+     {
+      "k": "click",
+      "at": "traffic",
+      "plus": 36
+     }
+    ],
+    "act": "01 the little box"
+   }
+  },
+  {
+   "id": "c01",
+   "clip": {
+    "src": "captchas/cc_wm15_annoying.mp4",
+    "from": 0.15,
+    "to": 9.26,
+    "plate": "Luis von Ahn · CAPTCHA co-inventor · Wikimania 2015"
+   }
+  },
+  {
+   "id": "a02",
+   "vo": "He's right to apologize. We've all stared at that corner.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "Captcha4",
+     "surface": "bare",
+     "img": "captchas/traffic_1.jpg",
+     "iw": 960,
+     "ih": 1536,
+     "crop": {
+      "x": 140,
+      "y": 100,
+      "s": 800
+     },
+     "target": "traffic lights",
+     "picks": [
+      0,
+      1,
+      4,
+      5,
+      9,
+      7,
+      11
+     ],
+     "pickAt": -60,
+     "every": 0,
+     "ring": 10,
+     "ringAt": -30
+    },
+    "R": {
+     "v": "Square",
+     "surface": "bare",
+     "img": "captchas/traffic_1.jpg",
+     "iw": 960,
+     "ih": 1536,
+     "crop": {
+      "x": 140,
+      "y": 100,
+      "s": 800
+     },
+     "target": "traffic lights",
+     "tile": 10,
+     "mark": {
+      "x": -0.04,
+      "y": 0.0,
+      "w": 0.2,
+      "h": 0.98
+     },
+     "at": "corner",
+     "q": "count?",
+     "qAt": "corner",
+     "enter": "stared",
+     "reveal": true
+    },
+    "cap": "we've all stared at *that corner*",
+    "act": "01 the little box"
+   }
+  },
+  {
+   "id": "a03",
+   "vo": "Researchers at UC Irvine added it up. Eight hundred nineteen million hours on reCAPTCHA alone. That's more than ninety thousand years.",
+   "say": "Researchers at UC Irvine added it up. Eight hundred nineteen million hours on re-CAPTCHA alone. That's more than ninety thousand years.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "plate": "uc irvine study · 2023"
+      },
+      "R": {
+       "v": "Checkbox",
+       "surface": "bare"
+      },
+      "cap": "researchers *added it up*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Captcha4",
+       "surface": "bare",
+       "img": "captchas/traffic_1.jpg",
+       "iw": 960,
+       "ih": 1536,
+       "crop": {
+        "x": 140,
+        "y": 100,
+        "s": 800
+       },
+       "target": "traffic lights",
+       "picks": [
+        0,
+        1,
+        4,
+        5,
+        9,
+        7,
+        11
+       ],
+       "pickAt": -60,
+       "every": 0,
+       "tag": {
+        "t": "819 million hours",
+        "at": "819"
+       },
+       "plate": "uc irvine · 2023"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "hourglass",
+       "tAt": 0,
+       "tDur": 150,
+       "tag": {
+        "t": "90,000+ years",
+        "at": "90"
+       },
+       "plate": "our arithmetic · ÷ 8,766 h a year"
+      },
+      "cap": "on *reCAPTCHA* alone",
+      "at": "819"
+     }
+    ],
+    "act": "01 the little box"
+   }
+  },
+  {
+   "id": "a04",
+   "vo": "All that time didn't just vanish. Someone put it to work.",
+   "shot": {
+    "layout": "full",
+    "hero": {
+     "v": "Photo",
+     "surface": "bare",
+     "img": "captchas/ch_v00_hand-on-mouse.jpg",
+     "plate": "photo · nenad stojkovic · cc by 2.0",
+     "focus": "50% 55%"
+    },
+    "cap": "someone put it to *work*",
+    "act": "01 the little box"
+   }
+  },
+  {
+   "id": "a05",
+   "vo": "This is the dark reality of CAPTCHAs.",
+   "shot": {
+    "layout": "full",
+    "hero": {
+     "v": "Photo",
+     "surface": "bare",
+     "img": "captchas/ch_b00_ia-book-scanner.jpg",
+     "plate": "book scanner · dvortygirl · cc by-sa 4.0",
+     "focus": "62% 50%",
+     "gray": true
+    },
+    "sfx": [
+     {
+      "k": "thud",
+      "at": "dark"
+     }
+    ],
+    "cap": "the *dark reality* of captchas",
+    "act": "01 the little box"
+   }
+  },
+  {
+   "id": "a05b",
+   "vo": "And by the end, you'll know exactly who cashed in.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "person",
+     "mark": "?",
+     "markAt": "who"
+    },
+    "R": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "cash",
+     "at": "cashed",
+     "label": "cashed in"
+    },
+    "cap": "who *cashed in?*",
+    "act": "01 the little box"
+   }
+  },
+  {
+   "id": "o01",
+   "vo": "It starts in the year two thousand, at Yahoo. Robots were signing up for millions of its free email accounts.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "CalendarCard",
+       "surface": "bare",
+       "year": "2000"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "envelope",
+       "at": "Yahoo",
+       "label": "yahoo mail",
+       "enter": "Yahoo"
+      },
+      "cap": "*2000*, yahoo mail"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "robot",
+       "n": 12,
+       "cols": 4,
+       "every": 3
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "envelope",
+       "n": 12,
+       "cols": 4,
+       "every": 3,
+       "at": "millions"
+      },
+      "cap": "millions of *fake accounts*",
+      "at": "Robots"
+     }
+    ],
+    "act": "01 the little box"
+   }
+  },
+  {
+   "id": "o02",
+   "vo": "A first-year PhD student at Carnegie Mellon heard about it. His name was Luis von Ahn.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "Photo",
+       "surface": "bare",
+       "img": "captchas/ch_o01_cmu-cathedral-view.jpg",
+       "plate": "carnegie mellon · dllu · cc by-sa 4.0",
+       "focus": "50% 60%"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "desk",
+       "at": "student"
+      },
+      "cap": "a first-year *phd student*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Polaroid",
+       "surface": "bare",
+       "img": "captchas/luis_wikimania_2.jpg",
+       "plate": "jarek tuszyński · cc by 4.0",
+       "name": "luis von ahn",
+       "focus": "50% 30%"
+      },
+      "cap": "*luis von ahn*",
+      "at": "His"
+     }
+    ],
+    "act": "01 the little box"
+   }
+  },
+  {
+   "id": "o03",
+   "vo": "His idea was simple. A test any human can pass, and no computer can.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "person",
+     "mark": "ok",
+     "markAt": "human",
+     "label": "human"
+    },
+    "R": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "robot",
+     "mark": "no",
+     "markAt": "computer",
+     "label": "computer",
+     "enter": "test"
+    },
+    "cap": "humans pass, *machines fail*",
+    "act": "01 the little box"
+   }
+  },
+  {
+   "id": "w01",
+   "clip": {
+    "src": "captchas/cc_wm15_scalpers.mp4",
+    "from": 1.4,
+    "to": 12.1,
+    "plate": "Luis von Ahn · Wikimania 2015"
+   }
+  },
+  {
+   "id": "o04",
+   "vo": "By two thousand three, it even had a name: CAPTCHA, short for Completely Automated Public Turing test to tell Computers and Humans Apart.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "CalendarCard",
+     "surface": "bare",
+     "year": "2003"
+    },
+    "R": {
+     "v": "TwoWords",
+     "surface": "bare",
+     "a": "captcha",
+     "b": "",
+     "only": "a",
+     "enter": "name",
+     "plate": "von ahn, blum, hopper & langford · 2003",
+     "expand": "Completely Automated Public Turing test to tell Computers and Humans Apart",
+     "expandAt": "Completely",
+     "expandEndAt": "Apart"
+    },
+    "cap": "it even had *a name*",
+    "act": "01 the little box"
+   }
+  },
+  {
+   "id": "o05",
+   "vo": "Then Luis did the math. Ten seconds a puzzle, two hundred million puzzles a day.",
+   "say": "Then Louis did the math. Ten seconds a puzzle, two hundred million puzzles a day.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "Stopwatch",
+       "surface": "bare",
+       "secs": 10,
+       "at": "10"
+      },
+      "R": {
+       "v": "TwoWords",
+       "surface": "bare",
+       "a": "morning",
+       "b": "upon"
+      },
+      "cap": "*10 seconds* a puzzle"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "cursor",
+       "n": 30,
+       "cols": 10,
+       "every": 1,
+       "tag": {
+        "t": "200 million a day",
+        "at": "200"
+       },
+       "plate": "luis von ahn · ted 2011"
+      },
+      "cap": "*200 million* puzzles",
+      "at": "200"
+     }
+    ],
+    "sfx": [
+     {
+      "k": "click",
+      "at": "puzzle"
+     }
+    ],
+    "act": "01 the little box"
+   }
+  },
+  {
+   "id": "w02",
+   "clip": {
+    "src": "captchas/cc_wm15_feelbad.mp4",
+    "from": 0.15,
+    "to": 12.5,
+    "plate": "Luis von Ahn · Wikimania 2015"
+   }
+  },
+  {
+   "id": "o06",
+   "vo": "That's sixty-three years of human time. Every single day.",
+   "shot": {
+    "layout": "full",
+    "hero": {
+     "v": "IconRow",
+     "surface": "bare",
+     "name": "hourglass",
+     "n": 63,
+     "cols": 21,
+     "every": 1,
+     "tag": {
+      "t": "63 years, every day",
+      "at": "63"
+     },
+     "plate": "our arithmetic · 10 s × 200 million"
+    },
+    "sfx": [
+     {
+      "k": "thud",
+      "at": "63"
+     }
+    ],
+    "cap": "of *human time*, every single day",
+    "act": "01 the little box"
+   }
+  },
+  {
+   "id": "o07",
+   "vo": "So he asked a dangerous question. What if all that effort did real work?",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "person",
+     "mark": "?",
+     "markAt": "dangerous"
+    },
+    "R": {
+     "v": "Bubble",
+     "surface": "bare",
+     "text": "what if it did *real work*?",
+     "at": "what",
+     "px": 48
+    },
+    "cap": "a *dangerous* question",
+    "act": "01 the little box"
+   }
+  },
+  {
+   "id": "b00",
+   "vo": "And that's when the little box got a second job.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "Checkbox",
+     "surface": "bare",
+     "clickAt": "box"
+    },
+    "R": {
+     "v": "TwoWords",
+     "surface": "bare",
+     "a": "overlooks",
+     "b": "inquiry",
+     "enter": "second",
+     "tag": {
+      "t": "job 2",
+      "at": "second"
+     }
+    },
+    "sfx": [
+     {
+      "k": "click",
+      "at": "box"
+     }
+    ],
+    "cap": "the box got a *second job*",
+    "act": "02 the second job"
+   }
+  },
+  {
+   "id": "b01",
+   "vo": "Look at the old two-word puzzles. One word was the test. The other came from a scanned book.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "TwoWords",
+     "surface": "bare",
+     "a": "overlooks",
+     "b": "inquiry",
+     "only": "a",
+     "oneAt": "test",
+     "ok": true,
+     "okAt": "test"
+    },
+    "R": {
+     "v": "TwoWords",
+     "surface": "bare",
+     "a": "overlooks",
+     "b": "inquiry",
+     "only": "b",
+     "twoAt": "book",
+     "enter": "other",
+     "reveal": true
+    },
+    "cap": "one test, *one book*",
+    "act": "02 the second job"
+   }
+  },
+  {
+   "id": "b02",
+   "vo": "On older books, scanners missed about thirty percent of the words. Your eyes didn't.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "mark": "?",
+       "markAt": "missed",
+       "label": "scanner"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "tag": {
+        "t": "30% missed",
+        "at": "30"
+       },
+       "plate": "luis von ahn · ted 2011"
+      },
+      "cap": "scanners missed *30%*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "eye",
+       "mark": "ok",
+       "markAt": "didn"
+      },
+      "R": {
+       "v": "TwoWords",
+       "surface": "bare",
+       "a": "overlooks",
+       "b": "inquiry"
+      },
+      "cap": "your eyes *didn't*",
+      "at": "Your"
+     }
+    ],
+    "act": "02 the second job"
+   }
+  },
+  {
+   "id": "b03",
+   "vo": "Type the known word right, and your guess on the mystery word counts. When enough strangers agree, the book gets its word.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "TwoWords",
+       "surface": "bare",
+       "a": "overlooks",
+       "b": "inquiry",
+       "only": "a",
+       "ok": true,
+       "okAt": "right"
+      },
+      "R": {
+       "v": "TwoWords",
+       "surface": "bare",
+       "a": "overlooks",
+       "b": "inquiry",
+       "only": "b",
+       "twoAt": "mystery",
+       "enter": "guess"
+      },
+      "cap": "your guess *counts*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "person",
+       "n": 5,
+       "every": 5,
+       "mark": "ok"
+      },
+      "cap": "strangers *agree*",
+      "at": "When"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "book"
+      },
+      "R": {
+       "v": "TwoWords",
+       "surface": "bare",
+       "a": "overlooks",
+       "b": "inquiry",
+       "only": "b",
+       "ok": true,
+       "okAt": "book"
+      },
+      "cap": "the book gets *its word*",
+      "at": "book"
+     }
+    ],
+    "act": "02 the second job"
+   }
+  },
+  {
+   "id": "c04",
+   "clip": {
+    "src": "captchas/cc_wm15_billion.mp4",
+    "from": 1.37,
+    "to": 10.955,
+    "plate": "Luis von Ahn · Wikimania 2015",
+    "fadeOut": 0.1
+   }
+  },
+  {
+   "id": "c02a",
+   "vo": "And it wasn't just books.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "book",
+     "label": "books"
+    },
+    "R": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "newspaper",
+     "label": "newspapers",
+     "enter": "just"
+    },
+    "cap": "and *not just books*",
+    "act": "02 the second job"
+   },
+   "min": 1.8
+  },
+  {
+   "id": "c02r",
+   "vo": "Even The New York Times sent its old archive through the box. About a year of newspapers, every four days.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "newspaper",
+       "label": "nyt archive"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "eye",
+       "mark": "ok",
+       "markAt": "through"
+      },
+      "cap": "even *the new york times*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "newspaper",
+       "n": 24,
+       "cols": 8,
+       "every": 2,
+       "tag": {
+        "t": "1 year every 4 days",
+        "at": "four"
+       },
+       "plate": "vox · why captchas are getting harder"
+      },
+      "cap": "*a year* every four days",
+      "at": "About"
+     }
+    ],
+    "act": "02 the second job"
+   }
+  },
+  {
+   "id": "b05",
+   "vo": "Nobody signed up. Nobody got paid. Everybody thought they were just logging in.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "contract",
+       "mark": "no",
+       "markAt": "signed",
+       "label": "signed up"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "coin",
+       "mark": "no",
+       "markAt": "paid",
+       "label": "paid",
+       "enter": "nobody#2"
+      },
+      "cap": "nobody *signed up*. nobody *got paid*."
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Checkbox",
+       "surface": "bare",
+       "clickAt": "logging"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person"
+      },
+      "cap": "just *logging in*",
+      "at": "everybody"
+     }
+    ],
+    "sfx": [
+     {
+      "k": "click",
+      "at": "logging"
+     }
+    ],
+    "act": "02 the second job"
+   }
+  },
+  {
+   "id": "g01",
+   "vo": "In two thousand nine, Google bought reCAPTCHA. In its own words, to improve its book and newspaper scanning.",
+   "say": "In two thousand nine, Google bought re-CAPTCHA. In its own words, to improve its book and newspaper scanning.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "CalendarCard",
+       "surface": "bare",
+       "year": "2009"
+      },
+      "R": {
+       "v": "PageCrop",
+       "surface": "bare",
+       "img": "captchas/google_blog_2009_top.jpg",
+       "iw": 2560,
+       "ih": 1440,
+       "crop": {
+        "x": 260,
+        "y": 150,
+        "w": 1400,
+        "h": 620
+       },
+       "box": {
+        "x": 296,
+        "y": 626,
+        "w": 1250,
+        "h": 70
+       },
+       "boxAt": "bought",
+       "plate": "official google blog · sept 16, 2009",
+       "enter": "Google"
+      },
+      "cap": "*2009*: google buys it"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "PageCrop",
+       "surface": "bare",
+       "img": "captchas/google_blog_2009_top.jpg",
+       "iw": 2560,
+       "ih": 1440,
+       "crop": {
+        "x": 260,
+        "y": 590,
+        "w": 1460,
+        "h": 700
+       },
+       "box": {
+        "x": 300,
+        "y": 628,
+        "w": 610,
+        "h": 60
+       },
+       "boxAt": "improve",
+       "underline": true,
+       "plate": "official google blog · 2009"
+      },
+      "cap": "*teaching computers* to read",
+      "at": "words"
+     }
+    ],
+    "act": "03 the buyer"
+   }
+  },
+  {
+   "id": "g02",
+   "vo": "Google never said what it paid. But look at what came with it.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Receipt",
+       "surface": "bare",
+       "title": "reCAPTCHA",
+       "k": "PRICE",
+       "stamp": "undisclosed",
+       "stampAt": "paid"
+      },
+      "cap": "the price? *never said*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "PageCrop",
+       "surface": "bare",
+       "img": "captchas/google_blog_2009_top.jpg",
+       "iw": 2560,
+       "ih": 1440,
+       "crop": {
+        "x": 260,
+        "y": 960,
+        "w": 1460,
+        "h": 420
+       },
+       "box": {
+        "x": 296,
+        "y": 1234,
+        "w": 640,
+        "h": 56
+       },
+       "boxAt": 6,
+       "plate": "official google blog · 2009"
+      },
+      "R": {
+       "v": "TwoWords",
+       "surface": "bare",
+       "a": "overlooks",
+       "b": "inquiry",
+       "tag": {
+        "t": "200 million a day",
+        "at": 0
+       },
+       "plate": "luis von ahn · ted 2011"
+      },
+      "cap": "what *came with it*",
+      "at": "came"
+     }
+    ],
+    "sfx": [
+     {
+      "k": "thud",
+      "at": "paid",
+      "plus": 8
+     }
+    ],
+    "act": "03 the buyer"
+   }
+  },
+  {
+   "id": "c03",
+   "clip": {
+    "src": "captchas/cc_wm15_books.mp4",
+    "from": 1.85,
+    "to": 14.75,
+    "plate": "Luis von Ahn · Wikimania 2015"
+   }
+  },
+  {
+   "id": "g04",
+   "vo": "And Luis? He ran the same play again. In twenty eleven, he co-founded Duolingo.",
+   "say": "And Louis? He ran the same play again. In twenty eleven, he co-founded Duolingo.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Polaroid",
+       "surface": "bare",
+       "img": "captchas/luis_wikimania_2.jpg",
+       "plate": "jarek tuszyński · cc by 4.0",
+       "focus": "50% 22%",
+       "rotate": 2,
+       "notes": [
+        {
+         "t": "same play",
+         "at": "same"
+        },
+        {
+         "t": "again",
+         "at": "again"
+        }
+       ]
+      },
+      "cap": "the *same play*, again"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "CalendarCard",
+       "surface": "bare",
+       "year": "2011"
+      },
+      "R": {
+       "v": "PageCrop",
+       "surface": "bare",
+       "img": "captchas/wiki_duolingo.png",
+       "iw": 2560,
+       "ih": 1600,
+       "crop": {
+        "x": 1390,
+        "y": 700,
+        "w": 660,
+        "h": 900
+       },
+       "box": {
+        "x": 1405,
+        "y": 1536,
+        "w": 480,
+        "h": 58
+       },
+       "boxAt": "founded",
+       "plate": "wikipedia · duolingo",
+       "enter": "co"
+      },
+      "cap": "*2011*: duolingo",
+      "at": "2011"
+     }
+    ],
+    "act": "03 the buyer"
+   }
+  },
+  {
+   "id": "w04",
+   "clip": {
+    "src": "captchas/cc_wm15_free.mp4",
+    "from": 0.15,
+    "to": 7.34,
+    "plate": "Luis von Ahn · Wikimania 2015"
+   }
+  },
+  {
+   "id": "g05",
+   "vo": "Learners translated real web articles. CNN and BuzzFeed paid for them.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "desk"
+      },
+      "R": {
+       "v": "Translate",
+       "surface": "bare",
+       "at": "translated"
+      },
+      "cap": "learners *translated* articles"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Translate",
+       "surface": "bare",
+       "at": -60
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "coin",
+       "tag": {
+        "t": "CNN · BuzzFeed",
+        "at": "CNN"
+       },
+       "plate": "2013 deals · social media today"
+      },
+      "cap": "*CNN* and *BuzzFeed* paid",
+      "at": "CNN"
+     }
+    ],
+    "act": "03 the buyer"
+   }
+  },
+  {
+   "id": "g05b",
+   "vo": "Students thought they were practicing. They were translating the news.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "person",
+     "label": "students",
+     "mark": "?",
+     "markAt": "practicing"
+    },
+    "R": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "newspaper",
+     "at": "news",
+     "label": "the news",
+     "reveal": true
+    },
+    "cap": "they were *translating the news*",
+    "act": "03 the buyer"
+   }
+  },
+  {
+   "id": "g03",
+   "vo": "And books were only the beginning. Next, they needed eyes on the street.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "book",
+       "n": 6,
+       "cols": 3,
+       "every": 3
+      },
+      "cap": "books were *only the beginning*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Photo",
+       "surface": "bare",
+       "img": "captchas/ch_r00_streetview-car-googleplex.jpg",
+       "plate": "street view car · kowloonese · public domain",
+       "focus": "40% 55%"
+      },
+      "cap": "next: *eyes on the street*",
+      "at": "Next"
+     }
+    ],
+    "act": "03 the buyer"
+   }
+  },
+  {
+   "id": "m01a",
+   "vo": "Meanwhile, all that free reading had a side effect. The computers were learning too.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "TwoWords",
+     "surface": "bare",
+     "a": "reading",
+     "b": "inquiry",
+     "only": "a",
+     "ok": true,
+     "okAt": "free"
+    },
+    "R": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "robot",
+     "label": "ocr",
+     "mark": "ok",
+     "markAt": "learning"
+    },
+    "cap": "the computers *were learning*",
+    "act": "04 eyes on the street"
+   }
+  },
+  {
+   "id": "c05",
+   "clip": {
+    "src": "captchas/cc_wm15_brain.mp4",
+    "from": 2.0,
+    "to": 9.15,
+    "plate": "Luis von Ahn · Wikimania 2015"
+   }
+  },
+  {
+   "id": "m01",
+   "vo": "In twenty fourteen, Google tested its hardest distorted text. Humans got it right thirty-three percent of the time. Its AI? Ninety-nine point eight.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "CalendarCard",
+       "surface": "bare",
+       "year": "2014"
+      },
+      "R": {
+       "v": "TwoWords",
+       "surface": "bare",
+       "a": "hard",
+       "b": "",
+       "only": "a",
+       "warp": 1.8
+      },
+      "cap": "google's *hardest* text"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "humans"
+      },
+      "R": {
+       "v": "Bars",
+       "surface": "bare",
+       "bars": [
+        {
+         "v": 33,
+         "t": "humans 33%",
+         "at": "right"
+        },
+        {
+         "v": 99.8,
+         "t": "ai 99.8%",
+         "at": "AI",
+         "c": "teal"
+        }
+       ],
+       "plate": "humans: vox · ai: goodfellow et al. 2014"
+      },
+      "cap": "the ai: *99.8%*",
+      "at": "Humans"
+     }
+    ],
+    "act": "04 eyes on the street"
+   }
+  },
+  {
+   "id": "m02",
+   "vo": "So the words had to go. The first replacement came straight off the street. Blurry house numbers, shot by Google's Street View cars.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "TwoWords",
+       "surface": "bare",
+       "a": "overlooks",
+       "b": "inquiry",
+       "only": "a",
+       "ok": false,
+       "okAt": "go"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "mark": "ok",
+       "markAt": "go"
+      },
+      "cap": "the words *had to go*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Photo",
+       "surface": "bare",
+       "img": "captchas/cc_hydrant_miami.jpg",
+       "plate": "photo · infrogmation of new orleans · cc by 2.0",
+       "focus": "50% 40%"
+      },
+      "cap": "straight *off the street*",
+      "at": "first"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "car",
+       "label": "street view"
+      },
+      "R": {
+       "v": "HouseNumber",
+       "surface": "bare",
+       "n": "1427",
+       "at": "House"
+      },
+      "cap": "blurry *house numbers*",
+      "at": "Blurry"
+     }
+    ],
+    "act": "04 eyes on the street"
+   }
+  },
+  {
+   "id": "c13",
+   "clip": {
+    "src": "captchas/cc_s34_history.mp4",
+    "from": 1.2,
+    "to": 16.4,
+    "plate": "Sebastian Schmieg · artist · 34C3"
+   }
+  },
+  {
+   "id": "m03b",
+   "vo": "Then came pictures. Funny enough, that was the very first idea Luis had: show people a photo, and have them type what's in it.",
+   "say": "Then came pictures. Funny enough, that was the very first idea Louis had: show people a photo, and have them type what's in it.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "Polaroid",
+       "surface": "bare",
+       "img": "captchas/cc_luis_case.jpg",
+       "plate": "daniel case · cc by-sa 3.0",
+       "focus": "50% 20%",
+       "rotate": -2
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "camera",
+       "at": "pictures"
+      },
+      "cap": "then came *pictures*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "mark": "?",
+       "markAt": "type"
+      },
+      "R": {
+       "v": "PhotoType",
+       "surface": "bare",
+       "img": "captchas/cc_bus_nyc.jpg",
+       "focus": "62% 55%",
+       "text": "a bus",
+       "typeAt": "type"
+      },
+      "cap": "type *what you see*",
+      "at": "Show"
+     }
+    ],
+    "act": "04 eyes on the street"
+   }
+  },
+  {
+   "id": "c13r",
+   "vo": "It failed for a silly reason. People couldn't spell what they saw.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "person",
+     "mark": "no",
+     "markAt": "spell"
+    },
+    "R": {
+     "v": "PhotoType",
+     "surface": "bare",
+     "img": "captchas/cc_bus_nyc.jpg",
+     "focus": "62% 55%",
+     "text": "a buss",
+     "typeAt": -40,
+     "wrongAt": "spell"
+    },
+    "cap": "people *couldn't spell*",
+    "act": "04 eyes on the street"
+   }
+  },
+  {
+   "id": "m03",
+   "vo": "So this time, nobody types. You just click.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Captcha4",
+       "surface": "bare",
+       "img": "captchas/cc_bus_nyc.jpg",
+       "iw": 1920,
+       "ih": 1440,
+       "crop": {
+        "x": 460,
+        "y": 440,
+        "s": 1000
+       },
+       "target": "buses",
+       "picks": [
+        4,
+        5,
+        6,
+        7
+       ],
+       "pickAt": "click",
+       "every": 5
+      },
+      "cap": "nobody types. *you click*"
+     }
+    ],
+    "sfx": [
+     {
+      "k": "click",
+      "at": "click",
+      "plus": 0
+     },
+     {
+      "k": "click",
+      "at": "click",
+      "plus": 5
+     },
+     {
+      "k": "click",
+      "at": "click",
+      "plus": 10
+     },
+     {
+      "k": "click",
+      "at": "click",
+      "plus": 15
+     },
+     {
+      "k": "click",
+      "at": "click",
+      "plus": 20
+     },
+     {
+      "k": "click",
+      "at": "click",
+      "plus": 25
+     },
+     {
+      "k": "click",
+      "at": "click",
+      "plus": 30
+     },
+     {
+      "k": "click",
+      "at": "click",
+      "plus": 35
+     }
+    ],
+    "act": "04 eyes on the street"
+   }
+  },
+  {
+   "id": "m04",
+   "vo": "Buses. Crosswalks. Traffic lights. Fire hydrants. Ever notice they all look weirdly American?",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "Captcha4",
+       "surface": "bare",
+       "img": "captchas/cc_bus_nyc.jpg",
+       "iw": 1920,
+       "ih": 1440,
+       "crop": {
+        "x": 460,
+        "y": 440,
+        "s": 1000
+       },
+       "target": "buses",
+       "picks": [
+        4,
+        5,
+        6,
+        7
+       ],
+       "pickAt": -60,
+       "every": 0
+      },
+      "R": {
+       "v": "Captcha4",
+       "surface": "bare",
+       "img": "captchas/cc_cross_sf.jpg",
+       "iw": 1920,
+       "ih": 1440,
+       "crop": {
+        "x": 300,
+        "y": 240,
+        "s": 1200
+       },
+       "target": "crosswalks",
+       "enter": "Crosswalks"
+      },
+      "cap": "*buses*. *crosswalks*."
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Captcha4",
+       "surface": "bare",
+       "img": "captchas/traffic_1.jpg",
+       "iw": 960,
+       "ih": 1536,
+       "crop": {
+        "x": 0,
+        "y": 0,
+        "s": 900
+       },
+       "target": "traffic lights"
+      },
+      "R": {
+       "v": "Captcha4",
+       "surface": "bare",
+       "img": "captchas/cc_hydrant_miami.jpg",
+       "iw": 1920,
+       "ih": 1440,
+       "crop": {
+        "x": 480,
+        "y": 380,
+        "s": 1000
+       },
+       "target": "fire hydrants",
+       "enter": "Fire"
+      },
+      "cap": "*traffic lights*. *hydrants*.",
+      "at": "Traffic"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Photo",
+       "surface": "bare",
+       "img": "captchas/cc_cross_sf.jpg",
+       "plate": "photo · alfred twu · cc0",
+       "focus": "50% 60%"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "flag",
+       "at": "look",
+       "label": "u.s. streets"
+      },
+      "cap": "weirdly *american*",
+      "at": "Ever"
+     }
+    ],
+    "act": "04 eyes on the street"
+   }
+  },
+  {
+   "id": "m05",
+   "vo": "Because they're street scenes. Exactly what a car's camera sees. And Google had launched Street View in two thousand seven.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "car"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "camera"
+      },
+      "cap": "what *a car's camera* sees"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "CalendarCard",
+       "surface": "bare",
+       "year": "2007"
+      },
+      "R": {
+       "v": "Photo",
+       "surface": "bare",
+       "img": "captchas/ch_r00_streetview-car-googleplex.jpg",
+       "plate": "street view car · kowloonese · public domain",
+       "focus": "70% 40%",
+       "enter": "Street"
+      },
+      "cap": "*street view*, 2007",
+      "at": "And"
+     }
+    ],
+    "act": "04 eyes on the street"
+   }
+  },
+  {
+   "id": "c07",
+   "clip": {
+    "src": "captchas/cc_s34_history.mp4",
+    "from": 16.4,
+    "to": 23.5,
+    "plate": "Sebastian Schmieg · artist · 34C3"
+   }
+  },
+  {
+   "id": "c07a",
+   "vo": "So every square you clicked became a label.",
+   "shot": {
+    "layout": "full",
+    "hero": {
+     "v": "Labels",
+     "surface": "bare",
+     "img": "captchas/cc_cross_sf.jpg",
+     "iw": 1920,
+     "ih": 1440,
+     "boxes": [
+      {
+       "x": 0.44,
+       "y": 0.45,
+       "w": 0.21,
+       "h": 0.12,
+       "t": "bus",
+       "at": "square"
+      },
+      {
+       "x": 0.6,
+       "y": 0.52,
+       "w": 0.12,
+       "h": 0.11,
+       "t": "car",
+       "at": "label"
+      },
+      {
+       "x": 0.19,
+       "y": 0.47,
+       "w": 0.09,
+       "h": 0.22,
+       "t": "person",
+       "at": "label",
+       "plus": 6
+      }
+     ],
+     "plate": "photo · alfred twu · cc0"
+    },
+    "cap": "every square, *a label*",
+    "act": "04 eyes on the street"
+   }
+  },
+  {
+   "id": "m06",
+   "vo": "Now, the famous fire hydrant. Does that sliver of metal count? What about the base?",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Captcha4",
+       "surface": "bare",
+       "img": "captchas/cc_hydrant_bywater.jpg",
+       "iw": 1280,
+       "ih": 1707,
+       "crop": {
+        "x": 64,
+        "y": 620,
+        "s": 800
+       },
+       "target": "fire hydrants",
+       "picks": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        10
+       ],
+       "pickAt": 0,
+       "every": 5,
+       "ring": 3,
+       "ringAt": "hydrant"
+      },
+      "cap": "the famous *fire hydrant*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Captcha4",
+       "surface": "bare",
+       "img": "captchas/cc_hydrant_bywater.jpg",
+       "iw": 1280,
+       "ih": 1707,
+       "crop": {
+        "x": 64,
+        "y": 620,
+        "s": 800
+       },
+       "target": "fire hydrants",
+       "picks": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        10
+       ],
+       "pickAt": -60,
+       "every": 0,
+       "ring": 3,
+       "ringAt": -40
+      },
+      "R": {
+       "v": "Square",
+       "surface": "bare",
+       "img": "captchas/cc_hydrant_bywater.jpg",
+       "iw": 1280,
+       "ih": 1707,
+       "crop": {
+        "x": 64,
+        "y": 620,
+        "s": 800
+       },
+       "target": "fire hydrants",
+       "tile": 3,
+       "mark": {
+        "x": 0.0,
+        "y": 0.0,
+        "w": 0.42,
+        "h": 0.58
+       },
+       "at": -20,
+       "q": "this sliver?",
+       "qAt": -10
+      },
+      "cap": "does *that sliver* count?",
+      "at": "sliver"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Captcha4",
+       "surface": "bare",
+       "img": "captchas/cc_hydrant_bywater.jpg",
+       "iw": 1280,
+       "ih": 1707,
+       "crop": {
+        "x": 64,
+        "y": 620,
+        "s": 800
+       },
+       "target": "fire hydrants",
+       "picks": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        10
+       ],
+       "pickAt": -60,
+       "every": 0,
+       "ring": 14,
+       "ringAt": -40
+      },
+      "R": {
+       "v": "Square",
+       "surface": "bare",
+       "img": "captchas/cc_hydrant_bywater.jpg",
+       "iw": 1280,
+       "ih": 1707,
+       "crop": {
+        "x": 64,
+        "y": 620,
+        "s": 800
+       },
+       "target": "fire hydrants",
+       "tile": 14,
+       "mark": {
+        "x": 0.02,
+        "y": 0.0,
+        "w": 0.96,
+        "h": 0.62
+       },
+       "at": "base",
+       "q": "the base?",
+       "qAt": "base",
+       "enter": "What"
+      },
+      "cap": "what about *the base?*",
+      "at": "What"
+     }
+    ],
+    "act": "04 eyes on the street"
+   }
+  },
+  {
+   "id": "c08",
+   "clip": {
+    "src": "captchas/cc_wm15_agree.mp4",
+    "from": 0.3,
+    "to": 8.1,
+    "plate": "Luis von Ahn · Wikimania 2015"
+   }
+  },
+  {
+   "id": "m07",
+   "vo": "Same trick as the books. The edge is decided by votes. Where people hesitate, that's where the hydrant ends.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "checkbox",
+       "n": 12,
+       "cols": 4,
+       "every": 2
+      },
+      "cap": "decided *by votes*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Outline",
+       "surface": "bare",
+       "img": "captchas/cc_hydrant_bywater.jpg",
+       "iw": 1280,
+       "ih": 1707,
+       "crop": {
+        "x": 60,
+        "y": 420,
+        "s": 1100
+       },
+       "box": {
+        "x": 300,
+        "y": 560,
+        "w": 470,
+        "h": 820
+       },
+       "at": "ends",
+       "plate": "photo · infrogmation of new orleans · cc by 2.0"
+      },
+      "cap": "where *the hydrant ends*",
+      "at": "Where"
+     }
+    ],
+    "act": "04 eyes on the street"
+   }
+  },
+  {
+   "id": "k00",
+   "vo": "And then, the model went public. Your clicks became a product.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "Checkbox",
+       "surface": "bare"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "box",
+       "at": "public"
+      },
+      "cap": "the model *went public*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "grid",
+       "n": 9,
+       "cols": 3,
+       "every": 2
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "box",
+       "at": "product",
+       "mark": "ok",
+       "markAt": "product"
+      },
+      "cap": "your clicks, *a product*",
+      "at": "Your"
+     }
+    ],
+    "act": "05 the product"
+   }
+  },
+  {
+   "id": "k01",
+   "vo": "In twenty twenty, Cloudflare moved its CAPTCHAs from reCAPTCHA to a rival called hCaptcha.",
+   "say": "In twenty twenty, Cloudflare moved its CAPTCHAs from re-CAPTCHA to a rival called H-captcha.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "CalendarCard",
+       "surface": "bare",
+       "year": "2020"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cloud",
+       "at": "Cloudflare",
+       "label": "cloudflare"
+      },
+      "cap": "*2020*: cloudflare"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Flow",
+       "surface": "bare",
+       "nodes": [
+        {
+         "icon": "checkbox",
+         "label": "recaptcha"
+        },
+        {
+         "icon": "checkbox2",
+         "label": "hcaptcha",
+         "at": "rival"
+        }
+       ],
+       "plate": "cloudflare blog · april 2020"
+      },
+      "cap": "switched to *a rival*",
+      "at": "moved"
+     }
+    ],
+    "act": "05 the product"
+   }
+  },
+  {
+   "id": "k01b",
+   "vo": "Same puzzles. Same clicks. Just a new buyer.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "checkbox"
+    },
+    "R": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "cash",
+     "at": "buyer",
+     "label": "new buyer",
+     "reveal": true
+    },
+    "cap": "same clicks, *new buyer*",
+    "act": "05 the product"
+   }
+  },
+  {
+   "id": "k02",
+   "vo": "Its pitch was blunt. Companies pay to get images labeled. Websites earn a cut for showing the puzzles. And you do the labeling.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "companies"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cash",
+       "at": "pay",
+       "label": "pay"
+      },
+      "cap": "companies *pay*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "browser",
+       "label": "websites"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "coin",
+       "at": "cut",
+       "label": "a cut"
+      },
+      "cap": "websites *get a cut*",
+      "at": "Websites"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "you",
+       "mark": "no",
+       "markAt": "labeling"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "grid",
+       "n": 9,
+       "cols": 3,
+       "every": 2,
+       "at": "labeling",
+       "plate": "cloudflare blog · 2020"
+      },
+      "cap": "*you* do the labeling",
+      "at": "And"
+     }
+    ],
+    "act": "05 the product"
+   }
+  },
+  {
+   "id": "k02b",
+   "vo": "So the puzzle you solve for free is a dataset someone else pays for.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "IconRow",
+     "surface": "bare",
+     "name": "grid",
+     "n": 9,
+     "cols": 3,
+     "every": 0
+    },
+    "R": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "cash",
+     "at": "pays",
+     "label": "dataset",
+     "reveal": true
+    },
+    "cap": "*someone else* pays",
+    "act": "05 the product"
+   }
+  },
+  {
+   "id": "k04a",
+   "vo": "Back in twenty fifteen, one user had already sued Google over the books. Her name was Gabriela Rojas-Lozano.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "book",
+       "label": "books"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "contract",
+       "at": "sued",
+       "label": "lawsuit",
+       "reveal": true
+      },
+      "cap": "she *sued google*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "gabriela rojas-lozano"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "contract",
+       "label": "rojas-lozano v. google",
+       "tag": {
+        "t": "2015",
+        "at": "Her"
+       }
+      },
+      "cap": "*one user* fought back",
+      "at": "Her"
+     }
+    ],
+    "act": "05 the product"
+   }
+  },
+  {
+   "id": "k04",
+   "clip": {
+    "src": "captchas/cc_s34_lawsuit.mp4",
+    "from": 0.4,
+    "to": 13.1,
+    "plate": "Sebastian Schmieg · on Rojas-Lozano v. Google · 34C3"
+   }
+  },
+  {
+   "id": "k04b",
+   "vo": "In twenty sixteen, a judge threw the case out. A few seconds of typing, the court found, cost her nothing.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "contract",
+       "mark": "no",
+       "markAt": "threw"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "gateShut",
+       "plate": "rojas-lozano v. google · n.d. cal. 2016"
+      },
+      "cap": "case *dismissed*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "clock",
+       "label": "a few seconds"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "coin",
+       "mark": "no",
+       "markAt": "nothing"
+      },
+      "cap": "a few seconds *cost nothing*",
+      "at": "few"
+     }
+    ],
+    "act": "05 the product"
+   }
+  },
+  {
+   "id": "k03",
+   "vo": "Cloudflare later did the math on all this clicking. Humanity wastes about five hundred years. Every single day. That's a full human lifetime, every four hours.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cloud",
+       "label": "cloudflare"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cursor",
+       "at": "clicking",
+       "label": "clicking"
+      },
+      "cap": "cloudflare *did the math*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "person",
+       "n": 6,
+       "cols": 6,
+       "every": 4,
+       "tag": {
+        "t": "500 years a day",
+        "at": "500"
+       },
+       "plate": "cloudflare · 2021 estimate"
+      },
+      "cap": "*500 years* a day",
+      "at": "Humanity"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "clock",
+       "tAt": "four",
+       "tag": {
+        "t": "every 4 hours",
+        "at": "four"
+       },
+       "plate": "our arithmetic"
+      },
+      "cap": "*a lifetime* every four hours",
+      "at": "That"
+     }
+    ],
+    "act": "05 the product"
+   }
+  },
+  {
+   "id": "g10",
+   "clip": {
+    "src": "captchas/cc_v3_bots.mp4",
+    "from": 0.15,
+    "to": 9.05,
+    "plate": "Google · Introducing reCAPTCHA v3"
+   }
+  },
+  {
+   "id": "u00",
+   "vo": "Meanwhile, the bots never really lost. They found a workaround. Humans.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "mark": "no",
+       "markAt": "lost"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "gateShut"
+      },
+      "cap": "the bots *never lost*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "at": "Humans",
+       "mark": "ok",
+       "markAt": "Humans"
+      },
+      "cap": "the workaround: *humans*",
+      "at": "They"
+     }
+    ],
+    "act": "06 the workaround"
+   }
+  },
+  {
+   "id": "u01",
+   "vo": "Captcha-solving farms. Rows of real people, paid to solve puzzles for bots, all day long.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "worker",
+       "n": 12,
+       "cols": 6,
+       "every": 3
+      },
+      "cap": "captcha-solving *farms*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "label": "bots"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "worker",
+       "mark": "ok",
+       "markAt": "day"
+      },
+      "cap": "solving *for bots*, all day",
+      "at": "bots"
+     }
+    ],
+    "act": "06 the workaround"
+   }
+  },
+  {
+   "id": "u01b",
+   "vo": "Picture the room. Rows of desks. Rows of screens. Buses and crosswalks, refreshing every few seconds. Nobody here is being tested. They're being paid.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "monitor",
+       "n": 18,
+       "cols": 6,
+       "every": 2
+      },
+      "cap": "picture *the room*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Captcha4",
+       "surface": "bare",
+       "img": "captchas/cc_bus_nyc.jpg",
+       "iw": 1920,
+       "ih": 1440,
+       "crop": {
+        "x": 460,
+        "y": 440,
+        "s": 1000
+       },
+       "target": "buses",
+       "picks": [
+        4,
+        5,
+        6,
+        7
+       ],
+       "pickAt": "refreshing",
+       "every": 3
+      },
+      "R": {
+       "v": "Captcha4",
+       "surface": "bare",
+       "img": "captchas/cc_cross_sf.jpg",
+       "iw": 1920,
+       "ih": 1440,
+       "crop": {
+        "x": 300,
+        "y": 240,
+        "s": 1200
+       },
+       "target": "crosswalks",
+       "picks": [
+        12,
+        13,
+        14,
+        15
+       ],
+       "pickAt": "refreshing",
+       "every": 3
+      },
+      "cap": "*refreshing* every few seconds",
+      "at": "Buses"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "worker",
+       "mark": "?",
+       "markAt": "tested"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cash",
+       "at": "paid",
+       "reveal": true
+      },
+      "cap": "not tested. *paid*.",
+      "at": "Nobody"
+     }
+    ],
+    "act": "06 the workaround"
+   }
+  },
+  {
+   "id": "u01c",
+   "vo": "Clicking for cents is a real job now. In Germany, researchers met people who click likes for a living.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "worker"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "coin",
+       "at": "cents",
+       "label": "cents"
+      },
+      "cap": "clicking *for cents*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "cursor",
+       "n": 18,
+       "cols": 6,
+       "every": 2
+      },
+      "cap": "*likes* for a living",
+      "at": "In"
+     }
+    ],
+    "act": "06 the workaround"
+   }
+  },
+  {
+   "id": "g14",
+   "clip": {
+    "src": "captchas/cc_f36_maria.mp4",
+    "from": 1.35,
+    "to": 18.85,
+    "plate": "Inside the Fake Like Factories · 36C3"
+   }
+  },
+  {
+   "id": "u02",
+   "vo": "The price? Starting at fifty cents per thousand images. That's a twentieth of a cent per puzzle.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "grid",
+       "n": 40,
+       "cols": 10,
+       "every": 1
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cash",
+       "at": "50",
+       "tag": {
+        "t": "$0.50 per 1,000",
+        "at": "50"
+       },
+       "plate": "anti-captcha.com · 2026"
+      },
+      "cap": "*fifty cents* a thousand"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "grid",
+       "label": "one puzzle"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "coin",
+       "at": "20",
+       "tag": {
+        "t": "1/20 of a cent",
+        "at": "20"
+       },
+       "plate": "our arithmetic"
+      },
+      "cap": "*a 20th of a cent*",
+      "at": "that"
+     }
+    ],
+    "act": "06 the workaround"
+   }
+  },
+  {
+   "id": "u02b",
+   "vo": "For a few dollars, a bot can buy thousands of human answers.",
+   "shot": {
+    "layout": "full",
+    "hero": {
+     "v": "IconRow",
+     "surface": "bare",
+     "name": "checkbox",
+     "n": 30,
+     "cols": 10,
+     "every": 1,
+     "tag": {
+      "t": "$5 ≈ 10,000 answers",
+      "at": "few"
+     },
+     "plate": "our arithmetic · $0.50 per 1,000"
+    },
+    "cap": "*thousands* of human answers",
+    "act": "06 the workaround"
+   }
+  },
+  {
+   "id": "u03",
+   "vo": "A bot hits the box. It forwards the puzzle to a worker. They solve it in seconds. The bot walks right in.",
+   "shot": {
+    "layout": "full",
+    "hero": {
+     "v": "Flow",
+     "surface": "bare",
+     "nodes": [
+      {
+       "icon": "robot",
+       "label": "bot",
+       "at": 0
+      },
+      {
+       "icon": "grid",
+       "label": "puzzle",
+       "at": "forwards"
+      },
+      {
+       "icon": "worker",
+       "label": "worker",
+       "at": "worker"
+      },
+      {
+       "icon": "gateOpen",
+       "label": "in",
+       "at": "walks"
+      }
+     ]
+    },
+    "cap": "the bot *walks right in*",
+    "act": "06 the workaround"
+   }
+  },
+  {
+   "id": "v00",
+   "vo": "So Google changed the game again. And this time, you can't even see the test.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "eye",
+     "mark": "no",
+     "markAt": "see"
+    },
+    "R": {
+     "v": "Checkbox",
+     "surface": "bare"
+    },
+    "cap": "you *can't see* the test",
+    "act": "07 the invisible test"
+   }
+  },
+  {
+   "id": "v01",
+   "vo": "Remember the famous checkbox? It launched in twenty fourteen. And the click was never the point.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "CalendarCard",
+     "surface": "bare",
+     "year": "2014"
+    },
+    "R": {
+     "v": "Checkbox",
+     "surface": "bare",
+     "clickAt": "click"
+    },
+    "sfx": [
+     {
+      "k": "click",
+      "at": "click"
+     }
+    ],
+    "cap": "the click *was never the point*",
+    "act": "07 the invisible test"
+   }
+  },
+  {
+   "id": "g11a",
+   "clip": {
+    "src": "captchas/cc_v3_checkbox.mp4",
+    "from": 0.0,
+    "to": 8.85,
+    "plate": "Google · Introducing reCAPTCHA v3"
+   }
+  },
+  {
+   "id": "c09r",
+   "vo": "It watches how you get there. How your mouse moves. Where it pauses. How long you hesitate.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "MousePath",
+       "surface": "bare",
+       "humanAt": "watches",
+       "pauses": true
+      },
+      "cap": "it *watches* how you get there"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cursor",
+       "label": "pause"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "clock",
+       "at": "hesitate",
+       "tAt": "hesitate"
+      },
+      "cap": "how long you *hesitate*",
+      "at": "Where"
+     }
+    ],
+    "act": "07 the invisible test"
+   }
+  },
+  {
+   "id": "v02",
+   "vo": "Your hand wobbles on its way to the box. A cheap bot glides in a perfect straight line.",
+   "shot": {
+    "layout": "full",
+    "hero": {
+     "v": "MousePath",
+     "surface": "bare",
+     "humanAt": -60,
+     "botAt": "bot"
+    },
+    "cap": "human *wobble*, bot *line*",
+    "act": "07 the invisible test"
+   }
+  },
+  {
+   "id": "v03",
+   "vo": "By twenty eighteen, Google was ready to drop the puzzle completely.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "CalendarCard",
+     "surface": "bare",
+     "year": "2018"
+    },
+    "R": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "grid",
+     "mark": "no",
+     "markAt": "drop",
+     "label": "no puzzle"
+    },
+    "cap": "version 3: *no puzzle*",
+    "act": "07 the invisible test"
+   }
+  },
+  {
+   "id": "g11",
+   "clip": {
+    "src": "captchas/cc_v3_checkbox.mp4",
+    "from": 8.85,
+    "to": 16.6,
+    "plate": "Google · Introducing reCAPTCHA v3"
+   }
+  },
+  {
+   "id": "v03b",
+   "vo": "Google's own terms say it collects hardware and software information from your device. Put together, that's a fingerprint.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "laptop"
+      },
+      "R": {
+       "v": "PageQuote",
+       "surface": "bare",
+       "text": "collecting hardware and *software information*",
+       "at": "hardware",
+       "plate": "google recaptcha terms"
+      },
+      "cap": "google's *own terms*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "fingerprint"
+      },
+      "cap": "a *fingerprint*",
+      "at": "Put"
+     }
+    ],
+    "act": "07 the invisible test"
+   }
+  },
+  {
+   "id": "v04",
+   "vo": "Here's the twist. Privacy can lower your score. A VPN. Fresh cookies. A blank browsing history. To the box, you start looking like a bot.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "shield",
+       "label": "vpn"
+      },
+      "R": {
+       "v": "Score",
+       "surface": "bare",
+       "v1": 0.9,
+       "v2": 0.3,
+       "at": -30,
+       "dropAt": "VPN"
+      },
+      "cap": "privacy *lowers your score*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cookie",
+       "at": "cookies",
+       "label": "fresh cookies"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "mark": "?",
+       "markAt": "bot"
+      },
+      "cap": "you look *like a bot*",
+      "at": "Fresh"
+     }
+    ],
+    "act": "07 the invisible test"
+   }
+  },
+  {
+   "id": "c09",
+   "clip": {
+    "src": "captchas/cc_k35_bot.mp4",
+    "from": 0.66,
+    "to": 15.5,
+    "plate": "Kirils Solovjovs · privacy researcher · 35C3",
+    "fadeOut": 0.15
+   }
+  },
+  {
+   "id": "v05",
+   "vo": "And when the system decides you're a robot, there's rarely an appeal button.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "person",
+     "label": "you"
+    },
+    "R": {
+     "v": "Blocked",
+     "surface": "bare",
+     "at": "robot",
+     "noAt": "appeal"
+    },
+    "cap": "*no appeal* button",
+    "act": "07 the invisible test"
+   }
+  },
+  {
+   "id": "v05b",
+   "vo": "You just sit there, locked out, clicking the same squares again.",
+   "shot": {
+    "layout": "full",
+    "hero": {
+     "v": "Captcha4",
+     "surface": "bare",
+     "img": "captchas/traffic_1.jpg",
+     "iw": 960,
+     "ih": 1536,
+     "crop": {
+      "x": 0,
+      "y": 0,
+      "s": 900
+     },
+     "target": "traffic lights",
+     "picks": [
+      0,
+      4,
+      8
+     ],
+     "pickAt": "clicking",
+     "every": 6,
+     "wrong": 9,
+     "wrongAt": "again",
+     "button": "VERIFY"
+    },
+    "cap": "locked out, *clicking again*",
+    "act": "07 the invisible test"
+   }
+  },
+  {
+   "id": "r00",
+   "vo": "So. Remember the question from the start? Who cashed in?",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "person",
+     "mark": "?",
+     "markAt": "Remember"
+    },
+    "R": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "cash",
+     "label": "who?"
+    },
+    "cap": "*who cashed in?*",
+    "act": "08 who cashed in"
+   }
+  },
+  {
+   "id": "r00b",
+   "vo": "Start with the UC Irvine study. It counted at least five hundred twelve billion reCAPTCHA sessions.",
+   "say": "Start with the UC Irvine study. It counted at least five hundred twelve billion re-CAPTCHA sessions.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "label": "uc irvine",
+       "plate": "uc irvine study · 2023"
+      },
+      "R": {
+       "v": "Checkbox",
+       "surface": "bare"
+      },
+      "cap": "the *uc irvine* study"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "checkbox",
+       "n": 40,
+       "cols": 10,
+       "every": 1,
+       "tag": {
+        "t": "512 billion+ sessions",
+        "at": "512"
+       },
+       "plate": "searles, prapty & tsudik · uc irvine"
+      },
+      "cap": "*512 billion* sessions",
+      "at": "It"
+     }
+    ],
+    "act": "08 who cashed in"
+   }
+  },
+  {
+   "id": "r01",
+   "vo": "Those eight hundred nineteen million hours? The same UC Irvine team put a price on them. About six point one billion dollars of free labor.",
+   "say": "Those eight hundred nineteen million hours? The same UC Irvine team put a price on them. About six point one billion dollars of free labor.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "hourglass",
+       "tAt": 0,
+       "tDur": 90,
+       "tag": {
+        "t": "819 million hours",
+        "at": "819"
+       }
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "plate": "uc irvine · 2023"
+      },
+      "cap": "those *819 million hours*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "cash",
+       "n": 24,
+       "cols": 8,
+       "every": 2,
+       "tag": {
+        "t": "$6.1 billion unpaid",
+        "at": "$6"
+       },
+       "plate": "uc irvine estimate · arxiv 2311.10911"
+      },
+      "cap": "*$6.1 billion* of free labor",
+      "at": "About"
+     }
+    ],
+    "act": "08 who cashed in"
+   }
+  },
+  {
+   "id": "r02",
+   "vo": "Their verdict? A tracking cookie farm for profit, masquerading as a security service.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "doc",
+     "mark": "no",
+     "markAt": "They"
+    },
+    "R": {
+     "v": "Bubble",
+     "surface": "bare",
+     "text": "a tracking cookie farm *for profit*",
+     "at": "tracking",
+     "px": 40,
+     "by": "uc irvine study · 2023"
+    },
+    "cap": "their *verdict*",
+    "act": "08 who cashed in"
+   }
+  },
+  {
+   "id": "g13",
+   "clip": {
+    "src": "captchas/cc_v3_places.mp4",
+    "from": 0.15,
+    "to": 9.38,
+    "plate": "Google · Introducing reCAPTCHA v3"
+   }
+  },
+  {
+   "id": "r03",
+   "vo": "Google says reCAPTCHA data isn't used for personalized ads. You decide who to believe.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "google"
+      },
+      "R": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "not used for *personalized ads*",
+       "at": "isn",
+       "px": 40,
+       "by": "google · recaptcha about page"
+      },
+      "cap": "google says *no ads*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "mark": "?",
+       "markAt": "decide",
+       "label": "you"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "label": "the study"
+      },
+      "cap": "*you decide*",
+      "at": "You"
+     }
+    ],
+    "act": "08 who cashed in"
+   }
+  },
+  {
+   "id": "r03b",
+   "vo": "Either way, you were never the customer. You were the product.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "person",
+     "label": "customer",
+     "mark": "no",
+     "markAt": "customer"
+    },
+    "R": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "box",
+     "at": "product",
+     "label": "product",
+     "reveal": true
+    },
+    "cap": "you were *the product*",
+    "act": "08 who cashed in"
+   }
+  },
+  {
+   "id": "r04",
+   "vo": "And the cruelest part? Bots now pass these tests better than we do. Sometimes every single time.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "mark": "ok",
+       "markAt": "pass"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "mark": "no",
+       "markAt": "we"
+      },
+      "cap": "bots pass *better than we do*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Captcha4",
+       "surface": "bare",
+       "img": "captchas/traffic_1.jpg",
+       "iw": 960,
+       "ih": 1536,
+       "crop": {
+        "x": 0,
+        "y": 0,
+        "s": 900
+       },
+       "target": "traffic lights",
+       "picks": [
+        0,
+        1,
+        4,
+        5,
+        8
+       ],
+       "pickAt": "every",
+       "every": 3
+      },
+      "cap": "*every single time*",
+      "at": "Sometimes"
+     }
+    ],
+    "act": "08 who cashed in"
+   }
+  },
+  {
+   "id": "c10r",
+   "vo": "In 2024, researchers in Zurich built a bot that solved one hundred percent of the image puzzles.",
+   "say": "In twenty twenty-four, researchers in Zurich built a bot that solved one hundred percent of the image puzzles.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "CalendarCard",
+       "surface": "bare",
+       "year": "2024"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "at": "researchers",
+       "label": "zurich bot"
+      },
+      "cap": "*2024*: a bot from zurich"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "mark": "ok",
+       "markAt": "100"
+      },
+      "R": {
+       "v": "Captcha4",
+       "surface": "bare",
+       "img": "captchas/cc_cross_sf.jpg",
+       "iw": 1920,
+       "ih": 1440,
+       "crop": {
+        "x": 300,
+        "y": 240,
+        "s": 1200
+       },
+       "target": "crosswalks",
+       "picks": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+       ],
+       "pickAt": "solved",
+       "every": 2,
+       "tag": {
+        "t": "100% solved",
+        "at": "100"
+       },
+       "plate": "plesner et al. · eth zurich · 2024"
+      },
+      "cap": "*100%* of the puzzles",
+      "at": "solved"
+     }
+    ],
+    "sfx": [
+     {
+      "k": "click",
+      "at": "solved",
+      "plus": 0
+     },
+     {
+      "k": "click",
+      "at": "solved",
+      "plus": 2
+     },
+     {
+      "k": "click",
+      "at": "solved",
+      "plus": 4
+     },
+     {
+      "k": "click",
+      "at": "solved",
+      "plus": 6
+     },
+     {
+      "k": "click",
+      "at": "solved",
+      "plus": 8
+     },
+     {
+      "k": "click",
+      "at": "solved",
+      "plus": 10
+     },
+     {
+      "k": "click",
+      "at": "solved",
+      "plus": 12
+     },
+     {
+      "k": "click",
+      "at": "solved",
+      "plus": 14
+     }
+    ],
+    "act": "08 who cashed in"
+   }
+  },
+  {
+   "id": "c10",
+   "clip": {
+    "src": "captchas/cc_s34_unpaid.mp4",
+    "from": 0.4,
+    "to": 11.3,
+    "plate": "Sebastian Schmieg · artist · 34C3"
+   }
+  },
+  {
+   "id": "f00",
+   "vo": "So the industry is quietly moving on. Invisible tokens. Device checks. Face scans. Even iris scanners.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "key",
+       "label": "tokens"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "laptop",
+       "mark": "ok",
+       "markAt": "Device",
+       "label": "device checks"
+      },
+      "cap": "the industry *moves on*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "face",
+       "label": "face scans"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "iris",
+       "at": "iris",
+       "label": "iris scanners"
+      },
+      "cap": "*face scans*. *iris scanners*.",
+      "at": "Face"
+     }
+    ],
+    "act": "09 the ending"
+   }
+  },
+  {
+   "id": "f00b",
+   "vo": "Proving you're human may soon mean proving you are you.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "person",
+     "label": "you"
+    },
+    "R": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "iris",
+     "mark": "ok",
+     "markAt": "you#3"
+    },
+    "cap": "proving *you are you*",
+    "act": "09 the ending"
+   }
+  },
+  {
+   "id": "f01",
+   "vo": "And the man who started all of this? He thinks the ending is already written.",
+   "say": "And the man who started all of this? He thinks the ending is already written.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "Polaroid",
+     "surface": "bare",
+     "img": "captchas/cc_luis_wm1.jpg",
+     "plate": "jarek tuszyński · cc by 4.0",
+     "focus": "50% 25%",
+     "rotate": 2,
+     "name": "luis von ahn"
+    },
+    "R": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "doc",
+     "label": "the ending"
+    },
+    "cap": "the man *who started it*",
+    "act": "09 the ending"
+   }
+  },
+  {
+   "id": "f01b",
+   "vo": "He believes computers will one day do everything humans can. And then no test will be able to tell us apart.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "Polaroid",
+       "surface": "bare",
+       "img": "captchas/cc_luis_case.jpg",
+       "plate": "daniel case · cc by-sa 3.0",
+       "focus": "50% 20%",
+       "rotate": -2
+      },
+      "R": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "computers will do *everything humans can*",
+       "at": "computers",
+       "px": 40,
+       "by": "luis von ahn · vox"
+      },
+      "cap": "*everything* humans can"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "at": "apart",
+       "mark": "?",
+       "markAt": "apart"
+      },
+      "cap": "no test *tells us apart*",
+      "at": "And"
+     }
+    ],
+    "act": "09 the ending"
+   }
+  },
+  {
+   "id": "c11",
+   "clip": {
+    "src": "captchas/cc_s34_unpaid.mp4",
+    "from": 11.3,
+    "to": 23.0,
+    "plate": "Sebastian Schmieg · artist · 34C3"
+   }
+  },
+  {
+   "id": "f02",
+   "vo": "So look at that box one more time.",
+   "shot": {
+    "layout": "full",
+    "hero": {
+     "v": "Checkbox",
+     "surface": "bare",
+     "scale": 1.3
+    },
+    "cap": "look at *that box*",
+    "act": "09 the ending"
+   }
+  },
+  {
+   "id": "f02b",
+   "vo": "Two warped words. One little checkbox. A grid of blurry street corners.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "TwoWords",
+       "surface": "bare",
+       "a": "overlooks",
+       "b": "inquiry"
+      },
+      "cap": "two *warped words*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Checkbox",
+       "surface": "bare",
+       "clickAt": "checkbox"
+      },
+      "cap": "one little *checkbox*",
+      "at": "One"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Captcha4",
+       "surface": "bare",
+       "img": "captchas/cc_hydrant_miami.jpg",
+       "iw": 1920,
+       "ih": 1440,
+       "crop": {
+        "x": 480,
+        "y": 380,
+        "s": 1000
+       },
+       "target": "fire hydrants",
+       "picks": [
+        5,
+        9,
+        13
+       ],
+       "pickAt": "grid",
+       "every": 4
+      },
+      "cap": "a grid of *street corners*",
+      "at": "A"
+     }
+    ],
+    "sfx": [
+     {
+      "k": "click",
+      "at": "checkbox"
+     }
+    ],
+    "act": "09 the ending"
+   }
+  },
+  {
+   "id": "f03",
+   "vo": "For over twenty years, it asked one question. Are you a robot? And every answer made the robots a little more human.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "Checkbox",
+       "surface": "bare",
+       "clickAt": "robot"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "mark": "?",
+       "markAt": "robot"
+      },
+      "cap": "*are you a robot?*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "robot",
+       "n": 8,
+       "cols": 8,
+       "every": 4,
+       "morphAt": "answer",
+       "morph": true
+      },
+      "cap": "a little *more human*",
+      "at": "And"
+     }
+    ],
+    "sfx": [
+     {
+      "k": "click",
+      "at": "robot"
+     }
+    ],
+    "act": "09 the ending"
+   }
+  },
+  {
+   "id": "f03b",
+   "vo": "The box was never just a test. It was a classroom.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "Captcha4",
+     "surface": "bare",
+     "img": "captchas/traffic_1.jpg",
+     "iw": 960,
+     "ih": 1536,
+     "crop": {
+      "x": 140,
+      "y": 100,
+      "s": 800
+     },
+     "target": "traffic lights",
+     "picks": [
+      0,
+      1,
+      4,
+      5,
+      9,
+      7,
+      11
+     ],
+     "pickAt": -60,
+     "every": 0
+    },
+    "R": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "book",
+     "at": "classroom",
+     "label": "classroom",
+     "reveal": true
+    },
+    "cap": "it was *a classroom*",
+    "act": "09 the ending"
+   }
+  },
+  {
+   "id": "f04",
+   "vo": "You didn't fail the test. You trained the thing that passes it.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "mark": "no",
+       "markAt": "fail"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot"
+      },
+      "cap": "you didn't *fail the test*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "mark": "ok",
+       "markAt": "passes"
+      },
+      "R": {
+       "v": "Captcha4",
+       "surface": "bare",
+       "img": "captchas/traffic_1.jpg",
+       "iw": 960,
+       "ih": 1536,
+       "crop": {
+        "x": 140,
+        "y": 100,
+        "s": 800
+       },
+       "target": "traffic lights",
+       "picks": [
+        0,
+        1,
+        4,
+        5,
+        9,
+        7,
+        11
+       ],
+       "pickAt": -60,
+       "every": 0
+      },
+      "cap": "you *trained* what passes",
+      "at": "You#2"
+     }
+    ],
+    "act": "09 the ending"
+   }
+  }
+ ]
+}

@@ -1,0 +1,344 @@
+[    0.0-    2.6] And, yeah, please give a warm welcome to Sebastian.
+[    9.9-   11.6] Hi, and thank you for the introduction.
+[   11.9-   13.7] Thank you all so much for having me.
+[   14.2-   16.2] So what am I going to talk about tonight?
+[   16.3-   20.3] I will, of course, being an artist, talk a bit about some art projects,
+[   20.3-   25.1] but mostly I will speak about the research I do as part of my practice,
+[   25.5-   28.4] specifically about humans as software extensions.
+[   29.0-   35.3] And towards the end, I will share some thoughts on why being a human software extension
+[   35.3-   40.4] could actually be something, maybe not positive, but bring some new possibilities.
+[   40.7-   43.7] So I will try to end the talk on a positive note.
+[   46.1-   51.8] In 2008, the science fiction movie Sleep Dealer speculated about a future
+[   51.8-   53.3] which couldn't be more timely.
+[   54.1-   57.7] The border between Mexico and the U.S. has been closed.
+[   58.4-   62.1] Therefore, immigrant workers in the U.S. have been replaced by robots.
+[   62.1-   67.1] However, the robots are remotely controlled by people in Mexico
+[   67.1-   70.9] who have their bodies plugged directly into the network.
+[   72.1-   77.1] Then, two years later, in 2010, the CEO of Crowdflower,
+[   77.9-   82.3] which is a crowdsourcing and cloudwork platform, Lucas Biewald,
+[   82.3-   84.2] speaks of a similar situation.
+[   85.0-   88.5] Before the Internet, it would be really difficult to find someone,
+[   88.5-   92.3] sit them down for 10 minutes and get them to work for you,
+[   92.7-   95.0] and then fire them after those 10 minutes.
+[   95.5-   98.2] But with technology, you can actually find them,
+[   98.7-  100.4] pay them the tiny amount of money,
+[  100.6-  103.5] and then get rid of them when you don't need them anymore.
+[  105.1-  107.7] Biewald's remarks, however, are not science fiction.
+[  108.1-  111.1] Instead, they describe a contemporary condition.
+[  112.0-  114.0] So, humans as software extensions.
+[  114.2-  115.1] What is this condition?
+[  115.1-  121.2] I would summarize it as people extending computational systems
+[  121.2-  124.8] by offering their bodies, their senses, and their cognition.
+[  125.4-  129.6] And specifically, bodies and minds that can be easily plugged in
+[  129.6-  131.8] and later easily be discarded.
+[  132.5-  135.1] So, bodies and minds algorithmically managed
+[  135.1-  138.3] and under the permanent pressure of constant availability,
+[  139.0-  142.1] efficiency, and perpetual self-optimization.
+[  142.1-  147.5] So, as such, humans as software extensions
+[  147.5-  152.1] are both the foundation and the result of a megastructure
+[  152.1-  154.4] which Benjamin Bratton calls the stack.
+[  154.9-  158.4] It's a computational totality of planetary scale.
+[  158.7-  162.5] So, somehow we can imagine it as a planetary scale computer
+[  162.5-  164.9] consisting of a stack of layers,
+[  165.4-  168.3] from rare earth minerals to data centers
+[  168.3-  169.7] to bots and people,
+[  169.7-  173.2] which in this model are exactly the same.
+[  173.9-  176.6] So, in this computational totality,
+[  176.8-  179.1] even the smallest nodes can be addressed
+[  179.1-  180.7] and can be programmed.
+[  182.3-  185.5] What the stack also describes is a new geography.
+[  185.8-  188.0] So, Google Maps defining borders,
+[  188.2-  190.6] or as just seen in Sleep Dealer,
+[  191.2-  192.8] the US building a wall
+[  192.8-  197.5] while still being able to plug right into the bodies of Mexican workers.
+[  199.0-  200.4] But, to be clear,
+[  200.7-  202.6] from my point of view,
+[  202.9-  205.1] the model of planetary scale computation
+[  205.1-  206.8] as a totality
+[  206.8-  208.8] is as much a reality
+[  208.8-  211.3] as it is also a gigantic fantasy
+[  211.3-  215.0] and ideology of power, optimization, and efficiency.
+[  215.0-  218.3] So, this is the state of self-driving cars right now,
+[  218.4-  220.3] at least from the perspective of Ford.
+[  222.1-  225.5] So, I would now like to give some examples
+[  225.5-  228.5] about what I mean by humans as software extensions
+[  228.5-  232.6] and what effects this way of managing digital labor has.
+[  235.0-  237.4] Three years ago, I worked on a piece
+[  237.4-  239.9] in which I explored digital colonialism.
+[  239.9-  244.6] Among other things, I explored Google's and Facebook's attempts
+[  244.6-  247.7] to integrate into their services
+[  247.7-  250.1] those two-thirds of the world population
+[  250.1-  252.2] who are not online yet.
+[  252.9-  253.9] As you all know,
+[  254.3-  255.7] Google wants to use balloons,
+[  256.0-  257.8] Facebook wants to use drones,
+[  258.3-  259.9] and they want to have them circle
+[  259.9-  261.4] above these areas
+[  261.4-  263.6] that do not have any internet connection,
+[  264.1-  265.4] basically sucking that
+[  265.4-  268.3] which is below up into the network.
+[  268.3-  271.5] So, the piece of which you see a little bit here
+[  271.5-  272.0] is called
+[  272.0-  274.1] How to Appear Offline Forever
+[  274.1-  277.4] and it consists of a mix of found material
+[  277.4-  279.8] like videos, images, and questions
+[  279.8-  282.3] and there's also a layer of stories
+[  282.3-  286.1] written by people from Silicon Valley, Sri Lanka, and Zambia
+[  286.1-  290.4] which are all locations of importance to this piece.
+[  291.4-  295.8] And so, in order to get in contact with people in Sri Lanka,
+[  295.8-  299.7] I ended up using the outsourcing platform Upwork
+[  299.7-  302.9] which offers a highly efficient interface
+[  302.9-  305.4] for hiring freelancers from all around the world.
+[  306.4-  308.9] On their platform, you can sort freelancers
+[  308.9-  311.5] by price, skills, rating,
+[  311.5-  315.7] and then you can pick whoever you think fits the job best.
+[  316.4-  319.9] And their user experience of hire and fire is well-crafted.
+[  320.0-  322.7] So, it's software extensions that can be plugged in
+[  322.7-  325.9] and removed again easily, it doesn't matter where they are,
+[  325.9-  329.0] who they are, as long as they get it done.
+[  337.0-  340.4] So, once the freelancers in Sri Lanka got to work,
+[  340.4-  345.9] I noticed that I was not only able but also encouraged to spy on them.
+[  346.5-  350.8] Upwork records every keystroke and regularly takes screenshots
+[  350.8-  354.9] while freelancers work, building a growing diary of their activity.
+[  354.9-  357.8] So, I found myself in a situation
+[  357.8-  362.4] in which I wasn't only being surveilled by corporations or states,
+[  362.4-  364.9] I was also doing the same myself,
+[  364.9-  368.1] managing my extensions, spying on them
+[  368.1-  370.7] in order to monitor their performance.
+[  370.7-  374.6] So, this is not them, like corporations or states,
+[  374.6-  379.4] spying on us, us protecting ourselves against them through encryption.
+[  379.4-  384.6] This is all of us fighting for our place in the network,
+[  384.6-  386.1] trying to be valuable nodes.
+[  386.1-  388.6] So, this is me and one of the freelancers,
+[  388.6-  390.4] which is a very lovely lady.
+[  390.9-  392.6] I got to meet in Sri Lanka later.
+[  394.0-  396.1] So, if you look at this historically,
+[  396.1-  398.7] and if you go back just 15, maybe 20 years,
+[  399.3-  402.1] outsourcing via the internet was a practice
+[  402.1-  405.0] that could only be employed by big IT companies,
+[  405.0-  407.4] mostly from the US to India.
+[  407.4-  412.1] Today, it is cheap and easy, and it can be done by anybody.
+[  413.9-  417.5] A new service by Amazon called Amazon Key
+[  417.5-  420.6] illustrates this rather new situation perfectly.
+[  421.7-  425.6] With Amazon Key, you can remotely grant access to your apartment
+[  425.6-  426.7] while you're not at home.
+[  428.0-  430.9] Using the Amazon Key camera lock and app,
+[  432.0-  436.1] you can spy on the otherwise completely invisible workers
+[  436.1-  437.4] from your smartphone.
+[  438.5-  441.4] So, this is the lock remotely unlocked.
+[  444.4-  448.1] So, here, outsourcing doesn't generate free time.
+[  448.1-  450.5] Instead, it is born out of necessity.
+[  452.8-  458.1] It is marketed as making possible the transformation and a liberation
+[  458.1-  462.1] from being managed to also being able to manage others.
+[  462.1-  468.1] And, in this case, you're able to deal with them, like, without ever having to meet them in person.
+[  470.1-  475.1] So, now everybody not only can, but has to, and actually, of course, wants to.
+[  475.1-  478.7] We all want to use people as software extensions.
+[  478.7-  484.2] And with that comes also that we have to remotely track and rate their performance.
+[  488.5-  489.5] So, let's recap.
+[  489.9-  493.0] Factory workers are extending machines with their bodies.
+[  493.6-  499.1] Freelancers have escaped the factory, but have to offer themselves as flexible extensions
+[  499.1-  501.1] to the modern media assembly line.
+[  501.6-  503.9] For example, like we just saw on Upwork.
+[  503.9-  512.0] So, now micro-entrepreneurs have to invent their own jobs, offering their creativity in the form
+[  512.0-  514.7] of little packages that are called gigs.
+[  516.3-  520.9] You can buy such gigs at a fixed price on platforms like Fiverr.
+[  523.2-  530.6] For those who do not know Fiverr, initially, each gig on Fiverr was priced at exactly five
+[  530.6-  533.2] dollars, of which the platform kept one dollar.
+[  533.2-  540.9] So, some months ago, I found a way to directly access all videos uploaded to the platform in real
+[  540.9-  547.2] time, including every single video that people on Fiverr are producing for their clients.
+[  548.0-  555.7] So, through this crack in the surface, or you could also call it a security problem or a privacy issue
+[  555.7-  558.9] they have, I could look at the leaked stream of videos.
+[  558.9-  565.5] I did this for days and weeks and months and I downloaded videos worth of like more than 100
+[  565.5-  570.1] gigabytes and I was looking for some patterns to understand this marketplace.
+[  571.4-  579.2] So, to give you some ideas about what I saw there, on the platform it is dog eat dog.
+[  579.2-  583.7] Be the best, the cheapest, the most creative, the most efficient.
+[  583.7-  588.5] Be just like a proper software extension, never sleep, work all the time.
+[  590.1-  595.7] At the same time, everybody is also fighting against the platforms, algorithms and clean
+[  595.7-  602.0] interfaces that hide most gig workers on page two, three, four and so on.
+[  602.5-  611.6] As many gigs offer unrealistically short delivery times for creative work,
+[  611.6-  620.2] it becomes clear that they themselves use bots, generators and templates, simulating creative work
+[  620.2-  624.3] and creating yet another layer of man-machine complexity.
+[  624.9-  629.7] So, using automation in order to not be replaced by automation.
+[  630.5-  636.5] Their biggest selling point seems to be their low cost, coupled with a truly natural interface,
+[  636.5-  638.1] a human being.
+[  640.0-  645.4] In contrast, there is another group of people consciously offering their bodies,
+[  645.4-  648.3] often as carriers of messages, like screens.
+[  648.9-  656.4] So, here the fantasy of the universal addressability and availability of all nodes manifests itself
+[  656.4-  661.2] in the distant and often exotic body that acts as a screen.
+[  665.6-  672.6] This goes hand-in-hand with gigs offering personal porn or erotic videos and fetish videos.
+[  680.8-  682.4] So, here I would summarize.
+[  682.9-  689.7] Being a software extension on a hyper-competitive platform fosters and demands something that I would
+[  689.7-  692.1] call survival creativity.
+[  692.1-  698.8] That means coming up with whatever it takes to survive in a competitive environment.
+[  698.8-  706.8] And as a reminder, Fiverr might be an extreme example, but it exemplifies a development that has become
+[  706.8-  708.7] a reality for many already.
+[  708.7-  715.0] And it's not like it's them and us, we are all human software extensions.
+[  719.4-  725.4] So far, I've managed to talk about software without mentioning artificial intelligence even once.
+[  725.4-  726.3] That's nice, I think.
+[  727.2-  733.2] Instead, I've drawn this bleak picture of a quasi-totality of work and exploitation.
+[  733.8-  740.8] However, automation and artificial intelligence supposedly imply a future without work, right?
+[  743.8-  751.3] So, in the previous examples, platforms, software, artificial intelligence acted as scientific management.
+[  751.3-  758.8] And the Taylorist boss algorithmically distributing and modulating human workers as software extensions.
+[  760.5-  768.2] Now, one great post-work idea is to not only automate the management of working bodies and minds,
+[  768.2-  774.3] but instead to completely replace all human nodes with AI as well.
+[  774.3-  782.0] While I think this is an excellent foundation for discussing our society's obsession with work,
+[  782.0-  788.5] I would also argue this hypothesis is as appealing as it is flawed, unfortunately.
+[  790.8-  793.6] So, my observation is this.
+[  793.6-  801.8] AI, artificial intelligence, is an appropriation and a possible extrapolation of existing knowledge and skills.
+[  801.8-  809.8] Yes, and as such, it might as well do our jobs, but it is first and foremost used as a scheme to
+[  809.8-  817.2] fragment work into tasks that can be done anywhere 24-7 and to make this labor invisible.
+[  818.3-  822.9] What we see here is a piece called Segmentation Network, which I made last year.
+[  822.9-  837.3] It plays back over 600,000 segmentations manually created by Mechanical Turk crowd workers for Microsoft's COCO image recognition dataset.
+[  838.1-  843.2] These so-called segmentations are based on photos we have uploaded to Flickr,
+[  843.2-  848.4] and they are used in machine learning, training AI what it can see and what not.
+[  849.2-  856.4] So, you can automate as much as you want, but at some point you will have to train and especially
+[  856.4-  859.2] maintain the machines and the software.
+[  860.4-  868.4] So, I would say AI creates yet another layer of badly or unpaid care and maintenance work,
+[  868.4-  870.8] which is often invisible on purpose.
+[  873.1-  874.9] So, I would say this needs to change.
+[  874.9-  883.6] I think feminist theory and practices have a lot to say about this issue, but that is another talk and I would like to hear it.
+[  885.5-  889.6] So, here is a point in case and maybe a solution.
+[  889.6-  899.6] At the end of 2011, while still being students and sharing a studio, Silvio Lorusso, a friend and artist and me,
+[  899.6-  905.6] we started to take a screenshot of every single capture that we had to solve while navigating the web.
+[  907.2-  914.2] So, over the years, proving that we are human time and time again, we captured hundreds of captures.
+[  917.4-  923.0] This year, we thought about how to make this little thing or these like little things,
+[  923.0-  927.7] the collection of these things into something which is as valuable and as expensive as possible.
+[  927.7-  933.4] And so, we published the complete collection as a series of five handmade Leporello books.
+[  933.4-  936.5] So, each of these books is one year.
+[  937.6-  945.6] And if you expand all these Leporellos, they have a total length of 90 meters chronicling five years
+[  945.6-  949.1] of micro-labor as well as the history of captures.
+[  949.1-  955.7] So, if you look at it, captures started as a technique to merely prevent spam.
+[  955.7-  963.8] And then, they kind of morphed into a method for deciphering house numbers and transcribing books.
+[  965.1-  970.9] And then, lately, it's become a means of teaching image recognition to AI software.
+[  973.2-  982.0] While we were collecting these captures, Gabriella Rojas Lozano in 2015 filed a class-action
+[  982.0-  983.4] lawsuit against Google.
+[  983.9-  989.9] And she claimed that Google operates a highly profitable transcription business built upon
+[  989.9-  995.8] free labor, which it deceptively and unfairly obtains from unwitting website users.
+[  998.0- 1000.0] Unfortunately, her claims were rejected.
+[ 1000.0- 1005.4] So, here, the judge states that it's like you spend only a few seconds on this,
+[ 1005.4- 1008.9] you cannot be expected to pay for such a small job.
+[ 1009.6- 1014.7] So, however, her attempt to sue Google was still a success, I would say, because
+[ 1014.7- 1019.5] it led to the proof that Google has perfected a magical process,
+[ 1020.2- 1023.8] in which work is transformed into literally nothing.
+[ 1024.5- 1026.3] So, welcome post-work society.
+[ 1027.3- 1029.2] How does this magical trick work?
+[ 1030.7- 1031.5] It's rather simple.
+[ 1031.5- 1036.4] You take a job, let's say transcribing books, and you fragment it, and you fragment it more,
+[ 1036.4- 1042.8] and more, and more, until suddenly the job is magically done without anyone having ever worked on it.
+[ 1043.5- 1048.0] Because if nobody has to get paid, then nobody had to work either, right?
+[ 1048.7- 1052.9] Hence, the judge's statement is proof that this magic actually works.
+[ 1053.5- 1054.3] It gets better.
+[ 1054.3- 1059.9] In the end, Google still ends up being paid, even though they have just made the job disappear magically.
+[ 1059.9- 1066.7] So, what I want to suggest now is to seize the means of magic.
+[ 1067.5- 1068.5] What about this?
+[ 1068.5- 1074.8] Fragmenting those platforms that algorithmically manage us to such a degree,
+[ 1074.8- 1077.2] that they simply do not exist anymore.
+[ 1078.0- 1083.3] Magically, their job will still be done, and in the end, we get the money.
+[ 1084.1- 1089.4] I guess in like a less magical version, we could call this platform cooperativism.
+[ 1091.0- 1097.6] If you do not believe in magic, then I have two more suggestions about what we, as software
+[ 1097.6- 1099.2] extensions, can do.
+[ 1100.7- 1105.8] So, I will show you two clips from my latest video piece, which is called
+[ 1105.8- 1108.6] I will say whatever you want in front of a pizza.
+[ 1109.5- 1113.5] You can see the full version online on this website, or there's going to be,
+[ 1114.5- 1118.0] I think there's going to be a screening somewhere here in the video lounge.
+[ 1118.9- 1122.3] Anyway, I will show you two bits, even though it's a 12-minute video,
+[ 1122.3- 1125.2] and just looking at two bits doesn't make too much sense.
+[ 1125.2- 1129.5] Still, I think they show a point I want to make pretty nicely.
+[ 1130.1- 1136.7] So, the video is narrated from the perspective of a cloud worker, and this is the protagonist.
+[ 1136.7- 1149.0] Instead, I was working for a pizza delivery company.
+[ 1151.0- 1156.5] Brian, your next automated pizza delivery is scheduled for Saturday, February the 25th,
+[ 1156.5- 1157.4] at 12 p.m.
+[ 1157.4- 1159.1] To confirm, text yes.
+[ 1159.1- 1160.9] To decline, text no.
+[ 1160.9- 1162.5] Text help for help.
+[ 1162.5- 1165.0] Thank you, Papa John, you handsome man.
+[ 1165.0- 1167.3] I shall call you the carbs vixen.
+[ 1167.3- 1170.0] We're sorry, we didn't understand.
+[ 1170.0- 1171.6] Please confirm or decline.
+[ 1171.6- 1175.2] When I make love, I imagine you tossing some dough shirtless.
+[ 1175.2- 1178.4] Dude, our automated system isn't set up yet.
+[ 1178.4- 1180.3] This is a real person texting you.
+[ 1180.3- 1182.0] I make minimum wage.
+[ 1182.0- 1184.1] Please just tell me if you want the pizza.
+[ 1184.1- 1192.6] So, that's the protagonist.
+[ 1192.6- 1193.7] To give you some background.
+[ 1194.6- 1201.5] In 2016, Donald Trump's team hired a Singaporean teenager through Fiverr,
+[ 1201.5- 1204.0] which is the platform I talked about before.
+[ 1204.7- 1208.6] And they hired her to convert a PowerPoint into a Prezi,
+[ 1208.6- 1210.6] which is the software I'm using for the video,
+[ 1211.2- 1215.6] basically outsourcing the Make America Great Again campaign,
+[ 1215.6- 1216.8] which is a true story.
+[ 1216.8- 1221.2] So, at some point in the video, the protagonist,
+[ 1221.2- 1224.0] who is now working not only as a pizza delivery bot,
+[ 1224.0- 1228.8] but also as a cloud worker on Amazon's Mechanical Turk platform,
+[ 1228.8- 1230.5] preparing data sets for AI.
+[ 1231.3- 1235.6] At some point, he gets to know the Singaporean teenager as a fellow worker.
+[ 1236.5- 1237.8] And she has got an idea.
+[ 1240.4- 1243.7] One day, I found a thread started by her.
+[ 1243.7- 1248.8] She talked about the political implications of what we did,
+[ 1249.3- 1251.1] and what kind of things we could do.
+[ 1251.1- 1263.2] Of course, we on Mechanical Turk had created the data set.
+[ 1264.5- 1267.7] It was sad to see how depressed many of us actually were.
+[ 1267.7- 1271.5] Researchers asked 500 workers to complete a survey,
+[ 1271.5- 1274.1] which contained a standard clinical depression survey.
+[ 1274.6- 1278.1] 170 workers agreed to share their Instagram posts for the study.
+[ 1278.8- 1282.8] Out of those 170 workers, 70 were clinically depressed.
+[ 1283.3- 1287.9] By the way, the depression filter is inkwell.
+[ 1287.9- 1291.0] It turns photos to black and white and adds high contrast.
+[ 1291.9- 1293.0] Better not to use it.
+[ 1293.0- 1296.7] But she pointed to something else.
+[ 1298.2- 1300.7] It was in our power to manipulate,
+[ 1300.7- 1303.8] or even to change the very core of such mechanisms.
+[ 1305.4- 1306.5] Our data sets.
+[ 1307.8- 1308.4] Machines.
+[ 1310.1- 1310.8] Society.
+[ 1312.2- 1312.4] You.
+[ 1314.3- 1315.1] The future.
+[ 1317.6- 1321.7] We started to discuss, to organize, and to experiment.
+[ 1322.7- 1324.4] Of course, we didn't always agree.
+[ 1325.3- 1326.6] Was this just for fun?
+[ 1327.2- 1328.3] Like Easter eggs?
+[ 1329.1- 1331.2] Did we share a political agenda?
+[ 1332.4- 1335.2] In any case, things had to happen secretly.
+[ 1335.2- 1336.5] Otherwise, it wouldn't work.
+[ 1337.0- 1349.2] Teaching Google to identify a photo of an eggplant,
+[ 1349.2- 1353.5] as British singer Chris Maloney, served as a proof of concept.
+[ 1356.2- 1357.8] Okay, so the idea is this.
+[ 1357.8- 1361.8] When we are extending software with our bodies and minds,
+[ 1361.8- 1364.8] we are also extending our reach into the software.
+[ 1365.3- 1369.2] And reaching into the software, being part of the software,
+[ 1369.2- 1372.5] we can start to manipulate these systems that govern us,
+[ 1372.5- 1375.0] and that we have to use to govern others.
+[ 1375.0- 1379.2] And once we are plugged in, we can manipulate data,
+[ 1379.2- 1384.4] we can create new and weird and slow and inefficient software from within.
+[ 1384.4- 1389.6] So it can be fun, like leaving Easter eggs for others to find, realizing,
+[ 1389.6- 1393.4] yes, there are actual people inside these systems.
+[ 1396.5- 1399.9] Which brings me to my third and last thought,
+[ 1399.9- 1405.3] why being a software extension also has some chances or possibilities.
+[ 1405.3- 1412.0] I will end the talk by talking about Mark Zuckerberg, which will make me look like a fool anyway.
+[ 1413.2- 1417.9] Being a software extension can also offer a new aesthetic and a new way of being.
+[ 1417.9- 1422.4] And I think this video, which could be called the father of all stupid demos,
+[ 1423.1- 1425.2] illustrates this in a rather interesting way.
+[ 1426.6- 1432.2] Here, for whatever reason, Zuckerberg is demonstrating Facebook's virtual reality
+[ 1432.2- 1435.9] by visiting Puerto Rico in the wake of Hurricane Maria.
+[ 1437.0- 1439.1] So, why do I show this video?
+[ 1439.9- 1445.6] Contrary to what he had intended, Zuckerberg, as a crudely abstracted version of himself,
+[ 1446.2- 1452.6] turned into a software extension, detaches and dissociates himself from the real world.
+[ 1453.2- 1454.2] This is what I like.
+[ 1456.5- 1462.6] Because I think, and you will agree with me, software is not perfect, it's full of bugs.
+[ 1462.6- 1466.8] It often behaves in unexpected and weird and glitchy ways,
+[ 1466.8- 1472.3] doing stupid things often over and over again in an infinite loop.
+[ 1475.6- 1483.1] Therefore, embracing the weird and abstract aesthetic of a human as a software extension
+[ 1483.1- 1487.5] could actually allow us to detach ourselves from circumstances
+[ 1487.5- 1491.3] under which we are required to be our best working selves all the time.
+[ 1491.3- 1500.7] So, being available all the time, addressable, programmable, to update ourselves all the time,
+[ 1501.3- 1506.9] we could use being a software extension, the aesthetic of being a software extension,
+[ 1506.9- 1511.3] as a mask behind which we can hide, pretending to be a bot.
+[ 1512.7- 1514.0] That's the idea. Thank you.
+[ 1514.0- 1531.0] Thank you, Sebastian indeed, for making a bleak future look a little bit more bright.
+[ 1531.0- 1534.4] I think we have about five minutes for a very short Q&K.
+[ 1534.4- 1540.8] Otherwise, you said you have a Twitter account and you can also meet Sebastian next to the stage.
+[ 1540.8- 1543.9] So, are there questions maybe from the Signal Angel?
+[ 1545.3- 1546.3] None. Okay.
+[ 1546.3- 1549.5] Then, just another round of applause for Sebastian.
+[ 1549.5- 1550.5] Thank you.

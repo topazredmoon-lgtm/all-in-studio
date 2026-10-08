@@ -1,0 +1,52 @@
+# --- deps, caches, envs ---
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.remotion/
+models/
+.cache/
+
+# --- secrets (never commit) ---
+.env
+.env.*
+*.pem
+*.key
+credentials*
+secrets*
+
+# --- render scratch ---
+.render-tmp/
+videos/*/tmp/
+videos/*/qa/stills/
+*.mbtree
+x264_2pass.log*
+*.remotion-in-progress
+
+# --- regenerable mixes (tools/build.py rebuilds them) ---
+videos/*/master.wav
+
+# --- render outputs: only the delivered, compressed cuts are kept (Git LFS) ---
+videos/*/out/*
+!videos/*/out/*.json
+!videos/captchas-3min/out/All-in_captchas_3min_v6.mp4
+!videos/captchas-full/out/All-in_captchas_full_v3.mp4
+!videos/ai-black-markets/out/All-in_*.mp4
+
+# --- raw source talks: re-download from the URLs in .cc-src/urls.txt, ccc.txt and LICENCES.md ---
+.cc-src/**/*.mp4
+.cc-src/**/*.webm
+.cc-src/**/*.opus
+.cc-src/**/*.mp3
+.cc-src/**/*.m4a
+.cc-src/**/*.wav
+
+# --- news clips removed under the MONEY RULE: never commit ---
+.removed-news-clips/
+
+# --- OS / editor ---
+Thumbs.db
+desktop.ini
+.DS_Store
+.cloud-env.sh

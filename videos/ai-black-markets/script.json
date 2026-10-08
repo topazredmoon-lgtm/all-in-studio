@@ -1,0 +1,462 @@
+{
+ "id": "ai-black-markets",
+ "title": "THE DARK REALITY OF AI'S BLACK MARKETS · 1:30 sample",
+ "voice": {
+  "engine": "kokoro",
+  "name": "af_heart",
+  "speed": 0.95
+ },
+ "pace": {
+  "lead": 0.2,
+  "gap": 0.45,
+  "min_beat": 2.4,
+  "to_clip": 0.25,
+  "after_clip": 0.45,
+  "end_pad": 1.5
+ },
+ "beats": [
+  {
+   "id": "h00",
+   "vo": "This job interview looks normal. But the person on camera isn't who he says he is.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "CallGrid",
+       "surface": "bare",
+       "label": {
+        "i": 3,
+        "t": "applicant"
+       }
+      },
+      "cap": "a normal *job interview*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "CallGrid",
+       "surface": "bare",
+       "label": {
+        "i": 3,
+        "t": "applicant"
+       },
+       "fakeAt": "person",
+       "fakes": [
+        3
+       ]
+      },
+      "cap": "*not who* he says",
+      "at": "person"
+     }
+    ],
+    "act": "01 the grey zone"
+   }
+  },
+  {
+   "id": "c01",
+   "clip": {
+    "src": "aibm/cc_nk_ai.mp4",
+    "from": 0.3,
+    "to": 7.4,
+    "plate": "Simon Wijckmans · catches fake job applicants · EMF Camp 2026",
+    "fadeOut": 0.1
+   }
+  },
+  {
+   "id": "g01",
+   "vo": "Welcome to the grey zone of A.I.",
+   "say": "Welcome to the grey zone of A I.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "mark": "ok",
+       "markAt": "gray"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "mark": "no",
+       "markAt": "gray",
+       "enter": "gray"
+      },
+      "cap": "the *grey zone* of AI"
+     }
+    ],
+    "act": "01 the grey zone"
+   }
+  },
+  {
+   "id": "g02",
+   "vo": "Grey, because the tools are legal. A voice cloner reads audiobooks.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "label": "the tool"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "contract",
+       "mark": "ok",
+       "markAt": "legal",
+       "label": "legal",
+       "enter": "legal"
+      },
+      "cap": "the tools are *legal*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "monitor",
+       "label": "voice clone"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "book",
+       "enter": "audiobooks",
+       "label": "audiobook"
+      },
+      "cap": "a *voice cloner*",
+      "at": "voice"
+     }
+    ],
+    "act": "01 the grey zone"
+   }
+  },
+  {
+   "id": "g03",
+   "vo": "But the same tools are sold to criminals, in black markets that look like any online shop.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "people",
+       "label": "criminals"
+      },
+      "R": {
+       "v": "Shop",
+       "surface": "bare",
+       "items": [
+        "robot",
+        "face",
+        "envelope",
+        "key",
+        "doc",
+        "cash"
+       ],
+       "at": "sold",
+       "enter": "sold"
+      },
+      "cap": "sold in *black markets*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Shop",
+       "surface": "bare",
+       "items": [
+        "browser",
+        "fingerprint",
+        "contract",
+        "laptop",
+        "coin",
+        "eye"
+       ]
+      },
+      "cap": "like any *online shop*",
+      "at": "online"
+     }
+    ],
+    "act": "01 the grey zone"
+   }
+  },
+  {
+   "id": "c02",
+   "clip": {
+    "src": "aibm/cc_id_shops.mp4",
+    "from": 2.2,
+    "to": 10.28,
+    "plate": "Alexej Hock & Max Bernhard · fraud researchers · 38C3",
+    "fadeOut": 0.08
+   }
+  },
+  {
+   "id": "w01",
+   "vo": "In twenty twenty-three, a chatbot called WormGPT went on sale on a crime forum, for sixty euros a month.",
+   "say": "In twenty twenty-three, a chatbot called Worm G P T went on sale on a crime forum, for sixty euros a month.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "browser",
+       "label": "crime forum"
+      },
+      "R": {
+       "v": "Listing",
+       "surface": "bare",
+       "icon": "robot",
+       "name": "wormgpt",
+       "enter": "chatbot"
+      },
+      "cap": "*2023*, a crime forum"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Listing",
+       "surface": "bare",
+       "icon": "robot",
+       "name": "wormgpt",
+       "price": "€60 / month",
+       "priceAt": "60",
+       "buyAt": "month",
+       "plate": "slashnext · july 2023"
+      },
+      "cap": "*60 euros* a month",
+      "at": "60"
+     }
+    ],
+    "act": "02 the shop"
+   }
+  },
+  {
+   "id": "w02",
+   "vo": "Ask a normal chatbot to write a scam email, and it says no. This one was built to say yes.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "ChatBox",
+       "surface": "bare",
+       "ask": "write a scam email",
+       "mode": "refuse",
+       "askAt": "scam",
+       "replyAt": "no"
+      },
+      "R": {
+       "v": "ChatBox",
+       "surface": "bare",
+       "ask": "write a scam email",
+       "mode": "comply",
+       "name": "wormgpt",
+       "replyAt": "yes",
+       "enter": "This",
+       "reveal": true
+      },
+      "cap": "built to say *yes*"
+     }
+    ],
+    "act": "02 the shop"
+   }
+  },
+  {
+   "id": "d01",
+   "vo": "Now the dark part. Hong Kong, twenty twenty-four. An employee joins a video call with his finance chief.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "hong kong"
+      },
+      "R": {
+       "v": "CalendarCard",
+       "surface": "bare",
+       "year": "2024",
+       "enter": "Hong"
+      },
+      "cap": "*hong kong*, 2024"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "CallGrid",
+       "surface": "bare",
+       "label": {
+        "i": 0,
+        "t": "finance chief"
+       },
+       "real": 3
+      },
+      "cap": "a call with *the boss*",
+      "at": "joins"
+     }
+    ],
+    "act": "03 the dark part"
+   }
+  },
+  {
+   "id": "d02",
+   "vo": "A deepfake is a fake video or voice, made by A.I. to copy a real person.",
+   "say": "A deepfake is a fake video or voice, made by A I to copy a real person.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "face",
+       "label": "real person"
+      },
+      "R": {
+       "v": "Flow",
+       "surface": "bare",
+       "nodes": [
+        {
+         "icon": "face",
+         "label": "real"
+        },
+        {
+         "icon": "robot",
+         "label": "ai",
+         "at": "made"
+        },
+        {
+         "icon": "face",
+         "label": "copy",
+         "at": "copy"
+        }
+       ],
+       "enter": "fake"
+      },
+      "cap": "a *deepfake*: an AI copy"
+     }
+    ],
+    "act": "03 the dark part"
+   }
+  },
+  {
+   "id": "d03",
+   "vo": "Every face on that call was a deepfake. He sent twenty-five million dollars. And a voice is even easier to fake.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "CallGrid",
+       "surface": "bare",
+       "label": {
+        "i": 0,
+        "t": "finance chief"
+       },
+       "real": 3,
+       "fakeAt": "face"
+      },
+      "cap": "every face *was fake*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "cash",
+       "n": 15,
+       "cols": 5,
+       "every": 3,
+       "tag": {
+        "t": "$25 million",
+        "at": "million"
+       },
+       "plate": "hong kong police · cnn, may 2024"
+      },
+      "cap": "*$25 million*, gone",
+      "at": "sent"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "PhoneCall",
+       "surface": "bare",
+       "name": "mom",
+       "cloneAt": "voice"
+      },
+      "cap": "a voice is *even easier*",
+      "at": "voice"
+     }
+    ],
+    "act": "03 the dark part"
+   }
+  },
+  {
+   "id": "c03",
+   "clip": {
+    "src": "aibm/cc_gai_voice.mp4",
+    "from": 0.62,
+    "to": 18.1,
+    "plate": "Niklas Bunzel · Fraunhofer SIT · GoD 2024"
+   }
+  },
+  {
+   "id": "e01",
+   "vo": "In the full film: who sells these tools, who buys them, and how to keep your voice safe.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "worker",
+       "label": "sellers"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cash",
+       "label": "buyers",
+       "enter": "sells"
+      },
+      "cap": "who sells, *who buys*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "shield",
+       "mark": "ok",
+       "markAt": "safe"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "face",
+       "mark": "ok",
+       "markAt": "safe",
+       "enter": "keep"
+      },
+      "cap": "keep *your voice* safe",
+      "at": "keep"
+     }
+    ],
+    "act": "03 the dark part"
+   }
+  }
+ ]
+}

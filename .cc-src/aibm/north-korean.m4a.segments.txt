@@ -1,0 +1,454 @@
+[   14.2-   15.2] EMF camp!
+[   15.2-   16.2] How are we doing?
+[   16.2-   17.2] Come on.
+[   17.2-   18.2] No?
+[   18.2-   19.2] Yay!
+[   19.2-   20.2] Perfect.
+[   20.2-   21.2] Awesome.
+[   21.2-   22.2] Okay.
+[   22.2-   23.2] Cool.
+[   23.2-   24.2] Slight change of tone coming in.
+[   24.2-   25.2] Hi, everybody.
+[   25.2-   30.8] As much as we are fun, flimsy, and look to be quite, like, hilarious, do not do what
+[   30.8-   34.7] we are going to discuss in this, like, session today at home.
+[   34.7-   36.5] We are security researchers.
+[   36.5-   40.7] We have done this research together with international law enforcement and also with
+[   40.7-   42.0] international crime reporters.
+[   42.0-   44.8] So we had support and backing throughout this entire journey.
+[   44.8-   48.3] Do not just start doing things with North Koreans.
+[   48.3-   50.3] You might be putting yourself in danger.
+[   50.3-   53.9] Anyway, speaking about putting yourself in danger, in the back is my intern right there
+[   53.9-   55.9] while I'm driving a van.
+[   55.9-   56.9] I'm Simon.
+[   56.9-   57.9] I'm the founder and CEO of Seaside.
+[   57.9-   60.4] I'm a startup founder, like there are many.
+[   60.4-   61.4] That's not special.
+[   61.4-   67.3] I am the chair of the anti-fraud division of the W3C, which is a small community group.
+[   67.3-   70.9] I run a small cybersecurity company around web security.
+[   70.9-   73.2] And kind of the starting story is very simple.
+[   73.2-   77.2] I realised that firewall vendors were claiming to know things about browsers when, unfortunately,
+[   77.2-   78.2] they didn't.
+[   78.2-   82.2] And there wasn't really enough of a browser-level security company in the world.
+[   82.2-   84.8] Anyway, I'm originally from Belgium.
+[   84.8-   86.9] I used to live here in the UK.
+[   86.9-   90.2] But since a little while now, I've been based in San Francisco.
+[   90.2-   91.2] All right.
+[   91.2-   92.2] So what do you do when you start a startup?
+[   92.2-   93.9] You do fundraising.
+[   93.9-   97.7] And as is always the case with fundraising, there is, of course, mandatory press coverage
+[   97.7-   99.2] that comes as part of that.
+[   99.2-  101.3] And what do you do when you get given money?
+[  101.3-  106.4] You have to deploy that money and hire people to go build that thing, build that vision.
+[  106.4-  108.5] So I put a bunch of jobs online.
+[  108.5-  112.7] I used a very well-known applicant tracking system that then posted that job on various
+[  112.7-  113.7] platforms.
+[  113.7-  114.7] LinkedIn.
+[  114.7-  115.7] Indeed.
+[  115.7-  116.7] X jobs.
+[  116.7-  117.7] That's a thing nowadays.
+[  117.7-  119.7] A bunch of those platforms.
+[  119.7-  123.5] And then, of course, our investors were nice and reposted that on their platforms.
+[  123.5-  125.9] And kind of a bit expected.
+[  125.9-  128.2] There were quite some press articles out there.
+[  128.2-  130.2] People were somewhat interested in what we were doing.
+[  130.2-  131.2] And there you go.
+[  131.2-  132.2] I'm going to start there.
+[  132.2-  133.2] On paper, all these candidates looked great.
+[  133.2-  134.2] They had very relevant background.
+[  134.2-  135.2] Worked at the right companies before.
+[  135.2-  136.2] They had an active GitHub account.
+[  136.2-  137.2] It just made sense.
+[  137.2-  151.9] So these profiles were almost too good to be true.
+[  151.9-  154.0] And then how do you sift through so many of these applications?
+[  154.0-  157.9] Well, you start filtering for the best ones, and then you send them a homework assessment.
+[  157.9-  163.5] Do a coding assessment, fill out this Q&A, do this personality assessment to understand
+[  163.5-  167.9] how you are, and then it should really only take you an hour or so.
+[  167.9-  170.0] And then here's what came back.
+[  170.0-  171.5] Flying colours.
+[  171.5-  173.3] People got 94%.
+[  173.3-  176.8] There were some signs of cheating, which is tolerable.
+[  176.8-  180.2] They slashed it 10 out of 10 out of 10 out of everything.
+[  180.2-  185.3] And somehow they were also interested in learning svelte, which is not that unpopular.
+[  185.3-  188.7] Now, another candidate, here's another one.
+[  188.7-  189.9] Similar thing, 92%.
+[  189.9-  194.3] However, our React weather app was a bit too much to ask.
+[  194.3-  196.3] Well, what do you do with candidates like this?
+[  196.3-  198.3] Well, you have a call.
+[  198.3-  199.3] Right?
+[  199.3-  201.3] And they were a little awkward.
+[  201.3-  205.0] I'll let you judge.
+[  205.0-  207.7] So in this question that's going to come up now, like in the response I'm going to give,
+[  207.7-  209.8] I asked about the border gateway protocol.
+[  209.8-  214.3] The reason why I asked that is because when you ask people how does it work to get a webpage
+[  214.3-  216.8] in a browser, well, networking is part of that.
+[  216.8-  217.8] They often forget it.
+[  217.8-  218.8] And I ask.
+[  218.8-  221.9] And kind of what I'm hoping to get here is people saying I don't know and asking questions
+[  221.9-  225.3] or either giving me a perfect answer and then we'll dig deeper.
+[  225.3-  228.0] The border gateway protocol is the thing that makes the internet route.
+[  228.0-  230.5] I have a server in L.A. that I need to reach.
+[  230.5-  231.8] How do I get there?
+[  231.8-  236.2] That's what the BGP, like BGP does.
+[  236.2-  237.6] This is going to hurt your brain.
+[  237.6-  238.6] It did to me as well.
+[  238.6-  239.9] And I had to see through the whole thing.
+[  239.9-  243.4] I'm not going to have you do that, but here we go.
+[  243.4-  250.0] Actually regarding this border-related protocol, it's just a combination of the operator of
+[  250.0-  251.0] the border.
+[  251.0-  260.8] So actually the potential context where the term might apply in this kind of policy, then
+[  260.8-  269.0] the border management, and then also the political commentary is real important, is important.
+[  269.0-  271.8] Needless to say, none of this made any sense.
+[  271.8-  276.7] And so if you think that was bad, I kind of doubled down and I asked, okay, it's quite
+[  276.7-  277.8] high level.
+[  277.8-  278.8] Can you just be more precise?
+[  278.8-  282.0] I really just want to hear about the networking side of things.
+[  282.0-  287.5] Well, actually this is just what I told you is just what I provide you, it's just a big
+[  287.5-  292.7] picture of the options for each management, and then also maybe the policies.
+[  292.7-  303.1] So maybe if I can give you some kind of examples, then for example, the agencies like the government,
+[  303.1-  307.8] and then also border protection, or there may be organizations in other countries, then
+[  307.8-  309.5] it is just, they are just responsible for...
+[  309.5-  312.9] So this guy was talking about border protection.
+[  312.9-  318.5] So clearly border gateway protocol, using his AI tool, meant border enforcement.
+[  318.5-  323.5] The physical people at the airport asking you if you brought any chocolate from abroad.
+[  323.5-  325.4] Anyway, what did you notice?
+[  325.4-  327.3] Well, a few initial signs, right?
+[  327.3-  331.3] And if you start having a bunch of these calls, they're quite clear signs.
+[  331.3-  332.8] There's really significant lag.
+[  332.8-  334.5] He claimed to be a native English speaker.
+[  334.5-  339.0] Now, I really don't want to be using that too much as a vector, but was he?
+[  339.0-  341.4] It didn't really sound like that.
+[  341.4-  343.1] And honestly, nothing he said made any sense.
+[  343.1-  347.3] Now, this particular recording was made in 2024, before AI got good.
+[  347.3-  351.1] Nowadays, he would probably give you a better answer.
+[  351.1-  354.3] But as I said at the end of that thing, I wasn't going to have you sit through that whole
+[  354.3-  355.3] thing.
+[  355.3-  356.8] At the end, I say, let's move on.
+[  356.8-  360.8] Which is like the line if any interviewer ever says, let's move on, you know you're basically
+[  360.8-  361.8] screwed.
+[  361.8-  362.8] You've been caught bullshitting.
+[  362.8-  367.7] Anyway, this was another one of those candidates I found this one particularly funny, because
+[  367.7-  372.7] in his glasses, you can see that he was getting some, let's put it, external help.
+[  372.7-  373.7] Anyway.
+[  373.7-  377.8] And then, well, every good employer needs to know who they're talking to.
+[  377.8-  381.7] And if you're trying to be SOC 2 compliant, which pretty much every B2B company needs to
+[  381.7-  383.8] do, you have to do background checks.
+[  383.8-  388.8] So we use a platform that does identity verification for us, criminal record checks, tax evasion, employment,
+[  388.8-  390.8] educational, social media, blah, blah, blah, blah, blah.
+[  390.8-  392.3] A bunch of checks.
+[  392.3-  393.7] Very standard stuff.
+[  393.7-  397.8] Now, here's what that platform returned.
+[  397.8-  399.0] All bueno.
+[  399.0-  400.7] Nothing to worry about.
+[  400.7-  401.7] Pretty weird.
+[  401.7-  406.2] Now, what I found particularly interesting was the fact, and you can see that here, there's
+[  406.2-  407.2] a Gmail address.
+[  407.2-  412.4] So they were sending a Gmail employment verification emails.
+[  412.4-  418.7] Which is not fully, like, illegal or weird, but using an Gmail means they can just create an
+[  418.7-  420.9] email address for someone.
+[  420.9-  423.2] So I got a little bit weirded out by that.
+[  423.2-  426.8] And I reached out to this person on LinkedIn, I said, hey, what's up?
+[  426.8-  428.3] Like, do you know this guy?
+[  428.3-  429.9] The answer was no.
+[  429.9-  430.9] Uh-oh.
+[  430.9-  432.3] I'm on to something.
+[  432.3-  434.6] So then I checked the identity card.
+[  434.6-  437.7] Now, I can show you this because it's fake.
+[  437.7-  442.4] As you can see, it looks a little bit way out of, like, it looks too perfect of a picture,
+[  442.4-  443.8] doesn't it?
+[  443.8-  447.9] There's a number of indicators here that there's an issue with this, but all city technology
+[  447.9-  451.8] to make fake identity cards got better since as well.
+[  451.8-  455.1] This passed identity verification initially.
+[  455.1-  458.2] Now, then we dug deeper.
+[  458.2-  461.5] I reached out to this identity verification platform, and we actually became good friends
+[  461.5-  463.8] throughout this process.
+[  463.8-  469.6] And it turned out that their systems did flag this as a weird application.
+[  469.6-  474.6] There were all types of issues, and they called this person into a Zoom call asking to show
+[  474.6-  476.8] that identity card.
+[  476.8-  480.6] Now what this person is using is a green screen card.
+[  480.6-  483.5] Like any hotel, PVC key cards, you can get these in green.
+[  483.5-  488.0] And he was using computer vision to project these ID cards on there.
+[  488.0-  490.3] Now, this was detected.
+[  490.3-  493.2] They immediately spotted that this was not normal.
+[  493.2-  499.2] However, identity verification is usually done by a bunch of people in, like, low-wage countries,
+[  499.2-  500.9] and they're under insane pressure.
+[  500.9-  505.6] So what happened here was the cost of a false positive is so high, these people don't want
+[  505.6-  507.6] to bear the responsibility for it.
+[  507.6-  510.4] If a company is trying to recruit someone, and all the way at the end of the process it
+[  510.4-  514.6] comes back as, this is not legit, you may want to verify further, that slows down
+[  514.6-  517.7] the recruiting process, and it's just generally not worth it for them.
+[  517.7-  521.4] So they gave the stamp of approval, and a bad actor got away with it.
+[  521.4-  526.1] So that shows identity verification, unfortunately, isn't all it.
+[  526.1-  528.3] And there were so many of these guys.
+[  528.3-  530.7] We started giving them Jane Doe numbers.
+[  530.7-  533.0] So on the bottom right is Jane Doe 26.
+[  533.0-  536.1] Jane Doe 26 and I, we go way back.
+[  536.1-  538.5] It's actually quite a warm relationship.
+[  538.5-  543.5] We have emojis made out of his face because he's got a very expressive face.
+[  543.5-  547.2] There's some, like, memes about it that I also post on Twitter every now and then.
+[  547.2-  548.2] Anyway.
+[  548.2-  554.4] But Jane Doe is also known for his impeccable reports on Upwork.
+[  554.4-  559.2] So these people are actively doing other things in other places as well.
+[  559.2-  561.2] Upwork being one of those platforms.
+[  561.2-  563.2] I'll get back to that in a bit.
+[  563.2-  564.2] Okay.
+[  564.2-  565.8] So now they got me annoyed.
+[  565.8-  571.2] There's clearly some really organized campaign happening out there with a bunch of, honestly,
+[  571.2-  573.2] nation-state actors trying to get into companies.
+[  573.2-  576.7] And then I remembered, the fuck, I'm running this company.
+[  576.7-  577.7] Like, we can do this.
+[  577.7-  583.0] Like, we can do browser forensics and probably we can pull a bunch of data out of that.
+[  583.0-  588.2] So the first thing that I did was make a job application portal where if they pressed
+[  588.2-  592.3] the button to start the application process, some fun stuff would happen.
+[  592.3-  596.2] You may want to lower the audio ever so slightly on my laptop in a second because it does get
+[  596.2-  597.2] quite loud.
+[  597.2-  598.2] But dramatic effect.
+[  598.2-  603.2] Here we go.
+[  603.2-  605.2] No, you can up it for more dramatic effect, I think.
+[  605.2-  606.2] Yeah.
+[  606.2-  607.2] Yeah.
+[  607.2-  608.2] So it...
+[  608.2-  609.2] I actually did it.
+[  609.2-  614.2] I called one of my friends who made this open source a while ago.
+[  614.2-  617.2] I wasn't going to spend my company money and time on it.
+[  617.2-  618.2] But yeah.
+[  618.2-  620.2] When you moved your mouse, the window would move as well.
+[  620.2-  623.2] And when you were unlucky to then click on it, it would open more windows.
+[  623.2-  626.2] And it would put things in your downloads folder.
+[  626.2-  627.2] It would mess with your clipboards.
+[  627.2-  631.2] Call all types of legacy APIs to do weird shit in your browsers.
+[  631.2-  633.2] Open a cat, because why not?
+[  633.2-  634.2] Yeah.
+[  634.2-  636.2] That was my first response.
+[  636.2-  637.2] And then...
+[  637.2-  638.2] Well, then...
+[  638.2-  644.2] By the way, if you want to check this out, do not send it to your friends or colleagues.
+[  644.2-  647.2] And then I thought, okay, let's behave.
+[  647.2-  649.2] Let's actually take this thing seriously.
+[  649.2-  652.2] So we got some data out of these guys' browsers.
+[  652.2-  656.2] We sent them a little thing to, hey, can you please confirm your job application here?
+[  656.2-  658.2] And then we have this fancy dashboard in our product.
+[  658.2-  660.2] It's not a marketing pitch, but you get it.
+[  660.2-  663.2] We gather a bunch of data about these people.
+[  663.2-  668.2] And then kind of the dimensions that we look at it is the user, the browser, the device,
+[  668.2-  669.2] the network.
+[  669.2-  671.2] Now I'll start with the network.
+[  671.2-  673.2] The network, hella high latency.
+[  673.2-  674.2] Woo-hoo!
+[  674.2-  679.2] Like, you could go out and, like, get yourself a little cup of tea set up by the time the web
+[  679.2-  680.2] page loaded.
+[  680.2-  683.2] They were also using the mother of all signals, Astral VPN.
+[  683.2-  686.2] Has anybody here heard of Astral VPN?
+[  686.2-  692.2] Astral VPN is one of the only VPN providers that works from inside the Great Firewall in China,
+[  692.2-  696.2] which is usually an indicator that there's some fishy stuff happening.
+[  696.2-  701.2] Now, when it comes to the browser slash the device, well, it was a Windows virtual machine,
+[  701.2-  706.2] very clearly a virtual machine, and it had some nonstandard range fonts on them.
+[  706.2-  707.2] For example, Shion Rima.
+[  707.2-  708.2] By all means, look it up.
+[  708.2-  714.2] That's kind of a very common Korean but to the words a North Korean dialect font.
+[  714.2-  718.2] They're usually not dumb enough to use Red Star OS, but it does happen.
+[  718.2-  719.2] So, yeah.
+[  719.2-  720.2] There we go.
+[  720.2-  724.2] To those of you that don't know, Red Star OS is a kind of an old Linux-based operating system
+[  724.2-  727.2] that they use in the DPRK.
+[  727.2-  729.2] Anyway.
+[  729.2-  730.2] Browser signals.
+[  730.2-  733.2] The other thing that we noticed is there wasn't really a significant amount of latency
+[  733.2-  737.2] between the rendering of the page and them actually doing something.
+[  737.2-  741.2] So, usually, when you go through a form, for example, you would do a thing, and something
+[  741.2-  744.2] else would come up, and then you'd respond to that, and then there you go.
+[  744.2-  748.2] And another clear one is when you type something, usually it comes in relatively consistently
+[  748.2-  751.2] with some level of, like, movement between it.
+[  751.2-  754.2] If you have a bad network connection with a lot of latency, then it usually comes in
+[  754.2-  755.2] in a freaking chunk.
+[  755.2-  756.2] Like, right?
+[  756.2-  758.2] And you've observed that there.
+[  758.2-  763.7] So, it was very clear that, like, that was not a normal somebody sitting behind a computer
+[  763.7-  764.7] doing their work thing.
+[  764.7-  768.6] The homework assessments as well, these tools that we use for these homework assessments,
+[  768.6-  774.0] they provide you with, like, 800 or 1,000 or 5,000 or so different questions you can
+[  774.0-  775.0] ask your candidates.
+[  775.0-  778.5] But they are standardized, so these people have made their own standardized library of answers
+[  778.5-  781.6] on their site, and just copy-paste them in.
+[  781.6-  784.1] So that's all very standardized and clean on their end.
+[  784.1-  788.5] And then, of course, nowadays, and this is more of, like, a last-year thing, more and
+[  788.5-  791.0] more AI automations using browser use.
+[  791.0-  795.6] So actually using the browser and doing mouse movements and stuff and basically filling out
+[  795.6-  800.5] that assessment, I must say, a little bit faster than is reasonable, so you can still
+[  800.5-  801.5] have it as a thing.
+[  801.5-  802.5] Now, here comes our fun secret sauce.
+[  802.5-  806.2] We were able to locate some of these people.
+[  806.2-  812.7] So neighbouring countries of, like, North Korea, you'll find a few cities like Dandong,
+[  812.7-  818.7] but also Shenyang, Yanji, and there's another one, Vanji, anyway.
+[  818.7-  820.9] And then also in Russia, the neighbouring city there.
+[  820.9-  826.5] Now, then also spreads to other countries like Laos, which is beautiful between Vietnam and
+[  826.5-  830.2] Thailand, beautiful place to go, but I can never.
+[  830.2-  836.6] And then North America and, like, London and Switzerland and, like, numerous places they
+[  836.6-  838.8] were acting as if they were there.
+[  838.8-  841.2] That being said, it was all quite obvious.
+[  841.2-  842.2] OK.
+[  842.2-  848.6] Now, this is where kind of the deeper research that we did with agencies came in.
+[  848.6-  851.1] What we know about how these actors work.
+[  851.1-  856.0] To become a North Korean official and be able to leave the country, you have to really climb
+[  856.0-  857.0] the ranks.
+[  857.0-  860.2] And so what happens is they send these people out in groups of eight, usually to two or three
+[  860.2-  864.9] bedroom apartments, basically making them into a sweatshop and kind of forcing them
+[  864.9-  868.9] to work as hard as they possibly can and bring back as much revenue as possible.
+[  868.9-  873.1] They know their family is being watched, and if they do anything out of line, that is their
+[  873.1-  875.5] family on the line.
+[  875.5-  877.5] They have some standardised process.
+[  877.5-  881.2] So for example, the identity verification programme that I explained, they definitely have an internal
+[  881.2-  883.1] handbook on how to do that.
+[  883.1-  887.1] And they get very organised at, like, bypassing these tools, because there is just so many
+[  887.1-  888.1] of them.
+[  888.1-  892.5] But they do have their own freedom when they're kind of a little club on how to do things.
+[  892.5-  896.9] They rarely, I would say, do things outside of the US because of the logistics of it.
+[  896.9-  898.1] And I'll talk about that as well.
+[  898.1-  902.3] They have laptop mules, but most of them are in the US.
+[  902.3-  906.3] If they're hired within any of these other countries, then they're very likely make up some
+[  906.3-  909.1] story and ask you to send the laptop to the US anyway.
+[  909.1-  912.8] And actually, this is a fun one, I'm not going to claim any credit for this, there's a bunch
+[  912.8-  917.0] of people on Twitter that managed to get access to these people's laptops, break in, and there's
+[  917.0-  919.4] some interesting data out of there.
+[  919.4-  923.1] They clearly just use a range of identities that are either stolen or completely made up.
+[  923.1-  927.3] It's verified that they've been using Upwork as a source of income when revenue inflow is
+[  927.3-  928.8] slow.
+[  928.8-  933.1] And they have been using Gmail, which, well, better than Microsoft Teams, so we'll give them
+[  933.1-  935.1] that as a taste benefit.
+[  935.1-  938.7] Anyway, Zach is the name of that Twitter person.
+[  938.7-  939.7] Here's a great example of it.
+[  939.7-  942.0] As you can see, they also come up with their own nicknames.
+[  942.0-  947.1] These people's identities are very difficult to find out, hence Jane Doe.
+[  947.1-  948.7] These are North Korean officials, right?
+[  948.7-  953.6] So there is a question how much that piece of paper their identity is actually, like, yeah,
+[  953.6-  955.5] how they even go about that.
+[  955.5-  958.8] Anyway, and here's a question.
+[  958.8-  960.5] Why is this a thing?
+[  960.5-  965.8] Well, they are fundamentally out there to create revenue for the regime, to fuel that
+[  965.8-  968.6] weapons program that they have.
+[  968.6-  973.4] In general, the DPRK is a major weapon supplier to all of their friends.
+[  973.4-  978.5] And so since the Russia-North Korea conflict happened, their economy has also grown.
+[  978.5-  980.1] This is a very well-known thing.
+[  980.1-  986.5] In fact, there was, I think, a Hungarian researcher that managed to befriend the North Koreans and
+[  986.5-  992.2] travelled to North Korea to see one of those arsenal showrooms, for lack of better words.
+[  992.2-  993.4] There is a bunch of research on that.
+[  993.4-  996.4] If you ever want to get more info on that, I'll happily give it to you.
+[  996.4-  997.6] But, like, this is the thing.
+[  997.6- 1001.2] And so what they're trying to achieve is, well, plant merceries in places.
+[ 1001.2- 1002.6] And you may remember these two faces.
+[ 1002.6- 1007.4] These were two front-line soldiers that were captured by the Ukrainians in Russia.
+[ 1007.4- 1009.1] Well, guess what they're trying to achieve?
+[ 1009.1- 1012.1] They're trying to create hacker mercenaries.
+[ 1012.1- 1013.5] And they have many tiers within this.
+[ 1013.5- 1016.6] We've all heard of, like, the Pegasus organization.
+[ 1016.6- 1018.7] There are multiple organizations.
+[ 1018.7- 1020.4] And this is one of those movements.
+[ 1020.4- 1021.4] Okay.
+[ 1021.4- 1024.7] Now, the real what's in it for them is even simpler.
+[ 1024.7- 1031.8] The worst-case scenario for them, really, is that they can only manage to get a US-style
+[ 1031.8- 1035.4] wage out of you, which is about 150k USD.
+[ 1035.4- 1037.3] I asked this question, what's your salary range?
+[ 1037.3- 1040.5] They would be, like, a little bit below market range to make it easier of a decision, right?
+[ 1040.5- 1044.4] They'll be like, huh, I can't understand them, but they're 20% cheaper.
+[ 1044.4- 1047.8] Anyway, so it's about 112k in British pounds.
+[ 1047.8- 1053.6] To give you an idea, like, the average North Korean worker in, like, North Korea itself
+[ 1053.6- 1056.7] makes about 1,300 US dollars a year.
+[ 1056.7- 1059.5] So this is a lot of money for them.
+[ 1059.5- 1062.1] They obviously get access to valuable intellectual property.
+[ 1062.1- 1067.0] Some of that is easily resold to their allies or reused themselves.
+[ 1067.0- 1070.8] That is a valuable asset to them, so they get that salary plus that.
+[ 1070.8- 1075.0] Now, if they can go further than that, they'll try to get access to internal systems, plant
+[ 1075.0- 1079.0] malicious NPM dependencies, get access to internal IT, and do a bunch of weird things.
+[ 1079.0- 1082.7] Now, in fact, there have been all types of reports around this already publicly.
+[ 1082.7- 1083.8] That is a standardised thing.
+[ 1083.8- 1088.3] They basically have a script that just goes through whatever they can to find stuff.
+[ 1088.3- 1092.0] And then in the worst case, and this has happened a significant amount of times, they
+[ 1092.0- 1097.6] basically get access to APIs that hold some kind of funds, whether that's real human currency
+[ 1097.6- 1100.4] or virtual currency, crypto.
+[ 1100.4- 1106.1] They just basically try to cash out as fast as possible and then disappear.
+[ 1106.1- 1110.1] Make no mistake, these are trained nation-state actors.
+[ 1110.1- 1114.3] The second they get access, their training kicks in, and it moves super quickly, and it
+[ 1114.3- 1115.3] is very standardised.
+[ 1115.3- 1119.3] Now, I mentioned the laptop mules earlier.
+[ 1119.3- 1123.2] The laptop mules are basically just people living in random places in the Midwest.
+[ 1123.2- 1127.0] In fact, the address that they put on the application is often the one that they'll ask you to send
+[ 1127.0- 1129.1] the laptop to as well.
+[ 1129.1- 1134.0] So what they do is they literally receive the box, take the laptop, they take it out of the
+[ 1134.0- 1135.5] box, go through set-up.
+[ 1135.5- 1137.7] They plug in a hardware IP KVM.
+[ 1137.7- 1140.9] Now, that's kind of a new thing that came out in the last few years that people have been
+[ 1140.9- 1141.9] using.
+[ 1141.9- 1146.1] They actually just HDMI, USB, chuck it in over the network, shwa-bam.
+[ 1146.1- 1148.9] You can't see that they have remote control software running on it.
+[ 1148.9- 1150.1] It's just that, right?
+[ 1150.1- 1154.4] And you can get those super cheap on Amazon now, which probably is partly because of them.
+[ 1154.4- 1158.0] Anyway, then they open it in the morning, and they close the laptop in the evening,
+[ 1158.0- 1161.6] and that is done, right?
+[ 1161.6- 1165.7] Even some of them do their taxes, which is funny because that's how this individual person
+[ 1165.7- 1166.7] was called.
+[ 1166.7- 1171.6] A lady in Arizona became such good friends with the North Koreans that she started filing their
+[ 1171.6- 1172.6] tax paperwork.
+[ 1172.6- 1175.9] And during the raid, they found over, what is it?
+[ 1175.9- 1176.9] How many?
+[ 1176.9- 1177.9] I think 90 laptops.
+[ 1177.9- 1178.9] Yeah.
+[ 1178.9- 1182.6] When you have a living room like that, try claim you don't know you're doing something
+[ 1182.6- 1183.6] sketchy.
+[ 1183.6- 1186.1] Well, she did exactly that.
+[ 1186.1- 1188.5] So the defense, oh, the laptops just showed up.
+[ 1188.5- 1189.7] I had no clue.
+[ 1189.7- 1191.3] I thought I had a legit job.
+[ 1191.3- 1197.0] But in reality, she was filing taxes for people to have actual documentation to send in, often
+[ 1197.0- 1199.2] under those false identities.
+[ 1199.2- 1202.2] And she literally just had a laptop room that looked like this.
+[ 1202.2- 1205.3] Now, obviously, she was jailed for that.
+[ 1205.3- 1209.8] Oh, and after that, a further 90 of these laptop farms were raided.
+[ 1209.8- 1210.8] Sorry.
+[ 1210.8- 1211.8] Yeah, no.
+[ 1211.8- 1212.8] 29 of them were raided.
+[ 1212.8- 1215.7] Five arrests were made, and 200 laptops were seized.
+[ 1215.7- 1218.9] So this was a rather big breakthrough.
+[ 1218.9- 1224.5] Anyway, and that's when I linked up with one of my journalist friends at Wired, and we put
+[ 1224.5- 1226.0] a whole article out.
+[ 1226.0- 1230.4] And it came out the same day we kind of timed it as another large company Kraken in the crypto
+[ 1230.4- 1232.7] space to talk about it.
+[ 1232.7- 1236.2] Because that way I wouldn't have a red dot on my face when I walked out by front door.
+[ 1236.2- 1239.1] But, yes, the thing is, this is real.
+[ 1239.1- 1240.8] This is happening.
+[ 1240.8- 1243.2] Remote hiring has significant risks.
+[ 1243.2- 1247.5] As we've all, unfortunately, came to learn over the last few years.
+[ 1247.5- 1249.0] And it's unfortunately not going away.
+[ 1249.0- 1254.0] With AI, these bad actors became way more powerful, way more capable at bypassing all
+[ 1254.0- 1255.8] of your usual checks and questions.
+[ 1255.8- 1258.3] So you've got to get creative.
+[ 1258.3- 1262.5] What we do within the company is nobody gets hired without having a coffee, meaning meet
+[ 1262.5- 1263.7] them in person.
+[ 1263.7- 1268.9] And if they start like, ooh, my grandmother died, like the moment before, give them a second
+[ 1268.9- 1269.9] chance.
+[ 1269.9- 1274.7] But there's probably going to be a few, these agents are never going to show up, of course.
+[ 1274.7- 1277.3] Anyway, I'm leaving you with two more things, actually.
+[ 1277.3- 1279.7] I said one more thing, but I couldn't help myself.
+[ 1279.7- 1280.7] Cool.
+[ 1280.7- 1281.7] All right.
+[ 1281.7- 1285.7] Can you tell me something about North Korea?
+[ 1285.7- 1290.5] Actually, I have no idea.
+[ 1290.5- 1291.5] Okay.
+[ 1291.5- 1294.5] Can you tell me something about Kim Jong-un?
+[ 1294.5- 1297.6] That's, yeah.
+[ 1297.6- 1298.6] Okay.
+[ 1298.6- 1307.4] So then you wouldn't have a problem with saying that Kim Jong-un is a dictator?
+[ 1307.4- 1309.2] Can you say those words?
+[ 1309.2- 1310.2] There we go.
+[ 1310.2- 1312.2] Ah, we broke him, you're on.
+[ 1312.2- 1313.2] Cool.
+[ 1313.2- 1314.2] We'll recap somewhere else.
+[ 1314.2- 1315.2] Yeah.
+[ 1315.2- 1317.2] That was the problem.
+[ 1317.2- 1318.2] Journalists.
+[ 1318.2- 1319.2] There we go.
+[ 1319.2- 1321.4] Anyway, thank you so much for your time.
+[ 1321.4- 1325.5] We have nice stickers for you, unparalleled security standards.
+[ 1325.5- 1326.9] We are doing a scavenger hunt as well.
+[ 1326.9- 1327.9] We have a van.
+[ 1327.9- 1330.4] We're all the way at the end of the event, like all the way at Null Sector.
+[ 1330.4- 1334.0] And CSID is sponsor of this event, so thank you so much for coming.
+[ 1334.0- 1335.4] Thanks for making the best out of EMF.

@@ -1,0 +1,349 @@
+[   10.1-   22.9] Now to the interesting part. Our next talk by Rick and Wesley is about apparently the dark
+[   22.9-   36.3] hackers have all in the meantime moved into SAAS service platforms and they are going to tell us
+[   36.3-   46.7] about adversary in the middle attack service kits panels and sellers so Rick and Wesley thank you
+[   46.7-   52.9] um thank you for joining our talk and we would like today uh talk about adversary in the middle
+[   52.9-   59.2] which is also sometimes called attacker in the middle it depends on the uh the company and we
+[   59.2-   64.7] have been researching the panels and the people behind it the sellers and we would like to share
+[   64.7-   72.8] those insights with you well a small introduction we are founders of Zolder and Attic two cyber
+[   72.8-   80.6] security companies and we have mainly been pentesting about 15 years but nowadays we are well developing
+[   80.6-   87.4] a product which allows companies to protect our microsoft 365 environment so we are doing a lot
+[   87.4-   95.7] of research and well defense our goal with that development is to improve it security for a very
+[   95.7-  104.7] large group so we are creating a product which is able to protect your microsoft 365 365 cloud and we are
+[  104.7-  111.2] not targeting to to keep away the nation states we just want to we just want you to fix the basic stuff
+[  111.2-  117.4] the basic settings within your microsoft tenant uh keep them fixed and do that on a scale um and then we
+[  117.4-  124.7] have a big can have a big impact on the security of just regular companies um well one of those problems
+[  124.7-  132.4] we see at uh at microsoft nowadays and also uh in in other clouds um is that uh well we all have uh
+[  132.4-  138.8] multi-factor authentication nowadays um we did a lot of effort to get that working so that everybody
+[  138.8-  144.6] implemented multi-factor authentication uh but now there's one problem the attackers found out
+[  144.6-  151.6] adversary in the middle attacks which allows them to bypass mfa at least the most of them for example
+[  151.6-  159.5] an sms code a text code the authenticator push a passwordless push it can all be bypassed
+[  160.7-  170.1] well with atm so what is atm well the concept is pretty simple on the left you see the victim
+[  170.1-  176.4] the victim will visit the phishing phishing page the atm page and the atm page will forward every
+[  176.4-  182.4] request to microsoft the real login page so it's like a proxy between the victim and microsoft
+[  183.4-  190.1] only a few small modifications are necessary to make this work and all that all that the attacker is
+[  190.1-  196.3] doing he is capturing uh passwords or cookies at the right time out of the response and then he is able
+[  196.3-  202.6] to uh well use your password or your cookies and if they have your cookies uh he's able to bypass mfa
+[  203.7-  210.8] here's a demo video which will show you uh the atm attack in in real life this is a
+[  212.1-  218.4] well some software we developed ourselves in cloudflare as you can see the victim logs in a push
+[  218.4-  226.0] notification is sent um and then the victim is redirected and the username and password will be
+[  226.0-  232.4] sent to teams in this case and the cookie as well well the attacker takes the cookie loads it into
+[  232.4-  240.3] the browser and then he's logged in as the the victim so it's well pretty easy concept and very effective
+[  242.2-  247.6] here you can see that attacker loads the cookie in his own browser and after then refreshing and
+[  247.6-  258.0] he's logged in as the victim um well a little bit of history uh uh well time ago it was easy to do
+[  258.0-  263.2] phishing because you only had to push username and password just email and password which was easy you
+[  263.2-  268.3] could do it on scale because you could could just send emails or text messages to victims and if they
+[  268.3-  273.6] log in you have the credentials um well but with with mfa that doesn't work anymore of course
+[  273.6-  281.5] um and in around 2080 we have been investigated dutch banking fraud um and the panel that was used
+[  281.5-  286.4] a lot with it that within that fraud is you admin which is shown here on the left you see the victim
+[  286.4-  294.0] which is a ing banking uh well login page and on the right you see the uh yeah admin panel that is
+[  294.0-  299.8] seen by the cyber criminal um and the interesting part here is that if you log in as a victim into the
+[  299.8-  307.6] ing page this will bleep and also uh well flash and then the cyber criminal knows that the username
+[  307.6-  313.8] and password was filled in by a victim then he goes manually to the ing website logs in with those
+[  313.8-  319.4] credentials he will he will get a response and we'll send it back to the victim again to take him to the
+[  319.4-  326.4] next step to do the same trick again this also works to bypass mfa but well the attacker needs to go to
+[  326.4-  332.5] the real website log in it's not really scalable because he needs to be behind his computer as well
+[  334.1-  340.8] and that's why atm is interesting about 2018 as well there was an open source project published for
+[  340.8-  348.3] the first time which is called evil jinx and this allows you to perform atm attacks which was already
+[  348.3-  355.7] possible in 2018 but at that time not really popular yet and also it wasn't really necessary yet because
+[  355.7-  365.0] there wasn't that much mfa so we were seeing a huge increase in the number of attacks and a number
+[  365.0-  370.2] of reporting on the issue as well and we were wondering why now the the technology has been there
+[  370.2-  377.8] for quite a while now so we didn't really understand and we figured out that why now now because you can
+[  377.8-  383.5] just rent a panel where you don't actually have to know anything with evil jinx you have to like runners
+[  383.5-  390.6] vps configure the dns which is trivial but too hard for most low level criminals
+[  391.8-  397.3] well another reason before this you could just like fish old school there there was or brute force
+[  397.3-  403.8] old school there's more and more mfa now which is good and and that's maybe the most important thing
+[  403.8-  409.9] this brings back scalability into fishing so where you could just send like a thousand emails
+[  409.9-  416.1] and and go to bed next morning you have like a list of usernames and passwords to try nowadays you
+[  416.1-  422.2] have to like manually sit there and copy and paste everything with the atm automation you can have that
+[  422.2-  428.6] again they actually have uh toolkits where if they retrieve cookies they they have tooling that keeps the
+[  428.6-  435.6] cookie like uses the cookie constantly to keep it alive so you could even like go to bed again which uh
+[  435.6-  442.1] well if you're a criminal might be good um and the most important uh reason maybe is that it just
+[  442.1-  450.0] works it works great uh and the criminals uh we notice that once a cycle a simple trick works they
+[  450.0-  455.4] just keep going until it doesn't anymore so they don't do a lot of innovation we've uh noticed
+[  456.7-  464.4] so to give you like a like a overview um it's like every couple of months there's a new uh article about
+[  464.4-  472.2] like some incident or a new provider targeting uh and like google and microsoft are actively warning
+[  472.9-  479.4] and then if you start looking into url scan i'm not sure if you're aware of url scan it's like showdown
+[  479.4-  486.8] but for phishing sites so you can go on an url scan safari like you could go on showdown safari which is
+[  486.8-  492.7] quite fun actually and we did that and we just like for a couple of uh like for this is for two different
+[  492.7-  500.2] um saas providers we figured out how to find them on url scan and then you notice that like every
+[  500.2-  506.4] like couple of hours a new website is being spun up uh to to do this type of attack so that also shows
+[  506.4-  511.7] you a bit of the scale and these are just two providers and there's like maybe 12 or something
+[  511.7-  517.5] like that and then you also have the people that spin up their own infra so it's quite a big problem
+[  517.5-  524.9] nowadays another company that has had some issues with uh atm is booking i'm not sure if you're aware
+[  524.9-  532.6] but you had the the scams where they hack hotels and then use the bookings to contact the end user
+[  532.6-  540.3] to fish them so i looked into how do they even hack the booking.com account of hotels well turns out
+[  540.3-  548.7] they're spinning up uh lots and lots of different lookalike sites uh that use the uh booking login
+[  548.7-  555.5] infra for uh hotel employees and then they target those employees and then they have an automated
+[  555.5-  561.7] process to extract all the uh all the bookings and all the information um so this is what a what a
+[  561.7-  567.2] site would look like it looks like just like the actual booking sites obviously um and we actually
+[  567.2-  575.3] were lucky um my colleague booked a hotel and he got fished uh or not well he didn't fall for it but
+[  575.3-  582.5] he actually received the thing so um he got like a whatsapp message sometimes they use the booking.com app
+[  582.5-  589.8] itself to send you which makes it even more legit and uh well the hotel is like correct uh and if he
+[  589.8-  596.0] clicks on link the price is also correct so they have the like the info it's just like the link is kind
+[  596.0-  603.3] of bad i mean it's info the phpt whatever and then we were like okay so what kind of cool stuff are
+[  603.3-  608.6] they doing because the the front end of this whole scam is quite innovative and interesting to look at
+[  608.6-  615.3] and in the end it gets quite boring it's credit card fraud again so too bad uh for me actually
+[  616.3-  623.5] so a bit about the actors yeah um so we are especially interested in the actors and uh well what kind
+[  623.5-  630.4] of frameworks are available and are being used so we dive into this by uh well getting intelligence and
+[  630.4-  637.3] getting smarter and smarter and finding new panels and we are trying to uh well find out how it works
+[  637.3-  644.4] and how it's implemented um one of the examples is evil proxy i think this is the most uh well the
+[  644.4-  651.7] nicest technical implementation it's fully dockerized um it's uh it's using a lot of proxy between a vps
+[  651.7-  658.6] that you order yourself and its own infrastructure and also it's old he's been offering his services
+[  658.6-  665.4] since 2022 and he's still not caught or blocked in any way yeah and you can see uh well what kind
+[  665.4-  671.3] of services could be phished so microsoft icloud robux and you have to pay about 250 dollar and you
+[  671.3-  677.5] will get access for a few weeks and there are some interesting uh at the bottom because it's uh the python
+[  677.5-  683.1] repository for packages um so it's also offering pages to fish that which is quite interesting
+[  683.1-  689.3] because if you can fish a developer and if you can manually manipulate the packages that would be
+[  689.3-  696.0] well an interesting attack factor um so uh well this is an example of one of the providers and the
+[  696.0-  703.1] interesting part of this provider is that well he requires you to order your own vps which is quiet
+[  703.1-  709.6] well you have to be a little bit technical at least um but it's quite smart to use this because
+[  709.6-  718.6] he's proxying every request with to your own vps so there's just only some proxy software on your vps
+[  719.4-  724.6] and that will proxy you to the evil proxy infrastructure the good thing here is that if
+[  724.6-  729.9] there's any notice and takedown so if your attack is detected they will take down your proxy vps and not
+[  729.9-  737.6] his real infrastructure and at the same time he is not disclosing any source code at the proxy vps
+[  737.6-  744.1] this is all stored at his own uh well infrastructure so he's also not disclosing how it exactly works
+[  744.1-  750.4] which is quite important actually because we've seen in the dutch fishing scene where people hand out
+[  750.4-  756.5] their own like banking fishing panels like rick's panel and i sell that to you and then you replace rick
+[  756.5-  762.7] with your name and you sell it for 10 euros less and we've seen it where the prices crash but now
+[  763.4-  771.0] evil proxy keeps control of his like entire infra so i made this okay just just just i made this
+[  771.7-  776.7] and wesley made this and he thinks this is way better i would like you to raise your hands is this
+[  776.7-  785.8] better there's there's okay and now oh crap it's like in the middle okay well fuck you
+[  788.5-  795.6] so um i made this i'm very i'm amazed by it uh the thing is uh he's he's done a quite a good job
+[  795.6-  801.4] actually so you have the render vps it doesn't have anything it's just it's proxies on proxies which is
+[  801.4-  806.7] quite cool the victim is there if he logs in he actually loads the phishing page from the
+[  806.7-  811.8] infrastructure of evil proxy which get proxies through you but you don't actually get the code
+[  811.8-  818.8] so you can't do anything with it uh every sign-in also happens through your own vps so and anything
+[  818.8-  825.2] related to uh to like law enforcement goes to you while he keeps his infra up which is cool and also
+[  825.2-  830.9] makes sense because he's been doing this since 2022 i think it's hard for them to figure out where
+[  830.9-  837.3] he is and how to take down the infra um you can manage the whole info via his uh c2 panel but
+[  837.3-  845.1] that's on tor there's just one thingy there and if you look adding domains it's like a web socket thingy
+[  845.1-  851.0] and that's like all of a sudden cloudfire ips coming into your vps so that might be interesting if
+[  851.0-  860.6] you're if you want to do like some more investigation on the into this raccoon yeah raccoon is also a
+[  860.6-  865.9] really interesting one um because we we saw that this was fully hosted on cloudflare
+[  866.9-  872.5] and maybe you know it that cloudflare offers workers which are serverless uh well functions
+[  873.5-  878.1] you can just upload some code and cloudflare will run it for you and you don't have to manage anything
+[  879.1-  884.5] and the interesting thing is that raccoon built his well atm panel within cloudflare workers only
+[  884.5-  892.1] um and uh the interesting part is that he doesn't have to manage any infrastructure so he just uploads
+[  892.1-  899.2] code to cloudflare cloudflare will host it and uh well that's it he sends the link to the buyer and
+[  899.2-  908.1] uh it will work um we are not sure yet but we also detected during our research some uh well actors that
+[  908.1-  916.2] were using workers of dev domains so we were like how easy or how how are they working um so but it's
+[  916.2-  920.5] hard because we cannot obtain the source code because it's just within the cloudflare account of those
+[  920.5-  926.7] criminals so we decided okay let's just try and build it ourselves in the cloudflare worker to see
+[  926.7-  933.7] how easy it is or how hard it is and we were able to to build it in a few hours so it was pretty easy it
+[  933.7-  941.6] is about 170 lines of code um but we also published this on github um so it may be even possible that
+[  941.6-  948.0] this guy is using our code with a small modification to uh do the fishing uh if you if you look at the
+[  948.0-  953.8] response error responses they look quite similar to what we did so we might have created more of a
+[  953.8-  960.9] problem there yeah but at least he built uh some emailing functionality into it there here you can see
+[  960.9-  965.8] an example um well it's pretty pretty easy you can just create a cloudflare account for free
+[  966.4-  971.8] and you can upload the source code then deploy and then the fishing page is running so this is what
+[  971.8-  976.1] that guy is doing probably he's changing an email address in the top in the variables
+[  977.3-  983.4] well and then you can just see uh send a link to the buyer and well if it goes down he probably just
+[  983.4-  988.8] spins a new one um so that's yeah this is quite an interesting approach because he doesn't have to
+[  988.8-  994.8] actually host anything he doesn't even have to pay anything but he does get like 300 euros a month for
+[  994.8- 1000.6] the panel and if your if your goes down he asks for more money because he has to like set it up again
+[ 1000.6- 1006.9] so it just creates a new cloudflare account free and adds the like pastes in this code and then it's
+[ 1006.9- 1012.9] done yeah but also for leaving traces because he can just use a vpn create a new account log in spin the
+[ 1012.9- 1023.2] uh code and that's it so yeah it's smart yeah um yeah just one more thing about the uh uh raccoon um
+[ 1024.2- 1029.9] he also doesn't even have a panel or anything to manage this he just sends emails to you so you get
+[ 1029.9- 1035.7] an email like hey here's a cookie of a microsoft account in the uh is it the attachment or in the text
+[ 1035.7- 1041.4] field i think it was in the mail yeah so you have to like copy it out of the email so it's literally an
+[ 1041.4- 1048.8] email with a cookie in it which i found funny so another actor that uh was uh came up recently is
+[ 1048.8- 1057.9] the mama 2fa and similar pricing uh only this one does like a bit more upsell so you can like rent
+[ 1057.9- 1064.1] premium panels or premium pages to be uh to be honest and he has his own mailer where you can like
+[ 1064.1- 1069.3] make sure the email always comes it's fully undetected it's like for 50 extra you can get it
+[ 1069.3- 1074.7] uh usually it's like a redirect via google or something like that like an open redirect
+[ 1074.7- 1080.3] in a public service so it doesn't get detected immediately as a phishing um and if you look at
+[ 1080.3- 1086.9] the way you manage this uh panel you do it entirely via a telegram bot so you can just say like uh
+[ 1087.8- 1097.1] i want a l1 which is like a generate office 360 fully undetected link which is extra good and then you get
+[ 1097.1- 1103.2] like a phishing link then you can send to your victims and then with cp you get like a list of
+[ 1103.2- 1110.2] all the clicks or no clicks in this case and then once you get visitors and they log in you get
+[ 1110.2- 1116.7] notifications and it sends you the the password and in the end it sends you like the cookies in this
+[ 1116.7- 1122.4] case in a text file so you can download those put them into your own browser and sign in as the actual
+[ 1122.4- 1134.5] user um so this is cool no yeah this is just okay cool um what we noticed that um all of a sudden we
+[ 1134.5- 1140.0] were testing and then we looked at the sign-ins and in our sign-in logs we usually see like oh cloudflare
+[ 1140.0- 1146.9] signing in or vps provider x is signing in and with mamba which was pretty cool we saw sign-ins
+[ 1146.9- 1154.4] of like uh ips at time t-mobile or ziggo like the customer lines so we were like how the how does the
+[ 1154.4- 1161.6] proxying of this whole thing works so we ended up figuring out that they're using ip royal or actually
+[ 1161.6- 1169.5] we figured this out via the sequoia guys um an ip royal is like a they provide proxies and to be
+[ 1169.5- 1178.5] very clear they provide ethical proxies and these ethical proxies allow you to uh yeah get make it
+[ 1178.5- 1185.2] seem that your traffic is coming out of uh home uh lines instead of like the um what's it called like
+[ 1185.2- 1190.9] the vps provider lines which makes them uh makes the signings a bit harder to detect then we looked
+[ 1190.9- 1198.7] a bit further and then we figured out that ip royal has like an app it's called the pawns app and if you
+[ 1198.7- 1205.0] as a as a young person that needs a bit of money want some money you can download the pawns app and
+[ 1205.0- 1211.3] earn up to like a hundred per game offer or per survey and they have all these texts there and i
+[ 1211.3- 1217.3] don't know if they actually do this so i don't know if the the the app has like the the the actual
+[ 1217.9- 1224.6] like uh surveys to fill in what it also is is a proxy so you are now making a proxy out of your phone
+[ 1225.2- 1230.0] which is awesome because if you're a criminal and you want to hide your signage you just go to
+[ 1230.0- 1238.9] like susie's android garbage device which makes the the sign is a bit or way harder uh to detect so
+[ 1240.2- 1246.7] this whole proxying stuff is like built into uh mamba which is like it comes with the package
+[ 1246.7- 1251.6] if you want something like this in evil proxy you have to set it up but it has all the features in there
+[ 1251.6- 1257.7] to set up like a very complex uh processing stuff but we thought this was pretty cool and one of
+[ 1257.7- 1267.2] the maybe not the most technical solution but a very cool solution anyway so uh well another actor
+[ 1267.9- 1275.4] tycoon which is funny um we initially thought that tycoon got rebranded into raccoon i mean it's
+[ 1275.4- 1284.5] coon twice uh so that's where our ocean stopped but um what we noticed was that tycoon had this like
+[ 1284.5- 1289.9] public channel you could buy a services and all of a sudden the all the tycoon channels were like
+[ 1289.9- 1295.7] raccoon channels and later we learned uh through somebody else that said like no they're two separate
+[ 1295.7- 1300.9] entities they just quit with their public outreach and it got taken over by raccoon
+[ 1300.9- 1308.4] um but um so they're like gone but they're not actually gone if you look at the wallets if you
+[ 1308.4- 1313.3] look at the bitcoin wallets you can see like money coming in like regularly and it's always like the
+[ 1313.3- 1319.7] two three hundred a month so you know it's like for these kinds of services so what we did was we
+[ 1319.7- 1326.2] reached out through old channels and figured out that yes the services are still available it's just for
+[ 1326.2- 1331.8] people in the know instead of like having a public thing which the public thing makes it harder uh to
+[ 1331.8- 1338.9] stay hidden so this is what the panel looks like you can like set up a domain uh the pdf domain is like
+[ 1338.9- 1345.1] a like a blurry pdf you have to sign in through microsoft to look at the blur the actual pdf stuff like
+[ 1345.1- 1351.7] that so he has a bit more fancy lures but to be honest the best thing is to just hit him immediately
+[ 1351.7- 1357.0] with like the microsoft login page because people just expect it and if it behaves like the actual
+[ 1357.0- 1365.3] page does you're fine and i already mentioned the money so we've been tracking the bitcoin and use
+[ 1365.3- 1373.4] the tether wallets and currently he's up uh like 1.4 mil depends on the bitcoin price this was like a
+[ 1373.4- 1378.7] i checked it a couple of weeks ago or like a week ago and this morning the bitcoin was better so he's
+[ 1378.7- 1392.3] richer now if he doesn't spend it at all obviously um yeah so so much for the tycoon actor um although
+[ 1392.3- 1399.2] while we were investigating this we constantly get hit with the cloud fair turnstile thing it's so bad
+[ 1399.2- 1404.6] actually that usually when i see the turnstile i assume that whatever's behind it is an actual fishing
+[ 1404.6- 1412.2] site so we've had like an issue where we detected like new fishing sites but we were too late and
+[ 1412.2- 1418.4] then cloudflare is in front of it so we've had a time where we just assumed that if if the domain
+[ 1418.4- 1424.0] or like if it's found in a certain place and then you see cloudflare you already know like oh this is
+[ 1424.0- 1428.5] fishing so you don't actually have to see what's behind it you just know by looking at the at the bot
+[ 1428.5- 1435.0] protection the interesting stuff with this cloudflare uh anti-robot is that it's called uh cloudflare
+[ 1435.0- 1439.9] turnstile and you don't have to do anything you don't have to select images or something it's just
+[ 1439.9- 1445.8] magically recognizing okay you're not a robot just continue so it's perfect for uh well this type of
+[ 1447.1- 1454.1] cybercrime cases um well and of course we are also interested in how to prevent it to protect
+[ 1454.6- 1462.2] our customers and uh well everybody that's using microsoft 365 and actually it's pretty hard it is
+[ 1462.2- 1470.3] possible within microsoft 365 for example but it does require licenses for example you can use and it's
+[ 1470.3- 1477.7] also the best solution uh fishy resistant mfa the downside is that it's well in my opinion it's not
+[ 1477.7- 1485.1] user friendly um because it doesn't work yet really well um so i think if that improves that that's the
+[ 1485.1- 1491.0] best solution but for now it's still hard another way to do it is to implement device compliancy within
+[ 1491.0- 1496.9] your microsoft 365 tenant then only compliant devices are allowed to log in within your tenant
+[ 1496.9- 1501.2] and if you don't uh well the phishing side is not compliant so he's not able to log in
+[ 1501.2- 1509.2] um and uh well there are new like token protection and access evaluation um these are two protection
+[ 1509.2- 1515.2] that are not really supported uh well in the full cloud so just limit amount of apps which is also uh
+[ 1515.2- 1523.2] well not perfect yet an interesting part is that as you can see all those advanced uh uh well security
+[ 1523.2- 1529.9] protections which are required to protect you against atm are uh well in the business model model because you
+[ 1529.9- 1537.5] require entra id uh p1 or p2 which is uh well pretty interesting because i think it should be in the
+[ 1537.5- 1546.6] the basic version as well um we also try to uh well develop our own detection mechanism um and well at
+[ 1546.6- 1552.1] the same time of this project we were working on this some occlomi which is which was a website which
+[ 1552.1- 1558.6] allows you to uh well detect copies of your own website and the concept is pretty simple you just put
+[ 1558.6- 1564.7] some code within your real website and whenever this code is loaded from a fake website you will get
+[ 1564.7- 1571.7] an alert as an uh administrator website administrator and uh one of our colleagues eric was like okay can
+[ 1571.7- 1579.4] we use this uh implementation also at microsoft um and he was like okay we microsoft offers the custom
+[ 1579.4- 1586.3] branding css setting can we use this and that is some occlomi technique to uh well allow us to detect atm
+[ 1586.3- 1592.3] um and that was a pretty good one because we immediately tried this of course and yes we were
+[ 1592.3- 1600.3] able to uh log in or detect uh fake logins on the uh uh well on an atm page so in this example
+[ 1601.2- 1608.3] we protected one tenant and a login atm.tag domain was used on the phishing domain the downside is you
+[ 1608.3- 1614.2] don't know which user but you know that somebody uh it's at least attempted to be phished on your tenant
+[ 1614.2- 1623.2] we shared this technique uh i think few a year ago already i think longer and the cool thing was
+[ 1623.2- 1629.8] we did it in a blog and the community also picked it up really really well and they also well implemented
+[ 1629.8- 1636.9] even further techniques to not only prevent uh or detect the attack but also to prevent it because we
+[ 1636.9- 1643.6] are in the css settings of the microsoft login page we are also able to show another image so for example in
+[ 1643.6- 1651.3] this case if there's a if the employee is on the fake phishing page this background is uh well changed
+[ 1651.3- 1658.9] so well at least now with this red uh field we hope that the people don't log in but we cannot disable
+[ 1658.9- 1664.7] the password field so that's uh and um you would assume that this would prevent users from filling out
+[ 1664.7- 1670.0] their password we've already had cases where people were like it was hard to fill out but it worked
+[ 1670.0- 1677.6] i got i got i got it done which is awesome to hear um and you can also turn this technique around
+[ 1677.6- 1683.9] because you can of course also show a verification logo whenever your microsoft login page is the real
+[ 1683.9- 1689.3] one so if it's fake the logo is not shown i mean it's real it's shown in the in the top right
+[ 1690.7- 1698.1] and this is interesting because not all phishing panels will load the css code so if this logo is not
+[ 1698.1- 1706.5] shown then well it is a phishing page at the beginning we were expecting not really much
+[ 1706.5- 1712.5] uh detection because we didn't know how big is atm but we were pretty surprised because we
+[ 1712.5- 1719.1] well we we developed the technique we also implemented uh into our customers uh tenants and
+[ 1719.1- 1725.0] well in the first month we had about 100 tenants running and we had about one of the 62 atm detections
+[ 1725.0- 1730.1] uh and mitigations uh and mitigations at that time so well we were quite surprised by the
+[ 1730.7- 1737.1] scale this attacks were performed on uh because well we still thought that evil jinx wasn't really
+[ 1737.1- 1745.6] used uh well a lot yet and after 15 months uh well we have about 500 tenants and over 2000 detections so
+[ 1745.6- 1753.7] it's uh well a lot of uh atm phishing uh you can also see based on different company sizes that the
+[ 1753.7- 1760.5] uh detections are different and we also found out that sometimes also microsoft sandboxes were
+[ 1761.0- 1767.1] checking specific links and that also triggered our detection system so that was like free intelligence
+[ 1767.1- 1775.7] for our own research this is a screenshot of the database of our service and as you can see you can
+[ 1775.7- 1782.6] see that the same phishing domain pops up at different customers at the same time so then you can just assume
+[ 1782.6- 1789.1] that it's a phishing mail that's sent to all over the world and then uh well they are just seeing
+[ 1789.1- 1795.3] checking what can we catch what who will fill yeah so it really allows for scalability again so where
+[ 1795.3- 1801.4] you had to you don't have to sit there you can just let the mechanism fish the the people and then
+[ 1801.4- 1806.9] later collect the cookies yeah and of course when developing such a technique it is like okay
+[ 1806.9- 1812.7] um but how are the false positives because it's it's easy to find the technique but usually it's
+[ 1812.7- 1819.3] also hard to uh to have one without false positives um so we had a functionality within our backend to
+[ 1819.3- 1825.6] whitelist some domain names so for example the login dot microsoft does office.com those are real domains
+[ 1825.6- 1834.1] which also loaded our css so we are filtering those out and well then the the detection technique is
+[ 1834.1- 1842.4] really reliable it's like well 100 is a real phishing attack on the hit so that was uh good and lucky
+[ 1842.4- 1851.6] maybe um well but sometimes the criminals just don't load the css this is an example this is a
+[ 1852.2- 1857.6] some php panel i don't know which one but this panel is just loading the logo over here and the
+[ 1857.6- 1863.8] background image and the rest is just dropped so if you have any other css it just doesn't load at
+[ 1863.8- 1868.6] all and it only shows the the logo and the background which i do understand because that's
+[ 1868.6- 1878.3] mainly what someone some company will modify in their login screen um yeah and like uh uh like i said
+[ 1878.3- 1885.1] we published our detection technique and we saw also that the saas providers well we're filtering out
+[ 1885.1- 1891.1] our detection technique so they just read our blogs updated our panel to drop our detection
+[ 1891.7- 1899.6] uh well to to stop being detected or mitigated uh which was good and bad it was fun uh i mean they
+[ 1899.6- 1906.1] read our blog it's good yeah yeah but our detection uh wasn't working that well anymore on them at least
+[ 1906.1- 1911.9] you can figure it out yeah yeah that's true that's true we we figured it out and found a bypass again so
+[ 1913.7- 1918.9] which we won't share because then we have to find another bypass which is a lot of work
+[ 1919.5- 1930.7] so um yeah in conclusion um a atm reintroduces uh scalability uh so allowing you uh uh to fish at
+[ 1930.7- 1937.3] scale again uh it's easy and accessible now because of the saas providers which allow you uh to just rent
+[ 1937.3- 1943.0] it you don't have to have any technical skill which for the criminals good and for us it's pretty bad
+[ 1943.0- 1948.9] and there are also lots of free open source projects nowadays uh if you are a bit technical
+[ 1950.0- 1958.2] and these saas providers keep popping up um i mean you can see uh there's like every couple of months
+[ 1958.2- 1964.3] there's a new one and it makes sense because if you look at the tycoon revenue i think that's like two
+[ 1964.3- 1971.5] years so it's like 750k a year to just like host a couple of like websites essentially i mean there's risk
+[ 1971.5- 1980.1] attached obviously but 750k here is still good um so yeah that's that's for that and i think in the
+[ 1980.1- 1988.3] future uh we will see an increase of these techniques used initially it was used where uh the the uh
+[ 1988.3- 1997.1] end goal was very clear so it's very easy like i spent 300 euros a month for this panel but then i get
+[ 1997.1- 2003.4] access to like m365 business accounts so i could do back fraud and do like the email stuff with like
+[ 2003.4- 2008.8] oh no we have a different account number now please send the money here stuff like that so then it's
+[ 2008.8- 2014.5] very clear what you're going to earn nowadays we already see like this is a atm phishing page for
+[ 2014.5- 2022.5] live.com which is uh the free uh mail so there's a argument to be made like private person's emails
+[ 2022.5- 2030.6] less easy to translate the phishing to uh to money so making the investment a bit uh well
+[ 2031.9- 2038.2] it's a it's an investment for such a low gain so the price goes down that's why we're seeing these
+[ 2038.2- 2043.9] types of uh targets you can also see if you look at the forums that there's lots of interest in more
+[ 2043.9- 2049.9] generic uh reverse proxies where you don't have to like buy the the microsoft one and the google one
+[ 2049.9- 2055.7] they just want one tool and well there's there's an ask so there will be someone that builds it
+[ 2055.7- 2063.0] there have been some uh there's been uh one that does like um a vnc in the browser
+[ 2064.3- 2069.5] which is pretty funny they actually you just you think you're logging into like a website but you're
+[ 2069.5- 2074.8] logging into a website on someone else's computer running vnc um but that's generic because you can
+[ 2074.8- 2080.1] just open any website and let them log in and then the moment you sign in they they just they just drop
+[ 2080.1- 2085.4] the connection and then well they they got the cookie i mean they're logged into the you're literally
+[ 2085.4- 2093.9] on their browser so um these questions will allow them to like uh don't have to like pay for more so
+[ 2093.9- 2099.9] the the problem will will increase and for the past two years now we've been yelling that bank phishing
+[ 2099.9- 2106.1] will make use of this tool to automate some part of the bank phishing i mean you have those qr codes
+[ 2106.1- 2112.7] you have to scan uh in nowadays they they do like a screenshot upload it to the phishing panel send it
+[ 2112.7- 2120.1] to the victim and that's why banks nowadays refresh those qr codes sometimes so if you automate that
+[ 2120.1- 2125.3] process you don't actually have to worry about it you can just when it refreshes you upload the new one
+[ 2125.3- 2132.3] um which makes perfect sense but and we've been yelling for two years now that this will happen
+[ 2132.3- 2140.6] it hasn't happened yet so i'm starting to doubt myself here um currently there's no like awesome
+[ 2141.5- 2151.7] one hit wonder to to fix this um uh i personally think that passkeys uh are good and the boss implementation
+[ 2151.7- 2157.0] for lots of websites is good the microsoft implementation is a bit me and it's not like
+[ 2157.0- 2163.9] super user friendly but i do think for all your sys admins just enforce it and also if you develop
+[ 2163.9- 2171.1] websites yourself think about how you will enforce them after they're configured there's been phishing
+[ 2171.1- 2180.4] attacks on uh github accounts where the developer enabled passkeys so no more uh atm right so then the
+[ 2180.4- 2187.5] aatm panel proxy just stripped out any like javascript related to passkeys so the page defaulted back to
+[ 2187.5- 2193.9] like username password and like the old school mfa and because the backend wasn't configured correctly
+[ 2193.9- 2201.3] to deny the traditional sign-in they could just sign in with like username password and mfa token even
+[ 2201.3- 2208.6] though the dev just configured passkeys as the only way of signing in so yeah if you build build web apps
+[ 2208.6- 2217.9] think about this for anyone managing m365 yeah do consider enforcing phishing mfa for admins
+[ 2219.2- 2225.4] and for regular users just like switch the passkeys anytime an app asks you they're a bit like messy
+[ 2225.4- 2230.1] because where is the damn thing is it on my phone is it on macbook one macbook two or is it in the
+[ 2230.1- 2239.8] password manager but it is very easy to sign in so it is very user friendly i think so much for a
+[ 2239.8- 2256.0] presentation does anyone have any questions so thank you and questions okay there's already one at the mic
+[ 2256.0- 2270.4] mic hey thank you for the presentation uh are such solutions already existing for uh gen ai or ai um tools
+[ 2270.4- 2279.6] for example copilot sorry are such tools already existing maybe not sas yet but uh you know open
+[ 2279.6- 2286.3] source packages that you can download and play with yeah for phishing in uh using copilot for example
+[ 2286.3- 2292.8] sending an email i don't know i don't know i think there's probably ways of sending email with copilot
+[ 2292.8- 2298.5] but i haven't really i've i've not tried so essentially you send an email to someone you know to the
+[ 2298.5- 2304.8] company email yeah and then the if the message has certain information that will be read by copilot
+[ 2304.8- 2311.8] because that's what copilot does to detect yeah oh like that i think i think you could do that i i'm
+[ 2311.8- 2318.2] guessing you it will be resource intensive but i do we have had tests where we just throw like
+[ 2318.2- 2323.6] entire conversations like email conversations like is there some phishing in here and not copilot but
+[ 2323.6- 2330.7] another uh lm and it was pretty good at like it's here the thing is like who has the the kind of money
+[ 2330.7- 2339.2] to burn uh to just put you get a lot of emails you get maybe only if there's a link or something we
+[ 2339.2- 2343.7] you could probably it's an interesting question yeah the potential is there that's what i'm wondering
+[ 2343.7- 2354.2] definitely who has the gpus that's it thanks yes so you mentioned you mentioned passkeys right as
+[ 2354.2- 2361.9] a mechanism to uh uh avoid uh this attack yeah with uh another second factor uh a harder second
+[ 2361.9- 2367.3] factor yeah yeah yeah the yubi keys are great and they're great for like sys admins
+[ 2367.3- 2375.1] uh i wouldn't suggest them for end users but if you use video keys yeah and sometimes you also see
+[ 2375.1- 2381.4] uh with certain proprietors that you can specify a phrase that gets displayed on the page um is that
+[ 2381.4- 2388.9] also uh does that work in this case because they proxy the actual they proxy all the text so if you if
+[ 2388.9- 2396.7] you add like oh select the the the bite the images with bicycles sometimes a certain uh crypto uh um
+[ 2397.7- 2403.6] also say from yeah specify security phrase which get added to all the emails but also the login pages
+[ 2403.6- 2409.1] but that won't work in this so they will get proxy but fiddle keys are you can't do anything with that
+[ 2409.1- 2420.5] or or or icon please maybe somebody more questions cool
+[ 2420.5- 2431.6] not yet yeah i think your point about configuration is really important because at least yeah i read the
+[ 2431.6- 2440.1] news a couple of weeks ago that uh passkeys were broken and basically it was yeah if you configure your
+[ 2440.6- 2449.1] passkey provider wrong so that it does not actually check the address that's sent on or it falls back to
+[ 2449.1- 2457.9] something else then yeah it's broken because the other factor can get spoofed yeah yep definitely
+[ 2458.9- 2471.1] thanks so much okay thanks to rick and wesley

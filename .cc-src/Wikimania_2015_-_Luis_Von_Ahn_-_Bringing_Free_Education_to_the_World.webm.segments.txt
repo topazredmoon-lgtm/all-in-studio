@@ -1,0 +1,289 @@
+[    9.1-   14.4] Hi. Can you hear me okay? Yes. Okay. Good. I want to start by asking you guys a question.
+[   14.8-   18.2] How many of you have had to fill out some sort of web form where you've been asked to read a distorted
+[   18.2-   22.6] sequence of characters like this one? Okay. How many of you found it really, really annoying?
+[   23.9-   35.8] Excellent. Okay. Well, I invented that. Sorry. That thing is called a CAPTCHA, and the reason
+[   35.8-   39.2] is there is to make sure that you, the entity filling out the form, are actually a human and
+[   39.2-   42.7] not some sort of computer program that was written to submit the form millions and millions
+[   42.7-   47.3] of times. And the reason it works is because humans, at least non-visually impaired humans,
+[   47.8-   52.3] can read these characters, whereas computer programs can't do it as well yet. So, for example,
+[   52.8-   58.6] in the case of Ticketmaster, the reason you have to type these characters is to prevent scalpers
+[   58.6-   63.5] from writing a program that can buy millions of tickets two at a time. Now, these are used
+[   63.5-   68.2] all over the place. It turns out that approximately 200 million of these are typed every day by
+[   68.2-   73.9] people around the world. Now, when I first heard this number, I was very proud of myself. I thought,
+[   73.9-   78.8] look at the impact that my work has had. But then I started feeling bad, because the thing is,
+[   78.8-   83.3] each time you type one of these, not only is it really annoying, but it also takes 10 seconds of
+[   83.3-   90.0] your time. And if you multiply 10 seconds by 200 million, you get that humanity as a whole is wasting
+[   90.0-   93.7] about 500,000 hours every day typing these annoying CAPTCHAs because of me.
+[   93.7-   99.9] So I started feeling bad. And then I started thinking, is there any way in which we can
+[   99.9-  106.0] make good use of this time for something that is good for humanity? See, during those 10 seconds,
+[  106.0-  109.9] while you're typing a CAPTCHA, your brain is doing something amazing. Your brain is doing something
+[  109.9-  114.8] that computers cannot yet do. So the question is, can we get them to do something useful? Can we get
+[  115.3-  120.0] people to do something useful while they're doing that? And the answer to that is yes. And this is what
+[  120.0-  124.3] we're doing now. And you may not know this, but that nowadays, while you type a CAPTCHA,
+[  124.3-  128.6] not only are you authenticating yourself as a human, but you're also helping us to digitize books.
+[  129.7-  133.5] So let me explain how this works. There's a lot of projects out there trying to digitize books. So,
+[  133.5-  139.1] for example, the Internet Archive has one, Google has another one, where the idea is to take all of
+[  139.1-  144.2] the books that have ever been written, and then put them in digital form on the internet. Now,
+[  144.2-  150.0] the way these digitization processes work is that first you start with a book, like a digital,
+[  150.0-  154.5] sorry, like a physical book thing. You've seen those things, right? Like a book. Okay, so you start
+[  154.5-  161.1] with a book, and then you scan it. Now, scanning a book is literally, it consists of taking a digital
+[  161.1-  165.7] photograph of every page of the book. The next step in the process is that the computer needs to be
+[  165.7-  172.9] able to decipher all of the words in these pictures of pages. Now, that's done using a technology
+[  172.9-  178.2] called OCR for optical character recognition. Now, the problem with OCR is that it's not perfect,
+[  178.2-  183.1] especially for older books where the ink has faded. The computer cannot recognize about 30% of the
+[  183.1-  188.3] words, but humans can. So what we're doing now is we're taking all of the words that the computer
+[  188.3-  193.1] cannot recognize in this book digitization process, and we're getting people to read them for us while
+[  193.1-  197.3] they type a CAPTCHA on the internet. Okay, so next time you type a CAPTCHA, those words that you're typing
+[  197.3-  201.5] are actually words that are coming directly from books that are being digitized that the computer could not
+[  201.5-  205.3] recognize, and we're getting people to read them for us while they type the CAPTCHA.
+[  206.1-  212.9] Now, you may wonder, wait a second, if the computer does not know the answer for the thing, then
+[  213.8-  218.7] how is it that it can tell whether you're a human or not? How is it that it can grade your answer?
+[  219.3-  224.3] And the solution to this problem is this is why we now give people two words. See, the idea is that
+[  224.3-  229.1] one of the words is a word that we just got out of a book that the computer does not know what it is.
+[  229.1-  232.5] The other word is a word that the computer has already digitized, and it already knows
+[  232.5-  237.5] the answer for. And then we give the user both words, and we say, please type both,
+[  237.5-  241.1] and we don't tell them which one's which. And if they type the correct answer for the one for which
+[  241.1-  246.1] we already knew the answer, for the one for which the system already knew the answer, then we assume
+[  246.1-  250.0] that the user is a human. And then we also get some confidence that they type the other word correctly.
+[  250.6-  255.0] And if we repeat this process to like 10 different people, and they all agree on what the new word is,
+[  255.0-  257.8] then we get one more word digitized with very high accuracy.
+[  258.7-  263.4] So this is how this process works. It has been very successful. Today, this is digitizing
+[  263.4-  268.6] approximately 100 million words a day, which is the equivalent of about 2 million books a year,
+[  268.6-  272.5] all being digitized one word at a time by just people typing captchas on the internet.
+[  273.3-  279.4] Now, because we're doing so many words per day, and especially now that we're doing two randomly
+[  279.4-  284.7] chosen English words right next to each other, funny things can happen. So for example, let me
+[  284.7-  289.4] show you a few of the things that have happened. So we showed this word, this is the word Christians,
+[  289.4-  293.4] there's nothing wrong with this word by itself. But if you put it along with another randomly
+[  293.4-  300.5] chosen word, bad things can happen. So we showed this. Okay, but it's even worse, because the
+[  300.5-  305.3] particular website where we show this, this system is using literally millions of websites. The
+[  305.3-  309.5] particular website where we show this happened to be called the Embassy of the Kingdom of God.
+[  318.1-  328.4] Here's another really bad one, a US politician, johnedwards.com. They stopped using the system
+[  328.4-  332.8] that day. It's not good. And of course, there's not much we can do, because you see, for one of
+[  332.8-  336.7] the words, we don't actually know what it is. The system does not know what that word is. So there's
+[  336.7-  340.7] just not much we can do to prevent this. So every day, we just insult people left and right.
+[  341.6-  346.9] And it's funny. Now, this is my favorite number of this project. This is 1.1 billion. This is the total
+[  346.9-  350.7] number of distinct people that have ever helped us digitize at least one word out of a book
+[  350.7-  356.1] through the system. It's about 15% of the world's population. This is an extremely large-scale
+[  356.1-  361.2] collaborative process where most people that are doing it are not actually aware that they're
+[  361.2-  367.0] doing it, but they're helping to digitize books all over the internet. So, okay, so now let me tell
+[  367.0-  372.2] you a little about the project that I'm currently working on. It's a project called Duolingo.
+[  373.1-  380.0] And I think it's worth saying where it started. So I started working on Duolingo about four or
+[  380.0-  386.1] between four and five years ago. I was in a very fortunate point in my life. I had just sold my
+[  386.1-  389.8] second company to Google. It was actually this company about book digitization that got sold to
+[  389.8-  394.7] Google. And I didn't have to worry about money anymore. And then I started thinking about what
+[  394.7-  401.0] it is that I wanted to do. And education has always been my passion. So I decided I wanted to do
+[  401.0-  405.8] something related to education. So I started this company called Duolingo. Now, my views on education
+[  405.8-  411.5] have always been very influenced by where I'm from. I am from Guatemala. This is a public service
+[  411.5-  418.5] announcement. That is where Guatemala is. I have to say this in talks in the United States, that there's
+[  418.5-  423.1] another important thing that is not where they keep the prisoners. That is called Guantanamo. It's
+[  423.1-  429.8] not the same. So I'm from Guatemala. And now, if you don't know much about Guatemala, Guatemala is a
+[  429.8-  435.8] very poor country. And a lot of people talk about education being something that brings equality to
+[  435.8-  440.0] the different social classes. But I always thought of education as the complete opposite, as something
+[  440.0-  444.5] that brought inequality to different social classes. Because what happens in practice is that the people
+[  444.5-  449.3] who have a lot of money can buy themselves the best education in the world. They can go and study
+[  449.3-  453.2] at Harvard. And because they have such a good education, they continue having money. And the
+[  453.2-  457.2] people who don't have very much money, barely learn how to read and write. And because they barely know
+[  457.2-  462.0] how to read and write, they can't ever make very much money. Okay, so education, I always saw it as
+[  462.0-  467.3] something that caused a big gap between the different social classes. So I wanted to do something
+[  467.3-  472.0] related to education that would give equal access to education to everybody, regardless of the
+[  472.0-  482.1] socioeconomic status. Now, education is very general. Thank you. Now, education is very general.
+[  483.0-  489.4] So I decided to concentrate on one type of education, which is very big. And it is learning a new
+[  489.4-  494.4] language. So it turns out there is about 1.2 billion people in the world learning a foreign language.
+[  495.1-  501.9] Now, this is a very kind of interesting market. Because, see, out of these 1.2 billion people,
+[  501.9-  505.4] the vast majority of them, 800 million of them, so two-thirds of the people that are learning
+[  505.4-  511.0] a foreign language in the world, satisfy three properties. First, the language learning is
+[  511.0-  515.6] English. Second, the reason they're learning English is so that they can get a better job,
+[  515.6-  522.1] or a job at all. And third, they are of low socioeconomic status. Okay, so most people that
+[  522.1-  525.6] are learning a language in the world are poor people that are trying to get out of poverty by
+[  525.6-  530.1] learning English. That is the current status of the language learning market in the world.
+[  530.1-  535.1] Now, ironically, most of the ways there are to learn a language, especially with software,
+[  535.1-  540.1] are very expensive. This is what was the case, you know, four years ago. So, for example,
+[  540.1-  545.0] in the United States, there's a thing called Rosetta Stone. It costs between $500 and $1,000.
+[  545.0-  548.6] In Latin America, there's a thing called Open English. It costs about $1,000. They have very
+[  548.6-  555.2] funny commercials, but it costs about $1,000. And so this is the irony. It's most people that are
+[  555.2-  559.4] trying to learn a language are trying to get out of poverty, but it somehow seems that you need $1,000
+[  559.4-  564.0] to get out of poverty. So it just makes no sense. So what I wanted to do is I wanted to make something that would
+[  564.0-  569.0] teach people languages, but it was entirely free. And this is what we did with Duolingo.
+[  569.0-  574.7] And we launched Duolingo. We started developing it about four years ago. We launched it almost
+[  574.7-  580.0] exactly three years ago. And it has grown a lot. And today, Duolingo is actually the most popular
+[  580.0-  585.5] way to learn languages in the world. In fact, so we have about 100 million users in total. In fact,
+[  585.5-  589.9] there are more people learning a language in Duolingo in the United States than there are people
+[  589.9-  594.9] learning languages in the whole U.S. public school system. So we have a lot of people
+[  594.9-  600.5] learning languages. And people really like it. So for example, let me show you some of the things
+[  600.5-  605.3] that people have said about Duolingo. So for example, this person said, in the past two days,
+[  605.3-  608.0] they've learned more from Duolingo than Rosetta Stone in over a month of use.
+[  609.2-  621.9] Again, Rosetta Stone costs over $1,000. Or this other person, she was my mother.
+[  621.9-  629.4] So people really like Duolingo. And they've been using it a lot. And I'm going to talk a little
+[  629.4-  633.1] about what are some of the things that we have done to make Duolingo so successful. But let me
+[  633.1-  637.5] first play you this video. So one of the things that happened is when we launched Duolingo, we
+[  637.5-  643.1] decided we were going to ignore schools. We were going to launch a language learning system that was
+[  643.1-  647.6] geared towards the end user, the student. And the reason we decided we were going to ignore schools
+[  647.6-  652.1] is because every time that we talked to a school, they wanted us to do something exactly the way they
+[  652.1-  656.4] did things. And of course, every single school did things differently. And basically, they wanted
+[  656.4-  660.3] us to have a completely different mechanism for teaching languages for every single school.
+[  660.3-  665.3] So we decided at first that we would just completely ignore schools. And Duolingo started growing a
+[  665.3-  671.1] lot. And over time, schools started contacting us and saying, hey, can we use Duolingo in our classroom,
+[  671.1-  676.1] et cetera. And about six months ago, we actually launched, finally launched Duolingo for Schools,
+[  676.1-  681.6] which is basically a program where the idea is that everybody uses the standard version of Duolingo,
+[  681.6-  686.7] but we now have a way for teachers to track all of their students while they're using Duolingo.
+[  686.7-  692.4] And maybe two or three months ago, one of the teachers contacted us and basically told us that
+[  692.4-  696.7] she had been using Duolingo, that she had completely substituted all of her textbooks
+[  697.5-  703.5] with Duolingo, and that all the kids were starting to love learning languages. So what we did is we
+[  703.5-  709.3] actually sent somebody to just film her, say some stuff. And the outcome, it sounds like we paid her,
+[  709.3-  713.4] but we didn't. So I'll show you some of the things that she said. So let me just show you this video.
+[  713.4-  718.5] That's about a one minute video. Hopefully it works. Can I get audio? Audio?
+[  718.5-  730.0] Everything was so in pieces. It's just like the way I learned French growing up. Like I learned
+[  730.6-  734.8] in pieces. And if you miss something, well, too bad. And you just kind of kept going.
+[  734.8-  740.2] That was the teacher focused method of learning. Not really very much dialogue or cooperative
+[  740.2-  747.1] education going on. The whole philosophy has changed to make or allow for students to have more
+[  747.1-  752.8] responsibility for their own subject development. I couldn't imagine someone trying to learn a
+[  752.8-  760.6] language without experiencing Duolingo because it is, it is like nothing else. I have the entire school
+[  760.6-  768.6] using Duolingo. I have seen grade ones working at grades above their level. I have seen grade eights
+[  768.6-  776.4] who never wanted to do French and take Duolingo in their hands and become the most focused students
+[  776.4-  783.2] I have ever seen. Textbooks, like looking at the board, like listening, it's not that fun,
+[  783.2-  788.3] but we're actually doing something with our hands. Now that I realize the potential for
+[  788.3-  795.2] learning in this way, I absolutely would not go back to textbook learning. Absolutely not.
+[  795.2-  803.1] So that's the, so that's the idea. So let me explain roughly how Duolingo works. So to do this,
+[  803.1-  806.6] so this is what Duolingo used to look like. This is a previous version of Duolingo. So you can use
+[  806.6-  811.9] Duolingo on the web or on an app. Most people are using it on an app. About 85% of the people use it
+[  811.9-  815.8] on a mobile app. So this is what Duolingo used to look like. I used this old screenshot because it
+[  815.8-  819.8] allows me to explain things a little better. But basically the way you learn a language in Duolingo is that
+[  819.8-  824.6] we split up the language into different units that we call skills. So for example, food is a skill.
+[  824.6-  828.1] That's where you learn everything about food. So how to order in a restaurant, all the different
+[  828.1-  832.8] names of foods, et cetera. Or plurals is another skill. That's where you learn how to pluralize
+[  832.8-  837.6] words, et cetera. And the idea is that at the very beginning, only one skill is open. Only one skill
+[  837.6-  843.0] is unlocked. And then you have to complete that skill to unlock other skills. So it really does feel like
+[  843.0-  848.3] you're opening up a game tree, basically. It feels a lot like a game. And the idea is that each skill
+[  848.3-  856.1] also has this strength bar associated to it. This measures how well you know words or concepts in
+[  856.1-  860.2] that skill. So whenever you do something in Duolingo that is related to that skill and you do it
+[  860.2-  865.5] correctly, that strength meter goes up. And whenever you do something incorrectly,
+[  865.5-  870.6] that strength meter goes down. It's also the case that if you don't use Duolingo for
+[  871.9-  876.8] a while, all the strength bars start going down naturally to model the fact that you're actually
+[  876.8-  881.4] forgetting. But that is also something else that gets people to come back more often to use Duolingo
+[  881.4-  885.0] because their strength bars go down if they don't use it. So that keeps people coming back.
+[  885.9-  889.7] And now if that's not enough for people to come back, we actually have a lot of mechanisms to get
+[  889.7-  893.7] people to come back. Another thing that we do is whenever somebody hasn't come back in a while,
+[  894.2-  901.8] we send them our mascot crying. We've tested a lot about how to best get people to come back.
+[  901.8-  906.7] It turns out that the one thing we've discovered is that guilt is really a powerful motivator.
+[  906.7-  913.8] We've even tested how many tears this guy should have. And this is the winner. This is the guy that
+[  913.8-  921.4] gives people to come back. Now inside a lesson, the way Duolingo works is that you basically have to
+[  921.4-  927.4] solve a lot of little tiny exercises. And in each exercise, it's both teaching you something and
+[  927.4-  932.9] also trying to reinforce something you've already learned. And the idea is that you're always doing
+[  932.9-  938.1] something active with it. So you may have to click on the image that is related to the word,
+[  938.1-  941.5] or you may have to speak to the app and it tells you whether you said it correctly, etc.
+[  941.5-  946.8] And if you do something correct, the strength bar at the top goes up. If you do something incorrect,
+[  946.8-  951.0] the strength bar at the top goes down. And the idea is that you have to basically fill up that
+[  951.0-  956.2] strength bar at the top to pass the lesson. Now that strength bar is actually pretty sophisticated.
+[  956.2-  963.1] We use a lot of both, basically we use a lot of psychological tricks to get people to get
+[  963.1-  967.4] more addicted to learning. This is something that, I don't know if you know the guy,
+[  967.4-  971.7] how many of you use Candy Crush here? Come on, you can admit it.
+[  971.7-  977.8] Okay, if you've ever played Candy Crush, the idea is that you basically, it's a standard game of
+[  977.8-  982.0] threes, it's called. You basically have to get three candies of the same type for something good
+[  982.0-  985.4] to happen. It's a grid of candies, you've got to get three candies of the same type for something
+[  985.4-  991.4] good to happen. The idea is that whenever you do that, a new row comes at the top of candies.
+[  991.4-  998.0] Now it seems like this row at the top is completely random. And in fact, in previous games of three,
+[  998.0- 1001.9] games very similar to Candy Crush, that row at the top of all the different candies was completely
+[ 1001.9- 1006.6] random. And, but the reason Candy Crush is so, one of the reasons why Candy Crush is so popular is
+[ 1006.6- 1012.2] because the row at the top is not actually random. It is in fact chosen specifically to make sure that
+[ 1012.2- 1017.1] you continue being addicted to the game. So it does things like, it makes it easy to get things of
+[ 1017.1- 1023.4] three, or sometimes it makes it easy, easy, hard, easy, easy, or easy, easy, seemingly hard, easy.
+[ 1023.4- 1028.8] It basically does these sequences of things to try to make you come back more often. We use very
+[ 1028.8- 1033.7] similar tricks with Duolingo to give you easier or harder exercises to keep you coming back. So the
+[ 1033.7- 1038.2] idea here is not to get you addicted to a game, but to get you addicted to learning. So we spent a lot
+[ 1038.2- 1043.8] of effort on that. And this is one of the reasons why Duolingo is so popular. Now, when we started with
+[ 1043.8- 1052.0] Duolingo, two of us started. It was me and my co-founder, who is a Swiss guy. We had no idea how to teach
+[ 1052.0- 1056.4] languages. In fact, we didn't know anything about how to teach languages. We had both learned languages.
+[ 1057.3- 1061.7] English is not my first language, and neither was his, so we had both learned English at a very young
+[ 1061.7- 1066.3] age. But we knew nothing about how to teach languages. So what we did is we started reading
+[ 1066.3- 1070.8] a lot of books about how to teach languages. Literally, we read French for Dummies. And we read a bunch
+[ 1070.8- 1078.6] of books. Of course, we're both computer scientists, so we're engineers. We didn't care much about
+[ 1078.6- 1082.2] philosophies of learning a language. They're very interesting and all, but we didn't care much.
+[ 1082.2- 1087.1] We just were trying to build a system to learn languages. So what we wanted to do is we wanted
+[ 1087.1- 1091.4] to find what is the best way to learn a language. Surely, by now, somebody should know what is the
+[ 1091.4- 1095.8] best way to learn a language. So we started finding books. One of the first ones that we read had a title,
+[ 1095.8- 1100.7] something like the best method for learning languages. We read it, and it seemed very convincing
+[ 1100.7- 1104.4] about what the best method for learning a language was. So we were about to start implementing that
+[ 1104.4- 1109.7] method when we found another book that had a very similar title. It was something like, I don't know,
+[ 1109.7- 1114.6] the best language learning method or something. Very similar title. We read it, but it had a completely
+[ 1114.6- 1119.8] different way that also claimed to be the best way to learn a language. And then we were confused,
+[ 1119.8- 1124.6] and it really seemed like all of these language learning books really seemed like the books on diets.
+[ 1124.6- 1128.2] If you've ever seen them, they all contradict each other about what is the best way to diet.
+[ 1128.2- 1132.2] Some of them say you should only eat meat. Some of them say you should never eat meat. It was the
+[ 1132.2- 1137.3] same thing with language learning books. So what we decided to do is we took what we could out of
+[ 1137.3- 1143.0] all of these books and then put out a system. But then we realized that we were in a unique position,
+[ 1143.6- 1147.8] which is that we had a lot of users, and we could start trying to actually figure out what the best
+[ 1147.8- 1152.8] way to learn a language is with our users. So this is what we do now. So nowadays, what we do is,
+[ 1152.8- 1158.3] if we want to figure out, for example, whether we should teach you plurals a little earlier or a
+[ 1158.3- 1163.0] little later, we just do an experiment. So for the next, for example, in this case,
+[ 1163.0- 1167.6] the idea would be for the next 50,000 people that sign up to Duolingo, it takes about six hours to
+[ 1167.6- 1172.4] get 50,000 new users on Duolingo. So for the next 50,000 people that sign up, to half of them,
+[ 1172.4- 1175.8] we're going to teach them plurals a little earlier. The other half, we're going to teach them plurals a
+[ 1175.8- 1180.3] little later. And then we're going to measure which ones learn better. So which ones make less mistakes,
+[ 1180.3- 1185.3] which ones come back more often, et cetera. And then once and for all, we can figure out,
+[ 1185.3- 1189.8] it turns out it is better to teach plurals a little earlier. And this is just an example of
+[ 1189.8- 1194.4] one thing we do, but we do this all over the place. So every day, Duolingo is actually getting better.
+[ 1194.4- 1198.5] And if you use Duolingo, your version of Duolingo will probably be a little different than somebody
+[ 1198.5- 1203.1] else's version of Duolingo, because we're likely running an A-B test on you, trying to figure out what
+[ 1203.1- 1209.1] is the best way to teach a language. And this has been really successful. The City University of New York did a
+[ 1209.1- 1213.4] study on Duolingo, and they found that if you use 34 hours, Duolingo for 34 hours, you learn the
+[ 1213.4- 1217.6] equivalent of one semester of university, which usually takes a lot longer than 34 hours. And
+[ 1217.6- 1221.8] this is all because we use the data from millions of people to try to figure out what is the best way
+[ 1221.8- 1228.5] to teach a language. Now, the last thing I want to mention is this. This is a new project that we
+[ 1228.5- 1235.3] launched. It's about six months ago. We launched this project. We were getting a lot of emails from
+[ 1235.3- 1241.9] from our users. They would say things, thank you for Duolingo. Thank you for teaching me English.
+[ 1242.5- 1248.2] I wasn't able to afford a way to learn English. Now I've been able to learn English with Duolingo,
+[ 1248.2- 1253.6] but now I have a problem, which is that I need to have a certificate that I know English for
+[ 1253.6- 1258.1] my university or for I'm applying to university somewhere or for my job or something. I need to
+[ 1258.1- 1263.6] have a certificate. And so could you guys go ahead and give me a certificate? So we were getting a lot of
+[ 1263.6- 1269.1] these emails and then we started kind of figuring out how this whole English language certification
+[ 1269.1- 1274.8] market was working. And what we discovered was really crazy. And I kind of knew this already,
+[ 1274.8- 1281.7] but I didn't realize how crazy it was. So here's the deal. If you do not know, if English is not
+[ 1281.7- 1287.6] your first language, but you do know English and you want to certify it, it's useful for all kinds of
+[ 1287.6- 1292.8] reasons. For example, to apply for admission in a university in an English-speaking country, you have to
+[ 1292.8- 1296.8] certify that you know English. Or for jobs at multinational corporations, etc., you have to
+[ 1296.8- 1302.5] certify that you know English. And the way people certify that they know English is really crazy.
+[ 1302.5- 1305.9] Basically, you have to take a standardized test. There are many of these. One of them is called
+[ 1305.9- 1311.8] the TOEFL, if you've ever heard of it. But there are many others. There's another one called the IELTS.
+[ 1311.8- 1317.4] There's a few of these. But they all operate in very much the same way. They all cost about $250.
+[ 1317.4- 1323.1] So it costs about $250 to take this test. I don't understand why it costs $250 to take a test,
+[ 1323.1- 1327.5] because really, it costs about $10 for the company to actually administer the test.
+[ 1327.5- 1333.8] But it costs about $250 to take this test. Not only that, the way you take this test is you have to
+[ 1333.8- 1338.8] go to a testing center, like a special testing center. Much like if you've ever taken the SAT,
+[ 1338.8- 1341.1] you have to go to a special testing center to take the test.
+[ 1341.1- 1347.8] Now, this sounds a little painful. You have to go somewhere to take a test. That's who wants to do
+[ 1347.8- 1352.7] that. But it's even worse because these testing centers only exist in big cities.
+[ 1353.5- 1356.9] So if you don't live in a big city and you want to certify that you know English, not only do you
+[ 1356.9- 1362.1] have to pay $250, which is quite a bit of money for people in many non-English speaking countries,
+[ 1362.1- 1367.3] but also you have to travel somewhere to take the test. And this actually,
+[ 1367.3- 1370.8] I had kind of forgotten that this happened to me. I mean, I did remember, but I had kind of
+[ 1370.8- 1375.8] forgotten. This actually happened to me when I was applying for admission to university in the
+[ 1375.8- 1380.6] United States. I grew up in Guatemala. I had to take a test. I had to take the TOEFL to certify that I
+[ 1380.6- 1386.6] knew English. It turns out that they ran out of seats for the TOEFL in my country for that year.
+[ 1386.6- 1392.3] So I had to fly to the neighboring country of El Salvador to take my test. In the end, the whole thing
+[ 1392.3- 1397.3] required a flight, about a thousand dollars of investment because of paying for the flight,
+[ 1397.3- 1403.0] et cetera, and about eight weeks of preparation for, you know, how to do the reservation, et cetera.
+[ 1403.6- 1409.8] So this right there we thought was ridiculous, especially because it essentially prevents many
+[ 1409.8- 1414.2] people with low resources from applying for certain jobs or from applying for certain universities,
+[ 1414.2- 1418.2] et cetera. So we decided to do something about it. So we launched, about nine months ago,
+[ 1418.2- 1424.0] we launched a certification program that is called the Duolingo Test Center, where the idea is that
+[ 1424.0- 1430.8] you can download an app to take a test to certify that you know English. Now, there are two
+[ 1430.8- 1435.1] complications for this. The first complication is that we have to make sure that you're not cheating.
+[ 1435.8- 1440.5] So this is why people have to go to testing centers whenever they're taking a standardized test.
+[ 1440.5- 1444.4] They have to go to a testing center to make sure that, two things, to make sure that you are actually
+[ 1444.4- 1450.3] you, and you then send your cousin who actually knows English. Or, and the other thing you have
+[ 1450.3- 1457.0] to certify is that you did not receive help. So we have to certify these two things, and this is
+[ 1457.0- 1462.2] why testing centers exist. But the way we actually got around this problem, we ended up solving this
+[ 1462.2- 1466.2] problem. The way we solved this problem is that in the app where you're taking the test, you can take
+[ 1466.2- 1470.5] our test from home anywhere. In the app where you're taking the test, we actually turn on the front
+[ 1470.5- 1476.1] facing camera and the microphone, and we record you taking the test. So we record everything,
+[ 1476.1- 1481.1] and then we record anybody who's saying anything to you. We record your face, etc. And then later,
+[ 1481.1- 1487.3] an actual human verifies the video recording of you taking the test. So that way we can certify
+[ 1487.3- 1491.3] that you actually are you, and also that you did not receive help. So at the end, you receive a
+[ 1491.3- 1497.0] certificate. That's the first hurdle we have to solve. The second hurdle we've had to solve
+[ 1497.0- 1501.4] is trying to make sure that this test is actually accepted by institutions all over the world.
+[ 1501.4- 1507.0] That's what we're working on right now. So far, the Duolingo Test Center scores are accepted by
+[ 1507.7- 1512.3] a few departments at Harvard, a few departments at Carnegie Mellon University, and in the next year,
+[ 1512.3- 1516.0] about 12 major universities in the United States are going to start accepting this in lieu of the TOEFL.
+[ 1516.6- 1521.0] And the hope is that in three or four years, you're not going to have to pay $250 to certify that
+[ 1521.0- 1526.8] you know English. You'll be able to do it at home just from an app. So that's the other project that
+[ 1526.8- 1533.4] we're working on. And that's all I wanted to say, I think. That's it. Thank you. I'm done.

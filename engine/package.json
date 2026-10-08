@@ -1,0 +1,22 @@
+{
+  "name": "all-in-engine",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "stills": "node ../tools/stills.mjs",
+    "render": "node ../tools/render.mjs"
+  },
+  "dependencies": {
+    "@remotion/bundler": "4.0.526",
+    "@remotion/cli": "4.0.526",
+    "@remotion/renderer": "4.0.526",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.526"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "typescript": "^5.0.0"
+  }
+}

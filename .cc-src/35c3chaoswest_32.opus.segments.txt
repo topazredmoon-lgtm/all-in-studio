@@ -1,0 +1,660 @@
+[    0.0-    8.0] I think all of us, we can agree that we don't want to get discriminated by our privacy decisions.
+[    8.0-   16.0] So will our next speaker, Kirill, tell us about the toll of personal privacy in 2018.
+[   16.0-   29.0] Please welcome Kirill Soloviehovs and give him a warm applause.
+[   29.0-   37.0] Privacy is dead. We hear that a lot recently.
+[   37.0-   45.0] Some of us, especially people here at this event today, may think those are just bad guys,
+[   45.0-   51.0] those are just naysayers saying what they want to be true.
+[   51.0-   58.0] But aren't we fooling ourselves? Maybe privacy is actually dead.
+[   58.0-   64.0] If we look at new products, new ideas appearing on the market,
+[   64.0-   69.0] what we mostly see is that none of the products take security into account.
+[   69.0-   73.0] Like, look at this nice tweet from, it's a valid account, the real one,
+[   73.0-   76.0] People's Daily China from this year.
+[   76.0-   81.0] What else can surveillance cameras do in classroom other than exams of revision?
+[   81.0-   84.0] And they actually have this great system that they're really excited about,
+[   84.0-   88.0] where, you know, they take a look at how students study.
+[   88.0-   90.0] Here's a Chinese classroom in question.
+[   90.0-   96.0] And normal, usual classroom, except of course we have a camera.
+[   96.0-   99.0] We have a set of cameras set up in there.
+[   99.0-  108.0] And how the system works is that teacher gets this automatic view of students sitting, studying.
+[  108.0-  117.0] How many students are there? Are they paying attention? Are they bored? Are they happy? Are they afraid?
+[  117.0-  124.0] So, imagine being in a classroom and not doing your homework.
+[  124.0-  128.0] So, you sit in the classroom, you haven't done your homework, and teacher sees that you're afraid.
+[  128.0-  133.0] You don't want to be called. You don't want to be asked to report on your homework.
+[  133.0-  136.0] Teacher immediately sees that. And of course, if you're sleeping after a party.
+[  136.0-  146.0] I mean, there is a good intention behind that, making systems more effective.
+[  146.0-  149.0] Not only this example here, other examples as well.
+[  149.0-  152.0] But privacy is what's always at stake.
+[  152.0-  157.0] And privacy is what's never thought about enough in my opinion.
+[  157.0-  162.0] But okay, if you look at the examples I've given, you know, that's just China being China.
+[  162.0-  166.0] Europe doesn't do that for sure, right?
+[  166.0-  181.0] Well, I thought that as well until I decided to take a look deeper and to make this presentation to share the state of the privacy with you.
+[  181.0-  185.0] So, let's look at visas.
+[  185.0-  199.0] I travel a lot, but I try to avoid some territories, I try to avoid some countries, because I don't feel particularly comfortable with a foreign government holding my biometrics.
+[  199.0-  202.0] So, that's why I've never been to the US.
+[  202.0-  208.0] I just can't trust the government, let alone the president that's there right now.
+[  208.0-  214.0] But I just can't trust the government that wants all your 10 fingerprints when you enter the country.
+[  214.0-  216.0] What the hell? I'm not a criminal.
+[  216.0-  218.0] Anyway, speaking of Europe.
+[  218.0-  222.0] So, I thought it's just something that the US does, maybe some other countries.
+[  222.0-  226.0] Japan, but Japan I think only does one finger or two fingers.
+[  226.0-  239.8] However, what I learned is that for many different countries, many nationals coming to Europe, coming into Schengen, the process is quite similar.
+[  239.8-  254.8] Before making this presentation, I never thought about the fact that those people also need to give their fingerprints to come into Europe, come into Schengen.
+[  254.8-  259.8] So, we aren't much better in that regard than the other countries.
+[  259.8-  268.8] Okay, but, you know, once again, as Europeans, and most of you here are Europeans, we may say it's not our problem.
+[  268.8-  270.8] Even though that's not a good thing to say, still.
+[  270.8-  272.8] You know, we don't have to deal with that.
+[  272.8-  276.8] But passports, we do have to have a passport, especially if we want to travel.
+[  276.8-  281.8] Right? So, I'm going to tell you about Latvia, that's where I come from.
+[  281.8-  287.8] So, originally, of course, passports didn't have any biometric data in them.
+[  287.8-  290.8] The classical good old passports.
+[  290.8-  295.8] Then, maybe ten years ago, a change happened.
+[  295.8-  302.8] And the government started requiring you to give up your fingerprint to store it inside a passport.
+[  302.8-  307.8] Even though I'm a privacy zealot, I think that's a good thing, right?
+[  307.8-  318.8] Because passport forgery and terrorism migration around the world where terrorists try to infiltrate a different country and bomb a building, let's say.
+[  318.8-  321.8] That's something that is not a good thing, right?
+[  321.8-  327.8] So, passport, as long as the fingerprint is inside the passport in a secure container, that's okay with me.
+[  327.8-  333.8] But the thing is, so, I made my passport, I got it.
+[  333.8-  340.8] The thing is, I had a suspicion that what they're actually doing is they are also storing a fingerprint in a database.
+[  340.8-  352.8] So, I asked around, most countries in Europe have this equivalent of the US Freedom of Information Act, which allows you to ask what your government is doing with data.
+[  352.8-  360.8] So, I asked around and they said, yeah, yeah, we are actually also storing the hash of the fingerprints centrally in a database, not only your passport.
+[  360.8-  364.8] I told them, hey, but that's illegal, you can't do that.
+[  364.8-  366.8] And then they drafted the law.
+[  366.8-  371.8] So, we were having this conversation over postal mail for like two or three months.
+[  371.8-  381.8] And while we were doing that, they were quickly, really, in a fast pace, making a law saying that they can do that, that they can actually store the hash of the fingerprint.
+[  381.8-  387.8] But, turns out, they are now storing the whole fingerprint, even though that's not what they promised.
+[  387.8-  390.8] So, you know, it's not that simple.
+[  390.8-  393.8] It's not that easy with privacy even here in Europe.
+[  393.8-  395.8] Of course, banks.
+[  395.8-  403.2] Anyone here doesn't have or doesn't use at least monthly a banking card?
+[  403.2-  404.2] Three?
+[  404.2-  405.2] Three people, four?
+[  405.2-  406.2] Ah, okay.
+[  406.2-  407.2] Four people and me.
+[  407.2-  410.2] So, that's five people here in this quite large crowd.
+[  410.2-  412.2] So, you should realize.
+[  412.2-  413.2] Yeah.
+[  413.2-  414.2] Applause.
+[  414.2-  416.2] Applause to the four people, of course.
+[  416.2-  421.2] You should realize, of course, and I think you know that, that banks know where you shop.
+[  421.2-  423.2] They know what you buy.
+[  423.2-  426.2] If it's a large product, they can distinguish it by the price, right?
+[  426.2-  433.2] You go to a car dealership and they know if you buy the premium model or the lower-end model, right?
+[  433.2-  436.2] Anyway, then, of course, we have online profiling.
+[  436.2-  439.2] It's a thing all over the world.
+[  439.2-  440.2] It's borderless.
+[  440.2-  444.2] It doesn't matter if you're in Europe, if you're in the US.
+[  444.2-  446.2] You get profiled.
+[  446.2-  449.2] Even if you don't have a Facebook account.
+[  449.2-  455.2] Well, but luckily for us here in Europe, EU has fixed that quite some time ago.
+[  455.2-  457.2] EU fixed that in May 2011.
+[  457.2-  463.2] So, what they did, they said users have to be notified of cookies.
+[  463.2-  465.2] So, that fixes it, right?
+[  465.2-  467.2] Well, not really.
+[  467.2-  470.2] But then, seven years later, May.
+[  470.2-  472.2] They love May for some reason.
+[  472.2-  474.2] EU fixed that in May 2018, right?
+[  474.2-  475.2] GDPR.
+[  475.2-  476.2] Now we're safe, huh?
+[  476.2-  479.2] Now we get this notice in addition to the previous notice.
+[  479.2-  483.2] So, you know, we're trying to fix that really hard.
+[  483.2-  485.2] It's not working yet.
+[  485.2-  497.2] I do hope that the loud cases that are coming where big corporations will get sued for a large amount of money will actually bring changes to that.
+[  497.2-  500.2] But for now, we are still fighting a bit.
+[  500.2-  502.2] Then we have CCTV.
+[  502.2-  510.2] And there's one country in Europe that we still have this year that really loves their CCTV.
+[  510.2-  514.2] And here are some actual posters, actual photos of actual posters.
+[  514.2-  521.2] I mean, I could have taken the poster pictures and put it nicely, but I just want you to believe that it's a real photo.
+[  521.2-  524.2] That's a real poster put up by the government in the UK.
+[  524.2-  529.2] So, they have this nice poster saying secure beneath the watchful eyes, right?
+[  529.2-  534.2] Then they have this poster saying more CCTV means more security for you.
+[  534.2-  539.2] And, of course, my favorite also, we are watching you.
+[  539.2-  540.2] Okay.
+[  540.2-  542.2] This one isn't real.
+[  542.2-  547.2] I removed a couple of words from there, but it's basically what it says anyway, right?
+[  547.2-  548.2] We're watching out for you.
+[  548.2-  550.2] So, that's what's happening.
+[  550.2-  556.2] And they're selling CCTV as if it's some kind of great feature for you.
+[  556.2-  557.2] Okay.
+[  557.2-  566.2] But it doesn't really matter because everyone knows that privacy is for criminals.
+[  566.2-  567.2] Right?
+[  567.2-  570.2] We don't need privacy if we have nothing to hide.
+[  570.2-  577.2] Well, if you think that, you should have webcam placed in every room of your house.
+[  577.2-  581.2] And then we'll see what you think about that.
+[  581.2-  586.2] Really, in fact, privacy is power.
+[  586.2-  590.2] And this is a nice article from Politico middle of this year.
+[  590.2-  596.2] And it's quite a short one, but I want to share some key insights of what privacy is.
+[  596.2-  604.2] Because people here at 3533, almost all of us would agree that privacy is important.
+[  604.2-  612.5] But when challenged by a guy who says that, can we really explain why is it important?
+[  612.5-  614.5] So, here, this article tries to do that.
+[  614.5-  618.5] By the way, it's been published one day before GDPR came into force.
+[  618.5-  626.5] So, this says privacy is power dynamics between the individual, the state, and the market.
+[  626.5-  634.5] Meaning that privacy is your lever that you can use when big corporations try to use you as an object.
+[  634.5-  645.5] Then we have, as recent scandals have illustrated so vividly, privacy is also about the autonomy, dignity, and self-determination of people.
+[  645.5-  648.5] So, once again, you aren't the product.
+[  648.5-  659.5] You are a person, and you have the right to determine what happens not only to your body, but also to your mind, also to your digital self.
+[  659.5-  661.5] And finally, the third one.
+[  661.5-  675.5] Data protection must seek to mitigate the inherent power imbalances between people and those that collect process and profit of their data.
+[  675.5-  681.5] We didn't want the web to become what it has become today.
+[  681.5-  693.5] We just didn't imagine 20 years ago that not paying for content online would bring the web 2.0, 3.0, whatever that we have now.
+[  693.5-  695.5] We just couldn't have imagined that.
+[  695.5-  702.5] It's not that we wanted to save five euros a month to be abused by data providers.
+[  702.5-  718.6] Now, I will talk about some personal privacy choices that I've made during the past years while fighting for privacy.
+[  718.6-  729.2] The turning point in my life was that I was using Facebook back then, and the turning point was that people kept tagging me.
+[  729.2-  733.2] Yeah, yeah, I know it's bad, but I was using it.
+[  733.2-  735.2] It seems like a reasonable thing to do.
+[  735.2-  737.2] Anyone uses Facebook here, by the way?
+[  737.2-  738.2] No?
+[  738.2-  739.2] Oh, oh, man, half.
+[  739.2-  740.2] Gee.
+[  740.2-  742.2] Well, good luck with that.
+[  742.2-  750.2] Anyway, so I was using Facebook back then, and the turning point for me was people were putting my information up without my permission.
+[  750.2-  757.2] They would take a photo of me, or we would take a group photo, and they would put it on Facebook as it's something natural to do.
+[  757.2-  758.2] And they would tag me.
+[  758.2-  760.2] And I couldn't, you know, I couldn't control it.
+[  760.2-  762.2] I couldn't really live with that.
+[  762.2-  765.2] So what I did was I just stopped doing that.
+[  765.2-  772.2] Anyway, so the next couple slides, or next ten slides, let's say so, are going to be about my personal privacy choices that I've made.
+[  772.2-  777.2] Some of those slides will have a red line going all over the slide.
+[  777.2-  792.1] That means I have considered that privacy choice, but I haven't made it because of the cost of that choice.
+[  792.1-  799.1] So my first choice, as you can see, it happened quite a long time ago, was the operating system for my computer.
+[  799.1-  805.1] I was using Windows 98, which was the latest from Microsoft at that time, and then I moved to Ubuntu Linux.
+[  805.1-  808.1] But none of those guys started doing this crap.
+[  808.1-  815.1] So as soon as you were searching for some files in your laptop, it would send your search up to the cloud.
+[  815.1-  823.1] So let's say you were typing secret protocol from meeting two days ago here, and that would go off to the cloud, that text.
+[  823.1-  825.1] So I switched to Linux Mint.
+[  825.1-  826.1] It's not a big deal.
+[  826.1-  827.1] It's not a big cost.
+[  827.1-  836.1] I get slightly slower software upgrades because it's a derivative, a clone of Ubuntu, meaning that software updates are delayed by a couple days, maybe a couple hours.
+[  836.1-  838.1] So that's nothing big, right?
+[  838.1-  840.1] Then browsing habits.
+[  840.1-  851.1] So I was surfing with JavaScript and with Adobe Flash Aloud, and now I surf without JavaScript with some exceptions and, of course, no Flash.
+[  851.1-  857.1] So what I get is that's how a page looks like to me when I want to open some pages.
+[  857.1-  864.1] I want to shout out to Hetty, who was the previous presenter here, for including this JavaScript thingy, JavaScript notifications page.
+[  864.1-  870.1] You can take a look about how to use NoScript tags in this presentation from CCC from two years ago.
+[  870.1-  871.1] It's a short one, a lightning talk.
+[  871.1-  880.1] But I get blank pages all the time, so I have a limited ability to choose my shopping provider that I want to buy stuff from.
+[  880.1-  884.1] Then I'm going to show you a small video here.
+[  884.1-  890.1] So this is me going to Google Recapture test, filling a form and checking a checkbook that I'm not a bot, right?
+[  890.1-  893.1] So what happens here, I'm asked to identify some straight signs.
+[  893.1-  900.1] I do that a couple times, and then I do it a bit more and a bit more.
+[  900.1-  903.1] And it's not a joke.
+[  903.1-  910.1] Even though it's a recording, this is how life is for me on the internet.
+[  910.1-  918.1] Even if I go to a regular page and, you know, road signs are usually on the road, right?
+[  918.1-  920.1] So if I see a road sign, it's okay.
+[  920.1-  923.1] So click verify once there are none left.
+[  923.1-  925.1] So okay, done, right?
+[  925.1-  927.1] But no, not for Google.
+[  927.1-  929.1] So this is how it works.
+[  929.1-  930.1] True story.
+[  930.1-  935.1] This is how it works for me every day on the internet when I just want to post a form.
+[  935.1-  937.1] So it's a bit hard, right?
+[  937.1-  944.1] So I was accepting and honoring all cookies before, and now I only accept temporarily first-party cookies.
+[  944.1-  947.1] And big tracking giants do not like that.
+[  947.1-  948.1] So they make my life difficult.
+[  948.1-  949.1] They think I'm a bot.
+[  949.1-  952.1] I don't have any internet history associated with me.
+[  952.1-  954.1] So it does take some time.
+[  954.1-  962.5] But the funny thing about this is usually it takes just one minute, not two minutes, as this video here.
+[  962.5-  966.5] But, oh, so here's a street sign, right?
+[  966.5-  968.5] But it's a poster, so probably not a street sign.
+[  968.5-  976.5] It's, you know, but it was the first attempt at recording this screencast.
+[  976.5-  979.5] The first attempt I got this here.
+[  979.5-  984.5] And do you have to actually click the ones that are just part of a sign or not?
+[  984.5-  985.5] How does that work?
+[  985.5-  987.5] Anyway, it should be over soon.
+[  987.5-  990.5] I should be over to submit the form fairly soon.
+[  990.5-  993.5] Just some more street signs, and I think we're done.
+[  993.5-  995.5] I hope they're not using that for self-driving cars.
+[  995.5-  998.5] That would be terrible, because it sure seems they are...
+[  998.5-  999.5] Oh, yes.
+[  999.5- 1001.5] So, hooray.
+[ 1001.5- 1002.5] We managed...
+[ 1002.5- 1003.5] Yeah.
+[ 1003.5- 1005.5] We managed to submit.
+[ 1005.5- 1006.5] Got it.
+[ 1006.5- 1007.5] And, once again, true story.
+[ 1007.5- 1009.5] Maybe not two minutes, but one minute.
+[ 1009.5- 1011.5] That's how I submit forms online.
+[ 1011.5- 1012.5] That's how my life is.
+[ 1012.5- 1013.5] I spend a lot of time there.
+[ 1013.5- 1017.5] Luckily, I'm a powered user, so I make up some of that time typing fast.
+[ 1017.5- 1019.5] Then, emailing.
+[ 1019.5- 1022.5] I used to use HTML emails.
+[ 1022.5- 1025.5] Anyone have heard or have used HTML emails here?
+[ 1025.5- 1026.5] Maybe using still?
+[ 1026.5- 1027.5] Yeah?
+[ 1027.5- 1028.5] Most of you, right?
+[ 1028.5- 1030.5] Anyone not using HTML emails?
+[ 1030.5- 1031.5] Wow!
+[ 1031.5- 1032.5] Half and half, right?
+[ 1032.5- 1033.5] Great.
+[ 1033.5- 1035.5] So, you know, normal people hate that.
+[ 1035.5- 1040.5] They receive this crap here, and they think, where's all the formatting?
+[ 1040.5- 1043.5] Why don't you have, like, a header at the beginning of your email?
+[ 1043.5- 1046.5] Why don't you use lime and pink colors in your text?
+[ 1046.5- 1048.5] What's wrong with you?
+[ 1048.5- 1051.5] So, well, they hate me, but that's okay.
+[ 1051.5- 1053.5] That's a minor price to pay.
+[ 1053.5- 1055.5] The problematic thing is emailing.
+[ 1055.5- 1059.5] So, I used to simply use a public email service.
+[ 1059.5- 1060.5] Now, I use my own domain.
+[ 1060.5- 1066.5] I've been using my own domain for 20 years now, I think?
+[ 1066.5- 1067.5] 15 years.
+[ 1067.5- 1068.5] 15 years.
+[ 1068.5- 1072.5] But Gmail users never get my first email.
+[ 1072.5- 1077.5] I have configured all the obligatory RFCs for my email domain.
+[ 1077.5- 1079.5] Gmail users never get my first email.
+[ 1079.5- 1080.5] Never send spam.
+[ 1080.5- 1083.5] IP address has been the same for the 15 years.
+[ 1083.5- 1087.5] No one know that since, you know, good old times when you can get an IP address that's
+[ 1087.5- 1090.5] not been used, IP before address that's not been used.
+[ 1090.5- 1092.5] Anyway, it always goes into spam.
+[ 1092.5- 1093.5] And this is a problem.
+[ 1093.5- 1096.5] You have to call people up and tell them, hey, you know, check spam.
+[ 1096.5- 1098.5] You have an email.
+[ 1098.5- 1102.5] Then, using my phone.
+[ 1102.5- 1103.5] So, this is a thing.
+[ 1103.5- 1105.5] I had a Siemens 665.
+[ 1105.5- 1107.5] That was my first phone with a color screen.
+[ 1107.5- 1109.5] It was a feature phone, Java.
+[ 1109.5- 1112.5] And then I moved to Nokia 3330.
+[ 1112.5- 1113.5] It's a real thing.
+[ 1113.5- 1115.5] I did that.
+[ 1115.5- 1119.5] I had it for, like, until five years ago.
+[ 1119.5- 1120.5] Then I moved to iPhone.
+[ 1120.5- 1127.5] So, the cost was that I couldn't get properly encrypted communications.
+[ 1127.5- 1140.5] All I have on that phone is a mild assurance that people are not eavesdropping on my communications in the room.
+[ 1140.5- 1144.5] But when I actually call someone, I cannot get proper encryption.
+[ 1144.5- 1147.5] It does the old standard, right, A51.
+[ 1147.5- 1149.5] It doesn't support A53.
+[ 1149.5- 1151.5] So, that is a bit problematic.
+[ 1151.5- 1157.5] That's why I actually have moved away from this solution and just use it as a secondary phone
+[ 1157.5- 1162.5] and use my iPhone to communicate in an encrypted manner.
+[ 1162.5- 1165.5] Then, of course, if you have iPhone, you have mobile apps.
+[ 1165.5- 1170.5] Five years ago, I was just getting my first one, so I didn't have a smartphone back then.
+[ 1170.5- 1174.5] And what I do, I manage my permissions carefully.
+[ 1174.5- 1178.5] I do not give GPS permissions, location permissions to my apps.
+[ 1178.5- 1181.5] I, of course, do not allow them to access contacts.
+[ 1181.5- 1184.5] I do not allow them to access microphone or camera.
+[ 1184.5- 1189.5] So, that means I'm fairly safe as long as I trust the operating system.
+[ 1189.5- 1198.5] The thing is, many apps will either not work without giving them enough permissions or will work badly.
+[ 1198.5- 1201.5] So, I'm forced to use WhatsApp.
+[ 1201.5- 1206.5] Don't say, don't boo me, but I'm forced to use WhatsApp as one of the communication apps.
+[ 1206.5- 1209.5] And, of course, I'm not giving it my contact permissions.
+[ 1209.5- 1211.5] So, how do I start a chat?
+[ 1211.5- 1215.5] I go to my iPhone dialer, the classical one.
+[ 1215.5- 1217.5] I dial the phone number of the country code.
+[ 1217.5- 1218.5] I dial it.
+[ 1218.5- 1219.5] I drop it.
+[ 1219.5- 1220.5] I go to recent calls.
+[ 1220.5- 1223.5] I hold the button on call.
+[ 1223.5- 1224.5] WhatsApp appears.
+[ 1224.5- 1225.5] I press WhatsApp.
+[ 1225.5- 1226.5] I call on WhatsApp.
+[ 1226.5- 1227.5] I put that down.
+[ 1227.5- 1228.5] I go to WhatsApp recent calls.
+[ 1228.5- 1230.5] Then, I take the entry.
+[ 1230.5- 1231.5] Then, I start a chat.
+[ 1231.5- 1232.5] Yeah.
+[ 1232.5- 1233.5] Yeah.
+[ 1233.5- 1234.5] There you go.
+[ 1234.5- 1236.5] You can do that as well.
+[ 1236.5- 1237.5] So, yeah.
+[ 1237.5- 1238.5] That's how it works.
+[ 1238.5- 1240.5] But some apps don't work at all.
+[ 1240.5- 1245.5] Like, we have these taxi apps like Uber back in Latvia.
+[ 1245.5- 1247.5] And I was trying out a new app.
+[ 1247.5- 1250.5] A new taxi app that just come into market.
+[ 1250.5- 1251.5] I was going to a conference.
+[ 1251.5- 1254.5] So, I was going to the airport to fly away.
+[ 1254.5- 1255.5] I installed the app.
+[ 1255.5- 1257.5] I didn't provide any data.
+[ 1257.5- 1258.5] Didn't give it any permissions.
+[ 1258.5- 1259.5] Not GPS, nothing.
+[ 1259.5- 1260.5] I draw there.
+[ 1260.5- 1265.5] I see the driver putting five stars for which is the maximum for the ride.
+[ 1265.5- 1266.5] I do the same.
+[ 1266.5- 1269.5] I turn my phone off because I was flying outside EU.
+[ 1269.5- 1271.5] And I come back a couple days later.
+[ 1271.5- 1276.5] I turn my phone on to order a taxi back home from the airport.
+[ 1276.5- 1282.5] Message greets me that your next taxi ride may happen no sooner than December 31st, 2022.
+[ 1282.5- 1286.5] So, I've been banned because I didn't give them enough data.
+[ 1286.5- 1289.5] You know, stuff happens.
+[ 1289.5- 1291.5] Social networking.
+[ 1291.5- 1294.5] As you know, I was using Facebook.
+[ 1294.5- 1295.5] I was using IRC.
+[ 1295.5- 1299.5] Nothing wrong with IRC, of course, but it's a bit hard to use in 2018.
+[ 1299.5- 1304.5] So, I'm using XMPP, Wire, Twitter, stuff like that.
+[ 1304.5- 1308.5] The problem here, the cost is limited social circle and social exclusion.
+[ 1308.5- 1319.5] I have to pay for my choices with less people in my life.
+[ 1319.5- 1324.5] I can communicate to just some amount of people, not the whole circle of friends.
+[ 1324.5- 1332.5] For example, me and my friends, well, my friends were planning a New Year's party for the 31st back in Riga.
+[ 1332.5- 1335.5] The thing is, it was being planned on Facebook and I'm not on Facebook.
+[ 1335.5- 1338.5] And I was the one that wanted that party the most.
+[ 1338.5- 1341.5] And it's not going to happen because I'm not on Facebook.
+[ 1341.5- 1344.5] Everyone else was like, eh, let's just not do anything this year.
+[ 1344.5- 1350.5] So, you know, it has actual real-life consequences.
+[ 1350.5- 1352.5] Re-socializing, right?
+[ 1352.5- 1363.5] So, after being put in this situation where my social circle shrinks rapidly and persistently,
+[ 1363.5- 1365.5] I decided I need to re-socialize.
+[ 1365.5- 1367.5] So, I installed all the apps.
+[ 1367.5- 1371.5] All the communication apps, like, for example, Telegram here.
+[ 1371.5- 1374.5] What I do is I use fake phone numbers.
+[ 1374.5- 1377.5] I come to a conference in Germany or in Serbia.
+[ 1377.5- 1379.5] I buy a phone number, like a prepaid card.
+[ 1379.5- 1380.5] I register it.
+[ 1380.5- 1386.5] And, you know, because they are asking for a phone number, except Wire, which doesn't ask.
+[ 1386.5- 1391.5] So, the problem is that your accounts can be taken over when someone else gets that phone number.
+[ 1391.5- 1397.5] The good thing that I learned making this presentation is they can actually use two-step pin code on most of the apps.
+[ 1397.5- 1407.5] Meaning that when someone else gets that number, they cannot register it and cannot take over your account unless they know the five, six digit or a passcode for your account.
+[ 1407.5- 1409.5] So, that's my solution there.
+[ 1409.5- 1410.5] This is actually quite good.
+[ 1410.5- 1412.5] Then, other people's apps.
+[ 1412.5- 1418.5] So, people keep giving away my information to different companies even though I haven't authorized them to.
+[ 1418.5- 1427.5] Well, the obvious solution here would, of course, be to have private caller ID or maybe take them to court.
+[ 1427.5- 1430.5] But you wouldn't want to be taking your friends to court, right?
+[ 1430.5- 1432.5] So, I haven't really implemented this either.
+[ 1432.5- 1438.5] Even though I do have a private caller ID, the problem is it's not enough.
+[ 1438.5- 1442.5] So, you do have to actually threaten to take your friends to court, which I'm not doing.
+[ 1442.5- 1444.5] I'm not that bad of a guy.
+[ 1444.5- 1452.5] Well, you know, Facebook still knows your phone number because your friends have given it to them.
+[ 1452.5- 1454.5] Same for me.
+[ 1454.5- 1455.5] For photos.
+[ 1455.5- 1459.5] I loved taking photos and I loved being in a photo.
+[ 1459.5- 1461.5] I really enjoyed that.
+[ 1461.5- 1469.5] Well, when all the Facebook saga happened, my personal one, not one of the large screws that they've had this year.
+[ 1469.5- 1480.5] So, I decided, you know, the easiest thing, since you cannot really be suing your friends, you can just not be in a photo.
+[ 1480.5- 1481.5] So, that's what I do.
+[ 1481.5- 1490.5] I try to avoid photos because it's much easier to do that than to actually control whether your friends will think it's appropriate to put the photo on Facebook or on Facebook.
+[ 1490.5- 1494.5] Or on Instagram or wherever, right?
+[ 1494.5- 1498.1] So, now I'm just taking the photos.
+[ 1498.1- 1499.1] I'm always a photographer.
+[ 1499.1- 1505.1] If you're at a party and you need a photo taken, I want you to take your photo.
+[ 1505.1- 1507.1] Obligatory GDPR slide.
+[ 1507.1- 1508.1] It's 2018.
+[ 1508.1- 1511.1] So, GDPR is the hot stuff right now.
+[ 1511.1- 1516.6] Companies were mishandling my data all the time before.
+[ 1516.6- 1525.6] Luckily for me, I come from Latvia and we've had a GDPR local national alternative for the past 15 years.
+[ 1525.6- 1530.6] Actually, when GDPR came, it only changed two things in Latvia.
+[ 1530.6- 1533.6] The fines got really, really big.
+[ 1533.6- 1542.6] And it's not that easy to compel government to work with you to protect your data.
+[ 1542.6- 1545.6] Because GDPR has specific exclusions.
+[ 1545.6- 1551.6] As long as the government publishes a law saying that it's legal that we mishandle your data, they can do that.
+[ 1551.6- 1554.6] Our previous legal framework in Latvia didn't allow that.
+[ 1554.6- 1563.6] I actually got a senior police employee fined 300 euros.
+[ 1563.6- 1568.6] Because, you know, I sent them a data request saying, hey, I'd like to know what the police knows about me.
+[ 1568.6- 1571.6] Which was perfectly fine under our national legislation.
+[ 1571.6- 1577.6] And they said basically in a letter, like one paragraph, we're the damn police.
+[ 1577.6- 1579.6] We don't have to tell you shit.
+[ 1579.6- 1580.6] So, I went to court.
+[ 1580.6- 1581.6] I won.
+[ 1581.6- 1584.6] They were fined around 300 euros.
+[ 1584.6- 1586.6] Turns out they had to.
+[ 1586.6- 1588.6] Now with GDPR, they will not have to do that.
+[ 1588.6- 1591.6] Because they mixed up the provision, right?
+[ 1591.6- 1599.6] The thing is, if my company is compelled to give some data about employee, for example, to the police.
+[ 1599.6- 1604.6] And the employee asks me for their data, I cannot tell them that I gave it to the police.
+[ 1604.6- 1609.6] But at the moment, at that moment, there was no exception for the police itself.
+[ 1609.6- 1612.6] So, employee could still go to the police and ask what data you have about me.
+[ 1612.6- 1614.6] So, there was a nice loophole there.
+[ 1614.6- 1617.6] Anyway, so now we have GDPR, which is cool.
+[ 1617.6- 1623.6] And now what we have is companies are lying to me that they are not mishandling my data.
+[ 1623.6- 1625.6] I ask them, hey, have you mishandled my data?
+[ 1625.6- 1626.6] They say, nope.
+[ 1626.6- 1627.6] And delete the data quickly.
+[ 1627.6- 1628.6] They do that a lot.
+[ 1628.6- 1629.6] They do that a lot.
+[ 1629.6- 1630.6] They do that a lot.
+[ 1630.6- 1635.6] So, the cost here is, of course, it takes a lot of time.
+[ 1635.6- 1641.6] I'm not a lawyer, but life has turned out in such a way that I like or, well, I've learned
+[ 1641.6- 1644.6] to like to write legal documents.
+[ 1644.6- 1648.6] So, I sit and write lots of letters.
+[ 1648.6- 1652.6] I was just coming to a conference, a different one in Riga airport.
+[ 1652.6- 1655.6] They confiscated my screwdriver, which was six centimeters long, which is the maximum.
+[ 1655.6- 1658.6] It cost 30 cents.
+[ 1658.6- 1665.6] So, what I did, I wrote them a letter saying that, you know, I need you to pay me back 30 cents and for 140 euros for writing the letter.
+[ 1665.6- 1667.6] And please donate that to some fund in my name.
+[ 1667.6- 1668.6] They said no.
+[ 1668.6- 1670.6] So, I just got the answer a week ago.
+[ 1670.6- 1671.6] We will have to see about that.
+[ 1671.6- 1672.6] Anyway.
+[ 1672.6- 1676.6] So, I get lots of you don't have anything better to do.
+[ 1676.6- 1677.6] Questions, right?
+[ 1677.6- 1682.6] You just go to this company because they have mishandled your data and they're surprised to see you.
+[ 1682.6- 1689.6] They're not used to spamming people and then having victims of that spam show up in their office.
+[ 1689.6- 1690.6] But that's what I do.
+[ 1690.6- 1692.6] And they're really surprised.
+[ 1692.6- 1694.6] So, you know.
+[ 1694.6- 1695.6] Then, visitors.
+[ 1695.6- 1699.9] So, I sometimes have friends over.
+[ 1699.9- 1700.9] I do have friends.
+[ 1700.9- 1702.9] And I sometimes have friends over.
+[ 1702.9- 1715.9] And what happened once, a guy comes in to the party and he pulls out his phone and so, he asks, where's your four square check, what's the name of your four square thingy?
+[ 1715.9- 1717.9] And I don't know what he's talking about.
+[ 1717.9- 1722.9] Apparently, he wanted to check into my home so that other people can see that he's at my home.
+[ 1722.9- 1726.9] I explained to him that, you know, I don't have that stuff.
+[ 1726.9- 1727.9] He said, no problem.
+[ 1727.9- 1729.9] I'll take care of that.
+[ 1729.9- 1733.9] And he started making the checking point for my home.
+[ 1733.9- 1740.9] And then we came to an agreement that he registers the point 400 meters away from where I actually live.
+[ 1740.9- 1741.9] But it's a bit strange.
+[ 1741.9- 1748.9] So, what I do now is I only have like a close, trusted circle of friends, like 10 people, that I invite to my home.
+[ 1748.9- 1753.9] This is, of course, a problem because every time I go abroad, I bring the national drink back.
+[ 1753.9- 1755.9] So, it just piles up.
+[ 1755.9- 1758.9] And, you know, I need to get a larger flat now.
+[ 1758.9- 1762.9] So, loyalty cards.
+[ 1762.9- 1769.9] I've used to give my real information to the companies when using loyalty cards.
+[ 1769.9- 1771.9] I know that some of you still do that.
+[ 1771.9- 1776.9] The thing is, I can't tell about Germany, but back in Latvia, it's not a crime.
+[ 1776.9- 1780.9] It's not a criminal crime to do that unless it's not government.
+[ 1780.9- 1790.9] As long as you give fake data to, you know, to a company and you aren't gaining benefits you're not entitled to that way, it's perfectly fine.
+[ 1790.9- 1794.9] I was actually a victim of a data leak.
+[ 1794.9- 1797.9] My name and surname got leaked in one of the cases.
+[ 1797.9- 1800.9] Luckily, I was smart enough to give them all the other data wrong.
+[ 1800.9- 1803.9] But now I don't even give them my real name and surname.
+[ 1803.9- 1804.9] So, that's what I do.
+[ 1804.9- 1811.9] The problem here is that if something happens and I want to request what happened is my data, I cannot.
+[ 1811.9- 1812.9] Because I'm not John Doe.
+[ 1812.9- 1816.9] I'm Kittles and the name on the file is a different one.
+[ 1816.9- 1819.9] So, it's, you know, Catch-22 in there.
+[ 1819.9- 1822.9] Then public transportation.
+[ 1822.9- 1832.9] So, we had paper-based discount tickets for students.
+[ 1832.9- 1833.9] I was a student.
+[ 1833.9- 1835.9] I had a paper-based discount ticket like that.
+[ 1835.9- 1837.9] This is 14 LATs.
+[ 1837.9- 1841.9] It's about 20 euros and you could ride a whole month.
+[ 1841.9- 1843.9] Then they created this thing.
+[ 1843.9- 1845.9] This is an RFID card.
+[ 1845.9- 1851.9] So, now if you don't want to get tracked, you have to use paper-based one-trip tickets without discount.
+[ 1851.9- 1859.9] And if you calculate the difference, it's 6.5 times more than actually having the discount.
+[ 1859.9- 1864.9] So, it's actually a huge cost to bear.
+[ 1864.9- 1877.9] And to make matters worse, what they do, what the company, the local government company does, they actually publish where everyone is going at what time.
+[ 1877.9- 1881.9] They anonymize the IDs of the travelers.
+[ 1881.9- 1885.9] But we managed, me and some other guys managed to correlate, right?
+[ 1885.9- 1890.9] We managed to actually take the public database and put name and surname to each of the entries.
+[ 1890.9- 1895.9] So, it's not, you know, so this is my solution.
+[ 1895.9- 1896.9] Two euros per trip.
+[ 1896.9- 1900.9] If I had that, I would pay 30 cents per trip right now.
+[ 1900.9- 1903.9] So, it costs a lot.
+[ 1903.9- 1906.9] Now, banking.
+[ 1906.9- 1911.4] I was using banking card to shop just as many of you do.
+[ 1911.4- 1913.4] Now, it's convenient when it works.
+[ 1913.4- 1915.4] If it doesn't, too bad.
+[ 1915.4- 1920.4] But there are some countries that don't even accept cash proper in some cases, right?
+[ 1920.4- 1928.4] Many countries would not accept a 20 or 50 or larger euro bill to buy a transport ticket.
+[ 1928.4- 1929.4] But they do accept cards.
+[ 1929.4- 1933.4] So, that is why I actually have prepaid cards.
+[ 1933.4- 1938.4] I pay cash and I use prepaid cards a lot.
+[ 1938.4- 1942.4] So, the cost of this is my gold customer status is unusable.
+[ 1942.4- 1950.4] So, the bank that I've used a lot, now I lost the status actually because I don't use it almost at all.
+[ 1950.4- 1956.4] They decided to give me gold customer status either because of the amount of transactions or the amount of money.
+[ 1956.4- 1962.4] So, I come to the bank and one of the privileges of gold customer is you can skip the line.
+[ 1962.4- 1967.4] So, there's this device where you can choose what are you here about.
+[ 1967.4- 1974.4] And I go to the nice lady that's working over there and say, I'm a gold customer, I need to skip the line.
+[ 1974.4- 1978.4] She says, sure, just take your card and swipe it at the device.
+[ 1978.4- 1981.4] I tell her, I don't have a card with you.
+[ 1981.4- 1983.4] I just have the account, you know.
+[ 1983.4- 1985.4] She says, sorry, then you're going to have to stand in line.
+[ 1985.4- 1989.4] So, there are some small hiccups, right?
+[ 1989.4- 1992.4] But booking flights and hotels is, of course, really hard.
+[ 1992.4- 1997.4] Because booking flights and hotels takes cards in most cases.
+[ 1997.4- 2001.4] I never managed to rent a car, but I think it should be doable.
+[ 2001.4- 2005.4] There are some companies that will take a cash deposit, a large cash deposit.
+[ 2005.4- 2009.4] And the local Uber Taxify in Latvia blocks all my cards.
+[ 2009.4- 2011.4] As soon as I have the card, they just block it.
+[ 2011.4- 2016.4] So, we're currently in the legal process of fighting them about this.
+[ 2016.4- 2025.4] Last thing they requested is that I send them a selfie with my passport at my face to use their taxi.
+[ 2025.4- 2028.4] I tell them, if I want to do that, I'd go on Instagram.
+[ 2028.4- 2032.4] So, we are still fighting over that.
+[ 2032.4- 2033.4] Then CCTVs.
+[ 2033.4- 2035.4] Obviously, CCTVs are everywhere.
+[ 2035.4- 2041.4] You cannot walk in a major city from point A to point B or inside a major store without being filmed.
+[ 2041.4- 2043.4] The obvious solution is to wear a mask.
+[ 2043.4- 2047.4] Now, it could work.
+[ 2047.4- 2053.4] I mean, I've done that to some extent because I ride a motorcycle and in winter I use a mask to keep myself warm.
+[ 2053.4- 2057.4] So, when I take my helmet off, I leave the mask on because it's still cold.
+[ 2057.4- 2060.4] And, you know, some people don't like that.
+[ 2060.4- 2062.4] Security guards look at you funny.
+[ 2062.4- 2067.4] Sometimes they ask you to ask you why you're wearing a mask.
+[ 2067.4- 2069.4] You tell them because I'm cold.
+[ 2069.4- 2070.4] Then they go away.
+[ 2070.4- 2072.4] Sometimes they ask you to go away.
+[ 2072.4- 2075.4] You know, in Paris.
+[ 2075.4- 2079.4] I wasn't wearing a mask in Paris, but I was in Paris a week, a month ago.
+[ 2079.4- 2084.4] And I go into the shop with my huge luggage.
+[ 2084.4- 2090.4] And I ask the security guard at the door, can I leave this here while I go deeper into the shop?
+[ 2090.4- 2093.4] And the reply surprised me.
+[ 2093.4- 2097.4] He says, you can't leave it here, but could you please open it up?
+[ 2097.4- 2099.4] We need to take a look.
+[ 2099.4- 2101.4] I asked, do you want to, you say, you want to, it was the last day of the trip.
+[ 2101.4- 2102.4] I was going to the airport.
+[ 2102.4- 2105.4] I asked him, you want to take a look at my dirty laundry?
+[ 2105.4- 2106.4] He said, yeah.
+[ 2106.4- 2107.4] I said, thank you.
+[ 2107.4- 2108.4] No.
+[ 2108.4- 2109.4] I left the shop, obviously.
+[ 2109.4- 2112.4] So security guards, you know, they have a job to do.
+[ 2112.4- 2115.4] But daily, of course, you would not be wearing a mask.
+[ 2115.4- 2117.4] It's socially super unacceptable.
+[ 2117.4- 2122.4] Additionally, multiple countries have implemented bans on wearing a mask.
+[ 2122.4- 2128.4] Unfortunately for me, people like me, and the people directly affected, this is because
+[ 2128.4- 2135.4] of some fear of people of different religions, people of different origins, where they are
+[ 2135.4- 2140.4] afraid that, you know, we are all going to start looking differently than we are right
+[ 2140.4- 2141.4] now.
+[ 2141.4- 2146.4] And people like me are also affected by that to a lesser extent, of course.
+[ 2146.4- 2147.4] Then biometric passports.
+[ 2147.4- 2153.4] I already told a small story about how biometric passports came to be in Latvia.
+[ 2153.4- 2158.4] But I did try to avoid giving my fingerprints.
+[ 2158.4- 2163.4] Now, not giving your fingerprints would, of course, mean not having a passport, or would
+[ 2163.4- 2164.4] it?
+[ 2164.4- 2171.4] So me and my nice, my friend who recently got a PhD at MIT, now he's in the US, when biometric
+[ 2171.4- 2179.4] passports were created in Latvia, we decided we don't want to give up our fingerprints.
+[ 2179.4- 2181.4] So we had this strategic meeting.
+[ 2181.4- 2182.4] We came to the meeting.
+[ 2182.4- 2186.4] We are sitting and thinking, how do we get the new passport without giving up our fingerprint?
+[ 2186.4- 2187.4] I open up the law.
+[ 2187.4- 2188.4] I read through it.
+[ 2188.4- 2189.4] We think of something.
+[ 2189.4- 2193.4] So we ended up with a bunch of ideas, and we took the top two.
+[ 2193.4- 2198.4] He took the top one idea, I took the top two idea.
+[ 2198.4- 2204.4] What he did when getting his passport, applying for his passport, he asked a friendly doctor
+[ 2204.4- 2212.4] to bandage both his hands like that, from here to here, and went to get the passport.
+[ 2212.4- 2220.4] So what I did, which was top two in our ranking, was I decided to imitate a painting accident.
+[ 2220.4- 2226.4] So I mixed the cyanocrylate, which is the base component of superglue, with black marker
+[ 2226.4- 2227.4] ink.
+[ 2227.4- 2233.4] And then I just dumped all my fingers in there, because the scanners in Latvia are optical,
+[ 2233.4- 2236.4] which means it just takes a picture, basically, and then processes it.
+[ 2236.4- 2238.4] Well, it worked for him.
+[ 2238.4- 2243.4] He got his passport, even though now he lives in the US and still had to give up all 10 fingerprints.
+[ 2243.4- 2244.4] But it didn't work for me.
+[ 2244.4- 2248.4] They just told me, hey, come back, like, when it goes off.
+[ 2248.4- 2250.4] Come back in five days.
+[ 2250.4- 2255.4] Apparently, employees are more sensitive towards people who have medical condition
+[ 2255.4- 2258.4] instead of people who work with color a lot.
+[ 2258.4- 2264.4] So, finally, creating photocopies of my IDs.
+[ 2264.4- 2270.4] I used to reply to the request.
+[ 2270.4- 2272.4] Can we copy your passport, sir?
+[ 2272.4- 2275.4] With, yeah, sure, go ahead, whatever we need.
+[ 2275.4- 2277.4] Well, now I just say, nope, nope, nope, nope.
+[ 2277.4- 2280.4] You cannot copy my passport.
+[ 2280.4- 2283.4] And it has some consequences.
+[ 2283.4- 2289.4] So, I cannot use Revolut N26 or for some reason Taxify, which is the Uber clone,
+[ 2289.4- 2292.4] because they require you to send this picture and the copy of the passport.
+[ 2292.4- 2300.4] Luckily, it's illegal to copy a passport in Latvia unless it's done by a bank or by a university,
+[ 2300.4- 2302.4] which is a strange list of exceptions.
+[ 2302.4- 2304.4] Good people are getting annoyed.
+[ 2304.4- 2308.4] So, there are some really nice people, genuinely nice people.
+[ 2308.4- 2312.4] And their boss just told them, you need to copy the ID of the customer.
+[ 2312.4- 2314.4] And you don't want to have this conflict.
+[ 2314.4- 2318.4] But you don't feel comfortable giving them a copy of your passport, right?
+[ 2318.4- 2326.4] Because the thing with a passport copy is there are some people who would indiscriminately allow you to do things just with a copy.
+[ 2326.4- 2331.4] They would just allow you to take a loan with a copy even though it's not how the law works.
+[ 2331.4- 2334.4] But that's the reality.
+[ 2334.4- 2337.4] Once, in Belgium, I had to call the cops.
+[ 2337.4- 2339.4] So, I was checking into a hotel in Belgium.
+[ 2339.4- 2346.4] I gave them my ID and I explained how important it is that the ID is not being copied.
+[ 2346.4- 2351.4] And I verified and the clerk said, yes, we will not copy your ID.
+[ 2351.4- 2356.4] So, I give the ID that he types, types, types on the laptop, on the computer.
+[ 2356.4- 2362.4] Then he grabs my ID by his keyboard and runs, running, to the back room to copy it.
+[ 2362.4- 2365.4] I calmly take my phone, call the cops.
+[ 2365.4- 2367.4] My ID was stolen.
+[ 2367.4- 2369.4] Can you help me out?
+[ 2369.4- 2371.4] So, then, you know, we had the cops.
+[ 2371.4- 2373.4] We had the hotel manager there.
+[ 2373.4- 2374.4] We had a party.
+[ 2374.4- 2376.4] They destroyed the copy and everything was fine.
+[ 2376.4- 2379.4] Since then, I carry my ID on a leash.
+[ 2379.4- 2383.4] So, when I'm checking in, I have a leash, a strong one.
+[ 2383.4- 2390.4] And so, it saves some time when you don't have to call the cops.
+[ 2390.4- 2394.4] I've also been called an asshole by a banker.
+[ 2394.4- 2401.4] So, the thing is, banks are an exception and they can copy your ID.
+[ 2401.4- 2404.4] But my bank decided they want to scan my ID.
+[ 2404.4- 2406.4] Now, you might say I'm being petty, right?
+[ 2406.4- 2407.4] What's the difference?
+[ 2407.4- 2413.4] But the difference for me is, on a photocopy, I can write with a marker, this has been handed in to bank 123.
+[ 2413.4- 2415.4] On a scan, I cannot do that.
+[ 2415.4- 2420.4] So, since they insisted on scanning my ID, we spent three hours.
+[ 2420.4- 2426.4] So, I arrived at the bank ten minutes before closing time because it was a relatively simple operation.
+[ 2426.4- 2427.4] But we spent three hours.
+[ 2427.4- 2432.4] So, two hours and a bit after the closing time working with them to resolve the situation.
+[ 2432.4- 2434.4] Because I really needed to do the operation that day.
+[ 2434.4- 2435.4] I had to pay my taxes.
+[ 2435.4- 2440.4] It was a large sum, so I had to increase the account limit.
+[ 2440.4- 2449.1] So, privacy is not dead.
+[ 2449.1- 2451.1] But privacy is dying.
+[ 2451.1- 2458.1] We have to do something about it in order for it not to die completely.
+[ 2458.1- 2468.1] So, the final tally is, socially, if you want to provide enough privacy to yourself, you will have some communication challenges.
+[ 2468.1- 2471.1] It will be harder for you to communicate with your friends.
+[ 2471.1- 2482.1] Your friends and society as a whole may disapprove of what you are doing and how you are handling the situation.
+[ 2482.1- 2487.1] Your social circle will be not as large as it can be.
+[ 2487.1- 2491.1] Financially, you will have limited choices online.
+[ 2491.1- 2495.1] So, you will only have some shops that work with JavaScript.
+[ 2495.1- 2500.1] You will have limited list of hotels that do not ask for a card to book it.
+[ 2500.1- 2508.1] And travel will be limited to the companies that either accept a friends card for your travel or accept a bank transfer.
+[ 2508.1- 2512.1] Your transportation costs may increase up to seven-fold.
+[ 2512.1- 2525.5] Technologically, you will need much more time to do the same things as a normal person.
+[ 2525.5- 2535.5] You will also not get to use the new technology at the rate as your peers will be able to do that.
+[ 2535.5- 2546.5] You will probably not be part of the Internet of Things craze, which is a good thing, but still for some it may be a cost to bear if they decide to go this way.
+[ 2546.5- 2552.5] And finally, you will have no access to your own data if you register an account on a fake name.
+[ 2552.5- 2558.5] And you will, of course, not have international travel if you don't have your passport.
+[ 2558.5- 2572.5] By the way, regarding accessing your own data, I know that at CCC here usually there is a stand where you can make unofficial 35c3 ID using whatever name you like.
+[ 2572.5- 2578.5] I think it's highly illegal, but, you know, there is a stand in case you want to take a look at how the process happens.
+[ 2578.5- 2592.5] So, finally, privacy is priceless and we need to do something about preserving it and preventing it from dying.
+[ 2592.5- 2597.5] There are a couple things that we can do.
+[ 2597.5- 2609.5] First of all, we can contact legislators and explain to them regularly how important privacy is to us.
+[ 2609.5- 2620.5] I know that many of skilled people in IT don't have the highest experience in social communication matters.
+[ 2620.5- 2629.5] That is because they have dedicated their life working in IT, working to raise their experience in IT to a high level.
+[ 2629.5- 2636.5] So, if you can't lobby, you can complain on social media. That's easy. Just keep mentioning all the important guys.
+[ 2636.5- 2640.5] Or you can watch my presentation on lobbying on my website over there.
+[ 2640.5- 2645.5] It's called Lobbying Something Something. You can take a look at it. It's relatively easy.
+[ 2645.5- 2651.5] If you're developing a system, you should make sure to develop privacy conscious systems.
+[ 2651.5- 2656.5] You should make sure that the systems take privacy into account.
+[ 2656.5- 2661.5] If you're not a developer, demand that your developers do that.
+[ 2661.5- 2666.5] Ask them that you need the system to respect privacy.
+[ 2666.5- 2670.5] Refuse to use a system that's not designed for privacy.
+[ 2670.5- 2674.5] You should not be complicit. You have to stand up for yourself.
+[ 2674.5- 2679.7] You have to ask for your privacy to be respected.
+[ 2679.7- 2687.7] And finally, remember that doing all that will make you an example to others.
+[ 2687.7- 2694.7] And that will allow you to lead by example and save privacy for all of us.
+[ 2694.7- 2695.7] Thank you.
+[ 2695.7- 2696.7] Thank you.

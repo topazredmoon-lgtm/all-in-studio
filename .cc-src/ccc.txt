@@ -1,0 +1,4 @@
+34c3_9077 https://cdn.media.ccc.de/congress/2017/opus/34c3-9077-eng-Humans_as_software_extensions.opus https://cdn.media.ccc.de/congress/2017/h264-hd/34c3-9077-eng-Humans_as_software_extensions.mp4
+36c3_10936 https://cdn.media.ccc.de/congress/2019/opus/36c3-10936-eng-Inside_the_Fake_Like_Factories_opus.opus https://cdn.media.ccc.de/congress/2019/h264-hd/36c3-10936-eng-Inside_the_Fake_Like_Factories.mp4
+35c3chaoswest_32 https://cdn.media.ccc.de/congress/35C3-chaoswest/opus/35c3-chaoswest-32-eng-Toll_of_personal_privacy_in_2018_opus.opus https://cdn.media.ccc.de/congress/35C3-chaoswest/h264-hd/35c3-chaoswest-32-eng-Toll_of_personal_privacy_in_2018_hd.mp4
+32c3_7324 https://cdn.media.ccc.de/congress/2015/h264-sd/32c3-7324-en-de-What_is_the_value_of_anonymous_communication_sd.mp4 https://cdn.media.ccc.de/congress/2015/h264-hd-web/32c3-7324-en-What_is_the_value_of_anonymous_communication.mp4
