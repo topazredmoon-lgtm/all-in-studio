@@ -28,7 +28,7 @@ const S = (p: number, c: string = color.ink, sw = 4): React.SVGProps<SVGPathElem
 export type IconName = 'person' | 'robot' | 'gateOpen' | 'gateShut' | 'hourglass' | 'doc' | 'envelope' | 'desk' | 'eye' | 'book' | 'coin' | 'contract' | 'cursor' | 'people'
   | 'cash' | 'church' | 'car' | 'camera' | 'flag' | 'pin' | 'map' | 'box' | 'grid' | 'checkbox' | 'checkbox2' | 'cloud' | 'building' | 'browser' | 'clock'
   | 'worker' | 'monitor' | 'laptop' | 'fingerprint' | 'shield' | 'cookie' | 'key' | 'face' | 'iris' | 'newspaper'
-  | 'lock' | 'chip' | 'idcard' | 'brain' | 'missile' | 'tank';
+  | 'lock' | 'chip' | 'idcard' | 'brain' | 'missile' | 'tank' | 'bars' | 'fire' | 'power';
 
 const art = (name: IconName, p: number, t: number): React.ReactNode => {
   const red = color.red;
@@ -82,6 +82,9 @@ const art = (name: IconName, p: number, t: number): React.ReactNode => {
     case 'key': return <g><circle cx={62} cy={100} r={32} {...(S(p) as any)} /><circle cx={62} cy={100} r={10} {...(S(p, red, 5) as any)} /><path d="M94 100 L176 100 M156 100 L156 128 M134 100 L134 120" {...S(p)} /></g>;
     case 'face': return <g><ellipse cx={100} cy={104} rx={50} ry={62} {...(S(p) as any)} /><path d="M80 92 L82 92 M118 92 L120 92 M84 132 Q100 142 116 132 M100 100 L96 118 L104 118" {...S(p)} /><path d="M24 50 L24 24 L50 24 M150 24 L176 24 L176 50 M24 150 L24 176 L50 176 M176 150 L176 176 L150 176" {...S(p, red, 5)} /></g>;
     case 'iris': return <g><path d="M10 100 Q100 30 190 100 Q100 170 10 100 Z" {...S(p)} /><circle cx={100} cy={100} r={34} {...(S(p) as any)} /><circle cx={100} cy={100} r={22} {...(S(p, color.mute, 3) as any)} /><circle cx={100} cy={100} r={10} fill={color.ink} opacity={p} /><path d={`M20 ${60 + 80 * t} L180 ${60 + 80 * t}`} stroke={red} strokeWidth={3} opacity={p * (t > 0 && t < 1 ? 1 : 0)} /></g>;
+    case 'bars': return <g><rect x={36} y={30} width={128} height={146} rx={6} {...(S(p) as any)} />{[62, 88, 112, 138].map((x, i) => <path key={i} d={`M${x} 30 L${x} 176`} {...S(p, i === 1 || i === 2 ? red : color.ink, 6)} />)}<path d="M36 76 L164 76 M36 130 L164 130" {...S(p)} /></g>;
+    case 'fire': return <g><path d="M100 176 C56 176 40 146 46 116 C52 90 72 78 74 50 C92 66 96 84 94 98 C108 86 116 66 112 30 C150 56 166 96 160 128 C154 158 132 176 100 176 Z" {...S(p)} /><path d="M100 176 C80 176 72 160 76 146 C80 132 92 126 94 112 C108 124 128 138 124 154 C121 168 112 176 100 176 Z" {...S(p, red, 5)} /></g>;
+    case 'power': return <g><path d="M70 58 A58 58 0 1 0 130 58" {...S(p)} /><path d="M100 30 L100 104" {...S(p, red, 7)} /></g>;
     case 'lock': return <g><rect x={46} y={88} width={108} height={88} rx={10} {...(S(p) as any)} /><path d="M70 88 L70 64 A30 30 0 0 1 130 64 L130 88" {...S(p)} /><circle cx={100} cy={124} r={10} {...(S(p, red, 5) as any)} /><path d="M100 134 L100 152" {...S(p, red, 6)} /></g>;
     case 'chip': return <g><rect x={52} y={52} width={96} height={96} rx={8} {...(S(p) as any)} /><rect x={78} y={78} width={44} height={44} rx={4} {...(S(p, red, 5) as any)} />{[70, 90, 110, 130].map((v, i) => <path key={i} d={`M${v} 52 L${v} 30 M${v} 148 L${v} 170 M52 ${v} L30 ${v} M148 ${v} L170 ${v}`} {...S(p, color.ink, 3)} />)}</g>;
     case 'idcard': return <g><rect x={18} y={46} width={164} height={108} rx={10} {...(S(p) as any)} /><circle cx={62} cy={88} r={16} {...(S(p) as any)} /><path d="M38 132 C40 112 50 106 62 106 C74 106 84 112 86 132" {...S(p)} /><path d="M104 80 L162 80" {...S(p, red, 6)} /><path d="M104 102 L162 102 M104 124 L144 124" {...S(p, color.mute, 5)} /></g>;

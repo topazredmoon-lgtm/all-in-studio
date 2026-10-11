@@ -31,6 +31,8 @@ Owner: S. Start every session by reading `HANDOVER.md`, then `PLAYBOOK.md`. Open
 - **Every clip has a purpose** (reveal, confession, stakes), 6-12 s; the first clip is the strongest one.
 - **Pro clip edits**: breathe in/out on the speaker's own room sound, never word-tight, never a freeze frame.
 - **Human voice**: no spaced letters ("G P T"); names via the tts lexicon; even level and tune; no fragment chains.
+- **Never a Senate/Congress hearing as the hook**, never the vague "AI safety fear" angle, never a stale (2023) event up
+  front. Hook = a concrete, fresh (2025-26) thing that hits the viewer. Keep the owner's own script lines and punch.
 - Narrator has a side; explain jargon like a friend; leave real takeaways; true facts only, predictions as "if".
 - Every new owner note: verbatim into LEARNINGS.md the same turn, then into PLAYBOOK/DESIGN/code and here if it is a top rule.
 

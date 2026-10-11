@@ -23,8 +23,9 @@ const Center: React.FC<Box & { children: React.ReactNode }> = ({ w, h, children 
 );
 
 /** A phone with an AI chat. mode `open`: the question types in on `askAt`, the answer fills in as bars on `replyAt`.
+ *  mode `off`: on `gateAt` the screen goes dark: a red power symbol and "unavailable" (the AI switched off).
  *  mode `gate`: on `gateAt` the chat dims and a sheet slides up asking for a licence number, a red caret blinking in an empty field. */
-export const PhoneChat: React.FC<Box & { mode: 'open' | 'gate'; ask?: string; askAt?: Cue; replyAt?: Cue; gateAt?: Cue }> = ({ w, h, mode, ask = 'why is the sky blue?', askAt, replyAt, gateAt }) => {
+export const PhoneChat: React.FC<Box & { mode: 'open' | 'gate' | 'off'; ask?: string; askAt?: Cue; replyAt?: Cue; gateAt?: Cue }> = ({ w, h, mode, ask = 'why is the sky blue?', askAt, replyAt, gateAt }) => {
   const frame = useCurrentFrame();
   const af = useCue(askAt, 0);
   const rf = useCue(replyAt, 30);
@@ -32,7 +33,7 @@ export const PhoneChat: React.FC<Box & { mode: 'open' | 'gate'; ask?: string; as
   const W = 380, H = 720, k = fit(w, h, W + 40, H + 20);
   const typed = askAt === undefined ? ask : ask.slice(0, Math.floor(ask.length * prog(frame, af, Math.max(12, ask.length))));
   const rp = askAt === undefined && replyAt === undefined ? 1 : prog(frame, rf, 36);
-  const gp = mode === 'gate' ? prog(frame, gf, 14) : 0;
+  const gp = mode === 'gate' || mode === 'off' ? prog(frame, gf, 14) : 0;
   const bars = [0.94, 0.8, 0.9, 0.62];
   return (
     <Center w={w} h={h}>
@@ -44,12 +45,18 @@ export const PhoneChat: React.FC<Box & { mode: 'open' | 'gate'; ask?: string; as
         </div>
         <div style={{ opacity: 1 - 0.75 * gp, display: 'flex', flexDirection: 'column', gap: 18 }}>
           <div style={{ alignSelf: 'flex-end', maxWidth: '86%', background: color.raised2, border: chalk, borderRadius: 18, padding: '10px 16px', ...mono(26, color.ink), minHeight: 34 }}>{typed || ' '}</div>
-          {(rp > 0 || mode === 'gate') && (
+          {(rp > 0 || mode !== 'open') && (
             <div style={{ alignSelf: 'flex-start', width: '88%', display: 'flex', flexDirection: 'column', gap: 11 }}>
-              {bars.map((b, i) => <div key={i} style={{ height: 18, borderRadius: 6, background: color.hairStrong, width: `${b * 100 * Math.max(0, Math.min(1, (mode === 'gate' ? 1 : rp) * bars.length - i))}%` }} />)}
+              {bars.map((b, i) => <div key={i} style={{ height: 18, borderRadius: 6, background: color.hairStrong, width: `${b * 100 * Math.max(0, Math.min(1, (mode !== 'open' ? 1 : rp) * bars.length - i))}%` }} />)}
             </div>
           )}
         </div>
+        {mode === 'off' && gp > 0 && (
+          <div style={{ position: 'absolute', inset: 0, background: `rgba(10,9,8,${0.9 * gp})`, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 22 }}>
+            <div style={{ opacity: gp, transform: `scale(${1.25 - 0.25 * gp})` }}><LineIcon w={170} h={170} name="power" size={160} /></div>
+            <div style={{ ...mono(30, color.red), letterSpacing: 3, opacity: gp }}>unavailable</div>
+          </div>
+        )}
         {mode === 'gate' && (
           <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: H * 0.62, transform: `translateY(${(1 - gp) * 100}%)`, background: color.stageDeep, borderTop: `3px solid ${color.red}`, borderRadius: '28px 28px 0 0', padding: '30px 30px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20 }}>
             <LineIcon w={150} h={120} name="idcard" size={130} />
@@ -191,3 +198,39 @@ const Piece: React.FC<{ pc: { icon: IconName; at?: Cue }; x: number; y: number; 
 };
 
 void hand;
+
+/** An app-store page on a phone (generic drawing, no store's trade dress): app tile with a drawing, the app's name, stars and a
+ *  "get" button. On `rankAt` a red "#1" ribbon lands on the tile; on `pullAt` the page greys out and a red stamp lands. */
+export const AppStore: React.FC<Box & { name: string; icon?: IconName; rank?: string; rankAt?: Cue; pullAt?: Cue; stamp?: string }> = ({ w, h, name, icon = 'brain', rank = '#1', rankAt, pullAt, stamp = 'removed' }) => {
+  const frame = useCurrentFrame();
+  const rf = useCue(rankAt, 99999);
+  const pf = useCue(pullAt, 99999);
+  const rp = rankAt === undefined ? 0 : prog(frame, rf, 10);
+  const pp = pullAt === undefined ? 0 : prog(frame, pf, 10);
+  const W = 380, H = 720, k = fit(w, h, W + 40, H + 20);
+  return (
+    <Center w={w} h={h}>
+      <div style={{ width: W, height: H, transform: `scale(${k})`, border: `4px solid ${color.ink}`, borderRadius: 52, background: color.raised, boxShadow: '0 24px 60px rgba(0,0,0,0.55)', position: 'relative', overflow: 'hidden', padding: '64px 30px 30px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: 24 }}>
+        <div style={{ position: 'absolute', top: 16, left: W / 2 - 50, width: 100, height: 10, borderRadius: 5, background: color.hairStrong }} />
+        <div style={{ display: 'flex', gap: 20, alignItems: 'center', opacity: 1 - 0.65 * pp, filter: `grayscale(${pp})` }}>
+          <div style={{ position: 'relative', width: 150, height: 150, borderRadius: 34, border: chalk, background: color.raised2, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <LineIcon w={120} h={120} name={icon} size={112} />
+            {rp > 0 && <div style={{ position: 'absolute', top: -16, right: -22, ...mono(30, color.ink), fontWeight: 800, background: color.red, borderRadius: 10, padding: '2px 12px', transform: `scale(${1.4 - 0.4 * rp}) rotate(8deg)`, opacity: rp }}>{rank}</div>}
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            <div style={{ ...mono(34, color.ink), fontWeight: 700 }}>{name}</div>
+            <div style={{ width: 120, height: 12, borderRadius: 4, background: color.hairStrong }} />
+            <div style={{ width: 96, height: 40, borderRadius: 20, background: pp > 0.5 ? color.hairStrong : color.ink, ...mono(24, color.stageDeep), fontWeight: 800, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>get</div>
+          </div>
+        </div>
+        <div style={{ color: '#e8b04a', fontSize: 34, letterSpacing: 6, opacity: 1 - 0.65 * pp }}>★★★★★</div>
+        <div style={{ display: 'flex', gap: 12, opacity: 1 - 0.65 * pp }}>
+          {[0, 1].map((i) => <div key={i} style={{ flex: 1, height: 300, borderRadius: 18, border: chalk, background: color.raised2, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ width: '70%', display: 'flex', flexDirection: 'column', gap: 12 }}>{[0.9, 0.6, 0.8, 0.5].map((b, j) => <div key={j} style={{ height: 12, width: `${b * 100}%`, borderRadius: 4, background: color.hairStrong }} />)}</div>
+          </div>)}
+        </div>
+        {pp > 0 && <div style={{ position: 'absolute', left: '50%', top: '46%', ...mono(54, color.red), fontWeight: 800, letterSpacing: 4, textTransform: 'uppercase', border: `6px solid ${color.red}`, borderRadius: 12, padding: '6px 22px', background: 'rgba(10,9,8,0.55)', opacity: 0.95 * pp, transform: `translate(-50%,-50%) rotate(-14deg) scale(${1.6 - 0.6 * pp})` }}>{stamp}</div>}
+      </div>
+    </Center>
+  );
+};

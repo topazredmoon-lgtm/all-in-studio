@@ -1,6 +1,6 @@
 {
  "id": "ai-ban",
- "title": "THE COMING AI BAN · 2-min sample",
+ "title": "THE COMING AI BAN · 1-min sample (owner's opening)",
  "voice": {
   "engine": "kokoro",
   "name": "af_heart",
@@ -16,87 +16,41 @@
  },
  "beats": [
   {
-   "id": "c01",
-   "clip": {
-    "src": "aiban/senate_clone.mp4",
-    "from": 1.45,
-    "to": 6.02,
-    "plate": "An AI clone of Sen. Blumenthal's voice · US Senate, 16 May 2023",
-    "plateAt": 0.6
-   }
-  },
-  {
    "id": "h01",
-   "vo": "That's a United States senator, opening a hearing on AI in 2023. But watch his mouth. It isn't moving.",
-   "say": "That's a United States senator, opening a hearing on AI in twenty twenty-three. But watch his mouth. It isn't moving.",
+   "vo": "Take a long look at the AI on your phone. Enjoy it while you still can.",
+   "say": "Take a long look at the AI on your phone. Enjoy it, while you still can.",
    "shot": {
     "cuts": [
      {
       "layout": "full",
       "hero": {
-       "v": "Hearing",
+       "v": "PhoneChat",
        "surface": "bare",
-       "img": "aiban/senate_blumenthal_shut.jpg",
-       "pill": "sen. richard blumenthal"
+       "mode": "open",
+       "ask": "plan my trip to rome",
+       "askAt": 0,
+       "replyAt": "phone"
       },
-      "cap": "a *US senator*"
-     },
-     {
-      "layout": "split",
-      "L": {
-       "v": "Hearing",
-       "surface": "bare",
-       "img": "aiban/senate_blumenthal_shut.jpg",
-       "pill": "sen. richard blumenthal"
-      },
-      "R": {
-       "v": "Hearing",
-       "surface": "bare",
-       "img": "aiban/senate_room.jpg",
-       "pill": "us senate · hearing on ai",
-       "focus": "50% 45%",
-       "tag": {
-        "t": "16 may 2023",
-        "at": 0
-       }
-      },
-      "cap": "a hearing on *AI*",
-      "at": "hearing"
+      "cap": "the AI on *your phone*"
      },
      {
       "layout": "full",
       "hero": {
-       "v": "Hearing",
+       "v": "PhoneChat",
        "surface": "bare",
-       "img": "aiban/senate_blumenthal_shut.jpg",
-       "ring": {
-        "x": 41,
-        "y": 36,
-        "w": 16,
-        "h": 20
-       },
-       "ringAt": "mouth"
+       "mode": "off",
+       "gateAt": "still"
       },
-      "cap": "watch *his mouth*",
-      "at": "watch"
+      "cap": "while you *still can*",
+      "at": "Enjoy"
      }
     ],
     "act": "01 the ban"
-   }
-  },
-  {
-   "id": "c02",
-   "clip": {
-    "src": "aiban/senate_notmine.mp4",
-    "from": 1.48,
-    "to": 15.78,
-    "plate": "Sen. Richard Blumenthal · chair of the hearing · US Senate, 16 May 2023",
-    "plateAt": 0.4
    }
   },
   {
    "id": "h02",
-   "vo": "His voice was cloned from his old speeches, and the words were written by ChatGPT. And the man who runs ChatGPT was sitting right in front of him.",
+   "vo": "That face was faked live, with AI anyone can download. And governments are reaching for the off switch.",
    "shot": {
     "cuts": [
      {
@@ -104,206 +58,141 @@
       "L": {
        "v": "Hearing",
        "surface": "bare",
-       "img": "aiban/senate_blumenthal_shut.jpg",
-       "pill": "the real senator"
+       "img": "aiban/fake_face.jpg",
+       "pill": "faked live"
       },
       "R": {
-       "v": "Flow",
+       "v": "LineIcon",
        "surface": "bare",
-       "nodes": [
-        {
-         "icon": "doc",
-         "label": "old speeches"
-        },
-        {
-         "icon": "robot",
-         "label": "ai",
-         "at": "cloned"
-        },
-        {
-         "icon": "face",
-         "label": "fake voice",
-         "at": "speeches"
-        }
-       ],
-       "enter": "cloned"
+       "name": "laptop",
+       "label": "free download",
+       "enter": "download"
       },
-      "cap": "a *cloned* voice"
+      "cap": "faked *live*"
      },
      {
       "layout": "split",
       "L": {
-       "v": "Hearing",
+       "v": "LineIcon",
        "surface": "bare",
-       "img": "aiban/senate_blumenthal_shut.jpg",
-       "pill": "the real senator"
+       "name": "building",
+       "label": "governments"
       },
       "R": {
-       "v": "ChatBox",
+       "v": "LineIcon",
        "surface": "bare",
-       "ask": "open my senate hearing",
-       "mode": "comply",
-       "name": "chatgpt",
-       "replyAt": "written",
-       "enter": "words"
+       "name": "power",
+       "label": "off switch",
+       "enter": "off"
       },
-      "cap": "words by *ChatGPT*",
-      "at": "words"
-     },
-     {
-      "layout": "full",
-      "hero": {
-       "v": "Hearing",
-       "surface": "bare",
-       "img": "aiban/senate_altman.jpg",
-       "ring": {
-        "x": 37,
-        "y": 4,
-        "w": 26,
-        "h": 50
-       },
-       "ringAt": "front",
-       "pill": "sitting right there"
-      },
-      "cap": "the man who *runs ChatGPT*",
-      "at": "man"
+      "cap": "reaching for *the off switch*",
+      "at": "governments"
      }
     ],
     "act": "01 the ban"
-   }
-  },
-  {
-   "id": "c03",
-   "clip": {
-    "src": "aiban/senate_fears.mp4",
-    "from": 1.36,
-    "to": 8.34,
-    "plate": "Sam Altman · head of OpenAI, maker of ChatGPT · US Senate, 16 May 2023",
-    "plateAt": 0.3
    }
   },
   {
    "id": "h03",
-   "vo": "That's Sam Altman, the boss of OpenAI. You'd expect him to fight any new rules. Instead, he asked the Senate for this.",
+   "vo": "Last year, DeepSeek, a Chinese AI, hit number one on the app charts. Within days, Italy ordered it blocked. South Korea pulled it from its stores.",
    "shot": {
     "cuts": [
      {
       "layout": "full",
       "hero": {
-       "v": "Hearing",
+       "v": "AppStore",
        "surface": "bare",
-       "img": "aiban/senate_altman.jpg",
-       "pill": "sam altman · openai"
+       "name": "deepseek",
+       "rankAt": "number",
+       "tag": {
+        "t": "jan 2025",
+        "at": "number"
+       }
       },
-      "cap": "the boss of *OpenAI*"
+      "cap": "*number one* on the charts"
      },
      {
       "layout": "split",
       "L": {
-       "v": "Hearing",
+       "v": "AppStore",
        "surface": "bare",
-       "img": "aiban/senate_altman.jpg",
-       "pill": "sam altman · openai"
+       "name": "deepseek",
+       "rankAt": 0
       },
       "R": {
        "v": "LineIcon",
        "surface": "bare",
-       "name": "contract",
-       "label": "new rules",
+       "name": "flag",
+       "label": "italy",
        "mark": "no",
-       "markAt": "fight"
+       "markAt": "blocked",
+       "enter": "Italy"
       },
-      "cap": "you'd expect *a fight*",
-      "at": "expect"
+      "cap": "*blocked* in Italy",
+      "at": "Within"
      },
      {
       "layout": "split",
       "L": {
-       "v": "Hearing",
+       "v": "AppStore",
        "surface": "bare",
-       "img": "aiban/senate_altman.jpg",
-       "pill": "sam altman · openai"
+       "name": "deepseek",
+       "rankAt": 0,
+       "pullAt": "pulled"
       },
       "R": {
-       "v": "Licence",
+       "v": "LineIcon",
        "surface": "bare",
-       "kind": "blank",
-       "title": "licence",
-       "at": "asked"
+       "name": "flag",
+       "label": "south korea",
+       "enter": "Korea"
       },
-      "cap": "he *asked* for rules",
-      "at": "Instead"
+      "cap": "*pulled* from the store",
+      "at": "South"
      }
     ],
     "act": "01 the ban"
    }
   },
   {
-   "id": "c04",
-   "clip": {
-    "src": "aiban/senate_licence2.mp4",
-    "from": 2.12,
-    "to": 10.08,
-    "plate": "Sam Altman · asked how he would regulate AI · US Senate, 16 May 2023",
-    "plateAt": 0.5
-   }
-  },
-  {
    "id": "h04",
-   "vo": "A licence to build powerful AI. It sounds responsible, until you ask who can afford one. You'd need lawyers, audits, and the blessing of an office that can take it away.",
+   "vo": "And an American senator proposed a law under which downloading it could mean up to twenty years in prison.",
    "shot": {
     "cuts": [
      {
-      "layout": "full",
-      "hero": {
-       "v": "Licence",
-       "surface": "bare",
-       "kind": "brain",
-       "title": "ai licence",
-       "stamp": "approved",
-       "stampAt": "responsible"
-      },
-      "cap": "a licence to *build AI*"
-     },
-     {
       "layout": "split",
       "L": {
-       "v": "Licence",
+       "v": "ListDoc",
        "surface": "bare",
-       "kind": "brain",
-       "title": "ai licence"
+       "title": "us senate bill",
+       "rows": [
+        {
+         "t": "chinese ai"
+        },
+        {
+         "t": "import ban",
+         "at": "law"
+        },
+        {
+         "t": "penalties",
+         "at": "downloading"
+        }
+       ],
+       "hot": 2,
+       "hotAt": "downloading"
       },
       "R": {
-       "v": "IconRow",
-       "surface": "bare",
-       "name": "cash",
-       "n": 12,
-       "cols": 4,
-       "every": 2,
-       "enter": "afford"
-      },
-      "cap": "who can *afford* one?",
-      "at": "until"
-     },
-     {
-      "layout": "split",
-      "L": {
        "v": "LineIcon",
        "surface": "bare",
-       "name": "contract",
-       "label": "lawyers & audits",
-       "at": "lawyers"
+       "name": "bars",
+       "label": "prison",
+       "enter": "prison",
+       "tag": {
+        "t": "up to 20 years",
+        "at": "20"
+       }
       },
-      "R": {
-       "v": "Licence",
-       "surface": "bare",
-       "kind": "brain",
-       "title": "ai licence",
-       "stamp": "revoked",
-       "stampAt": "away"
-      },
-      "cap": "they can *take it away*",
-      "at": "need"
+      "cap": "*prison* for a download?"
      }
     ],
     "act": "01 the ban"
@@ -311,20 +200,27 @@
   },
   {
    "id": "h05",
-   "vo": "OpenAI could pay for all of that. A small startup couldn't. And neither could the people who give away free AI that anyone can download.",
+   "vo": "Governments don't move fast for ethics. They move fast when the banking system is on fire.",
    "shot": {
     "cuts": [
      {
-      "layout": "full",
-      "hero": {
+      "layout": "split",
+      "L": {
        "v": "LineIcon",
        "surface": "bare",
        "name": "building",
-       "label": "openai",
-       "mark": "ok",
-       "markAt": "pay"
+       "label": "governments"
       },
-      "cap": "OpenAI *could pay*"
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "people",
+       "label": "ethics debates",
+       "mark": "no",
+       "markAt": "ethics",
+       "enter": "ethics"
+      },
+      "cap": "not for *ethics*"
      },
      {
       "layout": "split",
@@ -332,42 +228,16 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "building",
-       "label": "openai",
-       "mark": "ok",
-       "markAt": 0
+       "label": "the banks"
       },
       "R": {
        "v": "LineIcon",
        "surface": "bare",
-       "name": "laptop",
-       "label": "small startup",
-       "mark": "no",
-       "markAt": "couldn't"
+       "name": "fire",
+       "enter": "fire"
       },
-      "cap": "a startup *couldn't*",
-      "at": "small"
-     },
-     {
-      "layout": "split",
-      "L": {
-       "v": "LineIcon",
-       "surface": "bare",
-       "name": "laptop",
-       "label": "small startup",
-       "mark": "no",
-       "markAt": 0
-      },
-      "R": {
-       "v": "LineIcon",
-       "surface": "bare",
-       "name": "brain",
-       "label": "free download",
-       "mark": "no",
-       "markAt": "download",
-       "enter": "free"
-      },
-      "cap": "nor the *free AI*",
-      "at": "neither"
+      "cap": "when *the banks* burn",
+      "at": "banking"
      }
     ],
     "act": "01 the ban"
@@ -375,19 +245,24 @@
   },
   {
    "id": "h06",
-   "vo": "A rule like that wouldn't slow the giants down. It would pull up the ladder behind them. And one scientist at that same table said out loud where that leads.",
+   "vo": "That's Sam Altman, who runs ChatGPT. And here's the twist: the loudest voices asking to lock AI down? Some are the very companies that built it.",
    "shot": {
     "cuts": [
      {
-      "layout": "full",
-      "hero": {
-       "v": "IconRow",
+      "layout": "split",
+      "L": {
+       "v": "Hearing",
+       "surface": "bare",
+       "img": "aiban/fed_altman.jpg",
+       "pill": "sam altman · openai"
+      },
+      "R": {
+       "v": "LineIcon",
        "surface": "bare",
        "name": "building",
-       "n": 3,
-       "label": "the giants"
+       "label": "federal reserve"
       },
-      "cap": "it won't slow *the giants*"
+      "cap": "the man who *runs ChatGPT*"
      },
      {
       "layout": "split",
@@ -396,130 +271,25 @@
        "surface": "bare",
        "name": "building",
        "n": 3,
-       "label": "the giants"
+       "label": "ai companies"
       },
       "R": {
        "v": "LineIcon",
        "surface": "bare",
-       "name": "gateShut",
-       "label": "everyone else"
+       "name": "lock",
+       "label": "lock it down",
+       "enter": "lock"
       },
-      "cap": "pull up *the ladder*",
-      "at": "pull"
-     },
-     {
-      "layout": "full",
-      "hero": {
-       "v": "Hearing",
-       "surface": "bare",
-       "img": "aiban/senate_marcus.jpg",
-       "pill": "gary marcus · ai scientist",
-       "focus": "55% 35%"
-      },
-      "cap": "a scientist *at the table*",
-      "at": "scientist"
+      "cap": "the builders want *the lock*",
+      "at": "twist"
      }
     ],
     "act": "01 the ban"
-   }
-  },
-  {
-   "id": "c05",
-   "clip": {
-    "src": "aiban/senate_marcus.mp4",
-    "from": 1.56,
-    "to": 10.96,
-    "plate": "Gary Marcus · AI scientist, New York University · US Senate, 16 May 2023",
-    "plateAt": 3.9
    }
   },
   {
    "id": "h07",
-   "vo": "Technocracy and oligarchy are big words for a simple fear: a few companies deciding what the AI in your pocket is allowed to tell you.",
-   "shot": {
-    "cuts": [
-     {
-      "layout": "split",
-      "L": {
-       "v": "LineIcon",
-       "surface": "bare",
-       "name": "chip",
-       "label": "technocracy"
-      },
-      "R": {
-       "v": "LineIcon",
-       "surface": "bare",
-       "name": "building",
-       "label": "oligarchy",
-       "enter": "oligarchy"
-      },
-      "cap": "two *big words*"
-     },
-     {
-      "layout": "split",
-      "L": {
-       "v": "IconRow",
-       "surface": "bare",
-       "name": "building",
-       "n": 3,
-       "label": "a few companies"
-      },
-      "R": {
-       "v": "PhoneChat",
-       "surface": "bare",
-       "mode": "open",
-       "ask": "is this news true?",
-       "askAt": "pocket",
-       "replyAt": "allowed"
-      },
-      "cap": "what your AI may *tell you*",
-      "at": "few"
-     }
-    ],
-    "act": "01 the ban"
-   }
-  },
-  {
-   "id": "h08",
-   "vo": "Nobody has banned AI, not yet. But almost every piece you'd need to lock it away has already been built, or tried.",
-   "shot": {
-    "cuts": [
-     {
-      "layout": "full",
-      "hero": {
-       "v": "Pieces",
-       "surface": "bare",
-       "pieces": [
-        {
-         "icon": "idcard"
-        },
-        {
-         "icon": "chip",
-         "at": "yet"
-        },
-        {
-         "icon": "brain",
-         "at": "piece"
-        },
-        {
-         "icon": "contract",
-         "at": "built"
-        },
-        {
-         "icon": "lock",
-         "at": "tried"
-        }
-       ]
-      },
-      "cap": "nobody has *banned* it. yet."
-     }
-    ],
-    "act": "01 the ban"
-   }
-  },
-  {
-   "id": "h09",
-   "vo": "By the end of this video, you'll know each piece, who gets rich if they snap together, and how ordinary people beat this exact plan once before.",
+   "vo": "By the end of this video, you'll see who wins when the trap snaps shut. And it isn't you.",
    "shot": {
     "cuts": [
      {
@@ -544,9 +314,9 @@
          "icon": "lock"
         }
        ],
-       "snapAt": "snap"
+       "snapAt": "snaps"
       },
-      "cap": "who gets rich if they *snap*"
+      "cap": "when *the trap* snaps shut"
      },
      {
       "layout": "split",
@@ -575,14 +345,14 @@
       "R": {
        "v": "LineIcon",
        "surface": "bare",
-       "name": "people",
-       "mark": "ok",
-       "markAt": "beat",
-       "label": "ordinary people",
-       "enter": "ordinary"
+       "name": "person",
+       "label": "you",
+       "mark": "no",
+       "markAt": "isn't",
+       "enter": "you"
       },
-      "cap": "how people *won* before",
-      "at": "ordinary"
+      "cap": "and it *isn't you*",
+      "at": "isn't"
      }
     ],
     "act": "01 the ban"

@@ -42,6 +42,9 @@ Source notes are verbatim in `design-system/LEARNINGS.md`. Add to this list when
   room sound fading under both; never a freeze frame, never a word-tight chop (`build.py` does it; LEARNINGS 60).
 - **A voice that sounds human (2026-10-11).** No spaced letters ("G P T"): names go through the tts lexicon. Even level
   and tune from line to line; no fragment chains. Run `tools/voice_check.py` after every voice pass.
+- **Never a hearing as the hook; no vague "AI safety fear" (2026-10-11 night).** Old politicians at a dais are
+  "a terrible hook". Open on what happens to the viewer, with the newest real events (2025-26), not 2023.
+- **Keep the owner's voice.** When the owner gives a script, keep its punch and best lines verbatim; fix only the truth.
 - **Sample first.** A new full video starts with a ~1-min sample (the real opening, full quality) for the owner's OK.
 - **Beat the last one.** Each delivery must beat the current quality bar (captchas v6 / captchas-full v3), never match it.
 

@@ -3,6 +3,21 @@
 Newest first. Each entry: what happened, the lesson, where it now lives (code or DESIGN.md).
 Owner notes go here verbatim (dated) the same turn they arrive; general rules are then promoted into DESIGN.md / `ds/`.
 
+## 2026-10-11 (night) · owner on the ai-ban 2-min sample (Senate-hearing cold open) → a new 1-min sample
+Owner, verbatim: "i've watched : All-in_ai_ban_sample_2min.mp4. it's really terrible. BECAUSE WHO THE F CARES ABOUT
+THOSE SENATE HEARINGS OF OLD PEOPLE FFS! WHAT A TERRIBLEH OOK! WHO CARES ABT THE " FEAR OF SAFETY" VAGUELY SHIT DONE AND
+REDONE TIMES AND TIMES AGAIN... 2023 stupid hearing.. seriously.. thats ur hook? i think i prefer the original script at
+this point.... omg... i trusted you bro.... comon make me proud instead of this crap.... this time a 1min sample"
+67. A congressional hearing is never the hook: politicians at a dais read as old, slow and irrelevant to a normal
+    viewer, whatever is said there. Hearings may appear later as one short piece of evidence, never as the opening.
+68. "AI is scary / safety fears" is a worn-out, vague angle. The hook is a concrete thing that happens to the viewer
+    (their AI taken away, a crime for downloading an app, their money stolen by a fake face), shown for real.
+69. Fresh beats old: a 2023 event is stale in 2026. Lead with the newest real events (2025-26); old ones only as
+    precedent, later, in one line.
+70. Keep the owner's own script voice when they say they prefer it: their punchy lines ("Take a long look at the AI on
+    your phone. Enjoy it while you still can.") stay; the session only makes the claims true (facts as facts,
+    predictions as "could"). Rewriting their spine into a neutral explainer lost what they liked.
+
 ## 2026-10-11 (later) · owner on the ai-ban 1-min sample → a 2-min sample before the full film
 Owner, verbatim: "i have watched the 1min sample. the moment cuts are being cut off is still very amateurish, not natural
 at all. the voice tone is irregular. a human would never say G P T the way it said it in "chatgpt" . and also in other
