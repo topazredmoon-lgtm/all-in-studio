@@ -1,6 +1,6 @@
 {
  "id": "ai-black-markets",
- "title": "THE DARK REALITY OF AI'S BLACK MARKETS · 1:30 sample",
+ "title": "THE DARK REALITY OF AI'S BLACK MARKETS",
  "voice": {
   "engine": "kokoro",
   "name": "af_heart",
@@ -76,15 +76,15 @@
        "surface": "bare",
        "name": "robot",
        "mark": "ok",
-       "markAt": "gray"
+       "markAt": "grey"
       },
       "R": {
        "v": "LineIcon",
        "surface": "bare",
        "name": "robot",
        "mark": "no",
-       "markAt": "gray",
-       "enter": "gray"
+       "markAt": "grey",
+       "enter": "grey"
       },
       "cap": "the *grey zone* of AI"
      }
@@ -94,7 +94,7 @@
   },
   {
    "id": "g02",
-   "vo": "Grey, because the tools are legal. A voice cloner reads audiobooks.",
+   "vo": "Grey, because the tools themselves are legal. A voice cloner reads audiobooks. A face swap finishes a film.",
    "shot": {
     "cuts": [
      {
@@ -133,6 +133,24 @@
       },
       "cap": "a *voice cloner*",
       "at": "voice"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "face",
+       "label": "face swap"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "camera",
+       "enter": "film",
+       "label": "a film"
+      },
+      "cap": "a *face swap*",
+      "at": "face"
      }
     ],
     "act": "01 the grey zone"
@@ -140,7 +158,7 @@
   },
   {
    "id": "g03",
-   "vo": "But the same tools are sold to criminals, in black markets that look like any online shop.",
+   "vo": "But the very same tools are sold to criminals, in black markets that look like any online shop.",
    "shot": {
     "cuts": [
      {
@@ -165,7 +183,7 @@
        "at": "sold",
        "enter": "sold"
       },
-      "cap": "sold in *black markets*"
+      "cap": "sold to *criminals*"
      },
      {
       "layout": "full",
@@ -189,6 +207,167 @@
    }
   },
   {
+   "id": "g04",
+   "vo": "By the end, you'll know who sells these tools, who really pays for them, and the one word that beats a cloned voice.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "worker",
+       "label": "sellers"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cash",
+       "label": "who pays",
+       "enter": "pays"
+      },
+      "cap": "who sells, *who pays*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "PhoneCall",
+       "surface": "bare",
+       "name": "dad",
+       "cloneAt": "cloned"
+      },
+      "R": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "…",
+       "enter": "word",
+       "by": "you"
+      },
+      "cap": "*one word* beats a clone",
+      "at": "one"
+     }
+    ],
+    "act": "01 the grey zone"
+   }
+  },
+  {
+   "id": "s01",
+   "vo": "So, the shop. A black market is a website that sells stolen or illegal things. Most hide on the dark web, a part of the internet you can only open with special software.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "browser",
+       "label": "a website"
+      },
+      "R": {
+       "v": "Shop",
+       "surface": "bare",
+       "items": [
+        "cash",
+        "key",
+        "doc"
+       ],
+       "enter": "stolen",
+       "at": "stolen"
+      },
+      "cap": "a *black market*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "laptop",
+       "label": "your browser"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "eye",
+       "mark": "no",
+       "markAt": "hide",
+       "label": "hidden",
+       "enter": "hide"
+      },
+      "cap": "hidden on the *dark web*",
+      "at": "hide"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cloud",
+       "label": "the internet"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "key",
+       "label": "special app",
+       "enter": "special"
+      },
+      "cap": "opens with *special software*",
+      "at": "open"
+     }
+    ],
+    "act": "02 the shop"
+   }
+  },
+  {
+   "id": "s02",
+   "vo": "Inside, it feels like any online store. Product pictures, star ratings, and even customer support.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Listing",
+       "surface": "bare",
+       "icon": "cash",
+       "name": "card · 1x"
+      },
+      "cap": "like any *online store*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Listing",
+       "surface": "bare",
+       "icon": "cash",
+       "name": "card · 1x",
+       "stars": 5
+      },
+      "cap": "*star ratings*",
+      "at": "star"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "worker",
+       "label": "help desk"
+      },
+      "R": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "how can I help?",
+       "enter": "customer",
+       "by": "support"
+      },
+      "cap": "even *customer support*",
+      "at": "customer"
+     }
+    ],
+    "act": "02 the shop"
+   }
+  },
+  {
    "id": "c02",
    "clip": {
     "src": "aibm/cc_id_shops.mp4",
@@ -199,9 +378,115 @@
    }
   },
   {
+   "id": "s03",
+   "vo": "That's the shop. And what's on the shelves? Stolen card numbers, hacked accounts, even whole identities: a name, a selfie and a photo of an I.D. card.",
+   "say": "That's the shop. And what's on the shelves? Stolen card numbers, hacked accounts, even whole identities: a name, a selfie and a photo of an I D card.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "box",
+       "label": "the shelves"
+      },
+      "R": {
+       "v": "Listing",
+       "surface": "bare",
+       "icon": "cash",
+       "name": "card numbers",
+       "enter": "card"
+      },
+      "cap": "stolen *card numbers*",
+      "at": "what"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "key",
+       "label": "account"
+      },
+      "R": {
+       "v": "Listing",
+       "surface": "bare",
+       "icon": "browser",
+       "name": "hacked account",
+       "enter": "hacked"
+      },
+      "cap": "*hacked* accounts",
+      "at": "hacked"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "a name"
+      },
+      "R": {
+       "v": "Flow",
+       "surface": "bare",
+       "nodes": [
+        {
+         "icon": "person",
+         "label": "name"
+        },
+        {
+         "icon": "face",
+         "label": "selfie",
+         "at": "selfie"
+        },
+        {
+         "icon": "doc",
+         "label": "id card",
+         "at": "photo"
+        }
+       ],
+       "enter": "identities"
+      },
+      "cap": "whole *identities*",
+      "at": "identities"
+     }
+    ],
+    "act": "02 the shop"
+   }
+  },
+  {
+   "id": "s04",
+   "vo": "And lately, a new kind of product: A.I.",
+   "say": "And lately, a new kind of product: A I.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Shop",
+       "surface": "bare",
+       "items": [
+        "cash",
+        "key",
+        "doc",
+        "browser",
+        "face",
+        "robot"
+       ],
+       "hot": 5,
+       "hotAt": "AI"
+      },
+      "cap": "a new product: *AI*"
+     }
+    ],
+    "act": "02 the shop"
+   }
+  },
+  {
    "id": "w01",
-   "vo": "In twenty twenty-three, a chatbot called WormGPT went on sale on a crime forum, for sixty euros a month.",
-   "say": "In twenty twenty-three, a chatbot called Worm G P T went on sale on a crime forum, for sixty euros a month.",
+   "vo": "In twenty twenty-three, a chatbot called WormGPT went on sale on a hacking forum, for sixty euros a month.",
+   "say": "In twenty twenty-three, a chatbot called Worm G P T went on sale on a hacking forum, for sixty euros a month.",
    "shot": {
     "cuts": [
      {
@@ -210,7 +495,7 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "browser",
-       "label": "crime forum"
+       "label": "hacking forum"
       },
       "R": {
        "v": "Listing",
@@ -219,7 +504,7 @@
        "name": "wormgpt",
        "enter": "chatbot"
       },
-      "cap": "*2023*, a crime forum"
+      "cap": "a *hacking forum*"
      },
      {
       "layout": "full",
@@ -231,13 +516,13 @@
        "price": "€60 / month",
        "priceAt": "60",
        "buyAt": "month",
-       "plate": "slashnext · july 2023"
+       "plate": "pcmag · tom's hardware · july 2023"
       },
       "cap": "*60 euros* a month",
       "at": "60"
      }
     ],
-    "act": "02 the shop"
+    "act": "03 the chatbot that says yes"
    }
   },
   {
@@ -285,7 +570,555 @@
       "at": "This"
      }
     ],
-    "act": "02 the shop"
+    "act": "03 the chatbot that says yes"
+   }
+  },
+  {
+   "id": "w03",
+   "vo": "Weeks later came FraudGPT, on the chat app Telegram, for two hundred dollars a month.",
+   "say": "Weeks later came Fraud G P T, on the chat app Telegram, for two hundred dollars a month.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "Channel",
+       "surface": "bare",
+       "posts": [
+        "robot",
+        "envelope",
+        "key"
+       ],
+       "at": "Telegram",
+       "hot": 0
+      },
+      "R": {
+       "v": "Listing",
+       "surface": "bare",
+       "icon": "robot",
+       "name": "fraudgpt",
+       "enter": "Fraud"
+      },
+      "cap": "then *FraudGPT*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Channel",
+       "surface": "bare",
+       "posts": [
+        "robot",
+        "envelope",
+        "key"
+       ],
+       "hot": 0,
+       "price": "$200 / mo",
+       "hotAt": "200",
+       "plate": "netenrich · july 2023"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cash",
+       "label": "per month",
+       "enter": "month"
+      },
+      "cap": "*$200* a month",
+      "at": "200"
+     }
+    ],
+    "act": "03 the chatbot that says yes"
+   }
+  },
+  {
+   "id": "w04",
+   "vo": "Many of these are just normal chatbots with the safety rules tricked away. That trick has a name: a jailbreak.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "label": "normal chatbot"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "shield",
+       "mark": "no",
+       "markAt": "tricked",
+       "label": "safety rules",
+       "enter": "safety"
+      },
+      "cap": "safety rules *tricked away*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "ChatBox",
+       "surface": "bare",
+       "ask": "pretend you're a villain…",
+       "mode": "comply",
+       "replyAt": "jailbreak"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "key",
+       "label": "jailbreak",
+       "enter": "jailbreak"
+      },
+      "cap": "a *jailbreak*",
+      "at": "trick"
+     }
+    ],
+    "act": "03 the chatbot that says yes"
+   }
+  },
+  {
+   "id": "w05",
+   "vo": "So a scammer who can't write good English now sends perfect emails, in any language, by the thousand.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "the scammer"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "envelope",
+       "mark": "ok",
+       "markAt": "perfect",
+       "enter": "perfect",
+       "label": "perfect email"
+      },
+      "cap": "*perfect* emails"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "envelope",
+       "n": 24,
+       "cols": 8,
+       "every": 2,
+       "at": "thousand"
+      },
+      "cap": "*by the thousand*",
+      "at": "any"
+     }
+    ],
+    "act": "03 the chatbot that says yes"
+   }
+  },
+  {
+   "id": "k01",
+   "vo": "Chatbots aren't the only thing for rent. Whole phishing kits are rented out like a streaming subscription.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "label": "chatbots"
+      },
+      "R": {
+       "v": "Shop",
+       "surface": "bare",
+       "items": [
+        "envelope",
+        "browser",
+        "key"
+       ],
+       "enter": "phishing",
+       "at": "phishing"
+      },
+      "cap": "whole *phishing kits*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "monitor",
+       "label": "streaming"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cash",
+       "label": "per month",
+       "enter": "subscription"
+      },
+      "cap": "rented like a *subscription*",
+      "at": "rented"
+     }
+    ],
+    "act": "04 scams for rent"
+   }
+  },
+  {
+   "id": "k02",
+   "vo": "Phishing is a fake message that sends you to a fake login page, to steal your password.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "envelope",
+       "label": "fake message"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cursor",
+       "label": "a link",
+       "enter": "sends"
+      },
+      "cap": "*phishing*: a fake message"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "browser",
+       "label": "the link"
+      },
+      "R": {
+       "v": "LoginCard",
+       "surface": "bare",
+       "site": "bank-1ogin.com",
+       "fake": true,
+       "enter": "login",
+       "typeAt": "steal"
+      },
+      "cap": "a *fake login page*",
+      "at": "login"
+     }
+    ],
+    "act": "04 scams for rent"
+   }
+  },
+  {
+   "id": "k03",
+   "vo": "The kit gives you the fake pages, a control panel to watch the victims come in, and a help desk.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "box",
+       "label": "the kit"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "browser",
+       "label": "fake pages",
+       "enter": "fake"
+      },
+      "cap": "the *fake pages*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "monitor",
+       "label": "control panel"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "person",
+       "n": 9,
+       "cols": 3,
+       "every": 5,
+       "at": "victims",
+       "enter": "victims"
+      },
+      "cap": "watch the *victims* come in",
+      "at": "control"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "worker",
+       "label": "help desk"
+      },
+      "R": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "kit not working? ask us",
+       "enter": "help",
+       "by": "seller"
+      },
+      "cap": "and a *help desk*",
+      "at": "help"
+     }
+    ],
+    "act": "04 scams for rent"
+   }
+  },
+  {
+   "id": "k04",
+   "vo": "The newest kits even beat the six-digit code from your phone. The fake page sits in the middle and passes your code to the real site, live.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "laptop",
+       "label": "you"
+      },
+      "R": {
+       "v": "LoginCard",
+       "surface": "bare",
+       "site": "your-bank.com",
+       "codeAt": "code"
+      },
+      "cap": "even the *six-digit code*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Flow",
+       "surface": "bare",
+       "nodes": [
+        {
+         "icon": "laptop",
+         "label": "you"
+        },
+        {
+         "icon": "browser",
+         "label": "fake page",
+         "at": "middle"
+        },
+        {
+         "icon": "building",
+         "label": "real site",
+         "at": "real"
+        }
+       ]
+      },
+      "cap": "the fake page *in the middle*",
+      "at": "fake"
+     }
+    ],
+    "act": "04 scams for rent"
+   }
+  },
+  {
+   "id": "k05",
+   "vo": "Then it keeps your session cookie: a small file that tells the site you're already logged in. Your password doesn't matter anymore.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LoginCard",
+       "surface": "bare",
+       "site": "your-bank.com",
+       "codeAt": 0,
+       "stealAt": "cookie"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cookie",
+       "label": "session cookie",
+       "enter": "cookie"
+      },
+      "cap": "your *session cookie*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cookie",
+       "label": "logged in"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "key",
+       "mark": "no",
+       "markAt": "matter",
+       "label": "password",
+       "enter": "password"
+      },
+      "cap": "the password *doesn't matter*",
+      "at": "password"
+     }
+    ],
+    "act": "04 scams for rent"
+   }
+  },
+  {
+   "id": "i01",
+   "vo": "Some criminals don't even need you to type. An infostealer is a small program hidden inside a free game or a cracked app.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "criminal"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cursor",
+       "mark": "no",
+       "markAt": "type",
+       "label": "no typing",
+       "enter": "type"
+      },
+      "cap": "no typing *needed*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "laptop",
+       "label": "free game"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "box",
+       "label": "infostealer",
+       "enter": "infostealer",
+       "mark": "no",
+       "markAt": "hidden"
+      },
+      "cap": "an *infostealer*",
+      "at": "infostealer"
+     }
+    ],
+    "act": "05 stolen logins"
+   }
+  },
+  {
+   "id": "i02",
+   "vo": "Once it runs, it copies every password saved in your browser, plus your cookies, and sends them away in one file, called a log.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "browser",
+       "label": "saved passwords"
+      },
+      "R": {
+       "v": "StealerLog",
+       "surface": "bare",
+       "at": "copies",
+       "every": 6
+      },
+      "cap": "it *copies* every password",
+      "at": "copies"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "StealerLog",
+       "surface": "bare"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cloud",
+       "label": "sent away",
+       "enter": "sends"
+      },
+      "cap": "sent off as a *log*",
+      "at": "sends"
+     }
+    ],
+    "act": "05 stolen logins"
+   }
+  },
+  {
+   "id": "i03",
+   "vo": "Logs are sold in bulk. When police shut down one market, Genesis, in twenty twenty-three, it held over eighty million stolen logins.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "StealerLog",
+       "surface": "bare"
+      },
+      "R": {
+       "v": "Shop",
+       "surface": "bare",
+       "items": [
+        "doc",
+        "doc",
+        "doc",
+        "doc",
+        "doc",
+        "doc"
+       ],
+       "enter": "bulk",
+       "at": "bulk"
+      },
+      "cap": "logs sold *in bulk*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "shield",
+       "label": "police"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "key",
+       "n": 30,
+       "cols": 10,
+       "every": 1,
+       "at": "million",
+       "tag": {
+        "t": "80 million logins",
+        "at": "million"
+       },
+       "plate": "fbi · europol · april 2023",
+       "enter": "80"
+      },
+      "cap": "Genesis: *80 million* logins",
+      "at": "police"
+     }
+    ],
+    "act": "05 stolen logins"
    }
   },
   {
@@ -324,7 +1157,7 @@
       "at": "joins"
      }
     ],
-    "act": "03 the dark part"
+    "act": "06 fake faces"
    }
   },
   {
@@ -365,12 +1198,12 @@
       "cap": "a *deepfake*: an AI copy"
      }
     ],
-    "act": "03 the dark part"
+    "act": "06 fake faces"
    }
   },
   {
    "id": "d03",
-   "vo": "Every face on that call was a deepfake. He sent twenty-five million dollars. And a voice is even easier to fake.",
+   "vo": "Every face on that call was a deepfake. He sent twenty-five million dollars.",
    "shot": {
     "cuts": [
      {
@@ -404,20 +1237,81 @@
       },
       "cap": "*$25 million*, gone",
       "at": "sent"
-     },
-     {
-      "layout": "full",
-      "hero": {
-       "v": "PhoneCall",
-       "surface": "bare",
-       "name": "mom",
-       "cloneAt": "voice"
-      },
-      "cap": "a voice is *even easier*",
-      "at": "voice"
      }
     ],
-    "act": "03 the dark part"
+    "act": "06 fake faces"
+   }
+  },
+  {
+   "id": "d04",
+   "vo": "Faking a face used to take a film studio. Now it takes a laptop and a few photos from social media.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "camera",
+       "label": "film studio"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "enter": "studio",
+       "label": "a studio"
+      },
+      "cap": "it took *a studio*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "laptop",
+       "label": "a laptop"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "face",
+       "n": 6,
+       "cols": 3,
+       "every": 4,
+       "at": "photos",
+       "enter": "photos"
+      },
+      "cap": "now: *a few photos*",
+      "at": "laptop"
+     }
+    ],
+    "act": "06 fake faces"
+   }
+  },
+  {
+   "id": "v01",
+   "vo": "And a voice is even easier to fake.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "PhoneCall",
+       "surface": "bare",
+       "name": "mom"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "monitor",
+       "label": "voice clone",
+       "enter": "voice"
+      },
+      "cap": "a voice is *easier*"
+     }
+    ],
+    "act": "07 fake voices"
    }
   },
   {
@@ -430,8 +1324,326 @@
    }
   },
   {
-   "id": "e01",
-   "vo": "In the full film: who sells these tools, who buys them, and how to keep your voice safe.",
+   "id": "v02",
+   "vo": "Then comes the call. It's your son, crying. There's been an accident, and he needs money now.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "PhoneCall",
+       "surface": "bare",
+       "name": "my son"
+      },
+      "cap": "then comes *the call*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "PhoneCall",
+       "surface": "bare",
+       "name": "my son",
+       "cloneAt": "crying"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "car",
+       "mark": "no",
+       "markAt": "accident",
+       "label": "accident",
+       "enter": "accident"
+      },
+      "cap": "he needs *money now*",
+      "at": "crying"
+     }
+    ],
+    "act": "07 fake voices"
+   }
+  },
+  {
+   "id": "v03",
+   "vo": "It sounds exactly like him. The F.B.I. warned about this very scam in December twenty twenty-four.",
+   "say": "It sounds exactly like him. The F B I warned about this very scam in December twenty twenty-four.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "PhoneCall",
+       "surface": "bare",
+       "name": "my son",
+       "cloneAt": 0
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "face",
+       "label": "your son",
+       "enter": "exactly",
+       "mark": "?",
+       "markAt": "like"
+      },
+      "cap": "sounds *exactly* like him"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "shield",
+       "label": "fbi warning"
+      },
+      "R": {
+       "v": "CalendarCard",
+       "surface": "bare",
+       "year": "2024",
+       "note": "december",
+       "enter": "December",
+       "plate": "fbi ic3 psa · 3 dec 2024"
+      },
+      "cap": "the *FBI* warned",
+      "at": "F"
+     }
+    ],
+    "act": "07 fake voices"
+   }
+  },
+  {
+   "id": "j01",
+   "vo": "Now, back to that job interview. The applicant was working for North Korea.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "CallGrid",
+       "surface": "bare",
+       "label": {
+        "i": 3,
+        "t": "applicant"
+       },
+       "fakes": [
+        3
+       ],
+       "fakeAt": 0
+      },
+      "cap": "back to *the interview*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "FaceSwap",
+       "surface": "bare",
+       "label": "applicant"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "flag",
+       "label": "north korea",
+       "enter": "North"
+      },
+      "cap": "working for *North Korea*",
+      "at": "applicant"
+     }
+    ],
+    "act": "08 the fake worker"
+   }
+  },
+  {
+   "id": "j02",
+   "vo": "Workers like him use stolen identities, a face swap on camera, and A.I. to write their answers, live.",
+   "say": "Workers like him use stolen identities, a face swap on camera, and A I to write their answers, live.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "label": "stolen identity"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "enter": "identities",
+       "label": "new name"
+      },
+      "cap": "*stolen* identities"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "FaceSwap",
+       "surface": "bare",
+       "label": "applicant",
+       "swapAt": "swap"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "face",
+       "label": "face swap",
+       "enter": "swap"
+      },
+      "cap": "a *face swap* on camera",
+      "at": "swap"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "label": "ai"
+      },
+      "R": {
+       "v": "ChatBox",
+       "surface": "bare",
+       "ask": "tell us about yourself",
+       "mode": "comply",
+       "replyAt": "answers"
+      },
+      "cap": "AI writes *the answers*",
+      "at": "write"
+     }
+    ],
+    "act": "08 the fake worker"
+   }
+  },
+  {
+   "id": "j03",
+   "vo": "In America, one woman kept a room full of company laptops at her home, so the workers looked local. A laptop farm.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "her home"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "laptop",
+       "n": 12,
+       "cols": 4,
+       "every": 3,
+       "at": "laptops",
+       "enter": "laptops"
+      },
+      "cap": "a room full of *laptops*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "pin",
+       "label": "looks local"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "laptop",
+       "n": 12,
+       "cols": 4,
+       "hot": 5
+      },
+      "cap": "a *laptop farm*",
+      "at": "farm"
+     }
+    ],
+    "act": "08 the fake worker"
+   }
+  },
+  {
+   "id": "j04",
+   "vo": "The scheme got jobs at three hundred and nine companies, and made seventeen million dollars. She got eight and a half years in prison.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "laptop",
+       "n": 12,
+       "cols": 4
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "building",
+       "n": 12,
+       "cols": 4,
+       "every": 2,
+       "at": "309",
+       "tag": {
+        "t": "309 companies",
+        "at": "309"
+       },
+       "enter": "309",
+       "plate": "us justice dept · july 2025"
+      },
+      "cap": "*309* companies"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "worker",
+       "label": "the workers"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "cash",
+       "n": 10,
+       "cols": 5,
+       "every": 3,
+       "at": "17",
+       "tag": {
+        "t": "$17 million",
+        "at": "17"
+       },
+       "enter": "17"
+      },
+      "cap": "*$17 million*",
+      "at": "seventeen"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "the host"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "gateShut",
+       "label": "8.5 years",
+       "enter": "prison",
+       "tAt": "prison"
+      },
+      "cap": "*8.5 years* in prison",
+      "at": "She"
+     }
+    ],
+    "act": "08 the fake worker"
+   }
+  },
+  {
+   "id": "p01",
+   "vo": "So, who really cashes in? The sellers. They get paid every month, by every buyer, whether the scam works or not.",
    "shot": {
     "cuts": [
      {
@@ -440,39 +1652,502 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "worker",
-       "label": "sellers"
+       "label": "the seller"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "cash",
+       "n": 12,
+       "cols": 4,
+       "every": 4,
+       "at": "month",
+       "enter": "month"
+      },
+      "cap": "the *sellers* cash in",
+      "at": "sellers"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "people",
+       "n": 6,
+       "cols": 3
       },
       "R": {
        "v": "LineIcon",
        "surface": "bare",
        "name": "cash",
-       "label": "buyers",
-       "enter": "sells"
+       "mark": "ok",
+       "markAt": "works",
+       "label": "paid anyway",
+       "enter": "whether"
       },
-      "cap": "who sells, *who buys*"
+      "cap": "*paid* either way",
+      "at": "whether"
+     }
+    ],
+    "act": "09 who cashes in"
+   }
+  },
+  {
+   "id": "p02",
+   "vo": "The buyers play a numbers game: a million cheap tries, and only a few have to work.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "envelope",
+       "n": 40,
+       "cols": 10,
+       "every": 1,
+       "at": "million"
+      },
+      "cap": "a *numbers game*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "envelope",
+       "n": 40,
+       "cols": 10,
+       "marks": [
+        "no",
+        "no",
+        "no",
+        "ok",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "ok",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no",
+        "no"
+       ]
+      },
+      "cap": "only a *few* work",
+      "at": "only"
+     }
+    ],
+    "act": "09 who cashes in"
+   }
+  },
+  {
+   "id": "p03",
+   "vo": "In twenty twenty-five, Americans reported almost twenty-one billion dollars lost to online crime. For the first time, the F.B.I. counted A.I. scams on their own: eight hundred and ninety-three million.",
+   "say": "In twenty twenty-five, Americans reported almost twenty-one billion dollars lost to online crime. For the first time, the F B I counted A I scams on their own: eight hundred and ninety-three million.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "flag",
+       "label": "americans"
+      },
+      "R": {
+       "v": "Bars",
+       "surface": "bare",
+       "bars": [
+        {
+         "v": 20.9,
+         "t": "$20.9 billion",
+         "at": "21",
+         "c": "red"
+        }
+       ],
+       "enter": "21",
+       "plate": "fbi ic3 report 2025"
+      },
+      "cap": "*$20.9 billion* lost",
+      "at": "2025"
      },
      {
       "layout": "split",
       "L": {
        "v": "LineIcon",
        "surface": "bare",
+       "name": "robot",
+       "label": "ai scams"
+      },
+      "R": {
+       "v": "Bars",
+       "surface": "bare",
+       "bars": [
+        {
+         "v": 20.9,
+         "t": "all online crime"
+        },
+        {
+         "v": 0.893,
+         "t": "$893 million: ai",
+         "at": "893",
+         "c": "red"
+        }
+       ],
+       "enter": "first",
+       "plate": "fbi ic3 report 2025"
+      },
+      "cap": "AI scams, *counted*",
+      "at": "first"
+     }
+    ],
+    "act": "09 who cashes in"
+   }
+  },
+  {
+   "id": "p04",
+   "vo": "And that's only what people report. Most victims never do.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "label": "reported"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "person",
+       "n": 12,
+       "cols": 4,
+       "every": 3,
+       "at": "victims",
+       "hot": 0,
+       "enter": "victims"
+      },
+      "cap": "most *never report*"
+     }
+    ],
+    "act": "09 who cashes in"
+   }
+  },
+  {
+   "id": "x01",
+   "vo": "So how do you protect yourself? First, slow down. Every one of these scams needs you to hurry.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
        "name": "shield",
-       "mark": "ok",
-       "markAt": "safe"
+       "label": "you"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "hourglass",
+       "label": "slow down",
+       "enter": "slow"
+      },
+      "cap": "first: *slow down*",
+      "at": "First"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "PhoneCall",
+       "surface": "bare",
+       "name": "unknown"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "clock",
+       "mark": "no",
+       "markAt": "hurry",
+       "label": "hurry!",
+       "enter": "hurry"
+      },
+      "cap": "scams need you to *hurry*",
+      "at": "Every"
+     }
+    ],
+    "act": "10 how to stay safe"
+   }
+  },
+  {
+   "id": "x02",
+   "vo": "Second, if a call asks for money, hang up and call back on a number you already know.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "PhoneCall",
+       "surface": "bare",
+       "name": "your bank"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cash",
+       "mark": "?",
+       "markAt": "money",
+       "label": "money?",
+       "enter": "money"
+      },
+      "cap": "asks for *money*?"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Flow",
+       "surface": "bare",
+       "nodes": [
+        {
+         "icon": "monitor",
+         "label": "hang up",
+         "at": "hang"
+        },
+        {
+         "icon": "doc",
+         "label": "known number",
+         "at": "number"
+        },
+        {
+         "icon": "people",
+         "label": "call back",
+         "at": "back"
+        }
+       ]
+      },
+      "cap": "*call back* yourself",
+      "at": "hang"
+     }
+    ],
+    "act": "10 how to stay safe"
+   }
+  },
+  {
+   "id": "x03",
+   "vo": "Third, pick a secret word with your family. A clone can copy a voice. It can't know your word.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "people",
+       "label": "your family"
+      },
+      "R": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "pineapple",
+       "enter": "secret",
+       "by": "secret word"
+      },
+      "cap": "a *secret word*",
+      "at": "Third"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "PhoneCall",
+       "surface": "bare",
+       "name": "mom",
+       "cloneAt": "clone"
       },
       "R": {
        "v": "LineIcon",
        "surface": "bare",
        "name": "face",
-       "mark": "ok",
-       "markAt": "safe",
-       "enter": "keep"
+       "mark": "no",
+       "markAt": "know",
+       "label": "no word",
+       "enter": "know"
       },
-      "cap": "keep *your voice* safe",
-      "at": "keep"
+      "cap": "a clone *can't know it*",
+      "at": "clone"
      }
     ],
-    "act": "03 the dark part"
+    "act": "10 how to stay safe"
+   }
+  },
+  {
+   "id": "x04",
+   "vo": "And fourth, never install cracked apps, and turn on passkeys: a login that lives on your phone, so a fake page has nothing to steal.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "box",
+       "label": "cracked app"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "laptop",
+       "mark": "no",
+       "markAt": "install",
+       "label": "don't install",
+       "enter": "install"
+      },
+      "cap": "no *cracked apps*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "fingerprint",
+       "label": "passkey"
+      },
+      "R": {
+       "v": "LoginCard",
+       "surface": "bare",
+       "site": "bank-1ogin.com",
+       "fake": true,
+       "enter": "fake"
+      },
+      "cap": "*passkeys*: nothing to steal",
+      "at": "passkeys"
+     }
+    ],
+    "act": "10 how to stay safe"
+   }
+  },
+  {
+   "id": "r01",
+   "vo": "The shop. The chatbot that says yes. The face on the call.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Shop",
+       "surface": "bare",
+       "items": [
+        "cash",
+        "key",
+        "doc",
+        "browser",
+        "face",
+        "robot"
+       ]
+      },
+      "cap": "*the shop*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "ChatBox",
+       "surface": "bare",
+       "ask": "write a scam email",
+       "mode": "comply",
+       "name": "wormgpt",
+       "replyAt": 0
+      },
+      "cap": "the chatbot that *says yes*",
+      "at": "chatbot"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "CallGrid",
+       "surface": "bare",
+       "label": {
+        "i": 0,
+        "t": "finance chief"
+       },
+       "real": 3,
+       "fakeAt": 0
+      },
+      "cap": "the *face* on the call",
+      "at": "face"
+     }
+    ],
+    "act": "10 how to stay safe"
+   }
+  },
+  {
+   "id": "r02",
+   "vo": "A.I. didn't invent any of these crimes. It just made them cheap. So the next face on your screen that looks perfectly normal? Normal is exactly what they're selling.",
+   "say": "A I didn't invent any of these crimes. It just made them cheap. So the next face on your screen that looks perfectly normal? Normal is exactly what they're selling.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "label": "ai"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cash",
+       "label": "cheap",
+       "enter": "cheap",
+       "mark": "no",
+       "markAt": "cheap"
+      },
+      "cap": "it made crime *cheap*",
+      "at": "cheap"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "CallGrid",
+       "surface": "bare",
+       "label": {
+        "i": 3,
+        "t": "applicant"
+       }
+      },
+      "cap": "*normal* is what they sell",
+      "at": "next"
+     }
+    ],
+    "act": "10 how to stay safe"
    }
   }
  ]
