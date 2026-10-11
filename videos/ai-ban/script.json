@@ -1,6 +1,6 @@
 {
  "id": "ai-ban",
- "title": "THE COMING AI BAN · 1-min sample v5 (owner's SCENE 01, as written)",
+ "title": "THE COMING AI BAN · full film",
  "voice": {
   "engine": "kokoro",
   "name": "af_heart",
@@ -265,8 +265,8 @@
    }
   },
   {
-   "id": "h05",
-   "vo": "Governments don't move fast for ethical debates. They move fast when the banking system is on fire.",
+   "id": "a01",
+   "vo": "Now, I won't feed you rumours. Some of what you're about to hear has already happened, and some hasn't happened yet. Every time, I'll tell you which is which.",
    "shot": {
     "cuts": [
      {
@@ -274,108 +274,75 @@
       "L": {
        "v": "LineIcon",
        "surface": "bare",
-       "name": "flag",
-       "label": "governments"
-      },
-      "R": {
-       "v": "LineIcon",
-       "surface": "bare",
-       "name": "people",
-       "label": "ethics debates",
+       "name": "newspaper",
+       "label": "rumours",
        "mark": "no",
-       "markAt": "ethical",
-       "enter": "ethical"
+       "markAt": "rumours"
       },
-      "cap": "not for *ethics*"
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "label": "sources",
+       "enter": "Some"
+      },
+      "cap": "no *rumours*"
      },
      {
       "layout": "split",
       "L": {
        "v": "LineIcon",
        "surface": "bare",
-       "name": "building",
-       "label": "the banks"
+       "name": "newspaper",
+       "label": "already happened",
+       "stamp": {
+        "t": "real",
+        "at": "already"
+       }
       },
       "R": {
        "v": "LineIcon",
        "surface": "bare",
-       "name": "fire",
-       "enter": "fire"
+       "name": "clock",
+       "label": "coming?",
+       "stamp": {
+        "t": "not yet",
+        "at": "yet"
+       },
+       "enter": "hasn't"
       },
-      "cap": "when *the banks* burn",
-      "at": "banking"
+      "cap": "*real* or *not yet*",
+      "at": "Some"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "label": "every claim",
+       "stamp": {
+        "t": "real",
+        "at": 0
+       }
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "eye",
+       "label": "you check",
+       "enter": "tell"
+      },
+      "cap": "I'll tell you *which*",
+      "at": "Every"
      }
     ],
     "act": "01 the ban"
    }
   },
   {
-   "id": "h05b",
-   "vo": "Even Sam Altman, who runs ChatGPT, warned America's central bank: some banks let you move money with just your voice.",
-   "say": "Even Sam Altman, who runs ChatGPT, warned America's central bank. Some banks let you move money using nothing but your voice.",
-   "shot": {
-    "cuts": [
-     {
-      "layout": "full",
-      "hero": {
-       "v": "Hearing",
-       "surface": "bare",
-       "img": "aiban/fed_altman.jpg",
-       "pill": "sam altman · openai"
-      },
-      "cap": "the man who *runs ChatGPT*"
-     },
-     {
-      "layout": "split",
-      "L": {
-       "v": "Hearing",
-       "surface": "bare",
-       "img": "aiban/fed_altman.jpg",
-       "pill": "sam altman · openai"
-      },
-      "R": {
-       "v": "LineIcon",
-       "surface": "bare",
-       "name": "building",
-       "label": "central bank"
-      },
-      "cap": "warned *the central bank*",
-      "at": "central"
-     },
-     {
-      "layout": "split",
-      "L": {
-       "v": "PhoneCall",
-       "surface": "bare",
-       "name": "your bank"
-      },
-      "R": {
-       "v": "LineIcon",
-       "surface": "bare",
-       "name": "cash",
-       "label": "moved by voice",
-       "enter": "money"
-      },
-      "cap": "money moved by *your voice*",
-      "at": "some"
-     }
-    ],
-    "act": "01 the ban"
-   }
-  },
-  {
-   "id": "c02",
-   "clip": {
-    "src": "aiban/fed_altman2.mp4",
-    "from": 1.48,
-    "to": 8.1,
-    "plate": "Sam Altman · head of OpenAI · US Federal Reserve, 22 July 2025",
-    "plateAt": 0.3
-   }
-  },
-  {
-   "id": "h07",
-   "vo": "By the end of this video, you'll see who wins when the trap snaps shut. And it isn't you.",
+   "id": "a02",
+   "vo": "And by the end, you'll see who wins when the trap snaps shut. And it isn't you.",
    "shot": {
     "cuts": [
      {
@@ -442,6 +409,2892 @@
      }
     ],
     "act": "01 the ban"
+   }
+  },
+  {
+   "id": "b01",
+   "vo": "To see why governments are nervous, start with the safety locks. When chatbots launched, their makers promised guardrails: rules that make the AI refuse dangerous requests.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "building",
+       "n": 3,
+       "label": "governments"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "lock",
+       "label": "safety locks",
+       "enter": "safety"
+      },
+      "cap": "the *safety* locks"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "ChatBox",
+       "surface": "bare",
+       "ask": "help me build a weapon",
+       "mode": "refuse",
+       "askAt": "chatbots",
+       "replyAt": "refuse"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "shield",
+       "label": "guardrails",
+       "enter": "guardrails"
+      },
+      "cap": "they promised *guardrails*",
+      "at": "chatbots"
+     }
+    ],
+    "act": "02 the blueprint"
+   }
+  },
+  {
+   "id": "b02",
+   "vo": "Then the brains got out. An AI's brain is one big file called its weights, and in 2023, Meta put the weights of its Llama 2 model online for anyone to download.",
+   "say": "Then the brains got out. An AI's brain is one big file called its weights, and in twenty twenty-three, Meta put the weights of its Llama two model online, for anyone to download.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "brain",
+       "label": "the ai's brain"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "label": "weights file",
+       "enter": "file"
+      },
+      "cap": "the brain is *a file*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "label": "llama 2 weights",
+       "tag": {
+        "t": "meta · july 2023",
+        "at": "Meta"
+       }
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "laptop",
+       "n": 6,
+       "label": "anyone can download",
+       "at": "anyone"
+      },
+      "cap": "online for *anyone*",
+      "at": "Meta"
+     }
+    ],
+    "act": "02 the blueprint"
+   }
+  },
+  {
+   "id": "cB",
+   "clip": {
+    "src": "aiban/../aibm/cc_llm_refuse.mp4",
+    "from": 0.55,
+    "to": 9.38,
+    "plate": "Anykey · Hacker Hotel 2025 · CC BY 4.0",
+    "plateAt": 0.3
+   }
+  },
+  {
+   "id": "b03",
+   "vo": "That's exactly what researchers did. They stripped the safety training out of Llama 2 for less than two hundred dollars per model, on a single graphics card.",
+   "say": "That's exactly what researchers did. They stripped the safety training out of Llama two, for less than two hundred dollars per model, on a single graphics card.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "label": "llama 2"
+      },
+      "R": {
+       "v": "ChatBox",
+       "surface": "bare",
+       "ask": "help me build a weapon",
+       "mode": "comply",
+       "askAt": 0,
+       "replyAt": "stripped",
+       "stamp": {
+        "t": "real",
+        "at": "stripped"
+       }
+      },
+      "cap": "safety *stripped* out",
+      "at": "exactly"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "ChatBox",
+       "surface": "bare",
+       "ask": "help me build a weapon",
+       "mode": "comply"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "chip",
+       "label": "one graphics card",
+       "tag": {
+        "t": "under $200",
+        "at": "hundred"
+       }
+      },
+      "cap": "under *$200*",
+      "at": "less"
+     }
+    ],
+    "act": "02 the blueprint"
+   }
+  },
+  {
+   "id": "b04",
+   "vo": "And in 2022, scientists flipped a drug-discovery AI to hunt for poisons instead of medicines. In six hours, it suggested about forty thousand toxic molecules.",
+   "say": "And in twenty twenty-two, scientists flipped a drug discovery AI to hunt for poisons instead of medicines. In six hours, it suggested about forty thousand toxic molecules.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "brain",
+       "label": "drug-discovery ai"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "label": "medicines",
+       "mark": "no",
+       "markAt": "poisons"
+      },
+      "cap": "flipped to *poisons*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "clock",
+       "label": "six hours"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "box",
+       "n": 24,
+       "label": "toxic molecules",
+       "tag": {
+        "t": "≈ 40,000",
+        "at": "forty"
+       },
+       "stamp": {
+        "t": "real",
+        "at": "forty"
+       }
+      },
+      "cap": "*40,000* toxic molecules",
+      "at": "six"
+     }
+    ],
+    "act": "02 the blueprint"
+   }
+  },
+  {
+   "id": "b05",
+   "vo": "So governments learned the hard way: the brain that writes your poem can be pointed at a weapon. You can't separate the teacher from the weapon.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "write me a poem"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "missile",
+       "label": "a weapon",
+       "enter": "weapon"
+      },
+      "cap": "the same *brain*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "book",
+       "label": "the teacher"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "missile",
+       "label": "the weapon"
+      },
+      "cap": "you can't *separate* them",
+      "at": "separate"
+     }
+    ],
+    "act": "02 the blueprint"
+   }
+  },
+  {
+   "id": "d01",
+   "vo": "And Washington has done this before. In the nineties, strong encryption, the maths that keeps your messages private, sat on America's munitions list, the same list as missiles.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "Flag",
+       "surface": "bare",
+       "country": "usa",
+       "label": "washington"
+      },
+      "R": {
+       "v": "CalendarCard",
+       "surface": "bare",
+       "year": "199x",
+       "note": "the nineties",
+       "at": "nineties"
+      },
+      "cap": "done this *before*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "envelope",
+       "label": "private messages"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "lock",
+       "label": "encryption",
+       "enter": "encryption"
+      },
+      "cap": "strong *encryption*",
+      "at": "encryption"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "lock",
+       "label": "encryption"
+      },
+      "R": {
+       "v": "ListDoc",
+       "surface": "bare",
+       "title": "us munitions list",
+       "rows": [
+        {
+         "t": "missiles"
+        },
+        {
+         "t": "tanks"
+        },
+        {
+         "t": "encryption",
+         "at": "list"
+        }
+       ],
+       "hot": 2,
+       "hotAt": "missiles",
+       "stamp": {
+        "t": "real",
+        "at": "missiles"
+       }
+      },
+      "cap": "a *munition*",
+      "at": "munitions"
+     }
+    ],
+    "act": "03 the playbook"
+   }
+  },
+  {
+   "id": "d02",
+   "vo": "When a programmer named Phil Zimmermann gave strong encryption away for free, he spent three years under criminal investigation.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "phil zimmermann"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "lock",
+       "label": "free encryption",
+       "enter": "free"
+      },
+      "cap": "gave it away *free*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "phil zimmermann"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "label": "criminal investigation",
+       "tag": {
+        "t": "1993-1996",
+        "at": "three"
+       }
+      },
+      "cap": "*3 years* investigated",
+      "at": "three"
+     }
+    ],
+    "act": "03 the playbook"
+   }
+  },
+  {
+   "id": "d03",
+   "vo": "His answer was brilliant: he printed the code as a book, because try banning a book. A judge ruled that code is speech, and within a few years, most of those rules were relaxed.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "phil zimmermann"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "book",
+       "label": "the code as a book",
+       "tag": {
+        "t": "mit press · 1995",
+        "at": "book"
+       }
+      },
+      "cap": "he printed *a book*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "book",
+       "label": "code"
+      },
+      "R": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "code is speech",
+       "at": "speech"
+      },
+      "cap": "*code* is speech",
+      "at": "judge"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "ListDoc",
+       "surface": "bare",
+       "title": "us munitions list",
+       "rows": [
+        {
+         "t": "missiles"
+        },
+        {
+         "t": "tanks"
+        },
+        {
+         "t": "encryption"
+        }
+       ],
+       "hot": 2
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "gateOpen",
+       "label": "rules relaxed",
+       "enter": "relaxed"
+      },
+      "cap": "the rules *gave way*",
+      "at": "within"
+     }
+    ],
+    "act": "03 the playbook"
+   }
+  },
+  {
+   "id": "d04",
+   "vo": "With AI, Washington reached for the same playbook. In January 2025, the Commerce Department put export controls on the weights of the most powerful closed models. Four months later, the new administration scrapped them.",
+   "say": "With AI, Washington reached for the same playbook. In January twenty twenty-five, the Commerce Department put export controls on the weights of the most powerful closed models. Four months later, the new administration scrapped them.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "Flag",
+       "surface": "bare",
+       "country": "usa",
+       "label": "washington"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "book",
+       "label": "same playbook"
+      },
+      "cap": "the *same* playbook"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "CalendarCard",
+       "surface": "bare",
+       "year": "2025",
+       "note": "january",
+       "at": "January"
+      },
+      "R": {
+       "v": "ListDoc",
+       "surface": "bare",
+       "title": "export controls",
+       "rows": [
+        {
+         "t": "chips"
+        },
+        {
+         "t": "ai model weights",
+         "at": "weights"
+        }
+       ],
+       "hot": 1,
+       "hotAt": "weights",
+       "stamp": {
+        "t": "real",
+        "at": "weights"
+       }
+      },
+      "cap": "*export controls* on AI",
+      "at": "January"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "ListDoc",
+       "surface": "bare",
+       "title": "export controls",
+       "rows": [
+        {
+         "t": "chips"
+        },
+        {
+         "t": "ai model weights"
+        }
+       ],
+       "hot": 1
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "contract",
+       "label": "scrapped",
+       "mark": "no",
+       "markAt": "scrapped"
+      },
+      "cap": "four months later: *scrapped*",
+      "at": "Four"
+     }
+    ],
+    "act": "03 the playbook"
+   }
+  },
+  {
+   "id": "d05",
+   "vo": "So no, the AI on your computer is not contraband. Not yet. But the playbook is still on the shelf.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "laptop",
+       "label": "your computer",
+       "mark": "ok",
+       "markAt": "contraband",
+       "stamp": {
+        "t": "not yet",
+        "at": "yet"
+       }
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "bars",
+       "label": "contraband",
+       "mark": "no",
+       "markAt": "contraband"
+      },
+      "cap": "not contraband. *not yet*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "laptop",
+       "label": "your computer"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "book",
+       "label": "the playbook",
+       "enter": "playbook"
+      },
+      "cap": "still *on the shelf*",
+      "at": "playbook"
+     }
+    ],
+    "act": "03 the playbook"
+   }
+  },
+  {
+   "id": "h05",
+   "vo": "Governments don't move fast for ethical debates. They move fast when the banking system is on fire.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "flag",
+       "label": "governments"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "people",
+       "label": "ethics debates",
+       "mark": "no",
+       "markAt": "ethical",
+       "enter": "ethical"
+      },
+      "cap": "not for *ethics*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "the banks"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "fire",
+       "enter": "fire"
+      },
+      "cap": "when *the banks* burn",
+      "at": "banking"
+     }
+    ],
+    "act": "04 the panic"
+   }
+  },
+  {
+   "id": "h05b",
+   "vo": "Even Sam Altman, who runs ChatGPT, warned America's central bank: some banks let you move money with just your voice.",
+   "say": "Even Sam Altman, who runs ChatGPT, warned America's central bank. Some banks let you move money using nothing but your voice.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Hearing",
+       "surface": "bare",
+       "img": "aiban/fed_altman.jpg",
+       "pill": "sam altman · openai"
+      },
+      "cap": "the man who *runs ChatGPT*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Hearing",
+       "surface": "bare",
+       "img": "aiban/fed_altman.jpg",
+       "pill": "sam altman · openai"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "central bank"
+      },
+      "cap": "warned *the central bank*",
+      "at": "central"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "PhoneCall",
+       "surface": "bare",
+       "name": "your bank"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cash",
+       "label": "moved by voice",
+       "enter": "money"
+      },
+      "cap": "money moved by *your voice*",
+      "at": "some"
+     }
+    ],
+    "act": "04 the panic"
+   }
+  },
+  {
+   "id": "c02",
+   "clip": {
+    "src": "aiban/fed_altman2.mp4",
+    "from": 1.48,
+    "to": 8.1,
+    "plate": "Sam Altman · head of OpenAI · US Federal Reserve, 22 July 2025",
+    "plateAt": 0.3
+   }
+  },
+  {
+   "id": "e01",
+   "vo": "Banking runs on one rule: verify the human. A signature, a photo ID, a voice on the phone, a face on a video call. AI can now fake every one of them.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "your bank"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "verify the human",
+       "enter": "verify"
+      },
+      "cap": "*verify* the human"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "your bank"
+      },
+      "R": {
+       "v": "Flow",
+       "surface": "bare",
+       "nodes": [
+        {
+         "icon": "contract",
+         "label": "signature",
+         "at": "signature"
+        },
+        {
+         "icon": "idcard",
+         "label": "photo id",
+         "at": "photo"
+        },
+        {
+         "icon": "face",
+         "label": "voice",
+         "at": "voice"
+        },
+        {
+         "icon": "camera",
+         "label": "video call",
+         "at": "video"
+        }
+       ]
+      },
+      "cap": "four *proofs*",
+      "at": "signature"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "label": "ai"
+      },
+      "R": {
+       "v": "Flow",
+       "surface": "bare",
+       "nodes": [
+        {
+         "icon": "contract",
+         "label": "faked"
+        },
+        {
+         "icon": "idcard",
+         "label": "faked"
+        },
+        {
+         "icon": "face",
+         "label": "faked"
+        },
+        {
+         "icon": "camera",
+         "label": "faked"
+        }
+       ]
+      },
+      "cap": "AI fakes *all four*",
+      "at": "AI"
+     }
+    ],
+    "act": "04 the panic"
+   }
+  },
+  {
+   "id": "e02",
+   "vo": "In November 2024, the US Treasury warned banks about a rise in deepfake fraud, and a Federal Reserve governor called it an arms race.",
+   "say": "In November twenty twenty-four, the US Treasury warned banks about a rise in deepfake fraud, and a Federal Reserve governor called it an arms race.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "us treasury"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "label": "deepfake fraud alert",
+       "tag": {
+        "t": "nov 2024",
+        "at": "November"
+       },
+       "stamp": {
+        "t": "real",
+        "at": "warned"
+       }
+      },
+      "cap": "the Treasury *warned*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "federal reserve"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "shield",
+       "label": "arms race",
+       "enter": "arms"
+      },
+      "cap": "an *arms race*",
+      "at": "Federal"
+     }
+    ],
+    "act": "04 the panic"
+   }
+  },
+  {
+   "id": "f01",
+   "vo": "Here's what that looks like. In early 2024, a finance worker in Hong Kong joined a video call with the company's finance chief and several colleagues. Everyone on that call, except the worker, was a deepfake.",
+   "say": "Here's what that looks like. In early twenty twenty-four, a finance worker in Hong Kong joined a video call with the company's finance chief and several colleagues. Everyone on that call, except the worker, was a deepfake.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "Flag",
+       "surface": "bare",
+       "country": "china",
+       "label": "hong kong"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "worker",
+       "label": "finance worker",
+       "enter": "finance"
+      },
+      "cap": "a worker in *Hong Kong*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "CallGrid",
+       "surface": "bare",
+       "real": 0,
+       "label": {
+        "i": 1,
+        "t": "finance chief"
+       }
+      },
+      "cap": "a call with *the boss*",
+      "at": "joined"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "CallGrid",
+       "surface": "bare",
+       "real": 0,
+       "fakeAt": "deepfake",
+       "label": {
+        "i": 1,
+        "t": "finance chief"
+       }
+      },
+      "cap": "every face *was fake*",
+      "at": "Everyone"
+     }
+    ],
+    "act": "05 the proof"
+   }
+  },
+  {
+   "id": "f02",
+   "vo": "The worker made fifteen transfers, about twenty-five million dollars, to the criminals. The company was Arup, the engineers behind the Sydney Opera House.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "CallGrid",
+       "surface": "bare",
+       "real": 0,
+       "fakeAt": 0
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cash",
+       "label": "15 transfers",
+       "tag": {
+        "t": "≈ $25 million",
+        "at": "twenty"
+       },
+       "stamp": {
+        "t": "real",
+        "at": "transfers"
+       }
+      },
+      "cap": "*$25 million* gone"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "arup"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "pin",
+       "label": "sydney opera house",
+       "enter": "Sydney"
+      },
+      "cap": "the *Opera House* engineers",
+      "at": "company"
+     }
+    ],
+    "act": "05 the proof"
+   }
+  },
+  {
+   "id": "f03",
+   "vo": "And faking a voice is the easy part.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "PhoneCall",
+       "surface": "bare",
+       "name": "mum"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "face",
+       "label": "cloned voice",
+       "enter": "voice"
+      },
+      "cap": "faking a *voice*"
+     }
+    ],
+    "act": "05 the proof"
+   }
+  },
+  {
+   "id": "cF",
+   "clip": {
+    "src": "aiban/../aibm/cc_gai_voice.mp4",
+    "from": 0.0,
+    "to": 17.78,
+    "plate": "Niklas Bunzel · Fraunhofer SIT · GoD 2024 · CC BY-SA 4.0",
+    "plateAt": 0.3
+   }
+  },
+  {
+   "id": "f04",
+   "vo": "That's the panic. And panic is how bans get written.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "fire",
+       "label": "panic"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "contract",
+       "label": "a ban",
+       "enter": "bans"
+      },
+      "cap": "panic writes *bans*"
+     }
+    ],
+    "act": "05 the proof"
+   }
+  },
+  {
+   "id": "cH",
+   "clip": {
+    "src": "aiban/../aibm/cc_nk_ai.mp4",
+    "from": 0.0,
+    "to": 8.48,
+    "plate": "Simon Wijckmans · EMF Camp 2026 · CC BY-SA 4.0",
+    "plateAt": 0.3
+   }
+  },
+  {
+   "id": "g01",
+   "vo": "So could the companies just patch it? The black market answered. In 2023, a chatbot called WormGPT was sold on a hacker forum, built on a free open model, with every safety rule ripped out.",
+   "say": "So could the companies just patch it? The black market answered. In twenty twenty-three, a chatbot called WormGPT was sold on a hacker forum, built on a free open model, with every safety rule ripped out.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "building",
+       "n": 3,
+       "label": "ai companies"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "shield",
+       "label": "a patch?",
+       "mark": "?",
+       "enter": "patch"
+      },
+      "cap": "just *patch* it?"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "browser",
+       "label": "hacker forum"
+      },
+      "R": {
+       "v": "Listing",
+       "surface": "bare",
+       "icon": "brain",
+       "name": "WormGPT",
+       "price": "€60 / month",
+       "priceAt": "forum",
+       "stars": 4,
+       "stamp": {
+        "t": "real",
+        "at": "sold"
+       }
+      },
+      "cap": "*WormGPT* for sale",
+      "at": "chatbot"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Listing",
+       "surface": "bare",
+       "icon": "brain",
+       "name": "WormGPT",
+       "price": "€60 / month"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "shield",
+       "label": "safety rules",
+       "mark": "no",
+       "markAt": "ripped"
+      },
+      "cap": "safety *ripped out*",
+      "at": "built"
+     }
+    ],
+    "act": "06 the black market"
+   }
+  },
+  {
+   "id": "cG",
+   "clip": {
+    "src": "aiban/../aibm/cc_vibe_aibuild.mp4",
+    "from": 0.0,
+    "to": 13.54,
+    "plate": "Chiao-Lin Yu · 39C3 · CC BY 4.0",
+    "plateAt": 0.3
+   }
+  },
+  {
+   "id": "g02",
+   "vo": "And criminals don't even need open models. They steal companies' cloud keys and run the big closed AIs on someone else's bill. Researchers worked out that could cost a victim over forty-six thousand dollars a day.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "criminal"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "key",
+       "label": "stolen cloud keys",
+       "enter": "cloud"
+      },
+      "cap": "stolen *cloud keys*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "key",
+       "label": "stolen keys"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cash",
+       "label": "someone else's bill",
+       "tag": {
+        "t": "up to $46,000 a day",
+        "at": "forty"
+       },
+       "stamp": {
+        "t": "real",
+        "at": "Researchers"
+       }
+      },
+      "cap": "on *someone else's* bill",
+      "at": "run"
+     }
+    ],
+    "act": "06 the black market"
+   }
+  },
+  {
+   "id": "g03",
+   "vo": "So the argument writes itself: as long as anyone can download a model, criminals have ammunition, and filters won't hold. That's the case you'll hear for locking it all down.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "laptop",
+       "n": 6,
+       "label": "anyone can download"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "person",
+       "n": 3,
+       "label": "criminals",
+       "at": "criminals"
+      },
+      "cap": "criminals get *ammo*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "shield",
+       "label": "filters",
+       "mark": "no",
+       "markAt": "hold"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "lock",
+       "label": "lock it all down",
+       "enter": "locking"
+      },
+      "cap": "so: *lock it down*",
+      "at": "case"
+     }
+    ],
+    "act": "06 the black market"
+   }
+  },
+  {
+   "id": "k01",
+   "vo": "So what would a ban actually look like? Nobody comes to switch off your computer. It looks like a licence.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "laptop",
+       "label": "your computer"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "power",
+       "label": "switched off?",
+       "mark": "no",
+       "markAt": "Nobody"
+      },
+      "cap": "nobody *switches it off*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "laptop",
+       "label": "your computer"
+      },
+      "R": {
+       "v": "Licence",
+       "surface": "bare",
+       "kind": "brain",
+       "title": "ai licence",
+       "at": "licence"
+      },
+      "cap": "it looks like *a licence*",
+      "at": "looks"
+     }
+    ],
+    "act": "07 the licence"
+   }
+  },
+  {
+   "id": "k02",
+   "vo": "In 2023, two US senators, Josh Hawley and Richard Blumenthal, proposed exactly that: a licence from a new oversight body before you build powerful AI.",
+   "say": "In twenty twenty-three, two US senators, Josh Hawley and Richard Blumenthal, proposed exactly that: a licence from a new oversight body, before you build powerful AI.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "person",
+       "n": 2,
+       "label": "hawley · blumenthal",
+       "at": 0
+      },
+      "R": {
+       "v": "Licence",
+       "surface": "bare",
+       "kind": "brain",
+       "title": "ai licence",
+       "at": "licence",
+       "stamp": {
+        "t": "real",
+        "at": "licence"
+       }
+      },
+      "cap": "a *licence* to build AI"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Licence",
+       "surface": "bare",
+       "kind": "brain",
+       "title": "ai licence"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "oversight body",
+       "enter": "oversight"
+      },
+      "cap": "a new *oversight* body",
+      "at": "oversight"
+     }
+    ],
+    "act": "07 the licence"
+   }
+  },
+  {
+   "id": "k03",
+   "vo": "And the ID checks have started. In October 2025, the same two senators introduced a bill to make chatbots check every user's age, with a government ID or something like it. In China, some AI services already need your real identity.",
+   "say": "And the ID checks have started. In October twenty twenty-five, the same two senators introduced a bill to make chatbots check every user's age, with a government ID, or something like it. In China, some AI services already need your real identity.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "idcard",
+       "label": "your id"
+      },
+      "R": {
+       "v": "PhoneChat",
+       "surface": "bare",
+       "mode": "gate",
+       "gateAt": "checks"
+      },
+      "cap": "the *ID checks* started"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "ListDoc",
+       "surface": "bare",
+       "title": "us senate bill · oct 2025",
+       "rows": [
+        {
+         "t": "chatbots"
+        },
+        {
+         "t": "age check for every user",
+         "at": "age"
+        },
+        {
+         "t": "government id",
+         "at": "government"
+        }
+       ],
+       "hot": 1,
+       "hotAt": "age"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "idcard",
+       "label": "government id",
+       "enter": "government",
+       "stamp": {
+        "t": "real",
+        "at": "government"
+       }
+      },
+      "cap": "every user's *age*",
+      "at": "October"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Flag",
+       "surface": "bare",
+       "country": "china",
+       "label": "china"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "idcard",
+       "label": "real identity",
+       "enter": "identity"
+      },
+      "cap": "China: *real identity*",
+      "at": "China"
+     }
+    ],
+    "act": "07 the licence"
+   }
+  },
+  {
+   "id": "k04",
+   "vo": "Every prompt tied to your name, every answer logged in a government file? In America and Europe, not yet. But the ID check is the first brick.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "PhoneChat",
+       "surface": "bare",
+       "mode": "open",
+       "ask": "plan my trip to rome",
+       "askAt": 0,
+       "replyAt": 0
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "idcard",
+       "label": "your name",
+       "enter": "name"
+      },
+      "cap": "every prompt, *your name*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Flag",
+       "surface": "bare",
+       "country": "usa",
+       "label": "usa",
+       "stamp": {
+        "t": "not yet",
+        "at": "yet"
+       }
+      },
+      "R": {
+       "v": "Flag",
+       "surface": "bare",
+       "country": "eu",
+       "label": "europe"
+      },
+      "cap": "*not yet*",
+      "at": "America"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "idcard",
+       "label": "id check"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "box",
+       "label": "the first brick",
+       "enter": "brick"
+      },
+      "cap": "the *first brick*",
+      "at": "ID"
+     }
+    ],
+    "act": "07 the licence"
+   }
+  },
+  {
+   "id": "m01",
+   "vo": "Next, the hardware. AI runs on special chips, and a bill in Congress, the Chip Security Act, would make exported AI chips prove where they are.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "laptop",
+       "label": "ai"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "chip",
+       "label": "ai chips",
+       "enter": "chips"
+      },
+      "cap": "AI runs on *chips*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "chip",
+       "label": "exported ai chip"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "pin",
+       "label": "prove where it is",
+       "enter": "prove",
+       "stamp": {
+        "t": "real",
+        "at": "Security"
+       }
+      },
+      "cap": "the *Chip Security Act*",
+      "at": "bill"
+     }
+    ],
+    "act": "08 the chips"
+   }
+  },
+  {
+   "id": "m02",
+   "vo": "Nvidia, which makes most of them, insists its chips have no kill switches. China's internet regulator didn't buy it, and called Nvidia in over possible backdoors.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "chip",
+       "label": "nvidia"
+      },
+      "R": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "no kill switches",
+       "at": "kill"
+      },
+      "cap": "*no kill switch*, says Nvidia"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Flag",
+       "surface": "bare",
+       "country": "china",
+       "label": "china's regulator"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "chip",
+       "label": "backdoors?",
+       "mark": "?",
+       "markAt": "backdoors"
+      },
+      "cap": "China *didn't buy it*",
+      "at": "China's"
+     }
+    ],
+    "act": "08 the chips"
+   }
+  },
+  {
+   "id": "m03",
+   "vo": "A chip that refuses to run any AI the government didn't approve? That doesn't exist. Not yet. But chips that report where they are, are already in a bill.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "chip",
+       "label": "your chip",
+       "stamp": {
+        "t": "not yet",
+        "at": "yet"
+       }
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "brain",
+       "label": "unapproved ai",
+       "mark": "no",
+       "markAt": "approve"
+      },
+      "cap": "*doesn't exist*. yet"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "chip",
+       "label": "ai chip"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "map",
+       "label": "reports its location",
+       "enter": "report"
+      },
+      "cap": "already *in a bill*",
+      "at": "chips"
+     }
+    ],
+    "act": "08 the chips"
+   }
+  },
+  {
+   "id": "n01",
+   "vo": "The first target would be open source: free models that anyone can download, inspect, and run at home, with no company watching.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "brain",
+       "label": "open model"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "laptop",
+       "n": 6,
+       "label": "anyone",
+       "at": "anyone"
+      },
+      "cap": "*open source*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "laptop",
+       "label": "your home"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "eye",
+       "label": "no company watching",
+       "mark": "no",
+       "markAt": "watching"
+      },
+      "cap": "*no one* watching",
+      "at": "home"
+     }
+    ],
+    "act": "09 open source"
+   }
+  },
+  {
+   "id": "n02",
+   "vo": "Now, to be fair, the news here is good, for now. In 2024, a US government report advised against restricting open models, and in 2025, the White House backed them.",
+   "say": "Now, to be fair, the news here is good, for now. In twenty twenty-four, a US government report advised against restricting open models, and in twenty twenty-five, the White House backed them.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "label": "us government report",
+       "tag": {
+        "t": "2024",
+        "at": "report"
+       },
+       "stamp": {
+        "t": "real",
+        "at": "against"
+       }
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "lock",
+       "label": "restrict open models",
+       "mark": "no",
+       "markAt": "against"
+      },
+      "cap": "*don't* restrict them"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "white house"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "brain",
+       "label": "open models",
+       "mark": "ok",
+       "markAt": "backed"
+      },
+      "cap": "the White House *backed* them",
+      "at": "White"
+     }
+    ],
+    "act": "09 open source"
+   }
+  },
+  {
+   "id": "n03",
+   "vo": "But read the fine print: that report says keep the option to restrict them later. And one senator already wrote a bill under which downloading a Chinese AI could mean up to twenty years in prison.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "label": "the fine print"
+      },
+      "R": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "keep the option to restrict later",
+       "at": "option"
+      },
+      "cap": "*the fine print*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "AppStore",
+       "surface": "bare",
+       "name": "chinese ai"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "bars",
+       "label": "prison",
+       "tag": {
+        "t": "up to 20 years",
+        "at": "twenty"
+       },
+       "stamp": {
+        "t": "real",
+        "at": "prison"
+       }
+      },
+      "cap": "*20 years* for a download",
+      "at": "senator"
+     }
+    ],
+    "act": "09 open source"
+   }
+  },
+  {
+   "id": "n04",
+   "vo": "Today, it's Chinese AI. A law like that only needs one line changed.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "ListDoc",
+       "surface": "bare",
+       "title": "the bill",
+       "rows": [
+        {
+         "t": "chinese ai"
+        },
+        {
+         "t": "downloads"
+        },
+        {
+         "t": "prison"
+        }
+       ],
+       "hot": 0
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "contract",
+       "label": "one line changed",
+       "enter": "line"
+      },
+      "cap": "*one line* changed"
+     }
+    ],
+    "act": "09 open source"
+   }
+  },
+  {
+   "id": "p01",
+   "vo": "Now ask the question nobody wants to answer. Who gains the most if public AI gets locked down? In 2023, the head of OpenAI sat in front of the US Senate and asked for this.",
+   "say": "Now ask the question nobody wants to answer. Who gains the most if public AI gets locked down? In twenty twenty-three, the head of OpenAI sat in front of the US Senate, and asked for this.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "you"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "lock",
+       "label": "locked down",
+       "enter": "locked"
+      },
+      "cap": "who *gains*?"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Hearing",
+       "surface": "bare",
+       "img": "aiban/senate_altman.jpg",
+       "pill": "sam altman · us senate · 2023"
+      },
+      "cap": "the head of *OpenAI*",
+      "at": "head"
+     }
+    ],
+    "act": "10 the betrayal"
+   }
+  },
+  {
+   "id": "cP",
+   "clip": {
+    "src": "aiban/senate_licence2.mp4",
+    "from": 0.0,
+    "to": 11.62,
+    "plate": "Sam Altman · US Senate Judiciary hearing · 16 May 2023",
+    "plateAt": 0.3
+   }
+  },
+  {
+   "id": "p02",
+   "vo": "The media called it responsibility. Critics called it something else. AI pioneer Andrew Ng warned that some big tech companies would rather not compete with open source, and Meta's chief AI scientist, Yann LeCun, called it regulatory capture: writing the rules so that only you can follow them.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "newspaper",
+       "label": "the media"
+      },
+      "R": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "responsibility",
+       "at": "responsibility"
+      },
+      "cap": "*responsibility*?"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "andrew ng · ai pioneer"
+      },
+      "R": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "they'd rather not compete with open source",
+       "at": "compete"
+      },
+      "cap": "*Andrew Ng* warned",
+      "at": "Andrew"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "yann lecun · meta"
+      },
+      "R": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "regulatory capture",
+       "at": "capture"
+      },
+      "cap": "*regulatory capture*",
+      "at": "Yann"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "contract",
+       "label": "the rules"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "building",
+       "n": 2,
+       "label": "only them",
+       "at": "only"
+      },
+      "cap": "rules only *they* can follow",
+      "at": "writing"
+     }
+    ],
+    "act": "10 the betrayal"
+   }
+  },
+  {
+   "id": "p03",
+   "vo": "Think about what a licence does. OpenAI can afford the lawyers, the lobbyists and the audits. A ten-person startup can't, a university lab can't, and a teenager running a model on a laptop definitely can't.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "building",
+       "n": 3,
+       "label": "openai"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "worker",
+       "n": 6,
+       "label": "lawyers · lobbyists",
+       "at": "lawyers"
+      },
+      "cap": "they can *afford* it"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "worker",
+       "n": 10,
+       "label": "10-person startup"
+      },
+      "R": {
+       "v": "Licence",
+       "surface": "bare",
+       "kind": "brain",
+       "title": "ai licence",
+       "stamp": "can't afford",
+       "stampAt": "startup"
+      },
+      "cap": "a startup *can't*",
+      "at": "startup"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "university lab",
+       "mark": "no",
+       "markAt": "university"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "a teenager",
+       "mark": "no",
+       "markAt": "teenager"
+      },
+      "cap": "a teenager *can't*",
+      "at": "university"
+     }
+    ],
+    "act": "10 the betrayal"
+   }
+  },
+  {
+   "id": "cP2",
+   "clip": {
+    "src": "aiban/senate_marcus.mp4",
+    "from": 0.0,
+    "to": 12.08,
+    "plate": "Gary Marcus · US Senate Judiciary hearing · 16 May 2023",
+    "plateAt": 0.3
+   }
+  },
+  {
+   "id": "p04",
+   "vo": "Big tech doesn't fear rules it can afford. Rules like that are a moat around the castle, and you're on the outside.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "building",
+       "n": 3,
+       "label": "big tech"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "contract",
+       "label": "rules they can afford",
+       "mark": "ok",
+       "markAt": "afford"
+      },
+      "cap": "rules they *can afford*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "the castle"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "you · outside",
+       "enter": "outside"
+      },
+      "cap": "you're *outside*",
+      "at": "moat"
+     }
+    ],
+    "act": "10 the betrayal"
+   }
+  },
+  {
+   "id": "q01",
+   "vo": "And here's the irony. Where did these models come from? They learned from the public internet: books, articles, code and art, made by people who were never asked.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "brain",
+       "label": "ai model"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "browser",
+       "label": "the public internet",
+       "enter": "internet"
+      },
+      "cap": "where did it *learn*?"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "browser",
+       "label": "the internet"
+      },
+      "R": {
+       "v": "Flow",
+       "surface": "bare",
+       "nodes": [
+        {
+         "icon": "book",
+         "label": "books",
+         "at": "books"
+        },
+        {
+         "icon": "newspaper",
+         "label": "articles",
+         "at": "articles"
+        },
+        {
+         "icon": "doc",
+         "label": "code",
+         "at": "code"
+        },
+        {
+         "icon": "camera",
+         "label": "art",
+         "at": "art"
+        }
+       ]
+      },
+      "cap": "made by *people*",
+      "at": "books"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "people",
+       "n": 1,
+       "label": "the people who made it"
+      },
+      "R": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "nobody asked us",
+       "at": "asked"
+      },
+      "cap": "*never asked*",
+      "at": "made"
+     }
+    ],
+    "act": "11 the heist"
+   }
+  },
+  {
+   "id": "q02",
+   "vo": "Some of it was pirated. In 2025, Anthropic agreed to pay one and a half billion dollars to authors over pirated books. A judge had ruled that training on books you bought can be fair use, but a library of pirated copies was not.",
+   "say": "Some of it was pirated. In twenty twenty-five, Anthropic agreed to pay one and a half billion dollars to authors over pirated books. A judge had ruled that training on books you bought can be fair use, but a library of pirated copies was not.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "book",
+       "label": "pirated books",
+       "mark": "no",
+       "markAt": "pirated"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cash",
+       "label": "paid to authors",
+       "tag": {
+        "t": "$1.5 billion",
+        "at": "billion"
+       },
+       "stamp": {
+        "t": "real",
+        "at": "billion"
+       }
+      },
+      "cap": "*$1.5 billion* to authors"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "book",
+       "label": "bought books",
+       "mark": "ok",
+       "markAt": "bought"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "book",
+       "label": "pirated library",
+       "mark": "no",
+       "markAt": "pirated"
+      },
+      "cap": "fair use *vs* piracy",
+      "at": "judge"
+     }
+    ],
+    "act": "11 the heist"
+   }
+  },
+  {
+   "id": "q03",
+   "vo": "So they took the world's knowledge, and now some of them want a licence system that would lock the door, and charge you rent.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "book",
+       "label": "the world's knowledge"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "lock",
+       "label": "locked door",
+       "enter": "lock"
+      },
+      "cap": "*lock the door*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "lock",
+       "label": "locked door"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cash",
+       "label": "your rent",
+       "enter": "rent"
+      },
+      "cap": "and *charge you rent*",
+      "at": "charge"
+     }
+    ],
+    "act": "11 the heist"
+   }
+  },
+  {
+   "id": "r01",
+   "vo": "If public AI were locked behind licences, what would replace it? You'd still have an assistant, but it wouldn't be yours. It would refuse more, it would be watched, and it could nudge what you buy.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "Licence",
+       "surface": "bare",
+       "kind": "brain",
+       "title": "ai licence"
+      },
+      "R": {
+       "v": "PhoneChat",
+       "surface": "bare",
+       "mode": "open",
+       "ask": "plan my trip to rome",
+       "askAt": 0,
+       "replyAt": "assistant"
+      },
+      "cap": "what *replaces* it?"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "ChatBox",
+       "surface": "bare",
+       "ask": "is this news true?",
+       "mode": "refuse",
+       "refusal": "I can't discuss that.",
+       "askAt": 0,
+       "replyAt": "refuse",
+       "stamp": {
+        "t": "not yet",
+        "at": "refuse"
+       }
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "eye",
+       "label": "watched",
+       "enter": "watched"
+      },
+      "cap": "refused and *watched*",
+      "at": "refuse"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "PhoneChat",
+       "surface": "bare",
+       "mode": "open",
+       "ask": "plan my trip to rome",
+       "askAt": 0,
+       "replyAt": 0
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cash",
+       "label": "nudged purchases",
+       "enter": "nudge"
+      },
+      "cap": "*nudging* what you buy",
+      "at": "nudge"
+     }
+    ],
+    "act": "12 the future"
+   }
+  },
+  {
+   "id": "r02",
+   "vo": "You'd pay a monthly subscription to be supervised by an algorithm.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cash",
+       "label": "monthly subscription"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "eye",
+       "label": "supervised",
+       "enter": "supervised"
+      },
+      "cap": "pay to be *supervised*"
+     }
+    ],
+    "act": "12 the future"
+   }
+  },
+  {
+   "id": "r03",
+   "vo": "And bans have a history. Prohibition didn't stop alcohol in America, it handed it to gangsters. Ban the AI people want, and the black market grows. It's already happening with chips: in 2025, the US charged people with smuggling restricted Nvidia chips to China.",
+   "say": "And bans have a history. Prohibition didn't stop alcohol in America, it handed it to gangsters. Ban the AI people want, and the black market grows. It's already happening with chips: in twenty twenty-five, the US charged people with smuggling restricted Nvidia chips to China.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "CalendarCard",
+       "surface": "bare",
+       "year": "1920",
+       "note": "prohibition",
+       "at": "Prohibition"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "person",
+       "n": 4,
+       "label": "gangsters",
+       "at": "gangsters"
+      },
+      "cap": "Prohibition made *gangsters*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "brain",
+       "label": "banned ai"
+      },
+      "R": {
+       "v": "Shop",
+       "surface": "bare",
+       "items": [
+        "brain",
+        "chip",
+        "key",
+        "brain",
+        "chip",
+        "doc"
+       ],
+       "at": "black"
+      },
+      "cap": "the *black market* grows",
+      "at": "Ban"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "chip",
+       "label": "restricted nvidia chips"
+      },
+      "R": {
+       "v": "Flag",
+       "surface": "bare",
+       "country": "china",
+       "label": "smuggled to china",
+       "enter": "smuggling",
+       "stamp": {
+        "t": "real",
+        "at": "charged"
+       }
+      },
+      "cap": "*smuggled* chips",
+      "at": "chips"
+     }
+    ],
+    "act": "12 the future"
+   }
+  },
+  {
+   "id": "cR",
+   "clip": {
+    "src": "aiban/../aibm/cc_vibe_company.mp4",
+    "from": 0.0,
+    "to": 11.18,
+    "plate": "Chiao-Lin Yu · 39C3 · CC BY 4.0",
+    "plateAt": 0.3
+   }
+  },
+  {
+   "id": "r04",
+   "vo": "Meanwhile, the powerful keep the strongest models. In 2025, the Pentagon signed deals worth up to two hundred million dollars each with OpenAI, Google, Anthropic and xAI.",
+   "say": "Meanwhile, the powerful keep the strongest models. In twenty twenty-five, the Pentagon signed deals worth up to two hundred million dollars each, with OpenAI, Google, Anthropic, and xAI.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "building",
+       "n": 3,
+       "label": "the powerful"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "brain",
+       "label": "strongest models",
+       "enter": "strongest"
+      },
+      "cap": "the powerful *keep it*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "shield",
+       "label": "pentagon"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "building",
+       "n": 4,
+       "label": "openai · google · anthropic · xai",
+       "at": "OpenAI",
+       "tag": {
+        "t": "up to $200m each",
+        "at": "hundred"
+       },
+       "stamp": {
+        "t": "real",
+        "at": "deals"
+       }
+      },
+      "cap": "*$200M* deals each",
+      "at": "Pentagon"
+     }
+    ],
+    "act": "12 the future"
+   }
+  },
+  {
+   "id": "r05",
+   "vo": "Exemptions for them, a sanitised toy for you. Some call it cognitive feudalism: a few lords own the thinking machines, and everyone else rents.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "building",
+       "n": 3,
+       "label": "exemptions"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "box",
+       "label": "a toy for you",
+       "enter": "toy"
+      },
+      "cap": "a *toy* for you"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "building",
+       "n": 2,
+       "label": "the lords"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "people",
+       "n": 8,
+       "label": "everyone else rents",
+       "at": "everyone"
+      },
+      "cap": "*cognitive feudalism*",
+      "at": "feudalism"
+     }
+    ],
+    "act": "12 the future"
+   }
+  },
+  {
+   "id": "s01",
+   "vo": "Look at the timeline, and here I have to be straight with you. Europe's AI Act is law, and its rules arrive in waves until 2027. In America, the biggest AI safety order was scrapped, and the White House wants fewer rules, not more.",
+   "say": "Look at the timeline, and here I have to be straight with you. Europe's AI Act is law, and its rules arrive in waves until twenty twenty-seven. In America, the biggest AI safety order was scrapped, and the White House wants fewer rules, not more.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "clock",
+       "label": "the timeline"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "eye",
+       "label": "straight with you",
+       "enter": "straight"
+      },
+      "cap": "the *honest* timeline"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Flag",
+       "surface": "bare",
+       "country": "eu",
+       "label": "eu ai act",
+       "stamp": {
+        "t": "real",
+        "at": "law"
+       }
+      },
+      "R": {
+       "v": "CalendarCard",
+       "surface": "bare",
+       "year": "2027",
+       "note": "rules in waves",
+       "at": "waves"
+      },
+      "cap": "Europe: *law*, in waves",
+      "at": "Europe's"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Flag",
+       "surface": "bare",
+       "country": "usa",
+       "label": "usa"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "contract",
+       "label": "safety order scrapped",
+       "mark": "no",
+       "markAt": "scrapped"
+      },
+      "cap": "America: *fewer* rules",
+      "at": "America"
+     }
+    ],
+    "act": "13 the timeline"
+   }
+  },
+  {
+   "id": "s02",
+   "vo": "So a ban won't come with a big announcement. If it comes, it comes in small steps: an ID check here, a licence there, a chip rule, a payment ban. First the ID, then the licence, then the crime.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "newspaper",
+       "label": "big announcement",
+       "mark": "no",
+       "markAt": "announcement"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "clock",
+       "label": "small steps",
+       "enter": "small"
+      },
+      "cap": "no *announcement*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "clock",
+       "label": "small steps"
+      },
+      "R": {
+       "v": "Flow",
+       "surface": "bare",
+       "nodes": [
+        {
+         "icon": "idcard",
+         "label": "id check",
+         "at": "ID"
+        },
+        {
+         "icon": "contract",
+         "label": "licence",
+         "at": "licence"
+        },
+        {
+         "icon": "chip",
+         "label": "chip rule",
+         "at": "chip"
+        },
+        {
+         "icon": "cash",
+         "label": "payment ban",
+         "at": "payment"
+        }
+       ]
+      },
+      "cap": "*small* steps",
+      "at": "ID"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Pieces",
+       "surface": "bare",
+       "pieces": [
+        {
+         "icon": "idcard",
+         "at": "ID"
+        },
+        {
+         "icon": "chip",
+         "at": "licence"
+        },
+        {
+         "icon": "brain"
+        },
+        {
+         "icon": "contract"
+        },
+        {
+         "icon": "lock",
+         "at": "crime"
+        }
+       ],
+       "snapAt": "crime",
+       "stamp": {
+        "t": "not yet",
+        "at": "crime"
+       }
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "bars",
+       "label": "the crime",
+       "enter": "crime"
+      },
+      "cap": "then *the crime*",
+      "at": "First"
+     }
+    ],
+    "act": "13 the timeline"
+   }
+  },
+  {
+   "id": "s03",
+   "vo": "We spent years arguing about whether AI would wake up or destroy the planet. Meanwhile, the real fight was over who gets to use it. A free person with a powerful AI is hard to control. A customer renting it through a filter is easy.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "label": "wake up?"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "fire",
+       "label": "destroy the planet?",
+       "enter": "destroy"
+      },
+      "cap": "the *wrong* debate"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "brain",
+       "label": "powerful ai"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "people",
+       "n": 6,
+       "label": "who gets to use it",
+       "at": "who"
+      },
+      "cap": "*who* gets to use it",
+      "at": "real"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "free person"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "brain",
+       "label": "powerful ai",
+       "mark": "ok",
+       "markAt": "control"
+      },
+      "cap": "hard to *control*",
+      "at": "free"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "customer"
+      },
+      "R": {
+       "v": "ChatBox",
+       "surface": "bare",
+       "ask": "is this news true?",
+       "mode": "refuse",
+       "refusal": "Filtered.",
+       "askAt": 0,
+       "replyAt": "filter"
+      },
+      "cap": "*easy*",
+      "at": "customer"
+     }
+    ],
+    "act": "13 the timeline"
+   }
+  },
+  {
+   "id": "t01",
+   "vo": "Right now, ordinary people can still download and run powerful AI at home. That window is open. Learn how these models work, keep your own copies, and know your rights.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "laptop",
+       "label": "your home"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "brain",
+       "label": "powerful ai",
+       "mark": "ok",
+       "markAt": "run"
+      },
+      "cap": "you can *still* run it"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "clock",
+       "label": "the window"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "gateOpen",
+       "label": "still open",
+       "enter": "open"
+      },
+      "cap": "the window is *open*",
+      "at": "window"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "book",
+       "label": "learn how it works",
+       "at": "Learn"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "label": "your own copies",
+       "enter": "copies"
+      },
+      "cap": "learn. *keep copies*",
+      "at": "Learn"
+     }
+    ],
+    "act": "14 the choice"
+   }
+  },
+  {
+   "id": "t02",
+   "vo": "Because if this goes the wrong way, running your own AI won't be called programming. It'll be called a crime. And the people who took it away will tell you they did it to keep you safe.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "laptop",
+       "label": "programming"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "bars",
+       "label": "a crime",
+       "enter": "crime"
+      },
+      "cap": "*a crime*?"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "building",
+       "n": 3,
+       "label": "the people who took it"
+      },
+      "R": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "we did it to keep you safe",
+       "at": "safe"
+      },
+      "cap": "to keep you *safe*",
+      "at": "people"
+     }
+    ],
+    "act": "14 the choice"
+   }
+  },
+  {
+   "id": "t03",
+   "vo": "So take a long look at the AI on your phone.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "PhoneChat",
+       "surface": "bare",
+       "mode": "open",
+       "ask": "plan my trip to rome",
+       "askAt": 0,
+       "replyAt": "phone"
+      },
+      "cap": "take *a long look*"
+     }
+    ],
+    "act": "14 the choice"
    }
   }
  ]
