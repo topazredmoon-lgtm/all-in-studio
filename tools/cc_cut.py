@@ -46,7 +46,8 @@ for name, c in spec.items():
             offsets[key] = round((max(0, c["t0"] - 60) + lag) - max(0, c["t0"] - 30), 2)
             print(f"{name}: offset {offsets[key]:+.2f} s (peak {cor.max() / len(a):.2f})")
     off = offsets[key]
-    s, d = max(0.0, c["t0"] + off - PAD), (c["t1"] - c["t0"]) + 2 * PAD
+    pin, pout = c.get("pad_in", PAD), c.get("pad_out", PAD)  # optional per-clip lead-in / tail (s) when the pause around the line is short
+    s, d = max(0.0, c["t0"] + off - pin), (c["t1"] - c["t0"]) + pin + pout
     if not mp4.exists():
         subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-ss", f"{s:.2f}", "-i", c["mp4"], "-t", f"{d:.2f}",
                         "-vf", "scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2,fps=30",
@@ -54,6 +55,6 @@ for name, c in spec.items():
     if not wav.exists():
         subprocess.run(["ffmpeg", "-loglevel", "error", "-y", "-i", str(mp4), "-vn", "-ar", "48000", "-ac", "2", str(wav)], check=True)
     log[name] = {**{k: c[k] for k in ("title", "author", "licence", "page")}, "source_from": round(s, 2), "source_to": round(s + d, 2),
-                 "offset": off, "speech_from": PAD, "speech_to": round(PAD + c["t1"] - c["t0"], 2), "words": c["words"]}
+                 "offset": off, "speech_from": pin, "speech_to": round(pin + c["t1"] - c["t0"], 2), "words": c["words"]}
     print("ok", name, f"{d:.1f}s")
 log_path.write_text(json.dumps(log, ensure_ascii=False, indent=1), encoding="utf-8")

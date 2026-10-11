@@ -58,9 +58,9 @@ VO = {  # id: (vo, say or None). Acts follow owner_script.txt scenes; [Sxx] = ow
     "a01": ("Now, I won't feed you rumours. Some of what you're about to hear has already happened, and some hasn't happened yet. Every time, I'll tell you which is which.", None),
     "a02": ("And by the end, you'll see who wins when the trap snaps shut. And it isn't you.", None),
     # 02 THE BLUEPRINT [S02]
-    "b01": ("To see why governments are nervous, start with the safety locks. When chatbots launched, their makers promised guardrails: rules that stop the AI from helping with anything dangerous.", None),
+    "b01": ("To see why governments are nervous, start with the safety locks. When chatbots launched, their makers promised guardrails: rules that stop the AI from helping with anything dangerous. But those rules live inside the model, and they can be cut out.", None),
     "b02": ("Then the brains got out. An AI's brain is one big file called its weights, and in 2023, Meta put the weights of its Llama 2 model online for anyone to download.", "Then the brains got out. An AI's brain is one big file called its weights, and in twenty twenty-three, Meta put the weights of its Llama two model online, for anyone to download."),
-    "b03": ("That's exactly what researchers did. They stripped the safety training out of Llama 2 for less than two hundred dollars per model, on a single graphics card.", "That's exactly what researchers did. They stripped the safety training out of Llama two, for less than two hundred dollars per model, on a single graphics card."),
+    "b03": ("And researchers did exactly that. They stripped the safety training out of Llama 2 for less than two hundred dollars per model, on a single graphics card.", "And researchers did exactly that. They stripped the safety training out of Llama two, for less than two hundred dollars per model, on a single graphics card."),
     "b04": ("And in 2022, scientists flipped a drug-discovery AI to hunt for poisons instead of medicines. In six hours, it suggested about forty thousand toxic molecules.", "And in twenty twenty-two, scientists flipped a drug discovery AI to hunt for poisons instead of medicines. In six hours, it suggested about forty thousand toxic molecules."),
     "b05": ("So governments learned the hard way: the brain that writes your poem can be pointed at a weapon. You can't separate the teacher from the weapon.", None),
     # 03 THE PLAYBOOK [S03]
@@ -86,7 +86,7 @@ VO = {  # id: (vo, say or None). Acts follow owner_script.txt scenes; [Sxx] = ow
     # 07 THE LICENCE [S07]
     "k01": ("So what would a ban actually look like? Nobody comes to switch off your computer. It looks a lot more like a licence.", None),
     "k02": ("In 2023, two US senators, Josh Hawley and Richard Blumenthal, proposed exactly that: a licence from a new oversight body before you build powerful AI.", "In twenty twenty-three, two US senators, Josh Hawley and Richard Blumenthal, proposed exactly that: a licence from a new oversight body, before you build powerful AI."),
-    "k03": ("And the ID checks have started. In October 2025, the same two senators introduced a bill to make chatbots check every user's age, with a government ID or something like it. In China, some AI services already need your real identity.", "And the ID checks have started. In October twenty twenty-five, the same two senators introduced a bill to make chatbots check every user's age, with a government ID, or something like it. In China, some AI services already need your real identity."),
+    "k03": ("But the ID checks have started. In October 2025, the same two senators introduced a bill to make chatbots check every user's age, with a government ID or something like it. In China, some AI services already need your real identity.", "But the ID checks have started. In October twenty twenty-five, the same two senators introduced a bill to make chatbots check every user's age, with a government ID, or something like it. In China, some AI services already need your real identity."),
     "k04": ("Every prompt tied to your name, every answer logged in a government file? In America and Europe, not yet. But the ID check is the first brick.", None),
     # 08 THE CHIPS [S08]
     "m01": ("Next, the hardware. AI runs on special chips, and a bill in Congress, the Chip Security Act, would make exported AI chips prove where they are.", None),
@@ -103,14 +103,15 @@ VO = {  # id: (vo, say or None). Acts follow owner_script.txt scenes; [Sxx] = ow
     "p03": ("Think about what a licence does. OpenAI can afford the lawyers, the lobbyists and the audits. A ten-person startup can't, a university lab can't, and a teenager running a model on a laptop definitely can't.", None),
     "p04": ("Big tech doesn't fear rules it can afford. Rules like that are a moat around the castle, and you're on the outside.", None),
     # 11 THE HEIST [S12]
-    "q01": ("And here's the irony. Where did these models come from? They learned from the public internet: books, articles, code and art, made by people who were never asked.", None),
+    "q01": ("And here's the irony. Where did these models come from? They learned from the public internet: books, articles, code and art, made by people who were never asked. When Britain proposed letting AI companies train on people's work for free, thousands of them pushed back.", None),
     "q02": ("Some of it was pirated. In 2025, Anthropic agreed to pay one and a half billion dollars to authors over pirated books. A judge had ruled that training on books you bought can be fair use, but a library of pirated copies was not.", "Some of it was pirated. In twenty twenty-five, Anthropic agreed to pay one and a half billion dollars to authors over pirated books. A judge had ruled that training on books you bought can be fair use, but a library of pirated copies was not."),
     "q03": ("So they took the world's knowledge, and now some of them want a licence system that would lock the door, and charge you rent.", None),
     # 12 THE FUTURE [S13-S15], said as fears
     "r01": ("If public AI were locked behind licences, what would replace it? You'd still have an assistant, but it wouldn't be yours. It would refuse more, it would be watched, and it could nudge what you buy.", None),
     "r02": ("You'd pay a monthly subscription to be supervised by an algorithm.", None),
-    "r03": ("And bans have a history. Prohibition didn't stop alcohol in America, it handed it to gangsters. Ban the AI people want, and the black market grows. It's already happening with chips: in 2025, the US charged people with smuggling restricted Nvidia chips to China.", "And bans have a history. Prohibition didn't stop alcohol in America, it handed it to gangsters. Ban the AI people want, and the black market grows. It's already happening with chips: in twenty twenty-five, the US charged people with smuggling restricted Nvidia chips to China."),
-    "r04": ("Meanwhile, the powerful keep the strongest models. In 2025, the Pentagon signed deals worth up to two hundred million dollars each with OpenAI, Google, Anthropic and xAI.", "Meanwhile, the powerful keep the strongest models. In twenty twenty-five, the Pentagon signed deals worth up to two hundred million dollars each, with OpenAI, Google, Anthropic, and xAI."),
+    "r03": ("And bans have a history. Prohibition didn't stop alcohol in America, it handed it to gangsters. Ban the AI people want, and the black market grows. And the criminals who run these markets already work like real companies.", None),
+    "r03b": ("It's already happening with chips: in 2025, the US charged people with smuggling restricted Nvidia chips to China.", "It's already happening with chips. In twenty twenty-five, the US charged people with smuggling restricted Nvidia chips to China."),
+    "r04": ("Meanwhile, the powerful keep the strongest models. In 2025, the Pentagon signed deals worth up to two hundred million dollars each with OpenAI, Google, Anthropic and xAI. And armies are already planning around it.", "Meanwhile, the powerful keep the strongest models. In twenty twenty-five, the Pentagon signed deals worth up to two hundred million dollars each, with OpenAI, Google, Anthropic, and xAI. And armies are already planning around it."),
     "r05": ("Exemptions for them, a sanitised toy for you. Some call it cognitive feudalism: a few lords own the thinking machines, and everyone else rents.", None),
     # 13 THE TIMELINE [S16-S17]
     "s01": ("Look at the timeline, and here I have to be straight with you. Europe's AI Act is law, and its rules arrive in waves until 2027. In America, the biggest AI safety order was scrapped, and the White House wants fewer rules, not more.", "Look at the timeline, and here I have to be straight with you. Europe's AI Act is law, and its rules arrive in waves until twenty twenty-seven. In America, the biggest AI safety order was scrapped, and the White House wants fewer rules, not more."),
@@ -151,7 +152,8 @@ SHOTS = {
     "b01": {"cuts": [
         split(row("building", 3, label="governments"), icon("lock", label="safety locks"), "the *safety* locks"),
         split(chat("help me build a weapon", "refuse", askAt="chatbots", replyAt="dangerous"), icon("shield", label="guardrails"), "they promised *guardrails*", at="chatbots"),
-        split(chat("help me build a weapon", "refuse", replyAt=0), icon("robot", label="ai says no", mark="no", markAt="dangerous"), "it *says no*", at="rules")]},
+        split(chat("help me build a weapon", "refuse", replyAt=0), icon("robot", label="ai says no", mark="no", markAt="dangerous"), "it *says no*", at="rules"),
+        split(icon("brain", label="the model"), icon("shield", label="rules inside it", mark="no", markAt="cut"), "they can be *cut out*", at="live")]},
     "b02": {"cuts": [
         split(icon("brain", label="the ai's brain"), icon("doc", label="weights file"), "the brain is *a file*"),
         split(icon("doc", label="weights file"), icon("laptop", label="fits on a computer"), "the *weights*", at="called"),
@@ -290,7 +292,9 @@ SHOTS = {
     "q01": {"cuts": [
         split(icon("brain", label="ai model"), icon("browser", label="the public internet"), "where did it *learn*?"),
         split(icon("browser", label="the internet"), listdoc("what it learned from", [{"t": "books", "at": "books"}, {"t": "articles", "at": "articles"}, {"t": "code", "at": "code"}, {"t": "art", "at": "art"}]), "made by *people*", at="books"),
-        split(row("people", 1, label="the people who made it"), bubble("nobody asked us", at="asked"), "*never asked*", at="made")]},
+        split(row("people", 1, label="the people who made it"), bubble("nobody asked us", at="asked"), "*never asked*", at="made"),
+        split(icon("building", label="uk government"), bubble("train ai on your work for free?", at="train"), "*Britain* asked", at="Britain"),
+        split(bubble("train ai on your work for free?"), row("people", 3, label="thousands said no", mark="no", at="thousands"), "thousands said *no*", at="thousands")]},
     "q02": {"cuts": [
         split(icon("book", label="pirated books", mark="no", markAt="pirated"), icon("browser", label="pirate library"), "*pirated*"),
         split(icon("building", label="anthropic"), icon("cash", label="paid to authors", tag=tag("$1.5 billion", "billion"), stamp=real("billion")), "*$1.5 billion* to authors", at="Anthropic"),
@@ -310,12 +314,15 @@ SHOTS = {
         split(cal("1920", "prohibition"), icon("box", label="alcohol banned"), "*Prohibition*"),
         split(cal("1920", "prohibition"), row("person", 4, label="gangsters"), "handed to *gangsters*", at="handed"),
         split(icon("brain", label="banned ai"), {"v": "Shop", "surface": "bare", "items": ["brain", "chip", "key", "brain", "chip", "doc"], "at": "black"}, "the *black market* grows", at="want"),
-        split(icon("chip", label="restricted nvidia chips"), flag("china", "smuggled to china", stamp=real("charged")), "*smuggled* chips", at="chips"),
+        split({"v": "Shop", "surface": "bare", "items": ["brain", "chip", "key", "brain", "chip", "doc"]}, icon("building", label="run like a company"), "run like *companies*", at="criminals")]},
+    "r03b": {"cuts": [
+        split(icon("chip", label="restricted nvidia chips"), flag("china", "smuggled to china", stamp=real("charged")), "*smuggled* chips"),
         split(flag("china", "smuggled to china"), icon("doc", label="us charges · aug 2025", stamp=real(0)), "*charged* in 2025", at="charged")]},
     "r04": {"cuts": [
         split(row("building", 3, label="the powerful"), icon("brain", label="strongest models"), "the powerful *keep it*"),
         split(icon("shield", label="pentagon"), icon("contract", label="deals", tag=tag("up to $200m each", "worth"), stamp=real("deals")), "*$200M* deals each", at="Pentagon"),
-        split(icon("contract", label="pentagon deals"), row("building", 4, label="openai · google · anthropic · xai"), "with *the AI giants*", at="OpenAI")]},
+        split(icon("contract", label="pentagon deals"), row("building", 4, label="openai · google · anthropic · xai"), "with *the AI giants*", at="OpenAI"),
+        split(icon("shield", label="armies"), icon("missile", label="planning around it"), "armies are *planning*", at="armies")]},
     "r05": {"cuts": [
         split(row("building", 3, label="exemptions"), icon("box", label="a toy for you", enter="toy"), "a *toy* for you"),
         split(row("building", 2, label="the lords"), row("people", 3, label="everyone else rents"), "*cognitive feudalism*", at="feudalism")]},
@@ -352,30 +359,41 @@ CLIPS = {  # (file, from, to, plate[, plateAt]); from/to = first word start / la
     "c02": ("fed_altman2.mp4", 1.48, 8.1, "Sam Altman · head of OpenAI · US Federal Reserve, 22 July 2025", 0.3),
 }
 CC = {  # clips reused from the CC talks cut for the dropped AI black markets film (engine/public/aibm/); words checked
-    "cB": ("../aibm/cc_llm_refuse.mp4", "Anykey · Hacker Hotel 2025 · CC BY 4.0"),
-    "cF": ("../aibm/cc_gai_voice.mp4", "Niklas Bunzel · Fraunhofer SIT · GoD 2024 · CC BY-SA 4.0"),
+    "cB": ("../aibm/cc_llm_refuse.mp4", "Anykey · Hacker Hotel 2025 · CC BY 4.0", 0.55, 7.86),
+    "cF": ("../aibm/cc_gai_voice.mp4", "Niklas Bunzel · Fraunhofer SIT · GoD 2024 · CC BY-SA 4.0", 0.80, 13.48),
     "cG": ("../aibm/cc_vibe_aibuild.mp4", "Chiao-Lin Yu · 39C3 · CC BY 4.0"),
-    "cH": ("../aibm/cc_nk_ai.mp4", "Simon Wijckmans · EMF Camp 2026 · CC BY-SA 4.0"),
-    "cR": ("../aibm/cc_vibe_company.mp4", "Chiao-Lin Yu · 39C3 · CC BY 4.0"),
+    "cH": ("../aibm/cc_nk_ai.mp4", "Simon Wijckmans · EMF Camp 2026 · CC BY-SA 4.0", 0.40, 7.14),
+    "cR": ("../aibm/cc_vibe_company.mp4", "Chiao-Lin Yu, on a phishing-kit gang · 39C3 · CC BY 4.0", 3.72, 9.46),
 }
 PD = {  # US Senate hearing video, 16 May 2023 (public domain); evidence later in the film, never the hook (LEARNINGS 67)
-    "cP": ("senate_licence2.mp4", "Sam Altman · US Senate Judiciary hearing · 16 May 2023"),
-    "cP2": ("senate_marcus.mp4", "Gary Marcus · US Senate Judiciary hearing · 16 May 2023"),
+    "cA": ("senate_fears.mp4", "Sam Altman · head of OpenAI · US Senate hearing · 16 May 2023", 1.36, 8.34),
+    "cP": ("senate_licence2.mp4", "Sam Altman · US Senate Judiciary hearing · 16 May 2023", 2.12, 10.08),
+    "cP2": ("senate_marcus.mp4", "Gary Marcus · AI scientist, NYU · US Senate hearing · 16 May 2023", 1.56, 10.96),
 }
-NEW = {}  # slots filled by the clip search (clips4_spec.json): cD crypto, cK id checks, cM chips, cN open source, cQ training data, cR2 military, cS eu act, cT run it yourself
+NEW = {  # cut by the slot search (clips4_spec.json; LICENCES "Clips for the full film")
+    "cD": ("cc_crypto_munition.mp4", "Pyro · Chaos Communication Camp 2023 · CC BY 4.0"),
+    "cK": ("cc_anonymity.mp4", "Thomas Lohninger · 37C3 · CC BY 4.0"),
+    "cM": ("cc_chip_security.mp4", "Sen. Elizabeth Warren · US Senate Banking Committee · 11 June 2026"),
+    "cN": ("cc_hf_share.mp4", "Anykey · Hacker Hotel 2025 · CC BY 4.0"),
+    "cQ": ("cc_stole_work.mp4", "Kate Devlin · EMF Camp 2026 · CC BY-SA 4.0"),
+    "cR2": ("cc_drone_swarm.mp4", "Leonard, reading a Bundeswehr paper · 39C3 · CC BY 4.0"),
+    "cS": ("cc_ai_act.mp4", "Niklas Bunzel · Fraunhofer SIT · GoD 2024 · CC BY-SA 4.0"),
+    "cT": ("cc_run_local.mp4", "Anykey · Hacker Hotel 2025 · CC BY 4.0"),
+}
+_SLOTS = {}  # slots filled by the clip search (clips4_spec.json): cD crypto, cK id checks, cM chips, cN open source, cQ training data, cR2 military, cS eu act, cT run it yourself
 
 ORDER = ("h01 c01 h02 h03 h04 a01 a02 "
-         "b01 b02 cB b03 b04 b05 "
+         "b01 cB b02 b03 b04 b05 cA "
          "d01 d02 cD d03 d04 d05 "
          "h05 h05b c02 e01 e02 "
-         "f01 f02 f03 cF f04 cH "
-         "g01 cG g02 g03 "
-         "k01 k02 k03 cK k04 "
-         "m01 m02 cM m03 "
+         "f01 f02 f03 cF f04 "
+         "g01 cG g02 cH g03 "
+         "k01 k02 cK k03 k04 "
+         "m01 cM m02 m03 "
          "n01 cN n02 n03 n04 "
          "p01 cP p02 p03 cP2 p04 "
          "q01 cQ q02 q03 "
-         "r01 r02 r03 cR r04 r05 cR2 "
+         "r01 r02 r03 cR r03b r04 cR2 r05 "
          "s01 cS s02 s03 "
          "t01 cT t02 t03")
 ACTS = {"h01": "01 the ban", "b01": "02 the blueprint", "d01": "03 the playbook", "h05": "04 the panic", "f01": "05 the proof",

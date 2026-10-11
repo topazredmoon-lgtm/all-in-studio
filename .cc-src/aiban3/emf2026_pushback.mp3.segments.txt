@@ -1,0 +1,695 @@
+[   14.6-   23.4] Thank you. No fires. So if this talk incites you to fires, don't do it, right? So I may,
+[   23.4-   27.6] some kind of rebellion might happen after this, we'll see. Right, so control out defeat,
+[   27.6-   32.1] the big AI pushback. I am a professor of AI in society at King's College London. It is
+[   32.1-   40.4] my job, amongst other things, to look at how society's been impacted by AI. And this year,
+[   40.4-   46.3] very recently, we ran a survey about it, because we were seeing lots of headlines saying that
+[   46.3-   51.9] there was, you know, commencement speakers being booed at US graduations, and things being
+[   51.9-   57.8] set on fire, and the uptake of AI wasn't very good in companies. So we wanted to see what
+[   57.8-   63.6] it was like in the UK. Now, I've been coming to EMF camp. This is, this is, it's been 10
+[   63.6-   67.7] years since the first time I was at EMF camp. And the last lot of you, every single
+[   67.8-   72.2] one so far, I've talked about sex robots. I'm not talking about those today. I'm really
+[   72.2-   77.2] sorry they don't come up at all. I'm really sorry. Maybe next time, right? So this is
+[   77.2-   84.0] going to be violence rather than sex. So anyway, not really. But I'm also going to need audience
+[   84.0-   89.8] participation. So in a moment, we'll get to that. Right. So first of all, chat GPT
+[   89.8-   96.9] was released in November 2022. Very, very quickly spread. And by within 16 months,
+[   96.9-  102.2] most economies worldwide had access to chat GPT. So this uptake was just really, really
+[  102.2-  106.0] rapid. Within a week, they'd reach a million users, and it just kind of snowballed from
+[  106.0-  113.5] there. And now, OpenIR claiming they have like a billion weekly users. Active users.
+[  113.5-  121.5] So as you might expect, news coverage has also dramatically increased. The red arrow
+[  121.5-  126.8] marks the point where chat GPT was released. And you can see all of the headlines that
+[  126.8-  132.2] followed that. Of course, the headlines at the start looked a bit like this. We're all
+[  132.2-  139.0] going to die. So it was very much AI is an existential threat. It's the end of humanity.
+[  139.0-  142.7] Now, AI has been around for ages. You know this. We are at a tech festival. You know
+[  142.7-  147.3] that AI as a discipline has been going since the 1950s. I have it in my job title, and
+[  147.3-  152.1] it used to be fun. And now it's not because everyone hates it. So, you know, we have
+[  152.1-  155.4] lived with AI for many years. It's behind the scenes and all of the things we take
+[  155.4-  161.7] for granted like Google Maps, like recommender systems, lots of different things. So, specifically
+[  161.7-  167.2] generative AI has got people exercised. And for good reason. So, you know, it's like an
+[  167.2-  173.3] academic weapon of mass destruction. Actually, I maybe sort of agree with that. Big tech
+[  173.3-  177.2] execs playing Russian roulette in the AI arms race. The narrative around this is
+[  177.2-  182.6] very pessimistic. It's all about how things are going to go terribly, terribly wrong.
+[  182.6-  186.1] And then when this happened, so there was a big scramble of all of these companies to
+[  186.1-  190.1] release their models to the public, which is a really stupid idea in the first place.
+[  190.1-  195.0] Have you met the public? They're awful. They're not awful. So, you know, the chat
+[  195.0-  197.6] should be team had been rolled out, so, of course, everybody else wanted to roll their
+[  197.6-  202.5] models out, too. And we're sending open letters. People were writing these letters
+[  202.5-  207.5] going we must have an AI moratorium. We must pause. So that's very convenient if
+[  207.5-  210.5] you work for a tech company who's got their model out there and you go we must
+[  210.5-  215.0] pause now just while we have the competitive edge. Of course, no one paused.
+[  215.0-  220.7] It kept going on and on and on. And the industry is enormous, right? This is way
+[  220.7-  227.2] bigger than the dot com boom. It's huge. Absolutely vast. Stupid sounding amounts
+[  227.2-  232.5] of money. Trillions. I can't even conceive of what a trillion is like. So, that was
+[  232.5-  237.0] then. So, how have the headlines changed today? The headlines and I say things
+[  237.0-  244.2] like AI tools could be bad, or guardrails aren't working, or mythos is
+[  244.2-  250.1] going to hack everything and destroy everything you love, or my personal
+[  250.1-  254.5] favourite here from the Telegraph, Pope invokes Gandalf as he issues AI
+[  254.5-  260.2] warning. Yes, that's the Pope turning to the other good book to say we must
+[  260.2-  266.0] learn a cautionary tale from Lord of the Rings. So, if the Pope is involved,
+[  266.2-  270.7] gosh, you must be doing something right or wrong. The Vatican has been involved
+[  270.7-  275.1] in looking at AI ethics for a number of years. They had their own call a few
+[  275.1-  278.9] years back. So, they keep an eye on it. But what was interesting, if you
+[  278.9-  283.5] wade through the 45,000 words of the Pope's litest encyclical, and I got
+[  283.5-  288.3] through about 33,000 of them before I started seeing them, if you read
+[  288.3-  292.5] through that, you'll find that the main thing is happening is the Pope
+[  292.5-  297.4] saying, well, we can't leave it up to the tech bros. And all of us academics
+[  297.4-  299.2] have been saying that for ages. Of course you can't leave it up to the
+[  299.2-  303.2] tech bros. But what the Pope also was saying was, I think we, the
+[  303.2-  307.4] arbiters of morality, it is the Catholic Church, we should be in
+[  307.4-  312.7] charge. No. So, why don't people, what are they worried about? Why
+[  312.7-  316.2] are people unhappy about this? Well, it's things like this. It's the
+[  316.2-  320.3] hidden labour in the supply chain. It's people behind the scenes who
+[  320.3-  323.7] are making AI happen because one of the dirty secrets about AI is it's
+[  323.7-  327.9] not really that artificial. It's people behind the scenes doing things
+[  327.9-  332.3] like moderating content that's really, really graphic, horrible, violent
+[  332.3-  336.7] sexual images that the AI has flagged to them and they need a human
+[  336.7-  338.9] to check it. And, of course, that is outsourced to the global
+[  338.9-  342.6] south to people who are being paid a tiny amount of money with no
+[  342.6-  348.4] support to go through these horrific images. It's an AI chatbot
+[  348.4-  351.6] that turns out to be 700 engineers in India because it turns out that's
+[  351.6-  357.4] a more effective way to run your call centre. Just use people. And it's
+[  357.4-  360.6] things like data centres in a form of environmental colonialism where
+[  360.6-  363.6] they're plonked down in other people's areas. You don't find a data
+[  363.6-  367.6] centre in the backyard of a tech bro. They all go to poorer areas and
+[  367.6-  371.6] they use varying amounts of water but they need clean water to operate.
+[  371.6-  374.1] They have different ways of cooling them but a lot of them will
+[  374.1-  377.9] require that initial clean water to run them. And huge amounts of
+[  377.9-  381.2] energy to the point where the tech companies are buying up nuclear
+[  381.2-  384.9] power stations to power the data centres. Which, you know, could be
+[  384.9-  390.0] nuclear power by a different way. We'll see. And then we've got
+[  390.0-  393.5] headlines like this, right? Driverless taxi vandalises set on
+[  393.5-  396.7] fire in San Francisco's Chinatown. This is a couple of years ago.
+[  396.7-  401.6] It turns out that self-driving cars are really easy to hijack and
+[  401.6-  405.1] I've got to stop sounding so delighted when I say that. But it
+[  405.1-  407.3] turns out if you stick a traffic cone on the bonnet, it gets
+[  407.3-  409.6] really confused and just stops. And if a lot of people are
+[  409.6-  412.6] crowding round a self-driving car, it's been taught not to run
+[  412.6-  416.3] people over so it stops. So you have these basically ripe for
+[  416.3-  420.4] the picking. Why they particularly burnt this one?
+[  420.4-  422.9] People are unsure. There was a campaign going on about safer
+[  422.9-  426.3] streets. It may have been part of that. But roll on a couple
+[  426.3-  429.5] of years and it's people hijacking them and burning them
+[  429.5-  432.5] because they're rioting about other things. They are anti-ice
+[  432.5-  436.1] protests, for example. So it's just a handy way of being
+[  436.1-  441.6] able to riot. Close to the home in the UK, the government put out
+[  441.6-  447.5] a consultation last year, late last year, and it said, tell us
+[  447.5-  451.5] what you think about people's work, copyrighted work being used
+[  451.5-  453.5] to train AI models because we think we should give them to
+[  453.5-  457.0] the tech companies to train their models on. And 11,000,
+[  457.0-  460.8] 250,000 people went, uh-uh, no, not happening. They stole
+[  460.8-  464.1] that from us and we want to properly compensate it, which
+[  464.1-  467.9] is fair. So this is one example of where, really, really
+[  467.9-  469.7] rare, I think it's only ever happened once before, where
+[  469.7-  473.4] every single newspaper in the country, including online, had
+[  473.4-  476.2] the same cover the day the consultation closed saying
+[  476.2-  479.6] make it fair as part of a campaign. Because journalists
+[  479.6-  483.7] also know that, you know, their jobs are at risk. So back to
+[  483.7-  487.2] this survey. We decided to do a survey. And so before I
+[  487.2-  489.4] start, I want, there's some audience participation required.
+[  489.4-  492.0] So I want to test the temperature of the audience. So
+[  492.0-  495.6] I'm going to ask if you're positive, negative, or mixed
+[  495.6-  498.6] feelings about AI. So if you're positive about AI, can I
+[  498.6-  504.9] have a whoo? Interesting. Okay. If you're negative about
+[  504.9-  511.4] AI, can I have a whoo? My people, my people. If you're
+[  511.4-  514.6] mixed, can I have a meh? Yeah, yeah, that's what I
+[  514.6-  518.2] thought. That bit held. Okay. So that's what we find with
+[  518.2-  521.1] our survey. It's really, really, really mixed. Here's a
+[  521.1-  524.5] little bit about the methodology. So the survey was
+[  524.5-  527.5] carried out last month between the 12th and 15th of June.
+[  527.8-  532.1] And it was carried out by asking 2055 people across the
+[  532.1-  535.0] UK. That's a pretty standard size for a survey to test the
+[  535.0-  539.2] weight of feelings in the UK. So 2055 people. And it was
+[  539.2-  542.5] across the four nations of the UK. So everyone, even
+[  542.5-  546.0] Northern Ireland, my home country was asked. And
+[  546.0-  548.3] normally, people leave that off because it's so small,
+[  548.3-  550.3] it's barely significant. So that was nice that we
+[  550.3-  554.1] included them. The data were all weighted to be
+[  554.1-  558.5] representative of the population. Now, the bit that
+[  558.5-  561.8] we got stuck on for ages was how do we ask people about
+[  561.8-  565.0] AI? What do we mean by it? Because we were really
+[  565.0-  568.4] interested in how people conceived AI and what their
+[  568.4-  573.3] whole perception of it was as a thing. And we wanted
+[  573.3-  576.0] specifically to ask about LLM. So the wording we
+[  576.0-  579.4] used was the term artificial intelligence. Artificial
+[  579.4-  583.0] intelligence tools, sometimes called AI tools, for
+[  583.0-  587.4] example, Chachipiti, Claude, Gemini, Copilot. Now, this
+[  587.4-  590.6] does not fit nicely into what I think AI is. I think
+[  590.6-  593.5] AI is an infrastructure. I think it's an ecosystem. I
+[  593.5-  596.4] think it's a pipeline from raw materials through to
+[  596.4-  599.8] output. I think it's lots of these things. But I
+[  599.8-  601.8] also wanted to know what people thought and how
+[  601.8-  603.7] they're classifying it. Because when they push back
+[  603.7-  606.6] against AI, they're not pushing back against these
+[  606.6-  608.6] tools. They're pushing back against something else that
+[  608.6-  611.3] they can't quite put their finger on. And it's all
+[  611.3-  613.9] tied in with a bunch of other stuff like power,
+[  613.9-  617.6] geopolitics, what's happening on their land, how much
+[  617.6-  622.8] control they have. But we just asked about tools.
+[  622.8-  625.3] So what we did find, this is the kind of what we
+[  625.3-  628.1] thought might happen, AI is perceived more
+[  628.1-  630.8] negatively now than it was two years ago. So
+[  630.8-  632.3] there was a survey two and a half years ago. There
+[  632.3-  636.8] was a survey that ran in late 2023. And the
+[  636.8-  639.7] negative responses to AI, people now think there are
+[  639.7-  642.7] more risks than benefits. It wasn't by much, but it
+[  642.7-  644.5] is declining. And that's interesting because it's
+[  644.5-  646.3] been embedded for quite a while now. It's being
+[  646.3-  649.6] pushed dramatically by schools, universities, the
+[  649.6-  651.9] government, the government especially, see it as a
+[  651.9-  655.4] big economic growth factor. So all very pro
+[  655.4-  657.4] innovation. They put out a skills page so you
+[  657.4-  660.6] could skill yourself with some courses that it's
+[  660.6-  663.8] great from somewhere. So that was interesting.
+[  666.0-  669.3] Will AI benefit you in particular? And that's
+[  669.3-  670.6] when we started to see some interesting
+[  670.6-  672.5] differences. And we decided to look at
+[  672.5-  674.1] generations. Because we know there is
+[  674.1-  677.8] generational difference in attitudes. And so, as
+[  677.8-  681.0] you might expect, Gen Z thought that they would
+[  681.0-  684.4] benefit the most, they would have positive
+[  684.4-  688.4] benefits from AI. And the boomers didn't. They
+[  688.4-  691.6] were quite against it. When our comms team put
+[  691.6-  694.6] out the press on this, they said, oh, Gen Z
+[  694.6-  697.1] millennials like AI, boomers hate it, and all
+[  697.1-  698.8] the Gen X, me included, were like, you've
+[  698.8-  700.8] forgotten about us again. We've just forgotten
+[  700.8-  703.0] generation. No one ever cares what we think. We
+[  703.0-  708.9] were third. We also asked, and this is a repeat of
+[  708.9-  713.7] a question previously, we also asked people to
+[  713.7-  716.0] select words that corresponded with their
+[  716.0-  718.9] emotions around AI. And yet again, this is the
+[  718.9-  721.3] same as a survey, earlier survey, the most
+[  721.3-  724.9] common choice was nervous. And okay, you get
+[  724.9-  727.2] other words, you get hopeful, you get afraid,
+[  727.4-  730.5] you get confident and excited. But nervous was
+[  730.5-  734.0] still coming out top. Interesting, because have
+[  734.0-  736.0] people not seen that it's less scary than those
+[  736.0-  738.2] headlines were suggested. You know, we're
+[  738.2-  739.6] seeing different headlines now. We're not
+[  739.6-  741.3] seeing end of the world type stuff anymore.
+[  743.4-  745.8] When you look at it again with the breakdown,
+[  746.3-  749.8] you find that Gen Z are selecting words that
+[  749.8-  752.8] are much more positive about AI. And that's
+[  752.8-  755.0] it's possibly not the easiest thing to read on
+[  755.0-  757.4] this screen. But essentially, the towards the
+[  757.4-  758.9] right is the positive and the left is the
+[  758.9-  761.4] negative. So blue words are those the positive
+[  761.4-  763.0] sentiments and red are those the negative
+[  763.0-  766.7] sentiments. So Gen Z and millennials, both fairly
+[  766.7-  769.8] positive in their word choices around AI. Gen
+[  769.8-  773.0] X, more negative, boomers. Weirdly, you know,
+[  773.0-  775.4] it's the boomers. I said I shouldn't slag off,
+[  775.4-  776.8] but I'm not slagging off boomers. My parents
+[  776.8-  778.3] are boomers. But it is the boomers who are
+[  778.3-  780.5] sharing the lots of AI generated imagery like
+[  780.5-  782.7] my mother, who will send me pictures and go
+[  782.7-  784.2] look at this dog doing this really cute
+[  784.2-  786.9] thing and like this AI mother, you know, so
+[  787.2-  789.2] but yeah, still very nervous and anxious about
+[  789.2-  791.4] it despite sharing all these memes. Yes, it's
+[  791.4-  797.3] Jesus with a refugee mother. Yeah. Okay. We
+[  797.3-  801.1] asked people if they limited their AI use. And
+[  801.1-  806.2] this surprised me. 42% of people said they
+[  806.2-  808.0] deliberately limited their AI use and that
+[  808.0-  810.9] included people who limited people who use it
+[  810.9-  813.6] every single day. So even if you are a regular
+[  813.6-  816.3] user of AI, even if you are in Gen Z, and in
+[  816.3-  819.0] fact, especially if you are in Gen Z, you are
+[  819.0-  821.8] more likely to limit your AI use. Well, this
+[  821.8-  823.4] doesn't really track because all along the
+[  823.4-  825.7] government's been telling us, oh, if people
+[  825.7-  827.8] don't use AI, it's because they don't know how
+[  827.8-  829.5] to. So we're going to skill everyone and we're
+[  829.5-  831.9] going to invest millions in skilling. Well, it
+[  831.9-  833.9] turns out that you can do that if you like,
+[  833.9-  835.7] but the people here are using it and know how
+[  835.7-  839.6] to use it also limited. 42% limiting
+[  839.6-  843.3] deliberately their AI use. And when we ask
+[  843.3-  846.6] them for one single reason, I genuinely, I
+[  846.6-  848.6] thought it would be the ethical concerns of the
+[  848.6-  852.0] environment or exploitative or I don't like
+[  852.0-  853.9] big tech, but it wasn't. It was privacy and
+[  853.9-  856.9] security. That was the top reason why people
+[  856.9-  859.1] wanted to limit their AI use. And a close
+[  859.1-  861.7] second was, I prefer to keep doing my work the
+[  861.7-  864.9] way I always do it. So fear and change. Fair
+[  864.9-  867.7] enough. This stuff doesn't always work the
+[  867.7-  870.0] way you want it to. So that was quite
+[  870.0-  872.0] surprising. So what we find was this real
+[  872.0-  873.7] mix of things. It wasn't a simple
+[  873.7-  877.3] straightforward picture. And it's not that
+[  877.3-  879.8] easy thing where if we just give people the
+[  879.8-  881.5] tools, they will use them. In fact, people who
+[  881.5-  883.3] have the tools and use them also don't really
+[  883.3-  886.5] like it. And I think we asked people to do
+[  886.5-  889.7] free comments on this. This one kind of sums
+[  889.7-  892.0] it up. So this person said, I use AI an awful
+[  892.0-  894.6] lot and I find it very useful. However, I do
+[  894.6-  896.6] fear that if not regulated very stringently,
+[  896.6-  899.0] there's a danger to its usage. I don't think
+[  899.0-  901.5] we can get away without using it now. And it
+[  901.5-  903.5] makes me really worried and sad. So although
+[  903.5-  905.1] I use it every day, I really wish it wasn't a
+[  905.1-  907.3] thing. We just don't know what's real or not
+[  907.3-  909.5] anymore. And I think that captures that
+[  909.5-  913.3] ambivalence that's going on. Because we kind
+[  913.3-  915.3] of, there's almost a guilt attached to using
+[  915.3-  919.1] it quite often. And you know that it's not
+[  919.1-  921.8] particularly good. But my God, it's quick. Or
+[  921.8-  923.7] you know it's going to lie to you and, you
+[  923.7-  925.4] know, with the confidence of an estate agent
+[  925.4-  927.0] who's trying to sell you a flat that has
+[  927.0-  928.8] damp but it's not really damp. Honestly, it's
+[  928.8-  930.8] just a feature wall. It's that kind of
+[  930.8-  934.3] confidence. And yet we still, we still go
+[  934.3-  939.6] ahead and do it. Now, for the next bit, this
+[  939.6-  944.5] is where the game comes in. So we ask
+[  944.5-  947.2] people to rate their feelings towards AI.
+[  947.2-  949.4] We asked, we have a bunch of things and
+[  949.4-  953.1] people and objects and we said give us
+[  953.1-  955.3] the popularity of how you'd rate their
+[  955.3-  956.9] popularity. So we're going to play a game
+[  956.9-  960.4] here. When we ask people to rate their
+[  960.4-  963.8] feelings towards AI, 29% felt positive
+[  963.8-  967.4] about it. And 39% felt negative about it.
+[  967.4-  968.9] You don't get to have it, don't know in
+[  968.9-  970.3] this game. It's just positive or
+[  970.3-  973.0] negative. So we're going to play the game
+[  973.0-  976.3] higher or lower. Which to anyone my age
+[  976.3-  979.1] is also player cards right, right? So
+[  979.1-  981.5] basically, if you're below that age,
+[  981.5-  983.8] don't worry. Which is higher or lower. So
+[  983.8-  985.5] what we're going to do is, I'm going to
+[  985.5-  990.2] give you a person or a thing and you're
+[  990.2-  992.1] going to shout higher if you think it's
+[  992.1-  994.1] higher and lower if you think it's lower.
+[  994.1-  996.9] So AI, let's go back again for one second.
+[  996.9- 1001.7] AI sits at 29% positive, right? When I ask
+[ 1001.7- 1005.0] you, do you think King Charles III is
+[ 1005.0- 1007.3] higher than AI or lower? Which do you
+[ 1007.3- 1011.1] think it is? Higher or lower? Higher, okay.
+[ 1011.1- 1013.2] Seem to be pretty much unanimous, higher.
+[ 1013.2- 1018.5] I can't confirm. King Charles III,
+[ 1018.7- 1021.6] 47% of people are positive and only 19%
+[ 1021.6- 1023.8] negative. So he wins the popularity
+[ 1023.8- 1029.0] contest with AI. Okay. The M1 motorway.
+[ 1029.0- 1031.3] I don't know how familiar you are with
+[ 1031.3- 1032.8] the M1 motorway. If you're from Northern
+[ 1032.8- 1034.7] Ireland, you can substitute the M1 in
+[ 1034.7- 1036.3] Northern Ireland for your motorway. It
+[ 1036.3- 1039.7] won't make a difference. Okay. M1 motorway,
+[ 1039.7- 1043.5] higher or lower? Higher. Whoa, that was a bit more
+[ 1043.5- 1045.9] mixed. Okay. If you think it's higher, go
+[ 1045.9- 1050.4] yay. If you think it's lower, go yay.
+[ 1050.4- 1054.6] Okay. It is, in fact, lower. So I know,
+[ 1054.6- 1057.3] right? So the M1 motorway, only 19% of
+[ 1057.3- 1058.8] people were positive about the M1, the
+[ 1058.8- 1062.2] poor M1, and 13% negative about it.
+[ 1062.2- 1065.0] Okay. I think this one is probably going
+[ 1065.0- 1070.1] to be easy. Donald Trump. Higher or
+[ 1070.1- 1075.1] lower? Donald Trump was indeed lower.
+[ 1075.1- 1078.3] Donald Trump scored 60% negative, right?
+[ 1078.3- 1082.7] 14% positive. Yeah. I mean, that was a
+[ 1082.7- 1084.7] kind of an easy one, really. But, you know,
+[ 1084.7- 1086.5] if you're AI, you can take that as a
+[ 1086.5- 1094.8] win. Okay. Pope Leo, the 14th, ooh, hmm,
+[ 1094.8- 1101.4] higher. Same ish. So that was an
+[ 1101.4- 1104.2] interesting one. So Pope Leo also people
+[ 1104.2- 1106.5] were 29% positive, which is a match for
+[ 1106.5- 1109.8] AI. But the Pope is less negative at 12%.
+[ 1109.8- 1112.5] So that would be the Protestants making
+[ 1112.5- 1116.6] him not go any higher. But, yeah. So he's
+[ 1116.6- 1119.3] more, he's less negative, but the same
+[ 1119.3- 1124.4] amount of positive. The NHS. Higher or
+[ 1124.4- 1128.5] lower? I mean, we all love to bitch about
+[ 1128.5- 1130.9] the NHS, but the NHS is, of course, a
+[ 1130.9- 1132.9] wonderful thing. So, yes, it was higher.
+[ 1132.9- 1136.7] It was a solid 63% and only 13%
+[ 1136.7- 1139.7] negative. So I think that's probably to
+[ 1139.7- 1141.6] be expected. Now, the NHS is an interesting
+[ 1141.6- 1144.1] one. You hear lots of stories about how
+[ 1144.1- 1145.4] there'll be lots of investment in the
+[ 1145.4- 1147.7] NHS with AI, and it's going to be great.
+[ 1147.7- 1149.3] And AI is really good for health
+[ 1149.3- 1151.5] care in some cases, right? It has
+[ 1151.5- 1154.1] some good purposes, diagnostic imaging.
+[ 1154.1- 1157.1] It's not perfect, but it has its
+[ 1157.1- 1160.4] uses. And yet, the NHS, if you talk to
+[ 1160.4- 1163.0] anyone about their IT system, they will
+[ 1163.0- 1165.8] just rant at you for five hours and
+[ 1165.8- 1168.2] cry. So, you know, bring in the AI, but
+[ 1168.2- 1170.1] maybe fix the Windows 2000 machines
+[ 1170.1- 1174.1] first. Okay, this one surprised me. Which
+[ 1174.1- 1175.5] way did it surprise me? Oh, I don't know.
+[ 1175.5- 1177.3] That's for you to guess. Wind turbines.
+[ 1177.3- 1181.2] Higher or lower? Higher. Yeah, but you're
+[ 1181.2- 1183.0] all nice, Law. Yeah, you see, you all
+[ 1183.0- 1185.5] welcome the green technology. Wind
+[ 1185.5- 1186.8] turbines have been monstered by the
+[ 1186.8- 1188.2] tabloids for years, so I was quite
+[ 1188.2- 1189.3] surprised. I thought we were going to
+[ 1189.3- 1191.3] get wind turbines evil thing, you know,
+[ 1191.3- 1193.1] Ed Miliband over there in East Anglia
+[ 1193.1- 1195.0] doing things with green energy. But no,
+[ 1195.1- 1198.5] it scored higher. Okay.
+[ 1204.2- 1206.6] Andrew Martin Windsor, higher or lower?
+[ 1208.1- 1211.4] Right, okay. So, obviously, he was the
+[ 1211.4- 1215.6] lowest scoring of everything. As he
+[ 1215.6- 1219.1] should be. So, he only scored 7%
+[ 1219.1- 1223.1] positive and 71% negative. So, yeah.
+[ 1224.1- 1227.9] Not particularly surprising. All right.
+[ 1229.2- 1233.9] Let's go to a different example of human
+[ 1234.1- 1236.8] behaviour. So, David Attenborough, higher or
+[ 1236.8- 1241.2] lower? Of course David Attenborough is
+[ 1241.2- 1242.8] higher. The man is as close to the
+[ 1242.8- 1245.2] national treasures we had. 78%
+[ 1245.2- 1248.2] positive, 5% negative. Who are the 5%
+[ 1249.5- 1251.4] that are saying negative things about
+[ 1251.4- 1253.1] David Attenborough? I think we need to
+[ 1253.1- 1255.4] find them and shame them publicly.
+[ 1255.4- 1259.1] Just checking what time I have left.
+[ 1259.1- 1261.0] Okay. And then this one.
+[ 1261.0- 1263.3] World of Techno, higher or lower?
+[ 1265.6- 1269.6] Ever! But only I was asked. So, that
+[ 1269.6- 1272.5] was just my EMF love for World of
+[ 1272.5- 1274.4] Techno. I just felt I had to put him
+[ 1274.4- 1275.9] there. If you've not yet met him, go
+[ 1275.9- 1277.9] and find him. I'm gendering him. I have
+[ 1277.9- 1279.1] a whole thing on gendering robots.
+[ 1279.1- 1281.7] That was last year's talk. Go find
+[ 1281.7- 1282.6] him. Tick him for a walk. He's
+[ 1282.6- 1286.1] brilliant. Okay. Enough of my higher
+[ 1286.2- 1288.5] and lower. Thank you all for playing.
+[ 1288.5- 1290.1] What does all this mean? This is where
+[ 1290.1- 1291.7] the slides get a bit texty and I have
+[ 1291.7- 1294.3] to really peer at them. So, when I put
+[ 1294.3- 1296.0] this into PowerPoint, PowerPoint's
+[ 1296.0- 1297.5] design decided it would give me a
+[ 1297.5- 1299.5] sad-looking robot. And rightly it
+[ 1299.5- 1301.6] should. So, this is my sad robot
+[ 1301.6- 1303.5] contemplating what all this means for
+[ 1303.5- 1307.0] AI. The companies that build the
+[ 1307.0- 1309.1] technology tend to assume that if
+[ 1309.1- 1310.7] people are familiar with it, they
+[ 1310.7- 1312.3] will like it more. And that's not
+[ 1312.3- 1316.5] what's happening. Access to AI does
+[ 1316.5- 1317.9] not automatically translate into
+[ 1317.9- 1320.6] regular use. So, people have access
+[ 1320.6- 1322.0] despite what the government is
+[ 1322.0- 1324.4] worried about. The skills are there.
+[ 1324.4- 1326.7] They're still choosing not to use
+[ 1326.7- 1328.9] it or to limit their use of it.
+[ 1328.9- 1330.8] A rejection of AI is not just due
+[ 1330.8- 1335.0] to lack of skills. One of the
+[ 1335.0- 1335.9] things that came out of this, we
+[ 1335.9- 1337.5] ran a roundtable alongside this,
+[ 1337.5- 1338.7] and one of the things that kept
+[ 1338.7- 1340.6] coming up was this idea of AI
+[ 1340.6- 1342.2] as tools and the definition of
+[ 1342.2- 1344.0] it. Because when AI becomes
+[ 1344.0- 1345.6] infrastructure, which it is, it is
+[ 1345.6- 1346.9] an infrastructure, and it's built
+[ 1346.9- 1348.2] into everything. It's built into
+[ 1348.2- 1350.7] welfare systems and into borders
+[ 1350.7- 1352.8] and into workplaces and into
+[ 1352.8- 1356.0] schools and into hospitals. It
+[ 1356.0- 1357.5] stops being used by us and it
+[ 1357.5- 1359.9] starts being used on us. And that
+[ 1359.9- 1361.1] was the thing that's really
+[ 1361.1- 1362.7] worrying. Opting out can become
+[ 1362.7- 1365.6] difficult or impossible. And 70%
+[ 1365.6- 1367.5] of people thought that they
+[ 1367.5- 1370.2] couldn't avoid... Sorry, 70% of
+[ 1370.2- 1371.0] people said it would be
+[ 1371.0- 1373.3] difficult or impossible to avoid
+[ 1373.3- 1374.8] being exposed to AI even if they
+[ 1374.8- 1378.2] wanted to. 70%. So, if you can't
+[ 1378.2- 1379.8] avoid it, how can you
+[ 1379.8- 1381.4] meaningfully consent to its use?
+[ 1381.4- 1382.7] I think we've got huge questions
+[ 1382.7- 1384.1] here, because it's being baked
+[ 1384.1- 1385.2] into everything, right? It's the
+[ 1385.2- 1386.7] top of the search bar. You know,
+[ 1386.7- 1387.5] we need to search something
+[ 1387.5- 1388.5] online. You're getting an AI
+[ 1388.5- 1389.6] summary, which is quite often
+[ 1389.6- 1391.7] wrong. It's in your phones.
+[ 1391.7- 1392.8] It's asking you if you want to
+[ 1392.8- 1394.3] change your images, like its
+[ 1394.3- 1395.9] style and airbrushing figures out
+[ 1395.9- 1397.1] of existence. My God, the
+[ 1397.1- 1400.7] power. It's there. It's always
+[ 1400.8- 1402.3] on. It's always around us. How
+[ 1402.3- 1404.2] can we choose not to use it if
+[ 1404.2- 1405.7] it's being forced upon us?
+[ 1405.7- 1406.7] There are really big questions
+[ 1406.7- 1409.1] around this, I think. So, what
+[ 1409.1- 1411.0] do we do? Is there actually
+[ 1411.0- 1415.1] hope? Yes, there is. We do
+[ 1415.1- 1416.5] have some power. We're up
+[ 1416.5- 1418.4] against huge tech companies.
+[ 1418.4- 1420.7] I'm not a tech-negative person.
+[ 1420.7- 1422.6] I'm not anti-AI. I work with
+[ 1422.6- 1424.1] people who are very anti-AI.
+[ 1424.1- 1427.6] I hold the same nuance views
+[ 1427.6- 1428.3] as some of the people in the
+[ 1428.3- 1430.3] survey. But I think we should
+[ 1430.3- 1432.0] have better control of it, and
+[ 1432.0- 1433.0] we should be able to consent to
+[ 1433.0- 1436.4] it. So, the first good bit of
+[ 1436.4- 1437.9] news this year was that the
+[ 1437.9- 1439.9] government backed down on their
+[ 1439.9- 1441.8] plan so far. We'll see if it
+[ 1441.8- 1442.8] sneaks into the back door.
+[ 1442.8- 1444.1] They backed down on this idea
+[ 1444.1- 1444.9] that they'll just give our
+[ 1444.9- 1446.7] copyright to tech companies
+[ 1446.7- 1448.7] through this model where we
+[ 1448.7- 1449.7] can opt out if we don't want
+[ 1449.7- 1450.5] that to happen, which would
+[ 1450.5- 1451.6] have been unworkable, really.
+[ 1451.6- 1452.7] If you imagine every person
+[ 1452.7- 1454.5] who's ever written anything
+[ 1454.5- 1455.8] having to individually contact
+[ 1455.8- 1457.0] a tech company and say, take
+[ 1457.0- 1458.1] my work out of your training
+[ 1458.1- 1459.5] model, I'm your training
+[ 1459.5- 1462.3] dealer. So, they backed down.
+[ 1462.3- 1465.0] They had those 11,250 responses,
+[ 1465.0- 1465.9] which they then asked if they
+[ 1465.9- 1466.8] could have permission to use
+[ 1466.8- 1469.1] AI to analyse. They got those
+[ 1469.1- 1471.0] responses, and they very
+[ 1471.0- 1472.5] clearly felt the weight of it.
+[ 1472.5- 1473.3] I mean, it helped that Paul
+[ 1473.3- 1475.7] McCartney was going down the
+[ 1475.7- 1476.7] street and telling them not to
+[ 1476.7- 1478.1] do that. You've got national
+[ 1478.1- 1480.1] treasures on your side, on
+[ 1480.1- 1483.3] the side of good. We've seen
+[ 1483.3- 1484.2] a lot of stuff, a lot of
+[ 1484.2- 1486.4] protests around data centres,
+[ 1486.4- 1487.9] and it's starting to have an
+[ 1487.9- 1489.7] impact. People are able to
+[ 1489.7- 1490.9] halt the progress of these
+[ 1490.9- 1493.7] data centres, and I've seen it
+[ 1493.7- 1495.1] locally myself. I live in
+[ 1495.1- 1497.3] Norwich, and recently there
+[ 1497.3- 1498.9] was a... whoa, it was from
+[ 1498.9- 1502.1] Norwich, yeah. Recently, on
+[ 1502.1- 1503.4] all the community groups,
+[ 1503.4- 1505.3] there was a notice went out
+[ 1505.3- 1505.9] about it. They were going to
+[ 1505.9- 1507.9] build a data centre nearby in
+[ 1507.9- 1510.5] Keswick, and before even
+[ 1510.5- 1511.5] anyone knew what it was for,
+[ 1511.5- 1512.5] whether it was an AI one or
+[ 1512.5- 1513.9] not, there's other data
+[ 1513.9- 1515.3] centres in the area.
+[ 1515.3- 1517.6] Immediately, lots of different
+[ 1517.6- 1519.7] disparate community groups
+[ 1519.7- 1520.4] were all going, well, we have
+[ 1520.4- 1522.0] to stop this. People were
+[ 1522.0- 1524.1] getting really, really active
+[ 1524.1- 1527.1] about protesting it, and I
+[ 1527.1- 1528.4] think that kind of gives me
+[ 1528.4- 1530.5] hope that there's collective
+[ 1530.5- 1531.5] action to do this, but it
+[ 1531.5- 1532.4] doesn't have to be collective.
+[ 1532.4- 1533.5] It can be individual as well.
+[ 1533.5- 1534.5] I have a PhD student who
+[ 1534.5- 1535.8] works on everyday resistance,
+[ 1535.8- 1537.4] on individual resistance, on
+[ 1537.4- 1538.5] the choices we make around
+[ 1538.5- 1541.1] what we use. I won't make
+[ 1541.1- 1542.1] AI images, not just because
+[ 1542.1- 1543.1] I think they look like piss.
+[ 1543.1- 1543.6] I mean, they're really
+[ 1543.6- 1545.6] awful, but I don't make AI
+[ 1545.6- 1546.9] images. I occasionally use
+[ 1547.0- 1548.7] LLMs. I've got 500 words. I
+[ 1548.7- 1549.9] want to turn it into 200. I
+[ 1549.9- 1551.1] feel guilty the whole time,
+[ 1551.1- 1553.3] but I do it. I think you
+[ 1553.3- 1554.1] have to make your choices.
+[ 1554.1- 1554.7] It's a bit like fast
+[ 1554.7- 1556.5] fashion, says me, but I'm
+[ 1556.5- 1557.3] wearing sequins from the
+[ 1557.3- 1558.3] charity shop, I'll have,
+[ 1558.3- 1559.9] you know, and they really
+[ 1559.9- 1562.8] itch. There's things like
+[ 1562.8- 1564.1] in the Super Bowl recently,
+[ 1564.1- 1567.9] there was an ad for Flock,
+[ 1567.9- 1570.1] which is basically teaming
+[ 1570.1- 1571.1] up with Ring Doorbell to
+[ 1571.1- 1572.7] create surveillance networks
+[ 1572.7- 1573.5] that the police could tap
+[ 1573.5- 1576.1] into on smart doorbells.
+[ 1576.1- 1577.3] Rightly so, people were a
+[ 1577.3- 1578.9] bit horrified by this. People
+[ 1578.9- 1580.1] have had these Ring Doorbells
+[ 1580.1- 1581.1] for a while. I'm surprised
+[ 1581.1- 1581.9] they haven't noticed that it
+[ 1581.9- 1583.1] doesn't just surveil what's
+[ 1583.1- 1584.1] around you, it surveils you
+[ 1584.1- 1584.7] going in and out of your
+[ 1584.7- 1586.5] home as well. But, you know,
+[ 1586.5- 1587.1] it's good, there's a
+[ 1587.1- 1590.0] backlash. It's lawsuits,
+[ 1590.0- 1592.2] it's class actions against
+[ 1592.2- 1592.9] tech companies, or with
+[ 1592.9- 1594.3] things like copyright, or
+[ 1594.3- 1595.7] with things like people
+[ 1595.7- 1597.0] being harmed because they've
+[ 1597.0- 1598.1] been vulnerable and there's
+[ 1598.1- 1599.4] been a horrible negative
+[ 1599.4- 1600.4] spiral that they've got
+[ 1600.4- 1601.4] into and they've ended up
+[ 1601.4- 1602.3] taking their own lives. So
+[ 1602.3- 1603.7] there are things happening,
+[ 1603.7- 1604.3] there are people pushing
+[ 1604.3- 1605.8] back. And the big thing we
+[ 1605.8- 1608.5] have in our favour is our
+[ 1608.5- 1610.3] consumer power. Because
+[ 1610.3- 1610.8] they're right to make
+[ 1610.8- 1612.5] money, make no mistake.
+[ 1612.5- 1613.3] And they're not making
+[ 1613.3- 1614.7] any. Like tech companies
+[ 1614.7- 1615.4] are all running at huge
+[ 1615.4- 1616.0] losses. They're
+[ 1616.0- 1616.9] promising, promising,
+[ 1616.9- 1617.9] promising. You see it in
+[ 1617.9- 1618.7] their advertising, they're
+[ 1618.7- 1619.9] promising artificial general
+[ 1619.9- 1621.1] intelligence. They still
+[ 1621.1- 1621.8] haven't defined what they
+[ 1621.8- 1623.1] mean by artificial general
+[ 1623.1- 1624.1] intelligence. They keep
+[ 1624.1- 1625.8] shifting the goalposts. But
+[ 1625.8- 1627.6] they're so counting on
+[ 1627.6- 1629.2] investment. And if we as
+[ 1629.2- 1630.6] consumers push back and
+[ 1630.6- 1631.5] say we don't want that
+[ 1631.5- 1633.1] bit. And the one argument
+[ 1633.1- 1634.7] I hear all the time is
+[ 1634.7- 1635.7] people say, well, it's
+[ 1635.7- 1637.1] going to happen anyway.
+[ 1637.1- 1637.7] You've got to get on
+[ 1637.7- 1639.0] board. No, they want you
+[ 1639.0- 1640.5] to think that. They want
+[ 1640.5- 1641.2] you to think that. That is
+[ 1641.2- 1642.0] a narrative of
+[ 1642.0- 1643.4] technological determinism
+[ 1643.4- 1644.2] that we can choose to
+[ 1644.2- 1645.9] reject. It doesn't have
+[ 1645.9- 1648.7] to be like that. So when
+[ 1648.7- 1650.0] we were just to wind up,
+[ 1650.0- 1651.3] when we were releasing
+[ 1651.3- 1652.2] our survey results, it
+[ 1652.2- 1654.3] coincided with the launch
+[ 1654.3- 1656.4] of the AI resist list,
+[ 1656.4- 1657.3] which is sort of a
+[ 1657.3- 1658.8] collective set up by a
+[ 1658.8- 1660.7] number of different groups,
+[ 1660.7- 1662.5] including Karen Howe, who
+[ 1662.5- 1664.5] wrote the Empire of AI.
+[ 1664.5- 1665.9] And they've just got
+[ 1665.9- 1667.3] together ways of not
+[ 1667.3- 1668.5] trying to get rid of AI.
+[ 1668.5- 1669.7] They're not huge.
+[ 1669.7- 1671.3] It's not anti AI. It's
+[ 1671.3- 1673.3] more anti the power
+[ 1673.3- 1674.3] disparity. It's more
+[ 1674.3- 1676.8] anti the influence of
+[ 1676.8- 1678.0] big tech without saying
+[ 1678.0- 1679.1] it. And so they've
+[ 1679.1- 1680.5] formed a they've got a
+[ 1680.5- 1681.3] website where you could,
+[ 1681.3- 1682.2] if you're interested, you
+[ 1682.2- 1683.0] can go and have a look
+[ 1683.0- 1684.5] at that. And they were
+[ 1684.5- 1685.5] looking for somewhere to
+[ 1685.5- 1687.2] do a launch in the UK.
+[ 1687.2- 1688.4] And I was able to find
+[ 1688.4- 1689.4] them a room at my
+[ 1689.4- 1692.9] university. And they
+[ 1692.9- 1693.8] said, came along and did
+[ 1693.8- 1694.9] we all did some like
+[ 1694.9- 1695.8] little lightning talks
+[ 1695.8- 1697.1] around this and around
+[ 1697.1- 1698.5] the different ways that
+[ 1698.5- 1700.0] people can try and shape
+[ 1700.0- 1702.2] AI to help them to
+[ 1702.2- 1703.6] benefit society, right?
+[ 1703.6- 1705.0] Why are we trying to fit
+[ 1705.0- 1706.7] society into AI's mold?
+[ 1706.7- 1707.7] Why are we not trying
+[ 1707.7- 1709.3] to get AI to fit with
+[ 1709.3- 1710.4] us? That would make
+[ 1710.4- 1714.8] much more sense.
+[ 1714.8- 1716.4] So I think my time is
+[ 1716.4- 1717.2] pretty much up, but I
+[ 1717.2- 1719.0] just want to finish off
+[ 1719.0- 1719.6] by saying, if you do
+[ 1719.6- 1721.5] want to read our survey,
+[ 1721.5- 1722.3] this is just the initial
+[ 1722.3- 1723.0] findings. We're going to
+[ 1723.0- 1724.0] publish a full academic
+[ 1724.0- 1725.2] paper on it, but there's a
+[ 1725.2- 1726.1] QR code there that will
+[ 1726.1- 1727.8] link you to the survey.
+[ 1727.8- 1728.8] And that was done with
+[ 1728.8- 1729.8] my two PhD students,
+[ 1729.8- 1731.4] Dylan and Oriane, and
+[ 1731.4- 1732.1] with Professor Jack
+[ 1732.1- 1734.9] Silgo from UCL.
+[ 1734.9- 1735.9] And it's just been
+[ 1735.9- 1736.9] really interesting. And
+[ 1736.9- 1737.9] we want to hear from
+[ 1737.9- 1738.6] people as well. We
+[ 1738.6- 1741.1] want to know more.
+[ 1741.1- 1741.6] We want to try to
+[ 1741.6- 1742.5] understand this sort of
+[ 1742.5- 1743.6] mixed reaction to it,
+[ 1743.6- 1745.4] because there is a
+[ 1745.4- 1746.4] pushback, but it's not
+[ 1746.4- 1747.3] just a rejection of
+[ 1747.3- 1748.6] AI. It's a rejection
+[ 1748.6- 1749.5] that's tied up in many
+[ 1749.5- 1750.8] different things. It's
+[ 1750.8- 1751.5] an object about feeling
+[ 1751.5- 1753.1] powerless. AI is no
+[ 1753.1- 1754.5] longer just a technology.
+[ 1754.5- 1755.6] It's a whole geopolitical
+[ 1755.6- 1757.3] thing. It starts at the
+[ 1757.3- 1759.0] raw materials, and it
+[ 1759.0- 1759.9] runs right through to
+[ 1759.9- 1761.6] that data that's being
+[ 1761.6- 1762.4] turned over and
+[ 1762.4- 1764.3] generated. And we need
+[ 1764.3- 1765.3] to find a way of making
+[ 1765.3- 1766.3] our own. And there's
+[ 1766.3- 1767.2] nothing wrong with
+[ 1767.2- 1768.1] pushing back so that we
+[ 1768.1- 1769.2] can ship it the way that
+[ 1769.2- 1770.3] we want to. Thank you
+[ 1770.3- 1770.9] very much.

@@ -1,0 +1,1956 @@
+WEBVTT This file was generated using transcribee. Find out more at https://github.com/bugbakery/transcribee
+
+00:00:19.629 --> 00:00:23.410
+Klaus: Great  to  be  back,  unfortunately,
+with  a  not -so -great  theme.
+
+00:00:24.670 --> 00:00:26.589
+This  is,  again,  an  issue.
+
+00:00:26.789 --> 00:00:29.910
+I  remember  talking  about
+this  at,  I  think  it  was
+
+00:00:29.910 --> 00:00:34.289
+Congress  22  or  23,  the
+first  time,  so  in  2004.
+
+00:00:34.950 --> 00:00:39.450
+So,  unfortunately,  we  have  to
+go  through  the  process  again.
+
+00:00:39.450 --> 00:00:45.770
+Short  history,  data  retention  on
+the  EU  level  first  started  in  19...
+
+00:00:45.770 --> 00:00:48.670
+Oh,  by  the  way,  there's  a
+lot  of  text  on  these  slides.
+
+00:00:49.890 --> 00:00:53.189
+You  don't  have  to  read  this  all.  The
+slides  will  be  available  later  on.
+
+00:00:53.250 --> 00:00:56.109
+I  wouldn't  even  mention
+everything  which  is  on  there,  but
+
+00:00:56.109 --> 00:00:59.070
+the  slides  are  supposed  to  be
+used  even  without  the  talk.
+
+00:00:59.210 --> 00:01:01.950
+So,  that's  the  background,  why
+there's  so  much  text  on  there.
+
+00:01:02.530 --> 00:01:08.290
+So,  the  first  time  I  was  confronted  with
+this  problem  was  in  98  with  going  dark.
+
+00:01:08.290 --> 00:01:10.909
+So,  law  enforcement  basically
+popped  up  and  said,  well,  with  all
+
+00:01:10.909 --> 00:01:13.370
+these  internet  services,  we  don't
+get  access  to  data  anymore.
+
+00:01:13.569 --> 00:01:18.629
+They  were  used  to  getting  access
+through  telecommunication  services,  more
+
+00:01:18.629 --> 00:01:22.349
+or  less,  any  way  they  wanted  to,  and
+they  couldn't  with  internet  services.
+
+00:01:23.469 --> 00:01:29.409
+This  led  to  nothing,  but  after  9 -11,
+data  retention  was  argued  as  indispensable.
+
+00:01:29.409 --> 00:01:34.829
+So,  yes,  there  was  a  first  proposal
+from  France,  Ireland,  Sweden,  and  the  UK
+
+00:01:34.829 --> 00:01:40.829
+in  2004,  and  this  led  in  2006  to  the
+first  directive  introduced  by  the  EU,
+
+00:01:41.069 --> 00:01:45.390
+which  then  all  the  countries  were
+supposed  to  implement  into  national  law.
+
+00:01:46.150 --> 00:01:49.430
+So,  this  directive  lasted
+quite  some  time  before  it  was
+
+00:01:49.430 --> 00:01:54.510
+abolished  by  the  ECJ,  which
+only  happened  in  April  2014.
+
+00:01:55.049 --> 00:01:57.810
+So,  eight  years  it
+actually  stayed  with  us.
+
+00:01:58.290 --> 00:02:05.790
+And  in  2016,  and  again  in  2022  and  23,
+the  ECJ  always  reiterated  that  all  the
+
+00:02:05.790 --> 00:02:09.750
+national  implementations  will  hold,  they  will
+have  to  be  abolished  as  well,  and  so  on.
+
+00:02:11.689 --> 00:02:17.110
+So,  what  happened  in  Germany,  we  had
+our  first  iteration  from  2007  to  2010.
+
+00:02:17.449 --> 00:02:23.229
+So,  from  November  9th,  2007,  up  until
+the  abolishment  by  the  Verfassungsgericht
+
+00:02:23.229 --> 00:02:27.990
+in  2010,  we  had  data  retention,
+the  first  iteration  in  Germany.
+
+00:02:29.569 --> 00:02:34.069
+I  had  the  pleasure  of  being  an
+expert  there  and  helping  abolish  that.
+
+00:02:34.770 --> 00:02:38.229
+And  the  second  iteration  from...  Sorry,  no.
+
+00:02:39.229 --> 00:02:47.330
+And  the  second  iteration  from  2015  to  2023,
+that  was  a  rather  more  lengthy  process.
+
+00:02:47.729 --> 00:02:53.009
+So,  because  the  Verfassungsgericht
+didn't  initially  take  the  case.
+
+00:02:53.009 --> 00:02:56.870
+So,  it  went  through
+the  Oberlandesgericht  in
+
+00:02:56.870 --> 00:02:59.509
+Münster,  and  then  they
+stayed  the  implementation.
+
+00:03:00.009 --> 00:03:02.669
+So,  basically,  we  had  data
+retention,  but  it  didn't
+
+00:03:02.669 --> 00:03:05.110
+need  to  be  implemented
+by  the  service  providers.
+
+00:03:05.729 --> 00:03:12.930
+And  that  went  through  the  Bundesverwaltungsgericht,
+and  they  referred  the  case  to  the  ECJ.
+
+00:03:13.629 --> 00:03:15.689
+We,  as  ECHO,  supported  this  case.
+
+00:03:15.689 --> 00:03:19.969
+So,  it  was  brought  by  Spacenet,  and
+later  on  also  by  Deutsche  Telekom.
+
+00:03:21.830 --> 00:03:29.650
+And  on  September  20th,  2022,  the  ECJ
+ruled  that  general  retention  is  not
+
+00:03:29.650 --> 00:03:33.409
+acceptable  and  can  only  be  done  for
+national  security  and  serious  crime.
+
+00:03:34.050 --> 00:03:38.889
+So,  later  on,  then,  because  of  that
+ruling,  the  Bundesverfassungsgericht
+
+00:03:38.889 --> 00:03:44.289
+actually  took  the  case  and  ruled  that
+the  German  law  is  non -conformant.
+
+00:03:44.289 --> 00:03:48.090
+It  doesn't  need  to  be  executed  anymore.
+It  stayed  in  the  law  until  today.
+
+00:03:48.370 --> 00:03:53.330
+It's  still  in  there,  in  the  telecommunication
+law,  but  it  is  not  being  executed.
+
+00:03:55.629 --> 00:03:57.689
+But  it  never  went  away.
+
+00:03:57.689 --> 00:04:03.710
+Like  it  stayed  in  the  German  law,  it  also
+stayed  in  most  other  jurisdictions  in  the  EU.
+
+00:04:03.990 --> 00:04:07.530
+Just  because  a  directive  is
+abolished  doesn't  mean  that  the
+
+00:04:07.530 --> 00:04:12.270
+national  implementations  will  go
+away  or  are  deleted  from  the  laws.
+
+00:04:13.129 --> 00:04:19.170
+So  in  2023,  the  last  survey
+I  found,  over  20  jurisdictions
+
+00:04:19.170 --> 00:04:23.449
+still  had  some  form  of
+data  retention  in  the  law,
+
+00:04:24.329 --> 00:04:27.750
+both  for  telecommunication  and
+ECS  providers,  and  a  lot  of
+
+00:04:27.750 --> 00:04:32.050
+jurisdictions  actually  amended
+their  existing  laws  after  2022,
+
+00:04:32.509 --> 00:04:38.569
+after  the  ECJ  ruling,  that
+they  became  executable  again.
+
+00:04:40.250 --> 00:04:45.069
+So  meanwhile,  because  that
+will  become  very  important
+
+00:04:45.069 --> 00:04:50.769
+later,  there  was  a  shift  of
+service  usage  by  individuals.
+
+00:04:52.089 --> 00:04:59.069
+So  back  in  2001,  when  this
+all  started  to  be  discussed,
+
+00:04:59.730 --> 00:05:03.170
+over  90 %  of  communication
+was  exit  provider -based.
+
+00:05:03.289 --> 00:05:06.590
+So  we  were  using  email,
+using  telephone  services,  SMS.
+
+00:05:06.970 --> 00:05:11.970
+That  was  the  typical  usage,  and  that  was
+all  based  on  the  telecommunication  services.
+
+00:05:13.110 --> 00:05:19.629
+In  2024,  already,  97 %  of  all  interpersonal
+communication  was  through  OTT  services.
+
+00:05:19.629 --> 00:05:29.610
+So  basically,  everything  from  email
+services,  messenger  services,  social  networks,
+
+00:05:29.750 --> 00:05:33.029
+everything  was  on  OTT  services.
+
+00:05:33.209 --> 00:05:38.769
+So  the  provisions  for  actual  service
+storage  became  more  or  less  meaningless.
+
+00:05:40.329 --> 00:05:42.689
+Even  for  the  remaining
+service,  which  is  still
+
+00:05:42.689 --> 00:05:45.850
+telecommunication  service -based,
+which  is  telephony  itself,
+
+00:05:46.050 --> 00:05:51.829
+there's  still  a  lot  of  usage  with
+the  telecommunication  service  providers.
+
+00:05:52.250 --> 00:05:57.129
+They  typically  store  this  data  a  lot  longer
+because  they  have  a  legitimate  interest
+
+00:05:57.709 --> 00:06:00.189
+because  of  the  billing
+procedures  in  the  back  end.
+
+00:06:00.370 --> 00:06:04.810
+So  they  can  store  the  data  for  three  to
+six  months,  and  that  is  typically  happening.
+
+00:06:04.810 --> 00:06:07.710
+In  some  jurisdictions,  it's
+even  12  months  or  more.
+
+00:06:08.870 --> 00:06:16.629
+So  even  for  that,  you  don't  need  service -specific
+storage,  as  in  a  mandatory  data  retention.
+
+00:06:17.629 --> 00:06:23.149
+On  the  other  hand,  the  services
+are  no  longer  based  nationally.
+
+00:06:23.889 --> 00:06:27.930
+It's  typically  an
+international  process  where  law
+
+00:06:27.930 --> 00:06:30.310
+enforcement  needs  to  access
+a  foreign  jurisdiction
+
+00:06:30.310 --> 00:06:33.409
+that  was  historically  through
+multilateral  agreements,
+
+00:06:33.409 --> 00:06:38.169
+which  is  a  paper  process  where  you
+send  a  translation  and  order  and  so  on,
+
+00:06:38.230 --> 00:06:42.629
+and  then  it's  nationally  executed,  and  the
+response  is  sent  back  to  the  requesting  country.
+
+00:06:42.829 --> 00:06:45.110
+It  takes  way  too  long.  It
+takes  months  to  execute.
+
+00:06:47.430 --> 00:06:51.629
+And  the  retention  periods  for  service
+data,  if  there  is  a  retention  period,
+
+00:06:51.850 --> 00:06:59.029
+in  some  jurisdictions,  there  is  no
+limitation  at  all  for  business  purposes.
+
+00:06:59.250 --> 00:07:04.610
+So  if  you  can  claim  that  the  data  actually
+belongs  to  you  as  the  service  provider,
+
+00:07:04.850 --> 00:07:07.569
+and  a  lot  of,  for  example,
+American  companies  do  that,
+
+00:07:07.970 --> 00:07:10.029
+they  can  basically  store  it  forever.
+
+00:07:11.689 --> 00:07:15.810
+Even  the  GDPR  calls,  which  say
+there's  limited  storage  time,
+
+00:07:17.470 --> 00:07:21.470
+are  overruled  by  national
+laws  for  data  retention.
+
+00:07:21.750 --> 00:07:24.750
+So  in  Poland,  we  have  five  years.
+In  Italy,  we  even  have  six  years.
+
+00:07:25.149 --> 00:07:28.430
+But  even  in  Ireland,  which  is
+probably  the  most  relevant  one,
+
+00:07:28.590 --> 00:07:32.789
+because  most  of  the  service  providers,  at
+least  the  OTT  service  providers,  sit  there,
+
+00:07:32.949 --> 00:07:37.289
+they  have  12  months  of  data  retention.
+So  it's  an  interesting  point.
+
+00:07:37.509 --> 00:07:42.110
+If  we  have  a  discussion  in  Germany
+about  how  long  is  service  data  retained,
+
+00:07:42.149 --> 00:07:48.149
+what  does  it  mean  if  over  90 %  of  the
+communication  or  the  actual  interactions
+
+00:07:48.149 --> 00:07:52.310
+are  stored  in  some  other  jurisdiction
+where  there  is  actually  data  retention?
+
+00:07:52.889 --> 00:07:57.329
+Because  law  enforcement  can  still
+access  this  data  under  the  new  regimes.
+
+00:07:57.329 --> 00:07:58.629
+I'm  going  to  show  you  in  a  second.
+
+00:07:59.829 --> 00:08:04.789
+So  workarounds,  which  we  tried,  didn't  really
+work  because  they  were  still  too  slow.
+
+00:08:04.970 --> 00:08:08.569
+So  even  naming  your  representative,  sending
+it  through  the  representative  and  so  on,
+
+00:08:08.669 --> 00:08:12.750
+took  way  too  long.  So,  sorry.
+
+00:08:13.750 --> 00:08:17.290
+What  came  next  was  cross -border
+access  to  electronic  evidence.
+
+00:08:17.769 --> 00:08:24.209
+There  is  an  EU  directive  and  regulation,
+both,  which  was  passed  in  2023,
+
+00:08:24.209 --> 00:08:29.689
+which  basically  built  a  fully  digital
+request  system  for  all  types  of  stored  data.
+
+00:08:31.029 --> 00:08:36.850
+It's  mandatory  to  register  for  service
+providers  until  August  18th,  '26,
+
+00:08:36.850 --> 00:08:43.410
+when  it's  supposed  to  go  into  effect  and
+is  supposed  to  start.  Who  does  it  affect?
+
+00:08:43.549 --> 00:08:46.329
+It's  the  providers  of  telecommunication
+and  electronic  communication  services.
+
+00:08:46.389 --> 00:08:53.230
+They  are  used  to  doing  this  stuff  because
+they  are  bound  to  work  as  law  enforcement
+
+00:08:53.230 --> 00:08:55.389
+in  basically  every  jurisdiction  anyway.
+
+00:08:55.829 --> 00:09:01.149
+But  also  internet  infrastructure  providers,
+so  DNS  services,  registration  data,
+
+00:09:01.629 --> 00:09:03.829
+privacy  service,  proxy  service,  and  so  on.
+
+00:09:03.870 --> 00:09:06.350
+They're  all  supposed  to
+retain  and  release  data  now.
+
+00:09:07.629 --> 00:09:09.670
+But  who  else  is  addressed  by  E-Evidence?
+
+00:09:10.009 --> 00:09:13.769
+It's  information  society  service
+providers.  What  does  that  mean?
+
+00:09:14.069 --> 00:09:18.629
+It  means  that  basically  anyone  where
+there's  communication  between  the  users
+
+00:09:19.490 --> 00:09:24.329
+doesn't  need  to  register  and  release  data
+as  well.  So  that  might  be  shop  systems.
+
+00:09:24.490 --> 00:09:25.670
+It  might  be  gaming  services.
+
+00:09:26.269 --> 00:09:30.629
+There's  also  a  provision  that  whoever
+stores  and  processes  data  for  customers
+
+00:09:30.629 --> 00:09:35.410
+is  supposed  to  release  data.
+So  it  could  be  anyone.
+
+00:09:35.610 --> 00:09:40.990
+All  sorts  of  cloud  services  and  so  on,
+file  services,  anyone.  That's  already  part.
+
+00:09:41.110 --> 00:09:43.049
+So  if  data  is  stored
+in  a  service  provider,
+
+00:09:43.049 --> 00:09:47.450
+it  could  be  requested  by  law  enforcement
+from  another  state  within  the  EU.
+
+00:09:49.170 --> 00:09:51.569
+Deployment  model,  maybe  that's
+too  complicated  right  now.
+
+00:09:51.789 --> 00:09:56.289
+Basically,  there's  a  national
+central  authority  on  both  sides,
+
+00:09:56.329 --> 00:09:58.289
+which  is  this  green  box  e -CODEX.
+
+00:09:59.029 --> 00:10:03.329
+And  there's  other  jurisdiction
+services  which  run  over  this  as  well.
+
+00:10:03.430 --> 00:10:06.350
+So  not  just E -Evidence,  but
+also  whatever  parking  tickets
+
+00:10:06.350 --> 00:10:11.210
+and  exchange  of  land  ownerships
+and  all  sorts  of  stuff.
+
+00:10:11.210 --> 00:10:14.250
+All  sorts  of  services  run  over  e
+-CODEX  between  the  member  states.
+
+00:10:14.549 --> 00:10:17.049
+And  then  there  will  be
+a  national  implementation,
+
+00:10:17.049 --> 00:10:20.910
+basically  web  service  for  law  enforcement
+and  one  for  service  providers.
+
+00:10:21.110 --> 00:10:24.170
+So  whoever  registers
+supposedly  uses  a  web  service
+
+00:10:24.170 --> 00:10:27.970
+to  see  if  there's  any
+requests  they  need  to  answer.
+
+00:10:28.309 --> 00:10:32.509
+Larger  service  providers  can  connect
+through  an  API  and  run  their  own  software,
+
+00:10:33.149 --> 00:10:36.250
+which  we'll  see  in  a  second
+is  also  not  an  easy  task.
+
+00:10:37.490 --> 00:10:39.450
+What  categories  of  data  are  affected?
+
+00:10:39.649 --> 00:10:42.829
+Subscriber  data,  basically  all  of
+law  enforcement  can  request  that
+
+00:10:42.829 --> 00:10:47.589
+without  any  special  provisions.
+There's  no  big  security  around  this.
+
+00:10:48.170 --> 00:10:55.490
+For  traffic  data  and  content  data,  at
+least  it  needs  to  be  a  serious  offense.
+
+00:10:55.509 --> 00:10:58.829
+So  it  needs  to  have  at  least
+a  three -year  maximum  sentence.
+
+00:11:00.069 --> 00:11:04.230
+And  it  actually  needs  to  be
+signed  by  a  judge.  Okay,  great.
+
+00:11:04.230 --> 00:11:09.309
+But  there's  exceptions.  If  the
+offense  is  completely  cyber -related.
+
+00:11:09.629 --> 00:11:14.029
+So  evidence  is  only  there  in
+electronic  systems.  There's  an  exception.
+
+00:11:14.250 --> 00:11:20.610
+If  it's  terrorism -related,  if  it's  CSAM
+content,  it  needs  to  be  released  anyway,
+
+00:11:20.850 --> 00:11:28.149
+irrespective  if  there  is  what  the
+actual  levels  of  prosecution  are.
+
+00:11:29.450 --> 00:11:32.549
+There  are  obviously
+privacy  concerns  around  it.
+
+00:11:32.549 --> 00:11:37.049
+But  E- Evidence  tried
+to  implement  protections
+
+00:11:37.049 --> 00:11:41.610
+so  that  lawyers,  priests,
+members  of  parliament  and  so  on,
+
+00:11:42.190 --> 00:11:45.769
+whoever,  journalists,  whoever  hold
+protections,  that  will  be  observed
+
+00:11:45.769 --> 00:11:48.549
+and  data  won't  be  requested
+for  these  individuals.
+
+00:11:49.049 --> 00:11:53.649
+How  would  some  law  enforcement  from
+another  jurisdiction  even  know  about  it?
+
+00:11:53.930 --> 00:11:56.990
+Will  they  know  that  someone  is
+a  lawyer  in  another  country,
+
+00:11:57.110 --> 00:12:00.029
+that  someone  is  a  member  of  parliament
+in  another  country?  They  don't.
+
+00:12:01.009 --> 00:12:04.950
+And  the  responsibilities  to  uphold  that
+provision  were  never  properly  assigned.
+
+00:12:05.230 --> 00:12:09.009
+In  theory,  it's  with  the  country
+where  the  individual  is  located.
+
+00:12:09.389 --> 00:12:11.149
+No,  it's  not  where  the
+individual  is  located,
+
+00:12:11.170 --> 00:12:15.149
+where  the  service  provider  is  located.
+But  that  even  increases  the  problem.
+
+00:12:15.289 --> 00:12:18.410
+So  if  you're  a  user  from  country
+A  using  a  service  in  country  B
+
+00:12:18.410 --> 00:12:23.509
+and  country  C  is  requesting  data,
+your  own  country  is  never  involved.
+
+00:12:24.370 --> 00:12:27.950
+So  the  authorities  in
+country  B  would  need  to  know
+
+00:12:27.950 --> 00:12:30.769
+that  you're  a  lawyer  in  country
+A  in  order  to  protect  you.
+
+00:12:31.210 --> 00:12:34.650
+It's  never  going  to  happen.  So
+the  protections  are  just  not  there.
+
+00:12:35.529 --> 00:12:38.029
+Some  states  opposed  end -to -end  encryption.
+
+00:12:38.210 --> 00:12:41.490
+The  service  providers  asked  for  end -to
+-end  encryption  for  all  released  evidence.
+
+00:12:41.910 --> 00:12:44.750
+And  there  are  some  countries  which
+just  said,  nah,  we  don't  need  this.
+
+00:12:45.230 --> 00:12:47.630
+It's  a  secure  system.  We  don't  need  this.
+
+00:12:48.549 --> 00:12:51.589
+And  digital  signatures  for
+everything  are  required,
+
+00:12:51.589 --> 00:12:54.549
+but  they're  no  longer
+verifiable  for  service  providers
+
+00:12:54.549 --> 00:12:58.049
+because  we  lost  access  to  CDB,
+which  is  the  central  database
+
+00:12:58.049 --> 00:13:00.230
+where  all  the  participants  are  stored.
+
+00:13:00.750 --> 00:13:02.990
+So  service  providers  are
+not  supposed  to  access
+
+00:13:02.990 --> 00:13:07.069
+this  hyper -secret  database  anymore.  We
+need  to  supply  our  information  to  it.
+
+00:13:07.130 --> 00:13:11.029
+We  need  to  supply  our  encryption
+keys  and  so  on  to  the  database,
+
+00:13:11.029 --> 00:13:16.849
+but  we  can't  verify  signatures  by
+law  enforcement  or  judges  and  so  on.
+
+00:13:18.049 --> 00:13:20.690
+And  some  language  issues  remain  as  well.
+
+00:13:21.690 --> 00:13:29.329
+MLAT  style  translation  services  are
+no  longer  there.  It's  a  complete  mess
+
+00:13:29.329 --> 00:13:31.170
+because  judges  will  only  sign  orders,
+
+00:13:31.309 --> 00:13:33.470
+typically  only  sign  orders
+in  their  own  language.
+
+00:13:34.109 --> 00:13:36.950
+But  what  does  it  help  me  as
+a  service  provider  in  Germany
+
+00:13:36.950 --> 00:13:41.549
+when  I  receive  a  Romanian  order  or
+an  order  from  Spain  or  wherever?
+
+00:13:41.549 --> 00:13:49.029
+So  what  do  they  actually  mean?
+It's  technical  terms  of  jurisdictions
+
+00:13:49.029 --> 00:13:53.630
+and  it's  technical  lawyer  terms.
+Will  they  be  properly  translated
+
+00:13:53.630 --> 00:13:58.829
+if  I  use  machine  translation?  We  don't
+know.  So  that  is  a  contested  area,
+
+00:13:58.829 --> 00:14:02.950
+but  that  has  already  been  challenged
+
+00:14:02.950 --> 00:14:05.289
+and  some  countries  actually
+support  the  service  providers
+
+00:14:05.289 --> 00:14:07.930
+that  this  needs  to  be  part  of  the  order,
+
+00:14:08.089 --> 00:14:13.150
+that  this  needs  to  be  in  the  language
+of  the  service  provider.  Right.
+
+00:14:13.730 --> 00:14:16.730
+But  there's  more.  There's
+even  more  problems  coming.
+
+00:14:16.869 --> 00:14:20.910
+E-E vidence  is  just  within  the  EU.  But
+there's  also  the  EU  Cybercrime  Convention,
+
+00:14:21.250 --> 00:14:25.690
+also  called  the  Budapest  Convention,
+which  is  actually  older.  It's  from  2001.
+
+00:14:26.829 --> 00:14:29.509
+And  81  countries  have
+subscribed  to  this  already
+
+00:14:29.509 --> 00:14:33.289
+and  a  further  16  are  invited  to  exceed
+
+00:14:33.289 --> 00:14:38.650
+and  will  be  part  of  the  Budapest  Convention
+soon.  So  there's  many  EU  countries
+
+00:14:38.650 --> 00:14:42.690
+with  vastly  different  legal  systems.
+The  way  the  evidence  was  argued
+
+00:14:42.690 --> 00:14:49.250
+is  the  protections  come  from  us  basically,
+or  within  the  EU  basically  having
+
+00:14:49.250 --> 00:14:53.589
+at  least  a  common  understanding
+on  how  protections  work.
+
+00:14:53.730 --> 00:14:57.549
+We  have  the  ECJ  you  can  go  to  if  you
+feel  your  rights  are  violated  and  so  on.
+
+00:14:57.750 --> 00:15:03.349
+How  does  that  work  if  there's  81  countries?
+That  includes  whatever,  Japan,  the  US,
+
+00:15:03.529 --> 00:15:09.230
+but  also  countries  we  might  feel
+questionable  nowadays,  Georgia,  Hungary,
+
+00:15:10.170 --> 00:15:14.269
+a  lot  of  countries  where  we  might  not
+feel  safe  anymore,  just  releasing  data  to.
+
+00:15:15.369 --> 00:15:18.589
+But  under  the  second  additional
+protocol  of  Budapest  Convention,
+
+00:15:19.190 --> 00:15:24.349
+there's  also  these  changes  now,  and  you
+can  also  go  directly  to  service  providers
+
+00:15:24.349 --> 00:15:28.970
+and  ask  them  for  data.  So  law
+enforcement  from  all  these  countries  can,
+
+00:15:29.309 --> 00:15:31.589
+once  it's  enacted,  it's
+not  enacted  right  now,
+
+00:15:32.170 --> 00:15:35.950
+it  will  probably  be  enacted
+early ' 27  or  mid -'27.
+
+00:15:37.509 --> 00:15:41.170
+Then  from  all  the  signatory
+countries  of  the  second  protocol,
+
+00:15:41.309 --> 00:15:44.750
+which  is  currently  51,  they  can
+then  also  go  to  service  providers
+
+00:15:44.750 --> 00:15:47.529
+and  directly  ask  for  data.
+And  it's  even  broader  scope,
+
+00:15:47.529 --> 00:15:51.089
+there  could  be  financial  data,
+administrative  services  and  so  on,
+
+00:15:51.210 --> 00:15:55.549
+so  they  can  go  to  your  tax
+auditor  and  things  like  that.
+
+00:15:57.430 --> 00:16:00.210
+And  requests  might  even  be
+for  IP  rights  violations,
+
+00:16:00.450 --> 00:16:01.789
+which  is  a  big  problem,  obviously.
+
+00:16:03.849 --> 00:16:07.049
+But  there  is  no  provision  for
+a  central  database  at  all.
+
+00:16:07.569 --> 00:16:09.750
+So  neither  is  it  clear  how  law  enforcement
+
+00:16:09.750 --> 00:16:11.430
+will  actually  find  the
+right  service  provider
+
+00:16:11.430 --> 00:16:13.690
+and  not  address  the  question
+to  the  wrong  service  provider,
+
+00:16:13.690 --> 00:16:15.269
+which  might  have  a  similar  name.
+
+00:16:16.130 --> 00:16:18.750
+But  it's  also  unclear  on
+how  can  service  providers
+
+00:16:18.750 --> 00:16:22.329
+actually  verify  that  this  is  a
+legitimate  law  enforcement  agency
+
+00:16:22.329 --> 00:16:24.650
+or  legitimate  judge's  signature
+or  something  like  that.
+
+00:16:24.650 --> 00:16:29.349
+If  there  is  no  database,  no  way  to
+verify  it,  how  can  we  validate  signatures?
+
+00:16:29.349 --> 00:16:36.289
+If  there  is  no  database  and  how  to
+do  this.  And  also  a  contested  issue  is
+
+00:16:36.289 --> 00:16:42.009
+how  do  we  protect  response  data?
+Some  countries,  especially  from  Africa,
+
+00:16:42.369 --> 00:16:45.730
+feel  that  it  should  be  sent  as
+is,  it's  not  encrypted,  nothing.
+
+00:16:46.630 --> 00:16:51.869
+And  obviously  this  is  prohibited  by
+GDPR  for  European  service  providers.
+
+00:16:51.869 --> 00:16:56.869
+We  just  can't  send  data  unencrypted,
+which  is  pertaining  to  private  individuals.
+
+00:16:58.769 --> 00:17:02.130
+Upcoming,  just  for  completeness,
+is  UN  Cybercrime  Convention,
+
+00:17:02.170 --> 00:17:07.269
+which  was  basically  brought  up  because
+Russia,  China,  Iran  and  these  countries
+
+00:17:07.269 --> 00:17:09.230
+were  not  allowed  to
+join  Budapest  Convention
+
+00:17:09.230 --> 00:17:16.690
+because  their  systems  are  deemed  to  be
+incompatible  with  the  fundamental  ideas
+
+00:17:16.690 --> 00:17:21.609
+and  human  rights  protections  of  Budapest
+Convention.  So  let's  see  where  that  goes.
+
+00:17:22.150 --> 00:17:26.289
+I  haven't  seen  anything  on  the  implementation
+of  the  service  providers  so  far.
+
+00:17:27.730 --> 00:17:35.970
+Unfortunately,  in  2024,  we  lost  a  significant
+battle  with  the  ECJ  HADOPI  ruling,
+
+00:17:36.250 --> 00:17:44.329
+which  is  a  big  problem  because  what  the
+ECJ  said  is  that  they  basically  separated
+
+00:17:45.309 --> 00:17:54.789
+IP  address  storage  from  service
+storage.  And  that  initiated  a  new  push
+
+00:17:54.789 --> 00:17:56.329
+for  data  retention  throughout  Europe.
+
+00:17:56.750 --> 00:18:01.890
+A  lot  of  countries  and  legislators  now
+thought,  oh,  there  is  a  way  we  can  do  this.
+
+00:18:01.950 --> 00:18:04.029
+We  can  actually  have  IP  address  retention
+
+00:18:06.930 --> 00:18:09.410
+and  we  can  use  it  for
+all  sorts  of  crimes,
+
+00:18:09.430 --> 00:18:15.109
+not  just  for  serious  crime  on  national
+security.  And  that  was  supported,
+
+00:18:15.170 --> 00:18:19.609
+unfortunately  the  whole  idea  was  supported
+by  von der Leyen's   political  guidance
+
+00:18:19.609 --> 00:18:23.309
+which  basically  asked  for,  oh,
+yes,  we  need  data  retention,
+
+00:18:23.569 --> 00:18:27.049
+but  we  will  also  safeguard  fundamental
+rights  however  this  is  going  to  happen.
+
+00:18:27.509 --> 00:18:30.650
+And  there  was  a  call  for  evidence
+in  a  public  consultation  in  2025.
+
+00:18:31.109 --> 00:18:35.890
+The  principal  changes  in  court  position
+was  this  clear  split  of  data  retention
+
+00:18:35.890 --> 00:18:40.650
+from  the  service  users'  retention
+and  that  they  explicitly  said
+
+00:18:40.650 --> 00:18:43.009
+that  the  IP  address  retention  alone
+
+00:18:43.009 --> 00:18:49.849
+is  no  longer  considered  a  serious  infringement,
+which,  well,  we'll  see  about  that.
+
+00:18:50.029 --> 00:18:53.170
+But  the  limitations  are  basically,
+I'm  not  going  to  recite  this,
+
+00:18:53.309 --> 00:18:56.289
+is  basically  everything  needs
+to  be  separately  stored.
+
+00:18:56.829 --> 00:19:01.630
+Service  data  cannot  be  overlaid
+with  IP  retained  address  data,
+
+00:19:01.690 --> 00:19:05.410
+at  least  not  by  the  service  provider,
+and  that's  good  enough,  more  or  less.
+
+00:19:06.630 --> 00:19:12.930
+So  what  does  IP  data  retention  in  that
+context  entail?  It's  basically  nothing  new,
+
+00:19:13.029 --> 00:19:17.009
+and  most  importantly,  it's  not  a
+reduced  scope  for  IT  data  retention.
+
+00:19:19.289 --> 00:19:23.569
+It  was  always  the  case  that  access
+providers  needed  to  store  IP  addresses.
+
+00:19:23.910 --> 00:19:28.490
+That  hasn't  changed.  With  the  timestamp
+and  when  was  that  IP  address  assigned
+
+00:19:28.490 --> 00:19:33.049
+and  how  long  was  it  used  and  so  on,  no
+changes  there.  Increased  amount  of  data,
+
+00:19:33.230 --> 00:19:39.509
+even  increased  amount  of  data  is  now
+required  with  ports  and  probably  IMSIs
+
+00:19:39.509 --> 00:19:43.789
+and  things  like  that  in  order  to  be
+sure  that  with  the  data  set  given,
+
+00:19:43.930 --> 00:19:54.650
+you  can  actually  identify  the  user.  So,
+right.  No  flow  data  is  to  be  stored,
+
+00:19:54.670 --> 00:19:58.130
+so  you  can't  really  build  a  profile
+on  this  storage.  That  is  true.
+
+00:20:00.329 --> 00:20:05.890
+But  it  is  still  more  data  than
+was  supposed  to  be  stored  before.
+
+00:20:06.089 --> 00:20:10.710
+The  time  frame  has  become  longer.
+I'll  talk  about  time  frames  in  a  bit.
+
+00:20:11.890 --> 00:20:17.390
+So  there  is  no  reduction  in  anything.  So
+basically,  IP  data  retention  has  stayed
+
+00:20:17.390 --> 00:20:20.769
+as  it  was  from  2004
+onwards.  Always  the  same.
+
+00:20:23.130 --> 00:20:25.809
+Other  than  for  the  service  provider
+side,  we  need  to  store  it  separately.
+
+00:20:26.009 --> 00:20:28.769
+It  needs  to  be  a  safe  system.  It
+needs  to  even  support  safe  deletion,
+
+00:20:29.049 --> 00:20:35.369
+whatever  that  means.  And  it's  now  also
+usable  for  all  sorts  of  criminal  offenses,
+
+00:20:35.930 --> 00:20:40.210
+which  is  a  huge  problem  because  all
+sorts  of  criminal  offenses  can  be  anything
+
+00:20:40.210 --> 00:20:45.849
+up  until,  and  that's  obviously  the  French
+position,  intellectual  property  rights.
+
+00:20:46.269 --> 00:20:49.890
+So  something  you  would  definitely
+not  consider,  at  least  most  people,
+
+00:20:49.890 --> 00:20:53.890
+would  not  consider  it  a  serious  crime,
+but  that  is  obviously  up  for  discussion
+
+00:20:53.890 --> 00:21:01.230
+on  where  you  are.  Then  there  was  the
+2025  consultation  by  the  commission.
+
+00:21:02.430 --> 00:21:12.029
+And  also  there  was  a  round  of  questions
+sent  by  the  presidency  to  the  countries.
+
+00:21:12.470 --> 00:21:17.250
+So  the  commission  asked,  first
+for  evidence,  basically  saying,
+
+00:21:17.309 --> 00:21:20.650
+oh,  what  can  be  done  with
+retained  data  and  how  does  it  work
+
+00:21:20.650 --> 00:21:22.950
+and  what  are  the  time  frames
+for  what  happens  there?
+
+00:21:23.269 --> 00:21:27.370
+And  then  there  was  a  public
+consultation  which  went  until  September.
+
+00:21:27.670 --> 00:21:32.289
+So  basically  anyone  could,  and  there  were
+thousands  of  submissions  by  individuals
+
+00:21:32.289 --> 00:21:36.650
+and  privacy  rights  organizations  and  so  on,
+
+00:21:36.750 --> 00:21:43.450
+which  I  hate  to  say  are  mostly  dismissed.
+They're  not  seriously  looking  at  it.
+
+00:21:44.690 --> 00:21:48.750
+More  interestingly,  on  November  27th,
+the  presidency  offered  an  insight
+
+00:21:48.750 --> 00:21:50.070
+in  what  the  member  states  submitted.
+
+00:21:50.309 --> 00:21:54.350
+So  the  15  member  states  who  actually
+submitted  something,  they  basically  said,
+
+00:21:54.410 --> 00:21:56.049
+no,  no,  we  need  a  minimum  of  six  months
+
+00:21:56.049 --> 00:22:00.070
+IP  data  retention  extendable
+by  national  laws.  Otherwise,
+
+00:22:00.910 --> 00:22:02.930
+they  wouldn't  be  able  to  compromise  on  it
+
+00:22:02.930 --> 00:22:05.490
+because  some  countries  have  no
+retention,  some  have  six  months,
+
+00:22:05.570 --> 00:22:11.350
+12  months,  up  to  six  years.  So  how  do
+you  compromise?  Oh,  just  allow  that  more
+
+00:22:11.350 --> 00:22:16.930
+is  permissible  as  well.  They  want  access
+for  all  sorts  of  criminal  offenses.
+
+00:22:17.430 --> 00:22:24.190
+No  news  here.  And  that's  the  biggie
+here.  Mandatory  service  level  retention
+
+00:22:24.190 --> 00:22:30.210
+for  all  telecommunication  OTT
+services,  but  also  for  DNS,  for  VPN,
+
+00:22:30.769 --> 00:22:37.610
+for  cloud  services,  file  storage,  financial
+services,  online  shops,  gaming,  hotel,
+
+00:22:37.769 --> 00:22:41.509
+taxi,  food  deliveries,  and  so  on.
+So  everyone.  Everyone  who's  offering
+
+00:22:41.509 --> 00:22:46.430
+electronic  services  would  ideally  store
+service  data  for  six  months  plus.
+
+00:22:48.670 --> 00:22:52.750
+So  my  personal  assessment  of  the
+country's  wish  list,  and  I  call  it
+
+00:22:52.750 --> 00:22:59.029
+the  wet  dream  list,  of  course,
+yeah,  but  it's,  there  was  never  any,
+
+00:22:59.289 --> 00:23:04.630
+that  more  than  four  weeks  of  data
+retention  does  anything  meaningful
+
+00:23:04.630 --> 00:23:10.570
+for  actually  more  cases  being
+solved  that  was  never  demonstrated.
+
+00:23:10.850 --> 00:23:13.830
+There's  no  studies  on  this.
+There's  even  the  data  released
+
+00:23:13.830 --> 00:23:16.470
+by  law  enforcement  themselves.
+The  statistics  tell  you
+
+00:23:16.470 --> 00:23:19.049
+there  is  no  meaningful
+increase  after  four  weeks,
+
+00:23:19.070 --> 00:23:22.630
+and  most  of  the  processes  have
+streamlined  in  a  way  that  this  works.
+
+00:23:23.230 --> 00:23:27.789
+There  are,  however,  a  number,
+a  handful  of  high -profile  cases
+
+00:23:27.789 --> 00:23:31.509
+where  in  international,  through
+international  corporations,  some  crime  rings
+
+00:23:31.509 --> 00:23:35.210
+are  being  fought  and  so  on,  and
+there,  it  actually  takes  forever
+
+00:23:35.210 --> 00:23:40.630
+to  set  up  these  proceedings,  and  so  they
+might  need  data  for  longer  than  that.
+
+00:23:41.289 --> 00:23:44.630
+But  for  general  retention,  you
+always  argue  about  the  mass,
+
+00:23:44.750 --> 00:23:50.110
+the  high  amount  of  cases,  and  not
+about  single  and  individual  cases.
+
+00:23:50.110 --> 00:23:55.370
+You'll  always  find  a  case  where
+more  time  would  solve  a  single  case,
+
+00:23:55.549 --> 00:24:00.370
+even  after  years.  It  could  happen
+all  the  time.  But  that  is  no  grounds
+
+00:24:00.370 --> 00:24:05.190
+for  data  retention.  And  obviously,  the,
+
+00:24:06.350 --> 00:24:08.590
+and  that's  what  law
+enforcement  has  in  mind,  right?
+
+00:24:08.670 --> 00:24:12.330
+The  envisioned  combination  of  usage
+data  from  all  these  sorts  of  services
+
+00:24:12.330 --> 00:24:20.210
+up  to  your  food  service,  whatever,
+obviously  fails  this  clear,
+
+00:24:24.130 --> 00:24:29.130
+what  the  ECJ  basically  said  is
+that  still  from  the  data,  yes,  yes,
+
+00:24:29.190 --> 00:24:33.930
+IP  data  can  be  stored,  but  again,
+no  profile  of  an  individual  should,
+
+00:24:34.309 --> 00:24:38.170
+you  couldn't  do  a  profile  of  an
+individual  from  the  service  data
+
+00:24:38.170 --> 00:24:43.150
+stored  at  some  other  location.  And  this
+clearly  fails  this  test.  If  you  use
+
+00:24:43.150 --> 00:24:48.330
+all  the  service  data,  and  then  you
+can  actually  identify  who's  behind  that
+
+00:24:48.330 --> 00:24:52.870
+through  IP  address  retention,  you
+still  have  mass  surveillance.  You  can,
+
+00:24:52.870 --> 00:24:58.769
+you  can  completely,  look,  you  have
+the  glass  citizen,  right?  You  can  look
+
+00:24:58.769 --> 00:25:01.590
+through  everything.  And,
+
+00:25:03.730 --> 00:25:06.690
+I  mean,  this  will  be  an  uphill
+battle  for  civil  society,  right?
+
+00:25:06.830 --> 00:25:13.850
+So  to  demonstrate  in  front  of  the  courts  that
+several  individual  legal  provisions  now  lead
+
+00:25:13.850 --> 00:25:16.470
+to  mass  surveillance  is  kind
+of  like  what  we  had  in
+
+00:25:16.470 --> 00:25:19.430
+this  Überwachungsgesamtrechnung
+discussion  in  Germany.
+
+00:25:19.590 --> 00:25:26.370
+It  will  be  so  difficult  to  show  that
+through  these  individual  atomized  measures,
+
+00:25:26.590 --> 00:25:29.470
+so  what  law  enforcement,  or  what  the
+states  are  doing  right  now  is  more  or  less
+
+00:25:29.470 --> 00:25:35.110
+atomizing  these  individual  provisions
+and  then  trying  to  overlay  it  through
+
+00:25:35.110 --> 00:25:42.029
+automated  access  even  internationally.
+So,  yes,  you'll  have,  law  enforcement
+
+00:25:42.029 --> 00:25:46.230
+will  have  all  the  access  they  want,
+but  nationally  on  the  individual  cases,
+
+00:25:46.230 --> 00:25:52.410
+they  can  basically  claim  the  individual
+measures  are  non -invasive  or  at  least
+
+00:25:52.410 --> 00:25:58.529
+not  as  invasive  so  that  they're
+not  permissible.  Which  leads  us
+
+00:25:58.529 --> 00:26:03.090
+to  the  reintroduction  of  data  retention
+in  Germany.  We  have  the  third  iteration
+
+00:26:03.090 --> 00:26:11.390
+now  up.  The  service  providers  were  sent
+the  draft  law  on  the  22nd  of  December
+
+00:26:11.390 --> 00:26:19.650
+and  we  have  for  consultation  until  the
+31st  of  January.  And  it  only  calls  for  IP
+
+00:26:19.650 --> 00:26:26.130
+address  assignment  retention.  No
+service  retention.  No  general  service.
+
+00:26:26.210 --> 00:26:30.210
+Not  even  for  telephony.  There's  no
+service  retention  in  this  anymore.
+
+00:26:31.150 --> 00:26:37.610
+But  you  need  to  store  ports,  location,
+IMSI,  MAC,  and  so  on.  But  there  is
+
+00:26:37.610 --> 00:26:43.210
+something  in  there  which  is  interesting,
+which  is  supposedly  only  a  transposition
+
+00:26:43.210 --> 00:26:47.610
+of  what  is  called  an  epoch  PR.  This  comes
+from  E-Evidence  and  it's  a  preservation
+
+00:26:47.610 --> 00:26:53.529
+order.  So  if  law  enforcement  cannot  produce
+a  proper  release  order  at  any  given
+
+00:26:53.529 --> 00:26:57.509
+point  in  time,  they  can  ask  for
+preservation  of  data.  Under E -Evidence,
+
+00:26:57.710 --> 00:27:05.650
+this  is  only  data  up  until  this  point  in
+time.  Not  forward -looking.  What  we  had,
+
+00:27:05.809 --> 00:27:10.529
+the  discussion  we  had  in  Germany  for
+quick  freeze,  at  least  the  latest  version
+
+00:27:10.529 --> 00:27:14.570
+of  this,  was  also  forward -looking.  It
+didn't  just  freeze  data,  it  was  also
+
+00:27:14.570 --> 00:27:19.970
+storing  data  for  the  future.  What  they
+did  now  is  under  the  umbrella  of EPOC- PR,
+
+00:27:20.870 --> 00:27:24.970
+we're  basically  saying,  oh,  the  German
+version,  we  can  do  it  forward -looking
+
+00:27:24.970 --> 00:27:28.870
+as  well.  And  forward -looking  up  until
+now  always  required  a  judge's  signature
+
+00:27:28.870 --> 00:27:32.549
+because  that's  supposed  to  be  a  surveillance
+measure.  Law  enforcement  can  go  to
+
+00:27:32.549 --> 00:27:36.690
+the  judge,  ask  for  it  before  they  issue
+the  request.  And  they  can  basically
+
+00:27:36.690 --> 00:27:42.570
+go  to  all  service  providers  now  and
+ask  for  it  and  they  don't  even  need  to
+
+00:27:42.570 --> 00:27:46.130
+demonstrate  probable  cause.  They  can  basically
+go  to  the  service  provider  and  say,
+
+00:27:46.210 --> 00:27:52.670
+oh,  there's  a  risk  here,  store  it.  Do  it
+for  any  time,  three  months,  six  months,
+
+00:27:52.750 --> 00:27:59.910
+it's  not  very  clear  right  now.  So,  moving
+to  the  more  interesting  parts  for  this
+
+00:27:59.910 --> 00:28:06.730
+audience  maybe,  the  whole  procedures  are
+also  an  invite  to  side -channel  attacks.
+
+00:28:07.690 --> 00:28:12.250
+So,  under  E-Evidence,  we  already  identified
+some  problems.  So,  any  compromised
+
+00:28:12.250 --> 00:28:16.090
+law  enforcement  account  can  request  all
+subscriber  data  from  any  service  provider
+
+00:28:16.090 --> 00:28:22.150
+within  the  EU.  It  doesn't  matter  how  it
+was  compromised.  If  it's  a  compromised
+
+00:28:22.150 --> 00:28:27.650
+judge  or  court  account,  it  can  even
+request  content  data,  which  means  also  cloud
+
+00:28:27.650 --> 00:28:33.950
+data.  So,  the  whole  cloud  storage
+can  request  including  also  full  social
+
+00:28:33.950 --> 00:28:38.730
+media  accounts,  the  complete  streams,
+emails,  cloud,  file  storage,  and  so  on.
+
+00:28:39.029 --> 00:28:44.410
+Everything.  What  does  compromise
+mean?  It  could  be  hacked,  it  could
+
+00:28:44.410 --> 00:28:50.970
+be  blackmailed,  and  it  can  be  shockingly
+cheap  to  even  bribe  a  judge  in  certain
+
+00:28:50.970 --> 00:28:54.430
+countries.  I  mean,  this  is  in  any  country
+in  the  EU,  right?  It  doesn't  matter  in
+
+00:28:54.430 --> 00:28:59.450
+which  country  we're  talking  about.  In
+some  countries,  I  was  told  by  experienced
+
+00:28:59.450 --> 00:29:03.670
+individuals  that  it  can  be  done  even  for
+single  digit,  thousands  of  euros  figures.
+
+00:29:03.670 --> 00:29:08.490
+So,  if  you  can  get  the  cloud  storage
+of  your  biggest  competitor  or  of  your
+
+00:29:08.490 --> 00:29:14.830
+whatever,  not  so  intimate  friend  for
+a  couple  of  thousand  euros,  bargain.
+
+00:29:15.190 --> 00:29:21.950
+It's  a  lot.  So,  this  is  going  to
+happen,  definitely.  And  the  EU  has  even
+
+00:29:21.950 --> 00:29:27.150
+admitted  to  that  already  because  they
+basically  said  there  are  significant
+
+00:29:27.150 --> 00:29:31.350
+problems  in  the  war  on  drugs  because
+of  all  the  money  which  is  available
+
+00:29:31.350 --> 00:29:36.630
+to  organize  crime.  They're  just  bribing
+their  way  through  the  police  force.  So,
+
+00:29:36.710 --> 00:29:43.309
+it's  happening  anyway  already.  Also,
+the  system  stretches  to  27  countries.
+
+00:29:43.549 --> 00:29:48.930
+It's  about  10 ,000  plus  law  enforcement
+agencies  throughout  Europe.  It's  400 ,000
+
+00:29:48.930 --> 00:29:56.350
+service  providers,  diverse  software
+implementations  and  the  service  provider  said,
+
+00:29:56.450 --> 00:30:01.970
+can  we  do  this  in  a  zero -trust  environment
+so  that  nobody  trusts  each  other  in
+
+00:30:01.970 --> 00:30:06.549
+this?  We  were  told,  no,  it's  not  going
+to  happen.  There's  also  no  IDS  system,
+
+00:30:07.309 --> 00:30:13.450
+so  you  won't  see  if  there's  abuse
+going  on.  But  they  don't  need  any  of
+
+00:30:13.450 --> 00:30:17.370
+this  because  the  system  is  secure  by
+design.  No,  by  definition,  it's  even  worse.
+
+00:30:17.490 --> 00:30:22.630
+It's  not  by  design.  Design  I  could  live
+with.  But  it's  secure  by  definition.  It  is
+
+00:30:23.289 --> 00:30:29.970
+demonstratedly  unsecure  and  hacks  will
+happen  because  the  system  which  extends  to
+
+00:30:29.970 --> 00:30:35.370
+thousands  of  locations,  how  can  you  secure
+that?  You  can't.  There's  always  ways  to
+
+00:30:35.370 --> 00:30:43.529
+even  be  part  of  the  system,  maybe
+just  access  the  communication  lines,
+
+00:30:43.710 --> 00:30:47.070
+maybe  compromise  the  systems.  And  these
+systems,  because  of  the  web  interfaces,
+
+00:30:47.309 --> 00:30:51.250
+are  actually  open  to  the  internet.
+They're  not  separated  from  the  internet.
+
+00:30:51.490 --> 00:30:56.509
+The  APIs  and  the  web  interfaces  are  part
+of  the  internet.  So  let's  see  how  that
+
+00:30:56.509 --> 00:31:03.269
+goes.  On  the  cybercrime  convention,  the
+problems  are...  Sorry,  how  much  time  do  I
+
+00:31:03.269 --> 00:31:08.870
+have?  Okay,  I'm  good.  That  even
+allows  for  fax  transmissions  where  it's
+
+00:31:08.870 --> 00:31:13.529
+completely  unclear  how  you  send  back
+the  digital  data.  You  receive  a  fax  for
+
+00:31:13.529 --> 00:31:21.210
+digital  evidence  and  then  what?  And  there's
+no  way  to  verify  that  the  requesting
+
+00:31:21.210 --> 00:31:27.029
+entity  is  actually  a  legitimate  law
+enforcement  agency,  court,  or  whatever.
+
+00:31:27.410 --> 00:31:32.029
+No  provisions  for  that.  It's  already  happening
+in  the  US  that  doxers  are  posing  as
+
+00:31:32.029 --> 00:31:37.269
+law  enforcement  to  gain  access  to  this
+type  of  data.  And  if  you  talk  to  Meta  and
+
+00:31:37.269 --> 00:31:40.170
+Google  and  so  on,  they  say,  oh,  it's  an
+everyday  occurrence.  We  have  that  everyday
+
+00:31:40.170 --> 00:31:45.950
+that  people  are  trying  to  impose
+actually  saying  oh,  we're  law  enforcement
+
+00:31:45.950 --> 00:31:51.710
+when  they  aren't.  So,  but  a  similar
+database  is  not  part  of  the  protocol.
+
+00:31:51.710 --> 00:31:56.610
+There  are  some  third -party  services  like
+Kodex  who  offer  this  service,  but  they
+
+00:31:56.610 --> 00:32:02.309
+only  have  very  limited,  they  have
+about  60 ,000  law  enforcement  agents  in
+
+00:32:02.309 --> 00:32:07.450
+there  which  they  know  are  legitimate  agents.
+But  what  is  that  on  a  global  scale?
+
+00:32:07.590 --> 00:32:13.570
+It's  nothing.  So  we  have  more  than
+that  in  Germany.  So  also  no  provisions
+
+00:32:13.570 --> 00:32:18.110
+for  end -to -end  encryption  and  no  requirement
+for  digital  signatures  on  any  orders.
+
+00:32:19.350 --> 00:32:28.370
+Well,  okay,  and  that's  where  we  are.  My
+main  issues  right  now  are  we  have  to
+
+00:32:28.370 --> 00:32:33.390
+learn  that  this  overlay  of  service
+provision  storage,  IP  address  storage,
+
+00:32:33.470 --> 00:32:39.309
+and  access  to  all  these  data  stored  in
+other  jurisdictions  which  have  way  longer
+
+00:32:39.309 --> 00:32:45.970
+storage  periods  is  the  real  problem.  So
+why  do  we  discuss  data  retention  for
+
+00:32:45.970 --> 00:32:54.490
+three  months  in  Germany  if  the  service
+provisions  in  Ireland  is  a  year?  But  law
+
+00:32:54.490 --> 00:33:01.150
+enforcement  can  just  access  the  data
+stored  there  and  when  you  ask  for  it
+
+00:33:01.150 --> 00:33:06.070
+you'll  have  to  get  back  anything  which  is
+stored  with  the  service  provider.  So  the
+
+00:33:06.070 --> 00:33:11.490
+service  provider  doesn't  observe  what
+is  legal  in  the  requesting  country.
+
+00:33:13.090 --> 00:33:18.070
+in  theory  law  enforcement  would  have  to
+observe  that,  basically  say,  oh,  we  can't
+
+00:33:18.070 --> 00:33:21.190
+request  anything  over  three  months,
+but  they're  not  going  to  do  that.
+
+00:33:22.430 --> 00:33:26.029
+They  never  did  and  they
+never  will.  So,  questions?
+
+00:33:29.430 --> 00:33:36.900
+Thank  you  very  much.  That  was
+Landefeld.  Klaus,  by  the  way,
+
+00:33:37.120 --> 00:33:41.360
+we  had  a  quick  look  through  media .ccc
+.de.  Do  you  know  that  this  year  is  your
+
+00:33:41.360 --> 00:33:42.799
+20th  anniversary  at  Congress?
+
+00:33:43.340 --> 00:33:45.880
+No,  I  didn't.  Okay,  yeah,  thank  you.
+
+00:33:46.920 --> 00:33:53.789
+20.  If  you  have  questions,  please
+line  up  on  the  microphones.
+
+00:33:55.690 --> 00:33:58.590
+I  think  there  is  already  a
+question  on  number  six.  Please.
+
+00:33:59.710 --> 00:34:01.809
+audience: Hi,  so  thank  you
+very  much  for  the  talk.
+
+00:34:02.009 --> 00:34:04.650
+I  was  just  wondering  what's  the  motivation?
+
+00:34:05.049 --> 00:34:10.210
+Like,  this  is  a  theme  that's
+recurring  since  I  can  remember.
+
+00:34:10.549 --> 00:34:17.750
+Like,  what  is  the  lawmakers  end  goal,
+the  final  plan,  the  great  solution?
+
+00:34:18.289 --> 00:34:22.750
+What  problem  is  this  the  fix
+for?  I  just  don't  understand.
+
+00:34:23.630 --> 00:34:25.769
+Klaus: Well,  that's  a  very  good  question.
+
+00:34:26.029 --> 00:34:31.090
+And  it  has  a  lot  to  do  with
+how  much  crime  can  be  solved.
+
+00:34:32.090 --> 00:34:38.710
+And  I  always  use  that  example
+where  from  November  2023
+
+00:34:39.590 --> 00:34:44.049
+through  NECMEC,  NECMEC  is  this  CSAM
+reporting  system  from  the  US,  right?
+
+00:34:44.190 --> 00:34:49.329
+So,  where  basically  content  is  being
+reported.  We  receive  ports  as  well.
+
+00:34:50.329 --> 00:34:54.210
+Before  that,  we  only  received  IP
+addresses  as  service  providers,  right?
+
+00:34:54.349 --> 00:34:58.389
+So,  when  you  only  receive  IP
+addresses  because  of  CarrierNet,
+
+00:34:58.389 --> 00:35:02.849
+you  can  obviously  not  tell
+them  who  used  that  IP  address,
+
+00:35:02.989 --> 00:35:05.329
+even  if  you  received  the
+request  within  24  hours.
+
+00:35:08.969 --> 00:35:11.889
+so  we  had  to  hand  back
+80 %  of  the  requests.
+
+00:35:12.809 --> 00:35:16.289
+So,  after  November,  so
+basically  '24  and ' 25  will
+
+00:35:16.289 --> 00:35:19.509
+receive  IP  addresses  and
+ports  and  very  quickly.
+
+00:35:20.110 --> 00:35:25.210
+So,  you  can  actually  tell
+them  in  75,  80,  sometimes  even
+
+00:35:25.210 --> 00:35:28.429
+higher percent of  times  who
+is  behind  that  IP  address.
+
+00:35:28.750 --> 00:35:32.309
+So,  everything  they  ask
+for  and  they  use  the  old
+
+00:35:32.309 --> 00:35:35.809
+statistics  is  completely
+besides  the  point  and
+
+00:35:35.809 --> 00:35:42.549
+with E -Evidence  and that  number  will  increase
+so  you'll  actually  be  able  to  solve  90 %  plus
+
+00:35:42.549 --> 00:35:47.269
+of  crime  at  least  due  to
+the  IP  address  retention.
+
+00:35:48.090 --> 00:35:52.929
+The  question  really  is  what  is  the
+end  goal?  You'll  never  reach  100%.
+
+00:35:52.929 --> 00:35:57.869
+So,  at  some  point  we  need  to  set  some
+solvage  ratio  where  we  basically  say,
+
+00:35:57.929 --> 00:35:59.849
+okay,  if  we  reach  90%,  that's  okay
+
+00:35:59.849 --> 00:36:04.049
+because  that's  better  in
+most  other  phenomenon  areas.
+
+00:36:05.029 --> 00:36:06.670
+I  don't  know  if  that  answers  your  question
+
+00:36:06.670 --> 00:36:09.590
+but  the  idea  obviously  right  now
+is  they're  working  on  statistics
+
+00:36:09.590 --> 00:36:13.869
+where  they  claim  we  can  only  serve  30 %
+to  30 %  of  crime.  That  is  not  good  enough.
+
+00:36:14.009 --> 00:36:15.909
+We  need  to  reach  at  least  90%.
+
+00:36:17.670 --> 00:36:19.989
+audience: But  do  you
+think  those  are  doctored?
+
+00:36:21.230 --> 00:36:24.829
+No,  it's  not  doctored.  It's  just
+wrong  time  frames  they're  looking  at.
+
+00:36:25.049 --> 00:36:27.529
+Technically  we  moved  along
+a  lot  further  and  they're
+
+00:36:27.529 --> 00:36:30.710
+just  using  outdated  statistics
+to  justify  new  laws.
+
+00:36:32.150 --> 00:36:33.969
+Angel: Okay,  then  microphone  one  please.
+
+00:36:35.369 --> 00:36:36.429
+audience: Yes,  thanks.
+
+00:36:37.789 --> 00:36:43.549
+Which  of  these  regulations  or  directives
+that  you  have  been  talking  about
+
+00:36:43.549 --> 00:36:48.369
+are  still  up  for  debate
+for  lack  of  better  word
+
+00:36:48.369 --> 00:36:53.529
+or  which  ones  have  already  been
+decided  and  will  be  enforced?
+
+00:36:53.529 --> 00:37:00.090
+Klaus: Yeah, so, the  German  data  retention
+is  obviously  still  up  for  debate.
+
+00:37:00.269 --> 00:37:01.889
+It's  under  consultation  right  now.
+
+00:37:02.710 --> 00:37:07.489
+What  the  commission  and  the
+council  did  this  year  will
+
+00:37:07.489 --> 00:37:11.590
+only  lead  to  a  new  legal
+proceeding.  It's  not  there  yet.
+
+00:37:11.710 --> 00:37:16.989
+It's  supposed  to  be  released  in  January.
+So  a  lot  of  this  is  new,  right?
+
+00:37:17.250 --> 00:37:20.610
+E-Evidence  is  there.  This  is  already
+under  implementation.  It  will  happen.
+
+00:37:21.210 --> 00:37:25.509
+Budapest  Convention  second  protocol  is
+already  there  and  it  will  be  implemented.
+
+00:37:25.509 --> 00:37:28.969
+There's  no  room  for  debate
+on  this  other  than  some
+
+00:37:28.969 --> 00:37:30.989
+technical  details  on  how
+it  will  actually  be  done.
+
+00:37:32.369 --> 00:37:37.070
+Data  retention  in  a  lot  of  national
+jurisdictions  is  there  as  I  said
+
+00:37:37.070 --> 00:37:40.690
+in  20  plus  and  it's  only
+increasing  like  the  one  in  Germany.
+
+00:37:40.909 --> 00:37:42.570
+So  it's  only  a  matter  of  time.
+
+00:37:42.710 --> 00:37:47.570
+I  believe  by  at  least
+early ' 27  all  jurisdictions
+
+00:37:47.570 --> 00:37:51.409
+will  have  some  form  of
+data  retention  reintroduced.
+
+00:37:51.409 --> 00:37:55.869
+That's  my  personal  belief.  So
+there's  a  lot  of  stuff  going  on.
+
+00:37:57.789 --> 00:37:58.469
+audience: Thanks.
+
+00:38:00.009 --> 00:38:01.549
+Angel: Microphone  number  four  please.
+
+00:38:02.049 --> 00:38:03.849
+audience: Hi.  Thanks  for  the  talk.
+
+00:38:04.329 --> 00:38:08.289
+If  I  understand  that  correctly
+there  is  no  database  to  show
+
+00:38:08.289 --> 00:38:12.429
+who  has  legal  lawful  authority
+to  ask  for  data  requests.
+
+00:38:13.450 --> 00:38:18.950
+So  would  it  be  technically  possible
+to  use  that  as  an  example  and
+
+00:38:18.950 --> 00:38:24.690
+having  police  station  A  spying  on  police
+station  B  to  show  why  this  is  a  terrible  idea?
+
+00:38:25.349 --> 00:38:27.550
+Klaus: That  depends  a  bit  on
+the  measure  we're  talking  about.
+
+00:38:27.690 --> 00:38:34.389
+Under  E-E vidence  that  is  not  possible
+because  the  database  actually  exists
+
+00:38:34.389 --> 00:38:36.070
+and  is  maintained  by  the  commission.
+
+00:38:36.829 --> 00:38:39.789
+Under  the  Budapest C onvention
+this  will  totally  be  possible.
+
+00:38:40.269 --> 00:38:45.110
+But  what  we're  talking  about  right
+here  is...  just  consider  a  case
+
+00:38:45.110 --> 00:38:49.050
+where  under  the  proposed  German  law
+law,  but  if  that  would  become  law,
+
+00:38:49.550 --> 00:38:54.190
+German  authorities  would  basically
+say,  oh,  do  data  retention,
+
+00:38:54.409 --> 00:39:00.650
+retain  something  and  we  will  give  you
+as  an EPOC- PR  style  request,  right?
+
+00:39:01.869 --> 00:39:03.950
+But  they  never  actually  do  that.
+
+00:39:03.970 --> 00:39:08.369
+But  if  some  other  country  already  requests
+the  data,  we'll  have  to  release  that  data.
+
+00:39:08.789 --> 00:39:14.210
+So  even  if  it  will  never  be  able  or
+legally  be  requested  and  released  in  Germany,
+
+00:39:14.550 --> 00:39:16.190
+other  countries  can  request  that  data.
+
+00:39:16.190 --> 00:39:19.210
+So  there  might  be  ways  through
+at  least  through  cooperation,
+
+00:39:19.510 --> 00:39:22.750
+maybe  not  spying  on  each  other,  but
+through  cooperation  of  law  enforcement
+
+00:39:22.750 --> 00:39:24.470
+and  that  happens  all  the  time
+
+00:39:24.470 --> 00:39:29.829
+if  they  build  their  international
+cyber  crime  solving  units,
+
+00:39:30.329 --> 00:39:33.429
+then  there's  actually  a
+strategic  decision  right  now,
+
+00:39:33.490 --> 00:39:37.150
+where  do  we  place  this  so  we  can  request
+most  data?  That  is  already  happening.
+
+00:39:37.610 --> 00:39:38.250
+audience: Thank  you.
+
+00:39:39.210 --> 00:39:42.329
+Thank  you  for  the  great  questions.
+Unfortunately,  time  is  up,
+
+00:39:42.389 --> 00:39:46.289
+so  where  can  the  audience  find  you
+after  the  talk  to  discuss  more  questions
+
+00:39:46.289 --> 00:39:50.629
+Klaus: absolutely  yeah  I'll
+be  maybe  right  outside  might
+
+00:39:50.629 --> 00:39:53.569
+be  the  best  place  at
+least  initially  yeah  okay

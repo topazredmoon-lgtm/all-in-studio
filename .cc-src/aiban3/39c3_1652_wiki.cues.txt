@@ -1,0 +1,402 @@
+00:00:22.030 A short break. The French translation will begin a bit later.
+00:00:27.730 So if you hear it, wait.
+00:00:37.179 Good evening. And I'm so happy to be here.
+00:00:42.340 This is the first time for me speaking in front of you at a stage.
+00:00:51.840 The age of me passively being here is over.
+00:00:58.659 And there is a part zero of this presentation and this is about
+00:01:03.179 emotion and this is going to be a kind of emotional part of me.
+00:01:08.439 All of the things I'm going to talk about, Wikipedia and
+00:01:11.920 so on, wouldn't be possible without the chaos in general.
+00:01:18.319 And people from CCC and people organizing these conferences.
+00:01:26.200 And when I say Wikipedia wouldn't exist without you, I think that this is not hyperbole.
+00:01:32.659 This is an actual statement that I truly believe in.
+00:01:37.099 To give you some context, this is me at an earlier chaos communication congress.
+00:01:42.560 The building you will see is the BCC in Berlin.
+00:01:45.859 And we were fortunate and happy to be part of this conference.
+00:01:52.439 This was one of the first meetings of Wikipedians in Germany in person.
+00:01:59.680 I mean, we knew each other from IRC and other media, but this is
+00:02:04.900 a whole new different game of interacting with people and being
+00:02:10.439 in a safe, nurturing space, having great discussions and so on.
+00:02:16.919 So thank you for making this whole thing possible and being part of Wikipedia's history.
+00:02:23.259 You in person, but also you as an ecosystem and a community of people. Thank you.
+00:02:29.319 So a couple of things about me.
+00:02:38.520 So I joined Wikipedia as an author 2003, so two years after it was founded.
+00:02:43.120 I became a co -founder of Wikimedia Germany.
+00:02:46.500 You might have seen colleagues of mine at the Open Knowledge Habitat.
+00:02:53.439 If you didn't visit them, give them a visit in the next days and say hello.
+00:03:00.879 I was also an employee there and I did a bunch of other stuff.
+00:03:05.819 Anke, you are part of this other stuff I did in between.
+00:03:13.199 And it's helpful to just mention the fact that I currently work at a tech company
+00:03:19.479 and this tech company is using AI, so take this as a sort of caution, I think.
+00:03:26.860 But the presentation is completely unrelated to the daytime work I'm doing.
+00:03:33.879 This is me in a private capacity as a Wikipedian.
+00:03:37.419 And we can talk about intersections afterwards. I'm happy to do so. So, part one.
+00:03:45.379 This is a story about AI.
+00:03:48.280 And it begins with the one phrase that Wikipedians all over the world
+00:03:55.719 have been saying whenever being asked about the quality of Wikipedia
+00:03:59.460 and saying, Wikipedia might be a good place to start research.
+00:04:03.539 It's definitely a terrible place to end research.
+00:04:05.800 And if we truly believe this statement, then there is a moral obligation
+00:04:11.219 of Wikipedians to provide resources to continue research somewhere else.
+00:04:18.259 And one of these tools is providing literature and references.
+00:04:22.699 And these references in Wikipedia are important. They are an integral part of it.
+00:04:29.220 And we love any means possible to make access to
+00:04:34.139 these materials that we reference easy and possible.
+00:04:37.620 So, if you just mention an ISBN in Media Wiki, it
+00:04:41.639 will automatically be converted into a special link.
+00:04:45.439 And the special link will take you to national libraries and to
+00:04:49.660 bookstores and to smaller libraries and to second -hand places.
+00:04:55.620 So, any place you could find this literature should be mentioned there, one way or another.
+00:05:08.480 And the ISBNs... ISBNs in general have lots of cool features.
+00:05:13.980 There is a hierarchy in there.
+00:05:16.379 So, the first character of the ISBN is going to tell you about the language.
+00:05:23.500 And there are different categories of parts that relate to the publisher.
+00:05:32.240 But the last digit is a checksum.
+00:05:35.240 There are two different formulas for calculating the ISBN 10 and ISBN 13 checksums.
+00:05:40.980 But they all boil down to basically the sum of the product of different digits.
+00:05:47.259 And there is a formula and there is a mathematical proof that it is
+00:05:53.399 impossible to switch to numbers without resulting in a mismatched checksum.
+00:06:01.279 So, if you use an ISBN, there is a good chance that you
+00:06:06.779 will be able to verify that the ISBN is indeed a valid one.
+00:06:13.459 And as part of me playing around with technology, I wrote a checksum checker.
+00:06:21.060 So, I downloaded the whole content from the German language Wikipedia.
+00:06:27.959 I wrote a small parser looking for ISBNs in various places.
+00:06:32.959 Some of them are in templates.
+00:06:34.399 Some of them are just mentioned in the article itself.
+00:06:39.360 I extracted the ISBN and then I ran the checksum
+00:06:42.939 algorithm to see if there are any mismatches.
+00:06:46.879 This is pretty straightforward. This is not rocket science by any means.
+00:06:50.759 This is just parsing, in the case of German language would be 30 gigabytes of text files.
+00:06:59.240 It's something that should have been done earlier.
+00:07:05.379 And in some cases, it might have been done already by someone else.
+00:07:07.899 But I wasn't aware of this work being done.
+00:07:10.399 And I started this work with two use cases of things I was hoping to find.
+00:07:17.399 The first one is ISBN references with mismatched ISBNs because of any kind of human mistake.
+00:07:29.019 So, the idea was to find ISBNs where people had inadvertently
+00:07:33.560 switched different numbers or where a one had turned
+00:07:39.740 into a two or a zero into a nine or something like this.
+00:07:44.399 Any kind of honest mistake.
+00:07:46.600 And the second category is a bit funny because in the 80s and 90s, many
+00:07:52.600 publishers were completely unable to understand the concept of checksums.
+00:07:55.899 So, they usually just incremented their ISBNs by one.
+00:07:59.620 So, the next volume just became plus one and so on.
+00:08:05.000 And libraries all over the world are capable of handling these situations.
+00:08:10.480 So, in most library catalogues, there is a special field for saying,
+00:08:14.060 well, this ISBN is technically wrong, but it's printed on the book.
+00:08:18.019 And if it works like an ISBN and it works, then we're just going to accept this.
+00:08:23.879 So, if you come across these, usually from the 80s, 90s, wrong
+00:08:28.759 ISBNs, they are still going to work in library catalogues and so on.
+00:08:32.279 Sometimes you will get an angry remark saying, this
+00:08:35.240 is a wrong ISBN, but it still works as an ISBN.
+00:08:38.279 And Wikipedia has a template, in the German language, it's called ISBN falsch,
+00:08:44.740 simply saying, yes, technically the ISBN is wrong, but the link is going to work
+00:08:52.639 and nothing is happening preventing you from accessing the content
+00:08:57.639 or finding the library in question that has the
+00:09:01.059 book or any kind of physical or non -corporal medium
+00:09:06.940 that contains the information you're looking for.
+00:09:11.190 What I did find were three categories of errors.
+00:09:15.389 The first one, I found a couple of them. I corrected them.
+00:09:19.289 I found the second category of errors.
+00:09:23.309 And I could simply add the template to indicate, yes, it's technically a wrong ISBN,
+00:09:28.509 but it's still going to work like one because everybody else is aware of the error.
+00:09:33.029 And then I found a third category that I wasn't aware of and I hadn't anticipated.
+00:09:38.830 And this gave me quite a headache.
+00:09:42.330 So I found articles in Wikipedia that contained two,
+00:09:46.889 sometimes small, literature references containing references
+00:09:52.049 that had checksum errors.
+00:09:54.350 And the book titles and the author names, they all sounded plausible, familiar,
+00:10:00.850 and sometimes they were indeed the names of authors that are published in this field.
+00:10:06.009 But I couldn't, for the life of me, couldn't find the literature in any catalogue.
+00:10:10.450 I could find similar literature, I could find things of similar titles,
+00:10:17.710 but I couldn't find the literature itself.
+00:10:20.049 It's always something that was missing or anything like this. And then it hit me.
+00:10:26.009 And you probably know how this is going to be resolved.
+00:10:32.809 These literature references were hallucinated by, in most cases, by ChatGPT.
+00:10:39.330 So people had asked ChatGPT to write Wikipedia articles,
+00:10:46.970 and in their compliance and in their training data as trained,
+00:10:54.789 the large language model simply provided both the article
+00:10:59.289 and a set of completely hallucinated literature references,
+00:11:02.509 and people had simply cut and pasted this into Wikipedia.
+00:11:11.490 ChatGPT did what it was asked to do, and people thought what they
+00:11:18.409 did was the logical next step of dumping the content into Wikipedia.
+00:11:26.409 Wikipedia is not alone in this discovery.
+00:11:31.029 So the University Library of Hagen, already in 2023, reported
+00:11:38.169 about students asking the librarians to find literature
+00:11:41.950 references that matched existing journals, existing issues,
+00:11:47.730 but the other information was simply unable to be verified.
+00:11:53.509 The International Committee of the Red Cross has issued
+00:11:59.450 a strongly worded warning on hallucinated references,
+00:12:03.350 because the next thing they encountered when telling people that the
+00:12:07.610 literature or the references they are looking for does not exist,
+00:12:11.389 is they are being accused of hiding the truth.
+00:12:17.090 So this is a much more unpleasant reaction than the ones I was aware of until then.
+00:12:27.549 In most cases, it's simply a waste of time of staff at
+00:12:33.710 libraries hunting down literature that doesn't exist.
+00:12:38.730 There's a beautiful article about the situation in 404 Media.
+00:12:44.190 I can highly recommend this.
+00:12:46.149 And I forgot to include the link, so I failed on the providing references part.
+00:12:54.919 And this is the part where this turns from a
+00:12:57.899 story about AI into a story about AI and humans.
+00:13:03.019 And I would like to remind people that this is,
+00:13:07.179 as such, not a new issue we are dealing with.
+00:13:10.659 So this is an old XKCD comic making fun or describing a
+00:13:16.980 scenario in which circular references are being created.
+00:13:22.580 Someone makes up something, puts it in Wikipedia.
+00:13:27.159 Someone else is copying the information, putting the stuff into a newspaper article.
+00:13:34.139 Someone else is saying, oh, there is a citation missing in the Wikipedia article,
+00:13:38.419 and by this time there is sufficient information online supposedly verifying the claim.
+00:13:45.679 So the circle of reference is established and it's getting stronger.
+00:13:51.940 There are hilarious examples in which the German
+00:13:56.179 president, not the current one but an older one,
+00:14:01.659 gave a Laudatio to the German national soccer team, the female soccer team,
+00:14:10.500 praising progress in gender equality and making remarks on how former
+00:14:21.200 teams were awarded dishes as a present when winning championships.
+00:14:30.000 And this was half true, some part of it was true, the other one didn't turn out to be true,
+00:14:38.139 but now it's a circular reference because people are
+00:14:40.360 referencing the German president for making this claim.
+00:14:45.100 And it's increasingly hard to disprove the non -existence
+00:14:49.519 of a fact when there is plenty of evidence to cite from.
+00:14:55.480 So the best way to stop such a circular reference
+00:15:00.600 is to prevent it from ever getting it started.
+00:15:09.600 And yes, there is a bigger issue at stake and it's
+00:15:12.639 not just the one article that is now contaminated.
+00:15:18.879 It is, I think, a good example on the shortcomings of existing large language models.
+00:15:25.639 And you might have seen articles discussing whether this
+00:15:30.539 is a systemic issue that can never be fully resolved,
+00:15:33.620 that large language models are machines designed to
+00:15:39.100 provide plausible tokens following a certain sequence.
+00:15:46.240 So reality or factuality is never an issue, it's about plausibility.
+00:15:52.240 And this is what one could describe as a kind of anti -knowledge.
+00:15:57.980 The anti -thesis to what an encyclopedia project like Wikipedia is about.
+00:16:05.960 And also there is quite a deep irony in there.
+00:16:12.139 Wikipedia has proven to be one of the most prominent source
+00:16:18.740 of training data for most of the large language models.
+00:16:23.879 So these model providers are using Wikipedia.
+00:16:27.460 They are using tons of other information too.
+00:16:29.940 But Wikipedia content is useful because it's multilingual.
+00:16:33.779 It has a rich density of information.
+00:16:37.019 There is a network of information and links between. It's multilingual.
+00:16:41.779 In so many ways there is a version history providing kind of a temporal concept.
+00:16:46.500 So the large language model providers are in some way poisoning
+00:16:56.379 their own pond from which they are drinking the water from.
+00:17:01.360 And there is, I was, I gave a similar speech in
+00:17:04.759 the conference of Wikipedia a couple of months ago.
+00:17:07.200 And I was told, as an offhand remark by someone, these
+00:17:11.359 model providers are approaching organizations for content.
+00:17:17.920 They are still in the acquisition phase of asking for more content.
+00:17:21.079 And they are asking for content that is proven to be free from synthetic information.
+00:17:27.960 So they are quite aware of the issue and they are paying a premium
+00:17:33.400 for getting content that is free from their own contaminations.
+00:17:39.400 If there is an irony in there, I may be by now too angry to see it.
+00:17:45.619 But your mileage may vary. You might still see the irony here. Back to Wikipedia.
+00:17:54.890 Is there a consensus how to deal with the content?
+00:17:57.089 And as far as I can tell, and this is something
+00:18:02.250 that is always kind of a status quo discussion.
+00:18:07.589 There seems to be a consensus building up saying that at least
+00:18:11.349 the undeclared use of large language model is frowned upon.
+00:18:17.910 And people have been banned from Wikipedia for dumping
+00:18:23.309 large language model created content into Wikipedia.
+00:18:28.470 It's a kind of vandalism that we have seen before.
+00:18:31.869 We have dealt with this because we were concerned about
+00:18:36.849 copyright issues, about people doing all kinds of things.
+00:18:40.470 But in this case, there is some sort of consensus building up.
+00:18:46.650 Other languages are falling to some degree.
+00:18:50.269 There is a new speedy deletion rule in the English
+00:18:53.049 language Wikipedia that has a slightly higher threshold.
+00:18:57.589 And saying, okay, this is about blatantly obvious content identified as LLM generated.
+00:19:06.809 I think this is a good first step in the right direction.
+00:19:11.710 But at the same time, the bar keeps getting graced by the changes
+00:19:17.009 in how the models work and the kind of content they are producing.
+00:19:23.690 So, does the policy work? Also hard to tell. Maybe to some degree it does work.
+00:19:32.730 But in general, there is too much unknown at this point because this
+00:19:39.930 scenario I described of content being identified as LLM generated
+00:19:46.930 because two or more ISBN references mismatched.
+00:19:50.569 This is a highly specific scenario.
+00:19:53.309 And most of the cases where content has been dumped into Wikipedia has other issues.
+00:20:00.609 And there are other telltale signs that help Wikipedians identify this content.
+00:20:06.950 At a conference in Potsdam a couple of months ago, I was told
+00:20:10.970 that most current large language models are completely unable to
+00:20:15.210 consistently produce the kind of MediaW iki syntax that Wikipedia uses.
+00:20:20.210 They are still falling back to Markdown language.
+00:20:23.809 Sometimes they are using the English language
+00:20:28.150 template names rather than the German template names.
+00:20:31.329 And then they sometimes translate the English template names into German.
+00:20:34.930 So, this might result in the usage of non -existent templates.
+00:20:39.190 Sometimes they add parameters into the templates that do not exist.
+00:20:43.549 So, these are things that a slightly skilled Wikipedian is able to detect.
+00:20:48.250 But there is no fixed set of small rules that
+00:20:53.410 helps people to identify LLM generated content.
+00:20:56.470 It's always kind of a one screw up and then kind
+00:20:59.569 of a backtracing the actions of certain users.
+00:21:08.250 And this is the next part is the why.
+00:21:11.970 So, the first part is the what the fuck part and the other one is the why the fuck part.
+00:21:22.170 I'm going to present four different theories on why
+00:21:26.589 people are doing this and these might not be conclusive.
+00:21:30.609 And I'm refraining from saying it has to be one
+00:21:33.670 of these four, but I'm open to new suggestions.
+00:21:36.670 The first one is the explanation stemming from the " assume good faith" rule in Wikipedia.
+00:21:44.630 Some people might simply not know what the capabilities
+00:21:48.349 and limitations of large language models are.
+00:21:50.990 And they are in some state of blissful ignorance
+00:21:56.150 thinking that they are doing something good.
+00:21:58.170 So, they might consider their dumping of content generated
+00:22:03.130 by LLMs as kind of a service to the whole community saying,
+00:22:06.549 yes, we added a new article. It looks like knowledge. What's wrong with that?
+00:22:15.170 I have yet to find a person qualifying for this kind of explanation.
+00:22:21.650 I would like to see one someday. The people I encountered
+00:22:26.150 with, the people I talked to, do not fall into this category.
+00:22:33.390 Then there is one, and this is the, so we are
+00:22:36.910 moving into darker and more frustrating territory.
+00:22:43.250 It's people being aware of their inability to contribute to Wikipedia in
+00:22:48.750 a meaningful manner and trying to compensate this by getting outside help.
+00:22:55.650 I'm trying neutral description, but it might not, I might have failed on this one.
+00:23:03.630 So, in theory, this could at least be kind of a non -evil, well
+00:23:10.470 -meaning thing of saying, okay, I'm dyslexic, I need a spell checker.
+00:23:16.609 I can't do proper research, so I need an assistant to do so.
+00:23:20.849 It might be some sort of equivalent. I'm happy to meet these people too.
+00:23:27.390 Then there is the agenda part, to which I'm happily going to refer to a
+00:23:34.049 presentation made from Asaf Bartow at the Wikimedia Conference this year,
+00:23:40.049 where he described the weaponization of LLMs, of saying, okay, let's change
+00:23:45.869 10, 100, 1000 articles through the use of one, just one motivated person,
+00:23:51.710 rewriting history, rewriting this. He had fun exploring the limitations
+00:23:59.490 of LLMs and the safeguards and LLMs saying, I'm not going to do this.
+00:24:04.509 I also had fun during his presentation jailbreaking these safeguards and
+00:24:10.250 talking large language models into collaborating with me to rewrite history.
+00:24:16.410 And there's always the fourth one, it might be something else.
+00:24:21.490 So, this is the catch -all explanation, it might be something else.
+00:24:27.430 But then again, this is an open invitation for you to add your experiences.
+00:24:35.950 In most cases where I discovered content written by
+00:24:40.730 large language models and dumped into it from users,
+00:24:43.829 I tried to contact these users, I tried to get them to confirm the usage of LLMs.
+00:24:49.809 And there was one question I asked them consistently is, please show me the prompt.
+00:24:57.529 I asked them to tell me, could you please show me the prompt that you used?
+00:25:01.630 And this is now my kind of litmus test of saying,
+00:25:05.309 if you are climbing into the ignorance part,
+00:25:10.430 saying, oh, I just used this as a tool to copy edit the work I already did,
+00:25:16.089 it shouldn't be a problem for you to give me the prompt.
+00:25:20.529 Most of the large language model providers have share functions,
+00:25:24.950 allowing you to completely share the conversation if you like.
+00:25:28.490 And the amount of excuses I got is impressive in terms of creativity.
+00:25:32.789 So, I was never logged in, the dog ate my prompt, I cancelled this, I can't find it anymore,
+00:25:46.849 oh, how dare you ask me these questions, these are sensitive information.
+00:25:53.549 This is not a proof that is made to be foolproof,
+00:26:01.789 in a sense, but this is my personal litmus test of testing whether people are sincere
+00:26:07.690 and whether their ignorance is plausible.
+00:26:12.589 And this might be the reason why I might sound slightly more frustrated than I usually are
+00:26:21.009 when it comes to technology, because I like technology and I like to play with this.
+00:26:25.210 And I'm still hoping that things are getting better through some sense of useful technology.
+00:26:34.019 So, this is part three, this is about humans.
+00:26:41.410 Remember the slide when I said I wrote the checksum checker?
+00:26:44.349 No, I didn't write it.
+00:26:48.410 I theoretically know how to write it, but I'm not good at it,
+00:26:52.390 and I'm getting easily frustrated.
+00:26:54.470 So, the checksum checker was written through the use of an AI.
+00:26:58.809 In this case, it's Claude Opus.
+00:27:03.009 I had so much fun talking to a large language model, providing me with Python
+00:27:08.829 and later with a C code to parse Wikipedia content.
+00:27:15.470 The source code that was the result of this conversation is released on GitHub.
+00:27:22.730 It is openly declared to be a result of large language model use,
+00:27:28.289 and I personally think that this is an acceptable use of large language models.
+00:27:37.269 But I'm also open to criticism, and there are plenty of avenues how to base this on.
+00:27:49.349 At this point, it's not a bold claim to say that AI might not be going away anytime soon.
+00:28:00.730 Some companies might be going away, some business models might be going away,
+00:28:04.910 but in general, the whole concept of transformer -based large language models
+00:28:10.829 is in some way, shape or form going to stay.
+00:28:15.269 And I'm slightly concerned about Wikipedia as a project,
+00:28:22.869 but also the impression that many people are simply completely unaware of the limitations,
+00:28:33.130 and the lack of responsibility of companies properly explaining these limitations.
+00:28:43.529 The ISBN checker is unlikely to stay a tool to detect this content,
+00:28:50.670 because I strongly believe that at some point the large language model
+00:28:54.869 will be able to hallucinate proper checksums,
+00:28:57.329 and even in best -case scenario we are at a 1 in 10 or a 1 in 11 chance of getting it right.
+00:29:07.829 I believe at this point the chances are already slimmer,
+00:29:11.430 because there is a pattern in this generation of numbers.
+00:29:20.029 And this is why I say this is about humans.
+00:29:24.369 The AI is never, and this is, IBM said this in the 70s or 60s,
+00:29:32.400 AI is never going to be able to assume responsibility.
+00:29:35.660 This is always the responsibility of a human.
+00:29:40.039 And the first part has to be some sort of conversation about
+00:29:44.279 who's taking responsibility for the use of tools,
+00:29:49.119 and what are the conditions in which this use is accepted by a community,
+00:29:55.000 a society, someone else.
+00:29:57.920 So the minimum requirement I was able to identify
+00:30:01.059 is the open declaration of the usage of LLM.
+00:30:03.680 And after I gave a similar talk in Nairobi,
+00:30:08.420 I was approached by researchers who are working exactly on that
+00:30:13.480 and trying to write proposals.
+00:30:16.339 And the part that makes me sleep slightly better than I should be able to
+00:30:25.200 is the fact that the feedback I got from humans
+00:30:28.420 is overwhelmingly constructive and positive.
+00:30:31.420 So the first thing engineers from Wikimedia Foundation did
+00:30:35.619 is they tried to recreate the numbers
+00:30:38.400 and check whether other languages are affected too,
+00:30:41.579 what the percentage of these issues are,
+00:30:43.619 and yes, other language editions are affected too.
+00:30:48.140 The small checksum tool I did contributed to the German language Wikipedia
+00:30:54.279 being the only Wikipedia edition had to drop in mismatches in ISBNs.
+00:31:01.839 So it is possible at a human scale to significantly influence the quality of an issue
+00:31:08.279 or the quality of Wikipedia in certain areas.
+00:31:11.259 I'm happy that other people in other language editions are helping too,
+00:31:15.220 but it's definitely not enough at this point.
+00:31:20.400 So this is the part where it becomes speculative and kind of a plea for help
+00:31:25.400 and saying this is not something I can do myself.
+00:31:28.440 This is something I can point to the issue.
+00:31:30.859 I can say, how do we communicate the issues and limitations?
+00:31:36.420 How do we, how can we look for tools that can mitigate the issue?
+00:31:43.440 Is there, aside from the technology, is there a legal, a political, a moral pathway
+00:31:48.720 to shame companies into improving their tools?
+00:31:54.579 So, for example, ChatGPT saying in a slightly light grey on dark grey colour,
+00:32:03.539 oh, the results might be inaccurate. Is this enough?
+00:32:07.819 Is the European Union going to help us in the application of the AI Act, for example?
+00:32:14.099 This is the conversation I'm taking part in, and you should too.
+00:32:18.940 And the last one is the kind of a one -size -fits -all question.
+00:32:24.440 So, is there still a place for an encyclopedia in this world?
+00:32:32.660 And this is a question I'm asking completely unrelated to other people in other countries
+00:32:41.220 releasing LLM rewrites of Wikipedia or things that have different agendas.
+00:32:57.640 So, the part I really liked is the aftermath of me pointing out the issues,
+00:33:03.480 the feedback I got, the constructive, helpful, slightly concerned criticism
+00:33:10.279 on what should be done next, how to improve this.
+00:33:18.440 My pe rsonal to -do, and this is unchanged, is I would like to integrate
+00:33:25.359 actual bibliographic databases into this check to see, okay,
+00:33:29.680 is the title matching to some degree, are offered names matching years, publisher names?
+00:33:36.220 Are there any available reliable data sources from national libraries
+00:33:39.960 that could help me find more hallucinated content that happens to have a correct ISBN
+00:33:44.900 or doesn't have an ISBN at all? And also, this is a plea from my side.
+00:33:50.799 If you are a librarian, if you want to become a librarian, join.
+00:33:57.240 I published the source code, which was, as I said,
+00:34:02.039 to a large degree LLM generated at these places.
+00:34:05.039 I'm also doing a rewrite into a more flexible tool that does a couple of other tests too.
+00:34:12.619 And I'm honestly surprised about the quality of the code that I'm receiving.
+00:34:19.300 And this might be possible because I wouldn't be able to recreate it from scratch by myself.
+00:34:26.699 I'm pretty sure that this is something that other people feel differently about.
+00:34:34.179 At this point, thank you so much for attending this talk.
+00:34:39.320 I feel obligated on wishing you a good night after the Q &A session.
+00:34:44.179 And also, don't forget the 1-2-8 rule because
+00:34:48.440 there are plenty of more interesting talks tomorrow
+00:34:51.000 and you have to be in good shape for that. Thank you so much. *applause*
+00:34:54.320 Yeah, thanks for the talk. We have time for one question there from the internet.
+00:35:18.679 So, the signal angel.
+00:35:21.440 Signal: Okay, there is a question on how can you identify AI -generated content
+00:35:26.280 when it doesn't have any obvious errors like you mentioned?
+00:35:30.119 And doesn't it have a risk to flag false positives?
+00:35:33.940 Mathias: Yeah.
+00:35:38.460 At this point, I don't feel qualified to identify,
+00:35:43.679 to positively identify LLM -generated content.
+00:35:47.260 There are some telltale signs about the use of adjectives, certain structures.
+00:35:54.880 As I said, there are syntax and template issues. This is just a suspicion.
+00:36:02.519 And there are a couple of other reasons why you have to be careful about this.
+00:36:11.860 And also, there is a general reluctance of admitting the use of LLMs for many reasons.
+00:36:20.940 At a certain point, it's up to the community to decide
+00:36:23.860 whether the suspicion al one should be reason enough
+00:36:28.179 to quarantine the content and to see what else should be done.
+00:36:38.059 But in many cases, you can work backwards and say,
+00:36:43.880 okay, I found a person publishing something that
+00:36:47.739 is clearly AI -generated for a couple of reasons,
+00:36:51.179 and then I can go backwards.
+00:36:53.000 And the community consensus in Wikipedia seems to be
+00:36:55.739 that if the person is unable to provide specific evidence
+00:37:00.780 on the starting point of when the AI use started, the cutoff date is simply November 2022.
+00:37:08.519 And we have to delete the things that have been uploaded after November 2022.
+00:37:14.519 It might sound harsh, but I don't think that Wikipedians are
+00:37:21.320 able to scale to the extent that LLM models do right now.
+00:37:26.500 Herald: And thank you again for this great talk, and I ask of you a great round of applause.

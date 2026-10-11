@@ -1,0 +1,330 @@
+[    6.0-   20.6] Welcome to my talk about children in digital spaces, keeping digital spaces open for children.
+[   20.6-   27.2] This talk's intention is raising a bit of awareness for very young people who use free
+[   27.2-   34.3] and open source software or even contribute to free and open source software.
+[   34.3-   40.2] Some of you might already have an idea how we got here.
+[   40.2-   48.8] There was this slight dramatic episode with the open source terms being changed in a way
+[   48.8-   59.1] that was saying that young people under the age of 16 years were not allowed anymore to
+[   59.1-   67.1] contribute to open source or an account, but even to download open source, open the website,
+[   67.1-   72.2] find information on domains below open source.org.
+[   72.2-   77.0] This turned out to have been sort of an accident.
+[   77.0-   83.3] There was a change to the terms of site and this rule got in there due to various reasons.
+[   83.3-   91.4] However, there is an ongoing story because something needs to be done about the rights
+[   91.4-   98.9] or the not rights of minors in open source.
+[   98.9-  108.3] Thanks to the open source team for accepting my late proposal after this episode and agreeing
+[  108.3-  116.8] that I could give a short talk to raise awareness here and clear up some legal myths.
+[  116.8-  119.2] Some notes about me.
+[  119.2-  126.3] I'm 36 years old and the chairperson and head of pedagogics at TechEds, which is a
+[  126.3-  134.9] German youth organisation, and in my day job I am a self-employed force consultant and
+[  134.9-  140.8] most of my time I spend as an open source trainer in Essen.
+[  140.8-  148.8] I'm also a Debian developer, a contributor to open SUSE, yes, I'm maintaining two packages
+[  148.8-  155.6] in factory, okay, and a gentle user, I have to admit, so much here.
+[  155.6-  162.2] All right, but the more relevant about me information, I started my journey in the Linux
+[  162.2-  165.9] world at a quite young age, at 12 years.
+[  165.9-  174.9] My computer science teacher handed me a set of CDs and we all were very excited by Warus
+[  174.9-  179.5] and the software you got for free when you had to pay and my teacher said, hey, you can
+[  179.5-  183.9] just get this, yeah, this is for you, you can just have this copy, it's legal.
+[  183.9-  187.0] And I thought, well, why is this legal?
+[  187.0-  195.9] And I was even more excited and this led to me at 15 years volunteering in administration
+[  195.9-  202.5] of the school network, getting my Linux Professional Institute certification at 15 years and then
+[  202.5-  210.7] starting to tutor younger students from 8th grade in Linux server network administration
+[  210.7-  218.2] and helping them to also get towards their certification.
+[  218.2-  226.7] I could somewhat arouse from that and as long as we want to help shape a comprehensible digital
+[  226.7-  234.9] world that is shaped by everyone together and to show you how this started and why, yeah,
+[  234.9-  241.2] my motivation while I'm standing here, this is a photo from FrostCon in I think 2014,
+[  241.2-  243.7] I'm not sure.
+[  243.7-  248.5] And these are 100 children.
+[  248.5-  255.3] Just for comparison, this is around 8 to 9% of the conference attendees in that year.
+[  255.3-  264.5] So there obviously are young people who want to get into at least the use of free software
+[  264.5-  271.5] and learn more about using computer systems than we think the average child may do with
+[  271.5-  275.3] a smartphone or whatever today.
+[  275.3-  279.0] They also contribute in other forms.
+[  279.0-  285.5] You can see them giving presentations about school software and developing school software
+[  285.5-  294.7] at the bottom left, our presentation at Big Brother Awards last year where the boy in
+[  294.7-  302.7] the orange t-shirt is eight years old at this point in time and he presented something
+[  302.7-  305.3] about digital rights in schools.
+[  305.3-  314.0] So a lot of things that very young children already do in our community world.
+[  314.0-  320.1] I asked around today because I always prepare my talks very early for some quotes from
+[  320.1-  323.4] young people what they do with open source.
+[  323.4-  327.7] I have to skip over them a bit because I think we lost some five minutes or something due
+[  327.7-  331.1] to the technical issues.
+[  331.1-  337.1] So Johannes uses free software because data isn't abused and he can learn how software
+[  337.1-  338.1] works.
+[  338.1-  349.2] Jan is also happy that he can choose what software he uses.
+[  349.2-  359.2] I will not read them all out now, but quite a few impressions that there is really quite
+[  359.2-  366.7] a not so tiny amount of young people who use free software or have started to contribute
+[  366.7-  375.9] to things like Wikipedia and other open platforms at a very young age.
+[  375.9-  384.5] This has led to them now being a somewhat pure free software user and getting into our
+[  384.5-  397.0] free and open source software and free and open platform world over the years.
+[  397.0-  403.5] So young people, these are some claims that I think are very valid.
+[  403.5-  410.0] Young persons should have the same rights in free software communities as adults have.
+[  410.0-  415.4] Of course, this is not something that is very trivial to do, but we will see to that
+[  415.4-  417.9] in a minute.
+[  417.9-  420.4] Young people are also extremely valuable for communities.
+[  420.4-  424.3] I don't think this is any news for any of you.
+[  424.3-  434.3] We need young people for our communities to grow and persons from communities are getting
+[  434.3-  435.3] older.
+[  435.3-  436.3] Yes, all of us are getting older.
+[  436.3-  441.2] At some point in time, maybe we don't do as much work as we have been doing in younger
+[  441.2-  443.2] years.
+[  443.2-  449.8] There needs to be people who fill in these gaps and like to join and be active in open
+[  449.8-  453.1] source communities.
+[  453.1-  458.6] This means, at least in my opinion, that keeping digital spaces open for young people
+[  458.6-  464.1] should actually be a top priority when making policies and when designing software communities
+[  464.1-  471.8] and other open communities.
+[  471.8-  478.1] One thing that I recognized over the years and also during the open source terms of site
+[  478.1-  486.9] change thing is that there are some myths that people believe about legal stuff.
+[  486.9-  491.7] This will not be a deep dive because there's only at most 30 minutes here for this talk,
+[  491.7-  500.2] but some things I have been facing a lot that might help to consider legal decisions
+[  500.2-  502.6] regarding miners.
+[  502.6-  508.7] First of all, the differentiation between contract laws and privacy laws.
+[  508.7-  515.7] There are terms of use, there are privacy policies, and there is legislation governing
+[  515.7-  517.1] these two documents.
+[  517.1-  522.4] I often see that things get quite mixed up.
+[  522.4-  528.9] The privacy policy suddenly says you must be 16 years old to use this service or the
+[  528.9-  532.6] terms of use start talking about privacy issues.
+[  532.6-  542.0] This is problematic in some ways, so let's clear up with that maybe the first thing.
+[  542.0-  552.3] Product laws mainly decide who is able to agree into a contract, so who can say I want
+[  552.3-  557.6] to get this service, I want to use this offer, I want to buy this thing.
+[  557.6-  561.0] Who can actually do this?
+[  561.0-  566.0] There's the concept of legal age or age of majority, which is a concept in basically
+[  566.0-  572.8] every jurisdiction around the world, which dictates starting from what age people are
+[  572.8-  579.5] legally capable of agreeing into contracts on their own.
+[  579.5-  586.1] Terms of use or terms of service or terms of site are governed by contract laws or civil
+[  586.1-  594.6] laws, and I have a question for you, considering only laws in Germany or Luxembourg, because
+[  594.6-  600.9] that's where the SUSE headquarters are located, what do you think at what age can a person
+[  600.9-  603.9] enter into contracts?
+[  603.9-  614.9] As I cannot see anything down there due to the lightning, just 0-0.
+[  614.9-  627.3] We had the full range starting from 0.
+[  627.3-  629.1] This was the correct answer.
+[  629.1-  632.9] You can go to the bar and get a free water if you want, thank you.
+[  632.9-  639.9] We had all the answers starting from 0 years up to 18 years, something in between, and
+[  639.9-  646.3] the correct answer depending on the jurisdiction.
+[  646.3-  654.0] In Germany it's 7 years, below 7 years, children cannot do anything without their legal guardians,
+[  654.0-  657.6] but after that they can enter into some contracts.
+[  657.6-  660.8] I will get to that in the next slide.
+[  660.8-  666.3] In Luxembourg there's even not a lower limit, it's an individual decision which makes it
+[  666.3-  672.0] a bit complicated, of course.
+[  672.0-  673.0] What's the catch?
+[  673.0-  675.7] That all seems very easy.
+[  675.7-  680.6] The first catch is that all of this is national law, so we have around 200 jurisdictions that
+[  680.6-  686.0] define civil laws and contract laws.
+[  686.0-  691.7] The second catch is that for a young person that has not reached the age of maturity,
+[  691.7-  697.5] which is by the way 18 in most of Europe, they only can enter into contracts that are
+[  697.5-  700.8] purely advantageous.
+[  700.8-  705.8] If they can buy something with their own money, no matter how much that money is, and they
+[  705.8-  710.8] can go to the shop and say, here's my money, give me the thing, and there is no financial
+[  710.8-  717.6] obligation or any other legal obligation apart from exchanging this offer and the money,
+[  718.4-  723.1] they can perfectly do that.
+[  723.1-  728.2] In other legal norms, for example in Luxembourg, children need to have the psychological or
+[  728.2-  734.3] developmental capacity to reasonably decide on a contract, so they need to be able to understand
+[  734.3-  738.5] what entering into the contract means for them.
+[  738.5-  741.4] In Germany we only have this lower bar of 7 years.
+[  741.4-  747.2] In Luxembourg, for example, it's an individual decision, and for every contract basically
+[  747.2-  753.5] you look at what courts have ruled in the past whether this contract is okay or not,
+[  753.5-  763.5] which is sort of interesting but doesn't make it easier.
+[  763.5-  774.1] Privacy laws, this is the second and probably the thing most people fear ever since GDPR
+[  774.1-  776.5] started in Europe, privacy laws.
+[  776.5-  784.8] When people talk about privacy laws, I often say, we will be sued, no matter what we do,
+[  784.8-  791.3] this doesn't actually happen, well, it happens, but when it happens, it does for a reason.
+[  791.3-  798.4] Privacy regulations, like the general data protection regulation in the European Union,
+[  798.4-  803.8] are designed to protect individuals from data abuse by organisations.
+[  803.8-  809.0] They are not designed to protect individuals from data use, they are designed to protect
+[  809.0-  813.0] them from data abuse, not regular use.
+[  813.0-  816.8] So that's an important difference.
+[  816.8-  824.1] Data protection laws normally don't want to make you not process data.
+[  824.1-  830.0] One interesting thing here is that the age of consent, you know that there is a banner
+[  830.5-  835.9] I accept the privacy policy or I agree that you send me newsletters or I agree that you
+[  835.9-  839.8] add my data to your advertising profiles.
+[  839.8-  846.8] The age of consent for these things under privacy laws in the EU is different from the age
+[  846.8-  849.7] of maturity in the civil law.
+[  849.7-  856.1] So, yeah, we can make another quiz about that in a minute.
+[  856.1-  859.3] Privacy law does not govern contracts.
+[  859.3-  867.3] It's even more interesting because the GDPR actually says that a contract must not depend
+[  867.3-  872.2] on a consent under GDPR.
+[  872.2-  882.9] So more about that in a minute, but first, the question, oh, no, not the question.
+[  882.9-  889.3] Processing data is allowed, and this is the basic claim of the GDPR, it is not allowed.
+[  889.3-  891.3] So that's what the GDPR says very clearly.
+[  891.3-  897.9] You cannot process information, personal information from individuals if you are an organisation.
+[  897.9-  905.1] Except and this is article number six, when there is another law governing this intention
+[  905.1-  912.2] you have or it's necessary to fulfil a previously agreed contract, so you already have a contract.
+[  912.2-  915.4] Someone already agreed to your terms of use.
+[  915.4-  919.1] And then you want to do something on top that is not necessary to fulfil this contract
+[  919.1-  922.8] and it's not necessary to offer the services of your site.
+[  922.8-  926.5] That's when you need consent.
+[  926.5-  934.6] But if you only do what is necessary to technically and practically fulfil the offer that you and
+[  934.6-  942.6] the user agreed upon, then this data processing is legal without getting any consent.
+[  942.6-  948.5] There are some other rules, but these are the most interesting here.
+[  948.5-  955.1] Another rule is, for example, if the life of the individual depends on your data processing,
+[  955.1-  961.3] but I don't think we are already as far with open sources, so I have left that out.
+[  961.3-  962.3] Okay.
+[  962.3-  963.3] So another quiz.
+[  963.3-  968.5] At what age can a person consent to data processing under the European GDPR?
+[  968.5-  973.8] You can just shout your answers.
+[  973.8-  978.9] I cannot even see whether there are people in the room or there are.
+[  979.9-  980.9] 18.
+[  980.9-  981.9] 18.
+[  981.9-  982.9] Any.
+[  982.9-  985.9] At any age?
+[  991.3-  993.3] It's complicated.
+[  993.3- 1001.3] Actually, the lower limit for entering into contracts of seven years is a German speciality.
+[ 1001.3- 1008.3] Most other jurisdictions, also on the level of the EU, always say, yeah, you can do it
+[ 1008.3- 1010.3] when you're ready to, yeah?
+[ 1010.3- 1019.3] So a GDPR says miners can consent if they can grasp the consequences of the agreement.
+[ 1019.3- 1020.3] Okay.
+[ 1020.3- 1021.3] All right.
+[ 1021.3- 1023.3] Thank you for this legislation.
+[ 1023.3- 1025.3] I know what to do now.
+[ 1025.3- 1027.3] Or when they are 16.
+[ 1027.3- 1034.3] So if they are 16, we expect them to be capable of grasping the consequences of any data processing
+[ 1034.3- 1037.3] consent, and then we are in the clear.
+[ 1037.3- 1039.3] Up to there, it's a bit complicated.
+[ 1039.3- 1041.3] And there's another special case.
+[ 1041.3- 1046.3] If you make an offer that is specially targeted towards miners, yeah?
+[ 1046.3- 1047.3] So you advertise it.
+[ 1047.3- 1049.3] So here, you are a child.
+[ 1049.3- 1051.3] Come, use my service.
+[ 1051.3- 1054.3] Come, bring your data to me.
+[ 1054.3- 1061.3] Then you always need the consent of a legal guardian no matter what the age.
+[ 1061.3- 1067.3] This is a special protection because when you do advertising that is specially targeted
+[ 1067.3- 1074.3] at young people, then we expect them to not be as capable to grasp the consequences
+[ 1074.3- 1081.3] because of the influence of the advertising.
+[ 1081.3- 1082.3] Okay.
+[ 1082.3- 1086.3] So the conclusion of that is that good people don't need consent, right?
+[ 1086.3- 1093.3] If you only process what is necessary for a contract, you don't do anything that goes
+[ 1093.3- 1095.3] on top of the contract.
+[ 1095.3- 1098.3] Then you don't need to ask for consent.
+[ 1098.3- 1102.3] And please, don't do it just to be sure, yeah?
+[ 1102.3- 1107.3] There are so many websites that have a cookie banner or another form of consent asking for
+[ 1107.3- 1110.3] things that no one needs consent for.
+[ 1110.3- 1113.3] You don't need consent to log an IP address of a user of your website.
+[ 1113.3- 1120.3] You don't need consent to use to store an email address that you are sending regular
+[ 1120.3- 1125.3] service-related emails to, like a security notice that someone logged into your account.
+[ 1125.3- 1126.3] You can just do that.
+[ 1126.3- 1132.3] But if you want to send advertisements about other products to the same email address,
+[ 1132.3- 1134.3] then obviously you need consent.
+[ 1134.3- 1138.3] But when you don't do that, you don't need to ask for consent.
+[ 1138.3- 1140.3] And also, please don't do it.
+[ 1140.3- 1147.3] That would make the internet and the web a much more convenient place.
+[ 1148.3- 1152.3] But obviously, transparently explain everything.
+[ 1152.3- 1154.3] But do not ask for confirmation, yes?
+[ 1154.3- 1157.3] In your privacy policy, just say, we do this and this and this and that,
+[ 1157.3- 1161.3] because this is technically necessary to fulfill the contract.
+[ 1161.3- 1165.3] And this and this and this and that, because this is a legitimate interest.
+[ 1165.3- 1169.3] And this and this and this and that, because another law requires us to do, period.
+[ 1169.3- 1171.3] Thank you.
+[ 1171.3- 1172.3] Period.
+[ 1172.3- 1173.3] You are allowed to process.
+[ 1173.3- 1174.3] Don't ask for confirmation.
+[ 1174.3- 1176.3] Just do it.
+[ 1176.3- 1183.8] If you have doubts, maybe you are doing too much processing.
+[ 1183.8- 1184.8] Oh, yes.
+[ 1184.8- 1186.8] And also, the last detail is important.
+[ 1186.8- 1192.8] For all processing, that is not governed by an explicit consent that is allowed
+[ 1192.8- 1194.8] due to other reasons by GDPR.
+[ 1194.8- 1196.8] There is no age limit.
+[ 1196.8- 1200.8] The age limit only covers giving explicit consent for processing.
+[ 1200.8- 1204.8] If you are allowed to process data and information due to another reason,
+[ 1204.8- 1207.8] then there is no age limit governing that.
+[ 1212.7- 1217.7] So, of course, this is not as easy as it sounds,
+[ 1217.7- 1222.7] because often there are conflicts of interest from the operators.
+[ 1222.7- 1226.7] Here at OpenSUSE, this is the interest of the OpenSUSE community,
+[ 1226.7- 1231.7] which wants to be very open that has practically no commercial interests.
+[ 1231.7- 1238.7] And there is SUSE, the company, who do have commercial interests.
+[ 1238.7- 1243.7] And the legal complications under around 200 national legislations,
+[ 1243.7- 1245.7] they are very real.
+[ 1245.7- 1250.7] But if you keep an eye on that, we often see legislation being made
+[ 1250.7- 1256.7] where precautions are made either for free software and OpenSUSE software,
+[ 1256.7- 1260.7] like it's done in the age restriction laws in the US currently,
+[ 1260.7- 1269.7] or, as the UK is working on, to accept offers made by non-profit organizations
+[ 1269.7- 1271.7] from certain requirements.
+[ 1271.7- 1273.7] So always keep an eye on that.
+[ 1273.7- 1276.7] It can make things easier,
+[ 1276.7- 1287.1] and it's something that can be discussed when changes to policies are being made.
+[ 1287.1- 1290.1] So, a roadmap of what to do.
+[ 1290.1- 1292.1] Please, clearly define the scope of your offer
+[ 1292.1- 1295.1] and make sure contributors understand the scope.
+[ 1295.1- 1297.1] So, if you need an email address, say,
+[ 1297.1- 1301.1] hey, we need this email address for doing this and that.
+[ 1301.1- 1304.1] Explain why it is legitimate.
+[ 1304.1- 1306.1] That's often quite easy, I think.
+[ 1306.1- 1312.1] And strictly separate contractual and privacy topics
+[ 1312.1- 1315.1] and carefully consider the aspects of your processing.
+[ 1315.1- 1319.1] If you want to do personalized advertising, then say so,
+[ 1319.1- 1324.1] and then get consent for this personal advertising.
+[ 1324.1- 1326.1] And if someone doesn't give the consent,
+[ 1326.1- 1328.1] they can still use or contribute to OpenSUSE.
+[ 1328.1- 1343.3] They just cannot get the personalized advertising, right?
+[ 1343.3- 1345.3] Just a few ideas if things go bad.
+[ 1345.3- 1350.3] Some idiotic country gets around and says,
+[ 1350.3- 1352.3] hey, you now need to do age attestation.
+[ 1352.3- 1355.3] You must be sure that you know the age
+[ 1355.3- 1359.3] of the users that register with the website.
+[ 1359.3- 1363.3] There are some things we can learn from
+[ 1363.3- 1366.3] federated and decentralized systems.
+[ 1366.3- 1370.3] For example, there are organizations like TechEds
+[ 1370.3- 1373.3] who work with young people on a personal level.
+[ 1373.3- 1374.3] We know them.
+[ 1374.3- 1377.3] We have physically seen them.
+[ 1377.3- 1378.3] We know their parents.
+[ 1378.3- 1380.3] We know the connection is real.
+[ 1380.3- 1384.3] And logins can be designed,
+[ 1384.3- 1388.3] so it can be enabled to log in with an account
+[ 1388.3- 1390.3] from another trusted organization
+[ 1390.3- 1393.3] which has done the age attestation thing in their own way
+[ 1393.3- 1398.3] and just pledges that, yes, this is a person that is a child,
+[ 1398.3- 1400.3] is a minor, or is an adult.
+[ 1400.3- 1402.3] And the website like OpenSUSE,
+[ 1402.3- 1404.3] who wants the user to be able to log in,
+[ 1404.3- 1406.3] doesn't even need to know the details.
+[ 1406.3- 1409.3] So there are technical solutions we can borrow from
+[ 1409.3- 1411.3] also to solve these issues,
+[ 1411.3- 1415.3] but I prefer to just not get into these troubles at all.
+[ 1415.3- 1423.3] So please fight any attempts to bring in age attestation laws
+[ 1423.3- 1425.3] in the first place.
+[ 1425.3- 1429.6] Please don't do that.
+[ 1429.6- 1436.6] Susie, please don't come here and pull me off the stage.
+[ 1436.6- 1438.6] Please don't do this.
+[ 1438.6- 1441.6] I haven't even accepted the cookie-bunner.
+[ 1441.6- 1443.6] And privacy betcha isn't happy at all.
+[ 1443.6- 1447.6] So, Susie, if you are listening, please maybe try to fix this.
+[ 1447.6- 1450.6] And then I think a lot of trouble
+[ 1450.6- 1455.6] and a lot of things that are difficult for the privacy policy
+[ 1455.6- 1458.6] can get a lot simpler already.
+[ 1458.6- 1462.6] Just be sure to not track people without their consent.
+[ 1462.6- 1465.6] If you ask for consent, then track them afterwards.
+[ 1468.6- 1469.6] Yeah.
+[ 1469.6- 1473.0] So, the final conclusion is,
+[ 1473.0- 1477.0] pedagogics play an important role in policymaking.
+[ 1477.0- 1481.0] Pedagogics should, in my opinion, sit next to lawyers.
+[ 1481.0- 1484.0] Lawyers are there to protect you from legal consequences.
+[ 1484.0- 1488.0] Of course, my watch says a different thing,
+[ 1488.0- 1490.0] but thank you.
+[ 1490.0- 1492.0] Okay.
+[ 1492.0- 1496.0] And pedagogy, we have a lot of laws that say
+[ 1497.0- 1500.0] children need to be able to grasp consequences.
+[ 1500.0- 1502.0] So, please don't only ask lawyers,
+[ 1502.0- 1506.0] also ask pedagogics and people who actually work with children
+[ 1506.0- 1512.0] to help you and to help in the policymaking process.
+[ 1514.0- 1517.0] Maybe if someone, just a pragmatic idea,
+[ 1517.0- 1520.0] if someone just intends to contribute to your Linux distribution,
+[ 1520.0- 1523.0] then maybe they have the developmental ability
+[ 1523.0- 1527.0] to decide whether they want to give you their email address, right?
+[ 1527.0- 1530.0] Something that can be considered.
+[ 1530.0- 1532.0] So, final thoughts.
+[ 1532.0- 1534.0] Please help young people.
+[ 1534.0- 1536.0] Please consider them.
+[ 1536.0- 1539.0] Please consult pedagogics and people who actually work with young people
+[ 1539.0- 1541.0] when making policies,
+[ 1541.0- 1547.0] and please fight any attempts to put more adultism
+[ 1547.0- 1550.0] into policies and into laws.
+[ 1550.0- 1552.0] Thank you.
+[ 1552.0- 1555.0] For the practical things of getting started with Open SUSE,
+[ 1555.0- 1560.0] there's also Gintar's Goya at 1745 here,
+[ 1560.0- 1563.0] because, of course, once people start to contribute to Open SUSE,
+[ 1563.0- 1566.0] they should have a good start.
+[ 1566.0- 1568.0] Thank you for listening.
+[ 1568.0- 1571.0] For any questions, I will be available outside in the beer garden
+[ 1571.0- 1574.0] until Gintar's talk starts,
+[ 1574.0- 1577.0] and I'm very happy to discuss these topics
+[ 1577.0- 1579.0] with anyone who is interested.
+[ 1579.0- 1581.0] Thank you.

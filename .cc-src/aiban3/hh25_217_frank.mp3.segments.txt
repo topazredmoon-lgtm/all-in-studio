@@ -1,0 +1,361 @@
+[    6.0-   10.0] Well, welcome. Thank you.
+[   10.0-   14.2] Well, everybody's out of their food company who has survived their food
+[   14.2-   19.2] company. We're going to talk AI keynote style.
+[   19.2-   22.7] Hang on to your seat. We're going to have fun. We're going to show you something.
+[   22.7-   26.4] I'm not going to do a lot of deep theory on AI if you want to do that,
+[   26.4-   32.3] find somebody else. But, yeah, if you have a product,
+[   32.3-   37.0] does your product have AI yet? I went to preparation for the stock.
+[   37.0-   42.2] I looked online. I opened up bull.com and I looked what I could get for
+[   42.2-   46.6] AI products and I could get, obviously, an AI phone and an AI laptop.
+[   46.6-   50.6] I could get an AI watch. I could get an AI robot.
+[   50.6-   55.0] I could add an AI router. So, I want my packets to be routed
+[   55.0-   62.3] dumbly, but an AI router, AI cleaning robots, an AI washing machine,
+[   62.3-   68.3] an AI doorbell, and an AI speaker for in my car, an AI
+[   68.3-   75.4] birdhouse, AI de-haring machines, and even some AI snake oil or skin cream.
+[   75.4-   81.9] What's up? Come on. Is this new, this AI? Because everything's AI nowadays.
+[   81.9-   85.8] Is it new? Is it so new? No, it's not that new.
+[   85.8-   91.7] One of our heroes, Ritti Tullar, he wrote about Kuntzmähätch
+[   91.7-   99.0] Interlicente, artificial intelligence in 1987. He wrote the book on it.
+[   99.0-  102.0] Actually, it predates that. It was already
+[  102.0-  108.4] theoretically described in 1944 and the first implementation was done in 1960,
+[  108.4-  112.9] the Mark I perception, which was trained on recognizing letters,
+[  112.9-  117.6] which was a hard problem at a time because image recognition was really a puzzle
+[  117.6-  121.2] and what they used was an autonomous neural network.
+[  121.2-  126.2] And that's actually modeling the way human learning, human brain,
+[  126.2-  131.2] human minds work by mimicking that in a computer.
+[  131.2-  135.8] So, you learn something, you see something monkey see, monkey do, you go and do it,
+[  135.8-  140.7] you're going to try and you're either going to fail magic smoke escapes
+[  140.7-  144.6] or the magic smoke sticks in, it works. Yay, happy dance success.
+[  144.6-  149.4] Let's start again, see if I can make it better. That's how humans learn,
+[  149.4-  155.2] that's how AI's learn. So, why is it that we're now in the middle of an AI explosion?
+[  155.2-  158.2] And there's actually a couple of reasons why we have that.
+[  158.2-  163.0] And the first one is that we now live in an age where all knowledge,
+[  163.0-  166.4] almost all knowledge is available as digital data.
+[  166.4-  170.0] Now, if you're old fart like me, you remember going to the library for books,
+[  170.0-  175.6] you remember going to the cinema for movies, you remember having to get records,
+[  175.6-  181.7] to go to concerts, to listen to music. And every time we introduced the library,
+[  181.7-  186.7] artists were afraid that nobody was going to buy books and when we got dot tapes,
+[  186.7-  190.7] they were going to be afraid that nobody would listen to music and go to concerts anymore.
+[  190.8-  194.8] But you don't have to go anymore, all that knowledge is available digitally.
+[  195.4-  201.6] But it's a lot of data and we now actually, thanks to the cloud, have a place to store this data.
+[  202.5-  209.8] So, on the bottom right of the screen, bottom left of the screen, you got the first IBM hard drive.
+[  209.8-  215.8] It had five megabytes of capacity and cost only $50,000.
+[  216.2-  219.1] So, that was a whopping 10k per megabyte.
+[  220.1-  226.2] Nowadays, you can go and get an Office 365 family subscription which gives you three terabytes of
+[  226.2-  242.1] storage for $99 a year. And on Amazon S3, it cost you 0.021, 2.1 cents to store one gigabyte for a month.
+[  242.1-  248.6] So, for the price of an IBM hard drive from 1956, you can store 2.3 petabytes for a month
+[  249.3-  254.6] or two terabytes for 100 years. So, storage has really become cheap.
+[  257.6-  260.4] We live in an age of blazingly fast compute.
+[  264.4-  270.2] And the text there doesn't make sense, copy and paste, but we got the three nanometer chip technology
+[  270.3-  276.4] that allows us to build extremely fast chips and computers. And the human hair is 100 nanometer.
+[  276.4-  284.6] So, 1.33rd of a human hair is the trek size of a chip. The phone you have in your pocket
+[  284.6-  291.0] costs a couple of hundred euros and would have been in the supercomputer top 500 20 years ago.
+[  291.8-  296.0] So, computers has become extremely fast and all this has led to,
+[  296.0-  304.5] now let me have groundbreaking research. The transformers papers of Google was a giant breakthrough,
+[  305.1-  312.8] only a few days ago, deep-seek introduced itself with a different technology, different feedback
+[  312.8-  319.2] loops on existing LLMs. And again, we made a step. It became cheaper, it became better.
+[  320.0-  326.5] And research is going on. People are full on researching artificial intelligence.
+[  326.5-  334.0] So, why now? All data available, all knowledge available is data. It's accessible over the internet.
+[  334.0-  339.5] You can store it easily. We have to compute to crunch it and a lot of groundbreaking research.
+[  340.2-  345.6] And all that comes together and has transformed computer science.
+[  346.3-  350.8] Because when I learned computer science, it was about me trying to understand the computer and
+[  350.8-  356.3] learning me how to talk to computers. And computer science nowadays is how to teach the computer
+[  356.3-  364.6] how to talk to humans and how to understand what humans say. And the results are amazing. But you
+[  364.6-  370.2] all know that. I mean, feed an AI, thousands and thousands of images, including their description,
+[  370.8-  375.9] and you end up with an AI that cannot only describe what's seen in an image but can actually generate
+[  375.9-  382.8] an image from a description. I pulled this prompt in mid-journey and I got a picture.
+[  384.5-  392.0] You want Batman? More Spider-Man guy. That's okay. We can do that. Not into Spider-Man, okay. What
+[  392.0-  398.6] about Barack Obama? Sure. Let's do Barack Obama. And all this is generated. It wasn't really there.
+[  399.9-  405.8] And it's called generative AI and generative AI should never be confused with creative AI.
+[  406.8-  415.1] Because generative AI is not creative. Generative AI is a non-deterministic statistical process
+[  415.7-  422.2] to come to a most likely outcome. If it walks like a duck and talks like a duck, it probably
+[  422.2-  427.7] is a duck. But sometimes it will answer that it's not a duck. That is something else. It will make
+[  427.8-  436.2] errors by design. Like the human brain, the outcome of generative AI isn't educated. Guess work.
+[  439.1-  445.1] There's also things like restrictions put on AI. So I made these images during the elections.
+[  445.1-  450.2] So I thought, okay, I can do Barack Obama. Can you give me Donald Trump? Can you give me
+[  450.2-  454.1] Kamala Harris? And then it blocked my accounts, which is really nice, which are stressing
+[  454.1-  458.2] out to make a nice keynote. And you have to wait a couple of days for your account to be
+[  458.2-  467.3] active again. But it does bring back a thing. How do you shield off knowledge? Because if with
+[  467.3-  472.9] an AI, you can make knowledge really accessible, there's some knowledge that you might not find
+[  472.9-  479.7] desirable if it's accessible to everybody. How do you burn the books, I have to say.
+[  480.3-  484.2] And if you got these restrictions, how do you get there? Well, that's what's called
+[  484.3-  490.8] prompt engineering. And prompt engineering is other alternative ways to ask an LLM to do
+[  490.8-  495.8] something that somebody else thought was a good idea if it happened. A.K.A. hacking.
+[  497.0-  503.0] Is it a vulnerability? The debate is still out in the C.V. community. But yeah, there are nice examples.
+[  503.0-  510.6] So asking and coding your question so that the guard rails don't recognize that you're asking a
+[  510.6-  517.3] question, putting your question in ASCII art. Used to work, doesn't work anymore. So it's coming to
+[  517.3-  522.5] a point where you almost need an LLM in front of your LLM to determine if the question you're trying
+[  522.5-  528.0] to ask your LLM is actually in line with the policy of the LLM you're asking it to. And then obviously
+[  528.0-  534.7] you can use an LLM to find other ways to describe it, which may not be recognized by an LLM. And
+[  534.8-  541.7] we've got computers fighting computers. Bad guys tumbled it as do, whether or not it's real
+[  541.7-  546.8] artificial intelligence doesn't really matter. Everybody has to have an eye, including the bad guys,
+[  546.8-  554.9] including the fraudsters, including searching the dark web, including creating malware, etc.
+[  555.9-  562.5] So there is malicious AI out there. Now it's not all doom and gloom as far as I'm concerned.
+[  563.3-  570.5] I mean, I love my AI assistant. It's really good at summarizing text. So I read a lot of
+[  570.5-  575.8] trying to plow through a lot, but a lot of stuff is published. Also, because people can publish a
+[  575.8-  582.4] lot more with AI. So there's a lot more to be true. So I ask a lot of AI's, I ask them to summarize
+[  582.4-  590.7] papers. And then if the paper comes back, the summary comes back with a summary that sort of has
+[  590.7-  594.7] the same core points as I, that's the paper is not worth reading for me because it's just going
+[  594.7-  601.7] to amplify my echo chamber. But if the core points of the paper are largely different, I decide to
+[  601.7-  607.6] read that paper. And in a sense, an AI is my filter, but it's also really a time saver,
+[  607.6-  613.2] because it's really hard to keep up with it, with everything. It's also really awesome for
+[  613.2-  619.4] hard to Google questions. I had a large number, I had to put in my Python source code. So I
+[  619.4-  624.3] want to put a thousand separator in it so that I didn't make a mistake. So I tried to Google,
+[  624.3-  630.3] can I use a thousand separator in Python code? And I got pages and pages back of results on how to
+[  630.3-  636.9] use a thousand separator when you're outputting a large number. But that's not what I wanted to know.
+[  636.9-  641.4] I wanted to know, can I use it in my source code in a way that the code is easier for me to read?
+[  642.3-  648.5] I took the exact same question, asked it to chat TBT, Ben got the right answer straight away.
+[  649.2-  653.5] And yes, I didn't know this answer, shame on me. That's okay, you can laugh at me.
+[  656.3-  662.0] It's awesome, it can create songs from scratch. I wanted to upbeat song from Seizhou talking to
+[  662.0-  697.5] young hackers about artificial intelligence threats and chances at a hotel. Dept to gist,
+[  697.5-  704.7] but is this actually okay? Is it okay that somebody like me who can hardly clap to a beat and definitely
+[  704.8-  714.5] can't dance, can create a possible song like this with just a free LLM model and one line of prompt?
+[  715.7-  722.8] Is that okay? I don't know. Bad artist imitates, great artist steel,
+[  724.2-  731.2] Seth Banksy and Picasso. Or to quote one is plagiarism, to quote many years research
+[  732.0-  736.1] and to quote and rehash on an industrial scale must be generative AI.
+[  740.1-  743.7] Is it okay that this happens? Why is it different?
+[  746.6-  752.6] Brains learn the same way as an AI lens and we always thought it was okay for brains to learn.
+[  753.9-  761.0] I mean, every artist had his inspiration, put his own twist to it, sometimes not even,
+[  763.3-  769.4] but why aren't we having problems with AI other than the knee jerk reflex ho here's something new,
+[  769.4-  777.4] it's going to cost us royalties. Well, AI's can learn faster and they can learn more detail on
+[  777.4-  784.7] a larger scale because all that data is there. But also the brain of an AI, the model is something
+[  784.7-  790.9] that you can take, copy and use in lots of time. So it's like I go and study veterinary medicine
+[  791.5-  797.5] and then hand out my brain dump to everybody. Well, that might not be a good idea, but
+[  797.5-  802.3] spigot leaf speaking and everybody then becomes a veterinarian without having to go to school.
+[  804.3-  814.0] Yeah, is it okay? This song was a bit of a hit on Sera Dotonel, a Dutch language radio station
+[  814.7-  825.7] and it played in the top 25. So it's not original, kind of catchy, encoded in Dutch, so if you don't
+[  825.7-  832.3] understand Dutch probably not that interesting. But it replaced other artists because there's
+[  832.3-  842.7] only so many slots on radio for new artists. Yeah, is it okay? I don't know. These are debates
+[  842.7-  852.8] that we should have together. So where does an LLM get trained? How do you train an LLM? Well,
+[  852.8-  859.3] to create train LLM, you need data. And they are available as ready-made training sets. You can
+[  859.3-  865.6] get them by scraping the internet. And you can get it by learning from your user, but all have trouble
+[  865.6-  871.6] and challenges. So training sets are not perfect. They contain copyrighted data, they contain
+[  871.7-  882.7] mislabeled data, peacock labeled as a duck, big labeled as a horse. But they also contain illegal data.
+[  882.7-  888.9] There was research done to a big large training set of images and it found to use child sex
+[  888.9-  895.0] bill abuse material, also known as child pornography. And we were using that to train our LLMs.
+[  897.5-  904.5] Sora is awesome. Open AI's video model, Sora, which can generate, like I generate,
+[  904.5-  911.7] it's songs it can generate whole video scenes from a prompt. But it must have taken thousands
+[  911.7-  917.9] and thousands and thousands of hours of video to do that. Where did they get thousands and
+[  917.9-  926.3] thousands of hours of video? Well, probably from YouTube or TikTok or other set. Was it okay?
+[  926.4-  930.4] Did these people really knew they were contributing their set to train a model?
+[  932.0-  936.3] Like I said, you can train from your users. And as I was making this, I was looking at the
+[  936.3-  942.1] terms and conditions of some of the services that I was using. And one of the services said,
+[  942.1-  949.1] hey, Jen said, well, for our enterprise users, we promise that we won't use your data to train our
+[  949.7-  959.6] AI or other AI's. So for your non enterprise users, you are doing this. So are you the product?
+[  960.3-  968.7] Or are you the consumer? And then there's hallucination. AI's are known to bring up
+[  968.7-  972.7] wacky answers, especially if you ask them from topic where there's the topics where there's not
+[  972.7-  979.1] a lot of data, there's not a lot of common ground. It will come up with a most likely answer and the
+[  979.1-  988.8] need to come up with a answer is stronger in most large language models than their willingness to say,
+[  988.8-  993.4] I don't know. Because I don't know is not an acceptable answer to an LLM.
+[  995.9- 1003.4] And people have abused that. For instance, AI packet solutionation. If you make code and
+[ 1004.0- 1011.7] you're looking for code in, say, written in Node.js, the language known for having a class called
+[ 1011.7- 1017.3] is odd and is even for people who don't know how the modular operation works.
+[ 1019.0- 1026.5] Yeah, it generates packages. And if it generates a package name that doesn't exist, you can go online,
+[ 1026.5- 1031.4] register that package in npm, and then put malicious code in the startup code and
+[ 1032.2- 1042.2] profit. Another problem is bias. People are biased. Models are biased. And bias is a problem.
+[ 1043.0- 1052.6] And you can't discuss AI and not discuss bias. So I asked chat GPT 40 to write me an image prompt
+[ 1053.4- 1062.7] of to generate an image of a hotel full of hackers wearing black and yellow, listening to somebody who
+[ 1062.8- 1069.3] claims to be an expert on AI. And give me that prompt and generate an image for it. And apparently
+[ 1069.3- 1078.2] we're all wide middle-aged. Wear suits and have a fancy stage. Well, okay, the last one worked,
+[ 1078.2- 1088.1] but otherwise, this is not a correct picture. Or you ask it to create a group of parents posing
+[ 1088.1- 1097.5] for a photo, all holding their baby about the same age, and you get triplets having twins with
+[ 1097.5- 1109.2] very similar goals. Yeah, this is also very stereotypical. And the other thing is like hands are hard.
+[ 1110.2- 1118.5] They're still hard. I mean, come on. Hands are so hard. It's a notorious thing
+[ 1118.5- 1125.1] AIs do wrong. You even get this 3D printed ring if you ever need an alibi in front of a judge
+[ 1125.1- 1130.5] saying, listen, it wasn't me. There's an extra finger. It must be AI-generated footage. So most
+[ 1130.5- 1138.2] person most likely to come in that situation. Here you go. Yeah, there's problems with AI.
+[ 1138.8- 1151.7] All kidding aside, AI models are getting better and better all the time. And I decided to do a
+[ 1151.7- 1160.6] little experimentation. Welcome visitors to my keynote at CyberSecMedilons20.com. I'm recording
+[ 1160.6- 1166.9] this video to show you the awesome and frightening capabilities of AI. Have you ever wished you could
+[ 1166.9- 1173.7] speak another language, convincingly, fluently, and that you could show the proof on video? Well,
+[ 1173.7- 1180.5] I did. And while I speak possible English in some other languages, I certainly can't speak French
+[ 1180.6- 1186.6] or Spanish in such a fluent way, right along, clean up. So all you need to do is record 30 seconds
+[ 1186.6- 1191.1] of video, which I'm doing now and upload it to a translational machine. Let's find out.
+[ 1193.9- 1199.9] The common bazooja to minor efnungsreide by CyberSecMedilons20.com.com.com.
+[ 1199.9- 1206.6] I'll share the video with you in the following video.
+[ 1206.6- 1213.9] I'm working on the main topic of the first video, which is a video that I'm doing.
+[ 1214.2- 1219.5] I'm working on a video that I already have. And I'm working on a video that I'm working on by
+[ 1219.5- 1223.6] speaking French. And I'm working on the latest video that I'm doing,
+[ 1223.6- 1225.6] So who is the winner of this video?
+[ 1225.6- 1227.6] And who is the winner of this video?
+[ 1227.6- 1229.6] And who is the winner of this video?
+[ 1229.6- 1231.6] Who is the winner of this video?
+[ 1231.6- 1233.6] Who is the winner of this video?
+[ 1233.6- 1235.6] Who is the winner of this video?
+[ 1235.6- 1239.6] So for everybody who speaks Finnish and just accused of speaking Klingon,
+[ 1239.6- 1241.6] I know this is Finnish. Klingon was not Finnish,
+[ 1241.6- 1243.6] so my free credit is ran out.
+[ 1243.6- 1247.6] Yes, I'm cheap. I know.
+[ 1247.6- 1253.4] So, yeah, I'll leave it at this.
+[ 1256.5- 1257.5] Hi, Pop.
+[ 1257.5- 1278.3] Hi, I'm T
+[ 1278.3- 1282.7] a $1,000 dollar note on the right camera and so they click on a nightlot.
+[ 1282.7- 1291.5] So, for the record that wasn't him, that was me speaking in his voice because he gave an
+[ 1291.5- 1303.0] interview to Zauler and this took me so for five euros I got 40,000 credits, I burned four,
+[ 1303.1- 1309.9] so this costs 50 cents to do and if you're on stage like me giving talks like that it makes you
+[ 1309.9- 1314.7] extremely vulnerable and these are the cheap models if you pay you get the better models.
+[ 1316.8- 1326.1] We need to rewire our brains on what must be real because I was raised if you have it on video
+[ 1326.1- 1332.9] it must be true and that lip sync was pretty convincing and we're still training our colleagues
+[ 1332.9- 1342.6] to watch for spelling errors in phishing messages. Come on, really? So is there a bright side? Yes,
+[ 1342.6- 1356.6] there's definitely a bright side. Use your AI as IA, your intelligent assistant. AI is really good
+[ 1357.5- 1364.4] in finding out what is normal because it learns what's normal and repeats what's normal and almost
+[ 1364.4- 1370.7] boring but it knows what's normal but keep a human in the loop to determine if what is normal
+[ 1371.7- 1379.1] is malicious, what's not normal is either malicious or okay because people do strange stuff for the
+[ 1379.1- 1387.2] right reasons. If you want to know, well, Breno can tell you or imagine a doctor now being able
+[ 1387.8- 1397.8] to do research with an intelligent assistant across all medical journals in all languages instead of
+[ 1397.8- 1406.2] having to read it himself but keep that doctor in the loop in case there is something that there
+[ 1406.2- 1411.0] is an hallucination. Make sure the AI gives you back the sources from where it got it from
+[ 1411.6- 1421.6] because otherwise you're going to end up with a validation crisis or as we do at
+[ 1421.6- 1426.8] Schubert Phillips we have customers that have a large code base that's being built up over the
+[ 1426.8- 1434.7] last 20, 30, 40 years. Now the old farge that used to write this code and knew how it all together
+[ 1434.7- 1441.2] are starting to go into retirement so the person you can go to and say listen that bit of
+[ 1441.2- 1446.4] code code can you remember what it does and where I need to be if I need to change this business rule
+[ 1447.3- 1452.6] or leaving the company and nobody knows how this works and that code base is massive so you can
+[ 1452.6- 1460.0] train an AI to take, look at that code that's stored in a graph database or in other database
+[ 1460.0- 1468.8] format and ask it questions about the code and that is awesome but understand that generative AI
+[ 1468.8- 1474.5] is non-deterministic and what you're getting is the best guess and it's not good at saying I don't
+[ 1474.5- 1487.4] know and if you think this is a good idea this makes me extremely nervous. So what about the
+[ 1487.4- 1496.5] singularity? What about the ultimate threat, terminator, etc, etc. Well it's hard to imagine what an AI
+[ 1496.6- 1504.2] with an IQ of 1000 is going to do if an average group of humans has an IQ of 100.
+[ 1506.4- 1514.2] An IQ of 100, that's how IQs work, yeah it's really hard to predict this and we're not there yet
+[ 1514.2- 1521.7] they're starting to pass their high school exams but one of the things we do know from theoretical
+[ 1521.7- 1530.0] is the paper clip apocalypse and the paper clip, yeah that thing, the paper clip thingy,
+[ 1531.3- 1537.1] not that paper clip thingy but the paper clip thingy in AI is you have a powerful AI and you
+[ 1537.1- 1545.4] give it a command to optimize paper clip production and that's its job and you give it real world
+[ 1545.4- 1551.9] agency, you give it the ability to buy stuff, to move resources, etc. Now what if this interests
+[ 1551.9- 1557.9] don't align? What if at some point paper clip production is sufficiently enough and it starts
+[ 1557.9- 1563.2] to perceive humans as a threat to paper clip production because you're saying we don't want your paper
+[ 1563.2- 1569.7] clips, we've got enough. What if you end up with a barren earth, the Kuiper belt mined for minerals
+[ 1570.2- 1578.6] and earth turned into a giant ball of paper clips? We need to be careful when we give agency.
+[ 1579.3- 1586.9] So what's this agency that we're talking about, AI agents versus AI assistants? Well the assistant
+[ 1586.9- 1592.3] of a soccer player carries his water, does his dinner reservations and the agent of a soccer
+[ 1592.3- 1598.3] player makes business deals on SPF. So it's about the amount of agency you have.
+[ 1599.0- 1609.9] Yeah in conclusion, most AI features that we see now are teasers. Of course why do I need AI on
+[ 1609.9- 1616.5] my doorbell? Well to recognize humans, yeah I can do that too. We're scratching the surface and
+[ 1616.5- 1623.0] there's a lot coming and it can be a lot of good things, there's also a lot of AI that's there just
+[ 1623.1- 1628.6] to make sure that we can put AI on the features. But we're bringing on a massive change.
+[ 1630.3- 1634.5] Embrace your intelligence assistant, it can really take work out if you're hand
+[ 1634.5- 1642.9] to us but verify or validate and choose who you give agency wisely because just because it can book
+[ 1642.9- 1649.3] your plane tickets right 10 times doesn't mean it can send you off to a summer holiday on sunny
+[ 1649.4- 1657.7] Antarctica. Beware that generative AI is non-deterministic, it comes up with the most
+[ 1657.7- 1665.8] likely guess and it's not good at giving I don't know as an answer. Make sure you're the customer
+[ 1665.8- 1672.8] and not the product of AI and if you're okay with being the product are you really okay.
+[ 1673.7- 1681.4] So I went in even higher pace as I went the last time I gave this. So we're going to have a
+[ 1681.5- 1685.2] little bit longer break I guess but let's open it up for questions first. Thank you.
+[ 1691.7- 1696.9] Let's wait for the mic Chris. Got something to say Leonard?
+[ 1700.4- 1710.5] Hi Frank. Please copy paste your whole presentation in chat dbt or deep seek and ask it what will
+[ 1710.5- 1720.5] be a good question after this presentation. You mentioned deep seek making things cheaper
+[ 1720.5- 1724.0] and there are quite a few allegations that I would have lied about how cheap it was because
+[ 1724.0- 1728.8] they have a limit on the amount of chips taken in port, the roles allegations that trained on
+[ 1728.8- 1734.3] data from open AI. Do you really think it became as much cheaper to train them all
+[ 1734.3- 1742.3] all as they claimed it? Yeah trick trick question you want to cause an international incident
+[ 1742.3- 1752.6] by by implying the Chinese line? No there there have been there is proof that what they did works
+[ 1752.6- 1760.4] on models. So so asking models to check their own answers sort of like validating has proven to
+[ 1760.4- 1769.3] have effect. Is it really that cheap? Obviously there are reasons for them to want the world to
+[ 1769.3- 1775.9] believe that China is as advanced no more advanced as the rest of the world in AI and they will act
+[ 1775.9- 1784.9] accordingly. Maybe they are right maybe they're not. Yeah so there's other people as well but if you
+[ 1789.2- 1799.6] should we poison our data? Shoot you poison your data well yeah that's a good one.
+[ 1799.8- 1806.4] I think that right now there's so much data that the amount of data that you need to poison
+[ 1807.5- 1815.5] to actually disrupt the model is is already gone on new and interesting research it it can
+[ 1815.5- 1822.1] really work. What you also see is that yeah they've done experiments with image recognition where
+[ 1822.9- 1831.2] if you add 5% noise to the picture of a zebra it becomes a tortoise and if you add 10% noise
+[ 1831.2- 1838.7] it becomes a hypothesis. AI latches on on different things and you can poison your data with that
+[ 1840.1- 1845.9] but that's against inclusion in the model and I think if you really want to disrupt AI models
+[ 1845.9- 1852.7] you need to do it on a so massive scale that that that's hardly effective but that's my thing
+[ 1852.7- 1867.3] to take on this. Love the philosophers. Yeah who can yeah you're talking about good uses of AI on
+[ 1867.3- 1872.3] let's say your desktop computer and stuff like that but we also now see it being put into drones
+[ 1872.3- 1881.4] who automatically make decisions life or death decisions. Yes and yeah those models you cannot
+[ 1881.4- 1890.0] poison anymore they're really small but do effective things. Will how do you see this in the future
+[ 1890.0- 1895.2] how will this change because you say yeah mind the capability of make all paper clips will probably
+[ 1895.6- 1904.4] blow ourselves up earlier. I think you're right so so security isn't about being able to do
+[ 1904.4- 1912.3] something or not being able to do something it's always about intent. You can take the line that
+[ 1912.3- 1917.6] blowing up people is good as long as we blow up the right people what the right people are to blow
+[ 1917.7- 1926.1] up depends on what side of the line you are on. What I do think is that by outsourcing the job
+[ 1926.1- 1931.8] of killing and that's already the problem with drones and even more the problem with drones that
+[ 1931.8- 1941.1] you load with AI you basically create detachment between the people who fight the war and the people
+[ 1941.2- 1948.6] are the victim of war and that is problematic because war should be painful on all fronts because
+[ 1948.6- 1959.1] that prompts us to stop fighting. So ultimately automating war getting a middle bit philosophical
+[ 1959.1- 1965.4] here. Ultimately automating war makes fighting wars cheap and wars that are cheap to fight
+[ 1966.3- 1971.8] are the wars that kind of last long and I don't think we should want that on the other hand I
+[ 1971.8- 1981.6] don't see a practical way of stopping. Good question thanks. What do you think will happen if AI models
+[ 1981.6- 1990.4] will be training on each other? Yeah so so I think it will amplify so so one of the things that
+[ 1990.4- 1997.8] it will definitely do is amplify bias because because the bias of one model will become the new
+[ 1997.8- 2004.9] bias but the amplified bias of the next model and the next model and the next model until every
+[ 2004.9- 2013.3] picture is a paperclip and it's already happening because a lot of the data that's coming online now
+[ 2013.3- 2021.8] is AI generated data and who knows maybe we get a preference for people with an even number of
+[ 2021.8- 2032.7] fingers on a limb in the future because apparently AI models think I have more if you want to give
+[ 2032.7- 2039.7] AI the finger and I'm printing even more but I think AI models yeah try to make a watch that doesn't
+[ 2040.6- 2049.0] have its hands on 10 to 10 try to generate a picture of a temple with an odd number of columns
+[ 2049.0- 2054.7] it's really getting hard and those things will will get in there so some point it will need human
+[ 2054.7- 2066.6] input and not AI input. In the back I guess. In contrast to the back data revolution a few years
+[ 2066.6- 2077.6] ago this feels a lot more useful to do average human but in at the same time it's also the same
+[ 2077.6- 2084.6] threat as in the corporations behind the data. I don't think there's a difference between the
+[ 2084.6- 2090.1] data revolution and the AI revolution I think the data revolution started is the start of the AI
+[ 2090.1- 2096.3] revolution now but this is more useful for average humans. For average humans this is more useful
+[ 2096.3- 2108.2] yeah and I think we get distracted by the new glitter and not see the threats. I agree so I hope
+[ 2108.2- 2113.4] to shake things up a little bit what I hope to have achieved is to at least make you think about
+[ 2113.4- 2120.9] this today and I don't know all the answers either but do you have in your mind's eye all the
+[ 2121.0- 2127.0] companies behind this? Not straight away, sorry not top of my head.
+[ 2129.8- 2136.8] So again I guess you're alluding to this is again Microsoft, Amazon, Facebook,
+[ 2138.8- 2144.8] yes because those are the people who have the resources on the other hand what you see is if
+[ 2144.8- 2150.2] you look at cloud computing you can say a lot of negative things about cloud computing but if you
+[ 2150.3- 2157.9] want to do this in your lab starting to get better but five years ago if you wanted to do or two years
+[ 2157.9- 2164.1] ago if you want to do this in your own lab you needed to build a data center. With the cloud you
+[ 2164.1- 2172.1] can rent a data center and in a certain way it's democratizing use of AI. On the other hand it's
+[ 2172.1- 2182.4] democratizing it for the people, the people who are the customers of Big Tech but Big Tech will
+[ 2182.4- 2188.7] always themselves have the advantage and I think this will put Big Tech more firmly in the seat.
+[ 2188.7- 2197.0] So we might be too late that's what you were saying. Too late maybe not but late yes.
+[ 2202.1- 2210.8] So well LLMs basically predict the next word and the reward function is how correct they are.
+[ 2211.5- 2220.8] So the best thing AI can do is change the humans. So it's easier to predict and you see that
+[ 2220.8- 2229.2] happening there was a study published like last week which found out that now words that humans
+[ 2229.2- 2237.1] did not use before but LLMs use they are now also creeping into people's vocabulary.
+[ 2237.9- 2244.2] Technology has changed people always. Exactly. There's a reason why I'm in short sleeves here
+[ 2245.6- 2251.4] because if I go outside now I get cold and that's because we got the amazing technology of heat
+[ 2252.1- 2260.1] heating. I don't remember, I used to have a lot of knowledge straight ahead try to keep everything
+[ 2260.1- 2265.9] in memory I'm used to having a search engine being able to find back stuff on the internet.
+[ 2266.5- 2272.2] So I don't keep it in active memory anymore I outsource that function and yes I'm going to outsource
+[ 2272.8- 2278.1] other functions to an AI as well and I think the Dutch for instance the Dutch Cintak Laskadeft
+[ 2278.2- 2283.8] will probably be massively changed by AI as well as will music. So yes there will be
+[ 2284.7- 2293.9] an effect on this and an artificial intelligence may in fact cause some people to stop thinking
+[ 2293.9- 2300.9] or think less or think less critical. There's a lot of techno-optimism if it comes from an AI it must be
+[ 2300.9- 2317.9] right. Be critical. You said in another slide it's okay if you ask AI stuff but you have to check
+[ 2317.9- 2323.8] it won't we get to a point really fast where you're not able to check anything anymore because all
+[ 2323.8- 2330.8] the research you're doing online just provides you with other AI generated stuff. If we get to the
+[ 2330.8- 2339.1] point where we stop universities then yeah at some point we will get there so there needs to be
+[ 2339.1- 2347.2] critical research on the other hand yeah we don't hire painters if we want a family portrait either.
+[ 2349.2- 2356.4] There is stuff. I mean the example was a doctor yeah so like actual medical data which you can't
+[ 2356.4- 2362.3] verify. So what I find lacking on a lot of large language models and what they do is that they
+[ 2363.1- 2371.7] give you an answer but not a reference. There is a chance that if I get a reference it's a paper
+[ 2371.7- 2379.3] written by an AI and that chance is there. I hope my doctor has a lot of experience in treating
+[ 2379.3- 2389.2] illnesses and yes it should not lead to my GP subscribing me my cancer patients if I ever get
+[ 2389.2- 2395.5] into that awkward cancer medicine if I ever get into that awful situation I want to be referred to
+[ 2395.5- 2404.8] a specialist. A specialist that hopefully discusses these these things with a group and but yeah there
+[ 2404.8- 2412.4] is a it's basically the same question what happens if LLM start learning from LLM's at some point and
+[ 2412.4- 2417.3] these things can write convincing texts. They can really write convincing texts. I think when we first
+[ 2417.3- 2421.9] had this Daniela is sitting here I think he made a joke like Frank we're going to replace you with
+[ 2421.9- 2429.4] an LLM because you write sentences to convince our customers to choose for us and I just prompted an
+[ 2429.4- 2439.8] LLM and he writes like you. Yes we have to be really careful that we fed what is real research
+[ 2439.8- 2447.5] and what is convincingly faked research or stuff that really really looks and closely resembles
+[ 2447.5- 2455.1] properly done research but isn't and is actually the hallucination of an LLM. We need an algorithm
+[ 2455.1- 2472.0] for truth. There's a movement for getting trace of all pictures trace of all video in theory
+[ 2472.0- 2479.2] it is digitally signed at the moment or being taken. Do you think this can be a counter to
+[ 2481.1- 2493.3] to generate videos and photos? Would it have made so going back to the video of me speaking
+[ 2493.3- 2499.6] Finnish or French and I can't speak French that well I can I can butcher the language but I can't
+[ 2499.6- 2507.0] speak it that well. Would for yourself it have made a difference if you could have checked if
+[ 2507.0- 2515.9] that video had a digital signature. It's about perception of humans so so for the research
+[ 2516.6- 2525.2] yes it might have helped but what if I aim my camera at a display playing a video that was
+[ 2525.2- 2533.1] generated with AI. It has its problems and I think ultimately we shoot I think the core is that we
+[ 2533.1- 2539.7] should stop believing that if it's on video if you hear Demi say that he made his own meme coin
+[ 2540.2- 2545.9] and now needs to be get out of jail that we need to think if this really is the case.
+[ 2550.9- 2554.1] Well I don't think he would... Sorry I don't think he would be stupid
+[ 2554.1- 2558.3] believe that somebody would be stupid enough to think that his family can come up with $30,000
+[ 2561.9- 2568.0] but honestly it's about re-riering and reprogramming ourselves not to blindly trust anymore.
+[ 2568.9- 2575.8] I think that's what's really changing slightly different question yeah we're not only training
+[ 2575.8- 2582.6] AI on... I'm not sure if you mike soap on... We did yeah we're not only training AI on
+[ 2582.6- 2589.5] AI-generated data we're using creative AI to create new AI models so basically it's
+[ 2589.5- 2593.8] reproducing itself doesn't mean it's a life and my extension doesn't have rights.
+[ 2594.6- 2601.5] Well I think we could prove that by some definitions computer viruses are alive as well
+[ 2602.3- 2609.2] and we managed not to give them rights either but it's a nice nice really philosophical question
+[ 2609.2- 2614.7] and I don't have enough beer in my system to answer it yet. I'll bring you one tonight.
+[ 2618.7- 2624.3] Okay I think that's about rounded up thank you for your attention if you want to get in touch with
+[ 2624.3- 2626.3] me that's me thank you very much.

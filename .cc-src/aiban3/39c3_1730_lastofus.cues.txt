@@ -1,0 +1,852 @@
+00:00:04.160 Thank you so much for the warm welcome. Let's go, let's dive into it.
+00:00:22.609 The purpose of this presentation, of this talk today, is to give you an overview
+00:00:27.670 of the EU surveillance agenda in the coming year, in the coming years, actually.
+00:00:33.990 And what we see is obviously, based in Brussels as EDRi, we
+00:00:37.990 see an avalanche of EU surveillance legislative proposals.
+00:00:42.009 And initiatives. But there are very few new ideas among them.
+00:00:47.770 Most of them are actually recycled or enhanced, expanded, mostly revived from the dead.
+00:00:54.770 Hence this feeling of fighting zombies in an apocalypse.
+00:00:59.009 For the sake of time, obviously we cannot cover all of this, as you can see.
+00:01:03.609 We will focus on data retention, one of the biggest threats, and
+00:01:08.209 also proposal floating around to introduce encryption backdoors.
+00:01:13.290 Svea: And as Chloé already said, a lot of this is recycled and old ideas.
+00:01:16.810 So before we can look at how we're going to fight in the future,
+00:01:19.489 we want to give you a brief and very, very subjective history
+00:01:23.069 of surveillance to situate us in the space and how we got here.
+00:01:27.510 Chloé: And so we start in the far, far past the 90s.
+00:01:30.930 We start the story in, actually, with the first crypto war, which took place in the US.
+00:01:38.290 And I want to talk to you about the Clipper Chip.
+00:01:40.450 I think most of you are familiar with this story in the US.
+00:01:44.549 But just as a reminder, or for the youngest in the room, in
+00:01:50.049 1993, the Clipper Chip was introduced as a chipset promoted and
+00:01:55.530 developed by the US NSA with a built -in backdoor that allowed law
+00:02:01.650 enforcement to decode intercepted voice and data transmissions.
+00:02:07.469 The Clipper Chip operated on a key escrow technology.
+00:02:11.789 And although it took only one year for a major design flaw to break the entire
+00:02:18.449 encryption of the chipset, this had a major influence on the European Union.
+00:02:25.270 At the time, the European Union wasn't so much of an important security actor.
+00:02:30.430 The field of home affairs was very much a competence of the member states.
+00:02:37.879 And so the EU has very nascent competence in this field of surveillance.
+00:02:43.229 However, the Clipper Chip episode is a US story, but it really
+00:02:50.310 had massive consequences and repercussions in EU debates.
+00:02:55.169 And still nowadays, it's influencing law enforcement thinking in Europe.
+00:02:59.849 And also this underlying idea of the key escrow is very much
+00:03:04.830 in the minds of policymakers at the European Union level today.
+00:03:10.469 What happened in the 2000s? There was a change.
+00:03:15.229 The EU started gaining competence in the field of justice and home affairs. Why?
+00:03:20.569 Because we had a series of terrorist attacks.
+00:03:23.729 Starting with 9 -11, as you may know, the Madrid and London bombings meant
+00:03:30.069 that we saw an emergence of an international counter -terrorism agenda.
+00:03:34.990 And the idea of this agenda is that as many states should be enrolled in this agenda,
+00:03:41.430 coordinating their action against what is perceived as a transnational threat.
+00:03:46.509 And who is best placed to actually coordinate European states? The EU.
+00:03:52.270 And that's how they gained competence over the course of the 2000s.
+00:03:56.389 And so we saw this political momentum of EU gaining competence combined with more
+00:04:03.590 and more proposals for surveillance measures, especially of a massive nature.
+00:04:09.590 And the first one example that we got was PNR.
+00:04:13.590 PNR stands for Passenger Names Records.
+00:04:16.790 And in legislative terms, it means the massive collection of travelers' data
+00:04:21.550 and their analysis for the purpose of algorithmic profiling of travelers
+00:04:27.930 with a view to detect terrorist threats and suspect of serious crimes.
+00:04:33.009 And even though it took a while because the European Parliament
+00:04:36.009 at first rejected that mass surveillance measure and it took until
+00:04:40.470 2016 to actually get a European legislation on the topic, this
+00:04:45.410 idea was very much pushed on the political agenda at the time.
+00:04:50.569 The second example that you are well aware of, I think, in this community is data retention.
+00:04:58.009 It's the general and indiscriminate retention by
+00:05:01.029 telecommunication operators of all of their users' data.
+00:05:05.029 The EU adopted its own instrument in 2006, the directive that you know.
+00:05:12.410 Svea: And that brings us to the 2010s, which was actually, at
+00:05:15.750 the beginning of the decade, a pretty good time for privacy
+00:05:17.990 and data protection, mainly thanks to Edward Snowden.
+00:05:22.250 Thanks to Edward Snowden, the world learned about the massive and global
+00:05:25.810 extent of the surveillance programs of the National Security Agency
+00:05:28.769 of the United States and its partners, which became a major scandal.
+00:05:32.389 This was actually something that changed the world.
+00:05:35.009 The Snowden revelations had some really real impacts on the political and legislative level.
+00:05:39.930 And one really good example for that is adoption of the general
+00:05:43.449 data protection regulation, the GDPR, in the European Union.
+00:05:47.470 Living in a world today where we take the GDPR for granted, it's hard
+00:05:51.750 to imagine, but actually the Snowden revelations made the GDPR possible.
+00:05:56.149 There was a major pushback, both from multinational
+00:05:58.250 corporations, but also governance, that lobbied heavily against
+00:06:01.350 data protection and privacy rules in the European Union.
+00:06:03.589 But the public outcry and the global dimension of the scandal that
+00:06:07.670 Edward Snowden helped disclose helped fight that in a really crucial way.
+00:06:11.910 And although the GDPR may not be perfect in many ways, it
+00:06:15.110 has become a gold standard for data protection regulation and
+00:06:17.990 it has inspired a range of different laws around the globe.
+00:06:22.370 And yeah, the Snowden revelations also had a second really
+00:06:24.829 important impact, which was that there was sort of like a
+00:06:27.569 global reckoning with privacy from a consumer perspective.
+00:06:31.810 So many people simply expected their privacy and their
+00:06:34.810 data to be protected, which led to a real spike in consumer
+00:06:38.149 demand for secure communication services and devices.
+00:06:41.930 And some really popular apps, like WhatsApp or Viber, if anyone
+00:06:45.810 remembers, started launching internet encrypted services, which
+00:06:49.629 others then tried to emulate, like Telegram, not so secure.
+00:06:52.670 But we did see a general proliferation of internet
+00:06:56.029 encryption and yeah, that was a real big change.
+00:07:00.069 But of course, the 2010s also had a really dark side and there was a
+00:07:03.230 pushback to this proliferation of internet encryption from law enforcement.
+00:07:07.149 And one really crucial actor in this fight was this lady,
+00:07:11.550 Valerie Caproni, who was then the general counsel of the FBI.
+00:07:15.529 And she was the first one to describe this ongoing proliferation of internet
+00:07:20.769 encrypted communication as going dark, which has become a major theme in this fight.
+00:07:26.290 So going dark is the idea that because of the spread of internet encryption, law
+00:07:30.410 enforcement loses access to data law enforcement needs in order to do its job.
+00:07:35.189 And this framing of going dark kind of applies that law enforcement has a
+00:07:39.250 natural right to that data, which is now being upended by internet encryption.
+00:07:43.350 And this sounds silly to us, but this idea of going dark has
+00:07:47.589 been one of the most successful framings ever deployed by law
+00:07:51.370 enforcement globally in trying to attain more access to data.
+00:07:55.129 Which is, of course, ironic because already in 2010s, we were living in a world
+00:07:58.370 where more data was being created, collected, and processed constantly and law
+00:08:03.790 enforcement had more access data than ever before in the history of mankind.
+00:08:06.910 But still, we're now in a new era of the crypto wars,
+00:08:10.370 which is about secure communication and devices.
+00:08:13.750 Chloé: And one of the key kind of illustrative case of this new crypto war is the
+00:08:18.670 San Bernardino case in 2015, which set the FBI and Apple against each other.
+00:08:25.050 And the story is that the FBI found an iPhone belonging to one of the perpetrators
+00:08:29.589 of this mass shooting. and tried to compel Apple to assist them in unlocking it.
+00:08:37.269 Apple challenged the order in courts, but before we got to
+00:08:40.409 a decision, the FBI found an Australian hacking firm which
+00:08:45.870 found a way to bypass the iPhone security protections.
+00:08:50.529 This case really sealed the going dark framing.
+00:08:54.950 In 2016, FBI director James Comey testified twice in the Congress reiterating
+00:09:03.269 concerns that encryption was allowing criminals to go unpunished and that
+00:09:08.429 it was making it too difficult for law enforcement to access evidence.
+00:09:14.950 And so since 2011, we see regular push in the public discourse, in the
+00:09:22.129 media, from law enforcement and intelligence agencies to address this
+00:09:27.370 in regulation, in legislation, to address this encryption problem.
+00:09:31.870 This is an example, a statement published in 2020 by the Five Eyes.
+00:09:37.590 The Five Eyes are composed of the intelligence agencies
+00:09:40.830 from Australia, New Zealand, the UK, US, and Canada.
+00:09:46.929 And they basically lament about [inaudable] encryption
+00:09:50.230 and call for measures to access encrypted data.
+00:09:54.250 Svea: And then something major happened.
+00:09:56.190 The data retention directive that Chloé introduced
+00:09:58.549 earlier was struck down by the European Court of Justice.
+00:10:01.289 So the court found that actually general and indiscriminate retention of all traffic
+00:10:06.389 and location data is contrary to EU law and that the goal of combating crime does
+00:10:11.289 not actually make it okay to infringe on people's fundamentalist rights on to
+00:10:15.309 privacy and data protection as laid down by the Charter of Fundamental Rights.
+00:10:18.549 So this meant that suddenly there was no EU -wide framework for data retention anymore.
+00:10:23.909 And this was a really good day.
+00:10:27.269 But of course, unfortunately, there was one major issue.
+00:10:30.230 Bear with me for a second. So there are essentially two types of European law.
+00:10:33.990 One is a directive, which means that member states have
+00:10:37.370 to transpose European regulation into a national law.
+00:10:40.149 And the other one is a regulation, which means that law
+00:10:42.230 becomes immediately applicable across the European Union.
+00:10:45.250 This was a directive.
+00:10:46.509 So essentially what happened was that member states had already
+00:10:49.409 transposed the directive into national law and just ignored
+00:10:52.370 the judgment of the court, which is really fascinating to see.
+00:10:56.029 And there was then a later study a couple years later that
+00:10:59.350 essentially showed that more than 50 member states didn't make
+00:11:01.909 any significant changes after the directive was struck down.
+00:11:06.129 And a number of member states, at least three, have indicated that their
+00:11:10.649 current regulations on data retentions are based on the directive that
+00:11:14.710 has been found illegal and in violation of European fundamental rights.
+00:11:18.769 So even though we had this major win at court, data
+00:11:21.629 retention continued to persist in the European Union.
+00:11:24.149 Chloé: And this is why 2014 and the judgment by the Court of Justice in the digital
+00:11:29.649 rights RLN case was only the beginning of the infamous data retention saga.
+00:11:35.730 Why?
+00:11:36.529 Because people started launching litigation cases against each national
+00:11:41.230 legislation which had been transposing the data retention directive.
+00:11:44.649 So we had a case in Sweden, we had a case in France,
+00:11:49.250 UK, Belgium, Germany, and so on and so forth.
+00:11:52.730 So it led to a number of judgments throughout the past 10 years.
+00:11:59.070 And so what we have, the result of this is that we have a very rich jurisprudence,
+00:12:03.970 very detailed, the courts has to go into so much detail, about what is
+00:12:08.610 possible to retain under EU law and what is not, and under which conditions.
+00:12:14.110 The problem also on the other side, politically speaking, civil society
+00:12:19.490 has been pushing the commission to take action against those member
+00:12:23.129 states who refuse to respect the jurisprudence of the Court of Justice.
+00:12:27.809 We asked the commission, which has this competence to launch infringement
+00:12:31.909 procedures against member states which derogate from EU law, so to sanction
+00:12:37.149 them, and the commission always pushed back and refused to do so, although they
+00:12:41.990 have the competence to, they are like the guardian of the treaties, so to say,
+00:12:46.649 so they are responsible to make sure that EU law is applied by member states.
+00:12:50.669 So it's really a political choice by the commission to not act at all for 10
+00:12:55.490 years and letting rogue member states continue with their data retention laws.
+00:13:00.129 This brings us to the 2010s. Where am I? Yes.
+00:13:06.230 We talked about the mainstreaming and multiplication
+00:13:09.470 of rather popular encrypted messaging applications.
+00:13:14.070 There were also a few more lesser -known ones that were developed at the same time
+00:13:19.629 and became actually the targets of international police cooperation operations.
+00:13:25.110 The most well -known among them are EncroChat and SkyCC.
+00:13:30.970 Those cases happened in 2020 and 2021, and others were
+00:13:36.309 dismantled afterwards, more recently, like the Matrix platform.
+00:13:42.090 Some of this encrypted communication service included also modified
+00:13:46.669 devices that could only be purchased from specific resellers, having
+00:13:52.990 extra functions, security functions like Kill Switch, allowing
+00:13:56.389 users to wipe all the data on their device remotely, for example.
+00:14:00.970 And so this cross -border police operation that targeted those networks, they
+00:14:06.009 included not only EU member states, France, Belgium, Netherlands, but also the US.
+00:14:13.070 So it was an international enterprise. What does those cases reveal?
+00:14:20.090 They reveal two new practices of police cooperation against encrypted networks and devices.
+00:14:26.730 First, a mass hacking approach, whereby communications
+00:14:31.769 data are obtained in a general and indiscriminate manner.
+00:14:36.529 That is to say, all users are subjected to bulk hacking without any kind of discrimination.
+00:14:43.490 Everybody is caught in the fishing net, which means that this
+00:14:48.070 principle of individualized suspicion for the right to a fair
+00:14:51.929 trial and for the presumption of innocence is just thrown in a bin.
+00:14:56.730 Second, they are laundering these extremely intrusive measures, and often
+00:15:02.809 illegal, actually, under national law, through forum shopping tactic.
+00:15:07.490 Forum shopping, what it is, it means that we take the country among
+00:15:11.669 the group of partners, of partner country, which has the weakest legal
+00:15:16.009 protection, in that case, France, and this country is then made responsible
+00:15:22.110 for the hacking part, for carrying out this intrusive measure, and
+00:15:25.710 then the data collected from this operation is then redistributed among
+00:15:30.269 partner countries through European and international cooperation channels.
+00:15:35.789 This way, the data is laundered, and it becomes very difficult
+00:15:40.490 for the accused to challenge the legality of this data in court.
+00:15:48.490 But, this is still not enough. We have mass hacking, but this is not enough.
+00:15:53.470 Although EncroChat and SkyCC are presented as police success
+00:15:56.789 stories, they are very proud of it, it's still not enough.
+00:16:00.230 Law enforcement still complains that they cannot access data because of encryption,
+00:16:03.950 and that those cases that I just mentioned, they are just a matter of luck.
+00:16:07.850 And for the rights of the victims, we cannot rely on luck.
+00:16:12.509 So, there are the exceptions, and actually, police
+00:16:15.049 access to decrypted data should be the rule.
+00:16:18.549 The press campaign from the EU side is led by Europol, the law enforcement
+00:16:23.350 cooperation agency, and notably its executive director, Catherine de Bolle,
+00:16:28.009 who wrote this op -ed with the district attorney of New York, calling for
+00:16:32.809 regulation because, and I quote, encryption unregulated is justice denied.
+00:16:39.929 And this article is really good to understand how law enforcement
+00:16:43.350 perceive the problem and the solution, but I think, and we think, it's
+00:16:48.470 more powerful if you hear this reasoning directly from De Bulle herself.
+00:16:54.210 And so, we're going to show you a video of two minutes and a half.
+00:16:58.389 Content warning, you may feel upset afterwards.
+00:17:02.629 Catherine: I am Catherine de Bolle, I am the director of Europol since 2018.
+00:17:07.509 My job is to fight crime.
+00:17:10.509 When people tell me from this sector that they deliver the device,
+00:17:15.549 but they are not at all responsible for the possible usage of the
+00:17:21.609 tools, then I cannot understand that and I don't appreciate that.
+00:17:26.250 The use of encryption is at the center of terrorist tradecraft for the last two years.
+00:17:32.269 Post -Snowden, they made a move.
+00:17:35.049 They changed the way they conduct themselves to thwart our ability to see them.
+00:17:39.230 Unnamed: Les procureurs de quatre pays, France, Belgique, Espagne, Maroc,
+00:17:44.670 ceux qui incarnent la lutte antiterroriste réunie à Paris.
+00:17:47.410 Les procureurs antiterroristes souhaitent unir leur voix pour alerter les
+00:17:52.529 plus hautes autorités nationales et internationales, ainsi que les sociétés
+00:17:56.670 concernées, par le problème du chiffrement des communications et du
+00:18:01.289 verrouillage des dernières générations de téléphones, tablettes et ordinateurs.
+00:18:06.809 Catherine: So we saw that all the people having a Sky or CC
+00:18:11.150 phone, which was very expensive, were all criminals.
+00:18:14.809 And they used these encrypted communication tools,
+00:18:19.450 these encrypted téléphones, to organize their business.
+00:18:24.890 We started to reflect on how can we address this, legally and also technically.
+00:18:34.789 We have some specialists here and they try to
+00:18:38.470 find the access to the encrypted communication.
+00:18:42.089 So they try to decrypt the communication and to enter into the system,
+00:18:47.910 in fact, and to listen to everything what was going on in Sky or CC.
+00:18:55.450 And then, because it was so big, a JIT was created, a joint investigation team.
+00:19:03.140 Different countries, different investigators,
+00:19:06.700 different judges, and Europol, all working together.
+00:19:11.160 The different countries participating in the JIT,
+00:19:14.460 in this case, Belgium, France, and the Netherlands.
+00:19:19.059 The other platforms, the legal platforms, are used by
+00:19:23.200 everybody, by regular people like you and me, also by criminals.
+00:19:29.299 And when we have issues with the legal platforms, and when we get
+00:19:35.440 a court order to have lawful access to this communication platform,
+00:19:40.920 our expectation from the law enforcement community is that we
+00:19:45.460 should be granted also access to the content on that information.
+00:19:51.839 So for me, the hosting online providers should be forced in one
+00:19:56.960 way or another to provide us with the information we need for our
+00:20:01.660 investigative cases to be able to do our work in an efficient way.
+00:20:07.160 I am not asking for a backdoor. Nobody is asking for a backdoor.
+00:20:13.880 We want a front door.
+00:20:24.559 Yeah, so this is kind of amazing, right? This is what they put out voluntarily.
+00:20:28.859 We couldn't have made this a better video, but they actually did it for us.
+00:20:31.960 It's an incredible piece of marketing.
+00:20:35.000 Yeah, so now we're in the 2020s, and she said it herself, she
+00:20:39.400 doesn't want a back door, she wants a front door, and one of
+00:20:41.700 the most recent attempts to get a front door is chat control.
+00:20:45.819 So in the 2020s, child sexual abuse and exploitation has sort of taken the
+00:20:50.000 role of terrorism or terrorist threats to legitimize attacks on encryption,
+00:20:54.759 and this is something we have all seen in the last couple of years.
+00:20:57.059 It's nefarious.
+00:20:58.220 It's obviously child sexual abuse and exploitation is an
+00:21:00.200 incredibly serious issue, but it is increasingly used to legitimize
+00:21:04.000 access to encrypted data for a range of different purposes.
+00:21:08.180 This new trend has first led to the introduction of a derogation of the e -privacy directive.
+00:21:14.579 This sounds like a mouthful, but essentially means that a number of companies are
+00:21:19.240 allowed to essentially depart from European law that protects encrypted and
+00:21:26.339 uh not encrypted- private communication in order to scan for a child sexual abuse imagery.
+00:21:31.980 This is essentially the status quo. Two years later, the commission then
+00:21:36.240 introduced a proposal that went a lot further, and that is the notorious
+00:21:40.279 child sexual abuse regulation, which probably all of you know as
+00:21:43.099 cchat control, and there the proposal was to essentially oblige all
+00:21:47.640 service providers of private and encrypted communication to introduce
+00:21:51.019 client -side scanning capabilities, so to essentially scan private and confidential
+00:21:55.980 communication before it is encrypted on device in order to find certain types of
+00:22:02.240 abusive material, but we can all imagine how easily that kind of
+00:22:05.240 technology could be used for all sorts of purposes further down the line.
+00:22:09.099 And as you all know, this would have introduced major new security risks
+00:22:12.579 and would have upended the privacy and confidentiality of communication as we
+00:22:16.819 know today. Luckily, this hasn't happened. So the good news is that
+00:22:23.200 after three years of campaigning, European member states have moved away from
+00:22:28.680 endorsing chat control and have essentially decided to safeguard
+00:22:32.180 encryption in their joint position that they now use to negotiate
+00:22:36.819 this law with the European Commission and the European Parliament in
+00:22:39.960 the next stage of the legislative process, which is called trilogs.
+00:22:42.720 That is the good news. The bad news is that chat control was just the beginning.
+00:22:50.019 And on April 1st of this year, this is also no irony, they choose
+00:22:54.680 these kind of dates for themselves, the commission has unveiled its brand
+00:22:58.920 new strategy for internal security, the so -called Protect EU, see what I
+00:23:05.480 did there? The Protect EU strategy. And this is a picture from the EDRi office,
+00:23:11.200 live footage, whenever a new internal security strategy drops. Yeah, what does the
+00:23:17.079 strategy entail? It deals with lots of different issues, we're
+00:23:19.400 not going to go into all of them, but essentially we're going to focus on
+00:23:22.480 two, so one is a brand new approach to undermine encryption called lawful
+00:23:26.960 access by design, you already heard it, is exactly as terrifying as
+00:23:30.779 it sounds, and the comeback of mass data retention, and we will
+00:23:35.180 start by looking at attacks on encryption.
+00:23:38.759 Both demands built on the output of a high -level group, nickname Going
+00:23:44.519 Dark, because, but the official name is Adele, not the one you think, for
+00:23:50.079 access to data for effective law enforcement, and it was launched by the
+00:23:55.259 commission and the Swedish presidency of the council in 2023.
+00:23:59.680 It was mainly composed of experts from EU member states coming from
+00:24:04.859 prosecution offices, law enforcement authorities, and so on, and very few of
+00:24:10.559 those participants' members were from a data protection perspective, and
+00:24:15.460 the themes that they covered are basically access to data at rest in a
+00:24:20.819 user's device, at rest in a provider's system, and in transit, so what is most
+00:24:29.599 known as real -time interception. One year later, in 2024, they published 42
+00:24:37.539 recommendations, and the high -level group Going Dark recommendation could be
+00:24:44.420 the subject of an entire talk in itself, but let's just say that they produce
+00:24:48.819 exactly the kind of report that you would expect from a club of law enforcement
+00:24:52.960 officers and prosecutors, so they couldn't point to any evidence, but they
+00:24:57.819 concluded law enforcement loses ground to criminals, because of encrypted
+00:25:02.859 communications, and because it's 2025, they had to admit that sometimes safe
+00:25:10.380 and robust encryption is beneficial for businesses, governments, people,
+00:25:15.700 literally anyone who needs to communicate safely and privately, and therefore
+00:25:20.900 they came up and they pushed for this lawful access by design approach, which is
+00:25:25.680 supposed to fix the problem of encryption by providing
+00:25:31.079 what it sounds like, a front door to access data, while all the while preserving
+00:25:37.059 IT security, data protection, and human rights.
+00:25:40.680 This is an amazing feat, right? Break encryption, but also maintain security.
+00:25:44.819 So if you're wondering how exactly the European Commission plans to accomplish
+00:25:48.319 that feat, you're not alone, the European Commission doesn't know either.
+00:25:52.420 So they have resorted to one of their favorite strategies, which is to convene an
+00:25:57.119 expert group. So this particular one is called Expert Group for
+00:26:01.140 Technology Roadmap on Encryption, very interesting name, and it is supposed to
+00:26:05.039 figure out technical solutions that would enable law enforcement authorities
+00:26:08.440 to access encrypted data in a lawful manner while safeguarding cybersecurity and
+00:26:13.339 fundamental rights. So this is quite something. We have here for you a part
+00:26:18.099 of the terms of reference of that group, because I think
+00:26:20.059 it's just interesting to see it all on black and white, or white and black.
+00:26:23.880 It's all out there. They put this out, this is what they want to do.
+00:26:27.339 But yeah, essentially says it all here, as opposed to identify potential technical
+00:26:30.960 options to access data that might already exist or potentially could be developed
+00:26:37.579 in the future, so anything is possible, really. Sky's the limit.
+00:26:40.799 But also consider the technical and organizational measures to address and
+00:26:44.720 remedy certain risks. Yeah, so this group met for the first time in December.
+00:26:50.000 It is one of the most intransparent secret things you could possibly imagine.
+00:26:53.500 It's really hard to understand what's happening there. We actually don't really
+00:26:56.799 know much. So this is something that will happen in darkness and
+00:27:01.720 far away from the public and scrutiny of democratic institutions.
+00:27:05.720 But the interesting thing is that the commission has decided to actually, or
+00:27:10.519 they have essentially said that this group will be in existence for a year, and
+00:27:14.140 then after that, the commission will deliver another roadmap, a
+00:27:19.779 technical roadmap on encryption. So the commission has essentially indicated that
+00:27:23.380 there will be some sort of report, some sort of final output from that group in a
+00:27:27.759 year from now or so. Interestingly enough, it's still really unclear what
+00:27:32.140 happens afterwards. So essentially the commission, by convening these expert
+00:27:37.559 groups, tries to depoliticize an issue, right? They essentially take this
+00:27:41.059 highly political question, which is, should we as democracies figure out ways to
+00:27:46.119 build in front doors to access encrypted communication and give that to
+00:27:49.859 an expert group, which was of course not democratically
+00:27:52.819 elected, but then any of the day, of course, the commission retains the
+00:27:56.500 right to take a political decision on whether to legislate on this issue or not.
+00:28:01.200 So we're sort of see this like this technocratic washing machine of first
+00:28:05.099 having this expert group, which will give advice, which the commission is then
+00:28:10.099 of course completely free to ignore. So even if this expert group
+00:28:13.180 comes up with the astonishing finding that there might not be a way to both
+00:28:18.140 have a front door and keep secure communication, the commission can still do
+00:28:23.660 pretty much whatever they want.
+00:28:26.640 Going back to the second part of the Protect EU strategy, the comeback of
+00:28:31.240 data retention. So the invalidation of the data retention directive in
+00:28:35.319 2014 left the commission and the member states quite helpless in an awkward
+00:28:42.680 situation. They didn't know what to do after that. And in the last decade,
+00:28:47.000 they really were discussing a lot. Should we have another EU
+00:28:51.420 instrument on data retention? So they did questionnaires,
+00:28:55.779 they did like council talks and whatnot. And what we could see from
+00:29:01.380 leaks by Statewatch notably is that the view among member states differ a lot.
+00:29:08.099 Some member states, they're really wrong. They're like, let's not care
+00:29:12.559 at all about the limits set by the court of justice. Let's go for what we want
+00:29:17.160 and what we need. While others are like, okay, we can find a solution and
+00:29:21.279 work within the limits set by the CJEU. So there are two kind of camps here.
+00:29:27.039 Some member states are actually not so keen to have new EU instruments because
+00:29:31.579 that would probably mean that they would have to revise
+00:29:34.140 their national data retention regime, which is illegal by
+00:29:37.799 EU law, and that they would have maybe lesser surveillance level.
+00:29:41.759 So they're not so keen to have a new EU instruments, but
+00:29:44.839 generally, after some talks, there is quite a general
+00:29:49.220 consensus that there should be a new EU legislation on data retention.
+00:29:54.880 And so the president of the commission, Ursula von der Leyen,
+00:29:58.420 announced at the beginning of this mandate that this is the mandate to do it.
+00:30:02.200 They're going to work on it. And so what we're expecting is
+00:30:05.420 that this proposal will come next year. The commission started officially
+00:30:10.759 the legislative process by launching public consultations.
+00:30:15.539 And that really means that we're going to expect a proposal probably in June 2026.
+00:30:25.859 What can we expect from this commission proposal? We are looking at the summary of
+00:30:32.500 responses by member states to a questionnaire run by the Danish
+00:30:36.759 presidency of the council. So they asked, what are we going to do?
+00:30:40.319 What are we asking the commission to include in this proposal?
+00:30:44.220 And we look also at the commission on call for evidence or the
+00:30:48.299 questions that they give to the public to answer.
+00:30:51.119 And from that, we can speculate a little bit. And what do we speculate about?
+00:30:57.079 The EU rules will likely complement national data retention regimes.
+00:31:02.359 Again, this idea of giving flexibility to member states to go
+00:31:05.599 further if they want. If they want to surveil more, they should be allowed to.
+00:31:10.640 They would only focus on certain data categories, again, leaving the
+00:31:14.599 rest to the member states. Probably what is allowed by the
+00:31:18.339 CJEU, so identification data, so to say, source IP address, civil, civic
+00:31:25.500 identity data collected by the service providers may be verified. We don't know.
+00:31:31.799 And probably port numbers, too. We will also expect an enlarged scope
+00:31:37.920 of service providers because most of the communications are now taking
+00:31:42.319 place elsewhere than the traditional providers that were back then
+00:31:46.740 mainstream and popular in the 2000s. So they want to cover over -the -top
+00:31:50.680 providers, OTTs, and maybe VPNs as well, which is new.
+00:31:56.519 Member states don't like the option of targeted data retention that is put
+00:32:01.420 forward by the Court of Justice or the approach of quick -freeze, preservation
+00:32:05.779 of data. They think it's not useful for law enforcement, so probably we won't see
+00:32:12.240 that in the proposal. And then for the purpose, what is allowed to …
+00:32:18.440 What are the purpose for which data can be retained?
+00:32:22.000 We see all crimes committed in cyberspace or using information and communication
+00:32:27.019 technology. Everything? No? Crimes committed largely online, stalking,
+00:32:34.500 hate crime, etc. Even if the level of sanctions is moderate, what does it mean?
+00:32:40.799 It means that it might go beyond what the CUEU has said for certain categories of
+00:32:45.140 data.
+00:32:46.440 Svea: Another good thing to look at when we think
+00:32:48.599 about what to expect is what's happening at the member state level.
+00:32:51.500 So you might have seen that Germany has published a new data retention proposal
+00:32:57.019 on the 22nd of December, which was the Christmas present I wanted.
+00:33:02.740 And, yeah, it's very telling. And it's very similar to the lines that
+00:33:06.480 Chloé just described. So the German proposal essentially
+00:33:09.940 proposes the retention of data of IP addresses and port numbers for up to
+00:33:15.079 three months. This is a political compromise. The Conservatives wanted more.
+00:33:18.500 The SPD had some backbone and wanted a bit less.
+00:33:21.819 It does not only cover internet service providers, but also OTTs, so messaging
+00:33:26.059 services, email services, and so on, what Chloé just mentioned.
+00:33:29.859 And, yeah, so it's not great. So what we're essentially seeing is, again,
+00:33:32.420 a proliferation. So this is a German attempt to influence
+00:33:35.500 what is coming at the European level. But that doesn't mean that we don't have
+00:33:39.039 to fight it at the German level as well. So we see lots of things happening in
+00:33:42.579 Brussels, but unfortunately also things happening in Germany, but also in
+00:33:45.740 Ireland, Sweden, and other places. So is there still hope, you might ask yourself?
+00:33:53.720 Maybe. In the past, this community has looked to
+00:33:59.019 courts, and especially the Court of Justice of the European Union, to fight
+00:34:02.700 data retention and attacks on encryption.
+00:34:04.660 Ever since the decision in Digital Rights Ireland in 2014 that invalidated the
+00:34:09.159 European Data Retention Directive, we looked at the court as a really solid ally.
+00:34:17.250 But maybe not. Maybe that's no longer the case, that the CJEU is actually an ally.
+00:34:23.869 We saw already in 2020, in the joint cases brought by La Quadrature du Net,
+00:34:29.309 Ligue des Droits Humains Belges, and Privacy International about the UK, Belgium,
+00:34:33.650 and French data retention regimes, that the
+00:34:36.670 EU is starting to nuance its position on the
+00:34:41.809 general and indiscriminate retention of traffic and location data, and started to
+00:34:47.650 accept that it may be compatible under certain conditions, or for certain
+00:34:52.130 categories of data. And it's not going better since.
+00:34:57.409 In 2024, the CJEU released a ruling in the
+00:35:01.710 Hadopi case, which is again a case brought by
+00:35:04.489 La Quadrature du Net, against the French anti -piracy law.
+00:35:07.949 And in that ruling, the court accepted that
+00:35:10.510 mass retention of source IP address might be no
+00:35:15.389 longer serious interference with fundamental
+00:35:18.949 rights, which for us nerds or policy people is
+00:35:23.769 kind of a departure from what the court had
+00:35:26.909 previously, from the approach that the court had previously taken.
+00:35:31.630 The problem is that the CJEU seems to be
+00:35:34.530 convinced in these rulings about the argument brought
+00:35:38.989 by member states government during the different
+00:35:40.849 hearings on those cases, which is new forms of crimes
+00:35:44.989 facilitated by digital means, or taking place online,
+00:35:49.690 bring this risk of systematic impunity.
+00:35:53.929 And so the court accepts to weaken certain privacy
+00:35:58.110 requirements that it previously held in order to prevent this risk from happening.
+00:36:04.010 And so we must kind of accept as a community that
+00:36:06.590 litigation is an important, but also a risky tool.
+00:36:11.389 And so we must still litigate against violation of
+00:36:14.010 fundamental rights probably, but it's not a political
+00:36:16.309 strategy to win this fight overall.
+00:36:19.849 Svea: It's a narrative battle, not a legal one.
+00:36:22.170 And I think this is actually more of a rethinking for this
+00:36:25.230 community than we might be aware of.
+00:36:26.590 So I think previously a lot of us had this assumption that,
+00:36:29.349 well, if they don't listen to us, and by they we mean
+00:36:31.530 politicians, we'll see each other in court and we'll win
+00:36:34.210 because the jurisprudence is so clear and there was this
+00:36:36.829 beautiful range and list of judgments coming out again and
+00:36:41.309 again making similar points. But unfortunately, we're not there anymore.
+00:36:44.570 So yeah, we need to accept that we need to move on and need
+00:36:47.329 to go beyond legal strategy.
+00:36:50.550 And that is especially important because the other guys have
+00:36:53.630 been fighting the narrative battle for the past 30 years.
+00:36:56.530 Think back to the infamous going dark framing.
+00:36:58.929 So what we have here is something really fascinating.
+00:37:02.449 So this is part of the response that Slovakia shared to the
+00:37:05.269 commission's questionnaire when they asked, once again, what
+00:37:08.269 exactly to do about data retention.
+00:37:10.010 And the Slovakian government thought it would be really important
+00:37:13.070 to change the commonly used terminology that people use to talk
+00:37:17.590 about data retention.
+00:37:18.489 Because at this point, some people at least actually understand what
+00:37:21.690 it's meant by data retention and why it's an issue for fundamental rights.
+00:37:25.190 So Slovakia suggested to change terminology so that can eventually lead
+00:37:30.289 to a change in political perception.
+00:37:32.889 And I think this is actually a strategy we should borrow as a movement.
+00:37:36.750 We need to start shifting the narrative on what privacy and data protection
+00:37:41.989 actually mean in practice, why they're relevant for a lot of people out there,
+00:37:45.710 actually for every single one of them.
+00:37:46.849 And we need to find new ways of telling that story.
+00:37:50.949 And if we do that, then I believe that resistance is definitely possible and that
+00:37:56.610 there is hope left. Yeah.
+00:37:59.130 So I think what we have seen in the last couple of months in the country of
+00:38:03.670 chat control is that sometimes we can win if we manage to find new ways as a
+00:38:10.909 movement to work on this.
+00:38:12.010 So how do we manage to shift the debate on chat control after three years of
+00:38:15.949 entrenched debates and really bad proposals from absolutely every direction?
+00:38:19.389 What can we learn from that fight to look at these future fights that are, again,
+00:38:23.949 the exact same proposals as the past 30 years but just in a slightly different
+00:38:27.190 political context?
+00:38:28.429 One thing we have learned is that we need to build broad coalitions with unlikely
+00:38:31.969 partners. This is really crucial.
+00:38:34.309 We need to work with people who we might not agree with on every single issue but
+00:38:38.130 that we agree with on the big questions.
+00:38:40.190 So in the case of chat control, some of our most important allies are child
+00:38:44.329 protection organizations.
+00:38:45.530 And these are people who have a lot of expertise on issues that we don't have
+00:38:49.150 expertise on.
+00:38:49.889 And they can talk with a lot of legitimacy about what it actually takes to protect
+00:38:53.889 children from abuse that has nothing to do with chat control.
+00:38:57.570 So these are the kinds of alliances that might be unfamiliar and a bit
+00:39:01.429 uncomfortable at first that we need to build now in order to fight back against
+00:39:06.050 this effectively.
+00:39:07.190 The other big thing is, and this is something I kind of briefly mentioned before, is that
+00:39:10.750 we need to invite more people to understand why this matter.
+00:39:14.630 So in this talk, Chloé and I essentially only talked about the past and then tried to give
+00:39:18.809 you an idea of what's coming, but we really didn't talk a lot about why this is bad, right?
+00:39:23.730 We kind of operated from the assumption that everyone in this room already agrees with us on
+00:39:27.989 the fact that mass surveillance both from states and companies is bad.
+00:39:32.429 That assumption doesn't hold anywhere else.
+00:39:35.710 But as a community, we often assume it does. And this is an issue.
+00:39:39.690 We need to talk to people in a really different way and we need to bring new people to the
+00:39:43.469 table.
+00:39:43.949 Because the other big issue is that often the people most affected by surveillance are
+00:39:48.949 some of the most vulnerable communities that are never in policy spaces, that are maybe
+00:39:53.309 not even here.
+00:39:53.929 So this is the other big task and the big learn,
+00:39:56.610 I think, from the chat control campaign where
+00:39:59.550 we have managed to mobilize really, really different communities, including, for example,
+00:40:03.590 sex workers, trans people, children, young people, vulnerable people also in that sense
+00:40:09.489 were never really represented. So this is the other big learning that we have.
+00:40:13.369 And yeah, we need to build broad new coalitions and we need to do it now.
+00:40:16.829 Why now, Chloé?
+00:40:17.550 Chloé: It's navigating the Brussels Maze 101, but basically, and bear with me for the terrible
+00:40:26.469 design, hopefully we update this soon, but we are at the very start.
+00:40:32.989 The good thing is we're in here early to prepare the fight.
+00:40:37.170 We know it's coming and we have time to actually
+00:40:39.590 build those connections, start to sharpen our
+00:40:42.650 narrative and try to push back because we are in between one and two on this graph.
+00:40:49.489 We started a public debate.
+00:40:51.789 There were a lot of things floating around for so many years.
+00:40:54.769 And now we are moving slowly to the policy debate, which is discussing policy options.
+00:41:00.170 What should be in the proposal?
+00:41:02.369 And this is really crucial that we build as many connections and build strong coalition to
+00:41:08.670 push for something that is sustainable and definitely not mass surveillance.
+00:41:15.130 So we're good for now because we're early and it's really crucial for the next steps when
+00:41:22.489 the proposal of the commission is out, when the text is debated by the council on one hand,
+00:41:27.489 the parliament on the other hand, and then when they try to merge in trilogues.
+00:41:31.269 It's really crucial that we lay the ground early before we move to those steps.
+00:41:36.730 Svea: Yeah, so now is a really, really good time to get involved.
+00:41:39.050 And the good thing is that really everyone can get involved.
+00:41:41.369 We need everyone and all of your skills. So some of you might be technologists.
+00:41:44.889 Some of you might be lawyers. Some of you might be graphic designers.
+00:41:48.110 Some of you might be able, I don't know, to build a website or like do things on social
+00:41:51.570 media. I'm not.
+00:41:52.789 But the point is that everyone has a skill that can be useful in this campaign.
+00:41:57.090 And we need absolutely everyone. And that is my last point.
+00:42:01.090 Organize and reach out. Reach out to us. Reach out to EDRi members.
+00:42:05.190 Join what is already happening. There is so much already happening.
+00:42:08.510 There is an EDRi member in almost every European country.
+00:42:11.030 For example, like Quadrature du Net in France. Bits of Freedom in Netherlands.
+00:42:15.250 Panoptykon in Poland. IT-Pol in Denmark. Epicenter Works in Austria.
+00:42:20.010 Electronic Frontier Finland in, well, Finland. Homo Digitalis in Greece.
+00:42:24.230 Irish Council of Liberties. So many. In Germany, of course. Chaos Computer Club.
+00:42:28.969 D64. Gesellschaft für Freiheitsrechte. Digitale Gesellschaft.
+00:42:32.090 So many of us are part of this coalition. And we need absolutely everyone.
+00:42:36.170 So thank you so much for listening. And I hope we'll put up a good fight together.
+00:43:00.570 Herald: Thank you very much for that presentation.
+00:43:03.789 I see some people already going to the microphones.
+00:43:06.630 You will have an opportunity for Q &A now.
+00:43:09.230 So if you would like to ask the speakers a question, and if
+00:43:12.769 you're in the room, you can go to one of those microphones.
+00:43:15.829 If you're watching online, there is a chance to ask your questions as well.
+00:43:20.730 These are being collected via the IRC channel and via Matrix.
+00:43:24.929 We're not monitoring Mastodon for the questions
+00:43:27.610 this year, but IRC and Matrix are the ways to ask.
+00:43:31.769 And I will call upon questions from the Internet in a moment.
+00:43:34.610 First question from microphone number two, please.
+00:43:38.469 Hi. First of all, thank you so much for working on this topic.
+00:43:43.489 My question is about, you know, when you hear people on the other
+00:43:47.210 side talk about this topic, then increasingly you hear people say,
+00:43:50.389 oh, you know, you should give us access to your unencrypted data.
+00:43:52.809 But of course you shouldn't do anything that in any way undermines the
+00:43:55.989 security of your product or service or weakens encryption or whatever.
+00:43:59.190 It's actually also in this list of recommendations from the high -level group.
+00:44:02.510 So I'm wondering why do these people say this or do they recommend this?
+00:44:09.210 Is it because they don't know any better or is it kind of a
+00:44:11.829 narrative approach to undermine our argument where we're saying,
+00:44:15.690 like, no, you're weakening confidentiality or encryption?
+00:44:18.309 Like, what's happening there? Do you have any insights into that?
+00:44:23.670 Chloé: When I talk with them, which happens, it's really – I think they understand what they say.
+00:44:31.289 I think they do, and they're just pretending that it is possible.
+00:44:36.489 So first, there is kind of this magical thinking of, like,
+00:44:40.409 well, it's technology, and technology has saved us in the past.
+00:44:44.210 Kind of like this techno -solutionist approach that we well know.
+00:44:47.489 Like, there is somewhere out there a technological solution to our problem.
+00:44:52.110 They strongly believe in that.
+00:44:55.469 And they really say it, like, oh, I've talked to experts, and they have the solutions.
+00:45:00.329 And then comes client -side scanning to the door.
+00:45:04.469 And then we have to, like, unpack what it means.
+00:45:08.130 And then secondly, I think they don't distinguish between
+00:45:12.110 the technical side of what they're saying and the legal side.
+00:45:16.630 So they're like, no, this is not a backdoor, what
+00:45:19.130 we're describing, because the judge authorizes it.
+00:45:22.750 I'm like, technically, you're still talking about a backdoor.
+00:45:26.309 You're still talking about a built -in vulnerability in a system.
+00:45:29.510 And they're like, no, but there is a warrant.
+00:45:31.590 I'm like, and it's impossible, like, to make them understand.
+00:45:35.650 But hopefully others will in other parts of society. You want to complement?
+00:45:40.489 Svea: Just say that I think there are also just a lot of – it is possible
+00:45:43.329 to find experts that will tell you that this is possible, right?
+00:45:46.170 I mean, that's not an issue, really, in the big world out there.
+00:45:50.110 So I think there is also just – I think it's hard
+00:45:51.869 to underestimate the strength of ideology here.
+00:45:56.599 Thank you very much. Signal Angel, can you give us one question from the Internet?
+00:46:02.739 Signal: The Internet wants to know, do you happen to know what
+00:46:06.440 does the European Union Agency for Cybersecurity, ENISA,
+00:46:11.199 think about chat control and how can a front door coexist with cybersecurity?
+00:46:18.000 Svea: I don't know whether ENISA has actually commented on chat control.
+00:46:21.840 I don't think they have, but that's a good thing to look up.
+00:46:25.179 But there is a range of really interesting opinion
+00:46:28.519 from, for example, the Dutch secret service,
+00:46:30.920 who have said that chat control is actually a major issue from a security perspective.
+00:46:35.420 So there are definitely also voices, like governmental
+00:46:38.260 voices, from the cybersecurity and IT security space
+00:46:40.619 that have tried to explain why chat control is a really bad idea.
+00:46:45.500 Herald: Thank you very much.
+00:46:47.119 And everyone in the room, if you have more questions, please do approach the microphone.
+00:46:50.699 We have some time for Q &A reserved.
+00:46:52.699 So next, again, on microphone number two, please.
+00:46:55.880 Hi. First of all, thank you for the great work and for the presentation.
+00:47:00.119 I found it a really interesting notion to switch from a legal battle to a narrative battle.
+00:47:05.619 And I thought the framing of chat control seemed
+00:47:08.980 to be very powerful in speaking to a lot of people
+00:47:11.800 that they don't want their chat to be controlled.
+00:47:13.699 And I was wondering, have you been thinking
+00:47:15.800 about what the counter -narrative is to going dark
+00:47:19.579 or what they called lawful access, right?
+00:47:23.059 We don't think it is lawful, but we also don't think
+00:47:26.599 it's like the legal battle we should be having.
+00:47:28.500 So what is the term to be like properly, privately
+00:47:32.800 communicating and being protective to counter this?
+00:47:38.380 One million dollar question. Yeah.
+00:47:41.280 We need creative brains to reframe data retention. That's not sexy.
+00:47:45.400 That doesn't fly very much. If you have any ideas, come to me after.
+00:47:49.880 We've been trying to rub our heads crazily about trying to reframe this for what it is.
+00:47:56.760 It's very hard.
+00:47:58.320 We try to pitch this lawful access by design or security by design, by insecurity by design,
+00:48:06.920 what they're proposing, which worked quite well. But I think we could do better.
+00:48:11.280 So it's really on us, I think, to find it.
+00:48:14.239 Svea: Definitely.
+00:48:14.760 I think in German, Vorratsdatenspeicherung still has a certain signal meaning,
+00:48:19.880 but I think that's also getting lost.
+00:48:21.280 Chloé: But that's only one member state.
+00:48:23.119 Yeah. Any good ideas, let us know.
+00:48:25.619 Thank you very much. Signal Angel.
+00:48:29.409 Signal: What kind of surveillance or data collection do you think should be allowed by government
+00:48:34.489 or for law enforcement purposes? What limits would you recommend to the EU?
+00:48:44.090 Chloé: Traditionally, EDRi has been supporting a quick -freeze approach.
+00:48:47.610 Which means that law enforcement would be able to send an order to a private party,
+00:48:54.230 for example, a service provider, a telco operator, whatever, a hosting service provider,
+00:48:59.369 for data that they already have.
+00:49:01.750 So there is no kind of obligation to generate that data, to search for it first.
+00:49:06.849 And then second, that's like kind of historical data.
+00:49:09.269 I mean, the data already exists.
+00:49:11.030 And it's based, obviously, on reasonable grounds of suspicion.
+00:49:19.050 It's individualized suspicion.
+00:49:23.170 And it's obviously following every single procedural
+00:49:26.969 safeguards that is currently contained in EU law,
+00:49:30.389 if not more, because currently there is a weakening
+00:49:33.309 of standards, but that's for another talk.
+00:49:37.170 But basically, yes, we're in favor, or we're in favor.
+00:49:40.909 We would be okay to support what is called preservation orders.
+00:49:45.789 It's really specific in the context of a judicial proceeding.
+00:49:49.510 It's, again, one person against which there are reasonable
+00:49:53.269 grounds to believe that they have or may be committing a crime.
+00:49:57.469 And then we could be, like, discussing about under
+00:50:00.969 which circumstances, meaning, like, what type of crime,
+00:50:04.429 if it's a serious one or not. That would be our recommendations. Yeah.
+00:50:08.949 Svea: At D64, we've also supported quick -free debates and proposals in Germany.
+00:50:13.269 We've also developed something that we call login trap, Log in- Falle,
+00:50:17.130 which doesn't really fit the use cases that are
+00:50:20.730 mostly talked about when it comes to data retention,
+00:50:22.730 but could be a useful tool for law enforcement.
+00:50:27.670 Thank you. Microphone number two, please.
+00:50:30.809 Audience: I'm curious when it comes to the public debate.
+00:50:33.889 We, of course, have to talk also about the parties and their mechanisms within each other,
+00:50:37.469 because you have the trouble that the parties, for example,
+00:50:41.670 with the “Ampel"> government, the coalition of Social Democrats, Liberals, and Greens,
+00:50:47.329 where the Social Democrats were actually the most conservative, quote, unquote,
+00:50:53.449 in terms of supporting surveillance law.
+00:50:57.489 And I remember also there were motions within the
+00:51:00.010 Social Democrats to push against data retention,
+00:51:03.969 against Vorratsdatenspeicherung, which sadly failed,
+00:51:07.309 where also there was lots of pressure coming from leading party members.
+00:51:11.110 So how can we also make a narrative work so we get the politicians to get frightened,
+00:51:17.630 because it seems they are absolutely not?
+00:51:21.750 Svea: Yeah, and we've been trying.
+00:51:23.969 I think this, what you're describing, is sort of the result of
+00:51:26.989 the typical tension between home affairs and digital policy.
+00:51:30.730 So in my experience, most digital policy makers
+00:51:34.469 and member of parliament working in digital policy
+00:51:36.210 from all democratic parties have a base and understanding of what is at stake,
+00:51:40.329 but they're often not necessarily in a position of power
+00:51:43.949 within their party to trump the internal security people.
+00:51:48.050 I think what we can do is to supply arguments to help them craft narratives,
+00:51:54.250 to help them craft arguments to win support within their party,
+00:51:57.969 but also, honestly, at some point, to take it to the streets.
+00:52:00.429 I think there needs to be a real consequence.
+00:52:02.010 I think people in power need to understand that people care about this,
+00:52:05.510 and we need to be able to mobilize people if necessary.
+00:52:17.449 Herald: Microphone number two again.
+00:52:19.789 Audience: So even the targeted retention could be very bad when you think about foreign state actors.
+00:52:24.190 But my actual question, which maybe I missed something earlier,
+00:52:27.030 so to what extent did the perceptual hash stuff,
+00:52:29.829 did it survive in any form into what they actually passed, like, last month?
+00:52:34.690 Chloé: What did you say?
+00:52:36.630 Audience: To what extent did that even survive into the thing that finally got approved?
+00:52:40.269 Like, what actually lived from that?
+00:52:42.389 Svea: Yeah, so nothing has passed yet.
+00:52:44.690 So the council position on chat control essentially says that
+00:52:48.989 companies can continue to scan voluntarily for child sexual abuse materials.
+00:52:53.849 So this is the status quo.
+00:52:55.530 The interesting question that will be negotiated over the next couple of months
+00:52:58.610 is what is voluntary scanning?
+00:52:59.969 And I assume that there will be attempts to make voluntary scanning a bit less voluntary
+00:53:06.630 and a bit more mandatory in certain circumstances.
+00:53:09.150 But the compromise doesn't actually differentiate between different detection technologies,
+00:53:16.170 but has essentially focused on voluntary scanning.
+00:53:19.449 But I'm sure that this debate will come back.
+00:53:22.670 Herald: Microphone number one, please.
+00:53:24.710 Thank you for the talk. So if I got it right, the key is the narrative.
+00:53:30.949 And you said that the expert group is going to
+00:53:34.750 work on this idea in the dark, not in the public.
+00:53:40.869 And I wonder if this is the actual advantage that we could have.
+00:53:45.750 Because in that time where they go behind doors,
+00:53:49.329 we could share all the information, talk publicly,
+00:53:53.809 like make an open discussion about this and flood the public with real information.
+00:54:02.829 Exactly. I think that's what we're trying to do right now.
+00:54:05.269 This is exactly what we're trying to do in the next
+00:54:06.849 years to essentially build a really broad, big campaign.
+00:54:10.949 that makes better arguments and is more compelling and offers better alternatives.
+00:54:17.070 Thank you. Signal Angel.
+00:54:20.190 Signal: The internet wants to know how to speak about the issue publicly
+00:54:23.929 without being framed as someone who supports abuse of minors.
+00:54:29.710 Yeah. That's a good question. I think there is many different answers to this.
+00:54:37.230 Personally, I try to, so there is essentially a lot of really,
+00:54:41.349 really good research out there that I'm happy to point people towards
+00:54:44.190 that essentially collects evidence on child sexual abuse.
+00:54:48.449 And it becomes very quickly apparent that most sexual
+00:54:51.230 abuse happens, it is obviously perpetrated offline
+00:54:55.010 and it is often perpetrated by members of family or people who are close to the child.
+00:54:59.809 And the current debate on chat control really only focuses on the detection of material,
+00:55:04.510 but it does not focus on the prevention of abuse.
+00:55:07.969 And this is how I try to talk about this, that it would be
+00:55:11.030 helpful to shift the debate away from the pure detection
+00:55:13.650 to actual functioning working measures of preventing abuse in the first place.
+00:55:19.909 But I'm happy to talk about this more with anyone who is interested.
+00:55:24.409 Thank you. Microphone number two.
+00:55:27.809 Audience: So on that topic, there was a great talk on the
+00:55:30.130 first day about prevention of child sexual abuse.
+00:55:34.590 Svea: Yes.
+00:55:35.510 Audience: So something that we haven't mentioned at all is, so first, thank you for the great talk
+00:55:39.750 and thanks for all the work you've been doing for years.
+00:55:41.949 I was wondering what, as a community, we could do
+00:55:45.090 for you two and the people who are in the front line
+00:55:47.449 so that you do not burn out.
+00:55:51.599 Chloé: You said it, no?
+00:55:52.699 I love that question. I think... No one ever asked this. No.
+00:55:57.079 I think really get involved if you can.
+00:56:00.699 Figure out a way to get involved, whether it's through donations.
+00:56:03.599 A lot of our work... So I do this work in my free time.
+00:56:08.099 Chloé works for an organization that takes some donations.
+00:56:11.880 A lot of this work is happening by people who
+00:56:15.460 are employed in the not most stable of all ways.
+00:56:18.519 So I think if that is one way you can contribute, that is fantastic.
+00:56:21.320 Another one is try to figure out what is the one thing you can contribute.
+00:56:25.340 What is your skill? What is the thing you can offer?
+00:56:28.579 And I think that's a really good start to then get involved.
+00:56:31.900 Chloé: The success stories that we have in previous campaigns is a combination of different people
+00:56:37.860 with different skills, like people who are able to build this tool that will allow us
+00:56:42.019 to flood the European Parliament's inboxes with messages. Others are comms people.
+00:56:49.199 Others are policy nerds looking at the latest text that was released yesterday at midnight.
+00:56:54.920 And they spent three hours reading through all the details to know what is the new proposal
+00:57:00.679 on the table, et cetera, et cetera. So we need a very, very set of skills.
+00:57:06.659 And the best way to combine all of this is to join existing networks.
+00:57:12.019 EDRi is one, but there are others. And there are plenty to choose from.
+00:57:17.780 Great. Signal Angel.
+00:57:22.320 Signal: The internet wants to know, have you considered the current push for age verification,
+00:57:26.639 and especially the push for the UK, to force vendors to scan phones with nudes in this go?
+00:57:32.360 Svea: Yes, I'm only laughing because that is what I've
+00:57:34.880 been working on for the last couple of years.
+00:57:36.480 Yes, I think age verification is the next big
+00:57:40.360 issue, for sure, during the trial of negotiations
+00:57:42.960 of chat control, because that proposal actually includes a proposed obligation to introduce
+00:57:49.079 mandatory age verification for app store providers and
+00:57:52.659 messaging services, which is just a fantastic idea.
+00:57:57.639 Still, the whole discussion, I think, on age gating is a nuanced one.
+00:58:02.199 And, yeah, I think it is definitely one of the main sort of horizons on fundamental rights
+00:58:08.280 or protecting digital rights online.
+00:58:09.480 It will definitely be on the lines of age verification.
+00:58:12.139 There are a lot of really bad proposals. We've just, so UK was mentioned.
+00:58:15.880 Australia also just entered into, or passed a social media ban,
+00:58:20.739 entered into force in early December, which essentially
+00:58:23.559 bans everyone under 16 from the majority of the internet.
+00:58:26.679 So, yeah, I think this will, age verification has potential
+00:58:30.519 to reshape the internet as we know it in really dramatic ways.
+00:58:34.780 Chloé: Yeah, and the EU starts to obviously see how member states are moving fast in this area.
+00:58:40.639 So, we have Spain and France and also the influence of the UK,
+00:58:45.820 although it's no longer a member state, is still very high.
+00:58:49.480 And so, the problem is that it creates barriers in the single market.
+00:58:54.920 It's harder to follow 27 national rules on age verification than only one.
+00:59:00.340 And therefore, the EU is starting to get active on this topic, too.
+00:59:03.800 So, if you want to join the fight on this topic, please,
+00:59:09.699 again, see the previous answer to the previous question.
+00:59:14.619 Herald: Signal Angel.
+00:59:17.460 Signal: The internet asks, what is the correct way to demonstrate and educate
+00:59:24.019 the legislators from Brussels about data privacy and security?
+00:59:27.440 Because they do not understand tech and how to make EU move to open -source
+00:59:32.519 alternatives, since most EU countries rely on Google and Microsoft services.
+00:59:40.000 Patience. Patience is the best tool. Patience, determination, pedagogy a lot.
+00:59:53.480 It's very frustrating.
+00:59:55.059 Sometimes you may not see the direct result, which may be frustrating.
+00:59:58.420 You spend so much time with an MEP, with a member of European Parliament, talking
+01:00:03.820 about how important it is to have privacy for so many communities in our society.
+01:00:08.079 And in the end, they're like, okay, I will still abstain. You're like, no.
+01:00:14.760 But later on, we can rip a little bit the result of this work.
+01:00:20.199 Sometimes it does work, especially when there is a sheer
+01:00:23.199 amount of us being mobilized and talking on this topic.
+01:00:27.320 So, talk about your own experience, is my first advice to
+01:00:32.280 people starting doing advocacy towards EU policymakers.
+01:00:35.940 Start from where you come from. It's really much, it's a dialogue.
+01:00:39.880 It's between two individuals, and they're more likely to empathize
+01:00:43.320 with your point of view if you accept to share from your life.
+01:00:48.679 I know it's counterintuitive in this space. It's not really privacy -preserving.
+01:00:52.639 But this is how you build connection. And they are people, too.

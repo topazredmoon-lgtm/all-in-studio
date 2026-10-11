@@ -1,0 +1,364 @@
+[   18.1-   24.8] In the next talk, we're going to learn how production of state-of-the-art computer chips
+[   26.2-   36.0] is currently done. From ultra-pure quartz to advanced lithography techniques with emphasis on them,
+[   37.5-   45.2] from silicon to sovereignty, how advanced chips are redefining global dominance. We'll also
+[   45.2-   55.7] investigate geopolitical strategies in this script. Our speaker, Dvastan Helat,
+[   56.6-   65.6] is a physicist at the Lawrence Berkeley National Laboratory and their works for the advanced
+[   65.6-   72.4] light source accelerator. Dvastan, thank you very much. It's a huge honor to be on this stage and
+[   72.4-   77.7] a big shout-out to the organizing team and the people working here. I'm always very impressed
+[   78.3-   92.4] in the level of professionalism this congress has executed. I thought I want to start my talk by...
+[   98.6-  104.5] That's funny. Anyway, I wanted to remind everyone about the scale we are talking about
+[  104.5-  110.7] when it comes to a modern-day semiconductor. This is a human here. It's about 100 micrometer
+[  110.7-  117.3] in diameter. This small section of about 10 micrometer is an SST chip. It's not even the
+[  117.3-  124.3] newest one. It's from 2015. What the people from Zeiss did was they took electron microscopy
+[  124.3-  130.8] pictures and then they etched away layers of atoms. Then they did another electron microscopy
+[  130.8-  136.4] picture. That's how they did a 3D reconstruction of this memory chip. You can see all these wires
+[  136.4-  141.7] here. These are the bit lines for those of you who know how these things work. These circular
+[  141.7-  149.1] structures here, this is a transistor-based memory cell that is able to store one bit of information.
+[  149.1-  154.8] If I did the counting correctly, this whole block holds about 500 bytes, so about a millisecond of
+[  154.8-  162.2] modern video. The smartphone that I have here has 500 million times this. I hope by the end of
+[  162.2-  168.2] this talk you get some idea of how we can build these kind of structures. First, I want to start
+[  168.2-  175.5] by briefly explaining a transistor. I don't want to go into the details too much because it gets
+[  175.5-  180.3] quite technical for anyone who doesn't hold a degree in material science. In short, it's a
+[  180.3-  187.1] silicon-based electronic switch where you can apply a small voltage at the gate and then you
+[  187.1-  192.0] can close this electric circuit. As an engineer, these kind of switches are really nice because
+[  192.0-  197.1] you can build more complex structures like, for example, this AND gate by just combining two
+[  197.1-  203.3] transistors here. This AND gate gives the true output if both inputs are true. I guess most of
+[  203.3-  207.7] you have heard about this. With these kind of gates, they are the building blocks of pretty
+[  207.7-  217.4] much every electronic device you can think of. For example, this very simple logic chip which does
+[  217.4-  224.1] nothing else but adding two 4-bit numbers. Over the decades, the design of transistors has
+[  224.1-  228.8] advanced quite a lot. It's got more and more complexity and I don't want to talk about any
+[  228.8-  233.9] of these details. Again, something very complicated if you go into it. Instead, I want to simplify
+[  233.9-  239.9] everything and use the size of the transistors as a proxy for technological advancement in this
+[  239.9-  247.8] talk, knowing that in the recent years, the marketing teams of chip manufacturers took over
+[  247.8-  254.0] and these process nodes, as they are called now, are not directly related to the physical size of
+[  254.0-  258.5] a transistor but more to the equivalent size. That's another detail I don't want to mention
+[  258.5-  263.3] in this talk. Let's just use transistor size and process nodes as synonyms.
+[  265.2-  271.9] With the decreasing size of transistors, we have been able to increase the amount of transistors
+[  271.9-  277.6] we can put on a chip by many, many orders of magnitudes in the last decades. This has led
+[  277.6-  285.9] to a dramatic reduction in cost and computing power consumption for the compute. These scaling
+[  285.9-  293.2] laws are the reason why we can build all these modern consumer electronics that we are now used
+[  293.2-  298.3] to. Just to give you an idea of how steep these scaling laws are, if you look at the cost and
+[  298.3-  304.1] apply this to cars, fully knowing that you cannot directly apply this to a macroscopic object like
+[  304.1-  309.8] a car, but if you could, it would mean you buy a 15-year-old goal for $20,000. Today,
+[  309.8-  313.3] it would be cheaper to buy a new car than to refill it at the gas station.
+[  314.3-  320.7] That's pretty significant, I would say. Another angle that I find fascinating to look at this
+[  320.7-  326.0] topic is the amount of transistors we have built over the last decade. These are the numbers of
+[  326.0-  331.2] transistors that have been shipped or that are in the world, if you will. Very large numbers.
+[  331.2-  336.2] To give you some idea, in the 70s, we have built more transistors than there are stars
+[  336.2-  342.6] in the Milky Way. Then in the 90s, we have been able to build more than the age of the universe
+[  342.6-  349.5] in seconds. In 2010, roughly, we had more transistors than rice corns on that famous
+[  349.5-  355.5] Chinese chessboard, which is often used as a figure for an absurdly large number.
+[  357.0-  363.7] In 2024, it was estimated that we have built more transistors than there are stars in the
+[  363.7-  371.5] entire observable universe. If you look at this machine from the 1950s, back then it was a high
+[  371.5-  377.8] tech transistor manufacturing machines at Bell Labs. If you would run this machine for the entire age
+[  377.8-  383.1] of the universe, it would produce as many transistors as we have built in the last four hours.
+[  385.5-  391.9] It's very impressive, right? Or differently, you could say that every second we built
+[  391.9-  400.6] 400 billion transistors since 1950. But this is only possible because we have been able to build
+[  400.7-  406.6] ever-advancing manufacturing tools for these semiconductors. Most importantly, the lithography
+[  406.6-  413.0] tools with different light sources, immersion technology, and the latest advancement in extreme
+[  413.0-  418.5] ultraviolet lithography. I want to talk about these kind of advancements to some extent in
+[  418.5-  425.0] this talk. Also, this doesn't only apply to consumer electronics, but since the very beginning
+[  425.0-  432.3] of modern semiconductors or transistor, in general, there was a very strong connection
+[  432.3-  437.3] between national security and the advancements of these chips from early guidance computers of
+[  437.3-  443.5] ICBMs to modern fighting jets and drone swarms. It comes as no surprise that because of this
+[  444.4-  449.6] ever-increasing complexity in lithography tools, or in general the amount of money you
+[  449.6-  455.8] need to build these new technologies, there has been a significant consolidation in the number of
+[  456.7-  460.3] manufacturers that can keep up with this ever-increasing demands.
+[  461.7-  468.3] From a national security point, this is of course a huge problem. If you want to build an F-35,
+[  468.3-  473.5] for example, there are chips in it that can only be produced in Taiwan. Of course, the US doesn't
+[  473.5-  479.7] really like that. Keep in mind, this is an algorithmic plot. This means 99% of all chips
+[  479.7-  486.3] have been built in the last couple of years. If you can extrapolate this now,
+[  486.3-  492.8] you see the big geopolitical problems that come with that. In this talk, I also want to point
+[  492.8-  501.9] out some of these bottlenecks and tensions that arise from that. Let's go to the chip production.
+[  501.9-  511.4] One thing that I want to mention is how a comparison to lithography was the manufacturing
+[  511.4-  518.1] of letters. The invention of the printing press, probably all of you know this, has dramatically
+[  518.1-  523.4] reduced the number of costs it takes to create a book or basically to print letters. With that,
+[  523.4-  530.2] we had an explosion in books. What we do with semiconductors is comparable to this
+[  530.2-  536.0] technique. It's called lithography or photolithography because we use light. For that,
+[  536.6-  541.5] we have a light source and we shine light on a mask where we have the feature that we want to
+[  541.5-  546.6] print on our chip. Then we have a projection optic which projects it down to the wafer.
+[  547.2-  552.8] In the following slides, I want to go through these steps or at least some of the details of
+[  552.8-  558.4] these steps starting with the wafer. It all starts with quartz or ultra-pure quartz because
+[  558.4-  566.7] we want to be cost-effective. It's basically sand, but the purest form of sand, 90% of this
+[  566.7-  573.2] sand gets mined in one mine in Spruce Pine in North Carolina. Some of you might have heard about
+[  573.2-  579.1] this last month when Hurricane Helene devastated North Carolina and the whole industry was in big
+[  579.9-  585.8] uproar. They weren't nervous because no one really knew the implications of this global
+[  585.8-  590.3] supply chain. In the end, it turned out to be not that dramatic, but that's speaking off bottlenecks.
+[  590.3-  596.1] There's one right away at the very beginning. Then you purify the quartz and make it really
+[  599.9-  606.7] very pure. You melt it down to about 2000 degrees and it takes about two days to grow
+[  606.7-  612.3] this single crystal. You control the temperature, the humidity, everything very tightly, and you
+[  612.3-  617.5] get a single crystal like a microscopic object. It's about like half a meter, like this big,
+[  617.5-  625.8] two meters long. Then you polish this, slice it into pieces that you can handle a bit easier.
+[  627.4-  633.6] If you have the slices, you do chemical and mechanical processing to get an extremely
+[  633.6-  640.7] flat surface. I want to emphasize this is a single crystal of silicon that is then used
+[  641.4-  647.9] as the ground foundation of these chips. For the smaller process nodes or smaller transistor
+[  647.9-  653.3] sizes, if you will, the demands on this surface, on the quality, the purity has
+[  653.3-  657.1] increased, which you can see here and the cost for one of those wafers.
+[  658.7-  663.6] Then, when we have the wafer, finally in this animation, I want to show you how we
+[  663.6-  667.9] print a structure on it. First, we apply the photoresist, which is a
+[  667.9-  674.2] photoactive chemical, a very thin layer. Then we can print the mask, the feature here on the
+[  674.2-  682.5] photo mask on it. The area that is hit by the light reacts chemically. In this case,
+[  683.1-  689.0] it is possible then to solve it away by some solvent. Now you have this structure on the
+[  689.0-  694.2] photoresist. In the second step, in this example, you apply some plasma edging and you have the
+[  694.2-  701.1] 3D structure. In this case, then you apply a thin layer of gold as a gate and then you can
+[  701.1-  708.4] apply a copper layer. This is all, of course, atom by atom, basically. Then you polish it
+[  708.4-  713.1] to exactly the right size and you have one layer of your chip, in this case a couple of wires,
+[  713.1-  720.2] and you repeat this process up to 100 times over and over with a perfect overlay to finally have
+[  720.2-  726.7] that chip. I could talk 30 minutes easily about any of these steps. Very interesting. If you want
+[  726.7-  732.0] to look into that, do it. It's fascinating, but I don't have the time and I want to focus
+[  732.0-  738.1] on the exposing step and the photolithography. One of the things that I found very fascinating
+[  738.1-  745.6] is the photomask itself. It started in the 70s here by manually cutting the shape in
+[  745.7-  751.3] ruby-lit film that gets then down projected, so hand-drawn transistors, hand-drawn wires.
+[  751.3-  755.6] But of course, in the modern day, this is not possible. You use electron beam printing and
+[  755.6-  761.4] in this whole photomask, there are literally zero defects. If there's one error, you either
+[  761.4-  767.1] repair it or you throw it away. The amount of resolution here is very impressive. The final
+[  767.1-  772.8] picture, once you project this down on the chip, is 30 millimeter and 26 millimeter. That
+[  772.8-  779.3] gives five terapixels. Five terapixels is like a really big camera. If you would blow up
+[  780.6-  787.7] this Intel Core i7 screen to where the pixel has the size of a regular pixel of an HDTV,
+[  787.7-  794.3] the screen would be about 800 meters high. You can imagine the quality demands on your
+[  794.3-  800.5] projection optics if you want to. It's really impressive. You can imagine probably if you
+[  800.5-  805.5] want to design a photomask like this, you cannot do anything by hand anymore. An example from
+[  805.5-  811.3] Nvidia, the Hopper chip has 80 billion transistors, and every two years they build a new chip.
+[  811.3-  816.3] That's very hand-waving, but that's about 100 million transistors per day. Of course,
+[  816.3-  822.5] no one can. That's like you need a very sophisticated software tool in order to
+[  822.5-  829.5] design and optimize all of this. Just one layer of this photomask file finally has about 150
+[  829.5-  835.3] gigabyte in size, and you need 100 of these layers. It's not just the photomask design itself,
+[  835.3-  840.5] but once you have your design, you have to prototype it before you print it in the
+[  840.5-  846.6] silicon. You have rooms full of FPGA racks where you implement your design to test it
+[  846.6-  853.0] in reality. You also have to do high fidelity simulations like thermal simulations on your chip,
+[  853.0-  858.5] because you have different parts of the chip that heat up differently. If you are at three
+[  858.6-  863.6] nanometer process nodes, just the differential heat expansion or thermal expansion already can
+[  863.6-  869.1] cause a problem in your overlay, all of these things. It's crazy what you have to think about.
+[  869.9-  875.5] This led to an absolute explosion of the design costs of these modern chips. The newest Apple
+[  875.5-  881.1] One is a three nanometer process node. It's expected to have cost one billion, just the
+[  881.1-  887.0] design. Not the fabrication, nothing else, just the design. There are only two companies in the
+[  887.0-  893.9] world, Synopsys and Cadence, that you have to use when you want to design any of those chips
+[  893.9-  898.8] to US-based companies. Another bottleneck in this supply chain, if you will.
+[  901.2-  905.8] Before we go further into the details of these photomarks, we have to talk about diffraction
+[  906.6-  911.8] just a little bit. I don't want to go too deep into optics, but when you want to protect
+[  912.4-  915.9] something, like let's assume this is a photomask, and you use a wavelength that
+[  916.0-  923.4] is comparable to the feature size of your mask, then you have to keep diffraction in mind.
+[  924.6-  929.3] There's a Rayleigh formula giving you the smallest possible feature size, which is related to the
+[  929.3-  935.4] wavelength, the numerical aperture, which is roughly the aperture of your device, and the
+[  935.4-  940.7] K factor. It's literally called K1 factor. Basically, it tells you that you have some
+[  940.7-  947.4] physics and geometry here, and illumination tricks. That means if you now decrease the
+[  947.4-  954.3] feature size by not changing anything here, then you get a blurry image eventually on your focal
+[  954.3-  959.5] plane, which is not what you want. On this plot here, you can see how the wavelength that
+[  959.5-  965.8] was used in these lithography processes has decreased. Over the years, people have, from
+[  965.8-  971.1] Mercury lamps, eventually came up with XML lasers, cryptofluoride or argon fluoride,
+[  971.1-  978.3] around a 200 nanometer, which is already pretty small wavelength, if you will. Finally, then a
+[  978.3-  985.0] plasma-driven EUV. We'll come to that later. You can see here that in red dots, the process
+[  985.0-  993.1] nodes have eventually become smaller than the used wavelength. This is primarily because people
+[  993.1-  998.8] came up with these kind of illumination tricks. One very basic one is you can just tilt your
+[  998.8- 1003.6] illumination optics, and now you have the first order diffraction passing through the numerical
+[ 1003.6- 1011.8] aperture. If you want to learn more about this, there's a nice YouTube video here that is linked.
+[ 1015.7- 1023.4] Most importantly, the system or the process has moved from this classic photolithography to what
+[ 1023.4- 1028.4] they call computational lithography. You start with a feature that you want to print on your
+[ 1028.4- 1033.4] wafer, and then you throw a bunch of computation on it, mostly for your transformation and
+[ 1033.4- 1038.5] convolutions, to figure out what kind of mask shape and what kind of light source do I need
+[ 1038.5- 1043.5] to get the feature that I want. I want to show you a couple of examples. You start with the
+[ 1043.5- 1049.8] design here, 250 nanometer, let's say. This is what you have in your software. This is what you
+[ 1049.8- 1056.8] put on your mask, and this is the feature that you get on your wafer. Now you decrease the feature
+[ 1056.8- 1062.1] size. You don't change anything else, and if you wouldn't change much and just decrease the feature
+[ 1062.1- 1067.5] size, you get a blurry image. Instead, you can design your mask to account for this kind of
+[ 1067.5- 1073.5] diffraction that is going to happen to again end up at this pattern. If you go further,
+[ 1073.5- 1078.7] you can play with more tricks like you can add a face shift mask that actually really
+[ 1078.7- 1084.1] changes the face of the light that shines through it. Very fancy thing, and you can combine that
+[ 1084.1- 1090.5] with optical proximity correction to get even smaller sizes, but it doesn't stop there.
+[ 1090.5- 1095.8] People got more and more advanced. As I told you before, you can also optimize the source.
+[ 1095.8- 1101.3] So instead of using a homogeneous circular light source, this red means full intensity,
+[ 1101.3- 1107.5] so this is basically a circle, you can optimize the light source to get a multi-polar field
+[ 1108.5- 1116.4] and end up with this kind of mask to end up with smaller and smaller features.
+[ 1116.4- 1122.9] It's a very fancy technique, in my opinion. This is an example here from ASML, where you can see
+[ 1122.9- 1127.5] they have all these adaptive mirrors, and they can really on-demand change the light source
+[ 1127.5- 1133.2] to whatever they want, basically, to increase the resolution of the printed machine. But as you
+[ 1133.2- 1138.7] can imagine, this means you need to have a lot of computation in order to get all these
+[ 1139.4- 1144.5] shapes in the right form. One example here, and it's from a talk from NVIDIA, they have
+[ 1145.7- 1151.9] now well in the trillions of polygons that are included in each of their chips,
+[ 1151.9- 1160.1] and just at TSMC, we have like 10,000, way above 10,000 chips that are produced every year.
+[ 1160.1- 1165.4] And the computational demands just for this optical proximity corrections are now in the billions or
+[ 1165.4- 1171.3] hundreds of billions CPU hours, or if you want to count that in 15 megawatts data centers, we are
+[ 1171.3- 1178.1] now at like 10 to 100. And I found it very interesting that NVIDIA actually throws a bunch
+[ 1178.1- 1183.2] of money in developing Cooletho, which is a hardware-accelerated software tool
+[ 1183.8- 1189.4] capable of doing these kind of calculations. So it's this flywheel where NVIDIA tries to
+[ 1189.4- 1193.7] develop the most advanced chips, but in order to do that, they need to develop a software that
+[ 1193.7- 1202.9] allows them to, and so on. I found that really fascinating. Okay, sorry. But eventually,
+[ 1204.3- 1210.1] there's no room for just throwing more computation on it. The physics just strikes back,
+[ 1210.1- 1213.4] and you need to get a better light source. So now, let's look at the
+[ 1213.4- 1220.5] extreme ultraviolet light source. This is actually the easiest way they found to generate
+[ 1220.5- 1225.9] this kind of light. It sounds kind of crazy, but it's actually really the easiest way. So we shoot
+[ 1225.9- 1232.4] a bunch of tin droplets, molten tin droplets, a couple of micrometer in size, with a velocity
+[ 1232.4- 1240.0] of 280 kilometers per hour into a vacuum. And then you hit it with a pre-pulse of CO2 laser,
+[ 1240.0- 1245.7] which makes the tin droplet to expand, and then you hit it with a 13 kilowatt main pulse,
+[ 1245.7- 1251.3] also a CO2 laser. That's like steel cutting power. It's really a lot, which instantly
+[ 1251.9- 1257.9] creates a plasma, which is much, much higher than the surface temperature of the sun,
+[ 1257.9- 1264.8] and this then emits the EUV light, which you then capture with a giant mirror here in the back
+[ 1265.3- 1272.8] and project it into the projection optics. So there's only one company that was able to build
+[ 1272.8- 1278.7] this kind of laser. It took 10 years and a couple of billion dollars in R&D. It's Trump,
+[ 1278.7- 1284.1] and there's only one company that was able to build these mirrors, which I would like to talk
+[ 1284.1- 1289.6] a bit more. So everything has to be in vacuum here, because EUV light gets absorbed by pretty
+[ 1289.6- 1294.4] much every matter. So you cannot build any lenses in order to steer that light. You need
+[ 1294.4- 1299.1] to have black mirrors, which act with this constructive, reflective
+[ 1301.7- 1307.6] processes here. You have layers of silicon and molybdenum. You can see here a real picture of
+[ 1307.6- 1316.6] those. It's a 10 nanometer, so you have a few layers of atoms. And the stability of these
+[ 1316.6- 1324.3] mirrors is absolutely crazy, I think. So they are actively controlled to be more precise here.
+[ 1324.3- 1329.7] This is an actual measurement. That's 0.2 nanometer. One nanometer, by the way, is the
+[ 1329.7- 1336.9] distance your fingernails grow in one second. So they control these mirrors to a fifth of that,
+[ 1336.9- 1343.0] or even lower, while in operation. And the angular stability, 0.6 nanoradient,
+[ 1343.0- 1350.9] that means you could shoot a laser and hit a golf ball on the moon. It's a really remarkable
+[ 1350.9- 1358.4] technology. And the surface deviation, the acceptable surface deviation here is 100 picometer.
+[ 1358.4- 1363.7] The mirror is 45 centimeters in diameter. If you would blow this up to the size of Germany,
+[ 1363.7- 1369.5] it would mean the highest mountain is the human hair. So these are the flattest objects
+[ 1369.5- 1377.1] humans have ever built. And I want to show you this video from ASNL. It's their newest
+[ 1377.1- 1382.9] machine that just came out. It's the high numerical aperture EUV lithography machine. It
+[ 1382.9- 1389.0] cost $350 million. It's the most complex and most expensive machine humans have ever built
+[ 1389.7- 1397.7] more than once. Right? I mean, we built the LHC, but not in mass production.
+[ 1397.8- 1405.1] So here you have the same kind of light generation. These are the tin droplets that you hit with a
+[ 1405.1- 1412.1] pre-pulse. And then with the main pulse, you have this plasma, the EUV light. These mirrors here
+[ 1412.1- 1418.9] are now almost a meter in size. And this is the mask, the optic mask. It's a 30G generation
+[ 1418.9- 1425.2] back and forth scanning. That means you get to 100 kilometer per hour in like nine milliseconds.
+[ 1427.7- 1433.8] And then you hit the wafer stages. You have a metrology stage first. So now a new wafer gets
+[ 1433.8- 1439.5] inserted and gets measured with this laser. And they claim they can align everything to
+[ 1439.5- 1453.3] four silicon atoms. Right? While this thing is accelerating at 32G, no idea how they can
+[ 1453.3- 1459.1] build it. But apparently it works. It's very expensive, but it works. And yeah, a throughput
+[ 1459.5- 1465.0] of 185 wafers per second. So of course, all of this is in pure ultra-high vacuum
+[ 1465.6- 1471.3] while you make these tin droplets explode and so on. So really crazy. And there's just one
+[ 1471.3- 1478.7] company that can build this. It's ASML. It was founded in 1984 in the Netherlands.
+[ 1480.3- 1484.7] Today it's worth $400 billion and it's the fourth biggest company of Europe.
+[ 1485.5- 1491.9] And they make their revenue mostly by EUE lithography tools and argon fluoride immersion
+[ 1491.9- 1497.1] tools, as you can see here. It's pretty high revenue. And they spend a significant amount
+[ 1497.1- 1503.4] of their money in R&D here. Just as an example, this is the comparison. This is the CERN budget.
+[ 1504.3- 1509.9] Right? And with this, they have been able to capture pretty much the entire lithography
+[ 1509.9- 1515.5] market share in the last decade. So right now they are at 90%. There are two competitors
+[ 1515.5- 1522.3] from Japan. They are basically now at 5%, roughly. And ASML is the only source or the
+[ 1522.3- 1526.7] only company that can build this EUE lithography. There's not even a single other company that is
+[ 1526.7- 1531.1] even trying at this point. Everyone else gave up because they thought it's too expensive. It
+[ 1531.1- 1537.2] would never work. So right here on this picture, you see, I don't know, $1 to $2 billion
+[ 1537.7- 1547.6] in high tech. And in one of those factories where the chips are produced, there's not one of those
+[ 1547.6- 1552.5] machines, but hundreds of them. As you can see here, and this brings us to CSMC,
+[ 1552.5- 1558.2] Taiwan Semiconductor Manufacturing Company. It's pretty much the main player who builds these
+[ 1558.2- 1564.5] chips, who buys the products from ASML. This is a factory they just started building in Arizona.
+[ 1564.7- 1568.8] Had a lot of fuss in the US. I don't know if you know about it, but it's actually, you can see,
+[ 1568.8- 1573.3] it's a pretty big facility, right? But in TSMC turns, this is called a mini fab.
+[ 1573.9- 1579.3] They also have mega fabs and gigafabs. And they really have a trademark on this.
+[ 1580.4- 1587.3] They are all located in Taiwan. They cost $20 billion. They use a gigawatt in power,
+[ 1587.3- 1595.6] 8 million liters of water per day. And they have a throughput of 100,000 wafers per month.
+[ 1595.6- 1603.5] So you can see that's an economy of scale here. And with this huge factories, TSMC was able to
+[ 1603.5- 1609.9] capture a big market share here. These are old numbers from 2020 right now. It's even more
+[ 1609.9- 1616.5] concentrated towards TSMC and Taiwan, but even then you had like 60% of all chips that were
+[ 1616.5- 1624.6] made by TSMC. And most importantly, 92% of the most advanced chips that were built by TSMC. And
+[ 1624.6- 1630.6] there's only one other company, Samsung in South Korea that can build those. And in order to do
+[ 1630.6- 1639.5] this, they need to spend $30 billion per year just to keep their factories on the most modern
+[ 1639.5- 1643.9] state. And they can do this because they have, I mean, it's again, this flywheel of
+[ 1643.9- 1649.4] economy at scale because they have so much market share, they can ask for gross margins of 60%,
+[ 1650.0- 1654.7] which is even higher than Apple or Nvidia. And that's how they can generate all that revenue
+[ 1654.7- 1663.9] and earnings to put $6 billion a year in R&D. And they need this because here this is a plot
+[ 1663.9- 1669.5] of the fractional revenue of TSMC by different process nodes. And you see every couple of
+[ 1669.5- 1674.5] years, there's a new node coming up, which means basically a new factory that you have to build
+[ 1674.5- 1680.4] with new R&D. Like this is like really, it's not just a factory, it's basically a research
+[ 1680.4- 1688.3] project that you have to build. And as I said before, because of this very fast pace and these
+[ 1688.3- 1693.1] huge capital investments, more and more companies gave up. And right now they are only
+[ 1693.8- 1702.0] Samsung and TSMC left with the newest nodes. And all or pretty much all day, they have a factory
+[ 1702.0- 1706.9] in China and one in Arizona and also one in Japan, but most of their production is in Taiwan,
+[ 1706.9- 1711.3] all located in the west coast. Now you could ask what could possibly go wrong.
+[ 1712.9- 1719.1] And I want to mention two things that come to mind. One of them, you probably heard of the
+[ 1719.1- 1725.1] Pacific Ring of Fire, right? It's a region with a lot of earthquakes and volcanic activity.
+[ 1725.1- 1729.5] And when I did the research for this talk, it was December 15, I Googled on my phone,
+[ 1729.5- 1734.6] Taiwan earthquake. And this was the Google landing page. So just a few days before,
+[ 1734.6- 1740.3] there was a 4.1 earthquake just across the coast. But actually in April, there has been one
+[ 1740.9- 1746.0] with a 7.2 magnitude. And you can see this was quite a shakeup, right? And remember all the
+[ 1746.0- 1753.4] nanometers that I was talking about. So this one was far away, the epicenter was far away from the
+[ 1753.4- 1759.1] production sites. TSMC had to shut down for one week and lost a couple of billion dollars,
+[ 1759.1- 1765.1] but they had been able to ramp up the production in one week. But no one really knows what happens
+[ 1765.1- 1771.5] if a major earthquake hits the production centers. Another thing that is very,
+[ 1771.6- 1775.9] that's maybe even more dangerous, or I don't know if you want to say that, but
+[ 1777.2- 1784.2] at least also very dangerous. It's the geopolitical tension that comes with that. You probably know
+[ 1784.2- 1789.9] that Taiwan has a pretty strong democracy and they recently had an election where China's skeptic
+[ 1790.7- 1798.3] won it and is now the president. China didn't like that. In their eyes, Taiwan is part of the
+[ 1798.4- 1805.9] of the People's Republic of China. And she regularly says that the reunification with Taiwan
+[ 1805.9- 1811.9] is inevitable, to which Taipei says, nope. And the US, its biggest security partner,
+[ 1811.9- 1818.6] recently said that we would intervene militarily if Taiwan gets attacked.
+[ 1823.6- 1829.3] The Chinese Ministry of Foreign Affairs just two months ago said that Taiwan independence
+[ 1829.3- 1834.3] is incompatible with peace in the Taiwan Strait, which is pretty strong words, right? And it's not
+[ 1834.3- 1840.1] just words, but it's backed up by significant military power. So the PLA Navy has way surpassed
+[ 1840.1- 1846.1] the US Navy and they have spent a significant amount in their development of ballistic missiles,
+[ 1847.4- 1853.3] especially anti-ship missiles, which are called aircraft carrier killers with a range of a few
+[ 1853.3- 1859.0] thousand kilometers to keep the US Navy out of the Taiwan waters. And not only
+[ 1860.0- 1865.2] these weapons development, but they also have regularly exercises like just recently, basically
+[ 1865.2- 1870.6] the biggest military drill in modern Chinese history. And this is a video here from Chinese
+[ 1870.6- 1876.6] state TV, where they actively show their plan for an aerial bombing campaign and then an
+[ 1876.6- 1884.6] amphibious landing, including the capture of the government in Taipei. Taiwan hopes that TSMC
+[ 1884.6- 1889.7] is their silicon shield. That's what they call it, because all sides would have to lose,
+[ 1890.7- 1896.9] would have way too much to lose for this, to let this happen. For example, here,
+[ 1897.9- 1903.7] you may remember the chip shortage during COVID that estimates that the car industry
+[ 1904.7- 1910.1] had cost about $200 billion and that was a relatively localized chip shortage.
+[ 1910.1- 1916.7] There are estimates that show that the blockade of Taiwan would cost, like this is a drawdown in
+[ 1916.7- 1922.9] world GDP, is in the scale of the global financial crisis or COVID-19. And the outright war
+[ 1922.9- 1927.6] between China and Taiwan would roughly double that. And that does not even include the US
+[ 1927.6- 1936.8] response or a bigger war on a global scale. So this is a pretty bleak outlook, quite terrifying
+[ 1936.8- 1943.0] actually, but I don't know how this is going to end. I don't want to speculate on this. I don't
+[ 1943.0- 1948.5] want to end the talk with this horrific picture. So let me shift your attention to this marvelous
+[ 1948.5- 1967.5] piece of technology again. I just have one more slide. Thank you, though. I work with particle
+[ 1967.5- 1972.5] accelerators and I'm used to work with the cutting edge technology, but when I did the research of
+[ 1972.5- 1977.4] this talk, I was really, really impressed by this technology. And I never thought that this
+[ 1978.2- 1984.5] famous quote from C. Clark is more true, that any sufficiently advanced technology is
+[ 1984.5- 1990.6] indistinguishable from magic. And when I did the preparation of this talk, OpenAI Sora came up and
+[ 1990.6- 1996.1] I used this picture and 10 minutes of prompt engineering to ask it how it looks from the
+[ 1996.1- 2002.3] inside. And I want to show you this little video, which I think is another pretty advanced
+[ 2002.3- 2033.6] technology that is unfolding right now. Thank you for your attention. Another fascinating talk by
+[ 2033.6- 2041.6] Torsten Hellat after we have already seen him in Leipzig with x-ray-free electron lasers a couple
+[ 2041.6- 2048.0] of years ago. So thanks again for this beautiful talk. So we have time for a couple of questions.
+[ 2048.0- 2053.6] Please line up at the microphones. In the meanwhile, we already have a question from the
+[ 2053.6- 2060.9] Internet. Please. The Internet is amazed and would like to know how long did it take you to collect
+[ 2060.9- 2078.5] all this information and visuals? Two months, pretty much full time. And now let's start with
+[ 2078.5- 2084.3] microphone number one. Yeah, hi. Thanks for the amazing talk. I was working in semiconductors
+[ 2084.3- 2088.5] like in the early 2000s and back then the professor said it's going to be 10 years and
+[ 2088.5- 2093.6] then we're all going to die at a power death and it's not going to work. Now we are like 25,
+[ 2093.6- 2102.0] almost 25 years later and we are at this scale. How far does it get? I hear Moore's Law is dead
+[ 2102.0- 2108.5] now for a couple of years already. So what do you see? How far does it take us? Yeah, that's a very
+[ 2108.5- 2116.2] tricky question. I can't answer that. What I saw when I researched this talk, I saw a lot of
+[ 2117.5- 2122.9] information of people who know way more about the industry than I do and they said something
+[ 2122.9- 2129.4] like 20 years maybe they can keep this up with the thing that they have already lined up with
+[ 2129.4- 2133.2] the physics that is known where it's just a manufacturing issue. I mean the main thing here
+[ 2133.2- 2138.2] is always an economy. That's the big issue. It's not what is physically possible but what is
+[ 2138.2- 2143.7] possible to a price that we are willing to pay. That's the big challenge here.
+[ 2145.9- 2150.6] Okay, next question from microphone number three, please. Yeah, thank you for the nice talk.
+[ 2150.6- 2157.0] I wish we over here, I wish we had a similar amount of money at CERN and other high energy
+[ 2157.0- 2163.7] physics facilities compared to what ASML has. My question is, is it known how fast China is
+[ 2163.7- 2169.7] advancing and producing machines like those from ASML? Because they could just bump Taiwan on
+[ 2169.7- 2175.3] their own and just have a monopoly monopoly themselves if they get advanced enough in the
+[ 2175.3- 2182.7] near future. Yeah, it's a very interesting detail that I find it fascinating. China froze
+[ 2182.7- 2187.0] like in the last two years they threw a hundred billion dollar on this like two fifty billion
+[ 2187.0- 2191.5] dollar subsidies like a chips act every year basically and they really they see this as
+[ 2191.5- 2197.9] their biggest issue like the sovereignty from Taiwan and the US and they are estimates are
+[ 2197.9- 2205.4] they are 10 to 15 years behind ASML and also TSMC like they I don't really understand why
+[ 2205.4- 2210.5] because I would think that that Chinese also their intelligence capabilities right that
+[ 2210.5- 2215.4] they are able to get this kind of knowledge but apparently TSMC and ASML they are really good
+[ 2216.2- 2222.9] in keeping their secrets. I mean your outline is not just TSMC and ASML but also
+[ 2223.6- 2228.8] and these are the manufacturers that also ASML relies on. And like decades of right? Thanks.
+[ 2230.0- 2236.2] Okay next question from number two microphone please. Yes you mentioned cadence and synopsis
+[ 2236.2- 2241.3] as main design software there's also German company I think Siemens the mentor they also
+[ 2241.3- 2247.4] do a little bit in that business yes but sorry and also are also open source alternatives for
+[ 2247.4- 2251.4] those kind of tools because there are several talks about FVJ and logic sentences but never
+[ 2251.8- 2256.1] something about high level sentences that probably Nvidia has to use to make all those transistors.
+[ 2258.2- 2263.7] Yeah I don't know I'm sorry but I just saw this information in a few sources that if you
+[ 2263.7- 2268.5] want to build these cutting edge chips that you there's no way around these two companies
+[ 2268.5- 2275.0] but I know that Siemens is there with a small niche but I'm sorry I cannot answer the open
+[ 2275.0- 2283.7] source question. All right microphone number four please. Yeah I was just wondering these
+[ 2283.7- 2289.5] final structure sizes do they affect the lifetime of the transistors significantly?
+[ 2291.9- 2297.5] Not that I know of but I don't know if that's actually I don't know but I didn't find that I
+[ 2297.5- 2302.3] didn't see that information in either direction when I did the research but I don't know I would
+[ 2302.3- 2308.3] think that there should be an effect but maybe the quality of the chemicals or the materials that
+[ 2308.3- 2312.7] you use have a bigger impact right because of course if you have only one atom and then you
+[ 2312.7- 2318.4] have a gamma ray then if it hits that atom then the transistor is gone but there are probably
+[ 2318.4- 2326.8] other effects that are more important than this one I don't know. Okay do we have any questions from
+[ 2326.8- 2334.5] outside internet? No okay so then let's go back to microphone number one please. Yeah thanks
+[ 2335.3- 2340.3] what do you think are going to be the next technological steps and what kind of physical
+[ 2340.3- 2347.2] limits are we going to hit finally? So I think the next steps here are these nanosheets that I showed
+[ 2347.2- 2351.3] at the beginning but it's something that I didn't talk here because it gets really complicated
+[ 2351.9- 2356.4] and and it would be very far from the topics that I wanted to talk about but it's like the
+[ 2356.4- 2362.1] technique the way like if you remember the the video that I showed at the very beginning
+[ 2362.1- 2366.6] of these layers that you build on top like basically if you add more and more layers you
+[ 2366.6- 2372.3] can build more and more complex 3D structures right it's like you print 3D by adding different
+[ 2372.3- 2381.0] layers and I think this gets more complicated in the future. Thanks again thank you very much
+[ 2381.0- 2387.9] Thorsen for this really nice talk. Again an applause from the audience please.

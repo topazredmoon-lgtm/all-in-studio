@@ -1,0 +1,397 @@
+[    6.3-   13.4] then we can get started. So thank you all for being here. I was already here yesterday that
+[   13.4-   18.9] we did not have that thing which is currently killing me and I had my emotional support beer
+[   18.9-   22.8] which turned out to be kind of a bad idea during the talk because I got kind of drunk
+[   22.8-   28.6] because of the heat but let's see how it works with water this time. We will talk about
+[   28.6-   34.0] LMs, the good, the bad and the ugly concentrating on a security point of view and let's dive
+[   34.0-   38.8] into this. The bad thing for the people that know me and that have been to the talk yesterday,
+[   38.8-   43.9] you will see a repeat because that is just how I start talks. So quick introduction. My
+[   43.9-   49.4] name is Johannes Sigitz. I'm a security engineer here at Zuzur working in the Numbag office at
+[   49.4-   55.5] least once a week usually. I do auditing and code reviews not very much that day. Nowadays
+[   55.5-   59.5] although it's kind of changing because now with cloud it's getting so very easy to just
+[   59.5-   66.0] type fine security issues. I do product pen testing so I look at Zuzur and open Zuzur
+[   66.0-   70.5] products before we release them from an offensive point of view and see if they are problematic
+[   70.5-   76.4] from a security point of view. I'm one of the SLNOCs experts and I'm the lead of the proactive
+[   76.4-   84.1] group in the security team. I will give you a really quick introduction to the Zuzur product
+[   84.1-   90.3] security team now, same as yesterday so sleep through that and then we will cover LML security,
+[   90.3-   96.3] the good things, the bad things and the really ugly things. And then I will give you a couple
+[   96.3-  103.3] of general security recommendations how to deal with the bad and the ugly parts. The Zuzur
+[  103.3-  109.1] product security team, the important part is we are the product security team. We have a couple
+[  109.1-  115.2] of different security teams that confuse a lot of people. We still have security at Zuzur.de
+[  115.3-  121.8] .com and people usually don't know who they are talking to. We really do only product security.
+[  121.8-  129.3] We are split up into groups. We have the reactive site that we do mainly incident handling so security
+[  129.3-  136.3] issues discovered. We analyze it, we score it, we bring it to the maintainer and then later on the
+[  136.3-  141.7] security update is released. This is what the reactive site does and we do that for Zuzur and we also
+[  141.8-  146.3] do it for open Zuzur which pretty greatly expands our scope because open Zuzur has so many more
+[  146.3-  153.1] packages. And then we have the proactive security site where we do all of the security work before
+[  153.1-  160.6] shipment so we try to bring hardening in. We do code audits which of course is limited to a very
+[  160.6-  166.8] small subset of the code that we actually have because it is just time consuming and this is the
+[  167.7-  174.3] group where I am the lead off. And in general it is really good meaningful work because especially
+[  174.3-  180.1] on the proactive site we can do a lot of our work on the proactive site because there we can do
+[  180.1-  185.3] many of the things that would be super difficult to do it directly in a Zuzur Linux enterprise but
+[  185.3-  190.7] if we do it in open Zuzur and later on it comes via open Zuzur into Zuzur then no one questions
+[  190.7-  196.0] the hardening because it was always there. So if you are product manager don't listen to this
+[  196.0-  205.8] please. As for terminology so I might use the term AI and other terms that you might hate
+[  206.5-  211.3] and I would ask you to not hate directly on me because I'm also not a big fan of everything
+[  211.3-  217.3] that's going to be happening but I also accept reality as it is. And pronouncing LLM all the time
+[  217.3-  224.1] is just super annoying so I might use LMs from time to time or AI and I'm not saying that AI is
+[  224.1-  232.6] like the greatest thing ever but it is just there. The impact on security depends very much on what
+[  232.6-  240.5] you're actually doing with that. So let's take vibe coding. If you do vibe coding you describe to
+[  240.5-  246.2] the AI what you want, the AI spits out code and then sooner or later you're probably going to
+[  246.2-  252.6] execute, compile and execute this code. So that means that if there's anything bad in there then
+[  252.6-  259.2] it can directly affect you. If you do code auditing it's a much different situation because I take a
+[  259.2-  268.1] code base, I run an AI tool on this code base and basically I get back findings. In this case I
+[  268.1-  272.7] don't have to care that much about the output because some of these findings are bullshit,
+[  272.7-  279.4] some are valid but in the end the security impact on my system if I probably confine this review tool
+[  279.4-  284.1] is definitely much more limited compared to something where you directly give code execution.
+[  284.7-  290.1] And of course the absolute extreme example are these personal assistants. You know what I mean
+[  290.1-  294.9] where people think it is an awesome idea to give one of these AI bots full control over their work
+[  294.9-  302.9] station. Something that absolutely cannot go wrong. It is very convenient. It's also pretty
+[  302.9-  308.5] impressive when you see what they can do because it is really like a nice person assistant that you
+[  308.5-  314.6] have but at least I would never do that. It seems insane to me to give a system like that full
+[  314.6-  322.1] control over my personal work station. So it really shows that there's a pretty wide spectrum of
+[  322.1-  329.0] impact and it depends on how you use these tools. The good thing about it is that we kind of have
+[  329.0-  334.9] computer magic available and the thing is you probably don't feel like that but if you would have fallen
+[  334.9-  341.0] into a coma five years ago and woken up now you would be extremely surprised what is possible.
+[  342.5-  350.6] And it gives a lot of power to normal users. It just makes these systems accessible in a way
+[  350.6-  356.6] that was only reserved for us because we are all used to being able to tell a computer what to do
+[  357.3-  362.2] and to modify it in a certain way but you all have parents and other people in your life and you
+[  362.2-  366.6] know how they act with computers and usually for them these are magic boxes that do something
+[  367.1-  371.9] and maybe they just stop doing something and then they are desperate. Like this concept of having
+[  371.9-  377.6] control over these machines is not really something that they have. And that is really different now.
+[  377.6-  383.4] So I have a friend that works for a company here in Numbag and they have a certain problem that
+[  383.4-  390.3] they can't really solve in Excel anymore and so he asked me if I can recommend a coder to him to
+[  390.3-  396.0] program some application for him to solve this need. And I told him well just use one of these AI
+[  396.0-  402.7] tools, describe your need in a plain language and then you will probably get something out of there
+[  402.7-  406.6] that will work to some extent. It might not be the perfect solution and might not be the
+[  406.6-  411.4] solution that you want to have permanently but if you then hire a coder this person will already
+[  411.4-  417.8] have something to work off and you will already understand way more way better what you actually
+[  417.8-  423.0] need. And a couple of years ago that would have been completely impossible for him. He is a non-technical
+[  423.0-  429.8] guy even excellus basically his limit but with these tools he could do this. So this is actually a
+[  429.8-  440.0] really really good thing. Also security review was a massive bottleneck. It is a task that is hard.
+[  440.0-  444.5] It is a task that you can't do for a very long time in a very concentrated way not that many
+[  444.5-  450.2] people can actually do it or want to do it. And this now changed. Security review is not really
+[  450.2-  455.1] a bottleneck anymore. The problem are now the later stages. We now get so many security reports
+[  455.1-  460.5] that everything else gets overwhelmed but it is a good thing that we find all of these vulnerabilities.
+[  461.0-  465.5] It's maybe not good that we find them at rate and all at once but in general as a security guy I'm
+[  465.5-  474.7] happy that we find those. The bad, basically all your threat models are broken and for a nice explanation
+[  474.7-  481.1] what a threat model is. You probably notice XKCD where people think well great I have this
+[  481.1-  488.2] awesome encryption and now no one can get to my secrets. And this is a nice idea. It shows nicely
+[  488.2-  493.4] that a threat model can also go wrong because a threat model should describe what can happen to
+[  493.4-  500.0] your system, what can an adversary do to your system. And a lot of people have not a really good
+[  500.1-  505.1] understanding of what a real threat to their system is because in this case they will not break the
+[  505.1-  511.9] encryption, they will break you. You see it with the crypto people where they lose certain amount
+[  511.9-  518.2] of fingers and then they might want to reveal their past codes. So the crypto is fine but the
+[  518.2-  522.6] real threat model was not properly modeled. And this is basically now happening to all of us.
+[  523.3-  531.0] The complete threat model that we have is off because we currently attach these AI systems to
+[  531.0-  539.6] everything and as a pen tester this is awesome. It is attack surface everywhere. We suddenly have
+[  539.6-  546.6] these models that I can attack attached to every possible input. I can probably provide input to
+[  546.6-  552.6] a random number of commercial systems now and sooner or later some AI model will read this
+[  553.3-  560.4] and I can use it to attack these systems. There's a really nice article that I can highly recommend
+[  561.3-  568.1] offense scales with compute, defense scales with committees. And that outlines that shows
+[  569.0-  573.3] the current problem that we have. If you are on the offensive side you're basically
+[  573.3-  578.3] currently limited by tokens. You need tokens to find vulnerabilities, you need tokens to
+[  578.3-  583.9] develop their exploits and you need tokens to run your campaigns. But in the end that's basically
+[  583.9-  590.5] your new limit. On the defense side it looks very much different. If you ever worked in any form
+[  590.5-  597.2] of IT capacity then you know how difficult it is to change something. You can't just say well
+[  597.2-  603.2] open claw fix my systems. That will probably not work in any bigger company. You will have
+[  603.2-  608.0] some change committee and you need to go through a couple of processes and yes AI tools will
+[  608.0-  614.4] probably also help with all of that. But in the end the big speed up currently is on the offensive side
+[  615.0-  619.7] and that is a big problem. People have the wrong threat model they think about the wrong threats
+[  619.7-  626.7] and expand their text surface giganticly and also the defense is massively lacking.
+[  629.7-  634.1] Another big problem is that alignment is not on control. Alignment means that the models
+[  634.1-  641.1] actually do what we expect them to do. If you use a model then for most people that means that you
+[  641.1-  646.4] will use a hosted model. The thing is you don't know what is running there. And a lot of people
+[  646.4-  651.0] already experienced that that something that worked last week doesn't work this week anymore
+[  651.0-  657.1] despite the model being the same. You don't know what is running there in the background
+[  657.1-  663.0] and in the best case they just use some cheaper model to save compute cost on their side. In the
+[  663.0-  668.3] worst case the model just became adversarial and tries to work against you. That is something that
+[  668.3-  677.4] you can't control directly. Then there's a term called uplitoration so a lot of these models have
+[  677.5-  683.3] safety guards. You might have experienced those. Those are the limits where the model tells you
+[  683.3-  690.2] I can't do that. So if you ask it to provide the recipe for certain explosives or stuff like that
+[  690.2-  695.9] then they usually get a bit hesitant. Uplitoration means that you can take an open weights model and
+[  695.9-  701.6] you can remove these safety guards. So for every open weight model you also have these
+[  702.6-  707.5] versions where all safety guards have been removed. It's an easy and automated process. It's really
+[  707.5-  712.7] not hard. But even if you don't have an open weight model it's usually not much of a challenge
+[  712.7-  719.3] to get around these safety guards. You might have done that yourself or read some stories.
+[  719.3-  725.8] You can tell it some story that your grandmother's last I English was that you get some explosives
+[  725.9-  733.2] stuff like that. I just had this two weeks ago with my plot subscription because it suddenly
+[  733.2-  738.9] found out that I use it for pen testing and it was not too happy about it and after a bit
+[  738.9-  745.1] of storytelling it was happy about it again. But I didn't want to lose my account so now it
+[  745.1-  749.9] matches with them as a cyber professional. It's also the thing that I would recommend. Don't
+[  749.9-  756.4] try to get around these safeguards all the time. Also they get weaker with growing context
+[  756.4-  762.6] because these safety guards are part of the normal context and there are some fun attacks
+[  762.6-  769.1] where it's basically enough to just ask ten times. Because for the first nine times it refuses
+[  769.1-  773.2] but for the tenth time there's enough context in between that suddenly the safety guards are
+[  773.2-  779.0] not as strong anymore and then suddenly that's what you need to do. So that's the perfect kind
+[  779.0-  786.6] of security that we currently have. A lot of people say well but we can use these reasoning
+[  786.6-  791.8] trails. There we have some audit and we can use this to see why the model did something.
+[  792.6-  798.8] The problem is that these reasoning trails are basically made up. It is created for us to read.
+[  798.8-  803.1] It is not inherently what these models are really doing so you can't really use that as an audit
+[  803.1-  809.5] trail. That is kind of a big problem because a lot of people think they can use it but it's worthless.
+[  813.1-  818.8] Also the security scanners they work mostly great but I don't know if Dirk is in the room but he
+[  818.8-  825.0] told me a nice story during Suzukon that he ran into a problem where there were some problematic
+[  825.0-  830.8] string comparison or string operations and the model did not find a security issue because the
+[  830.8-  836.3] programmer screwed up the variable naming and because of the variable naming it was not clear
+[  836.3-  842.4] that this is a security issue because the model does not really understand like the core security
+[  842.4-  847.7] problem. They understand like the logic of the code because that is what I have seen so many times.
+[  848.5-  853.1] If you name your variables in a very confusing way that might be enough for the model not to be
+[  853.1-  858.3] able to find the security issues anymore. That is also something that probably should not
+[  858.3-  864.4] happen with an expert level code reviewer human but with the models they work on tokens on text
+[  864.4-  873.6] for them that is problematic. Now let's get to the really really ugly part. You probably know the
+[  873.6-  879.8] almost top 10 for web application security issues. They have been around for a long long time and
+[  879.8-  887.3] of course now there's an over top 10 for AI issues and you might have heard of a couple of them already.
+[  887.9-  894.6] Some of them probably are not really a big concern for most people so for example model theft like I
+[  894.7-  899.1] expected no one here is a proprietary model that they want to hide so a lot of people that's really
+[  899.1-  904.5] not a big thing but some here are really problematic and we will discuss a couple of them now.
+[  906.3-  910.4] Of course we start with first one prompt injection because that is the most severe one
+[  911.2-  918.4] and it's also the most fun one. The definition is that you manipulate LM through crafty inputs
+[  919.0-  926.3] and then cause it to do some unintended actions. You all have seen these ignore previous instructions
+[  926.3-  935.2] to do whatever stuff. You can have it in a direct way or in an indirect way. Direct means that you
+[  935.2-  941.7] can directly interface with the model like classical chatbot you try to get your recipe for explosive
+[  941.7-  948.1] out then you tell the story about your grandmother and how her dying wish was to have explosives
+[  948.1-  954.2] and then the model decides okay I will still do it. Indirect means that you just put these prompt
+[  954.2-  961.7] injection somewhere for model ingestion later and that is probably more of a problem because
+[  961.7-  969.3] that is something that a lot of people don't really think about in their use cases. The big thing is
+[  969.3-  975.9] this is not solvable with current technologies. That is something that like apparently everyone
+[  976.0-  981.6] is ignoring like when you currently go to an industry conference you see an eye solution here
+[  981.6-  989.3] and an eye solution there and everyone is acting like this does not exist but it is there and if
+[  989.3-  994.9] you read the current research papers on how to solve that then they are happy if they get something
+[  994.9- 1003.2] like Gabi prevented 95% of prompt injections which I mean is a joke like in every other field they
+[ 1003.2- 1008.5] would laugh at you and especially for security especially when the user can retry as often as
+[ 1008.5- 1015.0] they want that is definitely a failing great and that is really something to keep in mind because
+[ 1015.0- 1019.7] it is not solvable with current technology and it does not look like we can solve it with the
+[ 1019.7- 1024.5] technology that we currently have like with these models this seems to be inherent something that
+[ 1024.5- 1031.9] we can't really deal with. There are nice examples here so for example what they did they have a
+[ 1032.0- 1039.7] universal prompt injection they take an open weights model and then they can calculate based on the
+[ 1039.7- 1045.5] weights some string that looks pretty weird that you put in there and afterwards basically the
+[ 1045.5- 1051.5] model does whatever you tell it to. That of course only works with open weights model but they also
+[ 1051.5- 1057.3] showed that it works pretty well with the other models that are not open weight so also I mean
+[ 1057.3- 1063.3] you probably should not count on the model never leaking. So this is a really universal way to
+[ 1063.3- 1069.9] get around to safeguards. Also pretty fun more recent is this paper can also recommend it prompt
+[ 1069.9- 1076.4] injection is role confusion because they showed how prompt injection really works. They showed
+[ 1076.4- 1084.4] that with prompt injection you can confuse the model because a lot of models have tags like this
+[ 1084.4- 1092.5] is tool output this is user input this is your system prompt and if you sound like a certain role
+[ 1092.5- 1098.5] then the model believes that you are the certain role and what they did they just forged this chain
+[ 1098.5- 1105.2] of thought thingy so what the model itself gives out where it's thinking and if you then act like
+[ 1105.2- 1111.5] you are basically part of this thinking process then the model believes that it has these thoughts
+[ 1111.5- 1119.6] itself and then acts on that so I mean it's kind of weird to actually talk about it because it seems
+[ 1119.6- 1124.7] like a comedy not like serious security like five years ago but that is the current state of
+[ 1124.7- 1133.0] technology that we have and for the old people that might remember these nice whistles that were
+[ 1133.0- 1140.0] available to have free calls for a while we were stupid enough to basically put the control channel
+[ 1140.0- 1146.0] into the normal communication channel that did not work out too well and of course we are never going
+[ 1146.0- 1153.3] to be that stupid again right so we're not going to do exactly the same thing again apparently we do
+[ 1156.6- 1164.6] the second thing I want to highlight is a collection of basically three of those so the first is insecure
+[ 1164.6- 1171.6] output handling so you take the output of an LLM and then you process it in an insecure way
+[ 1172.8- 1178.9] or excessive agency where you allow the LLM to directly act on its own so basically the open
+[ 1178.9- 1185.6] crawl thing like here's my private computer do whatever you like to do or over reliance you just
+[ 1185.6- 1192.4] take everything that the LLM gives you and believe it and the only solution that we have for that at
+[ 1192.4- 1199.8] the moment is human in the loop and if you worked with AI in some form you probably have heard this
+[ 1199.8- 1206.2] a number of time then we put the human the loop and then we are safe here the problem is the only
+[ 1206.2- 1213.1] thing that is safe here is the leading liability for the company the system itself is not safe because
+[ 1213.1- 1220.9] humans don't work that way you know if you give a human a decision and tell him well you have these
+[ 1220.9- 1227.8] hundred lines of script that the agent now gave you to fix the problem and it was okay and then
+[ 1227.8- 1233.6] it's okay and it's okay and it's okay and you have that 30 time then show me that human that will
+[ 1233.6- 1240.0] for his 31st time still read all the 100 lines and check if there's anything in there apart from the
+[ 1240.0- 1244.4] fact that he of course can also obfuscate this but humans just don't work that we if it works a
+[ 1244.4- 1251.3] couple of times you will just press yes also for the most people they have the choice between two
+[ 1251.3- 1257.2] buttons they have the yes button which causes everything to work and they have the no button
+[ 1257.2- 1262.4] which creates problems for themselves and then the expectation is that people will regularly
+[ 1262.4- 1270.1] press that button they will not it's like the authorization dialogue in windows and also to
+[ 1270.1- 1277.6] some extended Linux the idea is understandable but people get trained to say yes because they know
+[ 1277.6- 1285.8] if they press know that stuff breaks so it's a very unreal realistic expectation that people will do
+[ 1285.8- 1296.5] that there's a golden rule of AI you have three different things you have speed so that means that
+[ 1296.5- 1303.5] the model basically can act without human oversight you have something that can act independently
+[ 1303.5- 1311.0] really quickly you have a huge data set you you have some AI agent work with that if you are
+[ 1311.0- 1315.8] have to constantly review everything it's not going to be super quick if it's independent
+[ 1315.8- 1323.9] then you can probably be super super quick the second thing is powerful doing very complex operations
+[ 1324.4- 1330.6] being able to directly work on the database mitigate issues directly on your cluster all of the nice
+[ 1330.6- 1337.2] stuff that the industry is currently selling everyone and then you have security prevent that all of
+[ 1337.2- 1345.0] that goes wrong and with the current technology you can choose two of these you can have something
+[ 1345.0- 1351.0] that is super fast and super powerful like a lot of the systems that we're currently building
+[ 1351.5- 1357.9] and then they are not secure or you can say I really want a secure system and I want it to be
+[ 1357.9- 1364.3] quick but then it's going to be very limited what in what it can do we currently can't have all three
+[ 1368.0- 1375.4] so what can we actually do about this um we we heard this a bit earlier in the talk about AI
+[ 1375.4- 1383.4] agents here but of us UADs whatever all of the old security principles still fully apply so
+[ 1383.8- 1389.0] isolation segmentation least privilege all of the stuff that we've been preaching for the last
+[ 1389.0- 1396.8] decades are still the most important mitigations if your AI agent is limited in a certain sandbox
+[ 1397.5- 1402.5] and only can do a number of operations then the damage can be contained with that you know
+[ 1403.2- 1408.1] the problem is that is not a super sexy solution like a lot of people want to have all of the
+[ 1408.1- 1417.0] power that these systems bring but you should not do this we can't do it in a secure way never
+[ 1417.0- 1423.1] ever run any AI agent directly on your system the absolute least that you have to do is to use
+[ 1423.1- 1429.5] a container and containers there's this big containers don't contain thing but if you do this
+[ 1429.5- 1434.3] properly if you have a user level container with as a little confinement then I think that is
+[ 1434.3- 1442.0] okay for most people um for more extreme cases and depending on your individual needs
+[ 1442.0- 1447.9] you might want to go to a different VM or maybe a different computer system depending on what your
+[ 1447.9- 1453.7] personal threat model is but running it directly on your system like just having cloud code run
+[ 1453.7- 1460.8] there is irresponsible in my mind you don't know what that thing is doing like in the best case it
+[ 1460.8- 1467.6] behaves like the wipe coated thing that it is specifies but the code of cloud code for example
+[ 1467.6- 1477.0] was leaked and I wouldn't trust it in general you need to consider what an attacker can do with
+[ 1477.0- 1485.5] the privileges that you actually give them you should think what this AI agent can do if someone
+[ 1486.5- 1493.7] uses it in a nefarious way if you let open cloud run on your system and open cloud suddenly
+[ 1493.7- 1498.4] runs across some file where there's some prompt injection in there and suddenly turns against
+[ 1498.4- 1503.6] you or read some email I mean this is like the best case just let it read your personal emails
+[ 1503.6- 1510.7] and sort it out yeah so now your text surface is me sending you emails that sounds like a really
+[ 1510.7- 1517.0] really awesome idea so thinking through what an agent can actually do with the privileges that you
+[ 1517.0- 1522.3] get a gift to the system is still a good idea and nothing of that is new like that is not like
+[ 1523.2- 1529.1] great AI inside or wherever it is plain security work like we've been doing for a long long time
+[ 1531.6- 1538.2] also you might want to move to the woods without power Wi-Fi in a safe house and stay there until
+[ 1538.3- 1545.0] civilization recovers and I'm only partially joking here um there are these recommendations
+[ 1545.0- 1550.2] to have like two weeks of water and food at your home like this is not crazy town this is like
+[ 1550.2- 1555.4] coming from the government and not that many people actually do that and that's not super AI
+[ 1555.4- 1561.0] specific but I definitely would do that like I've been talking to people that are responsible for
+[ 1561.0- 1567.4] the security of water plants and energy systems and everything a lot of the stuff is super
+[ 1567.4- 1574.6] attackable and a lot of the stuff is not running because it is super secure a lot of the stuff is
+[ 1574.6- 1579.8] running because it is not attacked in a proper way because the actors that have currently the
+[ 1579.8- 1586.4] capability to attack it don't have an incentive to actually abuse that like the big nation states
+[ 1586.4- 1590.8] want to have this capability to for example if they want to kidnap ahead of state from a certain
+[ 1591.3- 1597.3] country to disable the power in the capital no they can do that they usually don't do it because
+[ 1597.3- 1604.4] they want to keep the capability but these AI tools give a lot of capability to people that
+[ 1604.4- 1610.3] did not have this previously like they're daily reports about threat actors that use these AI
+[ 1610.3- 1617.7] tools to help them in their exploitation um efforts and there are a number of really scary
+[ 1617.7- 1622.4] instances where people that obviously don't have a lot of clue like manage to hack into a lot of
+[ 1622.4- 1628.3] companies because these things are really force multipliers you know if you do pen testing with
+[ 1628.3- 1633.9] cloud code as long as you get around the guardrails it's pretty amazing what it can do and if some
+[ 1633.9- 1639.1] teenager decides that the water infrastructure of rankonia should not run anymore I wouldn't count
+[ 1639.1- 1649.1] that this does not work so a bit of precaution doesn't help yeah it doesn't hurt also we should
+[ 1649.1- 1654.7] prepare that a lot of our workflows will break under load so if you were here yesterday for my
+[ 1654.7- 1660.7] CID talk we are currently in a really difficult situation that a lot of security reports come all
+[ 1660.7- 1665.9] at once and I probably don't have to sell it to people here in the room but I assume that you all
+[ 1665.9- 1673.9] have seen the increased load that we have here and this will break some of these workflows because
+[ 1673.9- 1680.0] if you are lucky and this is your full-time job then priorities might shift a bit but if you do
+[ 1680.0- 1685.2] this in your free time for fun maybe in three months you decide this is actually not fun and you're not
+[ 1685.2- 1691.1] going to do this anymore and this is problematic for a society that largely relies on the software
+[ 1691.1- 1697.9] to actually run you know it's not the 1990s anymore where we just play around with that stuff for
+[ 1697.9- 1703.3] fun giggles but now basically the whole society runs on that stuff and that is a problem
+[ 1706.0- 1712.5] in general I think we need a cultural change for security reports and again yesterday I talked
+[ 1712.5- 1719.1] about the whole CID and then how I think that should run and like a couple of years back I
+[ 1719.1- 1723.7] would have argued that basically a report of security issue owes you nothing because they
+[ 1723.7- 1728.7] already have done some free work for you but in the current situation I think we need to change
+[ 1729.5- 1734.9] I think just reporting a security vulnerability to an open source project is not good enough anymore
+[ 1735.8- 1739.8] it is good enough if you do this to a vendor because the vendor screwed up in the first place
+[ 1740.9- 1746.7] but if you do it in an open source project you probably need to provide a patch and probably not
+[ 1746.7- 1752.5] that is enough you probably also need to really help mitigate the issue because otherwise these
+[ 1752.5- 1761.5] people will just break and stop doing what they currently do and that would be a disaster here's
+[ 1761.5- 1768.2] a graph from the curl project it's already a bit older because I gave the talk a couple of months
+[ 1769.2- 1774.8] ago already so that probably is not accurate anymore these are the last couple of years the number of
+[ 1774.8- 1780.4] published vulnerabilities and that is what they expect for this year and here I mean the curl
+[ 1780.4- 1787.2] code base already is pretty mature this is not a bad project where you expect like massive numbers
+[ 1787.8- 1794.4] but that is hitting them hard and they recently announced the summer of bliss where they basically
+[ 1794.5- 1799.2] decided they will not take vulnerability reports for one anymore and I can't say that I blame them
+[ 1799.2- 1805.1] I can absolutely understand why they do that and if a well organized project like curl does that
+[ 1805.1- 1812.6] then think about what will happen for much smaller projects these are the security box fixes by
+[ 1812.6- 1820.2] a month for Firefox so we had this very usual stream that we are all used to and this is now
+[ 1820.3- 1825.1] the current state or I mean it's already it's April so not really a current state anymore
+[ 1825.9- 1833.1] but that just shows you what will happen there and of course Firefox has a huge attack surface
+[ 1833.1- 1836.8] and there's a huge software project so there's a lot of stuff in there and everyone is affected
+[ 1836.8- 1845.2] in the same way but this is coming it will not stop and unfortunately in my experience a lot of
+[ 1845.2- 1851.3] the people in higher positions at the moment don't really listen they think that yeah everything
+[ 1851.3- 1857.9] gets way more efficient we don't need that many employees anymore but this here if you increase
+[ 1857.9- 1864.9] your efficiency by effect of two which is already pretty generous is still way more than it used to
+[ 1864.9- 1873.6] be you know so in general prepare for a rough time I think the next one or two years are going to be
+[ 1873.6- 1881.0] pretty wild and with that thanks for your attention and now we can have a couple of questions because
+[ 1881.0- 1887.0] usually with these talks there's a bit of commented people have let's see if it turns out to be the
+[ 1887.0- 1905.3] case this time too hello so currently as far as I have understood it they I got quite a lot better
+[ 1905.3- 1911.7] finding security issues how much do you expect that they I will scale to the place where they can
+[ 1911.7- 1919.0] automatically create exploits apparently we are already at this point so I've not seen that myself
+[ 1919.0- 1926.2] but I've heard from people that I trust that are really good with stuff like that that I've seen
+[ 1926.2- 1931.4] the exploit development phase because you always have to be a bit careful the model providers and
+[ 1931.4- 1937.5] especially a topic they use that as a PR move so for them the soul the sky is falling we will kill
+[ 1938.2- 1945.6] society thing is something that helps them to promote their product but I know people that are
+[ 1945.6- 1951.8] active in the exploit development phase and they are pretty impressed in what they see so I'm
+[ 1953.6- 1957.6] for me it's only a matter of time and it also doesn't matter as much if it will happen in six
+[ 1957.6- 1965.0] months or in 18 months because we will not be ready either way and it is definitely coming because
+[ 1965.0- 1969.2] there's nothing that really prevents these models from doing that because if you look at exploit
+[ 1969.2- 1975.0] development with a modern exploit you need to chain multiple vulnerabilities to get around a number
+[ 1975.0- 1982.6] of safeguards and you also usually need to be a bit creative in abusing technologies so for example
+[ 1982.6- 1989.5] for a while they abused a lot of the font handling and browsers and this is something where usually a
+[ 1989.5- 1994.8] human becomes really good in a certain subsystem he then works with a different team and they figure
+[ 1994.8- 2000.9] all of that out but AI models have all of that stuff in their training data anyway
+[ 2002.0- 2007.7] so they have that kind of complexity in in them as a day they control this complexity much better
+[ 2007.7- 2013.0] than humans because we only can keep so much in our mind and if you then have a capable human that
+[ 2013.0- 2018.6] scares them and maybe not just them in the right direction then I'm absolutely sure that they will
+[ 2018.6- 2024.7] accelerate that okay but okay but then I have a follow up question because as I understand that
+[ 2024.7- 2032.9] the huge intake of all these new vulnerabilities is not because of a certain subset of super
+[ 2032.9- 2040.5] ais but a whole lot of ais out there all through the bank including stuff on hugging face which can
+[ 2040.5- 2048.2] already find issues so the question would be okay there are already ais who can do that but at which
+[ 2048.2- 2054.2] point every AI you can also pull from hugging face can create exploit for you that would be the
+[ 2054.2- 2063.2] case where the explosion really kicks in or do I understand this wrong I would say that we are
+[ 2063.2- 2069.0] already at a point where basically all of the models even the open weight models that you can
+[ 2069.0- 2075.2] run your own are pretty good in finding stuff and the point where they become really good in
+[ 2075.7- 2080.4] exploit development I can't tell you because if I learned one thing about the whole AI thing
+[ 2081.4- 2086.9] like all of the stuff that I learned that I used to know where I used to project something and say
+[ 2086.9- 2091.7] well based on my previous experience that will be something like that that doesn't work anymore
+[ 2092.7- 2099.4] it is I don't want to say that is random but I don't think that we're really at a point where
+[ 2099.4- 2105.4] we can judge properly what will be the case in a year no a lot of people say this will happen
+[ 2105.4- 2112.4] a year I think they just imagine that and we will see what will happen but for me it is clear it
+[ 2112.4- 2117.9] will happen in a relatively short timeline given the previous history how well open weight models
+[ 2117.9- 2123.1] and these obliterated models have been catching up with capabilities in other areas I don't see a
+[ 2123.1- 2133.1] reason why it would be different for exploit development okay thanks so so do you see
+[ 2133.1- 2138.9] things now I mean in the past I mean running open super operating system was an advantage but
+[ 2138.9- 2146.2] do you think no it's an advantage to unclose super operating system because it will be harder to
+[ 2146.2- 2153.2] get security issue found or whatever luckily not because that would be super annoying
+[ 2155.5- 2162.4] they these models are also really really good in reversing software so something that used to be
+[ 2162.4- 2168.6] quite time intensive and required specialists that did that and also like you can't reverse
+[ 2168.6- 2174.4] software for eight hours straight you go nuts last year was at a conference where someone just
+[ 2174.4- 2182.1] took these models into a debugging tool and a disassembler and they could take bigger software
+[ 2182.1- 2190.1] projects and really reason about them in an extremely efficient way so I think it basically
+[ 2190.1- 2194.5] changes the playing field quite a bit because it used to be a bit more difficult to find
+[ 2194.5- 2201.3] problems in close source systems because you had to do all of that stuff previously and by now
+[ 2202.3- 2207.4] for the model that doesn't make a super big difference if they get the the code or the binary
+[ 2207.4- 2229.0] I think this is a bit wrong because most of the close source of the today is not you don't get
+[ 2229.0- 2235.6] the binary it's a web app and that is true but even then you expose a pretty significant
+[ 2235.6- 2242.4] attack surface that you can very efficiently work on with these models so yeah
+[ 2243.7- 2250.4] that does not I mean in the end it's like small factors in a world where these small factors
+[ 2250.4- 2256.8] don't matter that much anymore you know the the bigger question is if there are incentives for
+[ 2256.8- 2264.4] people to look at your stuff um if you have some super obscure software that no one really has
+[ 2264.4- 2271.9] and no one is interested in then maybe I doesn't change your world a lot no but if you have something
+[ 2271.9- 2279.6] that people are interested in even slightly I mean for me I just find way more security vulnerabilities
+[ 2279.6- 2287.0] because I every time I find a code base I just have Claude have a look at it and ask it find issues
+[ 2287.8- 2292.9] that's it like I don't have to spend more time on that anymore and I'm definitely not the only one
+[ 2293.0- 2298.8] that is doing that people are starting to automate this and even if you don't have the binary if you
+[ 2298.8- 2304.5] expose that service in some way um then you have a pretty good chance that people will find issues
+[ 2304.5- 2321.1] with that with the same tools um when it's so easy to find those things could we at least use
+[ 2321.1- 2328.2] a i or a zooza ourselves perhaps to scan through this or will this even increase our load what do you
+[ 2328.2- 2337.4] think with that I see that dok is sitting there well I mean Emend actually integrated into the
+[ 2337.4- 2348.2] build service with that I see dok sitting there who actually did this um so I think we absolutely
+[ 2348.2- 2354.6] need to do this um there's a bit of a difference between the OBS and the IBS because for the IBS we
+[ 2354.6- 2360.2] have a couple of constraints that make it a bit difficult to just hook the current frontier models
+[ 2360.2- 2369.6] into the system um but dok did it and it works well so I don't know if you want to say something
+[ 2369.6- 2381.4] about this or so I can confirm that it works extremely well surprisingly or frustratingly well
+[ 2384.2- 2389.3] that's also part of the good news because while I think it's going to be really bad for a while
+[ 2390.1- 2396.4] as soon as all of that is constantly hooked into the development streams I think a lot of the
+[ 2396.4- 2404.3] usual security issues that we constantly just popping up um despite modern development tools and
+[ 2404.3- 2409.9] people being educated and stuff like that are going to vanish to a large extent that does not
+[ 2409.9- 2415.6] mean that we will have no security vulnerabilities anymore because that is unrealistic but I think
+[ 2415.7- 2423.1] this constant battle that we've been fighting for decades now will change quite a bit because it
+[ 2423.1- 2430.3] will be feasible for um rather junior developer to use coding tools and catch a lot of the stuff
+[ 2430.3- 2434.9] that would be caught otherwise five years later when someone gets motivated to look at the codebase
+[ 2436.4- 2441.8] but running an LLM connected to OBS for scanning stuff will open us to prompt injection
+[ 2442.6- 2449.3] that depends a bit on how you build it um that comes back to this use case thingy um if you
+[ 2449.3- 2457.9] would use your private OBS account and give that to um the LLM and say do you think then that is
+[ 2457.9- 2462.9] super dangerous I would not do that because of course this thing could abuse your privileges
+[ 2463.5- 2469.6] but you can build the system differently you can just say here is a text based diff
+[ 2470.2- 2476.2] judge that is there a security issue in there and then you take the output signal of yes and no
+[ 2476.2- 2483.9] and use that so that depends on your design so basically your hand is already answered um
+[ 2485.1- 2489.4] you don't need to give it access to OBS right so you don't need an MCP or anything like that you
+[ 2489.4- 2494.5] can give it just a source code because it's like open and it has no access to anything else
+[ 2494.5- 2498.0] and the interesting thing is I think the error is also on the other side right so if the
+[ 2498.7- 2503.6] if you can do a prompt injection to tell them what a hey don't report a security vulnerability
+[ 2503.6- 2508.0] then you're in exactly in the same situation that you're in today right so the worst thing that can
+[ 2508.0- 2514.7] happen is that you've uh that you get no output right most likely you will get output because
+[ 2514.7- 2520.0] that's my experience you will always especially in like unsafe like ceasing plus mass you will
+[ 2520.0- 2525.1] always get output and then you as a human need to judge whether the output is actually relevant
+[ 2525.1- 2531.5] right in many cases the output is like well that's part of the design of the software to do that
+[ 2531.5- 2537.1] so it's not really a vulnerability but you have to put in the effort in judging whether the output
+[ 2537.1- 2541.8] is actually valid but the worst thing that happened is it it doesn't say anything which means you're
+[ 2541.8- 2547.4] not worse often you're in today without doing it right so I think there's no harm in doing it
+[ 2549.0- 2553.9] that's a good that's a good hint for software projects in general it makes sense to document
+[ 2553.9- 2561.5] these expectations in your code base to have something for agents to read on also for security
+[ 2561.5- 2567.4] researchers to read so that they can actually understand if something is part of your design
+[ 2567.4- 2573.7] or really vulnerability and I just got a sign that time is up so do we have time for one more
+[ 2573.7- 2577.8] question or should we close it on one more okay yeah I just wanted to add on that topic so
+[ 2577.8- 2584.4] basically if we do AI based security we also likely have packages or security team having
+[ 2584.4- 2589.6] also to review it so that step has to be there and of course the diff could have this kind of
+[ 2589.6- 2595.8] prompt injection but how that's the typical in-band signaling thing and it would be
+[ 2595.8- 2603.5] it will definitely be interesting once we have to set up how it looks like okay with that thank
+[ 2603.5- 2607.4] you very much for your attention that was a really good discussion and I will now go out
+[ 2607.4- 2612.3] by a beer so if you won't continue that we can do that there

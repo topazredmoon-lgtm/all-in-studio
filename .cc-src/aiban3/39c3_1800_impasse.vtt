@@ -1,0 +1,2702 @@
+WEBVTT This file was generated using transcribee. Find out more at https://github.com/bugbakery/transcribee
+
+00:00:04.240 --> 00:00:23.929
+Kate: Thank  you  for  the  lovely
+introduction  and  for  the  warm  welcome.
+
+00:00:24.230 --> 00:00:28.929
+This  is  my  first  ever  CCC,  so  thank
+you  all  for  a  really  warm  welcome.
+
+00:00:29.570 --> 00:00:33.450
+My  name  is  Kate,  and  I  direct
+a  research  program  called  the
+
+00:00:33.450 --> 00:00:37.049
+Children's  Online  Safety  and
+Privacy  Research,  or  COSPR,  program.
+
+00:00:37.369 --> 00:00:42.710
+This  project  deals  with  this  topic,  which
+has  been  at  the  center  of  heated  debates
+
+00:00:42.710 --> 00:00:47.429
+from  family  dinner  tables  to  morning  talk
+shows  and  parliaments  around  the  world.
+
+00:00:47.829 --> 00:00:53.009
+From  age  assurance  and  the  social  media  ban
+to  client -side  scanning,  we  see  over  and
+
+00:00:53.009 --> 00:00:57.590
+over  again  how  children's  safety  and  adult
+privacy  are  pitted  against  each  other.
+
+00:00:58.670 --> 00:01:02.549
+As  people  continue  to  grapple  with
+the  question  of  how  to  regulate
+
+00:01:02.549 --> 00:01:06.010
+tech  and  what  kind  of  digital
+features  we  want  to  create  for  young
+
+00:01:06.010 --> 00:01:11.170
+people,  this  puts  us  in  an  impasse
+with  children's  safety  and  adult
+
+00:01:11.170 --> 00:01:15.609
+privacy  on  the  other  side,  big  tech
+accountability  and  tech  apologism,
+
+00:01:16.030 --> 00:01:20.689
+moral  panic  versus  Trojan  horse,
+doing  something  versus  doing  nothing.
+
+00:01:21.310 --> 00:01:25.329
+And  these  binaries  are  not  only
+inaccurate,  but  they  paralyze
+
+00:01:25.329 --> 00:01:29.790
+all  of  us  from  actually  engaging
+with  the  complex  social,  moral,
+
+00:01:30.109 --> 00:01:33.469
+political,  and  technological
+complexity  that  this  topic  holds.
+
+00:01:33.650 --> 00:01:38.790
+And  this  community,  as  technologists,
+parents,  social  workers,
+
+00:01:39.290 --> 00:01:43.170
+digital  rights  advocates,  and
+all  of  us  former  children,  have
+
+00:01:43.170 --> 00:01:46.489
+a  unique  positionality  that
+can  get  us  past  this  impasse.
+
+00:01:46.750 --> 00:01:50.909
+Because  this  community  has  been  at
+the  forefront  of  imagining  and  shaping
+
+00:01:50.909 --> 00:01:55.329
+what  a  safe,  secure,  and  collective
+digital  futures  might  look  like.
+
+00:01:55.849 --> 00:01:58.409
+And  to  do  that,  we  need
+to  have  a  fundamental
+
+00:01:58.409 --> 00:02:01.750
+reorientation  in  how  we
+understand  this  problem  area.
+
+00:02:03.209 --> 00:02:06.650
+I  feel  particularly  well  positioned
+to  take  you  on  this  journey.
+
+00:02:06.989 --> 00:02:12.810
+I've  spent  the  past  15  years  of  my
+experience  in  sexual  violence,  prevention,  and
+
+00:02:12.810 --> 00:02:18.270
+response  in  frontline  work,  community
+organizing  and  advocacy,  research,  and  policy.
+
+00:02:18.870 --> 00:02:21.729
+I,  in  fact,  didn't  really  start
+out  with  an  interest  in  tech,
+
+00:02:21.969 --> 00:02:24.969
+but  soon  I  had  to  because
+that's  where  the  work  took  me.
+
+00:02:25.349 --> 00:02:28.969
+And  when  I  did,  I  was  startled
+by  how  the  divide  between  privacy
+
+00:02:28.969 --> 00:02:33.550
+and  safety  came  up  again,  again,
+and  again,  ultimately  to  the
+
+00:02:33.550 --> 00:02:36.509
+detriment  of  the  people  who
+were  impacted  by  sexual  violence.
+
+00:02:37.210 --> 00:02:40.629
+I  started  out  on  the  front
+lines,  providing  direct  support  to
+
+00:02:40.629 --> 00:02:44.550
+survivors,  many  of  them  young,  of
+sexual  violence  and  family  violence,
+
+00:02:44.750 --> 00:02:48.069
+first  in  the  west  and  east  coast
+of  the  US,  and  then  in  Seoul.
+
+00:02:48.530 --> 00:02:52.250
+And  there  I  saw  how  sexual
+violence  is  always  systemic.
+
+00:02:53.189 --> 00:02:57.189
+Capitalism,  imperialism,  and
+patriarchy  created  the  conditions
+
+00:02:57.189 --> 00:03:02.129
+of  migration,  poverty,  racism,
+and  colorism,  transphobia  and
+
+00:03:02.129 --> 00:03:05.830
+queerphobia,  and  disability,  among
+others,  where  sexual  violence
+
+00:03:05.830 --> 00:03:10.750
+emerged  as  a  weapon  of  control,
+extraction,  and  dehumanization.
+
+00:03:11.849 --> 00:03:16.129
+As  an  organizer  campaigning  for
+survivors'  rights,  I  saw  how  quick
+
+00:03:16.129 --> 00:03:20.189
+the  criminal  legal  system  was  to
+dismiss  tech -facilitated  harms.
+
+00:03:20.650 --> 00:03:25.330
+Judges,  lawyers,  police  officers,
+and  social  workers  telling  young
+
+00:03:25.330 --> 00:03:28.909
+women  and  children  that  they
+shouldn't  have  put  their  information
+
+00:03:28.909 --> 00:03:31.830
+out  there,  that  if  they're  so
+worried  they  should  learn  how  the
+
+00:03:31.830 --> 00:03:35.430
+internet  works,  as  if  they  do,
+or  that  they  should  just  log  off.
+
+00:03:36.469 --> 00:03:39.349
+And  most  importantly,  and  most
+recently,  I  worked  in  Google's
+
+00:03:39.349 --> 00:03:43.150
+child  safety  product  policy  team,
+where  I  was  hoping  to  play  a  more
+
+00:03:43.150 --> 00:03:46.449
+tangible  role  in  safeguarding
+young  people's  digital  experiences.
+
+00:03:47.009 --> 00:03:50.870
+And  instead,  I  saw  how  the  tech
+industry's  greed  to  feed  its
+
+00:03:50.870 --> 00:03:53.509
+surveillance  business  model
+took  advantage  of  young  people.
+
+00:03:53.930 --> 00:03:57.789
+They  claimed  to  care  about  privacy
+and  safety,  but  it  was  a  marketing
+
+00:03:57.789 --> 00:04:02.870
+exercise  at  best,  a  compliance  checkbox
+exercise,  as  a  company  set  aside
+
+00:04:02.870 --> 00:04:07.990
+truly  innovative  prevention  ideas  in
+favor  of  hyping  up  the  AI  bubble.
+
+00:04:09.150 --> 00:04:13.090
+I  share  my  journey  with  you  with  the
+hope  that  it  gives  you  a  glimpse  into
+
+00:04:13.090 --> 00:04:17.750
+what's  at  stake  when  we  define  this
+issue  as  one  of  safety  and  privacy.
+
+00:04:18.209 --> 00:04:22.329
+There's  so  much  more  when  we  allow
+ourselves  to  think  beyond  the  impasse.
+
+00:04:23.490 --> 00:04:26.730
+So  how  did  this  impasse
+framing  come  about?
+
+00:04:27.050 --> 00:04:31.610
+Policy  agenda  has  been  primarily  expressed
+by  the  concern  for  young  people's
+
+00:04:31.610 --> 00:04:37.250
+mental  health,  but  really,  it's  propelled
+and  anchored  by  very  particular  ideas
+
+00:04:37.250 --> 00:04:41.790
+about  child  sexual  abuse,  and  in  the
+online  context,  child  sexual  abuse  materials.
+
+00:04:43.269 --> 00:04:48.930
+So  here,  I  think  it's  helpful  to  think  about
+all  of  these  laws  kind  of  as  a  whole  unit.
+
+00:04:49.110 --> 00:04:53.610
+So  this  is  a  map  of  latest
+legislative  moves  in  different
+
+00:04:53.610 --> 00:04:56.029
+jurisdictions  regarding
+children's  online  safety.
+
+00:04:56.449 --> 00:04:59.670
+So  Australia  has  been  leading
+the  way  with  the  social  media
+
+00:04:59.670 --> 00:05:02.730
+minimum  age  restriction,  which
+kicked  off  a  few  weeks  ago.
+
+00:05:03.149 --> 00:05:07.509
+And  also  paving  the  way  is  the  UK's
+Online  Safety  Act,  which  implemented
+
+00:05:07.509 --> 00:05:10.990
+age  assurance  methods  this  summer,  and
+many  of  you  have  been  tracking  that.
+
+00:05:11.389 --> 00:05:14.870
+The  EU  continues  its  heated
+debates  around  chat  control.
+
+00:05:15.269 --> 00:05:18.269
+I  know  Germany  has  had  its
+own  grappling  with  chat  control
+
+00:05:18.269 --> 00:05:22.389
+very  recently,  as  the  DSA
+and  DMA  continue  to  kick  in.
+
+00:05:23.269 --> 00:05:26.910
+And  bolstered  by  what's  happening
+in  the  EU,  the  US  too  is
+
+00:05:26.910 --> 00:05:30.449
+revisiting  children's  online
+safety  discussions  with  the  Kids
+
+00:05:30.449 --> 00:05:35.410
+Online  Safety  Act  in  the  stacks
+for  discussion  in  the  next  year.
+
+00:05:35.990 --> 00:05:38.829
+And  the  momentum  from  Australia
+is  making  its  way  to  the
+
+00:05:38.829 --> 00:05:42.069
+Asian  Pacific  region,  though
+there  the  focus  has  been  on
+
+00:05:42.069 --> 00:05:45.430
+cyber  sex  crimes,  particularly
+around  financial  sextortion.
+
+00:05:46.129 --> 00:05:49.610
+And  similar  regulatory  momentum
+is  making  its  ways  to
+
+00:05:49.610 --> 00:05:53.230
+the  African  continent  with
+Nigeria's  Online  Harms  Bill.
+
+00:05:53.449 --> 00:05:57.730
+And  countries  like  Uganda  and
+Ghana  with  their  anti -homosexuality
+
+00:05:57.730 --> 00:06:01.250
+bills  include  substantive  portion
+about  online  content  moderation.
+
+00:06:02.050 --> 00:06:06.629
+And  receiving  less  attention  are
+events  in  Latin  America,  particularly
+
+00:06:06.629 --> 00:06:09.930
+in  Brazil,  which  actually  took
+a  really  innovative  step  forward
+
+00:06:09.930 --> 00:06:13.269
+this  year  in  introducing  a  data
+governance  framework  for  children.
+
+00:06:14.209 --> 00:06:18.589
+So  when  taken  as  a  whole,  these
+policies  have  three  things  in  common.
+
+00:06:21.740 --> 00:06:25.720
+First  is  a  vague  definition
+of  child  safety  that  conjures
+
+00:06:25.720 --> 00:06:28.740
+a  very  strong  mental  model
+about  child  sexual  abuse.
+
+00:06:29.339 --> 00:06:33.199
+So  as  we  saw,  child  safety  encompasses
+a  whole  range  of  different  issues.
+
+00:06:33.480 --> 00:06:37.019
+We  have  grooming,  child  sexual
+abuse  materials,  sextortion,
+
+00:06:37.439 --> 00:06:42.420
+scams,  misinformation,  radicalization,
+mental  health,  and  so  on.
+
+00:06:42.839 --> 00:06:46.180
+And  the  fuzziness  of  child
+safety  is  what  allows  it  to
+
+00:06:46.180 --> 00:06:49.100
+encompass  all  of  these  very
+different  social  phenomenon.
+
+00:06:49.860 --> 00:06:52.180
+And  it  also  leaves  a
+lot  for  interpretation.
+
+00:06:52.480 --> 00:06:56.959
+So  when  you  read  the  policy  language
+closely,  or  listen  to  the  politicians'
+
+00:06:57.180 --> 00:07:01.720
+announcements  and  statements,  it's  really
+clear  that  they're  constantly  evoking
+
+00:07:01.720 --> 00:07:07.439
+and  conjuring  child  sexual  abuse  and  child
+sexual  abuse  materials  as  the  strongest
+
+00:07:07.439 --> 00:07:12.439
+justification  for  why  the  internet  needs  to
+be  regulated  in  this  very  protectionist  way.
+
+00:07:13.019 --> 00:07:16.800
+So  child  safety  itself  might
+be  vague,  but  this  vagueness
+
+00:07:16.800 --> 00:07:20.480
+enables  child  sexual  abuse  to
+become  a  fixed  mental  model.
+
+00:07:23.850 --> 00:07:25.790
+And  harm  is  reduced  to  content.
+
+00:07:26.149 --> 00:07:30.589
+Under  this  rhetoric,  harm  exists  within
+the  four  corners  of  the  content.
+
+00:07:30.949 --> 00:07:34.209
+Harm  exists  purely
+online,  isolated  from  the
+
+00:07:34.209 --> 00:07:36.930
+complex  interplay  of
+online  and  offline  factors.
+
+00:07:36.930 --> 00:07:42.550
+We  lose  sight  of  how  risks  differ
+from  harm,  how  toddlers  and  teenagers
+
+00:07:42.550 --> 00:07:47.170
+are  impacted  differently,  and
+how  harm  emerges  from  behaviors.
+
+00:07:47.790 --> 00:07:51.990
+This  singular  focus  on  content
+has  the  effect  of  diluting
+
+00:07:51.990 --> 00:07:55.490
+the  motivations  and  incentives
+of  the  institutions  and
+
+00:07:55.490 --> 00:07:58.889
+people  that  take  advantage
+of  and  mistreat  young  people.
+
+00:07:59.550 --> 00:08:03.550
+Rather  than  addressing  the  root
+causes  that  create  the  predatory
+
+00:08:03.550 --> 00:08:07.649
+environment,  the  goal  then  is
+to  remove  harm  by  removing
+
+00:08:07.649 --> 00:08:11.370
+content  through  detection,
+reporting,  and  content  removal.
+
+00:08:13.339 --> 00:08:16.500
+And  solutions  are  thus
+privatized  and  punitive.
+
+00:08:17.060 --> 00:08:21.000
+It's  no  wonder  that  the  proposed
+interventions  are  tech  solutionist,
+
+00:08:21.079 --> 00:08:24.220
+as  we  see  with  things  like  age
+assurance  methods,  client -side
+
+00:08:24.220 --> 00:08:28.339
+scanning,  reporting  tools,  grooming
+classifiers,  you  name  them.
+
+00:08:28.699 --> 00:08:34.299
+But  more  importantly,  these  measures  are
+privatized  and  singularly  focused  on  punishment.
+
+00:08:34.679 --> 00:08:38.559
+They  enable  the  tech  industry
+to  collect,  consolidate,  and
+
+00:08:38.559 --> 00:08:42.419
+centralize  more  data  about
+everyone's  private  and  intimate  lives
+
+00:08:42.419 --> 00:08:45.759
+in  the  name  of  finding  the  bad
+guys  who  are  hurting  our  children.
+
+00:08:46.159 --> 00:08:51.820
+We  end  up  assuming  that  catching  the  bad  guys
+means  that  young  people  are  being  protected.
+
+00:08:51.820 --> 00:08:57.940
+So  these  threads  form  what  I  call
+a  child  protectionist  approach.
+
+00:08:57.940 --> 00:09:02.059
+So  this  is  an  approach  to
+safeguarding  young  people  that  collapses
+
+00:09:02.059 --> 00:09:06.379
+meaningful  differences  in  harms,
+motives,  and  impacts  in  order
+
+00:09:06.379 --> 00:09:10.799
+to  justify  taking  a  blunt,
+universalized,  law -and -order  response.
+
+00:09:11.559 --> 00:09:16.799
+Now,  protection  itself  isn't  inherently  harmful,
+and  it  might  even  be  necessary  at  times.
+
+00:09:17.019 --> 00:09:22.879
+But  this  protectionist  approach  allows
+young  people  to  be  framed  as  frozen,  as
+
+00:09:22.879 --> 00:09:28.259
+helpless  victims,  rather  than  complex  people
+whose  needs  change  and  evolve  over  time.
+
+00:09:28.799 --> 00:09:31.919
+Safety  is  offered  as  a
+special  carve -out  for  young
+
+00:09:31.919 --> 00:09:35.340
+people,  as  if  they  exist  in
+isolation  from  other  people.
+
+00:09:36.299 --> 00:09:41.440
+And  risks  and  harms  become  one  to
+warrant  a  blunt  response  that's  more
+
+00:09:41.440 --> 00:09:45.799
+concerned  about  catching  the  imaginary
+predator  than  supporting  young  people.
+
+00:09:46.860 --> 00:09:51.779
+And  protectionism  has  a  way  of  taking  over
+the  discussion  and  pushing  it  to  the  extreme.
+
+00:09:52.100 --> 00:09:55.759
+It  does  so  because  child  sexual
+abuse,  and  in  online  context,
+
+00:09:55.860 --> 00:09:59.039
+child  sexual  abuse  materials,
+are  fixed  as  a  mental  model.
+
+00:09:59.440 --> 00:10:04.419
+And  this  jump  happens  because  of  what
+my  colleague  Elizabeth  Clemants,  who's
+
+00:10:04.419 --> 00:10:08.279
+a  long -time  restorative  justice
+practitioner  for  people  impacted  by  child
+
+00:10:08.279 --> 00:10:12.460
+sexual  abuse,  running  this  wonderful
+group  called  Hidden  Water  in  New  York.
+
+00:10:12.679 --> 00:10:17.379
+She  calls  this  jump  the  result  of
+the  ick  factor  of  child  sexual  abuse.
+
+00:10:18.600 --> 00:10:22.879
+So  when  child  sexual  abuse  is  evoked
+in  a  room,  the  room  goes  silent.
+
+00:10:23.100 --> 00:10:27.500
+I've  seen  it  so  many  times.  Everyone
+freezes  up  and  avoids  eye  contact.
+
+00:10:27.820 --> 00:10:30.600
+People  don't  want  to  hear,
+think,  or  talk  about  it.
+
+00:10:30.759 --> 00:10:34.200
+They  get  the  ick,  and  they
+try  to  avoid  engaging  with  it.
+
+00:10:34.799 --> 00:10:37.460
+But  a  lot  happens  in
+the  state  of  avoidance.
+
+00:10:37.460 --> 00:10:41.720
+And  it's  imperative  that  we,  as
+responsible  adults  who  care  deeply
+
+00:10:41.720 --> 00:10:45.360
+about  safeguarding  young  people  in
+our  lives  and  steering  the  internet
+
+00:10:45.360 --> 00:10:49.360
+towards  a  more  libertary  future,
+to  tackle  this  avoidance  head  on.
+
+00:10:50.980 --> 00:10:53.899
+Before  I  go  on,  I  want  to
+quickly  set  some  intentions  with
+
+00:10:53.899 --> 00:10:56.600
+you  all  because  we're  about  to
+delve  into  heavier  discussion.
+
+00:10:57.379 --> 00:11:01.720
+So  content  warning,  I'll  be  speaking
+comprehensively  and  candidly  about
+
+00:11:01.720 --> 00:11:06.460
+child  sexual  abuse,  CSA,  or  child
+sexual  abuse  materials,  or  CSAM.
+
+00:11:07.120 --> 00:11:10.559
+And  I  know  that  that  can  be  a  really
+difficult  task  for  a  lot  of  different  reasons.
+
+00:11:10.919 --> 00:11:14.200
+Maybe  you're  a  concerned  parent.
+Maybe  you  work  in  this  area.
+
+00:11:14.580 --> 00:11:16.460
+Maybe  you've  been  impacted  in  some  way.
+
+00:11:17.019 --> 00:11:19.700
+Or  maybe  you're  having  a  hard
+time  getting  past  the  ick.
+
+00:11:20.279 --> 00:11:24.639
+So  whatever  the  reason,  I  encourage  you
+to  engage  with  this  on  your  own  terms.
+
+00:11:25.059 --> 00:11:29.080
+And  that  might  look  like  stepping  away,
+taking  notes,  or  not  taking  notes.
+
+00:11:29.179 --> 00:11:32.000
+For  those  of  you  calling
+in  online,  might  mean
+
+00:11:32.000 --> 00:11:33.779
+that  you  take  a  pause  and
+come  back  to  it  later.
+
+00:11:34.620 --> 00:11:39.019
+So  whatever  you  do,  that's  all  okay.  You
+know  your  body,  so  follow  your  own  pace.
+
+00:11:40.299 --> 00:11:42.620
+And  if  you  choose  to  continue,  be  curious.
+
+00:11:43.139 --> 00:11:45.960
+There's  a  lot  that  we  have  to
+unlearn  when  it  comes  to  this  topic.
+
+00:11:45.960 --> 00:11:49.779
+I'm  15  years  in  and  still  finding
+myself  unlearning  and  learning.
+
+00:11:49.960 --> 00:11:53.820
+So  to  do  that  kind  of
+collective  learning,  relearning,
+
+00:11:54.100 --> 00:11:56.700
+and  unlearning,  you  have
+to  let  yourself  be  curious.
+
+00:11:57.700 --> 00:12:03.500
+And  curiosity  happens  when  we  allow  ourselves
+to  give  each  other  and  ourselves  grace.
+
+00:12:04.679 --> 00:12:08.419
+And  finally,  learning  is  never
+solitary.  It's  a  group  effort.
+
+00:12:08.419 --> 00:12:12.360
+So  I  encourage  you  to  check  in  with
+each  other  during  and  after  the  talk.
+
+00:12:12.620 --> 00:12:14.799
+Maybe  you're  sitting  next  to
+someone  you've  never  met  before,
+
+00:12:14.940 --> 00:12:18.340
+but  maybe  this  is  an  opportunity
+for  you  to  make  new  connections.
+
+00:12:19.440 --> 00:12:22.679
+So  in  the  spirit  of  group  care,
+I  want  to  invite  you  all, and  this
+
+00:12:22.679 --> 00:12:26.080
+is  totally  optional,  to  do  some
+collective  breaths  together  with  me.
+
+00:12:26.080 --> 00:12:29.899
+This  helps  us  regulate  so  we  can
+set  aside  whatever  assumptions,
+
+00:12:30.360 --> 00:12:33.360
+projections,  and  anxieties  that
+we're  bringing  into  this  topic.
+
+00:12:33.860 --> 00:12:36.360
+I  like  to  do  what's
+called  a  3 -2 -4  breath.
+
+00:12:36.919 --> 00:12:42.299
+So  I'm  going  to  invite  you  all  to  inhale
+with  our  noses  in  a  count  of  three.
+
+00:12:42.620 --> 00:12:44.840
+And  then  we're  going  to
+hold  our  breath  for  two.
+
+00:12:45.000 --> 00:12:47.519
+And  then  we're  going  to
+exhale  while  I  count  to  four.
+
+00:12:48.399 --> 00:12:52.500
+So  for  those  of  you  who  want  to,  we  can
+do  this: so  I'm  going  to  inhale  in  three.
+
+00:12:52.500 --> 00:13:04.960
+One,  two,  three,  hold  for  two,
+and  exhale,  two,  three,  four.
+
+00:13:05.399 --> 00:13:06.980
+Let's  do  it  one  more  time.
+
+00:13:07.539 --> 00:13:18.940
+Inhale,  two,  three,  hold  for
+two,  exhale,  two,  three,  four.
+
+00:13:19.480 --> 00:13:24.200
+Thank  you  for  doing  that  with
+me.  So  let's  return  to  the  ick.
+
+00:13:24.679 --> 00:13:26.159
+Why  do  we  get  the  ick?
+
+00:13:26.840 --> 00:13:31.379
+This  avoidance  is  a  response  to
+our  shared  imaginaries  about  child
+
+00:13:31.379 --> 00:13:35.659
+sexual  abuse,  which  mainly  takes  the
+shape  in  the  figure  of  the  predator.
+
+00:13:36.159 --> 00:13:39.860
+This  figure  of  the  predator
+is  almost  always  imagined  as
+
+00:13:39.860 --> 00:13:43.759
+an  adult  man  with  a  pathological
+sexual  interest  in  young
+
+00:13:43.759 --> 00:13:47.519
+children  and  predisposed  to
+seek  them  out  and  abuse  them.
+
+00:13:47.519 --> 00:13:53.240
+He  goes  by  other  names  like  sex
+offender,  predator,  pedophile,  and  groomer.
+
+00:13:54.120 --> 00:13:57.899
+But  contrary  to  what  we  associate
+with  the  figure  of  the  predator  in
+
+00:13:57.899 --> 00:14:02.080
+our  minds,  the  reality  of  child
+sexual  abuse  is  much  more  complicated.
+
+00:14:03.700 --> 00:14:10.600
+So  by  far,  about  90 %  of  child
+sexual  abuse  or  CSA  involve  people
+
+00:14:10.600 --> 00:14:15.179
+who  are  known  and  trusted  by  the
+child  and  happens  usually  at  home.
+
+00:14:15.179 --> 00:14:17.559
+So  this  is  something  that
+happens  within  the  family  system.
+
+00:14:18.720 --> 00:14:23.139
+And  juvenile  offending  accounts  for
+over  two -thirds  of  CSA,  meaning
+
+00:14:23.139 --> 00:14:25.799
+that  it's  something  that  happens
+within  a  peer -to -peer  context.
+
+00:14:25.799 --> 00:14:31.019
+And  the  average  age  of  difference
+is  about  six  years  and  often  can
+
+00:14:31.019 --> 00:14:34.200
+involve  older  sibling  or  someone  like
+an  older  sibling,  like  a  cousin.
+
+00:14:36.309 --> 00:14:39.870
+So  I  think  many  of  us  who  have  been
+working  in  this  area  are  familiar
+
+00:14:39.870 --> 00:14:42.710
+with  the  fact  that  it's  something
+that  happens  within  the  family  system.
+
+00:14:42.950 --> 00:14:47.049
+However,  the  figure  of  the  predator
+is  so  prevalent  in  our  culture
+
+00:14:47.049 --> 00:14:51.049
+so  that  even  those  of  us  who
+consider  ourselves  pretty  informed,
+
+00:14:51.350 --> 00:14:54.950
+the  figure  of  the  predator  is  so
+baked  into  our  cultural  fabric.
+
+00:14:54.950 --> 00:15:00.029
+You  know,  from  reality  shows  like  To  Catch
+a  Predator,  there's  a  new  show  on  HBO  Max,
+
+00:15:00.309 --> 00:15:07.210
+for  those  of  you  who  have  it,  with " It",
+the  Pennywise,  and  a  true  crime  podcast.
+
+00:15:07.429 --> 00:15:10.110
+So  it's  so  baked  into  our
+culture  that  it  constantly  sets
+
+00:15:10.110 --> 00:15:13.409
+us  back  from  actually
+confronting  the  realities  of  CSA.
+
+00:15:14.950 --> 00:15:19.470
+And  as  a  result,  the  ick  masks
+systemic  factors  that  enable
+
+00:15:19.470 --> 00:15:22.889
+CSA  in  our  own  families,
+communities,  and  institutions.
+
+00:15:24.350 --> 00:15:28.669
+It  presents  the  story  that  CSA
+is  this  awful  one -off  incident.
+
+00:15:28.929 --> 00:15:32.110
+But  the  truth  is  that  it's  something
+that  happens  throughout  the  life
+
+00:15:32.110 --> 00:15:35.710
+course  or  that  its  effects  unravel
+throughout  the  life  course  of  a  person.
+
+00:15:36.149 --> 00:15:40.970
+So  for  78 %  of  children  who  experience
+CSA,  it  happened  more  than  once.
+
+00:15:41.169 --> 00:15:44.429
+And  for  42%,  it  happened
+more  than  six  times.
+
+00:15:45.269 --> 00:15:49.610
+It  also  happens  always  in  tandem  with
+other  forms  of  child  maltreatment.
+
+00:15:49.610 --> 00:15:53.129
+In  a  study  in  Australia,
+four  in  10  children  experience
+
+00:15:53.129 --> 00:15:56.649
+more  than  one  type  of  abuse,
+such  as  neglect,  physical
+
+00:15:56.649 --> 00:16:00.490
+violence,  emotional  violence,
+exposure  to  domestic  violence.
+
+00:16:01.669 --> 00:16:04.850
+And  it  tends  to  involve
+[or]  implicate  people  who
+
+00:16:04.850 --> 00:16:09.350
+are  already  vulnerable,
+marginalized,  and  displaced.
+
+00:16:09.350 --> 00:16:13.629
+So  the  likelihood  and  severity
+of  CSA  are  linked  to  gender.
+
+00:16:14.009 --> 00:16:17.009
+Girls  are  at  a  risk  for  most
+types  of  child  maltreatment,
+
+00:16:17.269 --> 00:16:20.309
+particularly  for  sexual  abuse,
+emotional  abuse,  and  neglect.
+
+00:16:20.730 --> 00:16:23.870
+Although  I  do  want  to  note  that  this
+might  also  be  as  a  result  of  the
+
+00:16:23.870 --> 00:16:27.090
+fact  that  we  have  historically
+overlooked  the  impact  on  young  boys.
+
+00:16:27.309 --> 00:16:29.029
+And  this  is  a  growing  area  of  research.
+
+00:16:30.509 --> 00:16:33.509
+Children  with  disabilities  are
+three  times  more  likely  than
+
+00:16:33.509 --> 00:16:37.769
+children  without  to  experience  CSA,
+and  children  in  the  foster  care
+
+00:16:37.769 --> 00:16:41.929
+system  are  more  likely  to  have
+higher  lifetime  experiences  of  CSA.
+
+00:16:43.409 --> 00:16:47.370
+And  this  isn't  something  that [...
+]   the  figure  of  the  predator
+
+00:16:47.370 --> 00:16:50.669
+is  not  just  inaccurate  as
+we're  seeing,  but  it  actually
+
+00:16:50.669 --> 00:16:54.009
+actively  harms  the  children
+and  adults  who  are  impacted.
+
+00:16:54.689 --> 00:16:58.769
+Delayed  disclosure  is  really
+common  for  people  impacted  by  CSA.
+
+00:16:59.350 --> 00:17:03.589
+Disclosures  can  happen  anywhere
+between  a  week  after  the  incident  to
+
+00:17:03.589 --> 00:17:09.250
+46  years  later,  and  66 %  of  episodes
+are  never  disclosed  to  an  adult.
+
+00:17:09.869 --> 00:17:14.849
+So  to  recap,  we've  seen  how  a
+protectionist  approach  has  come  to  prevail
+
+00:17:14.849 --> 00:17:19.609
+in  our  regulatory  and  cultural  and
+moral  understanding  of  child  safety,  and
+
+00:17:19.609 --> 00:17:24.670
+the  ick  factor  of  CSA  is  so  powerful
+that  it  keeps  us  fixated  on  this  figure
+
+00:17:24.670 --> 00:17:29.009
+of  the  predator  and  diverts  our
+attention  away  from  the  realities  of  CSA.
+
+00:17:30.990 --> 00:17:34.509
+So  how  then  has  the  ick  factor
+shaped  children's  online  safety?
+
+00:17:35.049 --> 00:17:39.430
+Well,  the  story  of  protectionism  and
+children's  online  safety  in  many  ways  is  a
+
+00:17:39.430 --> 00:17:44.829
+story  of  an  ecosystem,  one  that  is  constantly
+reproducing  itself  and  ever- expanding.
+
+00:17:45.150 --> 00:17:48.670
+It's  a  story  about  this
+ecosystem  premised  on  big,  scary
+
+00:17:48.670 --> 00:17:51.950
+numbers,  one  that's  designed
+to  chase  those  numbers,
+
+00:17:52.230 --> 00:17:56.109
+and  in  doing  so,  cast  real
+people  aside  in  pursuit  of  what
+
+00:17:56.109 --> 00:17:59.129
+those  numbers  mean,  or  in  pursuit
+of  what  the  numbers  represent.
+
+00:17:59.889 --> 00:18:07.009
+So  we  start  with  the  big,
+scary  numbers  that  shock  us
+
+00:18:07.009 --> 00:18:09.849
+and  divert  us  away  from
+the  real  child  safety  issue.
+
+00:18:10.569 --> 00:18:14.150
+So  when  it  comes  to  online
+safety,  CSAM,  child  sexual  abuse
+
+00:18:14.150 --> 00:18:17.150
+materials,  come  to  stand  in
+for  the  figure  of  the  predator.
+
+00:18:17.569 --> 00:18:20.650
+So  take  this  really  commonly
+cited  stat,  you  can  see  it  in
+
+00:18:20.650 --> 00:18:25.589
+policy  documents  and  media
+discussions  about  CSAM  from  NCMEC,
+
+00:18:25.829 --> 00:18:28.009
+or  the  National  Center  for
+Missing  and  Exploited  Children.
+
+00:18:28.329 --> 00:18:32.549
+And  this  is  a  US -based  national
+clearinghouse  for  processing  CSAM  reports.
+
+00:18:32.909 --> 00:18:37.869
+In  2023,  NCMEC  alleges  that
+they  received  36 .2  million
+
+00:18:37.869 --> 00:18:40.950
+reports  of  suspected
+child  sexual  exploitation.
+
+00:18:41.809 --> 00:18:45.170
+This  is  a  jarring  and  horrifying  number.
+
+00:18:45.690 --> 00:18:49.609
+So  we  have  this  big,  scary
+number  about  CSAM  that  conveys
+
+00:18:49.609 --> 00:18:53.549
+this  idea  that  the  internet
+is  inundated  with  CSAM.
+
+00:18:54.049 --> 00:18:55.930
+Well,  let's  unpack  this.
+
+00:18:57.809 --> 00:19:03.369
+Because  the  internet  is  run  by
+internet  service  providers,  the  ESPs  are
+
+00:19:03.369 --> 00:19:07.670
+under  US  federal  obligation  to  report
+what  they  think  might  be  CSAM.
+
+00:19:07.990 --> 00:19:11.329
+So  US  federal  law  requires
+electronic  service  providers,  or
+
+00:19:11.329 --> 00:19:15.349
+ESP,  to  detect,  report,  and
+remove  suspected  child  sexual
+
+00:19:15.349 --> 00:19:19.369
+abuse  materials  to  the  cyber  tip
+line,  which  is  run  by  NCMEC.
+
+00:19:21.680 --> 00:19:25.740
+And  then  that  kind  beckons   a  question
+of  like,  well,  what  exactly  is  a  CSAM?
+
+00:19:25.859 --> 00:19:27.879
+How  do  you  know  that  it's  suspected  CSAM?
+
+00:19:28.019 --> 00:19:33.480
+So  when  we  interrogate  it,  we  see  that  CSAM
+is  a  very  particular  legal  object  that's
+
+00:19:33.480 --> 00:19:38.839
+rooted  in  a very  American  set  of  values,
+that's  both  over-  and  under- inclusive  of
+
+00:19:38.839 --> 00:19:42.940
+how  child  sexual  abuse  and  exploitation
+might  be  captured  as  pieces  of  content.
+
+00:19:43.680 --> 00:19:48.720
+So  in  this  definition,  we  see
+that  CSAM  refers  to  any  visual
+
+00:19:48.720 --> 00:19:53.319
+depiction  of  sexually  explicit
+conduct  involving  an  apparent  minor.
+
+00:19:53.619 --> 00:19:56.539
+I  want  to  highlight  the  three
+key  components  of  this  definition.
+
+00:19:56.819 --> 00:19:58.599
+First  is  visual  depiction.
+
+00:19:59.039 --> 00:20:01.759
+And  this  is  something  that
+actually  varies  by  jurisdiction.
+
+00:20:02.139 --> 00:20:05.619
+Some  jurisdictions  include  text
+-based  material,  audio,  and  so  on.
+
+00:20:05.720 --> 00:20:09.859
+But  in  the  US  definition,  there's  kind
+of  an  overemphasis  on  visual  materials.
+
+00:20:11.159 --> 00:20:12.720
+Sexually  explicit  conduct.
+
+00:20:13.400 --> 00:20:18.359
+In  the  US  definition,
+this  really  is  defined  by
+
+00:20:18.359 --> 00:20:21.279
+the  presence  of  genitalia
+and  penetrative  sex  acts.
+
+00:20:21.400 --> 00:20:24.079
+So  we  can  see  how  a
+very  particular  heterosexual
+
+00:20:24.079 --> 00:20:27.379
+notion  of  sexual  violence
+is  inscripted  into  the  law.
+
+00:20:28.379 --> 00:20:32.200
+And  apparent  minor.  The  word "
+apparent"  is  doing  a  lot  of  work.
+
+00:20:32.379 --> 00:20:38.559
+So  there's  an  assumption  here  that  you  can
+distinguish  a  child's  body  from  an  adult  body.
+
+00:20:39.879 --> 00:20:46.179
+So  as  a  result  of  this  really  vague,
+both  over-  and  under- inclusive  definition,
+
+00:20:46.539 --> 00:20:49.799
+the  cyber  tip  line  ends  up  including
+a  whole  lot  of  different  things.
+
+00:20:50.119 --> 00:20:55.420
+So  first,  it  includes  genuine  child
+sexual  abuse  and  exploitation  materials.
+
+00:20:55.599 --> 00:20:59.000
+So  these  are  images  and  other
+types  of  content  captured
+
+00:20:59.000 --> 00:21:01.900
+during  actual  instances
+of  abuse  and  exploitation.
+
+00:21:03.279 --> 00:21:06.319
+But  it  also  includes  something
+like  the  baby  bum  on  the  beach.
+
+00:21:06.420 --> 00:21:12.519
+So  this  is  your  grandma  taking  a  picture  of
+her  naked  grandson  running  around  the  beach.
+
+00:21:12.740 --> 00:21:17.119
+So  it  might  meet  the  legal  definition  of
+CSAM,  but  certainly  isn't  sexually  motivated.
+
+00:21:17.400 --> 00:21:19.639
+And  it's  innocuous  by  all  means.
+
+00:21:20.639 --> 00:21:26.559
+It  also  includes  something  like  nudes,  which
+the  industry  parlance  is  self -generated  CSAM.
+
+00:21:27.599 --> 00:21:31.339
+And  it's  older  adolescents  who
+are  engaging  in  developmentally
+
+00:21:31.339 --> 00:21:34.420
+normative  behavior  to  capture
+and  share  intimate  imagery.
+
+00:21:35.380 --> 00:21:37.000
+It  might  be  innocuous.
+
+00:21:37.179 --> 00:21:41.220
+It  might  become  harmful  in  the  cases
+of  non -consensual  image  circulation.
+
+00:21:41.440 --> 00:21:44.759
+But  of  course,  you  wouldn't  necessarily
+know  that  from  just  looking  at  the  image.
+
+00:21:45.420 --> 00:21:47.380
+It  also  includes  reshares.
+
+00:21:47.859 --> 00:21:50.779
+Another  horrible  industry
+parlance  called  "potential  meme".
+
+00:21:50.960 --> 00:21:54.099
+So  this  refers  to  people
+who  are  resharing  CSAM  that's
+
+00:21:54.099 --> 00:21:57.319
+already  been  known  and  detected,
+either  to  raise  awareness
+
+00:21:57.319 --> 00:22:01.440
+about  it  or  from  a  sense  of
+outrage  or  to  troll  other  people.
+
+00:22:02.079 --> 00:22:03.960
+So  various  motivations  there.
+
+00:22:04.119 --> 00:22:07.440
+But  the  idea  is  that  it's  a  reshare  of
+what's  already  out  there  on  the  internet.
+
+00:22:08.359 --> 00:22:10.920
+And  it  also  includes
+obscene  visual  content.
+
+00:22:10.920 --> 00:22:14.480
+So  these  are  your  animated
+content,  things  that  are
+
+00:22:14.480 --> 00:22:18.460
+generated  to  replicate  the
+image  of  a  real  child.
+
+00:22:18.880 --> 00:22:24.500
+So  just  from  looking  at  all  of  this,  we
+can  see  how  CSAM  really  is  a  legal  object
+
+00:22:24.500 --> 00:22:29.519
+that's  not  necessarily,  though  can  be,  a
+proxy  for  hands -on  abuse  and  exploitation.
+
+00:22:31.259 --> 00:22:36.460
+So  as  a  result,  there's  a  great  disparity
+in  the  actionability  of  cyber  tips.
+
+00:22:36.779 --> 00:22:41.859
+So  of  the  36 .2 [million]  cyber
+tips  in  2023,  when  we  break  it
+
+00:22:41.859 --> 00:22:46.220
+down,  law  enforcement  found  49
+percent  of  that  to  be  actionable.
+
+00:22:46.519 --> 00:22:49.200
+This  means  that  there  was  enough
+information  with  the  report  from
+
+00:22:49.200 --> 00:22:52.859
+the  ESPs  that  they  were  able  to
+do  something  about  the  investigation.
+
+00:22:53.700 --> 00:22:57.799
+And  three  percent  of  the  total
+was  referred  to  law  enforcement.
+
+00:22:58.619 --> 00:23:07.059
+And  at  the  end  of  the  day,  0 .18  percent
+of  the  total  36  million,  so  that's  63 ,892
+
+00:23:07.059 --> 00:23:12.779
+cyber  tips  escalated  for  likely  involving
+real  hands -on  abuse  of  a  real  child.
+
+00:23:13.500 --> 00:23:20.019
+Now,  I  want  to  actually  sit  with  this
+number  because  this  is  a  harrowing  number.
+
+00:23:20.400 --> 00:23:26.400
+But  I  think  it's  important  to  note  that  this
+whole  system  is  designed  for  this  final  number.
+
+00:23:26.559 --> 00:23:30.380
+But  then  we  see  this  great  disparity
+between  the  36 .2  million  that
+
+00:23:30.380 --> 00:23:34.259
+we  started  with  and  then  the  63
+,000  tips  that  we  ended  up  with.
+
+00:23:34.500 --> 00:23:37.079
+So  how  did  this  actually  happen?
+
+00:23:37.240 --> 00:23:39.920
+How  do  we  make  sense  of
+this  gap  in  actionability?
+
+00:23:41.299 --> 00:23:45.179
+Well,  like  we've  been  kind  of
+circling  around,  to  be  able
+
+00:23:45.179 --> 00:23:48.500
+to  identify  whether  real  abuse
+and  exploitation  happened,
+
+00:23:48.599 --> 00:23:52.579
+sometimes  a  picture  can  be
+an  encapsulation  of  that.
+
+00:23:52.779 --> 00:23:55.980
+But  most  often  than  not,
+that  context  of  harm
+
+00:23:55.980 --> 00:23:58.440
+lives  outside  of  the  four
+corners  of  the  content.
+
+00:23:59.059 --> 00:24:03.880
+So  to  determine  the  presence  of  abuse,
+you  need  contextual  information  like
+
+00:24:03.880 --> 00:24:07.720
+the  presence  or  absence  of  consent  and
+the  nature  of  the  harmful  behavior.
+
+00:24:08.059 --> 00:24:13.299
+So  is  it  coercion,  controlling  behavior,
+threats,  monitoring  and  surveillance,
+
+00:24:13.859 --> 00:24:18.159
+deception,  manipulation,  non
+-consensual  sharing,  or  exploitation.
+
+00:24:18.539 --> 00:24:24.940
+Like  I  said,  images  between  two  teenagers
+going  through  puberty  who  are  dating,  they
+
+00:24:24.940 --> 00:24:28.740
+might  want  to  share  intimate  imagery,  but
+the  minute  that  one  partner  decides  to
+
+00:24:28.740 --> 00:24:33.139
+share  that  with  other  people  non -consensually,
+that's  become  now  a  harmful  behavior.
+
+00:24:33.380 --> 00:24:39.019
+But  the  photo  didn't  change,  right?  It's
+the  context  surrounding  it.  Motivation.
+
+00:24:39.220 --> 00:24:44.059
+Was  it  innocuous?  We  saw  how,  you  know,
+people  are  sharing  CSAM  out  of  outrage.
+
+00:24:44.059 --> 00:24:48.200
+So  it  can  be  something  that's  done
+innocuously  or  people  who  are  curious
+
+00:24:48.880 --> 00:24:53.200
+to  egregious  out  of  a  desire
+for  coercion  or  revenge,
+
+00:24:53.619 --> 00:24:57.259
+or  sexually  motivated  by
+the  desire  to  humiliate
+
+00:24:57.259 --> 00:24:59.940
+and  coerce,  or  non -sexual,
+like  in  the  case  of
+
+00:24:59.940 --> 00:25:03.759
+financial  sextortion,  where
+lots  of  scammers  have
+
+00:25:03.759 --> 00:25:06.659
+identified  that  sexual
+interest  is  a  really  good
+
+00:25:06.659 --> 00:25:10.159
+way  to  lure  the  interest
+of  young  people  and  elderly
+
+00:25:10.159 --> 00:25:12.619
+people  because  they're
+particularly  susceptible  to
+
+00:25:12.619 --> 00:25:15.240
+interests  like  that.  So
+it  might  take  on  a  sexual
+
+00:25:15.240 --> 00:25:18.380
+connotation,  but  the  real
+motivation  behind  it  is
+
+00:25:18.380 --> 00:25:22.059
+financial.  And  relationality.
+So  what's  the  age
+
+00:25:22.059 --> 00:25:24.199
+difference  between  the
+people  involved?  What  are
+
+00:25:24.199 --> 00:25:26.799
+the  power  differentials?  Is
+it  an  adult  and  a  child?
+
+00:25:26.799 --> 00:25:29.980
+Is  it  an  older  child  and
+a  younger  child?  Is  it
+
+00:25:29.980 --> 00:25:32.519
+a  teacher  and  a  student?
+And  what's  the  nature  of
+
+00:25:32.519 --> 00:25:36.380
+the  relationship  between
+them?  So  when  we  put  all
+
+00:25:36.380 --> 00:25:38.880
+of  this  together,  what  we
+see  is  that  rather  than
+
+00:25:38.880 --> 00:25:41.360
+referring  to  all  of  them
+as  child  sexual  abuse  or
+
+00:25:41.360 --> 00:25:44.079
+exploitation  material,
+really  what  we're  talking
+
+00:25:44.079 --> 00:25:46.599
+about  is  child  sexual
+material.  And  I  think  it's
+
+00:25:46.599 --> 00:25:49.000
+important  to  name  it  as
+such  because  that  is  what's
+
+00:25:49.000 --> 00:25:51.699
+being  captured  under  the
+guise  that  it  might  lead  to
+
+00:25:51.699 --> 00:25:54.759
+the sixty three thousand   that  we
+ended  up  with,  but  not  necessarily.
+
+00:25:58.610 --> 00:26:04.409
+So  essentially,  this  creates  this
+ecosystem  that's  designed  to  chase  numbers.
+
+00:26:05.849 --> 00:26:09.150
+And  here  is  a  map  of  the
+ecosystem.  So  at  the  very
+
+00:26:09.150 --> 00:26:12.089
+top,  we  have  the
+electronic  service  providers.
+
+00:26:12.269 --> 00:26:14.230
+So  these  are  your  Googles
+and  your  Metas  and  your
+
+00:26:14.230 --> 00:26:17.409
+Microsofts  and  also  the
+telecos  like  Verizon.
+
+00:26:17.409 --> 00:26:24.009
+And  their  compliance  requirement  is  to  design
+and  apply  proprietary  detection  technologies.
+
+00:26:24.369 --> 00:26:27.089
+And  the  idea  is  that  they
+would  pass  it  over  to
+
+00:26:27.089 --> 00:26:30.230
+the  law  enforcement  and
+regulators,  whose  job  is  to
+
+00:26:30.230 --> 00:26:34.049
+investigate  CSM  tips  for
+policing  responses.  And
+
+00:26:34.049 --> 00:26:36.750
+we've  seen  increasingly  how
+entities  like  the  eSafety
+
+00:26:36.750 --> 00:26:39.389
+Commissioner  or  Ofcom  are
+playing  an  active  role
+
+00:26:39.389 --> 00:26:42.309
+in  facilitating  this
+process  of  communication  and
+
+00:26:42.309 --> 00:26:44.750
+compliance  between  the
+ESPs  and  law  enforcement.
+
+00:26:45.329 --> 00:26:49.150
+This  has  also  led  to  the
+creation  of  lobbyists  and
+
+00:26:49.150 --> 00:26:54.250
+campaigner  organizations.  And  their  job  is
+to  raise  awareness  about  CSM  tip  reporting.
+
+00:26:55.529 --> 00:26:58.190
+And  they  work  very  closely
+with  the  clearing  houses
+
+00:26:58.190 --> 00:27:01.329
+and  the  tip  lines.  So
+these  are  often  government
+
+00:27:01.329 --> 00:27:06.610
+appointed  charities  that
+collect,  review,  and  refer
+
+00:27:06.610 --> 00:27:10.710
+CSM  tips  from  ESPs  and
+members  of  the  public  and
+
+00:27:10.829 --> 00:27:17.889
+maintain  a  database  of  them.  And  this  entire
+interaction  between  the  actors  has  also  led  to
+
+00:27:17.889 --> 00:27:21.230
+the  growing,  very  lucrative
+marketplace  of  what  I
+
+00:27:21.230 --> 00:27:23.750
+call  the  tech  solutions
+vendors.  So  these  are  third
+
+00:27:23.750 --> 00:27:28.269
+party  tech  companies,  often
+without  substantive  child
+
+00:27:28.269 --> 00:27:31.110
+safety  expertise,  who  are
+developing  and  selling
+
+00:27:31.110 --> 00:27:34.490
+compliance  technologies  to
+sell  to  the  other  ecosystem
+
+00:27:34.490 --> 00:27:37.889
+actors.  So  it  might  be
+an  analyst  review  tooling
+
+00:27:37.889 --> 00:27:44.559
+kit.  It  might  be  Intel
+research  report  and  so  on.  So
+
+00:27:44.559 --> 00:27:47.440
+the  ecosystem  that  we're
+seeing  here,  it's  constantly
+
+00:27:48.019 --> 00:27:52.059
+reproducing  itself  and
+constantly  expanding.  And  I'm
+
+00:27:52.059 --> 00:27:53.980
+sitting  in  front  of  a
+room  full  of  technologists,
+
+00:27:53.980 --> 00:27:56.460
+so  I  don't  have  to  tell
+you  about  the  algorithmic
+
+00:27:56.460 --> 00:28:00.039
+harms  and  how  they  compound
+as  this  ecosystem  continues
+
+00:28:00.039 --> 00:28:06.329
+to  rely  on  detection.  So
+these  compounding  harms  of
+
+00:28:06.329 --> 00:28:09.529
+automated  mandated  reporting,
+it  works  like  a  loop.
+
+00:28:09.529 --> 00:28:11.949
+You're  constantly  caught
+in  it,  and  sometimes  it's
+
+00:28:11.949 --> 00:28:14.630
+hard  to  even  name  and  identify
+what  kind  of  harms  are
+
+00:28:14.630 --> 00:28:19.849
+happening  within.  So  like
+we  said  in  the  offline
+
+00:28:19.849 --> 00:28:22.630
+context,  a  lot  of  child
+sexual  abuse  happens  within
+
+00:28:22.630 --> 00:28:25.150
+a  peer -to -peer  context,
+and  that  applies  in  the
+
+00:28:25.150 --> 00:28:29.069
+online  context  as  well.  So
+44 %  of  CSAM  offenders  are
+
+00:28:29.069 --> 00:28:33.329
+under  the  age  of  18,  and
+68 %  of  CSAM  offenders  are
+
+00:28:33.329 --> 00:28:36.929
+known  to  the  child.  And
+with  online  commercial  sexual
+
+00:28:36.929 --> 00:28:38.789
+exploitation— so  it  means
+that  there's  some  kind  of  a
+
+00:28:38.789 --> 00:28:43.589
+monetary  exchange  involving
+CSAM —most,  in  fact,  92 %
+
+00:28:43.589 --> 00:28:51.650
+are  self -negotiated  by  the  young  people,  with
+the  primary   motivation  being  money.  So  we  see
+
+00:28:51.650 --> 00:28:55.089
+that  it's  not  a  clear  black
+and  white  picture  of  abuse
+
+00:28:55.089 --> 00:28:57.730
+and  exploitation  that  we
+are,  you  know,  conjuring  in
+
+00:28:57.730 --> 00:29:00.849
+our  mind,  but  rather  a
+really  complicated  picture
+
+00:29:00.849 --> 00:29:07.049
+that  also  implicates  young
+people  as  well.  And  it
+
+00:29:07.049 --> 00:29:11.809
+also  has  a  disparate  impact  on  people  with
+neurodivergence.  There's  a  lot  of  emphasis  on  how
+
+00:29:11.809 --> 00:29:14.230
+young  people  with
+neurodivergence  are  likely  to  be
+
+00:29:14.230 --> 00:29:16.769
+victimized,  but  they're
+also  at  a  higher  risk  for
+
+00:29:16.769 --> 00:29:19.990
+offending.  Online  offending
+disproportionately  implicate
+
+00:29:19.990 --> 00:29:22.650
+adolescents,  particularly
+those  with  autism  spectrum
+
+00:29:23.809 --> 00:29:29.769
+disorder.  There's  also  racial  disparity  as  well.
+And  this  is  in  the  context  of  broader  child
+
+00:29:29.769 --> 00:29:32.029
+protective  services  in  the
+U .S.,  but  I  think  we
+
+00:29:32.029 --> 00:29:35.289
+can  extrapolate  from  this.
+White  and  non -Latinx
+
+00:29:35.289 --> 00:29:38.529
+children's  cases  of  physical
+and  sexual  violence  in
+
+00:29:38.529 --> 00:29:41.929
+the  U .S.  are  more  likely
+to  be  substantiated  than
+
+00:29:41.929 --> 00:29:45.329
+black  and  Latinx  children.
+This  means  that  allegations
+
+00:29:45.329 --> 00:29:48.130
+of  sexual  and  physical
+violence  from  lighter- skinned
+
+00:29:48.130 --> 00:29:50.730
+children  are  more  likely
+to  be  believed  than  from
+
+00:29:50.730 --> 00:29:55.720
+darker- skinned  children.
+And  this  entire  ecosystem,
+
+00:29:55.900 --> 00:29:58.519
+of  course,  is  something
+that's,  you  know,  exported
+
+00:29:58.519 --> 00:30:01.360
+at  a  global  scale.  So
+it's  reproducing  the  digital
+
+00:30:01.360 --> 00:30:04.220
+divide.  And  one  way  that
+we  can  see  the  impact  of
+
+00:30:04.220 --> 00:30:07.139
+that  is  through  the,  again,
+racial  disparity  in  the
+
+00:30:07.139 --> 00:30:09.759
+data  set.  And  this  is
+something  that's  known  within
+
+00:30:09.759 --> 00:30:13.000
+the  ecosystem  actors,
+although  it's  something  that's
+
+00:30:13.000 --> 00:30:16.420
+rarely  mentioned.  So  while
+child  sexual  abuse  itself
+
+00:30:16.420 --> 00:30:20.299
+is  universal  across
+regions,  cultures,  countries,
+
+00:30:20.920 --> 00:30:24.519
+CSM  cyber  tips  mostly
+feature  white  children,  and
+
+00:30:24.519 --> 00:30:27.559
+arrested  viewers  are  mostly
+white.  Now,  there  are
+
+00:30:27.559 --> 00:30:30.519
+many  reasons  for  this.
+It  might  have  to  do  with
+
+00:30:30.519 --> 00:30:33.000
+internet  connectivity.  It
+might  have  to  do  with
+
+00:30:33.000 --> 00:30:35.460
+jurisdictional  compliance
+with  their  CSM  reporting.
+
+00:30:35.699 --> 00:30:39.179
+It  might  have  to  do  with
+access  to  devices.  It  might
+
+00:30:39.179 --> 00:30:42.139
+also  have  to  do  with
+how  we  racialize  innocence
+
+00:30:42.139 --> 00:30:44.480
+and  how  that  might  come
+through  in  these  detection
+
+00:30:44.480 --> 00:30:48.960
+ecosystems.  We  simply  don't
+know,  but  there  is,  you
+
+00:30:48.960 --> 00:30:51.360
+know,  we  can  use  this
+information  to  look  into  how
+
+00:30:51.360 --> 00:30:54.880
+racial  disparity  from
+collection,  processing  to
+
+00:30:54.880 --> 00:30:59.659
+investigations  might  come
+through.  And  this  whole
+
+00:30:59.659 --> 00:31:04.380
+system  exists  on  hash
+matching  technology,  which  is,
+
+00:31:04.440 --> 00:31:08.059
+you  know,  developed  to
+identify  materials  that  have
+
+00:31:08.059 --> 00:31:11.460
+already  been  vetted  to  be,
+you  know,  true  positive
+
+00:31:11.460 --> 00:31:15.240
+pieces  of  CSAM.  But  many
+victims  of  CSAM  are  actually
+
+00:31:15.240 --> 00:31:18.440
+not  aware  that  their  imagery
+is  being  used  to  train
+
+00:31:18.440 --> 00:31:21.839
+these  models  of  detection.
+In  a  recent  survey  of  80
+
+00:31:21.839 --> 00:31:26.000
+survivors  of  CSAM,  60 %  were
+aware  that  their  material
+
+00:31:26.000 --> 00:31:30.240
+was  retained  by  the  police,  45
+%  knew  that  it  was  used  by
+
+00:31:30.240 --> 00:31:33.599
+tech  companies,  and  35 %  knew
+that  it  was  being  used  by
+
+00:31:33.599 --> 00:31:36.279
+researchers.  That  leaves  a
+whole  lot  of  people  who  had
+
+00:31:36.279 --> 00:31:39.220
+no  idea  that  their  images
+were  being  used  to  train
+
+00:31:39.220 --> 00:31:42.679
+these  models.  And  of  course,
+90 %  of  those  interviews
+
+00:31:42.679 --> 00:31:47.710
+said  that  they  wanted  to
+know.  So  when  we  kind  of
+
+00:31:47.710 --> 00:31:51.650
+take  a  step  back  and  go
+back  to  the  ecosystem  map,
+
+00:31:51.990 --> 00:31:54.449
+you'll  also  notice  that
+this  ecosystem  is  actually
+
+00:31:54.449 --> 00:31:59.589
+missing  a  few  key  actors.
+And  that's  because  this
+
+00:31:59.589 --> 00:32:03.549
+ecosystem  exists  in  separation
+from  a  much  smaller
+
+00:32:03.549 --> 00:32:07.269
+ecosystem,  one  that's  been
+in  existence  for  a  lot
+
+00:32:07.269 --> 00:32:10.210
+longer,  and  the  one  that
+is  constantly  shrinking
+
+00:32:10.210 --> 00:32:13.309
+and  chronically  underfunded.
+It's  the  ecosystem
+
+00:32:13.309 --> 00:32:15.449
+that's  run  by  the
+frontline  service  providers.
+
+00:32:15.449 --> 00:32:17.929
+So  these  are  people  who
+are  directly  interfacing
+
+00:32:17.929 --> 00:32:20.569
+with  young  people  to  provide
+them  with  direct  support.
+
+00:32:20.769 --> 00:32:23.690
+These  are  your  therapists,
+shelters,  caseworkers,
+
+00:32:23.909 --> 00:32:26.970
+and  treatment  programs.
+These  are  your  helpline
+
+00:32:26.970 --> 00:32:29.889
+operators.  These  are  resources
+that  exist  to  protect
+
+00:32:29.889 --> 00:32:32.970
+your  confidentiality  and
+give  you  informal  advice
+
+00:32:32.970 --> 00:32:36.210
+and  provide  you  with
+coping  strategies  and  youth
+
+00:32:36.210 --> 00:32:38.750
+serving  organizations.  So
+your  guidance  counselors
+
+00:32:38.750 --> 00:32:42.409
+in  schools,  nurses,  after-
+school  programs,  and  so  on.
+
+00:32:42.829 --> 00:32:45.329
+And  not  only  is  this  a
+smaller  ecosystem,  this
+
+00:32:45.329 --> 00:32:48.329
+smaller  ecosystem  is  constantly
+being  pulled  in  by  the
+
+00:32:48.329 --> 00:32:50.889
+bigger  ecosystem  for
+things  like  funding  and
+
+00:32:50.889 --> 00:32:55.210
+opportunities  for  visibility.
+Now,  you  might  ask  that,
+
+00:32:55.210 --> 00:32:57.929
+well,  surely  the  detection
+ecosystem  must  exist  for
+
+00:32:57.929 --> 00:33:00.690
+a  reason,  that  it  must
+be  doing  something  right.
+
+00:33:01.089 --> 00:33:05.389
+Well,  that  depends  on  how
+we  measure  impact.  And
+
+00:33:05.389 --> 00:33:08.049
+that  impact  comes  down
+to  numbers  versus  people.
+
+00:33:08.730 --> 00:33:12.409
+Many  people  don't  know
+that  the  ecosystem  map  that
+
+00:33:12.409 --> 00:33:15.009
+we  saw  in  the  previous
+slide  are  of  two  separate
+
+00:33:15.009 --> 00:33:18.690
+ecosystems.  So  on  one  hand
+we  have  detection,  and
+
+00:33:18.690 --> 00:33:22.089
+on  one  hand  we  have
+prevention.  And  we're  taught  to
+
+00:33:22.089 --> 00:33:24.250
+assume  that  they're  one  and
+the  same.  We  think  that
+
+00:33:24.250 --> 00:33:26.409
+catching  the  bad  guys
+means  that  we're  providing
+
+00:33:26.409 --> 00:33:28.549
+support  to  young  people,
+but  these  are  actually
+
+00:33:28.549 --> 00:33:32.250
+very  different  projects.  We
+assume  that  detection  is
+
+00:33:32.250 --> 00:33:35.190
+helping,  and  we  assume
+that  reporting  is  helping.
+
+00:33:35.589 --> 00:33:39.250
+And  that's  simply  not  true.
+Too  often  the  resource
+
+00:33:39.250 --> 00:33:41.950
+provided  to  young  people,
+like  the  one  listed  on  the
+
+00:33:41.950 --> 00:33:46.069
+major  ESP's  help  center
+pages,  is  a  link  to  hotlines.
+
+00:33:46.069 --> 00:33:49.930
+And  hotlines,  like  NCMEC
+cyber  tip  line,  are  used
+
+00:33:49.930 --> 00:33:52.950
+for  reporting  illegal
+materials  and  operated  by
+
+00:33:52.950 --> 00:33:56.750
+people  with  mandated
+reporting  obligations.  This
+
+00:33:56.750 --> 00:33:59.990
+is  separate  from  helplines,
+warm lines,  lifelines,
+
+00:34:00.329 --> 00:34:02.629
+a  bunch  of  different  names
+that  are  used  purposely
+
+00:34:02.629 --> 00:34:05.609
+to  distinguish  them  from
+hotlines,  because  they  can
+
+00:34:05.609 --> 00:34:09.269
+actually  promise  you  some
+degree  of  privacy,  anonymity,
+
+00:34:09.569 --> 00:34:12.989
+and  confidentiality,  and  offer
+you  a  range  of  skill  sets.
+
+00:34:13.869 --> 00:34:16.489
+So  when  people  are  subjected
+to  mandated  reporting,
+
+00:34:16.849 --> 00:34:20.309
+it  ends  up  doing  more
+harm  than  good.  It's  really
+
+00:34:20.309 --> 00:34:22.409
+difficult  to  get  information  about  mandated
+
+00:34:22.409 --> 00:34:26.029
+reporting  in  CSM  context,
+so  here  I  have  a  piece  of
+
+00:34:26.029 --> 00:34:28.889
+similar  data  that  we  can
+extrapolate  from  domestic
+
+00:34:28.889 --> 00:34:32.109
+violence  survivors,  and  a
+fair  number  of  those  surveyed
+
+00:34:32.109 --> 00:34:37.329
+were  also  underage.  So  in
+a  survey  of  3 ,616  domestic
+
+00:34:37.329 --> 00:34:39.670
+violence  survivors  and
+help  seekers  in  the  U .S.,
+
+00:34:40.190 --> 00:34:43.090
+more  than  half  said  mandated
+reporting,  which  brought
+
+00:34:43.090 --> 00:34:45.789
+in  law  enforcement  intervention,
+made  their  situation
+
+00:34:45.789 --> 00:34:50.930
+worse.  So  here  we  see  50
+percent  said  that  it  made
+
+00:34:50.930 --> 00:34:54.289
+it  much  worse,  12  percent
+said  it  made  it  a  little
+
+00:34:54.289 --> 00:34:58.349
+worse,  20  percent  that  it
+made  no  difference,  15  percent
+
+00:34:58.349 --> 00:35:01.069
+that  it  got  a  little  better,
+and  3  percent  said  much
+
+00:35:01.069 --> 00:35:06.849
+better.  So  we  see  how
+mandated  reporting,  even  though
+
+00:35:06.849 --> 00:35:09.569
+it's  a  system  that  exists
+under  the  auspice  that  it
+
+00:35:09.569 --> 00:35:12.230
+must  be  supporting  survivors,
+is  actually  actively
+
+00:35:12.230 --> 00:35:13.989
+detrimental  to  their  help -seeking  journeys.
+
+00:35:14.470 --> 00:35:19.409
+And  sometimes  providers  will  share  and
+disclose  the  fact  that  they  actually  can't
+
+00:35:19.409 --> 00:35:25.329
+keep  information  confidential,  and  actually
+warnings  about  mandated  reporting  also  reduce
+
+00:35:25.329 --> 00:35:31.559
+the  help -seeking  ability.
+And  when  it  comes  to  the
+
+00:35:31.559 --> 00:35:34.480
+CSM  context,  people  do
+seek  help,  but  we're  not
+
+00:35:34.480 --> 00:35:36.599
+always  there  to  provide
+them  with  the  support  that
+
+00:35:36.599 --> 00:35:41.680
+they  need.  So  in  a  recent
+research,  70  percent  of
+
+00:35:41.680 --> 00:35:47.300
+those  who  sought  help  in  relation  to  their  CSM
+viewing  habits  were  not  able  to  receive  help.
+
+00:35:48.460 --> 00:35:52.399
+And  this  is  a  real
+detriment,  because  help -seeking
+
+00:35:52.399 --> 00:35:55.260
+is  integral  to  child
+sexual  abuse  prevention,
+
+00:35:55.599 --> 00:35:58.260
+both  for  the  young  people
+and  the  old  people  who
+
+00:35:58.260 --> 00:36:01.220
+are  sexually  harmed,  and
+the  youth  who  have  sexually
+
+00:36:01.220 --> 00:36:07.180
+harmed  others.  But  many  mandated  reporting
+requirements,  stigma,  and  lack  of  resources
+
+00:36:07.180 --> 00:36:11.880
+create  systemic  barriers.
+And  in  actual  help -seeking
+
+00:36:11.880 --> 00:36:14.840
+journey,  privacy  and
+safety  are  integral.  Young
+
+00:36:14.840 --> 00:36:17.659
+people,  particularly  young
+men,  are  more  likely
+
+00:36:17.659 --> 00:36:20.359
+to  seek  help  from  online
+services  because  they're
+
+00:36:20.359 --> 00:36:23.300
+freely  accessible,  they're
+anonymous,  and  they're [more]
+
+00:36:23.300 --> 00:36:25.680
+stigma  reducing  than  the
+traditional  opportunities.
+
+00:36:27.159 --> 00:36:29.639
+And  the  people  who  are
+best  positioned  to  do  it
+
+00:36:29.639 --> 00:36:31.840
+are  youth  workers.  So  these
+are  the  people  in  the
+
+00:36:31.840 --> 00:36:35.139
+smaller  ecosystem,  and  yet
+we  currently  live  in  a
+
+00:36:35.139 --> 00:36:38.880
+time  of  severe  austerity,
+particularly  cuts  to  social
+
+00:36:38.880 --> 00:36:43.079
+services.  So  we  see  the
+people  with  the  most  resources
+
+00:36:43.079 --> 00:36:45.579
+and  the  skill  sets  and
+the  training  to  be  able  to
+
+00:36:45.579 --> 00:36:50.440
+play  an  active  role  in  supporting  young
+people's  help -seeking  journey,  unable  to  do  so.
+
+00:36:52.699 --> 00:36:56.659
+So  to  recap,  we've  seen
+how  the  ick  factor  of  big
+
+00:36:56.659 --> 00:37:00.340
+scary  numbers  paves  way
+for  an  ever -expanding  and
+
+00:37:00.340 --> 00:37:03.920
+self -reproducing  ecosystem
+of  CSM  detection  that's
+
+00:37:03.920 --> 00:37:06.899
+designed  to  chase  numbers
+and  serve  numbers  over
+
+00:37:06.899 --> 00:37:10.779
+people.  So  how  do  we
+break  out  of  this  loop  of
+
+00:37:10.779 --> 00:37:15.119
+detection  and  policing  and
+punishment?  We  need  a  radical
+
+00:37:15.119 --> 00:37:21.720
+paradigm  shift.  Instead  of  big  scary  numbers,
+we  need  to  attend  to  lived  stories  of  people
+
+00:37:21.720 --> 00:37:25.119
+impacted  by  the  detection
+ecosystem.  We  rarely  hear
+
+00:37:25.119 --> 00:37:28.199
+them,  but  they  are  out
+there.  Instead  of  chasing
+
+00:37:28.199 --> 00:37:36.279
+numbers,  we  need  to  nourish  the  help -seeking
+ecosystem.  And  instead  of  numbers  over  people,
+
+00:37:36.599 --> 00:37:39.099
+we  need  to  listen  to  the
+people,  and  we  need  to
+
+00:37:39.099 --> 00:37:43.239
+support  and  care  for  all
+people  impacted,  overlooked,
+
+00:37:43.239 --> 00:37:46.760
+and  cast  aside  by  this
+ecosystem  that's  powered  by
+
+00:37:46.760 --> 00:37:49.800
+tech  and  fueled  by  the
+carceral  desire  to  punish.
+
+00:37:51.260 --> 00:37:57.139
+And  that's  how  we  begin  healing  together,  by
+investing  in  prevention.  Prevention  is  a  public
+
+00:37:57.139 --> 00:38:00.440
+health  concept  about  taking
+proactive  measures  to
+
+00:38:00.440 --> 00:38:03.399
+avoid  the  onset,  progression,
+and  impact  of  child
+
+00:38:03.399 --> 00:38:08.920
+sexual  abuse  online  and  offline.  And  this  is
+how  we  get  closer  to  enduring  child  safety.
+
+00:38:09.380 --> 00:38:13.460
+So  if  we  imagine  our
+community  as  a  tree,  our
+
+00:38:13.460 --> 00:38:16.239
+detection  and  punishment
+-driven  approach  to  CSA
+
+00:38:16.840 --> 00:38:20.380
+makes  that  tree  look  like
+this.  It's  a  desiccated,
+
+00:38:20.659 --> 00:38:24.739
+shriveling,  and  sharp  tree.
+At  the  primary  level  of
+
+00:38:24.739 --> 00:38:28.659
+prevention,  which  is  for
+everybody  to  learn  about  child
+
+00:38:28.659 --> 00:38:32.659
+sexual  abuse,  we  do  some
+work  here,  but  we,  for  the
+
+00:38:32.659 --> 00:38:34.619
+most  part,  keep  people
+in  a  state  of  ignorance
+
+00:38:34.619 --> 00:38:38.539
+and  teach  them  individual
+practices  like  consent
+
+00:38:38.539 --> 00:38:41.500
+education  rather  than
+creating  environments  that
+
+00:38:41.500 --> 00:38:44.940
+are  more  conducive  to  a
+safer  relationship.  At  the
+
+00:38:44.940 --> 00:38:47.199
+secondary  level,  which  is
+for  people  who  are  at  a
+
+00:38:47.199 --> 00:38:50.000
+higher  risk  of  both
+offending  and  victimization,
+
+00:38:50.840 --> 00:38:53.840
+we  make  it  really  difficult
+because,  again,  it's
+
+00:38:53.840 --> 00:38:55.800
+the  youth  workers  who
+are  interfacing  with  young
+
+00:38:55.800 --> 00:39:00.739
+people  who  are  in  the  best  position,  but  we
+are  cutting  funding  and  resources  going  to  them.
+
+00:39:00.739 --> 00:39:06.519
+At  the  tertiary  level,  which  is  to  create
+conditions  for  offense  and  victimization -free
+
+00:39:06.519 --> 00:39:11.300
+life,  we  do  very  little,
+again.  Like  we  said,  child
+
+00:39:11.300 --> 00:39:12.699
+sexual  abuse  isn't
+something  that  just  happens
+
+00:39:12.699 --> 00:39:14.539
+once  and  then  you  forget
+about  it.  It's  something
+
+00:39:14.539 --> 00:39:17.159
+that  happens  and  it's  embedded
+into  how  we  experience
+
+00:39:17.159 --> 00:39:19.960
+systemic  forms  of  violence.
+So  people  need  ongoing
+
+00:39:19.960 --> 00:39:24.300
+support,  but  we  rarely  offer
+chronic  long -term  resources.
+
+00:39:24.300 --> 00:39:27.440
+And  then  quaternary
+prevention,  which  is  really
+
+00:39:27.440 --> 00:39:30.519
+the  principle  of  "do  no
+harm".  And  on  this  regard,
+
+00:39:30.680 --> 00:39:33.559
+we  do  very  little.  And
+in  fact,  we  actively  don't
+
+00:39:33.559 --> 00:39:35.519
+do  quaternary  prevention
+because  we  have  things
+
+00:39:35.519 --> 00:39:38.699
+like  mandated  reporting
+that  continue  to  strip
+
+00:39:38.699 --> 00:39:43.059
+resources  from  people.  But
+what  if  we  made  different
+
+00:39:43.059 --> 00:39:46.739
+choices?  What  if  we  can
+have  a  thriving,  healthy,  and
+
+00:39:46.739 --> 00:39:50.599
+abundant  tree  with  lush
+leaves  and  ripe  fruits  and
+
+00:39:50.599 --> 00:39:53.760
+blooming  flowers?  Then  we
+might  have  a  prevention
+
+00:39:53.760 --> 00:39:57.199
+tree  that  looks  more  like
+this.  We  provide  people
+
+00:39:57.199 --> 00:39:59.859
+with  comprehensive  sex
+and  intimacy  education.
+
+00:39:59.859 --> 00:40:03.300
+We  teach  people  about
+consent,  both  in  offline,
+
+00:40:03.319 --> 00:40:07.420
+relational  contexts,  and
+digital.  We  provide  anonymous
+
+00:40:07.420 --> 00:40:10.239
+and  resource  therapeutic
+support  at  the  secondary
+
+00:40:10.239 --> 00:40:12.800
+level.  And  we  train  youth
+-serving  professionals
+
+00:40:12.800 --> 00:40:15.460
+to  identify  healthy  and
+harmful  behaviors  in  young
+
+00:40:15.460 --> 00:40:18.840
+people.  At  the  tertiary
+level,  we  provide  long
+
+00:40:18.840 --> 00:40:22.480
+-term,  non -stigmatizing
+resources  at  a  local  level.
+
+00:40:22.739 --> 00:40:28.399
+And  then  at  the  quaternary  level,  we  abolish
+things  like  mandated  reporting.  And  instead,
+
+00:40:28.559 --> 00:40:31.460
+we  invest  our  resources
+into  care  and  community
+
+00:40:31.460 --> 00:40:35.279
+and  prevention.  Now,  I've
+said  a  lot  of  this,
+
+00:40:35.319 --> 00:40:39.760
+and  these  are  great  social
+policies  that  I  think  for
+
+00:40:39.760 --> 00:40:42.699
+many  of  you  here  are  great
+ideas,  but  lives  a  little
+
+00:40:42.699 --> 00:40:45.380
+outside  of  the  realm  of
+control  for  you  all.  But
+
+00:40:45.380 --> 00:40:47.659
+one  of  the  reasons  why  I
+really  wanted  to  have  this
+
+00:40:47.659 --> 00:40:49.639
+talk  with  this  community
+is  because  I  genuinely
+
+00:40:49.639 --> 00:40:52.739
+think  this  community  has
+a  unique  positionality.
+
+00:40:53.920 --> 00:41:00.970
+So  what  can  the  CCC  community
+do?  Well,  take  safety
+
+00:41:00.970 --> 00:41:03.690
+seriously  to  develop
+innovative  help -seeking  tools.
+
+00:41:03.970 --> 00:41:06.670
+We  saw  that  help -seeking
+is  integral  to  prevention
+
+00:41:06.670 --> 00:41:10.829
+and  that  privacy  and  anonymity
+and  confidentiality  are
+
+00:41:10.829 --> 00:41:13.869
+integral.  So  what  might
+that  look  like?  What  might
+
+00:41:13.869 --> 00:41:16.029
+help -seeking  tools  that
+actually  support  young
+
+00:41:16.029 --> 00:41:23.149
+people's  journey  look  like?  Also  help  shape
+regulatory  paths  with  tech  alternatives  paired
+
+00:41:23.149 --> 00:41:26.309
+with  compelling  messaging.
+You'll  notice  back  in
+
+00:41:26.309 --> 00:41:29.769
+the  ecosystem  map  that,
+you  know,  technologists  were
+
+00:41:29.769 --> 00:41:32.130
+missing  in  the  ecosystem
+map.  And  I  think  often  it
+
+00:41:32.130 --> 00:41:34.930
+is  because  technologists
+have  sat  on  the  sidelines
+
+00:41:35.550 --> 00:41:38.529
+saying,  you  know,  this  is
+moral  panic  or  this  is  Trojan
+
+00:41:38.529 --> 00:41:42.149
+horse,  going  tsk -tsk,  that
+can't  be  done,  or  that's  not
+
+00:41:42.149 --> 00:41:45.889
+the  way  to  do  it.  Well,
+unfortunately,  but  also  in  an
+
+00:41:45.889 --> 00:41:49.109
+opportunistic  way,  there's  a
+lot  of  appetite  right  now  to
+
+00:41:49.109 --> 00:41:52.269
+see  some  kind  of  tech  regulation.
+And  we  can't  deny  that.
+
+00:41:52.470 --> 00:41:55.649
+There  are  aggrieved  parents,
+teachers  who  are  genuinely
+
+00:41:55.649 --> 00:41:58.989
+concerned  about  how  tech  is
+impacting  their  young  people,  but
+
+00:41:58.989 --> 00:42:02.769
+they  don't  necessarily  understand
+tech.  But  I'm  here  in  this  room,
+
+00:42:02.769 --> 00:42:04.569
+sitting  in  front  of  you
+all  with  the  technical
+
+00:42:04.569 --> 00:42:07.550
+expertise,  you  have  the
+skills  to  translate  what
+
+00:42:07.550 --> 00:42:10.889
+technology  means  to  other
+people.  And  that  is  an
+
+00:42:10.889 --> 00:42:13.050
+incredible  set  of  resources
+that  you  can  harness
+
+00:42:13.050 --> 00:42:16.010
+to  shape  the  regulatory
+path  in  a  more  constructive
+
+00:42:16.010 --> 00:42:20.449
+direction.  And  finally,
+through  shared  expertise,
+
+00:42:20.949 --> 00:42:23.369
+build  critical  connections
+with  frontline  and  child
+
+00:42:23.369 --> 00:42:26.829
+rights  groups.  So  these
+are  people  with  resources
+
+00:42:26.829 --> 00:42:29.889
+and  expertise  that  can
+be  partnering  with  you
+
+00:42:29.889 --> 00:42:31.909
+all  to  think  about  what
+the  messaging  looks  like,
+
+00:42:31.909 --> 00:42:36.349
+to  think  about  what  those  features  look  like.
+And  you  can  do  it  in  a  skill- sharing  manner,
+
+00:42:36.609 --> 00:42:39.369
+you  can  offer  to  do,
+you  know,  data  audit,  you
+
+00:42:39.369 --> 00:42:42.649
+can  offer  to  do  security
+audit  and  data  literacy
+
+00:42:42.649 --> 00:42:44.909
+trainings  and  so  on.  So
+it's  a  way  to  really
+
+00:42:44.909 --> 00:42:47.609
+build  and  share  expertise
+between  the  two  groups.
+
+00:42:48.670 --> 00:42:51.149
+So  if  you  really  want
+to  break  and  resist  the
+
+00:42:51.149 --> 00:42:54.170
+carceral  systems  that  are
+expanding,  what  we  need  are
+
+00:42:54.170 --> 00:42:58.710
+critical  connections.  And  these  critical
+connections  are  not  just  strategically  savvy—
+
+00:42:58.710 --> 00:43:01.809
+it  is  how  we  build  power,
+and  it  is  how  we  enact
+
+00:43:01.809 --> 00:43:04.849
+change,  by  showing  those
+people  who  cannot  imagine
+
+00:43:04.849 --> 00:43:07.590
+a  world  outside  of
+detection  and  policing,  that
+
+00:43:07.590 --> 00:43:10.149
+another  way  is  possible,
+that  there's  another  way
+
+00:43:10.149 --> 00:43:12.930
+of  being,  another  way  of
+treating  each  other  and  being
+
+00:43:12.930 --> 00:43:15.510
+in  community  with  each  other,
+and  that  another  way  of
+
+00:43:15.510 --> 00:43:19.250
+world making  is  possible.  And
+this  isn't  rocket  science.  In
+
+00:43:19.250 --> 00:43:21.730
+fact,  young  people  have  been
+telling  this  to  us  all  along.
+
+00:43:21.730 --> 00:43:26.109
+So  this  is  a  research  from
+Crisis  Text  Line,  which  is
+
+00:43:26.109 --> 00:43:28.529
+a  text -based  mental  health
+resource  for  young  people
+
+00:43:28.529 --> 00:43:31.329
+who  are  English  and  Spanish-
+speaking.  And  every  year
+
+00:43:31.329 --> 00:43:33.569
+they  ask  young  people  who've
+accessed  their  services,
+
+00:43:33.769 --> 00:43:36.090
+what  are  the  things  that
+you  wish  that  you  had?  So
+
+00:43:36.090 --> 00:43:38.630
+they  said  that  they  wanted
+opportunities  for  social
+
+00:43:38.630 --> 00:43:41.809
+connection,  engagement  in
+music,  writing  and  arts,
+
+00:43:42.409 --> 00:43:45.690
+mental  health  services,
+exercise  and  sports  programming,
+
+00:43:46.409 --> 00:43:50.909
+books  and  audio  books,
+outdoor  spaces  and  nature.  And
+
+00:43:50.909 --> 00:43:53.550
+you'll  notice  that  there's
+technology  implicated  in
+
+00:43:53.550 --> 00:43:56.949
+all  of  these.  Every  one  of
+these  require  us  to  break
+
+00:43:56.949 --> 00:43:59.889
+the  impasse  so  we  can
+think  boldly  and  creatively
+
+00:43:59.889 --> 00:44:03.010
+about  how  to  bring  together
+privacy  and  safety  in
+
+00:44:03.010 --> 00:44:05.409
+allowing  young  people  to
+access  these  resources.
+
+00:44:06.710 --> 00:44:11.230
+So  as  a  final  kind  of  wrap -up  thought,  I
+wanted  to  share  this  quote  from  Grace  Lee  Boggs,
+
+00:44:11.230 --> 00:44:14.409
+who  is  an  American  feminist
+organizer  and  thinker.
+
+00:44:14.590 --> 00:44:17.069
+She  says,  "Social  change
+is  never  a  question  of
+
+00:44:17.069 --> 00:44:19.269
+critical  mass"— although
+critical  mass  would  be  nice
+
+00:44:19.269 --> 00:44:22.109
+to  have—" It's  always
+about  critical  connections.
+
+00:44:23.090 --> 00:44:25.809
+So  I  encourage  you  to
+break  out  of  the  impasse
+
+00:44:25.809 --> 00:44:27.849
+framing  and  think  about
+what  critical  connections
+
+00:44:27.849 --> 00:44:31.609
+you  have  in  your  life  to  bridge
+this  impasse  together.  Thank  you.
+
+00:44:31.389 --> 00:44:31.609
+Audience: [Applause]

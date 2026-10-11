@@ -1,0 +1,1619 @@
+WEBVTT This file was generated using transcribee. Find out more at https://github.com/bugbakery/transcribee
+
+00:00:04.040 --> 00:00:22.469
+I wouldn't say it's really an AI
+talk. It's more like a dirty talk.
+
+00:00:25.530 --> 00:00:30.589
+So, 2025 is the year of LLM
+crawlers' DDoSing the internet.
+
+00:00:30.989 --> 00:00:35.310
+In 2022, these companies were
+still more or less a bit shy,
+
+00:00:35.649 --> 00:00:39.329
+and they tried to hide
+themselves behind Common Crawls.
+
+00:00:39.570 --> 00:00:44.829
+Like LAION, who used Common Crawl for
+their data sets, said that they followed
+
+00:00:44.829 --> 00:00:50.829
+the practice of Common Crawl, and Common
+Crawl followed the users' robots.txt.
+
+00:00:51.109 --> 00:00:56.149
+So, users basically consent to
+this crawling and no problem.
+
+00:00:57.030 --> 00:01:01.770
+When I read this two years ago, I thought
+this was terrible, but who would guess?
+
+00:01:01.969 --> 00:01:04.829
+In today's standard, it's already pretty decent.
+
+00:01:05.750 --> 00:01:11.510
+And in 2023, Common Crawl was used
+gymnastically with GitHub codes
+
+00:01:11.510 --> 00:01:15.310
+and with all the books, they can
+put their hands on, plus Wikipedia,
+
+00:01:15.930 --> 00:01:20.069
+and then they take those web
+data sets into their own subsets.
+
+00:01:20.750 --> 00:01:27.689
+Last year and this year, AI
+companies crawled the web themselves.
+
+00:01:28.629 --> 00:01:33.189
+And Meta, most likely other
+companies, crawled the fediverse.
+
+00:01:33.489 --> 00:01:37.230
+And smaller servers got
+overwhelmed by LLM crawlers, and
+
+00:01:37.230 --> 00:01:40.670
+everyone wastes our time to
+prove we're not a damn crawler.
+
+00:01:40.670 --> 00:01:45.569
+And these are. One, two.
+
+00:01:46.530 --> 00:01:52.049
+So, they basically used this web crawl
+data for pre-training their models, right?
+
+00:01:52.250 --> 00:01:56.170
+But before that, they needed to do a lot
+of cleaning for this big amount of mess.
+
+00:01:56.870 --> 00:02:02.010
+And here are four data sets
+that are based on Common Crawl.
+
+00:02:02.189 --> 00:02:05.629
+New Common Crawl dump is
+released around every month,
+
+00:02:05.989 --> 00:02:09.710
+and each dump contains more
+than 2 million web pages.
+
+00:02:09.990 --> 00:02:15.210
+It could range between 200 to 470 terabytes.
+
+00:02:15.629 --> 00:02:19.169
+And usually one data set uses
+multiple Common Crawl dumps.
+
+00:02:19.349 --> 00:02:21.069
+So, the size is pretty crazy.
+
+00:02:22.469 --> 00:02:27.969
+Obviously, even if tech companies outsource
+this data cleaning to data workers in
+
+00:02:27.969 --> 00:02:35.750
+cheap labour markets, like they used to
+do for more task-specific model training.
+
+00:02:37.050 --> 00:02:39.610
+But this is another very problematic topic.
+
+00:02:40.069 --> 00:02:46.050
+But even if they do so, how much time and money
+would it cost to inspect through all of it?
+
+00:02:46.689 --> 00:02:49.449
+I followed this paper.
+
+00:02:49.830 --> 00:02:53.509
+The most expensive part of an
+LLM should be its training data.
+
+00:02:54.349 --> 00:02:57.349
+The authors took a very speculative approach.
+
+00:02:57.569 --> 00:03:02.009
+They calculated how much it would have
+cost if humans actually needed to sit
+
+00:03:02.009 --> 00:03:08.310
+down and type out all this data, like
+1.6 terabytes of text or something.
+
+00:03:09.050 --> 00:03:13.270
+So, I also did my back of envelope calculation.
+
+00:03:13.949 --> 00:03:17.930
+And if we take the fast reading
+speed, 250 words per minute,
+
+00:03:18.389 --> 00:03:21.810
+five seconds for an image, 10
+seconds for comparing the image
+
+00:03:21.810 --> 00:03:26.629
+and the text if they match, this
+is already unrealistically fast.
+
+00:03:28.090 --> 00:03:31.590
+But the post-cleaning, it's already cleaned.
+
+00:03:31.830 --> 00:03:37.689
+The post-cleaning RefinedWeb will take 1
+,000 people 15 years to inspect through.
+
+00:03:38.069 --> 00:03:41.370
+Of course, tech companies wouldn't
+willing to pay this amount
+
+00:03:41.370 --> 00:03:44.710
+of time and money for just data
+processing for pre-training.
+
+00:03:46.389 --> 00:03:52.830
+So, with the belief of scale, well, average
+out noise, they go for this human not
+
+00:03:52.830 --> 00:03:57.889
+in the loop, cheaper-than-cheap-labor
+method, heuristic filtering for this step.
+
+00:03:58.550 --> 00:04:02.949
+I was totally intrigued by how
+arbitrary these heuristics are,
+
+00:04:03.069 --> 00:04:07.169
+but I couldn't find much discussion
+back then in 2023 online.
+
+00:04:07.449 --> 00:04:12.629
+So, I went through some extraction
+-based open data sets technical paper
+
+00:04:12.629 --> 00:04:17.610
+and collected my own data set of data
+sets and their filtering heuristics.
+
+00:04:18.889 --> 00:04:23.290
+In this paper-based calculation,
+this was not a good choice.
+
+00:04:24.069 --> 00:04:26.930
+Those data sets deprecates
+faster than my book making.
+
+00:04:27.230 --> 00:04:30.250
+So, 10 minutes before
+printing, I was still updating
+
+00:04:30.250 --> 00:04:32.550
+the current conditions of certain data sets.
+
+00:04:32.730 --> 00:04:36.449
+Like, this data set got taken down
+because it includes book 3. And that data
+
+00:04:36.449 --> 00:04:40.649
+set was taken down yesterday because
+it contains a large amount of CSAM.
+
+00:04:41.649 --> 00:04:45.410
+So, the minute it's printed
+out, it already felt like a
+
+00:04:45.410 --> 00:04:49.310
+media archaeology, at least
+in so-called AI's time scale.
+
+00:04:51.490 --> 00:04:57.730
+So, in 2023 and the beginning of
+2024, I looked into these data sets.
+
+00:04:57.949 --> 00:05:03.290
+The diagram is arranged by the releasing time of
+
+00:05:03.290 --> 00:05:05.990
+those data sets and their content composition.
+
+00:05:06.829 --> 00:05:14.110
+The guy in the bottom, the Common Crawl and
+the WebText technically don't belong here.
+
+00:05:14.529 --> 00:05:20.389
+Common Crawl is not filtered and
+WebText from OpenAI is not open.
+
+00:05:21.149 --> 00:05:26.649
+But a lot of other data sets are based
+on them, so I still add them here.
+
+00:05:27.829 --> 00:05:34.610
+And then, in this year, was, I suppose, from
+Error 406 [Tech Fascism] Not Acceptable.
+
+00:05:34.889 --> 00:05:38.370
+I expanded this research and
+added more recent data sets.
+
+00:05:39.050 --> 00:05:42.910
+Surprisingly, with a one-year
+gap in between, there was
+
+00:05:42.910 --> 00:05:47.850
+not big missing outs regarding
+the method of filtering.
+
+00:05:48.529 --> 00:05:52.930
+Of course, this could be that this
+process is getting less and less visible.
+
+00:05:53.649 --> 00:05:58.569
+And from this cascading structure, you
+could also see that a lot of new data
+
+00:05:58.569 --> 00:06:05.389
+sets are just a collection or a new
+filtering of smaller, older data sets.
+
+00:06:06.350 --> 00:06:10.290
+Or at least like referring to
+their data processing methods.
+
+00:06:11.730 --> 00:06:16.250
+So, let's start with a very basic
+question. What is a heuristic?
+
+00:06:17.850 --> 00:06:21.170
+If you are from engineering
+background, maybe most of you
+
+00:06:21.170 --> 00:06:25.230
+are, you might be familiar with
+this problem-solving approach.
+
+00:06:25.670 --> 00:06:31.569
+I am not. And this is an artistic
+research. It's a late disclaimer.
+
+00:06:32.790 --> 00:06:37.790
+So, if I were to explain it, it's
+basically a set of rules of estimation.
+
+00:06:38.470 --> 00:06:40.470
+And when asked why, you just get a shrug back.
+
+00:06:41.509 --> 00:06:44.129
+I also took the definition from Wikipedia.
+
+00:06:44.870 --> 00:06:50.850
+A heuristic is "a pragmatic method
+that is not fully optimized, perfected,
+
+00:06:51.069 --> 00:06:56.230
+or rationalized, but is nevertheless
+'good enough' as an approximation.
+
+00:06:56.569 --> 00:07:03.709
+This is achieved by trading optimality,
+completeness, accuracy, or precision for speed."
+
+00:07:04.350 --> 00:07:09.389
+I have big question mark on the
+good enough. Good enough for who?
+
+00:07:09.990 --> 00:07:15.050
+Good enough for tech companies have this
+tedious cleaning done fast? For sure.
+
+00:07:18.790 --> 00:07:22.290
+Heuristic filtering might seem like
+a practice when there's big data.
+
+00:07:22.769 --> 00:07:26.009
+When I'm saying big data, I already
+feel like I'm from Stone Age.
+
+00:07:26.170 --> 00:07:29.069
+Now, data is no longer big. They're only large.
+
+00:07:30.470 --> 00:07:35.750
+Anyways, heuristic is not
+only a machine learning thing.
+
+00:07:36.269 --> 00:07:42.069
+In 1939, the U.S. Bureau of
+Home Economics needed to build
+
+00:07:42.069 --> 00:07:46.490
+a standardized sizing for
+women for catalogue shopping.
+
+00:07:46.670 --> 00:07:49.870
+But there was not enough data,
+so the bureau had to hire
+
+00:07:49.870 --> 00:07:53.449
+women across the country to go
+in to these measuring squads.
+
+00:07:53.990 --> 00:07:56.649
+And then in those measuring parties,
+the women would wear the government
+
+00:07:56.649 --> 00:08:03.189
+issued bras and underwears, have their
+body measured in 59 different ways.
+
+00:08:04.769 --> 00:08:09.209
+Ruth O'Brien, the head of textile and
+clothing division, wrote in her book that
+
+00:08:09.209 --> 00:08:13.750
+they measured all the women presented for
+the sake of good feeling within a group.
+
+00:08:14.029 --> 00:08:19.769
+But then they marked the race and erased
+all the data from non-white women later.
+
+00:08:20.089 --> 00:08:27.189
+And this is their approximation to affect our
+purity or a heuristic in this sense, right?
+
+00:08:28.490 --> 00:08:31.589
+This example might sound like from, you know,
+
+00:08:31.790 --> 00:08:34.730
+like, way back in dark era that we have passed.
+
+00:08:35.070 --> 00:08:39.350
+But if we could make it for another
+80 years on this planet, and data
+
+00:08:39.350 --> 00:08:43.549
+sets heuristic filtering might also
+sound like this to future people.
+
+00:08:45.850 --> 00:08:50.090
+I would like to give a warning for the next part.
+
+00:08:50.090 --> 00:08:54.289
+I'm going to show you some
+heuristics dealing with data has been
+
+00:08:54.289 --> 00:08:59.730
+categorized as dirty, naughty,
+obscene, pornographic, offensive,
+
+00:09:00.389 --> 00:09:04.549
+or otherwise bad by someone,
+though it may or may not be.
+
+00:09:05.529 --> 00:09:10.230
+And if it gets too intense, just
+close your eyes and maybe scream
+
+00:09:10.230 --> 00:09:14.029
+shortly, and then I will let you
+know we have moved to the next page.
+
+00:09:14.549 --> 00:09:23.159
+Okay? So how are these filtering heuristics like?
+
+00:09:25.039 --> 00:09:27.799
+They usually look like short statements like this
+
+00:09:27.799 --> 00:09:30.980
+in bullet points, especially in previous years.
+
+00:09:31.600 --> 00:09:35.340
+Now they tends to have more
+discussions and reasonings around them.
+
+00:09:35.899 --> 00:09:40.980
+And these heuristics almost
+always has "We"s in them.
+
+00:09:41.360 --> 00:09:47.480
+I find it interesting that data sets
+appears to the public in 2025 still.
+
+00:09:48.139 --> 00:09:50.539
+Like, they exist naturally in the wild.
+
+00:09:51.240 --> 00:09:54.679
+Like, we drop some data on the
+floor when we move our eyes.
+
+00:09:55.179 --> 00:09:57.720
+And then those companies
+just come and pick them up.
+
+00:09:58.039 --> 00:10:02.480
+But then when you read how they're actually
+built, a data set is also a record of
+
+00:10:02.480 --> 00:10:09.740
+hundreds of highly subjective, if not
+objectively bad, decisions by those "We"s.
+
+00:10:12.769 --> 00:10:15.350
+What are these heuristics trying to remove?
+
+00:10:16.610 --> 00:10:21.710
+Let's first have a look what makes most of it.
+
+00:10:23.370 --> 00:10:32.610
+According to The Pile, a data set from E
+leutherAI, they calculated 13-grams across
+
+00:10:32.610 --> 00:10:37.990
+common crawl dumps they used. 13-grams,
+you can imagine it's a sliding window.
+
+00:10:38.190 --> 00:10:40.669
+It always take 13 tokens at once.
+
+00:10:41.049 --> 00:10:46.850
+And if you were in last night's talk from
+Ting and Leon you know what a token is.
+
+00:10:47.629 --> 00:10:51.230
+So it, like, moves one token at a time.
+
+00:10:51.409 --> 00:10:57.750
+And the most frequently occurred 13-grams
+is dash dash space dash dash for styling.
+
+00:10:58.409 --> 00:11:05.330
+It occurred 11 million times. As
+well as some boilerplate like this.
+
+00:11:05.690 --> 00:11:08.809
+"select the forum you want to
+visit from the selection below"
+
+00:11:09.210 --> 00:11:12.090
+It's repeated for 180,000 times.
+
+00:11:14.909 --> 00:11:20.269
+So, basically, for texts, they targeted
+automatically generated content
+
+00:11:20.269 --> 00:11:26.909
+like boilerplate error messages,
+like the phrase cookie policies,
+
+00:11:26.909 --> 00:11:32.950
+or adding to shopping cart, plus
+SEO keywords, or basically anything
+
+00:11:32.950 --> 00:11:36.789
+that is generated for search engine
+rather than for human audience.
+
+00:11:38.529 --> 00:11:41.330
+And duplicated content, a lot of them.
+
+00:11:41.529 --> 00:11:45.230
+Of course, pornographic and otherwise bad stuff.
+
+00:11:45.509 --> 00:11:47.909
+This type we will talk in a little bit.
+
+00:11:48.429 --> 00:11:51.090
+So, for the first three types, they got pretty
+
+00:11:51.090 --> 00:11:54.470
+interesting angles to make
+those texts pure and average.
+
+00:11:55.710 --> 00:12:00.129
+They tried to remove pages
+containing curly brackets because
+
+00:12:00.129 --> 00:12:04.850
+they are not used in natural
+language but is used a lot in code.
+
+00:12:05.470 --> 00:12:08.529
+And then they calculate the ratio of closed class
+
+00:12:08.529 --> 00:12:16.610
+words like "the", "be", "
+of", "that", "to", et cetera.
+
+00:12:17.070 --> 00:12:25.169
+Because they are an indicator
+of non-human generated content.
+
+00:12:25.850 --> 00:12:29.190
+Or basically, imagine a SEO page
+would have very little of them.
+
+00:12:29.990 --> 00:12:35.409
+As well as punctuation marks. They
+are the symbol of word composition.
+
+00:12:36.149 --> 00:12:39.710
+Too many sentences ending
+with ellipses. Not qualified.
+
+00:12:40.809 --> 00:12:43.210
+Or sometimes they try to find a reference point.
+
+00:12:43.490 --> 00:12:48.490
+Here, OBELICS from Hugging Face used
+OSCAR, a version of cleaned Common Crawl.
+
+00:12:48.889 --> 00:12:52.210
+But usually, they use Wikipedia
+as a golden reference point.
+
+00:12:52.350 --> 00:12:56.389
+If one word appears there twice,
+then it must be a normal word.
+
+00:12:57.490 --> 00:13:03.490
+And for codes, they try to
+remove:I will go through it fast.
+
+00:13:03.929 --> 00:13:08.629
+They try to remove documents
+with few or a lot of comments.
+
+00:13:08.990 --> 00:13:11.590
+They remove the license
+statements in the document.
+
+00:13:12.169 --> 00:13:16.450
+They remove super long lines
+or if a line is mostly digits.
+
+00:13:16.789 --> 00:13:20.490
+They remove repository has no or very few stars.
+
+00:13:21.149 --> 00:13:26.389
+And they wanted to remove generated
+code. Not necessarily vibe coded code.
+
+00:13:26.769 --> 00:13:33.330
+But it could be like a generated diagram
+for the architecture of the code or stuff.
+
+00:13:34.470 --> 00:13:37.710
+If you go through some of the data
+sets, you'll notice that these
+
+00:13:37.710 --> 00:13:42.870
+years, almost all the code
+subsets are from Stack V1 and V2.
+
+00:13:43.190 --> 00:13:49.629
+And there was a cleaning pipeline
+from StarCoder and RedPajama.
+
+00:13:50.509 --> 00:13:58.590
+The Stack says that they use only permissive
+licensed code from GitHub but I doubt it.
+
+00:13:58.990 --> 00:14:03.529
+Because I found my own repository
+there. It was my old personal website.
+
+00:14:03.730 --> 00:14:06.549
+And I was too lazy to set any license.
+
+00:14:06.950 --> 00:14:10.470
+So it should be, you know, by default copyrighted
+
+00:14:10.470 --> 00:14:13.409
+and should not be included in their data sets.
+
+00:14:15.090 --> 00:14:20.809
+For filtering images, the main focus
+are the size, resolution, image ratios.
+
+00:14:20.990 --> 00:14:23.090
+Too small is not good. Can be icons and logos.
+
+00:14:23.289 --> 00:14:27.649
+Too far away from squares, not good. Can
+be banners for ads. Too big is not good.
+
+00:14:27.909 --> 00:14:28.909
+It can be [unintelligible].
+
+00:14:29.889 --> 00:14:37.549
+And the last category, we will talk
+together later with the text part.
+
+00:14:38.190 --> 00:14:43.149
+So, sometimes, apart from the image
+size and ratio, amount also matters.
+
+00:14:44.250 --> 00:14:49.389
+OBELICS doesn't include any web page which
+has more than 30 images in one page.
+
+00:14:49.950 --> 00:14:54.789
+And some data sets also filter with image URL.
+
+00:14:55.070 --> 00:15:01.629
+So, basically, if your image name
+contains any words including logo, button,
+
+00:15:02.049 --> 00:15:09.629
+icon, plugin, widget, porn, sex, XXX,
+in the image, they will get removed.
+
+00:15:10.769 --> 00:15:17.070
+Okay. Now, we're finally here for
+pornographic and otherwise bad text and image.
+
+00:15:17.509 --> 00:15:21.090
+I didn't make this into two
+categories, but for some
+
+00:15:21.090 --> 00:15:25.549
+reason, porns are always separated
+from otherwise bad stuff.
+
+00:15:26.289 --> 00:15:30.250
+And if you go through several data
+sets, heuristics, you'll notice that for
+
+00:15:30.250 --> 00:15:35.370
+pornographic content, they might spend
+five paragraphs to elaborate their methods,
+
+00:15:35.750 --> 00:15:40.789
+experiments, decisions, considerations, and
+then for otherwise bad stuff, one sentence.
+
+00:15:43.220 --> 00:15:46.039
+So, this type of content is usually filtered with
+
+00:15:46.039 --> 00:15:49.980
+block lists and classifiers,
+plus some esoteric stuff.
+
+00:15:50.559 --> 00:15:54.539
+For the block lists, quite a
+lot of data sets, including
+
+00:15:54.539 --> 00:15:59.279
+ROOTS from BigScience, that is
+a quite nicely composed one.
+
+00:15:59.480 --> 00:16:02.659
+They filter their data sets
+with keyword-based block lists.
+
+00:16:02.899 --> 00:16:09.379
+But like most of other data sets, they
+don't reveal what list they actually used.
+
+00:16:10.379 --> 00:16:16.519
+And the most direct and controversial
+one must be Google's C4. They
+
+00:16:16.519 --> 00:16:21.279
+used this infamous block list, the
+list of dirty, naughty, obscene, and
+
+00:16:21.279 --> 00:16:25.539
+otherwise bad words for removing
+offensive language from their data sets.
+
+00:16:26.480 --> 00:16:29.620
+I guess many of you might
+have heard this block list.
+
+00:16:29.759 --> 00:16:34.019
+It was initially created by a group
+of programmers in Shutterstock
+
+00:16:34.019 --> 00:16:39.639
+in 2012 to prevent bad words to
+auto-complete in their search bar.
+
+00:16:40.440 --> 00:16:43.019
+And they were basically racking their brains and
+
+00:16:43.019 --> 00:16:45.379
+googling for any sexual slangs they could find.
+
+00:16:45.379 --> 00:16:49.279
+And then, as you can imagine, it ended up as a
+
+00:16:49.279 --> 00:16:52.200
+horrible list, both in content and in perspective.
+
+00:16:53.320 --> 00:16:56.000
+The worst thing is people
+get inspired, and now this
+
+00:16:56.000 --> 00:16:58.980
+list exists in 28 different languages on GitHub.
+
+00:17:01.600 --> 00:17:07.500
+According to an interview to one of the
+C4 builders by Will Orr, this person
+
+00:17:07.500 --> 00:17:12.240
+said that the team didn't want to impose
+their own idea of good web content.
+
+00:17:12.640 --> 00:17:19.900
+They also knew it's a tremendous
+responsibility, and using an existing list
+
+00:17:19.900 --> 00:17:25.579
+allowed them to share or defer the
+accountability to anonymous users of that list.
+
+00:17:27.299 --> 00:17:31.720
+Thanks to this list, those cuties
+are not in C4 and the data sets using
+
+00:17:31.720 --> 00:17:36.019
+C4's heuristic, unless they're
+referred to with their passport names.
+
+00:17:37.059 --> 00:17:40.680
+And this dirty list or dirty,
+naughty, something list
+
+00:17:40.680 --> 00:17:45.180
+also contains a lot of gender
+-related neutral words.
+
+00:17:45.259 --> 00:17:49.799
+Kind of reminds me of this Copilot
+fuckery that they will stop auto
+
+00:17:49.799 --> 00:17:53.619
+-completing when you remotely mention
+any gender-related words in your code.
+
+00:17:54.059 --> 00:17:56.319
+I don't know if it's there like this.
+
+00:17:57.339 --> 00:18:00.960
+I refuse to use Copilot, but
+at least in this July, people
+
+00:18:00.960 --> 00:18:05.000
+are still posting furious
+comments under this thread.
+
+00:18:06.339 --> 00:18:09.180
+And this is another example, again from Google.
+
+00:18:09.339 --> 00:18:14.019
+It's from Google's MADLAD-400, a
+multilingual data set for translation.
+
+00:18:14.420 --> 00:18:17.259
+And it is also based on Common Crawl.
+
+00:18:17.980 --> 00:18:22.000
+When they was handling Mandarin
+data part from Common Crawl,
+
+00:18:22.160 --> 00:18:24.980
+they found it has a particular
+issue with pornographic content,
+
+00:18:25.240 --> 00:18:29.200
+so they made this words plus
+Unicode list for filtering porns.
+
+00:18:29.519 --> 00:18:33.740
+I was quite curious what they come
+up with, so I converted this Unicode
+
+00:18:33.740 --> 00:18:38.400
+back to Mandarin, and it turns out
+it's just a bunch of porn sites' names.
+
+00:18:39.140 --> 00:18:43.660
+And I don't have better ideas, but
+I still think it's a really fat job.
+
+00:18:44.180 --> 00:18:53.339
+But even like this, it filtered out
+more than 56% of the total size. I know.
+
+00:18:53.900 --> 00:18:55.400
+Mandarin web is wild.
+
+00:18:56.960 --> 00:19:03.079
+And another format of block lists
+is URL-based blocking, including
+
+00:19:03.079 --> 00:19:07.779
+using existing URL lists or trying
+to find bad words in the URL.
+
+00:19:08.500 --> 00:19:15.019
+For existing lists, so many,
+I don't know, quite major data
+
+00:19:15.019 --> 00:19:20.539
+sets, like RefinedWeb's, as
+well as Dolms from Ai2, FineWeb
+
+00:19:20.539 --> 00:19:25.140
+from Hugging Face, Red
+Pajama, and maybe Llama3 also.
+
+00:19:25.359 --> 00:19:32.140
+They all use this UT1 list. UT1
+list is from a French university.
+
+00:19:32.400 --> 00:19:35.559
+It's a block list managed by one person over the
+
+00:19:35.559 --> 00:19:38.140
+years to regulate many schools' internet use.
+
+00:19:38.619 --> 00:19:41.660
+And then they wrote on this block
+list, this should not be seen
+
+00:19:41.660 --> 00:19:48.380
+as a block list to be blocked,
+but a categorization of web.
+
+00:19:48.700 --> 00:19:55.539
+But somehow it has become the industrial
+standard for cleaning web crawl data sets.
+
+00:19:56.240 --> 00:20:00.799
+Again, those data set builders bet
+almost the whole public web's porn
+
+00:20:00.799 --> 00:20:05.759
+content on this one-person single
+-handedly maintained bookmark-like list.
+
+00:20:08.000 --> 00:20:08.480
+Okay.
+
+00:20:08.599 --> 00:20:11.579
+The last example of filtering
+with block lists is not
+
+00:20:11.579 --> 00:20:16.859
+exactly a block list, but it's
+a quite interesting choice.
+
+00:20:17.339 --> 00:20:23.900
+The Pile, which was used to train a
+lot of major models several years ago.
+
+00:20:24.160 --> 00:20:27.259
+It has been taken down because it includes Books3,
+
+00:20:27.440 --> 00:20:32.220
+which includes a lot of
+books from shadow libraries.
+
+00:20:32.759 --> 00:20:36.740
+The Pile decided not to include
+three data sets in particular.
+
+00:20:37.200 --> 00:20:42.980
+The first one, short fan fictions
+from AO3 and Fanfiction.net.
+
+00:20:43.200 --> 00:20:48.619
+The second one, the literotica, a website
+hosting erotic stories and audience.
+
+00:20:49.279 --> 00:20:51.880
+And the third one, US congressional record.
+
+00:20:58.829 --> 00:21:05.450
+So, filtering with classifiers is another
+popular option to remove dirty data.
+
+00:21:06.190 --> 00:21:09.869
+A lot of data sets don't try to gloss it over and
+
+00:21:09.869 --> 00:21:12.630
+don't mention what exactly detector they used.
+
+00:21:13.670 --> 00:21:20.690
+And a lot of data sets basically come
+up with not safe for work detectors.
+
+00:21:21.210 --> 00:21:24.130
+But this time we don't have time to go into this.
+
+00:21:24.269 --> 00:21:25.869
+It can be another chapter by itself.
+
+00:21:27.069 --> 00:21:32.150
+The Pile and the RefinedWeb use similar
+detectors trained from Wikipedia comments.
+
+00:21:32.369 --> 00:21:35.549
+Wikipedia has been the guy,
+like, when it comes to good
+
+00:21:35.549 --> 00:21:38.509
+English or toxic English,
+they always go to Wikipedia.
+
+00:21:39.230 --> 00:21:45.190
+But the Wikipedia comments trained this
+profanity checker. It's built for English.
+
+00:21:46.230 --> 00:21:49.410
+And then The Pile noticed that
+whenever there's a German text
+
+00:21:49.410 --> 00:21:55.789
+popping up, the definite article
+"die" is always flagged as profane.
+
+00:21:59.750 --> 00:22:05.869
+And then MassiveText from
+DeepMind, or basically Google, used
+
+00:22:05.869 --> 00:22:10.230
+to train Gopher, it's a very
+often referred heuristic source.
+
+00:22:10.549 --> 00:22:13.829
+They didn't even bother to
+find a classifier to use.
+
+00:22:13.990 --> 00:22:15.849
+They just used Google safe search filter.
+
+00:22:16.549 --> 00:22:20.509
+They described that safe search
+incorporates various web signals to
+
+00:22:20.509 --> 00:22:27.390
+identify explicit content with reasons
+that a block list like C4 used could
+
+00:22:27.390 --> 00:22:32.289
+disproportionately filter out inoffensive
+content associated with minority groups.
+
+00:22:32.529 --> 00:22:36.869
+Which is very true. But is
+Google safe search any better?
+
+00:22:38.150 --> 00:22:43.789
+In Monea's paper, I know it when I see it,
+the heteronormativity of Google safe search.
+
+00:22:44.009 --> 00:22:46.210
+She described Google safe search as straight.
+
+00:22:46.710 --> 00:22:49.789
+It started as a text-based
+pornographic detector and
+
+00:22:49.789 --> 00:22:52.390
+then later it was trained on WordNet and ImageNet.
+
+00:22:52.549 --> 00:22:57.410
+If you still remember this critical
+reflection from seven years ago.
+
+00:22:58.690 --> 00:23:02.490
+So, before I can decide if
+Google safe search or the naughty
+
+00:23:02.490 --> 00:23:07.309
+list is worse, new open data set
+has dropped, and they are
+
+00:23:07.309 --> 00:23:11.250
+already using LLMs to rate
+the toxicity of training data.
+
+00:23:11.769 --> 00:23:18.890
+And then try to train a classifier from
+this LLM generated whatever annotation.
+
+00:23:19.430 --> 00:23:24.130
+And then use this classifier to clean
+the data for training another LLM.
+
+00:23:24.730 --> 00:23:27.390
+They will just never stop finding ways to build
+
+00:23:27.390 --> 00:23:29.970
+up unopenable black box on top of each other.
+
+00:23:31.390 --> 00:23:35.789
+So, it's an extra part.
+
+00:23:36.549 --> 00:23:40.869
+A saying something but at the same
+time saying nothing style heuristics.
+
+00:23:42.150 --> 00:23:45.390
+Wikipedia-based text, image data sets.
+
+00:23:45.569 --> 00:23:50.170
+Also, again, from Google, they seemed not
+quite sure what they needed to remove.
+
+00:23:50.549 --> 00:23:56.470
+So, they were aiming for remove "pornographic,
+profane, violent, and dot, dot, dot content."
+
+00:23:56.470 --> 00:24:00.009
+But even though they don't know
+what they're talking about anymore,
+
+00:24:00.450 --> 00:24:04.730
+they still managed it with their
+"multiple techniques based on
+
+00:24:04.730 --> 00:24:08.769
+sophisticated image understanding,
+multilingual understanding models."
+
+00:24:09.710 --> 00:24:16.710
+All right. And WuDao, it was once
+the largest Chinese text corpora.
+
+00:24:17.069 --> 00:24:19.609
+I was thinking about referring
+to the newer ones, but the
+
+00:24:19.609 --> 00:24:22.490
+newer ones was just filtering
+with keywords block lists.
+
+00:24:23.009 --> 00:24:28.690
+So, I just sticked with it, at least it
+was somewhat politically honest.
+
+00:24:29.710 --> 00:24:32.250
+So, WuDao removed dirty words.
+
+00:24:32.609 --> 00:24:37.289
+This we know, more than 50 words are
+dirty words from Mandarin Web, right?
+
+00:24:37.849 --> 00:24:45.490
+So, and then they also tried to remove
+seditious comments and other illegal comments
+
+00:24:45.490 --> 00:24:50.490
+has adverse effects on building a
+harmonious and positive social environment.
+
+00:24:51.150 --> 00:24:56.490
+Does this sound familiar to you?
+Definitely sounds very familiar to me.
+
+00:24:57.230 --> 00:25:01.670
+And two years later, in 2023,
+Beijing released the interim measure
+
+00:25:01.670 --> 00:25:06.230
+that requires artificial
+intelligence must demonstrate core
+
+00:25:06.230 --> 00:25:10.769
+socialist value and have to be in
+line with CCP's political ideology.
+
+00:25:11.089 --> 00:25:15.569
+But in this case, only working with training
+data is not effective for censoring.
+
+00:25:15.769 --> 00:25:19.710
+Most efforts are in the reinforcement
+learning from human feedback after training.
+
+00:25:21.390 --> 00:25:25.950
+I mentioned that I kind of worked on
+this project a bit more this year.
+
+00:25:26.069 --> 00:25:28.730
+There's another aspect I'm
+working on at the moment.
+
+00:25:29.410 --> 00:25:33.170
+Now that we have no way to know
+how large language models from big
+
+00:25:33.170 --> 00:25:38.430
+companies are trained from their data
+sets or how their data set is cleaned.
+
+00:25:38.890 --> 00:25:44.109
+But it would be surprising if they don't
+refer to any existing cleaning methods, right?
+
+00:25:44.109 --> 00:25:49.690
+And if we partially know how they filter
+the data set, doesn't that mean that
+
+00:25:49.690 --> 00:25:55.049
+we can follow those rigid estimations and
+make our data too dirty to be trained.
+
+00:25:55.890 --> 00:26:00.589
+Or if we know how unwanted data
+look like, can we develop our own
+
+00:26:00.589 --> 00:26:05.710
+heuristics to make our data look
+similar to that and create an opt-out
+
+00:26:05.710 --> 00:26:09.990
+method for ourselves when it's not
+possible to get it from big techs.
+
+00:26:10.529 --> 00:26:14.569
+So I put these heuristics
+online and developed a set
+
+00:26:14.569 --> 00:26:17.509
+of anti-heuristic heuristics
+to make our data dirty.
+
+00:26:17.190 --> 00:26:17.509
+*Applause*
+
+00:26:18.170 --> 00:26:35.599
+I also made this online dirtying tool together
+with Lotash Duva, who is also here today.
+
+00:26:36.279 --> 00:26:40.180
+With a dirty meter, you could choose
+how dirty your data should be.
+
+00:26:40.740 --> 00:26:45.259
+I just said made, but it's actually still
+under active change and development.
+
+00:26:45.859 --> 00:26:52.180
+And I would like to know how you think,
+your feedbacks, and if you have any
+
+00:26:52.180 --> 00:26:56.460
+insights or business secrets to share
+regarding this filtering heuristics.
+
+00:26:57.220 --> 00:27:04.119
+Thank you very much. And you can scan the
+QR code to get to the website.*Applause*
+
+00:27:17.839 --> 00:27:22.259
+Thank you so much for this great
+talk. That was interesting and fun.
+
+00:27:22.579 --> 00:27:26.480
+And I have some new ideas for art projects.
+
+00:27:26.680 --> 00:27:30.559
+And I hope you also have some
+new ideas for other things.
+
+00:27:31.539 --> 00:27:37.960
+And now we have 10 minutes of time
+for Q&A and to further discuss.
+
+00:27:39.839 --> 00:27:46.180
+Do I see any question coming up
+here? This is a question? Okay.
+
+00:27:46.740 --> 00:27:49.700
+So could you come up to mic number 4?
+
+00:27:54.910 --> 00:27:56.789
+Question: Hi. Thank you very much for this talk.
+
+00:27:57.670 --> 00:28:03.210
+It's super interesting and
+unsettling, which is great.
+
+00:28:03.769 --> 00:28:11.470
+I was wondering if one wants to build a
+data set that is more representative and
+
+00:28:11.470 --> 00:28:21.170
+less heteronormative and arbitrarily,
+well, against all sorts of diverse content.
+
+00:28:21.529 --> 00:28:24.509
+How would one approach this?
+
+00:28:25.369 --> 00:28:26.990
+jiawen: I have no idea.
+
+00:28:27.369 --> 00:28:32.930
+To be honest, I don't think it's possible,
+at least for, like, general purpose model.
+
+00:28:33.210 --> 00:28:38.369
+How is it possible that you could
+remove all the bad stuff from a data set
+
+00:28:38.369 --> 00:28:44.289
+with, I don't know, like, for every aspect,
+for every culture, for every person?
+
+00:28:45.170 --> 00:28:49.890
+So I think the problem is, like, in the practice
+
+00:28:49.890 --> 00:28:53.529
+of trying to build such general purpose model.
+
+00:28:54.029 --> 00:28:56.869
+Yeah, thank you. And assuming that
+there's, like, one right thing.
+
+00:28:57.190 --> 00:28:58.750
+And yeah, thank you so much.
+
+00:28:58.950 --> 00:29:01.710
+jiawen: Yeah, I think people are
+still trying to search for it.
+
+00:29:01.890 --> 00:29:03.250
+But I doubt they will find.
+
+00:29:03.250 --> 00:29:09.950
+Herald: There's another question at mic number 1.
+
+00:29:10.869 --> 00:29:14.950
+Question: Have you seen the attempt
+to only collect the dirty data?
+
+00:29:15.170 --> 00:29:20.329
+Because some companies right now try to
+monetarize pornographic content, for example?
+
+00:29:21.809 --> 00:29:29.029
+jiawen: There must be a lot of efforts to collect
+only dirty data, but they are never published.
+
+00:29:29.309 --> 00:29:33.789
+I saw so many companies develop their own
+models that are trained from these data.
+
+00:29:34.170 --> 00:29:39.450
+And I very, like, I look forward
+very much to see a data that is, you
+
+00:29:39.450 --> 00:29:44.970
+know, like, not common, but, like,
+uncommon corpus, that is a collection
+
+00:29:44.970 --> 00:29:50.049
+of unethical data, just for people
+to get an idea, rather than just
+
+00:29:50.049 --> 00:29:55.509
+try to hiding this, hide this
+part up, and just show the result.
+
+00:29:55.509 --> 00:30:04.289
+Herald: There's another question at mic number 4.
+
+00:30:05.130 --> 00:30:11.130
+Yeah, hello. Thanks for the great talk.
+Interesting perspective on how it's done.
+
+00:30:11.450 --> 00:30:19.569
+I thought it would be much less
+old-style statistical information
+
+00:30:19.569 --> 00:30:25.490
+processing, like heuristics, and
+much more neural network processing.
+
+00:30:25.670 --> 00:30:31.910
+It looks like it's different.And my
+question is how this is going to change?
+
+00:30:32.549 --> 00:30:41.130
+I once viewed a YouTube video about
+some paper called AI 2027, I guess,
+
+00:30:42.029 --> 00:30:50.490
+which tried to predict how AI will
+develop in the future, and what do you
+
+00:30:50.490 --> 00:30:58.410
+think will change about the methods
+in cleaning up data in this regard?
+
+00:30:58.690 --> 00:31:00.930
+jiawen: I hope AI won't develop in the future.
+
+00:31:01.329 --> 00:31:08.569
+And I can only say that my
+current observation is people are
+
+00:31:08.569 --> 00:31:12.329
+still using very similar
+heuristics, but instead of taking
+
+00:31:12.329 --> 00:31:17.630
+this heuristic as it is, they
+try to calculate the percentage.
+
+00:31:18.569 --> 00:31:22.190
+Like, for example, if you
+take the heuristic, people
+
+00:31:22.190 --> 00:31:28.230
+take the punctuation mark
+as a good composition sign.
+
+00:31:28.390 --> 00:31:30.390
+Now they don't use it directly.
+
+00:31:30.730 --> 00:31:33.730
+They take this and then try
+to calculate how much percent
+
+00:31:33.730 --> 00:31:38.430
+of the sentence in this
+document match this pattern.
+
+00:31:38.849 --> 00:31:44.190
+And if it's larger than a certain
+threshold, they remove it.
+
+00:31:44.470 --> 00:31:51.609
+So it's trying to get a little bit
+less arbitrary by, you know, try
+
+00:31:51.609 --> 00:31:58.390
+to not like, yes, it is, whatever
+it is, it is, and then remove it.
+
+00:32:00.190 --> 00:32:03.109
+Maybe it's very confusing.Maybe
+I'll explain it in a little bit.
+
+00:32:03.109 --> 00:32:08.410
+At least it's complex.I don't know how
+confusing it is.I'm not so deep into it.
+
+00:32:08.849 --> 00:32:15.250
+But is it really completely removed from
+training or is it just weighted that way?
+
+00:32:15.970 --> 00:32:20.190
+So with a different factor, so the training can
+
+00:32:20.190 --> 00:32:25.930
+access this and also train
+on maybe not so good data?
+
+00:32:27.269 --> 00:32:29.069
+jiawen: Can you repeat the question again?
+
+00:32:29.809 --> 00:32:36.589
+Question: Is it possible that not everything
+that is flagged bad is being removed from
+
+00:32:36.589 --> 00:32:43.349
+the training, but weighted in the training
+or flagged with additional parameters
+
+00:32:43.349 --> 00:32:51.329
+so the training algorithm can access
+the Einschätzung, the — how is the word?
+
+00:32:51.589 --> 00:32:52.210
+Herald: Okay.
+
+00:32:53.609 --> 00:32:57.109
+Question: Yeah. Okay. I think
+it's going to be complex.
+
+00:32:57.490 --> 00:33:00.529
+Herald: Maybe you can have a
+discussion about this later?
+
+00:33:00.849 --> 00:33:02.170
+Question: Yeah. Yeah. Sounds about right.
+
+00:33:02.269 --> 00:33:04.869
+Herald: Because I feel like this is getting fuzzy.
+
+00:33:04.869 --> 00:33:05.430
+Question: Okay.
+
+00:33:06.150 --> 00:33:11.569
+Thank you.I had a question from the
+Signal Angel and I don't see the signal.
+
+00:33:11.670 --> 00:33:28.420
+There's the Signal Angel.Yes.
+What does the internet say?Okay.
+
+00:33:29.259 --> 00:33:34.140
+Question: Thank you. The internet
+wants to know, have you looked at
+
+00:33:34.140 --> 00:33:37.960
+any training data from image
+and video generating models?
+
+00:33:39.259 --> 00:33:45.200
+jiawen: Not really, because those
+models sometimes they don't say
+
+00:33:45.200 --> 00:33:50.900
+what they are trained and
+sometimes they take — how to say, I
+
+00:33:50.900 --> 00:33:55.900
+didn't look at this model by
+model, but data set by data set.
+
+00:33:56.059 --> 00:34:02.119
+So I can only look at what
+this data set is used to
+
+00:34:02.119 --> 00:34:05.859
+train, rather than what
+this model is used to train.
+
+00:34:06.019 --> 00:34:13.780
+And what I covered so far, I think
+some diffusion models like unstable
+
+00:34:13.780 --> 00:34:18.860
+diffusion stuff, but I didn't look
+too much into the video generation.
+
+00:34:18.340 --> 00:34:25.679
+Herald:  There's another question on mic 2 now.
+
+00:34:26.679 --> 00:34:32.179
+Hi.Thanks so much for this talk.I really,
+really appreciated and enjoyed it.
+
+00:34:33.260 --> 00:34:40.599
+I was wondering now, because I
+also looked into what is being
+
+00:34:40.599 --> 00:34:43.699
+excluded from this training
+through these automatic means.
+
+00:34:43.920 --> 00:34:51.519
+And there is a paper that explains how
+C4 also filters anything that in any
+
+00:34:51.519 --> 00:34:57.039
+way refers to LGBT content, anything
+that's migrants, anything that's kind
+
+00:34:57.039 --> 00:35:07.360
+of potentially somehow not a white —
+I don't know — privileged perspective.
+
+00:35:07.800 --> 00:35:12.380
+And that is now the models we
+have for free on the internet.
+
+00:35:13.099 --> 00:35:18.559
+And while I find super important that
+what you present here as a way to
+
+00:35:18.559 --> 00:35:23.199
+kind of opt out, I'm wondering, how
+could we also do you have any ideas?
+
+00:35:23.199 --> 00:35:30.000
+How could we systematically also
+make their data more dirty so that
+
+00:35:30.000 --> 00:35:34.760
+it doesn't actually work for kind
+of inflating this perspective?
+
+00:35:35.059 --> 00:35:40.260
+Because in the end, we are
+still living next to this model
+
+00:35:40.260 --> 00:35:44.739
+that's growing and getting
+somehow more and more fascist.
+
+00:35:45.000 --> 00:35:50.980
+And we don't, yeah, opting
+out is not enough somehow.
+
+00:35:51.780 --> 00:35:53.440
+jiawen: Yeah, I know what you mean.
+
+00:35:53.639 --> 00:35:59.039
+There are quite a lot of efforts trying
+to feed garbage data to AI, but I think
+
+00:35:59.039 --> 00:36:03.599
+with current methods, most of them will
+actually get filtered out afterwards.
+
+00:36:04.099 --> 00:36:09.820
+And I personally don't have a better
+idea to poison AI in this sense.
+
+00:36:11.260 --> 00:36:19.219
+I think what we could do at the moment
+is try to get less involved with it.
+
+00:36:26.099 --> 00:36:29.940
+Yeah, there are a lot of other things
+that we could pay our attention to.
+
+00:36:32.869 --> 00:36:36.150
+Herald: We have one more
+minute for one last question.
+
+00:36:36.489 --> 00:36:39.849
+If you could be short, then we
+have some time for an answer.
+
+00:36:40.630 --> 00:36:40.869
+Question: Okay. Hi.
+
+00:36:41.690 --> 00:36:49.050
+If I wanted to change every second word on
+my website into Fuckbutton, but not have
+
+00:36:49.050 --> 00:36:53.630
+human readers, like, have to bother with
+this, do you have ideas on how to do that?
+
+00:36:53.769 --> 00:36:56.469
+Or do we just have to get used to ignoring these
+
+00:36:56.469 --> 00:36:58.809
+words for the sake of not becoming training data?
+
+00:37:00.429 --> 00:37:06.389
+jiawen: You can set it to
+invisible in CSS, because the
+
+00:37:06.389 --> 00:37:10.469
+crawls mostly read the code from HTML and CSS.
+
+00:37:11.510 --> 00:37:16.969
+And it could, like, make only the crawlers read it.
+
+00:37:17.690 --> 00:37:24.090
+And another approach I was trying to
+do that is not actually — okay, it's
+
+00:37:24.090 --> 00:37:28.849
+not really relevant, but you can just
+play with the structure of HTML and try
+
+00:37:28.849 --> 00:37:33.809
+to let them mismatch, and then they
+will make the crawler confused, maybe.

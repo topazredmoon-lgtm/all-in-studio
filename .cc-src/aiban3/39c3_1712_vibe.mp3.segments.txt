@@ -1,0 +1,632 @@
+[   25.5-   29.3] I'm Stephen, and you have also called me your darling.
+[   29.3-   32.5] Today, I'm going to show you a real story.
+[   32.5-   35.4] How to become a white haker, and how
+[   35.4-   38.6] to fight against white scatmer.
+[   38.6-   41.1] This talk contains some offensive technique,
+[   41.1-   45.3] but the purpose is to show how we can use this skill
+[   45.3-   47.6] to protect people from scat.
+[   47.6-   50.9] So let's begin.
+[   50.9-   55.3] Now, in the AI era, there are more and more AI-related hakers
+[   55.3-   56.7] in the world.
+[   56.7-   61.2] They use AI to do auto scanning and exploitation
+[   61.2-   64.0] to deploy the malware.
+[   64.0-   69.4] Also, more scatmer use AI to help them to actually their goal.
+[   69.4-   72.8] For example, they use AI to build a scam website
+[   72.8-   78.3] and message to the victim, all done by AI automatically.
+[   78.3-   81.7] So a white haker like us, what can we
+[   81.8-   85.4] do to find against this kind of change?
+[   85.4-   89.3] When a adversary use AI, so can we also
+[   89.3-   94.0] use AI to do some detection or investigation?
+[   94.0-   97.2] During this research, we found several AI-based phishing
+[   97.2-  101.2] websites, the purple color, the tailwind CSS.
+[  101.2-  103.6] It's a clear signature that they use
+[  103.6-  107.6] AI like Cloud Code to build a website.
+[  107.6-  110.6] Yeah, sure, we found a large number of vulnerabilities
+[  110.6-  113.4] that can be used to pung into the system.
+[  113.4-  116.8] And as we may know, using AI to generate website
+[  116.8-  120.0] will always create huge vulnerability, right?
+[  120.0-  121.0] Yeah.
+[  121.0-  124.4] We also use AI to collect data from the scan group.
+[  124.4-  127.0] We found the author of the phishing website.
+[  127.0-  130.5] And we also found the core member, the operation lead,
+[  130.5-  132.4] and so on.
+[  132.4-  135.5] OK, so let me quickly introduce myself again.
+[  135.5-  138.9] I'm Stephen Yu, or you can also call me Yozoudin.
+[  138.9-  141.4] And currently, I'm a white haker
+[  141.4-  144.5] in trademark writing in Taiwan.
+[  144.5-  147.8] In today's session, I will use a red team perspective,
+[  147.8-  151.3] rather than the common, blue team 300 approach
+[  151.3-  152.9] to find a scale.
+[  152.9-  155.5] And also, this is my first time at CCC,
+[  155.5-  157.7] so I'm very, very excited.
+[  157.7-  159.7] Cool.
+[  159.7-  164.7] Thank you.
+[  164.7-  167.7] OK, so here is the agenda for today's session.
+[  167.7-  170.6] First, I will talk about the Scan 101.
+[  170.6-  174.4] I will show how the story begins and the common scan pattern
+[  174.4-  176.2] for this case.
+[  176.2-  180.2] Then I will show how I use AI to find the vulnerability
+[  180.2-  182.4] and breaking to the system.
+[  182.4-  185.2] Next, after exploring the scan system,
+[  185.2-  187.5] I will demonstrate how the system works
+[  187.5-  191.8] and how to find the evolution in the single scan system.
+[  191.8-  195.8] Finally, we use AI to find open source phishing website
+[  195.8-  198.2] and AI phones.
+[  198.2-  201.0] Here is how the story begins.
+[  201.0-  204.3] One day, one of my friends received a scan message
+[  204.3-  207.6] and asked me to help me to check it.
+[  207.6-  210.4] And then, as a haker, I like this kind of target
+[  210.4-  212.2] to practice my skill.
+[  212.2-  215.6] And also, I want to test some of the latest AI pen tests
+[  215.6-  217.2] and the writing tool.
+[  217.2-  221.5] So I believe it's a great chance to test that.
+[  221.5-  225.8] So I got a scan URL, and it was an overseas website,
+[  225.8-  228.5] so it wouldn't break the load in my country.
+[  228.5-  229.6] Yeah.
+[  229.6-  233.4] Yeah, after getting the URL, I send it to my AI agent
+[  233.4-  236.0] to do some more research.
+[  236.0-  237.8] A few moments later.
+[  237.8-  241.3] Yeah, I had it using AI.
+[  241.3-  243.4] So how does it work?
+[  243.4-  246.6] AI is growing very fast, so I believe more and more
+[  246.6-  250.0] AI-related, offensive tool will be created.
+[  250.0-  253.1] In this talk, I won't show which specific tool
+[  253.1-  254.9] is useful or bad.
+[  254.9-  257.7] But I will share more high-level things
+[  257.7-  260.5] about what AI is good at.
+[  260.5-  264.3] During this research, I mainly use the Cloud Code 4.5
+[  264.3-  268.0] and the Gemini 2.5 Pro as an AI app.
+[  268.0-  273.2] And I attached the HEX-TRY MCP to that AI use security tool.
+[  273.2-  276.1] And for the core review and exploitation,
+[  276.1-  278.8] I mainly use Cloud Code and the structs
+[  278.8-  281.5] to handle the entire process.
+[  281.5-  284.0] And the interesting thing is, I didn't write
+[  284.0-  286.0] any body code by myself.
+[  286.0-  290.0] I just told AI what I wanted and AI did the rest.
+[  290.0-  293.6] So it's what I call vibe-haking.
+[  293.6-  298.4] OK, so let's talk about the scan pattern in this case.
+[  298.4-  301.8] In recent months, we saw the several-scale pattern
+[  301.8-  305.6] where they post free stuff on the social media platform,
+[  305.6-  309.2] like the Facebook, Instagram, and threat.
+[  309.2-  312.5] They can only need to pay the shipping fee to get the free
+[  312.5-  315.8] or the low-price item.
+[  315.8-  320.1] And then when the victim message the seller,
+[  320.1-  324.4] they will redirect to a scan website to pay for shipping.
+[  324.4-  326.7] Most payments are online bank transfer
+[  326.7-  331.1] to a charity foundation, which is not belong to the scammer.
+[  331.1-  334.3] The price is about 2 to 5 euros.
+[  334.3-  336.0] Yeah, it's very cheap.
+[  336.0-  339.3] The purpose is not to get the money in this step.
+[  339.3-  341.5] It's a compliance test.
+[  341.6-  343.8] If a victim paid at this step,
+[  343.8-  347.0] which means they are considered easy to scan,
+[  347.0-  350.1] yeah, scammer always choose who is easy to scan
+[  350.1-  352.8] and will not try to cheat the smart people.
+[  352.8-  355.6] So be smart, OK?
+[  355.6-  358.7] OK, let me post at this step.
+[  358.7-  362.1] In fact, we can fish their fish at this step.
+[  362.1-  365.8] Since someone of the scammer here are the real people,
+[  365.8-  370.0] so we can set up an IP loger and to do some social engineering
+[  370.0-  372.2] to get some IP information.
+[  372.2-  375.7] Yeah, for example, we can say all the website is error
+[  375.7-  380.3] and post the image URL link to our own IP loger.
+[  380.3-  383.6] Yeah, but from the OP sec perspective,
+[  383.6-  387.5] this carries certain risk because we may be discovered.
+[  387.5-  390.3] If many people use this method in the feature,
+[  390.3-  392.9] it will maybe be discovered.
+[  392.9-  396.6] OK, so we can gather scammer IP using this method.
+[  396.6-  400.7] Most of the IP are the overseas IP using VPN
+[  400.7-  404.8] or the roaming SIM car in the cell phone simulator.
+[  404.8-  406.5] It's hard to catch that.
+[  406.5-  409.2] But if the scammer makes some mistake,
+[  409.2-  412.6] maybe we can get the real IP and call the police.
+[  412.6-  417.6] OK, OK, so go back to the scam chat.
+[  417.6-  420.6] For the money stage attack, the next step
+[  420.6-  423.0] after transferring the shipping fee,
+[  423.0-  425.6] the website will show that you made the sellers
+[  425.6-  427.4] can't get lucky.
+[  427.4-  432.4] Since you didn't have some real name identity replication,
+[  432.4-  436.4] he asked the waiting to contact a fake customer's support
+[  436.4-  438.4] to do the next step.
+[  438.4-  441.6] Since the fake customer support knows all the victim's
+[  441.6-  445.2] information, because the victim entered the personal data
+[  445.2-  446.8] into the fake website.
+[  446.8-  449.0] For example, the fake customer support
+[  449.0-  452.0] asked the waiting to transfer a certain amount
+[  452.0-  455.4] to a specific account to do the unlock process.
+[  455.4-  458.5] And then the scam successful.
+[  458.5-  463.8] So here is a quick summary of this kind of scam pattern.
+[  463.8-  467.4] They post the free giveaway via the social media,
+[  467.4-  470.2] then redirect it to the fake website
+[  470.2-  472.9] to do the compliance test.
+[  472.9-  477.3] Then they use a fake customer support for the unlocking
+[  477.3-  481.6] and manipulate user into making payment.
+[  481.6-  484.0] OK, so next part is the funniest part.
+[  484.0-  486.1] How we break into the system?
+[  486.1-  490.4] Yeah, when I say we, which means me and my AI agent partner.
+[  490.4-  491.0] Yeah.
+[  491.0-  493.2] You know, in the old day, he couldn't
+[  493.2-  495.5] need to do everything manually.
+[  495.5-  498.5] But now I just sit back, drink a coffee,
+[  498.5-  501.0] and watch my AI agent do a work.
+[  501.0-  501.8] Yeah.
+[  501.8-  504.1] Of course, I still need to guide AI
+[  504.1-  506.8] to do some and make some decisions.
+[  506.8-  511.0] But the boring part, AI will handle that.
+[  511.0-  513.8] So the first thing is Raycon.
+[  513.8-  518.1] Yes, when we use the strict or the hex track MCP,
+[  518.1-  520.6] the AI first do the directly scanned
+[  520.6-  523.2] and found some interesting stuff.
+[  523.2-  527.6] For example, we found an .bak in the directory.
+[  527.6-  533.3] It means the developer has many bad data practice.
+[  533.3-  538.1] And we can get some part of the source code to review.
+[  538.1-  542.6] So we can download the file and review it.
+[  542.6-  544.7] I use the code code to review the source code
+[  544.7-  548.8] and found some receiver URL and some SQL query that
+[  548.8-  550.7] has a SQL ingestion vulnerability.
+[  550.7-  552.1] Yeah.
+[  552.1-  554.7] And for example, this one.
+[  554.7-  558.5] And the entire source code has so many SQL ingestion
+[  558.5-  560.7] vulnerabilities.
+[  560.7-  563.8] So next step, we can try to craft the payload
+[  563.8-  567.2] and get more desktop-based information, right?
+[  567.2-  571.0] So for example, we can try to use a boring-based injection
+[  571.0-  575.7] and Y equals to 2 and SQL for 5 seconds,
+[  575.7-  577.7] and even use time-based injection
+[  577.7-  580.4] to get the database name, information schema,
+[  580.4-  582.2] and so on, right?
+[  582.2-  585.2] But who wants to do this kind of basic SQL injection?
+[  585.2-  589.0] We all know that we can use SQL Map to do that.
+[  589.0-  592.3] Yeah, AI also choose SQL Map to do it.
+[  592.3-  593.0] Yeah.
+[  593.0-  597.4] So just enter the SQL Map, enter the argument,
+[  597.4-  599.0] and press Enter.
+[  599.0-  605.4] But the response is yes, but actually no.
+[  605.4-  609.6] The parameter click ID does not seem to be injectable.
+[  609.6-  611.2] So what happened?
+[  611.2-  613.8] We already checked the source code is vulnerable,
+[  613.8-  617.6] but we can exploit it with the SQL Map.
+[  617.6-  620.4] After that, I did a manual testing
+[  620.4-  624.8] by adding the birth suite to check the raw HTTP request.
+[  624.8-  629.0] The response shows, please use your mobile phone to open.
+[  629.0-  631.8] Maybe it's not a WAF to prevent SQL injection.
+[  631.8-  635.5] It's just set up a forced user to access this website
+[  635.5-  638.0] using a cell phone, OK?
+[  638.0-  640.6] So, OK, we can just set up a user agent
+[  640.6-  645.7] to ask us if we are using a cell phone, and it works.
+[  645.7-  655.9] OK, but the boring-based is not efficient,
+[  655.9-  658.6] so we assume that maybe other page also
+[  658.6-  661.4] has some SQL injection vulnerability, right?
+[  661.4-  665.1] Maybe there's a union-based is easier to use.
+[  665.1-  667.9] Yeah, after testing, we found that another page
+[  667.9-  670.0] has a union-based query.
+[  670.0-  673.6] But on the closer inception, we discovered
+[  673.6-  676.1] that the table has 85 colors.
+[  676.1-  679.2] So why does the table need 85 colors?
+[  679.2-  684.6] I totally don't understand, but we will talk about it later.
+[  684.6-  688.0] So, and we found the main user's database.
+[  688.0-  692.0] The database store the pen test username and password.
+[  692.0-  695.3] So after getting that, we might be able to log in
+[  695.3-  697.9] to the backend console, right?
+[  697.9-  701.3] But if you've ever done this in the real world,
+[  701.3-  703.6] you may know, the most difficult part
+[  703.6-  706.8] is not to obtain a credential.
+[  706.8-  712.4] It's to find the login page and use that, OK?
+[  712.4-  717.5] Then I use AI to help me to scale more deeply.
+[  717.5-  720.5] I also did a recursive scan and even generate
+[  720.5-  725.0] a customized word list for the past scanning.
+[  725.0-  727.7] Yes, to generate a customized word list
+[  727.7-  731.7] based on the previous scan result, it's very useful in AI.
+[  731.7-  738.1] For example, if we found a main backup.php,
+[  738.1-  741.2] the AI will try at the main login.php,
+[  741.2-  745.0] at the main panel.php, and the similar name.
+[  745.0-  747.6] Then, so we can find the login page.
+[  747.6-  752.1] But the login page is weird, not like a backend.
+[  752.1-  756.4] It only needs a password, not a username and password.
+[  756.4-  759.5] The password we got doesn't work in this page.
+[  759.5-  763.2] So the AI automatically to decide to generate
+[  763.2-  765.9] a password is to prove all that.
+[  765.9-  767.3] And guess what?
+[  767.3-  770.1] AI successfully gets the right password.
+[  771.1-  779.5] And the password is just a domain.
+[  779.5-  781.7] Yeah, OK.
+[  781.7-  785.1] So after logging into the system, wait, what?
+[  785.1-  788.5] It's not a domain page, it's a web show.
+[  788.5-  793.2] In fact, I have no idea why there is a web show
+[  793.2-  796.5] in the scan phishing website.
+[  796.5-  799.1] So we believe there are three possible reasons
+[  799.1-  802.3] that why a web show appears.
+[  802.3-  805.1] First, maybe it's a crime within crime.
+[  805.1-  808.3] The developer left a backdoor on the website.
+[  808.3-  811.4] You may know, even crime doesn't trust each other.
+[  811.4-  812.3] Yeah.
+[  812.3-  815.3] Or maybe it's just for the maintenance purpose.
+[  815.3-  818.2] The backdoor is used for the quick fixes.
+[  818.2-  820.7] Like when something breaks at 3 AM,
+[  820.7-  823.9] they don't want to access it into the server.
+[  823.9-  826.9] Or maybe the site is already hacked.
+[  826.9-  831.3] Some eternal haker is breached the site before us.
+[  831.4-  834.2] But, honestly, we don't care why.
+[  834.2-  837.1] For us, it's very useful for further investigation.
+[  837.1-  839.4] Free show, thank you very much.
+[  839.4-  843.2] Yeah.
+[  843.2-  844.5] OK.
+[  844.5-  847.3] So now we have a web show.
+[  847.3-  849.9] We can see all the inside files and paths.
+[  849.9-  852.2] We can also find the real login page
+[  852.2-  854.4] to log into the system.
+[  854.4-  857.9] This is where the real fun begins.
+[  857.9-  860.5] We are now inside a scammer system.
+[  860.5-  863.6] And we can see how they operate their business.
+[  863.6-  866.5] Yeah, I say business because of them.
+[  866.5-  868.3] Scamming is a business.
+[  868.3-  872.8] They have the product, customer, even the customer support.
+[  872.8-  874.9] Here is a hidden login page.
+[  874.9-  878.3] The Chinese text shows an ice blade system.
+[  878.3-  880.3] We can use the credential we obtain
+[  880.3-  884.1] from the secret injection to logging.
+[  884.1-  888.9] After logging to the system, it called the DAAPAN system.
+[  888.9-  892.2] And it live a telegram ID on the website.
+[  892.2-  895.4] And the page also says if you need any support,
+[  895.4-  898.7] please contact DAAPAN using the telegram.
+[  898.7-  904.3] So we can use the telegram ID to find the developer DAAPAN.
+[  904.3-  908.2] Inside the system, we can find some product management system.
+[  908.2-  912.6] Scammer can add a new product to generate a new URL
+[  912.6-  916.6] and perform other operations.
+[  916.6-  918.8] In the older management page, it
+[  918.8-  921.8] shows a lot of victim sensitive information,
+[  921.8-  924.9] such as the phone number, address, and name,
+[  924.9-  927.2] and some transfer screenshot.
+[  927.2-  929.9] The fake customer support can use this information
+[  929.9-  936.1] to increase the trust in the state of the scam process.
+[  936.1-  938.5] And here is an interesting page.
+[  938.5-  942.6] It's a fake bank app, Raker, and iOS notification page
+[  942.6-  945.4] screenshot generator in the site.
+[  945.4-  948.4] It shows a kind of freezing notification, say,
+[  948.4-  951.6] more than 2000 UR was frozen.
+[  951.6-  954.9] The scammer used this screenshot in social engineering
+[  954.9-  957.8] to prove that the victim has their account,
+[  957.8-  959.3] has been locked in.
+[  959.3-  960.9] It's very smart.
+[  960.9-  963.9] The victim already paid for the shipping fee.
+[  963.9-  966.9] So they believe the translation is real.
+[  966.9-  969.4] And when they see the fake screenshot,
+[  969.4-  972.5] they panic and follow the scammer's instruction.
+[  972.5-  976.9] Social engineering is a powerful weapon for scammer.
+[  976.9-  980.0] So OK, let's go back to the web show.
+[  980.0-  984.8] It's a PHP 5, and very old system built in 2020.
+[  984.8-  989.5] But we want to ask the queue more comment directly.
+[  989.5-  993.2] But in PHP info, it shows that most disabled functions
+[  993.2-  994.1] are set.
+[  994.1-  997.5] So we couldn't ask the queue any normal system comment.
+[  997.5-  999.9] And then I asked AI to help me to find
+[  999.9- 1004.5] if there was any opportunity to bypass that.
+[ 1004.5- 1009.8] Yeah, AI tells me we can use a tool called fuckface CGI.
+[ 1009.8- 1013.6] Yeah, to use a fake CGI to bypass the restriction,
+[ 1013.6- 1018.3] just add some CGI client and upload it like a web show.
+[ 1018.3- 1021.5] So then we got the full RCE on the state's turn.
+[ 1021.5- 1023.9] We can ask the queue the system comment.
+[ 1023.9- 1028.7] OK, but currently we are a low privilege use.
+[ 1028.7- 1030.2] We want the higher privilege.
+[ 1030.2- 1032.9] We need to do the privilege escalation.
+[ 1032.9- 1035.2] The basic enumeration shows that it's
+[ 1035.2- 1039.6] a set of seven with an oldness version, right?
+[ 1039.6- 1045.8] So we can use a legendary CVE called PUNKIT, CVE 2021 4034
+[ 1045.8- 1048.3] to escalate the privilege to root.
+[ 1048.3- 1051.0] This vulnerability is from 2021,
+[ 1051.0- 1053.8] but many servers are still not patched.
+[ 1053.8- 1057.4] PUNKIT is one of my favorite privilege escalation vulnerability,
+[ 1057.4- 1062.0] because it works on almost every Linux system.
+[ 1062.0- 1064.6] The vulnerability is in a policy kit,
+[ 1064.6- 1069.4] which is installed by the default and most Linux distribution.
+[ 1069.4- 1072.8] If you are a system administrator, please patch your system.
+[ 1072.8- 1076.3] And if you are a haker, well, you know how to do it.
+[ 1076.3- 1077.6] OK.
+[ 1077.6- 1080.9] So now we got the full root permission.
+[ 1080.9- 1085.1] We can see the system built using an AI panel in Chinese version
+[ 1085.1- 1090.2] called Bautamian butt, just like an XAMPP or LAMP.
+[ 1090.2- 1094.2] It contains the njanks, MySQL, and some work.
+[ 1094.2- 1098.8] AI panel is very popular in China, because it's easy to use.
+[ 1098.8- 1101.9] You can set up a web server in minutes without any Linux
+[ 1101.9- 1103.0] knowledge.
+[ 1103.0- 1105.5] Maybe we can find some interesting stuff
+[ 1105.5- 1109.1] through the AI panel's log.
+[ 1109.1- 1112.8] Through the log, we discovered that building a new phishing
+[ 1112.8- 1115.9] website only takes about four minutes.
+[ 1115.9- 1119.2] From uploading the source code to import the database
+[ 1119.2- 1122.4] and the SSL certificate.
+[ 1122.4- 1126.7] Also, when they need to rotate and change the new domain name,
+[ 1126.7- 1128.9] it only takes about one minute.
+[ 1128.9- 1130.5] It's very scary.
+[ 1130.5- 1134.5] I believe the speed of government or the anti-scan product
+[ 1134.5- 1137.0] to add the block list is definitely
+[ 1137.0- 1140.2] slower than they can change a new domain.
+[ 1140.2- 1142.5] So manual blocking the domain today
+[ 1142.5- 1147.0] is not an effective way to against the fault.
+[ 1147.0- 1149.2] Let's continue to check the source code.
+[ 1149.2- 1152.8] We found the database username and password are both just
+[ 1152.8- 1153.8] cute.
+[ 1153.8- 1156.1] OK.
+[ 1156.1- 1159.9] And there is a hidden page show of PHP in my domain.
+[ 1159.9- 1163.8] So we can log in using the SQL credential to check.
+[ 1163.8- 1167.3] In the database, there are many different phishing template.
+[ 1167.3- 1173.8] For example, China's app like Dran Dran, Xing, or Zhou Yimao.
+[ 1173.8- 1175.7] And also, we can answer the question,
+[ 1175.7- 1179.1] why they are a table with the 85 color.
+[ 1179.1- 1182.7] The table contains the region, the stock, the heat,
+[ 1182.7- 1185.9] the recovery rate, and many other attributes.
+[ 1185.9- 1189.0] The table inherom many unnecessary colors
+[ 1189.0- 1193.3] since it's up for many different scan templates.
+[ 1193.3- 1196.8] So let's go back to the web show.
+[ 1196.8- 1200.5] There is an installation package on the web.
+[ 1200.5- 1202.9] Maybe we can download the entire package
+[ 1202.9- 1207.4] to get more interesting stuff.
+[ 1207.4- 1210.7] Yeah, so we can ask AI like check code
+[ 1210.7- 1212.9] to review the entire code.
+[ 1212.9- 1217.3] Are there any other vulnerability or the interesting stuff?
+[ 1217.3- 1219.8] There is where AI really useful,
+[ 1219.8- 1222.3] reading thousands of flying off the PHP code,
+[ 1222.3- 1224.6] it's boring, and time consuming.
+[ 1224.6- 1227.7] But for AI, it's just a few seconds.
+[ 1227.7- 1230.5] I upload all the source code to the Cloud Code
+[ 1230.5- 1233.5] and ask it to find the vulnerability.
+[ 1233.5- 1237.5] And the result, more than 20 security issue,
+[ 1237.5- 1240.7] including SQL injection, file upload bypass,
+[ 1240.7- 1243.3] and hardware credential.
+[ 1243.3- 1246.0] We discovered that the web show is
+[ 1246.0- 1248.8] in the installation page originally.
+[ 1248.8- 1255.4] So it highly probable that the developer lives it on purpose.
+[ 1255.4- 1258.8] We also discovered a fun vulnerability here.
+[ 1258.8- 1260.6] I will give you five seconds.
+[ 1260.6- 1262.7] Can you explain?
+[ 1262.7- 1265.8] Yes, it will check the file extension name
+[ 1265.8- 1267.7] in the first line, right?
+[ 1267.7- 1270.5] And if the extension name check fail,
+[ 1270.5- 1274.7] it will return error message.
+[ 1274.7- 1278.0] Okay, AI can help me to find the logic vulnerability.
+[ 1278.0- 1280.3] The source code checks the extension name
+[ 1280.3- 1283.0] and responds the error message, right?
+[ 1283.0- 1285.5] But the vulnerability is here.
+[ 1285.5- 1287.6] Although it checks the extension name,
+[ 1287.6- 1290.7] this statement doesn't return or access the function.
+[ 1290.7- 1294.4] The program continues to execute and upload a file.
+[ 1294.4- 1298.5] Therefore, we can abuse this function to RC again
+[ 1298.5- 1300.3] without a preview of the web show.
+[ 1301.8- 1303.9] We can upload our own web show,
+[ 1303.9- 1308.3] even if the web show doesn't present on the website.
+[ 1308.3- 1313.3] So we also discovered some similar site without a web show.
+[ 1313.5- 1316.6] So we can use this function to upload our own one.
+[ 1318.4- 1323.0] And the most fun part is AI discovers some telegram stuff
+[ 1323.0- 1326.0] in the system called telegram admin,
+[ 1326.0- 1329.2] telegram config, and telegram error log.
+[ 1330.8- 1333.3] When we access the telegram admin page,
+[ 1333.3- 1335.8] it requires another credential to log in.
+[ 1337.1- 1339.3] But after checking the backend source code,
+[ 1339.3- 1343.1] we found that the password is hardcore in the website.
+[ 1343.1- 1346.4] So we can just log in to the telegram backend again.
+[ 1346.4- 1350.9] Okay, the backend is looked like this.
+[ 1350.9- 1353.9] And it can set up the telegram chat bot token,
+[ 1353.9- 1356.5] the group ID, and some domain name.
+[ 1357.5- 1359.9] If you are familiar with the vibe coding,
+[ 1359.9- 1364.3] you may know this purple blue UI called the vibe purple.
+[ 1364.3- 1368.7] It's a telling UI style that most AI use it by default.
+[ 1368.7- 1371.5] Even the author at them from the telling UI
+[ 1371.5- 1375.1] come out to apologize that they pollute the LN
+[ 1375.1- 1377.1] to generate this style.
+[ 1377.1- 1380.5] So when you see the website with this purple color,
+[ 1380.5- 1383.9] there is a good chance it was built by AI.
+[ 1383.9- 1388.1] And it's actually a useful indicator for the three hunting.
+[ 1389.1- 1394.1] So we found the telegram configuration page like this.
+[ 1394.1- 1398.3] When a user post a token or the URL,
+[ 1398.3- 1401.8] it will write a config PHP file to set it up.
+[ 1401.8- 1404.7] Yeah, do you find another vulnerability?
+[ 1404.7- 1407.2] The bot token, the group ID,
+[ 1407.2- 1409.7] and the domain is user controllable.
+[ 1410.9- 1415.8] So since it has some regular expression to check the parameter,
+[ 1416.1- 1418.0] but it is easy to bypass.
+[ 1419.3- 1422.2] So we can craft a payload and write a web show
+[ 1422.2- 1423.5] through this method.
+[ 1425.2- 1429.2] Yeah, so we got RC again through a PHP injection,
+[ 1429.2- 1431.7] using AI to generate a payload
+[ 1431.7- 1433.9] to attack AI generated website.
+[ 1433.9- 1435.8] It's the funniest part.
+[ 1435.8- 1438.4] The scamer used AI to build their website
+[ 1438.4- 1440.4] and we use AI to hack it.
+[ 1440.4- 1443.4] AI versus AI will come to 2025.
+[ 1444.4- 1453.7] And, honestly, the AI-generated code
+[ 1453.7- 1455.6] are so many vulnerabilities,
+[ 1455.6- 1457.7] it's like a playground for haker.
+[ 1458.9- 1462.3] Next, we can act as if we are a booting.
+[ 1462.3- 1465.5] Let's try to collect the data and follow the trail
+[ 1465.5- 1467.4] to see what we have.
+[ 1467.4- 1469.5] This is an important part.
+[ 1469.5- 1473.3] As a security researcher, we don't just hack for fun.
+[ 1473.3- 1477.6] We want to understand the threat and help to protect people.
+[ 1477.6- 1480.7] So let's see what information we can get here
+[ 1480.7- 1482.1] from inside the system.
+[ 1483.2- 1486.9] First, since we already have the root RCE,
+[ 1486.9- 1488.7] we can get a web access log
+[ 1488.7- 1490.4] and filter the admin page
+[ 1490.4- 1492.9] to get attackers IP address, right?
+[ 1492.9- 1494.4] Okay.
+[ 1494.4- 1497.3] And then through the telegram configuration page,
+[ 1497.3- 1501.3] we can get a telegram group token and group name.
+[ 1501.3- 1502.7] Okay.
+[ 1502.7- 1505.7] Also, the telegram error log
+[ 1505.7- 1507.7] contain the chat bot information
+[ 1507.7- 1510.3] and the communication record.
+[ 1510.3- 1512.4] And when it get a new victim,
+[ 1512.4- 1515.2] the bot will send a message to the chat.
+[ 1515.2- 1518.0] This includes a victim's sensitive information.
+[ 1519.4- 1521.5] And they can also use the chat bot
+[ 1521.5- 1524.8] to publish a new product item to the system.
+[ 1526.4- 1528.1] Here are some group chat messages
+[ 1528.1- 1530.5] that I already translated to English.
+[ 1530.5- 1534.3] For example, when they successfully scan a victim,
+[ 1534.3- 1537.1] the group will send a congratulation message
+[ 1537.1- 1540.8] and even wish for a new wider girlfriend every day.
+[ 1542.7- 1544.7] And also some chat like this.
+[ 1544.7- 1549.3] They even scan 13 years old student who is in the school
+[ 1549.3- 1551.7] and make her contact her family.
+[ 1553.2- 1555.5] Or if the website's broken,
+[ 1555.5- 1558.3] they will also share in the chat.
+[ 1558.3- 1561.5] For example, if the time is approaching midnight,
+[ 1561.5- 1564.8] they will knock off and switch the server and domain.
+[ 1564.8- 1568.9] But since we all know switching domain only costs one minute,
+[ 1568.9- 1571.8] so I believe it's a very, very efficient group.
+[ 1573.0- 1577.3] So through entire log, we can identify the developer.
+[ 1577.3- 1579.0] The tech lead called Da Pang,
+[ 1579.0- 1582.2] and there is an operation lead called Tai,
+[ 1582.2- 1584.9] and a core member called Chen Lei.
+[ 1584.9- 1588.0] And there are more than 30 sales people in the chat.
+[ 1588.0- 1589.9] There is like a real company.
+[ 1589.9- 1592.4] They have different department, different role,
+[ 1592.4- 1594.8] and even the KPI.
+[ 1594.8- 1596.6] The sales people are responsible
+[ 1596.6- 1600.1] for finding vectoring on the social media.
+[ 1600.1- 1602.9] The tech team maintain the phishing website
+[ 1602.9- 1606.2] and operation lead manage the whole process.
+[ 1607.8- 1610.5] We also identify their telegram group,
+[ 1610.5- 1612.3] called Gongxi Farsai.
+[ 1612.3- 1614.2] This is a main work group.
+[ 1614.2- 1617.5] And they also have some invention link generation
+[ 1617.5- 1619.5] and the technical discussion group.
+[ 1620.9- 1625.4] We found several different websites that use the similar SDK,
+[ 1625.4- 1627.7] but a little bit different.
+[ 1627.7- 1630.7] We believe it's an enhanced version.
+[ 1630.7- 1634.7] The first version used QQ for the customer service
+[ 1634.7- 1636.7] in July this year.
+[ 1636.7- 1640.7] The second version we discovered is from this August.
+[ 1640.7- 1643.3] The website provides a semi-automation
+[ 1643.3- 1646.1] and some voice notification.
+[ 1646.1- 1648.6] And the latest version also provides
+[ 1648.7- 1651.0] AI-based auto command generation
+[ 1651.0- 1653.2] and the multi-group management.
+[ 1653.2- 1655.4] I believe they are currently using AI
+[ 1655.4- 1657.3] to do more things automatically.
+[ 1658.3- 1661.5] The speed of evolution is very fast.
+[ 1661.5- 1664.2] In just a few minutes, few months,
+[ 1664.2- 1666.9] they upgrade their system multiple times.
+[ 1668.2- 1670.2] And we also discover
+[ 1670.2- 1672.9] when we go to the admin page directly,
+[ 1672.9- 1675.5] without providing the password,
+[ 1675.5- 1679.7] it will show a message called qingtanru zai shahi,
+[ 1679.7- 1682.3] please log in before shahi.
+[ 1682.3- 1687.1] In Chinese, shahi shahi, like killing fish, shahi.
+[ 1687.1- 1689.5] So we believe it implies the fishing.
+[ 1690.6- 1692.6] So after getting this keyword,
+[ 1692.6- 1695.0] we found some tutorial on Billy Billy,
+[ 1695.0- 1696.7] a Chinese video platform,
+[ 1696.7- 1699.0] showing how to build a server.
+[ 1699.0- 1700.8] You can even set up a server
+[ 1700.8- 1703.7] using just a mobile phone without any computer.
+[ 1704.7- 1707.3] In the comment of the tutorial,
+[ 1707.3- 1709.7] someone also saw this program.
+[ 1709.7- 1713.5] The price of the platform is only 20 IMB,
+[ 1713.5- 1715.7] which is about 2.5 euros.
+[ 1716.5- 1718.5] Well, okay.
+[ 1718.5- 1721.4] We also found this platform source code
+[ 1721.4- 1723.4] is shared on the internet.
+[ 1723.4- 1725.9] And it is 13 in one,
+[ 1725.9- 1729.7] which means it has a 13 different platform template.
+[ 1729.7- 1733.2] So sure, I download one of these to review.
+[ 1735.4- 1738.3] I discovered some interesting source code comment.
+[ 1738.3- 1740.9] For example, logging fail down best,
+[ 1740.9- 1743.3] and fuck your mother does the IP.
+[ 1744.9- 1747.2] Look at that ADF thinking about fork,
+[ 1747.2- 1749.8] forking your mother should be die first.
+[ 1751.5- 1754.8] This comment shows the developer really hates people
+[ 1754.8- 1757.0] who try to copy or fork their code.
+[ 1757.9- 1760.8] But now, funniest part thing is,
+[ 1760.8- 1763.5] the code is not sure everywhere in the internet.
+[ 1764.5- 1765.8] Okay.
+[ 1765.8- 1769.8] So we also compare the source code with our first case.
+[ 1769.8- 1772.2] It shows more than 80% is same.
+[ 1773.7- 1775.9] And in the 13 in one version,
+[ 1775.9- 1779.0] even the upload vulnerability is patched,
+[ 1779.0- 1783.5] but another vulnerability appear in the same file.
+[ 1783.5- 1786.5] So why the PHP in the upload allow list?
+[ 1795.7- 1798.2] When the developer close one backdoor,
+[ 1798.2- 1799.5] they open another one.
+[ 1801.3- 1805.1] Also, the original version of the phishing platform
+[ 1805.1- 1807.9] contain a license management service.
+[ 1807.9- 1811.9] It will post a domain information to check the license.
+[ 1811.9- 1815.0] But the latest one or Taiwanese version
+[ 1815.0- 1816.7] doesn't have this function,
+[ 1816.7- 1819.6] which means our version might be a crack version.
+[ 1819.6- 1820.5] Okay.
+[ 1823.3- 1826.4] So here is a framework summary.
+[ 1826.4- 1829.3] The original version built in 2016.
+[ 1829.3- 1834.3] Then China used it to become the short platform in 2020.
+[ 1834.3- 1838.0] Now, a new fork talking Taiwan called Da Pang
+[ 1838.0- 1839.9] using the same code base.
+[ 1839.9- 1841.8] Is there only two forks?
+[ 1841.8- 1845.5] The answer very, very sadly, no.
+[ 1845.5- 1847.6] This is like a malware family tree.
+[ 1847.6- 1851.3] One original version and hundreds of variation.
+[ 1852.4- 1857.3] So like here is another fork and another.
+[ 1857.4- 1860.2] One more, and more, and more,
+[ 1860.2- 1862.7] and more different fork from the platform.
+[ 1862.7- 1864.7] Then number is unpredictable.
+[ 1866.3- 1869.7] But luckily, we can use AI to help us find
+[ 1869.7- 1872.1] each fork signature summary
+[ 1872.1- 1875.2] and use some hosting tool to find a website.
+[ 1875.2- 1876.7] But I don't want to share more
+[ 1876.7- 1879.1] about how to identify the signature here,
+[ 1879.1- 1881.7] because maybe some bad guys are also here now.
+[ 1883.3- 1886.5] Okay, so I don't want them to do the evasion technique.
+[ 1887.7- 1890.9] For example, in October, just in one day,
+[ 1890.9- 1894.5] we discovered more than 20 new website
+[ 1894.5- 1897.0] with the same template.
+[ 1897.0- 1899.4] And all of them are already be re-booked,
+[ 1899.4- 1902.0] but new one appear every day now.
+[ 1903.5- 1907.7] Okay, so here is the summary of my talk.
+[ 1907.7- 1911.1] For the common finding, the phishing website
+[ 1911.1- 1913.5] can quickly rebuild and switch domain.
+[ 1913.5- 1916.6] Even in one minute, it's crazy fast.
+[ 1916.6- 1919.1] And we found several of them here.
+[ 1919.1- 1921.0] They share the same framework.
+[ 1921.0- 1923.9] One bug can be used in another fork.
+[ 1923.9- 1926.7] It's both the good news and the bad news.
+[ 1926.7- 1928.7] If there are no legal issue,
+[ 1928.7- 1931.4] it's holding the phishing website
+[ 1931.4- 1934.6] to do more investigation and collect evidence
+[ 1934.6- 1936.4] might be a good idea.
+[ 1936.4- 1939.1] But please careful, make sure you understand
+[ 1939.1- 1941.9] your law in your country before you're doing anything.
+[ 1942.9- 1947.7] And in the AI era, the 14 has a clear role
+[ 1947.7- 1949.2] and rotate quickly.
+[ 1949.2- 1950.9] They rapidly change the source code
+[ 1950.9- 1952.9] and use AI to help them.
+[ 1952.9- 1955.3] So in completely AI-based coding
+[ 1955.3- 1957.8] and phishing are growing very fast.
+[ 1957.8- 1961.4] For the web phishing, we need the web hunting.
+[ 1962.7- 1964.8] So to handle this problem,
+[ 1964.8- 1967.5] I believe to share the three intelligence
+[ 1967.5- 1970.7] across team and country is necessary.
+[ 1970.7- 1973.2] For example, the shark platform
+[ 1973.2- 1977.7] is also used in Taiwan, Japan, China, and Hong Kong.
+[ 1977.7- 1980.6] Although the front end is totally different,
+[ 1980.6- 1985.6] but they use the same back end and share the same vulnerability.
+[ 1986.1- 1990.6] So the course border case can be of a valuable insight.
+[ 1990.6- 1993.9] In the reality is, in 2025,
+[ 1993.9- 1997.2] it's very hard to remove all the skin sites.
+[ 1997.2- 1999.4] When you block one phishing site,
+[ 1999.4- 2001.6] five new websites will appear.
+[ 2001.6- 2005.9] This kind of thing should be automatically, not manual.
+[ 2005.9- 2008.6] For example, to do the real-time monitoring
+[ 2008.6- 2011.1] of the newly-registration domain
+[ 2011.1- 2014.1] and install the local LMM in the browser
+[ 2014.1- 2016.5] to check the URL and the content.
+[ 2017.3- 2020.9] So let's become the vibe hunter
+[ 2020.9- 2023.9] and fight vibe scammer together.
+[ 2025.0- 2028.8] In the age of AI, only AI can beat AI.
+[ 2028.8- 2031.3] This is not a slogan, it's a reality.
+[ 2031.3- 2034.2] Scammer are using AI to build a website
+[ 2034.2- 2037.7] to write a message and automatically attack.
+[ 2037.7- 2039.8] If we don't use AI to fight back,
+[ 2039.8- 2042.7] we will always be one step behind.
+[ 2042.7- 2046.1] So let's embrace AI to learn how to use it
+[ 2046.1- 2050.5] and become a vibe haker, vibe hunter together.
+[ 2050.5- 2052.3] So that's all my presentations.
+[ 2052.3- 2053.9] Thank you very much.

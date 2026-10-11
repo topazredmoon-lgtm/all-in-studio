@@ -1,0 +1,579 @@
+[    0.3-   17.3] And this talk is about, please identify yourself.
+[   17.3-   20.3] Thomas Löninger, Uptev Tiwari.
+[   20.3-   31.1] Thank you. So today what we're going to talk about
+[   31.1-   34.1] are digital ID systems, why they exist in the world,
+[   34.1-   37.1] what are some of the lessons that we can learn from the ways
+[   37.1-   39.1] that they've been deployed in certain countries,
+[   39.1-   41.1] and more importantly, what's happening next,
+[   41.1-   44.1] and what are the ways of resistance.
+[   44.1-   48.1] Digital ID systems tend to be quite prolific.
+[   48.1-   51.1] This map is just a very small indication of some of the systems
+[   51.1-   53.1] that we will be talking about today.
+[   53.1-   56.1] It's by no means indicative of all of the digital ID systems
+[   56.1-   59.1] that exist in the world, but it's particularly the color red
+[   59.1-   62.1] and the color orange that are important for us.
+[   62.1-   65.1] Color red is India, where we will talk about India's
+[   65.1-   68.1] Adhar project, which there have been talks on in previous
+[   68.1-   70.1] iterations of the Congress, so we'll be focusing
+[   70.1-   73.1] at a relatively higher level, and then in Europe
+[   73.1-   76.1] there's the EIDIS regulation, which specifically looks at how
+[   76.1-   79.1] digital identity will operate in Europe,
+[   79.1-   82.1] and is set to radically shake up the way that most citizens
+[   82.1-   85.1] will interact with their governments in a digital age.
+[   85.1-   93.1] The Adhar project in India is something that,
+[   93.1-   96.1] sorry, something wrong with the clicker.
+[   96.1-   99.1] So the Adhar project in India is fundamentally driven
+[   99.1-  102.1] and motivated by one of the SDGs.
+[  102.1-  106.1] Specifically, 16.9 of the UN's sustainable development goals
+[  106.1-  111.1] talks about the importance of providing universal legal identity.
+[  111.1-  114.1] This is the point where it's important for us to separate identity,
+[  114.1-  117.1] which is something that is inherent in an individual,
+[  117.1-  120.1] versus identification, which is usually a manifestation
+[  120.1-  124.1] where a government or another authorized entity tells an individual
+[  124.1-  128.1] that this is how you can assert the identity that you already have.
+[  128.1-  132.1] This part of the SDG has led to a rapid proliferation
+[  132.1-  136.1] of governments, funders and international institutions
+[  136.1-  140.1] investing in digital ID projects, because digital ID is supposed
+[  140.1-  143.1] to leapfrog many of the concerns that traditional ID systems,
+[  143.1-  147.1] both on issuance as well as fraud, have faced in the past.
+[  147.1-  150.1] And the country that has tried to do this in its most ambitious
+[  150.1-  153.1] scale is India, with the Adhar project.
+[  153.1-  157.1] The Adhar project in India currently has between
+[  157.1-  161.1] 85 to 90% of the Indian population enrolled.
+[  161.1-  166.1] That is over 1.2 to 1.3 billion individuals
+[  166.1-  169.1] who already have an Adhar project.
+[  169.1-  172.1] The Adhar project has many security and privacy concerns,
+[  172.1-  175.1] it has many exclusion concerns, and while we'll be going over them
+[  175.1-  178.1] in some detail, in case you'd like to get into them,
+[  178.1-  182.1] please do listen to the talk that Kiran gave at the last Congress
+[  182.1-  185.1] that actually does a deep dive into a lot of these concerns
+[  185.1-  187.1] around the Adhar.
+[  187.1-  191.1] At a fundamental basic level, the Adhar project is a concept
+[  191.1-  195.1] that says you don't need a physical ID card in order to identify yourself.
+[  195.1-  200.1] There is no chip, there are no ways in which the card contains information.
+[  200.1-  205.1] Instead, your biometrics are used to issue you a number.
+[  205.1-  208.1] And in order to issue you that number and ensure that there is no one else
+[  208.1-  211.1] like you in that system, there are three main components
+[  211.1-  214.1] that are ingested in order to carry out deduplication.
+[  214.1-  217.1] Your iris scans, your fingerprints and your biometrics,
+[  217.1-  221.1] as well as your photograph that is taken when you sign up for this system.
+[  221.1-  226.1] All of these three things are combined to issue you a unique 12 digit identifier
+[  226.1-  229.1] that stays with you for the rest of your life.
+[  229.1-  233.1] If it's compromised, or if it's even made publicly available,
+[  233.1-  235.1] it cannot be changed.
+[  235.1-  238.1] There is no provision under the laws that govern the Adhar in India
+[  238.1-  242.1] for that identifier to be reissued to an individual.
+[  242.1-  246.1] And most of the risks that stem from biometric identification
+[  246.1-  250.1] in most ID systems are magnified in the Adhar project
+[  250.1-  254.1] because it is you, your body that serves as the primary identifier
+[  254.1-  258.1] whenever you want to authenticate yourself using the Adhar.
+[  258.1-  262.8] That also leads to some pretty interesting scenarios
+[  262.8-  265.8] for how the Adhar project was actually rolled out in India.
+[  265.8-  269.8] This graph is really interesting because what it will showcase to you
+[  269.8-  273.8] is that the law that actually created the Adhar project
+[  273.8-  280.8] was passed and introduced in late 2016 and passed in late 2016 early 2017.
+[  280.8-  285.8] And the really shocking part is that over 980 million individuals
+[  285.8-  290.8] were enrolled in the Adhar project before there was a democratic process
+[  290.8-  295.8] to create a law that would govern how the project should work in practice.
+[  295.8-  298.8] Instead, there was an executive authority that was established in India
+[  298.8-  302.8] in order to push the project through and ensure that enrollment
+[  302.8-  307.8] could start taking place well before there was any concrete legal backing to the project.
+[  307.8-  312.8] This led to a lot of pushback from civil society within India,
+[  312.8-  315.8] which apart from its security and privacy concerns,
+[  315.8-  318.8] argued that it's really important for the project of the scale
+[  318.8-  322.8] and the magnitude of the Adhar to go through in a democracy
+[  322.8-  325.8] the deliberative process via laws and regulations
+[  325.8-  327.8] rather than merely executive action.
+[  327.8-  330.8] And that's the first trend and pattern that we will talk about
+[  330.8-  334.8] of how societies and democracies engage with digital identity.
+[  334.8-  339.5] After that, as enrollments continued,
+[  339.5-  342.5] we've also seen a second worrying trend.
+[  342.5-  346.5] The fact that the Adhar, which was initially proposed as an identifier
+[  346.5-  350.5] to perform one purpose, has slowly crept into various aspects of Indian life.
+[  350.5-  354.5] We've seen it being asked for school enrollments,
+[  354.5-  358.5] children under the age of two to three being asked to sign up for the Adhar,
+[  358.5-  363.5] where on the right hand side you will actually see a tweet from the official Adhar account,
+[  363.5-  367.5] actually asking for individuals to register their children,
+[  367.5-  371.5] sometimes even before they have a birth certificate on the Adhar project,
+[  371.5-  376.5] ignoring the fact that biometrics often change and evolve as individuals
+[  376.5-  379.5] grow over time, especially fingerprints.
+[  379.5-  385.5] And this scope creep has also led to this mandatory voluntary nature of the Adhar project,
+[  385.5-  388.5] where officially according to government policy,
+[  388.5-  390.5] the Adhar is not required for school enrollments,
+[  390.5-  392.5] and this is something that the government has clarified.
+[  392.5-  397.5] However, in practice, it's much more common to see that you will simply be
+[  397.5-  400.5] refused services both in the government as well as in the private sector
+[  400.5-  403.5] until you provide these details.
+[  403.5-  408.5] And another aspect of the Adhar project is that it is merely the foundation
+[  408.5-  412.5] of how India as a society is approaching digitization.
+[  412.5-  414.5] There is a concept known as India Stack,
+[  414.5-  418.5] and it's created by a voluntary group called Icepert in India,
+[  418.5-  423.5] and they envisage the Adhar being the foundation of a lot of the interactions
+[  423.5-  425.5] that one would carry out in society.
+[  425.5-  429.5] The presence and slayer, which talks about how the biometric identity
+[  429.5-  432.5] that you have will allow you to assert your identity digitally,
+[  432.5-  435.5] the paperless layer, where once you have asserted your identity,
+[  435.5-  439.5] official documents can be issued to you in a completely digital format.
+[  439.5-  443.5] Once the identity and the documentation piece is established,
+[  443.5-  447.5] you could enter into financial transactions and relationships,
+[  447.5-  451.5] which is called the cashless layer and is behind some of the most successful
+[  451.5-  454.5] projects in India on the financial inclusion front,
+[  454.5-  459.5] such as the United Payments Interface or UPI, and ultimately the consent layer,
+[  459.5-  462.5] where all three of these, and just even one and two,
+[  462.5-  467.5] can be combined in order to allow individuals to exert their consent
+[  467.5-  470.5] for all digital interactions.
+[  470.5-  475.5] The one thing that I will suggest we also keep in mind is that this idea
+[  475.5-  477.5] is not unique to India.
+[  477.5-  480.5] The UN is currently considering digital public infrastructure
+[  480.5-  485.5] or DPI as a big focus as a part of its work and a way to actualize SDGs,
+[  485.5-  489.5] and many of the trends and concepts that I've just spoken about here
+[  489.5-  492.5] are things that Thomas will also talk about both in the context of the EU
+[  492.5-  496.5] but also with regard to how these projects are proliferating elsewhere in the world.
+[  496.5-  499.5] With that, I now hand over to Thomas to talk about the EIDIS.
+[  499.5-  500.5] Thank you.
+[  500.5-  504.5] So, as you might have heard, we've recently concluded a huge reform
+[  504.5-  508.5] in the European Union to establish a harmonious digital identity scheme.
+[  508.5-  511.5] The starting positions in the EU are actually quite different.
+[  511.5-  515.5] We have very different systems in member states,
+[  515.5-  518.5] in the penetration, the uptake as also sometimes above 90%,
+[  518.5-  522.5] sometimes below 10%, and now the EU wants to harmonize
+[  522.5-  525.5] all of these various digital identity systems
+[  525.5-  528.5] with what they call the European digital identity wallet.
+[  528.5-  531.5] And you've guessed it, it's an app on your smartphone
+[  531.5-  535.5] that you as a holder can have and it can store your national identity
+[  535.5-  538.5] or your residency card, or also other attributes
+[  538.5-  540.5] that can come from the public or private sector.
+[  540.5-  543.5] These can be your driver license, your age.
+[  543.5-  546.5] It could be university degrees, but also customer royalty cards.
+[  546.5-  549.5] It could be financial scoring information,
+[  549.5-  552.5] or also your COVID certificate whether you have been vaccinated
+[  552.5-  555.5] or recovered from any type of disease.
+[  555.5-  559.5] And all of this stroke of personal data can then be used
+[  559.5-  562.5] whenever you authenticate, identify, verify attributes,
+[  562.5-  566.5] or sign documents vis-a-vis so-called relying parties.
+[  566.5-  570.5] And again, the system is open in terms of what a relying party is.
+[  570.5-  574.5] This could be a bank or a telecom company that legally is obliged
+[  574.5-  577.5] to identify you before they can have you as a customer.
+[  577.5-  580.5] It could also be the police or border control.
+[  580.5-  584.5] It could be whenever you are going to a theater,
+[  584.5-  587.5] whenever you are doing any type of e-commerce.
+[  587.5-  592.5] This is really a universal system to identify, authenticate,
+[  592.5-  596.5] and verify attributes about a natural legal person vis-a-vis
+[  596.5-  600.5] government or private sector online or in physical proximity
+[  600.5-  602.5] in an offline scenario.
+[  602.5-  604.5] And the commission has high plans for this.
+[  604.5-  607.5] They are aiming for 80% penetration in the European Union
+[  607.5-  609.5] by the end of this decade.
+[  609.5-  613.5] So this should become something that you come across every day
+[  613.5-  615.5] in a few years when the system is rolled out,
+[  615.5-  619.5] and the law actually makes sure that you will come across it
+[  619.5-  622.5] in case you use any of the big tech platforms.
+[  622.5-  626.5] So the Facebook, Google, Twitter, they are all required
+[  626.5-  630.5] via very large online platforms to offer this government wallet
+[  630.5-  633.5] as a means to log into their service.
+[  633.5-  637.5] And I don't think it was intended, but recently also porn platforms
+[  637.5-  641.5] like PornHub were classified as very large online platforms.
+[  641.5-  646.5] So you can also use the government wallet to log into PornHub.
+[  646.5-  649.5] It really is one tool to rule them all.
+[  649.5-  654.5] It is one size fits all solutions and one level of security
+[  654.5-  659.5] of technical assurances to buy cigarettes or do your taxes,
+[  659.5-  664.5] to open up a bank account or to log into Facebook.
+[  664.5-  667.5] And this universal key, of course, contains many risks.
+[  667.5-  670.5] But before we look closer into Europe,
+[  670.5-  672.5] giving up that to you, Puff.
+[  672.5-  673.5] Thanks Thomas.
+[  673.5-  676.5] As we talk about risks, we'll both be talking about some of the risks
+[  676.5-  679.5] and how they manifested in India during the deployment
+[  679.5-  682.5] of the Adhar project, as well as some of the risks that exist
+[  682.5-  684.5] within the EIDAS framework.
+[  684.5-  688.5] In India, some of the biggest risks have been around exclusion.
+[  688.5-  692.5] This idea that the Adhar would be compulsory if you were to
+[  692.5-  696.5] procure government services such as access to your rations,
+[  696.5-  701.5] admission into schools, access to banking services,
+[  701.5-  706.5] were all issues that led to a fair bit of pushback by civil society,
+[  706.5-  709.5] as well as many other interest groups in India.
+[  709.5-  714.5] A lot of these protests were quite successful in that it forced the government
+[  714.5-  718.5] in the entity and implementing the Adhar to make it clear
+[  718.5-  721.5] when the Adhar was mandatory and when the Adhar was not mandatory.
+[  721.5-  725.5] However, it didn't completely fix the problem because of what I had mentioned earlier.
+[  725.5-  730.5] If an provider refuses to provide you a service unless you're providing the Adhar,
+[  730.5-  734.5] it's usually much more convenient just to give them that piece of paper
+[  734.5-  738.5] than to tell them I have a copy of a government order that says that the Adhar
+[  738.5-  740.5] is not mandatory in order to provide the service.
+[  740.5-  744.5] This mandatory voluntary nature of the Adhar is one of the bigger reasons
+[  744.5-  750.5] that exclusion continues to be a concern despite ways in which it's actually been addressed in law.
+[  750.5-  756.5] There was also a very important risk of how the civil society organizations
+[  756.5-  763.5] were pushing back against the Adhar by characterizing those holding back India's progress into a digital age
+[  763.5-  767.5] and were sometimes targeted as individuals who were anti-national
+[  767.5-  771.5] and not in the interests of India, making it much harder for their arguments
+[  771.5-  776.5] to gain like credence in mainstream organizations and press.
+[  776.5-  779.5] Then came the privacy and security risks.
+[  779.5-  784.5] This is a graphic from the Times of India, a newspaper in India from earlier this year
+[  784.5-  789.5] that has documented that there have been at least 210 instances of leaks
+[  789.5-  792.5] from concerning Adhar numbers.
+[  792.5-  796.5] Now, the Indian government's stated position is that the UADI database,
+[  796.5-  802.5] that is the centralized database that stores the Adhar information has not been breached so far.
+[  802.5-  806.5] But the truth of the matter is that that database does not need to be breached
+[  806.5-  810.5] in order to access very sensitive information that is present in the Adhar.
+[  810.5-  812.5] And that's for a variety of reasons.
+[  812.5-  819.5] The first is that there are documented instances of the information that is present in the Adhar database
+[  819.5-  825.5] also being present in other databases that are either run by government agencies or by state governments.
+[  825.5-  830.5] Some states such as Telangana have been shown to have operated state resident data hubs
+[  830.5-  834.5] which were populated with information from the Adhar database
+[  834.5-  836.5] when individuals in that state were signing up.
+[  836.5-  840.5] So in order to access this sensitive information you don't necessarily need to compromise
+[  840.5-  844.5] the one centralized database where this information is present.
+[  844.5-  850.5] But there are far lower-hanging fruit that allow malicious actors to essentially achieve a similar outcome.
+[  850.5-  854.5] And one of the more obvious ways in which it happens is the screenshot on the right,
+[  854.5-  857.5] which is a screenshot that was released as part of news reports
+[  857.5-  863.5] where a government agency in a state in India was using the Adhar in order to carry out attendance
+[  863.5-  869.5] and biometric verification of attendance, which was then accessed by malicious actors
+[  869.5-  874.5] and data from that was pulled and then made generally available for individuals to purchase
+[  874.5-  878.5] either on the public web or on the dark web as well.
+[  878.5-  881.5] And finally, there is the scope creep.
+[  881.5-  887.5] This idea that the Adhar as a single identifier should be one that allows individuals
+[  887.5-  892.5] to link their services to each other so that governments can be sure that they are
+[  892.5-  894.5] who they claim that they are.
+[  894.5-  900.5] On the left-hand side you will see an official post by the election commission's state office in a state in India
+[  900.5-  904.5] asking people to link their Adhar to their voter ID cards,
+[  904.5-  908.5] something that so far according to law is not mandatory in India,
+[  908.5-  914.5] but as you can see from these like posts is very much being encouraged by the government.
+[  914.5-  920.5] And the image on the right is actually a promotional post that was put up by a company called Ongrid
+[  921.5-  926.5] that was promoting its services of being able to perform background verification merely using
+[  926.5-  931.5] an individual's Adhar numbers, where while this image itself is from 2017,
+[  931.5-  934.5] before the legal case that we mentioned earlier actually came up,
+[  934.5-  937.5] right at the bottom you'll notice it says enter OTP.
+[  937.5-  942.5] And that's in fact one of the most common ways in which Adhar information is actually utilized in India,
+[  942.5-  945.5] merely an SMS that comes to a registered phone number,
+[  945.5-  948.5] which as we all know has various security and privacy risks
+[  948.5-  954.5] and is not recommended as a second factor of authentication in most secure systems in the world,
+[  954.5-  960.5] but yet it is used within the Adhar and is in fact one of the most common things that is used in the Adhar.
+[  960.5-  965.5] And finally, there is this idea that the Adhar is a battle that has been complete.
+[  965.5-  969.5] This is none the Nilkini, one of the co-founders of a very large Indian company called Infosys,
+[  969.5-  975.5] as well as one of the chief architects behind the idea of the Adhar project
+[  975.5-  978.5] from at least 2007 to 2008.
+[  978.5-  981.5] And this is a quote that he actually has given in the recent past,
+[  981.5-  988.5] saying that the Adhar battle is now a part is complete because the Adhar is such an ingrained part of Indian culture
+[  988.5-  992.5] that it's a Dundee and it can now service the foundation for other efforts,
+[  992.5-  998.5] which makes pushback that civil society or digital rights groups might do seem like a lost cause
+[  998.5- 1003.5] because once it has been rolled out at the scale at which it has and everyone is already using it,
+[ 1003.5- 1010.5] how much can you really work towards making sure that it can be improved and if things are working fine anyway.
+[ 1010.5- 1014.5] And this also is something that has spread elsewhere around the world.
+[ 1014.5- 1020.5] The lessons that were learned from the Adhar project were key in many of the decisions that were made around the world
+[ 1020.5- 1023.5] to bring forth the problems of the idea of exclusion,
+[ 1023.5- 1029.5] which is how digital ID projects, despite sometimes being intended to simplify processes for individuals,
+[ 1029.5- 1033.5] end up excluding them either due to the lack of public infrastructure,
+[ 1033.5- 1040.5] including the internet and electricity, as well as flaws in the technical designs of these systems themselves.
+[ 1040.5- 1044.5] And this is also something that we've seen increasingly start happening in Europe as well.
+[ 1044.5- 1051.5] This is actually a petition that garnered over 600,000 signatories on Change.org
+[ 1051.5- 1058.5] that was run in Spain by pensioners demanding that there be a way for them to be able to access their financial entitlements
+[ 1058.5- 1066.5] in a physical manner because mobile banking was the only way that a lot of banks were providing those services
+[ 1066.5- 1069.5] and they did not have the digital literacy in order to be able to access them.
+[ 1069.5- 1075.5] Showcasing that digital exclusion by no means is something that is only limited to the global majority.
+[ 1075.5- 1081.5] With that I now hand over to Thomas to talk about how some of these risks have played out in the EIDAS 2.
+[ 1081.5- 1082.5] Thank you.
+[ 1082.5- 1089.5] What? So let's talk about over-identification, which is, I think, a very important, helpful frame
+[ 1089.5- 1094.5] to actually capture the risks that these systems entail for everyday situations.
+[ 1094.5- 1097.5] Right now, we very often can rely on anonymity.
+[ 1097.5- 1102.5] In the absence of these digital identity systems and ubiquitous facial recognition,
+[ 1102.5- 1106.5] you can walk across the street, go to a shop, buy something, nobody knows who you are.
+[ 1106.5- 1111.5] And it's exactly this type of anonymity that is at stake with these systems.
+[ 1111.5- 1115.5] We have seen various attempts across the world, but also in Germany, France or Austria,
+[ 1115.5- 1121.5] to establish real name laws on the internet or some type of registration before you are allowed to post.
+[ 1121.5- 1126.5] Very often, these proposals could only be prevented with the cost of identification,
+[ 1126.5- 1131.5] which is actually quite high. We are talking about a few euros that you have to multiply for millions of users.
+[ 1131.5- 1135.5] These government-run systems could set the price to none.
+[ 1135.5- 1140.5] And of course, if you have these systems ubiquitous in all areas of life,
+[ 1140.5- 1144.5] certainly the big question of observability comes into place.
+[ 1144.5- 1148.5] If you are able to correlate the actions of an individual in the health sector,
+[ 1148.5- 1152.5] in the financial sector, in their labour market, in their private life,
+[ 1152.5- 1157.5] in their interactions with the government, you know a damn lot about that person.
+[ 1157.5- 1162.5] And certainly, we cannot solely rely on the GDPR with protections on that.
+[ 1162.5- 1166.5] In many of these physical situations, consent is simply not enough.
+[ 1166.5- 1171.5] There are obvious flaws in the GDPR. That's why they are always currently being reformed,
+[ 1171.5- 1177.5] like pay or consent or prohibition of time. All of these weak points will come into play with these systems.
+[ 1177.5- 1180.5] And that's why we have to talk about safeguards.
+[ 1180.5- 1185.5] And we are now at the end of the European reform, so we also can take a look back
+[ 1185.5- 1190.5] on the most important safeguards that are in there, and let's start with the good.
+[ 1190.5- 1196.5] The one basic idea that when we got on our shoulders the weight of this reform
+[ 1196.5- 1199.5] was the idea to have a non-discrimination provision,
+[ 1199.5- 1203.5] to really protect everyone in any individual situation
+[ 1203.5- 1206.5] when they opt not to use this new system.
+[ 1206.5- 1210.5] So we established this idea as something like a wild shot,
+[ 1210.5- 1214.5] and then thankfully I was actually taken on board by all four committees in the European Parliament
+[ 1214.5- 1218.5] with a huge majority, and it made it through in the final law.
+[ 1218.5- 1223.5] So you are protected with any type of government service, the labour market,
+[ 1223.5- 1227.5] or the private sector, so that you cannot be asked to pay a higher price,
+[ 1227.5- 1232.5] refuse the service, or hinder it in any way, just because you're not using this system.
+[ 1232.5- 1236.5] You can always rely on alternatives. It can never be mandatory.
+[ 1236.5- 1241.5] The second important thing was the unique persistent identifier.
+[ 1241.5- 1246.5] These lifelong, serial numbers for humans, we just heard in India
+[ 1246.5- 1251.5] how the apart number is a very central part of the culture of society.
+[ 1251.5- 1257.5] Scandinavian countries actually have similar behaviours and cultures around their serial numbers,
+[ 1257.5- 1263.5] but we could actually prevent these unique persistent identifiers to become mandatory in the EU,
+[ 1263.5- 1269.5] and we are completely deleted, all of the references to something like this in the legal text.
+[ 1269.5- 1273.5] And there are other safeguards we can rely on.
+[ 1273.5- 1275.5] First, inform us a right of unanimity.
+[ 1275.5- 1281.5] Whenever you're not legally obliged to identify yourself, like with a bank or a telecom company
+[ 1281.5- 1286.5] in a country of a sim card registration, then you can always give them a pseudonym.
+[ 1286.5- 1293.5] When you prove something about yourself, it most likely will be done in the form of a zero-knowledge proof.
+[ 1293.5- 1298.5] That means you can prove a fact about yourself without revealing the underlying data.
+[ 1298.5- 1303.5] A classical example proved that you were above 18 without giving away your birthday.
+[ 1303.5- 1307.5] And then very importantly, and getting that flu was really a hack in the negotiations,
+[ 1307.5- 1309.5] unlinkability.
+[ 1309.5- 1315.5] This principle establishes that whenever you are interacting with a relying party,
+[ 1315.5- 1318.5] and again, you're not identifying with your legal real name,
+[ 1318.5- 1322.5] then they are technically prevented from correlating that.
+[ 1322.5- 1326.5] So there are no public keys that could be hatched,
+[ 1326.5- 1329.5] and I think that can actually be used to track and profile you.
+[ 1329.5- 1335.5] This is a clear requirement in the law for any type of technical implementation in the system.
+[ 1335.5- 1336.5] But it's not all about tech.
+[ 1336.5- 1341.5] We are dealing with companies, so it's also about regulating the use cases and the business models.
+[ 1341.5- 1344.5] And there is a strong use case regulation.
+[ 1344.5- 1350.5] Any relying party, any company that wants to use that system needs to go to the national authority,
+[ 1350.5- 1354.5] have the use case registered with exactly the amount of data
+[ 1354.5- 1359.5] they want to ask from users, and they are technically limited to that registration.
+[ 1359.5- 1364.5] And the whole list of registrations is up for public scrutiny online available.
+[ 1364.5- 1366.5] These are good things.
+[ 1366.5- 1368.5] Let's talk about the batteries.
+[ 1368.5- 1374.5] We failed to establish a safeguard against biometrics being a precondition of the system.
+[ 1374.5- 1381.5] So you can be asked to use Face ID, Touch ID in order to use this digital identity wallet.
+[ 1381.5- 1386.5] We've already seen in a few countries where this requirement exists that is a huge show stopper for people.
+[ 1386.5- 1391.5] They don't want to use their biometrics with any form of government ID system.
+[ 1391.5- 1397.5] And so that, sadly, is not a requirement, so it will be left from member states.
+[ 1397.5- 1402.5] The most severe admission in the articles of the law is the unobservability.
+[ 1402.5- 1407.5] I talked about this one optical view you could have if the issue in authority to government
+[ 1407.5- 1412.5] knows everything you do with the wallet, every transaction that you even attempt.
+[ 1412.5- 1417.5] And we really wanted to prevent this level of observability, but it's only in the recitals.
+[ 1417.5- 1426.5] So it can kick down the road, so we'll see in the technical specs whether we can actually get this solemnly enshrined in the text.
+[ 1426.5- 1431.5] But we have a fighting chance because in the recitals we have enough things to fight for.
+[ 1431.5- 1436.5] Which ugly things and muddy things are also worth mentioning.
+[ 1436.5- 1445.5] I think that hackers will have a lot of fun with this system because particularly in the first few years there's no common certification scheme in terms of how to make the system secure.
+[ 1445.5- 1450.5] And honestly, the certification scheme I'm not truly convinced about that.
+[ 1450.5- 1454.5] Like having a stamp this is secure is not always really secure.
+[ 1454.5- 1455.5] We all know that.
+[ 1455.5- 1460.5] But nevertheless there will be widely varying security levels in the beginning.
+[ 1460.5- 1462.5] And so that's certainly something to have fun with.
+[ 1462.5- 1465.5] So we have a little bit of an open source obligation.
+[ 1465.5- 1468.5] So at least the application components of the app needs to be open source.
+[ 1468.5- 1473.5] But not the backend and there are also security exceptions and of course it's only open source.
+[ 1473.5- 1479.5] It's not free software although it's public money.
+[ 1479.5- 1481.5] Thanks Thomas.
+[ 1481.5- 1484.5] Very briefly I'd also like to talk about some pretty interesting statistics.
+[ 1484.5- 1487.5] And this image is actually from 2019.
+[ 1487.5- 1492.5] But at that point in time well over a billion people were registered in the other database.
+[ 1492.5- 1500.5] Of both what are some of the measures that have been implemented in the Adhar ecosystem in order to address the security and privacy concerns.
+[ 1500.5- 1505.5] But also what are some of the trends of how individuals utilize their Adhar's.
+[ 1505.5- 1515.5] Probably one of the most interesting statistics is the fact that the vast majority of the use cases despite this actually being the digital ID continues to be in the physical world.
+[ 1515.5- 1521.5] Which is that the two most common manifestations are card which is essentially a laminated version of the Adhar.
+[ 1521.5- 1525.5] Not a chip, nothing that sets it apart or makes it unique.
+[ 1525.5- 1532.5] And photocopies continue to be the two most dominant ways in which individuals actually utilize the Adhar in Indian society.
+[ 1532.5- 1534.5] Despite it being a digital ID.
+[ 1534.5- 1542.5] And the measures that were implemented in order to address some of the security concerns were a virtual Adhar number.
+[ 1542.5- 1545.5] Which is very similar to the right to pseudo anonymity that Thomas spoke about.
+[ 1545.5- 1551.5] Where you can generate Adhar numbers and share them with providers rather than your core Adhar number itself.
+[ 1551.5- 1556.5] So that even if there is a compromise you could remove or delete that virtual Adhar number.
+[ 1556.5- 1558.5] Which you can issue in a limited amount.
+[ 1558.5- 1564.5] Which is something that very few people actually go into the Adhar dashboard and create for themselves.
+[ 1564.5- 1569.5] Then in order to address the card in the photocopy idea there was the mass Adhar.
+[ 1569.5- 1575.5] The key numbers are massed in a manner where even if the physical copy of that document is compromised.
+[ 1575.5- 1581.5] Or a virtual copy of that document is compromised then all the sensitive information is not necessarily present on it.
+[ 1581.5- 1589.5] While still allowing using the QR code and other measures for basic authentication and use cases to actually take place as well.
+[ 1589.5- 1594.5] And this is also the point where I will highlight that some of the more interesting lessons that were learnt in India.
+[ 1594.5- 1599.5] Played a very big role in the conversations that have happened around digital ID elsewhere in the world.
+[ 1599.5- 1606.5] It's one of the reasons why when we made arguments for why pseudo anonymity is important under the EIDAS regulation like Thomas did.
+[ 1606.5- 1611.5] We were able to point to examples from what happens if pseudo anonymity does not exist as an example.
+[ 1611.5- 1617.5] And that was true for a lot of the other solutions that are present in the EIDAS regulation as well.
+[ 1618.5- 1620.5] Finally there's also litigation.
+[ 1620.5- 1631.5] And when it comes to litigation many other projects that were inspired by the India's Adhar model such as Kenya's digital ID project were actually struck down by codes.
+[ 1631.5- 1640.5] The Kenyan project, the original one from about four years ago actually collected DNA information apart from a lot of this other sensitive biometric information.
+[ 1640.5- 1647.5] And it was struck down by the code in early 2020 on the basis of the fact that it was true privacy in basis.
+[ 1647.5- 1654.5] And ultimately that entire digital ID project was shuttered and a new variant was recently launched about a year and a half ago.
+[ 1654.5- 1660.5] That is better from a privacy perspective and also led to Kenya actually having a data protection law.
+[ 1660.5- 1667.5] Both of this were parallels in India where the Supreme Court judgment helped tweak the Adhar to make it slightly better than what it was.
+[ 1667.5- 1672.5] But also actually led to conversations about whether Indians enjoy a fundamental right to privacy.
+[ 1672.5- 1681.5] A conversation that for the first time in the Supreme Court and as a society in a big way we really had only in between 2015 to 2018.
+[ 1681.5- 1688.5] Which showcases how digital ID projects can precipitate conversations in societies because of the amount of information that they collect.
+[ 1688.5- 1695.5] With that I now hand over to Thomas to talk about DPI's and world domination.
+[ 1695.5- 1699.5] So we have not actually completely concluded the European process.
+[ 1699.5- 1704.5] Formerly speaking there's one last vote happening on February 6 in the plenary of the European Parliament.
+[ 1704.5- 1710.5] But we really don't expect there to be any show stoppers because we had a huge majority already in the industry committee.
+[ 1710.5- 1716.5] And so this two and a half year reform is about to conclude and we are heading towards a technical implementation.
+[ 1716.5- 1720.5] Which should be finalized by August of next year.
+[ 1720.5- 1732.5] And you can expect the wallet then to pop up in a few countries and by 2026 the obligation kicks in that every member state has to offer at least one of these European digital identity wallets to the citizens and residents.
+[ 1732.5- 1740.5] And the technical implementation as we are at a hacker conference it's actually being developed by the either expert working group.
+[ 1740.5- 1750.5] So this is a group that consists of government officials a lot of industry influence a very opaque you really cannot get anything out of there except with leaks.
+[ 1750.5- 1754.5] And we got a few leaks and we are right now in the process of analyzing them.
+[ 1754.5- 1760.5] And this is certainly something where the more the merrier so in case you want to help with that we'd be happy to collaborate.
+[ 1760.5- 1765.5] And it's important to note that either is just one piece of the jigsaw puzzle.
+[ 1765.5- 1771.5] This system is already the basis and being mentioned and referenced in other legislations.
+[ 1771.5- 1784.5] We have the European health data space which I don't know whether we have a talk this year about it but it's certainly a very important issue that also requires our attention because it will create an exception to the GDPR.
+[ 1785.5- 1799.5] It is the rule the law governing how we are actually dealing with our health data when we go to the doctor to the hospital to the pharmacy and also secondary users to this data for research purposes.
+[ 1799.5- 1804.5] Of course there will be driver licenses there's a directive for that that includes the wallet.
+[ 1804.5- 1811.5] We have age verification as a huge part of the chat control builder it's a regulation and of course the digital euro.
+[ 1811.5- 1820.5] This is another law that we are working on you can find position papers on our website on that and this new currency that Europe is creating will also live in the same wallet.
+[ 1820.5- 1825.5] And it's not just Europe and it's not just India.
+[ 1825.5- 1830.5] This really is a global life that's why we started with an incomplete world map.
+[ 1830.5- 1833.5] We see these systems popping up everywhere.
+[ 1834.5- 1841.5] There is interest from the World Bank from the UN for many actors in rolling them out and a lot of money behind it.
+[ 1841.5- 1852.5] And so there's now a process by the UNTECH envoy called TPI minus safeguards.org which aims to establish worldwide safeguards for these digital public infrastructure systems.
+[ 1853.5- 1855.5] And they actually tried the right thing.
+[ 1855.5- 1857.5] They also tried to be quite open.
+[ 1857.5- 1861.5] How much we can honestly believe that is still up.
+[ 1861.5- 1863.5] The word exists allowed.
+[ 1863.5- 1867.5] But we certainly have a timetable that's quite ambitious for this year.
+[ 1867.5- 1872.5] Ultimately these rules will be voted upon and decided between governments.
+[ 1872.5- 1878.5] And believe me these UN processes are even worse than any parliamentary process you have seen.
+[ 1878.5- 1883.5] But nevertheless there are ways to influence that and there's some transparency that we can expect.
+[ 1883.5- 1886.5] That's another thing where we can engage.
+[ 1886.5- 1894.5] And I would also like to summarize maybe a little bit what the axis of resistance are that we've highlighted here.
+[ 1894.5- 1897.5] And this talk should not leave you in despair.
+[ 1897.5- 1902.5] I'm always trying to give you hope because that's the only way we can do politics.
+[ 1903.5- 1910.5] We have seen in Kenya that a system that was meant to really collect DNA information from everybody
+[ 1910.5- 1915.5] and be rolled out nationwide was stopped in its track for successful strategic litigation.
+[ 1915.5- 1920.5] Similarly in India several of the court cases have done tremendously good successes.
+[ 1920.5- 1922.5] So strategic litigation can work.
+[ 1922.5- 1924.5] Protest can work.
+[ 1924.5- 1930.5] We need to see, to make visible for everyone that's be care about these systems.
+[ 1930.5- 1934.5] Sadly with the European reform I would have wished for much more public scrutiny.
+[ 1934.5- 1936.5] But it's a European thing, it's higher way.
+[ 1936.5- 1939.5] Hacking works tremendously well.
+[ 1939.5- 1948.5] So any form of responsible disclosure showing that these systems neither secure nor trustworthy
+[ 1948.5- 1950.5] is very helpful.
+[ 1950.5- 1956.5] This happened in Germany recently and so I hope that this can be replicated also now with the European system.
+[ 1956.5- 1958.5] And lastly advocacy.
+[ 1959.5- 1964.5] We've done a lot in terms of creating amendments, policy papers, meetings with politicians, media work
+[ 1964.5- 1966.5] just getting the word out.
+[ 1966.5- 1971.5] Making people understand why this whole thing matters is vital for getting it right.
+[ 1971.5- 1979.5] And on that note we want to end and just tell me that just down the road there's an assembly of AP Center Works.
+[ 1979.5- 1983.5] I'm going to be there the next three days from seven till nine.
+[ 1983.5- 1989.5] We also have two self-organised sessions on the EU, on net neutrality and campaigning stuff.
+[ 1989.5- 1992.5] And please come and talk with us.
+[ 1992.5- 1997.5] All of our work on this whole issue of electronic identity was funded by individuals' modern nations.
+[ 1997.5- 1999.5] We never received any grant money for that.
+[ 1999.5- 2003.5] So please consider becoming a supporting member.
+[ 2003.5- 2005.5] These are the people that make this work possible.
+[ 2005.5- 2006.5] Thank you.
+[ 2017.5- 2021.5] So we have ten minutes of time left to have some questions.
+[ 2021.5- 2023.5] The first ones are already coming in.
+[ 2023.5- 2027.5] Are there any questions from the internet?
+[ 2027.5- 2033.1] Yep, let's start there.
+[ 2033.1- 2042.1] The internet would like to know, is it possible to blacklist an ad to our number and effectively cut someone off from the economy entirely?
+[ 2042.1- 2048.4] So there hasn't been a documented instance of that happening so far.
+[ 2048.4- 2055.4] And that's largely because the UADI as an entity only takes the responsibility of issuing other numbers.
+[ 2055.4- 2059.4] And the law doesn't have a provision for it to be stopped or blocked.
+[ 2059.4- 2062.4] But it's something that hypothetically certainly could be done.
+[ 2062.4- 2068.4] But we haven't had any documented instances of it happening so far out of a deliberate action.
+[ 2068.4- 2076.4] It has happened in the past where people's like the deduplication has not been successful and people have claimed that there is already someone like them in the database.
+[ 2076.4- 2085.4] But that's much more, I think, consequence of the technical flaws of the system rather than a deliberate action on part of the government.
+[ 2085.4- 2092.4] Please have brief questions because I know it's a topic like politics, but please take it very brief.
+[ 2092.4- 2094.4] Number two, please.
+[ 2094.4- 2095.4] I have two questions.
+[ 2095.4- 2101.4] One, I've seen in India, we don't have a full coverage by this Advar system.
+[ 2101.4- 2104.4] So this was a question.
+[ 2104.4- 2112.4] Those people who are not in the system, what kind of people are they are resisting or just not, you know, somehow excluded.
+[ 2112.4- 2115.4] And the other question goes to you, Tom.
+[ 2115.4- 2119.4] Are we going to have in Europe this virtual EID number?
+[ 2119.4- 2122.4] I like that from India, that's part.
+[ 2122.4- 2123.4] So two questions.
+[ 2123.4- 2133.4] So on the reasons there is a small fraction of individuals who have resisted in India, but much more so, it's individuals who don't have the ability to sign up.
+[ 2133.4- 2141.4] One of the main characteristics of the Advar is while it's considered a single identifier, the only way for you to get it is to have other identifiers.
+[ 2141.4- 2149.4] So whether it's your address, whether it's your identity, whether it's your age, or if there are lists of other government documents that need to be submitted,
+[ 2149.4- 2164.4] which either many people don't have, or live in localities where sign-up booths are so far away that they haven't managed to get it, or sometimes their identity has been stolen and has been used by other individuals in order to create other numbers in their name, which therefore they cannot exercise.
+[ 2164.4- 2172.4] So it's very much a case of design and exclusion flaws being much bigger than the people who are resisting who are present, but it's a small fraction.
+[ 2172.4- 2173.4] Thanks.
+[ 2173.4- 2176.4] To answer your question about Europe, so ultimately, no, we don't.
+[ 2176.4- 2182.4] We started off with the worst case scenario with one number to rule them all for private public sector.
+[ 2182.4- 2190.4] We discussed a lot of variants, also pair of aspects of anonymity, and ultimately we could delete all references to any unique identifier.
+[ 2190.4- 2194.4] There, of course, still is matching in case of cross-border situations.
+[ 2194.4- 2202.4] When you have a Swedish citizenship, but you're living in Germany, then there is a mechanism to match that individual, but these are only cross-border scenarios.
+[ 2202.4- 2207.4] Mind you, they could, of course, still have attributes that serve as identifiers.
+[ 2207.4- 2224.4] Customer royalty cards and, for example, Estonian social security number will still live in a new system as an identifier that comes from the government and will be used like any other attribute, but the European system does not contain any of these unique persistent identifiers.
+[ 2225.4- 2227.4] And number one, please?
+[ 2227.4- 2228.4] Yes.
+[ 2228.4- 2238.4] I have a little question about open-sortuners of the systems that are now developing the wallets for the European identity wallets.
+[ 2238.4- 2244.4] What I see there is they're using the ISO MDOC standard, which is a closed-paid standard.
+[ 2244.4- 2252.4] Is there any way to continue fighting this to open standards, or is this a done deal?
+[ 2252.4- 2257.4] So we actually tried in an earlier version of the law to have an obligation to only use open standards.
+[ 2257.4- 2265.4] The council wouldn't have it, and they really used the dirty arguments in terms of sunk cost and private interests.
+[ 2265.4- 2273.4] So there is, of course, a huge interest from the big vendors in Europe to have this go their way towards proprietary solutions.
+[ 2273.4- 2280.4] And that's exactly this architecture reference framework discussion that's happening right now that will be concluded in August,
+[ 2280.4- 2282.4] where we need to comment on all of these standards.
+[ 2282.4- 2291.4] Right now, they haven't really made too many decisions, and they have a lot of work to actually include the safeguards the parliamentarians now have adopted.
+[ 2291.4- 2297.4] So there is definitely hope to change and improve that text, but it needs to happen the next month.
+[ 2297.4- 2299.4] Okay, I'll start driving. Thank you.
+[ 2299.4- 2302.4] Number two, please.
+[ 2302.4- 2305.4] Hi, thank you for the talk.
+[ 2305.4- 2319.4] I wanted to talk about maybe having a data taken theft in a DHR, because from my knowledge, the biometric data is rather easy hacked.
+[ 2319.4- 2328.4] Is there any other way to identify in a two-way identifier else than the phone, like RSA or something?
+[ 2328.4- 2334.4] No. So those were the suggestions that civil society gave when the project was initially being rolled out,
+[ 2334.4- 2338.4] and the only mitigation that has been done, and even that hasn't been enabled by default,
+[ 2338.4- 2343.4] is that the ADHA dashboard now gives you the ability to lock your biometrics.
+[ 2343.4- 2351.4] So if you go in there and lock your biometrics, once you've locked them, you can only unlock them in 10-minute intervals within that dashboard.
+[ 2351.4- 2355.4] So if, say, someone were to make a copy of my fingerprint and attempt to use it somewhere else,
+[ 2355.4- 2361.4] unless they also had my phone number and could receive an SMS that lets me access that dashboard online, which is not difficult,
+[ 2361.4- 2367.4] but still just a slight step of friction, then those biometrics would not end up working.
+[ 2367.4- 2375.4] So it's very much your fingerprints, your iris, and pretty soon your face will be the only ways that you can authenticate yourself via the ADHA
+[ 2375.4- 2378.4] apart from your phone number via unencrypted SMS.
+[ 2378.4- 2380.4] Okay, thank you.
+[ 2380.4- 2382.4] A question from the internet, please.
+[ 2382.4- 2391.4] So the internet would like to know, do we know what prompted the creation of these systems, like ADHA,
+[ 2391.4- 2397.4] and what's the main use case that the governments are focusing on when advertising it?
+[ 2397.4- 2404.4] The primary reason that the ADHA was created was because there was a widespread belief in India that
+[ 2404.4- 2412.4] traditional ID systems, such as Russian gods which gave you access to your public resources and rations,
+[ 2412.4- 2422.4] were ones that were so subject to fraud, and there were so many people down in the chain of how things got to people,
+[ 2422.4- 2428.4] that a digital ID system would let the government transfer subsidies directly into people's bank accounts.
+[ 2428.4- 2435.4] So there was this image painted that this identifier will remove all corruption and allow for money to be able to flow into systems
+[ 2435.4- 2437.4] in a manner that is much more reliable.
+[ 2437.4- 2441.4] There were some studies that were done that showed that this was the case, but many of those studies since then
+[ 2441.4- 2448.4] have actually been very widely discredited for having various flaws in both their economics as well as their technical methodology,
+[ 2448.4- 2450.4] which is the origin.
+[ 2450.4- 2454.4] Now it is just a very easy way to know everything that you would like to know about a citizen,
+[ 2454.4- 2457.4] and I order a resident, and most governments love doing that.
+[ 2457.4- 2463.4] Just to maybe also ask a question for answer to this question for other reasons, so we very often see the spin from World Bank
+[ 2463.4- 2470.4] and other UN organizations that this is about efficiency, and ultimately there is a kind of mistrust against all humans,
+[ 2470.4- 2472.4] that is kind of a driving factor.
+[ 2472.4- 2474.4] In Europe it was strongly economical arguments.
+[ 2474.4- 2482.4] Estonia is always using the billions of money saved in the GDP with these systems, and in the U impact assessment,
+[ 2482.4- 2486.4] inception impact assessments are like very early on, they already had one thing clear,
+[ 2486.4- 2493.4] this system will be used for the private sector, so they want this to also serve private corporate interests,
+[ 2493.4- 2498.4] and all the other things like the European Half Data Space, the Digital Euro, these are things they left out,
+[ 2498.4- 2504.4] like the government uses of these systems were not advertised when this reform was started.
+[ 2504.4- 2512.4] So we have time left for three fast questions, so number one, then the Internet, then number two.
+[ 2513.4- 2518.4] Okay, very quickly you answered my first question, which basically was the reason for these systems,
+[ 2518.4- 2526.4] and basically you said economic efficiency, your counter argument is that these systems can be used for surveillance,
+[ 2526.4- 2535.4] and my question is then what do you, both of you, propose as a system that would work for economic efficiency,
+[ 2535.4- 2538.4] that would be not be used for surveillance?
+[ 2539.4- 2544.4] I mean, this really touches on the big, big question, can these systems ever be safe?
+[ 2544.4- 2550.4] Can they ever not be exclusionary towards the most marginalized parts of society?
+[ 2550.4- 2558.4] Can they ever be so bulletproof, decentralized that they cannot be abused by a bad actor or government?
+[ 2558.4- 2565.4] And the verdict is out, we don't know yet, and that was honestly the weight on our shoulders when we did this reform,
+[ 2565.4- 2571.4] because it was clear that these systems in the minds of many policymakers are inevitable,
+[ 2571.4- 2579.4] and so it's actually, we got a lot of attention from politicians from all across the political spectrum,
+[ 2579.4- 2588.4] with our ideas to reform this, and I can tell you that not even the people that negotiated this thing for the Parliament,
+[ 2588.4- 2592.4] slept well. So yeah, the verdict is still up.
+[ 2593.4- 2595.4] Number two, please, very brief.
+[ 2595.4- 2599.4] Yeah, hello. I was surprised not to see the Ukrainian EAD case.
+[ 2599.4- 2607.4] I wondered whether we had an opinion on it, because it was although loosely regulated and fastly legislated,
+[ 2607.4- 2614.4] technologically, sometimes better than like some other alternatives and without gathering of extra data.
+[ 2614.4- 2619.4] So I would love to have a discussion with you and also learn more about the Ukrainian case.
+[ 2619.4- 2624.4] I know a little bit, also the relation to Estonia, and for this talk we simply did not have the time.
+[ 2624.4- 2632.4] Like we covering any issue with a global scope is super difficult, so we try to do everything justice we touched upon,
+[ 2632.4- 2635.4] but you're right that there would have totally deserved more attention.
+[ 2635.4- 2636.4] Thank you.
+[ 2636.4- 2638.4] And the last question from the internet.
+[ 2639.4- 2644.4] Are you personally optimistic for a privacy and security preserving standard,
+[ 2644.4- 2648.4] or will it be a race to the bottom to find a compromise between all stakeholders?
+[ 2651.1- 2653.1] I think so.
+[ 2653.1- 2662.1] There is a lot of very positive standardization movement in terms of privacy preserving technologies in this space.
+[ 2662.1- 2667.1] But a lot of the good ideas are really still in research stage.
+[ 2667.1- 2675.1] I think that in like three to five years we'll have very good standards that are ready for production and that are robust.
+[ 2676.1- 2683.1] Right now actually, the Edus expert working group is solving an impossible task because these standards are too early.
+[ 2683.1- 2686.1] The discussion in academia is still ongoing.
+[ 2686.1- 2693.1] I have trust in the outcome of these standardizations because we have also seen this in the COVID pandemic.
+[ 2693.1- 2699.1] How creative people can get in terms of really enshrining privacy and technology.
+[ 2700.1- 2709.1] But the strong push by lawmakers to have these systems now or yesterday is kind of adults with the reality of traditional specifications.
+[ 2710.1- 2712.1] Thank you very much for the talk.
+[ 2712.1- 2714.1] Have a warm welcome.
+[ 2714.1- 2719.1] A warm applause for Uptav Tivari and Thomas Lorningham.
+[ 2719.1- 2721.1] Thank you very much.

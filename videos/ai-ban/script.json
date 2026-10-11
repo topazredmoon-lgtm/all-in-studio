@@ -411,7 +411,7 @@
   },
   {
    "id": "b01",
-   "vo": "To see why governments are nervous, start with the safety locks. When chatbots launched, their makers promised guardrails: rules that stop the AI from helping with anything dangerous.",
+   "vo": "To see why governments are nervous, start with the safety locks. When chatbots launched, their makers promised guardrails: rules that stop the AI from helping with anything dangerous. But those rules live inside the model, and they can be cut out.",
    "shot": {
     "cuts": [
      {
@@ -469,9 +469,38 @@
       },
       "cap": "it *says no*",
       "at": "rules"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "brain",
+       "label": "the model"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "shield",
+       "label": "rules inside it",
+       "mark": "no",
+       "markAt": "cut"
+      },
+      "cap": "they can be *cut out*",
+      "at": "live"
      }
     ],
     "act": "02 the blueprint"
+   }
+  },
+  {
+   "id": "cB",
+   "clip": {
+    "src": "aiban/../aibm/cc_llm_refuse.mp4",
+    "from": 0.55,
+    "to": 7.86,
+    "plate": "Anykey · Hacker Hotel 2025 · CC BY 4.0",
+    "plateAt": 0.3
    }
   },
   {
@@ -540,19 +569,9 @@
    }
   },
   {
-   "id": "cB",
-   "clip": {
-    "src": "aiban/../aibm/cc_llm_refuse.mp4",
-    "from": 0.55,
-    "to": 9.38,
-    "plate": "Anykey · Hacker Hotel 2025 · CC BY 4.0",
-    "plateAt": 0.3
-   }
-  },
-  {
    "id": "b03",
-   "vo": "That's exactly what researchers did. They stripped the safety training out of Llama 2 for less than two hundred dollars per model, on a single graphics card.",
-   "say": "That's exactly what researchers did. They stripped the safety training out of Llama two, for less than two hundred dollars per model, on a single graphics card.",
+   "vo": "And researchers did exactly that. They stripped the safety training out of Llama 2 for less than two hundred dollars per model, on a single graphics card.",
+   "say": "And researchers did exactly that. They stripped the safety training out of Llama two, for less than two hundred dollars per model, on a single graphics card.",
    "shot": {
     "cuts": [
      {
@@ -716,6 +735,16 @@
    }
   },
   {
+   "id": "cA",
+   "clip": {
+    "src": "aiban/senate_fears.mp4",
+    "from": 1.36,
+    "to": 8.34,
+    "plate": "Sam Altman · head of OpenAI · US Senate hearing · 16 May 2023",
+    "plateAt": 0.3
+   }
+  },
+  {
    "id": "d01",
    "vo": "And Washington has done this before. In the nineties, strong encryption, the maths that keeps your messages private, sat on America's munitions list, the same list as missiles.",
    "shot": {
@@ -853,6 +882,16 @@
      }
     ],
     "act": "03 the playbook"
+   }
+  },
+  {
+   "id": "cD",
+   "clip": {
+    "src": "aiban/cc_crypto_munition.mp4",
+    "from": 0.45,
+    "to": 11.44,
+    "plate": "Pyro · Chaos Communication Camp 2023 · CC BY 4.0",
+    "plateAt": 0.3
    }
   },
   {
@@ -1479,8 +1518,8 @@
    "id": "cF",
    "clip": {
     "src": "aiban/../aibm/cc_gai_voice.mp4",
-    "from": 0.0,
-    "to": 17.78,
+    "from": 0.8,
+    "to": 13.48,
     "plate": "Niklas Bunzel · Fraunhofer SIT · GoD 2024 · CC BY-SA 4.0",
     "plateAt": 0.3
    }
@@ -1509,16 +1548,6 @@
      }
     ],
     "act": "05 the proof"
-   }
-  },
-  {
-   "id": "cH",
-   "clip": {
-    "src": "aiban/../aibm/cc_nk_ai.mp4",
-    "from": 0.0,
-    "to": 8.48,
-    "plate": "Simon Wijckmans · EMF Camp 2026 · CC BY-SA 4.0",
-    "plateAt": 0.3
    }
   },
   {
@@ -1669,6 +1698,16 @@
      }
     ],
     "act": "06 the black market"
+   }
+  },
+  {
+   "id": "cH",
+   "clip": {
+    "src": "aiban/../aibm/cc_nk_ai.mp4",
+    "from": 0.4,
+    "to": 7.14,
+    "plate": "Simon Wijckmans · EMF Camp 2026 · CC BY-SA 4.0",
+    "plateAt": 0.3
    }
   },
   {
@@ -1848,9 +1887,19 @@
    }
   },
   {
+   "id": "cK",
+   "clip": {
+    "src": "aiban/cc_anonymity.mp4",
+    "from": 0.45,
+    "to": 12.22,
+    "plate": "Thomas Lohninger · 37C3 · CC BY 4.0",
+    "plateAt": 0.3
+   }
+  },
+  {
    "id": "k03",
-   "vo": "And the ID checks have started. In October 2025, the same two senators introduced a bill to make chatbots check every user's age, with a government ID or something like it. In China, some AI services already need your real identity.",
-   "say": "And the ID checks have started. In October twenty twenty-five, the same two senators introduced a bill to make chatbots check every user's age, with a government ID, or something like it. In China, some AI services already need your real identity.",
+   "vo": "But the ID checks have started. In October 2025, the same two senators introduced a bill to make chatbots check every user's age, with a government ID or something like it. In China, some AI services already need your real identity.",
+   "say": "But the ID checks have started. In October twenty twenty-five, the same two senators introduced a bill to make chatbots check every user's age, with a government ID, or something like it. In China, some AI services already need your real identity.",
    "shot": {
     "cuts": [
      {
@@ -2066,6 +2115,16 @@
    }
   },
   {
+   "id": "cM",
+   "clip": {
+    "src": "aiban/cc_chip_security.mp4",
+    "from": 0.4,
+    "to": 9.88,
+    "plate": "Sen. Elizabeth Warren · US Senate Banking Committee · 11 June 2026",
+    "plateAt": 0.3
+   }
+  },
+  {
    "id": "m02",
    "vo": "Nvidia, which makes most of them, insists its chips have no kill switches. China's internet regulator didn't buy it, and called Nvidia in over possible backdoors.",
    "shot": {
@@ -2201,6 +2260,16 @@
      }
     ],
     "act": "09 open source"
+   }
+  },
+  {
+   "id": "cN",
+   "clip": {
+    "src": "aiban/cc_hf_share.mp4",
+    "from": 0.4,
+    "to": 9.12,
+    "plate": "Anykey · Hacker Hotel 2025 · CC BY 4.0",
+    "plateAt": 0.3
    }
   },
   {
@@ -2446,8 +2515,8 @@
    "id": "cP",
    "clip": {
     "src": "aiban/senate_licence2.mp4",
-    "from": 0.0,
-    "to": 11.62,
+    "from": 2.12,
+    "to": 10.08,
     "plate": "Sam Altman · US Senate Judiciary hearing · 16 May 2023",
     "plateAt": 0.3
    }
@@ -2619,9 +2688,9 @@
    "id": "cP2",
    "clip": {
     "src": "aiban/senate_marcus.mp4",
-    "from": 0.0,
-    "to": 12.08,
-    "plate": "Gary Marcus · US Senate Judiciary hearing · 16 May 2023",
+    "from": 1.56,
+    "to": 10.96,
+    "plate": "Gary Marcus · AI scientist, NYU · US Senate hearing · 16 May 2023",
     "plateAt": 0.3
    }
   },
@@ -2673,7 +2742,7 @@
   },
   {
    "id": "q01",
-   "vo": "And here's the irony. Where did these models come from? They learned from the public internet: books, articles, code and art, made by people who were never asked.",
+   "vo": "And here's the irony. Where did these models come from? They learned from the public internet: books, articles, code and art, made by people who were never asked. When Britain proposed letting AI companies train on people's work for free, thousands of them pushed back.",
    "shot": {
     "cuts": [
      {
@@ -2743,9 +2812,55 @@
       },
       "cap": "*never asked*",
       "at": "made"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "uk government"
+      },
+      "R": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "train ai on your work for free?",
+       "at": "train"
+      },
+      "cap": "*Britain* asked",
+      "at": "Britain"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "train ai on your work for free?"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "people",
+       "n": 3,
+       "label": "thousands said no",
+       "mark": "no",
+       "at": "thousands"
+      },
+      "cap": "thousands said *no*",
+      "at": "thousands"
      }
     ],
     "act": "11 the heist"
+   }
+  },
+  {
+   "id": "cQ",
+   "clip": {
+    "src": "aiban/cc_stole_work.mp4",
+    "from": 0.4,
+    "to": 8.84,
+    "plate": "Kate Devlin · EMF Camp 2026 · CC BY-SA 4.0",
+    "plateAt": 0.3
    }
   },
   {
@@ -2985,8 +3100,7 @@
   },
   {
    "id": "r03",
-   "vo": "And bans have a history. Prohibition didn't stop alcohol in America, it handed it to gangsters. Ban the AI people want, and the black market grows. It's already happening with chips: in 2025, the US charged people with smuggling restricted Nvidia chips to China.",
-   "say": "And bans have a history. Prohibition didn't stop alcohol in America, it handed it to gangsters. Ban the AI people want, and the black market grows. It's already happening with chips: in twenty twenty-five, the US charged people with smuggling restricted Nvidia chips to China.",
+   "vo": "And bans have a history. Prohibition didn't stop alcohol in America, it handed it to gangsters. Ban the AI people want, and the black market grows. And the criminals who run these markets already work like real companies.",
    "shot": {
     "cuts": [
      {
@@ -3050,6 +3164,49 @@
      {
       "layout": "split",
       "L": {
+       "v": "Shop",
+       "surface": "bare",
+       "items": [
+        "brain",
+        "chip",
+        "key",
+        "brain",
+        "chip",
+        "doc"
+       ]
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "run like a company"
+      },
+      "cap": "run like *companies*",
+      "at": "criminals"
+     }
+    ],
+    "act": "12 the future"
+   }
+  },
+  {
+   "id": "cR",
+   "clip": {
+    "src": "aiban/../aibm/cc_vibe_company.mp4",
+    "from": 3.72,
+    "to": 9.46,
+    "plate": "Chiao-Lin Yu, on a phishing-kit gang · 39C3 · CC BY 4.0",
+    "plateAt": 0.3
+   }
+  },
+  {
+   "id": "r03b",
+   "vo": "It's already happening with chips: in 2025, the US charged people with smuggling restricted Nvidia chips to China.",
+   "say": "It's already happening with chips. In twenty twenty-five, the US charged people with smuggling restricted Nvidia chips to China.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
        "v": "LineIcon",
        "surface": "bare",
        "name": "chip",
@@ -3065,8 +3222,7 @@
         "at": "charged"
        }
       },
-      "cap": "*smuggled* chips",
-      "at": "chips"
+      "cap": "*smuggled* chips"
      },
      {
       "layout": "split",
@@ -3094,19 +3250,9 @@
    }
   },
   {
-   "id": "cR",
-   "clip": {
-    "src": "aiban/../aibm/cc_vibe_company.mp4",
-    "from": 0.0,
-    "to": 11.18,
-    "plate": "Chiao-Lin Yu · 39C3 · CC BY 4.0",
-    "plateAt": 0.3
-   }
-  },
-  {
    "id": "r04",
-   "vo": "Meanwhile, the powerful keep the strongest models. In 2025, the Pentagon signed deals worth up to two hundred million dollars each with OpenAI, Google, Anthropic and xAI.",
-   "say": "Meanwhile, the powerful keep the strongest models. In twenty twenty-five, the Pentagon signed deals worth up to two hundred million dollars each, with OpenAI, Google, Anthropic, and xAI.",
+   "vo": "Meanwhile, the powerful keep the strongest models. In 2025, the Pentagon signed deals worth up to two hundred million dollars each with OpenAI, Google, Anthropic and xAI. And armies are already planning around it.",
+   "say": "Meanwhile, the powerful keep the strongest models. In twenty twenty-five, the Pentagon signed deals worth up to two hundred million dollars each, with OpenAI, Google, Anthropic, and xAI. And armies are already planning around it.",
    "shot": {
     "cuts": [
      {
@@ -3168,9 +3314,36 @@
       },
       "cap": "with *the AI giants*",
       "at": "OpenAI"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "shield",
+       "label": "armies"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "missile",
+       "label": "planning around it"
+      },
+      "cap": "armies are *planning*",
+      "at": "armies"
      }
     ],
     "act": "12 the future"
+   }
+  },
+  {
+   "id": "cR2",
+   "clip": {
+    "src": "aiban/cc_drone_swarm.mp4",
+    "from": 0.4,
+    "to": 13.92,
+    "plate": "Leonard, reading a Bundeswehr paper · 39C3 · CC BY 4.0",
+    "plateAt": 0.3
    }
   },
   {
@@ -3284,6 +3457,16 @@
      }
     ],
     "act": "13 the timeline"
+   }
+  },
+  {
+   "id": "cS",
+   "clip": {
+    "src": "aiban/cc_ai_act.mp4",
+    "from": 0.5,
+    "to": 12.98,
+    "plate": "Niklas Bunzel · Fraunhofer SIT · GoD 2024 · CC BY-SA 4.0",
+    "plateAt": 0.3
    }
   },
   {
@@ -3530,6 +3713,16 @@
      }
     ],
     "act": "14 the choice"
+   }
+  },
+  {
+   "id": "cT",
+   "clip": {
+    "src": "aiban/cc_run_local.mp4",
+    "from": 0.3,
+    "to": 7.16,
+    "plate": "Anykey · Hacker Hotel 2025 · CC BY 4.0",
+    "plateAt": 0.3
    }
   },
   {
