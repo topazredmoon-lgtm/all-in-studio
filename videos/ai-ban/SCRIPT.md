@@ -123,3 +123,23 @@ Sample = act 1 only, full quality, ~60-70 s.
 - That's the real takeaway. Rules like this aren't written in one night. They're written in public, and the public can push back.
 - So learn what open weights are. Run a model on your own computer, once. Read the bills before they pass.
 - Look at the AI on your phone again. It still answers without asking who you are. Whether it stays that way isn't up to them. It's up to us.
+
+## Sample shot plan (act 1) · left = subject from frame 0, right = evidence on its word
+New visuals to build in `engine/src/visuals/aiban.tsx` (own line-art drawings, no brand trade dress, `ds/` only):
+`PhoneChat` (phone with a chat; mode `open` = typed question + answer bars; mode `gate` = the chat replaced by a
+"licence no. ____" field with a red blinking caret), `Hearing` (Senate dais of 5 busts + a witness table, name pill),
+`Licence` (a licence card: photo box, number, a drawing: car or brain; red stamp on cue), `ListDoc` (a typed government
+list "US MUNITIONS LIST": rows tanks / missiles / … / "encryption software" struck in red on cue, plate "until 1996"),
+`Pieces` (5 jigsaw pieces with icons idcard, chip, lock, brain, contract, scattered → snap together on cue).
+New `LineIcon`s: `lock`, `chip`, `idcard`, `brain`, `missile`, `tank`.
+| Beat | Cuts (cue word) | Caption |
+|---|---|---|
+| h00 | split PhoneChat(open, from 0) / idcard ✗ on "never" | no *name*, no ID |
+| h01 | split PhoneChat(gate) on "picture" / Licence(blank) on "licence" | your *licence*, or nothing |
+| c01 | clip: Altman "If this technology goes wrong, it can go quite wrong." (Senate video, US gov PD) | plate |
+| h02 | split Hearing (pill "sam altman · openai") / building (capitol) on "Senate"; then Hearing with a red ring on the witness on "strange" | the man who *runs ChatGPT* |
+| c02 | clip: Altman "I would form a new agency that licenses any effort above a certain scale of capabilities" | plate |
+| h03 | split Licence(car) / Licence(brain) on "building"; tag "16 may 2023" | a *licence* for a mind |
+| h04 | split envelope+lock "your messages" / ListDoc, "encryption" on "munition", tanks/missiles rows on "tanks" | encryption = a *weapon* |
+| h05 | full Pieces scattered, each lands on "piece", "built", "tried" | the *pieces* exist |
+| h06 | split Pieces snap on "snap" / people ✓ on "ordinary" | how people *won* before |

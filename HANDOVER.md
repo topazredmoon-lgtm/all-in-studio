@@ -1,15 +1,32 @@
-# HANDOVER · All-in · 2026-10-11 · NEW VIDEO "ai ban" (owner's script) · NEXT: 1-min sample · aibm DROPPED
+# HANDOVER · All-in · 2026-10-11 · "THE COMING AI BAN": script + sources DONE · NEXT: 1-min sample (needs network)
 Older history: `HANDOVER_archive.md` (read only if needed). Token-lean: S is on Pro (keep a session under ~120k tokens;
 grep and small scripts, never print whole transcripts or logs). Never read SCRATCH HOLY or other source projects.
 
-## NOW (2026-10-11): new video from the owner's script "ai_ban_script.txt"
-- Owner HATED the aibm 1:30 sample ("terrible, unwatchable"): AI black markets is dropped, don't build its full film.
-- The owner's script is `c:\Users\pc\Desktop\ai_ban_script.txt` on their PC. A cloud session can't read it: it must be
-  pasted in chat or committed (put it at `videos/ai-ban/owner_script.txt`). Waiting on that.
-- Brief: improve the script first; explain the complicated words around 3:47 for the general public, friendly and
-  pleasant yet DRAMATIC and HOOKING; the narrator takes a side (hates that "they'll do this to us"), after the facts.
-  Deliver a ~1-min sample first, better than captchas, then the full film. Owner gave full decision power.
-- Taste rules are now in `PLAYBOOK.md` "Owner's taste" (LEARNINGS 48-52). Add every new owner note there.
+## NOW (2026-10-11): "THE COMING AI BAN" (slug `ai-ban`) · script DONE · NEXT: build the 1-min sample (act 1)
+- Owner HATED the aibm 1:30 sample ("terrible, unwatchable"): AI black markets is dropped.
+- Owner's script: `videos/ai-ban/owner_script.txt`. Owner gave full licence: "free to totally change it", "make
+  everything so cool", viewer must leave with takeaways. Taste rules: `PLAYBOOK.md` "Owner's taste" (LEARNINGS 48-54).
+- DONE: `videos/ai-ban/SOURCES.md` (45 fact rows, verdicts; the owner script's false lines listed at the bottom),
+  `videos/ai-ban/SCRIPT.md` = why it changed + **narration v1** (8 acts, 1,219 words, [row] per fact, [CLIP] slots) +
+  the **sample shot plan** (act 1 beats h00-h06, clips c01/c02, 5 new visuals, 6 new icons).
+- Spine: "Nobody has banned AI yet, but every piece is on the table" (true, sourced); narrator takes a side in act 5
+  ("this is the part I hate"); ending = Crypto Wars won (PGP printed as a book, "source code is speech" 1996).
+- NEXT (in order): 1) download clips (Altman Senate 16 May 2023 from judiciary.senate.gov ISVP stream, US gov PD; then
+  CC talks in `.cc-src/aiban/cands.json`), transcribe, find "If this technology goes wrong, it can go quite wrong" and
+  "I would form a new agency that licenses any effort above a certain scale of capabilities"; LICENCES.md rows.
+  2) `videos/ai-ban/gen_script.py` (copy aibm's structure) for act 1 only, title "THE COMING AI BAN · 1-min sample".
+  3) `engine/src/visuals/aiban.tsx` + icons in `ds/kit.tsx`, register in `Root.tsx`. 4) tts, build, stills, render,
+  watch.py, send < 20 MB. Then wait for the owner's OK before the full film.
+- BLOCKER in the cloud: the environment's network policy blocks huggingface.co (Whisper model), media.ccc.de,
+  upload/commons.wikimedia.org, senate.gov + its akamaized stream host, archive.org, youtube, whitehouse.gov. The owner
+  was told to set Network access to Full (or allow those hosts). Check first: `curl -s -o /dev/null -w '%{http_code}'
+  https://media.ccc.de/`. Without it: no clips, no Whisper (tts.py and clip_words.py need it), so no sample.
+- Cloud setup fix (this session): Remotion's browser download (remotion.media) is blocked, so `tools/*.mjs` pass
+  `browserExecutable: process.env.REMOTION_BROWSER`; `cloud-setup.sh` sets it to the Playwright headless shell.
+  Re-run `bash scripts/cloud-setup.sh` once the network is open (it stopped at the Whisper download, so
+  `.cloud-env.sh` was never written).
+- `.claude/settings.json` allows all tools (owner: "just allow everything by default"). PR
+  quartzsaphir-debug/all-in-studio#1 carries this branch's work.
 
 ## Owner's TOP RULE (2026-10-08, "Never forget this never ever")
 No clip may cost revenue: only CC BY / BY-SA / CC0 / PD / government clips. No news (WSJ, Vox, Big Think), no TED, no
