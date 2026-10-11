@@ -1,4 +1,4 @@
-# HANDOVER · All-in · 2026-10-11 · AI black markets FULL FILM (8:15) built, rendering · captchas-full v3 waiting on owner notes
+# HANDOVER · All-in · 2026-10-11 · AI black markets FULL FILM (8:15) DELIVERED · waiting on owner notes (it + captchas-full v3)
 Older history: `HANDOVER_archive.md` (read only if needed). Token-lean: S is on Pro (keep a session under ~120k tokens;
 grep and small scripts, never print whole transcripts or logs). Never read SCRATCH HOLY or other source projects.
 
@@ -45,8 +45,11 @@ newbies", "Do a fantastic job". Owner: NEVER wait for them, never ask. Mechanica
 - 39 candidate clips more in `.cc-src/aibm/clip_cands.json` (86 total, 12 talks transcribed; audio in `.cc-src/aibm/`,
   not in git; `bash scripts/redownload-sources.sh` or the URLs in `.cc-src/aibm/urls.txt`).
 - Render: `node tools/render.mjs ai-black-markets --concurrency=4` (cloud box: ~10 min per 1,500-frame chunk, 10 chunks).
-  Then watch.py, sampled sheet, compress < 20 MB → `out/All-in_ai_black_markets_full.mp4`. See the bottom of this file
-  for the status of that step.
+  DONE: render `out/ai-black-markets_v5.mp4` (full quality, not in git; v4 had a 0.2 s empty left panel at 2:05.9, fixed
+  in w03 and only that chunk re-rendered by copying the other chunks into the new srchash folder). watch.py 0 FAIL,
+  `qa/sample.jpg`. Sent: `out/All-in_ai_black_markets_full.mp4` (18.4 MB, 2-pass 240k video + 48k aac, in git LFS) with LICENCES.md.
+- Optional polish if the owner wants more: p03 bar chart labels are small; a 15th clip could go in act 10 (Wijckmans
+  1255.8-1263.7 "nobody gets hired without having a coffee").
 - Clean-up once the owner OKs: `.cc-src/aibm/` audio (~600 MB), `.render-tmp/ai-black-markets_*`.
 
 ## Commands
