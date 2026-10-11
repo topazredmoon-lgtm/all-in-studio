@@ -15,7 +15,7 @@ const videos: { id: string; tl: Timeline; visuals: Record<string, React.FC<any>>
   { id: 'captchas-3min', tl: captchas3minTl as unknown as Timeline, visuals: captchas },
   { id: 'captchas-full', tl: captchasFullTl as unknown as Timeline, visuals: { ...captchas, ...captchas2 } },
   { id: 'ai-black-markets', tl: aibmTl as unknown as Timeline, visuals: aibm },
-  { id: 'ai-ban', tl: aibanTl as unknown as Timeline, visuals: aiban },
+  { id: 'ai-ban', tl: aibanTl as unknown as Timeline, visuals: { ...aibm, ...aiban } },
 ];
 
 export const Root: React.FC = () => (

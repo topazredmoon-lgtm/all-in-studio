@@ -34,12 +34,30 @@ for i, b in enumerate(script["beats"]):
     if "clip" in b:
         c = b["clip"]
         seg = tmp / f"{b['id']}.wav"
-        d = c["to"] - c["from"]; fo = float(c.get("fadeOut", 0.12))
-        ff("-ss", str(c["from"]), "-to", str(c["to"]), "-i", str(pub / (c["src"].rsplit(".", 1)[0] + ".wav")), "-af",
-           f"loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000,afade=t=in:d=0.03,afade=t=out:st={max(0, d - fo):.3f}:d={fo:.3f}", "-ac", "2", str(seg))
-        dur = d + (P["after_clip"] if nxt else 0.3)
+        stem = pub / c["src"].rsplit(".", 1)[0]
+        if c.get("roll", True) and stem.with_suffix(".words.json").exists():
+            # Owner 2026-10-11: word-tight chops + a frozen last frame looked "amateurish". Let the speaker breathe:
+            # picture and room sound start up to 0.45 s before the first word and run up to 0.7 s after the last one,
+            # never into a neighbouring word; sound fades in/out over those rolls; the next line starts in the fade-out.
+            ws = json.loads(stem.with_suffix(".words.json").read_text(encoding="utf-8"))
+            fdur = sf.info(str(stem.with_suffix(".wav"))).duration
+            ws = [w for w in ws if w["e"] - w["s"] >= 0.01]  # drop Whisper's zero-length stamps
+            prev_e = max([w["e"] for w in ws if w["e"] <= c["from"] + 0.02], default=0.0)
+            next_s = min([w["s"] for w in ws if w["s"] >= c["to"] - 0.02], default=fdur)
+            pre = max(0.0, min(0.45, c["from"] - prev_e - 0.12))
+            post = max(0.06, min(0.7, next_s - c["to"] - 0.12, fdur - c["to"] - 0.05))
+        else:
+            pre, post = 0.0, float(c.get("fadeOut", 0.12))
+        a0, a1 = c["from"] - pre, c["to"] + post
+        d = a1 - a0
+        ff("-ss", f"{a0:.3f}", "-to", f"{a1:.3f}", "-i", str(stem.with_suffix(".wav")), "-af",
+           f"loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000,afade=t=in:curve=qsin:d={max(0.03, pre):.3f},"
+           f"afade=t=out:curve=qsin:st={d - post:.3f}:d={post:.3f}", "-ac", "2", str(seg))
+        overlap = min(0.25, post * 0.5) if nxt else 0.0  # L-cut: the board (and the next line) comes in as the room sound fades
+        dur = d - overlap + (0.0 if nxt else 0.3)
         placements.append(("clip", seg, t))
-        beats.append({"id": b["id"], "start": round(t * FPS), "dur": round(dur * FPS), "clip": c})
+        beats.append({"id": b["id"], "start": round(t * FPS), "dur": round(dur * FPS), "clip": {**c, "from": round(a0, 3), "to": round(a1, 3), "speechAt": round(pre, 3)}})
+        print(f"{b['id']}: pre-roll {pre:.2f}s, post-roll {post:.2f}s, {d:.1f}s on screen")
     else:
         meta = json.loads((adir / f"{b['id']}.json").read_text())
         words = json.loads((adir / f"{b['id']}.words.json").read_text())

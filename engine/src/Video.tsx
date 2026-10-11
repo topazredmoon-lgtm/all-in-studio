@@ -10,7 +10,7 @@ type One =
   | { layout: 'chapter'; no: string; title: string; img?: string; credit?: string; focus?: string; at?: string };
 /** A beat is one shot, or several `cuts` that hard-cut on their cue words (v23 / minimal pacing: something new every 2–3 s). */
 export type Shot = (One | { cuts: (One & { at?: string | number })[]; act?: string }) & { sfx?: unknown[]; act?: string };
-export type Beat = { id: string; start: number; dur: number; words?: Word[]; shot?: Shot; clip?: { src: string; from: number; to: number; plate?: string; hold?: number } };
+export type Beat = { id: string; start: number; dur: number; words?: Word[]; shot?: Shot; clip?: { src: string; from: number; to: number; plate?: string; plateAt?: number; hold?: number } };
 export type Timeline = { fps: number; total: number; beats: Beat[] };
 
 const renderOne = (reg: Registry, s: One, act?: string) => {

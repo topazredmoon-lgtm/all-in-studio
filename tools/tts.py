@@ -19,12 +19,19 @@ voice = script["voice"]["name"]; speed = script["voice"]["speed"]
 out = ROOT / "videos" / vid / OUT; out.mkdir(parents=True, exist_ok=True)
 
 SQ = {",": 0.30, ";": 0.30, ":": 0.32, "-": 0.30, ".": 0.50, "?": 0.52, "!": 0.50, "": 0.18}  # max inner silence (s) after a word ending in ...
-SQ_V = 1
+SQ_V = 2  # v2 (2026-10-11): + per-line level matching
+# Owner 2026-10-11: "a human would never say G P T the way it said it". Spaced letters in `say` make Kokoro read each
+# letter as its own stressed word. Write names normally; words espeak gets wrong go here as IPA (one word, natural stress).
+LEX = {"Blumenthal": "blˈuːmənθˌɔːl", "Kokoro": "kəkˈɔːɹoʊ"}
+LEX_V = 1
+SPACED = re.compile(r"\b[A-Z] [A-Z]\b")
+TARGET = -20.0  # dBFS RMS of the voiced part of every line (owner: "the voice tone is irregular")
 todo = []
 for b in script["beats"]:
     if "clip" in b: continue
     text = b.get("say", b["vo"])
-    h = hashlib.sha1(f"{text}|{voice}|{speed}".encode()).hexdigest()[:12]
+    if SPACED.search(text): sys.exit(f"{b['id']}: spaced letters in say ({SPACED.search(text).group()}): write the word, or add it to LEX")
+    h = hashlib.sha1(f"{text}|{voice}|{speed}|{LEX_V}".encode()).hexdigest()[:12]
     meta = out / f"{b['id']}.json"
     if meta.exists() and json.loads(meta.read_text())["hash"] == h and (out / f"{b['id']}.words.json").exists():
         if json.loads(meta.read_text()).get("sq") == SQ_V: continue
@@ -67,15 +74,28 @@ def squeeze(a, sr, words, thr=0.006, hop=0.01):
         i = j
     return a[keep]
 
+def level(a, sr):
+    """Same speech loudness on every line: RMS over the voiced 20 ms frames only (pauses don't count)."""
+    n = sr // 50; fr = a[: len(a) // n * n].reshape(-1, n); r = np.sqrt((fr ** 2).mean(1) + 1e-12)
+    v = r[r > r.max() * 0.1]
+    g = 10 ** ((TARGET - 20 * np.log10(np.sqrt((v ** 2).mean()) + 1e-9)) / 20)
+    return np.clip(a * g, -0.99, 0.99)
+
 for b, text, h, voiced in todo:
     wav = out / f"{b['id']}.wav"
     if voiced:
         # Whole beat in one pass for natural prosody; short pause between sentences comes from punctuation.
-        audio, sr = k.create(text, voice=voice, speed=speed, lang="en-us")
+        if any(w in text for w in LEX):
+            parts = re.split("(" + "|".join(map(re.escape, LEX)) + ")", text)
+            ph = " ".join(LEX[p] if p in LEX else k.tokenizer.phonemize(p, "en-us") for p in parts if p.strip())
+            audio, sr = k.create(ph, voice=voice, speed=speed, is_phonemes=True)
+        else:
+            audio, sr = k.create(text, voice=voice, speed=speed, lang="en-us")
         audio = trim(np.asarray(audio, dtype=np.float32), sr)
         sf.write(wav, audio, sr)
     audio, sr = sf.read(wav, dtype="float32")
     audio = squeeze(audio, sr, hear(wav))
+    audio = level(audio, sr)
     sf.write(wav, audio, sr)
     words = hear(wav)
     (out / f"{b['id']}.words.json").write_text(json.dumps(words))

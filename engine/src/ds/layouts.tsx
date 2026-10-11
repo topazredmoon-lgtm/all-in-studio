@@ -122,24 +122,26 @@ export const Chapter: React.FC<{ no: string; title: string; img?: string; credit
   );
 };
 
-/** Archival clip: the picture is the scene. Never plays past its cut (freezes on the last good frame). */
-export const Clip: React.FC<{ src: string; from: number; to: number; hold?: number; plate?: string; fps: number }> = ({ src, from, to, hold, plate, fps }) => {
+/** Archival clip: the picture is the scene. Plays through its breathing room (build.py pre/post roll; owner 2026-10-11:
+ *  word-tight chops and a frozen last frame looked "amateurish"); only freezes if the file itself runs out.
+ *  Plate = a documentary lower third: "Name · who they are · where, when". It lands at `plateAt` s (default 0.5 s), stays 3.5 s. */
+export const Clip: React.FC<{ src: string; from: number; to: number; hold?: number; plate?: string; plateAt?: number; fps: number }> = ({ src, from, to, hold, plate, plateAt, fps }) => {
   const frame = useCurrentFrame();
   const holdF = Math.round((Math.min(to, hold ?? to) - from) * fps) - 1;
   const video = <OffthreadVideo src={staticFile(src)} startFrom={Math.round(from * fps)} muted style={{ width: '100%', height: '100%', objectFit: 'cover' }} />;
-  const pl = interpolate(frame, [8, 22, 100, 118], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }); // v5: named for 3 s, then the footage alone
+  const p0 = Math.round((plateAt ?? 0.5) * fps);
+  const pl = interpolate(frame, [p0, p0 + 10, p0 + 105, p0 + 117], [0, 1, 1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   const parts = (plate ?? '').split(' · ');
   return (
     <AbsoluteFill style={{ background: '#000' }}>
       {frame >= holdF ? <Freeze frame={holdF}>{video}</Freeze> : video}
       {plate && (
-        <div style={{ position: 'absolute', top: 40, left: 80, right: 80, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 20px',
-          background: 'rgba(10,12,16,0.82)', border: '1px solid rgba(255,255,255,0.15)', borderRadius: 6, opacity: pl }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-            <div style={{ width: 12, height: 12, borderRadius: 6, background: color.red, boxShadow: `0 0 10px ${color.red}` }} />
-            <span style={{ fontFamily: font.mono, fontSize: 20, fontWeight: 700, letterSpacing: '0.12em', color: '#fff', textTransform: 'uppercase' }}>{[parts[0], parts[parts.length - 1]].filter((x, i, a) => a.indexOf(x) === i).join(' // ')}</span>
+        <div style={{ position: 'absolute', left: 90, bottom: 110, display: 'flex', alignItems: 'stretch', gap: 18, opacity: pl, transform: `translateX(${(1 - pl) * -24}px)` }}>
+          <div style={{ width: 8, background: color.red, borderRadius: 2 }} />
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6, padding: '12px 22px 12px 4px', background: 'linear-gradient(90deg, rgba(8,9,12,0.82), rgba(8,9,12,0.55))' }}>
+            <span style={{ fontFamily: font.sans, fontSize: 44, fontWeight: 700, color: '#fff', letterSpacing: '0.01em' }}>{parts[0]}</span>
+            {parts.length > 1 && <span style={{ fontFamily: font.mono, fontSize: 22, color: 'rgba(255,255,255,0.78)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>{parts.slice(1).join(' · ')}</span>}
           </div>
-          <span style={{ fontFamily: font.mono, fontSize: 18, color: color.mute, letterSpacing: '0.08em' }}>HISTORICAL RECORD // 1080P</span>
         </div>
       )}
     </AbsoluteFill>

@@ -1,8 +1,31 @@
-# HANDOVER · All-in · 2026-10-11 · "THE COMING AI BAN": 1-min SAMPLE delivered · NEXT: owner's notes, then the full film
+# HANDOVER · All-in · 2026-10-11 · "THE COMING AI BAN": 2-min SAMPLE delivered (owner notes on the 1-min learned) · NEXT: owner OK → full film
 Older history: `HANDOVER_archive.md` (read only if needed). Token-lean: S is on Pro (keep a session under ~120k tokens;
 grep and small scripts, never print whole transcripts or logs). Never read SCRATCH HOLY or other source projects.
 
-## NOW (2026-10-11): "THE COMING AI BAN" (slug `ai-ban`) · 1-min sample DELIVERED · NEXT: owner's notes → full film
+## NOW (2026-10-11, later): ai-ban 2-min SAMPLE · built after the owner rejected the 1-min one
+Owner notes (verbatim in LEARNINGS 60-66, promoted to PLAYBOOK taste, DESIGN Clips/Voice, CLAUDE.md "Owner's taste, learned"):
+clip cuts "amateurish", voice "irregular", "G P T" unnatural, "MUCH MUCH MORE DRAMATIC AND HOOKING", first clip "NO
+PURPOSE", "it never asks who you are" IRRELEVANT. What changed:
+- **Script** (`videos/ai-ban/gen_script.py`, ORDER c01 h01 c02 h02 c03 h03 c04 h04 h05 h06 c05 h07 h08 h09, 229 words, 5
+  clips, 2:08): cold open = the hearing's AI clone of Sen. Blumenthal's voice while his mouth stays shut → "watch his
+  mouth" → his reveal "that voice was not mine" → written by ChatGPT, and the man who runs ChatGPT sat in front of him →
+  Altman "my worst fears" → he asked for a licence (clip) → who can afford one (the viewer's stakes) → pull up the ladder
+  → Marcus "technocracy combined with oligarchy" (clip) → open loop (pieces). The encryption precedent moved to the film.
+- **Clip edits**: `build.py` now adds pre-roll (≤0.45 s) / post-roll (≤0.7 s) from each clip's own silence, qsin fades
+  on the room sound, L-cut into the next line; no freeze frame. `Clip` plate = documentary lower third (`plateAt`).
+  `lint_clips.py` understands the new semantics (`from`/`to` = first/last word; `roll: false` = old behaviour).
+- **Voice**: speed 1.0; `tts.py` refuses spaced letters, has a `LEX` IPA table (Blumenthal), levels every line to
+  -20 dBFS voiced RMS (SQ_V 2); new `tools/voice_check.py` (pitch / level / rate outliers, rising ends): 0 flagged.
+- **New tool** `tools/win_cut.py` (probe word times in a long .ts, cut with 1.5 s room either side; CLIPS.md).
+- Clips: `engine/public/aiban/senate_{clone,notmine,fears,licence2,marcus}.mp4` + stills `senate_{blumenthal_shut,marcus,room}.jpg`,
+  all US Senate video (PD), LICENCES.md + SOURCES.md rows 1e-1g. Source `.cc-src/aiban/senate_051623.ts` (1 GB, not in git).
+- Root.tsx: ai-ban may use the aibm visuals too (`{...aibm, ...aiban}`; ChatBox used in h02).
+- Full film next (owner OK first): acts 2-8 of SCRIPT.md, rewritten to the new taste (drama, so-what test, purposeful
+  clips). More PD hearing moments found: Hawley "printing press ... or the atom bomb?" (stream ~1679-1698 s), Altman
+  "if this technology goes wrong" (3628), Kennedy/licence Q&A (~7040). Owner: never wait, never ask; subagents for
+  mechanical work.
+
+## EARLIER (2026-10-11): "THE COMING AI BAN" (slug `ai-ban`) · 1-min sample DELIVERED · NEXT: owner's notes → full film
 - Sample = act 1 of narration v1 (SCRIPT.md), 7 beats + 2 clips, 143 words, 1:06. `videos/ai-ban/gen_script.py`
   (ORDER h00 h01 c01 h02 c02 h03 h04 h05 h06), out `videos/ai-ban/out/ai-ban_v2.mp4`, sent as `All-in_ai_ban_sample.mp4` (16.9 MB, crf 21).
   Lints 0 FAIL, watch.py 0 FAIL (v2 fixed v1's lone 4.5 s padlock and 1 s munitions list). Stills: `videos/ai-ban/qa/sheet_h00_h06.jpg`.

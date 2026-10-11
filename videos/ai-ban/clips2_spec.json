@@ -1,0 +1,52 @@
+{
+ "senate_clone": {
+  "src": ".cc-src/aiban/senate_051623.ts",
+  "title": "Oversight of A.I.: Rules for Artificial Intelligence (Senate Judiciary Subcommittee on Privacy, Technology, and the Law, 16 May 2023)",
+  "author": "US Senate Committee on the Judiciary (official hearing video, Senate ISVP stream judiciary051623)",
+  "licence": "Public domain (US government work, 17 U.S.C. 105)",
+  "page": "https://www.judiciary.senate.gov/committee-activity/hearings/oversight-of-ai-rules-for-artificial-intelligence",
+  "words": "Too often, we have seen what happens when technology outpaces regulation, the unbridled exploitation of personal data, the proliferation of disinformation.",
+  "t0": 1107.43,
+  "t1": 1117.99
+ },
+ "senate_notmine": {
+  "src": ".cc-src/aiban/senate_051623.ts",
+  "title": "Oversight of A.I.: Rules for Artificial Intelligence (Senate Judiciary Subcommittee on Privacy, Technology, and the Law, 16 May 2023)",
+  "author": "US Senate Committee on the Judiciary (official hearing video, Senate ISVP stream judiciary051623)",
+  "licence": "Public domain (US government work, 17 U.S.C. 105)",
+  "page": "https://www.judiciary.senate.gov/committee-activity/hearings/oversight-of-ai-rules-for-artificial-intelligence",
+  "words": "But in fact, that voice was not mine. The words were not mine. And the audio was an AI voice cloning software, trained on my floor speeches.",
+  "t0": 1147.57,
+  "t1": 1161.87
+ },
+ "senate_fears": {
+  "src": ".cc-src/aiban/senate_051623.ts",
+  "title": "Oversight of A.I.: Rules for Artificial Intelligence (Senate Judiciary Subcommittee on Privacy, Technology, and the Law, 16 May 2023)",
+  "author": "US Senate Committee on the Judiciary (official hearing video, Senate ISVP stream judiciary051623)",
+  "licence": "Public domain (US government work, 17 U.S.C. 105)",
+  "page": "https://www.judiciary.senate.gov/committee-activity/hearings/oversight-of-ai-rules-for-artificial-intelligence",
+  "words": "My worst fears are that we cause significant, we, the field, the technology, the industry, cause significant harm to the world.",
+  "t0": 3610.61,
+  "t1": 3617.45
+ },
+ "senate_licence2": {
+  "src": ".cc-src/aiban/senate_051623.ts",
+  "title": "Oversight of A.I.: Rules for Artificial Intelligence (Senate Judiciary Subcommittee on Privacy, Technology, and the Law, 16 May 2023)",
+  "author": "US Senate Committee on the Judiciary (official hearing video, Senate ISVP stream judiciary051623)",
+  "licence": "Public domain (US government work, 17 U.S.C. 105)",
+  "page": "https://www.judiciary.senate.gov/committee-activity/hearings/oversight-of-ai-rules-for-artificial-intelligence",
+  "words": "Number one, I would form a new agency that licenses any effort above a certain scale of capabilities and can take that license away and ensure compliance with safety standards.",
+  "t0": 7050.43,
+  "t1": 7059.07
+ },
+ "senate_marcus": {
+  "src": ".cc-src/aiban/senate_051623.ts",
+  "title": "Oversight of A.I.: Rules for Artificial Intelligence (Senate Judiciary Subcommittee on Privacy, Technology, and the Law, 16 May 2023)",
+  "author": "US Senate Committee on the Judiciary (official hearing video, Senate ISVP stream judiciary051623)",
+  "licence": "Public domain (US government work, 17 U.S.C. 105)",
+  "page": "https://www.judiciary.senate.gov/committee-activity/hearings/oversight-of-ai-rules-for-artificial-intelligence",
+  "words": "There is a real risk of a kind of technocracy combined with oligarchy where a small number of companies influence people's beliefs through the nature of these systems.",
+  "t0": 9022.11,
+  "t1": 9031.59
+ }
+}

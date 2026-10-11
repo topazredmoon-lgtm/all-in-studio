@@ -62,3 +62,8 @@ The Senate's own committee video is a US government work (PD). Find the hearing 
 `ffmpeg -i https://www-senate-gov-media-srs.akamaized.net/hls/live/2036788/<committee>/<file>/master/index_1.m3u8 -c copy x.ts`.
 Never C-SPAN's or a network's upload of the same hearing (their camera, their claim). Log the Senate page URL in LICENCES.md.
 Measure the audio/video offset with `tools/cc_cut.py` (no fixed offset: HLS drifts ~7 s over 3 h).
+**Cutting from a long source (2026-10-11): `tools/win_cut.py <topic> <spec.json> --probe`** prints Whisper word times in
+SOURCE video time around each `t0..t1` (seeking the .ts by timestamp, so no drift/offset); put the first word's start and
+the last word's end in the spec as `t0`/`t1` and run it without `--probe`: 1.5 s of real room sound is kept either side so
+`build.py` can roll in/out (LEARNINGS 60). Then `tools/clip_words.py <topic>`; in `gen_script.py` a clip's `from`/`to` =
+the first/last word in the clip file, `plateAt` = when the named person is on camera.

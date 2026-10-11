@@ -1,4 +1,4 @@
-# Licences · ai-ban ("THE COMING AI BAN", 1-min sample, 2026-10-11)
+# Licences · ai-ban ("THE COMING AI BAN", 1-min sample + 2-min sample, 2026-10-11)
 
 Owner's TOP RULE: no clip may cost revenue. Every clip and still below comes from the US Senate's **own** recording of the
 hearing (Senate Judiciary Committee page → Senate ISVP player, file `judiciary051623`), a work of the US federal
@@ -14,6 +14,14 @@ player by `stt=17:20`. Audio-to-video offset measured by `tools/cc_cut.py`: +7.1
 |---|---|---|---|---|
 | c01 `senate_goes_wrong.mp4` (hook) | Sam Altman: "I think if this technology goes wrong, it can go quite wrong." | 3621.6 → 3625.2 (clip file 0.50 → 4.12) | Public domain (US gov work) | Low |
 | c02 `senate_licence.mp4` | Altman to Sen. Kennedy: "Number one, I would form a new agency that licenses any effort above a certain scale of capabilities and can take that license away and ensure compliance with safety standards." | 7043.4 → 7052.1 (clip file 0.72 → 9.42) | Public domain (US gov work) | Low |
+| 2-min c01 `senate_clone.mp4` | AI clone of Sen. Blumenthal's voice (his mouth shut on camera): "Too often, we have seen what happens when technology outpaces regulation." | stream 1105.93 → 1119.49 (VIDEO time, seeked in the .ts; speech 1.5-12.06 s in the file) | Public domain (US gov work) | Low |
+| 2-min c02 `senate_notmine.mp4` | Sen. Blumenthal: "But in fact, that voice was not mine. The words were not mine. And the audio was an AI voice cloning software, trained on my floor speeches." | stream 1146.07 → 1163.37 (VIDEO time, seeked in the .ts; speech 1.5-15.8 s in the file) | Public domain (US gov work) | Low |
+| 2-min c03 `senate_fears.mp4` | Altman: "My worst fears are that we cause significant, we, the field, the technology, the industry, cause significant harm to the world." | stream 3609.11 → 3618.95 (VIDEO time, seeked in the .ts; speech 1.5-8.34 s in the file) | Public domain (US gov work) | Low |
+| 2-min c04 `senate_licence2.mp4` | Altman: "Number one, I would form a new agency that licenses any effort above a certain scale of capabilities and can take that license away and ensure compliance with safety standards." | stream 7048.93 → 7060.57 (VIDEO time, seeked in the .ts; speech 1.5-10.14 s in the file) | Public domain (US gov work) | Low |
+| 2-min c05 `senate_marcus.mp4` | Gary Marcus: "There is a real risk of a kind of technocracy combined with oligarchy, where a small number of companies influence people's beliefs through the nature of these systems." (Sen. Booker on camera for the first 3 s) | stream 9020.61 → 9033.09 (VIDEO time, seeked in the .ts; speech 1.5-10.98 s in the file) | Public domain (US gov work) | Low |
+| still `senate_blumenthal_shut.jpg` | Sen. Blumenthal, mouth shut while the clone plays | stream 1110 s | Public domain (US gov work) | Low |
+| still `senate_marcus.jpg` | Gary Marcus at the witness table | stream 9030 s | Public domain (US gov work) | Low |
+| still `senate_room.jpg` | wide shot of the hearing room | stream 1060 s | Public domain (US gov work) | Low |
 | still `senate_altman.jpg` | Altman at the witness table (nameplate "Mr. Samuel Altman") | stream 3300 s | Public domain (US gov work) | Low |
 | still `senate_dais.jpg` | Sen. Blumenthal (chair) on the dais | stream 1500 s | Public domain (US gov work) | Low |
 
@@ -28,3 +36,6 @@ was Cat. XIII until EO 13026, 1996): SOURCES.md row 3a.
 
 Credits for the YouTube description (not required for public domain, given as good practice):
 - Clips and stills: US Senate Committee on the Judiciary, "Oversight of A.I.: Rules for Artificial Intelligence", 16 May 2023, judiciary.senate.gov (public domain).
+
+2-min sample clips were cut by `tools/win_cut.py` from `.cc-src/aiban/senate_051623.ts` (re-downloaded 2026-10-11 from the
+stream URL above), seeking by video timestamp, so no audio offset applies; times above are in that file.
