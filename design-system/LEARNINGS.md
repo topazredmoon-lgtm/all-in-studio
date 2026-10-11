@@ -27,6 +27,18 @@ didnt have or ideas tought about before. make everything so cool please"
     concrete "huh, I didn't know that" (a date, a precedent, a mechanism), not on an adjective. → PLAYBOOK taste.
 54. Full creative licence on owner scripts: rewrite freely, keep only what serves the story. → PLAYBOOK taste.
 
+## 2026-10-11 · ai-ban 1-min sample (build notes, not owner notes)
+55. US government video is the cleanest clip source there is: the Senate's own hearing video (judiciary.senate.gov →
+    ISVP player `filename=judiciaryMMDDYY`) is public domain and its HLS master sits at
+    `https://www-senate-gov-media-srs.akamaized.net/hls/live/2036788/<committee>/<filename>/master.m3u8`. → CLIPS.md.
+56. A long HLS download (3 h) drifts: the audio decoded straight through ran 7.15 s off the video's timestamps. Never
+    pass a fixed `offset` for HLS sources: let `tools/cc_cut.py` measure it (one source path per offset key). → CLIPS.md.
+57. Real frames of the clip's own PD footage (Altman at the table, the senators' dais, a red ring on the face) carry a
+    hearing far better than line art: use stills of the same footage around its clips (new `Hearing` visual).
+58. Kokoro reads plain "AI" as "A I" cleanly; "A I" in `say` came out as "an eye" / "iApp". Keep "AI" as written.
+59. faster-whisper 1.2 breaks with PyAV 19 (`metadata_errors`): `cloud-setup.sh` pins `av<16`. For a 3 h scan pass a
+    numpy array, tiny.en finds the quote in ~10 min on 4 CPUs; then small.en with word times on a 20 s window.
+
 ## 2026-10-08 (late) · captchas-full v3: owner notes on v2
 Owner, verbatim: "when u show the initals of captcha, the narrator should also read them xd not pause in silence lol.
 the vox clip got cuttof at the end while it was still talking. same for the clip after ... Pretty much all of them.

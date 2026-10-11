@@ -1,0 +1,447 @@
+{
+ "id": "ai-ban",
+ "title": "THE COMING AI BAN · 1-min sample",
+ "voice": {
+  "engine": "kokoro",
+  "name": "af_heart",
+  "speed": 0.95
+ },
+ "pace": {
+  "lead": 0.2,
+  "gap": 0.45,
+  "min_beat": 2.4,
+  "to_clip": 0.25,
+  "after_clip": 0.45,
+  "end_pad": 1.5
+ },
+ "beats": [
+  {
+   "id": "h00",
+   "vo": "Open the AI app on your phone. Ask it anything. It answers, and it never asks who you are.",
+   "say": "Open the AI app on your phone. Ask it anything. It answers, and it never asks who you are.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "PhoneChat",
+       "surface": "bare",
+       "mode": "open",
+       "askAt": "Ask",
+       "replyAt": "answers"
+      },
+      "cap": "ask it *anything*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "PhoneChat",
+       "surface": "bare",
+       "mode": "open"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "idcard",
+       "mark": "no",
+       "markAt": "who",
+       "label": "your name",
+       "enter": "never"
+      },
+      "cap": "it never asks *who you are*",
+      "at": "never"
+     }
+    ],
+    "act": "01 the ban"
+   }
+  },
+  {
+   "id": "h01",
+   "vo": "Now picture the day it does. Your licence number, or no answer.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "PhoneChat",
+       "surface": "bare",
+       "mode": "gate",
+       "gateAt": "day"
+      },
+      "cap": "the day *it asks*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "PhoneChat",
+       "surface": "bare",
+       "mode": "gate"
+      },
+      "R": {
+       "v": "Licence",
+       "surface": "bare",
+       "kind": "blank",
+       "at": "license",
+       "stamp": "required",
+       "stampAt": "answer"
+      },
+      "cap": "your *licence*, or nothing",
+      "at": "Your"
+     }
+    ],
+    "act": "01 the ban"
+   }
+  },
+  {
+   "id": "c01",
+   "clip": {
+    "src": "aiban/senate_goes_wrong.mp4",
+    "from": 0.5,
+    "to": 4.12,
+    "plate": "Sam Altman · head of OpenAI · US Senate, 16 May 2023"
+   }
+  },
+  {
+   "id": "h02",
+   "vo": "That's Sam Altman, the man who runs ChatGPT, in front of the US Senate. And then he asked for something strange.",
+   "say": "That's Sam Altman, the man who runs Chat G P T, in front of the U S Senate. And then he asked for something strange.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Hearing",
+       "surface": "bare",
+       "img": "aiban/senate_altman.jpg",
+       "pill": "sam altman",
+       "plate": "us senate video · public domain"
+      },
+      "cap": "the man who *runs it*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Hearing",
+       "surface": "bare",
+       "img": "aiban/senate_altman.jpg",
+       "pill": "sam altman"
+      },
+      "R": {
+       "v": "Hearing",
+       "surface": "bare",
+       "img": "aiban/senate_dais.jpg",
+       "pill": "the senate",
+       "focus": "40% 40%"
+      },
+      "cap": "in front of *the senate*",
+      "at": "front"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Hearing",
+       "surface": "bare",
+       "img": "aiban/senate_altman.jpg",
+       "ring": {
+        "x": 37,
+        "y": 4,
+        "w": 26,
+        "h": 50
+       },
+       "ringAt": "strange",
+       "tag": {
+        "t": "16 may 2023",
+        "at": 0
+       },
+       "plate": "us senate video · public domain"
+      },
+      "cap": "he asked for *something strange*",
+      "at": "And"
+     }
+    ],
+    "act": "01 the ban"
+   }
+  },
+  {
+   "id": "c02",
+   "clip": {
+    "src": "aiban/senate_licence.mp4",
+    "from": 0.72,
+    "to": 9.42,
+    "plate": "Sam Altman · US Senate, 16 May 2023 · public domain",
+    "fadeOut": 0.08
+   }
+  },
+  {
+   "id": "h03",
+   "vo": "A licence to build AI. Like a driving licence, but for building a mind. It sounds safe. But we've seen this before.",
+   "say": "A licence to build AI. Like a driving licence, but for building a mind. It sounds safe. But we've seen this before.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "Licence",
+       "surface": "bare",
+       "kind": "car",
+       "title": "driving licence"
+      },
+      "R": {
+       "v": "Licence",
+       "surface": "bare",
+       "kind": "brain",
+       "title": "mind licence",
+       "enter": "like"
+      },
+      "cap": "a *licence* for a mind"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "shield",
+       "mark": "ok",
+       "markAt": "safe",
+       "label": "safe?"
+      },
+      "R": {
+       "v": "Licence",
+       "surface": "bare",
+       "kind": "brain",
+       "title": "mind licence",
+       "stamp": "approved",
+       "stampAt": "safe"
+      },
+      "cap": "it *sounds* safe",
+      "at": "sounds"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Licence",
+       "surface": "bare",
+       "kind": "brain",
+       "title": "mind licence"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "clock",
+       "tAt": "seen",
+       "label": "before"
+      },
+      "cap": "we've *seen this* before",
+      "at": "But#2"
+     }
+    ],
+    "act": "01 the ban"
+   }
+  },
+  {
+   "id": "h04",
+   "vo": "Until 1996, America listed strong encryption, the maths that keeps your messages private, as a munition. On the same list as tanks and missiles.",
+   "say": "Until nineteen ninety-six, America listed strong encryption, the maths that keeps your messages private, as a munition. On the same list as tanks and missiles.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "lock",
+       "label": "encryption",
+       "tag": {
+        "t": "until 1996",
+        "at": 0
+       }
+      },
+      "cap": "*until 1996*, in america"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "lock",
+       "label": "encryption"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "envelope",
+       "label": "your messages"
+      },
+      "cap": "keeps your *messages* private",
+      "at": "maths"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "lock",
+       "label": "encryption"
+      },
+      "R": {
+       "v": "ListDoc",
+       "surface": "bare",
+       "title": "us munitions list",
+       "rows": [
+        {
+         "t": "tanks"
+        },
+        {
+         "t": "missiles"
+        },
+        {
+         "t": "warships"
+        },
+        {
+         "t": "bombs"
+        },
+        {
+         "t": "encryption"
+        }
+       ],
+       "hot": 4,
+       "hotAt": "munition",
+       "plate": "22 cfr 121 · cat. xiii · eo 13026, 1996"
+      },
+      "cap": "listed as a *weapon*",
+      "at": "as"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "tank",
+       "label": "tanks"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "missile",
+       "label": "missiles",
+       "enter": "missiles"
+      },
+      "cap": "same list as *tanks*",
+      "at": "On"
+     }
+    ],
+    "act": "01 the ban"
+   }
+  },
+  {
+   "id": "h05",
+   "vo": "Nobody has banned AI. Not yet. But almost every piece you'd need to do it has already been built, or tried.",
+   "say": "Nobody has banned AI. Not yet. But almost every piece you'd need to do it has already been built, or tried.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Pieces",
+       "surface": "bare",
+       "pieces": [
+        {
+         "icon": "idcard"
+        },
+        {
+         "icon": "chip",
+         "at": "yet"
+        },
+        {
+         "icon": "brain",
+         "at": "piece"
+        },
+        {
+         "icon": "contract",
+         "at": "built"
+        },
+        {
+         "icon": "lock",
+         "at": "tried"
+        }
+       ]
+      },
+      "cap": "nobody has *banned* it. yet."
+     }
+    ],
+    "act": "01 the ban"
+   }
+  },
+  {
+   "id": "h06",
+   "vo": "By the end of this video, you'll know each piece, who wins if they snap together, and how ordinary people beat this once before.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Pieces",
+       "surface": "bare",
+       "pieces": [
+        {
+         "icon": "idcard"
+        },
+        {
+         "icon": "chip"
+        },
+        {
+         "icon": "brain"
+        },
+        {
+         "icon": "contract"
+        },
+        {
+         "icon": "lock"
+        }
+       ],
+       "snapAt": "snap"
+      },
+      "cap": "who wins if they *snap*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Pieces",
+       "surface": "bare",
+       "pieces": [
+        {
+         "icon": "idcard"
+        },
+        {
+         "icon": "chip"
+        },
+        {
+         "icon": "brain"
+        },
+        {
+         "icon": "contract"
+        },
+        {
+         "icon": "lock"
+        }
+       ],
+       "snapped": true
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "people",
+       "mark": "ok",
+       "markAt": "beat",
+       "label": "ordinary people",
+       "enter": "ordinary"
+      },
+      "cap": "how people *won* before",
+      "at": "ordinary"
+     }
+    ],
+    "act": "01 the ban"
+   }
+  }
+ ]
+}

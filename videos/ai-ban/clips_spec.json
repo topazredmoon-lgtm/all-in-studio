@@ -1,0 +1,24 @@
+{
+ "senate_goes_wrong": {
+  "mp4": ".cc-src/aiban/senate_051623.ts",
+  "audio": ".cc-src/aiban/senate_051623.wav",
+  "title": "Oversight of A.I.: Rules for Artificial Intelligence (Senate Judiciary Subcommittee on Privacy, Technology, and the Law, 16 May 2023)",
+  "author": "US Senate Committee on the Judiciary (official hearing video, Senate ISVP stream judiciary051623)",
+  "licence": "Public domain (US government work, 17 U.S.C. 105)",
+  "page": "https://www.judiciary.senate.gov/committee-activity/hearings/oversight-of-ai-rules-for-artificial-intelligence",
+  "t0": 3621.62,
+  "t1": 3627.86,
+  "words": "I think if this technology goes wrong, it can go quite wrong, and we want to be vocal about that."
+ },
+ "senate_licence": {
+  "mp4": ".cc-src/aiban/senate_051623_b.ts",
+  "audio": ".cc-src/aiban/senate_051623.wav",
+  "title": "Oversight of A.I.: Rules for Artificial Intelligence (Senate Judiciary Subcommittee on Privacy, Technology, and the Law, 16 May 2023)",
+  "author": "US Senate Committee on the Judiciary (official hearing video, Senate ISVP stream judiciary051623)",
+  "licence": "Public domain (US government work, 17 U.S.C. 105)",
+  "page": "https://www.judiciary.senate.gov/committee-activity/hearings/oversight-of-ai-rules-for-artificial-intelligence",
+  "t0": 7043.3,
+  "t1": 7051.9,
+  "words": "Number one, I would form a new agency that licenses any effort above a certain scale of capabilities and can take that license away and ensure compliance with safety standards."
+ }
+}

@@ -55,3 +55,10 @@ companies' own product videos marked CC BY.
 - Copyright claims vs strikes: vidiq.com/blog/post/youtube-copyright-claim-copyright-strike and freetouse.com/blog/youtube-copyright-claim-vs-strike (summaries of YouTube Help; check YouTube Help "Copyright strike basics" before relying on a detail).
 - YouTube Help, reused content policy: support.google.com/youtube/answer/1311392.
 - TED Talks Usage Policy: ted.com/about/our-organization/our-policies-terms/ted-talks-usage-policy (CC BY-NC-ND 4.0; "ad supported content" excluded).
+
+## US government video (public domain): Senate hearings (2026-10-11, LEARNINGS 55-56)
+The Senate's own committee video is a US government work (PD). Find the hearing on the committee site; the page embeds
+`senate.gov/isvp/?comm=<committee>&filename=<file>&stt=<mm:ss>`. Download (720p, ~6 MB/min):
+`ffmpeg -i https://www-senate-gov-media-srs.akamaized.net/hls/live/2036788/<committee>/<file>/master/index_1.m3u8 -c copy x.ts`.
+Never C-SPAN's or a network's upload of the same hearing (their camera, their claim). Log the Senate page URL in LICENCES.md.
+Measure the audio/video offset with `tools/cc_cut.py` (no fixed offset: HLS drifts ~7 s over 3 h).

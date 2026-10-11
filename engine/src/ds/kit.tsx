@@ -27,7 +27,8 @@ const S = (p: number, c: string = color.ink, sw = 4): React.SVGProps<SVGPathElem
 // ---------------------------------------------------------------- line art (viewBox 200 × 200)
 export type IconName = 'person' | 'robot' | 'gateOpen' | 'gateShut' | 'hourglass' | 'doc' | 'envelope' | 'desk' | 'eye' | 'book' | 'coin' | 'contract' | 'cursor' | 'people'
   | 'cash' | 'church' | 'car' | 'camera' | 'flag' | 'pin' | 'map' | 'box' | 'grid' | 'checkbox' | 'checkbox2' | 'cloud' | 'building' | 'browser' | 'clock'
-  | 'worker' | 'monitor' | 'laptop' | 'fingerprint' | 'shield' | 'cookie' | 'key' | 'face' | 'iris' | 'newspaper';
+  | 'worker' | 'monitor' | 'laptop' | 'fingerprint' | 'shield' | 'cookie' | 'key' | 'face' | 'iris' | 'newspaper'
+  | 'lock' | 'chip' | 'idcard' | 'brain' | 'missile' | 'tank';
 
 const art = (name: IconName, p: number, t: number): React.ReactNode => {
   const red = color.red;
@@ -81,6 +82,12 @@ const art = (name: IconName, p: number, t: number): React.ReactNode => {
     case 'key': return <g><circle cx={62} cy={100} r={32} {...(S(p) as any)} /><circle cx={62} cy={100} r={10} {...(S(p, red, 5) as any)} /><path d="M94 100 L176 100 M156 100 L156 128 M134 100 L134 120" {...S(p)} /></g>;
     case 'face': return <g><ellipse cx={100} cy={104} rx={50} ry={62} {...(S(p) as any)} /><path d="M80 92 L82 92 M118 92 L120 92 M84 132 Q100 142 116 132 M100 100 L96 118 L104 118" {...S(p)} /><path d="M24 50 L24 24 L50 24 M150 24 L176 24 L176 50 M24 150 L24 176 L50 176 M176 150 L176 176 L150 176" {...S(p, red, 5)} /></g>;
     case 'iris': return <g><path d="M10 100 Q100 30 190 100 Q100 170 10 100 Z" {...S(p)} /><circle cx={100} cy={100} r={34} {...(S(p) as any)} /><circle cx={100} cy={100} r={22} {...(S(p, color.mute, 3) as any)} /><circle cx={100} cy={100} r={10} fill={color.ink} opacity={p} /><path d={`M20 ${60 + 80 * t} L180 ${60 + 80 * t}`} stroke={red} strokeWidth={3} opacity={p * (t > 0 && t < 1 ? 1 : 0)} /></g>;
+    case 'lock': return <g><rect x={46} y={88} width={108} height={88} rx={10} {...(S(p) as any)} /><path d="M70 88 L70 64 A30 30 0 0 1 130 64 L130 88" {...S(p)} /><circle cx={100} cy={124} r={10} {...(S(p, red, 5) as any)} /><path d="M100 134 L100 152" {...S(p, red, 6)} /></g>;
+    case 'chip': return <g><rect x={52} y={52} width={96} height={96} rx={8} {...(S(p) as any)} /><rect x={78} y={78} width={44} height={44} rx={4} {...(S(p, red, 5) as any)} />{[70, 90, 110, 130].map((v, i) => <path key={i} d={`M${v} 52 L${v} 30 M${v} 148 L${v} 170 M52 ${v} L30 ${v} M148 ${v} L170 ${v}`} {...S(p, color.ink, 3)} />)}</g>;
+    case 'idcard': return <g><rect x={18} y={46} width={164} height={108} rx={10} {...(S(p) as any)} /><circle cx={62} cy={88} r={16} {...(S(p) as any)} /><path d="M38 132 C40 112 50 106 62 106 C74 106 84 112 86 132" {...S(p)} /><path d="M104 80 L162 80" {...S(p, red, 6)} /><path d="M104 102 L162 102 M104 124 L144 124" {...S(p, color.mute, 5)} /></g>;
+    case 'brain': return <g><path d="M100 40 C84 26 56 30 52 54 C32 58 26 82 38 96 C24 110 32 138 54 140 C58 164 86 170 100 154 C114 170 142 164 146 140 C168 138 176 110 162 96 C174 82 168 58 148 54 C144 30 116 26 100 40 Z M100 40 L100 154" {...S(p)} /><path d="M100 76 C86 70 72 78 70 92 M100 112 C114 106 128 114 130 128 M58 116 C66 110 78 112 82 120 M142 74 C134 70 122 72 118 82" {...S(p, red, 5)} /></g>;
+    case 'missile': return <g><path d="M100 18 C116 36 120 60 120 84 L120 150 L80 150 L80 84 C80 60 84 36 100 18 Z M80 124 L56 156 L80 150 M120 124 L144 156 L120 150 M80 84 L120 84" {...S(p)} /><path d="M88 162 L92 186 M100 162 L100 192 M112 162 L108 186" {...S(p, red, 5)} /></g>;
+    case 'tank': return <g><path d="M26 132 Q20 160 48 164 L152 164 Q180 160 174 132 Z" {...S(p)} />{[54, 82, 110, 138].map((x, i) => <circle key={i} cx={x} cy={148} r={8} {...(S(p, color.mute, 4) as any)} />)}<path d="M50 132 L60 104 L136 104 L150 132 M80 104 L84 86 L120 86 L124 104" {...S(p)} /><path d="M120 94 L188 82" {...S(p, red, 6)} /></g>;
     case 'newspaper': return <g><rect x={28} y={32} width={144} height={140} rx={4} {...(S(p) as any)} /><path d="M44 56 L156 56" {...S(p, red, 9)} /><path d="M44 82 L94 82 M44 100 L94 100 M44 118 L94 118 M44 136 L94 136 M106 82 L156 82 M106 100 L156 100 M106 118 L156 118 M106 136 L140 136" {...S(p, color.mute, 4)} /></g>;
   }
 };

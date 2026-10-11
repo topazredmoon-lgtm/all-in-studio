@@ -84,3 +84,13 @@ Patterns marked ⇧ are general enough to graduate into `engine/src/ds/` once th
 | g04 | `Track` ⇧ | 2000 → 2003 → 2009 → 2011 Duolingo | "same", "2011" | new |
 | g05 | `Translate` + `Invoice` | an article translated by learners; CNN and BuzzFeed paid, learners got free lessons | "translated", "CNN", "paid" | new |
 | g03 | chapter | Street View car photo, "Next: eyes on the street" | "eyes" | new |
+
+## ai-ban (`engine/src/visuals/aiban.tsx`, 2026-10-11 sample)
+| Beat | Visual | What it shows | Cue words | Status |
+|---|---|---|---|---|
+| h00/h01 | `PhoneChat` | phone with an AI chat; `open`: question types, answer fills as bars; `gate`: a sheet slides up asking "licence no." with a red caret | "Ask", "answers", "day" | new |
+| h01/h03 | `Licence` | licence card (header, photo box, number lines, a drawing: car / brain / blank); red stamp on cue | "license", "safe" | new |
+| h02 | `Hearing` | a PD still of the hearing, slow push-in, red ring on a face, name pill | "strange" | new |
+| h04 | `ListDoc` | a typed government list on paper; one row boxed red on cue | "munition" | new |
+| h05/h06 | `Pieces` | jigsaw pieces with drawings, each lands on its word, snap into one row on cue (seams turn red) | "piece", "built", "tried", "snap" | new |
+New `LineIcon`s: `lock`, `chip`, `idcard`, `brain`, `missile`, `tank`.

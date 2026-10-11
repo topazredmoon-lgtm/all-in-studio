@@ -1,0 +1,2535 @@
+  1051.2   1058.0 Welcome to the hearing of the privacy technology and the law subcommittee.
+  1058.0   1062.6 Thank my partner in this effort.
+  1062.6   1068.5 Senator Hawley, ranking member, and I particularly want to thank Senator Durban,
+  1068.5   1072.8 Chairman of the Judiciary Committee, and he will be speaking shortly.
+  1072.8   1077.2 This hearing is on the oversight of our artificial intelligence,
+  1077.2   1085.0 the first in a series of hearings intended to write the rules of AI.
+  1085.0   1091.4 Our goal is to demystify and hold accountable those new technologies to avoid some of the
+  1091.4   1094.4 mistakes of the past.
+  1094.4   1103.5 And now for some introductory remarks too often we have seen what happens when technology
+  1103.5   1106.0 outpaces regulation.
+  1106.0   1109.3 the unbridled exploitation of personal data,
+  1109.3   1112.1 the proliferation of disinformation,
+  1112.1   1116.2 and the deepening of societal inequalities.
+  1116.2   1119.6 We have seen how algorithmic biases
+  1119.6   1124.2 can perpetuate discrimination and prejudice
+  1124.2   1126.3 and how the lack of transparency
+  1126.3   1129.2 can undermine public trust.
+  1129.2   1133.2 This is not the future we want.
+  1133.2   1135.1 If you were listening from home,
+  1135.1   1137.4 you might have thought that voice was mine,
+  1137.4   1145.0 And the words from me, but in fact, that voice was not mine.
+  1145.0   1148.0 The words were not mine.
+  1148.0   1153.4 And the audio was an AI voice cloning software
+  1153.4   1155.8 trained on my floor speeches.
+  1155.8   1161.5 The remarks were written by chat GPT when it was asked
+  1161.5   1166.9 how I would open this hearing.
+  1166.9   1170.5 and you heard just now the result.
+  1170.5   1175.5 I asked chat GPT, why did you pick those themes
+  1176.1   1177.9 in that content?
+  1177.9   1181.2 And it answered, and I'm quoting,
+  1181.2   1183.6 Blumenthal has a strong record in advocating
+  1183.6   1186.4 for consumer protection and civil rights.
+  1186.4   1193.7 He has been vocal about issues such as data privacy
+  1193.7   1197.7 and the potential for discrimination
+  1197.7   1206.2 algorithmic decision making. Therefore, the statement emphasizes these aspects. Mr. Altman,
+  1206.2   1214.7 I appreciate chat GPT's endorsement. In all seriousness, this apparent reasoning is pretty
+  1214.7   1223.4 impressive. I am sure that we'll look back in a decade and view chat GPT and GPT-4,
+  1223.4   1228.4 like we do the first cell phone, those big clunky things that we used to carry around.
+  1228.4   1234.1 But we recognize that we are on the verge really of a new era.
+  1234.1   1240.3 The audio and my playing at May strike you is curious or humorous.
+  1240.3   1249.5 But what reverberated in my mind was what if I had asked it and what if it had provided
+  1249.5   1256.5 an endorsement of Ukraine surrendering or Vladimir Putin's leadership.
+  1256.5   1258.6 That would have been really frightening.
+  1258.6   1265.7 And the prospect is more than a little scary to use the word, Mr. Altman, you have used
+  1265.7   1266.7 yourself.
+  1266.7   1271.8 And I think you have been very constructive in calling attention to the pitfalls as well
+  1271.8   1272.8 as the promise.
+  1272.8   1276.0 And that's the reason why we wanted you to be here today.
+  1276.0   1280.1 we thank you and our other witnesses for joining us.
+  1280.1   1283.5 For several months now, the public has been fascinated
+  1283.5   1288.5 with GPT, DALI and other AI tools.
+  1288.5   1293.6 These examples, like the homework done by chat GPT
+  1293.6   1296.0 are the articles and op-eds that it can
+  1296.0   1298.6 write feel like novelties.
+  1298.6   1303.0 But the underlying advancement of this era
+  1303.0   1305.5 are more than just research experiments.
+  1305.5   1309.5 They are no longer fantasies of science fiction.
+  1309.5   1311.7 They are real and present.
+  1311.7   1315.1 The promises of during cancer or developing
+  1315.1   1318.2 new understandings of physics and biology or modeling
+  1318.2   1324.6 climate and weather, all very encouraging and hopeful.
+  1324.6   1329.0 But we also know the potential harms.
+  1329.0   1332.4 And we've seen them already weaponize this information,
+  1332.4   1335.2 housing discrimination, harassment of women,
+  1335.2   1341.4 and a personation fraud, voice cloning, deep fakes.
+  1341.4   1347.3 These are the potential risks, despite the other rewards.
+  1347.3   1351.2 And for me, perhaps the biggest nightmare
+  1351.2   1355.1 is the looming new industrial revolution,
+  1355.1   1357.7 the displacement of millions of workers,
+  1357.7   1361.6 the loss of huge numbers of jobs, the need
+  1361.6   1366.1 to prepare for this new industrial revolution
+  1366.1   1371.3 in skill training and relocation that may be required.
+  1371.3   1375.1 And already industry leaders are calling attention
+  1375.1   1380.0 to those challenges.
+  1380.0   1383.5 To quote chat, chat, chp, t.
+  1383.5   1388.4 This is not necessarily the future that we want.
+  1388.4   1393.3 We need to maximize the good over the bad.
+  1393.3   1395.3 Congress has a choice now.
+  1395.3   1398.2 We had the same choice when we face social media.
+  1398.2   1400.3 We failed to seize that moment.
+  1400.3   1406.0 The result is predators on the internet, toxic content,
+  1406.0   1409.1 exploiting children, creating dangers for them,
+  1409.1   1412.0 and Senator Blackburn and I and others
+  1412.0   1415.7 like Senator Durban on the Judiciary Committee
+  1415.7   1421.1 trying to deal with it, kids online, safety act, but Congress failed to meet the moment
+  1421.1   1422.5 on social media.
+  1422.5   1432.4 Now we have the obligation to do it on AI before the threats and the risks become real.
+  1432.4   1436.0 Sensible safeguards are not in opposition to innovation.
+  1436.0   1439.8 Accountability is not a burden far from it.
+  1439.8   1444.6 They are the foundation of how we can move ahead while protecting public trust.
+  1444.6   1451.1 how we can lead the world in technology and science, but also in promoting our democratic
+  1451.1   1452.1 values.
+  1452.1   1459.5 Otherwise, in the absence of that trust, I think we may well lose both.
+  1459.5   1465.4 These are sophisticated technology, but there are basic expectations, common in our law.
+  1465.4   1468.0 We can start with transparency.
+  1468.0   1470.8 AI companies are to be required to test their systems.
+  1470.8   1475.1 Disclose known risks and allow independent researcher access,
+  1475.1   1479.4 we can establish scorecards and nutrition labels
+  1479.4   1485.2 to encourage competition based on safety and trustworthiness.
+  1485.2   1488.0 Limitations on use, there are places where the risk of AI
+  1488.0   1492.1 is so extreme that we ought to impose restriction,
+  1492.1   1493.8 or even ban their use, especially when
+  1493.8   1498.2 it comes to commercial invasions of privacy for profit
+  1498.2   1501.8 and decisions that affect people's livelihoods.
+  1501.8   1504.9 And of course, accountability, reliability.
+  1504.9   1507.7 When our companies and their clients cause harm,
+  1507.7   1509.1 they should be held liable.
+  1510.1   1513.3 We should not repeat our past mistakes.
+  1514.6   1517.1 For example, section 230.
+  1517.1   1519.2 Forcing companies to think ahead
+  1519.2   1521.1 and be responsible for the ramifications
+  1521.1   1522.7 of their business decisions
+  1522.7   1528.4 can be the most powerful tool of all.
+  1528.4   1530.5 Garbage in, garbage out.
+  1530.5   1532.9 The principle still applies.
+  1532.9   1535.1 We ought to be aware of the garbage,
+  1535.1   1541.1 whether it's going into these platforms or coming out of them.
+  1541.1   1545.8 And the ideas that we develop in this hearing,
+  1545.8   1549.8 I think will provide a solid path forward.
+  1549.8   1553.0 I look forward to discussing them with you today,
+  1553.0   1554.9 and I will just finish on this note.
+  1554.9   1558.8 The AI industry doesn't have to wait for Congress.
+  1558.8   1561.8 I hope there are ideas and feedback from this discussion
+  1561.8   1565.1 and from the industry and voluntary action,
+  1565.1   1570.5 such as we've seen lacking in many social media platforms
+  1570.5   1573.6 and the consequences have been huge.
+  1573.6   1578.3 So I'm hoping that we will elevate rather than have
+  1578.3   1580.0 a race to the bottom.
+  1580.0   1584.5 And I think these hearings will be an important part
+  1584.5   1588.4 of this conversation. This one is only the first.
+  1588.4   1592.0 The ranking member and I have agreed there should be more
+  1592.0   1594.5 and we're going to invite other industry leaders,
+  1594.5   1598.3 some have committed to come experts, academics,
+  1599.2   1601.6 and the public we hope will participate.
+  1601.6   1604.0 And with that, I will turn to the ranking member,
+  1604.0   1604.9 Senator Holly.
+  1606.4   1607.7 Thank you very much, Mr. Chairman.
+  1607.7   1609.7 Thanks to the witnesses for being here.
+  1609.7   1613.2 I appreciate that several of you had long journeys to make
+  1613.2   1614.0 in order to be here.
+  1614.0   1616.0 I appreciate you thinking the time
+  1616.0   1617.3 I look forward to your testimony.
+  1617.3   1618.8 I want to thank Senator Blumenthal
+  1618.8   1621.4 for convening this hearing for being a leader on this topic.
+  1621.4   1624.9 You know, a year ago, we couldn't have had this hearing
+  1624.9   1627.1 because the technology that we're talking about
+  1627.1   1629.2 had not burst into public consciousness.
+  1629.2   1633.4 That gives us a sense, I think, of just how rapidly
+  1633.4   1635.8 this technology that we're talking about today
+  1635.8   1639.5 is changing and evolving and transforming our world
+  1639.5   1641.7 right before our very eyes.
+  1641.7   1647.6 I was talking with someone just last night, a researcher in the field of psychiatry who is pointing
+  1647.6   1653.4 out to me that the chat GPT and generative AI, these large language models, it's really
+  1653.4   1659.6 like the invention of the internet in scale, at least, at least, and potentially far,
+  1659.6   1661.5 far more significant than that.
+  1661.5   1668.2 We could be looking at one of the most significant technological innovations in human history.
+  1668.2   1672.6 And I think my question is what kind of an innovation is it going to be?
+  1672.6   1679.1 Is it going to be like the printing press that diffused knowledge and power and learning
+  1679.1   1685.6 widely across the landscape that empowered ordinary everyday individuals that led to
+  1685.6   1689.2 greater flourishing that led above all to greater liberty?
+  1689.2   1692.2 Or is it going to be more like the atom bomb?
+  1692.2   1698.1 Huge technological breakthrough, but the consequences, severe, terrible.
+  1698.1   1701.1 continue to haunt us to this day.
+  1701.1   1702.1 I don't know the answer to that question.
+  1702.1   1704.1 I don't think any of us in the room know the answer to that question,
+  1704.1   1707.1 because I think the answer has not yet been written.
+  1707.1   1710.1 And to an uncertain extent, it's up to us here
+  1710.1   1714.1 and to us as the American people to write the answer.
+  1714.1   1716.1 What kind of technology will this be?
+  1716.1   1718.1 How will we use it to better our lives?
+  1718.1   1723.1 How will we use it to actually harness the power of technological innovation
+  1723.1   1725.1 for the good of the American people,
+  1725.1   1728.1 for the liberty of the American people,
+  1728.1   1730.5 not for the power of the few.
+  1731.5   1734.9 You know, I was reminded of the psychologist
+  1734.9   1736.9 and writer Carl Jung who said at the beginning
+  1736.9   1740.6 of the last century that our ability
+  1740.6   1742.1 for technological innovation,
+  1742.1   1744.2 our capacity for technological revolution
+  1744.2   1747.2 had far outpaced our ethical and moral ability
+  1747.2   1750.7 to apply and harness the technology we developed.
+  1750.7   1752.3 That was a century ago.
+  1752.3   1754.6 I think the story of the 20th century largely
+  1754.6   1756.5 bore him out.
+  1756.5   1758.0 And I just wonder what will we say
+  1758.0   1760.3 as we look back at this moment
+  1760.3   1761.8 about these new technologies,
+  1761.8   1763.1 about generative AI,
+  1763.1   1764.8 about these language models,
+  1764.8   1767.6 and about the hosts of other AI capacities
+  1767.6   1769.2 that are even right now under development,
+  1769.2   1770.2 not just in this country,
+  1770.2   1771.6 but in China,
+  1771.6   1773.4 the countries of our adversaries
+  1773.4   1774.9 and all around the world.
+  1774.9   1776.9 And I think the question that young posed
+  1776.9   1778.6 is really the question that faces us.
+  1778.6   1780.6 Will we strike that balance
+  1780.6   1782.4 between technological innovation
+  1782.4   1786.6 and our ethical and moral responsibility to humanity,
+  1786.6   1790.5 to liberty, to the freedom of this country.
+  1790.5   1792.1 And I hope that today's hearing
+  1792.1   1794.0 we'll take a step closer to that answer.
+  1794.0   1795.0 Thank you Mr. Chairman.
+  1795.0   1796.5 Thanks, Senator Holly.
+  1796.5   1800.3 I'm going to turn to the Chairman of Judiciary Committee
+  1800.3   1802.4 and the ranking member Senator Graham
+  1802.4   1805.1 if they have opening remarks as well.
+  1805.1   1806.7 Yes, Mr. Chairman, thank you very much,
+  1806.7   1809.1 and Senator Holly as well.
+  1809.1   1811.1 Last week in this committee,
+  1811.1   1813.4 full committee, Senate Judiciary Committee.
+  1813.4   1816.8 We dealt with an issue that had been waiting for attention
+  1816.8   1818.2 for almost two decades.
+  1818.2   1820.8 And that is what to do with the social media
+  1820.8   1823.2 when it comes to the abuse of children.
+  1823.2   1826.5 We had four bills initially that were considered
+  1826.5   1828.0 by this committee.
+  1828.0   1831.0 And what may be history and the making,
+  1831.0   1834.8 we passed all four bills with unanimous roll calls.
+  1834.8   1836.7 Unanimous roll calls.
+  1836.7   1838.8 I can't remember another time when we've done that.
+  1838.8   1844.4 on issue that important. It's an indication, I think, of the important position of this
+  1844.4   1848.9 committee and the national debate on issues that affect every single family and affect
+  1848.9   1857.1 our future in a profound way. 1989 was a historic watershed year in America because that's
+  1857.1   1863.5 when Seinfeld arrived. And we have a sitcom which was supposedly about little or nothing
+  1863.5   1865.9 which turned out to be enduring.
+  1865.9   1867.7 I like to watch it, obviously.
+  1867.7   1871.5 And I'm always marvel when they show the phones that he used
+  1871.5   1873.1 in 1989.
+  1873.1   1874.9 And I think about those in comparison
+  1874.9   1877.4 of what we carry around in our pockets today.
+  1877.4   1879.2 So dramatic change.
+  1879.2   1881.3 And I guess the question is I look at that.
+  1881.3   1883.8 Is does this change in phone technology
+  1883.8   1885.8 that we've witnessed through the sitcom?
+  1885.8   1892.8 really exemplify a profound change in America still on
+  1892.8   1900.6 answer. But the basic question we face is whether or not this issue of AI is a
+  1900.6   1906.9 quantitative change in technology or qualitative change. The suggestions that I've
+  1906.9   1912.0 heard from experts in the field suggests it's qualitative. Is it AI fundamentally
+  1912.0   1917.2 different is it a game changer? Is it so disruptive that we need to treat it
+  1917.2   1922.3 differently than other forms of innovation? That's the starting point. And the
+  1922.3   1925.6 second starting point is one that's humbling and that is the fact when you look
+  1925.6   1929.9 at the record of Congress and dealing with innovation, technology and rapid
+  1929.9   1934.8 change, we're not designed for that. In fact, the Senate was not created for
+  1934.8   1939.0 that purpose, but just the opposite. Slow things down. Take a harder look at it.
+  1939.0   1944.0 don't react to public sentiment. Make sure you're doing the right thing. Well, I've
+  1944.0   1948.9 heard of the potential, the positive potential of AI, and it is enormous. You can go
+  1948.9   1954.8 through a list of the deployment of technology that would say that an idea you can sketch
+  1954.8   1961.5 it on a website, for a website on an app can generate functioning code. Pharmaceutical
+  1961.5   1966.9 companies could use the technology to identify new candidates to treat disease. The
+  1966.9   1972.5 list goes on and on. And then of course the danger and it's profound as well. So I'm
+  1972.5   1976.3 glad that this hearing is taking place and I think it's important for all of us to
+  1976.3   1980.9 participate. I'm glad that it's a bipartisan approach. We're going to have to scramble
+  1980.9   1985.5 to keep up with the pace of innovation in terms of our government public response to
+  1985.5   1989.0 it. But this is a great start. Thank you, Mr. Chairman.
+  1989.0   1994.9 Thanks, Senator. It is very much a bipartisan approach, very deeply and broadly. My
+  1994.9   2005.8 I'm going to turn to my friend Senator Graham.
+  2005.8   2006.8 Thank you.
+  2006.8   2011.8 That was not written by AI for sure.
+  2011.8   2013.8 Let me introduce now the witnesses.
+  2013.8   2016.8 We're very grateful to you for being here.
+  2016.8   2021.8 Sam Altman is the co-founder and CEO of OpenAI,
+  2021.8   2026.8 the AI research and deployment company behind chat,
+  2026.8   2033.3 and Dallie. Mr. Altman was president of the early stage startup accelerator. Why
+  2033.3   2043.2 commentator from 1914? I'm sorry 2014 to 2019. Open AI was founded in 2015.
+  2043.2   2048.9 Christina Montgomery is IBM's vice president and chief privacy and trust
+  2048.9   2054.6 officer overseeing the company's global privacy program policies compliance
+  2054.6   2060.9 and strategy. She also chairs IBM's AI ethics board, a multi-disciplinary team responsible
+  2060.9   2067.9 for the governance of AI and emerging technologies. Christina has served in various roles at IBM,
+  2067.9   2074.7 including corporate secretary to the company's board of directors. She is a global leader in AI
+  2074.7   2081.3 ethics and governments and Ms. Montgomery also is a member of the United States chamber of commerce,
+  2081.3   2087.5 AI Commission and the United States National AI Advisory Committee, which was established
+  2087.5   2093.8 in 2022 to advise the President and the National AI Initiative Office on a range of topics
+  2093.8   2096.4 related to AI.
+  2096.4   2100.6 Gary Marcus is a leading voice in artificial intelligence.
+  2100.6   2107.7 He's a scientist, best-selling author and entrepreneur, founder of the robust AI and
+  2107.7   2113.0 geometric AI acquired by Uber, if I'm not mistaken.
+  2113.0   2117.9 An emeritus professor of psychology and neuroscience at NYU.
+  2117.9   2120.9 Mr. Marcus is well known for his challenges
+  2120.9   2125.7 to contemporary AI anticipating many of the current limitations,
+  2125.7   2129.9 decades in advance, and for his research in human language,
+  2129.9   2133.2 development, and cognitive neuroscience.
+  2133.2   2135.4 Thank you for being here.
+  2135.4   2139.6 And as you may know, our custom on the judiciary
+  2139.6   2142.4 committee is to swear in our witnesses
+  2142.4   2144.1 before they testify.
+  2144.1   2149.8 So if you would all please rise and raise your right hand,
+  2149.8   2153.3 you sound with swear that the testimony that you are going
+  2153.3   2155.6 to give is the truth, the whole truth,
+  2155.6   2156.6 and nothing but the truth.
+  2156.6   2158.4 So how's it going?
+  2158.4   2161.2 Thank you.
+  2161.2   2165.1 Mr. Altman, we're going to begin with you if that's OK.
+  2165.1   2165.9 Thank you.
+  2165.9   2167.5 Thank you Chairman Blumenthal,
+  2167.5   2168.8 I'm ranking Member Holly,
+  2168.8   2170.6 members of the Judiciary Committee.
+  2170.6   2172.5 Thank you for the opportunity to speak to you today
+  2172.5   2173.5 about large neural networks.
+  2173.5   2175.8 It's really an honor to be here even more so
+  2175.8   2177.2 in the moment than I expected.
+  2177.2   2178.3 My name is Sam Altman.
+  2178.3   2180.9 I'm the Chief Executive Officer of OpenAI.
+  2182.1   2183.9 OpenAI was founded on the belief
+  2183.9   2185.7 that artificial intelligence has the potential
+  2185.7   2189.3 to improve nearly every aspect of our lives,
+  2189.3   2191.1 but also that it creates serious risks.
+  2191.1   2192.8 We have to work together to manage.
+  2192.8   2196.8 We're here because people love this technology.
+  2196.8   2198.7 We think it can be a printing press moment.
+  2198.7   2201.7 We have to work together to make it so.
+  2201.7   2207.6 Open AI is an unusual company and we set it up that way because AI is an unusual technology.
+  2207.6   2212.4 We are governed by a nonprofit and our activities are driven by our mission and our charter,
+  2212.4   2216.4 which commit us to working to ensure that the broad distribution of the benefits of AI
+  2216.4   2220.3 and to maximize in the safety of AI systems.
+  2220.3   2223.9 We are working to build tools that one day can help us make new discoveries and address
+  2223.9   2229.0 some of humanity's biggest challenges, like climate change and carrying cancer.
+  2229.0   2233.6 Our current systems aren't yet capable of doing these things, but it has been immensely
+  2233.6   2238.1 gratifying to watch many people around the world get so much value from what these systems
+  2238.1   2240.3 can already do today.
+  2240.3   2245.0 We love seeing people use our tools to create, to learn, to be more productive, we're
+  2245.0   2248.6 very optimistic that they're going to be fantastic jobs in the future and the current
+  2248.6   2251.7 jobs can get much better.
+  2251.7   2255.2 We also love seeing what developers are doing to improve lives.
+  2255.2   2261.1 For example, be my eyes, used our new multimodal technology in GPT-4 to help visually
+  2261.1   2265.3 impaired individuals navigate their environment.
+  2265.3   2269.8 We believe that the benefits of the tools we have deployed so far vastly outweigh the risks,
+  2269.8   2274.2 but ensuring their safety is vital to our work, and we make significant efforts to ensure
+  2274.2   2278.4 that safety is built into our systems at all levels.
+  2278.4   2284.5 For releasing any new system, OpenAI conducts extensive testing, engages external experts
+  2284.5   2290.0 for detailed reviews and independent audits, improves the model's behavior, and implements
+  2290.0   2294.0 robust safety and monitoring systems.
+  2294.0   2299.2 Before we release GPT-4, our latest model, we spent over six months conducting extensive
+  2299.2   2304.4 evaluations, external red teaming, and dangerous capability testing.
+  2304.4   2306.4 We are proud of the progress that we made.
+  2306.4   2308.3 GPT-4 is more likely to respond
+  2308.3   2311.9 helpfully and truthfully and refuse harmful requests
+  2311.9   2315.8 than any other widely deployed model of similar capability.
+  2315.8   2318.8 However, we think that regulatory intervention
+  2318.8   2321.1 by governments will be critical to mitigate
+  2321.1   2324.1 the risks of increasingly powerful models.
+  2324.1   2327.1 For example, the US government might consider
+  2327.1   2330.2 a combination of licensing and testing requirements
+  2330.2   2332.0 for development and release of AI models
+  2332.0   2335.2 above a threshold of capabilities.
+  2335.2   2338.1 There are several other areas I mentioned in my written testimony
+  2338.1   2340.0 where I believe that companies like ours
+  2340.0   2342.8 can partner with governments, including ensuring
+  2342.8   2344.8 that the most powerful AI models adhere
+  2344.8   2348.4 to a set of safety requirements, facilitating processes
+  2348.4   2350.5 to develop and update safety measures
+  2350.5   2353.4 and examining opportunities for global coordination.
+  2353.4   2355.7 And as you mentioned, I think it's important
+  2355.7   2357.4 that companies have their own responsibility here
+  2357.4   2359.9 no matter what Congress does.
+  2359.9   2364.1 This is a remarkable time to be working on artificial intelligence.
+  2364.1   2370.0 But as this technology advances, we understand that people are anxious about how it could change the way we live.
+  2370.0   2371.7 We are too.
+  2371.7   2377.3 But we believe that we can and must work together to identify and manage the potential downsides
+  2377.3   2381.1 so that we can all enjoy the tremendous upsides.
+  2381.1   2385.2 It is essential that powerful AI is developed with democratic values in mind,
+  2385.2   2388.4 and this means that US leadership is critical.
+  2388.4   2392.1 I believe that we will be able to mitigate the risks in front of us and really capitalize
+  2392.1   2396.4 on this technology potential to grow the US economy and the world.
+  2396.4   2398.9 And I look forward to working with you all to meet this moment.
+  2398.9   2400.4 And I look forward to answering your questions.
+  2400.4   2401.4 Thank you.
+  2401.4   2403.8 Thank you, Mr. Aldman.
+  2403.8   2406.8 It's my gummy.
+  2406.8   2411.5 Chairman Blumenthal, ranking member Holly and members of the subcommittee.
+  2411.5   2414.7 Thank you for today's opportunity to present.
+  2414.7   2418.6 AI is not new, but it's certainly having a moment.
+  2418.6   2421.3 Recent breakthroughs in generative AI
+  2421.3   2425.1 and the technologies dramatic surge in the public attention
+  2425.1   2427.7 has rightfully raised serious questions
+  2427.7   2429.9 at the heart of today's hearing.
+  2429.9   2433.4 What are AI's potential impacts on society?
+  2433.4   2435.3 What do we do about bias?
+  2435.3   2439.4 What about misinformation, misuse, or harmful content
+  2439.4   2441.8 generated by AI systems?
+  2441.8   2443.9 Senators, these are the right questions,
+  2443.9   2446.0 and I applaud you for convening today's hearing
+  2446.0   2447.2 to address them head on.
+  2448.4   2450.6 Well, AI may be having its moment.
+  2450.6   2452.7 The moment for government to play a role
+  2452.7   2455.0 has not passed us by.
+  2455.0   2457.4 This period of focus public attention,
+  2457.4   2460.7 on AI is precisely the time to define and build
+  2460.7   2465.0 the right guardrails to protect people and their interests.
+  2465.0   2467.3 But at its core, AI is just a tool
+  2467.3   2470.4 and tools can serve different purposes.
+  2470.4   2472.8 To that end, IBM urges Congress
+  2472.8   2477.1 to adopt a precision regulation approach to AI.
+  2477.1   2479.4 This means establishing rules to govern
+  2479.4   2482.5 the deployment of AI in specific use cases,
+  2482.5   2484.8 not regulating the technology itself.
+  2485.8   2489.5 Such an approach would involve four things.
+  2489.5   2492.4 First, different rules for different risks.
+  2492.4   2494.8 The strongest regulation should be applied
+  2494.8   2496.9 to use cases with the greatest risks
+  2496.9   2498.4 to people in society.
+  2499.7   2502.1 Second, clearly defining risks.
+  2502.1   2505.7 There must be clear guidance on AI uses or categories of AI
+  2505.7   2508.7 supported activity that are inherently high risk.
+  2508.7   2512.1 This common definition is key to enabling a clear understanding
+  2512.1   2514.8 of what regulatory requirements will apply
+  2514.8   2517.4 in different use cases and contexts.
+  2517.4   2518.9 Third, be transparent.
+  2518.9   2520.5 So AI shouldn't be hidden.
+  2520.5   2522.8 Consumers should know when they're interacting with an AI
+  2522.8   2526.1 system and that they have recourse to engage with a real person
+  2526.1   2527.6 should they so desire.
+  2527.6   2530.4 No person anywhere should be tricked into interacting
+  2530.4   2532.4 with an AI system.
+  2532.4   2534.2 And finally, showing the impact.
+  2534.2   2536.6 For higher risk use cases, companies should
+  2536.6   2539.2 be required to conduct impact assessments that show
+  2539.2   2542.0 how their systems perform against test for bias,
+  2542.0   2545.3 and other ways that they could potentially impact the public
+  2545.3   2548.1 and to a test that they've done so.
+  2548.1   2551.1 By following risk-based use case-specific approach
+  2551.1   2553.7 at the core of precision regulation,
+  2553.7   2555.8 Congress can mitigate the potential risk of AI
+  2555.8   2558.4 without hindering innovation.
+  2558.4   2561.7 But businesses also play a critical role in ensuring
+  2561.7   2564.1 the responsible deployment of AI.
+  2564.1   2567.5 Companies active in developing or using AI must have strong
+  2567.5   2571.2 internal governance, including, among other things,
+  2571.2   2574.1 designating a lead AI ethics official responsible
+  2574.1   2577.5 for an organization's trustworthy AI strategy,
+  2577.5   2580.3 standing up an ethics board or a similar function,
+  2580.3   2583.4 as a centralized clearing house for resources
+  2583.4   2587.0 to help guide implementation of that strategy.
+  2587.0   2589.3 IBM has taken both of these steps,
+  2589.3   2592.8 and we continue calling on our industry peers to follow suit.
+  2592.8   2595.3 Our AIF export plays a critical role
+  2595.3   2598.4 in overseeing internal AI governance processes,
+  2598.4   2601.2 creating reasonable guardrails to ensure we introduce
+  2601.2   2605.2 technology into the world in a responsible and safe manner.
+  2605.2   2607.6 It provides centralized governance and accountability
+  2607.6   2610.2 while still being flexible enough to support
+  2610.2   2614.3 decentralized initiatives across IBM's global operations.
+  2614.3   2619.9 We do this because we recognize that society grants our license to operate.
+  2619.9   2622.2 And with AI, the stakes are simply too high.
+  2622.2   2625.5 We must build not undermine the public trust.
+  2625.5   2630.1 The era of AI cannot be another era of move fast and break things.
+  2630.1   2633.7 But we don't have to slam the brakes on innovation either.
+  2633.7   2638.3 These systems are within our control today as are the solutions.
+  2638.3   2643.5 What we need at this pivotal moment is clear reasonable policy and sound guardrails.
+  2643.5   2645.8 These guardrails should be matched with meaningful steps
+  2645.8   2648.3 by the business community to do their part.
+  2649.3   2651.8 Congress and the business community must work together
+  2651.8   2653.0 to get this right.
+  2653.0   2656.1 The American people deserve no less.
+  2656.1   2658.8 Thank you for your time, and I look forward to your questions.
+  2658.8   2665.5 Thank you, Professor Marcus.
+  2665.5   2666.5 Whoops.
+  2666.5   2667.4 Thank you, senators.
+  2667.4   2669.2 Today's meeting is historic.
+  2669.2   2671.0 I'm profoundly grateful to be here.
+  2671.0   2673.9 I come as a scientist, someone who's founded AI companies,
+  2673.9   2675.9 and is someone who genuinely loves AI,
+  2675.9   2677.8 but who is increasingly worried.
+  2677.8   2680.2 There are benefits, but we don't yet know
+  2680.2   2682.4 whether they will outweigh the risks.
+  2682.4   2685.7 Fundamentally, these new systems are going to be destabilizing.
+  2685.7   2688.2 They can and will create persuasive lies
+  2688.2   2690.9 at a scale humanity has never seen before.
+  2690.9   2693.6 Outsiders will use them to affect our elections,
+  2693.6   2695.4 insiders to manipulate our markets
+  2695.4   2696.8 and our political systems.
+  2696.8   2699.4 Democracy itself is threatened.
+  2699.4   2702.2 Chatbots will also clandestinely shape our opinions,
+  2702.2   2705.1 potentially exceeding what social media can do.
+  2705.1   2707.5 choices about data sets that AI companies use
+  2707.5   2709.9 will have enormous unseen influence.
+  2709.9   2712.2 Those who choose the data will make the rules
+  2712.2   2715.8 shaping society and subtle but powerful ways.
+  2715.8   2717.7 There are other risks too, many stemming
+  2717.7   2721.7 from the inherent unreliability of current systems.
+  2721.7   2724.8 A law professor, for example, was accused by a chat bot
+  2724.8   2727.7 of sexual harassment untrue.
+  2727.7   2729.4 And it pointed to a Washington Post article
+  2729.4   2731.2 that didn't even exist.
+  2731.2   2733.6 The more that that happens, the more that anybody can deny
+  2733.6   2736.9 anything, as one prominent lawyer told me on Friday,
+  2736.9   2739.6 defendants are starting to claim that plaintiffs are making up
+  2739.6   2741.1 legitimate evidence.
+  2741.1   2744.1 These sorts of allegations undermine the abilities of juries
+  2744.1   2746.1 to decide what or who to believe
+  2746.1   2749.1 and contribute to the undermining of democracy.
+  2749.1   2752.1 Poor medical advice could have serious consequences too.
+  2752.1   2754.1 An open source large language model recently
+  2754.1   2756.2 seems to have played a role in a person's decision
+  2756.2   2757.7 to take their own life.
+  2757.7   2759.4 The large language model asked the human,
+  2759.4   2762.2 if you wanted to die, why didn't you do it earlier?
+  2762.2   2764.1 and then followed up with were you thinking of me
+  2764.1   2765.3 when you overdosed?
+  2765.3   2767.4 Without ever referring the patient to the human health
+  2767.4   2769.3 that was obviously needed.
+  2769.3   2772.3 Another system rushed out and made available to millions
+  2772.3   2775.8 of children told a person posing as a 13-year-old
+  2775.8   2780.3 had a lie to her parents about a trip with a 31-year-old man.
+  2780.3   2782.9 Further threats continue to emerge regularly.
+  2782.9   2785.8 A month after GPT-4 was released, OpenAI released
+  2785.8   2788.3 chat GPT plugins, which quickly led others
+  2788.3   2791.4 to develop something called auto-GPT, with direct access
+  2791.4   2793.8 to the internet, the ability to write source code
+  2793.8   2795.7 and increased powers of automation.
+  2795.7   2797.9 This may well have drastic and difficult
+  2797.9   2800.3 to predict security consequences.
+  2800.3   2801.8 What criminals are going to do here
+  2801.8   2803.6 is to create counterfeit people.
+  2803.6   2806.8 It's hard to even envision the consequences of that.
+  2806.8   2809.6 We have built machines that are like bulls in a China shop,
+  2809.6   2814.3 powerful, reckless, and difficult to control.
+  2814.3   2816.2 We all more or less agree on the values
+  2816.2   2818.7 we would like for our AI systems to honor.
+  2818.7   2820.1 We want, for example, for our systems
+  2820.1   2822.6 to be transparent, to protect our privacy,
+  2822.6   2826.0 to be free of bias, and above all else, to be safe.
+  2826.0   2828.8 But current systems are not in line with these values.
+  2828.8   2830.4 Current systems are not transparent.
+  2830.4   2832.6 They do not adequately protect our privacy,
+  2832.6   2834.7 and they continue to perpetuate bias.
+  2834.7   2837.1 And even their makers don't entirely understand
+  2837.1   2838.1 how they work.
+  2838.1   2840.2 Most of all, we cannot remotely guarantee
+  2840.2   2843.4 that they're safe, and hope here is not enough.
+  2843.4   2845.9 The big tech companies prefer to plan boils down
+  2845.9   2847.0 to trust us.
+  2847.0   2848.0 But why should we?
+  2848.0   2850.2 The sums of money at stake are mind-boggling,
+  2850.2   2853.0 emission-strift, open AI's original mission statement
+  2853.0   2855.1 proclaimed, our goal is to advance AI
+  2855.1   2858.4 and the way that most likely to benefit humanity's whole,
+  2858.4   2862.2 unconstrained by a need to generate financial return.
+  2862.2   2864.9 Seven years later, they're largely beholden to Microsoft,
+  2864.9   2867.3 embroiled in part an epic battle of search engines
+  2867.3   2869.1 that routinely make things up.
+  2869.1   2871.1 And that's forced Alphabet to rush out products
+  2871.1   2872.8 and de-emphasize safety.
+  2872.8   2875.6 Humanity has taken a back seat.
+  2875.6   2877.6 AI is moving incredibly fast with lots
+  2877.6   2882.0 potential but also lots of risks. We obviously need government involved and we need
+  2882.0   2887.8 the tech companies involved both big and small. But we also need independent scientists,
+  2887.8   2891.4 not just so that we scientists can have a voice but so that we can participate directly
+  2891.4   2895.8 in addressing the problems and evaluating solutions and not just after products are released
+  2895.8   2899.8 but before and I'm glad that Sam mentioned that. We need tight collaboration between
+  2899.8   2904.2 independent scientists and governments in order to hold the company's feet to the fire,
+  2904.2   2907.5 allowing independent access to these independent scientists,
+  2907.5   2912.0 allowing independent scientists access to these systems before they widely released.
+  2912.0   2916.7 As part of a clinical trial like safety evaluation is a vital first step.
+  2916.7   2921.8 Ultimately, we may need something like CERN, global, international, and neutral,
+  2921.8   2925.6 but focused on AI safety rather than high energy physics.
+  2925.6   2930.2 We have unprecedented opportunities here, but we are also facing a perfect storm.
+  2930.2   2933.3 of corporate irresponsible, wide spread deployment,
+  2933.3   2937.1 lack of adequate regulation, and inherent unreliability.
+  2937.1   2940.3 AI is among the most world-changing technologies ever,
+  2940.3   2942.5 already changing things more rapidly than almost
+  2942.5   2944.1 any technology in history.
+  2944.1   2946.5 We acted too slowly with social media.
+  2946.5   2948.9 Many unfortunate decisions got locked in
+  2948.9   2950.8 with lasting consequence.
+  2950.8   2953.3 The choices we make now will have lasting effects
+  2953.3   2955.8 for decades, maybe even centuries.
+  2955.8   2957.3 The very fact that we are here today,
+  2957.3   2960.4 in bipartisan fashion to discuss these matters.
+  2960.4   2961.6 Gives me some hope.
+  2961.6   2963.0 Thank you, Mr. Chairman.
+  2963.0   2965.1 Thanks very much, Professor Marcus.
+  2965.1   2968.2 We're going to have seven-minute rounds of questioning,
+  2968.2   2970.1 and I will begin.
+  2970.1   2972.9 First of all, Professor Marcus, we are here today
+  2972.9   2975.8 because we do face that perfect storm.
+  2975.8   2979.0 Some of us might characterize it more like a bomb
+  2979.0   2982.9 in a China shop, not a bull.
+  2982.9   2985.8 And as Senator Hawley indicated,
+  2985.8   2991.6 There are precedents here, not only the atomic warfare era,
+  2991.6   2996.1 but also the genome project, the research on genetics,
+  2996.1   3000.3 where there was international cooperation as a result.
+  3000.3   3002.5 And we want to avoid those past mistakes
+  3002.5   3004.5 as I indicated my opening statement
+  3004.5   3006.9 that were committed on social media.
+  3006.9   3010.6 That is precisely the reason we are here today.
+  3010.6   3013.8 Chat GPT makes mistakes.
+  3013.8   3015.6 All AI does.
+  3015.6   3020.6 and it can be a convincing liar, what people call hallucinations.
+  3021.6   3027.0 That might be an innocent problem in the opening of a judiciary subcommittee hearing
+  3027.0   3034.2 where a voice is impersonated, mine in this instance, or quotes from research papers
+  3034.2   3040.3 that don't exist, but chat, GPT, and Bard are willing to answer questions
+  3040.3   3043.6 about life or death matters, for example, drug interactions.
+  3043.6   3048.6 And those kinds of mistakes can be deeply damaging.
+  3048.6   3054.6 I'm interested in how we can have reliable information about the accuracy and trustworthiness
+  3054.6   3062.6 of these models and how we can create competition and consumer disclosures that will award
+  3062.6   3064.6 greater accuracy.
+  3064.6   3072.6 The National Institutes of Standards and Technology actually already has an AI accuracy test
+  3072.6   3080.3 face recognition vendor tests. It doesn't solve for all the issues with facial recognition,
+  3080.3   3086.0 but the scorecard does provide useful information about the capabilities and flaws of
+  3086.0   3093.3 these systems. So there's work on models to assure accuracy and integrity. My question,
+  3093.3   3100.6 let me begin with you, Mr. Altman is, should we consider independent testing labs to provide
+  3100.6   3107.3 scorecards and nutrition labels or the equivalent of nutrition labels, packaging that
+  3107.3   3113.4 indicates to people whether or not the content can be trusted, what the ingredients
+  3113.4   3120.6 are and what the garbage going in may be because it could result in garbage going out.
+  3120.6   3124.3 Yeah, I think that's a great idea.
+  3124.3   3128.3 I think that companies should put their own sort of, you know, here are the results of
+  3128.3   3130.2 of our test of our model before we release it.
+  3130.2   3134.3 Here's where it has weaknesses, here's where it has strengths,
+  3134.3   3137.9 but also independent audits for that are very important.
+  3137.9   3140.6 These models are getting more accurate over time.
+  3142.4   3145.9 This is, as we have, I think said, as loudly as anyone.
+  3145.9   3148.0 This technology is in its early stages.
+  3148.0   3149.9 It definitely still makes mistakes.
+  3149.9   3153.2 We find that people that users are pretty sophisticated
+  3153.2   3155.9 and understand where the mistakes are,
+  3155.9   3157.9 that they need or likely to be,
+  3157.9   3162.2 that they need to be responsible for verifying what the models say,
+  3162.2   3163.7 that they go off and check it.
+  3165.6   3168.6 I worry that as the models get better and better,
+  3168.6   3172.7 the users can have sort of less and less of their own
+  3172.7   3174.8 discriminating thought process around it.
+  3174.8   3176.8 But I think users are more capable
+  3176.8   3178.9 than we could often give them credit for
+  3178.9   3180.8 in conversations like this.
+  3180.8   3182.2 I think a lot of disclosures,
+  3182.2   3183.7 which if you've used Chaging BT,
+  3183.7   3187.2 you'll see about the inaccuracies of the model are also
+  3187.2   3188.4 important.
+  3188.4   3193.0 And I'm excited for a world where companies
+  3193.0   3195.6 publish with the models information
+  3195.6   3198.6 about how they behave where the inaccuracies are
+  3198.6   3202.2 and independent agencies or companies provide that as well.
+  3202.2   3203.9 I think it's a great idea.
+  3203.9   3207.6 I alluded in my opening remarks to the jobs
+  3207.6   3212.5 issue, the economic effects on employment.
+  3212.5   3216.9 I think you have said, in fact, and I'm going to quote,
+  3216.9   3220.3 development of superhuman machine intelligence
+  3220.3   3222.6 is probably the greatest threat to the continued
+  3222.6   3224.8 existence of humanity.
+  3224.8   3226.0 End quote.
+  3226.0   3229.7 You may have had in mind the effect on jobs,
+  3229.7   3235.5 which is really my biggest nightmare in the long term.
+  3235.5   3239.8 Let me ask you what your biggest nightmare is
+  3239.8   3245.5 and whether you share that concern.
+  3245.5   3247.5 Like with all technological revolutions,
+  3247.5   3251.1 I expect there to be significant impact on jobs,
+  3251.1   3252.9 but exactly what that impact looks like
+  3252.9   3254.1 is very difficult to predict.
+  3254.1   3256.3 If we went back to the other side
+  3256.3   3258.3 of a previous technological revolution,
+  3258.3   3260.8 talking about the jobs that exist on the other side,
+  3262.1   3263.8 you can go back and read books of this.
+  3263.8   3267.1 It's what people said at the time, it's difficult.
+  3267.1   3270.3 I believe that there will be far greater jobs
+  3270.3   3271.1 on the other side of this
+  3271.1   3273.0 And the jobs of today will get better.
+  3273.0   3275.3 I think it's important.
+  3275.3   3277.2 First of all, I think it's important to understand
+  3277.2   3279.9 and think about GPT-4 as a tool, not a creature,
+  3279.9   3282.1 which is easy to get confused.
+  3282.1   3285.6 And it's a tool that people have a great deal of control
+  3285.6   3287.7 over and how they use it.
+  3287.7   3292.5 And second, GPT-4 and things other systems like it
+  3292.5   3295.0 are good at doing tasks, not jobs.
+  3295.0   3298.8 And so you see already people that are using GPT-4
+  3298.8   3302.7 to do their job much more efficiently by helping them with tasks.
+  3302.7   3306.9 Now, GPT-4 will, I think, entirely
+  3306.9   3308.5 automate away some jobs.
+  3308.5   3311.1 And it will create new ones that we believe
+  3311.1   3312.0 will be much better.
+  3312.0   3314.5 This happens, again, my understanding
+  3314.5   3318.0 of the history of technology is one long technological revolution,
+  3318.0   3319.8 not a bunch of different ones put together.
+  3319.8   3321.7 But this has been continually happening.
+  3321.7   3325.8 We, as our quality of life, raises and as machines and tools
+  3325.8   3329.0 that we create can help us live better lives.
+  3329.0   3332.3 The bar raises for what we do and our human ability
+  3332.3   3335.1 and what we spend our time going after goes after more
+  3335.1   3336.6 ambitious, more satisfying projects.
+  3336.6   3340.0 So there will be an impact on jobs.
+  3340.0   3341.6 We try to be very clear about that.
+  3341.6   3344.9 And I think it will require partnership
+  3344.9   3346.0 between the industry and government,
+  3346.0   3347.9 but mostly action by government to figure out
+  3347.9   3350.9 how we want to mitigate that.
+  3350.9   3353.6 But I'm very optimistic about how great the jobs of the future
+  3353.6   3354.3 will be.
+  3354.3   3354.9 Thank you.
+  3354.9   3357.9 Let me ask Ms. Montgomery and Professor Marcus
+  3357.9   3361.2 for your reactions, though, it's questions as well.
+  3361.2   3362.2 Ms. Montgomery?
+  3362.2   3363.3 On the jobs point.
+  3363.3   3368.1 Yeah, I mean, well, it's a hugely important question.
+  3368.1   3370.1 And it's one that we've been talking about
+  3370.1   3372.8 for a really long time at IBM.
+  3372.8   3376.4 We do believe that AI and we've said it for a long time
+  3376.4   3377.9 is going to change every job.
+  3377.9   3379.9 New jobs will be created.
+  3379.9   3382.1 Many more jobs will be transformed,
+  3382.1   3385.0 and some jobs will transition away.
+  3385.0   3388.4 I'm a personal example of a job that didn't exist
+  3388.4   3389.6 when I joined IBM.
+  3389.6   3392.3 And I have a team of AI governance professionals
+  3392.3   3397.2 who were in new roles that we created as early as three years ago.
+  3397.2   3399.6 I mean, they're new and they're growing.
+  3399.6   3402.3 So I think the most important thing that we could be doing
+  3402.3   3406.6 and Ken and should be doing now is to prepare the workforce
+  3406.6   3409.4 of today and the workforce of tomorrow
+  3409.4   3413.2 for partnering with AI technologies and using them.
+  3413.2   3417.1 And we've been very involved for years now in doing that,
+  3417.1   3422.6 in focusing on skills-based hiring, in educating,
+  3422.6   3426.5 for the skills of the future, our skills-build platform,
+  3426.5   3430.6 has 7 million learners and over 1,000 courses worldwide,
+  3430.6   3431.8 focused on skills.
+  3431.8   3436.3 And we've pledged to train 30 million individuals
+  3436.3   3438.7 by 2030 in the skills that are needed
+  3438.7   3440.5 for society today.
+  3440.5   3442.0 Thank you, Professor Marcus.
+  3442.0   3443.8 May I go back to the first question as well?
+  3443.8   3445.3 Absolutely.
+  3445.3   3447.3 On the subject of nutrition labels,
+  3447.3   3449.9 I think we absolutely need to do that.
+  3449.9   3451.8 I think that there are some technical challenges
+  3451.8   3453.6 in the building proper nutrition labels
+  3453.6   3455.7 goes hand in hand with transparency.
+  3455.7   3458.0 The biggest scientific challenge in understanding
+  3458.0   3459.7 these models is how they generalize.
+  3459.7   3462.7 What do they memorize and what new things do they do?
+  3462.7   3464.9 The more that there's in the data set, for example,
+  3464.9   3467.3 the thing that you want to test accuracy on,
+  3467.3   3469.4 the less you can get a proper read on that.
+  3469.4   3470.5 So it's important, first of all,
+  3470.5   3472.5 that scientists be part of that process.
+  3472.5   3474.9 And second, that we have much greater transparency
+  3474.9   3476.9 about what actually goes into these systems.
+  3476.9   3478.3 If we don't know what's in them,
+  3478.3   3480.4 then we don't know exactly how well they're doing
+  3480.4   3482.0 when they give something new.
+  3482.0   3483.7 And we don't know how good a benchmark that will be
+  3483.7   3485.6 for something that's entirely novel.
+  3485.6   3488.1 So I could go into that more, but I wanna flag that.
+  3489.1   3492.5 Second is on jobs, past performance history
+  3492.5   3493.9 is not a guarantee of the future.
+  3493.9   3496.5 It has always been the case in the past
+  3496.5   3502.1 that we have had more jobs, that new jobs, new professions come in as new technologies come in.
+  3502.1   3506.1 I think this one's going to be different and the real question is over what time scale?
+  3506.1   3508.2 Is it going to be 10 years? Is it going to be 100 years?
+  3508.2   3510.9 And I don't think anybody knows the answer to that question.
+  3510.9   3518.0 I think in the long run, so-called artificial general intelligence really will replace a large fraction of human jobs.
+  3518.0   3520.5 We're not that close to artificial general intelligence.
+  3520.5   3524.7 Despite all of the media hype and so forth, I would say that what we have right now
+  3524.7   3527.5 is just a small sampling of the AI that we will build.
+  3527.5   3529.7 20 years people will laugh at this.
+  3529.7   3531.8 As I think it was centered or hauling made the,
+  3531.8   3533.9 maybe Senator Durbin made the example about this.
+  3533.9   3536.3 It was Senator Durbin made the example about cell phones.
+  3536.3   3540.1 When we look back at AI of today, 20 years ago,
+  3540.1   3542.9 it would be like, wow, that stuff was really unreliable.
+  3542.9   3544.4 It couldn't really do planning,
+  3544.4   3546.1 which is an important technical aspect.
+  3546.1   3547.9 It's reasoning was ability.
+  3547.9   3550.3 In reasoning abilities were limited.
+  3550.3   3553.1 But when we get to AGI, artificial general intelligence,
+  3553.1   3554.6 maybe let's say it's 50 years.
+  3554.6   3558.5 That really is going to have, I think, profound effects on labor.
+  3558.5   3559.9 And there's just no way around that.
+  3559.9   3561.5 And last, I don't know if I'm allowed to do this,
+  3561.5   3563.7 but I will note that Sam's worst fear,
+  3563.7   3565.1 I do not think, is employment.
+  3565.1   3568.2 And he never told us what his worst fear actually is.
+  3568.2   3571.9 And I think it's germane to find out.
+  3571.9   3573.0 Thank you.
+  3573.0   3578.1 I'm going to ask Mr. Altman if he cares to respond.
+  3578.1   3579.0 Yeah.
+  3579.0   3582.1 Look, we have tried to be very clear about the magnitude
+  3582.1   3585.2 of the risks here.
+  3585.2   3590.4 I think jobs and employment and what we're all going to do with our time really matters.
+  3590.4   3594.4 I agree that when we get to very powerful systems, the landscape will change.
+  3594.4   3599.7 I think I'm just more optimistic that we are incredibly creative and we find new things to do
+  3599.7   3606.2 with better tools and that will keep happening. My worst fears are that we cause significant.
+  3606.2   3610.2 We, the field, the technology, the industry cause significant harm to the world.
+  3611.7   3614.7 I think that could happen in a lot of different ways. It's why we started the company.
+  3615.2   3621.2 It's a big part of why I'm here today and why we've been here in the past and been able to spend some time with you.
+  3621.2   3628.2 I think if this technology goes wrong, it can go quite wrong and we want to be vocal about that.
+  3628.2   3637.2 We want to work with the government to prevent that from happening, but we try to be very clear-eyed about what the downside case is and the work that we have to do to mitigate that.
+  3637.2   3643.8 Thank you. And our hope is that the rest of the industry will follow the example that you
+  3643.8   3654.2 and IBM is my summary have set by coming today and meeting with us as you have done privately
+  3654.2   3659.9 in helping to guide what we're going to do so that we can target the harms and avoid unintended
+  3659.9   3666.8 consequences to the good. Thank you. Senator Holy.
+  3666.8   3669.0 you give Mr. Chairman thanks to witnesses for being here.
+  3669.0   3670.8 Mr. Altman, I think you grew up in St. Louis.
+  3670.8   3671.7 I did.
+  3671.7   3672.2 Not mistaken.
+  3672.2   3673.1 It's great to see you, sorry.
+  3673.1   3673.9 It's a great place.
+  3673.9   3674.7 Missouri and here.
+  3674.7   3675.6 It is.
+  3675.6   3676.6 Thank you.
+  3676.6   3677.6 I want that noted, especially underlying in the record.
+  3677.6   3678.8 Missouri is a great place.
+  3678.8   3680.9 That is the takeaway from today's hearing.
+  3680.9   3683.1 Maybe we would stop there, Mr. Chairman.
+  3683.1   3685.8 Let me ask you, Mr. Altman, I think I'll start with you.
+  3685.8   3688.1 And I'll just preface this by saying, my questions here
+  3688.1   3690.2 are an attempt to get my head around
+  3690.2   3693.5 and to ask all of you to help us to get our heads around.
+  3693.5   3696.5 What this generative AI, particularly the large language
+  3696.5   3697.8 models, what it can do.
+  3697.8   3699.9 So I'm trying to understand its capacities
+  3699.9   3701.8 and then its significance.
+  3701.8   3703.7 So I'm looking at a paper here.
+  3703.7   3706.4 Entitled Large Language Models, Trained on Media Diots
+  3706.4   3708.2 can predict public opinion.
+  3708.2   3710.7 This is just posted about a month ago,
+  3710.7   3715.0 the authors are Chu, Andreas, Ansela Berry, and Roy.
+  3715.0   3717.7 And their conclusion, this work was done at MIT,
+  3717.7   3719.0 and then also at Google.
+  3719.0   3721.7 The conclusion is that large language models
+  3721.7   3725.4 can indeed predict public opinion.
+  3725.4   3727.8 And they go through and model why this is the case.
+  3727.8   3731.8 And they conclude ultimately that an AI system can predict human survey
+  3731.8   3736.8 responses by adapting a pre-trained language model to subpopulation-specific media
+  3736.8   3737.2 diets.
+  3737.2   3740.4 In other words, you can feed the model, a particular set of media inputs.
+  3740.4   3744.1 And it can, with remarkable accuracy, the paper goes into this,
+  3744.1   3746.7 predict then what people's opinions will be.
+  3746.7   3751.4 I want to think about this in the context of elections.
+  3751.4   3755.7 If these large language models can even now,
+  3755.7   3757.8 based on the information we put into them,
+  3757.8   3761.5 quite accurately predict public opinion.
+  3761.5   3763.5 You know, ahead of time, I mean, predict
+  3763.5   3766.7 it's before you even ask the public these questions.
+  3766.7   3769.6 What will happen when entities,
+  3769.6   3771.1 whether it's corporate entities
+  3771.1   3772.6 or whether it's governmental entities
+  3772.6   3773.7 or whether it's campaigns
+  3773.7   3775.9 or whether it's foreign actors,
+  3775.9   3778.1 take this survey information,
+  3778.1   3779.7 these predictions about public opinion
+  3779.7   3783.4 and then fine-tune strategies to elicit certain responses,
+  3783.4   3785.0 certain behavioral responses.
+  3785.0   3787.1 I mean, we already know this committee is her testimony.
+  3787.1   3791.4 I think three years ago now about the effect of something
+  3791.4   3794.7 as prosaic now seems as Google search.
+  3794.7   3796.8 The effect that this has on voters,
+  3796.8   3799.2 and an election, particularly undecided voters
+  3799.2   3800.6 in the final days of an election who
+  3800.6   3802.7 may try to get information from Google search
+  3802.7   3804.8 and what an enormous effect.
+  3804.8   3807.5 The ranking of the Google search, the articles that it
+  3807.5   3809.1 returns is coming to enormous effect.
+  3809.1   3810.6 on a decided voter.
+  3810.6   3812.5 This of course is orders of magnitude,
+  3812.5   3814.9 far more powerful, far more significant,
+  3816.0   3817.6 far more directive if you like.
+  3817.6   3821.3 So Mr. Altman, maybe you can help me understand here,
+  3821.3   3822.8 what some of the significance of this is.
+  3822.8   3825.2 Should we be concerned about models that can,
+  3825.2   3829.4 large language models that can predict survey opinion
+  3829.4   3831.5 and then can help organizations entities
+  3831.5   3834.5 fine-tune strategies to elicit behaviors from voters?
+  3834.5   3836.4 Should we be worried about this for our elections?
+  3836.4   3837.4 Yeah.
+  3837.4   3838.7 Thank you, Senator Holly, for the question.
+  3838.7   3841.7 It's one of my areas of greatest concern.
+  3841.7   3845.2 The more general ability of these models to manipulate,
+  3845.2   3848.8 to persuade, to provide sort of one-on-one,
+  3848.8   3850.4 interactive disinformation.
+  3850.4   3852.1 I think that's like a broader version of what
+  3852.1   3855.1 you were talking about, but giving that we're
+  3855.1   3856.6 going to face an election next year,
+  3856.6   3858.1 and these models are getting better.
+  3858.1   3861.1 I think this is a significant area of concern.
+  3861.1   3863.7 I think there's a lot of policies
+  3863.7   3865.3 that companies can voluntarily adopt,
+  3865.3   3868.3 and I'm happy to talk about what we do there.
+  3868.3   3873.7 I do think some regulation would be quite wise on this topic.
+  3873.7   3875.5 Someone mentioned earlier, it's something we really agree with.
+  3875.5   3880.0 People need to know if they're talking to an AI, if content that they're looking at
+  3880.0   3881.2 might be generated or might not.
+  3881.2   3885.2 I think it's a great thing to do is to make that clear.
+  3885.2   3894.5 I think we also will need rules, guidelines about what's expected in terms of disclosure
+  3894.5   3902.1 from a company providing a model that could have these sorts of abilities that you talk about.
+  3902.1   3905.5 So I'm nervous about it.
+  3905.5   3911.7 I think people are able to adapt quite quickly when Photoshop came onto the scene a long time ago.
+  3911.7   3917.4 You know, for a while people were really quite fooled by Photoshop images and then pretty quickly
+  3917.4   3920.9 developed and understanding that images might be Photoshop.
+  3920.9   3923.7 This will be like that, but on steroids.
+  3923.7   3928.5 And the interactivity, the ability to really
+  3928.5   3931.0 model predict humans as well as you talked about,
+  3931.0   3937.3 I think is going to require a combination of companies doing the right thing,
+  3937.3   3939.1 regulation and public education.
+  3939.1   3942.0 Professor Marcus, do you want to address those?
+  3942.0   3945.5 Yeah, I'd like to add two things. One is in the appendix to my remarks.
+  3945.5   3947.9 I have two papers to make you even more concerned.
+  3947.9   3952.5 One is in the Wall Street Journal, just a couple days ago called,
+  3952.5   3955.1 help my political beliefs were altered by a chatbot.
+  3955.1   3960.9 And I think the scenario you raised was that we might basically observe people
+  3960.9   3963.1 and use surveys to figure out what they're saying.
+  3963.1   3965.7 But as Sam just acknowledged, the risk is actually worse
+  3965.7   3969.9 that the systems will directly maybe not even intentionally manipulate people.
+  3969.9   3972.2 And that was the thrust of the Wall Street Journal article.
+  3972.2   3975.1 And it links to an article that I've also linked to called,
+  3975.1   3978.3 It's not yet published, not yet peer reviewed.
+  3978.3   3982.1 Interacting with opinionated language models changes users views.
+  3982.1   3984.1 And this comes back ultimately to data.
+  3984.1   3989.1 One of the things that I'm most concerned about with GPT-4 is that we don't know what it's trained on.
+  3989.1   3992.1 I guess Sam knows, but the rest of us do not.
+  3992.1   3997.1 And what it is trained on has consequences for essentially the biases of the system.
+  3997.1   3999.1 We could talk about that in technical terms.
+  3999.1   4004.1 But how these systems might lead people about depends very heavily on what data is trained on them.
+  4004.1   4010.1 And so we need transparency about that and we probably need scientists in there doing analysis
+  4010.1   4014.9 in order to understand what the political influences of, for example, of these systems might
+  4014.9   4015.9 be.
+  4015.9   4016.9 And it's not just about politics.
+  4016.9   4017.9 It can be about health.
+  4017.9   4019.3 It could be about anything.
+  4019.3   4024.0 These systems absorb a lot of data and then what they say reflects that data.
+  4024.0   4027.0 And they're going to do it differently depending on what's in that data.
+  4027.0   4030.9 So it makes a difference if they're trained on the Wall Street Journal as opposed to the
+  4030.9   4032.7 New York Times or Reddit.
+  4032.7   4035.0 I mean, actually, they're largely trained on all of this stuff.
+  4035.0   4037.5 But we don't really understand the composition of that.
+  4037.5   4040.7 And so we have this issue of potential manipulation.
+  4040.7   4043.0 And it's even more complex than that,
+  4043.0   4044.8 because it's subtle manipulation.
+  4044.8   4046.8 People may not be aware of what's going on.
+  4046.8   4049.0 That was the point of both the Wall Street Journal
+  4049.0   4051.6 article and the other article that I called your attention to.
+  4051.6   4056.1 Let me ask you about AI systems trained on personal data,
+  4056.1   4058.1 a kind of data that, for instance,
+  4058.1   4060.9 the social media companies, the major platforms,
+  4060.9   4064.5 Google, et cetera, collect on all of us routinely.
+  4064.5   4067.6 And we've had many a chat about this in this committee
+  4067.6   4070.5 over many a year now, but the massive amounts of data,
+  4070.5   4073.7 personal data that the companies have on each one of us.
+  4074.7   4078.3 An AI system that is trained on that individual data
+  4078.3   4080.4 that knows each of us better than ourselves
+  4080.4   4083.5 and also knows the billions of data points
+  4083.5   4087.2 about human behavior, human language interaction generally.
+  4087.2   4094.8 What can't we foresee an AI system that is extraordinarily good at determining what will
+  4094.8   4099.5 grab human attention and what will keep an individual's attention?
+  4099.5   4106.1 For the war for attention, the war for clicks that is currently going on on all of these
+  4106.1   4110.9 platforms that have made their money, I'm just imagining an AI system.
+  4110.9   4115.5 These AI models supercharging that war for attention such that we now have technology
+  4115.5   4118.2 that will allow individual targeting of a kind.
+  4118.2   4119.9 We have never even imagined before.
+  4119.9   4123.7 Where the A will know exactly what Sam Altman finds
+  4123.7   4124.4 attention grabbing.
+  4124.4   4126.8 We'll know exactly what Josh Hawley finds attention grabbing.
+  4126.8   4129.2 We'll be able to elicit, to grab our attention,
+  4129.2   4131.5 and then elicit responses from us in a way
+  4131.5   4134.1 that we have here to for not even been able to imagine.
+  4134.1   4137.2 Should we be concerned about that for its corporate applications,
+  4137.2   4139.2 for the monetary applications,
+  4139.2   4143.5 for the manipulation that could come from that, Mr. Altman?
+  4143.5   4145.3 Yes, we should be concerned about that.
+  4145.3   4150.1 To be clear, OpenAI does not, we're not off,
+  4150.1   4151.5 we don't have an ad-based business model,
+  4151.5   4153.8 so we're not trying to build up these profiles of our users.
+  4153.8   4156.1 We're not trying to get them to use it more.
+  4156.1   4157.6 Actually, we love it if they use it less,
+  4157.6   4159.9 because we don't have enough GPUs.
+  4159.9   4163.1 But I think other companies are already,
+  4163.1   4166.1 and certainly will in the future use AI models
+  4166.1   4170.4 to create very good ad predictions of what a user will like.
+  4170.4   4172.9 I think that's already happening in many ways.
+  4172.9   4174.6 I think this market's anything you want to add.
+  4174.6   4175.4 Hyper-tart.
+  4175.4   4176.4 Yes.
+  4176.4   4178.9 And perhaps my gunnery will want to as well.
+  4178.9   4183.1 But hyper-targeting of advertising is definitely going to come.
+  4183.1   4186.3 I agree that that's not been OpenAI's business model.
+  4186.3   4188.1 Of course, now they're working for Microsoft.
+  4188.1   4191.3 I don't know what Microsoft's thoughts.
+  4191.3   4192.6 But we will definitely see it.
+  4192.6   4195.0 Maybe it will be with open source language models.
+  4195.0   4196.1 I don't know.
+  4196.1   4200.4 But the technology is, let's say, part way there to be able to do that
+  4200.4   4206.2 and we'll certainly get there.
+  4206.2   4209.9 So we're an enterprise technology company, not consumer focus.
+  4209.9   4215.3 So the space isn't one that we necessarily operate in in terms of, but these issues are
+  4215.3   4217.5 hugely important issues.
+  4217.5   4225.8 And it's why we've been out ahead in developing the technology that will help to ensure
+  4225.8   4232.3 that you can do things like produce a fact sheet that has the ingredients of what your data
+  4232.3   4234.3 is trained on.
+  4234.3   4239.7 sheets, model cards, all those types of things and calling for as I've mentioned today,
+  4239.7   4246.4 transparency. So you know what the algorithm was trained on. And then you also know and
+  4246.4   4251.7 can manage and monitor continuously over the lifecycle of an AI model, the behavior and
+  4251.7   4259.0 the performance of that model. Senator McDermott. Thank you. I think what's happening today
+  4259.0   4267.0 in this hearing room is historic. I can't recall when we've had people representing large
+  4267.0   4274.9 corporations or private sector entities come before us and plead with us to regulate them.
+  4274.9   4282.3 In fact, many people in the Senate base their careers on the opposite, that the economy
+  4282.3   4287.7 will thrive if government gets the hell out of the way. And what I'm hearing instead
+  4287.7   4294.2 today is that stop me before I innovate again, message.
+  4294.2   4299.3 And I'm just curious as to how we're going to achieve this.
+  4299.3   4303.0 As I mentioned, section 230 in my opening remarks,
+  4303.0   4305.4 we learned something there.
+  4305.4   4309.0 We decided that in section 230, that we were basically
+  4309.0   4312.9 going to absolve the industry from liability
+  4312.9   4316.9 for a period of time as it came into being.
+  4316.9   4320.5 Well, Mr. Aldman on the podcast earlier this year,
+  4320.5   4322.8 you agreed with host Keras Swisher
+  4322.8   4327.0 with that section 230 doesn't apply to generative AI.
+  4328.0   4329.6 And the developers like Open AI
+  4329.6   4331.4 should not be entitled to full immunity
+  4331.4   4334.1 for harms caused by their products.
+  4334.1   4337.1 So what have we learned from 230 that applies
+  4337.1   4340.9 to your situation with AI?
+  4340.9   4342.9 Thank you for the question, Senator.
+  4342.9   4345.6 I don't know yet exactly what the right answer here
+  4345.6   4345.8 is.
+  4345.8   4348.2 I'd love to collaborate with you to figure it out.
+  4348.2   4353.0 I do think for a very new technology, we need a new framework.
+  4353.0   4357.1 Certainly companies like ours bear a lot of responsibility for the tools that we put out in
+  4357.1   4359.6 the world, but tool users do as well.
+  4359.6   4364.2 And how we want and also people that will build on top of it between them and the end
+  4364.2   4365.7 consumer.
+  4365.7   4372.0 And how we want to come up with a liability framework there is a super important question.
+  4372.0   4374.5 And we love to work together.
+  4374.5   4378.2 The point I want to make is this, when it came to online platforms, the inclination of
+  4378.2   4380.7 the government was get out of the way.
+  4380.7   4385.7 This is a new industry, don't over-regulate it, in fact give them some breathing space,
+  4385.7   4386.7 and see what happens.
+  4386.7   4392.2 I'm not sure I'm happy with the outcome, as I look at online platforms and harms that
+  4392.2   4394.8 they've created.
+  4394.8   4400.1 Problems that we've seen demonstrated in this committee, child exploitation, cyberbullying,
+  4400.1   4403.0 online drug sales, and more.
+  4403.0   4404.9 I don't want to repeat that mistake again.
+  4404.9   4407.3 And what I hear is the opposite suggestion
+  4407.3   4409.1 from the private sector.
+  4409.1   4411.3 And that is come in and affronted to this thing
+  4411.3   4414.0 and establish some liability standards, precision
+  4414.0   4416.4 regulation.
+  4416.4   4419.0 For a major company like IBM to come before this committee
+  4419.0   4423.6 and say to the government, please regulate us,
+  4423.6   4426.5 can you explain the difference in thinking from the past
+  4426.5   4428.6 and now?
+  4428.6   4430.0 Yeah, absolutely.
+  4430.0   4433.4 So for us, this comes back to the issue of trust
+  4433.4   4434.7 and trust in the technology,
+  4434.7   4436.3 trust is our license to operate,
+  4436.3   4438.6 as I mentioned in my remarks.
+  4438.6   4440.4 And so we firmly believe in,
+  4440.4   4442.5 we've been calling for precision regulation
+  4442.5   4444.7 of artificial intelligence for years now.
+  4444.7   4446.8 This is not a new position.
+  4446.8   4449.6 We think that technology needs to be deployed
+  4449.6   4452.7 in a responsible and clear way,
+  4452.7   4456.0 that people we've taken principles around that,
+  4456.0   4457.9 trust and transparency, we call them,
+  4457.9   4459.8 our principles that were articulated years ago.
+  4459.8   4461.4 and build them into practices.
+  4461.4   4464.7 That's why we're here advocating for precision regulatory
+  4464.7   4465.3 approach.
+  4465.3   4469.7 So we think that AI should be regulated at the point of risk,
+  4469.7   4470.3 essentially.
+  4470.3   4474.6 And that's the point at which technology meets society.
+  4474.6   4477.9 Let's take a look at what that might appear to be.
+  4477.9   4480.9 Members of Congress are pretty smart, a lot of people,
+  4480.9   4483.7 maybe not as smart as we think we are many times.
+  4483.7   4485.7 And government certainly has a capacity
+  4485.7   4488.3 to do amazing things.
+  4488.3   4493.9 But when you talk about our ability to respond to the current challenge and perceive
+  4493.9   4499.7 challenge of the future, challenges which you all have described in terms which are hard
+  4499.7   4502.7 to forget.
+  4502.7   4505.9 As you said, Mr. Aldman, things can go quite wrong.
+  4505.9   4508.9 As you said, Mr. Marcus, democracy is threatened.
+  4508.9   4514.0 I mean, the magnitude of the challenge you're giving is substantial.
+  4514.0   4519.5 I'm not sure that we respond quickly and with enough expertise to deal with it.
+  4519.5   4526.7 Professor Marcus, you made a reference to CERN, the International Arbiter of Nuclear Research,
+  4526.7   4527.7 I suppose.
+  4527.7   4533.5 I don't know if that's a fair characterization, but it's a characterization I'll start with.
+  4533.5   4539.1 What agency of this government do you think exists that could respond to the challenges
+  4539.1   4541.7 that you've laid down today?
+  4541.7   4548.1 We have many agencies that can respond in some ways, for example, the FTC.
+  4548.1   4558.0 The many agencies that can, but my view is that we probably need a cabinet level organization
+  4558.0   4560.8 within the United States in order to address this.
+  4560.8   4566.7 And my reasoning for that is that the number of risks is large.
+  4566.7   4571.3 The amount of information to keep up on is so much.
+  4571.3   4573.5 I think we need a lot of technical expertise.
+  4573.5   4576.3 I think we need a lot of coordination of these efforts.
+  4576.3   4580.6 So there is one model here where we stick to only existing law
+  4580.6   4583.7 and try to shape all of what we need to do.
+  4583.7   4585.5 And each agency does their own thing.
+  4585.5   4588.3 But I think that AI is going to be such a large part
+  4588.3   4592.3 of our future and is so complicated and moving so fast.
+  4592.3   4594.1 And this does not fully solve your problem
+  4594.1   4596.7 about a dynamic world.
+  4596.7   4599.1 But it's a step in that direction to have an agency
+  4599.1   4601.3 that's full-time job is to do this.
+  4601.3   4603.2 I personally have suggested, in fact,
+  4603.2   4605.8 that we should want to do this at a global way.
+  4605.8   4607.3 I wrote an article in The Economist.
+  4607.3   4609.9 I have a link in here, an invited essay
+  4609.9   4612.3 for The Economist, suggesting we might want
+  4612.3   4614.6 an international agency for AI.
+  4614.6   4616.2 That's what I wanted to go to next.
+  4616.2   4619.7 And that is the fact that I'll get it inside from the CERN
+  4619.7   4622.1 in nuclear examples, because government
+  4622.1   4626.1 was involved in that from day one, at least in the United States.
+  4626.1   4628.0 But now we're dealing with innovation,
+  4628.0   4631.8 which doesn't necessarily have a boundary.
+  4631.8   4635.9 We may create a great US agency, and I hope that we do,
+  4635.9   4639.0 that may have jurisdiction over US corporations and US
+  4639.0   4641.3 activity, but doesn't have a thing to do
+  4641.3   4644.3 with what's going to bomb board us from outside the United
+  4644.3   4645.3 States.
+  4645.3   4648.3 How do you give this international authority
+  4648.3   4653.9 the authority to regulate in a fair way for all entities involved in AI.
+  4653.9   4656.8 I think that's probably over my big rate.
+  4656.8   4660.9 I would like to see it happen and I think it may be inevitable that we push there.
+  4660.9   4664.9 I mean, I think the politics behind it are obviously complicated.
+  4664.9   4669.5 I'm really heartened by the degree to which this room is bipartisan and supporting the
+  4669.5   4670.8 same things.
+  4670.8   4673.0 And that makes me feel like it might be possible.
+  4673.0   4676.9 I would like to see the United States take leadership in such an organization.
+  4676.9   4681.5 It has to involve the whole world and not just the US to work properly.
+  4681.5   4684.7 I think even from the perspective of the companies it would be a good thing.
+  4684.7   4688.9 So the companies themselves do not want a situation where you take these models which are
+  4688.9   4695.0 expensive the train and you have to have 190 of them in one for every country.
+  4695.0   4696.7 That wouldn't be a good way of operating.
+  4696.7   4700.8 When you think about the energy costs alone just for training these systems it would not
+  4700.8   4706.0 be a good model if every country has its own policies and each for each jurisdiction
+  4706.0   4708.7 every company has to train another model
+  4708.7   4710.7 and maybe different states are different.
+  4710.7   4713.7 So Missouri and California have different rules.
+  4713.7   4715.9 And so then that requires even more training
+  4715.9   4719.3 of these expensive models with huge climate impact.
+  4719.3   4721.8 And I mean, it would be very difficult for the companies
+  4721.8   4723.9 to operate if there was no global coordination.
+  4723.9   4727.0 And so I think that we might get the companies on board
+  4727.0   4728.8 if there's bipartisan support here.
+  4728.8   4731.1 And I think there's support around the world
+  4731.1   4733.9 that is entirely possible that we could develop such a thing.
+  4733.9   4737.4 But obviously there are many nuances here of diplomacy
+  4737.4   4738.5 that are over my pay grade.
+  4738.5   4740.4 I would love to learn from you all
+  4740.4   4742.1 to try to help make that happen.
+  4742.1   4744.6 Mr. Altman, can I weigh in just briefly?
+  4744.6   4745.8 Briefly, please.
+  4745.8   4747.9 I want to echo support for what Mr. Marcus said.
+  4747.9   4751.2 I think the US should lead here and do things first.
+  4751.2   4755.1 But to be effective, we do need something global.
+  4755.1   4757.2 As you mentioned, this can happen everywhere.
+  4757.2   4758.5 There is precedent.
+  4758.5   4760.6 I know it sounds naive to call for something like this.
+  4760.6   4761.8 And it sounds really hard.
+  4761.8   4762.5 There is precedent.
+  4762.5   4765.3 We've done it before with the IAEA.
+  4765.3   4768.3 We've talked about doing it for other technologies.
+  4768.3   4771.6 They're given what it takes to make these models,
+  4771.6   4774.2 the chip supply chain, the sort of limited number
+  4774.2   4778.0 of competitive GPUs, the power the US has over these companies.
+  4778.0   4781.5 I think there are paths to the US setting
+  4781.5   4784.3 some international standards that other countries
+  4784.3   4786.8 would need to collaborate with and be part of that
+  4786.8   4789.0 are actually workable, even though it sounds on its face
+  4789.0   4791.2 like an impartial idea.
+  4791.2   4793.6 And I think it would be great for the world.
+  4793.6   4794.7 Thank you, Mr. Chairman.
+  4794.7   4795.7 Thanks, Senator Durban.
+  4795.7   4798.9 And in fact, I think we're going to hear more about what
+  4798.9   4799.7 Europe is doing.
+  4799.7   4806.0 European Parliament already is acting on an AI act.
+  4806.0   4809.5 On social media, Europe is ahead of us.
+  4809.5   4811.5 We need to be in the lead.
+  4811.5   4816.0 I think your point is very well taken.
+  4816.0   4819.9 Let me turn to Senator Graham.
+  4819.9   4821.2 Senator Blackburn.
+  4821.2   4822.5 Thank you, Mr. Chairman.
+  4822.5   4826.0 And thank you all for being here with us today.
+  4826.0   4830.1 I put into my chat, GPT account, should Congress regulate
+  4830.1   4832.3 AI chat GPT?
+  4832.3   4835.0 And it gave me four pros, four cons,
+  4835.0   4837.4 and says, ultimately, the decision
+  4837.4   4841.4 rests with Congress and deserves careful consideration.
+  4841.4   4845.3 So on that, it was very balanced.
+  4845.3   4849.1 I recently visited with the Nashville Technology Council.
+  4849.1   4850.9 I represent Tennessee.
+  4850.9   4853.7 And of course, you had people there from healthcare,
+  4853.7   4858.1 financial services, logistics, educational entities,
+  4858.1   4861.8 and they're concerned about what they see happening
+  4861.8   4865.6 with AI, with the utilization for their companies.
+  4865.6   4868.1 Ms. Montgomery, you know, similar to you.
+  4868.1   4871.5 They've got healthcare people who are looking at disease
+  4871.5   4875.0 analytics, they're looking at predictive diagnosis.
+  4875.0   4879.5 How this can better the outcomes for patients,
+  4879.5   4886.2 logistics industry, looking at ways to save time and money and yield efficiencies.
+  4886.2   4891.1 You've got financial services that are saying how does this work with quantum?
+  4891.1   4893.2 How does it work with blockchain?
+  4893.2   4896.2 How can we use this?
+  4896.2   4902.7 But I think as we have talked with them, Mr. Chairman, one of the things that continues
+  4902.7   4909.1 to come up is, yes, Professor Marcus, as you were saying, the EU different entities are
+  4909.1   4916.0 ahead of us in this, but we have never established a federally-pre-given
+  4916.0   4920.8 preemption for online privacy for data security and put some of those
+  4920.8   4927.9 foundational elements in place which is something that we need to do as we look
+  4927.9   4933.9 at this and it will require that Commerce Committee Judiciary Committee
+  4933.9   4940.6 decide how we move forward so that people own their virtual you.
+  4940.6   4949.8 And Mr. Altman, I was glad to see last week that your OpenAI models are not going to
+  4949.8   4953.1 be trained using consumer data.
+  4953.1   4957.8 I think that that is important and if we have a second round, I've got a host of questions
+  4957.8   4963.2 for you on data security and privacy.
+  4963.2   4968.7 But I think it's important to let people control their virtual you.
+  4968.7   4974.6 Their information in these settings, and I want to come to you on music and content creation
+  4974.6   4978.0 because we've got a lot of songwriters and artists.
+  4978.0   4983.6 And I think we have the best creative community on the face of the earth.
+  4983.6   4985.9 They're in Tennessee.
+  4985.9   4992.9 And they should be able to decide if their copyrighted songs and images are going to be
+  4992.9   5003.1 used to train these models. And I'm concerned about OpenAI's Jukebox. It offers some
+  5003.1   5010.8 re-reditions in the style of Garth Brooks, which suggests that OpenAI is trained on Garth
+  5010.8   5016.7 Brooks songs. I went in this weekend and I said, write me a song that sounds like Garth
+  5016.7   5021.7 and it gave me a different version of simple man.
+  5021.7   5025.4 So it's interesting that it would do that,
+  5025.4   5028.1 but you're training it on these copyrighted songs,
+  5028.1   5032.0 these MIDI files, these sound technologies.
+  5032.0   5036.6 So as you do this, who owns the right
+  5036.6   5040.3 to that AI generated material
+  5040.3   5045.3 and using your technology, could I remake a song?
+  5046.7   5055.7 insert content from my favorite artist and then on the creative right to that song.
+  5055.7   5060.7 Thank you, Senator. This is an area of great interest to us.
+  5060.7   5068.7 I would say, first of all, we think that creators deserve control over how their creations are used
+  5068.7   5074.7 and what happens, sort of beyond the point of them releasing it into the world.
+  5074.7   5080.7 Second, I think that we need to figure out new ways with this new technology that creators
+  5080.7   5084.0 can win, succeed, have a vibrant life.
+  5084.0   5086.5 And I'm optimistic that this will present it.
+  5086.5   5090.1 And let me ask you this, how do you compensate the artist?
+  5090.1   5092.5 Exactly what I was going to say.
+  5092.5   5097.2 We like to, we're working with the artist now, visual artist musicians to figure out
+  5097.2   5098.2 what people want.
+  5098.2   5101.0 There's a lot of different opinions, unfortunately, and at some point we'll have to.
+  5101.0   5106.7 Let me ask you this, do you favor something like sound exchange that has worked in the
+  5106.7   5108.8 area of radio?
+  5108.8   5111.3 I'm not familiar with that exchange.
+  5111.3   5112.3 I'm sorry.
+  5112.3   5113.3 Okay.
+  5113.3   5114.3 You've got your team behind you.
+  5114.3   5115.5 Get back to me on that.
+  5115.5   5118.2 That would be a third party entity.
+  5118.2   5120.3 So let's discuss that.
+  5120.3   5122.4 Let me move on.
+  5122.4   5131.0 Can you commit as you've done with consumer data not to train chat GPT, open AI, juke
+  5131.0   5140.1 box or other AI models on artists and songwriters copyrighted works are used their voices
+  5140.1   5145.6 and their likenesses without first receiving their consent.
+  5145.6   5149.3 So first of all, jukebox is not a product we offer that was a research release but it's
+  5149.3   5151.7 not, you know, unlike chaggy bt or dolly.
+  5151.7   5154.4 Yeah, but we've lived through napster.
+  5154.4   5155.4 Yes.
+  5155.4   5161.8 But that was something that really cost a lot of artists a lot of money.
+  5161.8   5163.0 Oh, I understand.
+  5163.0   5164.0 Yeah, for sure.
+  5164.0   5165.8 It's a little distribution era.
+  5165.8   5169.6 I don't know the numbers on jukebox on top of my head as a research lease.
+  5169.6   5173.6 I can follow up with your office, but it's not jukebox is not something that gets
+  5173.6   5174.8 much attention or usage.
+  5174.8   5177.0 It was put out to show that something is possible.
+  5177.0   5182.9 Well, Senator Garvin just said, you know, and I think it's a fair warning to you all.
+  5182.9   5189.2 If we're not involved in this from the get-go, and you all are ready or along way down
+  5189.2   5195.3 the path on this, but if we don't step in, then this gets away from you.
+  5195.3   5198.7 So are you working with a copyright office?
+  5198.7   5206.1 Are you considering protections for content generators and creators in generative AI?
+  5206.1   5207.1 Yes.
+  5207.1   5208.5 We are absolutely engaged on that.
+  5208.5   5212.9 Again, to reiterate my earlier point, we think that content creators, content owners,
+  5212.9   5214.7 need to benefit from this technology.
+  5214.7   5216.4 Exactly what the economic model is.
+  5216.4   5218.8 We're still talking to artists and content owners
+  5218.8   5219.9 about what they want.
+  5219.9   5221.9 I think there's a lot of ways this can happen.
+  5221.9   5223.9 But very clearly, no matter what the law is,
+  5223.9   5226.7 the right thing to do is to make sure people get significant
+  5226.7   5229.2 upside benefit from this new technology.
+  5229.2   5232.0 And we believe that it's really going to deliver that.
+  5232.0   5236.0 But that content owners, likenesses, people totally
+  5236.0   5238.6 deserve control over how that's used and to benefit from it.
+  5238.6   5242.2 OK, so on privacy then, how do you plan
+  5242.2   5250.9 account for the collection of voice and other user-specific data. Things that are copyright
+  5250.9   5257.4 righted. User-specific data through your AI applications. Because if I can go in and say
+  5257.4   5264.1 write me a song that sounds like Garth Brooks and it takes part of an existing song, there
+  5264.1   5272.1 has to be a compensation to that artist for that utilization and that use. If it was radio
+  5272.1   5279.8 play it would be there if it was streaming it would be there. So if you're going to do that,
+  5279.8   5286.2 what is your policy for making certain you're accounting for that and you're protecting
+  5286.2   5294.8 that individual's right to privacy and they're right to secure that data and that created
+  5294.8   5295.8 work?
+  5295.8   5300.4 So a few thoughts about this. Number one, we think that people should be able to say I don't
+  5300.4   5302.7 want my personal data trained on.
+  5302.7   5303.9 That's, I think that's-
+  5303.9   5306.3 Right, that's to a national privacy law,
+  5306.3   5310.0 which many of us here on the day us are working toward
+  5310.0   5312.5 getting something that we can use.
+  5312.5   5313.6 Yeah, I think a strong privacy.
+  5313.6   5314.7 My time's expired.
+  5314.7   5315.5 Okay.
+  5315.5   5317.3 Thank you Mr. Chair.
+  5317.3   5318.4 Thanks, Senator Blackburn.
+  5318.4   5319.3 Senator Clubington.
+  5319.3   5321.3 Thank you very much, Mr. Chairman.
+  5321.3   5323.7 And, uh, uh, Senator Blackburn,
+  5323.7   5326.4 I love Nashville, love Tennessee, love your music,
+  5326.4   5327.1 but I will say-
+  5327.1   5327.9 Okay.
+  5327.9   5329.8 I use chat GPT and just ask
+  5329.8   5333.3 what are the top creative song artists of all time
+  5333.3   5336.4 and two of the top three were from Minnesota.
+  5336.4   5338.2 That would be Prince and-
+  5338.2   5339.4 I'm sure they're moving in.
+  5339.4   5340.5 Prince and Bob Dylan.
+  5340.5   5341.4 Okay, all right.
+  5341.4   5343.3 So let us continue on.
+  5343.3   5346.9 I think AI won't change and you're seeing it here.
+  5346.9   5350.0 All right, so on a more serious note though,
+  5350.0   5353.7 my staff and I in my role as chair of the Rules Committee
+  5353.7   5355.3 and leading a lot of the election bill
+  5355.3   5357.4 and we just introduced a bill that's
+  5357.4   5362.0 Representative of that Clark from New York introduced over the House Center
+  5362.0   5366.3 Booker and Bennett and I did on political advertisements.
+  5366.3   5368.4 But that is just of course the tip of the iceberg.
+  5368.4   5371.9 You know this from your discussions with Senator Hawley and others about the
+  5371.9   5374.2 images in my own view.
+  5374.2   5379.9 Senator Graham's of Section 230 is that we just can't let people make
+  5379.9   5382.4 step up and then not have any consequences.
+  5382.4   5385.9 But I'm going to focus in on what my job, one of my jobs will be on the rules
+  5385.9   5393.3 committee and that is election misinformation. And we just asked CHEPGPT to do a tweet
+  5393.3   5398.6 about polling location in Bloomington, Minnesota and said there are long lines at this
+  5398.6   5403.9 polling location at the Tonnet Lutheran Church. Where should we go?
+  5403.9   5408.1 Now, I'll be at it. It's not an election right now. But the answer, the tweet that was
+  5408.1   5415.8 drafted was a completely fake thing. Go to 1, 2, 3, 4 Elm Street. And so you can imagine
+  5415.8   5417.9 what I'm concerned about here.
+  5417.9   5421.8 Within election upon us, with primary elections upon us,
+  5421.8   5425.0 that we're going to have all kinds of misinformation.
+  5425.0   5427.4 And I just want to know what you're planning on doing it,
+  5427.4   5428.4 doing about it.
+  5428.4   5429.8 I know we're going to have to do something
+  5429.8   5432.6 soon, not just for the images of the candidates,
+  5432.6   5436.8 but also for misinformation about the actual polling
+  5436.8   5439.8 places and election rules.
+  5439.8   5441.9 Thank you, Senator.
+  5441.9   5443.9 We talked about this a little bit earlier.
+  5443.9   5447.8 We are quite concerned about the impact this can have on elections.
+  5447.8   5453.1 I think this is an area where hopefully the entire industry and the government can work together quickly.
+  5453.1   5456.7 There's many approaches, and I'll talk about some of the things we do.
+  5456.7   5461.5 But before that, I think it's tempting to use the frame of social media.
+  5463.1   5464.6 But this is not social media.
+  5464.6   5465.3 This is different.
+  5465.3   5468.7 And so the response that we need is different.
+  5468.7   5474.6 This is a tool that a user is using to help generate content more efficiently than before.
+  5474.6   5478.0 They can change it, they can test the accuracy of it if they don't like it, they can get
+  5478.0   5480.0 another version.
+  5480.0   5483.7 But it still then spreads through social media or other ways.
+  5483.7   5490.5 Like, chat GPT is a single player experience where you're just using this.
+  5490.5   5495.1 And so I think as we think about what to do, that's important to understand.
+  5495.1   5498.6 There's a lot that we can and do there.
+  5498.6   5501.3 There's things that the model refuses to generate.
+  5501.3   5502.8 We have policies.
+  5502.8   5504.6 We also importantly have monitoring.
+  5504.6   5510.2 So at scale, we can detect someone generating a lot of those tweets, even if generating
+  5510.2   5511.2 one tweet is okay.
+  5511.2   5512.2 Yeah.
+  5512.2   5513.6 And of course, there's going to be other platforms.
+  5513.6   5519.7 And if they're all spouting out fake election information, I just, I think what happened
+  5519.7   5525.0 in the past with Russian interference and like, it's just going to be a tip of the iceberg.
+  5525.0   5530.8 some of those fake apps. So that's number one. Number two is the impact on
+  5530.8   5534.9 intellectual property and Senator Blackburn was getting at some of this with
+  5534.9   5542.1 song rights and serious concerns about that but news content. So Senator
+  5542.1   5545.8 Kennedy and I have a bill that was really quite straightforward that would
+  5545.8   5552.6 simply allowed the news organizations and exemption to be able to
+  5552.6   5558.2 negotiate with basically Google and Facebook. Microsoft was supportive of the bill, but basically
+  5558.2   5566.3 negotiate with them to get better raped and be able to not have some leverage and other
+  5566.3   5570.8 countries are doing this Australia and the like. And so my question is when we already
+  5570.8   5576.0 have a study by Northwestern predicting that one-third of the U.S. newspapers are that roughly
+  5576.0   5581.7 existed two decades are going to go, are going to be gone by 2025 unless you start
+  5581.7   5588.9 compensating for everything from book movies, books, yes, but also news content. We're
+  5588.9   5594.9 going to lose any realistic content producers. And so I'd like your response to that.
+  5594.9   5601.1 And of course there is an exemption for copyright in section 230. But I think asking
+  5601.1   5605.1 little newspapers to go out and sue all the time just can't be the answer. They're not
+  5605.1   5606.8 going to be able to keep up.
+  5606.8   5611.8 Yeah, like it is my hope that tools like what we're creating
+  5611.9   5614.1 can help news organizations do better.
+  5614.1   5618.5 I think having a vibrant national media
+  5618.5   5621.1 is critically important and let's call it round one
+  5621.1   5623.1 of the internet has not been great for that.
+  5623.1   5625.2 We're talking here about local that, you know,
+  5625.2   5627.1 reporting your high school for school scores
+  5627.1   5629.8 and a scandal in your city council, those kinds of things.
+  5629.8   5630.6 For sure.
+  5630.6   5632.6 There are the ones that are actually getting the worse,
+  5632.6   5635.4 the little radio stations and broadcast.
+  5635.4   5638.7 But do you understand that this could be exponentially worse
+  5638.7   5642.9 in terms of local news content if they're not compensated?
+  5642.9   5645.3 Well, because what they need is to be compensated
+  5645.3   5647.4 for their content and not have it stolen.
+  5647.4   5653.3 Yeah, again, our model, the current version of GPT-4
+  5653.3   5657.0 and the training in 2021, it's not a good way
+  5657.0   5658.8 to find recent news.
+  5658.8   5661.9 And I don't think it's a service that can do a great job
+  5661.9   5663.6 of linking out, although maybe with our plugins,
+  5663.6   5665.6 It's possible.
+  5665.6   5667.8 If there are things that we can do to help local news,
+  5667.8   5669.3 we would certainly like to, again,
+  5669.3   5671.0 I think it's critically important.
+  5671.0   5671.8 OK.
+  5671.8   5673.4 One last thing I add something there.
+  5673.4   5674.9 Yeah, but let me just ask you a question.
+  5674.9   5676.2 You can combine them quick.
+  5676.2   5679.5 More transparency on the platforms.
+  5679.5   5681.5 Senator Coons and Senator Cassidy and I
+  5681.5   5685.5 have the platform accountability transparency act
+  5685.5   5688.3 to give researchers access to this information
+  5688.3   5691.3 of the algorithms and the like on social media data.
+  5691.3   5692.2 Would that be helpful?
+  5692.2   5694.4 And then why don't you just say yes or no?
+  5694.4   5695.8 And then go ahead, his.
+  5695.8   5698.2 The transparency is absolutely critical here
+  5698.2   5700.8 to understand the political ramifications,
+  5700.8   5702.6 the bias ramifications, and so forth.
+  5702.6   5704.3 We need transparency about the data.
+  5704.3   5706.1 We need to know more about how the models work.
+  5706.1   5708.6 We need to have scientists have access to them.
+  5708.6   5710.6 I was just going to amplify your earlier point
+  5710.6   5712.3 about local news.
+  5712.3   5714.6 A lot of news is going to be generated by these systems.
+  5714.6   5715.6 They're not reliable.
+  5715.6   5716.8 News guard already is a study.
+  5716.8   5718.4 I'm sorry it's not in my appendix.
+  5718.4   5720.2 But I will get it to your office,
+  5720.2   5726.1 showing that something like 50 websites are already generated by bots.
+  5726.1   5727.8 We're going to see much, much more of that.
+  5727.8   5729.4 And it's going to make it even more competitive
+  5729.4   5731.1 for the local news organizations.
+  5731.1   5734.8 And so the quality of the overall news market
+  5734.8   5737.6 is going to decline as we have more generated content
+  5737.6   5739.4 by systems that aren't actually reliable
+  5739.4   5740.7 in the content they're generated.
+  5740.7   5741.1 Thank you.
+  5741.1   5743.1 And thank you at a very timely basis
+  5743.1   5745.5 to make the argument why we have to mark up this bill again
+  5745.5   5746.1 in June.
+  5746.1   5746.9 I appreciate it.
+  5746.9   5748.2 Thank you.
+  5748.2   5751.4 Thank you, Mr. Chairman.
+  5751.4   5753.0 Senator Holler for having this.
+  5753.0   5758.0 I'm trying to find out how it is different than social media and learn from the mistakes
+  5758.0   5760.3 we made with social media.
+  5760.3   5766.8 The idea of not suing social media companies is to allow the internet to flourish because
+  5766.8   5771.5 if I slander you, you can sue me.
+  5771.5   5775.4 If you're a billboard company and you put up the slander, can you sue the billboard
+  5775.4   5776.4 company?
+  5776.4   5777.4 He said no.
+  5777.4   5785.8 Basically, Section 230 is being used by social media companies to avoid liability for activity
+  5785.8   5788.4 that other people generate.
+  5788.4   5793.3 When they refuse to comply with their terms of use, a mother calls up the company and
+  5793.3   5798.0 says, this app is being used to bully my child of death.
+  5798.0   5802.2 You promise in the terms of use, you would prevent bullying.
+  5802.2   5807.8 And she calls three times, she gives no response, the child kills herself, and they can't
+  5807.8   5808.8 sue.
+  5808.8   5812.3 Do you all agree we don't want to do that again?
+  5812.3   5813.3 Yes.
+  5813.3   5821.8 If I may speak for one second, there's a fundamental distinction between reproducing content
+  5821.8   5823.5 and generating content.
+  5823.5   5827.5 Yeah, but you would like liability where people aren't.
+  5827.5   5828.5 Absolutely.
+  5828.5   5835.7 Yes, in fact IBM has been publicly advocating to condition liability on a reasonable
+  5835.7   5836.7 care standard.
+  5836.7   5840.1 So let me just make sure I understand the laws it exists today.
+  5840.1   5842.5 Mr. Almond, thank you for coming.
+  5842.5   5848.3 Your company is not claiming that Section 230 applies to the tool you have created.
+  5848.3   5852.5 Yeah, we're claiming we need to work together to find a totally new approach.
+  5852.5   5856.7 I don't think Section 230 is even the right framework.
+  5856.7   5863.5 Okay, so under the law it exists today, there's two you create if I'm harmed by it. Can I sue you?
+  5864.3   5866.1 That is beyond my area of legal justice.
+  5866.1   5867.5 Have you ever been sued?
+  5867.5   5868.7 Not for that, no.
+  5868.7   5870.1 Have you ever been sued at all?
+  5870.9   5872.0 That you're a company?
+  5872.0   5873.1 Yeah, I open it. I get sued.
+  5874.1   5876.0 Huh? Yeah, we've gotten sued before?
+  5876.0   5877.7 Okay. And what for?
+  5878.7   5884.5 Um, I mean, they've mostly been like pretty frivolous things like I think happens to any company.
+  5884.5   5891.5 But like the examples my colleagues have given from artificial intelligence that could literally ruin our lives.
+  5892.5   5895.7 Can we go to the company that created that tool in SULM?
+  5895.7   5896.9 Is that your understanding?
+  5896.9   5901.5 Yeah, I think there needs to be clear responsibility by the companies.
+  5901.5   5909.5 If you're not claiming any kind of legal protection like section 2-30 applies to your industry, is that correct?
+  5909.5   5912.5 No, I don't think we're saying anything.
+  5912.5   5919.5 When it comes to consumers, there seems to be like three time-tested ways to protect consumers against any product.
+  5919.5   5932.8 Statutory schemes, which are non-existent here, legal systems, which may be here, but not social media and agencies.
+  5932.8   5936.3 Go back to Senator Holly.
+  5936.3   5941.3 The atom bomb is put a cloud over humanity,
+  5941.3   5946.3 but nuclear power could be one of the solutions to climate change.
+  5946.3   5951.3 So what I'm trying to do is make sure that you just can't go build a nuclear power plant.
+  5951.3   5954.3 Hey Bob, what would you like to do today? Let's go build a nuclear power plant.
+  5954.3   5961.3 You have a nuclear regulatory commission that governs how you build a plant and is licensed.
+  5961.3   5965.3 Do you agree, Mr. Alderman, that these tools you're creating should be licensed?
+  5965.3   5970.8 Yeah, we've been calling for this. We can't any that's the simplest way you get a license and
+  5971.3   5976.1 Do you agree with me that the simplest way in the most effective ways have an agency?
+  5976.4   5980.1 That is more nimble and smarter than Congress which should be easy to create
+  5981.7   5985.7 Overlooking what you do. Yes, we'd be enthusiastic about that. You agree with that mr. Marcus
+  5986.3   5989.0 Absolutely you agree with that mr. Montgomery I
+  5990.0   5991.5 Would have some nuances
+  5991.5   5994.7 I think we need to build on what we have in place already today.
+  5994.7   5996.5 We don't have an agency that's working.
+  5996.5   5997.5 Regulators.
+  5997.5   5998.5 No, no, no.
+  5998.5   6001.7 We don't have an agency that regulates the technology.
+  6001.7   6003.2 So should we have one?
+  6003.2   6004.8 But a lot of the issues.
+  6004.8   6007.2 I don't think so.
+  6007.2   6008.2 A lot of the issues.
+  6008.2   6009.2 Okay, wait a minute.
+  6009.2   6013.7 So IBM says we don't need an agency.
+  6013.7   6014.7 Interesting.
+  6014.7   6016.7 Should we have a license required for these tools?
+  6016.7   6019.5 So what we believe is that we need to regulate.
+  6019.5   6024.5 I think it comes back to some of them potentially yes.
+  6024.5   6029.5 So what I said at the onset is that we need to clearly find risks.
+  6029.5   6033.5 Do you claim section 230 applies in this area at all?
+  6033.5   6037.5 We're not a platform company and we've again long advocated
+  6037.5   6039.5 for a reasonable care standard in section 230.
+  6039.5   6043.5 I just don't understand how you could say that you don't need an agency
+  6043.5   6047.5 to deal with the most transformative technology that you can do with the
+  6047.5   6051.5 the most transformative technology may be ever?
+  6051.5   6055.7 Well, I think we have existing-
+  6055.7   6058.3 Is this a transformative technology that
+  6058.3   6059.3 is in this problem?
+  6059.3   6060.1 Absolutely.
+  6060.1   6061.7 Life as we know it, good and bad.
+  6061.7   6064.1 I think it's a transformative technology, certainly.
+  6064.1   6066.4 And the conversations that we're having here today
+  6066.4   6069.0 have been really bringing to light the fact that-
+  6069.0   6069.8 No, this is Earth.
+  6069.8   6071.4 That domains and the issues.
+  6071.4   6074.4 This one with you has been very enlightening to me.
+  6074.4   6077.4 Mr. Almond, why are you so willing
+  6077.4   6081.2 to have an agency.
+  6081.2   6082.9 Senator, we've been clear about what we think the
+  6082.9   6084.7 upsides are, and I think you can see from users
+  6084.7   6086.5 how much they enjoyed and how much value.
+  6086.5   6088.1 They're getting out of it, but we've also been clear
+  6088.1   6089.3 about what the downsides are.
+  6089.3   6090.9 And so that's why we think we're in agency.
+  6090.9   6093.7 So it's a major tool to be used by a lot.
+  6093.7   6095.2 It's a major new technology.
+  6095.2   6099.3 If you make a ladder and the ladder doesn't work,
+  6099.3   6100.7 you can see the people made the ladder,
+  6100.7   6103.2 but there's some standards out there to make a ladder.
+  6103.2   6104.6 So that's why we're agreeing with you.
+  6104.6   6105.4 Yeah, that's right.
+  6105.4   6106.7 I think you're on the right track.
+  6106.7   6112.9 So here's what my two cents worth for the committee is that we need to empower an agency
+  6112.9   6117.7 that issues an license and can take it away.
+  6117.7   6124.3 Wouldn't that be some incentive to do it right if you could actually be taken out of business?
+  6124.3   6127.5 Clearly that should be part of what an agency can do.
+  6127.5   6131.0 And you also agree that China is doing AI research.
+  6131.0   6132.0 Is that right?
+  6132.0   6133.0 Correct.
+  6133.0   6138.4 world organization that doesn't exist, maybe it will, but if you don't do something about
+  6138.4   6142.1 the China part of it, you'll never quite get this right, do you agree?
+  6142.1   6146.9 Well, that's why I think it doesn't necessarily have to be a world organization, but there
+  6146.9   6149.7 has to be some sort of, and there's a lot of options here.
+  6149.7   6153.8 There has to be some sort of standard, some sort of set of controls that do have global
+  6153.8   6154.8 effect.
+  6154.8   6156.1 Yeah, because other people are doing this.
+  6156.1   6159.3 I've got 15, military application.
+  6159.3   6162.3 How can AI change the warfare?
+  6162.3   6165.3 And you got one minute.
+  6165.3   6166.3 I got one minute.
+  6166.3   6167.3 All right.
+  6167.3   6169.3 This is a tough question for one minute.
+  6169.3   6173.3 This is very far out of my area of expertise.
+  6173.3   6175.3 But I actually want to example a drone.
+  6175.3   6179.3 Can a drone, you can plug into a drone, the coordinates,
+  6179.3   6182.3 and it can fly out, and it goes over this target,
+  6182.3   6185.3 and it drops a missile on this car moving down the road
+  6185.3   6187.3 and somebody's washing it.
+  6187.3   6190.3 Could AI create a situation where a drone can select
+  6190.3   6192.7 and select the target itself.
+  6192.7   6194.3 I think we shouldn't allow that.
+  6194.3   6195.3 Well, can it be done?
+  6195.3   6196.1 Sure.
+  6196.1   6198.8 Thanks.
+  6198.8   6200.0 Thanks, Underground.
+  6200.0   6201.5 Thunderkoon.
+  6201.5   6203.5 Thank you, Senator Bloomethall, Senator Holly,
+  6203.5   6206.1 for convening this hearing for working closely together
+  6206.1   6209.8 to come up with this compelling panel of witnesses
+  6209.8   6212.3 and beginning a series of hearings
+  6212.3   6214.7 on this transformational technology.
+  6214.7   6219.3 We recognize the immense promise and substantial risks
+  6219.3   6222.1 associated with generative AI technologies.
+  6222.1   6224.6 We know these models can make us more efficient,
+  6224.6   6228.4 help us learn new skills, open whole new vistas of
+  6228.4   6229.2 creativity.
+  6229.2   6233.1 But we also know that generative AI can
+  6233.1   6237.1 authoritatively deliver wildly incorrect information.
+  6237.1   6240.9 It can hallucinate, as is often described.
+  6240.9   6242.3 It can impersonate loved ones.
+  6242.3   6245.1 It can encourage self-destructive behaviors.
+  6245.1   6249.2 And it can shape public opinion and the outcome of elections.
+  6249.3   6256.5 Congress thus far has demonstrably failed to responsibly enact meaningful regulation of social media companies,
+  6256.5   6260.5 with serious harms that have resulted that we don't fully understand.
+  6260.5   6269.3 Senator Klobuchar referenced in her questioning a bipartisan bill that would open up social media platforms underlying algorithms.
+  6269.3   6276.6 We have struggled to even do that, to understand the underlying technology, and then to move towards responsible regulation.
+  6276.6   6281.6 we cannot afford to be as late to responsibly regulating
+  6281.8   6285.0 generative AI as we have been to social media
+  6285.0   6288.1 because the consequences, both positive and negative,
+  6288.1   6291.6 will exceed those of social media by orders of magnitude.
+  6291.6   6295.3 So let me ask a few questions designed to get at
+  6295.3   6297.2 both how we assess the risk,
+  6297.2   6299.8 what's the role of international regulation,
+  6299.8   6302.1 and how does this impact AI?
+  6302.1   6304.3 Mr. Altman, I appreciate your testimony
+  6304.3   6306.3 about the ways in which open AI
+  6306.3   6310.8 assesses the safety of your models through a process of iterative deployment.
+  6310.8   6314.4 The fundamental question embedded in that process, though, is how you decide whether or not
+  6314.4   6321.2 a model is safe enough to deploy and safe enough to have been built and then let go into
+  6321.2   6322.3 the wild.
+  6322.3   6327.9 I understand one way to prevent generative AI models from providing harmful content is to
+  6327.9   6333.0 have humans identify that content and then train the algorithm to avoid it.
+  6333.0   6337.9 There's another approach that's called constitutional AI that gives the model a set of values
+  6337.9   6340.3 or principles to guide its decision making.
+  6340.3   6346.2 Would it be more effective to give models these kinds of rules instead of trying to require
+  6346.2   6351.0 or compel training the model on all the different potentials for harmful content?
+  6351.0   6353.0 Thank you, Senator.
+  6353.0   6354.0 It's a great question.
+  6354.0   6358.5 I'd like to frame it by talking about why we deploy at all, like why we put these systems
+  6358.5   6359.7 out into the world.
+  6359.7   6363.9 There's the obvious answer about there's benefits and people are using it for all sorts
+  6363.9   6366.3 of wonderful things and getting great value.
+  6366.3   6367.8 That makes us happy.
+  6367.8   6373.6 But a big part of why we do it is that we believe that iterative deployment and giving
+  6373.6   6378.0 people on our institutions and you all time to come to grips with this technology, to
+  6378.0   6382.4 understand it, to find its limitations at benefits, that the regulations we need around
+  6382.4   6385.9 it, what it takes to make it safe, that's really important.
+  6385.9   6391.3 off to build a super powerful AI system in secret and then drop in it on the world all at once,
+  6391.3   6397.1 I think would not go well. So a big part of our strategy is while these systems are still
+  6397.1   6403.2 relatively weak and deeply imperfect to find ways to get people to have experience with them,
+  6403.2   6408.6 to have contact with reality, and to figure out what we need to do to make it safer and better.
+  6408.6   6414.4 And that is the only way that I've seen in the history of new technology and products of this
+  6414.4   6419.5 magnitude to get to a very good outcome. And so that that interaction with the world is very
+  6419.5   6425.2 important. Now, of course, before we put something out, it needs to meet a bar of safety.
+  6425.7   6432.3 And again, we spent well over six months with GPT-4 after we finished training it, going through
+  6432.3   6436.9 all of these different things, and deciding also what the standards were going to be before
+  6436.9   6441.9 we put something out there, trying to find the harms that we know about, put it and how to address
+  6441.9   6445.0 those. One of the things that's been gratifying to us is even some of our biggest
+  6445.0   6449.1 critics have looked at GPT-4 and said, wow, opening I made huge progress on
+  6449.1   6453.0 good focus briefly on whether or not a constitutional model that gives values
+  6453.0   6456.7 would be worth it. I was just about to get there. All right, sorry about that.
+  6456.7   6465.1 Yeah, I think giving the models values up front is an extremely important set. You
+  6465.1   6468.6 know, RLHF is another way of doing that same thing, but somehow or other you
+  6468.6   6471.3 or synthetic data or human generated data,
+  6471.3   6473.1 you're saying here are the values,
+  6473.1   6474.8 here's what I want you to reflect,
+  6474.8   6477.1 or here are the wide bounds of everything
+  6477.1   6477.9 that society will allow.
+  6477.9   6480.1 And then within there, you pick as the user,
+  6480.1   6481.5 if you want value system over here,
+  6481.5   6482.7 a value system over there.
+  6483.6   6484.9 We think that's very important.
+  6484.9   6486.7 There's multiple technical approaches,
+  6486.7   6489.8 but we need to give policy makers
+  6489.8   6492.5 and the world as a whole, the tools to say,
+  6492.5   6494.8 here's the values and implement them.
+  6494.8   6496.2 Thank you, Ms. Montgomery.
+  6496.2   6497.9 You serve on an AI ethics board
+  6497.9   6502.9 of a long established company that has a lot of experience with AI.
+  6502.9   6507.7 I'm really concerned that generative AI technologies can undermine the faith of democratic
+  6507.7   6509.8 values and the institutions that we have.
+  6509.8   6515.9 The Chinese are insisting that AI as being developed in China reinforce the core values
+  6515.9   6519.0 of the Chinese Communist Party and the Chinese system.
+  6519.0   6524.8 And I'm concerned about how we promote AI that reinforces and strengthens open markets,
+  6524.8   6526.9 open societies and democracy.
+  6526.9   6531.4 When you're testimony you're advocating for AI regulation tailored to the specific way
+  6531.4   6537.0 the technology is being used not the underlying technology itself and the EU is moving ahead
+  6537.0   6543.1 with an AI act which categorizes AI products based on level of risk, you all in different
+  6543.1   6548.4 ways have said that you view elections and the shaping of election outcomes and disinformation
+  6548.4   6552.1 that can influence elections as one of the highest risk cases.
+  6552.1   6557.9 On its entirely predictable, we have attempted so far unsuccessfully to regulate social media
+  6557.9   6563.3 after the demonstrably harmful impacts of social media on our last several elections.
+  6563.3   6567.5 What advice do you have for us about what kind of approach we should follow and whether
+  6567.5   6570.7 or not the EU direction is the right one to pursue?
+  6570.7   6578.0 I mean, the conception of the EU AI Act is very consistent with this concept of precision
+  6578.0   6583.0 regulation where you're regulating the use of the technology in context.
+  6583.0   6586.2 So absolutely that approach makes a ton of sense.
+  6586.2   6590.3 It's what I advocated for at the onset.
+  6590.3   6591.6 Different rules for different risks.
+  6591.6   6596.8 So in the case of elections, absolutely any algorithm being used in that context should
+  6596.8   6604.1 be required to have disclosure around the data being used, the performance of the model,
+  6604.1   6608.8 anything along those lines is really important guardrails need to be in place.
+  6608.8   6613.7 And on the point, just come back to the question of whether we need an independent agency.
+  6613.7   6621.4 I mean, I think we don't want to slow down regulation to address real risks right now.
+  6621.4   6627.1 So we have existing regulatory authorities in place who have been clear that they have
+  6627.1   6630.8 the ability to regulate in their respective domains.
+  6630.8   6632.6 of the issues we're talking about today,
+  6632.6   6635.1 span multiple domains, elections in the like.
+  6635.1   6640.3 If I could, I'll just assert that those existing regulatory bodies and authorities are under
+  6640.3   6645.1 resourced and lack many of the statutory regulatory powers that they need.
+  6645.1   6646.1 Correct.
+  6646.1   6650.9 We have failed to deliver on data privacy, even though industry has asking us to regulate
+  6650.9   6651.9 data privacy.
+  6651.9   6658.0 If I might, Mr. Marcus, I'm interested also what international bodies are best positioned
+  6658.0   6662.4 to convene multilateral discussions to promote responsible standards.
+  6662.4   6666.5 We've talked about a model being CERN and nuclear energy.
+  6666.5   6670.0 I'm concerned about proliferation and nonproliferation.
+  6670.0   6672.9 We've also talked, I would suggest that the IPCC,
+  6672.9   6677.4 a UN body helped at least provide a scientific baseline
+  6677.4   6679.3 of what's happening in climate change,
+  6679.3   6682.3 so that even though we may disagree about strategies,
+  6682.3   6685.1 I'm globally we've come to a common understanding
+  6685.1   6687.6 of what's happening and what should be the direction
+  6687.6   6688.8 of intervention.
+  6688.8   6691.5 I'd be interested, Mr. Marcus, if you could just give us
+  6691.5   6694.6 your thoughts on who's the right body internationally
+  6694.6   6697.3 to convene a conversation and one that could also
+  6697.3   6699.0 reflect our values.
+  6699.0   6701.3 I'm still feeling my way on that issue.
+  6701.3   6704.7 I think global politics is not my specialty.
+  6704.7   6706.5 I'm an AI researcher.
+  6706.5   6710.8 But I have moved towards policy in recent months, really,
+  6710.8   6713.4 because of my great concern about all of these risks.
+  6713.4   6717.5 I think certainly the UN, UNESCO, and its guidelines
+  6717.5   6721.9 should be involved in at the table and maybe things work under them and maybe they don't
+  6721.9   6725.2 but they should have a strong voice and help to develop this.
+  6725.2   6731.0 The OACD has also been thinking greatly about this number of organizations have internationally.
+  6731.0   6736.3 I don't feel like I personally am qualified to say exactly what the right model is there.
+  6736.3   6737.3 Well thank you.
+  6737.3   6741.4 I think we need to pursue this both at the national level and the international level.
+  6741.4   6744.7 I'm the chair of the IP subcommittee of the Judiciary Committee.
+  6744.7   6750.4 In June and July, we will be having hearings on the impact of AI on patents and copyrights.
+  6750.4   6752.4 You can already tell from the questions of others.
+  6752.4   6753.4 There will be a lot of interest.
+  6753.4   6756.1 I look forward to following up with you about that topic.
+  6756.1   6758.8 I know, Mr. Chairman, I would like to help you as much as possible.
+  6758.8   6759.8 Thank you very much.
+  6759.8   6760.8 Thanks, Senator Coons.
+  6760.8   6763.7 Senator Kennedy.
+  6763.7   6767.2 Thank you all for being here.
+  6767.2   6771.1 permit me to share with you three hypotheses
+  6771.1   6775.3 that I would like you to assume for the moment to be true.
+  6777.2   6782.2 Apothecist number one, many members of Congress
+  6782.2   6788.3 do not understand artificial intelligence.
+  6788.3   6794.5 Apothecist number two, that absence of understanding
+  6794.5   6807.2 may not prevent Congress from plunging in with enthusiasm and trying to regulate this technology
+  6807.2   6812.2 in a way that could hurt this technology.
+  6812.2   6818.0 Apophhesis number three that I would like you to assume.
+  6818.0   6828.4 There is likely a berserk wing of the artificial intelligence community that intentionally
+  6828.4   6838.3 or unintentionally could use artificial intelligence to kill all of us and hurt us the entire
+  6838.3   6841.5 time that we are dying.
+  6841.5   6843.9 Assume all of those to be true.
+  6845.6   6847.7 Please tell me and plain English.
+  6848.9   6852.7 Two or three reforms, regulations, if any,
+  6854.0   6859.0 that you would implement if you were queen or king for a day.
+  6861.7   6866.4 Ms. Montgomery.
+  6866.4   6871.2 If it comes back again to transparency and explainability in AI,
+  6871.2   6874.4 we absolutely need to know and have companies attest.
+  6874.4   6876.3 What do you mean by transparency?
+  6876.8   6881.8 So disclosure of the data that's used to train AI,
+  6882.3   6886.6 disclosure of the model and how it performs
+  6886.6   6889.8 and making sure that there's continuous governance
+  6889.8   6892.7 over these models that we are the leading edge
+  6892.7   6893.4 in governance.
+  6893.4   6898.4 Technology governance, organizational governance,
+  6899.3   6902.2 rules and clarification that are needed
+  6902.2   6903.9 that this is rigorous.
+  6903.9   6906.0 I mean, this is your chance folks
+  6906.0   6907.6 to tell us how to get this right.
+  6907.6   6909.5 Please use it.
+  6909.5   6909.8 All right.
+  6909.8   6911.8 I mean, I think, again, the rules should be focused
+  6911.8   6915.4 on the use of AI in certain contexts.
+  6915.4   6920.2 So if you look at, for example, the U-A-I-I,
+  6920.2   6926.0 it has certain uses of AI that it says are just simply
+  6926.0   6928.4 too dangerous and will be outlawed in the United States.
+  6928.4   6928.6 OK.
+  6928.6   6932.6 So we all have first passed some law that says you can use AI
+  6932.6   6934.5 for these uses, but not others.
+  6934.5   6936.0 Is that what you're saying?
+  6936.0   6937.8 We need to define the highest risk usage.
+  6937.8   6940.2 Is anything else?
+  6940.2   6942.9 And then, of course, requiring things
+  6942.9   6945.6 like impact assessments and transparency,
+  6945.6   6950.0 requiring companies to show their work,
+  6950.0   6954.1 protecting data that's used to train AI in the first place,
+  6954.1   6954.8 as well.
+  6954.8   6957.9 Professor Marker, if you could be specific,
+  6957.9   6960.4 this is your shot, man.
+  6960.4   6965.0 Talk in plain English and tell me what if any rules
+  6965.0   6966.8 we ought to implement.
+  6966.8   6969.4 And at least don't just use concepts.
+  6969.4   6971.7 I'm looking for specificity.
+  6971.7   6976.0 Number one, a safety review like we use with the FDA
+  6976.0   6977.8 prior to widespread deployment.
+  6977.8   6981.1 If you're going to introduce something to 100 million people,
+  6981.1   6983.5 somebody has to have their eyeballs on it.
+  6983.5   6984.4 There you go.
+  6984.4   6985.1 OK.
+  6985.1   6986.0 That's a good one.
+  6986.0   6987.3 Number two, agree with it.
+  6987.3   6988.7 But that's a good one.
+  6988.7   6989.2 What else?
+  6989.2   6991.0 You didn't ask for three that you would agree with.
+  6991.0   6994.8 Number two, a nimble monitoring agency
+  6994.8   6997.8 to follow what's going on, not just pre-review,
+  6997.8   7000.6 but also post as things are out there in the world
+  7000.6   7003.8 with authority to call things back, which we've discussed today.
+  7003.8   7006.7 And number three would be funding geared towards things
+  7006.7   7010.9 like AI Constitution, AI that can reason about what it's
+  7010.9   7011.8 doing.
+  7011.8   7014.5 I would not leave things entirely to current technology,
+  7014.5   7017.8 which I think is poor, at behaving in ethical fashion
+  7017.8   7020.2 and behaving in honest fashion.
+  7020.2   7024.8 And so I would have funding to try to basically focus on AI safety research.
+  7024.8   7028.3 That term has a lot of complications in my field.
+  7028.3   7030.7 There's both safety, let's say short term and long term.
+  7030.7   7032.8 And I think we need to look at both.
+  7032.8   7036.8 Rather than just funding models to be bigger, which is the popular thing to do.
+  7036.8   7039.1 We need to fund models to be more trustworthy.
+  7039.1   7041.4 Because I'm going to hear from Mr. Altman.
+  7041.4   7042.8 Mr. Altman, here's your shot.
+  7042.8   7043.8 Thank you, Senator.
+  7043.8   7049.2 Number one, I would form a new agency that licenses any effort above a certain scale of capabilities.
+  7049.2   7051.2 and can take that license away and ensure compliance
+  7051.2   7052.3 with safety standards.
+  7052.3   7054.7 Number two, I would create a set of safety standards
+  7054.7   7057.4 focused on what you said in your third hypothesis
+  7057.4   7059.8 as the dangerous capability evaluations.
+  7059.8   7061.3 One example that we've used in the past
+  7061.3   7063.7 is looking to see if a model can self-replicate
+  7063.7   7065.8 and self-exertate into the wild.
+  7065.8   7067.5 We can give you office along other list
+  7067.5   7069.3 and the things that we think are important there.
+  7069.3   7071.5 But specific tests that a model has to pass
+  7071.5   7073.4 before it can be deployed into the world.
+  7073.4   7076.6 And then third, I would require independent audits.
+  7076.6   7078.3 So not just from a company or the agency,
+  7078.3   7082.5 experts who can say the model is or isn't in compliance with these state and safety thresholds
+  7082.5   7088.4 and these percentages of performance on question X or Y. Can you send me that information? We will do that.
+  7090.2   7098.4 Would you be qualified to if we promulgated those rules to administer those rules? I love my
+  7098.4   7104.7 current job. Cool. Are there people out there that would be qualified? We'd be happy to send you
+  7104.7   7110.6 recommendations for people out there. Yes. Okay. You make a lot of money, do you? I make, no,
+  7110.6   7114.2 I'm paid enough for health insurance. I have no equity in opening. I, you really? You know, it's
+  7114.2   7120.3 interesting. You need a lawyer. I need a what? You need a lawyer or an agent. I, I'm doing this
+  7120.3   7131.1 because I love it. Thank you, Mr. Chairman. Thanks Senator Kennedy. Senator Harano. Thank you,
+  7131.1   7133.5 Thank you, Mr. Chairman.
+  7133.5   7135.6 Listening to all of you is just fine.
+  7135.6   7138.9 Thank you very much for being here.
+  7138.9   7144.0 Clearly, AI truly is a game-changing tool.
+  7144.0   7151.5 And we need to get the regulation of this tool right because my staff, for example,
+  7151.5   7156.5 I asked AI, it might have been GPT-4, it might have been,
+  7156.6   7161.3 I don't know one of the other entities to create a song
+  7161.3   7166.3 that my favorite band, BTS, a song that they would sing
+  7167.3   7170.4 somebody else's song, but neither of the artists
+  7170.4   7173.6 were involved in creating what sounded like a really
+  7173.6   7175.8 genuine song, so you can do a lot.
+  7175.8   7180.8 We also ask can there be a speech created talking about
+  7182.8   7184.9 the Supreme Court decision and jobs
+  7184.9   7187.9 and the chaos that it created using my voice,
+  7187.9   7190.4 my kind of voice and it created a speech
+  7190.4   7192.4 that was really good, almost made me think about,
+  7192.4   7194.5 you know, what do I need my staff for?
+  7194.5   7197.4 So don't worry, that's not where we are.
+  7197.4   7198.6 – Nervous laughter behind you.
+  7198.6   7200.9 – Oh, their jobs are safe.
+  7200.9   7202.5 But there's so much that can be done.
+  7202.5   7204.5 And one of the things that you mentioned,
+  7204.5   7211.3 Mr. Altman, the intrigue me was, you said GPD4 can refuse harmful requests.
+  7211.3   7217.7 So you must have put some thought into how your system, if I can call it that, can refuse
+  7217.7   7218.8 harmful requests.
+  7218.8   7221.3 What do you consider a harmful request?
+  7221.3   7222.3 You can just keep it short.
+  7222.3   7223.3 Yeah.
+  7223.3   7226.0 I'll give a few examples.
+  7226.0   7228.3 One would be about violent content.
+  7228.3   7230.9 Another would be about content that's encouraging self-harm.
+  7230.9   7235.1 There's adult content, not that we think adult content is inherently harmful, but there's
+  7235.1   7238.7 things that could be associated with that, that we cannot reliably enough differentiate,
+  7238.7   7239.7 so we refuse all of it.
+  7239.7   7245.1 So those are some of the more obvious harmful kinds of information, but in the election
+  7245.1   7251.3 context, for example, I saw a picture of former President Trump being arrested by
+  7251.3   7253.7 NYPD, and that went viral.
+  7253.7   7255.5 I don't know, is that considered harmful.
+  7255.5   7260.9 I've seen all kinds of statements attributed to any one of us that could be put out there
+  7260.9   7266.8 that may not be, that may not rise to your level of harmful content, but there you have it.
+  7266.8   7270.7 So two of you said that we should have a licensing scheme.
+  7270.7   7276.0 I can't envision or imagine right now what kind of a licensing scheme we would be
+  7276.0   7285.7 able to create to pretty much regulate the vastness of the game changing tool.
+  7285.7   7293.2 So are you thinking of an FTC kind of a system and FCC kind of a system?
+  7293.2   7298.3 What do the two of you even envision as a potential licensing scheme that would provide
+  7298.3   7304.9 the kind of guardwales that we need to protect our literally our country from harmful
+  7304.9   7305.9 content?
+  7305.9   7310.8 To touch on the first part of what you said, there are things besides, you know, should
+  7310.8   7313.3 this content be generated or not that I think are also important.
+  7313.3   7316.0 So that image that you mentioned was generated.
+  7316.0   7318.5 I think it'd be a great policy to say generated images
+  7318.5   7322.0 need to be made clear in all contexts that they were generated.
+  7322.0   7324.7 And then we still have the image out there,
+  7324.7   7326.7 but it's really requiring people to say this
+  7326.7   7329.4 was a generated image.
+  7329.4   7330.0 OK.
+  7330.0   7333.1 Well, you don't need an entire licensing scheme
+  7333.1   7335.7 in order to make that appeal.
+  7335.7   7338.0 Where I think the licensing scheme comes in
+  7338.0   7342.1 is not for what these models are capable of today,
+  7342.1   7346.7 because as you pointed out, you don't need a new licensing agency to do that.
+  7346.7   7350.4 But as we head and, you know, take a long time, I'm not sure,
+  7350.4   7353.4 as we head towards artificial general intelligence.
+  7353.4   7357.3 And the impact that we'll have and the power of that technology,
+  7357.3   7361.0 I think we need to treat that as seriously as we treat other very powerful
+  7361.0   7361.5 technologies.
+  7361.5   7364.4 And that's where I personally think we need such a scheme.
+  7364.4   7364.9 I agree.
+  7364.9   7368.2 And that is why by the time we're talking about AGI,
+  7368.2   7371.2 We're talking about major harms that can occur
+  7371.2   7373.0 through the use of AGI.
+  7373.0   7377.2 So Professor Marcus, what kind of regulatory scheme
+  7377.2   7378.1 would you envision?
+  7378.1   7381.2 And we can't just come up with something
+  7381.2   7386.1 that is going to take care of the issues that will arise
+  7386.1   7387.8 in the future, especially with AGI.
+  7387.8   7391.1 So what kind of a scheme would you contemplate?
+  7391.1   7393.7 Well, first, if I can rewind just a moment,
+  7393.7   7396.3 I think you really put your finger on the central scientific
+  7396.3   7400.2 issue in terms of the challenges in building artificial intelligence.
+  7400.2   7404.7 We don't know how to build a system that understands harm in the full breadth of its meaning.
+  7404.7   7408.9 So what we do right now is we gather examples and we say is this likely examples that
+  7408.9   7411.9 we have labeled before, but that's not broad enough.
+  7411.9   7416.8 And so I thought you're questioning beautifully outlined the challenge that AI itself has
+  7416.8   7419.3 to face in order to really deal with this.
+  7419.3   7423.5 We want AI itself to understand harm and that may require new technology.
+  7423.5   7425.0 So I think that's very important.
+  7425.0   7429.9 In the second part of your question, the model that I tend to gravitate towards, but I
+  7429.9   7433.2 am not an expert here, is the FDA at least as part of it.
+  7433.2   7439.1 In terms of you have to make a safety case and say why the benefits outweigh the harms
+  7439.1   7441.1 in order to get that license.
+  7441.1   7442.9 Probably we need elements of multiple agencies.
+  7442.9   7444.4 I'm not an expert there.
+  7444.4   7447.9 But I think that the safety case part of it is incredibly important.
+  7447.9   7452.3 You have to be able to have external reviewers that are scientifically qualified.
+  7452.3   7453.9 Look at this and say you have you addressed enough.
+  7453.9   7456.0 So I'll just give one specific example.
+  7456.0   7457.9 AutoGPT frightens me.
+  7457.9   7459.4 That's not something that OpenAi made,
+  7459.4   7463.3 but something that OpenAi did make called chat GPT plugins
+  7463.3   7465.6 led a few weeks later to some building
+  7465.6   7468.5 open source software called AutoGPT.
+  7468.5   7471.2 And what AutoGPT does is it allows systems
+  7471.2   7474.4 to access source code, access the internet, and so forth.
+  7474.4   7476.2 And there are a lot of potential, let's say,
+  7476.2   7478.0 cybersecurity risks there.
+  7478.0   7480.3 There should be an external agency that says,
+  7480.3   7481.9 well, we need to be reassured if you're
+  7481.9   7486.4 to release this product that there aren't going to be cybersecurity problems or there are ways
+  7486.4   7487.4 of addressing it.
+  7487.4   7489.6 So Professor, I am running out of time.
+  7489.6   7498.1 I just wanted to mention Ms. Montgomery, your model is that you smartle similar to what
+  7498.1   7499.3 the EU has come up with.
+  7499.3   7505.7 But the vast vastness of AI and the complexities involved, I think, would require more than
+  7505.7   7511.9 and looking at the use of it, I think that based on what I'm hearing today, don't you
+  7511.9   7517.6 think that we're probably going to need to do a heck of a lot more than to focus on
+  7517.6   7520.1 what use it is being used.
+  7520.1   7525.7 For example, you can ask AI to come up with a funny joke or something, but you can use
+  7525.7   7531.0 the same, you can ask the same AI tool to generate something that is like an electric
+  7531.0   7532.6 fraud kind of a situation.
+  7532.6   7537.3 So I don't know how you will make a determination based on where you're going with the
+  7537.3   7542.7 use model, how to distinguish those kinds of uses of this tool.
+  7542.7   7546.6 So I think that if we're going to go toward a licensing kind of a scheme, we're going
+  7546.6   7551.9 to need to put a lot of thought into how we're going to come up with an appropriate scheme
+  7551.9   7559.2 that is going to provide the kind of future reference that we need to put in place.
+  7559.2   7565.2 So I thank all of you for coming in and providing further food for thought.
+  7565.2   7567.2 Thank you, Mr. Chairman.
+  7567.2   7569.4 Thanks very much, Senator Harano.
+  7569.4   7570.4 Senator Padilla.
+  7572.2   7573.3 Thank you, Mr. Chairman.
+  7573.3   7579.2 I appreciate the flexibility as of back and forth between this committee and
+  7579.2   7585.3 Homeland Security Committee where there's a hearing going on right now on the use of AI in government.
+  7585.3   7587.3 AID on the Hill, right?
+  7587.3   7589.3 Listen to the Senate, apparently.
+  7589.3   7592.3 Now, for folks watching at home, if you never thought about AI
+  7592.3   7597.3 until the recent emergence of generative AI tools,
+  7597.3   7600.3 the developments in this space may feel like they've just
+  7600.3   7602.3 happened all of a sudden.
+  7602.3   7605.3 But the fact of the matter is, Mr. Chair, is that they haven't.
+  7605.3   7608.3 AI is not new, not for government, not for business,
+  7608.3   7611.3 not for public, not for the public.
+  7611.3   7613.3 In fact, the public uses AI all the time,
+  7613.3   7615.5 I'm in just for folks to be able to relate.
+  7615.5   7619.7 I want to offer the example of anybody with a smartphone.
+  7619.7   7622.9 Many features on your device leverage AI,
+  7622.9   7625.5 including suggested replies.
+  7625.5   7630.2 When we're text messaging or even to email autocorrect features,
+  7630.2   7634.1 including but not limited to spelling and email and text
+  7634.1   7635.6 applications.
+  7635.6   7641.7 So I'm frankly excited to explore how we can facilitate positive AI
+  7641.7   7648.1 innovation that benefits society while addressing some of the already known harms and
+  7648.1   7653.2 biases that stem from the development and use of the tools today.
+  7653.2   7658.2 Now with language models becoming increasingly ubiquitous, I want to make sure that there's
+  7658.2   7664.0 a focus on ensuring equitable treatment of diverse demographic groups.
+  7664.0   7670.5 My understanding is that most research in evaluating and mitigating fairness harms has been
+  7670.5   7676.9 concentrated on the English language. While non-English languages have received
+  7676.9   7681.3 comfortably little attention or investment and that we've seen this problem
+  7681.3   7685.4 before, I'll tell you why I raised this. Social media companies, for example,
+  7685.4   7691.3 have not adequately invested in content moderation, tools and resources for their
+  7691.3   7697.7 non-English and in non-English language. And I share this, that's just out of
+  7697.7   7701.7 concern for non-US based users.
+  7701.7   7707.1 But so many US based users prefer a language other than English
+  7707.1   7709.3 in their communication.
+  7709.3   7713.0 So I'm deeply concerned about repeating social media's failure
+  7713.0   7716.0 in AI tools and applications.
+  7716.0   7718.5 Question, Mr. Altman and Ms. Montgomery.
+  7718.5   7722.8 How are open AI IBM ensuring language and cultural
+  7722.8   7727.8 inclusivity that they're in their large language models.
+  7729.6   7732.8 And it's even an area focused in the development of your mugs.
+  7734.2   7739.2 So bias and equity in technology is a focus of ours
+  7739.5   7741.5 and always has been I think diversity
+  7741.5   7743.5 in terms of the development of the tools
+  7743.5   7744.9 in terms of their deployment.
+  7744.9   7748.7 So having diverse people that are actually training those tools,
+  7748.7   7751.9 considering the downstream effects as well.
+  7751.9   7756.6 We're also very cautious, very aware of the fact
+  7756.6   7759.9 that we can't just be articulating and calling for.
+  7759.9   7761.8 These types of things without having the tools
+  7761.8   7764.4 and the technology to test for bias
+  7764.4   7767.4 and to apply governance across the life cycle of AI.
+  7767.4   7770.5 So we were one of the first teams and companies
+  7770.5   7774.7 to put toolkits on the market, deploy them,
+  7774.7   7776.3 contribute them to open source.
+  7776.3   7778.6 That will do things like help to address,
+  7778.6   7781.1 be the technical aspects in which we
+  7781.1   7783.7 help to address issues like bias.
+  7783.7   7786.2 Can you speak just for a second specifically
+  7786.2   7788.6 to language andclusivity?
+  7788.6   7789.6 Yeah, I mean language.
+  7789.6   7792.1 So we don't have a consumer platform,
+  7792.1   7795.8 but we are very actively involved with ensuring
+  7795.8   7798.6 that the technology we help to deploy in the large language
+  7798.6   7802.0 models that we use in helping our clients
+  7802.0   7806.3 to deploy technology is focused on and available
+  7806.3   7808.1 in many languages.
+  7808.1   7808.8 Thank you.
+  7808.8   7810.8 We think this is really important.
+  7810.8   7813.8 One example is that we worked with the government of Iceland,
+  7813.8   7816.8 which is a language of fewer speakers than many of the languages
+  7816.8   7819.8 that are well represented on the internet,
+  7819.8   7822.8 to ensure that their language was included in our model.
+  7822.8   7824.8 And we've had many similar conversations
+  7824.8   7827.8 and I look forward to many similar partnerships
+  7827.8   7831.8 with lower resource languages to get them into our models.
+  7831.8   7835.8 GPT-4 is unlike previous models of ours,
+  7835.8   7838.8 Go to English and not very good at other languages.
+  7838.8   7841.8 Now, pretty good at a large number of languages.
+  7841.8   7844.8 You can go pretty far down the list, ranked by number of speakers,
+  7844.8   7846.8 and still get good performance.
+  7846.8   7849.8 But for these very small languages, we're excited about custom partnerships
+  7849.8   7852.8 to include that language into our model run.
+  7852.8   7855.8 And the part of the question you asked about values
+  7855.8   7857.8 and making sure that cultures are included.
+  7857.8   7859.8 We're equally focused on that.
+  7859.8   7862.8 Excited to work with people who have particular data sets
+  7862.8   7866.1 sets and to work to collect a representative set of values
+  7866.1   7868.4 from around the world to draw these wide bounds
+  7868.4   7869.9 of what the system can do.
+  7869.9   7872.5 I also appreciate what you said about the benefits
+  7872.5   7874.6 of these systems and wanting to make sure we get those
+  7874.6   7876.6 to as wide of a group as possible.
+  7876.6   7879.4 I think this will, these systems will have lots of positive
+  7879.4   7880.9 and bad amount of people.
+  7880.9   7885.1 But in particular, underrepresented, historically
+  7885.1   7886.8 underrepresented groups in technology,
+  7886.8   7889.5 people who have not had as much technology around the world,
+  7889.5   7891.9 This technology seems like it can be a big lift up.
+  7893.9   7899.0 And my question was specific to language andclusivity,
+  7899.0   7903.3 but that is agreement on the broader commitment
+  7903.3   7905.6 to diversity and inclusion.
+  7905.6   7907.2 And I'll just give a couple more reasons
+  7907.2   7909.6 why I think it's so critical.
+  7909.6   7912.2 The largest actors in this space can
+  7912.2   7916.2 afford the massive amount of data, the computing power,
+  7916.2   7918.3 and they have the financial resources necessary
+  7918.3   7921.1 to develop complex AI systems.
+  7923.2   7924.8 But in this space we haven't seen
+  7924.8   7926.7 from a workforce standpoint,
+  7926.7   7929.2 the racial and gender diversity reflective
+  7929.2   7931.3 of the United States of America.
+  7931.3   7933.8 And we risk, if we're not thoughtful about it,
+  7934.8   7937.2 contributing to the development of tools
+  7937.2   7941.2 and approaches that only exacerbate the bias
+  7941.2   7944.0 and inequities that exist in our society.
+  7944.0   7946.1 So a lot of follow-up were to do there.
+  7946.1   7949.9 In my time remaining, I do want to ask one more question.
+  7949.9   7951.7 This committee and the public are right
+  7951.7   7955.0 to pay attention to the emergence of generative AI.
+  7955.0   7957.6 This technology has a different opportunity
+  7957.6   7960.6 and a risk profile than other AI tools.
+  7960.6   7963.7 And these applications have felt very tangible for the public
+  7963.7   7966.8 due to the nature of the user interface
+  7966.8   7969.1 and the outputs that they produce.
+  7969.1   7971.3 But I don't think we should lose sight of the broader AI
+  7971.3   7975.3 ecosystem as you consider AI's broader impact on society
+  7975.3   7978.4 as well as the design of appropriate safeguards.
+  7978.4   7980.8 So Ms. Montgomery, in your testimony,
+  7981.8   7983.8 as you noted, AI is not you.
+  7983.8   7986.7 Can you highlight some of the different applications
+  7986.7   7989.9 that the public and policymakers should also keep in mind
+  7989.9   7994.5 as we consider possible regulations?
+  7994.5   7997.5 Yeah, I mean, I think the generative AI systems
+  7997.5   8000.1 that are available today are creating new issues
+  8000.1   8002.5 that need to be studied.
+  8002.5   8005.3 New issues around the potential to generate content
+  8005.3   8008.4 that could be extremely misleading, deceptive,
+  8008.4   8009.2 and alike.
+  8009.2   8012.1 So those issues absolutely need to be studied.
+  8012.1   8015.3 But we shouldn't also ignore the fact that AI is a tool.
+  8015.3   8017.1 It's been around for a long time.
+  8017.1   8020.4 It has capabilities beyond just generative capabilities.
+  8020.4   8023.4 And again, that's why I think going back to this approach
+  8023.4   8026.2 where we're regulating AI where it's touching people
+  8026.2   8029.4 and society is a really important way to address it.
+  8030.8   8031.6 Thank you.
+  8031.6   8032.9 Thank you, Mr. Chair.
+  8032.9   8036.1 Thanks Senator P. Senator Booker is next,
+  8036.1   8039.7 but I think he's gonna defer to Senator Aasha.
+  8039.7   8041.5 It's because Senator Aasha is a very big deal.
+  8041.5   8044.1 I don't know if you can.
+  8044.1   8046.9 I have a meeting at noon and I'm grateful to you,
+  8046.9   8050.2 Senator Booker, for yielding your time.
+  8050.2   8053.4 You are, as always, really an enhance them.
+  8053.4   8057.4 And thank you to the panelists for joining us.
+  8057.4   8059.2 Thank you to the Subcommittee leadership
+  8059.2   8062.2 for opening this up to all committee members.
+  8062.2   8065.8 If we're going to contemplate a regulatory framework,
+  8065.8   8068.0 we're going to have to define what it is that we're regulating.
+  8068.0   8071.1 So in Mr. Albin, any such law
+  8071.1   8072.7 will have to include a section that
+  8072.7   8075.9 defines the scope of regulated activities, technologies,
+  8075.9   8077.5 tools, products.
+  8077.5   8079.5 Just take a stab at it.
+  8079.5   8080.5 Yeah, thanks for asking, Senator.
+  8080.5   8082.8 Also, I think it's super important.
+  8082.8   8085.3 I think there are very different levels here.
+  8085.3   8089.5 And I think it's important that any new approach, any new law,
+  8089.5   8091.8 does not stop the innovation from happening
+  8091.8   8093.9 with smaller companies, open source models,
+  8093.9   8096.9 researchers that are doing work at a smaller scale.
+  8097.9   8100.0 That's a wonderful part of this ecosystem
+  8100.0   8102.1 in of America and we don't wanna slow that down.
+  8102.1   8104.8 There still may need to be some rules there,
+  8104.8   8109.0 but I think we could draw a line at systems
+  8109.0   8112.4 that need to be licensed in a very intense way.
+  8112.4   8114.5 The easiest way to do it, I'm not sure if it's the best,
+  8114.5   8115.9 but the easiest would be to talk about
+  8115.9   8118.8 the amount of compute that goes into such a model.
+  8118.8   8121.6 So we could define a threshold of compute,
+  8121.6   8123.5 and it'll have to change.
+  8123.5   8127.8 It could go up or down as we discover more efficient algorithms
+  8127.8   8130.1 that says above this amount of compute,
+  8130.1   8132.4 you are in this regime.
+  8132.4   8134.4 What I would prefer, it's hard to do,
+  8134.4   8137.6 but I think more accurate, is to define some capability
+  8137.6   8141.6 thresholds and say a model that can do things x, y, and z.
+  8141.6   8144.6 Up to you all to decide that's now in this licensing regime,
+  8144.6   8146.6 but models that are less capable.
+  8146.6   8148.4 We don't want to stop our open source community.
+  8148.4   8150.2 We don't want to stop individual research
+  8150.2   8151.6 as we don't want to stop new startups.
+  8151.6   8153.7 Can proceed with a different framework?
+  8153.7   8155.1 Thank you, as concisely as you can,
+  8155.1   8157.6 please state which capabilities you'd propose
+  8157.6   8159.7 we consider for the purposes of this definition.
+  8161.3   8163.7 I would love rather than to do that off the cuff
+  8163.7   8165.3 to follow up with your office with like a follow-up.
+  8165.3   8166.6 Well, perhaps opine,
+  8166.6   8170.1 opine understanding that you're just responding
+  8170.1   8171.7 and what you're not making a law.
+  8171.7   8173.8 All right, in the spirit of just a pining,
+  8173.8   8178.2 I think a model that can persuade manipulate influence
+  8178.4   8181.8 person's behavior or person's beliefs that would be a good threshold.
+  8181.8   8187.1 I think a model that could help create novel biological agents would be a great threshold.
+  8187.1   8188.7 Things like that.
+  8188.7   8193.2 I want to talk about the predictive capabilities of the technology and we're going to have
+  8193.2   8199.7 to think about a lot of very complicated constitutional questions that arise from it with
+  8199.7   8203.7 massive data sets.
+  8203.7   8209.6 integrity and accuracy with which such technology can predict future human
+  8209.6   8213.0 behaviors potentially pretty significant at the individual level.
+  8213.0   8216.6 Correct? I think we don't know the answer to that for sure, but let's say it can
+  8216.6   8221.1 at least have some impact there. Okay, so we may be confronted by situations where,
+  8221.1   8226.5 for example, a law enforcement agency deploying such technology seeks some kind of
+  8226.5   8232.3 judicial consent to execute a search or to take some other police action on the basis of
+  8232.3   8238.3 a modeled prediction about some individual's behavior.
+  8238.3   8240.6 But that's very different from the kind of evidentiary
+  8240.6   8243.4 predicate that normally police would take to a judge
+  8243.4   8245.2 in order to get a warrant.
+  8245.2   8248.5 Talk me through how you think about that issue.
+  8248.5   8250.4 Yeah, I think it's very important
+  8250.4   8253.2 that we continue to understand that these are tools
+  8253.2   8255.0 that humans use to make human judgments
+  8255.0   8257.0 and that we don't take away human judgment.
+  8257.0   8260.1 I don't think that people should be prosecuted based off
+  8260.1   8262.6 of the output of an AI system, for example.
+  8262.6   8266.7 We have no national privacy law.
+  8266.7   8271.7 Europe has rolled one out to mixed reviews.
+  8271.7   8275.0 Do you think we need one?
+  8275.0   8276.2 I think it'd be good.
+  8276.2   8280.7 And what would be the qualities or purposes of such a law that you think would make
+  8280.7   8282.7 the most sense based on your experience?
+  8282.7   8285.2 Again, this is very far out of my effects, RTS.
+  8285.2   8289.1 I think there's many, many people that are privacy experts that could weigh on what
+  8289.1   8290.1 a lot needs to be.
+  8290.1   8291.8 I'd still like you to weigh in.
+  8291.8   8297.8 I mean, I think a minimum is that users should be able to sort of opt out from having their
+  8297.8   8301.8 data used by companies like ours or the social media companies.
+  8301.8   8303.8 It should be easy to delete your data.
+  8303.8   8308.8 I think those are, but the thing that I think is important from my perspective running
+  8308.8   8313.8 an AI company is that if you don't want your data used for training these systems, you have
+  8313.8   8314.8 the right to do that.
+  8314.8   8316.8 So let's think about how that will be practically implemented.
+  8316.8   8324.1 I mean, as I understand it, your tool and certainly similar tools, one of the inputs will be
+  8326.9   8331.7 scraping for lack of a better word, data off of the open web, right?
+  8331.7   8338.8 As a low-cost way of gathering information and there's a vast amount of information out there
+  8338.8   8345.9 about all of us. How would such a restriction on the access or use or analysis of such data be
+  8345.9   8347.4 be practically implemented.
+  8347.4   8349.8 So I was speaking about something a little bit different,
+  8349.8   8351.4 which is the data that someone generates,
+  8351.4   8353.5 the questions they ask are system, things that they input
+  8353.5   8354.9 there, training on that.
+  8354.9   8357.3 Data that's on the public web that's accessible,
+  8357.3   8358.5 even if we don't train on that,
+  8358.5   8360.9 the models can certainly link out to it.
+  8360.9   8362.3 So that was not what I was referring to.
+  8362.3   8365.6 I think that there's ways to have your data,
+  8365.6   8367.6 or there should be more ways to have your data taken down
+  8367.6   8368.6 from the public web.
+  8368.6   8371.5 But certainly models with web browsing capabilities
+  8371.5   8375.0 will be able to search the web and link out to it.
+  8375.0   8382.0 When you think about implementing a safety or regulatory regime to constrain such software
+  8382.0   8391.2 and to mitigate some risk, is your view that the federal government would make laws such
+  8391.2   8397.4 that certain capabilities or functionalities themselves are forbidden in potential?
+  8397.4   8404.9 In other words, one cannot deploy or execute code capable of X, or is it the act
+  8404.9   8409.2 itself acts only when actually executed.
+  8409.2   8410.0 Well, I think both.
+  8410.0   8411.8 I'm a believer in defense and depth.
+  8411.8   8417.9 I think that there should be limits on what a deployed model is capable of and then what it actually does to.
+  8417.9   8420.0 How are you thinking about how kids use your product?
+  8421.5   8427.8 We, well, you have to be, I mean, you have to be 18 or up or have your parents' permission at 13 and up to use a product,
+  8427.8   8430.6 but we understand that people get around those safeguards all the time.
+  8430.6   8433.7 And so what we try to do is just design a safe product.
+  8433.7   8436.2 And there are decisions that we make that we would allow
+  8436.2   8437.8 if we knew only adults were using it,
+  8437.8   8439.1 that we just don't allow in the product
+  8439.1   8440.9 because we know children will use it
+  8440.9   8442.4 somewhere or other too.
+  8442.4   8445.5 In particular, given how much these systems are being used
+  8445.5   8449.9 in education, we want to be aware that that's happening.
+  8449.9   8452.0 I think what an Senator Blumenthal
+  8452.0   8454.5 has done extensive work investigating this,
+  8454.5   8458.0 what we've seen repeatedly is that companies
+  8458.0   8461.6 whose revenues depend upon volume of use,
+  8461.6   8464.7 screen time, intensity of use,
+  8464.7   8468.4 design these systems in order to maximize
+  8468.4   8471.2 the engagement of all users, including children,
+  8471.2   8473.7 with perverse results in many cases
+  8473.7   8476.3 and what I would humbly advise you,
+  8476.3   8480.1 is that you get way ahead of this issue,
+  8480.1   8482.8 the safety for children of your product,
+  8482.8   8486.3 or I think you're gonna find that Senator Blumenthal,
+  8486.3   8492.8 Senator Holly, others on this subcommittee and I will look very harshly on the deployment
+  8492.8   8495.0 of technology that harms children.
+  8495.0   8496.0 We couldn't agree more.
+  8496.0   8498.7 I think we're out of time, but I'm happy to talk about that if I can respond.
+  8498.7   8499.7 Go ahead.
+  8499.7   8500.7 Go ahead.
+  8500.7   8502.7 It's up to the chairman.
+  8502.7   8503.7 Okay.
+  8503.7   8508.9 First of all, I think we try to design systems that do not maximize for engagement.
+  8508.9   8513.0 In fact, we're so short on GPUs, the less people use our products, the better.
+  8513.0   8514.8 but we're not an advertising based model.
+  8514.8   8516.8 We're not trying to get people to use it more and more.
+  8518.6   8520.6 And I think that's a different shape
+  8520.6   8522.8 than ad supported social media.
+  8522.8   8523.6 Second,
+  8525.1   8529.1 these systems do have the capability to influence
+  8529.1   8532.1 in obvious and in very nuanced ways.
+  8532.1   8533.9 And I think that's particularly important
+  8533.9   8534.9 for the safety of children,
+  8534.9   8537.0 but that will impact all of us.
+  8537.0   8540.2 One of the things that we'll do ourselves regulation or not,
+  8540.2   8542.9 but I think a regulatory approach would be good for also.
+  8542.9   8547.9 is requirements about how the values of these systems are set
+  8548.1   8550.4 and how these systems respond to questions
+  8550.4   8552.4 that can cause influence.
+  8552.4   8554.1 So we'd love to partner with you, couldn't agree more
+  8554.1   8555.1 on the importance.
+  8555.1   8556.6 Thank you.
+  8556.6   8557.6 Mr. Chairman, for the recommendation,
+  8557.6   8559.7 I just want to say that the center from Georgia
+  8559.7   8561.9 is also very handsome and brilliant too.
+  8561.9   8566.9 But I will allow that comment to stand without objection.
+  8566.9   8568.6 without objection.
+  8568.6   8570.0 Without objection, okay.
+  8570.0   8574.0 I'm just sure I'm in it and I can make a question.
+  8574.0   8575.0 I'm not going to go anywhere now, right?
+  8575.0   8576.4 Thank you very much.
+  8576.4   8578.8 It's nice that we finally got down to the ball guys
+  8578.8   8580.5 down here at the end.
+  8580.5   8581.4 I just want to thank you both.
+  8581.4   8583.4 This has been one of the best hearings I've had this Congress
+  8583.4   8586.8 and just a testimony to you two and seeing
+  8586.8   8589.4 the challenges and the opportunities that AI presents.
+  8589.4   8590.7 So I appreciate you both.
+  8590.7   8591.8 I want to just jump in.
+  8591.8   8595.5 I think very broadly, and then I'll get a little more narrow.
+  8595.5   8598.6 And you said very broadly, technology has been moving like this.
+  8598.6   8603.0 And we are a lot of people have been talking about regulation.
+  8603.0   8605.0 And so I use the example of the automobile,
+  8605.0   8608.9 what an extraordinary piece of technology.
+  8608.9   8611.6 I mean, New York City did not know what to do with horse manure.
+  8611.6   8613.9 They were having crises forming commissions.
+  8613.9   8616.7 And the automobile comes along, ends that problem.
+  8616.7   8619.4 But at the same time, we have tens of thousands of people dying
+  8619.4   8620.5 on highways every day.
+  8620.5   8622.6 We have emissions crises in the like.
+  8622.6   8625.0 There are multiple federal agencies.
+  8625.0   8627.8 multiple federal agencies that were created
+  8627.8   8631.7 or are specifically focused on regulating cars.
+  8632.8   8637.8 And so this idea that this equally transforming technology
+  8637.8   8640.5 is coming and for Congress to do nothing,
+  8640.5   8644.2 which is not what anybody here is calling for,
+  8644.2   8647.4 little or nothing is obviously unacceptable.
+  8647.4   8649.6 I really appreciate Senator Welsh and I
+  8649.6   8652.3 who have been going back and forth during this hearing
+  8652.3   8654.5 and him and Bennett have a bill talking
+  8654.5   8657.2 about trying to regulate in this space.
+  8657.2   8662.3 Not doing so for social media has been,
+  8662.3   8665.5 I think, very destructive and allowed a lot of things
+  8665.5   8668.1 to go on that are really causing a lot of harm.
+  8668.1   8670.2 And so the question is, is what kind of regulation?
+  8670.2   8672.4 You all have spoken that to a lot of my colleagues.
+  8673.7   8675.6 And I want to send Mr. Montgomery,
+  8675.6   8677.5 and I have to give full disclosure,
+  8677.5   8679.5 I'm the child of two IBM parents.
+  8679.5   8686.0 But you know, you talked about defining the highest risk uses.
+  8686.0   8687.6 We don't know all of them.
+  8687.6   8688.8 We really don't.
+  8688.8   8693.9 We can't see where this is going, regulating at the point of risk.
+  8693.9   8697.2 And you sort of, it's called not for an agency.
+  8697.2   8701.0 And I think when somebody else has to do the specify, because you don't want to slow things
+  8701.0   8703.0 down, we should build on what we have in place.
+  8703.0   8708.8 But you can envision that we can try to work on two different ways that ultimately a
+  8708.8   8713.8 a specific like we have in cars, EPA, NHTSA,
+  8714.9   8718.1 the federal motor car carrier safety administration,
+  8718.1   8720.6 all of these things, you can imagine something specific
+  8720.6   8724.0 that is, as Mr. Marcus points out,
+  8724.0   8726.8 a nimble agency that could do monitoring other things,
+  8726.8   8729.4 you can imagine the need for something like that, correct?
+  8729.4   8730.7 Oh, absolutely.
+  8730.7   8731.6 Yeah.
+  8731.6   8734.0 And so just for the record, then,
+  8734.0   8737.2 in addition to trying to regulate with what we have now,
+  8737.2   8747.2 You would encourage Congress and my colleague Senator Welsh to move forward in trying to figure out the right tailored agency to deal with what we know and perhaps things that might come up in the future.
+  8748.2   8761.2 I would encourage Congress to make sure it understands the technology has the skills and resources in place to impose regulatory requirements on the uses of the technology and to understand emerging risks as well. So yes.
+  8761.2   8762.2 Yes.
+  8762.2   8764.8 Mr. Marcus, there's no way to put this genie in the model.
+  8764.8   8767.2 Globally, it's exploding.
+  8767.2   8772.3 I appreciate your thoughts and I shared some of my staff about your ideas, what the international
+  8772.3   8773.8 context is.
+  8773.8   8776.7 But there's no way to stop this moving forward.
+  8776.7   8782.4 So with that understanding, just building on what Ms. Montgomery said, what kind of encouragement
+  8782.4   8786.9 do you have as specifically as possible to forming an agency, to using current rules and
+  8786.9   8787.9 regulations?
+  8787.9   8790.0 Can you just put some clarity on what you've already stated?
+  8790.0   8795.0 Let me just insert. There are more genies yet to come from more bottles. Some genies are already out
+  8795.1   8798.9 But we don't have machines that can really for example itself improve themselves
+  8799.4   8803.7 We don't really have machines that have self-awareness and we might not ever want to go there
+  8803.7   8808.6 So there are other genies to be concerned about on to the main part of your question
+  8809.2   8815.5 I think that we need to have some international meetings very quickly with people who have expertise and how you grow
+  8815.5   8818.6 agencies in the history of growing agencies.
+  8818.6   8820.0 We need to do that in the federal level.
+  8820.0   8822.0 We need to do that in the international level.
+  8822.0   8825.8 I'll just emphasize one thing I haven't as much as I would like to, which is that I think
+  8825.8   8827.8 science has to be a really important part of it.
+  8827.8   8828.8 I'll give an example.
+  8828.8   8830.6 We've talked about misinformation.
+  8830.6   8835.2 We don't really have the tools right now to detect and label misinformation with nutrition
+  8835.2   8836.5 labels that we would like to.
+  8836.5   8839.1 We have to build new technologies for that.
+  8839.1   8844.3 We don't really have tools yet to detect a wide uptick in cybercrime, probably.
+  8844.3   8846.2 we probably need new tools there.
+  8846.2   8848.4 We need science to probably help us
+  8848.4   8850.2 to figure out what we need to build
+  8850.2   8853.2 and also what it is that we need to have transparency
+  8853.2   8854.0 around in the future.
+  8854.0   8855.0 I understood.
+  8855.0   8857.1 Sam, just going to you for a little bit of time
+  8857.1   8859.5 I have left real quick.
+  8859.5   8860.8 First of all, you're a bit of a unicorn
+  8860.8   8862.6 when I sat down with you first.
+  8862.6   8865.7 Could you explain why nonprofit, in other words,
+  8865.7   8868.5 you're not looking at this and you've even
+  8868.5   8869.9 capped the VC people?
+  8869.9   8873.9 Just really quickly, I want folks to understand that.
+  8873.9   8879.2 We started as a nonprofit really focused on how this technology was going to be built at the time.
+  8879.2   8883.4 It was very outside the overton window that something like AGI was even possible.
+  8883.4   8885.1 That's shifted a lot.
+  8885.1   8888.3 We didn't know at the time how important scale was going to be.
+  8888.3   8894.0 But we did know that we wanted to build this with humanity's best interest at heart.
+  8894.0   8898.1 And a belief that this technology could, if it goes the way we want it, if we can do some
+  8898.1   8903.4 of those things, Professor Marcus mentioned, really deeply transformed the world.
+  8903.4   8907.0 And we wanted to be as much of a force for getting to a positive
+  8907.0   8907.0 future.
+  8907.0   8907.9 I'm going to interrupt you.
+  8907.9   8908.6 I think that's all good.
+  8908.6   8910.4 I hope more of that gets out on the record.
+  8910.4   8913.0 The second part of my question as well,
+  8913.0   8915.0 I found it fascinating.
+  8915.0   8917.6 But are you ever going to, for a revenue model,
+  8917.6   8918.8 for return on your investors?
+  8918.8   8922.9 Are you ever going to do ads or something like that?
+  8922.9   8924.6 I wouldn't say never.
+  8924.6   8927.6 I don't think, I think there may be people that we want to offer
+  8927.6   8929.6 services to, and there's no other model that works.
+  8929.6   8932.7 But I really like having a subscription based model.
+  8932.7   8935.1 have API developers pay us and we have
+  8935.1   8936.4 can chat you.
+  8936.4   8938.5 Okay can I just so that then can I just jump?
+  8938.5   8939.4 Sure.
+  8939.4   8943.2 Quickly one of my biggest concerns about this space is what I've already seen in the
+  8943.2   8948.2 space of web 2, web 3 is this massive corporate concentration.
+  8948.2   8954.1 It is really terrifying to see how few companies now control and affect the lives of so many of us
+  8954.1   8956.6 and these companies are getting bigger and more powerful.
+  8956.6   8961.6 And I see you know open AI backed by Microsoft and Thropic is backed by Google.
+  8961.6   8963.2 Google has its own in-house product.
+  8963.2   8964.0 We know Bart.
+  8964.0   8966.6 So I'm really worried about that.
+  8966.6   8970.9 And I'm wondering if Sam, you can give me a quick acknowledgment.
+  8970.9   8972.7 Are you worried about the corporate concentration
+  8972.7   8976.1 in this space and what effect it might have
+  8976.1   8979.1 and the associated risks, perhaps, with more concentration
+  8979.1   8982.5 in AI and the Mr. Marcus, can you answer that as well?
+  8982.5   8984.2 I think there will be many people that
+  8984.2   8985.8 develop models.
+  8985.8   8987.4 What's happening on the open source communities
+  8987.4   8987.9 is amazing.
+  8987.9   8989.8 But there will be a relatively small number
+  8989.8   8992.7 of providers that can make models at the true-
+  8992.7   8995.1 User-Dangent.
+  8995.1   8998.2 I think there is benefits and danger to that,
+  8998.2   9000.3 because we're talking about all of the dangers with AI.
+  9000.3   9002.9 The fewer of us that you really have to keep a careful eye
+  9002.9   9005.9 on on the absolute bleeding edge of capabilities,
+  9005.9   9007.5 there's benefits there.
+  9007.5   9009.5 But I think there needs to be enough in their will
+  9009.5   9012.0 because there's so much value that consumers have choice
+  9012.0   9013.6 that we have different ideas.
+  9013.6   9014.9 Mr. Marcus, real quick.
+  9014.9   9018.7 There is a real risk of a kind of technocracy combined
+  9018.7   9023.6 with oligarchy where a small number of companies influence people's beliefs through the
+  9023.6   9024.6 nature of these systems.
+  9024.6   9029.1 Again, I put something in the record about the Wall Street Journal about how these systems
+  9029.1   9034.3 can subtly shape our beliefs and that's enormous influence on how we live our lives.
+  9034.3   9038.5 Having a small number of players do that with data that we don't even know about, that scares
+  9038.5   9039.5 me.
+  9039.5   9040.5 Sam, I'm sorry.
+  9040.5   9041.7 One more thing I wanted to add.
+  9041.7   9046.5 One thing that I think is very important is that what these systems get aligned to, whose
+  9046.5   9051.4 values what those bounds are that that is somehow set by society as a whole by
+  9051.4   9055.6 government as a whole and so creating that data set the alignment that our
+  9055.6   9058.5 alignment data set it could be you know an AI constitutional whatever it is
+  9058.5   9063.9 that that has got to come very broadly from society. Thank you very much Mr.
+  9063.9   9068.2 Chairman I times expired and I guess the best for last. Thank you Senator
+  9068.2   9073.6 Booker Senator Welch. First of all I want to thank you Senator Bloomethal
+  9073.6   9077.6 and you center a highlight. This has been tremendous hearing.
+  9077.6   9083.1 Centers are noted for their short attention spans, but I set through this entire hearing
+  9083.1   9085.6 and enjoyed every minute of it.
+  9085.6   9089.6 You have one of our longer attention spans in the United States.
+  9089.6   9091.6 To your great credit.
+  9091.6   9094.6 Well, we've had good witnesses and it's an incredibly important issue.
+  9094.6   9099.6 And here's just, I don't, all the questions I have been asked really,
+  9099.6   9102.5 Really, but here's a kind of a takeaway.
+  9102.5   9105.5 And what I think is the major question
+  9105.5   9108.8 that we're going to have to answer is a Congress.
+  9108.8   9111.8 And number one, you're here because AI
+  9111.8   9115.6 is this extraordinary new technology
+  9115.6   9120.3 that everyone says can be transformative as much as the
+  9120.3   9122.1 printing press.
+  9122.1   9124.9 Number two is really unknown what's going to happen,
+  9124.9   9127.8 but there's a big fear you've expressed to all of you
+  9127.8   9132.1 about what bad actors can do and will do
+  9132.1   9134.8 if there's no rules of the road.
+  9136.6   9140.9 Number three is a member who served in the house
+  9140.9   9142.1 and now in the Senate.
+  9143.3   9146.0 I've come to the conclusion that it's impossible
+  9146.0   9149.6 for Congress to keep up with the speed of technology.
+  9149.6   9152.8 And there have been concerns expressed
+  9152.8   9156.9 in so about social media and now about AI
+  9156.9   9163.6 that relate to fundamental privacy rights, bias rights, intellectual property,
+  9163.6   9167.5 distant, disparate of disinformation, which in many ways for me is the biggest threat
+  9167.5   9171.5 because that goes to the core of our capacity for self-governing.
+  9171.5   9177.4 There's the economic transformation which can be profound.
+  9177.4   9179.5 There's safety concerns.
+  9179.5   9185.0 And I've come to the conclusion that we absolutely have to have an agency.
+  9185.0   9189.8 What its scope of engagement is,
+  9189.8   9191.6 is has to be defined by us.
+  9193.2   9197.6 But I believe that unless we have an agency
+  9197.6   9199.8 that is gonna address these questions
+  9199.8   9202.0 from social media and in AI,
+  9202.9   9205.2 we really don't have much of a defense
+  9205.2   9207.1 against the bad stuff.
+  9207.1   9209.1 In the bad stuff we'll count.
+  9209.1   9212.7 So last year I introduced in the House side
+  9212.7   9215.5 Senator Bennett didn't send us, it was the end of the year,
+  9215.5   9218.9 a digital commission act and we're going to be re-entreducing that this year.
+  9220.3   9225.2 And the two things that I want to ask, one, you've somewhat answered because I think
+  9225.2   9229.6 two of the three of you have said you think we do need an independent commission.
+  9229.6   9236.1 And Congress established an independent commission when railroads were running rampant over the interest of farmers.
+  9236.1   9241.2 When Wall Street had no rules of the road and we had the SEC.
+  9241.2   9243.4 I think we're at that point now.
+  9243.4   9248.9 But what the commission does would have to be defined
+  9248.9   9250.5 and circumscribed.
+  9250.5   9253.7 But also, there's always a question
+  9253.7   9256.5 about the use of regulatory authority.
+  9256.5   9259.9 And the recognition that it can be used for good,
+  9259.9   9262.9 JD Vance actually mentioned that when we were considering
+  9262.9   9265.6 his and Senator Brown's bill about railroads
+  9265.6   9269.8 in that event in East Palestine, regulation
+  9269.8   9271.0 for the public health.
+  9271.0   9273.2 But there's also a legitimate concern
+  9273.2   9275.3 about regulation getting in the way of things,
+  9275.3   9279.8 being too cumbersome, and being a negative influence.
+  9279.8   9283.6 So, A, two of the three of you have said,
+  9283.6   9285.7 you think we do need an agency.
+  9287.8   9290.0 What are some of the perils of an agency
+  9290.0   9292.2 that we would have to be mindful of
+  9292.2   9295.0 in order to make certain that its goals
+  9295.0   9296.7 of protecting many of those interests
+  9296.7   9299.4 they just mentioned, privacy, bias, intellectual property,

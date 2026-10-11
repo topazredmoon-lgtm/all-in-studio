@@ -1,32 +1,22 @@
-# HANDOVER · All-in · 2026-10-11 · "THE COMING AI BAN": script + sources DONE · NEXT: 1-min sample (needs network)
+# HANDOVER · All-in · 2026-10-11 · "THE COMING AI BAN": 1-min SAMPLE delivered · NEXT: owner's notes, then the full film
 Older history: `HANDOVER_archive.md` (read only if needed). Token-lean: S is on Pro (keep a session under ~120k tokens;
 grep and small scripts, never print whole transcripts or logs). Never read SCRATCH HOLY or other source projects.
 
-## NOW (2026-10-11): "THE COMING AI BAN" (slug `ai-ban`) · script DONE · NEXT: build the 1-min sample (act 1)
-- Owner HATED the aibm 1:30 sample ("terrible, unwatchable"): AI black markets is dropped.
-- Owner's script: `videos/ai-ban/owner_script.txt`. Owner gave full licence: "free to totally change it", "make
-  everything so cool", viewer must leave with takeaways. Taste rules: `PLAYBOOK.md` "Owner's taste" (LEARNINGS 48-54).
-- DONE: `videos/ai-ban/SOURCES.md` (45 fact rows, verdicts; the owner script's false lines listed at the bottom),
-  `videos/ai-ban/SCRIPT.md` = why it changed + **narration v1** (8 acts, 1,219 words, [row] per fact, [CLIP] slots) +
-  the **sample shot plan** (act 1 beats h00-h06, clips c01/c02, 5 new visuals, 6 new icons).
-- Spine: "Nobody has banned AI yet, but every piece is on the table" (true, sourced); narrator takes a side in act 5
-  ("this is the part I hate"); ending = Crypto Wars won (PGP printed as a book, "source code is speech" 1996).
-- NEXT (in order): 1) download clips (Altman Senate 16 May 2023 from judiciary.senate.gov ISVP stream, US gov PD; then
-  CC talks in `.cc-src/aiban/cands.json`), transcribe, find "If this technology goes wrong, it can go quite wrong" and
-  "I would form a new agency that licenses any effort above a certain scale of capabilities"; LICENCES.md rows.
-  2) `videos/ai-ban/gen_script.py` (copy aibm's structure) for act 1 only, title "THE COMING AI BAN · 1-min sample".
-  3) `engine/src/visuals/aiban.tsx` + icons in `ds/kit.tsx`, register in `Root.tsx`. 4) tts, build, stills, render,
-  watch.py, send < 20 MB. Then wait for the owner's OK before the full film.
-- BLOCKER in the cloud: the environment's network policy blocks huggingface.co (Whisper model), media.ccc.de,
-  upload/commons.wikimedia.org, senate.gov + its akamaized stream host, archive.org, youtube, whitehouse.gov. The owner
-  was told to set Network access to Full (or allow those hosts). Check first: `curl -s -o /dev/null -w '%{http_code}'
-  https://media.ccc.de/`. Without it: no clips, no Whisper (tts.py and clip_words.py need it), so no sample.
-- Cloud setup fix (this session): Remotion's browser download (remotion.media) is blocked, so `tools/*.mjs` pass
-  `browserExecutable: process.env.REMOTION_BROWSER`; `cloud-setup.sh` sets it to the Playwright headless shell.
-  Re-run `bash scripts/cloud-setup.sh` once the network is open (it stopped at the Whisper download, so
-  `.cloud-env.sh` was never written).
-- `.claude/settings.json` allows all tools (owner: "just allow everything by default"). PR
-  quartzsaphir-debug/all-in-studio#1 carries this branch's work.
+## NOW (2026-10-11): "THE COMING AI BAN" (slug `ai-ban`) · 1-min sample DELIVERED · NEXT: owner's notes → full film
+- Sample = act 1 of narration v1 (SCRIPT.md), 7 beats + 2 clips, 143 words, 1:06. `videos/ai-ban/gen_script.py`
+  (ORDER h00 h01 c01 h02 c02 h03 h04 h05 h06), out `videos/ai-ban/out/ai-ban_v1.mp4`, sent as `All-in_ai_ban_sample.mp4`.
+  Lints 0 FAIL, watch.py result in the commit message / below. Stills: `videos/ai-ban/qa/sheet_h00_h06.jpg`.
+- Clips: the Senate's OWN hearing video (US gov, PD): c01 "I think if this technology goes wrong, it can go quite
+  wrong." (hook, at 0:10), c02 "Number one, I would form a new agency that licenses any effort above a certain scale of
+  capabilities and can take that license away and ensure compliance with safety standards." `LICENCES.md` has stream
+  URL, times, risk (Low). Source `.cc-src/aiban/senate_051623.ts` (1 GB, not in git; re-download: CLIPS.md "US government
+  video") + `senate_051623.segments.txt` (tiny.en transcript of the whole hearing: grep it for more Altman lines for act 5).
+- New visuals `engine/src/visuals/aiban.tsx`: PhoneChat, Licence, Hearing (PD still + red ring), ListDoc, Pieces; icons
+  lock, chip, idcard, brain, missile, tank (VISUALS.md). Real hearing stills `engine/public/aiban/senate_*.jpg`.
+- Full film next (after the owner OKs the sample): acts 2-8 of narration v1, ~1,250 words, a clip every 20-40 s.
+  Clip ideas: more Senate hearing lines (PD; Marcus/Montgomery too), Fed/FTC/White House video (PD), CC talks in
+  `.cc-src/aiban/cands.json`. Owner standing rules: never wait, never ask; subagents for mechanical work.
+- Cloud: network is open now; `bash scripts/cloud-setup.sh` then `source .cloud-env.sh` works end to end (av<16 pin added).
 
 ## Owner's TOP RULE (2026-10-08, "Never forget this never ever")
 No clip may cost revenue: only CC BY / BY-SA / CC0 / PD / government clips. No news (WSJ, Vox, Big Think), no TED, no

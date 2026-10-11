@@ -36,7 +36,7 @@ say "python venv (.venv)"
 [ -d .venv ] || python3 -m venv .venv
 .venv/bin/python -m pip install -q --upgrade pip
 # tools/*.py + videos/*/gen_script.py third-party imports: numpy, soundfile, PIL, faster_whisper, kokoro_onnx (no versions pinned by code)
-.venv/bin/python -m pip install -q numpy soundfile Pillow faster-whisper kokoro-onnx
+.venv/bin/python -m pip install -q numpy soundfile Pillow faster-whisper kokoro-onnx "av<16"   # av 19 breaks faster-whisper 1.2 decode_audio (metadata_errors)
 
 say "Kokoro model + voices -> models/kokoro/ (tts.py expects kokoro-official.onnx + voices-v1.0.bin)"
 KDIR="$ROOT/models/kokoro"; mkdir -p "$KDIR"
