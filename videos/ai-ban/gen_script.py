@@ -58,17 +58,17 @@ VO = {  # id: (vo, say or None). Acts follow owner_script.txt scenes; [Sxx] = ow
     "a01": ("Now, I won't feed you rumours. Some of what you're about to hear has already happened, and some hasn't happened yet. Every time, I'll tell you which is which.", None),
     "a02": ("And by the end, you'll see who wins when the trap snaps shut. And it isn't you.", None),
     # 02 THE BLUEPRINT [S02]
-    "b01": ("To see why governments are nervous, start with the safety locks. When chatbots launched, their makers promised guardrails: rules that make the AI refuse dangerous requests.", None),
+    "b01": ("To see why governments are nervous, start with the safety locks. When chatbots launched, their makers promised guardrails: rules that stop the AI from helping with anything dangerous.", None),
     "b02": ("Then the brains got out. An AI's brain is one big file called its weights, and in 2023, Meta put the weights of its Llama 2 model online for anyone to download.", "Then the brains got out. An AI's brain is one big file called its weights, and in twenty twenty-three, Meta put the weights of its Llama two model online, for anyone to download."),
     "b03": ("That's exactly what researchers did. They stripped the safety training out of Llama 2 for less than two hundred dollars per model, on a single graphics card.", "That's exactly what researchers did. They stripped the safety training out of Llama two, for less than two hundred dollars per model, on a single graphics card."),
     "b04": ("And in 2022, scientists flipped a drug-discovery AI to hunt for poisons instead of medicines. In six hours, it suggested about forty thousand toxic molecules.", "And in twenty twenty-two, scientists flipped a drug discovery AI to hunt for poisons instead of medicines. In six hours, it suggested about forty thousand toxic molecules."),
     "b05": ("So governments learned the hard way: the brain that writes your poem can be pointed at a weapon. You can't separate the teacher from the weapon.", None),
     # 03 THE PLAYBOOK [S03]
     "d01": ("And Washington has done this before. In the nineties, strong encryption, the maths that keeps your messages private, sat on America's munitions list, the same list as missiles.", None),
-    "d02": ("When a programmer named Phil Zimmermann gave strong encryption away for free, he spent three years under criminal investigation.", None),
+    "d02": ("When a programmer named Phil Zimmermann gave strong encryption away for free, he was put under criminal investigation for three years.", None),
     "d03": ("His answer was brilliant: he printed the code as a book, because try banning a book. A judge ruled that code is speech, and within a few years, most of those rules were relaxed.", None),
     "d04": ("With AI, Washington reached for the same playbook. In January 2025, the Commerce Department put export controls on the weights of the most powerful closed models. Four months later, the new administration scrapped them.", "With AI, Washington reached for the same playbook. In January twenty twenty-five, the Commerce Department put export controls on the weights of the most powerful closed models. Four months later, the new administration scrapped them."),
-    "d05": ("So no, the AI on your computer is not contraband. Not yet. But the playbook is still on the shelf.", None),
+    "d05": ("So no, the AI on your computer is not contraband. Not yet. But the playbook hasn't gone anywhere.", None),
     # 04 THE PANIC [S04]
     "h05": ("Governments don't move fast for ethical debates. They move fast when the banking system is on fire.", None),
     "h05b": ("Even Sam Altman, who runs ChatGPT, warned America's central bank: some banks let you move money with just your voice.", "Even Sam Altman, who runs ChatGPT, warned America's central bank. Some banks let you move money using nothing but your voice."),
@@ -84,7 +84,7 @@ VO = {  # id: (vo, say or None). Acts follow owner_script.txt scenes; [Sxx] = ow
     "g02": ("And criminals don't even need open models. They steal companies' cloud keys and run the big closed AIs on someone else's bill. Researchers worked out that could cost a victim over forty-six thousand dollars a day.", None),
     "g03": ("So the argument writes itself: as long as anyone can download a model, criminals have ammunition, and filters won't hold. That's the case you'll hear for locking it all down.", None),
     # 07 THE LICENCE [S07]
-    "k01": ("So what would a ban actually look like? Nobody comes to switch off your computer. It looks like a licence.", None),
+    "k01": ("So what would a ban actually look like? Nobody comes to switch off your computer. It looks a lot more like a licence.", None),
     "k02": ("In 2023, two US senators, Josh Hawley and Richard Blumenthal, proposed exactly that: a licence from a new oversight body before you build powerful AI.", "In twenty twenty-three, two US senators, Josh Hawley and Richard Blumenthal, proposed exactly that: a licence from a new oversight body, before you build powerful AI."),
     "k03": ("And the ID checks have started. In October 2025, the same two senators introduced a bill to make chatbots check every user's age, with a government ID or something like it. In China, some AI services already need your real identity.", "And the ID checks have started. In October twenty twenty-five, the same two senators introduced a bill to make chatbots check every user's age, with a government ID, or something like it. In China, some AI services already need your real identity."),
     "k04": ("Every prompt tied to your name, every answer logged in a government file? In America and Europe, not yet. But the ID check is the first brick.", None),
@@ -95,7 +95,7 @@ VO = {  # id: (vo, say or None). Acts follow owner_script.txt scenes; [Sxx] = ow
     # 09 OPEN SOURCE [S09]
     "n01": ("The first target would be open source: free models that anyone can download, inspect, and run at home, with no company watching.", None),
     "n02": ("Now, to be fair, the news here is good, for now. In 2024, a US government report advised against restricting open models, and in 2025, the White House backed them.", "Now, to be fair, the news here is good, for now. In twenty twenty-four, a US government report advised against restricting open models, and in twenty twenty-five, the White House backed them."),
-    "n03": ("But read the fine print: that report says keep the option to restrict them later. And one senator already wrote a bill under which downloading a Chinese AI could mean up to twenty years in prison.", None),
+    "n03": ("But read the fine print: that report says keep the option to restrict them later. And one senator already wrote a bill under which downloading a Chinese AI could mean up to twenty years behind bars.", None),
     "n04": ("Today, it's Chinese AI. A law like that only needs one line changed.", None),
     # 10 THE BETRAYAL [S10-S11]
     "p01": ("Now ask the question nobody wants to answer. Who gains the most if public AI gets locked down? In 2023, the head of OpenAI sat in front of the US Senate and asked for this.", "Now ask the question nobody wants to answer. Who gains the most if public AI gets locked down? In twenty twenty-three, the head of OpenAI sat in front of the US Senate, and asked for this."),
@@ -119,7 +119,7 @@ VO = {  # id: (vo, say or None). Acts follow owner_script.txt scenes; [Sxx] = ow
     # 14 THE CHOICE [S18]
     "t01": ("Right now, ordinary people can still download and run powerful AI at home. That window is open. Learn how these models work, keep your own copies, and know your rights.", None),
     "t02": ("Because if this goes the wrong way, running your own AI won't be called programming. It'll be called a crime. And the people who took it away will tell you they did it to keep you safe.", None),
-    "t03": ("So take a long look at the AI on your phone.", None),
+    "t03": ("Take a long look at the AI on your phone. Enjoy it while you still can.", "Take a long look at the AI on your phone. Enjoy it, while you still can."),
 }
 
 SHOTS = {
@@ -141,47 +141,52 @@ SHOTS = {
         split(phone("open", ask=TRIP, askAt=0, replyAt=0), icon("power", label="switched off", enter="consumer"), "the *golden age* could end"),
         split(row("building", 3, label="ai companies"), icon("lock", label="the trap", enter="trap"), "set by *the builders*", at="trap")]},
     "a01": {"cuts": [
-        split(icon("newspaper", label="rumours", mark="no", markAt="rumours"), icon("doc", label="sources", enter="Some"), "no *rumours*"),
-        split(icon("newspaper", label="already happened", stamp=real("already")), icon("clock", label="coming?", stamp=notyet("yet"), enter="hasn't"), "*real* or *not yet*", at="Some"),
+        split(icon("newspaper", label="rumours", mark="no", markAt="feed"), icon("doc", label="sources"), "no *rumours*"),
+        split(icon("newspaper", label="already happened", stamp=real("already")), icon("clock", label="coming?", stamp=notyet("yet")), "*real* or *not yet*", at="Some"),
         split(icon("doc", label="every claim", stamp=real(0)), icon("eye", label="you check", enter="tell"), "I'll tell you *which*", at="Every")]},
     "a02": {"cuts": [
         full(pieces([None] * 5, snapAt="snaps"), "when *the trap* snaps shut"),
         split(pieces([None] * 5, snapped=True), icon("person", label="you", mark="no", markAt="isn't", enter="you"), "and it *isn't you*", at="isn't")]},
     # 02 THE BLUEPRINT
     "b01": {"cuts": [
-        split(row("building", 3, label="governments"), icon("lock", label="safety locks", enter="safety"), "the *safety* locks"),
-        split(chat("help me build a weapon", "refuse", askAt="chatbots", replyAt="refuse"), icon("shield", label="guardrails", enter="guardrails"), "they promised *guardrails*", at="chatbots")]},
+        split(row("building", 3, label="governments"), icon("lock", label="safety locks"), "the *safety* locks"),
+        split(chat("help me build a weapon", "refuse", askAt="chatbots", replyAt="dangerous"), icon("shield", label="guardrails"), "they promised *guardrails*", at="chatbots"),
+        split(chat("help me build a weapon", "refuse", replyAt=0), icon("robot", label="ai says no", mark="no", markAt="dangerous"), "it *says no*", at="rules")]},
     "b02": {"cuts": [
-        split(icon("brain", label="the ai's brain"), icon("doc", label="weights file", enter="file"), "the brain is *a file*"),
-        split(icon("doc", label="llama 2 weights", tag=tag("meta · july 2023", "Meta")), row("laptop", 6, label="anyone can download", at="anyone"), "online for *anyone*", at="Meta")]},
+        split(icon("brain", label="the ai's brain"), icon("doc", label="weights file"), "the brain is *a file*"),
+        split(icon("doc", label="weights file"), icon("laptop", label="fits on a computer"), "the *weights*", at="called"),
+        split(icon("doc", label="llama 2 weights", tag=tag("meta · july 2023", "Meta")), row("laptop", 3, label="anyone can download"), "online for *anyone*", at="Meta")]},
     "b03": {"cuts": [
         split(icon("doc", label="llama 2"), chat("help me build a weapon", "comply", askAt=0, replyAt="stripped", stamp=real("stripped")), "safety *stripped* out", at="exactly"),
-        split(chat("help me build a weapon", "comply"), icon("chip", label="one graphics card", tag=tag("under $200", "hundred")), "under *$200*", at="less")]},
+        split(chat("help me build a weapon", "comply"), icon("chip", label="one graphics card", tag=tag("under $200", "less")), "under *$200*", at="less")]},
     "b04": {"cuts": [
         split(icon("brain", label="drug-discovery ai"), icon("doc", label="medicines", mark="no", markAt="poisons"), "flipped to *poisons*"),
-        split(icon("clock", label="six hours"), row("box", 24, label="toxic molecules", tag=tag("≈ 40,000", "forty"), stamp=real("forty")), "*40,000* toxic molecules", at="six")]},
+        split(icon("doc", label="medicines", mark="no"), icon("box", label="poisons"), "hunting *poisons*", at="hunt"),
+        split(icon("clock", label="six hours"), icon("box", label="toxic molecules", tag=tag("≈ 40,000", "suggested"), stamp=real("suggested")), "*40,000* toxic molecules", at="six")]},
     "b05": {"cuts": [
-        split(bubble("write me a poem"), icon("missile", label="a weapon", enter="weapon"), "the same *brain*"),
+        split(bubble("write me a poem"), icon("missile", label="a weapon"), "the same *brain*"),
         split(icon("book", label="the teacher"), icon("missile", label="the weapon"), "you can't *separate* them", at="separate")]},
     # 03 THE PLAYBOOK
     "d01": {"cuts": [
-        split(flag("usa", "washington"), cal("199x", "the nineties", at="nineties"), "done this *before*"),
+        split(flag("usa", "washington"), cal("199x", "the nineties"), "done this *before*"),
         split(icon("envelope", label="private messages"), icon("lock", label="encryption", enter="encryption"), "strong *encryption*", at="encryption"),
         split(icon("lock", label="encryption"), listdoc("us munitions list", ["missiles", "tanks", {"t": "encryption", "at": "list"}], hot=2, hotAt="missiles", stamp=real("missiles")), "a *munition*", at="munitions")]},
     "d02": {"cuts": [
-        split(icon("person", label="phil zimmermann"), icon("lock", label="free encryption", enter="free"), "gave it away *free*"),
+        split(icon("person", label="phil zimmermann"), icon("lock", label="free encryption"), "gave it away *free*"),
+        split(icon("person", label="phil zimmermann"), icon("building", label="us government"), "*investigated*", at="criminal"),
         split(icon("person", label="phil zimmermann"), icon("doc", label="criminal investigation", tag=tag("1993-1996", "three")), "*3 years* investigated", at="three")]},
     "d03": {"cuts": [
         split(icon("person", label="phil zimmermann"), icon("book", label="the code as a book", tag=tag("mit press · 1995", "book")), "he printed *a book*"),
         split(icon("book", label="code"), bubble("code is speech", at="speech"), "*code* is speech", at="judge"),
-        split(listdoc("us munitions list", ["missiles", "tanks", "encryption"], hot=2), icon("gateOpen", label="rules relaxed", enter="relaxed"), "the rules *gave way*", at="within")]},
+        split(listdoc("us munitions list", ["missiles", "tanks", "encryption"], hot=2), icon("gateOpen", label="rules relaxed"), "the rules *gave way*", at="within")]},
     "d04": {"cuts": [
         split(flag("usa", "washington"), icon("book", label="same playbook"), "the *same* playbook"),
         split(cal("2025", "january", at="January"), listdoc("export controls", ["chips", {"t": "ai model weights", "at": "weights"}], hot=1, hotAt="weights", stamp=real("weights")), "*export controls* on AI", at="January"),
+        split(listdoc("export controls", ["chips", "ai model weights"], hot=1), icon("brain", label="most powerful closed models"), "the *biggest* models", at="most"),
         split(listdoc("export controls", ["chips", "ai model weights"], hot=1), icon("contract", label="scrapped", mark="no", markAt="scrapped"), "four months later: *scrapped*", at="Four")]},
     "d05": {"cuts": [
         split(icon("laptop", label="your computer", mark="ok", markAt="contraband", stamp=notyet("yet")), icon("bars", label="contraband", mark="no", markAt="contraband"), "not contraband. *not yet*"),
-        split(icon("laptop", label="your computer"), icon("book", label="the playbook", enter="playbook"), "still *on the shelf*", at="playbook")]},
+        split(icon("laptop", label="your computer"), icon("book", label="the playbook", enter="playbook"), "the playbook *is still here*", at="playbook")]},
     # 04 THE PANIC
     "h05": {"cuts": [
         split(icon("flag", label="governments"), icon("people", label="ethics debates", mark="no", markAt="ethical", enter="ethical"), "not for *ethics*"),
@@ -192,53 +197,57 @@ SHOTS = {
         split({"v": "PhoneCall", "surface": "bare", "name": "your bank"}, icon("cash", label="moved by voice", enter="money"), "money moved by *your voice*", at="some")]},
     "e01": {"cuts": [
         split(icon("building", label="your bank"), icon("person", label="verify the human", enter="verify"), "*verify* the human"),
-        split(icon("building", label="your bank"), flow([("contract", "signature", "signature"), ("idcard", "photo id", "photo"), ("face", "voice", "voice"), ("camera", "video call", "video")]), "four *proofs*", at="signature"),
-        split(icon("robot", label="ai"), flow([("contract", "faked"), ("idcard", "faked"), ("face", "faked"), ("camera", "faked")]), "AI fakes *all four*", at="AI")]},
+        split(icon("building", label="your bank"), listdoc("how your bank checks you", [{"t": "signature", "at": "signature"}, {"t": "photo id", "at": "photo"}, {"t": "voice", "at": "voice"}, {"t": "video call", "at": "video"}]), "four *proofs*", at="signature"),
+        split(icon("robot", label="ai"), listdoc("how your bank checks you", ["signature", "photo id", "voice", "video call"], stamp={"t": "all faked", "at": "fake"}), "AI fakes *all four*", at="AI")]},
     "e02": {"cuts": [
         split(icon("building", label="us treasury"), icon("doc", label="deepfake fraud alert", tag=tag("nov 2024", "November"), stamp=real("warned")), "the Treasury *warned*"),
         split(icon("building", label="federal reserve"), icon("shield", label="arms race", enter="arms"), "an *arms race*", at="Federal")]},
     # 05 THE PROOF
     "f01": {"cuts": [
-        split(flag("china", "hong kong"), icon("worker", label="finance worker", enter="finance"), "a worker in *Hong Kong*"),
+        split(icon("pin", label="hong kong"), icon("worker", label="finance worker"), "a worker in *Hong Kong*"),
         full(calls(real=0, label={"i": 1, "t": "finance chief"}), "a call with *the boss*", at="joined"),
-        full(calls(real=0, fakeAt="deepfake", label={"i": 1, "t": "finance chief"}), "every face *was fake*", at="Everyone")]},
+        full(calls(real=0, fakeAt="except", label={"i": 1, "t": "finance chief"}), "every face *was fake*", at="Everyone")]},
     "f02": {"cuts": [
-        split(calls(real=0, fakeAt=0), icon("cash", label="15 transfers", tag=tag("≈ $25 million", "twenty"), stamp=real("transfers")), "*$25 million* gone"),
-        split(icon("building", label="arup"), icon("pin", label="sydney opera house", enter="Sydney"), "the *Opera House* engineers", at="company")]},
+        split(calls(real=0, fakeAt=0), icon("cash", label="15 transfers", tag=tag("≈ $25 million", "transfers"), stamp=real("transfers")), "*$25 million* gone"),
+        split(icon("building", label="arup"), icon("pin", label="sydney opera house"), "the *Opera House* engineers", at="company")]},
     "f03": {"cuts": [
         split({"v": "PhoneCall", "surface": "bare", "name": "mum"}, icon("face", label="cloned voice", enter="voice"), "faking a *voice*")]},
     "f04": {"cuts": [
-        split(icon("fire", label="panic"), icon("contract", label="a ban", enter="bans"), "panic writes *bans*")]},
+        split(icon("fire", label="panic"), icon("contract", label="a ban", enter="how"), "panic writes *bans*")]},
     # 06 THE BLACK MARKET
     "g01": {"cuts": [
         split(row("building", 3, label="ai companies"), icon("shield", label="a patch?", mark="?", enter="patch"), "just *patch* it?"),
         split(icon("browser", label="hacker forum"), listing("brain", "WormGPT", price="€60 / month", priceAt="forum", stars=4, stamp=real("sold")), "*WormGPT* for sale", at="chatbot"),
         split(listing("brain", "WormGPT", price="€60 / month"), icon("shield", label="safety rules", mark="no", markAt="ripped"), "safety *ripped out*", at="built")]},
     "g02": {"cuts": [
-        split(icon("person", label="criminal"), icon("key", label="stolen cloud keys", enter="cloud"), "stolen *cloud keys*"),
-        split(icon("key", label="stolen keys"), icon("cash", label="someone else's bill", tag=tag("up to $46,000 a day", "forty"), stamp=real("Researchers")), "on *someone else's* bill", at="run")]},
+        split(icon("person", label="criminal"), icon("key", label="stolen cloud keys"), "stolen *cloud keys*"),
+        split(icon("key", label="stolen keys"), icon("cash", label="someone else's bill"), "on *someone else's* bill", at="run"),
+        split(icon("doc", label="security researchers"), icon("cash", label="the victim's bill", tag=tag("up to $46,000 a day", "victim"), stamp=real("victim")), "*$46,000* a day", at="Researchers")]},
     "g03": {"cuts": [
-        split(row("laptop", 6, label="anyone can download"), row("person", 3, label="criminals", at="criminals"), "criminals get *ammo*"),
+        split(row("laptop", 3, label="anyone can download"), row("person", 3, label="criminals"), "criminals get *ammo*"),
+        split(row("person", 3, label="criminals"), icon("missile", label="ammunition"), "*ammunition*", at="criminals"),
         split(icon("shield", label="filters", mark="no", markAt="hold"), icon("lock", label="lock it all down", enter="locking"), "so: *lock it down*", at="case")]},
     # 07 THE LICENCE
     "k01": {"cuts": [
         split(icon("laptop", label="your computer"), icon("power", label="switched off?", mark="no", markAt="Nobody"), "nobody *switches it off*"),
-        split(icon("laptop", label="your computer"), licence("brain", title="ai licence", at="licence"), "it looks like *a licence*", at="looks")]},
+        split(icon("laptop", label="your computer"), licence("brain", title="ai licence", at="lot"), "it looks like *a licence*", at="looks")]},
     "k02": {"cuts": [
-        split(row("person", 2, label="hawley · blumenthal", at=0), licence("brain", title="ai licence", at="licence", stamp=real("licence")), "a *licence* to build AI"),
-        split(licence("brain", title="ai licence"), icon("building", label="oversight body", enter="oversight"), "a new *oversight* body", at="oversight")]},
+        split(row("person", 2, label="hawley · blumenthal"), flag("usa", "us senate"), "two *senators*"),
+        split(row("person", 2, label="hawley · blumenthal"), licence("brain", title="ai licence", stamp=real("exactly")), "a *licence* to build AI", at="proposed"),
+        split(licence("brain", title="ai licence"), icon("building", label="oversight body"), "a new *oversight* body", at="oversight")]},
     "k03": {"cuts": [
         split(icon("idcard", label="your id"), phone("gate", gateAt="checks"), "the *ID checks* started"),
-        split(listdoc("us senate bill · oct 2025", ["chatbots", {"t": "age check for every user", "at": "age"}, {"t": "government id", "at": "government"}], hot=1, hotAt="age"), icon("idcard", label="government id", enter="government", stamp=real("government")), "every user's *age*", at="October"),
-        split(flag("china", "china"), icon("idcard", label="real identity", enter="identity"), "China: *real identity*", at="China")]},
+        split(listdoc("us senate bill · oct 2025", ["chatbots", {"t": "age check for every user", "at": "age"}, "government id"], hot=1, hotAt="age"), icon("person", label="every user"), "every user's *age*", at="October"),
+        split(listdoc("us senate bill · oct 2025", ["chatbots", "age check for every user", "government id"], hot=2), icon("idcard", label="government id", stamp=real(0)), "a *government ID*", at="government"),
+        split(flag("china", "china"), icon("idcard", label="real identity"), "China: *real identity*", at="China")]},
     "k04": {"cuts": [
         split(phone("open", ask=TRIP, askAt=0, replyAt=0), icon("idcard", label="your name", enter="name"), "every prompt, *your name*"),
         split(flag("usa", "usa", stamp=notyet("yet")), flag("eu", "europe"), "*not yet*", at="America"),
         split(icon("idcard", label="id check"), icon("box", label="the first brick", enter="brick"), "the *first brick*", at="ID")]},
     # 08 THE CHIPS
     "m01": {"cuts": [
-        split(icon("laptop", label="ai"), icon("chip", label="ai chips", enter="chips"), "AI runs on *chips*"),
-        split(icon("chip", label="exported ai chip"), icon("pin", label="prove where it is", enter="prove", stamp=real("Security")), "the *Chip Security Act*", at="bill")]},
+        split(icon("laptop", label="ai"), icon("chip", label="ai chips"), "AI runs on *chips*"),
+        split(icon("chip", label="exported ai chip"), icon("pin", label="prove where it is", stamp=real("Security")), "the *Chip Security Act*", at="bill")]},
     "m02": {"cuts": [
         split(icon("chip", label="nvidia"), bubble("no kill switches", at="kill"), "*no kill switch*, says Nvidia"),
         split(flag("china", "china's regulator"), icon("chip", label="backdoors?", mark="?", markAt="backdoors"), "China *didn't buy it*", at="China's")]},
@@ -247,84 +256,95 @@ SHOTS = {
         split(icon("chip", label="ai chip"), icon("map", label="reports its location", enter="report"), "already *in a bill*", at="chips")]},
     # 09 OPEN SOURCE
     "n01": {"cuts": [
-        split(icon("brain", label="open model"), row("laptop", 6, label="anyone", at="anyone"), "*open source*"),
+        split(icon("brain", label="open model"), row("laptop", 3, label="anyone"), "*open source*"),
         split(icon("laptop", label="your home"), icon("eye", label="no company watching", mark="no", markAt="watching"), "*no one* watching", at="home")]},
     "n02": {"cuts": [
-        split(icon("doc", label="us government report", tag=tag("2024", "report"), stamp=real("against")), icon("lock", label="restrict open models", mark="no", markAt="against"), "*don't* restrict them"),
+        split(icon("eye", label="to be fair"), icon("brain", label="open models", mark="ok", markAt="good"), "to be *fair*"),
+        split(icon("doc", label="us government report", tag=tag("2024", "report"), stamp=real("against")), icon("lock", label="restrict open models", mark="no", markAt="against"), "*don't* restrict them", at="report"),
         split(icon("building", label="white house"), icon("brain", label="open models", mark="ok", markAt="backed"), "the White House *backed* them", at="White")]},
     "n03": {"cuts": [
         split(icon("doc", label="the fine print"), bubble("keep the option to restrict later", at="option"), "*the fine print*"),
-        split({"v": "AppStore", "surface": "bare", "name": "chinese ai"}, icon("bars", label="prison", tag=tag("up to 20 years", "twenty"), stamp=real("prison")), "*20 years* for a download", at="senator")]},
+        split(icon("person", label="a us senator"), listdoc("senate bill · 2025", ["chinese ai", {"t": "downloads", "at": "downloading"}]), "*one senator's* bill", at="senator"),
+        split({"v": "AppStore", "surface": "bare", "name": "chinese ai"}, icon("bars", label="prison", tag=tag("up to 20 years", "years"), stamp=real("bars")), "*20 years* for a download", at="could")]},
     "n04": {"cuts": [
-        split(listdoc("the bill", [{"t": "chinese ai"}, "downloads", "prison"], hot=0), icon("contract", label="one line changed", enter="line"), "*one line* changed")]},
+        split(listdoc("the bill", [{"t": "chinese ai"}, "downloads", "prison"], hot=0), icon("contract", label="one line changed"), "*one line* changed")]},
     # 10 THE BETRAYAL
     "p01": {"cuts": [
-        split(icon("person", label="you"), icon("lock", label="locked down", enter="locked"), "who *gains*?"),
+        split(icon("person", label="you"), bubble("who gains?", at="Who"), "the question *nobody* asks"),
+        split(icon("lock", label="public ai locked"), row("building", 3, label="who gains?"), "who *gains*?", at="Who"),
         full(hearing("senate_altman.jpg", pill="sam altman · us senate · 2023"), "the head of *OpenAI*", at="head")]},
     "p02": {"cuts": [
         split(icon("newspaper", label="the media"), bubble("responsibility", at="responsibility"), "*responsibility*?"),
         split(icon("person", label="andrew ng · ai pioneer"), bubble("they'd rather not compete with open source", at="compete"), "*Andrew Ng* warned", at="Andrew"),
-        split(icon("person", label="yann lecun · meta"), bubble("regulatory capture", at="capture"), "*regulatory capture*", at="Yann"),
+        split(icon("person", label="yann lecun · meta"), bubble("regulatory capture", at="capture"), "*regulatory capture*", at="chief"),
         split(icon("contract", label="the rules"), row("building", 2, label="only them", at="only"), "rules only *they* can follow", at="writing")]},
     "p03": {"cuts": [
-        split(row("building", 3, label="openai"), row("worker", 6, label="lawyers · lobbyists", at="lawyers"), "they can *afford* it"),
-        split(row("worker", 10, label="10-person startup"), licence("brain", title="ai licence", stamp="can't afford", stampAt="startup"), "a startup *can't*", at="startup"),
+        split(licence("brain", title="ai licence"), icon("eye", label="what it does"), "what a *licence* does"),
+        split(row("building", 3, label="openai"), row("worker", 3, label="lawyers · lobbyists"), "they can *afford* it", at="OpenAI"),
+        split(row("person", 4, label="10-person startup"), licence("brain", title="ai licence", stamp="can't afford", stampAt="startup"), "a startup *can't*", at="startup"),
         split(icon("building", label="university lab", mark="no", markAt="university"), icon("person", label="a teenager", mark="no", markAt="teenager"), "a teenager *can't*", at="university")]},
     "p04": {"cuts": [
         split(row("building", 3, label="big tech"), icon("contract", label="rules they can afford", mark="ok", markAt="afford"), "rules they *can afford*"),
         split(icon("building", label="the castle"), icon("person", label="you · outside", enter="outside"), "you're *outside*", at="moat")]},
     # 11 THE HEIST
     "q01": {"cuts": [
-        split(icon("brain", label="ai model"), icon("browser", label="the public internet", enter="internet"), "where did it *learn*?"),
-        split(icon("browser", label="the internet"), flow([("book", "books", "books"), ("newspaper", "articles", "articles"), ("doc", "code", "code"), ("camera", "art", "art")]), "made by *people*", at="books"),
+        split(icon("brain", label="ai model"), icon("browser", label="the public internet"), "where did it *learn*?"),
+        split(icon("browser", label="the internet"), listdoc("what it learned from", [{"t": "books", "at": "books"}, {"t": "articles", "at": "articles"}, {"t": "code", "at": "code"}, {"t": "art", "at": "art"}]), "made by *people*", at="books"),
         split(row("people", 1, label="the people who made it"), bubble("nobody asked us", at="asked"), "*never asked*", at="made")]},
     "q02": {"cuts": [
-        split(icon("book", label="pirated books", mark="no", markAt="pirated"), icon("cash", label="paid to authors", tag=tag("$1.5 billion", "billion"), stamp=real("billion")), "*$1.5 billion* to authors"),
+        split(icon("book", label="pirated books", mark="no", markAt="pirated"), icon("browser", label="pirate library"), "*pirated*"),
+        split(icon("building", label="anthropic"), icon("cash", label="paid to authors", tag=tag("$1.5 billion", "billion"), stamp=real("billion")), "*$1.5 billion* to authors", at="Anthropic"),
         split(icon("book", label="bought books", mark="ok", markAt="bought"), icon("book", label="pirated library", mark="no", markAt="pirated"), "fair use *vs* piracy", at="judge")]},
     "q03": {"cuts": [
-        split(icon("book", label="the world's knowledge"), icon("lock", label="locked door", enter="lock"), "*lock the door*"),
+        split(icon("book", label="the world's knowledge"), icon("lock", label="locked door"), "*lock the door*"),
         split(icon("lock", label="locked door"), icon("cash", label="your rent", enter="rent"), "and *charge you rent*", at="charge")]},
     # 12 THE FUTURE
     "r01": {"cuts": [
         split(licence("brain", title="ai licence"), phone("open", ask=TRIP, askAt=0, replyAt="assistant"), "what *replaces* it?"),
+        split(phone("open", ask=TRIP, askAt=0, replyAt=0), icon("person", label="not yours", mark="no", markAt="yours"), "*not yours*", at="wouldn't"),
         split(chat("is this news true?", "refuse", refusal="I can't discuss that.", askAt=0, replyAt="refuse", stamp=notyet("refuse")), icon("eye", label="watched", enter="watched"), "refused and *watched*", at="refuse"),
         split(phone("open", ask=TRIP, askAt=0, replyAt=0), icon("cash", label="nudged purchases", enter="nudge"), "*nudging* what you buy", at="nudge")]},
     "r02": {"cuts": [
-        split(icon("cash", label="monthly subscription"), icon("eye", label="supervised", enter="supervised"), "pay to be *supervised*")]},
+        split(icon("cash", label="monthly subscription"), icon("eye", label="supervised"), "pay to be *supervised*")]},
     "r03": {"cuts": [
-        split(cal("1920", "prohibition", at="Prohibition"), row("person", 4, label="gangsters", at="gangsters"), "Prohibition made *gangsters*"),
-        split(icon("brain", label="banned ai"), {"v": "Shop", "surface": "bare", "items": ["brain", "chip", "key", "brain", "chip", "doc"], "at": "black"}, "the *black market* grows", at="Ban"),
-        split(icon("chip", label="restricted nvidia chips"), flag("china", "smuggled to china", enter="smuggling", stamp=real("charged")), "*smuggled* chips", at="chips")]},
+        split(cal("1920", "prohibition"), icon("box", label="alcohol banned"), "*Prohibition*"),
+        split(cal("1920", "prohibition"), row("person", 4, label="gangsters"), "handed to *gangsters*", at="handed"),
+        split(icon("brain", label="banned ai"), {"v": "Shop", "surface": "bare", "items": ["brain", "chip", "key", "brain", "chip", "doc"], "at": "black"}, "the *black market* grows", at="want"),
+        split(icon("chip", label="restricted nvidia chips"), flag("china", "smuggled to china", stamp=real("charged")), "*smuggled* chips", at="chips"),
+        split(flag("china", "smuggled to china"), icon("doc", label="us charges · aug 2025", stamp=real(0)), "*charged* in 2025", at="charged")]},
     "r04": {"cuts": [
-        split(row("building", 3, label="the powerful"), icon("brain", label="strongest models", enter="strongest"), "the powerful *keep it*"),
-        split(icon("shield", label="pentagon"), row("building", 4, label="openai · google · anthropic · xai", at="OpenAI", tag=tag("up to $200m each", "hundred"), stamp=real("deals")), "*$200M* deals each", at="Pentagon")]},
+        split(row("building", 3, label="the powerful"), icon("brain", label="strongest models"), "the powerful *keep it*"),
+        split(icon("shield", label="pentagon"), icon("contract", label="deals", tag=tag("up to $200m each", "worth"), stamp=real("deals")), "*$200M* deals each", at="Pentagon"),
+        split(icon("contract", label="pentagon deals"), row("building", 4, label="openai · google · anthropic · xai"), "with *the AI giants*", at="OpenAI")]},
     "r05": {"cuts": [
         split(row("building", 3, label="exemptions"), icon("box", label="a toy for you", enter="toy"), "a *toy* for you"),
-        split(row("building", 2, label="the lords"), row("people", 8, label="everyone else rents", at="everyone"), "*cognitive feudalism*", at="feudalism")]},
+        split(row("building", 2, label="the lords"), row("people", 3, label="everyone else rents"), "*cognitive feudalism*", at="feudalism")]},
     # 13 THE TIMELINE
     "s01": {"cuts": [
-        split(icon("clock", label="the timeline"), icon("eye", label="straight with you", enter="straight"), "the *honest* timeline"),
+        split(icon("clock", label="the timeline"), icon("eye", label="straight with you"), "the *honest* timeline"),
         split(flag("eu", "eu ai act", stamp=real("law")), cal("2027", "rules in waves", at="waves"), "Europe: *law*, in waves", at="Europe's"),
         split(flag("usa", "usa"), icon("contract", label="safety order scrapped", mark="no", markAt="scrapped"), "America: *fewer* rules", at="America")]},
     "s02": {"cuts": [
-        split(icon("newspaper", label="big announcement", mark="no", markAt="announcement"), icon("clock", label="small steps", enter="small"), "no *announcement*"),
-        split(icon("clock", label="small steps"), flow([("idcard", "id check", "ID"), ("contract", "licence", "licence"), ("chip", "chip rule", "chip"), ("cash", "payment ban", "payment")]), "*small* steps", at="ID"),
-        split(pieces(["ID", "licence", None, None, "crime"], snapAt="crime", stamp=notyet("crime")), icon("bars", label="the crime", enter="crime"), "then *the crime*", at="First")]},
+        split(icon("newspaper", label="big announcement", mark="no", markAt="announcement"), icon("clock", label="small steps"), "no *announcement*"),
+        split(icon("clock", label="small steps"), listdoc("small steps", [{"t": "id check", "at": "ID"}, {"t": "licence", "at": "there"}, {"t": "chip rule", "at": "chip"}, {"t": "payment ban", "at": "payment"}]), "*small* steps", at="ID"),
+        split(pieces(["ID", "there", None, None, "crime"], snapAt="crime", stamp=notyet("crime")), icon("bars", label="the crime"), "then *the crime*", at="First")]},
     "s03": {"cuts": [
-        split(icon("robot", label="wake up?"), icon("fire", label="destroy the planet?", enter="destroy"), "the *wrong* debate"),
-        split(icon("brain", label="powerful ai"), row("people", 6, label="who gets to use it", at="who"), "*who* gets to use it", at="real"),
+        split(icon("robot", label="wake up?"), icon("fire", label="destroy the planet?"), "the *wrong* debate"),
+        split(icon("brain", label="powerful ai"), row("people", 3, label="who gets to use it", at="who"), "*who* gets to use it", at="real"),
         split(icon("person", label="free person"), icon("brain", label="powerful ai", mark="ok", markAt="control"), "hard to *control*", at="free"),
         split(icon("person", label="customer"), chat("is this news true?", "refuse", refusal="Filtered.", askAt=0, replyAt="filter"), "*easy*", at="customer")]},
     # 14 THE CHOICE
     "t01": {"cuts": [
         split(icon("laptop", label="your home"), icon("brain", label="powerful ai", mark="ok", markAt="run"), "you can *still* run it"),
         split(icon("clock", label="the window"), icon("gateOpen", label="still open", enter="open"), "the window is *open*", at="window"),
-        split(icon("book", label="learn how it works", at="Learn"), icon("doc", label="your own copies", enter="copies"), "learn. *keep copies*", at="Learn")]},
+        split(icon("book", label="learn how it works"), icon("doc", label="your own copies"), "learn. *keep copies*", at="Learn")]},
     "t02": {"cuts": [
-        split(icon("laptop", label="programming"), icon("bars", label="a crime", enter="crime"), "*a crime*?"),
+        split(icon("laptop", label="your own ai"), icon("doc", label="programming"), "not *programming*"),
+        split(icon("laptop", label="your own ai"), icon("bars", label="a crime"), "called *a crime*", at="It'll"),
         split(row("building", 3, label="the people who took it"), bubble("we did it to keep you safe", at="safe"), "to keep you *safe*", at="people")]},
     "t03": {"cuts": [
-        full(phone("open", ask=TRIP, askAt=0, replyAt="phone"), "take *a long look*")]},
+        full(phone("open", ask=TRIP, askAt=0, replyAt="phone"), "take *a long look*"),
+        full(phone("off", gateAt="still"), "while you *still can*", at="while")]},
 }
 
 CLIPS = {  # (file, from, to, plate[, plateAt]); from/to = first word start / last word end in the clip file. build.py adds the breathing room.

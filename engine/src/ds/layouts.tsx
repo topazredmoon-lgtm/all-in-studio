@@ -39,14 +39,17 @@ const Stamp: React.FC<{ t: string; at?: string | number }> = ({ t, at }) => {
   const c = t.toLowerCase() === 'real' ? '#FAF6EE' : color.red;
   return (
     <div style={{ position: 'absolute', right: -6, top: -6, opacity: p, transform: `rotate(-8deg) scale(${1.5 - 0.5 * p})`, transformOrigin: 'center',
-      border: `5px solid ${c}`, borderRadius: 10, padding: '4px 16px', ...mono(34, c), fontWeight: 800, letterSpacing: 4, textTransform: 'uppercase', background: 'rgba(20,18,16,0.75)', whiteSpace: 'nowrap' }}>{t}</div>
+      border: `6px solid ${c}`, borderRadius: 12, padding: '6px 22px', ...mono(50, c), fontWeight: 800, letterSpacing: 4, textTransform: 'uppercase', background: 'rgba(20,18,16,0.75)', whiteSpace: 'nowrap' }}>{t}</div>
   );
 };
 
 const Visual: React.FC<{ reg: Registry; spec: VisualSpec; w: number; h: number }> = ({ reg, spec, w, h }) => {
   const C = reg[spec.v];
   if (!C) throw new Error(`unknown visual "${spec.v}"`);
-  const { v, k, enter, surface, plate, pad, tag, stamp, ...props } = spec as VisualSpec & { tag?: { t: string; at?: string | number }; stamp?: { t: string; at?: string | number } };
+  const { v, k, enter, surface, plate, pad, tag, ...rest } = spec as VisualSpec & { tag?: { t: string; at?: string | number }; stamp?: unknown };
+  // a `stamp` object is the fact/fear stamp; a plain string stays the visual's own prop (Licence, AppStore)
+  const stamp = typeof rest.stamp === 'object' && rest.stamp ? rest.stamp as { t: string; at?: string | number } : undefined;
+  const props = stamp ? (({ stamp: _s, ...r }) => r)(rest) : rest;
   const p = surface === 'bare' ? 0 : (pad ?? 36);
   const ch = h - 2 * p - ((surface ?? 'card') === 'card' && k ? KICK : 0) - (tag ? TAG : 0);
   return (

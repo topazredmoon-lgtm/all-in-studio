@@ -277,14 +277,13 @@
        "name": "newspaper",
        "label": "rumours",
        "mark": "no",
-       "markAt": "rumours"
+       "markAt": "feed"
       },
       "R": {
        "v": "LineIcon",
        "surface": "bare",
        "name": "doc",
-       "label": "sources",
-       "enter": "Some"
+       "label": "sources"
       },
       "cap": "no *rumours*"
      },
@@ -308,8 +307,7 @@
        "stamp": {
         "t": "not yet",
         "at": "yet"
-       },
-       "enter": "hasn't"
+       }
       },
       "cap": "*real* or *not yet*",
       "at": "Some"
@@ -413,7 +411,7 @@
   },
   {
    "id": "b01",
-   "vo": "To see why governments are nervous, start with the safety locks. When chatbots launched, their makers promised guardrails: rules that make the AI refuse dangerous requests.",
+   "vo": "To see why governments are nervous, start with the safety locks. When chatbots launched, their makers promised guardrails: rules that stop the AI from helping with anything dangerous.",
    "shot": {
     "cuts": [
      {
@@ -429,8 +427,7 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "lock",
-       "label": "safety locks",
-       "enter": "safety"
+       "label": "safety locks"
       },
       "cap": "the *safety* locks"
      },
@@ -442,17 +439,36 @@
        "ask": "help me build a weapon",
        "mode": "refuse",
        "askAt": "chatbots",
-       "replyAt": "refuse"
+       "replyAt": "dangerous"
       },
       "R": {
        "v": "LineIcon",
        "surface": "bare",
        "name": "shield",
-       "label": "guardrails",
-       "enter": "guardrails"
+       "label": "guardrails"
       },
       "cap": "they promised *guardrails*",
       "at": "chatbots"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "ChatBox",
+       "surface": "bare",
+       "ask": "help me build a weapon",
+       "mode": "refuse",
+       "replyAt": 0
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "label": "ai says no",
+       "mark": "no",
+       "markAt": "dangerous"
+      },
+      "cap": "it *says no*",
+      "at": "rules"
      }
     ],
     "act": "02 the blueprint"
@@ -476,10 +492,26 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "doc",
-       "label": "weights file",
-       "enter": "file"
+       "label": "weights file"
       },
       "cap": "the brain is *a file*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "label": "weights file"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "laptop",
+       "label": "fits on a computer"
+      },
+      "cap": "the *weights*",
+      "at": "called"
      },
      {
       "layout": "split",
@@ -497,9 +529,8 @@
        "v": "IconRow",
        "surface": "bare",
        "name": "laptop",
-       "n": 6,
-       "label": "anyone can download",
-       "at": "anyone"
+       "n": 3,
+       "label": "anyone can download"
       },
       "cap": "online for *anyone*",
       "at": "Meta"
@@ -562,7 +593,7 @@
        "label": "one graphics card",
        "tag": {
         "t": "under $200",
-        "at": "hundred"
+        "at": "less"
        }
       },
       "cap": "under *$200*",
@@ -601,22 +632,39 @@
       "L": {
        "v": "LineIcon",
        "surface": "bare",
+       "name": "doc",
+       "label": "medicines",
+       "mark": "no"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "box",
+       "label": "poisons"
+      },
+      "cap": "hunting *poisons*",
+      "at": "hunt"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
        "name": "clock",
        "label": "six hours"
       },
       "R": {
-       "v": "IconRow",
+       "v": "LineIcon",
        "surface": "bare",
        "name": "box",
-       "n": 24,
        "label": "toxic molecules",
        "tag": {
         "t": "≈ 40,000",
-        "at": "forty"
+        "at": "suggested"
        },
        "stamp": {
         "t": "real",
-        "at": "forty"
+        "at": "suggested"
        }
       },
       "cap": "*40,000* toxic molecules",
@@ -642,8 +690,7 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "missile",
-       "label": "a weapon",
-       "enter": "weapon"
+       "label": "a weapon"
       },
       "cap": "the same *brain*"
      },
@@ -685,8 +732,7 @@
        "v": "CalendarCard",
        "surface": "bare",
        "year": "199x",
-       "note": "the nineties",
-       "at": "nineties"
+       "note": "the nineties"
       },
       "cap": "done this *before*"
      },
@@ -748,7 +794,7 @@
   },
   {
    "id": "d02",
-   "vo": "When a programmer named Phil Zimmermann gave strong encryption away for free, he spent three years under criminal investigation.",
+   "vo": "When a programmer named Phil Zimmermann gave strong encryption away for free, he was put under criminal investigation for three years.",
    "shot": {
     "cuts": [
      {
@@ -763,10 +809,26 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "lock",
-       "label": "free encryption",
-       "enter": "free"
+       "label": "free encryption"
       },
       "cap": "gave it away *free*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "phil zimmermann"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "us government"
+      },
+      "cap": "*investigated*",
+      "at": "criminal"
      },
      {
       "layout": "split",
@@ -858,8 +920,7 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "gateOpen",
-       "label": "rules relaxed",
-       "enter": "relaxed"
+       "label": "rules relaxed"
       },
       "cap": "the rules *gave way*",
       "at": "within"
@@ -941,6 +1002,31 @@
       "R": {
        "v": "LineIcon",
        "surface": "bare",
+       "name": "brain",
+       "label": "most powerful closed models"
+      },
+      "cap": "the *biggest* models",
+      "at": "most"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "ListDoc",
+       "surface": "bare",
+       "title": "export controls",
+       "rows": [
+        {
+         "t": "chips"
+        },
+        {
+         "t": "ai model weights"
+        }
+       ],
+       "hot": 1
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
        "name": "contract",
        "label": "scrapped",
        "mark": "no",
@@ -955,7 +1041,7 @@
   },
   {
    "id": "d05",
-   "vo": "So no, the AI on your computer is not contraband. Not yet. But the playbook is still on the shelf.",
+   "vo": "So no, the AI on your computer is not contraband. Not yet. But the playbook hasn't gone anywhere.",
    "shot": {
     "cuts": [
      {
@@ -997,7 +1083,7 @@
        "label": "the playbook",
        "enter": "playbook"
       },
-      "cap": "still *on the shelf*",
+      "cap": "the playbook *is still here*",
       "at": "playbook"
      }
     ],
@@ -1144,27 +1230,24 @@
        "label": "your bank"
       },
       "R": {
-       "v": "Flow",
+       "v": "ListDoc",
        "surface": "bare",
-       "nodes": [
+       "title": "how your bank checks you",
+       "rows": [
         {
-         "icon": "contract",
-         "label": "signature",
+         "t": "signature",
          "at": "signature"
         },
         {
-         "icon": "idcard",
-         "label": "photo id",
+         "t": "photo id",
          "at": "photo"
         },
         {
-         "icon": "face",
-         "label": "voice",
+         "t": "voice",
          "at": "voice"
         },
         {
-         "icon": "camera",
-         "label": "video call",
+         "t": "video call",
          "at": "video"
         }
        ]
@@ -1181,26 +1264,27 @@
        "label": "ai"
       },
       "R": {
-       "v": "Flow",
+       "v": "ListDoc",
        "surface": "bare",
-       "nodes": [
+       "title": "how your bank checks you",
+       "rows": [
         {
-         "icon": "contract",
-         "label": "faked"
+         "t": "signature"
         },
         {
-         "icon": "idcard",
-         "label": "faked"
+         "t": "photo id"
         },
         {
-         "icon": "face",
-         "label": "faked"
+         "t": "voice"
         },
         {
-         "icon": "camera",
-         "label": "faked"
+         "t": "video call"
         }
-       ]
+       ],
+       "stamp": {
+        "t": "all faked",
+        "at": "fake"
+       }
       },
       "cap": "AI fakes *all four*",
       "at": "AI"
@@ -1270,17 +1354,16 @@
      {
       "layout": "split",
       "L": {
-       "v": "Flag",
+       "v": "LineIcon",
        "surface": "bare",
-       "country": "china",
+       "name": "pin",
        "label": "hong kong"
       },
       "R": {
        "v": "LineIcon",
        "surface": "bare",
        "name": "worker",
-       "label": "finance worker",
-       "enter": "finance"
+       "label": "finance worker"
       },
       "cap": "a worker in *Hong Kong*"
      },
@@ -1304,7 +1387,7 @@
        "v": "CallGrid",
        "surface": "bare",
        "real": 0,
-       "fakeAt": "deepfake",
+       "fakeAt": "except",
        "label": {
         "i": 1,
         "t": "finance chief"
@@ -1337,7 +1420,7 @@
        "label": "15 transfers",
        "tag": {
         "t": "≈ $25 million",
-        "at": "twenty"
+        "at": "transfers"
        },
        "stamp": {
         "t": "real",
@@ -1358,8 +1441,7 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "pin",
-       "label": "sydney opera house",
-       "enter": "Sydney"
+       "label": "sydney opera house"
       },
       "cap": "the *Opera House* engineers",
       "at": "company"
@@ -1421,7 +1503,7 @@
        "surface": "bare",
        "name": "contract",
        "label": "a ban",
-       "enter": "bans"
+       "enter": "how"
       },
       "cap": "panic writes *bans*"
      }
@@ -1539,8 +1621,7 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "key",
-       "label": "stolen cloud keys",
-       "enter": "cloud"
+       "label": "stolen cloud keys"
       },
       "cap": "stolen *cloud keys*"
      },
@@ -1556,18 +1637,35 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "cash",
-       "label": "someone else's bill",
-       "tag": {
-        "t": "up to $46,000 a day",
-        "at": "forty"
-       },
-       "stamp": {
-        "t": "real",
-        "at": "Researchers"
-       }
+       "label": "someone else's bill"
       },
       "cap": "on *someone else's* bill",
       "at": "run"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "label": "security researchers"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cash",
+       "label": "the victim's bill",
+       "tag": {
+        "t": "up to $46,000 a day",
+        "at": "victim"
+       },
+       "stamp": {
+        "t": "real",
+        "at": "victim"
+       }
+      },
+      "cap": "*$46,000* a day",
+      "at": "Researchers"
      }
     ],
     "act": "06 the black market"
@@ -1584,7 +1682,7 @@
        "v": "IconRow",
        "surface": "bare",
        "name": "laptop",
-       "n": 6,
+       "n": 3,
        "label": "anyone can download"
       },
       "R": {
@@ -1592,10 +1690,27 @@
        "surface": "bare",
        "name": "person",
        "n": 3,
-       "label": "criminals",
-       "at": "criminals"
+       "label": "criminals"
       },
       "cap": "criminals get *ammo*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "person",
+       "n": 3,
+       "label": "criminals"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "missile",
+       "label": "ammunition"
+      },
+      "cap": "*ammunition*",
+      "at": "criminals"
      },
      {
       "layout": "split",
@@ -1623,7 +1738,7 @@
   },
   {
    "id": "k01",
-   "vo": "So what would a ban actually look like? Nobody comes to switch off your computer. It looks like a licence.",
+   "vo": "So what would a ban actually look like? Nobody comes to switch off your computer. It looks a lot more like a licence.",
    "shot": {
     "cuts": [
      {
@@ -1657,7 +1772,7 @@
        "surface": "bare",
        "kind": "brain",
        "title": "ai licence",
-       "at": "licence"
+       "at": "lot"
       },
       "cap": "it looks like *a licence*",
       "at": "looks"
@@ -1679,21 +1794,37 @@
        "surface": "bare",
        "name": "person",
        "n": 2,
-       "label": "hawley · blumenthal",
-       "at": 0
+       "label": "hawley · blumenthal"
+      },
+      "R": {
+       "v": "Flag",
+       "surface": "bare",
+       "country": "usa",
+       "label": "us senate"
+      },
+      "cap": "two *senators*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "person",
+       "n": 2,
+       "label": "hawley · blumenthal"
       },
       "R": {
        "v": "Licence",
        "surface": "bare",
        "kind": "brain",
        "title": "ai licence",
-       "at": "licence",
        "stamp": {
         "t": "real",
-        "at": "licence"
+        "at": "exactly"
        }
       },
-      "cap": "a *licence* to build AI"
+      "cap": "a *licence* to build AI",
+      "at": "proposed"
      },
      {
       "layout": "split",
@@ -1707,8 +1838,7 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "building",
-       "label": "oversight body",
-       "enter": "oversight"
+       "label": "oversight body"
       },
       "cap": "a new *oversight* body",
       "at": "oversight"
@@ -1754,8 +1884,7 @@
          "at": "age"
         },
         {
-         "t": "government id",
-         "at": "government"
+         "t": "government id"
         }
        ],
        "hot": 1,
@@ -1764,16 +1893,43 @@
       "R": {
        "v": "LineIcon",
        "surface": "bare",
-       "name": "idcard",
-       "label": "government id",
-       "enter": "government",
-       "stamp": {
-        "t": "real",
-        "at": "government"
-       }
+       "name": "person",
+       "label": "every user"
       },
       "cap": "every user's *age*",
       "at": "October"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "ListDoc",
+       "surface": "bare",
+       "title": "us senate bill · oct 2025",
+       "rows": [
+        {
+         "t": "chatbots"
+        },
+        {
+         "t": "age check for every user"
+        },
+        {
+         "t": "government id"
+        }
+       ],
+       "hot": 2
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "idcard",
+       "label": "government id",
+       "stamp": {
+        "t": "real",
+        "at": 0
+       }
+      },
+      "cap": "a *government ID*",
+      "at": "government"
      },
      {
       "layout": "split",
@@ -1787,8 +1943,7 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "idcard",
-       "label": "real identity",
-       "enter": "identity"
+       "label": "real identity"
       },
       "cap": "China: *real identity*",
       "at": "China"
@@ -1881,8 +2036,7 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "chip",
-       "label": "ai chips",
-       "enter": "chips"
+       "label": "ai chips"
       },
       "cap": "AI runs on *chips*"
      },
@@ -1899,7 +2053,6 @@
        "surface": "bare",
        "name": "pin",
        "label": "prove where it is",
-       "enter": "prove",
        "stamp": {
         "t": "real",
         "at": "Security"
@@ -2022,9 +2175,8 @@
        "v": "IconRow",
        "surface": "bare",
        "name": "laptop",
-       "n": 6,
-       "label": "anyone",
-       "at": "anyone"
+       "n": 3,
+       "label": "anyone"
       },
       "cap": "*open source*"
      },
@@ -2062,6 +2214,24 @@
       "L": {
        "v": "LineIcon",
        "surface": "bare",
+       "name": "eye",
+       "label": "to be fair"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "brain",
+       "label": "open models",
+       "mark": "ok",
+       "markAt": "good"
+      },
+      "cap": "to be *fair*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
        "name": "doc",
        "label": "us government report",
        "tag": {
@@ -2081,7 +2251,8 @@
        "mark": "no",
        "markAt": "against"
       },
-      "cap": "*don't* restrict them"
+      "cap": "*don't* restrict them",
+      "at": "report"
      },
      {
       "layout": "split",
@@ -2108,7 +2279,7 @@
   },
   {
    "id": "n03",
-   "vo": "But read the fine print: that report says keep the option to restrict them later. And one senator already wrote a bill under which downloading a Chinese AI could mean up to twenty years in prison.",
+   "vo": "But read the fine print: that report says keep the option to restrict them later. And one senator already wrote a bill under which downloading a Chinese AI could mean up to twenty years behind bars.",
    "shot": {
     "cuts": [
      {
@@ -2130,6 +2301,31 @@
      {
       "layout": "split",
       "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "a us senator"
+      },
+      "R": {
+       "v": "ListDoc",
+       "surface": "bare",
+       "title": "senate bill · 2025",
+       "rows": [
+        {
+         "t": "chinese ai"
+        },
+        {
+         "t": "downloads",
+         "at": "downloading"
+        }
+       ]
+      },
+      "cap": "*one senator's* bill",
+      "at": "senator"
+     },
+     {
+      "layout": "split",
+      "L": {
        "v": "AppStore",
        "surface": "bare",
        "name": "chinese ai"
@@ -2141,15 +2337,15 @@
        "label": "prison",
        "tag": {
         "t": "up to 20 years",
-        "at": "twenty"
+        "at": "years"
        },
        "stamp": {
         "t": "real",
-        "at": "prison"
+        "at": "bars"
        }
       },
       "cap": "*20 years* for a download",
-      "at": "senator"
+      "at": "could"
      }
     ],
     "act": "09 open source"
@@ -2183,8 +2379,7 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "contract",
-       "label": "one line changed",
-       "enter": "line"
+       "label": "one line changed"
       },
       "cap": "*one line* changed"
      }
@@ -2207,13 +2402,30 @@
        "label": "you"
       },
       "R": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "who gains?",
+       "at": "Who"
+      },
+      "cap": "the question *nobody* asks"
+     },
+     {
+      "layout": "split",
+      "L": {
        "v": "LineIcon",
        "surface": "bare",
        "name": "lock",
-       "label": "locked down",
-       "enter": "locked"
+       "label": "public ai locked"
       },
-      "cap": "who *gains*?"
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "building",
+       "n": 3,
+       "label": "who gains?"
+      },
+      "cap": "who *gains*?",
+      "at": "Who"
      },
      {
       "layout": "full",
@@ -2293,7 +2505,7 @@
        "at": "capture"
       },
       "cap": "*regulatory capture*",
-      "at": "Yann"
+      "at": "chief"
      },
      {
       "layout": "split",
@@ -2326,6 +2538,22 @@
      {
       "layout": "split",
       "L": {
+       "v": "Licence",
+       "surface": "bare",
+       "kind": "brain",
+       "title": "ai licence"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "eye",
+       "label": "what it does"
+      },
+      "cap": "what a *licence* does"
+     },
+     {
+      "layout": "split",
+      "L": {
        "v": "IconRow",
        "surface": "bare",
        "name": "building",
@@ -2336,19 +2564,19 @@
        "v": "IconRow",
        "surface": "bare",
        "name": "worker",
-       "n": 6,
-       "label": "lawyers · lobbyists",
-       "at": "lawyers"
+       "n": 3,
+       "label": "lawyers · lobbyists"
       },
-      "cap": "they can *afford* it"
+      "cap": "they can *afford* it",
+      "at": "OpenAI"
      },
      {
       "layout": "split",
       "L": {
        "v": "IconRow",
        "surface": "bare",
-       "name": "worker",
-       "n": 10,
+       "name": "person",
+       "n": 4,
        "label": "10-person startup"
       },
       "R": {
@@ -2460,8 +2688,7 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "browser",
-       "label": "the public internet",
-       "enter": "internet"
+       "label": "the public internet"
       },
       "cap": "where did it *learn*?"
      },
@@ -2474,27 +2701,24 @@
        "label": "the internet"
       },
       "R": {
-       "v": "Flow",
+       "v": "ListDoc",
        "surface": "bare",
-       "nodes": [
+       "title": "what it learned from",
+       "rows": [
         {
-         "icon": "book",
-         "label": "books",
+         "t": "books",
          "at": "books"
         },
         {
-         "icon": "newspaper",
-         "label": "articles",
+         "t": "articles",
          "at": "articles"
         },
         {
-         "icon": "doc",
-         "label": "code",
+         "t": "code",
          "at": "code"
         },
         {
-         "icon": "camera",
-         "label": "art",
+         "t": "art",
          "at": "art"
         }
        ]
@@ -2543,6 +2767,22 @@
       "R": {
        "v": "LineIcon",
        "surface": "bare",
+       "name": "browser",
+       "label": "pirate library"
+      },
+      "cap": "*pirated*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "anthropic"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
        "name": "cash",
        "label": "paid to authors",
        "tag": {
@@ -2554,7 +2794,8 @@
         "at": "billion"
        }
       },
-      "cap": "*$1.5 billion* to authors"
+      "cap": "*$1.5 billion* to authors",
+      "at": "Anthropic"
      },
      {
       "layout": "split",
@@ -2598,8 +2839,7 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "lock",
-       "label": "locked door",
-       "enter": "lock"
+       "label": "locked door"
       },
       "cap": "*lock the door*"
      },
@@ -2647,6 +2887,27 @@
        "replyAt": "assistant"
       },
       "cap": "what *replaces* it?"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "PhoneChat",
+       "surface": "bare",
+       "mode": "open",
+       "ask": "plan my trip to rome",
+       "askAt": 0,
+       "replyAt": 0
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "not yours",
+       "mark": "no",
+       "markAt": "yours"
+      },
+      "cap": "*not yours*",
+      "at": "wouldn't"
      },
      {
       "layout": "split",
@@ -2714,8 +2975,7 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "eye",
-       "label": "supervised",
-       "enter": "supervised"
+       "label": "supervised"
       },
       "cap": "pay to be *supervised*"
      }
@@ -2735,18 +2995,33 @@
        "v": "CalendarCard",
        "surface": "bare",
        "year": "1920",
-       "note": "prohibition",
-       "at": "Prohibition"
+       "note": "prohibition"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "box",
+       "label": "alcohol banned"
+      },
+      "cap": "*Prohibition*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "CalendarCard",
+       "surface": "bare",
+       "year": "1920",
+       "note": "prohibition"
       },
       "R": {
        "v": "IconRow",
        "surface": "bare",
        "name": "person",
        "n": 4,
-       "label": "gangsters",
-       "at": "gangsters"
+       "label": "gangsters"
       },
-      "cap": "Prohibition made *gangsters*"
+      "cap": "handed to *gangsters*",
+      "at": "handed"
      },
      {
       "layout": "split",
@@ -2770,7 +3045,7 @@
        "at": "black"
       },
       "cap": "the *black market* grows",
-      "at": "Ban"
+      "at": "want"
      },
      {
       "layout": "split",
@@ -2785,7 +3060,6 @@
        "surface": "bare",
        "country": "china",
        "label": "smuggled to china",
-       "enter": "smuggling",
        "stamp": {
         "t": "real",
         "at": "charged"
@@ -2793,6 +3067,27 @@
       },
       "cap": "*smuggled* chips",
       "at": "chips"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Flag",
+       "surface": "bare",
+       "country": "china",
+       "label": "smuggled to china"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
+       "label": "us charges · aug 2025",
+       "stamp": {
+        "t": "real",
+        "at": 0
+       }
+      },
+      "cap": "*charged* in 2025",
+      "at": "charged"
      }
     ],
     "act": "12 the future"
@@ -2827,8 +3122,7 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "brain",
-       "label": "strongest models",
-       "enter": "strongest"
+       "label": "strongest models"
       },
       "cap": "the powerful *keep it*"
      },
@@ -2841,15 +3135,13 @@
        "label": "pentagon"
       },
       "R": {
-       "v": "IconRow",
+       "v": "LineIcon",
        "surface": "bare",
-       "name": "building",
-       "n": 4,
-       "label": "openai · google · anthropic · xai",
-       "at": "OpenAI",
+       "name": "contract",
+       "label": "deals",
        "tag": {
         "t": "up to $200m each",
-        "at": "hundred"
+        "at": "worth"
        },
        "stamp": {
         "t": "real",
@@ -2858,6 +3150,24 @@
       },
       "cap": "*$200M* deals each",
       "at": "Pentagon"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "contract",
+       "label": "pentagon deals"
+      },
+      "R": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "building",
+       "n": 4,
+       "label": "openai · google · anthropic · xai"
+      },
+      "cap": "with *the AI giants*",
+      "at": "OpenAI"
      }
     ],
     "act": "12 the future"
@@ -2899,9 +3209,8 @@
        "v": "IconRow",
        "surface": "bare",
        "name": "people",
-       "n": 8,
-       "label": "everyone else rents",
-       "at": "everyone"
+       "n": 3,
+       "label": "everyone else rents"
       },
       "cap": "*cognitive feudalism*",
       "at": "feudalism"
@@ -2928,8 +3237,7 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "eye",
-       "label": "straight with you",
-       "enter": "straight"
+       "label": "straight with you"
       },
       "cap": "the *honest* timeline"
      },
@@ -2997,8 +3305,7 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "clock",
-       "label": "small steps",
-       "enter": "small"
+       "label": "small steps"
       },
       "cap": "no *announcement*"
      },
@@ -3011,27 +3318,24 @@
        "label": "small steps"
       },
       "R": {
-       "v": "Flow",
+       "v": "ListDoc",
        "surface": "bare",
-       "nodes": [
+       "title": "small steps",
+       "rows": [
         {
-         "icon": "idcard",
-         "label": "id check",
+         "t": "id check",
          "at": "ID"
         },
         {
-         "icon": "contract",
-         "label": "licence",
-         "at": "licence"
+         "t": "licence",
+         "at": "there"
         },
         {
-         "icon": "chip",
-         "label": "chip rule",
+         "t": "chip rule",
          "at": "chip"
         },
         {
-         "icon": "cash",
-         "label": "payment ban",
+         "t": "payment ban",
          "at": "payment"
         }
        ]
@@ -3051,7 +3355,7 @@
         },
         {
          "icon": "chip",
-         "at": "licence"
+         "at": "there"
         },
         {
          "icon": "brain"
@@ -3074,8 +3378,7 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "bars",
-       "label": "the crime",
-       "enter": "crime"
+       "label": "the crime"
       },
       "cap": "then *the crime*",
       "at": "First"
@@ -3101,8 +3404,7 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "fire",
-       "label": "destroy the planet?",
-       "enter": "destroy"
+       "label": "destroy the planet?"
       },
       "cap": "the *wrong* debate"
      },
@@ -3118,7 +3420,7 @@
        "v": "IconRow",
        "surface": "bare",
        "name": "people",
-       "n": 6,
+       "n": 3,
        "label": "who gets to use it",
        "at": "who"
       },
@@ -3215,15 +3517,13 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "book",
-       "label": "learn how it works",
-       "at": "Learn"
+       "label": "learn how it works"
       },
       "R": {
        "v": "LineIcon",
        "surface": "bare",
        "name": "doc",
-       "label": "your own copies",
-       "enter": "copies"
+       "label": "your own copies"
       },
       "cap": "learn. *keep copies*",
       "at": "Learn"
@@ -3243,16 +3543,32 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "laptop",
+       "label": "your own ai"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "doc",
        "label": "programming"
+      },
+      "cap": "not *programming*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "laptop",
+       "label": "your own ai"
       },
       "R": {
        "v": "LineIcon",
        "surface": "bare",
        "name": "bars",
-       "label": "a crime",
-       "enter": "crime"
+       "label": "a crime"
       },
-      "cap": "*a crime*?"
+      "cap": "called *a crime*",
+      "at": "It'll"
      },
      {
       "layout": "split",
@@ -3278,7 +3594,8 @@
   },
   {
    "id": "t03",
-   "vo": "So take a long look at the AI on your phone.",
+   "vo": "Take a long look at the AI on your phone. Enjoy it while you still can.",
+   "say": "Take a long look at the AI on your phone. Enjoy it, while you still can.",
    "shot": {
     "cuts": [
      {
@@ -3292,6 +3609,17 @@
        "replyAt": "phone"
       },
       "cap": "take *a long look*"
+     },
+     {
+      "layout": "full",
+      "hero": {
+       "v": "PhoneChat",
+       "surface": "bare",
+       "mode": "off",
+       "gateAt": "still"
+      },
+      "cap": "while you *still can*",
+      "at": "while"
      }
     ],
     "act": "14 the choice"
