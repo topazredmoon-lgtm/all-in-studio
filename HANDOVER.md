@@ -6,6 +6,7 @@ grep and small scripts, never print whole transcripts or logs). Never read SCRAT
 Owner notes (verbatim in LEARNINGS 60-66, promoted to PLAYBOOK taste, DESIGN Clips/Voice, CLAUDE.md "Owner's taste, learned"):
 clip cuts "amateurish", voice "irregular", "G P T" unnatural, "MUCH MUCH MORE DRAMATIC AND HOOKING", first clip "NO
 PURPOSE", "it never asks who you are" IRRELEVANT. What changed:
+- **Delivered**: `videos/ai-ban/out/ai-ban_v3.mp4` (full quality), sent as `All-in_ai_ban_sample_2min.mp4` (19.1 MB, 2-pass 1100k + aac 96k). watch.py 0 FAIL, lints 0 FAIL.
 - **Script** (`videos/ai-ban/gen_script.py`, ORDER c01 h01 c02 h02 c03 h03 c04 h04 h05 h06 c05 h07 h08 h09, 229 words, 5
   clips, 2:08): cold open = the hearing's AI clone of Sen. Blumenthal's voice while his mouth stays shut → "watch his
   mouth" → his reveal "that voice was not mine" → written by ChatGPT, and the man who runs ChatGPT sat in front of him →
