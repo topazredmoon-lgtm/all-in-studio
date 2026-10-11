@@ -4,6 +4,21 @@ Every topic visual ever generated, so the next video knows what exists, what wor
 Status: `new` (built, not yet reviewed by the owner) · `kept` (owner liked it) · `fix` (owner note pending) · `retired`.
 Patterns marked ⇧ are general enough to graduate into `engine/src/ds/` once the owner keeps them.
 
+## ai-black-markets (2026-10-11, the 8:15 full film) · `visuals/aibm.tsx`
+
+60 beats, ~120 shots, 14 CC clips. All `new` (the owner has seen only the 1:30 sample).
+
+| Visual | Picture | Used for (beat · cue) |
+|---|---|---|
+| `CallGrid` (sample) | 2 × 2 video call; a red scan marks fake faces | the job interview (h00, j01, r02 · "selling"), Hong Kong call (d01, d03 · "face") |
+| `PhoneCall` (sample) | incoming call, waveform turns red + "ai voice" | voice clones (v01–v03, x03), "one word beats a clone" (g04) |
+| `ChatBox` (sample) | chatbot refuses (✕) / complies as redacted bars | normal chatbot vs WormGPT (w02), jailbreak (w04), never says no (w05), AI writes answers (j02) |
+| `Listing` / `Shop` (sample) | black-market listing with red price + buy click; shop grid | the shop (g03, s02–s04), WormGPT €60 (w01), logs in bulk (i03), recap (r01) |
+| `LoginCard` | generic login page: red fake address, password dots, 6-digit code, red cookie slides out | fake login page (k02 · "login"), the code (k04 · "code"), session cookie (k05 · "cookie") |
+| `StealerLog` | "log.txt" file, rows of saved logins (drawing + bar + dots) pop in | infostealer copies passwords (i02 · "copies"), logs sold (i03) |
+| `Channel` | chat channel of ads (drawing + bars), red price chip | FraudGPT on Telegram $200 (w03 · "$200"), how one deal works (k03 · "deal") |
+| `FaceSwap` | one call tile; red scan leaves a dashed face over the person | North Korean applicant (j01), face swap on camera (j02 · "swap") |
+
 ## captchas-full (2026-10-08, the 8-min film) · `visuals/captchas2.tsx` + `ds/kit.tsx`
 
 81 beats, ~145 shots, 8:08, no clips. All `new`. Acts 1–3 reuse the v6 shots (`kept` by the owner); clips replaced by narrated beats.

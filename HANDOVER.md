@@ -1,4 +1,4 @@
-# HANDOVER · All-in · 2026-10-09 · captchas-full v3 DELIVERED · AI black markets 1:30 SAMPLE delivered · NEXT: its full film
+# HANDOVER · All-in · 2026-10-11 · AI black markets FULL FILM (8:15) built, rendering · captchas-full v3 waiting on owner notes
 Older history: `HANDOVER_archive.md` (read only if needed). Token-lean: S is on Pro (keep a session under ~120k tokens;
 grep and small scripts, never print whole transcripts or logs). Never read SCRATCH HOLY or other source projects.
 
@@ -24,34 +24,30 @@ Clean-up once the owner OKs the cut: `.cc-src/`, `.render-tmp/captchas-full_*`, 
 - Clean-up still open: `.cc-src/` (~480 MB of source talks; keep until the owner OKs the cut, then delete),
   `.render-tmp/captchas-full_*` chunks once the owner OKs it. Lessons: LEARNINGS 45-47, CLIPS.md "media.ccc.de".
 
-## AI black markets (owner topic 2026-10-08): 1:30 SAMPLE delivered 2026-10-09, full film NEXT
+## AI black markets FULL FILM (2026-10-11, cloud session, PR quartzsaphir-debug/all-in-studio#3)
 Owner: "the DARK REALITY of grey areas of AI and its practices in the black markets!", "dont make it too hard for the
-newbies", "Do a fantastic job". Then (quota low): "only a sample", "only 1min30". Owner: NEVER wait for them, never ask.
-Owner standing rule: hand mechanical work (clip search, licence checks, transcribing, file ops, render babysitting) to
-Sonnet/Haiku subagents; keep script, creative choices and final review yourself.
-- Slug `ai-black-markets`; script `videos/ai-black-markets/gen_script.py` (VO / SHOTS / CLIPS / ORDER), SOURCES.md,
-  LICENCES.md, qa/cuts_all.jpg. Sample = 13 beats, 163 words, 3 clips, 1:33. Out: `videos/ai-black-markets/out/ai-black-markets_v3.mp4` (sent as `All-in_ai_black_markets_sample.mp4`, 5 MB). watch.py 0 FAIL.
-- New visuals `engine/src/visuals/aibm.tsx`: CallGrid (video call, red scan marks fakes), PhoneCall (incoming call,
-  waveform turns red + "ai voice"), ChatBox (refuses with ✕ / complies as redacted bars, never real content), Listing
-  (black-market shop card, red price, buy click), Shop (grid of listing tiles). Log them in VISUALS.md when the film is built.
-- New tool `tools/cc_cut.py <topic> <spec.json>`: cuts media.ccc.de excerpts and MEASURES the opus/mp3 → mp4 offset by
-  envelope cross-correlation (all four talks here: 0.0 s). Spec: `videos/ai-black-markets/clips_spec.json`.
-- Clips used: c01 hook `cc_nk_ai` (Simon Wijckmans, EMF 2026, CC BY-SA 4.0, "With AI these bad actors became way more
-  powerful..."), c02 `cc_id_shops` (Hock & Bernhard 38C3, CC BY 4.0, "a shop of shops", slide matches), c03
-  `cc_gai_voice` (Bunzel, GoD 2024, CC BY-SA 4.0, "only five to ten seconds of audio is needed"). Whisper dropped the
-  punctuation on c03: restored by hand in its words.json.
-- Talks found + licence-checked (all CC BY / BY-SA, in `.cc-src/aibm/cands.json`; transcripts `*.segments.txt` there for
-  north-korean, aitm-panels, genai-in-the-battle, identity-theft): AiTM panels and sellers (WHY2025, phishing kits rented
-  on Telegram, 250-300 €/month; speech is run-on, cut carefully), NEW IMPORTANT INSTRUCTIONS (37c3, prompt injection),
-  Scaling up victim notification (WHY2025, infostealers), criminal view of phishing panels (Hacker Hotel 2025), "But this
-  politician said xyz" (rc3, deepfakes), How LLMs work / can you hack them (Hacker Hotel 2025), Skynet Starter Kit (39c3,
-  robot jailbreak). Other candidates not yet checked: Light in the Dark(net) 39c3, Ecstasy 10x yellow Twitter 34c3
-  (darknet markets), Digital Rights & online gender-based violence (dgwk2025, deepfake abuse), Agentic ProbLLMs 39c3.
-- Full film (8 min+, ~1,250 words, 16+ clips) next: extend the sample's acts (grey zone · the shop · stolen accounts ·
-  crime chatbots · phishing kits as a subscription · deepfake calls · voice clones · fake job applicants / laptop farms
-  · who profits · how to protect yourself), open loop by 0:35, recap montage, flip line. Facts already sourced:
-  WormGPT (SlashNext 2023), Arup $25.6 M (HK police / CNN 2024), FBI IC3 2024 $16.6 B. Check the SlashNext post itself.
-- Clean-up once the owner OKs: `.cc-src/aibm/` audio (~100 MB), `.render-tmp/ai-black-markets_*`.
+newbies", "Do a fantastic job". Owner: NEVER wait for them, never ask. Mechanical work → Sonnet/Haiku subagents.
+- Built from the 1:30 sample: `videos/ai-black-markets/gen_script.py` = 60 beats, 924 narrated words, 14 clips, 8:15.
+  10 acts: grey zone · the shop · the chatbot that says yes · scams for rent · stolen logins · fake faces · fake voices ·
+  the fake worker · who cashes in (open loop paid) · how to stay safe (secret word = "the one word that beats a clone"),
+  recap montage, flip line + callback to the opening interview. Gates: lint_text / lint_cues / lint_clips 0 FAIL.
+  Longest narration gap between clips 38.7 s. Stills reviewed per act (`qa/sheet_*.jpg`, `qa/cuts_all.jpg`, fixes in `cuts_fix*.jpg`).
+- Clips (all media.ccc.de, CC BY 4.0 except Wijckmans CC BY-SA 4.0; table + credits in `LICENCES.md`): Wijckmans EMF26
+  (hook + laptop mules), Hock & Bernhard 38C3 (shop of shops), Chiao-Lin Yu 39C3 "Vibe Scammers" (scam customer support,
+  AI builds the scam, 30 salespeople, AI versus AI), Anykey Hacker Hotel 25 (refusal cut out), Karl Lovink HH25 (phishing
+  panel 100 €/week + support), van Duijn & Neelen WHY2025 (AiTM proxy, passkeys), Breedijk WHY2025 ("no need to hack in
+  if you can log in"), Bunzel GoD24 (hard to tell real from fake; 5-10 s of audio). Clip specs: `clips_spec*.json`.
+  REJECTED (third-party video on the slides): rc3 politician deepfakes, GoD24 face-swap demo (LEARNINGS 48).
+- New visuals in `engine/src/visuals/aibm.tsx`: LoginCard, StealerLog, Channel, FaceSwap (logged in VISUALS.md).
+- Facts: SOURCES.md rows for WormGPT (€60/month, PCMag/Tom's Hardware), FraudGPT ($200/month, Netenrich), Genesis Market
+  (80 M logins), FBI PSA 3 Dec 2024 (secret word), Chapman laptop farm (309 companies, $17 M, 102 months), FBI IC3 2025
+  ($20.9 B, AI $893 M; secondary summaries, check the PDF if the owner asks).
+- 39 candidate clips more in `.cc-src/aibm/clip_cands.json` (86 total, 12 talks transcribed; audio in `.cc-src/aibm/`,
+  not in git; `bash scripts/redownload-sources.sh` or the URLs in `.cc-src/aibm/urls.txt`).
+- Render: `node tools/render.mjs ai-black-markets --concurrency=4` (cloud box: ~10 min per 1,500-frame chunk, 10 chunks).
+  Then watch.py, sampled sheet, compress < 20 MB → `out/All-in_ai_black_markets_full.mp4`. See the bottom of this file
+  for the status of that step.
+- Clean-up once the owner OKs: `.cc-src/aibm/` audio (~600 MB), `.render-tmp/ai-black-markets_*`.
 
 ## Commands
 Always `PYTHONIOENCODING=utf-8`, `HF_HUB_OFFLINE=1` for Whisper. Patch with python scripts, not bash heredoc edits of

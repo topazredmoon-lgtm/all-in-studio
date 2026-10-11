@@ -26,6 +26,9 @@ most unatural pause i've ever heard."
     with better pictures (the 34C3 lawsuit slide shows the complaint text). → Search CCC + Commons first, news never.
 46. CCC opus vs mp4 offsets (15-18 s) put the first CCC cuts on the wrong sentences. → CLIPS.md "media.ccc.de".
 47. Long clips (22 s) blew the 20-40 s rhythm the other way: a 50 s narration gap before them. → Split a long clip at a
+48. (ai-black-markets full film, 2026-10-11) A CC BY talk can still carry someone else's video: rc3's deepfake talk plays a YouTube deepfake of The Irishman and of politicians on its slides, and GoD 2024 animates a celebrity face swap. The mp4's licence covers the recording, not a third-party video playing inside it (Content ID can match it). → Contact-sheet every cut clip (4 frames each, `qa/clips_new*.jpg`) before it goes in the script; speaker and slides only.
+49. Cue words match by prefix: `at="trick"` fired on "tricked" a sentence early and left the right panel empty in the stills. Whisper also writes "$200" (cue `$200`, not `200`), "fishing" for phishing and "gray" for grey. → Read the lint_cues 'Heard:' line and cue the exact form; use `word#2` when an earlier word shares the prefix.
+50. Cloud box: PyAV 19 dropped `open(metadata_errors=)` and broke faster-whisper 1.2 (tts.py, transcribe_src.py). → `scripts/cloud-setup.sh` pins `av<16`.
     sentence end and place the halves where the narration says the same thing (c13/c07, g11a/g11, c10/c11).
 
 ## 2026-10-08 · captchas-full v2: clips back (owner notes on v1)
