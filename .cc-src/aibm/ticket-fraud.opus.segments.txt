@@ -1,0 +1,847 @@
+[   16.1-   21.5] Good evening everyone. Before we start, I unfortunately have a very long disclaimer to read out for you.
+[   22.1-   28.2] This work is our this presentation is our own opinions on our own work whilst I work for and this
+[   28.3-   33.3] work has been partially supported by the Max Planck-Gazelle Shaft to Ferdinand, Deveschinschaft and Erfau.
+[   33.3-   40.6] All opinions presented in this work do not constitute opinions of the Max Planck-Gazelle Shaft. On behalf of some of our co-authors who are not on stage
+[   40.7-   45.6] this is also not endorsed nor sanctioned by the German government, Federal and State, the University of Ljubljana,
+[   45.6-   50.4] the University of Geneva, the Kalsaroy Institute of Technology, the European Union Agency for
+[   50.4-   54.0] Railways, the Feban Deutsch Fegers on to Niemann, the Union Internationale de Schmanne
+[   54.0-   57.6] de Feer, the Deutschland City for Bond, nor any of their respective members.
+[   57.6-   58.6] Right.
+[   58.6-   68.2] Now that that's out of the way, one enjoys how that gets a larger applause than our
+[   68.2-   71.3] introduction, but anyway.
+[   71.3-   73.8] So now that that's out of the way, let's go travelling.
+[   73.8-   77.2] You've probably, most of you, have come here by train.
+[   77.2-   81.6] a lot of you probably have a Deutschland ticket. Hands up, who has used a Deutschland ticket
+[   81.6-   87.4] in the past year? That's almost everyone in here. Okay, good. This talk is very relevant
+[   87.4-   94.0] for you. But that's a bit annoying, isn't it? The Deutschland tickets are more expensive.
+[   94.0-   99.8] We don't like things when they're more expensive. We like having a good deal, don't we? So
+[   99.8-  105.5] what do we do? We would like a cheaper Deutschland ticket, please. Surely this is a thing
+[  105.5-  106.5] One can do.
+[  106.5-  108.6] And lo and behold, what do we find?
+[  108.6-  111.2] Someone on telegram selling them for 30 euros.
+[  111.2-  112.2] Brilliant.
+[  112.2-  113.2] Steal.
+[  113.2-  114.2] Let's go message them.
+[  114.2-  115.2] See what we get.
+[  115.2-  118.2] Oh, they only want 15 euros.
+[  118.2-  119.2] Even better.
+[  119.2-  120.2] And they accept PayPal.
+[  120.2-  121.2] Perfect.
+[  121.2-  122.8] I don't even have to deal with anything fancy.
+[  122.8-  123.8] It's just PayPal.
+[  123.8-  125.2] And what do we get back?
+[  125.2-  128.1] Well, that looks like a Deutsche Land ticket.
+[  128.1-  129.1] That seems like a...
+[  129.1-  131.0] Yeah, that looks right.
+[  131.0-  132.0] Let's just check.
+[  132.0-  134.3] Yeah, no, no, we didn't get scammed.
+[  134.3-  135.3] That's legit.
+[  135.3-  139.0] Stadtverke is trying for Dösland ticket.
+[  139.0-  145.4] But hold on, we messaged a random guy on Telegram, not the Stadtverke.
+[  145.4-  147.0] What's going on here?
+[  147.0-  150.0] To explain more, we have Maier.
+[  150.0-  153.3] And hello, Hamburg.
+[  153.3-  160.1] So we did ask the Stadtverke, and they basically gave us this response, which is that people
+[  160.1-  165.6] provided fake payment information to the tracker, and this payment information isn't necessarily
+[  165.6-  172.0] verified when one enters it, because they issue the ticket and at some point later it
+[  172.0-  178.0] gets verified, and at some point later if the information is invalid, it gets revoked.
+[  178.0-  182.2] The ticket is invalid when it's scanned on a train, because we also have cancellation
+[  182.2-  186.2] data that is available in the infrastructure surrounding the ticket.
+[  186.2-  192.4] But this really only applies to Deutsche Bahn, and for other smaller regional undertakings,
+[  192.4-  195.3] one could probably get through with such a ticket.
+[  195.3-  202.5] Anyways, what do you mean there is no check of if one enters payment information that
+[  202.5-  204.6] it's actually real?
+[  204.6-  207.7] Because we can place this with a fake bank account, right?
+[  207.7-  214.3] And the Schatwecker doesn't automatically verify the account because, well, it will
+[  214.3-  217.3] We'll get on to that, spoilers.
+[  217.3-  221.8] And the ticket is issued immediately because one wouldn't want to just wait three days
+[  221.8-  225.0] until one gets a ticket, one needs it now.
+[  225.0-  227.0] And maybe they'll cancel it later.
+[  227.0-  234.2] But of all the fake cars, only the Deutsche Bahn checks the cancellation list.
+[  234.2-  240.7] So separate direct debit, or as this one likes to call it, the async reconciliation simulator.
+[  240.7-  248.0] So for those of you in Germany, it's just another word.
+[  248.0-  254.6] It's not your traditional online card payment scheme, and it most specifically does not
+[  254.6-  257.8] require the account holder to authorise the transaction.
+[  257.8-  260.4] Just needs an i-band.
+[  260.4-  266.5] And one can generate fake i-bands actually somewhat easily.
+[  266.5-  271.1] And when one enters the i-band, it goes into a queue, and at some point within a few days,
+[  271.1-  273.1] the money is then processed.
+[  273.1-  279.0] This means that there's a few days where seemingly one can get a ticket issued.
+[  279.0-  282.0] So we have this thing called a mandate.
+[  282.0-  289.7] And actually, there is no form of enforcement that the mandate, the SEPA mandate, is actually
+[  289.7-  295.9] signed by whoever the i-band belongs to, if it's even a real i-band.
+[  295.9-  300.2] As one can see from this letter from the European payments council, the SAPA regulation does
+[  300.2-  304.0] not specify how a mandate should be signed.
+[  304.0-  306.3] This is a problem.
+[  306.3-  310.9] Now the next question is why can't we just revoke these tickets, right?
+[  310.9-  320.0] Because we have regional that exist in pretty much every nook and cranny of Germany and
+[  320.0-  324.2] all of them do a specific aspect of public transport.
+[  324.2-  334.4] And communicating revocation from the Zaland to Khaafafau is not entirely easy.
+[  334.4-  339.2] So what will happen is when they issue the ticket in their own app and they see that
+[  339.2-  344.3] the payment fails, they will just revoke it from their app, just remove it, which makes
+[  344.3-  345.6] sense.
+[  345.6-  349.9] Except one can take the ASTA code out of the app.
+[  349.9-  350.9] Anyways.
+[  351.9-  355.9] So there are two systems that exist for issuing the Deutschland ticket.
+[  356.9-  358.9] There's the Fau-de-Fau car R.
+[  359.9-  360.9] So...
+[  361.9-  363.9] Fau-bahn-Dreuche färke sont denemen ken application.
+[  363.9-  364.9] That one.
+[  365.9-  369.9] And the system of the UIC, so the Union International des Chemin des Faire,
+[  370.9-  372.9] the International Railway Undertaking.
+[  373.9-  376.9] International Union of Railway Undertaking, that's the one.
+[  376.9-  388.3] The Fau de Fau has a management system, also known as COSUS, which manages a type of revocation
+[  388.3-  394.8] on the Fau de Fau side, and the UIC has the ETCD, so the electronic ticket control database.
+[  394.8-  398.8] Except the ETCD really only works for tickets that are international tickets, so let's
+[  398.8-  402.6] say a ticket from Germany to Belgium.
+[  402.6-  408.8] And there is not really an equivalent national system for, let's say, UIC format, Deutsche
+[  408.8-  414.6] tickets that are used then only nationally.
+[  414.6-  423.2] So Q presented last year some work which involved the creation of the platform, which is just
+[  423.2-  428.8] a very nice way to contain and have tickets stored in one location, know what the data
+[  428.8-  433.1] is in there and then basically put them somewhere else, such as Google Wallet.
+[  433.1-  436.8] If your ticket has a barcode on it, chances are Tugli can read that barcode and tell you
+[  436.8-  437.8] what's in it.
+[  437.8-  442.6] Train tickets, including also airplanes.
+[  442.6-  446.2] Because if you ask with Franzer, sometimes a train is an aeroplane.
+[  446.2-  448.2] Yes.
+[  448.2-  453.1] And so Tugli kind of became an accidental ticket laundromat.
+[  453.1-  455.4] But yeah.
+[  455.4-  461.6] So we noticed quite a few tickets that were paid with direct debit, which, okay, why not,
+[  461.6-  467.7] this is a typically German thing to do, all coming from only a small cluster of IP addresses.
+[  467.7-  470.7] That's a slightly less German thing to do.
+[  470.7-  473.2] And the names of dozens of dozens of people.
+[  473.2-  474.2] Okay.
+[  474.2-  477.0] All in a very short span of time.
+[  477.0-  478.0] Slightly more concerning.
+[  478.0-  482.1] Oh, no.
+[  482.1-  486.8] And so what ended up happening is that the scammers, when they were basically entering
+[  486.8-  494.7] fake or someone else's direct debit information into whichever regional FCAS was providing
+[  494.7-  499.8] the tickets, were entering fake information, and they were getting the tickets, and they
+[  499.8-  504.6] were directly immediately uploading them into Sucli and then getting the wallet passes
+[  504.6-  510.8] out and then handing those over to the, well, people they scammed.
+[  510.8-  516.9] And this kind of isolated the ticket from whatever action any issuer would do in the
+[  516.9-  522.7] app to revoke the ticket, so long as it wasn't then communicated to the national system.
+[  522.7-  524.9] And now Q will continue.
+[  524.9-  530.1] So obviously being the good hackers we are, we were curious about who was doing this,
+[  530.1-  535.1] how were they doing this, and maybe have they fucked up in any way.
+[  535.1-  537.6] So we went some digging.
+[  537.6-  538.6] We did some digging.
+[  538.6-  546.5] this website, dticket.online, that seems to be the source of most of these direct debit
+[  546.5-  549.5] tickets that look a little suspicious.
+[  549.5-  553.6] This is a rather bare bones website for ordering a ticket, I must say.
+[  553.6-  556.2] Having two buttons and a H1.
+[  556.2-  558.9] Normally your website has a bit more than that.
+[  558.9-  561.6] This didn't even have an imprint or anything.
+[  561.6-  563.1] But it at least is functional.
+[  563.1-  565.2] You can order a ticket and you can view your ticket.
+[  565.2-  568.4] It's the minimum viable ticket website.
+[  568.4-  570.6] Okay, we'll look into this some more.
+[  570.6-  576.2] Turns out this website was Django debug mode running in production!
+[  576.2-  581.2] Which means we can just pull the list of all the tickets from it and do some investigations
+[  581.2-  582.3] on it.
+[  582.3-  584.3] Well done, scammers!
+[  584.3-  586.1] So here's some information on it.
+[  586.1-  590.1] This only runs up to February of this year because this is when we did this work.
+[  590.1-  593.6] This has been going on for a while, if you haven't noticed.
+[  593.6-  600.7] But you can see here that they're primarily targeting the erm file, so line mine, but
+[  600.7-  605.2] they have been moving their operations around slightly.
+[  605.2-  611.2] Like you can see in February of this year, they moved a lot to Schweinford.
+[  611.2-  619.6] In September of last year, they were using a lot of Wuppertal.
+[  619.6-  625.1] So they're probably trying to avoid detection here, because if a transport company sees
+[  625.1-  630.8] a lot of tickets being ordered and then the order fails, because the payment failed several
+[  630.8-  633.1] days later, they might catch on to this.
+[  633.1-  637.8] So they're not smart enough not to run Django debug mode in production, but they're smart
+[  637.8-  643.2] enough to at least have an idea what a fraud department will be looking at.
+[  643.2-  648.2] So anyway, we thought this was serious enough to warrant at least telling these companies
+[  648.2-  651.0] hey, you might want to have a look at your payment processes.
+[  651.0-  653.1] So we reported this.
+[  653.1-  655.4] This is probably the right thing to do.
+[  655.4-  660.5] Unfortunately this resulted in the wrong response, which was the error and foul saying you can
+[  660.5-  662.5] no longer buy Deutschland tickets from us.
+[  662.5-  663.5] At all.
+[  663.5-  669.5] I'm like, no, no, we were just asking you to maybe double check that your payment processor
+[  669.5-  673.1] is doing what it should be doing, that you're actually revoking tickets as they should
+[  673.1-  677.1] be, not disable anyone buying a Deutschland ticket.
+[  677.1-  684.8] But anyway, and further to these scammers not exactly being the smartest people, there
+[  684.8-  685.9] are a few more signs.
+[  685.9-  690.8] So the tickets that were uploaded were all from residential IPs.
+[  690.8-  693.0] So that's great.
+[  693.0-  695.0] That can really easily be traced back to you.
+[  695.0-  698.8] And the guy who we talked about earlier that we bought the ticket from on Telegram, he
+[  698.8-  700.7] used his personal PayPal account.
+[  700.7-  703.6] I'm pretty sure that's his name.
+[  703.6-  705.6] So great.
+[  705.6-  708.1] Well done, everyone.
+[  708.1-  711.3] And now for something slightly different.
+[  711.3-  719.9] This is a curious conversation that I had back at the end of January this year, which
+[  719.9-  724.1] is just a text out of the blue from a friend who I hadn't spoken to in a few weeks of
+[  724.1-  726.2] their apparently D ticket scams going around.
+[  726.2-  728.5] No, really, we've talked about that already.
+[  728.5-  731.2] The issue tickets that are signed with the wrong key.
+[  731.2-  732.8] Oh, that's different.
+[  732.8-  734.2] That's not what we've looked at before.
+[  734.2-  738.7] Use of the keys from the fetter.
+[  738.7-  740.7] This is different.
+[  740.7-  742.8] Can I have a sample of these to look at?
+[  742.8-  744.3] I asked said friend.
+[  744.3-  746.3] They sent one over.
+[  746.3-  749.1] So far this looks so normal.
+[  749.1-  754.0] It's a valid fetter ticket, validly signed.
+[  754.0-  755.6] It looks like a train ticket.
+[  755.6-  758.5] It all looks correct.
+[  758.5-  759.5] Scroll down a bit more.
+[  759.5-  763.6] No, no, maybe that's not so correct.
+[  763.6-  769.1] type senior, I don't recall there being a senior tariff for the Deutschland ticket, zone ID,
+[  769.1-  771.7] unknown zone 1.
+[  771.7-  777.5] Well zone 1 of the Fau de Fau is Deutschland Weitz, so all of Germany, but they haven't
+[  777.5-  781.5] tagged it as a Fau de Fau zone, it's just unknown zone 1.
+[  781.5-  788.7] And it also says that it's the issuer code of 5211 which is assigned to the FATA company,
+[  788.7-  792.5] But the issue attached is DB Regiorgi.
+[  792.5-  797.8] Where on earth did this ticket come from?
+[  797.8-  803.7] So once again, we did more digging and found an even more funny website.
+[  803.7-  804.7] D ticket.su.
+[  804.7-  809.4] Yes, that is the top level domain of the Soviet Union.
+[  809.4-  818.2] Yes, you can still register them!
+[  818.2-  822.9] Now this website looks certainly more professional than the last one we looked at.
+[  822.9-  825.1] It has all the things you would normally want from a website.
+[  825.1-  829.5] You can log in, it has a logo, a menu, imagery.
+[  829.5-  833.0] This turns out to be AI-generated imagery if you look at it a bit closer, but that's
+[  833.0-  835.7] not the weirdest thing in this day and age, unfortunately.
+[  835.7-  837.2] It does also have an impressive.
+[  837.2-  839.9] It does have an impressive, at least as well.
+[  839.9-  847.0] By some people's standards, this is a safe website because they list an impressive.
+[  847.0-  851.1] Maybe they're not the most reputable of operations, shall we say.
+[  851.1-  854.2] For those of you who can't read German, I will translate.
+[  854.2-  859.2] This person says they bought a ticket from this dticket.su, and then suddenly an extra
+[  859.2-  864.4] 21 euros 43 were charged to their card after the 58 euros that was correctly charged for
+[  864.4-  867.9] their Deutschland ticket from a company they had never heard of that seemed to have no
+[  867.9-  872.5] connection to this dticket.su company.
+[  872.5-  877.1] They're slightly annoyed about this, and they've informed the authorities, but nothing happened
+[  877.1-  878.1] yet.
+[  878.1-  881.6] So, okay, they're obviously scamming someone here,
+[  881.6-  883.5] probably scamming their own customers
+[  883.5-  885.3] as well as the transport company.
+[  885.3-  888.2] So, scamming on both ends this time, wonderful.
+[  888.2-  891.7] So, we bought our own ticket to have a look into it
+[  891.7-  894.1] to see what's going on.
+[  895.0-  898.2] I paid 58 euros of my own money for this,
+[  898.2-  900.4] and I'm never seeing that money back, probably.
+[  900.4-  904.3] But yeah, that's a feta ticket.
+[  904.3-  908.0] That's basically where it came from.
+[  908.0-  912.3] it confirms to us, at least, that this is the source of this weird ticket that we were
+[  912.3-  913.3] sent.
+[  913.3-  914.9] But this is different.
+[  914.9-  919.2] What happened here, this wasn't a direct debit scam, as far as we can tell.
+[  919.2-  923.5] Feta doesn't really or didn't at the time accept direct debits.
+[  923.5-  926.6] We cannot conclusively say what has happened yet.
+[  926.6-  930.4] The authorities are still doing their investigations.
+[  930.4-  933.3] These tickets don't have the hallmarks of payment fraud.
+[  933.3-  940.9] They appear to be issued in ways that FATA never issued them with this senior thing and
+[  940.9-  941.9] the DbG.
+[  941.9-  947.9] A real issuer just issuing based on the false pretense of a payment that will go through
+[  947.9-  951.3] wouldn't make those kind of mistakes.
+[  951.3-  954.5] They're careless, so to say.
+[  954.5-  959.7] Our theory, therefore, is that the private key was illicitly acquired.
+[  959.7-  962.9] What do you mean the private key was illicitly acquired?
+[  962.9-  964.9] Well, there are four options for this.
+[  964.9-  973.5] So option one is UIC Deutschland tickets are primarily signed with DSA, not RSA, DSA, 1024,
+[  973.5-  975.7] and SHA1.
+[  975.7-  981.0] These are old, shall we say, and maybe slightly insecure.
+[  981.0-  986.8] If you accidentally reuse a random number, then, oh, dear, you've leaked your private
+[  986.8-  987.8] key.
+[  987.8-  994.0] you just have some bias in your random number generator, then, oh, dear, you've leaked your
+[  994.0-  999.4] private key. So, potentially, the FETter company had some errors in their random number generator
+[  999.4- 1005.1] and someone managed to get back the private key by comparing two tickets and doing some
+[ 1005.1- 1011.8] linear algebra. Option number the second is everyone's favourite XKCD of a ranch, i.e.,
+[ 1011.8- 1017.1] the FETter company were threatened and handed over their private key under duress. We don't
+[ 1017.1- 1021.6] believe this to be the case because this hasn't been reported and one would suspect that the
+[ 1021.6- 1025.9] company being forced to hand over a private key under duress would be reported to the
+[ 1025.9- 1028.6] authorities. They are not claiming this to the authorities.
+[ 1028.6- 1033.3] Option number three, illicit dealings under the table. We can't comment much on this
+[ 1033.3- 1039.8] both because we don't know what happened and also speculation would entail countless opportunities
+[ 1039.8- 1045.1] for lawsuits, so we will keep our mouth shut. Option four is just plain old stupidity.
+[ 1045.1- 1050.0] They left the key exposed somewhere.
+[ 1050.0- 1055.0] We haven't managed to figure out which of these have happened, but all of them seem
+[ 1055.0- 1058.3] possible.
+[ 1058.3- 1059.3] Who's behind this?
+[ 1059.3- 1064.5] So, as mentioned, this D ticket SU has an imprint.
+[ 1064.5- 1068.2] It states this company, Rootvibe Limited, which is a British company.
+[ 1068.2- 1072.5] Okay, not quite sure what a British company has doing in the German train ticketing
+[ 1072.5- 1075.5] market, but we live in the international world.
+[ 1075.5- 1079.8] It's registered to a random house in London with about 500 other companies registered
+[ 1079.8- 1081.7] to the same random house in London.
+[ 1081.7- 1084.0] Okay, it's one of those again.
+[ 1084.0- 1087.8] It's run by a Chinese national who is resident in Italy.
+[ 1087.8- 1091.1] Okay, confusion.
+[ 1091.1- 1094.6] There are a chance some more clues that we can go poking at.
+[ 1094.6- 1099.3] So I don't know if you saw earlier, but this website lets you add your tickets to Apple
+[ 1099.3- 1100.5] Wallet.
+[ 1100.5- 1105.4] And for a pass to appear on Apple Wallet, it has to be signed using a certificate issued
+[ 1105.4- 1112.9] by Apple. Apple puts the verified developer data from the developer account into this,
+[ 1112.9- 1117.9] and it is just someone's personal Apple developer account with their name on it. The organisation
+[ 1117.9- 1123.4] unit in here is the developer account ID, and the organisation is the person's name.
+[ 1123.4- 1129.6] So at some point, Apple has seen some KYC documents with this person's name on it associated
+[ 1129.6- 1136.3] with this scam. We haven't been able to find any more information on this name, unfortunately.
+[ 1136.3- 1141.4] We also had a look at the payment details that came out. We used a test card to do this
+[ 1141.4- 1147.9] payment and pull the payment details out. And it's processed by some payment provider
+[ 1147.9- 1153.7] called Payer Max based in Hong Kong. So we have a very international operation going
+[ 1153.7- 1163.6] on here. So we went back to Fatter with this, mostly at first politely being like, hey,
+[ 1163.6- 1169.1] your private key seems to have gone astray. You might want to do something about that,
+[ 1169.1- 1173.8] just to let you know. Fatter's response to this was, what the hell are you on about,
+[ 1173.8- 1179.2] mate? We have no idea what you're going on about. That's always a good response. Always
+[ 1179.2- 1183.5] a sign that something totally above board is happening.
+[ 1183.5- 1190.0] The centre's some evidence, we shall say, which was a clearly photoshopped screenshot
+[ 1190.0- 1191.8] of the ticket.
+[ 1191.8- 1195.5] Now why do we say that this is clearly photoshopped?
+[ 1195.5- 1201.1] First, the website, when we looked at it, correctly showed the quiet area, which is
+[ 1201.1- 1203.9] the white border around a barcode.
+[ 1203.9- 1208.8] This does not have the quiet area, they have just cropped it straight to the barcode.
+[ 1208.8- 1214.5] The second more telling thing is that the ticket ID, as printed in the screenshot here, so
+[ 1214.5- 1223.0] DTUQ, whatever it is, does not match the ticket ID that is in the barcode data.
+[ 1223.0- 1229.3] So, and in our case when we bought a ticket, the ticket ID in the barcode did match the
+[ 1229.3- 1231.0] ticket ID on the website.
+[ 1231.0- 1235.7] So as far as we can tell, they have taken a random other barcode that they purchased
+[ 1235.7- 1240.9] legitimately from some other company, slapped it on a screen shot of this D ticket SU website
+[ 1240.9- 1246.2] and sent it to us to say we have nothing to do with this, look, we've done our due diligence.
+[ 1246.2- 1252.4] So we told them, we think you're lying, please, please, please try again.
+[ 1252.4- 1258.1] So they had a second attempt at a response, and they said, oh, it's not our problem
+[ 1258.1- 1259.1] at all.
+[ 1259.1- 1263.1] It's our partner, Morpla, who is at fault.
+[ 1263.1- 1269.6] is a maupla. So maupla is a Munich tech start-up founded around the start of the Deutschland
+[ 1269.6- 1274.3] ticket happening. Back when the Deutschland ticket wasn't totally finalised, but the
+[ 1274.3- 1278.0] pilot had basically decided that this was a thing that was going to happen in the next
+[ 1278.0- 1282.9] few months. They seemingly got much of their early stack by buying out another company,
+[ 1282.9- 1288.2] not the worst of strategies. The purchase included, as far as we can tell, Fatter's
+[ 1288.2- 1291.7] old private keys, the one that was leaked.
+[ 1291.7- 1296.3] Maybe the private key went war keys in the shake up between these two companies.
+[ 1296.3- 1298.1] It happens.
+[ 1298.1- 1303.0] Keys at least originally generated by Morpla haven't gone missing, which lends more credibility
+[ 1303.0- 1304.5] to this.
+[ 1304.5- 1307.8] But Fatter said, yeah, we have nothing to do with Morpla.
+[ 1307.8- 1310.2] We just use their services.
+[ 1310.2- 1312.5] This is still not our fault that this happened.
+[ 1312.5- 1315.7] This is maybe you should go talk to Morpla.
+[ 1315.7- 1318.2] Yeah, we have nothing to do with them.
+[ 1318.2- 1320.4] You have to ask them.
+[ 1320.4- 1322.5] We don't necessarily agree.
+[ 1322.5- 1327.4] So there's this wonderful service the federal government provides called the Transparent
+[ 1327.4- 1331.4] Register, which allows you to search through court documents and corporation documents
+[ 1331.4- 1337.4] and various other things relating to who owns and controls entities in Germany.
+[ 1337.4- 1342.1] I spent a few afternoons going through this and put together this wonderful chart.
+[ 1342.1- 1355.8] Now, as you can see by the number of lines going sideways across this chart, there is
+[ 1355.8- 1360.7] actually quite a lot of interconnection between the people who own and control Morplar, which
+[ 1360.7- 1365.7] is on the far left side over here, and the people who own and control Fatta, which is
+[ 1365.7- 1368.8] on the middle here.
+[ 1368.8- 1374.7] There's also quite a few holding companies in between, seemingly in an attempt to obscure
+[ 1374.7- 1378.8] Well, that didn't work evidently.
+[ 1378.8- 1382.3] So what do we do now?
+[ 1382.3- 1387.6] FATA have proven, shall we say, unreliable and they don't seem to be interested in fixing
+[ 1387.6- 1388.6] the problems.
+[ 1388.6- 1389.9] Who oversees them?
+[ 1389.9- 1392.6] Can we appeal to a higher authority?
+[ 1392.6- 1398.3] The Deutschland ticket is primarily overseen by the Deutschland Tereifahbundge im Behar.
+[ 1398.3- 1405.0] So we've reported our findings up the chain to them in hope that something might happen.
+[ 1405.0- 1411.3] Thankfully, a funny email then happened at 8pm on a Friday, which is the best time to
+[ 1411.3- 1413.0] receive an email like this.
+[ 1413.0- 1418.7] It was the usual weekly updates from the Deutschland ticket to some technical details behind
+[ 1418.7- 1422.5] the Deutschland ticket, but in this case, there was also a comment that, please note
+[ 1422.5- 1427.9] that key 5211, which if you recall is the ID of feta, key number one, was withdrawn
+[ 1427.9- 1430.9] One that short-notice due to suspected misuse.
+[ 1430.9- 1431.9] Wonderful!
+[ 1431.9- 1444.1] But in spite of this email being sent at 8pm on a Friday, this took a while.
+[ 1444.1- 1449.5] Our initial suspicions were raised around September, October 2024.
+[ 1449.5- 1454.7] We were pretty confident in the details of what was going on and who was at fault by
+[ 1454.7- 1456.1] the end of November.
+[ 1456.1- 1462.1] But it took until early February for the key to be revoked.
+[ 1462.1- 1467.3] This is not how one runs a PKI generally.
+[ 1467.3- 1471.1] Why did it take so long for this key to be revoked?
+[ 1471.1- 1476.2] The official reason given by the Deutschland Tereifahbund is that we tried to revoke it
+[ 1476.2- 1486.3] in December 2024, but one guy was on holiday and the other guy was sick.
+[ 1486.3- 1487.6] And given that the Deutschlandt
+[ 1487.6- 1493.8] and Sverbund is, as far as we can tell, chronically underfunded, they had no one else available.
+[ 1493.8- 1499.7] So maybe invest some more money in your security infrastructure and mistakes like this won't
+[ 1499.7- 1500.7] happen.
+[ 1500.7- 1502.1] Something bust theory.
+[ 1502.1- 1509.9] Yes, it's very ironic that the transport company has a boss factor that's telling.
+[ 1509.9- 1513.5] And further to this, we learnt that this isn't the first time that Fatter have got
+[ 1513.5- 1514.5] in trouble.
+[ 1514.5- 1516.9] They have a somewhat storied history.
+[ 1516.9- 1523.0] They've already been kicked out of the Fade Fauq Qa'a for key misuse.
+[ 1523.0- 1527.5] This is the reason they are now issuing UIC Deutschland tickets.
+[ 1527.5- 1532.1] This is somewhat even more impressive that they manage key misuse in the Fade Fauq Qa'a
+[ 1532.1- 1537.4] because in this system the keys are stored on little plastic hardware security modules
+[ 1537.4- 1540.3] about this size, the same size as your credit card.
+[ 1540.3- 1546.6] you would have to physically lose control of one of these to lose control of your key.
+[ 1546.6- 1551.5] We haven't heard any more information on this, so we will not comment further.
+[ 1551.5- 1555.2] But what's Feter's take on this?
+[ 1555.2- 1559.3] Why do they say that this key was revoked?
+[ 1559.3- 1563.3] The Deutsche Center says suspected misuse, maybe they have a different reason.
+[ 1563.3- 1568.8] So our lovely friends at Heiser asked them, and the response we were given is that they
+[ 1568.8- 1573.0] They are deploying a new security concept and they will be regularly rotating their
+[ 1573.0- 1574.3] keys.
+[ 1574.3- 1577.4] We have recently moved from key one to key two.
+[ 1577.4- 1580.1] We will keep doing this at regular intervals.
+[ 1580.1- 1582.8] Have they kept doing this at regular intervals?
+[ 1582.8- 1583.8] No!
+[ 1583.8- 1589.5] A fetter ticket bought today will still be signed with the same key that it was in March.
+[ 1589.5- 1593.3] I don't know what your definition of regular is, but this doesn't seem very regular to
+[ 1593.3- 1595.7] us.
+[ 1595.7- 1599.4] Once a decade, perhaps, yes.
+[ 1599.4- 1605.9] That is technically regularly, but not necessarily in the way that a PKI intends regularly.
+[ 1605.9- 1606.9] Technically correct.
+[ 1606.9- 1609.2] The best kind of correct.
+[ 1609.2- 1610.2] Yes.
+[ 1610.2- 1614.3] So, like, revoking the key, fixed it, right?
+[ 1614.3- 1615.3] Right?
+[ 1615.3- 1616.3] Right?
+[ 1616.3- 1617.3] No.
+[ 1617.3- 1618.3] Of course not.
+[ 1618.3- 1622.8] So, we kept seeing suspicious fatter tickets.
+[ 1622.8- 1629.2] There were still dozens of names uploaded to Zugli from a few residential IPs signed
+[ 1629.2- 1637.3] this time with the new key, seemingly without earlier mistakes, and in this case they actually
+[ 1637.3- 1639.7] did seem to be issued by FETR.
+[ 1639.7- 1644.5] So the key hadn't been stolen this time, but someone was still taking advantage of
+[ 1644.5- 1647.6] the system.
+[ 1647.6- 1648.6] What's going on here?
+[ 1648.6- 1652.3] So, again, time to go digging.
+[ 1652.3- 1656.8] I forwarded the ticket IDs to Morpla and found out their paypal payment process needs some
+[ 1656.8- 1657.8] fixing.
+[ 1657.8- 1661.1] were bought with the same empty PayPal account!
+[ 1661.1- 1668.4] And as a note to this, they insinuated that our little project is a tool for fraudulent
+[ 1668.4- 1675.8] actions and that by decoding a barcode using openly available standards, this is a forbidden
+[ 1675.8- 1676.8] thing to do.
+[ 1676.8- 1678.8] So, please be cautious when talking to them.
+[ 1678.8- 1682.0] This is almost worse than SBB's response to decoding their tickets.
+[ 1682.0- 1686.1] Oh, yes, we will not discuss that!
+[ 1686.1- 1691.6] But yeah, they seem to be a trustworthy company if they know how standards and data works
+[ 1691.6- 1695.0] and the fact that one can just read a barcode.
+[ 1695.0- 1699.2] So yeah, the empty PayPal account, they what?
+[ 1699.2- 1702.5] That's job number one of a payment processor, right?
+[ 1702.5- 1705.9] Check that the money is there.
+[ 1705.9- 1707.8] We live in a capitalistic society.
+[ 1707.8- 1710.8] Moving money is kind of essential.
+[ 1710.8- 1714.0] So start-up is what start-up does.
+[ 1714.0- 1719.8] We found some of the Moplar developer's code on Stack Overflow.
+[ 1719.8- 1724.0] Shall we describe it as typical start-up code?
+[ 1724.0- 1727.4] It is a shocked Pikachu face, basically.
+[ 1727.4- 1731.2] We're not surprised by this, we're just disappointed.
+[ 1731.2- 1733.8] So what went on here?
+[ 1733.8- 1735.2] Stealing an Iceland ticket from Moplar.
+[ 1735.2- 1737.2] A, how to.
+[ 1737.2- 1741.5] Note this bug has now been fixed, but this is how the bug works at the time that it
+[ 1741.5- 1743.1] was exploited.
+[ 1743.1- 1745.0] So step one, make an account.
+[ 1745.0- 1748.2] They at least decided not to run their own identity management system.
+[ 1748.2- 1749.2] They're smart enough to do that.
+[ 1749.2- 1752.1] They've outsourced that to Google.
+[ 1752.1- 1753.9] Mild clap.
+[ 1753.9- 1756.8] So you sign up for an account.
+[ 1756.8- 1761.6] Then you go back to their API with the token you got from Google and just create a passenger.
+[ 1761.6- 1762.6] Okay, fine.
+[ 1762.6- 1766.6] This is what they call their account record, a passenger.
+[ 1766.6- 1767.6] Add some details.
+[ 1767.6- 1770.4] So we have our wonderful Max Musterman here.
+[ 1770.4- 1774.2] points if anyone can figure out what that address is.
+[ 1774.2- 1779.4] Then we attach an empty card, so an empty PayPal account or an empty credit or debit
+[ 1779.4- 1780.9] card would equally work.
+[ 1780.9- 1786.0] I just created a random card in my bank and attached it to an account with zero money
+[ 1786.0- 1789.5] in it, and then attached that card.
+[ 1789.5- 1793.7] They use Stripe as their payment processor, and as far as I'm aware, Stripe does know
+[ 1793.7- 1798.8] how to check that there is money in an account, so this is entirely on that.
+[ 1798.8- 1804.9] You set this payment method as the default payment method for the account, you create
+[ 1804.9- 1810.6] a subscription, start date, whenever, and then you get the subscription.
+[ 1810.6- 1816.8] And it just gives you back the Aztec code, base 64 encoded of the ticket content.
+[ 1816.8- 1820.8] You will then, about five minutes later, receive an email from them saying, oh, we couldn't
+[ 1820.8- 1823.7] charge you for this month's Deutschland ticket, please pay here.
+[ 1823.7- 1826.4] Well, that's great.
+[ 1826.4- 1836.4] already issued the tickets. Good job. So now we get on to how on earth do we fix this mess
+[ 1836.4- 1838.4] for which Maya will continue.
+[ 1838.4- 1847.6] Yes. So as you have heard, a lot is broken. A lot of this is broken almost institutionally,
+[ 1847.6- 1855.8] Whatever.
+[ 1855.8- 1863.9] The problem is Deutsche Bahn operating, of course, a lot of this nation's rail infrastructure
+[ 1863.9- 1870.5] has ticket controllers who do logically do some ticket controlling.
+[ 1870.5- 1875.6] And Deutsche Bahn is a company that does keep logs of all these things, all these tickets
+[ 1875.6- 1881.0] that gets scanned, whether it's a Deutschland ticket or just a ticket one buys on BON.D or
+[ 1881.0- 1885.1] on DABB or wherever.
+[ 1885.1- 1887.5] And so we went digging.
+[ 1887.5- 1888.5] Or well.
+[ 1888.5- 1890.4] The Deutsche BON went digging on our behalf.
+[ 1890.4- 1891.4] Yes.
+[ 1891.4- 1892.4] Rather that.
+[ 1892.4- 1897.8] And they went looking for some Fatter tickets signed with the stolen key.
+[ 1897.8- 1898.8] So key ID one.
+[ 1898.8- 1902.7] More accurately, they looked for the tickets with the signs of fraud that we discussed
+[ 1902.7- 1908.2] earlier, so the miss issuance of saying both fatter and DBregual.
+[ 1908.2- 1916.2] And the Deutsche Bahn found about 50,000 of those tickets, which that's a lower bound,
+[ 1916.2- 1922.3] because of course small regional undertakings, people that take only buses, et cetera, et
+[ 1922.3- 1926.5] cetera, not all Deutsche tickets will be scanned.
+[ 1926.5- 1929.0] Within a month, sometimes one does not get scanned.
+[ 1929.0- 1932.1] This involves a certain amount of luck.
+[ 1932.1- 1934.8] Or if someone is scanned on a different railway company.
+[ 1934.8- 1939.1] For example, in the Saarland, I rarely, if ever, get DB trains from my house.
+[ 1939.1- 1940.9] They're operated by a different company.
+[ 1940.9- 1944.7] So these are only what DB saw.
+[ 1944.7- 1950.5] And there are a lot more Feckhausenften names that exist in Germany than, well, the Deutsche
+[ 1950.5- 1951.8] Bahn.
+[ 1951.8- 1961.1] And so for this value of ticket amount, there's at least 2.9 million euros that were, say,
+[ 1961.1- 1966.0] And that's just what we can see on the one side.
+[ 1966.0- 1969.8] The other side is, of course, the direct debit fraud.
+[ 1969.8- 1979.7] So we have this lovely Zonda Zetseung of the FAO DE FAO where we have a protocol.
+[ 1979.7- 1983.2] And yeah, we'll translate.
+[ 1983.2- 1992.5] But basically the amount of money lost between January 2024 and October 2024 is kind of somewhere
+[ 1992.5- 1998.1] around 267 million euros.
+[ 1998.1- 2001.8] And that's not good.
+[ 2001.8- 2013.2] Because this is fraud that then the Bund and all the various lender financed as a counterparty.
+[ 2013.2- 2019.6] So 267 million euros at 49 euros per month, old price, is kind of equivalent to, well,
+[ 2019.6- 2024.0] is equivalent to 316 million euros at current prices.
+[ 2024.0- 2025.7] And well, it's getting more expensive.
+[ 2025.7- 2027.9] So, but this funny value...
+[ 2027.9- 2029.5] Line go up.
+[ 2029.5- 2031.0] Line go up.
+[ 2031.0- 2038.7] This 316 million euros is a nine and a half brand new ICEs, which we found would be a
+[ 2038.7- 2041.5] nice way to represent this sum of money.
+[ 2041.5- 2045.9] And the way that this 267 million euros is calculated is the
+[ 2045.9- 2050.5] Fau de Fauzer's market research quite regularly on what ticket types people are travelling with.
+[ 2050.5- 2055.1] And they compared the number of people who said they were travelling with the Deutschland ticket
+[ 2055.1- 2059.1] to the number of records of sales of Deutschland tickets they had.
+[ 2059.9- 2064.5] Therefore giving roughly the number of illegitimate Deutschland tickets in circulation.
+[ 2065.3- 2070.6] So, estimate, but still a nice number in the not nice sense of the term.
+[ 2071.5- 2074.7] So, how does one fix payment fraud?
+[ 2074.7- 2079.4] Well, this has been an ongoing problem since payments.
+[ 2079.4- 2086.3] But the one side is, of course, on direct debits is to wait for the debit to clear before
+[ 2086.3- 2087.5] one issues the ticket.
+[ 2087.5- 2093.4] This is the aforementioned problem of one has to wait three, four days before one gets
+[ 2093.4- 2099.4] one's Deutschland ticket.
+[ 2099.4- 2104.7] And that takes a while, and for example, being going to Congress, who will get a Deutschland
+[ 2104.7- 2109.4] ticket two or three days before the event because, oh, hey, it might be more useful,
+[ 2109.4- 2116.5] or they're forgetful, means that, oh, wait, I can't use this ticket until day one.
+[ 2116.5- 2118.5] What the heck?
+[ 2118.5- 2121.5] So that's one way to fix payment fraud.
+[ 2121.5- 2128.6] The other one is, for example, if one is using debit or credit cards, is to rely
+[ 2128.6- 2133.4] on 3D secure which is this magnificent system that a lot of people get very angry at when
+[ 2133.4- 2137.0] it tells them to go confirm something in an app that on their phone they're charging
+[ 2137.0- 2139.2] somewhere else.
+[ 2139.2- 2141.5] This happens all too often.
+[ 2141.5- 2144.8] There's also a confirmation of payee which is another system.
+[ 2144.8- 2149.4] This allows one to check that the name entered for the order matches the name on the bank
+[ 2149.4- 2155.3] account which at least protects against some kind of direct debit fraud.
+[ 2155.3- 2162.7] which might work, will at least help against entering fake I-bands, or completely random
+[ 2162.7- 2163.7] I-bands.
+[ 2163.7- 2169.5] However, and then there is more centralized and effective revocation of issued tickets.
+[ 2169.5- 2178.1] The aforementioned decentralized ticket ratification systems are not cutting it currently.
+[ 2178.1- 2180.9] Another alternative would be to do key management correctly.
+[ 2180.9- 2183.3] Not really an alternative, but we should do both.
+[ 2183.3- 2186.2] We should do both.
+[ 2186.2- 2189.8] Doing key management correctly from anyone that has done key management is actually a
+[ 2189.8- 2198.4] known hard problem, but a not that hard problem as to we lost a key got abstracted.
+[ 2198.4- 2199.4] One more key.
+[ 2199.4- 2201.4] One more key.
+[ 2201.4- 2208.0] So to secure set keys, one probably needs to set a process, a protocol for handling
+[ 2208.0- 2209.5] private keys.
+[ 2209.5- 2214.3] This magical bit of math that means that, well, yeah.
+[ 2214.3- 2216.9] One just keeps the private key stashed away.
+[ 2216.9- 2223.8] And if one messes up, one can enforce penalties and sanctions for messing up, because this
+[ 2223.8- 2229.2] causes a lot of problems, because there is a list of known keys, and that list of known
+[ 2229.2- 2236.5] keys gets compared to and gets pulled in, and updating all this takes a lot of coordination.
+[ 2236.5- 2242.8] the email from before, where it's like, oh, yes, this key is now being rotated.
+[ 2242.8- 2246.7] So this is an ongoing process.
+[ 2246.7- 2252.6] And then if we're going to, like, the best possible way we could do this is, of course,
+[ 2252.6- 2258.6] storing private keys on HSMs, which don't go all keys in theory, and that this storage
+[ 2258.6- 2264.9] gets audited by actual beings going to the actual locations where the HSMs are, and
+[ 2264.9- 2270.9] making sure that first the HSMs are there and that no private keys went walkies.
+[ 2270.9- 2272.9] So we mentioned sanctions, right?
+[ 2272.9- 2275.1] So did Feter get any sanctions?
+[ 2275.1- 2283.0] Well, actually, the contracts that established the DITC don't actually provide any avenues
+[ 2283.0- 2290.8] for punishing companies that find themselves in these situations, which is a bit of a
+[ 2290.8- 2293.3] problem.
+[ 2293.3- 2301.2] Now, the better news is that in Germany, we are moving kind of to a more centralised
+[ 2301.2- 2305.4] issuance of Dutch on tickets under the UIC format.
+[ 2305.4- 2315.5] So the DTVG has started a roll out of the block list for all, well, revoked tickets,
+[ 2315.5- 2316.5] basically.
+[ 2316.5- 2322.8] And this system is now in use by Deutsche Bahn and friends.
+[ 2322.8- 2331.1] So Deutsche Bahn is doing 98% of the usage and friends is the remaining 2%.
+[ 2331.1- 2336.4] However this implies a little bit of collaboration as one would say.
+[ 2336.4- 2339.9] And for this all parties need to work together.
+[ 2339.9- 2343.5] Which Mopla decided to not do.
+[ 2343.5- 2351.8] So to their slight mild credit, they have established a private revocation system that
+[ 2351.8- 2359.5] That does require integration work from every single other that is checking tickets issued
+[ 2359.5- 2366.0] under the mobile system, which is less than ideal, is how we could put this.
+[ 2366.0- 2369.4] But that's kind of it.
+[ 2369.4- 2370.4] So now?
+[ 2370.4- 2374.3] So, yes, we're now coming to the end of our talk.
+[ 2374.3- 2378.5] And before we close, we have a few people we need to thank.
+[ 2378.5- 2383.7] If everyone involved in this project would be on stage, this stage would be full.
+[ 2383.7- 2386.6] It's just the two of us, we can't have everyone up here.
+[ 2386.6- 2391.6] So we must thank Chris at the Deutschland Todiffebund, he has been excellent helpful
+[ 2391.6- 2396.1] and is one of the most competent people I've seen in dealing with ticketing this year.
+[ 2396.1- 2406.8] Everyone at the Deutsche Bahn has also done extremely well.
+[ 2406.8- 2410.1] Everyone at the Deutsche Bahn has also done extremely well in dealing with these issues
+[ 2410.1- 2414.2] and trying to get them resolved in a way that helps everyone, and we particularly like to
+[ 2414.2- 2419.7] thank Clemens and Manuel for spending so much of their time speaking with us.
+[ 2419.7- 2433.2] Kurt of the Flemish Parliament, also involved in the UIC, has been more than welcoming to
+[ 2433.2- 2439.6] us tedious academics in the context of railway standardisation, and then trying to make railway
+[ 2439.6- 2444.4] standardisation, less of an in-group of railways telling each other what to do and actually
+[ 2444.4- 2445.6] take in experts.
+[ 2445.6- 2458.1] So we appreciate that as academics are being asked for our opinions on things sometimes.
+[ 2458.1- 2462.5] And Sat just over here at the front is Anya, who has been doing a lot of this work but
+[ 2462.5- 2464.9] is too nervous to come up on stage.
+[ 2464.9- 2477.8] And finally, we would like to thank someone you probably have heard of before, Flupka,
+[ 2477.8- 2482.1] for helping us manage the disclosure of all of this, because when we came across this,
+[ 2482.1- 2494.7] Our response was panic, which isn't exactly helpful to fixing problems.
+[ 2494.7- 2500.5] And with that, we now have time for your questions.
+[ 2500.5- 2504.6] I believe the Heralds will be organizing questions in some format.
+[ 2504.6- 2520.6] But before that, give a huge applause to Q and Maya.
+[ 2520.6- 2528.2] And yes, indeed, we have plenty of time, not for Q and A, but for Q and Maya.
+[ 2528.2- 2531.1] So we have eight microphones here.
+[ 2531.1- 2535.0] I see someone at microphone 7.
+[ 2535.0- 2536.0] Hi.
+[ 2536.0- 2539.7] Thank you very much for this very interesting talk.
+[ 2539.7- 2549.2] My question was around, so usually big companies suck at technical security, but when money
+[ 2549.2- 2553.8] is involved, they do things.
+[ 2553.8- 2564.0] My question is, can Vacher just print as many as they want and then tell the rest, oh, we've
+[ 2564.0- 2569.8] printed like this many and never get charged for it?
+[ 2569.8- 2575.0] So this is not a problem we have looked into in the course of our work, but it is a very
+[ 2575.0- 2576.8] adjacent problem.
+[ 2576.8- 2583.4] The companies organizing the Deutsche FAN ticket are currently struggling to make sure
+[ 2583.4- 2590.1] that the number of Deutschland tickets reported is the number actually sold, because at the
+[ 2590.1- 2599.2] moment it does appear to be mostly a write a number in this box, please don't lie.
+[ 2599.2- 2603.4] Now there are many technical ways that this could be done.
+[ 2603.4- 2609.1] We are not aware of anything like audited issuance being considered.
+[ 2609.1- 2614.2] The main thing that is being done for this is moving everyone on the UIC system, so not
+[ 2614.2- 2619.5] the Fadef Fals system, but half of the issuers who are using the UIC system to centralised
+[ 2619.5- 2625.6] issuing with the Deutschland Tareefebund, because then you can't deny that you issued
+[ 2625.6- 2631.2] the ticket because there's a log of the APR request happening to sign the ticket.
+[ 2631.2- 2635.2] Which is the thing that is happening in other countries that also have decentralised.
+[ 2635.2- 2641.3] Yes, but this is a research area for us in train ticketing in general.
+[ 2641.3- 2647.3] How do we keep an eye on everyone without centralizing everything because centralization
+[ 2647.3- 2652.4] is bad both for operational risk and for privacy?
+[ 2652.4- 2655.0] This needs work is the answer, basically.
+[ 2655.0- 2656.0] Thanks.
+[ 2656.0- 2657.0] Right.
+[ 2657.0- 2660.7] The signal, Angel, please, a question from the Internet.
+[ 2660.7- 2663.5] Hello.
+[ 2663.5- 2668.3] The internet asks, given the large amount of suspected fraudulent tickets that were
+[ 2668.3- 2673.8] most likely processed or issued by Mopla, they must have been aware of the fraud going
+[ 2673.8- 2675.0] on.
+[ 2675.0- 2676.7] What were their response from them?
+[ 2676.7- 2679.9] Is there an effort to make them liable for being part of the fraud?
+[ 2679.9- 2685.1] So the response, we consider the response from FASTA to also be a response from Mopla
+[ 2685.1- 2688.7] because the two companies are so intertwined.
+[ 2688.7- 2691.9] We have not yet heard a direct response from Mopla.
+[ 2691.9- 2696.2] We invite them to provide a statement but they have not said anything as far as we can
+[ 2696.2- 2700.5] tell everything is going through FATA.
+[ 2700.5- 2704.1] They must have been at least aware, well, they are obviously aware of the fraud going
+[ 2704.1- 2707.8] on because they said, yeah, we looked into this and found that there were empty PayPal
+[ 2707.8- 2709.1] accounts.
+[ 2709.1- 2711.6] So they know that something is going on.
+[ 2711.6- 2717.5] And as we said, there are no penalties in the contracts establishing the Deutsche
+[ 2717.5- 2727.0] for these mistakes. So at the moment, no one can be fined or punished for messing up. These
+[ 2727.0- 2732.3] contracts are being fixed such that people can be fined for messing up, but this is still
+[ 2732.3- 2738.3] a work in progress. All right. Microphone number four.
+[ 2738.3- 2744.9] Thank you for the amazing talk. Seeing how Federer and Mopla have been so uncooperative
+[ 2744.9- 2749.6] and already framing like Zugli as a hacking tool or a bad tool, do you think they're
+[ 2749.6- 2752.7] going to make an attempt at throwing the book at you?
+[ 2752.7- 2756.3] They've already threatened lawyers, it does, but only threatened lawyers.
+[ 2756.3- 2758.1] We have not heard from their lawyers yet.
+[ 2758.1- 2759.6] This is not an invitation.
+[ 2759.6- 2763.5] This is not an invitation to their lawyers.
+[ 2763.5- 2768.2] But maybe, maybe they will.
+[ 2768.2- 2773.4] We like to think we're prepared if this happens, but it will be a shit time for all
+[ 2773.4- 2776.7] involved if they do try and throw the book at us.
+[ 2776.7- 2781.1] We hope that we have done nothing wrong and we think that we have done nothing wrong,
+[ 2781.1- 2786.4] but I'm sure if someone were to spend months on it, they could pick apart something.
+[ 2786.4- 2788.4] Okay.
+[ 2788.4- 2789.4] Microphone number eight.
+[ 2789.4- 2790.4] Hi.
+[ 2790.4- 2794.4] Thank you for your amazing talk and doing this work over the last year.
+[ 2794.4- 2798.4] I think, without you, none of this would even be discovered.
+[ 2798.4- 2804.6] And my question is, you showed a lot of analysis about URC barcodes, but I was wondering, you
+[ 2804.6- 2808.5] also talked about the Fadi Falqar system, I think.
+[ 2808.5- 2814.2] If you see anything in this direction, if there's similar fraud going on?
+[ 2814.2- 2815.9] Not sure I quite understand the question.
+[ 2815.9- 2820.6] So is it that is the Fadi Falqar system also vulnerable in similar ways?
+[ 2820.6- 2821.6] Is that your question?
+[ 2821.6- 2822.6] Yeah, basically.
+[ 2822.6- 2823.6] Okay.
+[ 2823.6- 2824.6] So.
+[ 2824.6- 2827.0] You showed these codes from the URC, but not from the other one.
+[ 2827.0- 2832.3] The answer is yang.
+[ 2832.3- 2836.4] The FADO FOCAR system is a much more complicated system.
+[ 2836.4- 2843.0] It is based on much more smart cards, so these HSMs were mentioned, so that you are moving
+[ 2843.0- 2848.0] more from needing to secure digital files to needing to secure the physical objects
+[ 2848.0- 2851.7] that can issue tickets.
+[ 2851.7- 2860.8] We do think that in the base state, the Foundry File Card system is more secure towards people
+[ 2860.8- 2862.2] being stupid.
+[ 2862.2- 2866.4] But the UIC system when used correctly is equally secure.
+[ 2866.4- 2873.6] It's just that we have seen multiple instances of both systems, although primarily the UIC
+[ 2873.6- 2877.9] system being held wrong, for want of a better phrase.
+[ 2877.9- 2882.7] There is this concept of a problem between share and computer.
+[ 2882.7- 2890.1] There is a certain lack of competence at all of these transport companies because they
+[ 2890.1- 2896.9] know how to run a bus, they don't know how to do cryptography or information security,
+[ 2896.9- 2901.7] and nor do they really have extra budget to hire someone who is genuinely competent
+[ 2901.7- 2902.7] in this.
+[ 2902.7- 2905.5] So they will make silly mistakes.
+[ 2905.5- 2910.4] It would be nice if we design systems such that silly mistakes can't happen, but this
+[ 2910.4- 2912.7] is somewhat difficult.
+[ 2912.7- 2915.0] And in some cases impossible.
+[ 2915.0- 2916.9] Right.
+[ 2916.9- 2919.2] Microphone number two, please.
+[ 2919.2- 2923.0] I was wondering, this company, what kind of company is it?
+[ 2923.0- 2928.8] And, like, is this a private company and can just any private company become a Dutch ticket
+[ 2928.8- 2929.8] sales company?
+[ 2929.8- 2935.5] Or is there some waiting for how do you become a company that is even allowed to sell the
+[ 2935.5- 2936.5] train tickets?
+[ 2936.5- 2941.0] So yes, FATA is just a privately held game.
+[ 2941.0- 2949.1] It is owned by the four members of the FATA family, so father, mother, daughter, son,
+[ 2949.1- 2950.1] I think.
+[ 2950.1- 2955.0] And they all have, there's a complicated web of legal entities in between them to obscure
+[ 2955.0- 2957.9] that these four people do own it.
+[ 2957.9- 2960.5] It's the FATA family that owns it.
+[ 2960.5- 2963.2] They seem to have been going since a while.
+[ 2963.2- 2970.7] They operate some buses in some rural Landklaise in Saksen and Halt.
+[ 2970.7- 2977.5] So the reason they're allowed to issue Deutschland tickets is because they have a contract from
+[ 2977.5- 2981.4] these Landklaise for running their buses.
+[ 2981.4- 2987.7] So if one company wishes to issue Deutschland tickets, then they need to be a bona fide
+[ 2987.7- 2993.6] transport companies, so they are operating services or they are coordinating the operation
+[ 2993.6- 2997.6] of services.
+[ 2997.6- 2998.8] Microphone number four.
+[ 2998.8- 3001.2] Hi, thanks for the talk.
+[ 3001.2- 3006.2] You mentioned FETO's signing key being revoked.
+[ 3006.2- 3007.4] Yes.
+[ 3007.4- 3012.9] Now, revoking individual tickets isn't an issue still, but it isn't an issue for other people.
+[ 3012.9- 3017.7] If they're just revoking an issue in key, people with legitimate tickets lose access.
+[ 3017.7- 3018.7] Yes, this happened.
+[ 3018.7- 3021.3] So, they just lost their ticket over there?
+[ 3021.3- 3022.3] Yes.
+[ 3022.3- 3027.7] The solution that was agreed is that if one went to another member of the Deutschland
+[ 3027.7- 3033.4] Terefabund with their FATA ticket and their bank statement that shows that they actually
+[ 3033.4- 3040.0] paid 58 euros for it and not a smaller amount, they would get a new ticket at no cost.
+[ 3040.0- 3044.1] If they paid less than 58 euros for it, then they were considered to have a fraudulent
+[ 3044.1- 3047.7] ticket and therefore had no ticket.
+[ 3047.7- 3052.8] Even if they didn't intend to have a fraudulent ticket, the only solution that was available
+[ 3052.8- 3057.2] given the way that the security systems were set up was to screw people over.
+[ 3057.2- 3059.8] This did cause some amount of panic.
+[ 3059.8- 3060.8] Yes.
+[ 3060.8- 3061.8] Okay.
+[ 3061.8- 3063.5] Microphone number one.
+[ 3063.5- 3064.5] Hi.
+[ 3064.5- 3071.1] I really need to ask, what did SwissSBB say about their QR code coding?
+[ 3071.1- 3072.7] This was a throwaway comment.
+[ 3072.7- 3073.9] Should we answer?
+[ 3073.9- 3074.9] We can't answer, yes.
+[ 3074.9- 3076.5] This was a throwaway comment, but we can answer.
+[ 3076.5- 3081.8] So we were looking into the SPB tickets, these are not the standard UIC tickets, they have
+[ 3081.8- 3083.1] their own system.
+[ 3083.1- 3088.6] I can't remember the exact quote that was given to us, but the quote was somewhere
+[ 3088.6- 3093.4] along the lines of we had done some reverse engineering and we asked them can you confirm
+[ 3093.4- 3096.8] that we have reverse engineered this correctly or do you have any more details that we could
+[ 3096.8- 3097.8] have?
+[ 3097.8- 3100.1] And their response was what the hell are you doing?
+[ 3100.1- 3107.2] the only devices that can and are allowed to read our bar codes are our control devices.
+[ 3107.2- 3112.6] Yes, because the QR code is of course a protected thing now.
+[ 3112.6- 3113.6] Yes.
+[ 3113.6- 3118.0] One cannot analyze despite the data being there.
+[ 3118.0- 3120.0] This gives us an interesting conundrum.
+[ 3120.0- 3121.0] Yes.
+[ 3121.0- 3122.8] And a few left.
+[ 3122.8- 3128.3] We did laugh at that email, yes.
+[ 3128.3- 3129.6] Microphone free.
+[ 3129.6- 3136.2] So a practical issue from the UIC tickets, since they were introduced in December by
+[ 3136.2- 3145.8] various issuers, we have seen in the local bus network that no buses have been able to
+[ 3145.8- 3155.2] properly verify them and all of them show up as incorrectly signed despite working elsewhere.
+[ 3155.2- 3160.1] Is this due to having to contact a central authority for it?
+[ 3160.1- 3166.4] Or is this probably something that they have not rolled out the keys?
+[ 3166.4- 3170.4] So there's two things that can be happening here.
+[ 3170.4- 3177.3] First is the computers that are used on buses generally, until the Deutschland ticket existed,
+[ 3177.3- 3181.8] only ever expected a Fadefau barcode to exist.
+[ 3181.8- 3188.0] In places where Deutsche Bahn operated the city ticket, this is issued as a UIC barcode,
+[ 3188.0- 3193.6] so those buses could understand the UIC barcode because they had to to understand the Deutsche
+[ 3193.6- 3194.9] Bahn city ticket.
+[ 3194.9- 3200.1] When the Deutsche Bahn ticket happened, it was rolled out at such a pace that still to
+[ 3200.1- 3204.2] this day a lot of these bus computers haven't been updated to understand this different
+[ 3204.2- 3206.1] barcode format.
+[ 3206.1- 3212.2] The other thing is that, yes, these keys are just emailed around in a spreadsheet once
+[ 3212.2- 3218.0] a month, and it is up to someone at the bus company to notice this email, pull the keys
+[ 3218.0- 3223.3] out, usually plug in a serial cable to this bus computer and upload the new keys.
+[ 3223.3- 3224.9] So they may have just forgotten.
+[ 3224.9- 3225.9] Okay.
+[ 3225.9- 3229.6] So the point being, I will email my bus company and pray.
+[ 3229.6- 3230.6] Yes.
+[ 3230.6- 3232.7] I can't offer any more advice than that.
+[ 3232.7- 3238.6] Yeah, this is very much key management and bus companies, not necessarily.
+[ 3238.6- 3240.6] Bus companies are bus companies.
+[ 3240.6- 3242.8] They're not IT companies.
+[ 3242.8- 3243.8] All right.
+[ 3243.8- 3245.4] Microphone number seven.
+[ 3245.4- 3246.4] Yes.
+[ 3246.4- 3256.0] So I met many people actually in February who had tickets, who bought them from dticket.su.
+[ 3256.0- 3260.6] And they were really upset and confused.
+[ 3260.6- 3265.5] They mostly couldn't speak German.
+[ 3265.5- 3270.0] Then they were told the tickets weren't valid anymore, even though they were valid a few
+[ 3270.0- 3272.6] days ago.
+[ 3272.6- 3282.2] Of course, when the tickets were controlled, they were expected to pay the 60 euro fine.
+[ 3282.2- 3287.7] I even met someone who then had a run-in with the police.
+[ 3287.7- 3293.1] I don't know, I wanted to ask you, have you maybe asked Feta or any of the other companies
+[ 3293.1- 3302.3] involved if they intend to pay those fines, or I don't know if the fines could be revoked
+[ 3302.3- 3303.3] or something?
+[ 3303.3- 3305.8] Do you know anything about that?
+[ 3305.8- 3310.7] So from the content of the slides, you may have noticed that Feta's response is we did
+[ 3310.7- 3312.3] nothing wrong.
+[ 3312.3- 3314.8] And then some mild liability shift to MoPla.
+[ 3314.8- 3326.4] So they don't seem predisposed to ping everyone else's fines due to their keys absconding,
+[ 3326.4- 3332.8] which isn't great, but we don't really have further comments on that.
+[ 3332.8- 3336.0] On the fines, these fines should be cancelled.
+[ 3336.0- 3342.2] The emails that we have seen about this key being revoked are very much written in the
+[ 3342.2- 3347.9] tone of please be nice to these people whose key has been revoked, it's not their fault.
+[ 3347.9- 3353.1] They are not the usual people doing schwarzwahren.
+[ 3353.1- 3355.5] They had no intent to do this.
+[ 3355.5- 3360.1] Unfortunately, the rules of the railway state that they have to be issued with a 60 euro
+[ 3360.1- 3369.2] fine on the spot, but the internal policy should be that they can go back to the company
+[ 3369.2- 3373.6] that issued this fine and proved that they had no ill intent and that they paid this
+[ 3373.6- 3378.7] 58 euros correctly for a Deutschland ticket and it wasn't their fault and the fine should
+[ 3378.7- 3384.4] be cancelled. We can't say that it must be cancelled because no one expected this when
+[ 3384.4- 3390.3] writing the rules. So there is no procedure for this. This is operating mostly on goodwill.
+[ 3390.3- 3392.4] RFC 2119.
+[ 3392.4- 3393.4] Yes.
+[ 3393.4- 3400.6] Right. Another question from the internet, please.
+[ 3400.6- 3406.3] Okay. The Internet asks. For example, Transdev also offers tickets that can be downloaded
+[ 3406.3- 3412.1] to the Google or Apple Wallet. In that case, only the check against the two blacklists would
+[ 3412.1- 3418.0] apply, I suppose. What about multiple use? Since the tickets are easy to pass on, also
+[ 3418.0- 3424.0] a reason for missing money due to multi-usage by multiple people? Question mark.
+[ 3424.0- 3429.2] So the first assumption in that question is wrong.
+[ 3429.2- 3434.5] Google and Apple Wallet have methods for remotely revoking tickets.
+[ 3434.5- 3440.6] We use these in Tukhli now, so as a result of all of this mess, Tukhli now receives revocation
+[ 3440.6- 3442.7] lists for some tickets.
+[ 3442.7- 3447.7] So in an effort to combat Tukhli being used as a ticket laundromat, we now do remote
+[ 3447.7- 3453.9] revocation of tickets if we notice that the ticket ID has been revoked.
+[ 3453.9- 3459.1] The trans dev system and all the others are perfectly capable of remotely deleting a
+[ 3459.1- 3463.2] ticket from someone's Google Wallet.
+[ 3463.2- 3469.2] At least in the case of Google Wallet, it is possible to set flags that stop this ticket
+[ 3469.2- 3474.4] being copied across multiple Android phones, and Google just take the hash of the ticket
+[ 3474.4- 3478.6] barcode and check to see if this has been ever installed on another Android phone and
+[ 3478.6- 3481.2] if it has, it will stop you showing it on another phone.
+[ 3481.2- 3487.1] This doesn't stop screen shots, and Apple is far less strict about doing this, partly
+[ 3487.1- 3490.3] out of data privacy concerns.
+[ 3490.3- 3496.3] The correct method to stop ticket reuse is that ticket inspectors are supposed to compare
+[ 3496.3- 3499.5] your Deutschland ticket against your ID card.
+[ 3499.5- 3504.6] So they are supposed to always ask you for your ticket and your ID card and check that
+[ 3504.6- 3509.3] you are the person on the ID and that the name on the ID matches the name of the ticket.
+[ 3509.3- 3515.4] This does slow down checks, but it's a barcode.
+[ 3515.4- 3516.7] It can be copied.
+[ 3516.7- 3519.3] This is about the best we have at the moment.
+[ 3519.3- 3520.3] Okay.
+[ 3520.3- 3525.2] And one short last question from microphone number six, please.
+[ 3525.2- 3532.5] So you said that we know that there are companies that when they are controlling tickets are
+[ 3532.5- 3536.3] not comparing those tickets to the published revocation list.
+[ 3536.3- 3537.3] Yes.
+[ 3537.3- 3543.5] Do we know anything else about what those companies might also be forgetting to check?
+[ 3543.5- 3549.3] Are they checking, for example, that it is actually signed by a known public transport
+[ 3549.3- 3550.3] company?
+[ 3550.3- 3553.7] Are they checking perhaps that it is signed at all?
+[ 3553.7- 3561.8] So the company will remain nameless for reasons of not wanting to give everyone instructions
+[ 3561.8- 3566.1] on how to do far too far, but let's just say they're relatively large.
+[ 3566.1- 3573.5] We have seen examples of a ticket control app where if the key ID is known and the signature
+[ 3573.5- 3575.3] is false, it will error.
+[ 3575.3- 3581.3] But if the key ID is unknown, so it's signed with an unknown key, it never runs the signature
+[ 3581.3- 3586.0] verification code and therefore never set the this ticket is invalid flag.
+[ 3586.0- 3587.8] That's exactly what I expected, thank you.

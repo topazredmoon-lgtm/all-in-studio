@@ -1,0 +1,24 @@
+{
+ "cc_vibe_aibuild": {
+  "mp4": "https://cdn.media.ccc.de/congress/2025/h264-hd/39c3-1712-eng-When_Vibe_Scammers_Met_Vibe_Hackers_Pwning_PhaaS_with_Their_Own_Weapons.mp4",
+  "audio": ".cc-src/aibm/vibe-scammers.opus",
+  "t0": 64.0,
+  "t1": 77.4,
+  "title": "When Vibe Scammers Met Vibe Hackers: Pwning PhaaS with Their Own Weapons",
+  "author": "Chiao-Lin Yu (Steven Meow) · 39C3 (media.ccc.de)",
+  "licence": "CC BY 4.0",
+  "page": "https://media.ccc.de/v/39c3-when-vibe-scammers-met-vibe-hackers-pwning-phaas-with-their-own-weapons",
+  "words": ""
+ },
+ "cc_gai_spot": {
+  "mp4": "https://cdn.media.ccc.de/events/god/2024/h264-hd/god2024-56275-eng-GenAI_in_the_Battle_of_Security_Attacks_Defenses_and_the_Laws_Shaping_AIs_Future_hd.mp4",
+  "audio": ".cc-src/aibm/genai-in-the-battle.mp3",
+  "t0": 545.7,
+  "t1": 556.1,
+  "title": "GenAI in the Battle of Security: Attacks, Defenses, and the Laws Shaping AI's Future",
+  "author": "Niklas Bunzel, Raphael Antonius Frick · Fraunhofer SIT · GoD 2024 (media.ccc.de)",
+  "licence": "CC BY-SA 4.0",
+  "page": "https://media.ccc.de/v/god2024-56275-genai-in-the-battle-of-sec",
+  "words": ""
+ }
+}

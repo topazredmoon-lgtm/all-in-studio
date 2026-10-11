@@ -207,8 +207,18 @@
    }
   },
   {
+   "id": "c02",
+   "clip": {
+    "src": "aibm/cc_id_shops.mp4",
+    "from": 2.2,
+    "to": 10.28,
+    "plate": "Alexej Hock & Max Bernhard · fraud researchers · 38C3",
+    "fadeOut": 0.08
+   }
+  },
+  {
    "id": "g04",
-   "vo": "By the end, you'll know who sells these tools, who really pays for them, and the one word that beats a cloned voice.",
+   "vo": "A shop of shops. By the end, you'll know who sells these tools, who really pays for them, and the one word that beats a cloned voice.",
    "shot": {
     "cuts": [
      {
@@ -322,7 +332,7 @@
   },
   {
    "id": "s02",
-   "vo": "Inside, it feels like any online store. Product pictures, star ratings, and even customer support.",
+   "vo": "Inside, it feels like any online store, with product pictures and star ratings. One researcher broke into a scam gang's system, and found this.",
    "shot": {
     "cuts": [
      {
@@ -352,6 +362,45 @@
       "L": {
        "v": "LineIcon",
        "surface": "bare",
+       "name": "person",
+       "label": "a researcher"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "browser",
+       "label": "scam system",
+       "enter": "system",
+       "mark": "no",
+       "markAt": "broke"
+      },
+      "cap": "a researcher *broke in*",
+      "at": "researcher"
+     }
+    ],
+    "act": "02 the shop"
+   }
+  },
+  {
+   "id": "c04",
+   "clip": {
+    "src": "aibm/cc_vibe_support.mp4",
+    "from": 0.3,
+    "to": 14.35,
+    "plate": "Chiao-Lin Yu · hacked scam gangs' websites · 39C3"
+   }
+  },
+  {
+   "id": "s03",
+   "vo": "Even customer support. And what's on the shelves? Stolen card numbers, hacked accounts, even whole identities: a name, a selfie and a photo of an I.D. card.",
+   "say": "Even customer support. And what's on the shelves? Stolen card numbers, hacked accounts, even whole identities: a name, a selfie and a photo of an I D card.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
        "name": "worker",
        "label": "help desk"
       },
@@ -362,29 +411,8 @@
        "enter": "customer",
        "by": "support"
       },
-      "cap": "even *customer support*",
-      "at": "customer"
-     }
-    ],
-    "act": "02 the shop"
-   }
-  },
-  {
-   "id": "c02",
-   "clip": {
-    "src": "aibm/cc_id_shops.mp4",
-    "from": 2.2,
-    "to": 10.28,
-    "plate": "Alexej Hock & Max Bernhard · fraud researchers · 38C3",
-    "fadeOut": 0.08
-   }
-  },
-  {
-   "id": "s03",
-   "vo": "That's the shop. And what's on the shelves? Stolen card numbers, hacked accounts, even whole identities: a name, a selfie and a photo of an I.D. card.",
-   "say": "That's the shop. And what's on the shelves? Stolen card numbers, hacked accounts, even whole identities: a name, a selfie and a photo of an I D card.",
-   "shot": {
-    "cuts": [
+      "cap": "even *customer support*"
+     },
      {
       "layout": "split",
       "L": {
@@ -486,11 +514,36 @@
    }
   },
   {
+   "id": "c14",
+   "clip": {
+    "src": "aibm/cc_vibe_aibuild.mp4",
+    "from": 0.3,
+    "to": 13.85,
+    "plate": "Chiao-Lin Yu · hacked scam gangs' websites · 39C3"
+   }
+  },
+  {
    "id": "w01",
-   "vo": "In twenty twenty-three, a chatbot called WormGPT went on sale on a hacking forum, for sixty euros a month.",
-   "say": "In twenty twenty-three, a chatbot called Worm G P T went on sale on a hacking forum, for sixty euros a month.",
+   "vo": "It started with chatbots. In twenty twenty-three, a chatbot called WormGPT went on sale on a hacking forum, for sixty euros a month.",
+   "say": "It started with chatbots. In twenty twenty-three, a chatbot called Worm G P T went on sale on a hacking forum, for sixty euros a month.",
    "shot": {
     "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "label": "chatbots"
+      },
+      "R": {
+       "v": "CalendarCard",
+       "surface": "bare",
+       "year": "2023",
+       "enter": "2023"
+      },
+      "cap": "it started with *chatbots*"
+     },
      {
       "layout": "split",
       "L": {
@@ -506,7 +559,8 @@
        "name": "wormgpt",
        "enter": "chatbot"
       },
-      "cap": "a *hacking forum*"
+      "cap": "*WormGPT*, for sale",
+      "at": "chatbot#2"
      },
      {
       "layout": "full",
@@ -682,10 +736,65 @@
    }
   },
   {
-   "id": "w05",
-   "vo": "So a scammer who can't write good English now sends perfect emails, in any language, by the thousand.",
+   "id": "w04b",
+   "vo": "Others go further, and cut the refusal right out of the model.",
    "shot": {
     "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "label": "the model"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "mark": "no",
+       "markAt": "refusal",
+       "label": "no refusal",
+       "enter": "refusal"
+      },
+      "cap": "the *refusal*, cut out"
+     }
+    ],
+    "act": "03 the chatbot that says yes"
+   }
+  },
+  {
+   "id": "c05",
+   "clip": {
+    "src": "aibm/cc_llm_refuse.mp4",
+    "from": 0.42,
+    "to": 8.15,
+    "plate": "Anykey · on uncensored AI models · Hacker Hotel 2025",
+    "fadeOut": 0.1
+   }
+  },
+  {
+   "id": "w05",
+   "vo": "A chatbot that never says no. So a scammer who can't write good English now sends perfect emails, in any language, by the thousand.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "label": "never says no"
+      },
+      "R": {
+       "v": "ChatBox",
+       "surface": "bare",
+       "ask": "write a scam email",
+       "mode": "comply",
+       "replyAt": "never"
+      },
+      "cap": "it never *says no*"
+     },
      {
       "layout": "split",
       "L": {
@@ -704,7 +813,8 @@
        "label": "perfect email",
        "reveal": true
       },
-      "cap": "*perfect* emails"
+      "cap": "*perfect* emails",
+      "at": "scammer"
      },
      {
       "layout": "split",
@@ -828,7 +938,7 @@
   },
   {
    "id": "k03",
-   "vo": "The kit gives you the fake pages, a control panel to watch the victims come in, and a help desk.",
+   "vo": "The kit gives you the fake pages, a control panel to watch the victims come in, and a help desk. Here's how one deal works.",
    "shot": {
     "cuts": [
      {
@@ -886,16 +996,66 @@
       },
       "cap": "and a *help desk*",
       "at": "help"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "person",
+       "label": "the buyer"
+      },
+      "R": {
+       "v": "Channel",
+       "surface": "bare",
+       "posts": [
+        "envelope",
+        "browser",
+        "key"
+       ],
+       "at": "deal",
+       "enter": "deal"
+      },
+      "cap": "how *one deal* works",
+      "at": "Here"
      }
     ],
     "act": "04 scams for rent"
    }
   },
   {
+   "id": "c06",
+   "clip": {
+    "src": "aibm/cc_phish_support.mp4",
+    "from": 0.4,
+    "to": 12.95,
+    "plate": "Karl Lovink · tracks phishing-kit sellers · Hacker Hotel 2025"
+   }
+  },
+  {
    "id": "k04",
-   "vo": "The newest kits even beat the six-digit code from your phone. The fake page sits in the middle and passes your code to the real site, live.",
+   "vo": "The best support you can get. And the newest kits even beat the six-digit code from your phone. The fake page sits in the middle and passes your code to the real site, live.",
    "shot": {
     "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "worker",
+       "label": "the seller"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "shield",
+       "mark": "ok",
+       "markAt": "best",
+       "label": "support",
+       "enter": "support"
+      },
+      "cap": "the *best support*"
+     },
      {
       "layout": "split",
       "L": {
@@ -910,7 +1070,8 @@
        "site": "your-bank.com",
        "codeAt": "code"
       },
-      "cap": "even the *six-digit code*"
+      "cap": "even the *six-digit code*",
+      "at": "newest"
      },
      {
       "layout": "full",
@@ -983,6 +1144,48 @@
       },
       "cap": "the password *doesn't matter*",
       "at": "password"
+     }
+    ],
+    "act": "04 scams for rent"
+   }
+  },
+  {
+   "id": "c07",
+   "clip": {
+    "src": "aibm/cc_aitm_proxy.mp4",
+    "from": 0.5,
+    "to": 13.1,
+    "plate": "Rik van Duijn & Wesley Neelen · phishing researchers · WHY2025"
+   }
+  },
+  {
+   "id": "k06",
+   "vo": "A fake page in the middle of every login, passing everything on, live.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Flow",
+       "surface": "bare",
+       "nodes": [
+        {
+         "icon": "laptop",
+         "label": "every login"
+        },
+        {
+         "icon": "browser",
+         "label": "fake page",
+         "at": "fake"
+        },
+        {
+         "icon": "cookie",
+         "label": "copied",
+         "at": "passing"
+        }
+       ]
+      },
+      "cap": "a fake page *in the middle*"
      }
     ],
     "act": "04 scams for rent"
@@ -1079,10 +1282,38 @@
    }
   },
   {
+   "id": "c08",
+   "clip": {
+    "src": "aibm/cc_victim_login.mp4",
+    "from": 0.3,
+    "to": 11.95,
+    "plate": "Frank Breedijk · warns hacking victims (DIVD) · WHY2025"
+   }
+  },
+  {
    "id": "i03",
-   "vo": "Logs are sold in bulk. When police shut down one market, Genesis, in twenty twenty-three, it held over eighty million stolen logins.",
+   "vo": "Why break in, when you can buy the key? Logs are sold in bulk. When police shut down one market, Genesis, in twenty twenty-three, it held over eighty million stolen logins.",
    "shot": {
     "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "gateShut",
+       "label": "break in"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "key",
+       "label": "buy the key",
+       "enter": "buy",
+       "mark": "ok",
+       "markAt": "key"
+      },
+      "cap": "why break in? *buy the key*"
+     },
      {
       "layout": "split",
       "L": {
@@ -1103,7 +1334,8 @@
        "enter": "bulk",
        "at": "bulk"
       },
-      "cap": "logs sold *in bulk*"
+      "cap": "logs sold *in bulk*",
+      "at": "Logs"
      },
      {
       "layout": "split",
@@ -1217,10 +1449,39 @@
    }
   },
   {
+   "id": "c15",
+   "clip": {
+    "src": "aibm/cc_gai_spot.mp4",
+    "from": 0.3,
+    "to": 11.35,
+    "plate": "Niklas Bunzel · Fraunhofer SIT · GoD 2024",
+    "fadeOut": 0.08
+   }
+  },
+  {
    "id": "d03",
-   "vo": "Every face on that call was a deepfake. He sent twenty-five million dollars.",
+   "vo": "Hard to tell apart. And every face on that call was a deepfake. He sent twenty-five million dollars.",
    "shot": {
     "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "face",
+       "label": "real"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "face",
+       "label": "fake?",
+       "enter": "Hard",
+       "mark": "?",
+       "markAt": "tell"
+      },
+      "cap": "*hard to tell* apart"
+     },
      {
       "layout": "full",
       "hero": {
@@ -1233,7 +1494,8 @@
        "real": 3,
        "fakeAt": "face"
       },
-      "cap": "every face *was fake*"
+      "cap": "every face *was fake*",
+      "at": "every"
      },
      {
       "layout": "full",
@@ -1336,6 +1598,50 @@
     "from": 0.62,
     "to": 18.1,
     "plate": "Niklas Bunzel · Fraunhofer SIT · GoD 2024"
+   }
+  },
+  {
+   "id": "v04",
+   "vo": "Those few seconds are easy to find: a video you posted, or a short call where you only said hello.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "camera",
+       "label": "your video"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "monitor",
+       "label": "a few seconds",
+       "enter": "video",
+       "reveal": true
+      },
+      "cap": "a video *you posted*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "PhoneCall",
+       "surface": "bare",
+       "name": "unknown"
+      },
+      "R": {
+       "v": "Bubble",
+       "surface": "bare",
+       "text": "hello?",
+       "enter": "hello",
+       "by": "you"
+      },
+      "cap": "or just *hello*",
+      "at": "short"
+     }
+    ],
+    "act": "07 fake voices"
    }
   },
   {
@@ -1580,8 +1886,17 @@
    }
   },
   {
+   "id": "c10",
+   "clip": {
+    "src": "aibm/cc_nk_mules.mp4",
+    "from": 0.3,
+    "to": 9.6,
+    "plate": "Simon Wijckmans · catches fake job applicants · EMF Camp 2026"
+   }
+  },
+  {
    "id": "j04",
-   "vo": "The scheme got jobs at three hundred and nine companies, and made seventeen million dollars. She got eight and a half years in prison.",
+   "vo": "Her scheme, in Arizona, got jobs at three hundred and nine companies, and made seventeen million dollars. She got eight and a half years in prison.",
    "shot": {
     "cuts": [
      {
@@ -1606,7 +1921,8 @@
         "at": "309"
        },
        "enter": "309",
-       "plate": "us justice dept · july 2025"
+       "plate": "us justice dept · july 2025",
+       "reveal": true
       },
       "cap": "*309* companies"
      },
@@ -1710,22 +2026,67 @@
    }
   },
   {
+   "id": "c11",
+   "clip": {
+    "src": "aibm/cc_vibe_company.mp4",
+    "from": 0.3,
+    "to": 9.8,
+    "plate": "Chiao-Lin Yu · inside a scam gang's chat · 39C3"
+   }
+  },
+  {
    "id": "p02",
-   "vo": "The buyers play a numbers game: a million cheap tries, and only a few have to work.",
+   "vo": "A real company, with sales targets. And the buyers play a numbers game: a million cheap tries, and only a few have to work.",
    "shot": {
     "cuts": [
      {
-      "layout": "full",
-      "hero": {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "building",
+       "label": "a real company"
+      },
+      "R": {
+       "v": "Bars",
+       "surface": "bare",
+       "bars": [
+        {
+         "v": 3,
+         "t": "sales"
+        },
+        {
+         "v": 5,
+         "t": "target",
+         "at": "targets",
+         "c": "red"
+        }
+       ],
+       "enter": "sales"
+      },
+      "cap": "a company, with *targets*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "people",
+       "label": "the buyers"
+      },
+      "R": {
        "v": "IconRow",
        "surface": "bare",
        "name": "envelope",
        "n": 40,
-       "cols": 10,
+       "cols": 8,
        "every": 1,
-       "at": 0
+       "at": "numbers",
+       "enter": "numbers",
+       "reveal": true
       },
-      "cap": "a *numbers game*"
+      "cap": "a *numbers game*",
+      "at": "buyers"
      },
      {
       "layout": "full",
@@ -1852,7 +2213,8 @@
   },
   {
    "id": "p04",
-   "vo": "And that's only what people report. Most victims never do.",
+   "vo": "And that's only what people report. Most victims never do. The good news? Defenders use A.I. too.",
+   "say": "And that's only what people report. Most victims never do. The good news? Defenders use A I too.",
    "shot": {
     "cuts": [
      {
@@ -1876,9 +2238,39 @@
        "reveal": true
       },
       "cap": "most *never report*"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "shield",
+       "label": "defenders"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "robot",
+       "mark": "ok",
+       "markAt": "use",
+       "label": "ai, too",
+       "enter": "Defenders"
+      },
+      "cap": "defenders use *AI too*",
+      "at": "good"
      }
     ],
     "act": "09 who cashes in"
+   }
+  },
+  {
+   "id": "c12",
+   "clip": {
+    "src": "aibm/cc_vibe_aivsai.mp4",
+    "from": 0.3,
+    "to": 6.44,
+    "plate": "Chiao-Lin Yu · 39C3",
+    "fadeOut": 0.05
    }
   },
   {
@@ -2074,6 +2466,16 @@
      }
     ],
     "act": "10 how to stay safe"
+   }
+  },
+  {
+   "id": "c13",
+   "clip": {
+    "src": "aibm/cc_aitm_passkeys.mp4",
+    "from": 0.3,
+    "to": 15.35,
+    "plate": "Rik van Duijn & Wesley Neelen · WHY2025",
+    "fadeOut": 0.08
    }
   },
   {

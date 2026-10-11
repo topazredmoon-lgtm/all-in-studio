@@ -13,7 +13,8 @@
   "lic": "{\"copyright\": \"Licensed to the public under https://creativecommons.org/licenses/by/4.0/\"}",
   "link": "https://media.ccc.de/v/why2025-167-aitm-panels-and-sellers",
   "key": "aitm-panels",
-  "local": "aitm-panels.opus"
+  "local": "aitm-panels.opus",
+  "transcribed": true
  },
  "emf2026-215-1-north-korean-agent-looking-for-a-job": {
   "title": "North Korean agent looking for a job",
@@ -28,7 +29,8 @@
   "lic": "{\"copyright\": \"Licensed to the public under https://creativecommons.org/licenses/by-sa/4.0/\"}",
   "link": "https://media.ccc.de/v/emf2026-215-1-north-korean-agent-looking-for-a-job",
   "key": "north-korean",
-  "local": "north-korean.m4a"
+  "local": "north-korean.m4a",
+  "transcribed": true
  },
  "37c3-12292-new_important_instructions": {
   "title": "NEW IMPORTANT INSTRUCTIONS",
@@ -43,7 +45,8 @@
   "lic": "{\"copyright\": \"Licensed to the public under http://creativecommons.org/licenses/by/4.0\"}",
   "link": "https://media.ccc.de/v/37c3-12292-new_important_instructions",
   "key": "new-important",
-  "local": "new-important.opus"
+  "local": "new-important.opus",
+  "transcribed": true
  },
  "38c3-identity-theft-credit-card-fraud-and-cloaking-services-how-state-sponsored-propaganda-makes-use-of-the-cyber-criminal-toolbox": {
   "title": "identity theft, credit card fraud and cloaking services \u2013 how state-sponsored propaganda makes use of the cyber criminal toolbox",
@@ -59,7 +62,8 @@
   "lic": "{\"copyright\": \"Licensed to the public under http://creativecommons.org/licenses/by/4.0\"}",
   "link": "https://media.ccc.de/v/38c3-identity-theft-credit-card-fraud-and-cloaking-services-how-state-sponsored-propaganda-makes-use-of-the-cyber-criminal-toolbox",
   "key": "identity-theft",
-  "local": "identity-theft.mp3"
+  "local": "identity-theft.mp3",
+  "transcribed": true
  },
  "why2025-203-scaling-up-victim-notification-because-crededential-theft-is-scaling-up-too": {
   "title": "Scaling up victim notification, because crededential theft is scaling up too...",
@@ -74,7 +78,8 @@
   "lic": "{\"copyright\": \"Licensed to the public under https://creativecommons.org/licenses/by/4.0/\"}",
   "link": "https://media.ccc.de/v/why2025-203-scaling-up-victim-notification-because-crededential-theft-is-scaling-up-too",
   "key": "victim-notif",
-  "local": "victim-notif.opus"
+  "local": "victim-notif.opus",
+  "transcribed": true
  },
  "2025-184-a-criminal-and-victim-view-of-phishing-and-phishing-panels-live-of-stage-": {
   "title": "A criminal, and victim view of phishing and phishing panels, live of stage.",
@@ -89,7 +94,8 @@
   "lic": "{\"copyright\": \"Licensed to the public under http://creativecommons.org/licenses/by/4.0\"}",
   "link": "https://media.ccc.de/v/2025-184-a-criminal-and-victim-view-of-phishing-and-phishing-panels-live-of-stage-",
   "key": "phish-panels",
-  "local": "phish-panels.mp3"
+  "local": "phish-panels.mp3",
+  "transcribed": true
  },
  "rc3-469598-but_this_politician_said_xyz_no_commentary": {
   "title": "But this politician said \u00abxyz\u00bb! - no Commentary",
@@ -104,7 +110,8 @@
   "lic": "{\"copyright\": \"Licensed to the public under https://creativecommons.org/licenses/by/4.0/\"}",
   "link": "https://media.ccc.de/v/rc3-469598-but_this_politician_said_xyz_no_commentary",
   "key": "politician",
-  "local": "politician.mp3"
+  "local": "politician.mp3",
+  "transcribed": true
  },
  "god2024-56275-genai-in-the-battle-of-sec": {
   "title": "GenAI in the Battle of Security: Attacks, Defenses, and the Laws Shaping AI's Future",
@@ -120,7 +127,8 @@
   "lic": "{\"copyright\": \"Licensed to the public under https://creativecommons.org/licenses/by-sa/4.0/ \"}",
   "link": "https://media.ccc.de/v/god2024-56275-genai-in-the-battle-of-sec",
   "key": "genai-in-the-battle",
-  "local": "genai-in-the-battle.mp3"
+  "local": "genai-in-the-battle.mp3",
+  "transcribed": true
  },
  "2025-186-how-do-models-like-chatgpt-llm-work-can-you-hack-them-and-run-them-offline-": {
   "title": "How do models like ChatGPT (LLM) work, can you hack them and run them offline?",
@@ -135,7 +143,8 @@
   "lic": "{\"copyright\": \"Licensed to the public under http://creativecommons.org/licenses/by/4.0\"}",
   "link": "https://media.ccc.de/v/2025-186-how-do-models-like-chatgpt-llm-work-can-you-hack-them-and-run-them-offline-",
   "key": "llm-hack",
-  "local": "llm-hack.opus"
+  "local": "llm-hack.opus",
+  "transcribed": true
  },
  "39c3-skynet-starter-kit-from-embodied-ai-jailbreak-to-remote-takeover-of-humanoid-robots": {
   "title": "Skynet Starter Kit",
@@ -150,7 +159,8 @@
   "mp4": "https://cdn.media.ccc.de/congress/2025/h264-hd/39c3-1760-eng-Skynet_Starter_Kit_From_Embodied_AI_Jailbreak_to_Remote_Takeover_of_Humanoid_Robots.mp4",
   "opus": "https://cdn.media.ccc.de/congress/2025/mp3-translated/39c3-1760-deu-Skynet_Starter_Kit_From_Embodied_AI_Jailbreak_to_Remote_Takeover_of_Humanoid_Robots_mp3-2.mp3",
   "lic": "{\"copyright\": \"Licensed to the public under http://creativecommons.org/licenses/by/4.0\"}",
-  "link": "https://media.ccc.de/v/39c3-skynet-starter-kit-from-embodied-ai-jailbreak-to-remote-takeover-of-humanoid-robots"
+  "link": "https://media.ccc.de/v/39c3-skynet-starter-kit-from-embodied-ai-jailbreak-to-remote-takeover-of-humanoid-robots",
+  "transcribed": false
  },
  "39c3-when-vibe-scammers-met-vibe-hackers-pwning-phaas-with-their-own-weapons": {
   "title": "When Vibe Scammers Met Vibe Hackers: Pwning PhaaS with Their Own Weapons",
@@ -167,7 +177,8 @@
   "key": "vibe-scammers",
   "desc": "What happens when AI-powered criminals meet AI-powered hunters? A technical arms race where both sides are vibing their way through exploitation\u2014and the backdoors write themselves.\n\nIn October 2025, we investigated Taiwan's fake delivery scam ecosystem targeting convenience store customers. What sta",
   "local": "vibe-scammers.opus",
-  "licence_tag": "TAG:copyright=Licensed to the public under http://creativecommons.org/licenses/by/4.0"
+  "licence_tag": "TAG:copyright=Licensed to the public under http://creativecommons.org/licenses/by/4.0",
+  "transcribed": true
  },
  "39c3-light-in-the-dark-net": {
   "title": "Light in the Dark(net)",
@@ -184,7 +195,8 @@
   "key": "darknet-tor",
   "desc": "Science is hard and research into the usage of the Tor network is especially so. Since it was designed to counter suveillance, it gathering reliable information is difficult. As a consequence, the studies we do have, have yielded very different results.\n\nThis talk investigates the root causes of con",
   "local": "darknet-tor.opus",
-  "licence_tag": "TAG:copyright=Licensed to the public under http://creativecommons.org/licenses/by/4.0"
+  "licence_tag": "TAG:copyright=Licensed to the public under http://creativecommons.org/licenses/by/4.0",
+  "transcribed": true
  },
  "39c3-all-my-deutschlandtickets-gone-fraud-at-an-industrial-scale": {
   "title": "All my Deutschlandtickets gone: Fraud at an industrial scale",
@@ -202,7 +214,8 @@
   "key": "ticket-fraud",
   "desc": "The Deutschlandticket was the flagship transport policy of the last government, rolled out in an impressive timescale for a political project; but this speed came with a cost - a system ripe for fraud at an industrial scale.\n\nGerman public transport is famously decentralised, with thousands of indiv",
   "local": "ticket-fraud.opus",
-  "licence_tag": "TAG:copyright=Licensed to the public under http://creativecommons.org/licenses/by/4.0"
+  "licence_tag": "TAG:copyright=Licensed to the public under http://creativecommons.org/licenses/by/4.0",
+  "transcribed": true
  },
  "39c3-a-quick-stop-at-the-hostileshop": {
   "title": "A Quick Stop at the HostileShop",
@@ -219,6 +232,7 @@
   "key": "hostileshop",
   "desc": "HostileShop is a python-based tool for generating prompt injections and jailbreaks against LLM agents. I created HostileShop to see if I could use LLMs to write a framework that generates prompt injections against LLMs, by having LLMs attack other LLMs. It's LLMs all the way down. HostileShop genera",
   "local": "hostileshop.opus",
-  "licence_tag": "TAG:copyright=Licensed to the public under http://creativecommons.org/licenses/by/4.0"
+  "licence_tag": "TAG:copyright=Licensed to the public under http://creativecommons.org/licenses/by/4.0",
+  "transcribed": false
  }
 }

@@ -1,0 +1,101 @@
+{
+ "cc_vibe_support": {
+  "mp4": "https://cdn.media.ccc.de/congress/2025/h264-hd/39c3-1712-eng-When_Vibe_Scammers_Met_Vibe_Hackers_Pwning_PhaaS_with_Their_Own_Weapons.mp4",
+  "audio": ".cc-src/aibm/vibe-scammers.opus",
+  "t0": 857.9,
+  "t1": 871.7,
+  "title": "When Vibe Scammers Met Vibe Hackers: Pwning PhaaS with Their Own Weapons",
+  "author": "Chiao-Lin Yu (Steven Meow) · 39C3 (media.ccc.de)",
+  "licence": "CC BY 4.0",
+  "page": "https://media.ccc.de/v/39c3-when-vibe-scammers-met-vibe-hackers-pwning-phaas-with-their-own-weapons",
+  "words": ""
+ },
+ "cc_llm_refuse": {
+  "mp4": "https://cdn.media.ccc.de/events/hackerhotel/2025/h264-hd/hackerhotel2025-186-eng-How_do_models_like_ChatGPT_LLM_work_can_you_hack_them_and_run_them_offline_hd.mp4",
+  "audio": ".cc-src/aibm/llm-hack.opus",
+  "t0": 2035.9,
+  "t1": 2044.1,
+  "title": "How do models like ChatGPT (LLM) work, can you hack them and run them offline?",
+  "author": "Anykey · hackerhotel2025 (media.ccc.de)",
+  "licence": "CC BY 4.0",
+  "page": "https://media.ccc.de/v/2025-186-how-do-models-like-chatgpt-llm-work-can-you-hack-them-and-run-them-offline-",
+  "words": ""
+ },
+ "cc_phish_support": {
+  "mp4": "https://cdn.media.ccc.de/events/hackerhotel/2025/h264-hd/hackerhotel2025-184-eng-A_criminal_and_victim_view_of_phishing_and_phishing_panels_live_of_stage_hd.mp4",
+  "audio": ".cc-src/aibm/phish-panels.mp3",
+  "t0": 939.1,
+  "t1": 951.5,
+  "title": "A criminal, and victim view of phishing and phishing panels, live of stage.",
+  "author": "Karl Lovink · hackerhotel2025 (media.ccc.de)",
+  "licence": "CC BY 4.0",
+  "page": "https://media.ccc.de/v/2025-184-a-criminal-and-victim-view-of-phishing-and-phishing-panels-live-of-stage-",
+  "words": ""
+ },
+ "cc_aitm_proxy": {
+  "mp4": "https://cdn.media.ccc.de/events/why2025/h264-hd/why2025-167-eng-AiTM_panels_and_sellers_hd.mp4",
+  "audio": ".cc-src/aibm/aitm-panels.opus",
+  "t0": 170.1,
+  "t1": 182.4,
+  "title": "AiTM panels and sellers",
+  "author": "rik van duijn, Wesley Neelen · WHY2025 (media.ccc.de)",
+  "licence": "CC BY 4.0",
+  "page": "https://media.ccc.de/v/why2025-167-aitm-panels-and-sellers",
+  "words": ""
+ },
+ "cc_victim_login": {
+  "mp4": "https://cdn.media.ccc.de/events/why2025/h264-hd/why2025-203-eng-Scaling_up_victim_notification_because_crededential_theft_is_scaling_up_too_hd.mp4",
+  "audio": ".cc-src/aibm/victim-notif.opus",
+  "t0": 157.0,
+  "t1": 169.1,
+  "title": "Scaling up victim notification, because crededential theft is scaling up too...",
+  "author": "Frank Breedijk · WHY2025 (media.ccc.de)",
+  "licence": "CC BY 4.0",
+  "page": "https://media.ccc.de/v/why2025-203-scaling-up-victim-notification-because-crededential-theft-is-scaling-up-too",
+  "words": ""
+ },
+ "cc_nk_mules": {
+  "mp4": "https://cdn.media.ccc.de/events/emf/2026/h264-hd/emf2026-21501-eng-North_Korean_agent_looking_for_a_job_hd.mp4",
+  "audio": ".cc-src/aibm/north-korean.m4a",
+  "t0": 1119.3,
+  "t1": 1129.1,
+  "title": "North Korean agent looking for a job",
+  "author": "Simon Wijckmans · emf2026 (media.ccc.de)",
+  "licence": "CC BY-SA 4.0",
+  "page": "https://media.ccc.de/v/emf2026-215-1-north-korean-agent-looking-for-a-job",
+  "words": ""
+ },
+ "cc_vibe_company": {
+  "mp4": "https://cdn.media.ccc.de/congress/2025/h264-hd/39c3-1712-eng-When_Vibe_Scammers_Met_Vibe_Hackers_Pwning_PhaaS_with_Their_Own_Weapons.mp4",
+  "audio": ".cc-src/aibm/vibe-scammers.opus",
+  "t0": 1584.8,
+  "t1": 1594.8,
+  "title": "When Vibe Scammers Met Vibe Hackers: Pwning PhaaS with Their Own Weapons",
+  "author": "Chiao-Lin Yu (Steven Meow) · 39C3 (media.ccc.de)",
+  "licence": "CC BY 4.0",
+  "page": "https://media.ccc.de/v/39c3-when-vibe-scammers-met-vibe-hackers-pwning-phaas-with-their-own-weapons",
+  "words": ""
+ },
+ "cc_vibe_aivsai": {
+  "mp4": "https://cdn.media.ccc.de/congress/2025/h264-hd/39c3-1712-eng-When_Vibe_Scammers_Met_Vibe_Hackers_Pwning_PhaaS_with_Their_Own_Weapons.mp4",
+  "audio": ".cc-src/aibm/vibe-scammers.opus",
+  "t0": 1435.8,
+  "t1": 1441.8,
+  "title": "When Vibe Scammers Met Vibe Hackers: Pwning PhaaS with Their Own Weapons",
+  "author": "Chiao-Lin Yu (Steven Meow) · 39C3 (media.ccc.de)",
+  "licence": "CC BY 4.0",
+  "page": "https://media.ccc.de/v/39c3-when-vibe-scammers-met-vibe-hackers-pwning-phaas-with-their-own-weapons",
+  "words": ""
+ },
+ "cc_aitm_passkeys": {
+  "mp4": "https://cdn.media.ccc.de/events/why2025/h264-hd/why2025-167-eng-AiTM_panels_and_sellers_hd.mp4",
+  "audio": ".cc-src/aibm/aitm-panels.opus",
+  "t0": 2219.2,
+  "t1": 2239.8,
+  "title": "AiTM panels and sellers",
+  "author": "rik van duijn, Wesley Neelen · WHY2025 (media.ccc.de)",
+  "licence": "CC BY 4.0",
+  "page": "https://media.ccc.de/v/why2025-167-aitm-panels-and-sellers",
+  "words": ""
+ }
+}

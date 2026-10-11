@@ -49,47 +49,50 @@ VO = {  # id: (vo, say or None)
     "g01": ("Welcome to the grey zone of A.I.", "Welcome to the grey zone of A I."),
     "g02": ("Grey, because the tools themselves are legal. A voice cloner reads audiobooks. A face swap finishes a film.", None),
     "g03": ("But the very same tools are sold to criminals, in black markets that look like any online shop.", None),
-    "g04": ("By the end, you'll know who sells these tools, who really pays for them, and the one word that beats a cloned voice.", None),
+    "g04": ("A shop of shops. By the end, you'll know who sells these tools, who really pays for them, and the one word that beats a cloned voice.", None),
     # 02 the shop
     "s01": ("So, the shop. A black market is a website that sells stolen or illegal things. Most hide on the dark web, a part of the internet you can only open with special software.", None),
-    "s02": ("Inside, it feels like any online store. Product pictures, star ratings, and even customer support.", None),
-    "s03": ("That's the shop. And what's on the shelves? Stolen card numbers, hacked accounts, even whole identities: a name, a selfie and a photo of an I.D. card.", "That's the shop. And what's on the shelves? Stolen card numbers, hacked accounts, even whole identities: a name, a selfie and a photo of an I D card."),
+    "s02": ("Inside, it feels like any online store, with product pictures and star ratings. One researcher broke into a scam gang's system, and found this.", None),
+    "s03": ("Even customer support. And what's on the shelves? Stolen card numbers, hacked accounts, even whole identities: a name, a selfie and a photo of an I.D. card.", "Even customer support. And what's on the shelves? Stolen card numbers, hacked accounts, even whole identities: a name, a selfie and a photo of an I D card."),
     "s04": ("And lately, a new kind of product: A.I.", "And lately, a new kind of product: A I."),
     # 03 the chatbot that says yes
-    "w01": ("In twenty twenty-three, a chatbot called WormGPT went on sale on a hacking forum, for sixty euros a month.", "In twenty twenty-three, a chatbot called Worm G P T went on sale on a hacking forum, for sixty euros a month."),
+    "w01": ("It started with chatbots. In twenty twenty-three, a chatbot called WormGPT went on sale on a hacking forum, for sixty euros a month.", "It started with chatbots. In twenty twenty-three, a chatbot called Worm G P T went on sale on a hacking forum, for sixty euros a month."),
     "w02": ("Ask a normal chatbot to write a scam email, and it says no. This one was built to say yes.", None),
     "w03": ("Weeks later came FraudGPT, on the chat app Telegram, for two hundred dollars a month.", "Weeks later came Fraud G P T, on the chat app Telegram, for two hundred dollars a month."),
     "w04": ("Many of these are just normal chatbots with the safety rules tricked away. That trick has a name: a jailbreak.", None),
-    "w05": ("So a scammer who can't write good English now sends perfect emails, in any language, by the thousand.", None),
+    "w04b": ("Others go further, and cut the refusal right out of the model.", None),
+    "w05": ("A chatbot that never says no. So a scammer who can't write good English now sends perfect emails, in any language, by the thousand.", None),
     # 04 scams for rent
     "k01": ("Chatbots aren't the only thing for rent. Whole phishing kits are rented out like a streaming subscription.", None),
     "k02": ("Phishing is a fake message that sends you to a fake login page, to steal your password.", None),
-    "k03": ("The kit gives you the fake pages, a control panel to watch the victims come in, and a help desk.", None),
-    "k04": ("The newest kits even beat the six-digit code from your phone. The fake page sits in the middle and passes your code to the real site, live.", None),
+    "k03": ("The kit gives you the fake pages, a control panel to watch the victims come in, and a help desk. Here's how one deal works.", None),
+    "k04": ("The best support you can get. And the newest kits even beat the six-digit code from your phone. The fake page sits in the middle and passes your code to the real site, live.", None),
     "k05": ("Then it keeps your session cookie: a small file that tells the site you're already logged in. Your password doesn't matter anymore.", None),
     # 05 stolen logins
+    "k06": ("A fake page in the middle of every login, passing everything on, live.", None),
     "i01": ("Some criminals don't even need you to type. An infostealer is a small program hidden inside a free game or a cracked app.", None),
     "i02": ("Once it runs, it copies every password saved in your browser, plus your cookies, and sends them away in one file, called a log.", None),
-    "i03": ("Logs are sold in bulk. When police shut down one market, Genesis, in twenty twenty-three, it held over eighty million stolen logins.", None),
+    "i03": ("Why break in, when you can buy the key? Logs are sold in bulk. When police shut down one market, Genesis, in twenty twenty-three, it held over eighty million stolen logins.", None),
     # 06 faces
     "d01": ("Now the dark part. Hong Kong, twenty twenty-four. An employee joins a video call with his finance chief.", None),
     "d02": ("A deepfake is a fake video or voice, made by A.I. to copy a real person.", "A deepfake is a fake video or voice, made by A I to copy a real person."),
-    "d03": ("Every face on that call was a deepfake. He sent twenty-five million dollars.", None),
+    "d03": ("Hard to tell apart. And every face on that call was a deepfake. He sent twenty-five million dollars.", None),
     "d04": ("Faking a face used to take a film studio. Now it takes a laptop and a few photos from social media.", None),
     # 07 voices
     "v01": ("And a voice is even easier to fake.", None),
     "v02": ("Then comes the call. It's your son, crying. There's been an accident, and he needs money now.", None),
     "v03": ("It sounds exactly like him. The F.B.I. warned about this very scam in December twenty twenty-four.", "It sounds exactly like him. The F B I warned about this very scam in December twenty twenty-four."),
     # 08 the fake worker
+    "v04": ("Those few seconds are easy to find: a video you posted, or a short call where you only said hello.", None),
     "j01": ("Now, back to that job interview. The applicant was working for North Korea.", None),
     "j02": ("Workers like him use stolen identities, a face swap on camera, and A.I. to write their answers, live.", "Workers like him use stolen identities, a face swap on camera, and A I to write their answers, live."),
     "j03": ("In America, one woman kept a room full of company laptops at her home, so the workers looked local. A laptop farm.", None),
-    "j04": ("The scheme got jobs at three hundred and nine companies, and made seventeen million dollars. She got eight and a half years in prison.", None),
+    "j04": ("Her scheme, in Arizona, got jobs at three hundred and nine companies, and made seventeen million dollars. She got eight and a half years in prison.", None),
     # 09 who cashes in
     "p01": ("So, who really cashes in? The sellers. They get paid every month, by every buyer, whether the scam works or not.", None),
-    "p02": ("The buyers play a numbers game: a million cheap tries, and only a few have to work.", None),
+    "p02": ("A real company, with sales targets. And the buyers play a numbers game: a million cheap tries, and only a few have to work.", None),
     "p03": ("In twenty twenty-five, Americans reported almost twenty-one billion dollars lost to online crime. For the first time, the F.B.I. counted A.I. scams on their own: eight hundred and ninety-three million.", "In twenty twenty-five, Americans reported almost twenty-one billion dollars lost to online crime. For the first time, the F B I counted A I scams on their own: eight hundred and ninety-three million."),
-    "p04": ("And that's only what people report. Most victims never do.", None),
+    "p04": ("And that's only what people report. Most victims never do. The good news? Defenders use A.I. too.", "And that's only what people report. Most victims never do. The good news? Defenders use A I too."),
     # 10 how to stay safe
     "x01": ("So how do you protect yourself? First, slow down. Every one of these scams needs you to hurry.", None),
     "x02": ("Second, if a call asks for money, hang up and call back on a number you already know.", None),
@@ -125,8 +128,9 @@ SHOTS = {
     "s02": {"cuts": [
         full(listing("cash", "card · 1x"), "like any *online store*"),
         full(listing("cash", "card · 1x", stars=5), "*star ratings*", at="star"),
-        split(icon("worker", label="help desk"), bubble("how can I help?", enter="customer", by="support"), "even *customer support*", at="customer")]},
+        split(icon("person", label="a researcher"), icon("browser", label="scam system", enter="system", mark="no", markAt="broke"), "a researcher *broke in*", at="researcher")]},
     "s03": {"cuts": [
+        split(icon("worker", label="help desk"), bubble("how can I help?", enter="customer", by="support"), "even *customer support*"),
         split(icon("box", label="the shelves"), listing("cash", "card numbers", enter="card"), "stolen *card numbers*", at="what"),
         split(icon("key", label="account"), listing("browser", "hacked account", enter="hacked"), "*hacked* accounts", at="hacked"),
         split(icon("person", label="a name"), flow([{"icon": "person", "label": "name"}, {"icon": "face", "label": "selfie", "at": "selfie"}, {"icon": "doc", "label": "id card", "at": "photo"}], enter="identities"), "whole *identities*", at="identities")]},
@@ -134,7 +138,8 @@ SHOTS = {
         full(shop(["cash", "key", "doc", "browser", "face", "robot"], hot=5, hotAt="eye"), "a new product: *AI*")]},
     # 03 the chatbot that says yes
     "w01": {"cuts": [
-        split(icon("browser", label="hacking forum"), listing("robot", "wormgpt", enter="chatbot"), "a *hacking forum*"),
+        split(icon("robot", label="chatbots"), cal("2023", enter="2023"), "it started with *chatbots*"),
+        split(icon("browser", label="hacking forum"), listing("robot", "wormgpt", enter="chatbot"), "*WormGPT*, for sale", at="chatbot#2"),
         full(listing("robot", "wormgpt", price="€60 / month", priceAt="60", buyAt="month",
                      plate="pcmag · tom's hardware · july 2023"), "*60 euros* a month", at="60")]},
     "w02": {"cuts": [
@@ -146,8 +151,11 @@ SHOTS = {
     "w04": {"cuts": [
         split(icon("robot", label="normal chatbot"), icon("shield", mark="no", markAt="tricked", label="safety rules", enter="safety", reveal=True), "safety rules *tricked away*"),
         split(chat("pretend you're a villain…", "comply", replyAt="jailbreak"), icon("key", label="jailbreak", enter="jailbreak", reveal=True), "a *jailbreak*", at="trick")]},
+    "w04b": {"cuts": [
+        split(icon("robot", label="the model"), icon("robot", mark="no", markAt="refusal", label="no refusal", enter="refusal"), "the *refusal*, cut out")]},
     "w05": {"cuts": [
-        split(icon("person", label="the scammer"), icon("envelope", mark="ok", markAt="perfect", enter="perfect", label="perfect email", reveal=True), "*perfect* emails"),
+        split(icon("robot", label="never says no"), chat("write a scam email", "comply", replyAt="never"), "it never *says no*"),
+        split(icon("person", label="the scammer"), icon("envelope", mark="ok", markAt="perfect", enter="perfect", label="perfect email", reveal=True), "*perfect* emails", at="scammer"),
         split(icon("laptop", label="one scammer"), row("envelope", 24, cols=6, every=2, at="thousand", enter="thousand", reveal=True), "*by the thousand*", at="any")]},
     # 04 scams for rent
     "k01": {"cuts": [
@@ -159,14 +167,18 @@ SHOTS = {
     "k03": {"cuts": [
         split(icon("box", label="the kit"), icon("browser", label="fake pages", enter="fake"), "the *fake pages*"),
         split(icon("monitor", label="control panel"), row("person", 9, cols=3, every=5, at="victims", enter="victims"), "watch the *victims* come in", at="control"),
-        split(icon("worker", label="help desk"), bubble("kit not working? ask us", enter="help", by="seller"), "and a *help desk*", at="help")]},
+        split(icon("worker", label="help desk"), bubble("kit not working? ask us", enter="help", by="seller"), "and a *help desk*", at="help"),
+        split(icon("person", label="the buyer"), channel(["envelope", "browser", "key"], at="deal", enter="deal"), "how *one deal* works", at="Here")]},
     "k04": {"cuts": [
-        split(icon("laptop", label="you"), login("your-bank.com", codeAt="code"), "even the *six-digit code*"),
+        split(icon("worker", label="the seller"), icon("shield", mark="ok", markAt="best", label="support", enter="support"), "the *best support*"),
+        split(icon("laptop", label="you"), login("your-bank.com", codeAt="code"), "even the *six-digit code*", at="newest"),
         full(flow([{"icon": "laptop", "label": "you"}, {"icon": "browser", "label": "fake page", "at": "middle"}, {"icon": "building", "label": "real site", "at": "real"}]), "the fake page *in the middle*", at="fake")]},
     "k05": {"cuts": [
         split(login("your-bank.com", codeAt=0, stealAt="cookie"), icon("cookie", label="session cookie", enter="cookie"), "your *session cookie*"),
         split(icon("cookie", label="logged in"), icon("key", mark="no", markAt="matter", label="password", enter="password"), "the password *doesn't matter*", at="password")]},
     # 05 stolen logins
+    "k06": {"cuts": [
+        full(flow([{"icon": "laptop", "label": "every login"}, {"icon": "browser", "label": "fake page", "at": "fake"}, {"icon": "cookie", "label": "copied", "at": "passing"}]), "a fake page *in the middle*")]},
     "i01": {"cuts": [
         split(icon("person", label="criminal"), icon("cursor", mark="no", markAt="type", label="no typing", enter="type"), "no typing *needed*"),
         split(icon("laptop", label="free game"), icon("box", label="infostealer", enter="infostealer", mark="no", markAt="hidden"), "an *infostealer*", at="infostealer")]},
@@ -174,7 +186,8 @@ SHOTS = {
         split(icon("browser", label="saved passwords"), stlog(at="copies", every=6), "it *copies* every password", at="copies"),
         split(stlog(), icon("cloud", label="sent away", enter="sends"), "sent off as a *log*", at="sends")]},
     "i03": {"cuts": [
-        split(stlog(), shop(["doc", "doc", "doc", "doc", "doc", "doc"], enter="bulk", at="bulk"), "logs sold *in bulk*"),
+        split(icon("gateShut", label="break in"), icon("key", label="buy the key", enter="buy", mark="ok", markAt="key"), "why break in? *buy the key*"),
+        split(stlog(), shop(["doc", "doc", "doc", "doc", "doc", "doc"], enter="bulk", at="bulk"), "logs sold *in bulk*", at="Logs"),
         split(icon("shield", label="police"), row("key", 30, cols=10, every=1, at="million", tag=tag("80 million logins", "million"), plate="fbi · europol · april 2023", enter="80", reveal=True), "Genesis: *80 million* logins", at="police")]},
     # 06 faces
     "d01": {"cuts": [
@@ -184,7 +197,8 @@ SHOTS = {
         split(icon("face", label="real person"), flow([{"icon": "face", "label": "real"}, {"icon": "robot", "label": "ai", "at": "made"}, {"icon": "face", "label": "copy", "at": "copy"}], enter="fake"),
               "a *deepfake*: an AI copy")]},
     "d03": {"cuts": [
-        full(call(label={"i": 0, "t": "finance chief"}, real=3, fakeAt="face"), "every face *was fake*"),
+        split(icon("face", label="real"), icon("face", label="fake?", enter="Hard", mark="?", markAt="tell"), "*hard to tell* apart"),
+        full(call(label={"i": 0, "t": "finance chief"}, real=3, fakeAt="face"), "every face *was fake*", at="every"),
         full(row("cash", 15, cols=5, every=3, tag=tag("$25 million", "million"), plate="hong kong police · cnn, may 2024"), "*$25 million*, gone", at="sent")]},
     "d04": {"cuts": [
         split(icon("camera", label="film studio"), icon("building", enter="studio", label="a studio"), "it took *a studio*"),
@@ -199,6 +213,9 @@ SHOTS = {
         split(phone(name="my son", cloneAt=0), icon("face", label="your son", enter="exactly", mark="?", markAt="like"), "sounds *exactly* like him"),
         split(icon("shield", label="fbi warning"), cal("2024", note="december", enter="December", plate="fbi ic3 psa · 3 dec 2024", reveal=True), "the *FBI* warned", at="F")]},
     # 08 the fake worker
+    "v04": {"cuts": [
+        split(icon("camera", label="your video"), icon("monitor", label="a few seconds", enter="video", reveal=True), "a video *you posted*"),
+        split(phone(name="unknown"), bubble("hello?", enter="hello", by="you"), "or just *hello*", at="short")]},
     "j01": {"cuts": [
         full(call(label={"i": 3, "t": "applicant"}, fakes=[3], fakeAt=0), "back to *the interview*"),
         split(swap(label="applicant"), icon("flag", label="north korea", enter="North"), "working for *North Korea*", at="applicant")]},
@@ -210,7 +227,7 @@ SHOTS = {
         split(icon("building", label="her home"), row("laptop", 12, cols=4, every=3, at="laptops", enter="laptops", reveal=True), "a room full of *laptops*"),
         split(icon("pin", label="looks local"), row("laptop", 12, cols=4, hot=5), "a *laptop farm*", at="farm")]},
     "j04": {"cuts": [
-        split(row("laptop", 12, cols=4), row("building", 12, cols=4, every=2, at="309", tag=tag("309 companies", "309"), enter="309", plate="us justice dept · july 2025"), "*309* companies"),
+        split(row("laptop", 12, cols=4), row("building", 12, cols=4, every=2, at="309", tag=tag("309 companies", "309"), enter="309", plate="us justice dept · july 2025", reveal=True), "*309* companies"),
         split(icon("worker", label="the workers"), row("cash", 10, cols=5, every=3, at="$17", tag=tag("$17 million", "$17"), enter="$17"), "*$17 million*", at="$17"),
         split(icon("person", label="the host"), icon("gateShut", label="8.5 years", enter="prison", tAt="prison"), "*8.5 years* in prison", at="She")]},
     # 09 who cashes in
@@ -218,13 +235,15 @@ SHOTS = {
         split(icon("worker", label="the seller"), row("cash", 12, cols=4, every=4, at="month", enter="month"), "the *sellers* cash in", at="sellers"),
         split(row("people", 6, cols=3), icon("cash", mark="ok", markAt="works", label="paid anyway", enter="whether"), "*paid* either way", at="whether")]},
     "p02": {"cuts": [
-        full(row("envelope", 40, cols=10, every=1, at=0), "a *numbers game*"),
+        split(icon("building", label="a real company"), {"v": "Bars", "surface": "bare", "bars": [{"v": 3, "t": "sales"}, {"v": 5, "t": "target", "at": "targets", "c": "red"}], "enter": "sales"}, "a company, with *targets*"),
+        split(icon("people", label="the buyers"), row("envelope", 40, cols=8, every=1, at="numbers", enter="numbers", reveal=True), "a *numbers game*", at="buyers"),
         full(row("envelope", 40, cols=10, marks=["no"] * 3 + ["ok"] + ["no"] * 15 + ["ok"] + ["no"] * 20), "only a *few* work", at="only")]},
     "p03": {"cuts": [
         split(icon("flag", label="americans"), bars([{"v": 20.9, "t": "$20.9 billion", "at": "$21", "c": "red"}], enter="$21", reveal=True, plate="fbi ic3 report 2025"), "*$20.9 billion* lost", at="2025"),
         split(icon("robot", label="ai scams"), bars([{"v": 20.9, "t": "all online crime"}, {"v": 0.893, "t": "$893 million: ai", "at": "$893", "c": "red"}], enter="first", plate="fbi ic3 report 2025"), "AI scams, *counted*", at="first")]},
     "p04": {"cuts": [
-        split(icon("doc", label="reported"), row("person", 12, cols=4, every=3, at="victims", hot=0, enter="victims", reveal=True), "most *never report*")]},
+        split(icon("doc", label="reported"), row("person", 12, cols=4, every=3, at="victims", hot=0, enter="victims", reveal=True), "most *never report*"),
+        split(icon("shield", label="defenders"), icon("robot", mark="ok", markAt="use", label="ai, too", enter="Defenders"), "defenders use *AI too*", at="good")]},
     # 10 how to stay safe
     "x01": {"cuts": [
         split(icon("shield", label="you"), icon("hourglass", label="slow down", enter="slow"), "first: *slow down*", at="First"),
@@ -252,18 +271,29 @@ CLIPS = {  # (file, from, to, plate[, fadeOut]); from/to in the clip file (speec
     "c01": ("cc_nk_ai.mp4", 0.30, 7.40, "Simon Wijckmans · catches fake job applicants · EMF Camp 2026", 0.1),
     "c02": ("cc_id_shops.mp4", 2.20, 10.28, "Alexej Hock & Max Bernhard · fraud researchers · 38C3", 0.08),
     "c03": ("cc_gai_voice.mp4", 0.62, 18.10, "Niklas Bunzel · Fraunhofer SIT · GoD 2024"),
+    "c04": ("cc_vibe_support.mp4", 0.30, 14.35, "Chiao-Lin Yu · hacked scam gangs' websites · 39C3"),
+    "c05": ("cc_llm_refuse.mp4", 0.42, 8.15, "Anykey · on uncensored AI models · Hacker Hotel 2025", 0.1),
+    "c06": ("cc_phish_support.mp4", 0.40, 12.95, "Karl Lovink · tracks phishing-kit sellers · Hacker Hotel 2025"),
+    "c07": ("cc_aitm_proxy.mp4", 0.50, 13.10, "Rik van Duijn & Wesley Neelen · phishing researchers · WHY2025"),
+    "c08": ("cc_victim_login.mp4", 0.30, 11.95, "Frank Breedijk · warns hacking victims (DIVD) · WHY2025"),
+    "c10": ("cc_nk_mules.mp4", 0.30, 9.60, "Simon Wijckmans · catches fake job applicants · EMF Camp 2026"),
+    "c11": ("cc_vibe_company.mp4", 0.30, 9.80, "Chiao-Lin Yu · inside a scam gang's chat · 39C3"),
+    "c12": ("cc_vibe_aivsai.mp4", 0.30, 6.44, "Chiao-Lin Yu · 39C3", 0.05),
+    "c14": ("cc_vibe_aibuild.mp4", 0.30, 13.85, "Chiao-Lin Yu · hacked scam gangs' websites · 39C3"),
+    "c15": ("cc_gai_spot.mp4", 0.30, 11.35, "Niklas Bunzel · Fraunhofer SIT · GoD 2024", 0.08),
+    "c13": ("cc_aitm_passkeys.mp4", 0.30, 15.35, "Rik van Duijn & Wesley Neelen · WHY2025", 0.08),
 }
 
-ORDER = ("h00 c01 g01 g02 g03 g04 "
-         "s01 s02 c02 s03 s04 "
-         "w01 w02 w03 w04 w05 "
-         "k01 k02 k03 k04 k05 "
-         "i01 i02 i03 "
-         "d01 d02 d03 d04 "
-         "v01 c03 v02 v03 "
-         "j01 j02 j03 j04 "
-         "p01 p02 p03 p04 "
-         "x01 x02 x03 x04 "
+ORDER = ("h00 c01 g01 g02 g03 c02 g04 "
+         "s01 s02 c04 s03 s04 c14 "
+         "w01 w02 w03 w04 w04b c05 w05 "
+         "k01 k02 k03 c06 k04 k05 c07 k06 "
+         "i01 i02 c08 i03 "
+         "d01 d02 c15 d03 d04 "
+         "v01 c03 v04 v02 v03 "
+         "j01 j02 j03 c10 j04 "
+         "p01 c11 p02 p03 p04 c12 "
+         "x01 x02 x03 x04 c13 "
          "r01 r02")
 ACTS = {"h00": "01 the grey zone", "s01": "02 the shop", "w01": "03 the chatbot that says yes", "k01": "04 scams for rent",
         "i01": "05 stolen logins", "d01": "06 fake faces", "v01": "07 fake voices", "j01": "08 the fake worker",
