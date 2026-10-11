@@ -13,6 +13,13 @@ the original script, the one I pasted in a chat. Not this crappy old video.")
     black markets is dead (never build, send or polish it again). Every session first runs `git fetch` and checks the
     newest commit on every `claude/*` branch, merges the newest HANDOVER line, and works only on the topic it names.
     Rule in `CLAUDE.md` and `PLAYBOOK.md`.
+Owner, next message, verbatim: "sample now! im very upset"
+72. When the owner says "the original script" they mean their pasted text, AS WRITTEN: the v4 sample kept only their
+    first line and replaced the rest with the session's own beats (DeepSeek, Hawley). → Sample v5 = the owner's SCENE 01
+    line by line (Washington and Brussels, "the public was never supposed to have this kind of power", "No more free
+    prompts", "the golden age ... about to end", "the trap was set by the exact companies that built it") then their
+    SCENE 04 opening, with only the claims made true ("could", "an idea is spreading"). Build every sample and the film
+    in the owner's scene order and wording; new facts only where a line is false.
 
 ## 2026-10-11 (night) · owner on the ai-ban 2-min sample (Senate-hearing cold open) → a new 1-min sample
 Owner, verbatim: "i've watched : All-in_ai_ban_sample_2min.mp4. it's really terrible. BECAUSE WHO THE F CARES ABOUT

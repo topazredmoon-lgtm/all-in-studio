@@ -1,6 +1,6 @@
 {
  "id": "ai-ban",
- "title": "THE COMING AI BAN · 1-min sample (owner's opening)",
+ "title": "THE COMING AI BAN · 1-min sample v5 (owner's SCENE 01, as written)",
  "voice": {
   "engine": "kokoro",
   "name": "af_heart",
@@ -60,7 +60,7 @@
   },
   {
    "id": "h02",
-   "vo": "A fake face and voice, made with AI anyone can download. And governments are reaching for the off switch.",
+   "vo": "Fake faces and voices, made with AI anyone can download. And in Washington and Brussels, a quiet idea is spreading: the public was never supposed to have this kind of power.",
    "shot": {
     "cuts": [
      {
@@ -87,26 +87,45 @@
        "name": "laptop",
        "label": "free download"
       },
-      "cap": "made with *free* AI",
+      "cap": "AI *anyone* can download",
       "at": "made"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "Flag",
+       "surface": "bare",
+       "country": "usa",
+       "label": "washington"
+      },
+      "R": {
+       "v": "Flag",
+       "surface": "bare",
+       "country": "eu",
+       "label": "brussels",
+       "enter": "Brussels"
+      },
+      "cap": "a *quiet* idea",
+      "at": "Washington"
      },
      {
       "layout": "split",
       "L": {
        "v": "LineIcon",
        "surface": "bare",
-       "name": "building",
-       "label": "governments"
+       "name": "people",
+       "label": "the public"
       },
       "R": {
-       "v": "LineIcon",
+       "v": "PhoneChat",
        "surface": "bare",
-       "name": "power",
-       "label": "off switch",
-       "enter": "off"
+       "mode": "open",
+       "ask": "plan my trip to rome",
+       "askAt": 0,
+       "replyAt": "power"
       },
-      "cap": "reaching for *the off switch*",
-      "at": "governments"
+      "cap": "never meant to have *this power*",
+      "at": "public"
      }
     ],
     "act": "01 the ban"
@@ -114,61 +133,85 @@
   },
   {
    "id": "h03",
-   "vo": "Last year, DeepSeek, a Chinese AI, hit number one on the app charts. Within days, Italy blocked it, and South Korea pulled it from its stores.",
+   "vo": "If it wins, open access to AI for ordinary people could be outlawed within a few years. No more free prompts. No more AI running privately on your own computer.",
    "shot": {
     "cuts": [
      {
-      "layout": "full",
-      "hero": {
-       "v": "AppStore",
+      "layout": "split",
+      "L": {
+       "v": "LineIcon",
        "surface": "bare",
-       "name": "deepseek",
-       "rankAt": "number",
-       "tag": {
-        "t": "jan 2025",
-        "at": "number"
-       }
+       "name": "people",
+       "label": "ordinary people"
       },
-      "cap": "*number one* on the charts"
+      "R": {
+       "v": "PhoneChat",
+       "surface": "bare",
+       "mode": "off",
+       "gateAt": "outlawed",
+       "enter": "open"
+      },
+      "cap": "*outlawed* for ordinary people"
      },
      {
       "layout": "split",
       "L": {
-       "v": "AppStore",
+       "v": "PhoneChat",
        "surface": "bare",
-       "name": "deepseek",
-       "rankAt": 0
+       "mode": "off",
+       "gateAt": 0
       },
       "R": {
-       "v": "Flag",
+       "v": "LineIcon",
        "surface": "bare",
-       "country": "italy",
-       "label": "italy",
-       "markAt": "blocked",
-       "enter": "Italy"
+       "name": "clock",
+       "label": "a few years",
+       "enter": "within"
       },
-      "cap": "*blocked* in Italy",
-      "at": "Within"
+      "cap": "within *a few years*",
+      "at": "within"
      },
      {
       "layout": "split",
       "L": {
-       "v": "AppStore",
+       "v": "LineIcon",
        "surface": "bare",
-       "name": "deepseek",
-       "rankAt": 0,
-       "pullAt": "pulled"
+       "name": "clock",
+       "label": "a few years"
       },
       "R": {
-       "v": "Flag",
+       "v": "ChatBox",
        "surface": "bare",
-       "country": "south korea",
-       "label": "south korea",
-       "markAt": "pulled",
-       "enter": "Korea"
+       "ask": "help me write my cv",
+       "mode": "refuse",
+       "refusal": "Licence required.",
+       "askAt": 0,
+       "replyAt": "prompts"
       },
-      "cap": "*pulled* from the store",
-      "at": "South"
+      "cap": "no more *free* prompts",
+      "at": "No"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "ChatBox",
+       "surface": "bare",
+       "ask": "help me write my cv",
+       "mode": "refuse",
+       "refusal": "Licence required.",
+       "replyAt": 0
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "laptop",
+       "label": "your computer",
+       "mark": "no",
+       "markAt": "computer",
+       "enter": "privately"
+      },
+      "cap": "not even on *your own* computer",
+      "at": "privately"
      }
     ],
     "act": "01 the ban"
@@ -176,67 +219,46 @@
   },
   {
    "id": "h04",
-   "vo": "And an American senator proposed a law under which downloading it could mean up to twenty years in prison.",
+   "vo": "The golden age of consumer AI could be about to end. And the trap is being set by the very companies that built it.",
    "shot": {
     "cuts": [
      {
-      "layout": "full",
-      "hero": {
-       "v": "ListDoc",
-       "surface": "bare",
-       "title": "us senate bill",
-       "rows": [
-        {
-         "t": "chinese ai"
-        },
-        {
-         "t": "import ban",
-         "at": "law"
-        },
-        {
-         "t": "penalties",
-         "at": "downloading"
-        }
-       ],
-       "hot": 2,
-       "hotAt": "downloading"
-      },
-      "cap": "a *senator's* bill"
-     },
-     {
       "layout": "split",
       "L": {
-       "v": "ListDoc",
+       "v": "PhoneChat",
        "surface": "bare",
-       "title": "us senate bill",
-       "rows": [
-        {
-         "t": "chinese ai"
-        },
-        {
-         "t": "import ban",
-         "at": "law"
-        },
-        {
-         "t": "penalties",
-         "at": "downloading"
-        }
-       ],
-       "hot": 2,
-       "hotAt": 0
+       "mode": "open",
+       "ask": "plan my trip to rome",
+       "askAt": 0,
+       "replyAt": 0
       },
       "R": {
        "v": "LineIcon",
        "surface": "bare",
-       "name": "bars",
-       "label": "prison",
-       "tag": {
-        "t": "up to 20 years",
-        "at": "20"
-       }
+       "name": "power",
+       "label": "switched off",
+       "enter": "consumer"
       },
-      "cap": "*prison* for a download?",
-      "at": "could"
+      "cap": "the *golden age* could end"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "building",
+       "n": 3,
+       "label": "ai companies"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "lock",
+       "label": "the trap",
+       "enter": "trap"
+      },
+      "cap": "set by *the builders*",
+      "at": "trap"
      }
     ],
     "act": "01 the ban"
@@ -244,7 +266,7 @@
   },
   {
    "id": "h05",
-   "vo": "Governments don't move fast for ethics. They move fast when the banking system is on fire.",
+   "vo": "Governments don't move fast for ethical debates. They move fast when the banking system is on fire.",
    "shot": {
     "cuts": [
      {
@@ -261,8 +283,8 @@
        "name": "people",
        "label": "ethics debates",
        "mark": "no",
-       "markAt": "ethics",
-       "enter": "ethics"
+       "markAt": "ethical",
+       "enter": "ethical"
       },
       "cap": "not for *ethics*"
      },
@@ -349,45 +371,6 @@
     "to": 8.1,
     "plate": "Sam Altman · head of OpenAI · US Federal Reserve, 22 July 2025",
     "plateAt": 0.3
-   }
-  },
-  {
-   "id": "h06",
-   "vo": "Here's the twist: some of the loudest voices asking to lock AI down are the companies that built it.",
-   "shot": {
-    "cuts": [
-     {
-      "layout": "full",
-      "hero": {
-       "v": "IconRow",
-       "surface": "bare",
-       "name": "building",
-       "n": 3,
-       "label": "ai companies"
-      },
-      "cap": "here's *the twist*"
-     },
-     {
-      "layout": "split",
-      "L": {
-       "v": "IconRow",
-       "surface": "bare",
-       "name": "building",
-       "n": 3,
-       "label": "ai companies"
-      },
-      "R": {
-       "v": "LineIcon",
-       "surface": "bare",
-       "name": "lock",
-       "label": "lock it down",
-       "enter": "lock"
-      },
-      "cap": "the builders want *the lock*",
-      "at": "loudest"
-     }
-    ],
-    "act": "01 the ban"
    }
   },
   {

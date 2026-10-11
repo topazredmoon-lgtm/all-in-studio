@@ -1,0 +1,49 @@
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093016554.82 MB
+Memory reported by /proc/meminfo: 14979.38 MB
+Memory reported by Node: 14979.38 MB
+You might have inadvertently set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093016493.71 MB
+Memory reported by /proc/meminfo: 14937.04 MB
+Memory reported by Node: 14937.04 MB
+You might have inadvertently set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093016553.27 MB
+Memory reported by /proc/meminfo: 14975.73 MB
+Memory reported by Node: 14975.73 MB
+You might have inadvertently set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093016543.29 MB
+Memory reported by /proc/meminfo: 14967.17 MB
+Memory reported by Node: 14967.17 MB
+You might have inadvertently set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+c0:0% Detected differing memory amounts:
+Memory reported by CGroup: 8796093016462.41 MB
+Memory reported by /proc/meminfo: 14908.37 MB
+Memory reported by Node: 14908.37 MB
+You might have inadvertently set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093016460.57 MB
+Memory reported by /proc/meminfo: 14906.18 MB
+Memory reported by Node: 14906.18 MB
+You might have inadvertently set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093016447.13 MB
+Memory reported by /proc/meminfo: 14897.11 MB
+Memory reported by Node: 14897.11 MB
+You might have inadvertently set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+Detected differing memory amounts:
+Memory reported by CGroup: 8796093016444.72 MB
+Memory reported by /proc/meminfo: 14894.32 MB
+Memory reported by Node: 14894.32 MB
+You might have inadvertently set the --memory flag of `docker run` to a value that is higher than the global Docker memory limit.
+Using the lower amount of memory for calculation.
+c0:10% 

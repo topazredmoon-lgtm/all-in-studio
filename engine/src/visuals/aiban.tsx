@@ -247,6 +247,14 @@ const FLAGS: Record<string, (W: number, H: number) => React.ReactNode> = {
       <path d={`M${cx - r} ${cy} A${r} ${r} 0 0 0 ${cx + r} ${cy} A${r / 2} ${r / 2} 0 0 0 ${cx} ${cy} A${r / 2} ${r / 2} 0 0 1 ${cx - r} ${cy} Z`} fill="#24478f" transform={`rotate(33 ${cx} ${cy})`} />
       {tri(W * 0.2, H * 0.22, -56)}{tri(W * 0.8, H * 0.78, -56)}{tri(W * 0.8, H * 0.22, 56)}{tri(W * 0.2, H * 0.78, 56)}</g>;
   },
+  usa: (W, H) => {
+    const sh = H / 13, cw = W * 0.4, ch = sh * 7;
+    return <g>{Array.from({ length: 13 }, (_, i) => <rect key={i} x={0} y={i * sh} width={W} height={sh} fill={i % 2 ? '#e9e3d3' : '#c0392b'} />)}
+      <rect x={0} y={0} width={cw} height={ch} fill="#24478f" />
+      {Array.from({ length: 20 }, (_, i) => <circle key={i} cx={cw * ((i % 5) + 0.5) / 5} cy={ch * (Math.floor(i / 5) + 0.5) / 4} r={4} fill="#e9e3d3" />)}</g>;
+  },
+  eu: (W, H) => <g><rect x={0} y={0} width={W} height={H} fill="#24478f" />
+    {Array.from({ length: 12 }, (_, i) => { const a = (i / 12) * Math.PI * 2; return <circle key={i} cx={W / 2 + Math.sin(a) * H * 0.32} cy={H / 2 - Math.cos(a) * H * 0.32} r={7} fill="#e0b84a" />; })}</g>,
 };
 export const Flag: React.FC<Box & { country: string; label?: string; markAt?: Cue }> = ({ w, h, country, label, markAt }) => {
   const frame = useCurrentFrame();
