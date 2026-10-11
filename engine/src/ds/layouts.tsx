@@ -4,6 +4,8 @@
  *   full    – one hero visual across the safe frame (flows, acronyms, number slams).
  *   chapter – real photo bleeding from the right, opaque column with the act title.
  *   clip    – archival footage, full frame, plate bottom-left, frozen at the cut.
+ *   scene   – (2026-10-11, owner: "no cinema soul at all") one visual edge to edge, 1920 × 1080, with a film vignette;
+ *             the visual paints its own picture (a real photo, a CCTV frame, a map). Caption on top as usual.
  * Hooks are `full` with ground "red" and a bare surface.
  */
 import React from 'react';
@@ -142,6 +144,21 @@ export const Clip: React.FC<{ src: string; from: number; to: number; hold?: numb
           <span style={{ fontFamily: font.mono, fontSize: 18, color: color.mute, letterSpacing: '0.08em' }}>HISTORICAL RECORD // 1080P</span>
         </div>
       )}
+    </AbsoluteFill>
+  );
+};
+
+/** Full-bleed scene: the visual fills the frame; a soft vignette and a darker foot keep the caption readable. */
+export const Scene: React.FC<{ reg: Registry; hero: VisualSpec; cap?: string }> = ({ reg, hero, cap }) => {
+  const C = reg[hero.v];
+  if (!C) throw new Error(`unknown visual "${hero.v}"`);
+  const { v, k, enter, surface, plate, pad, tag, ...props } = hero as VisualSpec & { tag?: unknown };
+  return (
+    <AbsoluteFill style={{ background: '#050505' }}>
+      <C {...props} w={W} h={H} />
+      <AbsoluteFill style={{ background: 'radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%)', pointerEvents: 'none' }} />
+      {cap && <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(0,0,0,0) 72%, rgba(0,0,0,0.6) 100%)', pointerEvents: 'none' }} />}
+      {cap && <Caption text={cap} />}
     </AbsoluteFill>
   );
 };

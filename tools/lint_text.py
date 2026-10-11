@@ -30,7 +30,7 @@ for b in script["beats"]:
         if lay == "chapter":
             fails.append(f"{sid}: chapter card = big title on an empty board; put the act over a picture instead")
             continue
-        vis = [s["hero"]] if lay == "full" else [s["L"], s["R"]]
+        vis = [s["hero"]] if lay in ("full", "scene") else [s["L"], s["R"]]
         for v in vis:
             if v["v"] in TEXT_LED:
                 fails.append(f"{sid}: {v['v']} makes text the picture; show a picture and put the number/name in a small `tag`")

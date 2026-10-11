@@ -1,0 +1,35 @@
+{
+ "b200.jpg": {
+  "title": "File:Nvidia DGX-B200-HGX.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Nvidia_DGX-B200-HGX.jpg",
+  "author": "Pokiiri",
+  "licence": "CC BY-SA 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "size": [
+   2977,
+   3021
+  ]
+ },
+ "gb200.jpg": {
+  "title": "File:Nvidia DGX GB200.jpg",
+  "page": "https://commons.wikimedia.org/wiki/File:Nvidia_DGX_GB200.jpg",
+  "author": "Pokiiri",
+  "licence": "CC BY-SA 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "size": [
+   1348,
+   3875
+  ]
+ },
+ "h100a.jpg": {
+  "title": "File:NVIDIA H100 (极客湾Geekerwan) 004.png",
+  "page": "https://commons.wikimedia.org/wiki/File:NVIDIA_H100_(%E6%9E%81%E5%AE%A2%E6%B9%BEGeekerwan)_004.png",
+  "author": "极客湾Geekerwan",
+  "licence": "CC BY 3.0",
+  "licence_url": "https://creativecommons.org/licenses/by/3.0",
+  "size": [
+   3840,
+   2160
+  ]
+ }
+}

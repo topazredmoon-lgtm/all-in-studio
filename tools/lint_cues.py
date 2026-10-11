@@ -63,7 +63,7 @@ for b in script["beats"]:
     # empty board at a cut: every object of the cut waits for a later word (drawings cued with `at`, panels with `enter`).
     # captchas-full v1 had 9 such 0.2–0.4 s blanks (tools/watch.py). The first object of a cut is on screen at its frame 0.
     for c in (cuts or [b["shot"]]):
-        vis = [c["hero"]] if c.get("layout") == "full" else [c.get("L"), c.get("R")]
+        vis = [c["hero"]] if c.get("layout") in ("full", "scene") else [c.get("L"), c.get("R")]
         waits = [isinstance(v.get("enter"), str) or (v.get("v") in ("LineIcon", "IconRow") and isinstance(v.get("at"), str)) for v in vis if v]
         if waits and all(waits):
             fails.append(f"{b['id']}: cut at '{c.get('at', 0)}' opens on an empty board (every object waits for a word); draw one at frame 0")

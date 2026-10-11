@@ -62,9 +62,12 @@ for kind, path, start in placements:
     if kind != "vo": continue
     a, sr = sf.read(path, dtype="float32"); s = int(start * sr); n24[s:s + len(a)] += a
 sf.write(tmp / "narr_raw.wav", n24, 24000)
-ff("-i", str(tmp / "narr_raw.wav"), "-af",
-   "highpass=f=75,equalizer=f=220:t=q:w=1.0:g=1.6,equalizer=f=3800:t=q:w=0.9:g=1.2,loudnorm=I=-16:TP=-1.5:LRA=11,aresample=48000",
-   "-ac", "2", str(tmp / "narr.wav"))
+CHAIN = {  # "cinema" (owner 2026-10-11, "no cinema soul"): chest warmth, presence, a firm compressor so every word lands, de-essed
+    "v23": "highpass=f=75,equalizer=f=220:t=q:w=1.0:g=1.6,equalizer=f=3800:t=q:w=0.9:g=1.2,loudnorm=I=-16:TP=-1.5:LRA=11",
+    "cinema": "highpass=f=65,equalizer=f=120:t=q:w=0.9:g=2.5,equalizer=f=380:t=q:w=1.2:g=-2,equalizer=f=4200:t=q:w=1.0:g=2.2,"
+              "acompressor=threshold=-22dB:ratio=3.2:attack=4:release=90:makeup=2,deesser=i=0.35,loudnorm=I=-15:TP=-1.5:LRA=8",
+}
+ff("-i", str(tmp / "narr_raw.wav"), "-af", CHAIN[script.get("master", "v23")] + ",aresample=48000", "-ac", "2", str(tmp / "narr.wav"))
 mix, _ = sf.read(tmp / "narr.wav", dtype="float32")
 need = int(t * SR) + SR
 if len(mix) < need: mix = np.vstack([mix, np.zeros((need - len(mix), 2), dtype=np.float32)])

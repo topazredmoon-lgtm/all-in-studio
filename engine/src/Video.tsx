@@ -1,12 +1,13 @@
 import React from 'react';
 import { AbsoluteFill, Sequence, interpolate, useCurrentFrame } from 'remotion';
 import { BeatCtx, Fonts, Grain, Ground, Word, cueFrame, useBeat } from './ds/core';
-import { Chapter, Clip, Full, Registry, Split, VisualSpec } from './ds/layouts';
+import { Chapter, Clip, Full, Registry, Scene, Split, VisualSpec } from './ds/layouts';
 import { color } from './ds/tokens';
 
 type One =
   | { layout: 'split'; L: VisualSpec; R: VisualSpec; cap?: string; act?: string }
   | { layout: 'full'; hero: VisualSpec; cap?: string; glow?: 'red' | 'warm'; bg?: string; bgFocus?: string; act?: string }
+  | { layout: 'scene'; hero: VisualSpec; cap?: string; act?: string }
   | { layout: 'chapter'; no: string; title: string; img?: string; credit?: string; focus?: string; at?: string };
 /** A beat is one shot, or several `cuts` that hard-cut on their cue words (v23 / minimal pacing: something new every 2–3 s). */
 export type Shot = (One | { cuts: (One & { at?: string | number })[]; act?: string }) & { sfx?: unknown[]; act?: string };
@@ -15,6 +16,7 @@ export type Timeline = { fps: number; total: number; beats: Beat[] };
 
 const renderOne = (reg: Registry, s: One, act?: string) => {
   if (s.layout === 'split') return <Split reg={reg} L={s.L} R={s.R} cap={s.cap} act={s.act ?? act} />;
+  if (s.layout === 'scene') return <Scene reg={reg} hero={s.hero} cap={s.cap} />;
   if (s.layout === 'full') return <Full reg={reg} hero={s.hero} cap={s.cap} glow={s.glow} bg={s.bg} bgFocus={s.bgFocus} act={s.act ?? act} />;
   return <Chapter {...s} />;
 };

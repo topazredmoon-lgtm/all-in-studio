@@ -1,6 +1,37 @@
-# HANDOVER · All-in · 2026-10-09 · captchas-full v3 DELIVERED · AI black markets 1:30 SAMPLE delivered · NEXT: its full film
+# HANDOVER · All-in · 2026-10-11 · NEW TOPIC "undergrounds of modern Chinese AI": 1-min SAMPLE delivered · NEW VOICE + CINEMA STYLE
 Older history: `HANDOVER_archive.md` (read only if needed). Token-lean: S is on Pro (keep a session under ~120k tokens;
 grep and small scripts, never print whole transcripts or logs). Never read SCRATCH HOLY or other source projects.
+
+## 2026-10-11: owner notes on the ai-black-markets sample (full text: LEARNINGS 48-53) and what changed
+Owner: voice "horrible", clips too short/irrelevant or with weird accent/tonality (skip them), "not dramatic", "no cinema soul",
+"robotic voice should not play for too long uninterrupted; bullet-point the BIG claims, hook, make him wonder; not a presentation".
+- **Voice**: `tools/tts_cb.py` (Chatterbox, MIT, `.venv-tts` Python 3.11 + torch CPU; ~7 s of compute per 1 s of voice, so a
+  1-min sample voices in ~10 min on the 4-core cloud box). Timbre ref `assets/voice/narrator_ref.wav` (synthetic). Per-beat `ex`
+  drama; " | " / " || " = written breaks. `script.json` `"master": "cinema"` = new mastering chain in `tools/build.py`.
+  Old Kokoro path (`tools/tts.py`) still works for old videos. Set up on a new cloud box: see top of `tts_cb.py`.
+- **Style**: new `scene` layout (full-bleed) + `engine/src/visuals/cnai.tsx` (Film, Cctv, LabelSwap, RouteMap, AccountWall) +
+  `cnai_map.ts` (Natural Earth PD land outline). Case-file grammar: EXHIBIT A / B, red stamps with thud, RECONSTRUCTION tag
+  on anything we drew instead of filmed. Add them to VISUALS.md when the full film is built.
+- **Clips**: all US Senate committee webcasts (public domain) cut from senate.gov HLS streams (see LEARNINGS 52; the subagent's
+  stream patterns: archive `www-senate-gov-msl3archive.akamaized.net/<comm>/<comm>MMDDYY_1/master.m3u8`, live
+  `www-senate-gov-media-srs.akamaized.net/hls/live/<id>/<comm>/<file>/master.m3u8`, ids banking 2036799, commerce 2036779,
+  foreign 2036794, judiciary 2036788, armed 2036800; captions are embedded). YouTube downloads are blocked from the cloud box.
+- **Sample**: `videos/china-ai-underground/` (gen_script.py, SOURCES.md, LICENCES.md, qa/cuts_all.jpg). 8 beats, 2 clips
+  (Sen. Banks hook, Lutnick on DeepSeek), 1:18. Spine: Exhibit A (Blackwell, "not allowed"), Exhibit B (the Supermicro hair-dryer
+  label swap, SDNY indictment March 2026, $510 M in weeks), DeepSeek, "smuggled chips, stolen answers, 24,000 fake accounts".
+- **Not yet used, ready for the full film** (`.cc-src/cnai/senate/clips/`, local only, re-cut with the stream patterns above):
+  Feith "no such thing as smuggling" + "mounting evidence ... indictment" (Banking 2026-06-11), Warren "billions of dollars
+  of chips ... diverted", Lutnick x2 on DeepSeek, Sen. Tim Scott "Alibaba executed the largest known distillation attack on
+  Anthropic" (Scott has a Carolina accent: owner skips odd accents, judge by ear). Senate Judiciary 2026-04-22 "Stealth
+  Stealing" has distillation moments (captions in `.cc-src/cnai/senate/judiciary042226.live.caps.txt`). House committee
+  clips (Moolenaar 483XSj_VNaw hair-dryer line, Mast H3SX0JYe2-A "thousands of Blackwell chips", Pottinger mkAYpnqRleM on
+  DeepSeek) are US-gov works but YouTube-only: the owner's PC can fetch them with yt-dlp.
+- **Full film outline (8 min+)**: Exhibit A chips · the smuggling routes (Singapore/Malaysia/Thailand, rented cloud compute,
+  Operation Gatekeeper "Sandkyan" labels Dec 2025) · Exhibit B hair dryer (full case) · DeepSeek and the chips it "shouldn't
+  have" · distillation (Anthropic Feb 2026: ~16 M exchanges, ~24 k accounts; Alibaba letter, Senate Banking) · the grey-market
+  GPU rental and shell companies · the denial ("no such thing as smuggling") · who profits · what Washington does (Chip
+  Security Act, location verification) · what it means for you. Keep narration runs <= ~17 s, a real voice every 20-35 s.
+- Open: re-check "banned" claims against the latest BIS rule; read the DOJ/SDNY release; verify Anthropic post.
 
 ## Owner's TOP RULE (2026-10-08, "Never forget this never ever")
 No clip may cost revenue: only CC BY / BY-SA / CC0 / PD / government clips. No news (WSJ, Vox, Big Think), no TED, no

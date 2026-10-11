@@ -4,15 +4,18 @@ import { makeVideo, Timeline } from './Video';
 import * as captchas from './visuals/captchas';
 import * as captchas2 from './visuals/captchas2';
 import * as aibm from './visuals/aibm';
+import * as cnai from './visuals/cnai';
 import captchas3minTl from './videos/captchas-3min/timeline.json';
 import captchasFullTl from './videos/captchas-full/timeline.json';
 import aibmTl from './videos/ai-black-markets/timeline.json';
+import cnaiTl from './videos/china-ai-underground/timeline.json';
 
 // One entry per video: its timeline (tools/build.py) + the topic visuals it may use (on top of the shared ds/).
 const videos: { id: string; tl: Timeline; visuals: Record<string, React.FC<any>> }[] = [
   { id: 'captchas-3min', tl: captchas3minTl as unknown as Timeline, visuals: captchas },
   { id: 'captchas-full', tl: captchasFullTl as unknown as Timeline, visuals: { ...captchas, ...captchas2 } },
   { id: 'ai-black-markets', tl: aibmTl as unknown as Timeline, visuals: aibm },
+  { id: 'china-ai-underground', tl: cnaiTl as unknown as Timeline, visuals: cnai },
 ];
 
 export const Root: React.FC = () => (
