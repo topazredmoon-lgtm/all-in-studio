@@ -8,6 +8,9 @@ find the newest commit across all branches, merge it, read its HANDOVER and work
 build or send a topic the owner killed (AI black markets is dead; the live one is `ai-ban` from `owner_script.txt`).
 
 ## The bar (what the owner approved)
+- **Critical viewer (owner, 2026-10-11, LEARNINGS 74)**: write for the sceptic who pauses to fact-check. Sourced facts or
+  clearly-labelled fears only; say which is which out loud; `stamp: {"t": "real"|"not yet", "at": cue}` on the picture;
+  admit the strongest counter-fact; blame named people only for what they said.
 - **Look**: v23's board (warm black, dot grid, corner marks, vignette) + the "minimal" kit (thin line art that draws on). Hand caption at the bottom, ≤ 5 words, one or two red keywords. Left/right split by default.
 - **Pacing**: something new every 2–3 s. A beat (1–2 sentences) is cut into `cuts` that hard-cut on cue words. Voice pace lead 0.2 s, gap 0.45 s. Open on the thing everyone recognises, doing something, in frame 0.
 - **Hooks**: cold open on a real, recognisable object (the captcha) with a 1-line question; an open loop by 0:35 ("by the end, you'll know who cashed in"); re-hook at each act ("books were only the beginning"); pay the loop off in the last act; end on a callback to the opening picture and one line that flips the premise.

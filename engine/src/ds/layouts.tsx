@@ -29,16 +29,31 @@ const Tag: React.FC<{ t: string; at?: string | number }> = ({ t, at }) => {
   );
 };
 
+/** ai-ban (owner, 2026-10-11: "put urself in the boots of the critical mind viewer"): a rubber stamp on the picture's top-right
+ *  corner that says whether the claim is fact or fear. "real" = cream ink, anything else ("not yet", "fear", "false") = red.
+ *  Lands on its word with a small thump (scale 1.5 → 1). */
+const Stamp: React.FC<{ t: string; at?: string | number }> = ({ t, at }) => {
+  const frame = useCurrentFrame();
+  const f = useCue(at, 0);
+  const p = f <= 0 ? 1 : prog(frame, f, 7);
+  const c = t.toLowerCase() === 'real' ? '#FAF6EE' : color.red;
+  return (
+    <div style={{ position: 'absolute', right: -6, top: -6, opacity: p, transform: `rotate(-8deg) scale(${1.5 - 0.5 * p})`, transformOrigin: 'center',
+      border: `5px solid ${c}`, borderRadius: 10, padding: '4px 16px', ...mono(34, c), fontWeight: 800, letterSpacing: 4, textTransform: 'uppercase', background: 'rgba(20,18,16,0.75)', whiteSpace: 'nowrap' }}>{t}</div>
+  );
+};
+
 const Visual: React.FC<{ reg: Registry; spec: VisualSpec; w: number; h: number }> = ({ reg, spec, w, h }) => {
   const C = reg[spec.v];
   if (!C) throw new Error(`unknown visual "${spec.v}"`);
-  const { v, k, enter, surface, plate, pad, tag, ...props } = spec as VisualSpec & { tag?: { t: string; at?: string | number } };
+  const { v, k, enter, surface, plate, pad, tag, stamp, ...props } = spec as VisualSpec & { tag?: { t: string; at?: string | number }; stamp?: { t: string; at?: string | number } };
   const p = surface === 'bare' ? 0 : (pad ?? 36);
   const ch = h - 2 * p - ((surface ?? 'card') === 'card' && k ? KICK : 0) - (tag ? TAG : 0);
   return (
     <div style={{ position: 'relative', width: w - 2 * p, height: h - 2 * p }}>
       <C {...props} w={w - 2 * p} h={ch} />
       {tag && <Tag t={tag.t} at={tag.at} />}
+      {stamp && <Stamp t={stamp.t} at={stamp.at} />}
     </div>
   );
 };

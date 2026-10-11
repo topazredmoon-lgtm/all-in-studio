@@ -253,6 +253,12 @@ const FLAGS: Record<string, (W: number, H: number) => React.ReactNode> = {
       <rect x={0} y={0} width={cw} height={ch} fill="#24478f" />
       {Array.from({ length: 20 }, (_, i) => <circle key={i} cx={cw * ((i % 5) + 0.5) / 5} cy={ch * (Math.floor(i / 5) + 0.5) / 4} r={4} fill="#e9e3d3" />)}</g>;
   },
+  china: (W, H) => {
+    const star = (x: number, y: number, r: number, rot = 0) => <path key={`${x}-${y}`} transform={`translate(${x} ${y}) rotate(${rot})`} fill="#e0b84a"
+      d={Array.from({ length: 10 }, (_, i) => { const a = (i * Math.PI) / 5 - Math.PI / 2, rr = i % 2 ? r * 0.4 : r; return `${i ? 'L' : 'M'}${(Math.cos(a) * rr).toFixed(1)} ${(Math.sin(a) * rr).toFixed(1)}`; }).join(' ') + 'Z'} />;
+    return <g><rect x={0} y={0} width={W} height={H} fill="#c0392b" />{star(W * 0.17, H * 0.27, H * 0.16)}
+      {star(W * 0.33, H * 0.1, H * 0.055, 20)}{star(W * 0.4, H * 0.2, H * 0.055, 45)}{star(W * 0.4, H * 0.35, H * 0.055, 0)}{star(W * 0.33, H * 0.45, H * 0.055, 20)}</g>;
+  },
   eu: (W, H) => <g><rect x={0} y={0} width={W} height={H} fill="#24478f" />
     {Array.from({ length: 12 }, (_, i) => { const a = (i / 12) * Math.PI * 2; return <circle key={i} cx={W / 2 + Math.sin(a) * H * 0.32} cy={H / 2 - Math.cos(a) * H * 0.32} r={7} fill="#e0b84a" />; })}</g>,
 };

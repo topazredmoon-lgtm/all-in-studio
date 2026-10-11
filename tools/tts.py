@@ -22,7 +22,7 @@ SQ = {",": 0.30, ";": 0.30, ":": 0.32, "-": 0.30, ".": 0.50, "?": 0.52, "!": 0.5
 SQ_V = 2  # v2 (2026-10-11): + per-line level matching
 # Owner 2026-10-11: "a human would never say G P T the way it said it". Spaced letters in `say` make Kokoro read each
 # letter as its own stressed word. Write names normally; words espeak gets wrong go here as IPA (one word, natural stress).
-LEX = {"Blumenthal": "blˈuːmənθˌɔːl", "Kokoro": "kəkˈɔːɹoʊ"}
+LEX = {"Blumenthal": "blˈuːmənθˌɔːl", "Kokoro": "kəkˈɔːɹoʊ", "WormGPT": "wˈɜːm ʤˌiːpˌiːtˈiː", "xAI": "ˌɛks ˌeɪˈaɪ"}
 LEX_V = 1
 SPACED = re.compile(r"\b[A-Z] [A-Z]\b")
 TARGET = -20.0  # dBFS RMS of the voiced part of every line (owner: "the voice tone is irregular")

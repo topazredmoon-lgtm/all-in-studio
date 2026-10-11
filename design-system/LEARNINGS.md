@@ -3,6 +3,16 @@
 Newest first. Each entry: what happened, the lesson, where it now lives (code or DESIGN.md).
 Owner notes go here verbatim (dated) the same turn they arrive; general rules are then promoted into DESIGN.md / `ds/`.
 
+## 2026-10-11 (late night) · owner OKs ai-ban sample v5 → full film
+Owner, verbatim: "i like it xd now the full video but please do a great job. put urself in the boots of the critical mind viewer."
+73. Sample v5 worked: the owner's own lines in their order, made true, a real deepfake hook, a real Altman clip. → The film
+    keeps v5's opening as is and follows the owner's scenes 01-18.
+74. The critical viewer: a sceptic who pauses the video to check claims. Every claim is either sourced (SOURCES.md) or said
+    as a fear/prediction; the narrator says out loud which is which ("that part is real" / "that hasn't happened. yet."), a
+    REAL / NOT YET stamp lands on the picture (`stamp` on any visual, `ds/layouts.tsx`), the strongest counter-fact is
+    admitted (the White House backs open models), and only named people are blamed for what they actually said.
+    Rule in PLAYBOOK "Owner's taste".
+
 ## 2026-10-11 (late night) · owner on the AI black markets full film a parallel session sent
 Owner, verbatim (French): "jai revu la derniere video k tu ma montré : bordel je parlais de loriginal script celui que
 j'ai copié collé dans un chat. par cette vielle video de merde" (= "I watched the last video you showed me: damn, I meant
