@@ -1,8 +1,23 @@
-# HANDOVER · All-in · 2026-10-11 late night · LIVE = "THE COMING AI BAN" (ai-ban) · 1-min sample v5 (owner's SCENE 01 as written) SENT · NEXT: owner OK → full film
+# HANDOVER · All-in · 2026-10-11 · LIVE = "THE COMING AI BAN" (ai-ban) · FULL FILM built (12:54, 18 clips) · rendering → send
 Older history: `HANDOVER_archive.md` (read only if needed). Token-lean: S is on Pro (keep a session under ~120k tokens;
 grep and small scripts, never print whole transcripts or logs). Never read SCRATCH HOLY or other source projects.
 
-## NOW (2026-10-11 late night): owner rejected the AI black markets full film; live topic = ai-ban
+## NOW: ai-ban FULL FILM (owner OK'd sample v5: "i like it xd now the full video but please do a great job. put urself in
+## the boots of the critical mind viewer.") · LEARNINGS 73-74
+- `videos/ai-ban/gen_script.py` = the film: 14 acts on the owner's 18 scenes (opening = sample v5 unchanged), 75 beats,
+  1,627 words, 18 clips, 12:54. The sample is kept as `gen_sample_v5.py` (writes `script_sample_v5.json`).
+- Critical viewer: every line sourced (SOURCES rows 1a-23c; film map under "Full film") or said as a fear; narrator says
+  which ("not yet"); generic `stamp: {"t": "real"|"not yet", "at"}` on any visual (`engine/src/ds/layouts.tsx`; a string
+  `stamp` stays the visual's own prop). Counter-facts admitted (White House backs open models; EO revoked).
+- Clips: c01 deepfake hook, cB/cF/cG/cH/cR reused CC talks from `engine/public/aibm/`, cA/cP/cP2 Senate 2023 (PD,
+  evidence only), c02 Fed, 8 new: cD crypto (Camp 2023), cK anonymity (37C3), cM Warren Chip Security Act (Senate Banking
+  2026, PD), cN open models (Hacker Hotel 2025), cQ "they stole that from us" (EMF 2026), cR2 drone swarms (39C3), cS EU AI
+  Act (GoD 2024), cT run DeepSeek in 4 GB (Hacker Hotel). All in LICENCES.md. Longest narration gap 60 s (the approved opening).
+- New: Flag usa / eu / china; tts LEX WormGPT, xAI, Ng. tools/cc_cut.py: optional pad_in / pad_out per clip.
+- Render `videos/ai-ban/out/ai-ban_v6.mp4` (in progress) → send as `All-in_ai_ban_full.mp4` (< 20 MB, 2-pass).
+- Weak spots to improve after owner notes: no CC clip on WormGPT/smuggled GPUs; cR2 drones is German army, not US.
+
+## EARLIER (2026-10-11 late night): owner rejected the AI black markets full film; live topic = ai-ban
 A parallel session (branch `claude/serene-wozniak-ob8jdw`) finished and sent the AI black markets full film. Owner:
 "je parlais de loriginal script celui que j'ai copié collé dans un chat. par cette vielle video de merde" (LEARNINGS 71).
 AI black markets is DEAD: never build, send or polish it again. "The original script" = `videos/ai-ban/owner_script.txt`.
