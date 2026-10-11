@@ -1,8 +1,18 @@
-# HANDOVER · All-in · 2026-10-11 night · "THE COMING AI BAN": new 1-min SAMPLE (owner's opening, no hearing) · NEXT: owner OK → full film
+# HANDOVER · All-in · 2026-10-11 late night · LIVE = "THE COMING AI BAN" (ai-ban) · 1-min sample v4 re-sent · NEXT: owner OK → full film
 Older history: `HANDOVER_archive.md` (read only if needed). Token-lean: S is on Pro (keep a session under ~120k tokens;
 grep and small scripts, never print whole transcripts or logs). Never read SCRATCH HOLY or other source projects.
 
-## NOW (2026-10-11 night): ai-ban 1-min sample v4 · after the owner rejected the 2-min one
+## NOW (2026-10-11 late night): owner rejected the AI black markets full film; live topic = ai-ban
+A parallel session (branch `claude/serene-wozniak-ob8jdw`) finished and sent the AI black markets full film. Owner:
+"je parlais de loriginal script celui que j'ai copié collé dans un chat. par cette vielle video de merde" (LEARNINGS 71).
+AI black markets is DEAD: never build, send or polish it again. "The original script" = `videos/ai-ban/owner_script.txt`.
+- This branch (`claude/bold-bell-plohvn`) now carries all the ai-ban work (fast-forwarded to `claude/vigilant-hawking-wj9frh`).
+- Re-sent `videos/ai-ban/out/All-in_ai_ban_sample_1min_v4.mp4` (built from the owner's opening lines).
+- NEXT: when the owner OKs the sample (or says go), build the full film (8 min+) from `owner_script.txt` scenes 01-17
+  in the owner's own voice and punch, claims made true (facts as facts, predictions as "could"). See the sections below.
+- Session start rule: `git fetch origin`, find the newest commit on every `claude/*` branch, merge it, read its HANDOVER.
+
+## EARLIER (2026-10-11 night): ai-ban 1-min sample v4 · after the owner rejected the 2-min one
 Owner (verbatim in LEARNINGS 67-70): the Senate-hearing hook was "really terrible", "WHO THE F CARES ABOUT THOSE SENATE
 HEARINGS OF OLD PEOPLE", "fear of safety" is vague and overdone, a 2023 hearing is stale, "i prefer the original script",
 "this time a 1min sample". Rules now in CLAUDE.md / PLAYBOOK: never a hearing as the hook; fresh (2025-26) events first;

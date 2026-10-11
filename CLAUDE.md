@@ -34,6 +34,9 @@ Owner: S. Start every session by reading `HANDOVER.md`, then `PLAYBOOK.md`. Open
 - **Never a Senate/Congress hearing as the hook**, never the vague "AI safety fear" angle, never a stale (2023) event up
   front. Hook = a concrete, fresh (2025-26) thing that hits the viewer. Keep the owner's own script lines and punch.
 - Narrator has a side; explain jargon like a friend; leave real takeaways; true facts only, predictions as "if".
+- **The live video is `ai-ban`** (owner's pasted script `videos/ai-ban/owner_script.txt` = "the original script").
+  AI black markets is dead: never build, send or polish it. Sessions run in parallel on `claude/*` branches: start with
+  `git fetch origin` and read the HANDOVER of the newest branch before anything else.
 - Every new owner note: verbatim into LEARNINGS.md the same turn, then into PLAYBOOK/DESIGN/code and here if it is a top rule.
 
 ## Token rules (S is on Pro)

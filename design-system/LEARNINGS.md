@@ -3,6 +3,17 @@
 Newest first. Each entry: what happened, the lesson, where it now lives (code or DESIGN.md).
 Owner notes go here verbatim (dated) the same turn they arrive; general rules are then promoted into DESIGN.md / `ds/`.
 
+## 2026-10-11 (late night) · owner on the AI black markets full film a parallel session sent
+Owner, verbatim (French): "jai revu la derniere video k tu ma montré : bordel je parlais de loriginal script celui que
+j'ai copié collé dans un chat. par cette vielle video de merde" (= "I watched the last video you showed me: damn, I meant
+the original script, the one I pasted in a chat. Not this crappy old video.")
+71. Parallel cloud sessions ran on different branches: one kept building the AI black markets full film (a topic the
+    owner had already killed: "I hated the 1:30 sample script ... unwatchable") and sent it, while "the original script"
+    meant the owner's pasted `videos/ai-ban/owner_script.txt` (THE COMING BAN). → The live project is **ai-ban**; AI
+    black markets is dead (never build, send or polish it again). Every session first runs `git fetch` and checks the
+    newest commit on every `claude/*` branch, merges the newest HANDOVER line, and works only on the topic it names.
+    Rule in `CLAUDE.md` and `PLAYBOOK.md`.
+
 ## 2026-10-11 (night) · owner on the ai-ban 2-min sample (Senate-hearing cold open) → a new 1-min sample
 Owner, verbatim: "i've watched : All-in_ai_ban_sample_2min.mp4. it's really terrible. BECAUSE WHO THE F CARES ABOUT
 THOSE SENATE HEARINGS OF OLD PEOPLE FFS! WHAT A TERRIBLEH OOK! WHO CARES ABT THE " FEAR OF SAFETY" VAGUELY SHIT DONE AND

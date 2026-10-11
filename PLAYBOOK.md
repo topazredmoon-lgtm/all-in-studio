@@ -3,6 +3,9 @@
 How a fresh session takes a new topic to the captchas level (3-min v6 and the 8-min captchas-full, both 2026-10) without
 re-learning. Read this, then `design-system/DESIGN.md` (the rules), `LEARNINGS.md` (why), `VISUALS.md` (what exists).
 Never read the source projects (jolly-bell, not-so-dark-times, SCRATCH HOLY) again: what mattered is in `design-system/`.
+**Session start (owner, 2026-10-11, LEARNINGS 71)**: sessions run in parallel on `claude/*` branches. `git fetch origin`,
+find the newest commit across all branches, merge it, read its HANDOVER and work only on the live topic it names. Never
+build or send a topic the owner killed (AI black markets is dead; the live one is `ai-ban` from `owner_script.txt`).
 
 ## The bar (what the owner approved)
 - **Look**: v23's board (warm black, dot grid, corner marks, vignette) + the "minimal" kit (thin line art that draws on). Hand caption at the bottom, ≤ 5 words, one or two red keywords. Left/right split by default.
