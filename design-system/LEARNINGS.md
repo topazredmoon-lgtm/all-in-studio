@@ -3,6 +3,38 @@
 Newest first. Each entry: what happened, the lesson, where it now lives (code or DESIGN.md).
 Owner notes go here verbatim (dated) the same turn they arrive; general rules are then promoted into DESIGN.md / `ds/`.
 
+## 2026-10-11 (later) · owner on the ai-ban 1-min sample → a 2-min sample before the full film
+Owner, verbatim: "i have watched the 1min sample. the moment cuts are being cut off is still very amateurish, not natural
+at all. the voice tone is irregular. a human would never say G P T the way it said it in "chatgpt" . and also in other
+parts of the sample. I understand that this is just a sample. but the goal should be MUCH MUCH MORE DRAMATIC AND HOOKING
+than some neutral/lame setup. the very first short clip is badly edited, and is way too short and has NO PURPOSE! look
+For example : "it answers and it never asks who you are" well i personally DONT CARE if it asks who am i before it
+answers or not. that is IRRELEVANT! (i hope all of all of this and all previous prompts in other sessions/projects local
+and cloud will be LEARNED FROM FOREVER right? yes! do it now!) now get me a 2min sample before u proceed with the full
+video ,having learned."
+60. Clip edits looked amateur: the audio was cut on the last word with a 0.1 s fade and the picture FROZE for 0.45 s
+    before the narrator came back; the clip also started on the first syllable. An editor lets a speaker breathe: the
+    picture starts ~0.4 s before the first word and keeps playing ~0.6 s after the last one, the room sound fades in and
+    out under that, and the next line starts as the room sound fades. Never a freeze frame on a talking head.
+    → `tools/build.py` (pre/post roll from the clip's own words, measured silences) + `Clip` in `ds/layouts.tsx`.
+61. A clip must have a PURPOSE: it shows something the narrator can't (a reveal, a confession, a shock, a real person
+    saying the stakes out loud). A 3.6 s generic warning ("if this technology goes wrong...") is filler. The hook clip is
+    the most dramatic real moment in the source, 6-12 s, and the line after it says why it matters.
+62. Letter-spelling in `say` ("Chat G P T", "U S") makes Kokoro read each letter as its own word with a stress and a gap:
+    nobody talks like that. Brand names and initialisms go through the pronunciation lexicon in `tools/tts.py` (IPA
+    phonemes, said as one word: "ChatGPT" = chat-gee-pee-TEE), never as spaced letters.
+63. "Voice tone irregular": lines were voiced one by one with no level matching, and short fragments ("Not yet.", "It
+    sounds safe.") each got their own falling/rising tune. → tts.py levels every line to the same speech loudness;
+    lines are written as flowing spoken sentences, no strings of short fragments; `tools/voice_check.py` flags lines whose
+    pitch or level stands out from the rest.
+64. Stakes must be the viewer's OWN stakes. "It never asks who you are" is a premise nobody cares about: it is not a loss.
+    Open on something the viewer would hate to lose or be shocked to see (money, freedom, their tools, a real fake), and
+    test every line with "so what, why would I care?" — if the honest answer is "I wouldn't", the line goes.
+65. Neutral set-ups are lame. The opening 20 s needs a real shock (a real event on screen), a twist, and an open question
+    the viewer must have answered. Drama comes from real moments and reversals, not adjectives.
+66. Everything the owner says, in any session or project (local or cloud), is a permanent rule: verbatim here the same
+    turn, promoted into PLAYBOOK "Owner's taste" / DESIGN.md / code, and `CLAUDE.md` lists the top ones every session sees.
+
 ## 2026-10-11 · AI black markets 1:30 sample rejected; new video "ai ban" from the owner's script
 Owner, verbatim: "I hated the 1:30 sample script... it was real terrible, unwatchable. Let's make a new video. Here is a
 great script : ai_ban_script.txt but make sure u make it better first. explaing a bit more to the general public the

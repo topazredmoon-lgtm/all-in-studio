@@ -31,6 +31,17 @@ Source notes are verbatim in `design-system/LEARNINGS.md`. Add to this list when
   concrete surprise (a date, a precedent, a mechanism). "Make everything so cool."
 - **True beats loud.** Predictions are said as predictions; only sourced facts are said as facts. The real story,
   told sharply, is more dramatic than an invented one (and keeps the channel safe).
+- **The "so what?" test (2026-10-11).** Every line must answer "why would I care?" for a normal viewer. Stakes are
+  the viewer's own losses (money, freedom, their tools, their voice), never an abstract premise ("it never asks who you
+  are" was IRRELEVANT to the owner).
+- **Much more dramatic than neutral (2026-10-11).** The cold open is a real shock on screen (the most dramatic moment in
+  the sources), then a twist, then an open question; no calm "imagine your phone" set-up. Reversals beat adjectives.
+- **Every clip has a purpose (2026-10-11).** A clip shows what the narrator can't: a reveal, a confession, a real person
+  saying the stakes. 6-12 s, never a 3-second generic line. The first clip is the strongest one.
+- **Clips are edited like a pro (2026-10-11).** Picture in ~0.4 s before the first word, out ~0.6 s after the last,
+  room sound fading under both; never a freeze frame, never a word-tight chop (`build.py` does it; LEARNINGS 60).
+- **A voice that sounds human (2026-10-11).** No spaced letters ("G P T"): names go through the tts lexicon. Even level
+  and tune from line to line; no fragment chains. Run `tools/voice_check.py` after every voice pass.
 - **Sample first.** A new full video starts with a ~1-min sample (the real opening, full quality) for the owner's OK.
 - **Beat the last one.** Each delivery must beat the current quality bar (captchas v6 / captchas-full v3), never match it.
 

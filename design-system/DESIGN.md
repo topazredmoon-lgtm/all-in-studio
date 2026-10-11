@@ -33,6 +33,11 @@ Owner's words: "i dont want big text in an emptu screen … especially not cente
   Details: `design-system/CLIPS.md`.
 - Clip in/out points sit on sentence boundaries, never on the last syllable: out = last word end + 0.15-0.4 s, in the
   energy dip. `tools/clip_words.py` + `tools/lint_clips.py` (in build) enforce it. A clip lands one complete point (≥ ~6 s).
+- **Clip edit (owner, 2026-10-11: "amateurish, not natural at all").** `from`/`to` mark the first and last spoken word;
+  `build.py` adds a pre-roll (≤ 0.45 s) and post-roll (≤ 0.7 s) taken from the clip's own silence (never into another
+  word), fades the room sound in/out over them, and the narrator's next line starts during the fade. The picture plays
+  through the post-roll (no freeze). Name plate = a documentary lower third (name, who they are), 3 s.
+- **Every clip has a purpose** (owner, 2026-10-11): it shows a reveal, a confession or the stakes in a real voice.
 - Photos only with a recorded licence: Commons/Openverse CC0, public domain, CC BY, CC BY-SA, fetched with the API (author/licence logged).
 - No music; SFX procedural (`tools/sfx.py`); voice Kokoro (Apache-2.0). Mark synthetic voice in YouTube Studio when asked.
 
@@ -42,6 +47,11 @@ Owner's words: "i dont want big text in an emptu screen … especially not cente
   expansion appears word by word as it is said (`expandAt` / `expandEndAt`). No silent holds for reading.
 - No unnatural pauses: `tools/tts.py` caps inner silences (comma 0.30 s, stop 0.50 s, mid-phrase 0.18 s). Write whole
   spoken sentences; avoid chains of 2-word fragments, which Kokoro reads with long gaps.
+- **Pronunciation (owner, 2026-10-11: "a human would never say G P T the way it said it").** Never spaced letters in
+  `say`. Names and initialisms are in the `LEX` table of `tools/tts.py` (IPA, one word, natural stress). Add new names
+  there and check them with Whisper + `tools/voice_check.py`.
+- **Even tone.** `tts.py` levels every line to the same loudness; `voice_check.py` flags lines whose pitch or level is an
+  outlier; rewrite or re-voice them before building.
 - After every voice pass, list gaps ≥ 0.5 s inside lines and silences ≥ 1.2 s between lines (outside clips) and fix them.
 
 ## Long films (8 min+, captchas-full)

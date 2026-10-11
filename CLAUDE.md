@@ -25,6 +25,15 @@ Owner: S. Start every session by reading `HANDOVER.md`, then `PLAYBOOK.md`. Open
 - **Quality bar** = the captchas 3-minute **v6** cut (`videos/captchas-3min/out/All-in_captchas_3min_v6.mp4`).
   Nothing goes to the owner below it. QA gates in `PLAYBOOK.md` must all pass first.
 
+## Owner's taste, learned (every session, local or cloud; full list: PLAYBOOK "Owner's taste", verbatim notes: LEARNINGS)
+- **MUCH more dramatic and hooking than neutral.** Open on a real shock on screen, a twist, an open question. No calm set-up.
+- **The "so what?" test**: every line touches the viewer's own stakes; a premise they don't care about is cut.
+- **Every clip has a purpose** (reveal, confession, stakes), 6-12 s; the first clip is the strongest one.
+- **Pro clip edits**: breathe in/out on the speaker's own room sound, never word-tight, never a freeze frame.
+- **Human voice**: no spaced letters ("G P T"); names via the tts lexicon; even level and tune; no fragment chains.
+- Narrator has a side; explain jargon like a friend; leave real takeaways; true facts only, predictions as "if".
+- Every new owner note: verbatim into LEARNINGS.md the same turn, then into PLAYBOOK/DESIGN/code and here if it is a top rule.
+
 ## Token rules (S is on Pro)
 - Keep a session under ~120k tokens of context. Write `HANDOVER.md` at milestones and before stopping.
 - Read summaries, headings and grep hits, not big files; never print whole transcripts, logs or JSON.
