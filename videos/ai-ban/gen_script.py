@@ -57,7 +57,7 @@ VO = {  # id: (vo, say or None)
 
 SHOTS = {
     "h00": {"cuts": [
-        full(phone("open", askAt="Ask", replyAt="answers"), "ask it *anything*"),
+        full(phone("open", askAt="Ask", replyAt="anything"), "ask it *anything*"),
         split(phone("open"), icon("idcard", mark="no", markAt="who", label="your name", enter="never"), "it never asks *who you are*", at="never")]},
     "h01": {"cuts": [
         full(phone("gate", gateAt="day"), "the day *it asks*"),
@@ -71,11 +71,11 @@ SHOTS = {
         split(icon("shield", mark="ok", markAt="safe", label="safe?"), licence("brain", title="mind licence", stamp="approved", stampAt="safe"), "it *sounds* safe", at="sounds"),
         split(licence("brain", title="mind licence"), icon("clock", tAt="seen", label="before"), "we've *seen this* before", at="But#2")]},
     "h04": {"cuts": [
-        full(icon("lock", label="encryption", tag=tag("until 1996")), "*until 1996*, in america"),
+        split(icon("lock", label="encryption", tag=tag("until 1996")), icon("flag", label="america", enter="America"), "*until 1996*, in america"),
         split(icon("lock", label="encryption"), icon("envelope", label="your messages"), "keeps your *messages* private", at="maths"),
         split(icon("lock", label="encryption"), listdoc([{"t": "tanks"}, {"t": "missiles"}, {"t": "warships"}, {"t": "bombs"}, {"t": "encryption"}], hot=4, hotAt="munition",
                                                         plate="22 cfr 121 · cat. xiii · eo 13026, 1996"), "listed as a *weapon*", at="as"),
-        split(icon("tank", label="tanks"), icon("missile", label="missiles", enter="missiles"), "same list as *tanks*", at="On")]},
+        split(listdoc([{"t": "tanks"}, {"t": "missiles"}, {"t": "warships"}, {"t": "bombs"}, {"t": "encryption"}], hot=4, hotAt=0), icon("tank", label="tanks", enter="tanks"), "same list as *tanks*", at="same")]},
     "h05": {"cuts": [
         full(pieces([None, "yet", "piece", "built", "tried"]), "nobody has *banned* it. yet."),
     ]},

@@ -28,7 +28,7 @@
        "surface": "bare",
        "mode": "open",
        "askAt": "Ask",
-       "replyAt": "answers"
+       "replyAt": "anything"
       },
       "cap": "ask it *anything*"
      },
@@ -245,8 +245,8 @@
    "shot": {
     "cuts": [
      {
-      "layout": "full",
-      "hero": {
+      "layout": "split",
+      "L": {
        "v": "LineIcon",
        "surface": "bare",
        "name": "lock",
@@ -255,6 +255,13 @@
         "t": "until 1996",
         "at": 0
        }
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "flag",
+       "label": "america",
+       "enter": "America"
       },
       "cap": "*until 1996*, in america"
      },
@@ -314,20 +321,38 @@
      {
       "layout": "split",
       "L": {
-       "v": "LineIcon",
+       "v": "ListDoc",
        "surface": "bare",
-       "name": "tank",
-       "label": "tanks"
+       "title": "us munitions list",
+       "rows": [
+        {
+         "t": "tanks"
+        },
+        {
+         "t": "missiles"
+        },
+        {
+         "t": "warships"
+        },
+        {
+         "t": "bombs"
+        },
+        {
+         "t": "encryption"
+        }
+       ],
+       "hot": 4,
+       "hotAt": 0
       },
       "R": {
        "v": "LineIcon",
        "surface": "bare",
-       "name": "missile",
-       "label": "missiles",
-       "enter": "missiles"
+       "name": "tank",
+       "label": "tanks",
+       "enter": "tanks"
       },
       "cap": "same list as *tanks*",
-      "at": "On"
+      "at": "same"
      }
     ],
     "act": "01 the ban"
