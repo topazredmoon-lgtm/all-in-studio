@@ -1,0 +1,240 @@
+[   29.9-   38.8] So, welcome to the next talk, a little behind, like a minute, so I'll make it very short.
+[   38.8-   47.6] The next speaker is named Pyro, and the talk is about the 90 cyber war, and he grew up
+[   47.6-   50.5] in the middle of it.
+[   50.5-   71.1] I am that old, yes.
+[   71.1-   73.1] Okay, so I am Pyro.
+[   73.1-   77.1] Welcome to a brief history of the 90s crypto wars, because we only have 20 minutes.
+[   77.1-   82.0] This will be a very abridged conversation about the crypto wars, and I apologize, I'm
+[   82.0-   88.2] probably going to be speaking pretty quickly, because as you can see from the agenda, there
+[   88.2-   91.7] are a few things we're going to talk about.
+[   91.7-   95.0] Some front matter, we're going to talk about PGP and Phil Zimmerman, we're going to talk
+[   95.0-  100.6] about the clipper chip and skipjack, we're going to talk about Kalia, Kevin Mitnick,
+[  100.6-  107.7] the communications Decency Act, and enhanced 911, as well as a wrap up summary.
+[  107.7-  112.5] So for those of you who don't know where you are or why you're here, the 90s were an interesting
+[  112.5-  117.7] time with George Herbert Walker Bush and Bill Clinton in office, they were a time that
+[  117.7-  124.7] seem replete with parallels to today for various reasons that we'll talk about.
+[  124.7-  133.5] Phil Zimmerman and the Communications Decency Act, they have parallels to legislation around
+[  133.5-  139.8] the world that is happening today, and we as a group and a society need to remember these
+[  139.8-  145.8] lessons that were hard fought and hard learned at the time in order to keep our communications
+[  145.8-  151.6] on our privacy with us today and going into the future.
+[  151.6-  153.6] So a brief timeline about what we're talking about.
+[  153.6-  160.2] In 91, Phil Zimmerman released PGP, in 93, the Department of Justice had a complaint
+[  160.2-  166.7] and pursued prosecution of him for the same thing, and at the same time the clipper chip
+[  166.7-  171.5] and skipjack algorithm were released.
+[  171.5-  177.2] In 1994, the Communications Assistance for Law Enforcement Act, also known as Kalia was
+[  177.2-  185.9] put into law, in 95, Mitnick was arrested, and in 96, enhanced 9-1-1 and the Communications
+[  185.9-  191.3] Decency Act were passed and put into law into the United States.
+[  191.3-  192.3] So who am I?
+[  192.3-  197.5] I am Pyro, I'm from Dallas, I've been a participant in Dallas Hackers Association in DC-214
+[  197.5-  203.1] besides DFW, I work in Infosec, I've been a sysadmin, I've also been a paint sniffer,
+[  203.1-  206.6] I enjoy dangerous hobbies, you know things like riding motorcycles, doing professional
+[  206.6-  210.0] pyrotechnics, scuba diving, and walking around Bonhoeff's Fettle at night.
+[  210.0-  216.4] I'm generally grumpy because, well, I was a sysadmin, so take that as you will.
+[  216.4-  220.6] For those of you who thought you weren't getting a EULA today, well you are, I alone am responsible
+[  220.6-  225.5] for the content of my talk, my employer wasn't a part of the conversation, and while
+[  225.5-  232.5] I work in the telecom industry, I've never been involved with E911 or Kalia deployments,
+[  232.5-  236.6] it's not a sales pitch, we're not talking about vendors generally speaking, and because
+[  236.6-  243.5] of Strahfgesetzbuch einhornen einen Aksisch, which states, whoever defiles the memory of
+[  243.5-  252.6] deceased person incurs a penalty of imprisonment, or a not to exceed two years, or a fine, yes,
+[  252.6-  257.9] we will be talking about a couple of people in the middle of these conversations, and
+[  257.9-  264.7] they will be safe at last, and this talk is entirely from the point of view of me,
+[  264.7-  270.3] somebody who lived contemporaneously through it in America.
+[  270.3-  273.5] So a couple of quotes.
+[  273.5-  279.1] We cannot allow a situation where law enforcement's ability to tackle abhorrent criminal acts
+[  279.1-  281.6] and protect victims is severely hampered.
+[  281.6-  287.4] Sadly, at a time when we need to be taking more action, this company is still pursuing
+[  287.4-  293.2] plans that place the good work and progress that have already been made in jeopardy.
+[  293.2-  298.3] My view is this simply cannot be accepted.
+[  298.3-  302.6] The other quote, while encryption technology can help Americans protect business secrets
+[  302.6-  309.1] and the unauthorized release of personal information, it can also be used by terrorists, drug dealers,
+[  309.1-  310.8] and other criminals.
+[  310.8-  315.3] So raise your hand if you think the quote on the left is contemporaneous to the time
+[  315.3-  321.4] was actually stated in the 90s.
+[  321.4-  329.8] And those who think the quote on the right was made in the 90s, raise your hand.
+[  329.8-  332.3] The majority are correct.
+[  332.3-  339.8] So the quote on the left is referring to Facebook, and that was made by Preeti Patel in 2021.
+[  339.8-  345.6] The quote on the right was made in a White House press release in 1993 when they were
+[  345.6-  350.3] talking about the clipper chip.
+[  350.3-  352.4] Pretty good privacy.
+[  352.4-  356.0] It program at the time, still pretty good.
+[  356.0-  360.1] It was released in 91 as free and open source software.
+[  360.1-  365.8] And it was meant to allow users to access good encryption because encryption is hard.
+[  365.8-  367.6] It was hard.
+[  367.6-  372.7] And it was meant to bridge that divide a little bit and make it easier for folks.
+[  372.7-  377.3] The stated goal of Phil Zimmerman was for victims of oppressive governments and those
+[  377.3-  380.2] in need of privacy to have access to good encryption.
+[  380.2-  387.6] So people who are informants, whistleblowers, people like that, people who are talking to
+[  387.6-  394.4] reporters and reporters in dangerous areas, it was meant for those kinds of people.
+[  394.4-  401.2] At the time, strong encryption was heavily regulated in the United States.
+[  401.2-  405.5] It was treated as arms similar to military hardware.
+[  405.5-  408.0] 128-bit encryption was restricted.
+[  408.0-  410.5] 40-bit was allowed for export.
+[  410.5-  414.9] Raise your hand if you use a 128-bit key for your SSH key.
+[  414.9-  416.6] Okay.
+[  416.6-  422.1] Most of us don't anymore.
+[  422.1-  429.9] These restrictions on encryption, that was called the Arms Control Export Act.
+[  429.9-  433.8] The AECA for whatever reason.
+[  434.5-  439.4] PGP was originally posted to Usenet at the time.
+[  439.4-  443.7] And the source code was made accessible to those who wanted it.
+[  443.7-  447.9] Shortly thereafter, it was published in a hardback book by MIT Press.
+[  447.9-  450.1] Anybody remember DCSS?
+[  450.1-  452.0] Parallels.
+[  452.0-  453.7] We're going to see a lot of those.
+[  453.7-  459.9] And it's really hard to enforce destination country restrictions when you have no control
+[  459.9-  461.6] over who downloads something.
+[  461.6-  467.0] When you post something to Usenet, I can't just say, I'm sorry, you can't access that
+[  467.0-  470.6] because you're not from here.
+[  470.6-  475.8] And because of it, the United States Department of Justice investigated Phil Zimmerman until
+[  475.8-  480.4] 1996 for violations of the Arms Control Act.
+[  480.4-  486.7] Spoiler warning, they ultimately declined prosecution of him.
+[  486.7-  492.5] As I said, because people outside the US were able to download it, he was thought to have
+[  492.5-  500.4] been or alleged to have been distributing strong encryption to foreign nationals, which
+[  500.4-  502.4] was a violation.
+[  502.4-  507.2] The DOJ ultimately declined prosecution and at the time, in their press release, stated
+[  507.2-  509.4] they would not go into detail as to why.
+[  509.4-  512.8] To my knowledge, they still haven't.
+[  512.8-  522.7] In 1994, MIT released, MIT had taken the source code and they released PGP 2.62, which was
+[  522.7-  531.3] amongst the community and amongst the more hardcore elements of our group, viewed as
+[  531.3-  532.7] a compromised version.
+[  532.7-  538.1] A lot of people thought that MIT had sold out, that they had hooked up with the NSA
+[  538.1-  540.8] and they had backdoored it somehow.
+[  540.8-  546.4] Those allegations were never proven out, but that taint had always been there, whether or
+[  546.4-  550.0] not people started using it more and more.
+[  550.0-  554.3] In 1997, PGP was bought by network associates.
+[  554.3-  558.4] If you love network associates, well, you love network associates.
+[  558.4-  567.6] And in 2002, it was bought by Symantec Broadcom and these days, it is an independent company
+[  567.6-  570.2] again.
+[  570.4-  574.8] Moving on, my second favorite topic today, the clipper chip.
+[  574.8-  580.9] So it was announced in 1993, there was a full court press by the United States government.
+[  580.9-  584.0] They wanted everybody to have a clipper chip in their house.
+[  584.0-  586.9] They wanted everybody using this technology.
+[  586.9-  590.6] The National Security Administration of the US, you know, the people listening to your
+[  590.6-  597.2] phone calls, they designed this chip set in a bid to make public key cryptography
+[  597.2-  598.8] more accessible.
+[  598.8-  607.7] That quote at the beginning, talking about the encryption and the accessibility for businesses
+[  607.7-  611.1] and people was because of this.
+[  611.1-  614.0] They wanted everybody to adopt this.
+[  614.0-  615.9] And why did they want it?
+[  615.9-  619.3] Why did they want both business and consumers to adopt it?
+[  619.3-  621.6] So they could backdoor your shit.
+[  621.6-  623.0] It's the NSA.
+[  623.0-  627.0] Why else would they want it?
+[  627.0-  631.0] They used the classified skipjack algorithm for encryption.
+[  631.0-  638.7] And really, when has a closed algorithm that you cannot see the source code for ever backfired
+[  638.7-  641.0] for anyone in the world?
+[  641.0-  642.0] It hasn't.
+[  642.0-  646.6] I defy you to tell me that it has.
+[  646.6-  651.5] And the way that it was backdoored was through the use of key escrow services.
+[  651.5-  658.7] The United States government was keeping a copy of the private key for all of these skipjack
+[  658.7-  665.0] devices in order to decrypt those communications when they need to.
+[  665.0-  671.2] Because you know, terrorists and drug dealers and you and I.
+[  671.2-  674.9] Obviously there were lots of opinions about this.
+[  674.9-  680.4] And the clipper chip met with massive opposition from the tech community.
+[  680.4-  682.9] There were barrels of ink printed about this.
+[  682.9-  691.4] There were barrels of ink used to talk about just how bad an idea this was.
+[  691.4-  692.4] Moving on.
+[  692.4-  696.6] We have communications assistance for law enforcement agencies.
+[  696.6-  701.6] Also known as lawful intercept for those who are in the community.
+[  701.6-  705.5] It was supposed to allow for point and click wiretapping.
+[  705.5-  710.1] Instead of having to go into a switch room and manually connect wires and things like
+[  710.1-  716.0] that, you fax over a warrant to the telecom provider, the telecom provider looks at it,
+[  716.0-  720.6] they tap a few keys on their keyboard and boom, you have a wiretap and that information
+[  720.6-  725.8] is being transmitted to your agency or agencies.
+[  725.8-  733.0] The fun thing about Kalia is that the United States government doesn't mandate how you
+[  733.0-  735.4] implement Kalia.
+[  735.4-  738.6] They implement that you do implement Kalia.
+[  738.6-  746.2] So long as you have a method that meets their minimal requirements, you are in compliance
+[  746.2-  748.6] with Kalia.
+[  748.6-  750.4] Shockingly enough.
+[  750.4-  758.1] And it obligates telecoms and telecom equipment providers to design or modify their equipment,
+[  758.1-  764.1] facilities and services to ensure that they have the necessary surveillance capabilities
+[  764.1-  767.6] as communications evolve.
+[  767.6-  772.3] That is to say, because of things like voice over IP becoming more and more prevalent, because
+[  772.3-  779.5] of the recent thing that happened with video conferencing becoming huge, Kalia comes into
+[  779.5-  781.2] play with some of that.
+[  781.2-  782.6] Most of it.
+[  782.6-  790.0] And ostensibly if you believe the government when they tell you things, it protects out
+[  790.0-  797.1] of scope information from being gathered when you have a Kalia intercept on your information.
+[  797.8-  804.7] I will leave that as an exercise to the viewers on whether or not that's true.
+[  804.7-  809.3] So moving on to people, let's talk about Kevin Mitnick a little bit, regardless of how you
+[  809.3-  814.1] feel about him and his recent passing.
+[  814.1-  816.5] He had been on the run since 92.
+[  816.5-  822.1] And at the time, rather hyperbolically, the Department of Justice claimed that he was arguably
+[  822.1-  829.5] the most wanted computer hacker in the world at the time of his arrest.
+[  829.5-  836.0] As you do when you have, as you do when you tend to have a large stack of federal indictments
+[  836.0-  841.1] coming at you, he pled guilty to some of the charges and got other ones dropped.
+[  841.1-  843.9] He ended up spending five years in prison.
+[  843.9-  850.9] Eight months of that was in solitary confinement and two years on supervised release afterwards.
+[  850.9-  854.5] Allegedly he was not allowed to use a phone while he was in prison because prison
+[  854.5-  863.9] officials were worried that he could start World War III by whistling into the handset.
+[  863.9-  865.9] Hyperbolic much.
+[  865.9-  868.8] E911.
+[  868.8-  872.9] Arguably it's not actually the worst thing that's happened.
+[  872.9-  875.3] It came into law in 99.
+[  875.3-  881.6] It was being talked about, it was starting to be worked on in 96.
+[  881.6-  886.3] It mandated that 911 be the single emergency number in the United States.
+[  886.3-  892.6] Phase one required that the carrier provide 911 with a phone number of the caller when
+[  892.6-  894.4] they called 911.
+[  894.4-  898.5] That hadn't been a mandate beforehand.
+[  898.5-  901.1] Caller ID was still a pay service too at the time.
+[  901.1-  905.7] Phase two required location data, that is latitude and longitude, to be transmitted
+[  905.7-  909.2] to 911 at that time when it came into force.
+[  909.3-  914.7] That was within 50 to 300 meters of accuracy depending on the technology being used.
+[  914.7-  919.6] In 2019 it was updated to require further accuracy because again, things evolve.
+[  919.6-  921.6] Technology changes.
+[  921.6-  928.5] Arguably my favorite part of this entire decade, the Communications Decency Act of
+[  928.5-  934.5] 1996, because everybody loves decency now, Congress learned that the internet is for
+[  934.5-  938.7] porn and decided to do something about it.
+[  938.7-  941.2] That never goes wrong, truly.
+[  941.2-  948.6] Persons who are engaged in indecent or patently offensive acts were subject to a $250,000
+[  948.6-  957.0] fine and or two years of prison time for doing something naughty on the internet.
+[  957.0-  959.2] Obviously this was challenged in the United States.
+[  959.2-  963.0] That case was Reno versus the American Civil Liberties Union.
+[  963.0-  968.7] The ACLU sued on the grounds that the CDA violated the First Amendment by abridging
+[  968.7-  970.8] your speech.
+[  970.8-  972.2] Spoilers it did.
+[  972.2-  976.5] The case went to the Supreme Court who struck down the indecency proposals,
+[  976.5-  980.5] provisions, excuse me, on their merit.
+[  980.5-  983.4] I can only imagine the justices of the Supreme Court saying,
+[  983.4-  986.9] let your porn be free.
+[  986.9-  996.5] Section 230 was introduced for safe harbor provisions for ISPs and telecoms providers.
+[  996.5- 1003.1] What section 230 said was that if you are my ISP and I come onto your network and I say
+[ 1003.1- 1007.9] something naughty or do something naughty on the internet, I'm the one who gets charged.
+[ 1007.9- 1014.7] You are not also an accessory to that action of mine.
+[ 1014.7- 1022.5] Of late, some politicians have been very against this provision and want it struck down.
+[ 1022.5- 1027.3] In the US, if you're a US citizen, you really need to be looking at the Children's Online
+[ 1027.3- 1028.8] Privacy and Protection Act.
+[ 1028.8- 1034.9] You also need to be looking at SIPA in similar legislation that's being pushed in our country.
+[ 1034.9- 1038.2] In the UK, for those of you who live there, you really need to be looking at the Online
+[ 1038.2- 1041.9] Safety or Harms Act, depending on how you call it.
+[ 1041.9- 1046.9] For those of us who live in the rest of the world, not those two countries, there are
+[ 1046.9- 1054.6] know your customer style laws being proposed, being passed, and being put forth by our governments.
+[ 1054.6- 1056.2] We need to look at them.
+[ 1056.2- 1061.4] We need to find out what they are, and we need to oppose them, and we need to oppose
+[ 1061.4- 1064.2] them loudly.
+[ 1064.2- 1065.2] Thank you everyone.
+[ 1065.2- 1067.0] This has been a very brief talk.
+[ 1067.0- 1071.0] Thank you.
+[ 1071.0- 1072.0] Thank you.
+[ 1072.0- 1078.8] We have a very brief moment of time.
+[ 1078.8- 1082.7] We have time for two questions, Max.
+[ 1082.7- 1092.0] Any questions?
+[ 1092.0- 1093.4] Thank you for your talk.
+[ 1093.4- 1099.1] If you could kindly say what was the toughest lesson we should learn from all that you
+[ 1099.1- 1101.8] presented, what would that be?
+[ 1101.8- 1108.3] The toughest lesson that we should learn, I think, is, honestly, forgetting that these
+[ 1108.3- 1111.4] things have happened.
+[ 1111.4- 1116.8] This talk came about because talking to others in our community, I brought up things like
+[ 1116.8- 1123.2] the clipper chip and just was met with dumbstruck stares, like, what are you talking about?
+[ 1123.2- 1129.9] We have to remember these things happened because it's a cycle, and these terrible proposals
+[ 1129.9- 1134.9] from the 90s are coming back up, and they keep coming back up.
+[ 1134.9- 1135.9] Thank you.
+[ 1136.3- 1142.8] The second question, we have somebody in the back.
+[ 1142.8- 1143.8] Thanks for the entertaining talk.
+[ 1143.8- 1146.6] What's the most positive thing that happened in the 90s?
+[ 1146.6- 1151.6] Besides all the bad laws, do you also have something good that we could learn from them?
+[ 1151.6- 1158.0] I would think the most positive thing was our community got a lot closer, a lot stronger,
+[ 1158.0- 1164.4] things like camp, things like CCC, things like DEF CON all started, and we were able
+[ 1164.4- 1171.5] to communicate a lot more effectively and a lot easier at the time.
+[ 1171.5- 1172.5] Thank you.
+[ 1172.5- 1177.7] Thank you.
