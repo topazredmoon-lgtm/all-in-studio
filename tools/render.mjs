@@ -29,7 +29,7 @@ const chunkDir = path.join(TMP, `${vid}_${srcHash}`);
 fs.mkdirSync(chunkDir, { recursive: true });
 
 const serveUrl = await bundle({ entryPoint: path.join(ENGINE, 'src/index.ts'), publicDir: path.join(ENGINE, 'public'), outDir: path.join(TMP, 'bundle') });
-const composition = await selectComposition({ serveUrl, id: vid });
+const composition = await selectComposition({ browserExecutable: process.env.REMOTION_BROWSER || null, serveUrl, id: vid });
 const total = composition.durationInFrames;
 const parts = [];
 for (let s = 0, i = 0; s < total; s += CHUNK, i++) {
@@ -39,7 +39,7 @@ for (let s = 0, i = 0; s < total; s += CHUNK, i++) {
   if (fs.existsSync(f)) { console.log(`chunk ${i} cached`); continue; }
   const tmpF = f.replace(/\.mp4$/, '.part.mp4');
   let last = -1;
-  await renderMedia({
+  await renderMedia({ browserExecutable: process.env.REMOTION_BROWSER || null,
     serveUrl, composition, codec: 'h264', outputLocation: tmpF, muted: true, crf: 18, frameRange: [s, e],
     concurrency: opt.concurrency ? +opt.concurrency : Math.max(2, Math.floor(os.cpus().length / 2)), imageFormat: 'jpeg', jpegQuality: 92,
     onProgress: ({ progress }) => { const p = Math.floor(progress * 10); if (p > last) { last = p; process.stdout.write(`c${i}:${p * 10}% `); } },

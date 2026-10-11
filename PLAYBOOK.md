@@ -26,7 +26,11 @@ Source notes are verbatim in `design-system/LEARNINGS.md`. Add to this list when
   it ("they'll do this to us"), after the facts have earned it, not in the cold open. Honest, never preachy.
 - **Explain like a friend.** Every hard word (jargon, acronym, law term) gets a plain one-line explanation with a
   picture the first time, then the story moves on. No lecture tone.
-- **Owner scripts are a base.** Keep their spine and best lines; tighten, explain, and sharpen the hooks before voicing.
+- **Owner scripts are a base.** Full licence to rewrite: keep the spine and the best lines, change anything else.
+- **Takeaways.** The viewer leaves knowing things they did not know and with an idea they never had. Every act lands one
+  concrete surprise (a date, a precedent, a mechanism). "Make everything so cool."
+- **True beats loud.** Predictions are said as predictions; only sourced facts are said as facts. The real story,
+  told sharply, is more dramatic than an invented one (and keeps the channel safe).
 - **Sample first.** A new full video starts with a ~1-min sample (the real opening, full quality) for the owner's OK.
 - **Beat the last one.** Each delivery must beat the current quality bar (captchas v6 / captchas-full v3), never match it.
 

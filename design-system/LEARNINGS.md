@@ -20,6 +20,12 @@ before u proceed with the full video. make sure you make it better than the capt
     script, around 3:47). Dramatic and hooking, yet pleasant: explain like a friend, not a lecture. → PLAYBOOK.
 51. An owner-supplied script is the base, not the final text: tighten and improve it before voicing, keep its spine.
 52. Every new full video starts with a ~1-min sample for the owner's OK. → PLAYBOOK pipeline step 0.
+Owner, same day, verbatim: "i hope u understood that u are free to totally change it etc. and that u must take decisions
+of ur own regarding everything. Please make it real good. the viewer must feel that he had took takeaways, genuine info he
+didnt have or ideas tought about before. make everything so cool please"
+53. A video must leave takeaways: facts the viewer did not know and an idea they never thought of. Each act ends on one
+    concrete "huh, I didn't know that" (a date, a precedent, a mechanism), not on an adjective. → PLAYBOOK taste.
+54. Full creative licence on owner scripts: rewrite freely, keep only what serves the story. → PLAYBOOK taste.
 
 ## 2026-10-08 (late) · captchas-full v3: owner notes on v2
 Owner, verbatim: "when u show the initals of captcha, the narrator should also read them xd not pause in silence lol.

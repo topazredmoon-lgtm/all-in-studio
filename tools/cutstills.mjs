@@ -41,11 +41,11 @@ for (const b of tl.beats) {
 const dir = path.join(ROOT, 'videos', vid, 'qa', 'cuts');
 fs.mkdirSync(dir, { recursive: true });
 const serveUrl = await bundle({ entryPoint: path.join(ENGINE, 'src/index.ts'), publicDir: path.join(ENGINE, 'public') });
-const composition = await selectComposition({ serveUrl, id: vid });
+const composition = await selectComposition({ browserExecutable: process.env.REMOTION_BROWSER || null, serveUrl, id: vid });
 const files = [];
 for (const s of shots) {
   const out = path.join(dir, `${s.id}.jpg`);
-  await renderStill({ serveUrl, composition, frame: s.frame, output: out, imageFormat: 'jpeg', jpegQuality: 80, scale: 1 / 3 });
+  await renderStill({ browserExecutable: process.env.REMOTION_BROWSER || null, serveUrl, composition, frame: s.frame, output: out, imageFormat: 'jpeg', jpegQuality: 80, scale: 1 / 3 });
   files.push({ out, label: `${s.id}  ${(s.frame / tl.fps).toFixed(1)}s${s.len ? `  (${s.len.toFixed(1)}s)` : ''}` });
   process.stdout.write(`${s.id} `);
 }

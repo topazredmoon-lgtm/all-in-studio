@@ -29,7 +29,8 @@ NODE_MAJOR="$(node -p 'process.versions.node.split(".")[0]')"
 [ "$NODE_MAJOR" -ge 18 ] || { echo "ERROR: node $(node -v) is too old; install Node 20 (e.g. via nvm) and re-run"; exit 1; }
 
 say "engine: npm ci + Remotion Chrome Headless Shell (the Windows .remotion/ folder is ignored on Linux)"
-( cd engine && npm ci && npx remotion browser ensure )
+( cd engine && npm ci && { npx remotion browser ensure || echo "WARN: remotion.media unreachable; tools use REMOTION_BROWSER (Playwright headless shell)"; } )
+PWSHELL="$(ls -d /opt/pw-browsers/chromium_headless_shell-*/*/headless_shell 2>/dev/null | head -1 || true)"
 
 say "python venv (.venv)"
 [ -d .venv ] || python3 -m venv .venv
@@ -59,6 +60,7 @@ cat > "$ENVF" <<ENV
 export PYTHONIOENCODING=utf-8
 export HF_HUB_OFFLINE=1          # models are cached now (see HANDOVER.md)
 export KOKORO_MODELS="$KDIR"     # read by tools/tts.py
+export REMOTION_BROWSER="$PWSHELL"   # used by tools/*.mjs when Remotion cannot download its own browser
 export PATH="$ROOT/.venv/bin:\$PATH"   # node tools call 'python' (render.mjs -> srchash.py)
 ENV
 export PYTHONIOENCODING=utf-8

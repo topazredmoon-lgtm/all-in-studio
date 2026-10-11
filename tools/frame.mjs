@@ -9,9 +9,9 @@ const { bundle } = require('@remotion/bundler');
 const { renderStill, selectComposition } = require('@remotion/renderer');
 const [vid, secs, out = path.join(ROOT, 'videos', vid, 'qa', 'frame.jpg'), scale = '1'] = process.argv.slice(2);
 const serveUrl = await bundle({ entryPoint: path.join(ENGINE, 'src/index.ts'), publicDir: path.join(ENGINE, 'public') });
-const composition = await selectComposition({ serveUrl, id: vid });
+const composition = await selectComposition({ browserExecutable: process.env.REMOTION_BROWSER || null, serveUrl, id: vid });
 for (const [i, s] of secs.split(',').entries()) {
   const o = secs.includes(',') ? out.replace(/\.jpg$/, `_${i}.jpg`) : out;
-  await renderStill({ serveUrl, composition, frame: Math.round(Number(s) * 30), output: o, imageFormat: 'jpeg', jpegQuality: 85, scale: Number(scale) });
+  await renderStill({ browserExecutable: process.env.REMOTION_BROWSER || null, serveUrl, composition, frame: Math.round(Number(s) * 30), output: o, imageFormat: 'jpeg', jpegQuality: 85, scale: Number(scale) });
   console.log(o);
 }

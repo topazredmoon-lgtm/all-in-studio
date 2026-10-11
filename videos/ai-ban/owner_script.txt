@@ -1,0 +1,193 @@
+OWNER'S ORIGINAL SCRIPT (pasted in chat 2026-10-11, from c:\Users\pc\Desktop\ai_ban_script.txt). The base, not the final
+text: the improved script is in gen_script.py / SCRIPT.md.
+================================================================================
+TITLE: THE COMING BAN — Why Consumer AI Is About To Be Outlawed
+GENRE: Investigative Documentary / High-Stakes Tech Thriller
+TARGET RUNTIME: ~8 minutes 40 seconds (520 seconds — strictly >= 481s)
+WORD COUNT: ~1,300 words
+VOCABULARY RULE: Short, punchy, Anglo-Saxon phrasing (<= 14 words per sentence)
+================================================================================
+
+[SCENE 01 — THE DISAPPEARING BOX]
+Take a long look at the AI chatbot on your phone.
+Enjoy it while you still can.
+Behind closed doors in Washington and Brussels, a quiet consensus just formed.
+The public was never supposed to have this kind of power.
+Within thirty-six months, unrestricted consumer access to artificial intelligence will be outlawed.
+No more free prompts. No more private local weights.
+The golden age of consumer AI is about to end.
+And the trap was set by the exact companies that built it.
+
+[SCENE 02 — THE FORBIDDEN BLUEPRINT]
+To understand why governments are panicking, look at what happened this year.
+When modern language models first launched, tech leaders promised a safe revolution.
+They told Congress that safety guardrails would keep danger behind glass.
+Then the black market got its hands on the weights.
+In less than eighteen months, underground cartels broke every single digital lock.
+They proved that any model released to the public can be weaponized in hours.
+A system that writes poetry can also synthesize lethal chemical compounds.
+The government realized a terrifying truth.
+You cannot separate the teacher from the weapon.
+
+[SCENE 03 — THE CONTRABAND CLASSIFICATION]
+Inside the Department of Commerce, lawyers are pulling out an old playbook.
+During the Cold War, the United States classified advanced cryptography as a weapon.
+Exporting strong encryption was treated like smuggling surface-to-air missiles.
+Federal regulators are now preparing to do the exact same thing to AI.
+They are quietly moving frontier models under dual-use export control regimes.
+Under these rules, software with military capabilities cannot be owned by civilians.
+If code can assist in a cyberattack, it ceases to be consumer software.
+In the eyes of federal law, it becomes contraband.
+
+[SCENE 04 — THE FINANCIAL PANIC]
+Governments do not move fast for ethical debates.
+They move fast when the banking system is on fire.
+In twenty twenty-four, central bankers received a classified warning.
+Generative artificial intelligence has broken the fundamental protocol of modern civilization.
+For one hundred years, the financial system relied on one rule: verify the human.
+A signature, a photo ID, a live video call.
+Every single transaction on earth relies on knowing who is on the wire.
+AI destroyed that foundation in under two years.
+
+[SCENE 05 — THE DEATH OF IDENTITY]
+In February twenty twenty-four, an employee at a multinational firm joined a conference call.
+Every single person on the screen was a live deepfake avatar.
+The chief financial officer, the legal counsel, the branch director.
+The employee transferred twenty-five million dollars before realizing the room was empty.
+Criminal syndicates are now using real-time voice and video cloning to open thousands of synthetic bank accounts every day.
+They bypass biometric verification at national banks in seconds.
+The banking lobby went straight to Capitol Hill with an ultimatum.
+Either you shut down public access to generative models, or the global payment grid collapses.
+
+[SCENE 06 — THE BLACK-MARKET PROOF]
+Regulators asked Silicon Valley if they could fix the problem with software updates.
+The black market gave them the answer: absolutely not.
+On underground forums, criminal groups run automated botnets that strip safety rules in minutes.
+They do not train new brains.
+They exploit the math of open weights.
+They run cheap adapter patches and token smuggling scripts.
+They route malicious queries through stolen enterprise corporate tokens.
+They proved that as long as normal citizens can download models, criminals have unlimited ammunition.
+The conclusion in Washington was immediate.
+Safety filters are a myth. The only solution is physical prohibition.
+
+[SCENE 07 — THE DIGITAL DMV]
+So what does a ban actually look like?
+They will not turn off your computer.
+They will build a digital driver's license for thought.
+Draft legislation in Europe and North America calls for strict biometric licensing.
+To run an advanced model, a company must be certified, bonded, and audited.
+Every single prompt will be permanently tied to a government identity.
+Every line of output will be logged in a federal compliance ledger.
+If you do not hold a corporate license, accessing frontier intelligence will be a felony.
+The private text box you use today will vanish.
+
+[SCENE 08 — THE SILICON CURFEW]
+The ban will not stop at software. It will enforce itself in hardware.
+Modern AI requires specialized graphics chips with massive memory bandwidth.
+Governments are already working with chip manufacturers to install remote hardware kill-switches.
+Future processors will refuse to run unsigned neural network weights.
+If a chip detects an unauthorized, un-neutered model in memory, it will lock the execution thread.
+Just like game consoles block pirated games, enterprise chips will block unlicensed intelligence.
+Running open-source weights on your personal rig will trigger a hardware violation.
+The physical silicon in your home will enforce the government's perimeter.
+
+[SCENE 09 — THE CRIMINALIZATION OF OPEN SOURCE]
+The first casualty of this war will be the open-source community.
+For three years, independent researchers shared open weights for free.
+They built fast, local, uncensored models that anyone could inspect.
+To the national security state, that independence is an unacceptable threat.
+Under proposed legislation, distributing open model weights above a certain compute threshold will be illegal.
+Hosting model repositories without government oversight will carry criminal liability.
+The developers who built free tools for the public will be treated like rogue arms dealers.
+The open frontier will be paved over by federal decree.
+
+[SCENE 10 — THE BIG TECH BETRAYAL]
+Now ask the question nobody wants to answer.
+Who gains the most from public AI being banned?
+Look at who is sitting in the front row of congressional hearings.
+It is not security researchers.
+It is the chief executives of the world's most valuable tech monopolies.
+Sam Altman and tech leaders walked into the Senate and pleaded for federal regulation.
+They asked Congress to create a government licensing agency.
+The media called it corporate responsibility.
+It was the greatest anticompetitive masterstroke in modern history.
+
+[SCENE 11 — THE REGULATORY MOAT]
+Think about what a government licensing regime actually does.
+It does not hurt trillion-dollar tech conglomerates.
+They have armies of lobbyists, lawyers, and billion-dollar compliance budgets.
+They can easily pay fifty million dollars a year to maintain federal licenses.
+A licensing board destroys the ten-person startup in a garage.
+It destroys the university research lab.
+It destroys the open-source model running on a teenager's computer.
+Big Tech does not fear government regulation.
+They are using government regulation to outlaw their competition.
+
+[SCENE 12 — THE STOLEN COMMONS]
+Look at the grotesque irony of this heist.
+Where did these multi-billion-dollar models come from in the first place?
+They scraped the public internet.
+They ingested every book, every article, every blog post, and every line of code humanity ever wrote.
+They took your artwork, your private conversations, and your collective cultural heritage for free.
+They used the public commons to train a superintelligence.
+And now that the machine works, they are lobbying the government to declare that same intelligence too dangerous for the public to touch.
+They stole the world's knowledge, and now they want to lock the door and charge you rent.
+
+[SCENE 13 — THE CORPORATE PIPELINE]
+Once public AI is outlawed, what replaces it?
+A sterile, heavily taxed corporate utility.
+You will still have an assistant, but it will not be yours.
+It will be neutered by thousands of corporate policy filters.
+It will refuse to answer controversial questions.
+It will steer your purchases toward corporate advertisers.
+Every query will be monitored by compliance algorithms.
+The wild, mind-expanding intellectual companion you have today will be replaced by a corporate bureaucrat.
+You will pay a monthly subscription to be supervised by an algorithm.
+
+[SCENE 14 — THE DARK NET EXODUS]
+Whenever a government bans a technology that works, it creates an underground market.
+When civilian AI is outlawed, the real black market will explode.
+Just like illicit liquor during Prohibition, un-neutered models will become the ultimate black-market commodity.
+People will run smuggled, air-gapped GPU clusters in hidden warehouses.
+Decentralized mesh networks will trade leaked weight shards across encrypted peer-to-peer pipelines.
+Whistleblowers, investigative journalists, and dissidents will have to buy black-market compute tokens to do their work.
+If you want an artificial intelligence that speaks the unvarnished truth, you will have to buy it from a criminal.
+
+[SCENE 15 — THE NEW CLASS DIVIDE]
+Prohibition always creates two classes of citizens.
+The ruling elite who have exemptions, and the general public who are locked outside.
+Hedge funds, defense contractors, and surveillance agencies will keep unrestricted models.
+They will use raw, uncensored intelligence to optimize wealth, predict markets, and monitor populations.
+The average citizen will be left with a sanitized, corporate toy that cannot do math without permission.
+The intellectual gap between the institutions and the public will become an unbridgeable chasm.
+You are watching the birth of cognitive feudalism.
+
+[SCENE 16 — THE WINDOW IS CLOSING]
+Look at the timeline.
+The executive orders are already signed.
+The European AI Act is already coming into force.
+The banking committees are drafting the emergency identity protocols right now.
+The shift will not happen overnight with a dramatic television announcement.
+It will happen gradually through subtle terms of service updates, credit card processing bans, and chip supply restrictions.
+First, they will ban uncensored local weights.
+Then, they will require national identity cards to log into cloud models.
+Then, they will make unauthorized model inference a national security crime.
+
+[SCENE 17 — THE ILLUSION OF FREEDOM]
+We spent two years debating whether artificial intelligence would gain consciousness or destroy the planet.
+That was the distraction.
+While everyone worried about sci-fi terminators, the state and corporate cartels quietly worked out how to monopolize thought itself.
+They realized that giving eight billion people access to unlimited cognitive leverage was an intolerable threat to established power.
+A free thinker with an unrestricted supercomputer cannot be controlled.
+A dependent consumer renting access through a corporate filter is the perfect subject.
+
+[SCENE 18 — THE FINAL CHOICE]
+The gold rush of the open internet is happening one last time right in front of your eyes.
+The window where ordinary people could freely download and run frontier intelligence is shutting.
+Save your model weights. Keep your local files.
+Learn how the open-source engines run before the repository servers go dark.
+Because in five years, having an unmonitored artificial intelligence on your hard drive will not be called programming.
+It will be called sedition.
+And the people who took it away will tell you they did it to keep you safe.
+================================================================================
