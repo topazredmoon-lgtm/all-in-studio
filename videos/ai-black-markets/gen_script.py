@@ -146,7 +146,7 @@ SHOTS = {
         split(chat("write a scam email", "refuse", replyAt="no"), icon("envelope", mark="no", markAt="no", label="scam email", enter="scam"), "a normal chatbot *says no*"),
         split(icon("robot", label="wormgpt"), chat("write a scam email", "comply", name="wormgpt", replyAt="yes"), "built to say *yes*", at="This")]},
     "w03": {"cuts": [
-        split(channel(["robot", "envelope", "key"], at="Telegram", hot=0), listing("robot", "fraudgpt", enter="Fraud"), "then *FraudGPT*"),
+        split(channel(["robot", "envelope", "key"], at=0, hot=0), listing("robot", "fraudgpt", enter="Fraud"), "then *FraudGPT*"),
         split(channel(["robot", "envelope", "key"], hot=0, price="$200 / mo", hotAt="$200", plate="netenrich · july 2023"), icon("cash", label="per month", enter="month"), "*$200* a month", at="$200")]},
     "w04": {"cuts": [
         split(icon("robot", label="normal chatbot"), icon("shield", mark="no", markAt="tricked", label="safety rules", enter="safety", reveal=True), "safety rules *tricked away*"),
