@@ -1,6 +1,15 @@
-# HANDOVER · All-in · 2026-10-09 · captchas-full v3 DELIVERED · AI black markets 1:30 SAMPLE delivered · NEXT: its full film
+# HANDOVER · All-in · 2026-10-11 · NEW VIDEO "ai ban" (owner's script) · NEXT: 1-min sample · aibm DROPPED
 Older history: `HANDOVER_archive.md` (read only if needed). Token-lean: S is on Pro (keep a session under ~120k tokens;
 grep and small scripts, never print whole transcripts or logs). Never read SCRATCH HOLY or other source projects.
+
+## NOW (2026-10-11): new video from the owner's script "ai_ban_script.txt"
+- Owner HATED the aibm 1:30 sample ("terrible, unwatchable"): AI black markets is dropped, don't build its full film.
+- The owner's script is `c:\Users\pc\Desktop\ai_ban_script.txt` on their PC. A cloud session can't read it: it must be
+  pasted in chat or committed (put it at `videos/ai-ban/owner_script.txt`). Waiting on that.
+- Brief: improve the script first; explain the complicated words around 3:47 for the general public, friendly and
+  pleasant yet DRAMATIC and HOOKING; the narrator takes a side (hates that "they'll do this to us"), after the facts.
+  Deliver a ~1-min sample first, better than captchas, then the full film. Owner gave full decision power.
+- Taste rules are now in `PLAYBOOK.md` "Owner's taste" (LEARNINGS 48-52). Add every new owner note there.
 
 ## Owner's TOP RULE (2026-10-08, "Never forget this never ever")
 No clip may cost revenue: only CC BY / BY-SA / CC0 / PD / government clips. No news (WSJ, Vox, Big Think), no TED, no

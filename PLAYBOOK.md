@@ -17,6 +17,19 @@ Never read the source projects (jolly-bell, not-so-dark-times, SCRATCH HOLY) aga
   before it and commented by the line after; never two clips back to back. Rules and risk table: `design-system/CLIPS.md`.
 - **No music. No whooshes.** One-shot SFX only on visible clicks/stamps.
 
+## Owner's taste (grows with every note; read before writing a single line)
+Source notes are verbatim in `design-system/LEARNINGS.md`. Add to this list whenever the owner asks for a change.
+- **Gripping, not informative.** Dramatic and hooking from the first second, yet friendly and pleasant to watch. A flat
+  list of facts in a news voice is "unwatchable" (the rejected aibm sample, 2026-10-11).
+- **Stakes for the viewer.** Every act says why this touches *you*. Facts serve the story, never the other way round.
+- **The narrator has a side.** When something is being done to ordinary people, the narrator says so and says they hate
+  it ("they'll do this to us"), after the facts have earned it, not in the cold open. Honest, never preachy.
+- **Explain like a friend.** Every hard word (jargon, acronym, law term) gets a plain one-line explanation with a
+  picture the first time, then the story moves on. No lecture tone.
+- **Owner scripts are a base.** Keep their spine and best lines; tighten, explain, and sharpen the hooks before voicing.
+- **Sample first.** A new full video starts with a ~1-min sample (the real opening, full quality) for the owner's OK.
+- **Beat the last one.** Each delivery must beat the current quality bar (captchas v6 / captchas-full v3), never match it.
+
 ## Pipeline (commands from `All-in/`, always `PYTHONIOENCODING=utf-8`)
 1. **Folder**: `videos/<slug>/` with `gen_script.py` (copy `videos/captchas-full/gen_script.py`: helpers `split/full/icon/row/cap4/pol/cal/bubble/flow/tag`).
 2. **Script**: beats of 1–2 sentences, written to be heard. Spell numbers the way the voice should say them in `say`; keep `vo` readable. Every fact gets a row in `SOURCES.md` the same turn. 8-min ≈ 1,250 narrated words at Kokoro af_heart 0.95 (≈ 2.86 words/s + 0.65 s per beat).

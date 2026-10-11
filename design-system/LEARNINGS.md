@@ -3,6 +3,24 @@
 Newest first. Each entry: what happened, the lesson, where it now lives (code or DESIGN.md).
 Owner notes go here verbatim (dated) the same turn they arrive; general rules are then promoted into DESIGN.md / `ds/`.
 
+## 2026-10-11 · AI black markets 1:30 sample rejected; new video "ai ban" from the owner's script
+Owner, verbatim: "I hated the 1:30 sample script... it was real terrible, unwatchable. Let's make a new video. Here is a
+great script : ai_ban_script.txt but make sure u make it better first. explaing a bit more to the general public the
+complicated words arround 3:47 friendly and pleasant to watch. YET DRAMATIC AND HOOKING. potition urself somewhere maybe
+after as the one who hates that they'll do this to us. this project must learn along the way all the little
+modifications asked to do, for the new videos to always folow the same taste etc. provide a 1min sample before to show me
+before u proceed with the full video. make sure you make it better than the captchas one."
+48. The aibm sample read as a list of facts in a flat news voice ("Welcome to the grey zone of A.I.", "A voice cloner
+    reads audiobooks.", then a date + product + price). No stakes for the viewer, no feeling, no point of view; it
+    explained instead of gripping. (Diagnosis by the session; the owner only said "terrible, unwatchable".) → PLAYBOOK
+    "Owner's taste": every line must make the viewer feel something is at stake for THEM.
+49. Narrator has a side: when the story is something done to ordinary people, the narrator says plainly that they hate
+    it ("they'll do this to us"), once the facts are laid out, not in the cold open. → PLAYBOOK "Owner's taste".
+50. Hard words get a friendly, picture-led explanation the first time (the owner flagged the jargon-heavy part of the
+    script, around 3:47). Dramatic and hooking, yet pleasant: explain like a friend, not a lecture. → PLAYBOOK.
+51. An owner-supplied script is the base, not the final text: tighten and improve it before voicing, keep its spine.
+52. Every new full video starts with a ~1-min sample for the owner's OK. → PLAYBOOK pipeline step 0.
+
 ## 2026-10-08 (late) · captchas-full v3: owner notes on v2
 Owner, verbatim: "when u show the initals of captcha, the narrator should also read them xd not pause in silence lol.
 the vox clip got cuttof at the end while it was still talking. same for the clip after ... Pretty much all of them.
