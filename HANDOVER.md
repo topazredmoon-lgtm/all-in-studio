@@ -4,8 +4,8 @@ grep and small scripts, never print whole transcripts or logs). Never read SCRAT
 
 ## NOW (2026-10-11): "THE COMING AI BAN" (slug `ai-ban`) · 1-min sample DELIVERED · NEXT: owner's notes → full film
 - Sample = act 1 of narration v1 (SCRIPT.md), 7 beats + 2 clips, 143 words, 1:06. `videos/ai-ban/gen_script.py`
-  (ORDER h00 h01 c01 h02 c02 h03 h04 h05 h06), out `videos/ai-ban/out/ai-ban_v1.mp4`, sent as `All-in_ai_ban_sample.mp4`.
-  Lints 0 FAIL, watch.py result in the commit message / below. Stills: `videos/ai-ban/qa/sheet_h00_h06.jpg`.
+  (ORDER h00 h01 c01 h02 c02 h03 h04 h05 h06), out `videos/ai-ban/out/ai-ban_v2.mp4`, sent as `All-in_ai_ban_sample.mp4` (16.9 MB, crf 21).
+  Lints 0 FAIL, watch.py 0 FAIL (v2 fixed v1's lone 4.5 s padlock and 1 s munitions list). Stills: `videos/ai-ban/qa/sheet_h00_h06.jpg`.
 - Clips: the Senate's OWN hearing video (US gov, PD): c01 "I think if this technology goes wrong, it can go quite
   wrong." (hook, at 0:10), c02 "Number one, I would form a new agency that licenses any effort above a certain scale of
   capabilities and can take that license away and ensure compliance with safety standards." `LICENCES.md` has stream
