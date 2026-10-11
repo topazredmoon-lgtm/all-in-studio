@@ -52,3 +52,17 @@ Thumbs.db
 desktop.ini
 .DS_Store
 .cloud-env.sh
+
+# --- raw source media (re-download: scripts/redownload-sources.sh); transcripts stay ---
+.cc-src/**/*.mp4
+.cc-src/**/*.mp3
+.cc-src/**/*.opus
+.cc-src/**/*.webm
+.cc-src/**/*.m4a
+.cc-src/**/*.ts
+.cc-src/**/*.wav
+.cc-src/**/*.pdf
+.cc-src/**/*.html
+.cc-src/**/*.done
+.cc-src/**/*.url
+.cc-src/**/*.log
