@@ -119,7 +119,7 @@ SHOTS = {
         full(shop(["browser", "fingerprint", "contract", "laptop", "coin", "eye"]), "like any *online shop*", at="online")]},
     "g04": {"cuts": [
         split(icon("worker", label="sellers"), icon("cash", label="who pays", enter="pays", reveal=True), "who sells, *who pays*"),
-        split(phone(name="dad", cloneAt="cloned"), bubble("…", enter="word", by="you"), "*one word* beats a clone", at="one")]},
+        split(phone(name="dad", cloneAt="cloned"), icon("key", label="one word", enter="word"), "*one word* beats a clone", at="one")]},
     # 02 the shop
     "s01": {"cuts": [
         split(icon("browser", label="a website"), shop(["cash", "key", "doc"], enter="stolen", at="stolen", reveal=True), "a *black market*"),
@@ -127,7 +127,7 @@ SHOTS = {
         split(icon("cloud", label="the internet"), icon("key", label="special app", enter="special"), "opens with *special software*", at="open")]},
     "s02": {"cuts": [
         full(listing("cash", "card · 1x"), "like any *online store*"),
-        full(listing("cash", "card · 1x", stars=5), "*star ratings*", at="star"),
+        split(icon("people", label="happy buyers"), listing("cash", "card · 1x", stars=5, enter="star"), "*star ratings*", at="star"),
         split(icon("person", label="a researcher"), icon("browser", label="scam system", enter="system", mark="no", markAt="broke"), "a researcher *broke in*", at="researcher")]},
     "s03": {"cuts": [
         split(icon("worker", label="help desk"), bubble("how can I help?", enter="customer", by="support"), "even *customer support*"),
@@ -150,7 +150,7 @@ SHOTS = {
         split(channel(["robot", "envelope", "key"], hot=0, price="$200 / mo", hotAt="$200", plate="netenrich · july 2023"), icon("cash", label="per month", enter="month"), "*$200* a month", at="$200")]},
     "w04": {"cuts": [
         split(icon("robot", label="normal chatbot"), icon("shield", mark="no", markAt="tricked", label="safety rules", enter="safety", reveal=True), "safety rules *tricked away*"),
-        split(chat("pretend you're a villain…", "comply", replyAt="jailbreak"), icon("key", label="jailbreak", enter="jailbreak", reveal=True), "a *jailbreak*", at="trick")]},
+        split(chat("pretend you're a villain…", "comply", replyAt="jailbreak"), icon("key", label="jailbreak", enter="jailbreak", reveal=True), "a *jailbreak*", at="trick#2")]},
     "w04b": {"cuts": [
         split(icon("robot", label="the model"), icon("robot", mark="no", markAt="refusal", label="no refusal", enter="refusal"), "the *refusal*, cut out")]},
     "w05": {"cuts": [
@@ -159,7 +159,7 @@ SHOTS = {
         split(icon("laptop", label="one scammer"), row("envelope", 24, cols=6, every=2, at="thousand", enter="thousand", reveal=True), "*by the thousand*", at="any")]},
     # 04 scams for rent
     "k01": {"cuts": [
-        split(icon("robot", label="chatbots"), shop(["envelope", "browser", "key"], enter="fishing", at="fishing", reveal=True), "whole *phishing kits*"),
+        split(icon("robot", label="chatbots"), shop(["envelope", "browser", "key"], enter="rent", at="rent"), "whole *phishing kits*"),
         split(icon("monitor", label="streaming"), icon("cash", label="per month", enter="subscription"), "rented like a *subscription*", at="rented")]},
     "k02": {"cuts": [
         split(icon("envelope", label="fake message"), icon("cursor", label="a link", enter="sends"), "*phishing*: a fake message"),
@@ -201,11 +201,11 @@ SHOTS = {
         full(call(label={"i": 0, "t": "finance chief"}, real=3, fakeAt="face"), "every face *was fake*", at="every"),
         full(row("cash", 15, cols=5, every=3, tag=tag("$25 million", "million"), plate="hong kong police · cnn, may 2024"), "*$25 million*, gone", at="sent")]},
     "d04": {"cuts": [
-        split(icon("camera", label="film studio"), icon("building", enter="studio", label="a studio"), "it took *a studio*"),
+        split(icon("face", label="faking a face"), icon("camera", enter="studio", label="film studio"), "it took *a studio*"),
         split(icon("laptop", label="a laptop"), row("face", 6, cols=3, every=4, at="photos", enter="photos"), "now: *a few photos*", at="laptop")]},
     # 07 voices
     "v01": {"cuts": [
-        split(phone(name="mom"), icon("monitor", label="voice clone", enter="voice"), "a voice is *easier*")]},
+        split(phone(name="mom"), icon("robot", label="fake voice", enter="voice"), "a voice is *easier*")]},
     "v02": {"cuts": [
         full(phone(name="my son"), "then comes *the call*"),
         split(phone(name="my son", cloneAt="crying"), icon("car", mark="no", markAt="accident", label="accident", enter="accident"), "he needs *money now*", at="crying")]},
@@ -214,7 +214,7 @@ SHOTS = {
         split(icon("shield", label="fbi warning"), cal("2024", note="december", enter="December", plate="fbi ic3 psa · 3 dec 2024", reveal=True), "the *FBI* warned", at="F")]},
     # 08 the fake worker
     "v04": {"cuts": [
-        split(icon("camera", label="your video"), icon("monitor", label="a few seconds", enter="video", reveal=True), "a video *you posted*"),
+        split(icon("camera", label="your video"), icon("cloud", label="posted online", enter="video", reveal=True), "a video *you posted*"),
         split(phone(name="unknown"), bubble("hello?", enter="hello", by="you"), "or just *hello*", at="short")]},
     "j01": {"cuts": [
         full(call(label={"i": 3, "t": "applicant"}, fakes=[3], fakeAt=0), "back to *the interview*"),
@@ -232,15 +232,17 @@ SHOTS = {
         split(icon("person", label="the host"), icon("gateShut", label="8.5 years", enter="prison", tAt="prison"), "*8.5 years* in prison", at="She")]},
     # 09 who cashes in
     "p01": {"cuts": [
-        split(icon("worker", label="the seller"), row("cash", 12, cols=4, every=4, at="month", enter="month"), "the *sellers* cash in", at="sellers"),
+        split(icon("worker", label="the seller"), row("cash", 12, cols=4, every=2, at="paid", enter="paid"), "the *sellers* cash in", at="sellers"),
         split(row("people", 6, cols=3), icon("cash", mark="ok", markAt="works", label="paid anyway", enter="whether"), "*paid* either way", at="whether")]},
     "p02": {"cuts": [
-        split(icon("building", label="a real company"), {"v": "Bars", "surface": "bare", "bars": [{"v": 3, "t": "sales"}, {"v": 5, "t": "target", "at": "targets", "c": "red"}], "enter": "sales"}, "a company, with *targets*"),
+        split(icon("building", label="a real company"), row("worker", 8, cols=4, every=3, at="sales", enter="sales"), "a company, with *targets*"),
         split(icon("people", label="the buyers"), row("envelope", 40, cols=8, every=1, at="numbers", enter="numbers", reveal=True), "a *numbers game*", at="buyers"),
-        full(row("envelope", 40, cols=10, marks=["no"] * 3 + ["ok"] + ["no"] * 15 + ["ok"] + ["no"] * 20), "only a *few* work", at="only")]},
+        full(row("envelope", 40, cols=10, every=1, marks=["no"] * 3 + ["ok"] + ["no"] * 15 + ["ok"] + ["no"] * 20), "only a *few* work", at="only")]},
     "p03": {"cuts": [
-        split(icon("flag", label="americans"), bars([{"v": 20.9, "t": "$20.9 billion", "at": "$21", "c": "red"}], enter="$21", reveal=True, plate="fbi ic3 report 2025"), "*$20.9 billion* lost", at="2025"),
-        split(icon("robot", label="ai scams"), bars([{"v": 20.9, "t": "all online crime"}, {"v": 0.893, "t": "$893 million: ai", "at": "$893", "c": "red"}], enter="first", plate="fbi ic3 report 2025"), "AI scams, *counted*", at="first")]},
+        split(icon("flag", label="americans"), cal("2025", enter="2025"), "reported in *2025*"),
+        split(icon("browser", label="online crime"), bars([{"v": 20.9, "t": "$20.9 billion", "at": "$21", "c": "red"}], enter="$21", plate="fbi ic3 report 2025"), "*$20.9 billion* lost", at="$21"),
+        split(icon("shield", label="fbi"), icon("robot", label="ai scams", enter="counted"), "AI scams, *counted*", at="first"),
+        split(icon("robot", label="ai scams"), bars([{"v": 20.9, "t": "$20.9 bn"}, {"v": 0.893, "t": "$893 m", "at": "$893", "c": "red"}], enter="$893", plate="fbi ic3 report 2025"), "*$893 million*, from AI", at="$893")]},
     "p04": {"cuts": [
         split(icon("doc", label="reported"), row("person", 12, cols=4, every=3, at="victims", hot=0, enter="victims", reveal=True), "most *never report*"),
         split(icon("shield", label="defenders"), icon("robot", mark="ok", markAt="use", label="ai, too", enter="Defenders"), "defenders use *AI too*", at="good")]},
@@ -250,21 +252,22 @@ SHOTS = {
         split(phone(name="unknown"), icon("clock", mark="no", markAt="hurry", label="hurry!", enter="hurry"), "scams need you to *hurry*", at="Every")]},
     "x02": {"cuts": [
         split(phone(name="your bank"), icon("cash", mark="?", markAt="money", label="money?", enter="money"), "asks for *money*?"),
-        full(flow([{"icon": "monitor", "label": "hang up", "at": "hang"}, {"icon": "doc", "label": "known number", "at": "number"}, {"icon": "people", "label": "call back", "at": "back"}]), "*call back* yourself", at="hang")]},
+        split(icon("doc", label="a number you know"), icon("people", label="call back", enter="back"), "*call back* yourself", at="hang")]},
     "x03": {"cuts": [
         split(icon("people", label="your family"), bubble("pineapple", enter="secret", by="secret word"), "a *secret word*", at="Third"),
         split(phone(name="mom", cloneAt="clone"), icon("face", mark="no", markAt="know", label="no word", enter="know", reveal=True), "a clone *can't know it*", at="clone")]},
     "x04": {"cuts": [
         split(icon("box", label="cracked app"), icon("laptop", mark="no", markAt="install", label="don't install", enter="install"), "no *cracked apps*"),
-        split(icon("fingerprint", label="passkey"), login("bank-1ogin.com", fake=True, enter="login", reveal=True), "*passkeys*: nothing to steal", at="pass")]},
+        split(icon("fingerprint", label="passkey"), icon("browser", label="fake page", mark="no", markAt="nothing", enter="login", reveal=True), "*passkeys*: nothing to steal", at="pass")]},
     # recap + flip
     "r01": {"cuts": [
         full(shop(["cash", "key", "doc", "browser", "face", "robot"]), "*the shop*"),
         full(chat("write a scam email", "comply", name="wormgpt", replyAt=0), "the chatbot that *says yes*", at="says"),
         full(call(label={"i": 0, "t": "finance chief"}, real=3, fakeAt=0), "the *face* on the call", at="face")]},
     "r02": {"cuts": [
-        split(icon("robot", label="ai"), icon("cash", label="cheap", enter="cheap", mark="no", markAt="cheap"), "it made crime *cheap*", at="cheap"),
-        full(call(label={"i": 3, "t": "applicant"}), "*normal* is what they sell", at="next")]},
+        split(icon("robot", label="ai"), icon("coin", label="cheap", enter="cheap"), "it made crime *cheap*", at="cheap"),
+        full(call(label={"i": 3, "t": "applicant"}), "the next *normal* face", at="next"),
+        full(call(label={"i": 3, "t": "applicant"}, fakes=[3], fakeAt="selling"), "*normal* is what they sell", at="Normal#2")]},
 }
 
 CLIPS = {  # (file, from, to, plate[, fadeOut]); from/to in the clip file (speech runs from PAD = 0.6 s)
