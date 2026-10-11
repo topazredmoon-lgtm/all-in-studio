@@ -1,8 +1,29 @@
-# HANDOVER · All-in · 2026-10-11 · "THE COMING AI BAN": 2-min SAMPLE delivered (owner notes on the 1-min learned) · NEXT: owner OK → full film
+# HANDOVER · All-in · 2026-10-11 night · "THE COMING AI BAN": new 1-min SAMPLE (owner's opening, no hearing) · NEXT: owner OK → full film
 Older history: `HANDOVER_archive.md` (read only if needed). Token-lean: S is on Pro (keep a session under ~120k tokens;
 grep and small scripts, never print whole transcripts or logs). Never read SCRATCH HOLY or other source projects.
 
-## NOW (2026-10-11, later): ai-ban 2-min SAMPLE · built after the owner rejected the 1-min one
+## NOW (2026-10-11 night): ai-ban 1-min sample v4 · after the owner rejected the 2-min one
+Owner (verbatim in LEARNINGS 67-70): the Senate-hearing hook was "really terrible", "WHO THE F CARES ABOUT THOSE SENATE
+HEARINGS OF OLD PEOPLE", "fear of safety" is vague and overdone, a 2023 hearing is stale, "i prefer the original script",
+"this time a 1min sample". Rules now in CLAUDE.md / PLAYBOOK: never a hearing as the hook; fresh (2025-26) events first;
+keep the owner's own punchy lines (`owner_script.txt`), only make them true.
+- Script (`videos/ai-ban/gen_script.py`, ORDER h01 c01 h02 h03 h04 h05 h05b c02 h06 h07, 154 words, 2 clips, 1:12):
+  owner's "Take a long look at the AI on your phone. Enjoy it while you still can." → c01 hook: a deepfake (Fraunhofer
+  SIT, OWASP Day 2024, CC BY-SA) + presenter's reveal "what you just saw is actually an example of a deepfake" → AI anyone
+  can download, governments reach for the off switch → DeepSeek #1 (Jan 2025), Italy blocked it, South Korea pulled it →
+  Hawley's S.321: downloading it could mean up to 20 years → owner's "they move fast when the banking system is on fire"
+  → Altman warned the Fed (c02, Fed video 22 Jul 2025, PD: "AI has fully defeated that") → owner's twist (the builders
+  want the lock) → open loop "who wins when the trap snaps shut. And it isn't you."
+- SOURCES rows 20a-20f; LICENCES "New 1-min sample" table (c01 has a celebrity-likeness residual: flagged to the owner).
+- New visuals: `AppStore`, `Flag` (italy, south korea; real colours), PhoneChat mode `off`; icons bars, fire, power.
+- Clip sources (not in git): `.cc-src/aiban2/` (Fed fireside 2812 s mp4 + official transcript; OWASP Day talk HD).
+  Spec `videos/ai-ban/clips3_spec.json`. NOTE: `win_cut.py` re-cuts EVERY spec entry unless names are given, and
+  overwrites the zoom crop on `god_deepfake.mp4` (crop=1244:700:338:190 → 1920x1080; redo it after a re-cut).
+  `god_deepfake.words.json`: the reveal line was added by hand (Whisper dropped it); `fed_altman2.words.json`: "else."
+  per the Fed transcript.
+- Full film next (after the owner OKs): rebuild acts from `owner_script.txt` scenes 02-17 in the owner's voice, true.
+
+## EARLIER (2026-10-11, later): ai-ban 2-min SAMPLE (REJECTED by the owner) · built after the owner rejected the 1-min one
 Owner notes (verbatim in LEARNINGS 60-66, promoted to PLAYBOOK taste, DESIGN Clips/Voice, CLAUDE.md "Owner's taste, learned"):
 clip cuts "amateurish", voice "irregular", "G P T" unnatural, "MUCH MUCH MORE DRAMATIC AND HOOKING", first clip "NO
 PURPOSE", "it never asks who you are" IRRELEVANT. What changed:

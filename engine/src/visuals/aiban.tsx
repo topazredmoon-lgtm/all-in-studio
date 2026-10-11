@@ -213,12 +213,12 @@ export const AppStore: React.FC<Box & { name: string; icon?: IconName; rank?: st
       <div style={{ width: W, height: H, transform: `scale(${k})`, border: `4px solid ${color.ink}`, borderRadius: 52, background: color.raised, boxShadow: '0 24px 60px rgba(0,0,0,0.55)', position: 'relative', overflow: 'hidden', padding: '64px 30px 30px', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', gap: 24 }}>
         <div style={{ position: 'absolute', top: 16, left: W / 2 - 50, width: 100, height: 10, borderRadius: 5, background: color.hairStrong }} />
         <div style={{ display: 'flex', gap: 20, alignItems: 'center', opacity: 1 - 0.65 * pp, filter: `grayscale(${pp})` }}>
-          <div style={{ position: 'relative', width: 150, height: 150, borderRadius: 34, border: chalk, background: color.raised2, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <LineIcon w={120} h={120} name={icon} size={112} />
-            {rp > 0 && <div style={{ position: 'absolute', top: -16, right: -22, ...mono(30, color.ink), fontWeight: 800, background: color.red, borderRadius: 10, padding: '2px 12px', transform: `scale(${1.4 - 0.4 * rp}) rotate(8deg)`, opacity: rp }}>{rank}</div>}
+          <div style={{ position: 'relative', flexShrink: 0, width: 128, height: 128, borderRadius: 30, border: chalk, background: color.raised2, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <LineIcon w={104} h={104} name={icon} size={96} />
+            {rp > 0 && <div style={{ position: 'absolute', top: -18, left: -20, ...mono(28, color.ink), fontWeight: 800, background: color.red, borderRadius: 10, padding: '2px 12px', transform: `scale(${1.4 - 0.4 * rp}) rotate(8deg)`, opacity: rp }}>{rank}</div>}
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
-            <div style={{ ...mono(34, color.ink), fontWeight: 700 }}>{name}</div>
+            <div style={{ ...mono(26, color.ink), fontWeight: 700 }}>{name}</div>
             <div style={{ width: 120, height: 12, borderRadius: 4, background: color.hairStrong }} />
             <div style={{ width: 96, height: 40, borderRadius: 20, background: pp > 0.5 ? color.hairStrong : color.ink, ...mono(24, color.stageDeep), fontWeight: 800, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>get</div>
           </div>
@@ -230,6 +230,41 @@ export const AppStore: React.FC<Box & { name: string; icon?: IconName; rank?: st
           </div>)}
         </div>
         {pp > 0 && <div style={{ position: 'absolute', left: '50%', top: '46%', ...mono(54, color.red), fontWeight: 800, letterSpacing: 4, textTransform: 'uppercase', border: `6px solid ${color.red}`, borderRadius: 12, padding: '6px 22px', background: 'rgba(10,9,8,0.55)', opacity: 0.95 * pp, transform: `translate(-50%,-50%) rotate(-14deg) scale(${1.6 - 0.6 * pp})` }}>{stamp}</div>}
+      </div>
+    </Center>
+  );
+};
+
+/** A country's flag, drawn simply in its real colours (muted to sit on the board), on a pole, with a small name label.
+ *  On `markAt` a red ✕ lands on it (the country blocked something). */
+const FLAGS: Record<string, (W: number, H: number) => React.ReactNode> = {
+  italy: (W, H) => <g><rect x={0} y={0} width={W / 3} height={H} fill="#2f7d4f" /><rect x={W / 3} y={0} width={W / 3} height={H} fill="#e9e3d3" /><rect x={2 * W / 3} y={0} width={W / 3} height={H} fill="#c0392b" /></g>,
+  'south korea': (W, H) => {
+    const cx = W / 2, cy = H / 2, r = H * 0.22;
+    const tri = (x: number, y: number, rot: number) => <g transform={`translate(${x} ${y}) rotate(${rot})`}>{[-12, 0, 12].map((d) => <rect key={d} x={-16} y={d - 3.5} width={32} height={7} fill="#1b1b1b" />)}</g>;
+    return <g><rect x={0} y={0} width={W} height={H} fill="#e9e3d3" />
+      <path d={`M${cx - r} ${cy} A${r} ${r} 0 0 1 ${cx + r} ${cy} A${r / 2} ${r / 2} 0 0 1 ${cx} ${cy} A${r / 2} ${r / 2} 0 0 0 ${cx - r} ${cy} Z`} fill="#c0392b" transform={`rotate(33 ${cx} ${cy})`} />
+      <path d={`M${cx - r} ${cy} A${r} ${r} 0 0 0 ${cx + r} ${cy} A${r / 2} ${r / 2} 0 0 0 ${cx} ${cy} A${r / 2} ${r / 2} 0 0 1 ${cx - r} ${cy} Z`} fill="#24478f" transform={`rotate(33 ${cx} ${cy})`} />
+      {tri(W * 0.2, H * 0.22, -56)}{tri(W * 0.8, H * 0.78, -56)}{tri(W * 0.8, H * 0.22, 56)}{tri(W * 0.2, H * 0.78, 56)}</g>;
+  },
+};
+export const Flag: React.FC<Box & { country: string; label?: string; markAt?: Cue }> = ({ w, h, country, label, markAt }) => {
+  const frame = useCurrentFrame();
+  const mf = useCue(markAt, 99999);
+  const mp = markAt === undefined ? 0 : prog(frame, mf, 8);
+  const W = 300, H = 200, k = fit(w, h, W + 80, H + 200);
+  return (
+    <Center w={w} h={h}>
+      <div style={{ transform: `scale(${k})`, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 22 }}>
+        <div style={{ position: 'relative' }}>
+          <svg width={W + 20} height={H + 120} viewBox={`-14 -10 ${W + 20} ${H + 120}`}>
+            <path d={`M-6 -6 L-6 ${H + 106}`} stroke={color.ink} strokeWidth={5} strokeLinecap="round" />
+            <g transform="translate(0 0)">{FLAGS[country]?.(W, H)}</g>
+            <rect x={0} y={0} width={W} height={H} fill="none" stroke={color.ink} strokeWidth={3} />
+          </svg>
+          {mp > 0 && <div style={{ position: 'absolute', right: -26, top: -26, width: 72, height: 72, borderRadius: 36, background: color.red, opacity: mp, transform: `scale(${1.4 - 0.4 * mp})`, display: 'flex', alignItems: 'center', justifyContent: 'center', ...mono(44, color.ink), fontWeight: 800 }}>✕</div>}
+        </div>
+        {label && <div style={{ ...mono(26, color.mute), letterSpacing: 3, textTransform: 'uppercase' }}>{label}</div>}
       </div>
     </Center>
   );

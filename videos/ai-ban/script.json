@@ -49,26 +49,46 @@
    }
   },
   {
+   "id": "c01",
+   "clip": {
+    "src": "aiban/god_deepfake.mp4",
+    "from": 6.1,
+    "to": 15.9,
+    "plate": "Deepfake shown by Fraunhofer SIT researchers · OWASP Day 2024 · CC BY-SA 4.0",
+    "plateAt": 6.4
+   }
+  },
+  {
    "id": "h02",
-   "vo": "That face was faked live, with AI anyone can download. And governments are reaching for the off switch.",
+   "vo": "A fake face and voice, made with AI anyone can download. And governments are reaching for the off switch.",
    "shot": {
     "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Hearing",
+       "surface": "bare",
+       "img": "aiban/fake_face.jpg",
+       "pill": "not a real person"
+      },
+      "cap": "a *fake* face and voice"
+     },
      {
       "layout": "split",
       "L": {
        "v": "Hearing",
        "surface": "bare",
        "img": "aiban/fake_face.jpg",
-       "pill": "faked live"
+       "pill": "not a real person"
       },
       "R": {
        "v": "LineIcon",
        "surface": "bare",
        "name": "laptop",
-       "label": "free download",
-       "enter": "download"
+       "label": "free download"
       },
-      "cap": "faked *live*"
+      "cap": "made with *free* AI",
+      "at": "made"
      },
      {
       "layout": "split",
@@ -94,7 +114,7 @@
   },
   {
    "id": "h03",
-   "vo": "Last year, DeepSeek, a Chinese AI, hit number one on the app charts. Within days, Italy ordered it blocked. South Korea pulled it from its stores.",
+   "vo": "Last year, DeepSeek, a Chinese AI, hit number one on the app charts. Within days, Italy blocked it, and South Korea pulled it from its stores.",
    "shot": {
     "cuts": [
      {
@@ -120,11 +140,10 @@
        "rankAt": 0
       },
       "R": {
-       "v": "LineIcon",
+       "v": "Flag",
        "surface": "bare",
-       "name": "flag",
+       "country": "italy",
        "label": "italy",
-       "mark": "no",
        "markAt": "blocked",
        "enter": "Italy"
       },
@@ -141,10 +160,11 @@
        "pullAt": "pulled"
       },
       "R": {
-       "v": "LineIcon",
+       "v": "Flag",
        "surface": "bare",
-       "name": "flag",
+       "country": "south korea",
        "label": "south korea",
+       "markAt": "pulled",
        "enter": "Korea"
       },
       "cap": "*pulled* from the store",
@@ -159,6 +179,30 @@
    "vo": "And an American senator proposed a law under which downloading it could mean up to twenty years in prison.",
    "shot": {
     "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "ListDoc",
+       "surface": "bare",
+       "title": "us senate bill",
+       "rows": [
+        {
+         "t": "chinese ai"
+        },
+        {
+         "t": "import ban",
+         "at": "law"
+        },
+        {
+         "t": "penalties",
+         "at": "downloading"
+        }
+       ],
+       "hot": 2,
+       "hotAt": "downloading"
+      },
+      "cap": "a *senator's* bill"
+     },
      {
       "layout": "split",
       "L": {
@@ -179,20 +223,20 @@
         }
        ],
        "hot": 2,
-       "hotAt": "downloading"
+       "hotAt": 0
       },
       "R": {
        "v": "LineIcon",
        "surface": "bare",
        "name": "bars",
        "label": "prison",
-       "enter": "prison",
        "tag": {
         "t": "up to 20 years",
         "at": "20"
        }
       },
-      "cap": "*prison* for a download?"
+      "cap": "*prison* for a download?",
+      "at": "could"
      }
     ],
     "act": "01 the ban"
@@ -208,7 +252,7 @@
       "L": {
        "v": "LineIcon",
        "surface": "bare",
-       "name": "building",
+       "name": "flag",
        "label": "governments"
       },
       "R": {
@@ -244,10 +288,21 @@
    }
   },
   {
-   "id": "h06",
-   "vo": "That's Sam Altman, who runs ChatGPT. And here's the twist: the loudest voices asking to lock AI down? Some are the very companies that built it.",
+   "id": "h05b",
+   "vo": "Even Sam Altman, who runs ChatGPT, warned America's central bank: some banks let you move money with just your voice.",
+   "say": "Even Sam Altman, who runs ChatGPT, warned America's central bank. Some banks let you move money using nothing but your voice.",
    "shot": {
     "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "Hearing",
+       "surface": "bare",
+       "img": "aiban/fed_altman.jpg",
+       "pill": "sam altman · openai"
+      },
+      "cap": "the man who *runs ChatGPT*"
+     },
      {
       "layout": "split",
       "L": {
@@ -260,9 +315,57 @@
        "v": "LineIcon",
        "surface": "bare",
        "name": "building",
-       "label": "federal reserve"
+       "label": "central bank"
       },
-      "cap": "the man who *runs ChatGPT*"
+      "cap": "warned *the central bank*",
+      "at": "central"
+     },
+     {
+      "layout": "split",
+      "L": {
+       "v": "PhoneCall",
+       "surface": "bare",
+       "name": "your bank"
+      },
+      "R": {
+       "v": "LineIcon",
+       "surface": "bare",
+       "name": "cash",
+       "label": "moved by voice",
+       "enter": "money"
+      },
+      "cap": "money moved by *your voice*",
+      "at": "some"
+     }
+    ],
+    "act": "01 the ban"
+   }
+  },
+  {
+   "id": "c02",
+   "clip": {
+    "src": "aiban/fed_altman2.mp4",
+    "from": 1.48,
+    "to": 8.1,
+    "plate": "Sam Altman · head of OpenAI · US Federal Reserve, 22 July 2025",
+    "plateAt": 0.3
+   }
+  },
+  {
+   "id": "h06",
+   "vo": "Here's the twist: some of the loudest voices asking to lock AI down are the companies that built it.",
+   "shot": {
+    "cuts": [
+     {
+      "layout": "full",
+      "hero": {
+       "v": "IconRow",
+       "surface": "bare",
+       "name": "building",
+       "n": 3,
+       "label": "ai companies"
+      },
+      "cap": "here's *the twist*"
      },
      {
       "layout": "split",
@@ -281,7 +384,7 @@
        "enter": "lock"
       },
       "cap": "the builders want *the lock*",
-      "at": "twist"
+      "at": "loudest"
      }
     ],
     "act": "01 the ban"

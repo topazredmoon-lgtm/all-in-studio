@@ -44,11 +44,12 @@ def bill(**kw): return {"v": "ListDoc", "surface": "bare", "title": "us senate b
 
 VO = {  # id: (vo, say or None)
     "h01": ("Take a long look at the AI on your phone. Enjoy it while you still can.", "Take a long look at the AI on your phone. Enjoy it, while you still can."),
-    "h02": ("That face was faked live, with AI anyone can download. And governments are reaching for the off switch.", None),
-    "h03": ("Last year, DeepSeek, a Chinese AI, hit number one on the app charts. Within days, Italy ordered it blocked. South Korea pulled it from its stores.", None),
+    "h02": ("A fake face and voice, made with AI anyone can download. And governments are reaching for the off switch.", None),
+    "h03": ("Last year, DeepSeek, a Chinese AI, hit number one on the app charts. Within days, Italy blocked it, and South Korea pulled it from its stores.", None),
     "h04": ("And an American senator proposed a law under which downloading it could mean up to twenty years in prison.", None),
     "h05": ("Governments don't move fast for ethics. They move fast when the banking system is on fire.", None),
-    "h06": ("That's Sam Altman, who runs ChatGPT. And here's the twist: the loudest voices asking to lock AI down? Some are the very companies that built it.", None),
+    "h05b": ("Even Sam Altman, who runs ChatGPT, warned America's central bank: some banks let you move money with just your voice.", "Even Sam Altman, who runs ChatGPT, warned America's central bank. Some banks let you move money using nothing but your voice."),
+    "h06": ("Here's the twist: some of the loudest voices asking to lock AI down are the companies that built it.", None),
     "h07": ("By the end of this video, you'll see who wins when the trap snaps shut. And it isn't you.", None),
 }
 
@@ -57,31 +58,37 @@ SHOTS = {
         full(phone("open", ask="plan my trip to rome", askAt=0, replyAt="phone"), "the AI on *your phone*"),
         full(phone("off", gateAt="still"), "while you *still can*", at="Enjoy")]},
     "h02": {"cuts": [
-        split(hearing("fake_face.jpg", pill="faked live"), icon("laptop", label="free download", enter="download"), "faked *live*"),
+        full(hearing("fake_face.jpg", pill="not a real person"), "a *fake* face and voice"),
+        split(hearing("fake_face.jpg", pill="not a real person"), icon("laptop", label="free download"), "made with *free* AI", at="made"),
         split(icon("building", label="governments"), icon("power", label="off switch", enter="off"), "reaching for *the off switch*", at="governments")]},
     "h03": {"cuts": [
         full(store(rankAt="number", tag=tag("jan 2025", "number")), "*number one* on the charts"),
-        split(store(rankAt=0), icon("flag", label="italy", mark="no", markAt="blocked", enter="Italy"), "*blocked* in Italy", at="Within"),
-        split(store(rankAt=0, pullAt="pulled"), icon("flag", label="south korea", enter="Korea"), "*pulled* from the store", at="South")]},
+        split(store(rankAt=0), {"v": "Flag", "surface": "bare", "country": "italy", "label": "italy", "markAt": "blocked", "enter": "Italy"}, "*blocked* in Italy", at="Within"),
+        split(store(rankAt=0, pullAt="pulled"), {"v": "Flag", "surface": "bare", "country": "south korea", "label": "south korea", "markAt": "pulled", "enter": "Korea"}, "*pulled* from the store", at="South")]},
     "h04": {"cuts": [
-        split(bill(hot=2, hotAt="downloading"), icon("bars", label="prison", enter="prison", tag=tag("up to 20 years", "20")), "*prison* for a download?")]},
+        full(bill(hot=2, hotAt="downloading"), "a *senator's* bill"),
+        split(bill(hot=2, hotAt=0), icon("bars", label="prison", tag=tag("up to 20 years", "20")), "*prison* for a download?", at="could")]},
     "h05": {"cuts": [
-        split(icon("building", label="governments"), icon("people", label="ethics debates", mark="no", markAt="ethics", enter="ethics"), "not for *ethics*"),
+        split(icon("flag", label="governments"), icon("people", label="ethics debates", mark="no", markAt="ethics", enter="ethics"), "not for *ethics*"),
         split(icon("building", label="the banks"), icon("fire", enter="fire"), "when *the banks* burn", at="banking")]},
+    "h05b": {"cuts": [
+        full(hearing("fed_altman.jpg", pill="sam altman · openai"), "the man who *runs ChatGPT*"),
+        split(hearing("fed_altman.jpg", pill="sam altman · openai"), icon("building", label="central bank"), "warned *the central bank*", at="central"),
+        split({"v": "PhoneCall", "surface": "bare", "name": "your bank"}, icon("cash", label="moved by voice", enter="money"), "money moved by *your voice*", at="some")]},
     "h06": {"cuts": [
-        split(hearing("fed_altman.jpg", pill="sam altman · openai"), icon("building", label="federal reserve"), "the man who *runs ChatGPT*"),
-        split(row("building", 3, label="ai companies"), icon("lock", label="lock it down", enter="lock"), "the builders want *the lock*", at="twist")]},
+        full(row("building", 3, label="ai companies"), "here's *the twist*"),
+        split(row("building", 3, label="ai companies"), icon("lock", label="lock it down", enter="lock"), "the builders want *the lock*", at="loudest")]},
     "h07": {"cuts": [
         full(pieces([None] * 5, snapAt="snaps"), "when *the trap* snaps shut"),
         split(pieces([None] * 5, snapped=True), icon("person", label="you", mark="no", markAt="isn't", enter="you"), "and it *isn't you*", at="isn't")]},
 }
 
 CLIPS = {  # (file, from, to, plate[, plateAt]); from/to = first word start / last word end in the clip file. build.py adds the breathing room.
-    "c01": None,  # hook: live deepfake demo (CC), filled after the clip search
-    "c02": None,  # Sam Altman at the Federal Reserve, 22 Jul 2025 (Fed video, US gov), filled after the clip search
+    "c01": ("god_deepfake.mp4", 6.1, 15.9, "Deepfake shown by Fraunhofer SIT researchers · OWASP Day 2024 · CC BY-SA 4.0", 6.4),
+    "c02": ("fed_altman2.mp4", 1.48, 8.1, "Sam Altman · head of OpenAI · US Federal Reserve, 22 July 2025", 0.3),
 }
 
-ORDER = "h01 c01 h02 h03 h04 h05 c02 h06 h07"
+ORDER = "h01 c01 h02 h03 h04 h05 h05b c02 h06 h07"
 ACTS = {"h01": "01 the ban"}
 
 if __name__ == "__main__":

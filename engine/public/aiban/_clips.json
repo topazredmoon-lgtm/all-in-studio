@@ -82,5 +82,29 @@
   "speech_to": 10.98,
   "dur": 12.48,
   "words": "There is a real risk of a kind of technocracy combined with oligarchy where a small number of companies influence people's beliefs through the nature of these systems."
+ },
+ "god_deepfake": {
+  "title": "GenAI in the Battle of Security: Attacks, Defenses, and the Laws Shaping AI's Future (German OWASP Day 2024)",
+  "author": "Niklas Bunzel, Raphael Frick (Fraunhofer SIT)",
+  "licence": "CC BY-SA 4.0",
+  "page": "https://media.ccc.de/v/god2024-56275-genai-in-the-battle-of-sec",
+  "source_from": 88.28,
+  "source_to": 105.68,
+  "speech_from": 1.5,
+  "speech_to": 15.9,
+  "dur": 17.4,
+  "words": "As technologies advance, they bring new opportunities, but also new threats and challenges, it's crucial to remain skeptical and not blindly trust everything you see or hear. So what you just saw is actually an example of a deep fake."
+ },
+ "fed_altman2": {
+  "title": "Fireside Chat with Vice Chair for Supervision Bowman, Integrated Review of the Capital Framework for Large Banks Conference, 22 Jul 2025",
+  "author": "Board of Governors of the Federal Reserve System",
+  "licence": "US government work (public domain; federalreserve.gov/disclaimer.htm)",
+  "page": "https://www.federalreserve.gov/conferences/integrated-review-of-the-capital-framework-for-large-banks.htm",
+  "source_from": 982.7,
+  "source_to": 992.3,
+  "speech_from": 1.5,
+  "speech_to": 8.1,
+  "dur": 9.6,
+  "words": "You say a challenge phrase and they just do it. That is a crazy thing to still be doing. AI has fully defeated that."
  }
 }
