@@ -1,4 +1,4 @@
-# HANDOVER · All-in · 2026-10-11 late night · LIVE = "THE COMING AI BAN" (ai-ban) · 1-min sample v4 re-sent · NEXT: owner OK → full film
+# HANDOVER · All-in · 2026-10-11 late night · LIVE = "THE COMING AI BAN" (ai-ban) · 1-min sample v5 (owner's SCENE 01 as written) SENT · NEXT: owner OK → full film
 Older history: `HANDOVER_archive.md` (read only if needed). Token-lean: S is on Pro (keep a session under ~120k tokens;
 grep and small scripts, never print whole transcripts or logs). Never read SCRATCH HOLY or other source projects.
 
@@ -10,6 +10,11 @@ AI black markets is DEAD: never build, send or polish it again. "The original sc
 - Re-sent `videos/ai-ban/out/All-in_ai_ban_sample_1min_v4.mp4` (built from the owner's opening lines).
 - NEXT: when the owner OKs the sample (or says go), build the full film (8 min+) from `owner_script.txt` scenes 01-17
   in the owner's own voice and punch, claims made true (facts as facts, predictions as "could"). See the sections below.
+- Owner then: "sample now! im very upset" (LEARNINGS 72). Built and SENT sample v5: `videos/ai-ban/out/ai-ban_v5.mp4`
+  (full quality) → `All-in_ai_ban_sample_v5.mp4` (11 MB, crf 23). ORDER h01 c01 h02 h03 h04 h05 h05b c02 h07, 157 words,
+  1:14. The owner's SCENE 01 line by line (made true: "could", "an idea is spreading"; SOURCES 21a-c) + SCENE 04's
+  "banking system is on fire" + Altman Fed clip + open loop. DeepSeek/Hawley beats dropped (save them for the film).
+  New: `Flag` usa / eu. Lints, voice_check, watch.py all 0 FAIL. Stills `qa/cuts_v5_new.jpg`, `qa/cuts_v5_fix.jpg`.
 - Session start rule: `git fetch origin`, find the newest commit on every `claude/*` branch, merge it, read its HANDOVER.
 
 ## EARLIER (2026-10-11 night): ai-ban 1-min sample v4 · after the owner rejected the 2-min one
