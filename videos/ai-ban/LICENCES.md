@@ -74,3 +74,8 @@ cP2 = senate_marcus (rows above). Rows copied from `videos/ai-black-markets/LICE
 | c05 `cc_llm_refuse` | "How do models like ChatGPT (LLM) work, can you hack them and run them …" · Anykey · hackerhotel2025 (media.ccc.de) | 33:55.7–34:03.5 | CC BY 4.0 | https://media.ccc.de/v/2025-186-how-do-models-like-chatgpt-llm-work-can-you-hack-them-and-run-them-offline- | Low |
 | c03 `cc_gai_voice` | "GenAI in the Battle of Security: Attacks, Defenses, and the Laws Shapi…" · Niklas Bunzel, Raphael Antonius Frick · Fraunhofer SIT · GoD 2024 (media.ccc.de) | 5:13.3–5:30.8 | CC BY-SA 4.0 | https://media.ccc.de/v/god2024-56275-genai-in-the-battle-of-sec | Low |
 | c11 `cc_vibe_company` | "When Vibe Scammers Met Vibe Hackers: Pwning PhaaS with Their Own Weapo…" · Chiao-Lin Yu (Steven Meow) · 39C3 (media.ccc.de) | 26:24.5–26:34.0 | CC BY 4.0 | https://media.ccc.de/v/39c3-when-vibe-scammers-met-vibe-hackers-pwning-phaas-with-their-own-weapons | Low |
+
+Note (picture check 2026-10-11): cQ `cc_stole_work` shows the speaker's slide of UK newspaper front pages ("Make It Fair"
+campaign, The Sun, Metro...). Still images of printed pages inside a CC BY-SA talk, on screen ~8 s, no news video or audio:
+risk Low-Medium (Content ID matches video/audio, not print). If a claim ever comes, swap to `cc_open_models`-style slide or
+narrate the line instead.

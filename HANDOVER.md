@@ -1,4 +1,4 @@
-# HANDOVER · All-in · 2026-10-11 · LIVE = "THE COMING AI BAN" (ai-ban) · FULL FILM built (12:54, 18 clips) · rendering → send
+# HANDOVER · All-in · 2026-10-11 · LIVE = "THE COMING AI BAN" (ai-ban) · FULL FILM DELIVERED (12:54, 18 clips) · waiting on owner notes
 Older history: `HANDOVER_archive.md` (read only if needed). Token-lean: S is on Pro (keep a session under ~120k tokens;
 grep and small scripts, never print whole transcripts or logs). Never read SCRATCH HOLY or other source projects.
 
@@ -14,7 +14,8 @@ grep and small scripts, never print whole transcripts or logs). Never read SCRAT
   2026, PD), cN open models (Hacker Hotel 2025), cQ "they stole that from us" (EMF 2026), cR2 drone swarms (39C3), cS EU AI
   Act (GoD 2024), cT run DeepSeek in 4 GB (Hacker Hotel). All in LICENCES.md. Longest narration gap 60 s (the approved opening).
 - New: Flag usa / eu / china; tts LEX WormGPT, xAI, Ng. tools/cc_cut.py: optional pad_in / pad_out per clip.
-- Render `videos/ai-ban/out/ai-ban_v6.mp4` (in progress) → send as `All-in_ai_ban_full.mp4` (< 20 MB, 2-pass).
+- DELIVERED: render `videos/ai-ban/out/ai-ban_v6.mp4` (full quality, 490 MB, gitignored) → sent as `All-in_ai_ban_full.mp4`
+  (19.1 MiB, 2-pass 150k + aac 48k). watch.py 0 FAIL; lints 0 FAIL; one still per new clip checked (`qa/cuts_fix2.jpg`).
 - Weak spots to improve after owner notes: no CC clip on WormGPT/smuggled GPUs; cR2 drones is German army, not US.
 
 ## EARLIER (2026-10-11 late night): owner rejected the AI black markets full film; live topic = ai-ban
