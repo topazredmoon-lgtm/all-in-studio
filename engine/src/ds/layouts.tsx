@@ -38,7 +38,7 @@ const Stamp: React.FC<{ t: string; at?: string | number }> = ({ t, at }) => {
   const p = f <= 0 ? 1 : prog(frame, f, 7);
   const c = t.toLowerCase() === 'real' ? '#FAF6EE' : color.red;
   return (
-    <div style={{ position: 'absolute', right: -6, top: -6, opacity: p, transform: `rotate(-8deg) scale(${1.5 - 0.5 * p})`, transformOrigin: 'center',
+    <div style={{ position: 'absolute', right: 30, top: 12, opacity: p, transform: `rotate(-8deg) scale(${1.5 - 0.5 * p})`, transformOrigin: 'center',
       border: `6px solid ${c}`, borderRadius: 12, padding: '6px 22px', ...mono(50, c), fontWeight: 800, letterSpacing: 4, textTransform: 'uppercase', background: 'rgba(20,18,16,0.75)', whiteSpace: 'nowrap' }}>{t}</div>
   );
 };
