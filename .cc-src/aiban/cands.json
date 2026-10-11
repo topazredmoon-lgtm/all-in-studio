@@ -1,0 +1,128 @@
+[
+ {
+  "id": "A1",
+  "title": "Oversight of A.I.: Rules for Artificial Intelligence (Senate Judiciary Privacy, Technology and the Law subcommittee)",
+  "speaker": "Sam Altman (witness), Blumenthal presiding",
+  "date": "2023-05-16",
+  "page_url": "https://www.judiciary.senate.gov/committee-activity/hearings/oversight-of-ai-rules-for-artificial-intelligence",
+  "file": null,
+  "licence": "US federal government work (public domain) - presumed",
+  "licence_evidence": "Page is an official judiciary.senate.gov hearing page (fetched via TinyFish: hearing Tue 16 May 2023 10:00, Dirksen 226, witnesses Altman/Montgomery/Marcus). No embedded video URL or ISVP filename appears in the static text; no licence line on page. Public-domain status rests on 17 USC 105 only for works of US government employees; confirm Senate video terms before use.",
+  "risk": "Low (unverified)",
+  "wanted_lines": [
+   "'If this technology goes wrong, it can go quite wrong' (not located)",
+   "licensing agency above a capability scale (not located)"
+  ],
+  "blocked": "Not downloaded: proxy returns 403 to CONNECT for www.judiciary.senate.gov, www.senate.gov, www-senate-gov-media-srs.akamaized.net, commons.wikimedia.org, upload.wikimedia.org, youtube.com, archive.org, vimeo, whitehouse.gov. Commons search (via TinyFish) found no Altman 2023 hearing video."
+ },
+ {
+  "id": "B1",
+  "title": "Biden remarks at AI executive order signing (EO 14110)",
+  "speaker": "Joe Biden",
+  "date": "2023-10-30",
+  "page_url": "https://commons.wikimedia.org/wiki/File:Joe_Biden_delivers_remarks_at_an_Executive_Order_signing_on_Artificial_Intelligence,_2023-10-30.jpg",
+  "file": null,
+  "licence": "US federal government work (public domain); Commons has stills only (White House Flickr photos), no video found",
+  "licence_evidence": "Commons search found only .jpg stills and Executive Order 14110.pdf for this event; no .webm found. Video must come from whitehouse.gov / bidenwhitehouse.archives.gov or the White House YouTube (host blocked here).",
+  "risk": "Low (stills) / video not found",
+  "wanted_lines": [
+   "'I've watched one of me...' (not located)"
+  ]
+ },
+ {
+  "id": "C1",
+  "title": "A Quick Stop at the HostileShop (39C3)",
+  "speaker": "Mike Perry",
+  "date": "2025-12-28",
+  "page_url": "https://media.ccc.de/v/39c3-a-quick-stop-at-the-hostileshop",
+  "file": null,
+  "licence": "Presumed CC BY 4.0 (CCC standard)",
+  "licence_evidence": "NOT VERIFIED in this session: sandbox egress blocks the host; only TinyFish text fetch works; check ffprobe format_tags copyright on the mp4. API guid b3ef337e-bfb3-51bf-bcaa-0b2d697b9c7f, 32 min, matched query 'jailbreak'.",
+  "risk": "Low (unverified)",
+  "wanted_lines": []
+ },
+ {
+  "id": "C2",
+  "title": "NEW IMPORTANT INSTRUCTIONS (37C3), prompt injection/LLM safety",
+  "speaker": "Johann Rehberger",
+  "date": "2023-12-29",
+  "page_url": "https://media.ccc.de/v/37c3-12292-new_important_instructions",
+  "file": null,
+  "licence": "Presumed CC BY 4.0",
+  "licence_evidence": "NOT VERIFIED in this session: sandbox egress blocks the host; only TinyFish text fetch works; guid 31e13ed5-5d6b-43e2-b870-15d472b342c6, 42 min.",
+  "risk": "Low (unverified)",
+  "wanted_lines": []
+ },
+ {
+  "id": "C3",
+  "title": "Agentic ProbLLMs: Exploiting AI Computer-Use and Coding Agents (39C3)",
+  "speaker": "Johann Rehberger",
+  "date": "2025-12-28",
+  "page_url": "https://media.ccc.de/v/39c3-agentic-probllms-exploiting-ai-computer-use-and-coding-agents",
+  "file": null,
+  "licence": "Presumed CC BY 4.0",
+  "licence_evidence": "NOT VERIFIED in this session: sandbox egress blocks the host; only TinyFish text fetch works; guid 05e9ba1f, 58 min.",
+  "risk": "Low (unverified)",
+  "wanted_lines": []
+ },
+ {
+  "id": "C4",
+  "title": "Throwing your rights under the Omnibus: how the EU's reform agenda threatens to erase a decade of digital rights (39C3), EU AI Act/GDPR rollback",
+  "speaker": "Thomas Lohninger, Ralf Bendrath",
+  "date": "2025-12-27",
+  "page_url": "https://media.ccc.de/v/39c3-throwing-your-rights-under-the-omnibus-how-the-eu-s-reform-agenda-threatens-to-erase-a-decade-of-digital-rights",
+  "file": null,
+  "licence": "Presumed CC BY 4.0",
+  "licence_evidence": "NOT VERIFIED in this session: sandbox egress blocks the host; only TinyFish text fetch works; guid bc5b663a, 60 min.",
+  "risk": "Low (unverified)",
+  "wanted_lines": []
+ },
+ {
+  "id": "C5",
+  "title": "Ctrl+Alt+Defeat: The big AI pushback (EMF 2026)",
+  "speaker": "Kate Devlin",
+  "date": "2026-07-17",
+  "page_url": "https://media.ccc.de/v/emf2026-199-1-ctrl-alt-defeat-the-big-ai-pushback",
+  "file": null,
+  "licence": "Unknown (EMF; not a CCC congress, check licence line)",
+  "licence_evidence": "NOT VERIFIED in this session: sandbox egress blocks the host; only TinyFish text fetch works; guid 2ab1db7e, 29 min.",
+  "risk": "Med (unverified)",
+  "wanted_lines": []
+ },
+ {
+  "id": "C6",
+  "title": "Scholz greift durch: Die AfD wird verboten - Deepfakes auch! (37C3), deepfakes (German)",
+  "speaker": "Philipp Ruch, Stefan Pelzer",
+  "date": "2023-12-27",
+  "page_url": "https://media.ccc.de/v/37c3-12345-scholz_greift_durch_die_afd_wird_verboten_-_deepfakes_auch",
+  "file": null,
+  "licence": "Presumed CC BY 4.0",
+  "licence_evidence": "NOT VERIFIED in this session: sandbox egress blocks the host; only TinyFish text fetch works; guid 56a39219, 43 min, German.",
+  "risk": "Low (unverified)",
+  "wanted_lines": []
+ },
+ {
+  "id": "D1",
+  "title": "Parent of Suicide Victim Testifies on AI Chatbot Harms.webm (Senate Judiciary hearing clip on Commons)",
+  "speaker": "parent witness",
+  "date": "2025 (unverified)",
+  "page_url": "https://commons.wikimedia.org/wiki/File:Parent_of_Suicide_Victim_Testifies_on_AI_Chatbot_Harms.webm",
+  "file": null,
+  "licence": "Unknown",
+  "licence_evidence": "Seen only as a Commons search hit title; licence/source not read. Not on Wanted list, noted as a lead for Senate AI hearing footage on Commons.",
+  "risk": "Unknown",
+  "wanted_lines": []
+ },
+ {
+  "id": "D2",
+  "title": "FTC/FBI/FinCEN/NIST voice-cloning or deepfake fraud videos",
+  "speaker": "-",
+  "date": "-",
+  "page_url": null,
+  "file": null,
+  "licence": "US government (PD) expected",
+  "licence_evidence": "Not searched: ftc.gov, fbi.gov, nist.gov all blocked by the proxy (403 CONNECT).",
+  "risk": "-",
+  "wanted_lines": []
+ }
+]
