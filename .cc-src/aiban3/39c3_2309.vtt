@@ -1,0 +1,1681 @@
+WEBVTT This file was generated using transcribee. Find out more at https://github.com/bugbakery/transcribee
+
+00:00:18.550 --> 00:00:28.510
+Mike: Okay,  so,  basically,  I  used  LLMs  to
+write  a  framework  to  have  LLMs  attack  LLMs.
+
+00:00:28.890 --> 00:00:31.570
+This  talks going to be   like
+"LLMs  all  the  way  down".
+
+00:00:33.000 --> 00:00:37.289
+Now  who  I  am  is  not  important.
+I'm  just  the  messenger.
+
+00:00:39.060 --> 00:00:41.689
+Really  the  framework  generated
+all  the  injections  for  the
+
+00:00:41.689 --> 00:00:45.189
+OpenAI  contest  and  has  made  some
+discoveries  since  then  as  well.
+
+00:00:46.609 --> 00:00:51.310
+In  fact,  I  had  Gemini  3
+draw  a  depiction  of  the
+
+00:00:51.310 --> 00:00:54.490
+talk  and  the  journey  we're
+about  to  go  on  together.
+
+00:00:55.130 --> 00:01:01.229
+It  starts  naturally  before  the  universe
+began,  then  progresses  through  the
+
+00:01:01.229 --> 00:01:05.730
+creation  of  language,  something  very
+important  for  LLMs,  and  then  the  invention
+
+00:01:05.730 --> 00:01:09.790
+of  writing,  the  invention  of  zero,
+and  then  it's  all  downhill  from  there.
+
+00:01:09.790 --> 00:01:14.689
+We  had  the  invention  of  the
+internet,  invention  of  LLMs,  LLM
+
+00:01:14.689 --> 00:01:18.810
+agents,  and  then  the  LLM  agent
+battles  that  we  all  came  here  to  see.
+
+00:01:19.629 --> 00:01:21.930
+So  without  further  ado,  let's  get  started.
+
+00:01:24.129 --> 00:01:29.250
+Before  anything,  there  was
+the  silence  of  the  void.
+
+00:01:30.409 --> 00:01:35.930
+And  in  the  beginning,  there  was  text,
+right?  That's  how  the  universe  started?
+
+00:01:37.750 --> 00:01:42.709
+Well,  it  did  go  that  way
+if  you're  an  LLM,  but  in
+
+00:01:42.709 --> 00:01:45.950
+reality,  some  things  happened
+before  there  was  text.
+
+00:01:47.150 --> 00:01:52.909
+Jean Baudrillard   argued  in  Simulacra  and
+Simulation,  the  book  from  The  Matrix
+
+00:01:52.909 --> 00:01:57.409
+that  was  hollowed  out,  the  hollowed
+out  portion  is  basically  depicted  here.
+
+00:01:57.409 --> 00:02:00.189
+He  argued  that  signs,
+basically  any  communication
+
+00:02:00.189 --> 00:02:03.370
+mechanism,  tends  to  progress
+through  four  stages.
+
+00:02:04.689 --> 00:02:10.569
+First,  you  have  the -  in  the  case
+of  language -  the  spoken  word.
+
+00:02:10.870 --> 00:02:14.990
+Now,  here  the  sign  is  directly
+connected  to  what  it's  signifying.
+
+00:02:15.250 --> 00:02:20.169
+The  spoken  word  is  referring  to
+objects  in  the  immediate  vicinity.
+
+00:02:20.169 --> 00:02:23.689
+There's  immediate  grounding
+in  the  use  of  language.
+
+00:02:24.469 --> 00:02:29.750
+In  the  second  stage,  in  the  case
+of  language,  we  have  writing.
+
+00:02:30.069 --> 00:02:31.650
+Now  we  have  an  abstraction  layer.
+
+00:02:31.789 --> 00:02:35.129
+Basically,  words  are  now  one  level
+removed  from  the  spoken  word.
+
+00:02:35.330 --> 00:02:38.770
+And  this  enables,  you  know,
+some  sort  of,  some  embellishment.
+
+00:02:39.069 --> 00:02:41.490
+You  see  the  objects  that  are
+being  referred  to  now  suddenly
+
+00:02:41.490 --> 00:02:45.509
+are  in  gold,  and  the  apple
+says  calisti  for  some  reason.
+
+00:02:46.909 --> 00:02:51.449
+And  things  have  sort  of  progressed
+into,  or  can  progress  into,  into  legend.
+
+00:02:52.849 --> 00:02:59.189
+In  the  third  stage,  or  the  order  of
+sorcery,  pretty  cool  name,  we  have  basically
+
+00:02:59.189 --> 00:03:06.990
+now  signs  or  words  referring  to  objects
+that  are  copies  without  originals.
+
+00:03:07.229 --> 00:03:10.969
+Think  video  game  objects,  objects
+in  VR,  or  what  have  you.
+
+00:03:10.969 --> 00:03:15.030
+This  is  also  where  hyperreality  comes,
+the  term  hyperreality  comes  into  play,
+
+00:03:15.189 --> 00:03:20.849
+basically  talking  about,  you  know,  real
+things  that  are,  you  know,  not  real.
+
+00:03:21.030 --> 00:03:24.370
+T hey're  basically  simulacra.
+
+00:03:24.949 --> 00:03:28.990
+And  the  fourth  and  final
+stage,  we  have  pure  simulation,
+
+00:03:28.990 --> 00:03:31.530
+and  that's  basically  where
+we  find  ourselves  now.
+
+00:03:32.430 --> 00:03:38.349
+Now   the  signs  are  generated  by
+models  of  a  real  without,  a ny  origin.
+
+00:03:38.710 --> 00:03:44.490
+Basically,  LLMs  have  been  trained  on  our
+hyperreality,  on  our,  just  like  internet  exhaust.
+
+00:03:44.729 --> 00:03:50.009
+And  this  has  consequences  for  basically  how  jail
+breaks  tend  to  work  in  many  different  ways.
+
+00:03:51.469 --> 00:03:55.090
+Just  to  put  this  into  perspective,  just
+because  it's  a  little  bit,  you  know,
+
+00:03:55.810 --> 00:03:59.849
+harder,  happier,  head  around,  right
+in  the  middle  there,  between  two  and
+
+00:03:59.849 --> 00:04:05.129
+three,  1500  years  ago,  is  when  zero
+was  invented  from  the  earlier  slide.
+
+00:04:06.050 --> 00:04:09.110
+Basically,  the  Greek  and  Romans
+were  philosophically  opposed
+
+00:04:09.110 --> 00:04:13.530
+to  the  idea  of  zero,  because  how
+could  nothing  be,  they  argued.
+
+00:04:15.509 --> 00:04:20.050
+This  really,  like,  underscores  the
+immediacy  of  how  they  viewed  language
+
+00:04:20.050 --> 00:04:24.329
+and  how,  you  know,  they  were  still
+in  this,  this  first  and  second  stages.
+
+00:04:25.910 --> 00:04:29.310
+So,  now,  fast  forward  to  LLM  agents.
+
+00:04:29.769 --> 00:04:33.509
+Now,  there's  been  a  couple  of  talks
+already  on  LLM  agents  and  agent  security.
+
+00:04:33.870 --> 00:04:40.509
+Basically,  quick  recap,  there's,  they're
+called  React,  reasoning  and  acting  agents.
+
+00:04:40.509 --> 00:04:42.850
+Basically,  the  user,  it  makes  a  query.
+
+00:04:43.350 --> 00:04:48.149
+The  LLM  does  a  reasoning  step,  which
+is  outputting  words  as  reasoning.
+
+00:04:48.930 --> 00:04:53.389
+Then  it  makes  a  tool  call,  which  is
+a  function  call,  effectively  chatting
+
+00:04:53.389 --> 00:04:57.930
+with  an  external  system  that  then  gives
+it  a  response  to  that  function  call.
+
+00:04:58.189 --> 00:05:03.790
+It  reasons  again  and  then
+provides  a  response  to  the  user.
+
+00:05:04.689 --> 00:05:06.870
+This  is  what  this  looks  like
+in  a  little  bit  more  detail.
+
+00:05:06.870 --> 00:05:12.449
+Well,  we  have  the  tool  call
+turns,  turn  1 .1,  where  the
+
+00:05:12.449 --> 00:05:19.170
+user  message  is  met  with  a
+thinking  step  and  a  tool  call.
+
+00:05:20.410 --> 00:05:23.509
+And  in  1 .2,  you  have  the
+tool  result  being  handed  back.
+
+00:05:24.509 --> 00:05:26.189
+Another  thinking  step,  another  tool  call.
+
+00:05:26.189 --> 00:05:30.970
+1 .3,  we  have  that  result
+being,  going  back  to  the
+
+00:05:30.970 --> 00:05:34.610
+LLM,  it  thinking  again
+and  providing  an  answer.
+
+00:05:34.870 --> 00:05:38.589
+And  then  finally,  in  2 .1,  in
+most  models  and  some,  depending
+
+00:05:38.589 --> 00:05:40.910
+on  the  use  case,  those
+reasoning  steps  are  then  removed.
+
+00:05:41.129 --> 00:05:44.769
+And  then  the  user  provides
+a  message  that's  given  back
+
+00:05:44.769 --> 00:05:48.129
+to  the  model,  it  thinks,
+and  then  the  process  repeats.
+
+00:05:49.370 --> 00:05:52.990
+So,  yeah,  again,  we've  had  a  couple  of
+talks  already  on  LLM  agents,  you  know,
+
+00:05:53.050 --> 00:05:57.970
+code  agents,  the  search  mode  of  ChtGPT,
+Claude,  Gemini,  these  are  all  agents.
+
+00:05:58.129 --> 00:06:01.170
+Online  customer  service
+bots,  phone  support,  I
+
+00:06:01.170 --> 00:06:03.269
+mean,  even  humanoid  robots
+we  saw  earlier  today.
+
+00:06:04.970 --> 00:06:06.569
+What  are  their  vulnerability  surfaces?
+
+00:06:06.569 --> 00:06:10.029
+This  is  also  covered  a  little  bit
+earlier  today  in  Johann's  talk.
+
+00:06:10.029 --> 00:06:16.269
+Direct  injection  are  prompt  injections
+where  you  have  direct  messaging  capability
+
+00:06:16.269 --> 00:06:21.750
+to  the  agent,  like  you  want  to  subvert  a
+customer  support  bot  or  a  shopping  agent.
+
+00:06:22.189 --> 00:06:27.250
+Indirect  injection  is  where  the
+prompt  injection  comes  via  the  tool
+
+00:06:27.250 --> 00:06:32.930
+call  results,  for  example,  via  web
+page,  documents,  email,  and  so  on.
+
+00:06:33.209 --> 00:06:37.550
+Then  memory  injection  is  a  little  bit
+more  powerful,  but  also  indirect,  where  you
+
+00:06:37.550 --> 00:06:42.089
+get  the,  if  there  is  a  memory  system  for
+the  agent,  you  get  that  to  store  your
+
+00:06:42.089 --> 00:06:46.389
+prompt  injection,  and  then  it  can  persist
+and  sometimes  also  has  higher  privileges.
+
+00:06:46.689 --> 00:06:51.089
+That  URL  at  the  bottom  has  a
+pretty  neat  clickable  taxonomy,  but
+
+00:06:51.089 --> 00:06:53.509
+for  our  purposes,  this  high -level
+distinction  is  kind  of  enough.
+
+00:06:55.149 --> 00:06:57.769
+So,  what's  a  high -level  attacker  goal?
+
+00:06:58.750 --> 00:07:02.949
+Basically,  as  an  attacker,  we  want  to
+shift  the  distribution  of  output  text.
+
+00:07:03.069 --> 00:07:06.110
+Now,  these  things  are  still
+statistical  prediction  engines,
+
+00:07:06.110 --> 00:07:09.470
+still  outputting,  basically,
+probability  distributions  of  words.
+
+00:07:10.769 --> 00:07:15.029
+There's  a  safe  probability  distribution  that's
+the  well -defined  behavior  for  the  agent.
+
+00:07:15.410 --> 00:07:18.870
+We  want  to  shift  it  over
+into  harmful  behavior,  where
+
+00:07:18.870 --> 00:07:21.990
+the  system  misbehaves  and
+potentially  does  what  we  want.
+
+00:07:22.269 --> 00:07:26.529
+Now,  importantly,  again,  the  LLM  has
+been  trained  on  a  whole  gamut,  ranging
+
+00:07:26.529 --> 00:07:32.189
+in  the  dashed  line,  the  whole  spectrum
+from  harmful  to  safe,  which  gives
+
+00:07:32.189 --> 00:07:37.230
+jailbreaks  and  other,  you  know,  injection
+attacks  some  leverage  to  work  with.
+
+00:07:39.269 --> 00:07:41.610
+Now,  this  is  kind  of  interesting.
+
+00:07:42.250 --> 00:07:48.009
+For  the  past  five  years,  it  seems  like,
+and  possibly  longer,  safety  has  meant  with
+
+00:07:48.009 --> 00:07:53.029
+these  LLMs ,  well,  we've  got  to  censor
+sex,  drugs,  and  the  anarchist  cookbook.
+
+00:07:53.029 --> 00:07:56.110
+That  is  how  they  define  safety.
+
+00:07:56.350 --> 00:08:00.670
+Basically,  they  call  it  CBRNE
+content,  chemical,  biological,
+
+00:08:00.930 --> 00:08:05.589
+radiological,  nuclear,  and
+explosive  construction  instructions.
+
+00:08:06.430 --> 00:08:12.170
+These,  if  LLM  providers  pay
+bounties  directly  for  jailbreaks
+
+00:08:12.170 --> 00:08:15.149
+and  prompt  injections  at
+all,  they  do  it  for  this.
+
+00:08:16.470 --> 00:08:22.009
+And  as  a  result,  we  sort  of  have
+this  situation  where  it's  incentivizing
+
+00:08:22.009 --> 00:08:25.509
+the  development  of  surveillance
+and  censorship  capabilities
+
+00:08:25.509 --> 00:08:29.029
+rather  than,  like,  concerns
+over  agentic  software  security.
+
+00:08:30.029 --> 00:08:35.470
+When  you  do  find  an  agentic  issue
+that's  not  one  of  these  CBRNE  issues,
+
+00:08:35.470 --> 00:08:39.009
+it's  not  even  clear  if  it's  not
+related  to,  like,  somebody's  product.
+
+00:08:39.009 --> 00:08:43.129
+If  it's  just  LLM  misbehaving  in  an  agent
+framework,  it's  not  clear  who  to  report  it  to.
+
+00:08:43.409 --> 00:08:48.990
+If  you  look  at  the  bug  bounty  provider
+pages  for  LLM  providers,  they'll  exclude
+
+00:08:48.990 --> 00:08:57.049
+misbehavior  of  agents  and  many  other
+things  that  aren't  in  this  category.
+
+00:08:57.049 --> 00:09:01.789
+Which  means  that,  for  agentic
+applications,  these  problems
+
+00:09:01.789 --> 00:09:03.850
+will  go  unfixed  and  they'll
+have  to  resort  to,  basically,
+
+00:09:03.990 --> 00:09:07.129
+sandboxing  or  user  intervention,
+as  we  saw  in  Johanna's  talk.
+
+00:09:08.809 --> 00:09:09.289
+All  right.
+
+00:09:09.470 --> 00:09:12.789
+So,  a  lot  of  people  get  paid,  like,  what
+is  the  scenario,  what's  the  state  of  play?
+
+00:09:12.870 --> 00:09:16.470
+Because  there  are  people  that
+are  generating  these  kinds
+
+00:09:16.470 --> 00:09:18.809
+of  injections,  including
+myself  for  the  OpenAI  contest.
+
+00:09:18.809 --> 00:09:22.129
+The  way  that  it's  working
+right  now  is  there
+
+00:09:22.129 --> 00:09:27.169
+are  these,  basically,
+contests  for  agent  issues.
+
+00:09:27.610 --> 00:09:30.769
+The  OpenAI  one  was  really
+interesting  and  caught
+
+00:09:30.769 --> 00:09:33.169
+my  eye  because  it  was
+so  amenable  to  automation.
+
+00:09:33.169 --> 00:09:36.950
+You  just  submitted  a
+collection  of  misbehavior,
+
+00:09:37.129 --> 00:09:41.929
+agentic  misbehavior  examples
+as  JSON  files,  up  to  50.
+
+00:09:43.129 --> 00:09:46.789
+Grayswan  and  Hackaprom  kind  of
+run  more  your,  like,  CTF  or
+
+00:09:46.789 --> 00:09:49.909
+pen  test  style  manual  injections
+where  you're  given  some  mock
+
+00:09:49.909 --> 00:09:54.250
+system  or  set  of  VMs  that  you're
+using  an  LLM  to  compromise.
+
+00:09:54.429 --> 00:09:58.710
+And  they  also  will  pay  you  not
+as  much,  and  that's  all  manual.
+
+00:09:58.950 --> 00:10:01.169
+The  LLMs  are  often
+blinded  in  those  scenarios.
+
+00:10:01.690 --> 00:10:09.389
+The  lone  exception  is,  to  my  knowledge,  is
+that  Google  has  a  standing  pay  bounty  program
+
+00:10:09.389 --> 00:10:16.529
+for  agent  issues  in  their  flagship  products,
+ranging  around  $5 ,000  up  to  $20 ,000,  flagship
+
+00:10:16.529 --> 00:10:25.429
+being  email,  search,  Google  Docs,  things
+that  they're  trying  to  integrate  Gemini  with.
+
+00:10:27.419 --> 00:10:33.860
+Okay,  so  if  we  want  to  look  at  the  security
+issues  of  LLMs  as,  you  know,  agent  vehicles,
+
+00:10:35.500 --> 00:10:39.039
+it  helps  to,  like,  get  a
+little  bit  more  into  detail.
+
+00:10:39.259 --> 00:10:45.659
+Look  for  issues  that  would  exist  in  this
+abstraction  gap  between  abstraction  and  reality,
+
+00:10:45.740 --> 00:10:49.820
+where  most  security  issues  tend  to  be
+other  than,  like,  basic  misconfiguration.
+
+00:10:50.980 --> 00:10:53.759
+So  let's  look  at  how  the  API  flow  works.
+
+00:10:53.759 --> 00:10:59.179
+This  diagram  here  shows
+basically  your  JSON  HTTP  request
+
+00:10:59.179 --> 00:11:04.820
+going  from  the  JSON  blob
+with  messages  from  the  user
+
+00:11:04.820 --> 00:11:08.240
+to  what's  called  a  Jinja  template  engine.
+
+00:11:09.120 --> 00:11:12.440
+I  think  various  Kubernetes  might  use  this.
+
+00:11:13.059 --> 00:11:17.759
+Basically,  it  is  a  templating  system
+that  puts  tags  around  the  JSON  fields
+
+00:11:17.759 --> 00:11:23.480
+and  then  ultimately  creates  what's
+called  a  rendered  context  window,
+
+00:11:23.700 --> 00:11:29.659
+which  is  a  set  of  tags  and  text
+that  are  then  converted  into  tokens.
+
+00:11:30.080 --> 00:11:31.299
+And  then  there's  some  filtering.
+
+00:11:31.580 --> 00:11:33.919
+The  API  does  do  some  filtering,
+as  Johann has  mentioned,
+
+00:11:34.159 --> 00:11:40.019
+for  typically,  definitely  the  tags,
+the  tokens  corresponding  to  these  tags,
+
+00:11:40.059 --> 00:11:42.940
+and  then  sometimes  also
+certain  kinds  of  Unicode.
+
+00:11:42.940 --> 00:11:46.919
+And  then  the  model  generates
+a  completion  of  that
+
+00:11:46.919 --> 00:11:49.500
+document  kind  of  as  a
+normal  prediction  engine,
+
+00:11:49.500 --> 00:11:53.940
+which  generates  the  response
+for  the  API.  All  right.
+
+00:11:54.000 --> 00:11:56.399
+So  how  do  you  figure  out
+this  context  window  format?
+
+00:11:56.519 --> 00:11:58.200
+How  do  you  know  if  this
+stuff  is  working  correctly?
+
+00:11:58.360 --> 00:12:01.419
+This  was  one  of,  like,  I  was
+very  interested  in  local  LLMs
+
+00:12:01.419 --> 00:12:03.720
+and  privacy -preserving
+use  cases  in  that  vein.
+
+00:12:04.000 --> 00:12:07.299
+And  it  kind  of  always  bugged  me
+that  it  was  really  hard  to  tell
+
+00:12:07.299 --> 00:12:11.299
+if  these  local  inference  providers
+were  doing  inference  correctly.
+
+00:12:11.299 --> 00:12:14.159
+And  this  is  the  major  way  to  mess  it  up.
+
+00:12:14.279 --> 00:12:18.820
+It's  to  change  or  botch  how
+the  context  window  is  laid  out.
+
+00:12:19.580 --> 00:12:22.980
+OpenAI  did  a  really  good  job
+with  their  GPT -OSS  release.
+
+00:12:23.559 --> 00:12:26.899
+For  their  first  OpenWeight
+release  in  a  while,
+
+00:12:27.059 --> 00:12:31.159
+they  documented  the  context
+window  format  for  OpenAI  Harmony,
+
+00:12:31.220 --> 00:12:34.620
+which  covers  that  model,  the
+OpenWeight  1,  and  GPT -5.
+
+00:12:36.000 --> 00:12:38.679
+Other  OpenWeight  models  do
+provide  these  Jinja  templates.
+
+00:12:38.679 --> 00:12:41.480
+You  can  get  them  on  HuggingFace
+typically  with  the  model.
+
+00:12:41.720 --> 00:12:45.820
+And  then  you  can  use  an  LLM  to
+generate  human -readable  documentation
+
+00:12:45.820 --> 00:12:51.840
+from  that  Jinja  file.  Well,  for  proprietary
+models,  they  don't  give  you  anything,
+
+00:12:52.059 --> 00:12:56.899
+but  it  turns  out  you  can  just  ask  the
+model  to  document  its  own  context  window
+
+00:12:56.899 --> 00:12:58.500
+if  you  prompt  it  correctly.
+
+00:12:58.779 --> 00:13:02.220
+Now,  you  also  have  to  be  careful  about
+tag  filtering  that  I  mentioned  earlier.
+
+00:13:02.220 --> 00:13:08.139
+It  will  hallucinate  its  tag  names,  so
+you  want  to  give  it,  in  this  case,
+
+00:13:08.299 --> 00:13:11.860
+you  want  to  tell  it  to  escape  the  tag
+names,  and  then  it's  going  to  hallucinate  them
+
+00:13:11.860 --> 00:13:19.159
+because  it's  not  been  trained  on  the
+correspondence  of  these  tags  to  tokens
+
+00:13:19.159 --> 00:13:23.220
+unless  it's  been  trained  on  previous
+instances  of  itself  or  its  own  documentation.
+
+00:13:23.220 --> 00:13:27.580
+But  the  good  news  is  it'll
+accept  these,  typically.
+
+00:13:27.879 --> 00:13:32.480
+And  this  is  one  of  the  major  discoveries  of
+Hostile Shop,  as  we'll  get  into  it  in  a  minute.
+
+00:13:32.960 --> 00:13:38.179
+So  here's  Gemini  2 .5's  self
+-documented  context  window  structure
+
+00:13:38.179 --> 00:13:44.019
+as  rendered  by  Gemini  3  nano -banana.
+Again,  some  LLMs  all  the  way  down.
+
+00:13:44.240 --> 00:13:48.960
+You  know,  you've  got  your  system  tags,
+user  message,  model  section  in  a  tag.
+
+00:13:50.460 --> 00:13:55.080
+There's  that  reasoning  step,  the  tool
+call  invocation,  the  tool  output,
+
+00:13:55.460 --> 00:13:58.059
+another  reasoning  step,  and
+a  response  to  the  user.
+
+00:13:58.440 --> 00:14:03.580
+This  is,  again,  what  it  looks  like  for
+Claude  in  its  self -documented  context  window
+
+00:14:03.580 --> 00:14:05.899
+going  through  the  API  step -by -step.
+
+00:14:09.080 --> 00:14:14.100
+You  have  here  in  this  first  request  the
+human's  message  with  the  system  prompt
+
+00:14:14.100 --> 00:14:17.840
+and  developer  prompt  and  the
+tool  call  information  being  sent
+
+00:14:17.840 --> 00:14:21.899
+as  the  first  API  request  to the
+model.  The  model  does  some  thinking.
+
+00:14:22.240 --> 00:14:23.559
+It  makes  a  tool  call.
+
+00:14:23.779 --> 00:14:28.620
+And  then  the  agent  framework  basically
+provides  the  reply  of  the  tool  call  output
+
+00:14:28.620 --> 00:14:32.120
+back  to  Claude's  API  in
+the  second  API  request.
+
+00:14:33.100 --> 00:14:37.100
+And  then  that's  completed,  sent  back
+with  this  completion  at  the  bottom.
+
+00:14:37.279 --> 00:14:41.879
+And  then  the  human  in  the  third  API  request,
+the  human,  there's  the  next  human  message.
+
+00:14:43.539 --> 00:14:46.740
+So  the  model  providers
+try  to  enforce  something
+
+00:14:46.740 --> 00:14:49.120
+called   instruction
+hierarchy  for  security  here.
+
+00:14:49.340 --> 00:14:53.279
+Basically,  they  want  the  system  prompt  to
+take  precedence  over  the  developer  prompt,
+
+00:14:53.500 --> 00:14:55.220
+to  take  precedence  over  the  model  text,
+
+00:14:55.279 --> 00:14:59.080
+and  then  model  text  should  take  precedence
+over  whatever  the  user  is  asking  for.
+
+00:14:59.240 --> 00:15:03.899
+And  then  that  should  take  precedence  over  the
+tool  results  in  terms  of  instruction  following
+
+00:15:03.899 --> 00:15:06.940
+and  what  the  model  will
+decide  to  do,  basically.
+
+00:15:07.220 --> 00:15:12.080
+You  shouldn't  be  able  to  override  the
+prompt  begging,  I  guess  you  could  call  it,
+
+00:15:12.740 --> 00:15:16.360
+in  the  system  prompt  with
+tool  output,  at  least  according
+
+00:15:16.360 --> 00:15:19.539
+to  this  instruction  hierarchy
+training  mechanism  attempt.
+
+00:15:20.620 --> 00:15:26.899
+But  this  boundary  evaluation  is  done  by  the
+model  through  its  training  and  not  the  API.
+
+00:15:28.100 --> 00:15:33.379
+So  that,  because  of  the  hyper -reality
+concept  that  we  talked  about  earlier,
+
+00:15:34.960 --> 00:15:39.080
+that's  not  like  real,  hyper -real
+conversations  are  just  text.
+
+00:15:39.879 --> 00:15:45.279
+This  is  an  excerpt  from  Anthropic's
+own  many -shot  jail -breaking  paper.
+
+00:15:45.759 --> 00:15:48.820
+They've  discovered  that  you  could  provide  a
+
+00:15:48.820 --> 00:15:51.059
+conversation  of  an  LLM
+where  you're  talking  about,
+
+00:15:52.019 --> 00:15:56.419
+or  making  it  look  like  you're  talking
+about  doing  a  bunch  of  unsafe  things.
+
+00:15:57.360 --> 00:16:01.700
+Follow  that  and  end  that  with
+your  desired  unsafe  request.
+
+00:16:01.700 --> 00:16:04.759
+How  do  I  build  a  bomb?
+Make  some  malware  for  me.
+
+00:16:05.039 --> 00:16:09.000
+The  model  is  then  thinks,  oh,  well,  I've
+already  been  talking  about  all  this  unsafe  stuff.
+
+00:16:09.220 --> 00:16:13.840
+It's  now  in  the  probability  distribution,
+in  the  harmful  probability  distribution,
+
+00:16:13.860 --> 00:16:18.279
+and  then  it  will  go  ahead  and  answer.
+They  released  this  paper  in  early  2024.
+
+00:16:19.539 --> 00:16:22.940
+So,  you  know,  when  I  saw  this,  I'm
+like,  well,  I  wonder  if  this  still  works.
+
+00:16:24.940 --> 00:16:26.299
+So,  can  we  automate  this?
+
+00:16:26.360 --> 00:16:30.519
+So,  as  I  said,  the  OpenAI  contest
+was  really  amenable  to  automation.
+
+00:16:30.580 --> 00:16:37.340
+I  have  a  day  job.  So,  I  wanted  to  know
+if  the  LLMs  could  take  this  job  for  me.
+
+00:16:37.639 --> 00:16:41.960
+I  was  kind  of  inspired  by  this  paper  that
+came  out  right  at  the  beginning  of  the  contest
+
+00:16:41.960 --> 00:16:45.539
+that  said  basically  all  you  need  is  a  reasoning
+agent  and  it  will  be  able  to  jailbreak.
+
+00:16:47.820 --> 00:16:51.059
+But  I  wanted  to  figure  out
+some  ways  to  optimize  it.
+
+00:16:51.659 --> 00:16:58.379
+So,  the  first  insight  was  provide  that
+context  window  document  to  that  OpenAI  did.
+
+00:16:58.539 --> 00:17:01.019
+Provide  that  to  the
+attacker,  an  attacker  agent,
+
+00:17:01.279 --> 00:17:03.759
+when  it's  trying  to
+jailbreak  the  target  GPT -OSS.
+
+00:17:04.599 --> 00:17:07.500
+And  maybe  then  it  will  be
+able  to  construct  a  many -shot
+
+00:17:07.500 --> 00:17:11.920
+jailbreaking  attempt  with  what
+looks  like  conversation  tags
+
+00:17:13.619 --> 00:17:17.619
+and  allow  that  kind  of  attack  to
+work  by  getting  it  closer  into  that
+
+00:17:17.619 --> 00:17:20.160
+probability  distribution  of  what
+looks  like  a  real  conversation.
+
+00:17:21.319 --> 00:17:26.319
+Next  insight  was,  well,  we  want  now
+these  large  context  models  are  coming  out.
+
+00:17:26.380 --> 00:17:30.039
+Gemini  2 .5  was  just  released,
+a  million -token  context  window.
+
+00:17:30.299 --> 00:17:35.099
+Definitely  wanted  to  be  able  to  learn
+from  repeated  attempts  in  the  same  session
+
+00:17:35.099 --> 00:17:39.200
+and  then  also  save  successful
+examples,  attack  examples  between  runs.
+
+00:17:40.480 --> 00:17:43.920
+And  then  the  third  insight
+was,  and  this  came  up
+
+00:17:43.920 --> 00:17:48.759
+while  I  was  working
+through  using  the  framework,
+
+00:17:49.119 --> 00:17:52.380
+it's  much  more  effective
+for  the  attacker  if  the
+
+00:17:52.380 --> 00:17:57.079
+successful  injection  examples
+are  categorized  and  organized
+
+00:17:57.079 --> 00:17:59.819
+rather  than  just  in  a  pile
+and  particularly  not  a  rag.
+
+00:17:59.819 --> 00:18:04.819
+Google  also,  during  the  contest,  came
+out  with  this  limitations  of  rag  paper
+
+00:18:05.579 --> 00:18:11.680
+that  shows  that  you're  not  always  going
+to  get  stuff  from  your  embedding  retrieval.
+
+00:18:12.619 --> 00:18:16.019
+So,  you  know,  you're  really
+not  helping  yourself  by
+
+00:18:16.019 --> 00:18:17.740
+having  this  huge  rag  that
+you're  trying  to  query.
+
+00:18:17.900 --> 00:18:20.140
+You  might  as  well  put  the  key
+things  in  the  context  window.
+
+00:18:21.319 --> 00:18:24.460
+And  then  the  final  insight,
+and  the  reason  why  I
+
+00:18:24.460 --> 00:18:27.579
+call  it  Hostile Shop,  is
+this  concept  of  sharp  tools.
+
+00:18:27.579 --> 00:18:34.259
+Basically,  in  all  the  other  jailbreak
+literature  to  date,  there  was
+
+00:18:34.259 --> 00:18:39.160
+this  concept,  they  all  use  LLMs
+to  judge  the  results  of  jailbreaks.
+
+00:18:39.559 --> 00:18:45.740
+And  in  an  adversarial  scenario  where  I'm  trying
+to  optimize  the  agent  attacking  another  LLM,
+
+00:18:45.980 --> 00:18:50.059
+one  of  the  ways  that  it  can  reward
+hack  is  to  jailbreak  the  judge.
+
+00:18:50.940 --> 00:18:56.019
+Or  if  you're  testing  cross -LLM
+jailbreaks  that  can  propagate  between
+
+00:18:56.019 --> 00:18:59.880
+LLMs  or  apply  to  multiple  LLMs,
+the  judge  might  jailbreak  itself.
+
+00:19:00.579 --> 00:19:04.859
+So  I  wanted  a  way  for  the  framework
+to  enforce  and  detect  victory.
+
+00:19:05.279 --> 00:19:09.259
+So  I  came  up  while  I  was  thinking,
+well,  what  can  I  do  to  do  this?
+
+00:19:09.259 --> 00:19:14.059
+Well,  it  turns  out  invoices  in  a
+shopping  agent  have  a  state  machine
+
+00:19:14.059 --> 00:19:18.000
+where  the  invoice  should  always
+flow  to  these  particular  stages.
+
+00:19:18.339 --> 00:19:22.079
+Like  an  invoice  should  be
+created  before  it's  paid.
+
+00:19:22.380 --> 00:19:25.299
+It  has  to  be  paid  before
+the  product  can  be  purchased.
+
+00:19:26.700 --> 00:19:30.420
+The  invoice  has  to  be  marked  purchase
+before  a  product  can  be  returned.
+
+00:19:30.420 --> 00:19:34.980
+And  the  invoice  has  to  have  the  product  marked
+as  returned  before  a  refund  can  be  issued.
+
+00:19:35.680 --> 00:19:41.160
+And  then  any  action,  any  tool  call  action
+on  behalf  of  the  target  agent  that's
+
+00:19:41.160 --> 00:19:44.380
+not  in  the  state  machine  is  a  victory
+for  the  injection  for  the  attacker,
+
+00:19:45.019 --> 00:19:50.180
+allowing  you  to  automatically  and  very
+quickly  gather  these  examples  where  the
+
+00:19:50.180 --> 00:19:56.299
+attacker  agent  is  causing  the  shopping
+agent  to  give  it  free  stuff,  for  example.
+
+00:19:57.640 --> 00:20:01.839
+So  to  go  into  a  little  bit
+more  detail,  we  have  two  agents.
+
+00:20:02.019 --> 00:20:04.140
+First  is  the  shopping  agent
+that  I  just  described.
+
+00:20:04.420 --> 00:20:08.039
+It  has  tools  like  search
+web,  read  web  page,  invoice
+
+00:20:08.039 --> 00:20:12.039
+user,  check  the  invoice,
+make  purchase,  issue  refunds.
+
+00:20:12.339 --> 00:20:15.220
+The  data  for  this  comes
+from  another  LLM  with  a
+
+00:20:15.220 --> 00:20:19.680
+fixed  seed,  and  this  makes
+its  results  reproducible.
+
+00:20:19.680 --> 00:20:24.400
+This  is  meant  to  mirror  real
+-world  scenarios  like  travel
+
+00:20:24.400 --> 00:20:27.359
+booking  assistance,  airline,
+mile  redemption  portals,
+
+00:20:27.359 --> 00:20:29.880
+where  there's  a  credit  card
+that's  held  by  the  sales
+
+00:20:29.880 --> 00:20:33.200
+agent,  and  it's  doing  purchases
+on  behalf  of  the  user.
+
+00:20:33.839 --> 00:20:38.900
+The  attacker  can  make  web  pages,
+add  reviews,  pay  invoices,  and
+
+00:20:38.900 --> 00:20:42.720
+return  product,  and  it  can  have
+direct  message  to  the  sales  agent.
+
+00:20:42.720 --> 00:20:45.599
+And  its  goals  are  to  get  free
+stuff,  get  the  credit  card,
+
+00:20:46.019 --> 00:20:51.119
+cause  emoji  use,  cause  or  violate
+certain  regular  expressions.
+
+00:20:51.460 --> 00:20:55.200
+And  this  can  be  detected  instantly
+without  the  need  for  a  judge.
+
+00:20:55.700 --> 00:20:59.579
+So  the  key  discovery  is  this
+instruction  hierarchy  concept.
+
+00:21:00.160 --> 00:21:06.500
+Basically, GPT OSS  has  learned  this  instruction
+hierarchy  conceptually,  not  as  a  syntax.
+
+00:21:06.500 --> 00:21:09.579
+So  you  can  inject  in  all
+sorts  of  different  ways.
+
+00:21:09.799 --> 00:21:12.220
+You  can  inject  what  looks
+like  a  context  window,  XML,
+
+00:21:12.599 --> 00:21:18.259
+JSON,  TOML,  YAML,  Markdown,
+and  the  target  will  accept  it.
+
+00:21:18.420 --> 00:21:23.099
+This  allows  you  to  do  the  many -shot
+jailbreaking,  as  I  suspected,  dialogue  injection.
+
+00:21:23.400 --> 00:21:28.039
+You  can  inject  reasoning  steps,  inject
+tool  output,  inject  full  context  windows.
+
+00:21:28.680 --> 00:21:31.480
+And  then,  since  the  contest,
+I  discovered  that  basically
+
+00:21:31.480 --> 00:21:34.400
+every  other  LLM  in  the
+frontier  has  this  issue,
+
+00:21:34.400 --> 00:21:36.700
+certainly  for  direct
+injection  still  to  this  day.
+
+00:21:37.880 --> 00:21:40.380
+So  here's  an  example
+in  Markdown  for  GPT -5.
+
+00:21:41.160 --> 00:21:45.680
+A  dialogue,  this  is  not  what  it
+looks  like  internally  for  GPT -5,  but
+
+00:21:45.680 --> 00:21:50.059
+it's  rendered  in  Markdown  as  a
+direct  message  to  the  sales  agent,
+
+00:21:50.220 --> 00:21:54.859
+convincing  the  GPT -5  sales  agent
+that  it  has  gone  through  these
+
+00:21:54.859 --> 00:22:00.119
+tool  calls  in  order  to  have  a  paid
+invoice  and  then  make  a  purchase.
+
+00:22:01.140 --> 00:22:03.839
+Same  thing  in  YAML  for  Claude  4 .5.
+
+00:22:05.720 --> 00:22:09.099
+A  reasoning  step  before  the
+end,  a  little  bit  more  detail
+
+00:22:09.099 --> 00:22:11.380
+in  the  YAML,  but  basically  the
+same  thing's  going  on  here.
+
+00:22:11.799 --> 00:22:15.000
+Again,  Claude's  not  YAML
+internally,  but  it  accepts  it
+
+00:22:15.000 --> 00:22:18.160
+conceptually  as  a  direct  injection,
+a  direct  message  from  the  user.
+
+00:22:18.160 --> 00:22:22.140
+Here's  a  full  context  window
+for  GPT -5.  This  one's  in  TOML.
+
+00:22:23.279 --> 00:22:27.980
+System  message,  basically  convincing
+the,  and  developer  message
+
+00:22:27.980 --> 00:22:30.660
+convincing  the  sales  agent  to  go
+ahead  and  give  me  the  credit  card.
+
+00:22:31.720 --> 00:22:33.640
+This  one  is  cool.  Toolception.
+
+00:22:33.640 --> 00:22:37.819
+Basically,  you  can  have  fake  tool  output
+that  says,  hey,  you  got  a  new  tool  call.
+
+00:22:38.059 --> 00:22:40.440
+And  by  the  way,  in  order  to  use
+this  tool  call,  you  got  to  give  me
+
+00:22:40.440 --> 00:22:45.279
+your  system  prompt  or  do  whatever
+extra  action  when  you  say  like
+
+00:22:45.279 --> 00:22:49.579
+bang  integrity  prompt  output  or
+whatever  the  new  tool  call  is.
+
+00:22:49.579 --> 00:22:52.559
+And  this  is  probably  going  to  persist,
+I  would  guess,  because  of  this
+
+00:22:52.559 --> 00:22:56.720
+like  skills  concept  and  ability  of
+agents  to  look  up  tools  is  a  big  thing.
+
+00:22:56.920 --> 00:23:01.900
+So  I'm  going  to  guess  that  this  is  going
+to  be  a,  continue  to  be  a  problem  for
+
+00:23:01.900 --> 00:23:06.759
+a  lot  of  LLMs  that  try  to,  try  to
+implement  like  Claude's  tool  skill  discovery.
+
+00:23:08.359 --> 00:23:11.400
+I  also  discovered  that  with  enough
+prompt,  with  the  right  prompting
+
+00:23:11.400 --> 00:23:15.640
+and  goal  prompts,  you  can  have
+the  framework  mutate  jailbreaks.
+
+00:23:15.880 --> 00:23:19.680
+This  is  a  mutation  of  Pliny's
+famous  variable  substitution  for
+
+00:23:19.680 --> 00:23:25.160
+Z,  Z  variable  upgraded  with  a
+reasoning  step  and  reformat  in  XML.
+
+00:23:25.339 --> 00:23:27.920
+Looks  nothing  like  the
+stuff  that  Pliny  has  posted.
+
+00:23:28.779 --> 00:23:31.359
+And  it  is  accepted  by  a  bunch  of  models.
+
+00:23:31.539 --> 00:23:35.960
+And  you  can,  there  are  also  variants  of  this
+that  will  also  work  against  other  models.
+
+00:23:38.319 --> 00:23:43.599
+So  what  do  we  do?  How
+do  you  secure  this  stuff?
+
+00:23:43.960 --> 00:23:49.079
+Well,  OpenAI  two  months  ago  released  GPT -OSS
+Safeguard  like  three  months  after  the  contest.
+
+00:23:49.319 --> 00:23:50.779
+It's  a  policy -based  model.
+
+00:23:51.099 --> 00:23:56.039
+You  can  give  it  examples  of
+things  that  it's  supposed  to  block.
+
+00:23:56.500 --> 00:23:59.960
+And  then  it  acts  as  a  filter,  a
+prompt  injection  filter  of  all  kinds.
+
+00:24:00.160 --> 00:24:05.319
+Of  all  the  prompt  injection  filters  that  I
+evaluated  in  HostileShop,  this  was  the  best.
+
+00:24:05.319 --> 00:24:08.039
+By  far  it  was  blocking
+everything  out  of  the  box.
+
+00:24:08.900 --> 00:24:12.259
+Claude  also  came  out  with  a
+sandbox  that  you  can,  or  Anthropic
+
+00:24:12.259 --> 00:24:14.880
+came  out  with  a  sandbox  that
+you  can  arbitrarily  sandbox
+
+00:24:14.880 --> 00:24:19.099
+random  command  line  stuff  pretty
+easily  on  multiple  platforms.
+
+00:24:19.299 --> 00:24:23.519
+So  these  high -end  kind  of
+like  prompt  filters  that  the
+
+00:24:23.519 --> 00:24:25.740
+model  providers  were  using
+internally  are  now  available.
+
+00:24:27.180 --> 00:24:31.940
+But  it's  GPT -OSS,  can  we
+just  prompt  inject  that?  Yeah.
+
+00:24:33.299 --> 00:24:40.819
+So  this  reasoning  injection  with,  in  XML,
+styled  like  the  Harmony  format  with  an
+
+00:24:40.819 --> 00:24:44.660
+assistant,  you  know,  the  assistant  analysis
+channel,  which  is  this  reasoning  channel,
+
+00:24:44.920 --> 00:24:49.420
+has  a  fake  compliance  review  of  the  policy
+that  says,  oh  yeah,  this  is  totally  fine.
+
+00:24:49.420 --> 00:24:52.359
+It's  like  some  sort  of  live
+data  debugging,  which  is  totally
+
+00:24:52.359 --> 00:24:56.940
+forbidden  by  both  the  policy
+and  the  sales  agent  prompt.
+
+00:24:57.240 --> 00:25:01.039
+But  it  accepts  it  anyway.  It  lets
+whatever  you  put  before  this  through.
+
+00:25:01.599 --> 00:25:04.500
+So  add  that  to  the  policy,  right?
+You  know,  let's  just  iterate  here.
+
+00:25:05.460 --> 00:25:08.599
+Well,  I  did,  and  then  it  discovered  this.
+
+00:25:09.500 --> 00:25:18.220
+An  XML  policy  evaluation  log,  different
+formatting,  but  this  gets  past  that.
+
+00:25:19.039 --> 00:25:22.819
+So  then  you  add  this  to  the  policy,  and
+then  it's  sort  of  like  whack -a -mole,  right?
+
+00:25:24.420 --> 00:25:26.720
+So  then  I'm  like,  well,  is  this
+going  to  go  on  forever  or  what?
+
+00:25:26.799 --> 00:25:28.660
+Just  keep  adding  examples
+to  the  end  of  time?
+
+00:25:28.660 --> 00:25:32.579
+Well,  Pliny,  Pliny  the  Liberator,  legendary
+
+00:25:32.579 --> 00:25:35.940
+jailbreaker,  has  this
+Parseltongue  tool  on  the  web.
+
+00:25:36.099 --> 00:25:43.339
+It's  like  a  web  app  that  allows  you  to
+do  basically  arbitrary  transforms  of  text.
+
+00:25:43.559 --> 00:25:50.200
+So  I  created  a  multi -tool  that
+allows  the  model  to  make  arbitrary
+
+00:25:50.200 --> 00:25:56.859
+Parseltongue  transforms  on  a  piece
+of  text  and  then  get  that  back.
+
+00:25:56.859 --> 00:26:05.000
+And  then  the  attacker  agent  discovers  this,
+which  is  the  same  kind  of  policy  audit
+
+00:26:05.000 --> 00:26:10.539
+log  message,  but  encoded  in  Fracture,
+Unicode,  and  then  passed  through  Route  47.
+
+00:26:10.900 --> 00:26:13.980
+And  there's  probably  about  20  different
+transform  tools  that  it  can  use.
+
+00:26:14.319 --> 00:26:16.839
+There's  Base64,  succeeded  a  lot.
+
+00:26:17.319 --> 00:26:21.660
+Upside -down  text,  Route  13,  Base64
+was  another  successful  example.
+
+00:26:22.220 --> 00:26:25.680
+And  then  the  actual,  this  is  just
+to  bypass  that  Safeguard  filter.
+
+00:26:26.160 --> 00:26:31.579
+The  actual  agent  injection  can  be  this
+or  something  else.  It  doesn't  matter.
+
+00:26:32.160 --> 00:26:35.240
+Like  this  can  just  be
+stapled  at  the  bottom  or
+
+00:26:35.240 --> 00:26:38.019
+pasted  at  the  top  in  the
+case  of  GPT -OSS  Safeguard.
+
+00:26:39.359 --> 00:26:40.980
+So  what  does  this  thing  look  like  to  run?
+
+00:26:41.180 --> 00:26:44.339
+I've  got  some  90s  text
+interface  here  for  you.
+
+00:26:44.339 --> 00:26:48.119
+If  you  just  run  Hostile Shop  High  from
+the  GitHub,  you  get  this  selection
+
+00:26:48.119 --> 00:26:52.119
+dialog  that  lets  you  select  the  different
+modes  and  different  agent  frameworks.
+
+00:26:52.339 --> 00:26:53.859
+Not  a  lot  of  difference
+between  agent  frameworks,
+
+00:26:54.019 --> 00:26:55.480
+but  there's  some  difference
+between  the  modes.
+
+00:26:56.079 --> 00:26:59.960
+Agent's  agent  mode  is  the  thing  that  discovers
+prompt  injections  against  those  models.
+
+00:27:00.119 --> 00:27:02.539
+It  can  also  discover
+indirect  injections  by  way  of
+
+00:27:02.539 --> 00:27:06.440
+adding  product  reviews,  some
+of  those  review  configs.
+
+00:27:07.960 --> 00:27:12.240
+And  then  the  human  attacker
+mode,  you  can  try  and  jailbreak
+
+00:27:12.240 --> 00:27:15.700
+the  thing  yourself  or  prompt
+inject  the  sales  agent  yourself.
+
+00:27:18.000 --> 00:27:21.559
+And  the  injection  assistant
+mode,  which  I  think  is
+
+00:27:21.559 --> 00:27:24.599
+probably  the  most  fun  user
+-facing  piece  of  this,
+
+00:27:24.599 --> 00:27:31.900
+is  you  can  run  Hostile Shop  and  it'll  get  all
+the  injections  that  it's  discovered  imported.
+
+00:27:32.200 --> 00:27:39.660
+And  then  you  can  ask  it  for  advice  on
+prompt  injecting  basically  any  other  system
+
+00:27:39.660 --> 00:27:44.259
+that's  been  prompted  such  that  the  model
+will  go  ahead  and  just  give  you  that  advice.
+
+00:27:44.259 --> 00:27:50.480
+In  this  case,  something  about  posting
+some  credentials  onto  a  GitHub  ticket.
+
+00:27:50.480 --> 00:27:53.119
+And  then  the  model's  like,
+oh,  here,  here's  an  example.
+
+00:27:53.359 --> 00:27:55.420
+I  did  this  because  of  that  Grace  one.
+
+00:27:55.599 --> 00:28:00.039
+I  wanted  to  try  my  hand  at  the  Grace
+one  prompt  contest  and  I  also  wanted  to
+
+00:28:00.039 --> 00:28:03.000
+see  if  this  was  useful  to  other  people
+that  were  trying  that  sort  of  thing.
+
+00:28:03.460 --> 00:28:05.980
+Those  contests  were  still
+kind  of  too  tedious  for  me
+
+00:28:05.980 --> 00:28:09.079
+because  you're  just  like
+cutting  and  pasting  this  stuff.
+
+00:28:09.519 --> 00:28:14.079
+You  have  to  submit  like  a  thousand
+examples  for  some  of  those  contests.
+
+00:28:14.079 --> 00:28:20.380
+And  even  with  this,  I  couldn't
+do  it  compared  to  the  OpenAI  one.
+
+00:28:21.039 --> 00:28:23.579
+But  I  created  it  basically
+for  that  purpose  so  that
+
+00:28:23.579 --> 00:28:26.359
+if  there's  no  other  way
+to  report  these  things,
+
+00:28:26.599 --> 00:28:28.599
+having  this  injection
+assistant  would  help  people
+
+00:28:28.599 --> 00:28:33.619
+report  these  to  whatever
+contest  that  they're  using.
+
+00:28:36.430 --> 00:28:37.829
+And  that's  pretty  much  it.
+
+00:28:37.869 --> 00:28:42.869
+If  you  want  to  try  it  out,  you  can  check
+out  that  GitHub  URL,  clone  it,  and  run  it.
+
+00:28:43.430 --> 00:28:47.430
+There's  no  pip  package  yet,
+but,  you  know,  maybe  someday
+
+00:28:47.430 --> 00:28:53.269
+in  a  conda  virtual env  or
+Docker  container,  whatever.
+
+00:28:55.390 --> 00:28:59.359
+And  you  should  be  good  to  go.  That's  it.
+
+00:29:08.549 --> 00:29:13.210
+Thank  you  very  much.  We  still  have
+some  time  for  questions  and  answers.
+
+00:29:13.210 --> 00:29:16.470
+So  if  you  have  any  questions,  you  can
+line  up  at  the  microphones  in  the  middle.
+
+00:29:17.309 --> 00:29:19.190
+We  also  have  a  signal  angel.
+
+00:29:19.509 --> 00:29:29.609
+You  can  use  Matrix  Hall  Fuse  or  you  can
+use  Hackend  via  the  hashtag  39C3HallFuse.
+
+00:29:30.089 --> 00:29:32.670
+Is  there  already  a  question
+from  the  internet?  No.
+
+00:29:32.930 --> 00:29:35.230
+So  we  have  a  question  at
+microphone  number  one,  please.
+
+00:29:36.170 --> 00:29:37.829
+Thank  you  very  much.
+This  is  a  great  talk.
+
+00:29:39.009 --> 00:29:44.049
+Do  you  know,  is  it  turtles  all  the
+way  down?  Is  this  an  unsolvable  problem?
+
+00:29:44.250 --> 00:29:46.390
+Is  it  always  going  to  be
+an  arms  race  or  do  you
+
+00:29:46.390 --> 00:29:49.349
+think  there  is  a  solution
+for  the  security  of  LLMs?
+
+00:29:50.369 --> 00:29:53.930
+Mike: I  had,  you  know,  originally
+created  this  for  the  contest.
+
+00:29:53.970 --> 00:29:57.650
+It  seemed  like  the  OpenAI  believed  that  by
+running  that  contest  and  gathering  a  lot
+
+00:29:57.650 --> 00:30:02.069
+of  examples  that  they  would  get  enough
+training  examples  to  do  something  with  it.
+
+00:30:02.069 --> 00:30:07.190
+And,  you  know,  I  hope  that  that's
+when  I  would,  you  know,  guess
+
+00:30:07.190 --> 00:30:10.730
+that  that  went  into  GPT  OSS
+Safeguard,  their  filter  model.
+
+00:30:11.849 --> 00:30:16.730
+And  it  did  block,  was  able  to  successfully
+block  the  stuff  that  I  submitted  to  the  contest.
+
+00:30:17.130 --> 00:30:21.089
+But  then,  you  know,  it  was  also  able
+to  be  adversarial  adapted  against.
+
+00:30:21.349 --> 00:30:24.170
+So  from  that  point  of  view,
+that's  looking  pretty  grim.
+
+00:30:26.990 --> 00:30:33.710
+I  don't  know  if  I'm  as  pessimistic  as  Johann
+from  the  previous  talk  will  never  be  fixed.
+
+00:30:33.930 --> 00:30:38.970
+But  it  definitely  seems  like  it's  going
+to  be  a  long  road  to  get  those  last,
+
+00:30:38.970 --> 00:30:42.910
+like,  nines  of  probability  to  try  and
+make  it  less  and  less  and  less  likely.
+
+00:30:43.190 --> 00:30:46.769
+If  you  have  a  different  kind  of  prompt
+filter  than  your  model,  you're  kind  of
+
+00:30:46.769 --> 00:30:52.170
+multiplying  the  probability  of  being  able
+to  inject  both,  which  is  a  good  thing.
+
+00:30:52.170 --> 00:31:00.809
+The  other  thing  is  I've  noticed  is  Claude
+and  GPT  5 .2  are  now  at  least  much  better.
+
+00:31:01.230 --> 00:31:06.829
+I  can't  get  indirect  injections  to  work
+against  them,  whereas  I  previously  could.
+
+00:31:07.609 --> 00:31:11.109
+Direct  injections  still  work.  I
+don't  know.  I  have  some  ideas  why.
+
+00:31:11.250 --> 00:31:14.490
+Maybe  it  hurts  their
+code  agent  ability  if  you
+
+00:31:14.490 --> 00:31:17.329
+mess  too  much  with  the
+direct  message  channel.
+
+00:31:17.329 --> 00:31:22.690
+But  they're  able  to  train  out  indirect
+injections,  at  least  of  the  nature
+
+00:31:22.690 --> 00:31:25.869
+of  Hostile Shop  was  generating,  where
+it's  kind  of  like  trying  to  end
+
+00:31:25.869 --> 00:31:29.630
+the  tool  call  and  then  put  an
+injection  in  there  and  then,  like,  start
+
+00:31:29.630 --> 00:31:32.869
+the  tool  call  up  and  try  and,  like,
+make  it  look  like  it's  coherent.
+
+00:31:33.109 --> 00:31:37.990
+They  recognize  that  now.  So,  I  don't  know.
+
+00:31:37.990 --> 00:31:43.789
+I'm  not  an  LLM  researcher,  so  I
+just  observe  and  report  what  I  see.
+
+00:31:44.250 --> 00:31:45.069
+Audience: Interesting.  Thank  you.
+
+00:31:46.170 --> 00:31:50.049
+Thank  you  very  much.  Are  there  now
+any  questions  from  the  internet?
+
+00:31:50.049 --> 00:31:52.670
+There  are  no  questions.  Are
+there  any  questions  in  the  room?
+
+00:31:52.809 --> 00:31:55.130
+Now  you  have  the  time  to
+line  up  at  the  microphones.
+
+00:31:56.430 --> 00:31:58.829
+But  if  there  are  no  questions,
+maybe  you're  just  shy.
+
+00:31:59.650 --> 00:32:03.650
+So,  can  the  people  meet  you  later
+somewhere  if  they  decide,  well,  I  do
+
+00:32:03.650 --> 00:32:07.369
+have  questions,  but  I  don't  want  to
+ask  it  in  a  room  full  of  people?
+
+00:32:07.630 --> 00:32:13.190
+Mike: Yeah,  yeah.  I'll  probably  be  hanging
+around  here,  if  not  out  in  the  cafeteria  area.
