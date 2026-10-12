@@ -4,9 +4,13 @@ grep and small scripts, never print whole transcripts or logs). Never read SCRAT
 
 ## HOME IS THE PC AGAIN (2026-10-13) · cloud setup no longer needed (kept below as a fallback)
 - Work folder: `C:\Users\pc\Documents\claude projects\All-in` (git clone of the private repo `quartzsaphir-debug/all-in-studio`,
-  Git LFS; credentials via Git Credential Manager). Start with `git fetch origin`; the cloud sessions left everything on
-  `claude/*` branches, none merged into `main` yet.
-- **Which branch holds what** (cloud work happened in three separate lines; the live topic is ai-ban):
+  Git LFS; credentials via Git Credential Manager). Start with `git fetch origin`.
+- **MERGED 2026-10-13 (S said yes): branch `claude/local-home` = ai-ban + AI black markets + China AI underground in one
+  tree; work here. `main` was left untouched; merge `claude/local-home` into it only when S asks.** Conflicts were only in
+  HANDOVER (the China handover is appended at the bottom of "PARALLEL LINE"), .gitignore, LEARNINGS (both kept), Root.tsx
+  (all three compositions registered) and cloud-setup.sh (`av<16`). `tsc --noEmit` passes; one still from each of
+  `ai-ban`, `ai-black-markets`, `china-ai-underground` rendered. The cloud branches below are now history.
+- **Which branch held what** (cloud work happened in three separate lines; the live topic is ai-ban):
   | Branch | Holds | Status |
   |---|---|---|
   | `claude/bold-bell-plohvn` (local `ai-ban`) | **ai-ban full film** 12:54, 18 clips, `All-in_ai_ban_full.mp4` + samples v4/v5; contains the 4 older ai-ban/black-markets branches | **LIVE topic**, newest ai-ban work, waiting on owner notes |
@@ -14,12 +18,9 @@ grep and small scripts, never print whole transcripts or logs). Never read SCRAT
   | `claude/serene-wozniak-ob8jdw` | AI black markets full film 8:15 (`All-in_ai_black_markets_full.mp4`, 14 clips, Kokoro) | owner REJECTED it: dead, never polish |
   | `claude/lucid-albattani-l6k8ct` | AI black markets full-film WIP 8:18 | superseded by serene, dead |
   | `claude/vigilant-hawking-wj9frh`, `magical-dijkstra-rp02md`, `pensive-knuth-7ush35` | ai-ban samples (1-min v4, 2-min, 1-min) | all contained in `bold-bell` |
-  `main` = AI black markets 1:30 sample + captchas (3-min v6, full v3). Test-merge of bold-bell + serene + laughing-faraday
-  conflicts only in HANDOVER.md, .gitignore, LEARNINGS.md, Root.tsx and cloud-setup.sh (all small); not committed, S decides.
-- **Where the files are on the PC**: this folder = `ai-ban`. The other two live lines are git worktrees (gitignored via
-  `.git/info/exclude`, no node_modules; add `npm ci` in their `engine/` only if you render there):
-  `branches\china-ai-underground` (branch `china-ai-underground`), `branches\ai-black-markets-full` (branch
-  `ai-black-markets-full`). Remove with `git worktree remove` once merged.
+  `main` = AI black markets 1:30 sample + captchas (3-min v6, full v3).
+- **Where the files are on the PC**: everything is in this folder on branch `claude/local-home` (the temporary
+  `branches\` worktrees were removed after the merge). Delivered films: `videos/<slug>/out/All-in_*.mp4`.
 - **Delivered files**, all verified present in LFS and probed with ffprobe: `All-in_ai_ban_full.mp4` (775 s),
   `All-in_captchas_full_v3.mp4` (663 s), `All-in_captchas_3min_v6.mp4` (157 s), `All-in_ai_black_markets_sample.mp4` (93 s),
   `All-in_ai_black_markets_full.mp4` (serene branch), `All-in_china_ai_underground_sample.mp4` (laughing-faraday branch).
