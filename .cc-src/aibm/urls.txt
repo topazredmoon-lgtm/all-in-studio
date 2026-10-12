@@ -2,3 +2,12 @@ aitm-panels https://cdn.media.ccc.de/events/why2025/opus/why2025-167-eng-AiTM_pa
 identity-theft https://cdn.media.ccc.de/congress/2024/mp3/38c3-383-eng-identity_theft_credit_card_fraud_and_cloaking_services_-_how_state-sponsored_propaganda_makes_use_of_the_cyber_criminal_toolbox_mp3.mp3
 new_important https://cdn.media.ccc.de/congress/2023/opus/37c3-12292-eng-NEW_IMPORTANT_INSTRUCTIONS_opus.opus
 genai-in-the-battle https://cdn.media.ccc.de/events/god/2024/mp3/god2024-56275-eng-GenAI_in_the_Battle_of_Security_Attacks_Defenses_and_the_Laws_Shaping_AIs_Future_mp3.mp3
+vibe-scammers https://cdn.media.ccc.de/congress/2025/opus/39c3-1712-eng-When_Vibe_Scammers_Met_Vibe_Hackers_Pwning_PhaaS_with_Their_Own_Weapons_opus.opus
+darknet-tor https://cdn.media.ccc.de/congress/2025/opus/39c3-1573-eng-Light_in_the_Dark_net_opus.opus
+ticket-fraud https://cdn.media.ccc.de/congress/2025/opus/39c3-1254-eng-All_my_Deutschlandtickets_gone_Fraud_at_an_industrial_scale_opus.opus
+hostileshop https://cdn.media.ccc.de/congress/2025/opus/39c3-2309-eng-A_Quick_Stop_at_the_HostileShop_opus.opus
+politician https://cdn.media.ccc.de/events/rc3/mp3/rc3-r3s-260-eng-But_this_politician_said_xyz_-_no_Commentary_mp3.mp3
+victim-notif https://cdn.media.ccc.de/events/why2025/opus/why2025-203-eng-Scaling_up_victim_notification_because_crededential_theft_is_scaling_up_too_opus.opus
+phish-panels https://cdn.media.ccc.de/events/hackerhotel/2025/mp3/hackerhotel2025-184-eng-A_criminal_and_victim_view_of_phishing_and_phishing_panels_live_of_stage_mp3.mp3
+llm-hack https://cdn.media.ccc.de/events/hackerhotel/2025/opus/hackerhotel2025-186-eng-How_do_models_like_ChatGPT_LLM_work_can_you_hack_them_and_run_them_offline_opus.opus
+north-korean https://cdn.media.ccc.de/events/emf/2026/mp3/emf2026-21501-eng-North_Korean_agent_looking_for_a_job_mp3.mp3

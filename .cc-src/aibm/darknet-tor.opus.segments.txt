@@ -1,0 +1,720 @@
+[   18.0-   21.5] Hi, everyone. Thank you very much for the warm welcome.
+[   21.5-   23.0] Thanks very much for being here.
+[   23.0-   25.3] I know there's plenty of other interesting things to do,
+[   25.3-   29.2] so I'm happy that some of you are interested to hear what I have to share.
+[   29.2-   33.6] As already mentioned, I've been part of the Tor community for years,
+[   33.6-   36.0] so I've been a relay operator for half a decade.
+[   36.0-   41.4] I've been doing research on Tor network for the better part of the last six years.
+[   41.4-   44.7] So I've been dealing with various aspects of Tor,
+[   44.7-   50.1] And in this talk, I'll mostly focus on usage of Tor onion
+[   50.1-   52.8] services, that what most people colloquially
+[   52.8-   55.6] refer to as the darknet.
+[   55.6-   58.3] Spoiler, you'll get less information than you want,
+[   58.3-   61.2] mainly because of the subtitle of this talk.
+[   61.2-   63.8] I called it Why Science is Hard.
+[   63.8-   68.1] And that will be a theme you will probably
+[   68.1-   71.4] detect throughout the next 30 minutes.
+[   71.4-   74.9] And to give you an idea of what I mean by why science is hard,
+[   74.9-   77.0] I'd like to start with a simple example,
+[   77.0-   79.8] and we start with a simple question.
+[   79.8-   83.6] We all have various ideas on what the document is being used for,
+[   83.6-   85.6] and let's start with a simple one.
+[   85.6-   87.5] How much of it are marketplaces?
+[   87.5-   89.9] You know, you have stories of illegal marketplaces
+[   89.9-   93.6] that trade everything from drugs to assassinations.
+[   93.6-   95.8] And now, if you might be interested,
+[   95.8-   98.9] imagine you're a politician, or imagine you are,
+[   98.9-  102.7] I don't know, law enforcement officer or lawmaker,
+[  102.7-  104.7] then you end up, okay, let's figure that out.
+[  104.7-  108.4] Let's open Google Scholar, search for the question,
+[  108.4-  110.6] Google Scholar spits out lots of results
+[  110.6-  112.6] because lots of researchers have been trying
+[  112.6-  116.1] to ask that question, and we start with the first one
+[  116.1-  119.6] that frozen us 3% of the dark-net on marketplaces.
+[  119.6-  121.7] Okay, that's great, so now we know.
+[  121.7-  124.1] We don't know about the other 97%,
+[  124.1-  126.3] so maybe let's take a look at another study.
+[  126.3-  128.6] Maybe they figured that one out too.
+[  128.6-  132.6] The next one says 34% of the dark network marketplaces.
+[  132.6-  134.5] Now we have a little bit of a problem
+[  134.5-  137.0] because the two numbers don't perfectly match,
+[  137.0-  141.3] but what do we do if we get two contradicting results?
+[  141.3-  142.9] We pick a third one.
+[  142.9-  145.4] 50% of the dark network marketplaces.
+[  145.4-  147.1] At this point it feels like an auction,
+[  147.1-  148.5] like who offers more?
+[  148.5-  151.3] So probably go with the fourth one,
+[  151.3-  153.5] but now the number starts going down again.
+[  153.5-  157.1] Now only 27% of the dark network marketplaces.
+[  157.1-  160.1] And just for good measure, let's throw in a fifth one.
+[  160.1-  162.8] That one says 9% of the dark in our marketplaces.
+[  162.8-  164.7] Note, I didn't make those numbers up.
+[  164.7-  167.5] So all of those are published peer-reviewed studies.
+[  167.5-  172.3] So all of those are real scientific contributions.
+[  172.3-  174.7] But you might notice that it's kind of hard
+[  174.7-  177.0] to draw a final conclusion from that.
+[  177.0-  179.2] So if I were a lawmaker and I would
+[  179.2-  181.1] be presented with those five studies,
+[  181.1-  183.0] then I'd be stuck yet.
+[  183.0-  185.5] Scientists have no idea what they're doing,
+[  185.5-  188.9] which is a theme or an opinion that has become more widespread,
+[  188.9-  191.3] at least in my home country in Austria.
+[  191.3-  195.6] We have some issues with people not trusting as scientists.
+[  195.7-  198.4] When looking at this, I can kind of understand why.
+[  198.5-  202.7] So I think there is a point to be made that something here is fishy.
+[  202.7-  205.5] And what I would like to do is to take the opportunity
+[  205.5-  209.7] and explain how such obviously contradicting results
+[  209.8-  214.1] can actually not be contradicting once you start reading in more detail.
+[  214.1-  219.2] or in other words, all the things that make science both hard when you do it as well as
+[  219.2-  225.1] when you try to interpret it, which often makes conclusions about things hard.
+[  225.1-  229.6] And before I do that, I have to add a tiny bit of Tor knowledge.
+[  229.6-  233.1] So I will assume that you roughly have an idea how the Tor network works with, you
+[  233.1-  237.7] know, you start Tor or the Tor browser and then you type in some URL and then hopefully
+[  237.7-  241.0] no one can figure out what you're doing on the internet.
+[  241.0-  245.6] So far, I'll expect you to know that, or I hope most of you are familiar, but there is
+[  245.6-  251.7] one teeny tiny detail that gets interesting when we're talking about onion services.
+[  251.7-  253.2] Number one, they're easy to identify.
+[  253.2-  254.2] They end in .onion.
+[  254.2-  255.8] So that part is easy.
+[  255.8-  261.3] And what's important is that if a client, so if our green friend over there wants to
+[  261.3-  267.9] connect to an onion service like Facebook, he somehow needs to figure out, okay, who
+[  267.9-  272.6] Who should I talk to, to figure something out or to talk to Facebook?
+[  272.6-  276.7] And since you can't talk to Facebook directly because that would defeat the whole purpose
+[  276.7-  282.0] of Tor, you need to do the... you need to take an indirection step via the Tor network.
+[  282.0-  286.2] And to bootstrap that whole thing, you have to talk to a place called the hidden service
+[  286.2-  290.8] directory where your onion service first publishes some information and says if someone
+[  290.8-  293.6] wants to talk to me, talk to that guy first.
+[  293.6-  295.6] It's kind of you have an introducer.
+[  295.6-  299.9] So you need to go to someone else and that someone says, okay, I'll allow you to talk
+[  299.9-  305.9] to my boss or to my friend, so there is an indirection step.
+[  305.9-  311.8] What's now funny is this hidden service directory is like spoiler everything on the Tor network,
+[  311.8-  315.2] volunteer operated, and I'm a volunteer.
+[  315.2-  318.3] So I can actually read.
+[  318.3-  320.0] Thank you.
+[  320.0-  325.4] So the cool thing is now, that means if you are in the hidden service directory, you
+[  325.4-  327.3] can suddenly start reading everything
+[  327.3-  329.1] that is being uploaded.
+[  329.1-  332.2] And if you're a not so friendly person,
+[  332.2-  333.6] you can also start tracking everything
+[  333.6-  335.4] that is being downloaded.
+[  335.4-  337.3] And if you do that, then you start
+[  337.3-  340.7] learning a little bit about the Tor network.
+[  340.7-  343.5] Most importantly, you can learn who is up,
+[  343.5-  345.2] not who is uploading something.
+[  345.2-  348.6] So you will never figure that out, or hopefully.
+[  348.6-  351.7] But you can figure out what is being uploaded.
+[  351.7-  353.9] And in our case, we can figure out, OK, Facebook,
+[  353.9-  356.8] CoreWWI.onion is being uploaded.
+[  356.8-  358.6] So now I can connect there myself
+[  358.6-  362.8] and take a look at that website and check what's going on.
+[  362.8-  364.4] There is, however, a caveat.
+[  364.4-  368.9] And some of you that are a little either younger
+[  368.9-  370.9] or more familiar with the Tor network
+[  370.9-  375.4] might have realized that that domain, that Facebook CoreWWI.onion,
+[  375.4-  379.1] is suspiciously short, because this is actually
+[  379.1-  383.3] an old onion address, a version 2 onion address.
+[  383.3-  388.5] Tor did change those a couple of years ago for two main reasons.
+[  388.5-  391.1] Number one, they wanted to mess up my slides.
+[  391.1-  393.9] But aside from that, they also changed
+[  393.9-  396.1] how things are being uploaded.
+[  396.1-  399.2] So now you can see if you are taking the new Facebook,
+[  399.2-  399.8] blah, blah, blah.
+[  399.8-  402.8] I'll not finish that word because I have no idea
+[  402.8-  406.1] whether it's humanly possible to pronounce it.
+[  406.1-  410.2] But the fun thing is we are uploading something else.
+[  410.2-  413.7] So at this point, if I'm still part of the hidden service
+[  413.7-  415.8] directory because I'm still a volunteer,
+[  415.8-  418.3] I don't actually know which onion addresses are being
+[  418.3-  419.2] uploaded.
+[  419.2-  422.4] That has been a massive change to the Tor network
+[  422.4-  424.8] with the switch between version 2 and version 3 onion
+[  424.8-  425.9] services.
+[  425.9-  428.7] And they did that exactly to stop people
+[  428.7-  432.0] from figuring out what's going on on the Tor network.
+[  432.0-  434.8] Because now, the only way to connect
+[  434.8-  437.8] to a service on the darknet is if the operator,
+[  437.8-  441.7] So our friend in blue here actually tells us the address.
+[  441.7-  445.0] If we don't know the address, we can connect there.
+[  445.0-  448.2] And if we can't connect there, we
+[  448.2-  452.0] will never learn what the web server would be serving.
+[  452.0-  455.0] And that has, for interpreting our results,
+[  455.0-  457.5] one very important distinction.
+[  457.5-  462.1] We have old results, old results that we were using version 2
+[  462.1-  463.2] onion services.
+[  463.2-  464.6] They are not functional anymore.
+[  464.6-  467.3] were sunsetted in 2021.
+[  467.3-  470.4] But before then, for version 2 Onion Services,
+[  470.4-  472.4] you could figure out every single Onion
+[  472.4-  473.9] address on the DarkNet.
+[  473.9-  475.6] So you could literally go and connect
+[  475.6-  477.9] to every single system on the DarkNet
+[  477.9-  480.1] and just take a look what's happening there.
+[  480.1-  481.5] And researchers did that.
+[  481.5-  484.3] So that really happened.
+[  484.3-  485.9] If you're taking a look at then,
+[  485.9-  489.8] there was an intermediary stage between 2017 and 2021.
+[  489.8-  492.7] There were version 2 Onion Services and version 3 Onion
+[  492.7-  493.6] Services.
+[  493.6-  496.5] And at this time, you could figure out all the version 2
+[  496.5-  500.3] onion services and some of the version 3 onion services,
+[  500.3-  502.6] but you could never figure out all of them.
+[  502.6-  504.6] And then later on, you could figure out
+[  504.6-  507.5] only something about the version 3 onion services
+[  507.5-  510.6] and nothing about version 2 because it didn't exist anymore.
+[  510.6-  513.1] So at this point, our results are actually different
+[  513.1-  517.1] because one half was taking a look at the whole set,
+[  517.1-  520.6] and the other one was taking a look at just the sample,
+[  520.6-  524.1] And that has significant implications.
+[  524.1-  526.6] Now, you could argue that the old results are now
+[  526.6-  528.7] more interesting, because the old results were
+[  528.7-  530.4] taking a look at everything.
+[  530.4-  533.3] The problem, and you could blame the Tor project
+[  533.3-  535.2] for making my job harder, is that they've
+[  535.2-  536.8] been very successful.
+[  536.8-  539.1] So there is way more version 3 onion services
+[  539.1-  541.2] than there were version 2 onion services.
+[  541.2-  543.6] To give you a reference, in 2014,
+[  543.6-  548.4] there were about 40,000 version 2 onion services in total.
+[  548.4-  552.7] And today, we are talking about somewhere between 800,000
+[  552.7-  554.8] and a million onion services running.
+[  554.8-  565.1] So the numbers have multiplied by a factor of 20.
+[  565.1-  567.9] So as I mentioned, great for the Tor network.
+[  567.9-  571.6] Not great for me, because now I have a lot of onion services
+[  571.6-  572.7] that we know nothing about.
+[  572.7-  575.3] So old results are interesting, but they
+[  575.3-  577.1] don't tell us everything.
+[  577.1-  579.8] So we need to focus on newer results.
+[  579.8-  581.4] And for newer results, we just have
+[  581.4-  584.4] to take a look at which onion services we can find.
+[  584.4-  587.3] And that gets us to a very important thing,
+[  587.3-  589.9] and that is choosing our sources wisely.
+[  589.9-  592.2] Because what does an innocent researcher
+[  592.2-  595.0] do who wants to learn something about the darknet?
+[  595.0-  597.1] He has to go and say, OK, where can I
+[  597.1-  599.8] get a list of onion addresses that I can connect to
+[  599.8-  602.2] and check what they're actually being used for?
+[  602.2-  606.0] And the easy thing is you can just type into Google
+[  606.0-  607.2] list of onion addresses.
+[  607.2-  610.4] I think today people would use JetGPT for that.
+[  610.4-  613.1] So my guess is that that would be the modern approach.
+[  613.1-  616.0] I tried that, I think a few weeks ago.
+[  616.0-  617.6] JetGPT is terrible at it,
+[  617.6-  619.8] but maybe I'm just not paying enough money.
+[  619.8-  622.4] So it might be a financial issue,
+[  622.4-  624.9] but we will see.
+[  624.9-  627.7] That other researchers go and take specialized
+[  627.7-  630.8] search engines, Armia being the most well-known one.
+[  630.8-  633.8] Armia just easily gives you a set of onion addresses
+[  633.8-  637.2] that it regularly scrapes from other sources.
+[  637.2-  641.0] So that is one of the, in my opinion, better sources.
+[  641.0-  643.3] But AMIA has an interesting property.
+[  643.3-  645.7] AMIA filters certain onion addresses,
+[  645.7-  649.2] which it knows are illegal, mostly child pornography
+[  649.2-  651.7] or child abuse websites.
+[  651.7-  654.8] So that means if you take the list of onion services,
+[  654.8-  657.6] you do get a set of onion addresses,
+[  657.6-  659.3] but you get a filtered set.
+[  659.3-  661.1] So there is certain parts of the darknet
+[  661.1-  662.8] that you will just, by definition,
+[  662.8-  664.8] not seeing when that is your data source,
+[  664.8-  667.6] because you need to factor these things in
+[  667.6-  669.5] if you are later on interpreting results
+[  669.5-  672.5] based on such studies.
+[  672.5-  674.0] Then you can go the other direction,
+[  674.0-  675.8] you can take a look at GitHub.
+[  675.8-  678.0] GitHub has plenty of sites.
+[  678.0-  679.9] GitHub has also interesting properties
+[  679.9-  682.8] because number one, GitHub search is super annoying
+[  682.8-  685.6] which causes weird respects
+[  685.6-  688.6] on what the GitHub code search will actually turn up.
+[  688.6-  691.8] But most importantly, and what I find both funny
+[  691.8-  697.0] and difficult to handle is that GitHub keeps mostly
+[  697.0-  699.7] track of two sides of onion addresses.
+[  699.7-  701.6] One, it keeps track of onion addresses
+[  701.6-  704.3] that are used in some forms of distributed networks.
+[  704.3-  708.0] So everything related to networks, blockchains,
+[  708.0-  712.8] and so on, bootstrapping addresses for everything
+[  712.8-  715.3] from, I think I found it, with I2P services that
+[  715.3-  717.0] use bootstrapping onion services, which
+[  717.0-  720.2] I find kind of funny, but other story.
+[  720.2-  723.9] And the other half is all the ransomware monitoring
+[  723.9-  724.9] in the world.
+[  724.9-  727.9] So everything, every ransomware gang that operates
+[  727.9-  730.5] in onion service will eventually end up at GitHub.
+[  730.5-  734.1] So you can also get a set of on an addresses there.
+[  734.1-  738.4] And surprisingly that gives you, or unsurprisingly,
+[  738.4-  741.4] that gives you a focus based on onion services
+[  741.4-  743.1] that have certain impact.
+[  743.1-  745.2] So Amia filled us something,
+[  745.2-  747.0] GitHub has a certain type of address
+[  747.0-  748.6] that is likely to show up.
+[  748.6-  752.6] If you want a completely different one, you can try certificate transparency logs.
+[  753.8-  755.8] That will give you a lot of online addresses.
+[  756.0-  760.2] And all of those are websites that have been able to purchase a certificate,
+[  760.4-  764.9] which means they are probably not websites that care very much about their own anonymity.
+[  765.1-  767.5] So Facebook, for example, is easy to find.
+[  767.7-  771.3] ProtonMail and others would show up there.
+[  771.5-  776.1] So if you want to find only legally unproblematic ones
+[  776.1-  780.7] and probably fewer marketplaces, that is an option to go by.
+[  780.7-  783.4] And that makes an interesting thing
+[  783.4-  785.6] where you have to be aware, depending on which source
+[  785.6-  789.6] you use, you could already kind of predict the results.
+[  789.6-  792.6] So when I'm reading papers, one of the first things
+[  792.6-  795.4] I'm checking is, OK, where you're getting your data from.
+[  795.4-  797.0] And I've turned this into somewhat
+[  797.0-  799.2] of a game of predicting the results based
+[  799.2-  801.9] on just figuring out which data source
+[  801.9-  803.6] we're initially going with.
+[  803.6-  806.6] And it works, as I mentioned, in certain ways.
+[  809.7-  811.7] Another aspect that gets them very funny
+[  811.7-  813.9] is when researchers go ahead and say, OK,
+[  813.9-  817.1] I've taken a look at 20,000 or 30,000
+[  817.1-  821.1] on-in addresses, which I got from GitHub, for example.
+[  821.1-  825.8] And then they go, OK, in total, there's 800,000.
+[  825.8-  827.6] In total, there's 800,000.
+[  827.6-  831.4] Of my 30,000, 15,000 were marketplaces.
+[  831.4-  834.8] So I'll now assume that of the whole 800,000,
+[  834.8-  837.8] there have to be at least 500,000 marketplaces.
+[  837.8-  841.3] So you just extrapolate and assume that everything works.
+[  841.3-  844.4] And there is a problem that I think
+[  844.4-  847.9] marketplaces actually explain quite well.
+[  847.9-  851.4] If you were to start the Darkhind marketplace,
+[  851.4-  854.7] then you need to enable people to connect there.
+[  854.7-  857.7] So you'll probably share your address with other people.
+[  857.7-  859.9] You'll probably put it on websites, on aggregators,
+[  859.9-  860.8] and so on.
+[  860.8-  864.0] So you'll try to make it as easy as possible for people
+[  864.0-  865.1] to find it.
+[  865.1-  868.8] The same applies to, as I found an even worse degree,
+[  868.8-  871.4] to websites that try to scam you.
+[  871.4-  874.6] Because scammers are fully aware that as soon as you,
+[  874.6-  876.8] if you don't find them easily, then you probably
+[  876.8-  878.6] won't find them at all, because they
+[  878.6-  880.0] need to be the first one you find.
+[  880.0-  883.4] So scamming websites are also trying their very best
+[  883.4-  885.2] to be absolutely everywhere.
+[  885.2-  887.1] So they're clouding everything.
+[  887.1-  891.5] And the assumption that I haven't found any,
+[  891.5-  894.1] so they have to be here, at this point,
+[  894.1-  898.4] extrapolation actually becomes, well,
+[  898.4-  901.2] at the very least a daring assumption.
+[  901.2-  904.8] Let's put it very politely, because running a webship
+[  904.8-  907.6] or a scamming website that nobody can connect to
+[  907.6-  909.2] feels like a bad business model.
+[  909.2-  912.0] I'm not a business major, but that feels like
+[  912.0-  913.7] a bad approach to run a business,
+[  913.7-  916.3] so I would expect that to at least
+[  916.3-  918.2] not be the majority of users.
+[  918.2-  924.2] Might be wrong, but don't really think that that is the case.
+[  924.2-  928.0] And with that assumption, we can actually
+[  928.0-  929.6] start answering the first question.
+[  929.6-  933.2] You remember when I had one of the studies found 3%
+[  933.2-  935.4] and the other one found 50%?
+[  935.4-  937.2] Well, it turns out that they were just
+[  937.2-  939.1] having that exact misunderstanding.
+[  939.1-  942.2] So one of those studies was going with, OK, actually,
+[  942.2-  949.8] observed 5% and 50% of my 5% were marketplaces, which was 2.5%.
+[  949.8-  955.9] And the other one found, okay, we observed 7%, and they found 3% were marketplaces, and
+[  955.9-  961.2] one of them referred to what they had observed compared to the overall availability, and
+[  961.2-  965.7] the other one's just extrapolated and assumed that everything else will probably behave
+[  965.7-  968.5] the same way as our sampling data.
+[  968.5-  972.6] And then suddenly you can have two results that at the first glance look like they're
+[  972.6-  978.5] completely different, with one saying 50 and one saying 3%, and then you realise actually
+[  978.5-  983.7] their data does agree, so the data is consistent, we were just not very good at interpreting
+[  983.7-  992.4] it or we have a disagreement on whether extrapolation is possible at that state, yes or no.
+[  992.4-  997.0] And that is one example where we have an issue.
+[  997.0-  999.5] Another one are definitions.
+[  999.5- 1005.3] Now I will very intentionally try to avoid any definition of legality or illegality,
+[ 1005.3- 1010.7] but that in itself is super fun if you just try to figure out how people decide whether
+[ 1010.7- 1012.9] something is legal or illegal.
+[ 1012.9- 1015.6] But I'm avoiding that discussion.
+[ 1015.6- 1019.6] But super interesting is what is the marketplace?
+[ 1019.6- 1023.8] Just try, and you can quickly think about it in your head, what defines you?
+[ 1023.8- 1026.3] What tells you what a marketplace is?
+[ 1026.3- 1028.2] And then how do you teach that to an algorithm?
+[ 1028.2- 1032.1] I know today you wouldn't, you would throw it into an LLM and we'll see whatever pops
+[ 1032.1- 1037.9] out but in the old days we needed to write our own algorithms for that and there you
+[ 1037.9- 1041.6] can get very different results.
+[ 1041.6- 1046.7] Some people say a marketplace is everything that uses a webshop CI with there's a basket,
+[ 1046.7- 1051.2] I can add products to there, I can click order, I can create an account.
+[ 1051.2- 1056.2] While others say every website that has the word buy on it is a marketplace which makes
+[ 1056.2- 1057.9] everything a marketplace.
+[ 1057.9- 1063.3] So just by going with definitions, you can again widely iterate depending on how much
+[ 1063.3- 1065.9] you capture and how much you don't.
+[ 1065.9- 1072.3] I think one of my favorite definitions I had was a paper that assumed, okay, every website
+[ 1072.3- 1080.0] that contains the words boy, girl, and hot is child abuse.
+[ 1080.0- 1081.0] Just that.
+[ 1081.0- 1082.5] You check for three words.
+[ 1082.5- 1087.1] I think it had either to be boy or girl plus hot.
+[ 1087.1- 1088.5] Those were the three words.
+[ 1088.5- 1091.6] At this point, everything becomes child abuse.
+[ 1091.6- 1096.0] So depending on how you go with definitions, you can really create lots of things whatever
+[ 1096.0- 1097.3] you want.
+[ 1097.3- 1101.2] So definitions are important, and they're also very important when you're trying to compare
+[ 1101.2- 1106.4] results because otherwise you'll invariably get something.
+[ 1106.4- 1112.6] You can argue whether researchers are using that to skew data in one way or the other.
+[ 1112.6- 1114.8] That is one possible explanation.
+[ 1114.8- 1119.7] The other one is just that they found it very hard to actually properly distinguish and
+[ 1119.7- 1125.2] then they just figured out let's do it quick and easy because paper deadline is approaching,
+[ 1125.2- 1131.9] which is also a reasoning I can at least sympathize with.
+[ 1131.9- 1135.9] With that out of the way, we need to account for something else.
+[ 1135.9- 1141.7] That is one problem that researchers have to acknowledge.
+[ 1141.7- 1144.5] We are human and humans make mistakes.
+[ 1144.5- 1150.9] So the slide to the left of you, so the first one, is a blog on the Tor project, which was
+[ 1150.9- 1152.8] written by me.
+[ 1152.8- 1155.0] And the blog was wrong.
+[ 1155.0- 1160.4] Not just a little bit wrong, but quite wrong, because it turns out math is hard too.
+[ 1160.4- 1163.3] That is a talk that someone else should probably be giving.
+[ 1163.3- 1168.1] But what I can tell you, and this is a little bit complicated, but try to follow me, if
+[ 1168.1- 1174.0] you need to multiply something by four, don't multiply it by four twice, because
+[ 1174.0- 1186.9] that gives a different result. So that is the very short gist of it. So it turns out
+[ 1186.9- 1195.8] my data that I published on the Tor block in 2021 was off by a factor of four. Fortunately,
+[ 1195.8- 1201.8] Tor metrics reproduced my numbers and figured out, okay, you are wrong. And they published
+[ 1201.8- 1206.0] their own numbers and then I felt really bad and I said okay I'll fix that so I'll
+[ 1206.0- 1211.3] I'll redo my calculation and then I redid my calculation and then the numbers
+[ 1211.3- 1215.4] on two our metrics didn't get up so I made the mistake of taking a look at
+[ 1215.4- 1220.5] their source code turns out they're also wrong not by as much as me so I was
+[ 1220.5- 1225.2] wrong by a factor of four they are off by 10 to 15 percent there is still the
+[ 1225.2- 1227.9] to-do on the source code that acknowledges that we are still using
+[ 1227.9- 1232.8] the calculation from version 2, even though we are currently working with version 3.
+[ 1232.8- 1235.4] So they are fully aware what to do and what to change.
+[ 1235.4- 1237.0] They just never got around to.
+[ 1237.0- 1240.1] So it turns out that one is also off.
+[ 1240.1- 1242.8] But we are not that much.
+[ 1242.8- 1244.8] So as I mentioned, we are not...
+[ 1244.8- 1250.0] So I thought when I first read it that they should be off by about 20%, according to the
+[ 1250.0- 1251.0] resource code.
+[ 1251.0- 1253.2] But then some researchers reproduced it.
+[ 1253.2- 1256.6] And they said it's more 10 to 12%.
+[ 1256.6- 1261.4] So maybe there is more than one to do and I just spotted one, so I'm not making any
+[ 1261.4- 1262.9] statements there.
+[ 1262.9- 1269.2] Still be aware the numbers you get published there are also not entirely correct.
+[ 1269.2- 1274.1] So we're all human, we all make mistakes, and to a certain degree we need to factor
+[ 1274.1- 1275.1] that in.
+[ 1275.1- 1281.8] That is why in science we like to reproduce and validate our results to each other, which
+[ 1281.8- 1285.3] again the Tor network sometimes makes hard because it keeps changing.
+[ 1285.3- 1287.7] That is also something social scientists are aware of.
+[ 1287.7- 1292.6] It's very hard to repeat a study when the thing you're studying has changed.
+[ 1292.6- 1298.0] So that makes it difficult for us to actually confirm or deny our results.
+[ 1298.0- 1302.0] And that was, that is also sometimes a challenge.
+[ 1302.0- 1305.7] But enough about my complaints.
+[ 1305.7- 1312.2] Let's try a little bit of what's the rough state of knowledge that we have on how the
+[ 1312.2- 1314.1] Tor network looks like.
+[ 1314.1- 1318.2] Number one, the hidden service directory is still our best source because it still tells
+[ 1318.2- 1325.0] us how many there are in total, and we can check how many can we find with using Google,
+[ 1325.0- 1328.8] Aamir, every other method that comes to mind.
+[ 1328.8- 1334.4] And you can see we can roughly find up to a third of everything that's being uploaded.
+[ 1334.4- 1337.4] So there's two thirds we have no clue about.
+[ 1337.4- 1341.7] And that is all the published science I'm aware of.
+[ 1341.7- 1346.5] So maybe there are some people in this room who have top secret information and know more,
+[ 1346.5- 1350.4] but at least to the best of my knowledge, that is roughly the state.
+[ 1350.4- 1354.8] So whenever someone talks about the darknet, we talk about the one third that is known
+[ 1354.8- 1357.5] because we don't know about the rest.
+[ 1357.5- 1362.3] Based on the old studies from the version 2 era, probably a third of the unknown are
+[ 1362.3- 1366.2] botnets just based on old results.
+[ 1366.2- 1368.2] But that's a guess.
+[ 1368.2- 1372.0] we actually have no data to confirm or deny that.
+[ 1372.0- 1375.4] If anyone is running a version 3 ONNION service botnet,
+[ 1375.4- 1376.4] please let me know.
+[ 1376.4- 1378.8] I would very much at least like to know how many there are.
+[ 1378.8- 1381.0] And I could put an up and lower bound
+[ 1381.0- 1384.2] on how many are at the very least botnet clients.
+[ 1384.2- 1385.7] I'd find that interesting.
+[ 1385.7- 1389.2] And there is some parts that we will realistically never know.
+[ 1389.2- 1392.2] Everything that falls into ONNION chat app and ONNION
+[ 1392.2- 1393.2] messaging apps.
+[ 1393.2- 1398.8] So if you have what's it, Briar, Ricochet, Kutch.
+[ 1398.8- 1400.7] So there is a series of apps that
+[ 1400.7- 1404.1] use onion services for communication.
+[ 1404.1- 1405.6] Those addresses are never published.
+[ 1405.6- 1409.2] So realistically, you can guess or estimate how many there are,
+[ 1409.2- 1410.5] but we don't know.
+[ 1410.5- 1413.2] So that we don't know.
+[ 1413.2- 1417.6] But we can actually cut down on our size of unknown
+[ 1417.6- 1421.0] or our quantity of unknown by not taking a look at uploads.
+[ 1421.0- 1422.9] Because it turns out, when we want
+[ 1422.9- 1425.5] to know what the Dartnet is being used for,
+[ 1425.5- 1428.1] maybe the downloads are more interesting.
+[ 1428.1- 1430.2] And maybe it's even more relevant to take
+[ 1430.2- 1432.9] a look at successful downloads, because spoiler, there
+[ 1432.9- 1435.9] is a lot of failed downloads on the Dartnet.
+[ 1435.9- 1439.0] I'm not sure who is sending all those failed download requests,
+[ 1439.0- 1442.3] but some programs are probably very busy
+[ 1442.3- 1445.2] running into errors all the time.
+[ 1445.2- 1446.8] Or some humans are.
+[ 1446.8- 1449.5] Then there are some very patient human users
+[ 1449.5- 1452.8] who keep trying a service that has been offline for months,
+[ 1452.8- 1456.3] which seems intriguing.
+[ 1456.3- 1458.8] But if we take a look at successful downloads,
+[ 1458.8- 1462.5] then we can cut down on a few categories.
+[ 1462.5- 1464.9] We can easily figure out what's all the services that
+[ 1464.9- 1466.7] are also available on the Cleanit.
+[ 1466.7- 1467.7] That is your Facebook.
+[ 1467.7- 1468.7] That is your Pornhub.
+[ 1468.7- 1471.2] That is all the websites that you are familiar with
+[ 1471.2- 1473.9] that are difficult to access in some parts of the world,
+[ 1473.9- 1475.1] but not in others.
+[ 1475.1- 1477.9] So those you can easily put a number on.
+[ 1477.9- 1481.3] You can also put a number on blockchains, notably Bitcoin.
+[ 1481.3- 1486.0] Bitcoin has a significant share of all onion service usage.
+[ 1486.0- 1488.3] So when you're talking about the DarkNet,
+[ 1488.3- 1490.3] pretty much all the studies I found
+[ 1490.3- 1494.3] should have acknowledged that there is way more Bitcoin nodes
+[ 1494.3- 1496.9] than there is marketplaces, child abuse sites,
+[ 1496.9- 1498.5] or whatever else they found,
+[ 1498.5- 1501.3] just because the benefit of Bitcoin is you can find
+[ 1501.3- 1502.9] all of them because the blockchain records
+[ 1502.9- 1505.0] all the onion service names,
+[ 1505.0- 1506.9] so it's fairly easy to connect to them all.
+[ 1506.9- 1508.4] that should also be acknowledged,
+[ 1508.4- 1511.4] so that's the reason why their share is relatively big.
+[ 1512.2- 1515.3] And then we have the areas that we can easily attribute,
+[ 1515.3- 1517.5] for example, all the ransomware part,
+[ 1517.5- 1520.1] and all the part that we just don't know
+[ 1520.1- 1521.6] but could connect to.
+[ 1521.6- 1524.2] So that is the light red part on the bottom,
+[ 1524.2- 1528.0] which would enable us to actually take a look
+[ 1528.0- 1529.5] at what is going on here.
+[ 1529.5- 1534.0] And that pretty much limits what we are able to do
+[ 1534.0- 1538.0] or what we can, sorry, not what we're able to,
+[ 1538.0- 1541.2] but that gives you an idea of where we currently are.
+[ 1541.2- 1545.2] So research might turn up more on addresses.
+[ 1545.2- 1549.3] We might just figure out better ways to estimate things,
+[ 1549.3- 1550.9] what we need to be aware,
+[ 1550.9- 1553.4] and that is one of the things I want to highlight.
+[ 1553.4- 1555.7] There's a vast majority we just don't know,
+[ 1555.7- 1557.7] and the Tor network is designed to make sure
+[ 1557.7- 1560.0] that we won't know in the future.
+[ 1560.0- 1563.0] That is just the nature of,
+[ 1563.0- 1565.9] or that is how an anonymity network is supposed to know.
+[ 1565.9- 1568.8] And you have to be aware whenever you're doing studies,
+[ 1568.8- 1572.0] you're working on limited and selected information.
+[ 1572.0- 1575.0] And interpreting that limited and selected information
+[ 1575.0- 1578.9] is not as easy or trivial as most people would assume.
+[ 1578.9- 1583.0] And that makes it hard to compare studies.
+[ 1583.0- 1585.4] Unless you take a look at them in detail,
+[ 1585.4- 1587.8] you need a lot of context to interpret.
+[ 1587.8- 1589.8] And at least to the best of my knowledge,
+[ 1589.8- 1591.7] LLMs are not capable.
+[ 1591.7- 1595.6] That was the last thing I did in preparation for this talk.
+[ 1595.6- 1598.9] I wondered what various LLMs would throw at me
+[ 1598.9- 1602.0] if I asked them the question of how many marketplaces there are
+[ 1602.0- 1604.5] and referred them to the various studies,
+[ 1604.5- 1606.9] asking them to summarize.
+[ 1606.9- 1610.1] LLMs have, as far as I can tell,
+[ 1610.1- 1613.3] one very simple degree that decides which study is credible,
+[ 1613.3- 1616.1] and that is, has it been cited by the BBC?
+[ 1616.1- 1619.3] So that seems to be the metric I could figure out.
+[ 1619.3- 1623.1] There is one, they all agreed on the same number.
+[ 1623.1- 1626.2] That number comes from a BBC article that cites a study,
+[ 1626.2- 1629.6] that cites a study that was done in 2012.
+[ 1629.6- 1634.6] So that was the approach on how information was being parsed.
+[ 1635.0- 1639.3] So that is one of the things we have to be aware.
+[ 1639.3- 1643.6] It also has the interesting, or not interesting,
+[ 1643.6- 1647.2] but noteworthy observation, sometimes knowledge
+[ 1647.2- 1650.0] is not important in what researchers build,
+[ 1650.0- 1653.2] but in what journalists and other media interpret from it.
+[ 1654.7- 1658.1] And with that, sorry, I'm done.
+[ 1658.1- 1661.5] So I think we can move on to the Q&A session.
+[ 1661.5- 1670.9] Thank you.
+[ 1670.9- 1675.8] Thank you so much for this interesting look
+[ 1675.8- 1678.7] into different studies and approaches.
+[ 1678.7- 1681.5] Are there any questions?
+[ 1681.5- 1686.5] Could you please go to the microphone behind you?
+[ 1691.7- 1694.7] Yes, microphone number one please.
+[ 1694.7- 1697.6] Yes, hello, thank you for the talk.
+[ 1699.1- 1702.2] If there is a company intranet,
+[ 1703.1- 1707.9] on which of the segments in slide 10 would it end up in?
+[ 1712.2- 1714.2] A company intranet,
+[ 1714.2- 1717.7] which you can't normally access from the outside.
+[ 1717.7- 1721.0] I guess it's not a part of the clear net.
+[ 1721.0- 1724.1] No, it wouldn't be a part of the clear net.
+[ 1724.1- 1726.4] I would, in this case, refer to it
+[ 1726.4- 1728.9] as I would add it into the darknet category.
+[ 1728.9- 1732.5] But you should be aware that if you run it on your service,
+[ 1732.5- 1734.2] it connects to the Tor network.
+[ 1734.2- 1737.0] And that means it would be connected.
+[ 1737.0- 1740.0] So it wouldn't really be internal on a company internet
+[ 1740.0- 1741.3] anymore, because at this point,
+[ 1741.3- 1743.9] you would have exposed it to the wider internet.
+[ 1743.9- 1746.5] So that's why I'm kind of diffic...
+[ 1746.5- 1749.1] That's why I would just add it to the darknet category
+[ 1749.1- 1751.9] of a non-public server that is reachable from the internet.
+[ 1754.2- 1757.2] The question from the cyberspace, please.
+[ 1758.0- 1760.4] Yes, you have some fans on the internet
+[ 1760.4- 1762.8] and they are astonished about how you managed
+[ 1762.8- 1766.2] to have such a good talk while walking 10 kilometers
+[ 1766.2- 1769.8] on stage, but now we come to the question.
+[ 1769.8- 1772.9] And this is a question not from the internet
+[ 1772.9- 1777.5] but from a postcard to be read during the Q&A session
+[ 1777.5- 1779.6] of the talk mentioned above.
+[ 1779.6- 1781.4] So Kao's post, let's go.
+[ 1781.4- 1783.7] First, lovely presentation.
+[ 1783.7- 1785.3] Thank you so much.
+[ 1785.3- 1789.4] I was wondering if you have advice for a peer reviewer
+[ 1789.4- 1792.1] working for scientific journals on how
+[ 1792.1- 1797.0] to better recognize potential research methodology issues
+[ 1797.0- 1798.7] like the ones you talked about.
+[ 1798.7- 1801.5] Thanks, a listener not from the internet,
+[ 1801.5- 1803.1] but from the postcard.
+[ 1808.9- 1811.1] Okay, haven't had that before.
+[ 1812.9- 1817.9] Well, I think there is plenty of people who are capable of catching those.
+[ 1818.5- 1822.6] There is probably so if you're looking for qualified ones,
+[ 1822.6- 1827.8] then the Tor project is a good source of people who is bundling those capabilities.
+[ 1829.2- 1832.4] To be fair, there is probably a certain degree of bias there.
+[ 1832.4- 1839.4] So I mostly talked about things that makes interpretation of results hard.
+[ 1839.4- 1844.4] In terms of scientific methodology, there's a bunch more things to look at.
+[ 1844.4- 1848.4] But I won't be recommending any individual reviewers.
+[ 1848.4- 1852.4] So I'll back out of that question.
+[ 1852.4- 1856.4] All right. Mike Six, please.
+[ 1856.4- 1858.4] Thank you for the nice talk.
+[ 1858.4- 1864.5] First, it's really nice that there's not too many people, so I can ask more questions.
+[ 1864.5- 1874.7] If you go back to the previous slide, please, of the right graph, is it describing the first
+[ 1874.7- 1880.1] third you have on the uploads, for example, the node?
+[ 1880.1- 1882.3] What do you mean the first?
+[ 1882.3- 1885.0] What is the second graph actually referring to?
+[ 1885.0- 1887.4] Is it a total of all?
+[ 1887.4- 1894.0] Okay, excuse me. I misread that it's a downloads. I'm sorry. Okay. So the second graph refers to just successful downloads
+[ 1894.0- 1903.2] I filtered it on successful downloads because my assumption would be so what what I was trying to do was to estimate on in service usage and
+[ 1903.8- 1906.5] Uploads essentially measure on in service existence
+[ 1906.6- 1910.2] So there's a whole debate to be made head on what you want to measure
+[ 1910.2- 1917.2] Do you want to measure all the uploads for its I for example run an onion service that I just use as a backchannel to SSH
+[ 1917.2- 1922.8] into my personal machine, which is used once every or twice a year or something.
+[ 1922.8- 1927.1] So there are onion services that are, in my opinion, irrelevant for onion service usage.
+[ 1927.1- 1929.9] So that's why I focus on downloads.
+[ 1929.9- 1933.7] And then I found out that more than half of all downloads fail.
+[ 1933.7- 1938.2] So that's why I came up with the metric of usage requires someone to actually establish
+[ 1938.2- 1943.2] a connection and at the very minimum that has to be a successful download.
+[ 1943.2- 1945.2] That doesn't mean that a connection was successful.
+[ 1945.2- 1948.6] It just means it didn't fail at that point already.
+[ 1948.6- 1953.6] So that is why I used the approximation of successful downloads.
+[ 1953.6- 1960.8] And how easy is this to actually read the content of the packages that go through your
+[ 1960.8- 1962.5] relay?
+[ 1962.5- 1963.9] Okay.
+[ 1963.9- 1968.6] So what I did, I first talked to the Tor project.
+[ 1968.6- 1971.0] They have a research safety ethics board.
+[ 1971.0- 1975.8] So I actually told them that I wanted to gather this data because I wanted to do it in a safe
+[ 1975.8- 1976.8] manner.
+[ 1976.8- 1979.0] Then I had a plan on what to do with the police raids me.
+[ 1979.0- 1984.0] I had a plan on what to do on how to store the data, mostly how to add noise to my data
+[ 1984.0- 1987.8] to make sure it is not useful for any police investigation or something.
+[ 1987.8- 1989.6] That saves me a lot of trouble.
+[ 1989.6- 1991.1] And also protects store users.
+[ 1991.1- 1994.8] So there is a bunch of prep work that you have to do in order to do this ethically
+[ 1994.8- 1996.3] and responsibly.
+[ 1996.3- 2001.8] And then afterwards the technical part is I added two lines of code to the Tor basic
+[ 2001.8- 2008.0] source code that just essentially adds another log statement and then compiled my own Tor
+[ 2008.0- 2011.2] binary and started that one and let it run as a relay.
+[ 2011.2- 2014.3] So the technical part is the easy one.
+[ 2014.3- 2016.5] I just mean, can you actually...
+[ 2016.5- 2017.5] Thank you.
+[ 2017.5- 2018.6] Is that a new question?
+[ 2018.6- 2021.8] Because there is also another person who wants to ask a question.
+[ 2021.8- 2023.3] Yes.
+[ 2023.3- 2025.4] It is a new question, then hold on to it.
+[ 2025.4- 2031.4] microphone number one. I think this was just cleared up. Maybe I just wanted to, it's maybe
+[ 2031.4- 2037.1] a clarifying question. So which of that data that you presented in terms of uploads and
+[ 2037.1- 2044.0] downloads is data you got from running stuff yourself, right? And what did you run it on?
+[ 2044.0- 2047.7] How much of it did you run? Yes. So I think I've mentioned at the start,
+[ 2047.7- 2054.2] I am a Tor relay operator. I operate 50 Tor relays which constitute about 1% of the
+[ 2054.2- 2056.0] entire hidden service directory.
+[ 2056.0- 2058.2] And the hidden service directory is designed in a way
+[ 2058.2- 2061.6] that it randomly assigns me a share of its load every day.
+[ 2061.6- 2065.6] So I essentially see one random percent of overall
+[ 2065.6- 2067.7] onion service uploads and downloads.
+[ 2067.7- 2070.5] And I aggregated those over the, oh, that I should have
+[ 2070.5- 2074.2] mentioned, this is data for 2024, 1st of January to 31st
+[ 2074.2- 2075.8] of December, 2024.
+[ 2075.8- 2079.3] So that is the data of all the uploads and downloads I saw.
+[ 2079.3- 2082.4] And according to everything I know,
+[ 2082.4- 2084.1] and according to how the implementation works,
+[ 2084.1- 2088.2] that is a random 1% share over one year.
+[ 2088.2- 2090.9] And I did the same thing, I extrapolated.
+[ 2090.9- 2093.3] To the best of my knowledge, that should be fine.
+[ 2093.3- 2096.2] But if Tor's random number algorithm generator
+[ 2096.2- 2098.0] is somehow flawed, then it might not be.
+[ 2098.0- 2100.9] So full disclosure, there we have assumptions again.
+[ 2100.9- 2102.6] Thank you very much.
+[ 2102.6- 2104.6] The question from the cyberspace
+[ 2104.6- 2107.2] and then microphone six again.
+[ 2107.2- 2110.3] RCA asks, how do you know,
+[ 2110.3- 2115.7] using a hidden service directory that a download has failed?
+[ 2115.7- 2116.6] How do I know that?
+[ 2116.6- 2119.9] Because the Tor network, the Tor requires
+[ 2119.9- 2122.8] you to upload and download descriptors naturally.
+[ 2122.8- 2127.3] And if an onion descriptor has never been uploaded,
+[ 2127.3- 2129.4] then if you're trying to download it from one
+[ 2129.4- 2131.9] of my relays, my relay can't provide it
+[ 2131.9- 2133.0] because it doesn't know it.
+[ 2133.0- 2137.5] So what I'm recording is just if I'm sending back a 404 not
+[ 2137.5- 2139.6] found because the relay you're trying to download
+[ 2139.6- 2145.8] doesn't exist. And that I know because I'm the note currently responsible for answering.
+[ 2145.8- 2151.2] I hope that clarifies the question. Microphone number six, please.
+[ 2151.2- 2157.3] The question before was probably just a little too complicated in a way I said. Basically,
+[ 2157.3- 2162.4] when you get a successful download and it goes through your relay, all the bytes go
+[ 2162.4- 2170.8] through your relay. Can you just read it? Like, can you just get the data?
+[ 2170.8- 2176.2] I can get the data, but the Tor project has with version 3, that's what I mentioned. The
+[ 2176.2- 2180.8] data that they are uploading is encrypted. So all I have is a random identifier that
+[ 2180.8- 2184.9] is generated with key blinding. There's a lot of cryptography in there that I skipped
+[ 2184.9- 2191.4] to not scare everyone off. And so I do get an encrypted blob uploaded and an ID for that
+[ 2191.4- 2195.9] encrypted blob. And the client takes the onion address, that's why it got so long, because
+[ 2195.9- 2200.4] it contains a key, that you do key blinding and some cryptographic magic, then you get
+[ 2200.4- 2204.4] an identifier and then you send a download request for that identifier. And all I do
+[ 2204.4- 2209.3] know, this identifier was uploaded and downloaded. But if I know the onion address, then I can
+[ 2209.3- 2214.8] act like a client and also generate the identifier, and then I know this onion address created
+[ 2214.8- 2219.5] this identifier, and then I can go back and match, okay, this identifier was downloaded
+[ 2219.5- 2225.2] this many times or was uploaded this many times. That's the method on a very, very
+[ 2225.2- 2228.7] short Q&A appropriate timescale.
+[ 2228.7- 2233.8] So, microphone number three, please.
+[ 2233.8- 2239.1] Yeah, thanks for the great talk. I wanted to ask with regards to other anonymity networks
+[ 2239.1- 2244.8] such as I2P, is it possible to do a similar degree of enumeration and if so, can it be
+[ 2244.8- 2250.5] assume that there's going to be a similar spread of service types out there?
+[ 2250.5- 2259.6] So, to be fair, I have never looked into I2P. What I can tell you is in comparison, it is
+[ 2259.6- 2264.7] barely used. So, I do have, for example, contacts in law enforcement that said they don't care
+[ 2264.7- 2269.0] about I2P at all because it has zero users. At least that's their opinion. I'm sorry for
+[ 2269.0- 2273.4] all the I2P people in the audience, but that is your public opinion. That is the opinion
+[ 2273.4- 2277.2] from Austrian law enforcement, which probably doesn't mean much to you.
+[ 2277.2- 2286.8] You could do it, in theory it would work in similar ways, but I2P has a few advantages
+[ 2286.8- 2287.8] and disadvantages.
+[ 2287.8- 2292.0] If you want to, we can talk about that in more detail, but that would probably be beyond
+[ 2292.0- 2294.6] the scope for this stage right now.
+[ 2294.6- 2300.0] Okay, the final question from microphone six, please.
+[ 2300.0- 2309.9] As a final question, for the beginning of 2026 Tor, how many percent of the relay servers
+[ 2309.9- 2323.0] are currently hosted by, let's say, suspicious hosts that actually try to extract the data?
+[ 2323.0- 2324.0] For example...
+[ 2324.0- 2328.8] Well, I can tell you 50 are mine that are extracting data.
+[ 2328.8- 2332.5] So that is what I do know.
+[ 2332.5- 2336.9] Unfortunately, other people who would be doing that don't tell us.
+[ 2336.9- 2338.5] So you can do the reverse.
+[ 2338.5- 2342.1] Go to the Tor Relay operators meetup, take a look at every one of them.
+[ 2342.1- 2346.1] See if you think they are and then otherwise just keep checking them off the list and see
+[ 2346.1- 2347.5] how many you can't identify.
+[ 2347.5- 2349.0] That might be an approach.
+[ 2349.0- 2351.6] I have no idea how we would figure that out.
+[ 2351.6- 2354.4] And I think that goes the same.
+[ 2354.4- 2357.9] If they do some major screw-up and you can tell they're doing something malicious, then
+[ 2357.9- 2359.7] they are thrown out of the consensus.
+[ 2359.7- 2362.0] But for those that behave normally,
+[ 2362.0- 2365.2] it's realistically impossible to say.
+[ 2365.2- 2366.0] So thank you very much.
+[ 2366.0- 2367.4] Sorry.
+[ 2367.4- 2369.7] Yeah, so maybe one final question for me.
+[ 2369.7- 2373.7] If someone has more questions, how can they approach you?
+[ 2373.7- 2376.9] Do you have contact details you can show for a final time?
+[ 2376.9- 2378.3] I should come back to the final slide.
+[ 2378.3- 2379.7] I'm still here all event.
+[ 2379.7- 2381.1] Just call me on my deck number.
+[ 2381.1- 2382.8] And if you don't wanna talk to me,
+[ 2382.8- 2384.8] but still have something interesting to share,
+[ 2384.8- 2386.3] my email address is on there as well.
+[ 2386.3- 2387.9] So just reach out.
+[ 2387.9- 2390.7] I'd be happy to know, especially, as I mentioned,
+[ 2390.7- 2394.7] if you happen to have some data on any other distributed
+[ 2394.7- 2396.4] networks that use Toronian services
+[ 2396.4- 2398.4] that I might not be aware of yet,
+[ 2398.4- 2401.1] I'd be very happy to shrink my gray numbers.
+[ 2401.1- 2404.2] So I like numbers going down, not numbers going up.
+[ 2404.2- 2407.3] So in that regard, if anyone can help, I'd be grateful.
+[ 2407.3- 2408.0] All right, then.
+[ 2408.0- 2409.4] Let's thank Tobias.
+[ 2409.4- 2411.4] Thank you.

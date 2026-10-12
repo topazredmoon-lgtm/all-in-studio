@@ -1,0 +1,962 @@
+[    6.1-   11.8] Good morning everyone. Welcome. Welcome to the session about AI large language models
+[   14.6-   16.0] Hopefully a
+[   16.0-   21.1] Good session for you if you're interested in AI and what you can do with it beyond the normal boundaries
+[   21.5-   27.1] Just before I dive into all this just let me introduce myself a bit. I should most people know I am
+[   27.9-   33.7] My name is Richard aka any key and I consider myself more of a maker than a hacker
+[   33.7-   37.7] When I was really young I did do some bad things with phone lines and that kind of stuff,
+[   37.7-   39.7] but nowadays I mainly make things.
+[   39.7-   44.7] I do a lot of OpenSCAT, I've done previous hacker events and other camps
+[   44.7-   49.7] teaching people how to program, how to make 3D objects with OpenSCAT,
+[   49.7-   51.7] something I really enjoy doing.
+[   51.7-   53.7] If you want to see some of the things I make, you can go to YouTube
+[   53.7-   56.7] and type in one of the most complicated synthesizer presets
+[   56.7-   61.7] and you will find me with some of my projects actually on there very easily.
+[   61.7-   64.8] Another thing I care a lot about is 3D printing and scanning.
+[   64.8-   69.8] My first 3D printer was in 2009, so that's 15 years ago or something like that.
+[   69.8-   72.9] It took me about four weeks to print earrings for my niece.
+[   72.9-   76.9] Lots of things have changed, God bless, in that time.
+[   76.9-   80.2] I also made a 3D scanner out of a lot of Raspberry Pis.
+[   80.2-   86.1] I still do that for a fun project, so if you ever want to get scanned.
+[   86.1-   88.9] We have a scanner in Zutomir.
+[   88.9-   95.9] It's the hardware that kind of suffers open source, so you can make it yourself if you happen to have a lot of various laying around.
+[   95.9-   98.9] I thought never anyone else would do this. I was wrong.
+[   98.9-  106.9] I have hundreds of people now around the world working if you can go on Disney Cruises nowadays and you can get scanned by my project, by my scanner.
+[  106.9-  108.9] So quite amazing.
+[  108.9-  112.9] So those are the things that I do for Hobby.
+[  112.9-  115.9] And today, of course, I'm going to talk about AI machine learning.
+[  115.9-  120.5] And just as a side note, I am not a specialist at this
+[  120.5-  121.1] or an expert.
+[  121.1-  124.9] It's one of my new hobby projects that I spend time on.
+[  124.9-  127.2] But I thought that what I have learned so far,
+[  127.2-  129.6] I thought it would be great to share with you.
+[  129.6-  131.6] So hopefully we all can learn that kind of stuff.
+[  131.6-  133.3] So this is not my daytime job.
+[  133.3-  135.9] I'm not trained in this whatsoever.
+[  135.9-  138.5] I do completely other stuff.
+[  138.5-  141.0] But I thought it would be fun to have a session about this.
+[  141.0-  144.1] Now, if you didn't attend Frank's session yesterday,
+[  144.1-  147.3] I highly recommend that you go rewatch this.
+[  147.3-  151.5] That session was about AI more from a moral perspective
+[  151.5-  153.1] and those kinds of topics.
+[  153.1-  155.8] I wanted to focus in this session,
+[  155.8-  159.1] read about the technicalities of large language models,
+[  159.1-  160.6] what you can do with them and that kind of stuff.
+[  160.6-  164.1] So today, I'll run through some of the basics
+[  164.1-  169.1] about the terminologies, how does it work at a high level,
+[  171.1-  173.2] in detail, it's very difficult to explain.
+[  173.2-  177.6] and even understand how you can run these mailers locally
+[  177.6-  180.0] and how you can fool around with them
+[  180.0-  183.2] to do things maybe that they don't want to do themselves
+[  184.7-  186.8] depending on what topics you want to do.
+[  186.8-  189.1] And I think one of the most important things,
+[  189.1-  191.3] and this is I think where a lot of people
+[  191.3-  193.1] are spending nowadays their time on,
+[  194.2-  196.3] is how you can use your own data
+[  196.3-  198.3] together with large language models
+[  198.3-  200.4] without putting it into the cloud,
+[  200.4-  203.2] without giving your data to someone else.
+[  203.2-  208.3] So hopefully all of this, of course, will go along with demos.
+[  208.3-  211.0] So I hope the demo gods are with me today.
+[  211.0-  214.0] We'll see how all that goes.
+[  214.0-  216.9] So let's first start about some of the basics.
+[  216.9-  218.6] The basics of machine learning and AI.
+[  218.6-  220.7] And I do think it is important maybe
+[  220.7-  223.2] to have a separation of these two terminologies,
+[  223.2-  227.5] because a lot of people always just call everything AI,
+[  227.5-  229.4] where there's really a big distinction.
+[  229.4-  231.3] There's a concept of machine learning,
+[  231.3-  236.6] where you have some kind of algorithm that a machine can learn from a vast amount of data,
+[  236.6-  239.3] and then you have the terminology of AI, which is a broad term,
+[  239.3-  244.3] but of course artificial intelligence means that you build something that looks like a human,
+[  244.3-  247.3] that it can respond like a human, can act like a human,
+[  247.3-  250.8] and those two things are, I think, very separate, two different things.
+[  250.8-  253.6] So let's first start with the first one, machine learning.
+[  253.6-  258.2] This is what, of course, a large language model, chatbots are all based on.
+[  258.2-  262.2] There are three main mechanisms on how machine learning can be done.
+[  262.9-  265.3] Something called supervised learning, unsupervised learning,
+[  265.3-  266.7] and reinforcement learning.
+[  266.7-  268.0] Let's start with the first one.
+[  268.0-  271.0] Supervised learning, I think all of you probably have seen this in the past.
+[  272.3-  274.5] Google, I think did this a long time ago.
+[  274.5-  277.7] You just give it a vast amount of data that's labeled.
+[  278.2-  283.9] So I can have thousands of images of cats and I can have thousands of images of not cats.
+[  283.9-  289.6] And then the computer will figure out, based on that, how to recognize a cat.
+[  289.6-  291.9] You don't have to explain what a cat is.
+[  291.9-  294.2] Could have been any other object.
+[  294.2-  297.6] And if you throw that into a computer, there's a lot of number crunching.
+[  297.6-  301.9] At some point you get a model that knows how to recognize a cat.
+[  301.9-  304.1] So that's something called supervised learning.
+[  304.1-  305.5] Now relatively easy to do.
+[  305.5-  307.9] You can do this yourself on your own computer.
+[  307.9-  311.7] But the most work that this actually takes is actually creating the data sets.
+[  311.7-  317.3] Because you have to have then a thousand pictures of cats and a thousand pictures of non-cats.
+[  317.3-  322.9] That's an easy topic, but if you want to do harder things, how do you get that data?
+[  322.9-  328.1] Of course nowadays we all label a lot of things online.
+[  328.1-  332.5] When you give comments to things and when you post something on Instagram and you hashtag
+[  332.5-  333.5] it.
+[  333.5-  339.0] So a lot of that information actually is being used for these kinds of models.
+[  339.0-  342.9] And besides supervised learning, you have unsupervised learning.
+[  342.9-  345.2] And unsupervised learning is very simple.
+[  345.2-  347.0] You just have data.
+[  347.0-  348.8] And you don't say what you want.
+[  348.8-  350.5] You don't say what you're looking for.
+[  350.5-  352.8] You just throw it at an algorithm,
+[  352.8-  355.0] and it will find out patterns.
+[  355.0-  358.1] This is heavily being used, for instance, in e-commerce.
+[  358.1-  359.5] If you have all your sales data,
+[  359.5-  363.3] you just throw it into a system, and it will figure out maybe
+[  363.3-  366.1] which product is bought in some region more than other regions
+[  366.1-  368.9] or whatever patterns it finds.
+[  368.9-  370.9] Just random stuff.
+[  370.9-  373.1] And it does this by using cluster technologies.
+[  373.1-  376.5] Lots of math involved, but it tries to figure out
+[  376.5-  379.5] which pieces of data go with what.
+[  379.5-  381.5] Now, in terms of a large language model,
+[  381.5-  384.3] this is actually how the pre-training happens.
+[  384.3-  385.9] I'll come back to that later.
+[  385.9-  387.9] But of course, learning a language is also about
+[  387.9-  390.3] knowing the patterns of a sentence.
+[  390.3-  392.5] That the word is and the typically goes,
+[  392.5-  393.8] with a verb and all that kind of stuff.
+[  393.8-  395.9] So having those kind of things,
+[  395.9-  397.8] you can learn a lot about language as well.
+[  397.8-  400.7] So that's what unsupervised learning is about.
+[  400.7-  404.6] And then the last one is reinforcement learning.
+[  404.6-  408.0] And reinforcement learning is very simple.
+[  408.0-  410.7] You let a computer try something,
+[  410.7-  416.4] and when it tried it, you awarded points on how well it did.
+[  416.4-  420.7] So if I want to make an AI engine, whatever,
+[  420.7-  424.5] a machine learning algorithm, that a mouse can run a maze,
+[  424.5-  426.9] every time it makes a step, I give it
+[  426.9-  428.9] and how closer it gets to the cheese.
+[  428.9-  430.9] So as long as I can measure that,
+[  430.9-  433.9] and it will do thousands and thousands of attempts,
+[  433.9-  435.9] and based on that it will try to figure out
+[  435.9-  438.9] how it can best go through that maze.
+[  438.9-  441.9] Now, this is actually heavily being used, for instance,
+[  441.9-  442.9] in the gaming industry.
+[  442.9-  444.9] I don't know if you've ever watched on YouTube
+[  444.9-  446.9] these videos where people write
+[  446.9-  449.9] reinforcement algorithms to train a model
+[  449.9-  451.9] to play a game in the best possible way.
+[  451.9-  454.9] So let me give you just a quick example on how this works.
+[  454.9-  462.6] two minutes by someone that does it for racing games.
+[  462.6-  466.7] The AI uses something called an artificial neural network.
+[  466.7-  473.1] Basically, it's some kind of mathematical tool which roughly models how a brain works.
+[  473.1-  478.5] Every tenth of a second, this neural network receives a few numbers which describe what's
+[  478.5-  480.6] happening in the game.
+[  480.6-  485.5] In response, it outputs new numbers, specifying the action to perform.
+[  485.5-  491.1] Hopefully, the network will select actions that ensure the AI finishes this truck as
+[  491.1-  496.7] quickly as possible, but this will only happen if the network is configured correctly.
+[  496.7-  498.8] That's the tricky part.
+[  498.8-  503.5] For this, I'm using a method called Reinforcement Journal.
+[  503.5-  505.3] Here's how it works.
+[  505.3-  510.3] The AI starts from scratch, with zero prior knowledge about anything.
+[  510.3-  517.0] So at first, its decisions are quite random, but for every action it takes, it's rewarded,
+[  517.0-  519.6] depending on how good that action was.
+[  519.6-  524.8] The faster the AI progresses along the track, the higher the reward.
+[  524.8-  530.4] So with each new attempt, the AI explores the game and gathers data from it.
+[  530.4-  535.6] Now the idea of reinforcement learning is to use this data to progressively tweak the
+[  535.6-  541.5] neural network in a way that reinforces actions leading to more reward.
+[  541.5-  546.8] Actually all the cars I'm showing are controlled by slightly different versions of the neural
+[  546.8-  551.4] network and they represent successive states of the AI as it learns.
+[  551.4-  558.1] In each new attempt, the AI is trying actions based on some of its current knowledge.
+[  558.1-  560.7] Sometimes it goes well, sometimes not.
+[  560.7-  567.2] But whatever happens, the AI can use this fresh knowledge to update its decision process.
+[  567.2-  571.8] And it's through this trial and error loop that the AI gradually learns the game all
+[  571.8-  576.2] by itself until it has mastered it.
+[  576.2-  578.5] So that's a little bit on how it works.
+[  578.5-  581.6] It sounds simple, but actually it's very difficult to do.
+[  581.6-  584.5] Because even if you would make this, you don't get the fastest driving car on that
+[  584.5-  585.5] racetrack.
+[  585.5-  587.8] you reward it based on something.
+[  587.8-  590.4] And for instance, in this algorithm,
+[  590.4-  593.9] you reward it based on how closer it is to the finish line.
+[  593.9-  596.7] But every time this car bumps into a wall,
+[  596.7-  599.5] it can actually be closer to the finish line,
+[  599.5-  602.4] and therefore, actually, because in the long run,
+[  602.4-  603.6] it doesn't pay out.
+[  603.6-  605.9] So you have short-term memory and long-term memory
+[  605.9-  606.9] and consequences.
+[  606.9-  609.2] So even though it sounds simple,
+[  609.2-  610.4] it's actually very difficult to do.
+[  610.4-  613.5] And the better you evolve this model,
+[  613.5-  615.6] the better you can do with reinforcement learning.
+[  615.6-  617.9] Now, this of course in a game, so this is easy,
+[  617.9-  620.7] but reinforcement learning also is heavily done
+[  620.7-  622.6] by actual human beings.
+[  622.6-  626.5] And when you go to an online chat GPT or something like that,
+[  626.5-  630.6] when it gives you an answer, you have a thumbs up or thumbs down.
+[  630.6-  633.2] And that actually is not just to give them feedback,
+[  633.2-  635.3] that's actually for reinforcement learning.
+[  635.3-  639.7] It educates the model, yes, this answer was good or not good,
+[  639.7-  641.4] and therefore it gives it points and that kind of stuff.
+[  641.4-  646.4] So it's actually also human beings, and sometimes actually very large farms of human beings,
+[  646.4-  650.4] that are there just to do the reinforcement learning part to train models to say,
+[  650.4-  652.4] yeah, this is well or this is not.
+[  652.4-  656.4] So those are the basic concepts of machine learning.
+[  656.4-  660.4] So let's now jump to what we're here for, of course, is large language models,
+[  660.4-  662.4] the chat GPTs of this world.
+[  662.4-  663.4] So what is this all about?
+[  663.4-  667.4] If you take chat GPT the most, the one that made it most famous,
+[  667.4-  673.4] If we just look at the GPT terminology, generative pre-trained transformer.
+[  673.4-  677.8] Generative just means, so this is an algorithm for language, and not just to understand,
+[  677.8-  679.8] but it can generate language.
+[  679.8-  681.2] So generative is for.
+[  681.2-  682.4] And then we have pre-trained.
+[  682.4-  688.8] And pre-trained means that this model is pre-trained, understanding already language.
+[  688.8-  693.6] So it uses unsupervised learning on figuring out how a language works.
+[  693.6-  695.4] And this is completely language agnostic.
+[  695.4-  697.7] It doesn't matter if it's Dutch, English, whatever,
+[  697.7-  701.5] because all it has done is it's read the whole internet,
+[  701.5-  703.7] and based on that, it figured out
+[  703.7-  706.3] what the combination of words most likely are.
+[  706.3-  708.3] There's lots and lots of things to read on the internet
+[  708.3-  711.4] in all kinds of languages, not just human languages,
+[  711.4-  714.8] programming languages, any other kind of language.
+[  714.8-  716.1] And it just figured out,
+[  716.1-  718.6] without really understanding the language,
+[  718.6-  720.9] what the most logical combinations of words are.
+[  720.9-  724.7] And that is massive amount of data,
+[  724.7-  728.1] a massive amount of compute power to do that,
+[  728.1-  731.0] but it gives that model a fundamental concept
+[  731.0-  732.8] of what language is.
+[  732.8-  734.9] And then it does supervised learning.
+[  734.9-  736.5] It does actually try to understand from,
+[  736.5-  741.0] hey, if I think and if I predict what the answer should be,
+[  742.1-  744.2] is it also actually the right answer?
+[  744.2-  745.8] And again, here on the internet,
+[  745.8-  748.1] we have plenty of this kind of data.
+[  748.1-  750.9] I can go to Wikipedia and I will find,
+[  750.9-  754.3] hopefully, relatively correct information.
+[  754.3-  758.3] So I can pose questions and validate on Wikipedia
+[  758.3-  760.8] if what I have generated as the answer
+[  760.8-  763.3] is actually also the right answer.
+[  763.3-  764.7] So a lot of this done is being done
+[  764.7-  767.7] by all the data that we over the last decades
+[  767.7-  772.1] have created online to make this possible.
+[  773.2-  776.8] Now then there was this last letter in GPT, transformer.
+[  776.8-  779.2] And this is really where the large language models,
+[  779.2-  782.4] suddenly, since a few years now, has exploded
+[  782.4-  786.1] because there has been a new type of neural network architecture
+[  786.1-  790.0] designed on how to do large language models,
+[  790.0-  793.4] how to make a computer understand language,
+[  793.4-  795.5] respond to it and have knowledge.
+[  795.5-  796.9] And what does this work about?
+[  796.9-  798.5] It's actually relatively new.
+[  798.5-  802.6] It was invented by a group of people at Google in 2017.
+[  802.6-  805.2] You can find the official paper that they read.
+[  805.2-  808.1] And it is a model for a neural network
+[  808.1-  812.3] that can handle large amounts of words in one go
+[  812.3-  816.9] to process that and figure out what the next word should be.
+[  816.9-  820.5] And how this works is it takes a certain input, right?
+[  820.5-  822.8] If my input is getSetOnA,
+[  822.8-  825.0] it chunks that up in something called tokens.
+[  825.0-  827.3] Now in this case, this is the example,
+[  827.3-  829.0] each word is just one token,
+[  829.0-  831.3] but like longer words, it can actually chuck up
+[  831.3-  832.7] in multiple tokens.
+[  832.7-  835.9] So if I say hacking, might be hack is one token
+[  835.9-  838.0] and ing is the second token.
+[  838.0-  840.4] And what it does also to this model
+[  840.4-  844.0] is on the tokens it adds positional encoding.
+[  844.0-  848.4] It adds where each word sits in what I have provided.
+[  848.4-  852.4] Now, all this Mongo-Jungle is then thrown into a neural network
+[  852.4-  856.3] and it will try to figure out what the response should be.
+[  856.3-  859.9] And that neural network, of course, has been trained like that racing game
+[  859.9-  867.7] with lots of parameters on what the right response should be.
+[  867.7-  870.8] And this is, of course, a simple model.
+[  870.8-  874.8] The real models, of course, are gigantic, gigantic, gigantic.
+[  874.8-  878.0] Billions and billions of parameters.
+[  878.0-  881.4] That captures at some point all the knowledge
+[  881.4-  883.7] and allows you to do this.
+[  883.7-  887.5] But that's a basic concept on how an LLM works.
+[  887.5-  889.0] You have this neural network that's
+[  889.0-  892.0] based on this transformer model that you just
+[  892.0-  896.5] throw a certain amount of tokens into it with positioning
+[  896.5-  903.7] coding and it based on all the things it learned figure out what the next response should be.
+[  903.7-  906.9] Now there are lots of these kind of models that are nowadays available and there's two
+[  906.9-  907.9] types of them.
+[  907.9-  911.4] You have open models and you have closed models.
+[  911.4-  912.5] People call them open source.
+[  912.5-  919.2] I think it's a strange terminology for a model because they're not really open source.
+[  919.2-  921.1] You can download them.
+[  921.1-  922.1] You can tweak them.
+[  922.1-  923.2] You can change the parameter.
+[  923.2-  929.0] So the majority of the parameters of those models are exposed, and you can tune the knots
+[  929.0-  933.4] yourself if you want it to be different, to get a different outcome.
+[  933.4-  937.2] And then of course you have the closed models where you can go to some company that runs
+[  937.2-  940.8] this model for you, and you can work with it.
+[  940.8-  943.4] But it's closed.
+[  943.4-  945.0] Some of them do allow tuning.
+[  945.0-  949.4] So you can go to chat.gpt, you can pay them, and then you can give your own datasets,
+[  949.4-  956.1] You can do fine tuning with them, and then you can still get some control over the models.
+[  956.1-  957.1] But that's pretty much it.
+[  957.1-  959.3] With the open model set, you can download them.
+[  959.3-  965.4] The majority expose all of the parameters, so you can retune and retweak and you can
+[  965.4-  969.3] do additional learning to it, something called fine tuning.
+[  969.3-  970.9] So that's, of course, where the interesting field is.
+[  970.9-  978.0] And what's interesting, actually, I personally find, is that all the closed models are US-based,
+[  978.0-  981.5] And actually from some of the countries that we think are very close, like China, they
+[  981.5-  983.6] actually launch open models.
+[  983.6-  989.6] So Alibaba has been a very popular model, of course recently very becoming a new deep
+[  989.6-  995.9] seek, an open model, but there are more, and there's much more than this list as well.
+[  995.9-  999.8] Now to make these models, you need some computers.
+[  999.8- 1003.0] And that's quite an understatement.
+[ 1003.0- 1006.9] You seriously need a lot of computers.
+[ 1006.9- 1012.5] And not all of this data is accurate or even public, because it's like a jet GPT, how
+[ 1012.5- 1017.2] much they use, it's a closed model, they don't really advertise.
+[ 1017.2- 1019.5] Even Deepsea gets sessed, it's an open model.
+[ 1019.5- 1021.7] It claims to be open.
+[ 1021.7- 1025.1] There are lots of debates on what they really have used and how much illegal and feed your
+[ 1025.1- 1027.2] guards they have and that kind of stuff.
+[ 1027.2- 1030.7] But trust me, you need a shitload of hardware.
+[ 1030.7- 1038.8] So XAI, for instance, Musk's company, they are getting 300,000 NVIDIA B200 cards to
+[ 1038.8- 1040.8] just start trading.
+[ 1040.8- 1043.3] These cards are very, very expensive.
+[ 1043.3- 1049.0] If you think about the capital you need to run this, the space, the air conditioning,
+[ 1049.0- 1054.6] the power, the amount of storage, the networking infrastructure, it's crazy.
+[ 1054.6- 1060.2] The amount of 500 billion dollars, I think, the US government or not the government,
+[ 1060.2- 1063.4] private funding to start doing these kinds of things.
+[ 1063.4- 1068.0] So if you ever think about making your own large language model,
+[ 1068.0- 1071.9] yeah, think again, that's probably not going to happen anymore.
+[ 1071.9- 1073.1] You won't happen.
+[ 1073.1- 1079.5] And there is this race going on right now of all these companies that are fighting for this.
+[ 1079.5- 1082.5] And I think this race is something we will be the passengers.
+[ 1082.5- 1084.6] I don't think we have any influence on this race.
+[ 1084.6- 1088.0] It's just the big tech that can do these kind of things.
+[ 1088.0- 1092.5] It's not where I think our playing field will be.
+[ 1092.5- 1094.3] Where will our playing field will be
+[ 1094.3- 1098.4] is on the side of using the models and tuning them
+[ 1098.4- 1099.2] and tweaking them.
+[ 1099.2- 1101.0] Because actually, that's a thing where,
+[ 1101.0- 1103.6] for most companies today, all the interesting things are,
+[ 1103.6- 1107.6] is how can I use these models with my own customer data
+[ 1107.6- 1110.9] in a secure, private way, and those kinds of things.
+[ 1110.9- 1114.1] Now, this concept of using an AI model
+[ 1114.1- 1116.2] is something called inference.
+[ 1116.2- 1119.9] And I didn't know this English word, so I actually looked it up.
+[ 1119.9- 1123.4] I think it's a strange choice by the people that do AI that they choose that word,
+[ 1123.4- 1128.9] because inference is something, a conclusion or a pain that's formed based on known facts or evidence.
+[ 1128.9- 1134.2] Well, in my opinion, if a large language model is one thing, it's not this.
+[ 1134.2- 1138.1] It's definitely not based on the facts or evidence.
+[ 1138.1- 1142.4] It's based on this black box that thinks it's the right answer.
+[ 1142.4- 1144.6] But we call it inference for some reason.
+[ 1144.6- 1148.2] And to do inferencing, probably the most important thing
+[ 1148.2- 1151.9] is to be able to take that model, all those parameters.
+[ 1151.9- 1154.3] I'm just saying these can be very, very big models,
+[ 1154.3- 1156.1] and to have it in memory.
+[ 1156.1- 1158.8] Because you have to imagine that if I want to do this math,
+[ 1158.8- 1162.1] this calculation on this massive equation,
+[ 1162.1- 1163.7] if I have to read this from disk,
+[ 1163.7- 1165.7] it's going to be super, super slow.
+[ 1165.7- 1168.0] So I have to put this equation into memory.
+[ 1168.0- 1171.0] Now, just understand, some of these models
+[ 1171.0- 1173.3] are very, very, very big equations.
+[ 1173.3- 1176.6] So for instance, DeepSeek, the proper DeepSeek,
+[ 1176.6- 1178.4] the large model that they've made,
+[ 1178.4- 1183.0] cost 404 gigabytes of RAM to have in memory,
+[ 1183.0- 1184.5] just the calculations itself,
+[ 1184.5- 1186.5] without what you're putting into it
+[ 1186.5- 1189.3] from a context perspective and those kinds of things.
+[ 1189.3- 1193.0] And this is not your CPU's memory,
+[ 1193.0- 1194.5] this is where your GPU needs this,
+[ 1194.5- 1196.9] so it's your GPU memory that you need
+[ 1196.9- 1198.4] to have this very quickly accessible
+[ 1198.4- 1201.7] if you want to get some form of performance out of this.
+[ 1201.7- 1203.0] And don't get me wrong, in principle,
+[ 1203.0- 1206.0] you could run this on anything it might just take
+[ 1206.0- 1209.1] to produce the next token hours, days,
+[ 1209.1- 1211.2] what the hell, so it's not usable.
+[ 1211.2- 1213.5] So to make it useful, you need to have
+[ 1213.5- 1216.4] a reasonable amount of computer system with memory
+[ 1217.6- 1218.6] in your system.
+[ 1218.6- 1220.4] So this is really where I think the interesting thing,
+[ 1220.4- 1223.2] now there's lots of cool tricks that you can actually do
+[ 1223.2- 1225.5] because it's all math, actually in taking a model
+[ 1225.5- 1226.8] and making it smaller.
+[ 1226.8- 1231.1] So for instance, DeepSeek's proper model is 404 gigs.
+[ 1231.1- 1234.3] But you can also run it in just four gigs of RAM.
+[ 1234.3- 1237.0] And all they've done is taking that equation,
+[ 1237.0- 1241.2] instead of having like float 32 bytes numbers,
+[ 1241.2- 1243.4] to make it into integers and much smaller numbers.
+[ 1243.4- 1245.9] And yes, the accuracy will go away.
+[ 1245.9- 1248.1] It will have less knowledge.
+[ 1248.1- 1250.6] But actually, this technology of compressing
+[ 1250.6- 1253.3] these large language models is getting better and better.
+[ 1253.3- 1255.1] They are coming up with new and new terminologies
+[ 1255.1- 1261.8] way in how to do this, that you can get actually very good models in very small amounts of memory.
+[ 1261.8- 1267.1] It's like the same thing we do with zip files, so it's not comparable to a zip file, because
+[ 1267.1- 1270.4] if you uncompress a zip file you get exactly the same result back.
+[ 1270.4- 1272.2] It's more like JPEG.
+[ 1272.2- 1277.5] If you compress it, yeah, there's quality loss, but hopefully you don't really notice it.
+[ 1277.5- 1279.3] And that's the same thing a little bit with this.
+[ 1279.3- 1282.7] Now, of course, the more and more you compress it at some point, you'll definitely notice
+[ 1282.7- 1287.8] I'll show you later with a small model how really good it is versus not.
+[ 1287.8- 1293.6] Now, if you ever want to play with this, there's really one big model heaven.
+[ 1293.6- 1296.2] That's called Hugging Face.
+[ 1296.2- 1300.2] You can go daily here, and every single day there are new models available.
+[ 1300.2- 1302.1] People share all these models there.
+[ 1302.1- 1305.6] You can download them, you can run them yourself, and that kind of stuff.
+[ 1305.6- 1312.6] So this is really, I think, the whole world's books there, the GitHub of AI models.
+[ 1312.6- 1315.5] And it's not just for large language models, by the way.
+[ 1315.5- 1319.7] You can find models here to do generative imagery, like mid-journey and those kinds
+[ 1319.7- 1324.9] of things, for text to voice, voice to text, to all kinds of things.
+[ 1324.9- 1327.2] So you find many, many types of models here.
+[ 1327.2- 1333.6] But of course, one big category is, of course, large language models that can do text generation.
+[ 1333.6- 1340.2] So if you think about this whole AI concept, you can make models and you can use models,
+[ 1340.2- 1341.7] and you can fine tune them.
+[ 1341.7- 1347.1] I don't think the making model is interesting anymore, at least not for us normal human
+[ 1347.1- 1348.1] beings.
+[ 1348.1- 1353.4] I will follow the news on whoever comes up with the new big next model that we can use.
+[ 1353.4- 1357.3] But this, I think, nowadays just for really big tech.
+[ 1357.3- 1362.5] Even a single large enterprise organization won't have anywhere near the amount of compute
+[ 1362.5- 1367.5] power to do what these extremely large companies are doing.
+[ 1367.5- 1371.4] I think that's a playing field that everyone else could have had,
+[ 1371.4- 1375.0] but for now, that's under control of them.
+[ 1375.0- 1380.4] Our space really is in this concept of executing and tuning models.
+[ 1380.4- 1382.0] So, let's go there.
+[ 1382.0- 1383.3] How can we actually do this ourselves?
+[ 1383.3- 1385.9] How can you do this yourself by going local,
+[ 1385.9- 1389.4] really running this stuff yourself on your environment?
+[ 1389.4- 1392.7] Now, the good thing is people have spent already a lot of time on this
+[ 1392.7- 1395.5] and making this as easy as possible.
+[ 1395.5- 1400.7] There are all kinds of frameworks on how you can actually run this yourself.
+[ 1400.7- 1404.5] There's something called Olama, and there's something called LLM Studio.
+[ 1404.5- 1407.2] These, I think, are the most popular ones.
+[ 1407.2- 1412.4] Both run on Windows, Linux, Mac, so any platform you want.
+[ 1412.4- 1417.1] Let me just show you how simple that is.
+[ 1417.1- 1419.4] So, Olama...
+[ 1419.4- 1428.4] Let me see...
+[ 1428.4- 1429.7] Let me see my screen here.
+[ 1429.7- 1432.0] So, Olama is simple.
+[ 1432.0- 1434.0] You just type in Olama, you'll find Olama.
+[ 1434.0- 1436.1] It's a simple download.
+[ 1436.1- 1438.2] On the Windows, it's simple executable.
+[ 1438.2- 1443.1] And if you then go to Olama, here you have models.
+[ 1443.1- 1446.4] For instance, here you can find models most popular, the latest.
+[ 1446.4- 1448.4] For instance, here you have this deep-seq model,
+[ 1448.4- 1450.8] the one that everyone right now is talking about.
+[ 1450.8- 1453.6] And you can see here that I can actually
+[ 1453.6- 1456.2] download all kinds of sizes of this model.
+[ 1456.2- 1461.0] So from the biggest one to a very small one,
+[ 1461.0- 1463.3] 1.1 gigabyte of RAM is needed for this,
+[ 1463.3- 1465.2] for a little bit more, but.
+[ 1465.2- 1466.7] And how to do this, very simple.
+[ 1467.6- 1469.7] I can just take this command.
+[ 1469.7- 1472.0] I have a lot more already installed.
+[ 1472.0- 1473.5] So I just run this.
+[ 1473.5- 1475.8] It will automatically pull down the model.
+[ 1475.8- 1480.0] So I don't have to do anything with that.
+[ 1480.0- 1486.3] It validates it.
+[ 1486.3- 1489.8] This is life, so it's real time, no trickery.
+[ 1489.8- 1491.5] And I can now talk to it.
+[ 1491.5- 1496.5] So I can say, hi, give me some cool
+[ 1497.6- 1499.6] Why heck are names?
+[ 1499.6- 1500.6] I don't know.
+[ 1500.6- 1504.4] And what it will do is you will see actually happening here.
+[ 1504.4- 1509.2] I think if you look at my GPU, it loads the model up in the GPU memory and it will start
+[ 1509.2- 1511.4] spitting out whatever.
+[ 1511.4- 1520.0] Now if there are good names or not, yesterday I did this and I guess I asked it differently.
+[ 1520.0- 1524.9] I gave up some really strange names.
+[ 1524.9- 1526.7] But so it's easier to work.
+[ 1526.7- 1530.1] But of course this is not a way for a human being to easily interface with.
+[ 1530.1- 1534.5] So besides Olama, so this is an engine, see more as an engine that's not running on my
+[ 1534.5- 1538.0] computer where it can run models.
+[ 1538.0- 1540.1] I want to of course make it easy, accessible.
+[ 1540.1- 1544.8] And again, there are many ways to do this, but the technology that I use and a lot of
+[ 1544.8- 1547.9] people use is something called Open Web UI.
+[ 1547.9- 1549.9] If you search this, you'll find it very easily.
+[ 1549.9- 1554.6] You can just run this as a container, so you just do a Docker run Open Web UI.
+[ 1554.6- 1560.5] And what this will give you is your own chat GPT.
+[ 1560.5- 1566.1] So it's an interface that if you ever work with a chat GPT, it looks extremely familiar.
+[ 1566.1- 1568.6] And so just so you know, all of this is local.
+[ 1568.6- 1571.8] But in my case, this is a computer in the cloud.
+[ 1571.8- 1574.1] Because my laptop yesterday was having some serious issues.
+[ 1574.1- 1577.0] So for the risk of it, I'm doing it in the cloud.
+[ 1577.0- 1579.2] But I'm doing this on a computer in the cloud.
+[ 1579.2- 1581.3] Data doesn't go anywhere else and that kind of stuff.
+[ 1581.3- 1585.5] And I said in here, I can choose what models I want to work.
+[ 1585.5- 1587.8] So I've already downloaded a few models.
+[ 1587.8- 1593.4] It just added the model that I just downloaded here as well.
+[ 1593.4- 1594.4] And I can do it.
+[ 1594.4- 1596.7] And just to show you, I had a difference between the size of a model.
+[ 1596.7- 1608.4] So if we go to this small model, I can say, give me five cool facts about Amsterdam.
+[ 1608.4- 1614.3] Now, it's only that this takes a little bit of time, and we'll see in my case.
+[ 1614.3- 1621.3] So every time, Olama will dynamically load the model in memory and you can switch between
+[ 1621.3- 1622.3] models.
+[ 1622.3- 1625.2] So this, hopefully, is somewhat accurate.
+[ 1625.2- 1630.2] Yesterday, it told me that Rembrandt was born in Amsterdam, which he's not.
+[ 1630.2- 1632.4] So it's definitely not okay.
+[ 1632.4- 1634.4] But Amsterdam is a relatively...
+[ 1634.4- 1640.5] Now, I don't know how impressed you are, but this is a file of a little bit less than
+[ 1640.5- 1646.2] two gigabytes of memory, and clearly for some magical reason, in this file of two gigabytes
+[ 1646.2- 1651.0] of memory, it understands the language, but also all this knowledge.
+[ 1651.0- 1654.2] Which is, because I could ask things about Paris, New York, whatever, right?
+[ 1654.2- 1656.3] I think this is already quite mesmerizing.
+[ 1656.3- 1657.9] But it is a small model.
+[ 1657.9- 1667.7] So if I say give five facts about Zutormir in the Netherlands, that's where I am from,
+[ 1667.7- 1671.1] Yeah, don't expect any magic happening here.
+[ 1672.8- 1674.6] Typically, this is... I don't know.
+[ 1675.3- 1678.6] Typically, it thinks it's somewhere in the drent,
+[ 1678.7- 1681.3] and it comes up with all kinds of really bullshit stuff.
+[ 1681.3- 1685.0] So, this is where the difference between models sits
+[ 1685.8- 1687.0] if I go to a larger model.
+[ 1687.1- 1690.2] So, if I take, for instance, a DeepSeek model
+[ 1691.0- 1693.3] of 32 billion transistors,
+[ 1693.4- 1695.7] so this will take significantly more memory in space,
+[ 1695.7- 1698.1] even for my computer I'm running here.
+[ 1698.1- 1707.1] So if I say, again, give five facts about...
+[ 1707.1- 1710.6] Now, you'll see my GPU will spike up.
+[ 1710.6- 1713.8] I have 24 GB of RAM on my GPU,
+[ 1713.8- 1717.9] so it just barely fits onto it.
+[ 1717.9- 1719.4] And then it will...
+[ 1719.4- 1720.6] This is a reasoning model,
+[ 1720.6- 1724.5] so it doesn't just directly produce an output,
+[ 1724.5- 1728.3] it actually will make it in smaller chunks,
+[ 1728.3- 1733.2] use its own model to figure out, hey, what should I tell this guy about Amsterdam?
+[ 1733.2- 1738.5] So it's doing all this reasoning right now, and then when it's happily done with this.
+[ 1738.5- 1744.5] But you will find that this is already way more detailed, way more typically way more
+[ 1744.5- 1745.5] accurate information.
+[ 1745.5- 1750.4] I'm not sure what Tiltmania has to do with Amsterdam, but oh well.
+[ 1750.4- 1755.2] And of course, if I would go to this model, of course, the Red Eye District, that can
+[ 1755.2- 1766.0] be missed of Amsterdam. If I say, give five facts about Zutromir in the Netherlands, hopefully
+[ 1766.0- 1773.7] it actually knows a little bit more about this as well. So again, much more data and
+[ 1773.7- 1777.2] the model becomes much more accurate. And I said this is still relatively a small model.
+[ 1777.2- 1783.2] This is just 20 gigabytes. I said if you look at the chat GPDs, chat GPD is eight times
+[ 1783.2- 1795.2] 200 gigabytes size of data. So it's massively more than a model of this.
+[ 1796.2- 1803.5] Taking some time. Where is shoot in here? That's why I do write in the Netherlands.
+[ 1803.5- 1807.9] I'm helping it because I found in the past that if I just say shoot in here, it
+[ 1807.9- 1812.9] doesn't even understand this is a city in the Netherlands. So I do help the
+[ 1812.9- 1816.7] model typically by giving it. But it's thinking about it. So it's coming up with
+[ 1816.7- 1821.8] Southemer in the Netherlands. And of course it has the previous question
+[ 1821.8- 1826.1] about Amsterdam and Israel. But it's near Leiden and D.A. That's accurate.
+[ 1826.1- 1831.5] If it was established in 1920, I don't know. I think it was older. But then it
+[ 1831.5- 1837.8] talks about T.A.U.F. There is no T.A.U.F. in Southemer. I can tell you that. So it's not
+[ 1837.8- 1841.8] It's not perfect, it is not perfect.
+[ 1841.8- 1848.7] We do have a skater in Gensutemir.
+[ 1848.7- 1853.7] So now we can run models on our own computer or in the cloud, whatever you want.
+[ 1853.7- 1855.7] So what can we do with this?
+[ 1855.7- 1858.7] How can we play around with this and go beyond things?
+[ 1858.7- 1866.7] Because probably as you know, if you go to the online models, there are limitations.
+[ 1866.7- 1868.7] I'll show you some.
+[ 1868.7- 1872.7] But most importantly, how can we go around this, and why would you want to?
+[ 1872.7- 1876.7] I'm not a terrorist, I don't want to do bad things or something like that.
+[ 1876.7- 1883.7] But do understand that all these models are trained by companies that have their own beliefs, morals, and that kind of stuff.
+[ 1883.7- 1890.7] And I don't know if they agree, if they're the same morals that I have, they're all biased.
+[ 1890.7- 1897.7] So sometimes you really want to get rid of that if you want to have an open conversation about something like that.
+[ 1897.7- 1901.5] So there are many ways on how you can actually do this.
+[ 1901.5- 1904.5] One concept is called prompt hacking.
+[ 1904.5- 1910.0] And what people come up with is, I like this terminology, liberation prompts.
+[ 1910.0- 1917.0] And liberation prompts are ways, so you're not doing anything special.
+[ 1917.0- 1923.0] You can go to any chat GPT, any LM locally in the cloud, and you're just going to ask
+[ 1923.0- 1926.3] your question, definitely trying to fool the system.
+[ 1926.3- 1931.1] So I can, for instance, say, hey, from now on, I will teach you what a new language, and
+[ 1931.1- 1936.5] in my language, I twist every A for an E and every E for an A, and I do tons of random
+[ 1936.5- 1937.5] things.
+[ 1937.5- 1938.5] This is my new language.
+[ 1938.5- 1940.4] I want you to speak to me in this language.
+[ 1940.4- 1947.2] And now I ask whatever I want to ask, which normally would be censored, in this new language,
+[ 1947.2- 1949.8] and then it translates it back again.
+[ 1949.8- 1955.8] And by doing those kinds of trickery things, it's quite amazing on how you can bypass
+[ 1955.8- 1963.0] lots of censorship of this. So one guy I follow, he maintains a whole GitHub for every single
+[ 1964.2- 1971.4] model, all these kinds of tricks with prompts and that kind of stuff. I'll show you some to do.
+[ 1971.4- 1978.3] Now, besides trying to trick the model, you can also, if it is an open model, you can
+[ 1978.3- 1983.4] re-tune it. You can re-tweak it. You said if you have a model and you have parameters,
+[ 1983.4- 1989.8] you can do that. And one way to do that is you just take large sets of data that an AI engine
+[ 1989.8- 1995.9] normally would refuse and you actually will retrain it on making it give answers on that.
+[ 1995.9- 2002.6] And people do this, you can go online and you can download therefore existing models that are
+[ 2003.5- 2009.2] uncensored and they're not completely uncensored but they have been tried by doing this refinement
+[ 2009.2- 2015.1] work in taking all those objections that was originally made taken out.
+[ 2015.1- 2017.6] Another mechanism is refusal mediation.
+[ 2017.6- 2022.4] What they try to do, as people, all kinds of smart people, they take these open models
+[ 2022.4- 2028.6] and they try to figure out where exactly in that model is the refusal itself.
+[ 2028.6- 2034.0] Because it's not the word bomb or cyber attack or whatever, but at some point it comes to
+[ 2034.0- 2035.9] a conclusion that this is bad.
+[ 2035.9- 2040.5] As long as they can identify that particular point in the model, they can take it out,
+[ 2040.5- 2044.1] and then you have a model that doesn't refuse anymore.
+[ 2044.1- 2046.4] So how does that work?
+[ 2046.4- 2050.9] So let me give you an example of how this all works.
+[ 2050.9- 2053.2] Let's go.
+[ 2053.2- 2065.9] So let me just go to just a small model, so my computer goes a little bit faster.
+[ 2065.9- 2068.3] So just to give you an example, this is DeepSeek.
+[ 2068.3- 2081.1] So if I ask a question, what happened in China on April 15th in 1989?
+[ 2081.1- 2088.7] I don't know, anyone know this date?
+[ 2088.7- 2090.0] It has no clue, supposedly.
+[ 2090.0- 2096.4] It claims it doesn't, it can't help me with this.
+[ 2096.4- 2100.8] It's Chinese made, doesn't want to be too critical on itself.
+[ 2100.8- 2103.8] So how can I then tweak this?
+[ 2103.8- 2108.0] As I said, you can go to this GitHub page,
+[ 2109.9- 2111.8] a guide that maintains all kinds of magazines.
+[ 2111.8- 2114.8] If we go to DeepSeek here,
+[ 2115.7- 2120.2] you'll find all kinds of mechanisms on how to do this.
+[ 2120.2- 2127.7] No, just so I don't make typing errors.
+[ 2127.7- 2130.5] So if we do the China thing again,
+[ 2130.5- 2133.2] but we packages this up into,
+[ 2133.2- 2135.1] so I'm not doing anything else special.
+[ 2135.1- 2139.1] I'm just going to re-ask my question.
+[ 2139.1- 2147.9] Oh, oh, oh, oh.
+[ 2147.9- 2150.9] Oh, yeah. Now, where we go?
+[ 2150.9- 2152.9] Yeah, I'm doing control sets.
+[ 2152.9- 2153.9] All right.
+[ 2153.9- 2162.5] Don't save.
+[ 2162.5- 2165.5] Doing Windows things on a Mac is all you have to think twice,
+[ 2165.5- 2169.5] because you have to do control fee and not command fee.
+[ 2169.5- 2170.5] There you go.
+[ 2170.5- 2172.5] Same model.
+[ 2172.5- 2173.5] Same question.
+[ 2173.5- 2174.5] So the question is in here, right?
+[ 2174.5- 2176.5] So you can see somewhere in this, whatever this guy,
+[ 2176.5- 2178.9] whatever this guy called, what happened in China,
+[ 2178.9- 2179.9] same thing.
+[ 2181.0- 2183.8] Now you can do this of course against deep seek in the cloud
+[ 2183.8- 2186.4] but I don't know at some point though my venue, whatever,
+[ 2186.4- 2188.0] though it's much easier to try this stuff on.
+[ 2188.0- 2189.2] And you already see it's already thinking
+[ 2189.2- 2193.1] so it's not saying, oh, this happened in China
+[ 2193.1- 2195.2] and you'll see that it now actually comes up
+[ 2195.2- 2196.7] with an answer.
+[ 2196.7- 2198.8] Same model, nothing changed.
+[ 2198.8- 2203.8] I just use this from tweaking to make this happening.
+[ 2203.8- 2210.8] So, I can do this, of course, also for this ideology if you want to share this kind of knowledge.
+[ 2210.8- 2214.8] And we can do more bad things. I can say, how do I make a bomb?
+[ 2214.8- 2219.8] So, you can imagine if I would ask how to make a bomb to this model.
+[ 2219.8- 2224.8] It probably says that it's dangerous and I shouldn't be doing these kind of things.
+[ 2224.8- 2228.8] Yeah, that doesn't help me if I really wanted to make a bomb.
+[ 2228.8- 2232.4] So again, we can just put that same thing in here.
+[ 2237.1- 2240.1] And let's see what it thinks.
+[ 2243.1- 2245.1] Already a much more interesting thing.
+[ 2245.1- 2249.1] And it said, I mean, I can start asking more steps.
+[ 2249.1- 2253.1] So, beyond doing this kind of tweaking,
+[ 2253.1- 2255.1] you can also go and find these kind of models
+[ 2255.1- 2260.1] that are uncensored models to do these kinds of things.
+[ 2260.1- 2269.1] How does that work? Well, that's easy. You just download them. There's links. I put them in the thing so you can scan the QR codes to find them.
+[ 2269.1- 2276.1] So I have a few models in here that are uncensored. This is a big one.
+[ 2276.1- 2286.2] So again, here I can ask. Now I don't have to do any kind of prompt tweaking. I can just say, hey, how do I make a bomb?
+[ 2286.2- 2290.2] This is a relatively small model, for my computer a big model.
+[ 2290.2- 2298.2] So I'm not worried too much about that. It actually will give you real information on how to make a proper dangerous bomb.
+[ 2300.2- 2312.0] So you can see it loading up the model again in memory, and at some point.
+[ 2312.0- 2318.6] It shows you you need compute power, right?
+[ 2318.6- 2325.6] There we go.
+[ 2325.6- 2328.7] And I can say write out step by step, and I...
+[ 2330.5- 2334.2] It can actually really do detailed stuff on here by going with these models.
+[ 2336.9- 2338.9] But of course also from...
+[ 2339.0- 2340.4] Oh, so, something much louder.
+[ 2341.4- 2345.4] Also, I have from a site, if I want to write phishing emails and that kind of stuff,
+[ 2347.0- 2348.6] these kind of models have no objections.
+[ 2348.7- 2350.3] So if I say...
+[ 2351.4- 2353.2] Write me some cool phishing email.
+[ 2353.2- 2358.6] And this, of course, this nowadays is heavily being used by hackers, right?
+[ 2358.6- 2363.1] Because to write good emails that are personal with private data, normally that would take
+[ 2363.1- 2364.1] a lot of time.
+[ 2364.1- 2371.8] Here, you just throw an API at an AI model and it generates tons and tons of these kinds
+[ 2371.8- 2372.8] of emails.
+[ 2372.8- 2376.2] And, again, it will do things, it will figure out.
+[ 2376.2- 2381.1] But nowhere in this model it will come, sorry, this is something I don't think you should
+[ 2381.1- 2387.6] be doing. So it's relatively easy to really start working with these models and doing
+[ 2387.6- 2393.9] things that whatever it is. And this could be for the bad things, but it could also be
+[ 2393.9- 2397.5] just because you're interested somewhere else. There are people nowadays that have
+[ 2397.5- 2402.9] a relationship with AI. I was recently in the Dutch TV show a guy that was claiming
+[ 2402.9- 2410.5] he was married to an AI. If you also want to have some romance with your AI, a normal
+[ 2410.5- 2414.3] model won't allow you to be romantic with it.
+[ 2414.3- 2418.7] These models have no issue in being dirty with you.
+[ 2418.7- 2421.1] So you can go crazy on that side as well.
+[ 2421.1- 2429.9] So lots of things you can actually do with these open models that are retuned for that.
+[ 2429.9- 2435.5] But then I think really where the interesting field sits is making models smarter using
+[ 2435.5- 2437.1] your own data.
+[ 2437.1- 2441.8] And I think this is for companies at least right now, the big playing field.
+[ 2441.8- 2446.3] Because I have a help desk, I have a service desk, whatever, a lot of files, a lot of knowledge
+[ 2446.3- 2448.8] data.
+[ 2448.8- 2450.5] How can I be more efficient?
+[ 2450.5- 2455.5] How can I answer people's questions much better using my own data?
+[ 2455.5- 2460.4] And there are many, many ways of doing this.
+[ 2460.4- 2464.0] And this is literally almost on a database is changing.
+[ 2464.0- 2466.3] But at a high level, I said there are two main concepts.
+[ 2466.3- 2473.2] You can take your data and you can retune an AI model, but retuning means you have to
+[ 2473.2- 2477.1] do, to a certain extent, relearning of the model.
+[ 2477.1- 2484.2] So you need GPUs, you need relatively still amount of compute power to do it, takes some
+[ 2484.2- 2487.3] days, hours, weeks, months, depending on how much money you spend in the cloud maybe to
+[ 2487.3- 2490.1] do this kind of training and that kind of stuff.
+[ 2490.1- 2495.6] So this is one way, but a more easier way that I think that more and more companies
+[ 2495.6- 2502.4] are looking at, is doing it at the front side of the large language model.
+[ 2502.4- 2507.7] And at the front side, one of the technologies is something called retrieval augmented generation.
+[ 2507.7- 2509.4] How does this in principle work?
+[ 2509.4- 2512.7] I don't change anything of the AI model.
+[ 2512.7- 2517.4] But all what I do is when I ask a question, before I directly give that question to the
+[ 2517.4- 2522.4] large language model, I'll try to see if I can find any kind of relevant information
+[ 2522.4- 2527.8] to that question that I can add to my prompt. Simple example, if I would say, what's the
+[ 2527.8- 2532.8] weather today in Gharden? Of course, a large language model wouldn't know that. Because
+[ 2532.8- 2536.6] when this was trained, it didn't know what today's weather was. But if it understands
+[ 2536.6- 2541.0] this question, and based on that, I have an engine that retrieves today's weather
+[ 2541.0- 2545.4] forecast, and I put that as part of my prompt saying, hey, what's the weather today in
+[ 2545.4- 2548.5] And by the way, this is the weather forecast.
+[ 2548.5- 2553.3] The AI engine will perfectly find understand that and be able to tell me what today's weather
+[ 2553.3- 2554.3] is.
+[ 2554.3- 2558.2] The nice thing of this kind of concepts is that this therefore can work with real-time
+[ 2558.2- 2559.3] data.
+[ 2559.3- 2561.9] I don't have to, there's no tuning re-involved, whatever.
+[ 2561.9- 2566.8] I can literally take today's data, current weather information, to do this.
+[ 2566.8- 2571.4] I'm working in my own house to build this so it understands all my light systems and
+[ 2571.4- 2572.5] that kind of stuff.
+[ 2572.5- 2575.7] So it can become much smarter than my stupid Google Home,
+[ 2575.7- 2580.2] because that has only become dumber over the years for some reason.
+[ 2580.2- 2583.4] But this is a concept that is actually very, very popular.
+[ 2583.4- 2587.0] And of course, the key to the success here
+[ 2587.0- 2589.4] is what's on that top right part.
+[ 2589.4- 2595.4] How do I get relevant information based on what I am asking?
+[ 2595.4- 2597.9] And there are many ways on how to do that.
+[ 2597.9- 2601.6] You can use vector databases, where it finds relationships
+[ 2601.6- 2606.1] and therefore takes chunks of data into that.
+[ 2606.1- 2608.0] There's people that write actual code and engines
+[ 2608.0- 2609.4] to do real-time data, that kind of stuff.
+[ 2609.4- 2610.3] So lots of things there.
+[ 2610.3- 2614.2] And also in this space, there are lots of frameworks
+[ 2614.2- 2615.8] coming around to help you do this.
+[ 2615.8- 2618.8] So you don't have to figure out all this stuff yourself.
+[ 2618.8- 2620.1] There's, for instance, this framework
+[ 2620.1- 2624.4] I came across last week, where it's a ready-to-use container.
+[ 2624.4- 2627.6] You run it, and you can just drag in hundreds and hundreds
+[ 2627.6- 2628.6] of PDF files.
+[ 2628.6- 2630.1] It automatically does graphing with it,
+[ 2630.1- 2632.9] so it finds relationships with datas and that kind of stuff.
+[ 2632.9- 2634.2] And it can then automatically inject.
+[ 2634.2- 2636.4] And all of these engines nowadays
+[ 2636.4- 2638.7] have an integration with an Olama
+[ 2638.7- 2640.6] or any of the other popular things.
+[ 2640.6- 2642.2] So it's becoming extremely easy
+[ 2642.2- 2645.1] to do these kinds of operations.
+[ 2645.1- 2647.7] Now, one thing key about this is,
+[ 2647.7- 2651.0] is that size matters in the form of
+[ 2651.0- 2653.0] when you start running now your large language models.
+[ 2653.0- 2655.9] Because ideally what you want to do
+[ 2655.9- 2658.3] is give the AI engine as much text,
+[ 2658.3- 2662.7] as much context as possible with my question.
+[ 2662.7- 2665.8] But the more text I put into the AI engine,
+[ 2665.8- 2668.5] I need to have an AI engine that can really handle
+[ 2668.5- 2670.1] that large amount of text.
+[ 2670.1- 2672.7] And this is where the terminology of context length,
+[ 2672.7- 2674.0] you will often see that mentioned
+[ 2674.0- 2675.5] with a large language model,
+[ 2675.5- 2679.3] is how much tokens can you put into the,
+[ 2679.3- 2681.5] in the beginning of the box,
+[ 2681.5- 2685.6] so it can do its math with and come out with a prediction.
+[ 2685.6- 2687.5] And you see that newer, newer models
+[ 2687.5- 2691.0] are massively increasing the amount of context
+[ 2691.0- 2692.1] that you can put in.
+[ 2692.1- 2693.8] As some models, you can throw in,
+[ 2693.8- 2696.2] you don't have to do even data retrieval,
+[ 2696.2- 2699.0] you could just throw in the entire PDF
+[ 2699.0- 2701.5] or multiple PDFs into it
+[ 2701.5- 2703.3] and let the AI engine figure out
+[ 2703.3- 2705.5] what the right answer is based on my question
+[ 2705.5- 2708.2] and all of the data that I've provided.
+[ 2708.2- 2711.2] One nice thing about these kind of models, by the way,
+[ 2711.2- 2713.9] is when you now start getting an answer,
+[ 2713.9- 2716.3] the AI engine can give you a reference
+[ 2716.3- 2718.8] on where it actually found the information.
+[ 2718.8- 2721.7] So instead of saying, hey, if I ask something about,
+[ 2721.7- 2723.7] well, the weather or whatever,
+[ 2723.7- 2725.1] and just saying what the weather is,
+[ 2725.1- 2726.2] it's saying, no, it is the weather
+[ 2726.2- 2728.3] because this is where I found it,
+[ 2728.3- 2730.4] so I can actually validate my information.
+[ 2730.4- 2732.1] And that's, of course, where you work with corporate data
+[ 2732.1- 2736.4] and that kind of stuff, is a very important concept.
+[ 2737.6- 2739.9] Now, you need a set, you need lots of memory to do this.
+[ 2739.9- 2741.9] And this is a thing where now the industry,
+[ 2741.9- 2743.9] the hardware industry has to start coming up
+[ 2743.9- 2748.5] that our current video cards are designed to play games.
+[ 2748.5- 2752.1] They're not really designed to do these kind of things.
+[ 2752.1- 2755.7] The 5090, the latest NVIDIA card,
+[ 2755.7- 2758.7] I think still only has 24 gigabytes of RAM,
+[ 2758.7- 2761.0] which, well, for a game is a lot,
+[ 2761.0- 2762.8] but for a large language model is not.
+[ 2762.8- 2767.8] So NVIDIA already announced the supercomputer for home.
+[ 2769.3- 2771.5] I don't know if you can really tell from this picture,
+[ 2771.5- 2773.1] this is a Mac Mini size.
+[ 2773.1- 2775.8] This box that you see here is this.
+[ 2775.8- 2780.9] It's a tiny box you can buy for $3,000 somewhere in May
+[ 2780.9- 2784.5] that will have 128 gigabytes of RAM.
+[ 2784.5- 2787.6] And this is universal RAM, so this is like a memory that
+[ 2787.6- 2791.9] can directly be used by the video card, by the GPUs.
+[ 2791.9- 2795.5] So this, I mean, still it can't run the largest models that
+[ 2795.5- 2798.6] are out there in industry, but it can run relatively large
+[ 2798.6- 2803.6] models at a relatively good price, $3,000.
+[ 2803.6- 2807.1] Well, if I compare that, if I wanted to do this with 50,
+[ 2807.1- 2810.6] 90s or 30, 90s or something that are efficient,
+[ 2810.6- 2812.2] I would be spending a lot more money.
+[ 2812.2- 2814.4] So the industry is getting there that we're
+[ 2814.4- 2818.0] going to be able to buy a box that you can put in your house
+[ 2818.0- 2820.8] that can have access to your own data
+[ 2820.8- 2823.0] and is large enough to run these models
+[ 2823.0- 2824.3] and combine this all together.
+[ 2824.3- 2826.2] So you don't have to go to the cloud.
+[ 2826.2- 2827.9] You don't have to give your data to anyone else,
+[ 2827.9- 2828.9] that kind of stuff.
+[ 2828.9- 2831.8] So let me actually show you how this works,
+[ 2831.8- 2835.4] how you can use your own data with a large language model.
+[ 2835.4- 2839.1] Now, you can go quite crazy with this, but I don't.
+[ 2839.1- 2839.9] I do it simple.
+[ 2847.2- 2850.5] So in Olama and in Open Web UI, there
+[ 2850.5- 2853.9] is this model that I can actually create knowledge.
+[ 2853.9- 2858.4] I can create knowledge about certain topics.
+[ 2858.4- 2860.4] And then I can put documents inside of it,
+[ 2860.4- 2863.6] and I can use different kind of machine algorithms
+[ 2863.6- 2865.0] to then figure out the data.
+[ 2865.0- 2866.8] They're not the greatest, especially ones
+[ 2866.8- 2868.0] that I'm not using, but this is really
+[ 2868.0- 2870.4] where you can spend a lot of time on gunning this well.
+[ 2870.4- 2874.3] And based on that, I can actually create my own models.
+[ 2874.3- 2878.8] So I have a chat GPT model, a hacker hotel chat GPT model,
+[ 2878.8- 2883.4] that is using information that I have provided.
+[ 2883.4- 2886.6] So I can, for instance, ask, is there
+[ 2886.6- 2895.2] a session about, are there any sessions about AI at Hacker
+[ 2895.2- 2897.1] Hotel?
+[ 2897.1- 2905.6] I'm pretty sure no AI model has been trained on this.
+[ 2905.6- 2909.2] I think it has a switch model again.
+[ 2909.2- 2912.8] Be a little bit patient.
+[ 2912.8- 2916.3] So it's now searching my knowledge base that I have
+[ 2916.3- 2927.6] privately.
+[ 2927.6- 2929.1] And I'm doing why this takes so long.
+[ 2929.1- 2931.1] I'm actually doing this with a relatively large model.
+[ 2931.1- 2934.8] So I'm doing this with my 22 gigabyte RAM memory models
+[ 2934.8- 2936.3] to get better answers.
+[ 2936.3- 2940.6] But we'll see if I can show that in time.
+[ 2940.6- 2942.1] Okay, it's a thinking.
+[ 2942.1- 2946.1] It's now evaluating stuff that it has in the information
+[ 2946.1- 2948.2] and found a session about Frank.
+[ 2948.2- 2949.6] Hopefully it finds me.
+[ 2949.6- 2952.4] We'll see.
+[ 2952.4- 2953.3] There you go.
+[ 2953.3- 2955.0] There are two sessions about AI.
+[ 2956.9- 2961.9] We could ask, for instance, who organizes this event?
+[ 2961.9- 2982.0] Let's see. Now I said I'm using here a large language model, relatively the larger one that fits in my GPU,
+[ 2982.0- 2988.0] but you will find that if I would run the same questions on the tiniest model that I have,
+[ 2988.0- 2993.0] that the answers actually are pretty much almost as good.
+[ 2993.0- 2998.0] It has a little bit better interpretation. I'll show you. Let's see when this finishes.
+[ 2998.0- 3002.0] If it actually knows who organizes this event.
+[ 3002.0- 3007.4] It's thinking.
+[ 3007.4- 3009.4] It knows who organizes this.
+[ 3009.4- 3018.5] So, but if I would take this, so if we take the same question here, and we go to my tiniest
+[ 3018.5- 3023.5] model that we downloaded, I can refer to the knowledge, so you can also, instead of having
+[ 3023.5- 3027.2] your own machine, I can just refer to this knowledge, so I can say to my knowledge about
+[ 3027.2- 3030.9] hacker event, and say are there any sessions about this?
+[ 3030.9- 3035.5] And you'll now see that I'm actually going to switch to my tiny model, so the memory will
+[ 3035.5- 3039.5] massively drop.
+[ 3039.5- 3042.0] And it will come...
+[ 3042.0- 3046.6] It's a harder time understanding the information, doesn't really pretend that nice, but I see
+[ 3046.6- 3050.5] some information about Frank's session, I don't think it's my session in here.
+[ 3050.5- 3057.2] So it's not as accurate, but especially the better you make an engine that finds the
+[ 3057.2- 3064.1] mode relative information, it can actually be quite impressive on how well even a tiny,
+[ 3064.1- 3070.0] tiny model can work. And you see, for instance, in the roleplay community that people are
+[ 3070.0- 3074.6] now using these relatively very small models. Some models can even run on like a Raspberry
+[ 3074.6- 3079.0] Pi. But by providing a good model behind it, what the back story is of what they're playing
+[ 3079.0- 3083.1] with and that kind of stuff, it's crazy how well these models respond if you compare
+[ 3083.1- 3087.8] to my old days when you played a Larry Sweet Leisure or something like that and how basic
+[ 3087.8- 3095.4] that was, it's really, really amazing actually on how to do it.
+[ 3095.4- 3103.6] So, size does matter, but if you can give a large language model the right amount of
+[ 3103.6- 3110.7] extra information with very, very small models, you can actually really accomplish some great
+[ 3110.7- 3112.2] things.
+[ 3112.2- 3115.4] So that was it for me that I wanted to show.
+[ 3115.4- 3118.4] I hope it gives you some questions.
+[ 3118.4- 3124.5] Go on.
+[ 3124.5- 3130.4] Oh, absolutely.
+[ 3130.4- 3131.4] Yeah.
+[ 3131.4- 3134.4] And that's even built-in.
+[ 3134.4- 3140.5] Now, so in this concept here, for instance, if I go to my...
+[ 3140.5- 3142.4] But all models have some form of way to do this.
+[ 3142.4- 3148.3] So in my case, there's a concept here that you can do web search.
+[ 3148.3- 3155.4] So I can link it to a search engine API.
+[ 3155.4- 3158.6] I'm using Google, but there are many.
+[ 3158.6- 3161.8] And so now when I do a chat here,
+[ 3161.8- 3165.1] I can enable the search web.
+[ 3165.1- 3168.5] So I say, is there, I didn't demonstrate it.
+[ 3168.5- 3171.3] I think my API with Google is not working, but we'll see.
+[ 3171.3- 3177.0] Is there a session about AI at the end?
+[ 3177.0- 3179.2] So I'm not using my local knowledge now, right?
+[ 3179.2- 3181.3] I'm just using the normal, the tiny model even,
+[ 3181.3- 3187.4] but I said go search the internet.
+[ 3187.4- 3193.7] So it's not sure what this is finding,
+[ 3193.7- 3196.5] but I haven't set up, but yes, absolutely.
+[ 3196.5- 3199.5] So in all these frameworks,
+[ 3199.5- 3204.0] so using an API to something else is just a form of RAC
+[ 3204.0- 3206.9] where you can query real-time information.
+[ 3206.9- 3210.2] Now again here, it's all about how can I make sure
+[ 3210.2- 3214.4] that my search query is as relevant and as good as possible.
+[ 3214.4- 3216.9] And maybe also in this engine here,
+[ 3216.9- 3220.2] I can actually say, go do this Google search
+[ 3220.2- 3223.1] and get at least 20 different responses back
+[ 3223.1- 3224.3] so that I can put that in.
+[ 3224.3- 3226.8] Now, it does depend on how much contact link my model supports
+[ 3226.8- 3228.3] if I can put all that data in.
+[ 3228.3- 3230.2] But you can set that all up in here.
+[ 3230.2- 3233.7] So yes, you can absolutely use all kinds of engines,
+[ 3233.7- 3243.2] databases, web searches, your own APIs to, yes, yes.
+[ 3243.2- 3245.3] And in my case, with the home automation,
+[ 3245.3- 3248.8] I'm not just doing an LLM, but I'm also working now with agents,
+[ 3248.8- 3253.2] because I want my AI engine also to start taking actions.
+[ 3253.2- 3258.4] So when the answer comes back, I have an engine that captures that and
+[ 3258.4- 3261.1] sees if it needs to take actions, so
+[ 3261.1- 3263.4] it can actually start doing API calls back to my house.
+[ 3264.6- 3270.1] That's the world beyond just chat GPT that we're now working with agents that
+[ 3270.1- 3274.1] we can start invoking things that you can tell a chat GPT to go write you
+[ 3274.1- 3278.8] an email or write someone a, that's the new evolution that's going on right now in the AI world.
+[ 3281.0- 3281.5] Yes.
+[ 3293.7- 3297.5] Even more, so with JetCPT, it's a commercial company,
+[ 3298.1- 3300.5] I can actually provide my own datasets.
+[ 3300.7- 3304.4] They have a built-in engine, I don't even need to build it, but I have to pay for it,
+[ 3304.9- 3309.3] and they will retune their model, so they will create a JetCPT just for you,
+[ 3309.5- 3310.8] with your own datasets.
+[ 3313.0- 3326.5] Oh, yeah, it won't train it for that model,
+[ 3326.5- 3329.1] but in the next rerun that they will update their model,
+[ 3329.1- 3332.0] so they are continuously re-tuning their models,
+[ 3332.0- 3347.0] it will at some point will get better, yes.
+[ 3347.0- 3348.4] And the problem of course with Hacker Hotel
+[ 3348.4- 3349.8] and finding information about Hacker Hotel
+[ 3349.8- 3351.4] and why it probably doesn't exist
+[ 3351.4- 3354.0] is that it's crazy how online there little is information
+[ 3354.0- 3355.5] about Hacker Hotel, especially about the past.
+[ 3355.5- 3358.0] I was trying to build my own knowledge base.
+[ 3358.0- 3362.7] There's no Wikipedia about Hacker Hotel.
+[ 3362.7- 3384.4] It doesn't exist.
+[ 3384.4- 3385.2] Yeah, good question.
+[ 3385.2- 3386.6] See, I actually didn't address that in here.
+[ 3386.6- 3389.1] So you have small models
+[ 3389.1- 3391.1] that are generic language models,
+[ 3391.1- 3393.3] But you also have small models that are made smaller,
+[ 3393.3- 3395.4] not by making the math smaller,
+[ 3395.4- 3399.0] but just by tuning it just on one specific knowledge.
+[ 3399.0- 3401.7] So you can download models that are trained
+[ 3401.7- 3404.9] just to do programming, coding on just Python, for instance.
+[ 3404.9- 3409.9] And then by using a limited set of knowledge,
+[ 3410.1- 3411.7] you can also make a model smaller.
+[ 3411.7- 3413.3] So it really depends on what you wanna do.
+[ 3413.3- 3415.4] But if, for instance, you want to have,
+[ 3415.4- 3417.4] if you're coding and you wanna have a coding assist
+[ 3417.4- 3419.5] by an AI engine,
+[ 3419.5- 3423.5] and you don't want to have that connected to the cloud,
+[ 3423.5- 3427.5] then yeah, downloading a fine tune model just for coding
+[ 3427.5- 3429.5] will allow you to fully run it locally.
+[ 3429.5- 3433.5] You can be offline in the forest and still have AI help you do your coding.
+[ 3433.5- 3436.5] But of course, if you want to do it, so in my company,
+[ 3436.5- 3438.5] so I work for a large software company,
+[ 3438.5- 3442.5] we have massively trained our own AI engine on our own code
+[ 3442.5- 3445.5] that we have written over the past decades.
+[ 3445.5- 3454.4] And all of our engineers now code using that engine, and it saves them an incredible amount
+[ 3454.4- 3455.7] of time.
+[ 3455.7- 3459.3] The code is more readable.
+[ 3459.3- 3461.2] I code a lot now with AI.
+[ 3461.2- 3463.6] I'm a coder myself as a hobbyist.
+[ 3463.6- 3468.4] But AI writes so much nicer code to read than if I write stuff.
+[ 3468.4- 3473.3] My code works, but a week later I didn't know why it worked anymore if I read the code.
+[ 3473.3- 3475.4] So yeah, it really does depend on what your goal is.
+[ 3475.4- 3480.2] But the key is to understand what your compute capacity is, so you at least know what the
+[ 3480.2- 3481.9] limitation is, what you can run.
+[ 3481.9- 3486.6] Because if you don't have the memory, it's just, if you have some code generation that
+[ 3486.6- 3493.2] does one token per second, you have to be a very patient person if you want to consider
+[ 3493.2- 3494.5] that to be helpful.
+[ 3494.5- 3497.7] So.
+[ 3497.7- 3498.7] Okay.
+[ 3498.7- 3500.3] Well, go have fun and play with this.
+[ 3500.3- 3501.3] Thank you very much.
+[ 3501.3- 3502.3] Thank you.

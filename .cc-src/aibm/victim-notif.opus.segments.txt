@@ -1,0 +1,325 @@
+[   10.1-   17.4] So, but now let's talk about users and passwords and passwords which are not stored in the
+[   17.4-   26.4] right place, but in the place if someone else has them, the credentials.
+[   26.4-   35.4] And Frank Bredek now wants to show us how we can especially work if there are a lot of
+[   35.4-   40.2] passwords we have obtained and we have a lot of users we have to notify.
+[   40.2-   43.7] So again, give a big applause and Frank.
+[   43.7-   65.0] Yep, there we are.
+[   65.0-   66.0] Thank you.
+[   66.0-   67.0] It's okay.
+[   67.0-   74.1] You forgot to say stay hydrated, but I guess you notice it's getting hot, especially here
+[   74.1-   75.8] on stage.
+[   75.8-   76.8] My name is Frank.
+[   76.8-   82.6] I'm active in the DIVD, the Dutch Institute for Vulnerability Disclosure ever since it
+[   82.6-   83.6] started.
+[   83.6-   87.7] My official title is Crisis Manager, which I think is a good description of my management
+[   87.7-   96.6] style. I help DIVD disclose vulnerabilities, register CVI IDs for the CNA team, that's
+[   96.6-  104.2] the CV numbering authority, and I process stolen credentials. And the stolen credentials is
+[  104.2-  111.0] what this talk is going to be about. DIVD is a group of volunteer hackers that try to
+[  111.0-  117.5] make the digital world safer by finding vulnerabilities and reporting them to whoever is
+[  117.5-  120.9] in the best position to fix them.
+[  120.9-  128.0] That includes scanning the Internet, finding and breaking stuff, but it also includes credentials.
+[  128.0-  130.8] We're about 189 people strong.
+[  130.8-  136.3] We've run in the last five years 183 cases.
+[  136.3-  140.4] So it's about a case per person, but, yeah, not really.
+[  140.4-  151.3] And we've disclosed about 1,357,000 vulnerabilities to system owners.
+[  151.3-  157.0] And stolen credentials is becoming a bigger and bigger problem.
+[  157.0-  164.3] In the past, people used to hack in to get in, but cybercriminals found out that there's
+[  164.3-  169.1] no need to hack in if you can log in.
+[  169.1-  173.7] Some credentials have been a thing we did since the early days of the IVD.
+[  173.7-  180.5] So case number 13, which was the 13th case, a lucky case number, was about leaked phishing
+[  180.5-  184.6] credentials taken from a phishing site.
+[  184.6-  188.8] And it was about 386 credentials.
+[  188.8-  192.5] Another phishing credential was about 100 credentials.
+[  192.5-  194.7] And that's relatively low numbers.
+[  194.7-  200.2] you can do the disclosure in Excel or Google Sheets and actually mail people with the mail
+[  200.2-  201.8] merge plugin.
+[  201.8-  208.3] So it fit really well with the process and it wasn't really scaling it up.
+[  208.3-  211.0] But that changes a little bit.
+[  211.0-  219.4] When one of our researchers stumbled upon the infrastructure of a botnet, warehouse botnet,
+[  219.4-  224.7] and its credentials leaked from their Elasticsearch server that they have as part of their
+[  224.7-  234.3] infrastructure and we were able to get about 250,000 credentials out of that.
+[  234.3-  240.6] So all of a sudden instead of dealing at 100, you can't deal with this number with Excel
+[  240.6-  246.1] anymore and you can't individually mail people anymore, you need some kind of mail merge.
+[  246.1-  247.2] But we managed.
+[  247.2-  249.1] It was okay, it was doable.
+[  249.1-  256.0] Yes, there was a bit of extracting stuff from Jason, informing people, and a little bit
+[  256.0-  261.5] of the headology when you tell people that their passwords have been stolen.
+[  261.5-  269.2] And reactions varied from may my deity be grateful to you and may you have a good life
+[  269.2-  277.3] and lots of kids, to fuck off you scammers and mailboxes that are compromised and the
+[  277.3-  281.9] the minute you send them an email, they return, send you a zip file with a bit of malware
+[  281.9-  283.6] in return.
+[  283.6-  288.2] And the malware analyst had a lot of fun with that, but that's a different story.
+[  288.2-  294.9] But yeah, these things are compromised, these mailboxes are compromised.
+[  294.9-  300.1] And right after that, another researcher found some open directories on Telegram.
+[  300.1-  305.5] And there you got it, another 250,000 compromised credentials.
+[  305.5-  309.8] Well, same procedure, same number, it works.
+[  309.8-  316.2] So what we do is we take this information and mail it to the individual users saying
+[  316.2-  322.5] warning you have been compromised here.
+[  322.5-  325.3] But then came Operation Endgame.
+[  325.3-  330.3] Now Operation Endgame is a cool operation by law enforcement in Europe, the Dutch police
+[  330.3-  335.3] involved, German police was involved, Europe was involved, but also US police.
+[  335.3-  343.4] they wanted to make a statement against cybercrime against ransomware gangs saying hey, we want
+[  343.4-  347.5] this to stop.
+[  347.5-  353.5] And they also on one day invaded the data centers, seized the machines, but on those
+[  353.5-  358.6] machines are credentials.
+[  358.6-  364.7] And on the 100 servers they had, they found 1.8 million different credentials.
+[  364.7-  369.1] and the credential in this case is the combination of a username and a password.
+[  369.1-  372.2] Yeah, it's 1.8.
+[  372.2-  377.9] Well, different ballgame, we need to scale our operation.
+[  377.9-  387.0] So passwords in this respect were a bit of a hot potato in the Netherlands because usernames
+[  387.0-  391.1] and passwords are considered personal data.
+[  391.1-  397.6] They can even be considered as a special category of personal data that needs proper protection
+[  397.6-  405.3] because if you lose them, it can have bigger consequences on your personal life.
+[  405.3-  408.1] And who is going to warn these victims?
+[  408.1-  410.3] The police said it's not our job.
+[  410.3-  412.9] We focus on catching and discouraging criminals.
+[  412.9-  415.9] We're not there to do the help desk.
+[  415.9-  420.3] They were basically also a bit afraid of the fallback.
+[  420.3-  425.1] So besides the males thanking you and cursing you,
+[  425.1-  427.4] you also get people who are really in panic.
+[  427.4-  429.8] I want to know, okay, what do I do now?
+[  431.8-  434.3] So they said, no, we can't do it.
+[  434.3-  439.1] And the NCSC, the Dutch National Cyber Security Center,
+[  440.5-  444.6] said, yeah, listen, according to the way our law,
+[  444.6-  453.4] the law is by the grace of which we exist, we cannot share special category personal
+[  453.4-  455.0] data.
+[  455.0-  463.2] So yeah, who you're going to call who's crazy enough in the Netherlands to do these projects
+[  463.2-  467.9] where people, where other bodies think we don't fit in?
+[  467.9-  469.5] Well, that's the IPD.
+[  469.5-  474.3] We think we can and we think it helps.
+[  474.3-  477.1] So we had a problem.
+[  477.1-  481.1] We wanted to email 1.8 million users.
+[  481.1-  486.4] Oh, it's hot.
+[  486.4-  488.7] So can you even do that?
+[  488.7-  491.4] Well, there's only one way to find out.
+[  491.4-  493.9] That's by trying.
+[  493.9-  497.7] But just because you can, does it mean you should?
+[  497.7-  502.0] Well luckily we have an ethics committee in the IVD.
+[  502.0-  505.4] So we gave them the question like, listen, this is what we're going to do.
+[  505.4-  512.7] we're going to invade people's privacy because we are processing their passwords, we are
+[  512.7-  518.6] mailing them out, if they have a shared mailbox, you may see in the mail what services they
+[  518.6-  524.9] are using, if that's Facebook it's sort of okay, is that Ashley Madison, maybe you've
+[  524.9-  528.3] got some explaining to do.
+[  528.3-  533.5] We did the ethical back and forth and the conclusion was yes we should, and then the
+[  533.5-  538.6] question becomes why or how do you do that and then I'm blessed with a little
+[  538.6-  543.2] bit of people on stocking cinder I've never done this before so I think I can
+[  543.2-  550.9] so we sat down we made a plan and we said well if you got 1.8 million users
+[  550.9-  556.5] you and you can send out one email per second because yeah you have physical
+[  556.5-  563.4] transmission times etc that means that you need about 500 hours to do this
+[  563.4-  575.6] Milran. In those 500 hours, roughly translates to 21 days. Okay, let's go. It turns out if
+[  575.6-  585.5] you do that, your friends have an opinion. So we started sending emails to large groups
+[  585.5-  590.9] of accounts. Some of these accounts had gone yet, caused a little bit of backscatter which
+[  590.9-  600.9] got into our Google account. So at some point, Google said no. You're a spammer. And a little
+[  600.9-  608.5] bit later, Microsoft says, no, you're a spammer. And then I got a call from a friend from Bit
+[  608.5-  613.1] who run our email infrastructure expecting them to say no to what are you doing, you're
+[  613.1-  617.9] being crazy, but actually they're being really cool about it. They didn't say no. They said,
+[  617.9-  619.4] We've got a talk.
+[  619.4-  620.4] We had a good talk.
+[  620.4-  625.7] We put some optimizations in and they still provide us with support for what we do at
+[  625.7-  628.2] a very hefty discount.
+[  628.2-  630.8] They're one of our great sponsors and we're proud of them.
+[  630.8-  632.7] So thanks, them.
+[  632.7-  637.9] Little applause, please.
+[  637.9-  645.8] So in the end, we've mailed most of them spam blacklisting wares off over time.
+[  645.8-  650.0] So we got to do our normal operation again.
+[  650.0-  656.8] And then a researcher said, well, you sound crazy by informing everybody.
+[  656.8-  662.0] I've got this list of credentials I scraped from Telegram.
+[  662.0-  663.0] There are even more.
+[  663.0-  668.4] I do this as part of my open source threat intelligence research.
+[  668.4-  670.3] So call me.
+[  670.3-  682.6] It's anonymous threat researcher and he sent us a whopping 1.2 billion credentials.
+[  682.6-  686.7] Yeah.
+[  686.7-  690.6] We've nearly cured ourselves mailing 1.2 million.
+[  690.6-  692.6] What about 1.2 billion?
+[  692.6-  697.8] Well, if you take 1.2, you can still do the one email per second.
+[  697.8-  709.8] 500,000 hours, it's about 20,800 days, it's about 57 years. So what did my friend say?
+[  709.8-  717.8] No way, we're not going to do this. And we're right, we need a different process, we need
+[  717.8-  726.1] to scale this in a different way. By the way, processing a set of 1.8 billion credentials
+[  726.1-  728.9] is another story on its own.
+[  728.9-  733.1] It's big data, it's notebooks, it's databases
+[  733.1-  735.1] that you need to scale really well.
+[  736.6-  740.2] SQLite is surprisingly good in this, but slow.
+[  741.1-  744.7] DuckDB is better in it, but even slower.
+[  745.7-  747.8] But I'm not gonna talk about that part.
+[  748.9-  752.4] But is this impossible?
+[  752.4-  756.2] Well, the other thing we notice is that you've got
+[  756.2-  763.6] People who call themselves commercial bulk emailers, AKA spam comp, I'm not supposed to
+[  763.6-  770.4] call them that, commercial bulk emailers, and I asked them for a quote.
+[  770.4-  774.9] I said, listen, I know you do this, we need to send out large amounts of email, you're
+[  774.9-  781.9] specialising in them, and then you get in a whole world of email senders that need to
+[  781.9-  786.8] warm up and need a priming time and then need to cool down and then you need to warm them
+[  786.8-  791.5] up again and because...
+[  791.5-  801.0] And I asked for quotes and it was 100,000 euros to just do this email run.
+[  801.0-  808.1] And yeah, they require recipients to opt in.
+[  808.1-  812.4] Which is a bit of a problem because these people never opted into being hacked in the
+[  812.4-  817.7] first place and they didn't opt in to get a notification.
+[  817.7-  825.9] So in the end we decided that even if we could scrape the 100,000 euros together, that wouldn't
+[  825.9-  834.7] be a good use of resources and we rather not spend 100,000 euros at a company whose business
+[  834.7-  843.5] it is to send people commercial bulk email or spam.
+[  843.5-  846.3] So if you don't do that, what do you do?
+[  846.3-  853.2] Well there's a couple of lessons that we learned and one of them is that not all credentials
+[  853.2-  855.6] are created equal.
+[  855.6-  861.0] It's actually if you get the announcement, I have this email address from you and this
+[  861.0-  871.4] password, it's yeah, nah. You need more context. When was this password found? Was it found
+[  871.4-  880.3] before or after I changed it? What do you think this password is for? Where was it taken
+[  880.3-  886.4] from if you have that information? There's a lot more that you need. So a lot of the
+[  886.4-  892.7] The credentials that are out there are so-called combo lists, lists where they combine the
+[  892.7-  899.9] data from multiple sources, multiple data breaches, and put them together.
+[  899.9-  903.2] That's also how, for instance, breach forms work.
+[  903.2-  908.0] If you want to get something off breach forms, it means you need to put something on breach
+[  908.0-  910.7] forms.
+[  910.7-  914.8] Breach forms doesn't care, so you can just take some old credentials that you have,
+[  914.8-  921.4] them back on breach forums and hey, you're okay to read another couple of articles.
+[  921.4-  930.1] So if we don't have either what this URL, what this password is for or where it came
+[  930.1-  937.9] from or if we don't have any extra context, we don't process these credentials.
+[  937.9-  944.5] It may be that we're saving, that we're leaving some people exposed, could be on the other
+[  944.5-  951.5] hand we need to reduce the data and for most people this is not actionable.
+[  951.5-  954.6] And passwords have impact too.
+[  954.6-  962.3] And I'm ashamed to say that this was my LinkedIn password that ended up on the LinkedIn breach.
+[  962.3-  971.2] Got stolen from there in a poorly hashed form in 2005.
+[  971.2-  979.4] And I consider myself security aware, I consider myself knowledgeable in this stuff, but until
+[  979.4-  985.6] that point, the news, your LinkedIn password has been leaked sort of passed by.
+[  985.6-  992.9] It's like, yeah, the weather's nice, wear sunscreen, hydrate, wash your hands, your
+[  992.9-  994.5] LinkedIn password changed.
+[  994.5-  997.3] It's got leaked.
+[  997.3- 1003.6] Still scattered secrets, which my company has a contract with, sent me a message, Frank,
+[ 1003.6- 1005.8] this is your LinkedIn password.
+[ 1005.8- 1014.0] And even now I did this, I still had to think thrice about putting this password on screen.
+[ 1014.0- 1017.1] And then I thought, well, I should have done this.
+[ 1017.1- 1019.0] So that's what we do for users.
+[ 1019.0- 1025.0] I don't think it's nice to plain text email users' passwords.
+[ 1025.0- 1028.4] So we do mask them, but even this has impact.
+[ 1028.4- 1032.2] Because I know what this password is.
+[ 1032.2- 1035.0] Well, not anymore, because I now use a password manager.
+[ 1035.0- 1036.3] You should all use that.
+[ 1036.3- 1038.8] I have random passwords anywhere.
+[ 1038.8- 1040.3] I stopped giving.
+[ 1040.3- 1042.0] I solved it that way.
+[ 1042.0- 1043.8] But if it's a non-random password,
+[ 1043.8- 1046.7] I will recognize it.
+[ 1046.7- 1048.5] This is how we shorten passwords.
+[ 1048.5- 1050.8] Basically, if it's over 10 characters,
+[ 1050.8- 1053.4] first two characters, last two characters,
+[ 1053.4- 1056.2] and everything else becomes an asterisk.
+[ 1056.2- 1058.5] If it's less than 10 characters,
+[ 1058.5- 1061.0] only the first and the last character,
+[ 1061.0- 1064.8] yes, that gives flaw because if you see the password,
+[ 1066.0- 1068.8] starts with a W and ends with a one,
+[ 1068.8- 1071.1] and it's a certain length, you still know it's welcome,
+[ 1071.1- 1076.1] zero one, but you need some sort of information
+[ 1076.1- 1079.5] about the password to make it meaningful to users
+[ 1079.5- 1082.7] and to make it meaningful to administrators.
+[ 1082.7- 1087.0] So how do we process these large bugs?
+[ 1087.0- 1090.3] But we can still email if these dumps
+[ 1090.3- 1092.6] are under two million emails.
+[ 1094.0- 1095.8] Thanks to our cooperation with Bit,
+[ 1095.8- 1098.2] that still can go on.
+[ 1098.2- 1100.9] If it's above that, we need to work differently.
+[ 1100.9- 1103.3] We need to work with our community,
+[ 1103.3- 1106.4] especially with the search, C-search,
+[ 1106.4- 1109.6] and security teams of companies.
+[ 1109.6- 1113.6] So we do this by extracting what we call the Apex domains
+[ 1113.6- 1117.8] from the username and from the service that it is.
+[ 1117.8- 1120.5] So if I have a stealer log that says, hey,
+[ 1120.5- 1125.5] frunk at the div.nl is used for www.google.com,
+[ 1126.8- 1131.8] then the Apex domains are div.nl, google.com.
+[ 1131.9- 1135.6] And that's interesting for the administrators at the IVD
+[ 1135.6- 1137.3] because that's where the account lives.
+[ 1137.3- 1139.9] It's interesting for the people at Google become,
+[ 1139.9- 1142.8] because it's a user of theirs.
+[ 1142.8- 1146.0] And it might be interested for a national cert
+[ 1146.0- 1150.1] because of the .nl extension.
+[ 1150.1- 1152.3] And you can get this information.
+[ 1152.3- 1155.4] What we do is we make lists of this information.
+[ 1155.4- 1157.4] We publish this information online.
+[ 1157.4- 1162.7] So we say, I have 70 accounts from the div.nl.
+[ 1162.7- 1166.7] I've got 40 accounts, 40, 400,000 accounts
+[ 1166.7- 1172.0] that are Google.com accounts, we publish those lists.
+[ 1172.0- 1176.7] And then if you can demonstrate a legitimate interest to us,
+[ 1176.7- 1180.8] you can get the underlying data from us.
+[ 1180.8- 1184.3] And in that way, we're saving ourselves.
+[ 1184.3- 1186.8] We are creating a little bit of more work for ourselves,
+[ 1186.8- 1189.5] but we are saving ourselves the job of having
+[ 1189.5- 1192.5] to email so and so many users.
+[ 1192.5- 1201.5] The other thing is that our ethics committee came up with a little bit of an objection.
+[ 1201.5- 1212.9] And I'll wait for the noise box to pass and to drink a little bit of water.
+[ 1212.9- 1221.9] That is that not all countries are equal in terms of their respect to human rights.
+[ 1221.9- 1233.5] And it just didn't feel right that we would tell a company, an organization, in a totalitarian
+[ 1233.5- 1238.9] regime, listen, these are the passwords of all your citizens.
+[ 1238.9- 1247.1] Because it might not be okay for, say, a certain citizen of a certain country to use a certain
+[ 1247.1- 1257.2] service like BitTorrent, ProtonMail, maybe show you that you got a certain sexual preference,
+[ 1257.2- 1260.2] that shows you got a certain political convention.
+[ 1260.2- 1268.8] So people also need to be from countries that score a score above a 0.4 on the Human Rights
+[ 1268.8- 1270.1] Index.
+[ 1270.1- 1277.3] And the human rights index is a universal study that gives every country a score in
+[ 1277.3- 1279.8] how well they respect human rights.
+[ 1279.8- 1290.4] Yeah, so I've been talking to you here about credentials and the struggles that we have.
+[ 1290.4- 1292.3] Isn't this a solved problem?
+[ 1292.3- 1295.9] Because we've got services like have I been poned?
+[ 1295.9- 1301.0] In the Netherlands we've got Check Your Heck, we've got No More Leaks, who tries
+[ 1301.0- 1308.6] to make hashes of data and to give them to large online platforms so they can see, hey,
+[ 1308.6- 1312.2] this is a compromised account.
+[ 1312.2- 1315.3] But they each have their problems.
+[ 1315.3- 1319.4] The biggest problem with have I been pwned is that it is opt-in.
+[ 1319.4- 1324.2] So if you're on have I been pwned, you get notified.
+[ 1324.2- 1328.8] But the people who are who's credentials get compromised are the people who are not very
+[ 1328.8- 1333.9] security aware and typically not the people who are on have I been pwned.
+[ 1333.9- 1337.6] Also have I been pwned is too low on context.
+[ 1337.6- 1343.8] It's come to the point where I stopped caring that I'm now part of 35 data dumps instead
+[ 1343.8- 1345.4] of 34.
+[ 1345.4- 1351.5] It's like wear sunscreen, wash your hands and stay hydrated.
+[ 1351.5- 1353.6] Which is good advice.
+[ 1353.6- 1355.3] You should take it.
+[ 1355.3- 1358.6] But it's background starting to become background noise.
+[ 1358.6- 1362.3] Check your hack and no more leaks are police initiatives.
+[ 1362.3- 1370.0] The problem they have is that they only can deal with data that's taken from police investigations
+[ 1370.0- 1374.7] and we get a lot of data that's not part of police investigations.
+[ 1374.7- 1380.6] Also check your hack works with a model where you fill in your email address and if you
+[ 1380.6- 1384.5] get an email back, your account has been compromised.
+[ 1384.5- 1387.2] If you don't get an email back.
+[ 1387.2- 1393.6] account is not compromised or it ended up in your spam blog or something else went wrong
+[ 1393.6- 1396.2] and you just don't know.
+[ 1396.2- 1403.1] No more leaks has a problem that it has no mechanism to in a privacy friendly way share
+[ 1403.1- 1409.2] data with the police and there's no way that I am going to share plain text, user names
+[ 1409.2- 1415.4] and passwords with a government organisation that has a license to hack.
+[ 1415.4- 1423.7] just no way I can justify doing that. So the way forward, we're now at the point
+[ 1423.7- 1430.1] where we processed over 1.2. I keep, I know that I messed up a number, but we
+[ 1430.1- 1437.1] purchased over a billion credentials, notified users. We think we know how this
+[ 1437.1- 1443.1] works, we found an acceptable way. We also like to reach out to the community
+[ 1443.1- 1449.3] that if you're an enthusiast that gathers a lot of this data, please send an email to
+[ 1449.3- 1457.0] ccert at divd.nl. Let's have a talk. Let's see how your data can help people stay safe.
+[ 1457.0- 1461.8] But we would also like to work with law enforcement and the government to make actually create
+[ 1461.8- 1468.0] tools that work for Europe. Because have I been found this from Australia is an Australian
+[ 1468.0- 1476.0] company and other tools, yeah, we just don't have a European equivalent.
+[ 1476.0- 1478.3] We need three lines of defence.
+[ 1478.3- 1483.2] We need to prevent, which means that we need to teach people to fix their shit, apply their
+[ 1483.2- 1485.8] patches and not just talk.
+[ 1485.8- 1490.0] We need something like no more leaks, but then something that works that we can hook
+[ 1490.0- 1495.4] on to, and we need proper notifications that are better than have I been bound and check
+[ 1495.4- 1497.1] your hack.
+[ 1497.1- 1503.0] We have some ideas, we have some examples, and we would love to talk any further.
+[ 1503.0- 1508.8] And law enforcement needs to keep going after cybercriminals, but that's not our job, that's
+[ 1508.8- 1514.9] theirs.
+[ 1514.9- 1525.6] This wasn't the end of it, because a few months ago, about a month ago, there was version
+[ 1525.6- 1528.3] 2.0 of Operation Endgame.
+[ 1528.3- 1536.2] They again raided servers, took servers offline, investigated them, and after some debate, we
+[ 1536.2- 1542.6] were able to get another 63,000 credentials, only 63,000.
+[ 1542.6- 1546.5] Who would have thought I would say that?
+[ 1546.5- 1548.7] But we've got more.
+[ 1548.7- 1552.2] So this story isn't finished yet.
+[ 1552.2- 1554.5] My talk almost is.
+[ 1554.5- 1558.0] So I would like to go and go on to questions.
+[ 1558.0- 1567.9] Yes, thank you.
+[ 1567.9- 1571.9] So we have a microphone here in the front and one in the back.
+[ 1571.9- 1576.9] So if you have any questions, please queue up at the microphone.
+[ 1576.9- 1578.3] And you can also ask for your password.
+[ 1578.3- 1583.3] I think you have all these 1.8 billion on your laptop.
+[ 1583.3- 1586.0] I can't carry them on my laptop, actually.
+[ 1586.0- 1592.3] The great people of IT services had to create a separate infrastructure for me to store
+[ 1592.3- 1603.2] this because this is terabyte. And also special data. So I don't want to carry it around, especially
+[ 1603.2- 1609.5] not at a hackers camp. So you don't want to be the one who leaked the data the second time.
+[ 1609.5- 1619.8] So any questions here? No, but I think so if you found any passwords or credentials, I
+[ 1619.8- 1626.2] I think now you have someone, you can hand them over privately in a sealed envelope and
+[ 1626.2- 1627.2] ...
+[ 1627.2- 1634.7] C-shirt at difd.ml or look at c-shirt.difd.ml slash credentials.
+[ 1634.7- 1638.0] So thank you again for your talk and for your effort.

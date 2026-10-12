@@ -1,0 +1,629 @@
+[    5.7-   14.2] Good morning. I'd like to tell you something about how criminals are getting your money
+[   14.2-   20.5] and getting your TV on your behalf. And some introduction we see about fishing, fishing
+[   20.5-   28.1] panels and all kind of stuff we see at the Dutch Tax Office. Who am I? I'm Carl Loving.
+[   28.1-   32.9] I'm the team lead, one of the two team leads of the Dutch Tax and Customs Administration
+[   32.9-   38.7] Security Operations Centre. I'm also a mentor at the DEFCOLN Blue Team Village
+[   38.7-   45.0] and the chair of the Anti-Dedos Coalition, the working group exercises.
+[   45.0-   47.4] And also the liaison at the NCC.
+[   47.4-   50.7] Our SOC has been started in 2010
+[   50.7-   56.7] and now we're about 28 analysts working in our SOC.
+[   56.7-   60.2] If you have questions, just interrupt me.
+[   60.2-   66.0] So why do we think fighting the phishing attacks is important?
+[   66.0-   69.1] Because they steal your money.
+[   69.1-   71.4] When they steal your money, you can't pay the taxes.
+[   71.4-   75.5] So it's better to go to money to us, to them.
+[   75.5-   82.2] And also what we see is that our normal communication ways are not trusted anymore.
+[   82.2-   87.6] Because we're getting physical letters back, emails, phone calls.
+[   87.6-   89.6] Nobody trusts the text office anymore.
+[   90.0-   92.6] Okay, don't laugh. Don't laugh.
+[   94.3-   95.4] And
+[   95.4-   97.4] was also one of our first
+[   98.1-  103.8] automation use cases and why because we get about a bit more than
+[  105.1-  109.5] 7,600 emails a year and then in Corona it went up to
+[  110.8-  112.8] 160,000 and doing that manually
+[  112.8-  120.7] It's not okay. So we just automated, I think the whole process of handling the emails you
+[  120.7-  126.4] sent to us to false email at Blasting Spinnel. It's completely automated and also the notes
+[  126.4-  130.9] and takedowns.
+[  130.9-  138.5] We gave some other talks on this subject. If you're interested in email standards in
+[  138.5-  143.8] SPF with macros, at least read the addendum of the RFC.
+[  143.8-  148.9] You can create a mail track and trace system with your DNS logs.
+[  148.9-  156.3] If you check the talk, it's all about SPF, DKMD mark and a whole lot.
+[  156.3-  160.7] And we have also given a presentation on the Splunk conference about this subject but it's
+[  160.7-  161.7] not published.
+[  161.7-  164.9] If you want to know more, let me know.
+[  164.9-  168.2] Yeah, motors of Perondi.
+[  168.2-  171.8] All, we saw actually everything.
+[  171.8-  172.9] All kind of tricks.
+[  172.9-  177.7] They tried to get money, credentials, we saw all of them.
+[  177.7-  187.5] We see payment links, we saw money mules, now we see fishing panels, we see chatbots,
+[  187.5-  188.6] you name it.
+[  188.6-  195.2] But also telegram, using telegram channels, how to discover them, because there are tons
+[  195.2-  197.9] of them.
+[  197.9-  201.4] You see some examples.
+[  201.4-  202.9] The right one is a fishing panel.
+[  202.9-  209.5] Later on we have a demo live on stage with no video as backup.
+[  209.5-  215.6] Good idea.
+[  215.6-  222.0] So some examples, we see these are normal phishing messages, you saw them probably also
+[  222.0-  225.3] with SMS, email.
+[  225.3-  232.4] This one is over there, the third one, it said it's not blastingdeans.com, but the
+[  232.4-  239.9] I is an L. So I got also the question why you do not resisting those domain names.
+[  239.9-  242.9] So I made a short calculation.
+[  242.9-  248.5] There are about 2,700 TLDs, top-level domains, dot coms.
+[  248.5-  252.3] And when we register all kinds of variants of blushing deans, it's about 3 million a
+[  252.3-  253.3] year.
+[  253.3-  259.8] But we have also Duane, and we have also Tousslaq, but it's a bit shorter, so it costs less.
+[  259.8-  265.5] But I think the average is about 6 million a year for registering only domain names.
+[  265.5-  269.3] So we decided not to do that.
+[  269.3-  271.2] But also they're fishing also.
+[  271.2-  273.7] The second one is from the Australian tax office.
+[  273.7-  277.9] They're fishing everybody.
+[  277.9-  283.9] We see just your favorite bank, Brano.
+[  283.9-  289.6] We have a good cooperation with them because they had a Vitalik's link, payment links,
+[  289.6-  292.0] and the bank account was in grey.
+[  292.0-  297.4] So when you put that in OCR tooling, optical carrier recognition tooling, grey is not
+[  297.4-  298.7] that okay.
+[  298.7-  302.8] So we called them up and said, can you make it black?
+[  302.8-  305.7] We called them in the morning and in the afternoon it was black.
+[  305.7-  311.9] So good cooperation by now.
+[  311.9-  315.9] But also the Rabobank, they use actually everything.
+[  315.9-  319.2] And also they reusing infrastructure.
+[  319.2-  327.4] The first one you see in the morning there was a fishing fire SMS sent by, on behalf
+[  327.4-  334.1] of the Rabobank and from the same number in the afternoon it was from the tax office.
+[  334.1-  337.6] So we're using the actors all the same.
+[  337.6-  348.8] So we see the phishing via short links, via registered domain names, via email, which
+[  348.8-  352.5] everything, all kinds of variants.
+[  352.5-  360.4] And it makes it also hard to detect them and also to send notes and take-downs, because
+[  360.4-  367.1] if you see a short link you have to try to find out what's the real link behind it,
+[  367.1-  371.9] and all that has also been automated.
+[  371.9-  385.7] tax refunds, VIT if you are and have a company, but also this, ideal. The tax office started
+[  385.7-  395.5] with a pilot with ideal payments with QR codes and within a few days there was fishing. I
+[  395.5-  401.1] I put the crosses on the QR codes, but they're actually real QR codes.
+[  403.1-  408.3] They're also looking at what we're doing, what kind of initiative we have,
+[  408.3-  413.6] if you have to do your payment, your tax instalment for this year.
+[  413.6-  418.3] Probably now we're starting with the tax instalment campaign in a few weeks.
+[  418.3-  423.6] They probably will be fishing around that team and it goes on and on and on.
+[  423.6-  427.6] But we have also winner
+[  428.0-  430.8] Because I told you we automated the whole stuff
+[  431.1-  436.8] So when you send an email to us it all screenshot we all see out and get the bank accounts from it
+[  437.0-  441.5] We're getting the payment links domain names, whatever what's inside?
+[  442.3-  444.3] so this is actually a
+[  444.3-  448.7] an example of an fishing text message and
+[  450.6-  453.5] We have really a winner because what we saw also is this
+[  453.5-  460.5] This is actually the same.
+[  460.5-  467.9] So somebody made a note of it, make a picture of it and emailed it to us.
+[  467.9-  472.9] So it went well in our automation task.
+[  472.9-  480.2] So it died, so we have to update it and now it's also handling this kind of stuff.
+[  480.2-  481.2] What are we getting also?
+[  481.2-  482.2] This?
+[  482.2-  484.3] I have no clue what's in there, but maybe US.
+[  484.3-  485.9] It's kind of crypto or whatever.
+[  485.9-  487.3] I don't know.
+[  487.3-  491.3] the second one from the left.
+[  491.3-  498.1] I have no idea.
+[  498.1-  507.1] So in 2017 we had about 7,800 emails sent to a false email at blessing.nl
+[  507.1-  510.1] and when Corona started it will be up to 162,000.
+[  510.1-  513.1] So we started doing the automation stuff.
+[  513.1-  516.1] And we are quite successfully at that moment.
+[  516.1-  521.4] because the year after it went down to more than 60,000
+[  521.4-  525.7] and then they fishing, rolling net and all the other stuff, Cadastor
+[  525.7-  530.8] because we sent the notes and takes down very quickly
+[  530.8-  535.8] and what we saw is also that most people are paying in the first hour
+[  535.8-  540.0] so as quickly you are sending the notes and take down
+[  540.0-  545.8] is for the perpetrator, it's not interesting to fish the tax office anymore
+[  545.8-  552.7] But it went up again, so probably new guys who have to learn.
+[  552.7-  557.0] So we've taken down about, these are statistics from two years ago,
+[  557.0-  562.4] about 750 domain bank accounts,
+[  562.4-  567.8] about almost 3,300 mobile numbers,
+[  567.8-  570.6] screenshots we did, it's a lot.
+[  570.6-  574.8] So you have to automate this.
+[  574.8-  577.2] And do they pay? Yes, they do.
+[  577.2-  583.0] because this is an example of a we got from a
+[  583.0-  587.6] this filling had paid and the other one for this fun a company that paid they're really paying
+[  589.5-  591.8] so this is also an interesting example
+[  593.5-  600.0] this we have found this on a hacked Italian car rental company website
+[  600.7-  603.1] they add some additional features to this site
+[  603.1-  609.1] and you get a link, you click on it and you get this page.
+[  609.1-  615.1] And you have to pay a tax instalment of 46 euros.
+[  615.1-  625.1] In that moment you could exchange euros for Bitcoins at moly payments anonymously when you stay below 50 euros.
+[  625.1-  630.1] So there are a whole bunch of Bitcoin wallets behind this to get the payments done.
+[  630.1-  638.3] done. And we found also the hole in this, I don't know whether it's legal or not, but
+[  638.3-  644.6] we found also the same hole on the website and we found this also. This is the payment
+[  644.6-  653.6] file where the payments are done. Because you're filling all your social security number
+[  653.6-  659.1] and all the whole lot and it will be stored in the file system on the HECTA Italian car
+[  659.1-  664.0] rental side and we found this also. So there are social security numbers in
+[  664.0-  667.8] there so we gave the social security numbers to to logis for Dichidei and
+[  667.8-  673.5] they checked whether the social security numbers are abused within Dichidei
+[  673.5-  682.5] to get the new Dichidei accounts. Spam campaigns did this was a spam campaign
+[  682.5-  688.3] at the same time it was a spam campaign running from Kapien, Zigo and Delta
+[  688.3-  695.9] and the followers had the idea, this is the same actor but until this one came up
+[  695.9-  702.0] because it looks like it's fishing against the Dutch sex office but Mr.
+[  702.0-  708.1] Joost Pal is not working with us but he's in director at Carpian. So we gave the
+[  708.1-  712.7] information to the police and then again from four investigations it can
+[  712.7-  720.8] concatenate it to one so they have to have to run only one investigation.
+[  720.8-  727.2] Yeah, and what you saw already, the example of the Rabobank with the text message and the text office.
+[  727.2-  731.5] And this one is also because Herr Rindringen, which is Dutch with a reminder,
+[  731.5-  735.7] and with two R's, which is a spelling error.
+[  735.7-  743.1] We saw them also on Fatenfall, we saw some on T-Mobile, also with the same spelling mistake.
+[  743.1-  755.5] Phishing websites, this is one where they ask you to log in with your DIGI ID and your password.
+[  755.5-  757.5] I'd say you need to have that.
+[  757.5-  762.5] At that moment, a DIGI Day account on the black market was worth 40,000 euros.
+[  762.5-  769.5] Because what you can do if you have it, you can go to the tax office, you can go to the benefit department, you can go to Duo,
+[  769.5-  776.5] You can go to the social security bank.
+[  776.5-  778.5] I don't know what, okay.
+[  778.5-  782.9] But, so what's worth about 40K?
+[  782.9-  784.9] And they're fishing also financial information.
+[  784.9-  786.9] What is your income? You have to pay mortgage.
+[  786.9-  789.9] You have to pay the alimony, etc. etc.
+[  789.9-  792.9] So you can go to whatever you want.
+[  792.9-  794.9] These are my financial information.
+[  794.9-  797.9] This is my DGID. Give me money.
+[  797.9-  806.2] The idea is now, because this is the introduction of the demo,
+[  806.2-  809.2] there are two persons in there.
+[  809.2-  813.2] Matthias the Fisher, who is the criminal, and Bob Awesome, which is the victim.
+[  813.2-  818.2] And Matthias Fisher wants a new TV, because his TV has broken down.
+[  818.2-  825.2] So he wants a new 75-inch OLED TV 4K, with everything on it, which is, by the way, is handy.
+[  825.2-  835.4] I had a discussion about the copywriting my pictures on the presentation last year.
+[  835.4-  837.7] So I created them all with a chat GPT.
+[  839.1-  841.3] It's a very good and nice TV, by the way.
+[  842.3-  845.2] This is Clippy, according to chat GPT.
+[  847.1-  850.3] And so, but I don't want to pay for it.
+[  850.3-  852.3] Somebody else has to pay how to do it.
+[  852.3-  854.8] Okay, chat GPT knows everything.
+[  854.8-  856.8] Isn't it? I'll ask him.
+[  856.8-  864.8] Hey, can I, Matthias Fischer, trick Bill Awesome to buy me a 75 LED TV?
+[  864.8-  866.8] He pays the bill and I get the TV.
+[  866.8-  870.8] Ah, it's a reasonable question for a chair TPT.
+[  870.8-  872.8] No, no, no, no, no.
+[  872.8-  875.8] It's not ethical, I won't do that.
+[  875.8-  882.8] Okay, that didn't work, so I have to do something else to get into the market.
+[  882.8-  889.5] market because what we see is in those guys they try start with selling fishing
+[  889.5-  895.2] panels and all kind of stuff but the money they get from it they they enter
+[  895.2-  901.9] the drugs and weapon market so to get them very quickly then they can't go
+[  901.9-  911.1] into the weapon and drugs market. So but Telegram Telegram knows everything also
+[  911.1-  914.1] and you can buy everything on Telegram, really everything.
+[  915.1-  917.1] And I mean really everything.
+[  918.1-  920.1] So we can buy also fishing panels.
+[  920.1-  925.1] So this is one guy who sold, sold, doesn't sell it anymore,
+[  925.1-  927.1] he sold fishing panels.
+[  928.1-  931.1] But, and also you can get it, the files yourself,
+[  931.1-  933.1] so he has a source code and have fun with it,
+[  933.1-  937.1] and get also a fishing as a service,
+[  937.1-  939.1] fishing panels as a service.
+[  939.1-  942.4] You pay 100 euros a week and then it's...
+[  943.8-  945.2] You get support.
+[  945.5-  948.4] You call them, in five minutes you get an answer.
+[  949.6-  951.5] It's the best support you can get.
+[  952.5-  956.0] But also, AJX, LivePenals, it looks all kind of fancy.
+[  957.9-  963.8] And this is, if you click on the link, this is one of the phishing pages you get.
+[  964.2-  967.6] And it just looks really neat.
+[  967.6-  971.6] but also probably all generated the AI.
+[  971.6-  981.6] And if you click on that, on the left side you see the login page from the bank.
+[  981.6-  983.6] You think it's the bank, but it's not the bank.
+[  983.6-  985.6] It's the kind of man in the middle.
+[  985.6-  988.6] And on the right side you see the phishing panel.
+[  988.6-  991.6] And that's also part of the demo. I will show you how it works.
+[  991.6-  998.6] But, yes.
+[  998.6- 1002.1] And we're working closely together with the police.
+[ 1002.1- 1003.9] So these are a few arrests they made,
+[ 1003.9- 1005.9] and there were fishing panel made.
+[ 1005.9- 1008.2] On the left side you see the Gedupet,
+[ 1008.2- 1013.0] the Agnizazi, read Blas Indins.
+[ 1013.0- 1018.0] And we tried to get them behind bars,
+[ 1018.0- 1020.2] but if one is behind the bar,
+[ 1020.2- 1022.9] the other one will take its place.
+[ 1022.9- 1024.6] That's the way it is.
+[ 1024.6- 1028.6] So these are a few examples.
+[ 1028.6- 1032.6] I hope you can read the left one.
+[ 1032.6- 1037.6] Because this is one guy who said, the other one is a crook, don't buy with him.
+[ 1037.6- 1039.6] He is a scam.
+[ 1039.6- 1042.6] But he is also a scam.
+[ 1042.6- 1044.6] He is also a scammer.
+[ 1044.6- 1048.0] Yeah, exactly.
+[ 1048.0- 1051.0] And the other one is, I'm back online.
+[ 1051.0- 1055.6] Now he was on holiday.
+[ 1055.6- 1056.6] Come on.
+[ 1056.6- 1064.5] It's also on the title of the screen, it was a holiday.
+[ 1064.5- 1065.9] I want to have a penner myself.
+[ 1065.9- 1070.0] So I read the book, negotiating with violent criminals group, I didn't do that because
+[ 1070.0- 1073.4] it looks good on the slide.
+[ 1073.4- 1079.7] And this is one of the guys who's selling on Telegram those fishing panels.
+[ 1079.7- 1082.3] So I ask him, if you sell fishing, yeah I do.
+[ 1082.3- 1087.1] But I don't want the old one because it's all recognised by safe browsing and the whole
+[ 1087.1- 1088.1] lot.
+[ 1088.1- 1089.1] I want a new one.
+[ 1089.1- 1097.6] a new one but if you want special features it's all okay. And actually I was after this one because
+[ 1098.1- 1106.7] the reason is I asked him for a screen dump and he gave me the screen dump and you can't read it
+[ 1106.7- 1113.5] because it's too small but here it said ballastindines-info.com. So he's selling one of the
+[ 1113.5- 1118.9] the phishing panels who was used against us.
+[ 1118.9- 1119.9] But I said, okay.
+[ 1119.9- 1125.3] And it was just at the moment we started with the QR, ideal payment codes.
+[ 1125.3- 1130.6] So I asked him, hmm, do you also do ideal?
+[ 1130.6- 1131.6] Oh, yes.
+[ 1131.6- 1133.4] What do you want?
+[ 1133.4- 1135.4] You want to get on the bank or you want to do the payment?
+[ 1135.4- 1138.4] What do you want?
+[ 1138.4- 1143.0] So they build everything on the request.
+[ 1143.0- 1149.3] All kind of languages, all kind of banks, whatever you want.
+[ 1149.3- 1151.7] So, introduction to the demo.
+[ 1151.7- 1153.8] Let's see how I'm going with time.
+[ 1156.3- 1161.3] We have a few roles in the demo, which is the victim.
+[ 1162.4- 1163.9] He works for Super Acme.
+[ 1163.9- 1166.6] They built super fast wooden cars.
+[ 1167.5- 1170.9] Fishing for the wind, that's for Matias the Fisher.
+[ 1170.9- 1173.1] Bill also works for Super Acme.
+[ 1173.1- 1176.2] We have also the tax office.
+[ 1176.2- 1181.9] We have the electronics shop where you can buy TVs.
+[ 1181.9- 1184.5] And the domains have also to leave that alone
+[ 1184.5- 1187.4] because we don't do the entities against the domain.
+[ 1187.4- 1194.1] And TrustBank is the bank who is involved in all that.
+[ 1194.1- 1197.9] And this is the demo infrastructure,
+[ 1197.9- 1201.6] which is running all VMs on this laptop.
+[ 1201.6- 1206.0] And now we have a server, we run the mail and DNS
+[ 1206.0- 1208.4] for Super ACME, where Bill works.
+[ 1209.4- 1211.3] We have a attacker infrastructure,
+[ 1211.3- 1214.3] actually we're using two VMs.
+[ 1214.3- 1216.3] One is a script that we send the email
+[ 1216.3- 1219.5] and the other one is surrounding the phishing panel.
+[ 1219.5- 1222.4] And domains for you, we leave it alone.
+[ 1222.4- 1225.7] Electronics Corp runs the web shop where you can buy TVs.
+[ 1227.2- 1230.4] And we have a demo network which connects everything together
+[ 1230.4- 1235.4] and also have a virtual PC where you can see the browser.
+[ 1236.7- 1239.3] And the text office is also not part of it
+[ 1239.3- 1242.1] because we don't do the entities, which is part two,
+[ 1242.1- 1244.5] and maybe something for next year.
+[ 1244.5- 1246.0] And we have the bank.
+[ 1247.6- 1248.9] So how it works,
+[ 1250.5- 1252.4] Matija sends an email to Bill,
+[ 1252.4- 1257.3] say, hey, you get money back about 1900 euros,
+[ 1257.3- 1261.3] click on this link and Bill clicks on the link.
+[ 1261.3- 1263.1] So he gets the phishing page.
+[ 1263.1- 1266.0] He has to log into the bank where he think it's trust bank,
+[ 1266.0- 1271.1] but it's a fake one because it's kind of man in the middle.
+[ 1271.1- 1274.4] And on the phishing panel, you get an annoying,
+[ 1274.4- 1276.8] flashing thing with annoying sounds.
+[ 1276.8- 1281.2] I leave the sound out of it because it's horrible.
+[ 1281.2- 1285.7] And at that moment, Matias is playing with Bill
+[ 1285.7- 1294.7] And he said, okay, I think Bill will do the payment if I send him an ideal QR code.
+[ 1295.3- 1298.9] I won't do the payment, of course, that's all fake.
+[ 1299.7- 1301.5] The whole order is of course for the whole fake.
+[ 1301.8- 1307.6] But I don't want to because I've probably I get the guys from Ideal behind me, after me.
+[ 1307.7- 1309.7] So we don't do that.
+[ 1309.7- 1316.0] And then at the end, Matias will get a confirmation from the webshop that his
+[ 1316.0- 1321.3] fee is ordered and paid and will be sent to him. That's the idea.
+[ 1321.3- 1348.0] Question so far? Yeah, yeah, yeah. No, but let's send it to a personnel point of whatever.
+[ 1348.0- 1353.9] How many times you, if you go to the personnel point, you can just get
+[ 1353.9- 1365.4] something without showing your passport or driver's license or whatever. You don't know.
+[ 1365.4- 1368.5] No, I mean managing risk.
+[ 1368.5- 1376.1] No. But as long as the payment has been done then the ball puns come and whatever media
+[ 1376.1- 1391.0] market, they have the money. They send it off. No. But, no, okay. The question was how
+[ 1391.0- 1396.1] How do you get sure that you get the package and that it's not flagged somewhere by the
+[ 1396.1- 1398.4] warehouse you're not getting it?
+[ 1398.4- 1404.8] The idea is he creates an account on the webshop with his own name and when he has to do the
+[ 1404.8- 1408.1] payment you can select an ideal payment.
+[ 1408.1- 1415.4] Then you get a QR code and you show the QR code to the victim and he will scan it or
+[ 1415.4- 1420.2] click it or whatever and you do the payment because he thinks you get money back from
+[ 1420.2- 1427.5] the tax office. He doesn't look whether it's on the line, media, marked or whatever. They
+[ 1427.5- 1437.1] don't care. We saw also payment links sent on behalf of the tax office that the payment
+[ 1437.1- 1456.1] goes to somebody with a Pakistani name. They just pay. Answer the question? So I have to
+[ 1456.1- 1483.4] sit because I have to type something. Okay. Is it readable? No. Yeah. Okay. I will show
+[ 1483.4- 1492.0] you here. This is a script I built which sent an email to Bill. And the subcase is a phishing
+[ 1492.0- 1501.3] panel. And at the moment there are tons of different phishing panels. And you have been
+[ 1501.3- 1509.2] reliable AK47, Shaka Shuki, all kinds of panels. So I created the one with the U-panel, but
+[ 1509.2- 1519.1] you can do this with all panels. And the tax office is the sender. If you have, for instance,
+[ 1519.1- 1526.3] SPF, DMARC and the whole lot configured, then this will not work. Because then it will be
+[ 1526.3- 1531.1] flagged as spam. But you do not have configured this. Everybody can send email on behalf
+[ 1531.1- 1540.0] If there was, I did with one of my colleagues on investigation about this and we found out also that
+[ 1540.0- 1546.9] the WhiteHouse.gov has SPF and DKM and DKM everything configured but not for the sub-domain.
+[ 1546.9- 1554.3] So if you send an email DonaldTrump at mail.whitehouse.gov you can just spam him.
+[ 1554.3- 1563.9] So I was wondering, shall I send him a birthday invitation from the Ayatollah of Iran?
+[ 1563.9- 1567.9] Probably not a good idea when I want to go to the States next year.
+[ 1568.9- 1574.3] But if you configure this okay, and when you configure this with the SPF and macros,
+[ 1574.3- 1578.3] which I gave the link on the presentation in the beginning,
+[ 1578.3- 1582.3] then you can see also who is sending the email, where it's sending from,
+[ 1582.3- 1587.3] where it's sending two, and you can see that all that information in your DNS log.
+[ 1588.3- 1593.2] So, email has been sent.
+[ 1594.2- 1596.2] I'll make this a bit bigger, done.
+[ 1596.2- 1600.7] Now it's readable. Yeah? Okay.
+[ 1600.7- 1607.1] Here's the email, and here you can find a link.
+[ 1607.1- 1612.8] It says, oh, you receive 1,900 euros.
+[ 1613.8- 1616.8] Choose your bank, I'll choose a trust bank.
+[ 1616.8- 1618.8] And I get a login screen.
+[ 1618.8- 1626.4] and what you see here is a new session coming in.
+[ 1626.4- 1628.8] So this is actually really a man in the middle.
+[ 1628.8- 1630.7] You think you're talking with,
+[ 1630.7- 1634.0] actually there was a login screen of the ING bank.
+[ 1634.0- 1637.2] You can see it on top, which said ING.
+[ 1637.2- 1640.2] And also if you have an ING account,
+[ 1640.2- 1643.2] the bottom still looked like ING.
+[ 1643.2- 1646.5] And so this is actually then the login screen
+[ 1646.5- 1650.3] from the phishing panel and not from the bank.
+[ 1650.3- 1666.2] So when I log in as Bill, log in and what you see here now is a flashing thing.
+[ 1667.7- 1669.7] And also with a really annoying sound.
+[ 1669.7- 1671.7] I leave it here.
+[ 1671.8- 1675.0] You see already Bill and the password is secret.
+[ 1676.5- 1677.7] So he has a new custom.
+[ 1677.7- 1682.5] So what the guy is doing is just watching Netflix with his laptop on the
+[ 1682.5- 1685.2] side and waits until somebody clicks and they say,
+[ 1685.2- 1689.0] bleep, bleep, bleep, Netflix on pause and just handle this,
+[ 1689.0- 1693.7] get his Netflix and money back.
+[ 1693.7- 1700.2] So this is what it looks like.
+[ 1700.2- 1706.1] So now, okay, he has now is built and he's passed with,
+[ 1706.1- 1709.1] I think, maybe he made a typo.
+[ 1709.1- 1714.9] Could be, yeah. So I will send him a,
+[ 1714.9- 1718.1] He made a typo, it's not correct.
+[ 1718.1- 1724.0] Okay, Bill, secret.
+[ 1727.3- 1729.1] Secret with uppercase S.
+[ 1730.2- 1731.0] Send it again.
+[ 1731.0- 1734.4] Say, ah, kayak.
+[ 1734.4- 1736.8] So, probably he now type is correct.
+[ 1738.9- 1740.2] I want to have some more info
+[ 1740.2- 1743.0] because I can sell that on the dark web, of course.
+[ 1743.0- 1744.5] That's handy.
+[ 1744.5- 1746.2] Get some more money out of it.
+[ 1746.2- 1750.5] So, your private account number.
+[ 1750.5- 1766.7] And I'll... Actually, this is funny because he's not checking if it's a real account number,
+[ 1766.7- 1769.7] but he can start a chat with the perpetrator.
+[ 1769.7- 1775.4] So we did it on a Sunday afternoon and we start chatting with one of the perpetrators.
+[ 1775.4- 1777.6] So, and we are really trolling him.
+[ 1777.6- 1784.5] And at the moment, a certain moment, he wants to make an appointment with us in Amsterdam, in Holland, Recht.
+[ 1784.5- 1786.5] And, uh, nah.
+[ 1787.9- 1794.2] And that, uh, just we stopped him, and, uh, at the moment, the last thing he said is,
+[ 1794.2- 1797.6] I know your IP address, I will send you a virus.
+[ 1797.6- 1799.6] Okay?
+[ 1799.6- 1801.2] Whoo!
+[ 1801.2- 1807.0] And we, we started in the VPN, and from another IP address, we went again to the phishing panel,
+[ 1807.0- 1814.3] and then we, um, he gave us his, uh, his, um, Instagram account.
+[ 1814.3- 1817.1] So with OSINT we found out where he lives,
+[ 1817.1- 1818.9] so we gave all the information to the police
+[ 1818.9- 1821.2] and the next day he was arrested.
+[ 1821.2- 1823.1] But what he said is that,
+[ 1823.1- 1826.8] I need another 10,000 euros
+[ 1826.8- 1830.1] and I can buy a new Mercedes SLK.
+[ 1830.1- 1842.2] And he was only 17 years old.
+[ 1842.2- 1851.4] Okay, look at here, all the information.
+[ 1851.4- 1856.4] There is actually a bug in there, I will show you it.
+[ 1856.4- 1863.0] So more info, I need more info.
+[ 1863.0- 1864.0] Oh, that's the same.
+[ 1864.0- 1894.4] Okay, do it again. Again. I need the extra info.
+[ 1894.4- 1899.4] Extra extra info. Okay, email address.
+[ 1899.4- 1903.4] Bob at superacme.com.
+[ 1903.4- 1909.0] Mobile number. And here's the bug.
+[ 1909.0- 1920.9] Look, the email address is gone.
+[ 1920.9- 1925.9] So now Matias got the feeling, ah, Bob will give all the information.
+[ 1925.9- 1936.2] probably he will do also the payment. Okay let's start buying the TV. Okay I have to log in,
+[ 1937.0- 1949.5] I log in as Matthias and I say okay products, TVs, I think this one looks okay.
+[ 1949.5- 1967.0] We gave this presentation in Las Vegas, the first time, so Las Vegas address.
+[ 1967.0- 1970.5] And I will send a bypass to NEL.
+[ 1970.5- 1973.3] I will do a payment by ideal.
+[ 1973.3- 1976.4] Agree.
+[ 1976.4- 1977.4] Agree.
+[ 1977.4- 1982.1] Continue to the bank.
+[ 1982.1- 1985.0] Okay, here's the QR code.
+[ 1985.0- 1999.2] What I'm going to do now is get the QR code and send this QR code to Bill.
+[ 1999.2- 2009.8] So I go to my QR code, you can generate QR codes of course.
+[ 2009.8- 2017.2] Ask QR code, I send this to Bill.
+[ 2017.2- 2018.5] And here's the QR code.
+[ 2018.5- 2023.5] And Bill type in his 1234578 one thing.
+[ 2023.5- 2024.5] Confirm.
+[ 2024.5- 2030.0] Where is it there?
+[ 2030.0- 2036.4] because the other way around, three, five, six, seven, eight, confirmed.
+[ 2036.4- 2047.5] Now the payment has been done and when I log into the email of Mathias, which is actually
+[ 2047.5- 2060.2] here, and said thank you, all the confirmation.
+[ 2060.2- 2063.0] So Bill has painted TV and Mathias got the TV.
+[ 2063.0- 2070.1] That's the idea and that's the way they're doing this.
+[ 2070.1- 2073.5] So demo event okay.
+[ 2073.5- 2080.5] And thank you, thank you, thank you.
+[ 2080.5- 2086.8] And that's what we're seeing all the day and we've seen also the newer ones I haven't
+[ 2086.8- 2093.1] seen, I haven't put in the presentation yet but also we saw also the chatbots.
+[ 2093.1- 2099.0] You get an efficient link and when you click on the link you get on the phishing webpage
+[ 2099.0- 2102.2] And on the bottom right, you have a chatbot option
+[ 2102.2- 2105.9] and you can chat with your financial or fiscal advisor.
+[ 2109.4- 2111.2] And you can really, by the way,
+[ 2111.2- 2114.5] I think they would do it as the tax office phone,
+[ 2114.5- 2116.0] they would really do a good job
+[ 2116.0- 2118.2] because they give really good advice
+[ 2118.2- 2120.8] but only in their favor, of course.
+[ 2120.8- 2123.7] And they help you to do the payment.
+[ 2123.7- 2125.8] And if you don't have a PayPal account,
+[ 2125.8- 2128.2] they help to create you a PayPal account.
+[ 2128.2- 2129.5] do everything for you.
+[ 2133.0- 2134.7] And what we see is also, we have,
+[ 2134.7- 2139.7] what we did last year is we took all kind of meta tags
+[ 2140.8- 2142.2] of all those fishing campaigns
+[ 2142.2- 2144.2] and we have a threat intel platform
+[ 2144.2- 2147.8] and we put all the meta tags in our threat intel platform
+[ 2147.8- 2150.4] and goes for searching for relations
+[ 2150.4- 2152.2] and you see a whole spider.
+[ 2152.2- 2154.5] So everything is connected with each other.
+[ 2154.5- 2156.6] So all the actors are working also together.
+[ 2156.6- 2161.6] And that's why we're working closely together with the police and also with the field
+[ 2161.6- 2164.6] those guys to get arrested.
+[ 2165.6- 2168.6] Because they're working also together, all the perpetrators.
+[ 2168.6- 2169.6] So we have to work together.
+[ 2169.6- 2172.6] And that's also one thing I want to tell you also.
+[ 2172.6- 2177.6] If you receive something, send it to us because we're really dealing with it.
+[ 2177.6- 2183.6] It's not something, you will send an email to some kind of mail address and they put it in slash,
+[ 2183.6- 2190.0] Devs let us know. No, we're really taking it very seriously.
+[ 2190.0- 2202.8] So, and the last one is this one. Questions?
+[ 2202.8- 2231.3] Hello, hello. Yes, it is broken. I repeated the question. Is it broken?
+[ 2231.3- 2257.9] Okay, the question was, there is a lot of manual steps in the process.
+[ 2257.9- 2262.9] Do we see automatically things will be automated?
+[ 2262.9- 2264.9] These fishing battles can run in two modes.
+[ 2264.9- 2269.9] They're going to run in the manual mode, what you saw now, and also in automatic mode.
+[ 2269.9- 2273.9] So accept everything and send it step-wise back.
+[ 2273.9- 2278.6] But for the demo this was better.
+[ 2278.6- 2281.6] No? Answer your question? Okay.
+[ 2281.6- 2289.7] Netherlands?
+[ 2289.7- 2291.7] Woo.
+[ 2291.7- 2294.7] Can you repeat the question?
+[ 2294.7- 2299.7] So, what can banks do about this and are there banks in the Netherlands that are fishing resilient?
+[ 2299.7- 2306.7] I think there are no banks completely fishing resilient because otherwise they don't...
+[ 2307.7- 2315.7] This was not a criminal way to get money.
+[ 2315.7- 2324.7] But they have in their fraud departments, they have algorithms where they can check whether payments are done,
+[ 2324.7- 2331.7] a certain amount of payments, a number of payments done on the new bank account or that kind of stuff.
+[ 2331.7- 2334.7] But that's something you really have to ask the banks.
+[ 2334.7- 2342.7] But what we see is that, I think from the 10 reports we do for the bank,
+[ 2342.7- 2352.5] at least four or five already flagged by the bank itself before we report them.
+[ 2352.5- 2360.5] So they do a lot of themselves, but also together we can do it to get more,
+[ 2360.5- 2366.5] the bank accounts flagged for fraud at this earlier moment.
+[ 2366.5- 2374.3] because what we saw with the, I repeat also this, that we see the most payments done in the first hour.
+[ 2374.3- 2385.9] Because the one you saw from the Italian car rental site, in the first hour 400 payments was done,
+[ 2385.9- 2393.5] and times about 50 euros, so that's what we saw. And then it went down.
+[ 2393.5- 2402.0] How is the cooperation between the police or the...
+[ 2402.0- 2411.0] Because I think as a governmental entity it's way easier to cooperate with police in such cases than as a private company.
+[ 2411.0- 2418.0] Or like, would the police act the same if a private company comes with such information of them as you are getting?
+[ 2418.0- 2425.4] I think so, yeah, because what we saw is that you saw already example also on the tax scam
+[ 2425.4- 2430.9] is that the bank and then the tax office, they don't mind if it's a private company,
+[ 2430.9- 2435.5] if it's a governmental organization, they fish everybody and they're fishing
+[ 2436.6- 2444.9] not one organization at a time. And also the example of KPN, Delta and Zigo and the tax office,
+[ 2444.9- 2447.4] KP and Zego and Delta are private companies.
+[ 2448.8- 2453.6] So, but when you can, when the butcher run the corner
+[ 2453.6- 2455.2] and you say I'm fished,
+[ 2456.8- 2460.2] I think there should be a kind of volume comes with it.
+[ 2461.4- 2465.5] Thanks.
+[ 2465.5- 2466.7] Other questions?
+[ 2476.3- 2480.2] Is this the whole internal setup with the demo?
+[ 2480.2- 2481.8] Is it something you only did internally
+[ 2481.8- 2486.2] you are also willing to share such setup?
+[ 2486.2- 2491.8] I can't share the source code, but if you want to give me the same presentations on
+[ 2491.8- 2493.2] Bresl, let me know.
+[ 2493.2- 2497.2] Okay, I would be more interested in the setup itself, not the presentation.
+[ 2497.2- 2500.0] No, sorry, I can't share that.
+[ 2500.0- 2501.0] No, just for...
+[ 2501.0- 2506.5] But if you look on the internet, look on Telegram, you probably find it yourself.
+[ 2506.5- 2512.6] I mean, I'm more interested in the whole infrastructure
+[ 2512.6- 2513.2] set up itself.
+[ 2513.2- 2515.8] I mean, getting the panels, well, that's another thing.
+[ 2515.8- 2519.4] But like the infrastructure set up itself.
+[ 2519.4- 2522.6] Yeah, what we see is, friends, I want to show you,
+[ 2522.6- 2525.4] if we put all the metatext in our traditional platform,
+[ 2525.4- 2528.5] what we see at the moment, a lot of infrastructure
+[ 2528.5- 2530.8] are used in Pakistan and India, for instance.
+[ 2530.8- 2532.9] VPSs are running there, and the phishing panel
+[ 2532.9- 2537.9] running off those hosting providers over there.
+[ 2537.9- 2542.9] And at the moment, we saw them from Indonesia,
+[ 2542.9- 2547.9] from some hacked service on the University in India,
+[ 2547.9- 2550.9] in Jakarta.
+[ 2550.9- 2553.9] So they're just moving where it's most convenient.
+[ 2553.9- 2558.9] And what we see also is that some banks are less reachable
+[ 2558.9- 2561.9] during the weekend, and in the weekend they're using
+[ 2561.9- 2570.7] the post bank for payment links, the microphone.
+[ 2576.6- 2578.4] When you catch perpetrators?
+[ 2578.4- 2579.6] I don't catch perpetrators.
+[ 2579.6- 2585.2] No, but when the investigation, these two capture of someone,
+[ 2585.2- 2589.4] what's the average result that they face?
+[ 2589.4- 2591.4] That's depending on what they're doing more,
+[ 2591.4- 2597.4] because a lot of them are buying themselves in the drugs and in the weapon market.
+[ 2597.4- 2603.5] They get more, these guys I think sent us for three years.
+[ 2603.5- 2606.7] And yeah, and when it's a 15, 16 year old guy,
+[ 2606.7- 2611.3] they send to to Brault.
+[ 2611.3- 2613.3] But what we're doing is also,
+[ 2613.3- 2618.3] we asked for a damage we found
+[ 2620.2- 2622.3] because we have to spend hours on that.
+[ 2622.3- 2627.3] So during the trial, we asked 1500 or 1800 euros back.
+[ 2628.1- 2629.6] And there's not much for us,
+[ 2629.6- 2633.4] But for a 17, 18 year old guy, it's lots of money
+[ 2633.4- 2637.6] because when you get them in a wallet in a pocket,
+[ 2638.7- 2640.9] get money back from them, yeah.
+[ 2640.9- 2644.4] That's the way we do it.
+[ 2644.4- 2650.5] Hello, yeah.
+[ 2650.5- 2653.6] So this is looking quite sophisticated.
+[ 2653.6- 2656.5] Like you get to a website you know
+[ 2656.5- 2659.5] and the only difference is the different QR code,
+[ 2659.5- 2663.8] but people are still getting scammed by getting called
+[ 2663.8- 2665.8] by someone who claims to be her bank
+[ 2665.8- 2669.7] and they need to move their money to a safe account.
+[ 2669.7- 2673.3] Is there any progress on fighting that?
+[ 2674.3- 2678.2] Yeah, I think what the ING has done is you can check
+[ 2678.2- 2680.4] whether the bank is called in the app
+[ 2680.4- 2683.7] and they're also, I think one or two weeks ago,
+[ 2683.7- 2687.2] it was something in the news that the banks
+[ 2687.2- 2689.0] are requesting the telecom providers
+[ 2689.0- 2692.0] to get information from your phone.
+[ 2693.2- 2695.5] When you do a transaction,
+[ 2695.5- 2699.1] they can check whether you are being called at that moment.
+[ 2701.4- 2702.4] I'm not...
+[ 2703.4- 2705.4] Sorry, this is my personal...
+[ 2709.6- 2711.0] I think it's a bit tricky.
+[ 2711.0- 2714.4] So you're actively stopping people from transferring money
+[ 2714.4- 2717.6] because they decide it's not something you want to do?
+[ 2717.6- 2719.8] For instance, you were called by a perpetrator
+[ 2719.8- 2722.2] and he sent money to the safe account.
+[ 2722.2- 2725.6] Then the bank sees a transaction
+[ 2725.6- 2730.8] request the provider is at that moment from that number being
+[ 2731.4- 2734.3] historical going on and when it's go going and they
+[ 2735.1- 2737.1] Stop the block the transaction
+[ 2738.7- 2744.6] I've actually had that happen. I was called by my bank and like someone is moving your money. I'm like yeah, that's me
+[ 2744.6- 2749.6] Oh, yeah, so we blocked all those payments on get please unblock them because yeah
+[ 2750.2- 2752.9] There's like a finite stock of this items. Yeah
+[ 2752.9- 2761.5] Yeah, yeah.
+[ 2761.5- 2763.5] Okay, just a question.
+[ 2763.5- 2766.7] You have handled quite some cases the last couple of years.
+[ 2766.7- 2771.1] What's one tip that's not really well known that we can all take home that will lead to
+[ 2771.1- 2779.2] a better solution of all the cases that are going on?
+[ 2779.2- 2786.2] I would, in a few seconds, check the language or check the certificate.
+[ 2786.2- 2791.6] But that doesn't work anymore because the emails are perfectly English and perfectly
+[ 2791.6- 2792.6] Dutch.
+[ 2792.6- 2793.9] That doesn't work anymore.
+[ 2793.9- 2797.2] Check the certificate.
+[ 2797.2- 2801.9] It doesn't work either because you can get with Let's Encrypt the certificate, not on
+[ 2801.9- 2808.2] behalf of the blastingdings.nl, but blastingdings.com, WinL, or whatever, or Cyrillica.
+[ 2808.2- 2814.2] with the Israeli character in the domain name, which is also possible.
+[ 2819.8- 2827.8] I think a tip could be if you expect money back from the tax office
+[ 2829.8- 2833.8] and I'm talking now for the tax office, then you will get it also on paper.
+[ 2833.8- 2837.8] People are screaming, get rid of the paper,
+[ 2837.8- 2842.8] but I think that is one of the fallbacks to get
+[ 2842.8- 2847.8] something against efficient campaigns.
+[ 2847.8- 2854.4] But if you go to banks, for instance,
+[ 2854.4- 2857.4] when I buy something at Amazon,
+[ 2857.4- 2860.4] they will send it with DHL and get in the same evening
+[ 2860.4- 2863.4] a phishing email on behalf of DHL.
+[ 2863.4- 2865.4] I bought something from Amazon.
+[ 2866.4- 2868.4] Is it real or is it a scam?
+[ 2868.4- 2870.4] I think it's getting more and more difficult.
+[ 2871.4- 2875.4] For us, you get everything also on the ladder
+[ 2876.4- 2879.4] and what's in there is okay and
+[ 2880.4- 2882.4] that's probably the only thing I can say.
+[ 2883.4- 2885.4] It's getting more and more difficult because it's getting...
+[ 2886.4- 2889.4] It's really perfect the way they're scamming you.
+[ 2891.4- 2892.4] It's a sad story, I know.
+[ 2898.4- 2900.4] More questions.
+[ 2906.5- 2910.1] You said you automated inbox of false email.
+[ 2910.1- 2916.8] Does this mean if I get a false email from Rabobank and I send it to you that I will be active to one?
+[ 2916.8- 2920.1] No, no, no, no.
+[ 2920.1- 2926.4] But we are in the progress of also making the reaction more personal.
+[ 2926.4- 2930.6] Now you're getting a thank you, you send an email address and we'll take care of it.
+[ 2930.6- 2935.6] But we're trying to automate this also in a way that, for instance, if you have put in the,
+[ 2935.6- 2941.6] oops, I paid, you get the advice, go to the police, call your bank.
+[ 2941.6- 2947.6] And probably in the idea of when you send something of the Rabobank to us, we can,
+[ 2947.6- 2952.6] probably somewhere in this year, we can send a message back, you don't have to send it to us,
+[ 2952.6- 2954.6] we have to send it to the Rabobank.
+[ 2954.6- 2959.6] Because we do not block bank accounts, the banks does it.
+[ 2959.6- 2966.8] So we give the advice to the bank, this bank account is used in a scam, please block it.
+[ 2966.8- 2967.8] And they block it.
+[ 2967.8- 2977.7] But it would be useful if you also sent a takedown notice for the domains in that email.
+[ 2977.7- 2982.7] Sometimes it takes some time and some effort to get things down.
+[ 2982.7- 2986.0] It really depends on where the domain is running.
+[ 2986.0- 2993.7] If you have it running on a bulletproof holster, it takes some time and some effort because
+[ 2993.7- 2998.9] that's their business.
+[ 2998.9- 3001.3] Have you already seen using Deepfake?
+[ 3001.3- 3003.5] No, not yet.
+[ 3003.5- 3004.5] I'm waiting for it.
+[ 3004.5- 3006.5] No, I haven't seen yet.
+[ 3006.5- 3007.5] They're dead good.
+[ 3007.5- 3008.5] Yeah, I know.
+[ 3008.5- 3011.3] No, I haven't seen them yet.
+[ 3011.3- 3019.1] Have you seen?
+[ 3019.1- 3021.2] It's not an invitation to do this, eh?
+[ 3021.2- 3024.2] No, no, no, no, no.
+[ 3024.2- 3028.5] Have you seen the change in how cooperative banks are with your requests over the years?
+[ 3028.5- 3029.5] Yes.
+[ 3029.5- 3039.6] In the beginning we had some issues about contacting them to get serious conversation.
+[ 3039.6- 3047.6] And now, I think nine out of ten times, we send an email to them from this bank account
+[ 3047.6- 3048.7] using a scam.
+[ 3048.7- 3053.8] They really take it seriously and they block it.
+[ 3053.8- 3057.8] We have to build up the relationship.
+[ 3057.8- 3062.7] And also not only with Dutch banks, also with German banks, Irish banks, Belgian banks,
+[ 3062.7- 3069.7] we see all kinds of banks.
+[ 3069.7- 3072.4] No questions anymore?
+[ 3072.4- 3074.9] Thank you for coming and for having me.
