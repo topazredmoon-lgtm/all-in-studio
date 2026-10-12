@@ -122,7 +122,7 @@ Motion: fade-only entrances, cue lead 4 frames, counters 40 frames, stamps 6 fra
 | Object | Use it for | Rules |
 |---|---|---|
 | `LineIcon` | a person, a robot, a gate, a desk, an eye, a book, a doc, an envelope, a coin, a contract, an hourglass | Drawn on in 16 frames at its word; ~5 px pen whatever the size; ≤ 400 px; ink with one red detail; optional ✓ / ✗ / ? badge on its own word; label ≤ 2 words in mono. |
-| `IconRow` | many of one thing (robots signing up, strangers agreeing, a pile of books) | Items pop in one after another (every 2–5 frames); fixed columns. |
+| `IconRow` | many of one thing (robots signing up, strangers agreeing, a pile of books) | Items pop in one after another (every 2–5 frames); fixed columns. `decay: true` (added why-ai-dumber, 2026-10-13) fades each later item toward 35% opacity — a quality/signal dropping across repeats or generations, without a fake chart. |
 | `Count` | **banned in shots (v6)** | A number is a `tag` under its picture. |
 | `CalendarCard` | a year | v23 card; always beside a picture in the split, never alone. |
 | `Bubble` | a quote or a question someone asked | v23 speech bubble, typed on its word; always beside the person who says it (photo or drawing), never alone. |

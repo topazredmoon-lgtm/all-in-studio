@@ -124,7 +124,7 @@ export const LineIcon: React.FC<Box & { name: IconName; at?: string | number; si
 };
 
 /** Several drawings that appear one after another (robots multiplying, strangers agreeing). */
-export const IconRow: React.FC<Box & { name: IconName; n: number; at?: string | number; every?: number; cols?: number; mark?: 'ok' | 'no'; marks?: ('ok' | 'no')[]; hot?: number; morph?: boolean; morphAt?: string | number }> = ({ w, h, name, n, at, every = 4, cols, mark: mark1, marks, hot, morph, morphAt }) => {
+export const IconRow: React.FC<Box & { name: IconName; n: number; at?: string | number; every?: number; cols?: number; mark?: 'ok' | 'no'; marks?: ('ok' | 'no')[]; hot?: number; morph?: boolean; morphAt?: string | number; decay?: boolean }> = ({ w, h, name, n, at, every = 4, cols, mark: mark1, marks, hot, morph, morphAt, decay }) => {
   const frame = useCurrentFrame();
   const f = useCue(at, 0);
   const { dur } = useBeat();
@@ -140,8 +140,9 @@ export const IconRow: React.FC<Box & { name: IconName; n: number; at?: string | 
         const p = morph ? 1 : prog(frame, f + i * every, 10);
         const m = morph ? prog(frame, mf + (i * span) / n, 14) : 0;
         const mark = marks ? marks[i] : mark1;
+        const fade = decay ? 1 - 0.65 * (i / Math.max(1, n - 1)) : 1;
         return (
-          <div key={i} style={{ width: s, height: s, position: 'relative', opacity: Math.min(1, p * 2) }}>
+          <div key={i} style={{ width: s, height: s, position: 'relative', opacity: Math.min(1, p * 2) * fade }}>
             <svg width={s} height={s} viewBox="0 0 200 200" style={{ position: 'absolute', opacity: 1 - m }}>{(PEN = Math.max(1, 200 / s), art(name, p, 0))}</svg>
             {morph && <svg width={s} height={s} viewBox="0 0 200 200" style={{ position: 'absolute', opacity: m }}>{(PEN = Math.max(1, 200 / s), art('person', m, 0))}</svg>}
             {mark && <svg width={s * 0.3} height={s * 0.3} viewBox="0 0 40 40" style={{ position: 'absolute', right: s * 0.08, top: s * 0.04, opacity: prog(frame, f + i * every + 8, 6) }}>

@@ -1,0 +1,311 @@
+{
+ "id": "why-ai-dumber",
+ "title": "WHY AI MODELS GET DUMBER · design-system v1 sample",
+ "voice": {
+  "engine": "kokoro",
+  "name": "af_heart",
+  "speed": 1.0
+ },
+ "pace": {
+  "lead": 0.2,
+  "gap": 0.45,
+  "min_beat": 2.4,
+  "to_clip": 0.25,
+  "after_clip": 0.45,
+  "end_pad": 1.5
+ },
+ "beats": [
+  {
+   "id": "h00",
+   "vo": "Ever feel like your AI is getting a little dumber?",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "robot",
+     "mark": "?",
+     "markAt": "dumber",
+     "label": "your ai"
+    },
+    "R": {
+     "v": "Bars",
+     "surface": "bare",
+     "bars": [
+      {
+       "v": 3,
+       "t": "before",
+       "c": "red"
+      },
+      {
+       "v": 1,
+       "t": "now",
+       "c": "red",
+       "at": "dumber"
+      }
+     ]
+    },
+    "cap": "your ai, *getting dumber*?",
+    "act": "01 the feeling"
+   }
+  },
+  {
+   "id": "a01",
+   "vo": "You are not imagining it. Researchers found a real reason.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "eye",
+     "label": "you"
+    },
+    "R": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "doc",
+     "mark": "ok",
+     "markAt": "reason",
+     "label": "study"
+    },
+    "cap": "a *real* reason",
+    "act": "01 the feeling"
+   }
+  },
+  {
+   "id": "a02",
+   "vo": "AI is now writing huge parts of the internet itself.",
+   "shot": {
+    "layout": "full",
+    "hero": {
+     "v": "IconRow",
+     "surface": "bare",
+     "name": "robot",
+     "n": 6,
+     "cols": 6,
+     "every": 3,
+     "tag": {
+      "t": "more of the web",
+      "at": "internet"
+     }
+    },
+    "cap": "ai *writes* the internet",
+    "act": "02 the loop"
+   }
+  },
+  {
+   "id": "a02b",
+   "vo": "Blog posts, product reviews, even comments. A lot of it, written by AI, not people.",
+   "shot": {
+    "layout": "full",
+    "hero": {
+     "v": "IconRow",
+     "surface": "bare",
+     "name": "doc",
+     "n": 5,
+     "cols": 5,
+     "every": 3,
+     "tag": {
+      "t": "posts · reviews",
+      "at": "written"
+     }
+    },
+    "cap": "written by *ai*, not people",
+    "act": "02 the loop"
+   }
+  },
+  {
+   "id": "a03",
+   "vo": "AI writes it, the internet hosts it, and the next model trains on it.",
+   "shot": {
+    "layout": "full",
+    "hero": {
+     "v": "Flow",
+     "surface": "bare",
+     "nodes": [
+      {
+       "icon": "robot",
+       "label": "ai writes"
+      },
+      {
+       "icon": "cloud",
+       "label": "goes online",
+       "at": "internet"
+      },
+      {
+       "icon": "robot",
+       "label": "next model",
+       "at": "model"
+      }
+     ]
+    },
+    "cap": "trained on *itself*",
+    "act": "02 the loop"
+   }
+  },
+  {
+   "id": "a04",
+   "vo": "In 2024, Nature ran the experiment: feed a model only AI-made data, again and again.",
+   "say": "In twenty twenty four, Nature ran the experiment: feed a model only AI-made data, again and again.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "CalendarCard",
+     "surface": "bare",
+     "year": "2024",
+     "plate": "nature · shumailov et al. · 24 jul 2024"
+    },
+    "R": {
+     "v": "IconRow",
+     "surface": "bare",
+     "name": "robot",
+     "n": 4,
+     "cols": 4,
+     "every": 6,
+     "decay": true,
+     "at": "nature",
+     "plate": "nature · shumailov et al. · 24 jul 2024"
+    },
+    "cap": "the *study*, 2024",
+    "act": "02 the loop"
+   }
+  },
+  {
+   "id": "a05",
+   "vo": "Within a few generations, it forgot the real world. Rare, true facts vanished first.",
+   "shot": {
+    "layout": "full",
+    "hero": {
+     "v": "Bars",
+     "surface": "bare",
+     "bars": [
+      {
+       "v": 4,
+       "t": "gen 1",
+       "c": "red"
+      },
+      {
+       "v": 3,
+       "t": "gen 2",
+       "c": "red"
+      },
+      {
+       "v": 1.5,
+       "t": "gen 3",
+       "c": "red"
+      },
+      {
+       "v": 0.3,
+       "t": "gen 4",
+       "c": "red",
+       "at": "vanished"
+      }
+     ],
+     "plate": "illustration · based on nature, shumailov et al. 2024"
+    },
+    "cap": "*rare facts*, vanished",
+    "act": "03 the cost"
+   }
+  },
+  {
+   "id": "a06",
+   "vo": "That means the tools you already rely on could quietly get worse, with nobody changing a thing.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "laptop",
+     "label": "your tools"
+    },
+    "R": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "person",
+     "mark": "?",
+     "markAt": "worse",
+     "label": "you"
+    },
+    "cap": "quietly *gets worse*",
+    "act": "03 the cost"
+   }
+  },
+  {
+   "id": "a06b",
+   "vo": "It is not a hack, and it is not anyone's fault on purpose.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "shield",
+     "label": "no hack"
+    },
+    "R": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "person",
+     "label": "no one to blame"
+    },
+    "cap": "not *anyone's* fault",
+    "act": "03 the cost"
+   }
+  },
+  {
+   "id": "a07",
+   "vo": "Scientists call it model collapse: the system quietly eating its own tail.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "robot"
+    },
+    "R": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "brain",
+     "mark": "no",
+     "markAt": "collapse",
+     "label": "model collapse"
+    },
+    "cap": "*model collapse*",
+    "act": "03 the cost"
+   }
+  },
+  {
+   "id": "a08",
+   "vo": "So next time your AI feels a little worse, now you know why.",
+   "shot": {
+    "layout": "split",
+    "L": {
+     "v": "LineIcon",
+     "surface": "bare",
+     "name": "robot",
+     "mark": "?",
+     "markAt": "worse",
+     "label": "your ai"
+    },
+    "R": {
+     "v": "Bars",
+     "surface": "bare",
+     "bars": [
+      {
+       "v": 3,
+       "t": "before",
+       "c": "red"
+      },
+      {
+       "v": 1,
+       "t": "now",
+       "c": "red",
+       "at": "worse"
+      }
+     ]
+    },
+    "cap": "*now you know* why",
+    "act": "03 the cost"
+   }
+  }
+ ]
+}

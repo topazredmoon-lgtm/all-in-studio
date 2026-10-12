@@ -35,6 +35,7 @@ videos/*/out/*
 !videos/ai-black-markets/out/All-in_*.mp4
 !videos/ai-ban/out/All-in_*.mp4
 !videos/china-ai-underground/out/All-in_*.mp4
+!videos/why-ai-dumber/out/All-in_*.mp4
 
 # --- raw source talks: re-download from the URLs in .cc-src/urls.txt, ccc.txt and LICENCES.md ---
 .cc-src/**/*.mp4
