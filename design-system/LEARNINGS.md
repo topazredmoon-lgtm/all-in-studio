@@ -113,6 +113,32 @@ didnt have or ideas tought about before. make everything so cool please"
 58. Kokoro reads plain "AI" as "A I" cleanly; "A I" in `say` came out as "an eye" / "iApp". Keep "AI" as written.
 59. faster-whisper 1.2 breaks with PyAV 19 (`metadata_errors`): `cloud-setup.sh` pins `av<16`. For a 3 h scan pass a
     numpy array, tiny.en finds the quote in ~10 min on 4 CPUs; then small.en with word times on a 20 s window.
+## 2026-10-11 · owner on the ai-black-markets 1:30 sample → china-ai-underground 1-min sample
+Owner, verbatim: "i've looked at last video, the voice is horrible this way, improve it please. SOME CLIPS ARE TOO SHORT
+WITHOUT being relevant enough! either longer or another more relevant one instead. clips with weird accent or tonality
+must be skipped. It is not dramatic enough. it's so boring i wished it was 8min just so it ends quickly..... omg.... i dont
+feel any dopamine at all.... robot blabla annoying and no cinema soul at all. instead of a wanna be explainer, the robotic
+voice should not be playing for too long uninterrupted. it must bullet point the BIG claims and hook the viewer and makes
+him wonder. It is all about the quality. Very smart things. this is not a presentation."
+48. Kokoro af_heart, squeezed pauses, read every line at one level: "robot blabla". → New narrator: Chatterbox (MIT, local),
+    `tools/tts_cb.py`, timbre from a synthetic Kokoro am_fenrir reference (`assets/voice/narrator_ref.wav`), per-beat
+    drama `ex`, and written breaks (" | " 0.45 s, " || " 0.85 s) instead of squeezed punctuation. Pitch movement measured
+    +60-80 % over Kokoro (3.3-4.8 vs 2.7 semitones sd). `build.py` "master": "cinema" adds warmth, presence, a compressor
+    and a de-esser. Each part is Whisper-checked and re-voiced if words are dropped.
+49. Clips must carry a big claim on their own, 10-14 s, from clear native speakers: the sample uses three Senate webcasts
+    (Banks, Feith, Lutnick), each one a complete, dramatic statement. No conference talk with a strong accent or a flat
+    delivery. Short, vague clips are cut, not padded.
+50. Drama: the story is told as a case file (EXHIBIT A the chip, EXHIBIT B the hair dryer), each narration run ends on a
+    question or a reveal ("Smuggled? || Past the United States government?") and hands over to a real voice. No narration
+    run longer than ~17 s. The ending bullets the big claims of the full film in three hits.
+51. Cinema: new `scene` layout (full-bleed) and `visuals/cnai.tsx`: Film (graded real photo with a slow push-in, EXHIBIT
+    tag, red rings, red stamp + thud), Cctv (surveillance frame, always tagged RECONSTRUCTION), LabelSwap (the indictment's
+    trick drawn as line art), RouteMap (Natural Earth map, route draws itself, cargo rides it).
+52. Cloud: YouTube video downloads are blocked from the cloud box (googlevideo 403; subtitles still work). US Senate
+    hearing archives (senate.gov ISVP → akamaized HLS, captions embedded) download fine and are public domain: search them
+    first for US-politics topics. House committee YouTube clips need the owner's PC (`yt-dlp`) to fetch.
+53. Fact drift: H200-class chips became licensable for China on 2026-01-13, so "China is banned from buying the H100" was
+    no longer safe. The opening exhibit is Blackwell. Re-check every "banned" claim against the latest rule before voicing.
 
 ## 2026-10-08 (late) · captchas-full v3: owner notes on v2
 Owner, verbatim: "when u show the initals of captcha, the narrator should also read them xd not pause in silence lol.

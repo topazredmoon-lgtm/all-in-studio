@@ -34,6 +34,7 @@ videos/*/out/*
 !videos/captchas-full/out/All-in_captchas_full_v3.mp4
 !videos/ai-black-markets/out/All-in_*.mp4
 !videos/ai-ban/out/All-in_*.mp4
+!videos/china-ai-underground/out/All-in_*.mp4
 
 # --- raw source talks: re-download from the URLs in .cc-src/urls.txt, ccc.txt and LICENCES.md ---
 .cc-src/**/*.mp4
@@ -66,3 +67,5 @@ desktop.ini
 .cc-src/**/*.done
 .cc-src/**/*.url
 .cc-src/**/*.log
+.venv-tts/
+.cc-src/cnai/

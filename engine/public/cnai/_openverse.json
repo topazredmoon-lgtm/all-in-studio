@@ -1,0 +1,58 @@
+{
+ "gpucluster.jpg": {
+  "title": "Tesla/NVIDIA GPU cluster",
+  "creator": "ChrisDag",
+  "creator_url": "https://www.flickr.com/photos/8558461@N08",
+  "license": "by",
+  "license_version": "2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "foreign_landing_url": "https://www.flickr.com/photos/8558461@N08/3706444821",
+  "url": "https://live.staticflickr.com/2590/3706444821_e124c0b6c7_b.jpg",
+  "width": 768,
+  "height": 1024,
+  "source": "flickr",
+  "attribution": "\"Tesla/NVIDIA GPU cluster\" by ChrisDag is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/."
+ },
+ "dcenter.jpg": {
+  "title": "Virginia Tech - data center",
+  "creator": "cbowns",
+  "creator_url": "https://www.flickr.com/photos/15417585@N00",
+  "license": "by-sa",
+  "license_version": "2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "foreign_landing_url": "https://www.flickr.com/photos/15417585@N00/2414578731",
+  "url": "https://live.staticflickr.com/2054/2414578731_82c451232d_b.jpg",
+  "width": 1024,
+  "height": 768,
+  "source": "flickr",
+  "attribution": "\"Virginia Tech - data center\" by cbowns is licensed under CC BY-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/2.0/."
+ },
+ "servers.jpg": {
+  "title": "Awaiting servers",
+  "creator": "bugeaters",
+  "creator_url": "https://www.flickr.com/photos/45778851@N00",
+  "license": "by",
+  "license_version": "2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "foreign_landing_url": "https://www.flickr.com/photos/45778851@N00/3025911233",
+  "url": "https://live.staticflickr.com/3273/3025911233_fb4e7ace9f_b.jpg",
+  "width": 768,
+  "height": 1024,
+  "source": "flickr",
+  "attribution": "\"Awaiting servers\" by bugeaters is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/."
+ },
+ "warehouse.jpg": {
+  "title": "Free warehouse interior photo",
+  "creator": null,
+  "creator_url": null,
+  "license": "cc0",
+  "license_version": "1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "foreign_landing_url": "https://www.rawpixel.com/image/5920634/photo-image-public-domain-interior-free",
+  "url": "https://images.rawpixel.com/editor_1024/cHJpdmF0ZS9zdGF0aWMvaW1hZ2Uvd2Vic2l0ZS8yMDIyLTA0L2xyL3B4OTA4MzAxLWltYWdlLWt3dnhkZXp4LmpwZw.jpg",
+  "width": 4166,
+  "height": 2645,
+  "source": "rawpixel",
+  "attribution": "\"Free warehouse interior photo\" is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/."
+ }
+}

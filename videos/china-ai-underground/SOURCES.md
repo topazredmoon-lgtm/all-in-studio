@@ -1,0 +1,11 @@
+# Sources · china-ai-underground (1-min sample, 2026-10-11)
+
+| Claim (as voiced or on screen) | Source | Checked |
+|---|---|---|
+| Nvidia Blackwell (B200/GB200) is the current top AI chip and cannot be sold to China; H200-class chips moved to case-by-case licences on 2026-01-13 (so the sample names Blackwell, not H100) | BIS rule of 2026-01-13 (case-by-case review for H200/MI325X to China), reported by introl.com and Reuters-linked coverage; Rep. Brian Mast (HFAC chair) at the BIS budget hearing, July 2026: "China has smuggled in thousands of Blackwell chips" | 2026-10-11 (web search summaries; read the BIS Federal Register notice before the full film) |
+| "Our most cutting-edge AI chips have been smuggled to Chinese military companies through third nations" (clip c01) | Sen. Jim Banks, Senate Banking hearing "AI and the American Dream", 2026-06-11 (Senate webcast banking061126, 1:26:04) | 2026-10-11 (heard in the clip) |
+| A hair dryer; a security camera caught it; labels moved from real servers to fake (dummy) servers; dummies kept for inspectors | US v. Liaw, Chang and Sun, SDNY indictment unsealed March 2026: DOJ says surveillance video shows hair dryers used to remove serial-number labels from real Supermicro servers and put them on dummy servers used to deceive compliance inspections (Tom's Hardware, DCD, NBC News, CNBC 2026-03-19) | 2026-10-11 (read the DOJ/SDNY release before the full film) |
+| Route: assembled in the US, through Taiwan and Southeast Asia, to China | Same indictment coverage (DCD; Daily Maverick/Reuters) | 2026-10-11 |
+| "Half a billion dollars' worth, in a few weeks" | Same: a Southeast Asian intermediary bought about $2.5 billion of servers in 2024-25; at least $510 million was shipped to China within weeks in 2025 (Tom's Hardware, NBC) | 2026-10-11 |
+| DeepSeek "stole things ... taken our IP" (clip c03) | Howard Lutnick, Senate Commerce confirmation hearing, 2025-01-29 (Senate webcast commerce012925, 2:18:39); his view as nominee, not a finding | 2026-10-11 |
+| Twenty-four thousand fake accounts; stolen answers (distillation) | Anthropic, "Detecting and preventing distillation attacks" (Feb 2026): DeepSeek, Moonshot and MiniMax ran ~16 million exchanges through ~24,000 fraudulent accounts (anthropic.com/news/detecting-and-preventing-distillation-attacks) | 2026-10-11 (allegation by Anthropic) |
