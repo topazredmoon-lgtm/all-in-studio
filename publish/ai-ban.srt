@@ -1,0 +1,227 @@
+1
+00:00:00,000 --> 00:00:04,633
+Take a long look at the AI on your phone. Enjoy it while you still can.
+
+2
+00:00:15,333 --> 00:00:27,433
+Fake faces and voices, made with AI anyone can download. And in Washington and Brussels, a quiet idea is spreading: the public was never supposed to have this kind of power.
+
+3
+00:00:27,433 --> 00:00:38,567
+If it wins, open access to AI for ordinary people could be outlawed within a few years. No more free prompts. No more AI running privately on your own computer.
+
+4
+00:00:38,567 --> 00:00:46,200
+The golden age of consumer AI could be about to end. And the trap is being set by the very companies that built it.
+
+5
+00:00:46,200 --> 00:00:55,300
+Now, I won't feed you rumours. Some of what you're about to hear has already happened, and some hasn't happened yet. Every time, I'll tell you which is which.
+
+6
+00:00:55,300 --> 00:00:59,933
+And by the end, you'll see who wins when the trap snaps shut. And it isn't you.
+
+7
+00:00:59,933 --> 00:01:15,133
+To see why governments are nervous, start with the safety locks. When chatbots launched, their makers promised guardrails: rules that stop the AI from helping with anything dangerous. But those rules live inside the model, and they can be cut out.
+
+8
+00:01:23,267 --> 00:01:34,767
+Then the brains got out. An AI's brain is one big file called its weights, and in 2023, Meta put the weights of its Llama 2 model online for anyone to download.
+
+9
+00:01:34,767 --> 00:01:44,233
+And researchers did exactly that. They stripped the safety training out of Llama 2 for less than two hundred dollars per model, on a single graphics card.
+
+10
+00:01:44,233 --> 00:01:56,067
+And in 2022, scientists flipped a drug-discovery AI to hunt for poisons instead of medicines. In six hours, it suggested about forty thousand toxic molecules.
+
+11
+00:01:56,067 --> 00:02:04,067
+So governments learned the hard way: the brain that writes your poem can be pointed at a weapon. You can't separate the teacher from the weapon.
+
+12
+00:02:11,967 --> 00:02:23,167
+And Washington has done this before. In the nineties, strong encryption, the maths that keeps your messages private, sat on America's munitions list, the same list as missiles.
+
+13
+00:02:23,167 --> 00:02:30,700
+When a programmer named Phil Zimmermann gave strong encryption away for free, he was put under criminal investigation for three years.
+
+14
+00:02:42,333 --> 00:02:53,300
+His answer was brilliant: he printed the code as a book, because try banning a book. A judge ruled that code is speech, and within a few years, most of those rules were relaxed.
+
+15
+00:02:53,300 --> 00:03:07,933
+With AI, Washington reached for the same playbook. In January 2025, the Commerce Department put export controls on the weights of the most powerful closed models. Four months later, the new administration scrapped them.
+
+16
+00:03:07,933 --> 00:03:14,767
+So no, the AI on your computer is not contraband. Not yet. But the playbook hasn't gone anywhere.
+
+17
+00:03:14,767 --> 00:03:20,933
+Governments don't move fast for ethical debates. They move fast when the banking system is on fire.
+
+18
+00:03:20,933 --> 00:03:29,867
+Even Sam Altman, who runs ChatGPT, warned America's central bank: some banks let you move money with just your voice.
+
+19
+00:03:36,600 --> 00:03:47,600
+Banking runs on one rule: verify the human. A signature, a photo ID, a voice on the phone, a face on a video call. AI can now fake every one of them.
+
+20
+00:03:47,600 --> 00:03:56,800
+In November 2024, the US Treasury warned banks about a rise in deepfake fraud, and a Federal Reserve governor called it an arms race.
+
+21
+00:03:56,800 --> 00:04:10,633
+Here's what that looks like. In early 2024, a finance worker in Hong Kong joined a video call with the company's finance chief and several colleagues. Everyone on that call, except the worker, was a deepfake.
+
+22
+00:04:10,633 --> 00:04:20,367
+The worker made fifteen transfers, about twenty-five million dollars, to the criminals. The company was Arup, the engineers behind the Sydney Opera House.
+
+23
+00:04:20,367 --> 00:04:23,000
+And faking a voice is the easy part.
+
+24
+00:04:35,900 --> 00:04:39,367
+That's the panic. And panic is how bans get written.
+
+25
+00:04:39,367 --> 00:04:52,467
+So could the companies just patch it? The black market answered. In 2023, a chatbot called WormGPT was sold on a hacker forum, built on a free open model, with every safety rule ripped out.
+
+26
+00:05:06,467 --> 00:05:19,900
+And criminals don't even need open models. They steal companies' cloud keys and run the big closed AIs on someone else's bill. Researchers worked out that could cost a victim over forty-six thousand dollars a day.
+
+27
+00:05:26,800 --> 00:05:37,733
+So the argument writes itself: as long as anyone can download a model, criminals have ammunition, and filters won't hold. That's the case you'll hear for locking it all down.
+
+28
+00:05:37,733 --> 00:05:45,000
+So what would a ban actually look like? Nobody comes to switch off your computer. It looks a lot more like a licence.
+
+29
+00:05:45,000 --> 00:05:56,167
+In 2023, two US senators, Josh Hawley and Richard Blumenthal, proposed exactly that: a licence from a new oversight body before you build powerful AI.
+
+30
+00:06:08,533 --> 00:06:24,667
+But the ID checks have started. In October 2025, the same two senators introduced a bill to make chatbots check every user's age, with a government ID or something like it. In China, some AI services already need your real identity.
+
+31
+00:06:24,667 --> 00:06:33,867
+Every prompt tied to your name, every answer logged in a government file? In America and Europe, not yet. But the ID check is the first brick.
+
+32
+00:06:33,867 --> 00:06:43,567
+Next, the hardware. AI runs on special chips, and a bill in Congress, the Chip Security Act, would make exported AI chips prove where they are.
+
+33
+00:06:53,533 --> 00:07:04,100
+Nvidia, which makes most of them, insists its chips have no kill switches. China's internet regulator didn't buy it, and called Nvidia in over possible backdoors.
+
+34
+00:07:04,100 --> 00:07:14,200
+A chip that refuses to run any AI the government didn't approve? That doesn't exist. Not yet. But chips that report where they are, are already in a bill.
+
+35
+00:07:14,200 --> 00:07:22,300
+The first target would be open source: free models that anyone can download, inspect, and run at home, with no company watching.
+
+36
+00:07:31,500 --> 00:07:43,900
+Now, to be fair, the news here is good, for now. In 2024, a US government report advised against restricting open models, and in 2025, the White House backed them.
+
+37
+00:07:43,900 --> 00:07:56,567
+But read the fine print: that report says keep the option to restrict them later. And one senator already wrote a bill under which downloading a Chinese AI could mean up to twenty years behind bars.
+
+38
+00:07:56,567 --> 00:08:01,767
+Today, it's Chinese AI. A law like that only needs one line changed.
+
+39
+00:08:01,767 --> 00:08:14,200
+Now ask the question nobody wants to answer. Who gains the most if public AI gets locked down? In 2023, the head of OpenAI sat in front of the US Senate and asked for this.
+
+40
+00:08:22,800 --> 00:08:41,600
+The media called it responsibility. Critics called it something else. AI pioneer Andrew Ng warned that some big tech companies would rather not compete with open source, and Meta's chief AI scientist, Yann LeCun, called it regulatory capture: writing the rules so that only you can follow them.
+
+41
+00:08:41,600 --> 00:08:55,033
+Think about what a licence does. OpenAI can afford the lawyers, the lobbyists and the audits. A ten-person startup can't, a university lab can't, and a teenager running a model on a laptop definitely can't.
+
+42
+00:09:04,867 --> 00:09:11,833
+Big tech doesn't fear rules it can afford. Rules like that are a moat around the castle, and you're on the outside.
+
+43
+00:09:11,833 --> 00:09:28,267
+And here's the irony. Where did these models come from? They learned from the public internet: books, articles, code and art, made by people who were never asked. When Britain proposed letting AI companies train on people's work for free, thousands of them pushed back.
+
+44
+00:09:37,200 --> 00:09:52,567
+Some of it was pirated. In 2025, Anthropic agreed to pay one and a half billion dollars to authors over pirated books. A judge had ruled that training on books you bought can be fair use, but a library of pirated copies was not.
+
+45
+00:09:52,567 --> 00:09:59,433
+So they took the world's knowledge, and now some of them want a licence system that would lock the door, and charge you rent.
+
+46
+00:09:59,433 --> 00:10:10,967
+If public AI were locked behind licences, what would replace it? You'd still have an assistant, but it wouldn't be yours. It would refuse more, it would be watched, and it could nudge what you buy.
+
+47
+00:10:10,967 --> 00:10:15,433
+You'd pay a monthly subscription to be supervised by an algorithm.
+
+48
+00:10:15,433 --> 00:10:29,800
+And bans have a history. Prohibition didn't stop alcohol in America, it handed it to gangsters. Ban the AI people want, and the black market grows. And the criminals who run these markets already work like real companies.
+
+49
+00:10:36,433 --> 00:10:44,767
+It's already happening with chips: in 2025, the US charged people with smuggling restricted Nvidia chips to China.
+
+50
+00:10:44,767 --> 00:10:59,667
+Meanwhile, the powerful keep the strongest models. In 2025, the Pentagon signed deals worth up to two hundred million dollars each with OpenAI, Google, Anthropic and xAI. And armies are already planning around it.
+
+51
+00:11:13,700 --> 00:11:23,267
+Exemptions for them, a sanitised toy for you. Some call it cognitive feudalism: a few lords own the thinking machines, and everyone else rents.
+
+52
+00:11:23,267 --> 00:11:38,767
+Look at the timeline, and here I have to be straight with you. Europe's AI Act is law, and its rules arrive in waves until 2027. In America, the biggest AI safety order was scrapped, and the White House wants fewer rules, not more.
+
+53
+00:11:51,833 --> 00:12:04,467
+So a ban won't come with a big announcement. If it comes, it comes in small steps: an ID check here, a licence there, a chip rule, a payment ban. First the ID, then the licence, then the crime.
+
+54
+00:12:04,467 --> 00:12:19,733
+We spent years arguing about whether AI would wake up or destroy the planet. Meanwhile, the real fight was over who gets to use it. A free person with a powerful AI is hard to control. A customer renting it through a filter is easy.
+
+55
+00:12:19,733 --> 00:12:30,833
+Right now, ordinary people can still download and run powerful AI at home. That window is open. Learn how these models work, keep your own copies, and know your rights.
+
+56
+00:12:38,100 --> 00:12:48,933
+Because if this goes the wrong way, running your own AI won't be called programming. It'll be called a crime. And the people who took it away will tell you they did it to keep you safe.
+
+57
+00:12:48,933 --> 00:12:54,800
+Take a long look at the AI on your phone. Enjoy it while you still can.
