@@ -11,8 +11,9 @@ Owner: S. Start every session by reading `HANDOVER.md`, then `PLAYBOOK.md`. Open
   No setup script is needed. Always `PYTHONIOENCODING=utf-8`.
 - **Cloud (fallback only)**: Linux box, no GPU. `bash scripts/cloud-setup.sh` then `source .cloud-env.sh`; details in
   README "Cloud sessions". Never run the cloud script on the PC.
-- Git: private repo `quartzsaphir-debug/all-in-studio`, media in Git LFS. `git fetch origin` first; cloud sessions work on
-  `claude/*` branches, so check every branch's newest commit and HANDOVER before building.
+- Git: private repo `quartzsaphir-debug/all-in-studio`, media in Git LFS. Work branch on the PC: **`claude/local-home`**
+  (all cloud lines merged 2026-10-13; `main` untouched). `git fetch origin` first; any new cloud session works on a
+  `claude/*` branch, so check its newest commit and HANDOVER before building and merge it into `claude/local-home`.
 - Long jobs (download, render, install): stay in the turn with one sleep-and-check loop; never end the turn while it runs.
 
 ## MONEY RULE (owner's top rule: "Never forget this never ever")
