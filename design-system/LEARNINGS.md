@@ -3,6 +3,39 @@
 Newest first. Each entry: what happened, the lesson, where it now lives (code or DESIGN.md).
 Owner notes go here verbatim (dated) the same turn they arrive; general rules are then promoted into DESIGN.md / `ds/`.
 
+## 2026-10-13 · owner review of why-ai-dumber v1 (relayed by the coordinator session, not verbatim — logged as received)
+Coordinator's paraphrase of the owner's note: "the animations were great, but it needs NEW designs, much more visual
+diversity and SMART visual ideas (clever metaphors and devices that explain the mechanism, not the same icon grammar
+repeated)." Also asked to improve the reusable design system (not just this topic), fix the voice (diagnose pacing/
+prosody/pronunciation/voice choice; try other local voices), make sure on-screen acronyms are read aloud, and try hard
+for one real on-topic clip under the money rule.
+75. v1 built the whole sample from one generic grammar (LineIcon/IconRow/Bars/Flow/CalendarCard), used straight, no
+    topic-specific metaphor → reads as "the same icon grammar repeated" even though no single shot repeats. → 3 new
+    kit primitives graduated straight into `ds/kit.tsx` (not topic-local first): `Loop` (a closed feedback ring — the
+    mechanism `Flow` cannot show because it only runs one way), `Copier` ("a photocopy of a photocopy": generation
+    loss as a picture, fine print fading first, instead of a declining bar chart), `FieldCard` (a label→value spec
+    card, replacing repeated `IconRow`s for "three things in a row"). Rule: a smart visual is one the line's own
+    words suggested (the VO already said "eating its own tail", "generations", "written by AI") — read the line for
+    its own metaphor before reaching for the generic kit.
+76. `voice_check.py` on the v1 Kokoro take flagged 3 of 11 lines (a05, a06b, a08, 27%) with an unnatural rising end —
+    all three ended on a trailing qualifier clause ("...vanished first", "...on purpose", "...now you know why").
+    → Rewritten to end on a plain declarative word ("...were the first to go", "...on its own", "...now you know the
+    reason"); re-check with `voice_check.py` after any line ending in a short tacked-on clause, not just after a
+    full voice pass.
+77. v1 used Kokoro af_heart for a video the owner asked to sound "clearly better" — but the owner had already said,
+    verbatim, of that exact voice (2026-10-11, item 48 below): "the voice is horrible this way ... robot blabla
+    annoying". Chatterbox (`tools/tts_cb.py`) was already built as the fix and already measured +60-80% more pitch
+    movement, yet v1 reverted to Kokoro anyway. → Lesson: check LEARNINGS for the owner's standing complaint about a
+    specific voice/engine before reusing it, even when another topic's theme doc says to match it for continuity.
+    v2 uses Chatterbox (GPU here: ~15 s per line incl. Whisper verification, not the ~7 s/s CPU estimate in the
+    script's own docstring — torch+cuda was already on this PC, only `chatterbox-tts`, `resemble-perth`,
+    `s3tokenizer`, `torchaudio`, `omegaconf`, `conformer==0.3.2`, `pykakasi`, `pyloudnorm` needed `pip install
+    --no-deps` to avoid the pinned requirements downgrading the newer transformers/diffusers/librosa already here).
+78. Searched media.ccc.de + YouTube for a CC-licensed talk specifically on model collapse / synthetic-data training
+    (not just AI-generated content generally) → nothing both on-topic and verifiably CC/PD cleared the money rule
+    (closest: a 37C3 talk on a different, single-pipeline feedback effect with no licence statement on the page; a
+    39C3 talk that is CC BY 4.0 but about a different claim, detecting AI text in Wikipedia). Stays picture-led.
+
 ## 2026-10-11 (late night) · owner OKs ai-ban sample v5 → full film
 Owner, verbatim: "i like it xd now the full video but please do a great job. put urself in the boots of the critical mind viewer."
 73. Sample v5 worked: the owner's own lines in their order, made true, a real deepfake hook, a real Altman clip. → The film

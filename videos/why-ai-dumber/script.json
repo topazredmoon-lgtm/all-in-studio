@@ -1,49 +1,36 @@
 {
  "id": "why-ai-dumber",
- "title": "WHY AI MODELS GET DUMBER · design-system v1 sample",
+ "title": "WHY AI MODELS GET DUMBER · design-system v2 sample",
  "voice": {
-  "engine": "kokoro",
-  "name": "af_heart",
-  "speed": 1.0
+  "engine": "chatterbox",
+  "name": "chatterbox-fenrir",
+  "ref": "assets/voice/narrator_ref.wav",
+  "cfg": 0.35
  },
  "pace": {
-  "lead": 0.2,
-  "gap": 0.45,
-  "min_beat": 2.4,
-  "to_clip": 0.25,
-  "after_clip": 0.45,
-  "end_pad": 1.5
+  "lead": 0.15,
+  "gap": 0.35,
+  "min_beat": 2.2,
+  "to_clip": 0.2,
+  "after_clip": 0.3,
+  "end_pad": 1.6
  },
+ "master": "cinema",
  "beats": [
   {
    "id": "h00",
    "vo": "Ever feel like your AI is getting a little dumber?",
+   "ex": 0.55,
    "shot": {
-    "layout": "split",
-    "L": {
+    "layout": "full",
+    "hero": {
      "v": "LineIcon",
      "surface": "bare",
      "name": "robot",
      "mark": "?",
      "markAt": "dumber",
-     "label": "your ai"
-    },
-    "R": {
-     "v": "Bars",
-     "surface": "bare",
-     "bars": [
-      {
-       "v": 3,
-       "t": "before",
-       "c": "red"
-      },
-      {
-       "v": 1,
-       "t": "now",
-       "c": "red",
-       "at": "dumber"
-      }
-     ]
+     "label": "your ai",
+     "size": 360
     },
     "cap": "your ai, *getting dumber*?",
     "act": "01 the feeling"
@@ -52,6 +39,7 @@
   {
    "id": "a01",
    "vo": "You are not imagining it. Researchers found a real reason.",
+   "ex": 0.45,
    "shot": {
     "layout": "split",
     "L": {
@@ -74,20 +62,23 @@
   },
   {
    "id": "a02",
-   "vo": "AI is now writing huge parts of the internet itself.",
+   "vo": "AI itself is now writing huge parts of the internet.",
+   "say": "AI itself | is now writing huge parts of the internet.",
+   "ex": 0.5,
    "shot": {
     "layout": "full",
     "hero": {
-     "v": "IconRow",
+     "v": "FieldCard",
      "surface": "bare",
-     "name": "robot",
-     "n": 6,
-     "cols": 6,
-     "every": 3,
-     "tag": {
-      "t": "more of the web",
-      "at": "internet"
-     }
+     "rows": [
+      {
+       "label": "the internet",
+       "value": "ai-written",
+       "icon": "robot",
+       "at": "internet"
+      }
+     ],
+     "kicker": "the open web"
     },
     "cap": "ai *writes* the internet",
     "act": "02 the loop"
@@ -95,20 +86,35 @@
   },
   {
    "id": "a02b",
-   "vo": "Blog posts, product reviews, even comments. A lot of it, written by AI, not people.",
+   "vo": "Blog posts, product reviews, even comments: a lot of it is written by AI.",
+   "say": "Blog posts, product reviews, even comments: || a lot of it is written by AI.",
+   "ex": 0.55,
    "shot": {
     "layout": "full",
     "hero": {
-     "v": "IconRow",
+     "v": "FieldCard",
      "surface": "bare",
-     "name": "doc",
-     "n": 5,
-     "cols": 5,
-     "every": 3,
-     "tag": {
-      "t": "posts · reviews",
-      "at": "written"
-     }
+     "rows": [
+      {
+       "label": "blog posts",
+       "value": "ai",
+       "icon": "robot",
+       "at": "posts"
+      },
+      {
+       "label": "reviews",
+       "value": "ai",
+       "icon": "robot",
+       "at": "reviews"
+      },
+      {
+       "label": "comments",
+       "value": "ai",
+       "icon": "robot",
+       "at": "comments"
+      }
+     ],
+     "kicker": "written by"
     },
     "cap": "written by *ai*, not people",
     "act": "02 the loop"
@@ -117,10 +123,11 @@
   {
    "id": "a03",
    "vo": "AI writes it, the internet hosts it, and the next model trains on it.",
+   "ex": 0.6,
    "shot": {
     "layout": "full",
     "hero": {
-     "v": "Flow",
+     "v": "Loop",
      "surface": "bare",
      "nodes": [
       {
@@ -130,14 +137,15 @@
       {
        "icon": "cloud",
        "label": "goes online",
-       "at": "internet"
+       "at": "hosts"
       },
       {
        "icon": "robot",
-       "label": "next model",
-       "at": "model"
+       "label": "trains again",
+       "at": "trains"
       }
-     ]
+     ],
+     "loopAt": "it#3"
     },
     "cap": "trained on *itself*",
     "act": "02 the loop"
@@ -146,7 +154,8 @@
   {
    "id": "a04",
    "vo": "In 2024, Nature ran the experiment: feed a model only AI-made data, again and again.",
-   "say": "In twenty twenty four, Nature ran the experiment: feed a model only AI-made data, again and again.",
+   "say": "In twenty twenty four, Nature ran the experiment: | feed a model only AI-made data, again and again.",
+   "ex": 0.5,
    "shot": {
     "layout": "split",
     "L": {
@@ -156,15 +165,11 @@
      "plate": "nature · shumailov et al. · 24 jul 2024"
     },
     "R": {
-     "v": "IconRow",
+     "v": "LineIcon",
      "surface": "bare",
-     "name": "robot",
-     "n": 4,
-     "cols": 4,
-     "every": 6,
-     "decay": true,
-     "at": "nature",
-     "plate": "nature · shumailov et al. · 24 jul 2024"
+     "name": "doc",
+     "label": "the experiment",
+     "labelAt": "experiment"
     },
     "cap": "the *study*, 2024",
     "act": "02 the loop"
@@ -172,44 +177,27 @@
   },
   {
    "id": "a05",
-   "vo": "Within a few generations, it forgot the real world. Rare, true facts vanished first.",
+   "vo": "Within a few generations, it forgot the real world. Rare, true facts were the first to go.",
+   "say": "Within a few generations, it forgot the real world. || Rare, true facts were the first to go.",
+   "ex": 0.6,
    "shot": {
     "layout": "full",
     "hero": {
-     "v": "Bars",
+     "v": "Copier",
      "surface": "bare",
-     "bars": [
-      {
-       "v": 4,
-       "t": "gen 1",
-       "c": "red"
-      },
-      {
-       "v": 3,
-       "t": "gen 2",
-       "c": "red"
-      },
-      {
-       "v": 1.5,
-       "t": "gen 3",
-       "c": "red"
-      },
-      {
-       "v": 0.3,
-       "t": "gen 4",
-       "c": "red",
-       "at": "vanished"
-      }
-     ],
+     "gens": 4,
+     "at": "generations",
+     "every": 22,
      "plate": "illustration · based on nature, shumailov et al. 2024"
     },
-    "cap": "*rare facts*, vanished",
+    "cap": "*rare facts*, faded first",
     "act": "03 the cost"
    }
   },
   {
    "id": "a06",
    "vo": "That means the tools you already rely on could quietly get worse, with nobody changing a thing.",
+   "ex": 0.5,
    "shot": {
     "layout": "split",
     "L": {
@@ -232,7 +220,9 @@
   },
   {
    "id": "a06b",
-   "vo": "It is not a hack, and it is not anyone's fault on purpose.",
+   "vo": "No hack. No villain. It happens on its own.",
+   "say": "No hack. | No villain. | It happens on its own.",
+   "ex": 0.5,
    "shot": {
     "layout": "split",
     "L": {
@@ -245,15 +235,18 @@
      "v": "LineIcon",
      "surface": "bare",
      "name": "person",
-     "label": "no one to blame"
+     "mark": "no",
+     "markAt": "villain",
+     "label": "no villain"
     },
-    "cap": "not *anyone's* fault",
+    "cap": "no *hack*, no villain",
     "act": "03 the cost"
    }
   },
   {
    "id": "a07",
    "vo": "Scientists call it model collapse: the system quietly eating its own tail.",
+   "ex": 0.65,
    "shot": {
     "layout": "split",
     "L": {
@@ -264,10 +257,11 @@
     "R": {
      "v": "LineIcon",
      "surface": "bare",
-     "name": "brain",
+     "name": "spiral",
      "mark": "no",
      "markAt": "collapse",
-     "label": "model collapse"
+     "label": "model collapse",
+     "tAt": "tail"
     },
     "cap": "*model collapse*",
     "act": "03 the cost"
@@ -275,7 +269,9 @@
   },
   {
    "id": "a08",
-   "vo": "So next time your AI feels a little worse, now you know why.",
+   "vo": "So the next time your AI feels a little worse, now you know the reason.",
+   "say": "So the next time your AI feels a little worse | — now you know the reason.",
+   "ex": 0.6,
    "shot": {
     "layout": "split",
     "L": {
@@ -303,7 +299,7 @@
       }
      ]
     },
-    "cap": "*now you know* why",
+    "cap": "now you know the *reason*",
     "act": "03 the cost"
    }
   }

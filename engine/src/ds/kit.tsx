@@ -6,7 +6,7 @@
  */
 import React from 'react';
 import { Img, interpolate, staticFile, useCurrentFrame } from 'remotion';
-import { cueFrame as cueFrameOf, fmt, hand, mono, prog, useBeat, useCue } from './core';
+import { Check, cueFrame as cueFrameOf, fmt, hand, mono, prog, useBeat, useCue } from './core';
 import { color, font } from './tokens';
 
 type Box = { w: number; h: number };
@@ -28,7 +28,16 @@ const S = (p: number, c: string = color.ink, sw = 4): React.SVGProps<SVGPathElem
 export type IconName = 'person' | 'robot' | 'gateOpen' | 'gateShut' | 'hourglass' | 'doc' | 'envelope' | 'desk' | 'eye' | 'book' | 'coin' | 'contract' | 'cursor' | 'people'
   | 'cash' | 'church' | 'car' | 'camera' | 'flag' | 'pin' | 'map' | 'box' | 'grid' | 'checkbox' | 'checkbox2' | 'cloud' | 'building' | 'browser' | 'clock'
   | 'worker' | 'monitor' | 'laptop' | 'fingerprint' | 'shield' | 'cookie' | 'key' | 'face' | 'iris' | 'newspaper'
-  | 'lock' | 'chip' | 'idcard' | 'brain' | 'missile' | 'tank' | 'bars' | 'fire' | 'power';
+  | 'lock' | 'chip' | 'idcard' | 'brain' | 'missile' | 'tank' | 'bars' | 'fire' | 'power' | 'spiral';
+
+/** A spiral winding inward to a vanishing point (viewBox 200×200, centre 100,100): anything collapsing in on itself. */
+const spiralPoint = (u: number, turns = 2.4, r0 = 88) => {
+  const a = u * turns * 2 * Math.PI - Math.PI / 2;
+  const r = r0 * (1 - u);
+  return [100 + r * Math.cos(a), 100 + r * Math.sin(a)] as const;
+};
+const SPIRAL_D = Array.from({ length: 81 }, (_, i) => spiralPoint(i / 80))
+  .map(([x, y], i) => `${i === 0 ? 'M' : 'L'}${x.toFixed(1)} ${y.toFixed(1)}`).join(' ');
 
 const art = (name: IconName, p: number, t: number): React.ReactNode => {
   const red = color.red;
@@ -92,6 +101,8 @@ const art = (name: IconName, p: number, t: number): React.ReactNode => {
     case 'missile': return <g><path d="M100 18 C116 36 120 60 120 84 L120 150 L80 150 L80 84 C80 60 84 36 100 18 Z M80 124 L56 156 L80 150 M120 124 L144 156 L120 150 M80 84 L120 84" {...S(p)} /><path d="M88 162 L92 186 M100 162 L100 192 M112 162 L108 186" {...S(p, red, 5)} /></g>;
     case 'tank': return <g><path d="M26 132 Q20 160 48 164 L152 164 Q180 160 174 132 Z" {...S(p)} />{[54, 82, 110, 138].map((x, i) => <circle key={i} cx={x} cy={148} r={8} {...(S(p, color.mute, 4) as any)} />)}<path d="M50 132 L60 104 L136 104 L150 132 M80 104 L84 86 L120 86 L124 104" {...S(p)} /><path d="M120 94 L188 82" {...S(p, red, 6)} /></g>;
     case 'newspaper': return <g><rect x={28} y={32} width={144} height={140} rx={4} {...(S(p) as any)} /><path d="M44 56 L156 56" {...S(p, red, 9)} /><path d="M44 82 L94 82 M44 100 L94 100 M44 118 L94 118 M44 136 L94 136 M106 82 L156 82 M106 100 L156 100 M106 118 L156 118 M106 136 L140 136" {...S(p, color.mute, 4)} /></g>;
+    // ---- added for why-ai-dumber (2026-10-13): a process collapsing in on itself, winding to nothing
+    case 'spiral': return <g><path d={SPIRAL_D} {...S(p)} />{t > 0 && t < 1 && (() => { const [x, y] = spiralPoint(t); return <circle cx={x} cy={y} r={7} fill={red} opacity={p} />; })()}</g>;
   }
 };
 
@@ -316,6 +327,127 @@ export const Flow: React.FC<Box & { nodes: { icon: IconName; label?: string; at?
           </React.Fragment>
         );
       })}
+    </div>
+  );
+};
+
+// ---------------------------------------------------------------- loop (why-ai-dumber, 2026-10-13)
+/** A closed ring of drawings, each one feeding the next: for any self-reinforcing cycle (a system trained on its own
+ *  output, an echo chamber, a feedback loop) — the one thing `Flow` cannot show because it only runs one way.
+ *  Nodes sit evenly around a circle; the arrow that closes the ring (the last node back to the first) is drawn in red,
+ *  since that is the one the line is about: the output becoming the next input. */
+export const Loop: React.FC<Box & { nodes: { icon: IconName; label?: string; at?: string | number }[]; loopAt?: string | number }> = ({ w, h, nodes, loopAt }) => {
+  const frame = useCurrentFrame();
+  const { words, dur } = useBeat();
+  const n = nodes.length;
+  const fs = nodes.map((nd, i) => (i === 0 && nd.at === undefined ? 0 : cueFrameOf(words, nd.at, i * 30)));
+  // the ring-closing arrow (last node back to the first) is the one the line is about, so it gets its own cue
+  // rather than reusing node 0's entrance frame (always 0): default to just before the beat ends.
+  const wrapFallback = Math.max(fs[n - 1] + 24, dur - 20);
+  const wrapF = loopAt !== undefined ? cueFrameOf(words, loopAt, wrapFallback) : wrapFallback;
+  const cx = w / 2, cy = h / 2 - 6;
+  const rx = Math.min(w * 0.33, 300), ry = Math.min(h * 0.36, 210);
+  const s = Math.min(190, rx * 0.86);
+  const pos = (i: number): readonly [number, number] => {
+    const a = -Math.PI / 2 + (i * 2 * Math.PI) / n;
+    return [cx + rx * Math.cos(a), cy + ry * Math.sin(a)];
+  };
+  return (
+    <div style={{ width: w, height: h, position: 'relative' }}>
+      {nodes.map((_, i) => {
+        const j = (i + 1) % n;
+        const [x0, y0] = pos(i), [x1, y1] = pos(j);
+        const bowx = cx + (x0 + x1 - 2 * cx) * 0.62, bowy = cy + (y0 + y1 - 2 * cy) * 0.62;
+        const wrap = j === 0; // the arrow that feeds the last node back into the first
+        const af = wrap ? wrapF - 10 : fs[j] - 14;
+        const a = prog(frame, af, 14);
+        return (
+          <svg key={i} width={w} height={h} style={{ position: 'absolute', left: 0, top: 0, overflow: 'visible' }}>
+            <path d={`M${x0} ${y0} Q${bowx} ${bowy} ${x1} ${y1}`} fill="none" stroke={wrap ? color.red : color.mute} strokeWidth={wrap ? 5 : 4} strokeLinecap="round"
+              pathLength={1} strokeDasharray={1} strokeDashoffset={1 - a} />
+            {a > 0.03 && a < 1 && (() => {
+              const t = a; const mt = 1 - t;
+              const px = mt * mt * x0 + 2 * mt * t * bowx + t * t * x1, py = mt * mt * y0 + 2 * mt * t * bowy + t * t * y1;
+              return <circle cx={px} cy={py} r={9} fill={wrap ? color.red : color.mute} />;
+            })()}
+          </svg>
+        );
+      })}
+      {nodes.map((nd, i) => {
+        const [x, y] = pos(i);
+        const p = fs[i] <= 0 ? 1 : prog(frame, fs[i], 16);
+        const out = i === 0 ? -1 : y > cy ? 1 : -1; // label on the outside of the ring
+        return (
+          <div key={i} style={{ position: 'absolute', left: x - s / 2, top: y - s / 2, width: s, height: s, opacity: Math.min(1, p * 2) }}>
+            <svg width={s} height={s} viewBox="0 0 200 200" style={{ overflow: 'visible' }}>{(PEN = 250 / s, art(nd.icon, p, 1))}</svg>
+            {nd.label && <div style={{ position: 'absolute', left: -20, right: -20, [out > 0 ? 'top' : 'bottom']: s + 10, textAlign: 'center', ...mono(26, i === nodes.length - 1 ? color.red : color.mute), opacity: p } as React.CSSProperties}>{nd.label}</div>}
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+// ---------------------------------------------------------------- copier (why-ai-dumber, 2026-10-13)
+/** "A photocopy of a photocopy": the same page, re-scanned from the last copy, generation after generation —
+ *  the headline survives, the fine print (the rare, specific detail) fades and blurs out first. For any
+ *  generation-loss topic: a system re-trained on its own output, a rumour retold, a signal re-encoded. */
+export const Copier: React.FC<Box & { gens: number; at?: string | number; every?: number; plate?: string }> = ({ w, h, gens, at, every = 26, plate }) => {
+  const frame = useCurrentFrame();
+  const f = useCue(at, 0);
+  const pw = Math.min(w / gens * 0.72, 200), ph = pw * 1.3;
+  return (
+    <div style={{ width: w, height: h, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16 }}>
+      <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'center', gap: Math.max(14, w / gens - pw) }}>
+        {Array.from({ length: gens }, (_, i) => {
+          const p = prog(frame, f + i * every, 10);
+          const blur = i * 1.5, bold = Math.max(0.3, 1 - i * 0.16), fine = Math.max(0, 1 - i * 0.4);
+          return (
+            <div key={i} style={{ opacity: Math.min(1, p * 2), display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
+              <div style={{ width: pw, height: ph, background: color.raised, border: `1.5px solid ${color.hairStrong}`, borderRadius: 4, boxShadow: '0 14px 30px rgba(0,0,0,0.4)', padding: 16, boxSizing: 'border-box', filter: `blur(${blur}px)` }}>
+                <div style={{ height: 11, width: '72%', background: color.ink, opacity: bold, borderRadius: 2, marginBottom: 16 }} />
+                <div style={{ height: 5, width: '86%', background: color.mute, opacity: fine, borderRadius: 2, marginBottom: 9 }} />
+                <div style={{ height: 5, width: '58%', background: color.mute, opacity: fine, borderRadius: 2, marginBottom: 9 }} />
+                <div style={{ height: 5, width: '74%', background: color.mute, opacity: fine * 0.85, borderRadius: 2 }} />
+              </div>
+              <div style={{ ...mono(21, i === gens - 1 ? color.red : color.mute) }}>{`gen ${i + 1}`}</div>
+            </div>
+          );
+        })}
+      </div>
+      {plate && <div style={{ ...mono(20, color.mute) }}>{plate}</div>}
+    </div>
+  );
+};
+
+// ---------------------------------------------------------------- field card (why-ai-dumber, 2026-10-13)
+/** A quiet spec sheet: a row of label → value pairs that fill in on their words, each with a small drawing or a
+ *  pass/fail mark. For any beat that is really a short list read out loud (what changed, what passed, what's inside). */
+export const FieldCard: React.FC<Box & { kicker?: string; rows: { label: string; value: string; icon?: IconName; mark?: 'ok' | 'no'; at?: string | number }[] }> = ({ w, h, kicker, rows }) => {
+  const frame = useCurrentFrame();
+  const fs = rows.map((r) => useCue(r.at, 0)); // eslint-disable-line react-hooks/rules-of-hooks
+  const cw = Math.min(w - 20, 640);
+  return (
+    <div style={{ width: w, height: h, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ width: cw, background: color.raised, border: `1.5px solid ${color.hairStrong}`, borderRadius: 10, boxShadow: '0 18px 40px rgba(0,0,0,0.45)', overflow: 'hidden' }}>
+        {kicker && <div style={{ padding: '18px 26px 0' }}><span style={mono(20, color.mute)}>{kicker}</span></div>}
+        <div style={{ padding: '18px 26px 22px', display: 'flex', flexDirection: 'column', gap: 20 }}>
+          {rows.map((r, i) => {
+            const p = prog(frame, fs[i], 10);
+            const s = 30;
+            return (
+              <div key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 24, opacity: Math.min(1, p * 2) }}>
+                <div style={mono(26, color.ink)}>{r.label}</div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+                  <div style={mono(24, color.red)}>{r.value}</div>
+                  {r.icon && <svg width={s} height={s} viewBox="0 0 200 200" style={{ overflow: 'visible' }}>{(PEN = 200 / s, art(r.icon, 1, 1))}</svg>}
+                  {r.mark && <Check ok={r.mark === 'ok'} px={28} />}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 };

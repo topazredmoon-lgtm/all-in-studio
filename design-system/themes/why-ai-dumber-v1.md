@@ -1,4 +1,12 @@
-# Theme v1 — "why AI models get dumber" (slug `why-ai-dumber`)
+# Theme — "why AI models get dumber" (slug `why-ai-dumber`)
+
+> **Superseded by v2 (2026-10-13).** v1 (below) was reviewed by the owner: "the animations were great, but it needs
+> NEW designs, much more visual diversity and SMART visual ideas (clever metaphors and devices that explain the
+> mechanism, not the same icon grammar repeated)" — plus the voice needed to be clearly better, acronyms read aloud,
+> and a real clip tried. What changed, in full: `design-system/VISUALS.md` → "why-ai-dumber v2"; the 3 new kit
+> primitives (`Loop`, `Copier`, `FieldCard`) → `design-system/DESIGN.md` "The kit"; the new `spiral` line-art →
+> `ds/kit.tsx` `IconName`; the voice switch (Kokoro af_heart → Chatterbox) → `videos/why-ai-dumber/gen_script.py`
+> header and `LEARNINGS.md`. This file is kept for v1's own record below.
 
 A topic theme on top of the shared system (`../DESIGN.md`). Nothing here overrides a hard rule; it only names which
 parts of the kit this topic leans on and why, so the next session doesn't re-derive it.
@@ -32,6 +40,7 @@ throwaway joke about a smart-home speaker, not about model collapse — using it
 than force an off-topic or borderline clip into a design-system demo, this sample is picture-led only. Flagged to
 the owner; sourcing a real CC-licensed clip (a conference talk or interview that actually discusses model collapse,
 synthetic-data poisoning or AI-generated web content) is the next step before any full video on this topic.
+(v2, 2026-10-13: checked again — media.ccc.de and YouTube, nothing both on-topic and verifiably CC/PD. Still open.)
 
 ## Facts used (full row: `../../videos/why-ai-dumber/SOURCES.md`)
 Shumailov, I. et al., "AI models collapse when trained on recursively generated data," *Nature* 631, 755–759 (24 Jul

@@ -4,6 +4,25 @@ Every topic visual ever generated, so the next video knows what exists, what wor
 Status: `new` (built, not yet reviewed by the owner) · `kept` (owner liked it) · `fix` (owner note pending) · `retired`.
 Patterns marked ⇧ are general enough to graduate into `engine/src/ds/` once the owner keeps them.
 
+## why-ai-dumber v2 (2026-10-13, ~1-min sample) · `visuals/aidumber.tsx` + 3 new `ds/kit.tsx` primitives
+
+Owner on v1 (icon/bars/flow repeats only): needs new designs, more visual diversity, smart metaphors, not the same
+icon grammar repeated. v2 graduates 3 reusable primitives straight into the shared kit (see `DESIGN.md` "The kit"
+for the full spec) rather than one-off topic visuals, since each is general past this topic.
+
+| Visual | Picture | Used for (beat · cue) |
+|---|---|---|
+| `Loop` ⇧ | 3 drawings on a ring, arrows draw on at their word; the ring-closing arrow is red | AI trains on its own output (a03 · "hosts", "trains", "it#3" closes the ring) |
+| `Copier` ⇧ | 4 "photocopies" of the same page, each blurrier, fine print fading first | model collapse across generations (a05 · "generations" … "go"), illustration-plated |
+| `FieldCard` ⇧ | a spec-sheet card, label → value rows popping in with a robot badge | AI-written web content (a02 · "itself"; a02b · "posts"/"reviews"/"comments") |
+| `LineIcon spiral` (new drawing) | a line winding inward to a vanishing point, a red dot collapsing along it on its word | "the system quietly eating its own tail" (a07 · "tail", mark "no" at "collapse") — replaces a generic crossed-out brain with a picture of the word "collapse" itself |
+
+No real clip: checked media.ccc.de + YouTube for a CC-licensed talk specifically on model collapse / training on
+synthetic data; nothing both on-topic and verifiably CC/PD cleared the money rule. Picture-led, flagged for a future
+pass. Voice: Chatterbox (`tools/tts_cb.py`), not Kokoro af_heart — matches the owner's standing complaint about
+af_heart (LEARNINGS 47-48); per-beat `ex` varied so the narrator isn't one flat level; 3 lines rewritten to drop
+trailing clauses that made v1's Kokoro take rise like a question on a statement (`voice_check.py` flagged a05/a06b/a08).
+
 ## ai-black-markets (2026-10-11, the 8:15 full film) · `visuals/aibm.tsx`
 
 60 beats, ~120 shots, 14 CC clips. All `new` (the owner has seen only the 1:30 sample).
