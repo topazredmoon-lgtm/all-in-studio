@@ -16,6 +16,10 @@ grep and small scripts, never print whole transcripts or logs). Never read SCRAT
   | `claude/vigilant-hawking-wj9frh`, `magical-dijkstra-rp02md`, `pensive-knuth-7ush35` | ai-ban samples (1-min v4, 2-min, 1-min) | all contained in `bold-bell` |
   `main` = AI black markets 1:30 sample + captchas (3-min v6, full v3). Test-merge of bold-bell + serene + laughing-faraday
   conflicts only in HANDOVER.md, .gitignore, LEARNINGS.md, Root.tsx and cloud-setup.sh (all small); not committed, S decides.
+- **Where the files are on the PC**: this folder = `ai-ban`. The other two live lines are git worktrees (gitignored via
+  `.git/info/exclude`, no node_modules; add `npm ci` in their `engine/` only if you render there):
+  `branches\china-ai-underground` (branch `china-ai-underground`), `branches\ai-black-markets-full` (branch
+  `ai-black-markets-full`). Remove with `git worktree remove` once merged.
 - **Delivered files**, all verified present in LFS and probed with ffprobe: `All-in_ai_ban_full.mp4` (775 s),
   `All-in_captchas_full_v3.mp4` (663 s), `All-in_captchas_3min_v6.mp4` (157 s), `All-in_ai_black_markets_sample.mp4` (93 s),
   `All-in_ai_black_markets_full.mp4` (serene branch), `All-in_china_ai_underground_sample.mp4` (laughing-faraday branch).
