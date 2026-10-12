@@ -31,7 +31,8 @@ node tools/render.mjs <id> --concurrency=6       # -> videos/<id>/out/<id>_vN.mp
 
 ## Cloud sessions (Linux)
 
-Rules for every session are in `CLAUDE.md`. One-time setup on a fresh Ubuntu/Debian box:
+**Fallback only: the Windows PC is home again (2026-10-13), nothing here is needed there.** Rules for every session are
+in `CLAUDE.md`. One-time setup on a fresh Ubuntu/Debian box:
 
 ```bash
 bash scripts/cloud-setup.sh      # apt deps, git lfs pull, npm ci, Remotion's Chrome, .venv, Kokoro + Whisper models

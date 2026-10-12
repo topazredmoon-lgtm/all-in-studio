@@ -2,6 +2,38 @@
 Older history: `HANDOVER_archive.md` (read only if needed). Token-lean: S is on Pro (keep a session under ~120k tokens;
 grep and small scripts, never print whole transcripts or logs). Never read SCRATCH HOLY or other source projects.
 
+## HOME IS THE PC AGAIN (2026-10-13) · cloud setup no longer needed (kept below as a fallback)
+- Work folder: `C:\Users\pc\Documents\claude projects\All-in` (git clone of the private repo `quartzsaphir-debug/all-in-studio`,
+  Git LFS; credentials via Git Credential Manager). Start with `git fetch origin`; the cloud sessions left everything on
+  `claude/*` branches, none merged into `main` yet.
+- **Which branch holds what** (cloud work happened in three separate lines; the live topic is ai-ban):
+  | Branch | Holds | Status |
+  |---|---|---|
+  | `claude/bold-bell-plohvn` (local `ai-ban`) | **ai-ban full film** 12:54, 18 clips, `All-in_ai_ban_full.mp4` + samples v4/v5; contains the 4 older ai-ban/black-markets branches | **LIVE topic**, newest ai-ban work, waiting on owner notes |
+  | `claude/laughing-faraday-edo1rf` | China AI underground 1:17 sample (Chatterbox narrator `tools/tts_cb.py`, cinema layout, Senate PD clips) | newest commit overall (2026-10-11 10:10), 1 commit on `main` |
+  | `claude/serene-wozniak-ob8jdw` | AI black markets full film 8:15 (`All-in_ai_black_markets_full.mp4`, 14 clips, Kokoro) | owner REJECTED it: dead, never polish |
+  | `claude/lucid-albattani-l6k8ct` | AI black markets full-film WIP 8:18 | superseded by serene, dead |
+  | `claude/vigilant-hawking-wj9frh`, `magical-dijkstra-rp02md`, `pensive-knuth-7ush35` | ai-ban samples (1-min v4, 2-min, 1-min) | all contained in `bold-bell` |
+  `main` = AI black markets 1:30 sample + captchas (3-min v6, full v3). Test-merge of bold-bell + serene + laughing-faraday
+  conflicts only in HANDOVER.md, .gitignore, LEARNINGS.md, Root.tsx and cloud-setup.sh (all small); not committed, S decides.
+- **Delivered files**, all verified present in LFS and probed with ffprobe: `All-in_ai_ban_full.mp4` (775 s),
+  `All-in_captchas_full_v3.mp4` (663 s), `All-in_captchas_3min_v6.mp4` (157 s), `All-in_ai_black_markets_sample.mp4` (93 s),
+  `All-in_ai_black_markets_full.mp4` (serene branch), `All-in_china_ai_underground_sample.mp4` (laughing-faraday branch).
+- **Windows toolchain (verified 2026-10-13)**: Node 24.19 / npm 12 (`engine/`: Remotion 4.0.526, `.remotion/chrome-headless-shell`
+  present); default `python` = 3.14.7 with numpy, soundfile, Pillow, faster-whisper 1.2.1 (av 18.1, no pin needed),
+  kokoro-onnx; ffmpeg/ffprobe on PATH (Downloads\ffmpeg-2026-08-20 essentials); GPU RTX 4060 Laptop 8 GB, CUDA works for
+  `large-v3-turbo` float16 (13 s for load + a 3 s clip). Kokoro models stay outside the repo in
+  `C:\Users\pc\Documents\antigravity\jolly-bell\models` (the `tts.py` default). Chatterbox (`tts_cb.py`) is not installed
+  here (no `chatterbox` package; only needed for the China sample's narrator).
+- **Checked**: `tools/build.py ai-ban` rebuilds master.wav (12:54, 75 beats, 18 clips); `tools/frame.mjs` still renders;
+  a 5 s muted render (16 s wall time, 1920x1080 h264 30 fps) + master.wav mux plays with sane levels; `tools/cc_clips.py`
+  re-cuts the committed captcha clips byte-identically. Raw talks: all of `.cc-src/` (566 MB) was already on this PC;
+  `redownload-sources.sh` skips them; `.cc-src/aibm/new_important.opus` was the only missing one and was fetched.
+- **Standing rules (keep)**: subagents on Sonnet/Haiku for mechanical work (downloads, file ops, licence checks,
+  transcription, render babysitting); creative decisions and final quality review stay on the main model. Context under
+  ~120k tokens, never print whole logs. During a long job (download, render, install) stay in the turn with one
+  sleep-and-check loop; never end the turn while it runs. Money rule and owner's taste: see CLAUDE.md.
+
 ## NOW: ai-ban FULL FILM (owner OK'd sample v5: "i like it xd now the full video but please do a great job. put urself in
 ## the boots of the critical mind viewer.") · LEARNINGS 73-74
 - `videos/ai-ban/gen_script.py` = the film: 14 acts on the owner's 18 scenes (opening = sample v5 unchanged), 75 beats,

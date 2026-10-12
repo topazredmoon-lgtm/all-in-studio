@@ -1,8 +1,19 @@
-# All-in studio · rules for every session (local or cloud)
+# All-in studio · rules for every session (local PC is home; cloud is a fallback)
 
 Explainer-video studio: topic → researched script → Kokoro voice → Remotion picture → upload-ready MP4.
 Owner: S. Start every session by reading `HANDOVER.md`, then `PLAYBOOK.md`. Open `design-system/DESIGN.md`,
-`CLIPS.md`, `VISUALS.md` and `LEARNINGS.md` only for the item you need. Cloud setup: `bash scripts/cloud-setup.sh`.
+`CLIPS.md`, `VISUALS.md` and `LEARNINGS.md` only for the item you need.
+
+## Where we run
+- **Home = S's Windows PC**, folder `C:\Users\pc\Documents\claude projects\All-in` (quote every path: it has spaces).
+  Toolchain is installed and verified (see HANDOVER "Home is the PC again"): Node, `python` 3.14 with the audio libs,
+  ffmpeg, RTX 4060 for Whisper `large-v3-turbo` on CUDA, Kokoro models in `antigravity\jolly-bell\models`.
+  No setup script is needed. Always `PYTHONIOENCODING=utf-8`.
+- **Cloud (fallback only)**: Linux box, no GPU. `bash scripts/cloud-setup.sh` then `source .cloud-env.sh`; details in
+  README "Cloud sessions". Never run the cloud script on the PC.
+- Git: private repo `quartzsaphir-debug/all-in-studio`, media in Git LFS. `git fetch origin` first; cloud sessions work on
+  `claude/*` branches, so check every branch's newest commit and HANDOVER before building.
+- Long jobs (download, render, install): stay in the turn with one sleep-and-check loop; never end the turn while it runs.
 
 ## MONEY RULE (owner's top rule: "Never forget this never ever")
 - No clip may cost revenue. Only **CC BY / CC BY-SA / CC0 / public domain / US government** clips.
