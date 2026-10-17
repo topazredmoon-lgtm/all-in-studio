@@ -1,5 +1,5 @@
 import React from "react";
-import { useCurrentFrame, useVideoConfig, spring, interpolate } from "remotion";
+import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { getStroke } from "perfect-freehand";
 import { useCue } from "./core";
 
@@ -29,196 +29,195 @@ function strokeToSvgPath(stroke: number[][]): string {
 
 /**
  * 1. <SmoothStage>:
- * Continuous 0.35Hz camera float + pre-attentive spotlight + 3D spring entrance.
- * Ensures zero static holds across the entire presentation.
+ * Full 1920x1080 stage, maxWidth 1620px, overflow visible, zero fake macOS window.
  */
 export const SmoothStage: React.FC<{
   children: React.ReactNode;
+  dark?: boolean;
   style?: React.CSSProperties;
   spotlightIntensity?: number;
-}> = ({ children, style, spotlightIntensity = 1 }) => {
+}> = ({ children, dark = false, style, spotlightIntensity = 1 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const t = frame / fps;
-
-  // 3D spring entry
-  const enter = spring({ frame, fps, config: { damping: 16, stiffness: 120, mass: 0.8 } });
-  const scaleEnter = interpolate(enter, [0, 1], [0.93, 1]);
-
-  // Continuous sinusoidal micro-float (0.35 Hz) so no frame is ever static
-  const floatX = Math.sin(t * 0.35 * Math.PI * 2) * 7;
-  const floatY = Math.cos(t * 0.28 * Math.PI * 2) * 5;
-  const rotX = Math.sin(t * 0.31 * Math.PI * 2) * 1.1;
-  const rotY = Math.cos(t * 0.25 * Math.PI * 2) * 1.3;
-  const breathe = 1 + Math.sin(t * 0.4 * Math.PI * 2) * 0.007;
+  const enter = spring({ frame, fps, config: { damping: 20, stiffness: 120, mass: 0.9 } });
+  const scale = interpolate(enter, [0, 1], [0.97, 1]);
+  const opacity = interpolate(enter, [0, 1], [0, 1]);
 
   return (
-    <div
+    <AbsoluteFill
       style={{
-        position: "relative",
-        width: "100%",
-        height: "100%",
+        backgroundColor: dark ? "#0E0C0B" : "#110F0D",
+        backgroundImage: "radial-gradient(rgba(244, 241, 234, 0.10) 1.5px, transparent 1.5px)",
+        backgroundSize: "32px 32px",
         display: "flex",
+        flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        perspective: 1200,
-        overflow: "hidden",
+        padding: "56px 72px 84px 72px",
+        boxSizing: "border-box",
+        overflow: "visible",
         ...style,
       }}
     >
-      {/* Warm Pre-attentive Spotlight behind hero */}
       <div
         style={{
-          position: "absolute",
-          width: 1400,
-          height: 900,
-          borderRadius: "50%",
-          background: `radial-gradient(circle, rgba(247,243,234,${0.09 * spotlightIntensity}) 0%, rgba(247,243,234,0.02) 45%, transparent 70%)`,
-          pointerEvents: "none",
-          transform: `translate3d(${floatX * 0.5}px, ${floatY * 0.5}px, 0)`,
-          zIndex: 1,
-        }}
-      />
-
-      {/* Floating 3D Stage Container */}
-      <div
-        style={{
-          position: "relative",
-          zIndex: 2,
+          width: "100%",
+          maxWidth: 1620,
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          transform: `scale(${scaleEnter * breathe}) translate3d(${floatX}px, ${floatY}px, 0) rotateX(${rotX}deg) rotateY(${rotY}deg)`,
-          transformOrigin: "center center",
-          willChange: "transform",
+          transform: `scale(${scale})`,
+          opacity,
+          overflow: "visible",
         }}
       >
         {children}
       </div>
-    </div>
+    </AbsoluteFill>
   );
 };
 
 /**
  * 2. <TactileCard>:
- * High-contrast warm ivory / pure white physical card (1060x540 default),
- * rounded 28px corners, deep layered shadow, window dots & chrome bar.
- * Permanently bans dark-on-dark box slop!
+ * High-contrast warm ivory physical card with bold 3px border, deep shadow,
+ * clean header (kicker, title, badge), and zero card clipping.
  */
 export const TactileCard: React.FC<{
-  children: React.ReactNode;
-  width?: number;
-  height?: number;
-  bg?: string;
+  kicker?: string;
   title?: string;
   badge?: string;
   badgeColor?: string;
+  dark?: boolean;
+  width?: number | string;
+  height?: number | string;
+  bg?: string;
   style?: React.CSSProperties;
+  children: React.ReactNode;
 }> = ({
-  children,
-  width = 1060,
-  height = 540,
-  bg = COLOR_IVORY,
+  kicker,
   title,
   badge,
-  badgeColor = COLOR_EMERALD,
+  badgeColor = "#E63946",
+  dark = false,
+  width,
+  height,
+  bg: customBg,
   style,
+  children,
 }) => {
+  const bg = customBg || (dark ? "#181512" : "#F7F3EA");
+  const fg = dark ? "#FAF6EE" : "#181512";
+  const mute = dark ? "#A0988E" : "#5C544B";
+  const borderCol = dark ? "rgba(244,241,234,0.22)" : "#181512";
+
+  const cardWidth = width ? (typeof width === "number" ? Math.min(Math.max(width, 1060), 1580) : width) : "100%";
+  const cardMinHeight = height ? (typeof height === "number" ? height : undefined) : undefined;
+
   return (
     <div
       style={{
-        position: "relative",
-        width,
-        height,
-        background: bg,
-        borderRadius: 28,
-        boxShadow: SHADOW_DEEP,
-        border: "1.5px solid rgba(226,221,210,0.85)",
+        width: cardWidth,
+        maxWidth: 1580,
+        minHeight: cardMinHeight,
+        margin: "0 auto",
+        backgroundColor: bg,
+        color: fg,
+        borderRadius: 24,
+        border: `3px solid ${borderCol}`,
+        boxShadow: dark
+          ? "0 20px 50px rgba(0,0,0,0.75)"
+          : "0 14px 0 #181512, 0 28px 60px rgba(0,0,0,0.65)",
+        padding: "36px 48px",
+        boxSizing: "border-box",
         display: "flex",
         flexDirection: "column",
-        overflow: "hidden",
-        color: COLOR_INK,
-        fontFamily: "Inter, Archivo, sans-serif",
+        gap: 24,
+        overflow: "visible",
+        position: "relative",
         ...style,
       }}
     >
-      {/* Top Window Chrome */}
-      <div
-        style={{
-          width: "100%",
-          padding: "18px 28px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          borderBottom: "1.5px solid rgba(215,206,191,0.6)",
-          background: "rgba(255,255,255,0.45)",
-          backdropFilter: "blur(8px)",
-        }}
-      >
-        {/* Chrome Dots */}
-        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <div style={{ width: 14, height: 14, borderRadius: "50%", background: "#FF5F56", border: "1px solid #E0443E" }} />
-          <div style={{ width: 14, height: 14, borderRadius: "50%", background: "#FFBD2E", border: "1px solid #DEA123" }} />
-          <div style={{ width: 14, height: 14, borderRadius: "50%", background: "#27C93F", border: "1px solid #1AAB29" }} />
-          {title && (
-            <span
+      {(kicker || title || badge) && (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: 24,
+            borderBottom: `2px solid ${dark ? "rgba(244,241,234,0.14)" : "rgba(24,21,18,0.12)"}`,
+            paddingBottom: 18,
+            flexWrap: "wrap",
+            width: "100%",
+          }}
+        >
+          <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+            {kicker && (
+              <div
+                style={{
+                  fontFamily: "IBM Plex Mono, monospace",
+                  fontSize: 20,
+                  fontWeight: 700,
+                  letterSpacing: 1.5,
+                  textTransform: "uppercase",
+                  color: badgeColor,
+                }}
+              >
+                {kicker}
+              </div>
+            )}
+            {title && (
+              <div
+                style={{
+                  fontFamily: "Archivo, Inter, sans-serif",
+                  fontSize: 34,
+                  fontWeight: 800,
+                  lineHeight: 1.15,
+                  color: fg,
+                }}
+              >
+                {title}
+              </div>
+            )}
+          </div>
+          {badge && (
+            <div
               style={{
-                marginLeft: 14,
                 fontFamily: "IBM Plex Mono, monospace",
                 fontSize: 20,
                 fontWeight: 700,
-                color: COLOR_MUTED,
-                letterSpacing: 0.5,
+                padding: "8px 18px",
+                borderRadius: 999,
+                backgroundColor: badgeColor,
+                color: "#FAF6EE",
+                border: "2px solid #181512",
+                whiteSpace: "nowrap",
               }}
             >
-              {title}
-            </span>
+              {badge}
+            </div>
           )}
         </div>
-
-        {badge && (
-          <div
-            style={{
-              background: badgeColor === COLOR_CRIMSON ? "rgba(230,57,70,0.14)" : "rgba(46,159,110,0.14)",
-              color: badgeColor,
-              border: `1.5px solid ${badgeColor}`,
-              fontFamily: "IBM Plex Mono, monospace",
-              fontSize: 20,
-              fontWeight: 800,
-              padding: "6px 16px",
-              borderRadius: 999,
-              letterSpacing: 0.5,
-            }}
-          >
-            {badge}
-          </div>
-        )}
-      </div>
-
-      {/* Main Content Area */}
+      )}
       <div
         style={{
-          position: "relative",
-          flex: 1,
-          padding: "26px 36px",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
+          gap: 20,
           alignItems: "center",
+          justifyContent: "center",
+          overflow: "visible",
+          width: "100%",
+          flex: 1,
         }}
       >
         {children}
       </div>
+      <div style={{ display: "none", color: mute }} />
     </div>
   );
 };
 
-/**
- * 3. <SkeletonBars>:
- * Eliminates Mayer's split-attention & redundancy effect by replacing tiny
- * small unreadable text paragraphs with soft, blurred rounded context bars.
- */
 export const SkeletonBars: React.FC<{
   widths?: string[];
   height?: number;
@@ -250,11 +249,6 @@ export const SkeletonBars: React.FC<{
   );
 };
 
-/**
- * 4. <HandInkCircle>:
- * Hand-drawn pressure-sensitive crimson ink circle (perfect-freehand) that
- * draws around a focal word or element precisely on speech cue (Posner spatial cueing).
- */
 export const HandInkCircle: React.FC<{
   cx: number;
   cy: number;
@@ -313,11 +307,6 @@ export const HandInkCircle: React.FC<{
   );
 };
 
-/**
- * 5. <TactileCursor>:
- * Organic bezier mouse cursor with realistic spring physics, mass/damping,
- * scale bounce, and animated red click ripples (#E63946).
- */
 export const TactileCursor: React.FC<{
   x: number;
   y: number;
@@ -356,3 +345,19 @@ export const TactileCursor: React.FC<{
     </div>
   );
 };
+
+export const AttentionSpotlight: React.FC<{ active?: boolean; children: React.ReactNode }> = ({
+  active = true,
+  children,
+}) => (
+  <div
+    style={{
+      opacity: active ? 1 : 0.55,
+      transition: "opacity 0.25s ease",
+      overflow: "visible",
+    }}
+  >
+    {children}
+  </div>
+);
+export const constAttentionSpotlight = AttentionSpotlight;

@@ -27,6 +27,146 @@ function strokeToSvgPath(stroke: number[][]): string {
   return d.join(' ');
 }
 
+export function useAnticipationSnap(delayFrames = 0) {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const localFrame = Math.max(0, frame - delayFrames);
+  return spring({
+    frame: localFrame,
+    fps,
+    config: { damping: 16, stiffness: 160, mass: 0.8 },
+  });
+}
+
+export const SquishSpringWrapper: React.FC<{
+  delay?: number;
+  children: React.ReactNode;
+}> = ({ delay = 0, children }) => {
+  const snap = useAnticipationSnap(delay);
+  const scale = interpolate(snap, [0, 1], [0.92, 1]);
+  const opacity = interpolate(snap, [0, 0.4, 1], [0, 1, 1]);
+  return (
+    <div style={{ transform: `scale(${scale})`, opacity, overflow: "visible" }}>
+      {children}
+    </div>
+  );
+};
+
+export const Tactile3DBlock: React.FC<{
+  color?: string;
+  bg?: string;
+  borderColor?: string;
+  children: React.ReactNode;
+  style?: React.CSSProperties;
+  width?: number | string;
+  height?: number | string;
+  depth?: number;
+  sheenAt?: string | number;
+  lipColor?: string;
+  elevation?: number;
+  at?: string | number;
+}> = ({ color = "#181512", bg = "#FFFFFF", borderColor = "#181512", children, style, width, height }) => (
+  <div
+    style={{
+      backgroundColor: bg,
+      color,
+      border: `3px solid ${borderColor}`,
+      borderRadius: 18,
+      boxShadow: `0 8px 0 ${borderColor}`,
+      padding: "24px 28px",
+      boxSizing: "border-box",
+      overflow: "visible",
+      width,
+      height,
+      ...style,
+    }}
+  >
+    {children}
+  </div>
+);
+
+export const FloatingPopScore: React.FC<{
+  text?: string;
+  label?: string;
+  score?: string;
+  color?: string;
+  delay?: number;
+  at?: string | number;
+  x?: number;
+  y?: number;
+  cx?: number;
+  cy?: number;
+  style?: React.CSSProperties;
+}> = ({ text, label, score, color = "#E63946", delay = 6, at, x, y, cx, cy, style }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const cueF = useCue(at) ?? delay;
+  if (frame < cueF) return null;
+  const localFrame = frame - cueF;
+  const snap = spring({
+    frame: localFrame,
+    fps,
+    config: { damping: 14, stiffness: 160, mass: 0.8 },
+  });
+  const scale = interpolate(snap, [0, 1], [0.85, 1]);
+  const content = text || label || score || "";
+
+  const posX = typeof x === "number" ? x : cx;
+  const posY = typeof y === "number" ? y : cy;
+  const isPos = typeof posX === "number" && typeof posY === "number";
+
+  return (
+    <div
+      style={{
+        position: isPos ? "absolute" : "relative",
+        left: isPos ? posX : undefined,
+        top: isPos ? posY : undefined,
+        display: "inline-flex",
+        alignItems: "center",
+        justifyContent: "center",
+        alignSelf: "flex-start",
+        padding: "10px 22px",
+        borderRadius: 999,
+        backgroundColor: color,
+        color: "#FFFFFF",
+        border: "2.5px solid #181512",
+        boxShadow: "0 5px 0 #181512",
+        fontFamily: "IBM Plex Mono, monospace",
+        fontSize: 21,
+        fontWeight: 800,
+        letterSpacing: 0.8,
+        transform: `scale(${scale})`,
+        whiteSpace: "nowrap",
+        zIndex: 50,
+        ...style,
+      }}
+    >
+      {content}
+    </div>
+  );
+};
+
+export const ImpactShockwaveRing: React.FC<{ active?: boolean; color?: string }> = ({
+  active = true,
+  color = "#E63946",
+}) => {
+  if (!active) return null;
+  return (
+    <div
+      style={{
+        width: 14,
+        height: 14,
+        borderRadius: 999,
+        backgroundColor: color,
+        display: "inline-block",
+        flexShrink: 0,
+      }}
+    />
+  );
+};
+
+export const KineticFlashCut: React.FC<{ active?: boolean }> = () => null;
+
 export type GameFeelPhysics = {
   frame: number;
   triggerFrame: number;
@@ -42,14 +182,9 @@ export type GameFeelPhysics = {
   burstProgress: number;
 };
 
-/**
- * 1. useGameFeelPhysics:
- * Core physics hook implementing Anticipation Windup -> Impact Hit -> Squash/Stretch -> Rebound Camera Shake.
- */
 export function useGameFeelPhysics(triggerFrame: number, duration: number = 24): GameFeelPhysics {
   const frame = useCurrentFrame();
 
-  // 1. Idle phase
   if (frame < triggerFrame - 6) {
     return {
       frame,
@@ -67,7 +202,6 @@ export function useGameFeelPhysics(triggerFrame: number, duration: number = 24):
     };
   }
 
-  // 2. Anticipation Wind-up (-6 to -1 frames before hit)
   if (frame < triggerFrame) {
     const dt = frame - (triggerFrame - 6);
     const rattleX = Math.sin(dt * 3.2) * 3.5;
@@ -88,7 +222,6 @@ export function useGameFeelPhysics(triggerFrame: number, duration: number = 24):
     };
   }
 
-  // 3. Impact Hit frame
   if (frame === triggerFrame) {
     return {
       frame,
@@ -100,40 +233,35 @@ export function useGameFeelPhysics(triggerFrame: number, duration: number = 24):
       rattleY: 0,
       shakeX: 0,
       shakeY: 0,
-      scaleX: 1.28, // heavy squash in X
-      scaleY: 0.76, // heavy compress in Y
+      scaleX: 1.28,
+      scaleY: 0.76,
       burstProgress: 0.05,
     };
   }
 
-  // 4. Spring Rebound & Camera Shake (triggerFrame + 1 to +14)
-  const elapsed = frame - triggerFrame;
-  const burstProgress = Math.min(1, elapsed / duration);
-
-  if (elapsed < 14) {
-    const decay = (14 - elapsed) / 14;
-    const shakeX = Math.sin(elapsed * 1.8) * 8.5 * decay;
-    const shakeY = Math.cos(elapsed * 2.2) * 6.5 * decay;
-    // Stretch rebound settling back to 1.0
-    const scaleX = 0.88 + 0.12 * (1 - decay);
-    const scaleY = 1.15 - 0.15 * (1 - decay);
+  const dt = frame - triggerFrame;
+  if (dt <= duration) {
+    const p = dt / duration;
+    const decay = Math.exp(-p * 4.2);
+    const shakeX = Math.sin(dt * 1.8) * 9 * decay;
+    const shakeY = Math.cos(dt * 2.1) * 7 * decay;
+    const rebound = Math.sin(dt * 0.45) * 0.22 * decay;
     return {
       frame,
       triggerFrame,
       isHit: true,
       windup: false,
-      hitFlash: elapsed <= 2,
+      hitFlash: dt <= 2,
       rattleX: 0,
       rattleY: 0,
       shakeX,
       shakeY,
-      scaleX,
-      scaleY,
-      burstProgress,
+      scaleX: 1 - rebound,
+      scaleY: 1 + rebound,
+      burstProgress: Math.min(1, p * 1.6),
     };
   }
 
-  // 5. Settled Phase
   return {
     frame,
     triggerFrame,
@@ -146,60 +274,43 @@ export function useGameFeelPhysics(triggerFrame: number, duration: number = 24):
     shakeY: 0,
     scaleX: 1,
     scaleY: 1,
-    burstProgress,
+    burstProgress: 1,
   };
 }
 
-/**
- * Helper hook to resolve cue word or numeric frame to game-feel physics.
- */
-export function useGameFeelCue(cue?: string | number, defaultFrame: number = 0, duration: number = 24): GameFeelPhysics {
-  const triggerFrame = useCue(cue) ?? defaultFrame;
-  return useGameFeelPhysics(triggerFrame, duration);
+export function useGameFeelCue(cueWordOrFrame: string | number | undefined, defaultFrame: number = 30, duration: number = 24): GameFeelPhysics {
+  const cueF = useCue(cueWordOrFrame) ?? defaultFrame;
+  return useGameFeelPhysics(cueF, duration);
 }
 
-/**
- * 2. <ImpactBurst>:
- * Radial star/diamond particles flying outward + 2 expanding shockwave rings with thinning & opacity decay.
- */
 export const ImpactBurst: React.FC<{
   cx: number;
   cy: number;
   at?: string | number;
-  color?: string;
+  particles?: number;
   count?: number;
+  color?: string;
   radius?: number;
-}> = ({ cx, cy, at, color = COLOR_CRIMSON, count = 14, radius = 190 }) => {
-  const triggerFrame = useCue(at) ?? 0;
-  const physics = useGameFeelPhysics(triggerFrame, 22);
+}> = ({ cx, cy, at, particles = 12, count, color = COLOR_CRIMSON, radius = 110 }) => {
+  const actualParticles = count ?? particles;
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const cueF = useCue(at) ?? 15;
+  if (frame < cueF) return null;
 
-  if (!physics.isHit || physics.burstProgress >= 1) return null;
+  const dt = frame - cueF;
+  const p = spring({ frame: dt, fps, config: { damping: 12, stiffness: 180, mass: 0.6 } });
+  if (p >= 0.99 && dt > 20) return null;
 
-  const p = physics.burstProgress;
-  const easeOut = 1 - Math.pow(1 - p, 3);
+  const r = interpolate(p, [0, 1], [0, radius]);
+  const opacity = interpolate(p, [0, 0.2, 0.75, 1], [0, 1, 0.8, 0]);
 
-  // Shockwave 1
-  const r1 = 12 + radius * 0.82 * easeOut;
-  const op1 = Math.max(0, (1 - p) * 0.92);
-  const sw1 = Math.max(0.5, 5 * (1 - p));
-
-  // Shockwave 2 (delayed slightly)
-  const p2 = Math.max(0, (p - 0.12) / 0.88);
-  const r2 = 6 + radius * 1.12 * (1 - Math.pow(1 - p2, 2.5));
-  const op2 = Math.max(0, (1 - p2) * 0.65);
-  const sw2 = Math.max(0.5, 3.5 * (1 - p2));
-
-  // 14 Diamond / Star particles
-  const particles = Array.from({ length: count }, (_, i) => {
-    const angle = (i / count) * Math.PI * 2 + ((i % 3) * 0.2);
-    const distFactor = 0.65 + 0.5 * (((i * 7) % 5) / 4);
-    const dist = radius * distFactor * easeOut;
-    const px = cx + Math.cos(angle) * dist;
-    const py = cy + Math.sin(angle) * dist;
-    const size = Math.max(2, (10 + (i % 4) * 3) * (1 - p));
-    const rot = i * 36 + p * 190;
-    const op = Math.max(0, (1 - p * p) * 0.95);
-    return { px, py, size, rot, op };
+  const items = Array.from({ length: actualParticles }).map((_, i) => {
+    const angle = (i / actualParticles) * (Math.PI * 2);
+    const px = cx + Math.cos(angle) * r;
+    const py = cy + Math.sin(angle) * r;
+    const size = Math.max(3, 8 * (1 - p));
+    return { px, py, size };
   });
 
   return (
@@ -211,122 +322,144 @@ export const ImpactBurst: React.FC<{
         width: '100%',
         height: '100%',
         pointerEvents: 'none',
-        zIndex: 35,
+        zIndex: 45,
+        opacity,
       }}
     >
-      {/* Shockwave Rings */}
-      <circle cx={cx} cy={cy} r={r1} fill="none" stroke={color} strokeWidth={sw1} opacity={op1} />
-      {p > 0.12 && (
-        <circle cx={cx} cy={cy} r={r2} fill="none" stroke={color} strokeWidth={sw2} opacity={op2} strokeDasharray="6 6" />
-      )}
-
-      {/* Radial Diamond Particles */}
-      {particles.map((pt, idx) => (
-        <polygon
-          key={idx}
-          points={`0,-${pt.size} ${pt.size * 0.65},0 0,${pt.size} -${pt.size * 0.65},0`}
-          fill={idx % 2 === 0 ? color : '#FFFFFF'}
-          opacity={pt.op}
-          transform={`translate(${pt.px}, ${pt.py}) rotate(${pt.rot})`}
-        />
+      <circle cx={cx} cy={cy} r={r * 0.7} fill="none" stroke={color} strokeWidth={Math.max(1, 3.5 * (1 - p))} />
+      {items.map((item, idx) => (
+        <circle key={idx} cx={item.px} cy={item.py} r={item.size} fill={color} />
       ))}
     </svg>
   );
 };
 
-/**
- * 3. <VolumetricGodRays>:
- * Rotating conic light beams bursting from behind the card / focal object on cue.
- */
 export const VolumetricGodRays: React.FC<{
-  cx: number;
-  cy: number;
+  cx?: number;
+  cy?: number;
   at?: string | number;
   rays?: number;
   color?: string;
-  maxRadius?: number;
-}> = ({ cx, cy, at, rays = 12, color = 'rgba(255, 235, 180, 0.14)', maxRadius = 480 }) => {
+}> = ({ cx = 960, cy = 540, at, rays = 12, color = 'rgba(230,57,70,0.14)' }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const cueF = useCue(at) ?? 0;
+  const cueF = useCue(at) ?? 10;
+  if (frame < cueF) return null;
 
-  const reveal = frame >= cueF ? spring({ frame: frame - cueF, fps, config: { damping: 14, stiffness: 120 } }) : 0;
-  if (reveal <= 0.02) return null;
-
-  const rot = (frame / fps) * 18; // continuous slow Majestic rotation
-  const step = 360 / rays;
-  const rayList = Array.from({ length: rays }, (_, i) => {
-    const angle1 = (i * step * Math.PI) / 180;
-    const angle2 = ((i * step + step * 0.45) * Math.PI) / 180;
-    const x1 = cx + Math.cos(angle1) * maxRadius;
-    const y1 = cy + Math.sin(angle1) * maxRadius;
-    const x2 = cx + Math.cos(angle2) * maxRadius;
-    const y2 = cy + Math.sin(angle2) * maxRadius;
-    return `M${cx},${cy} L${x1},${y1} A${maxRadius},${maxRadius} 0 0,1 ${x2},${y2} Z`;
-  });
+  const rot = (frame - cueF) * 0.45;
+  const pulse = 0.85 + Math.sin((frame - cueF) * 0.15) * 0.15;
 
   return (
-    <svg
+    <div
       style={{
         position: 'absolute',
-        left: 0,
-        top: 0,
-        width: '100%',
-        height: '100%',
-        pointerEvents: 'none',
-        zIndex: 5,
+        left: cx - 700,
+        top: cy - 700,
+        width: 1400,
+        height: 1400,
+        borderRadius: '50%',
         transform: `rotate(${rot}deg)`,
-        transformOrigin: `${cx}px ${cy}px`,
-        opacity: reveal,
+        background: `conic-gradient(from 0deg, ${color} 0deg 15deg, transparent 15deg 30deg, ${color} 30deg 45deg, transparent 45deg 60deg)`,
+        opacity: 0.5 * pulse,
+        pointerEvents: 'none',
+        zIndex: 2,
+        mixBlendMode: 'screen',
       }}
-    >
-      <defs>
-        <radialGradient id={`godrays-fade-${cx}-${cy}`} cx="50%" cy="50%" r="50%">
-          <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.8" />
-          <stop offset="70%" stopColor="#FFFFFF" stopOpacity="0.3" />
-          <stop offset="100%" stopColor="#FFFFFF" stopOpacity="0" />
-        </radialGradient>
-        <mask id={`godrays-mask-${cx}-${cy}`}>
-          <circle cx={cx} cy={cy} r={maxRadius} fill={`url(#godrays-fade-${cx}-${cy})`} />
-        </mask>
-      </defs>
-      <g mask={`url(#godrays-mask-${cx}-${cy})`}>
-        {rayList.map((d, idx) => (
-          <path key={idx} d={d} fill={color} />
-        ))}
-      </g>
-    </svg>
+    />
   );
 };
 
-/**
- * 4. <SpeedLines>:
- * High-velocity dash streak lines when an object dashes or collides.
- */
 export const SpeedLines: React.FC<{
   direction?: 'horizontal' | 'vertical';
   count?: number;
   at?: string | number;
   color?: string;
-  width?: number;
-  height?: number;
-}> = ({ direction = 'horizontal', count = 16, at, color = 'rgba(230,57,70,0.32)', width = 1920, height = 1080 }) => {
+}> = ({ direction = 'horizontal', count = 10, at, color = 'rgba(230,57,70,0.35)' }) => {
   const frame = useCurrentFrame();
-  const cueF = useCue(at) ?? 0;
+  const cueF = useCue(at) ?? 10;
+  if (frame < cueF || frame > cueF + 18) return null;
 
-  if (frame < cueF || frame > cueF + 22) return null;
+  const dt = frame - cueF;
+  const p = dt / 18;
+  const opacity = interpolate(p, [0, 0.2, 0.8, 1], [0, 0.8, 0.6, 0]);
 
-  const elapsed = frame - cueF;
-  const p = elapsed / 22;
-  const opacity = Math.sin(p * Math.PI) * 0.9;
-
-  const lines = Array.from({ length: count }, (_, i) => {
-    const seed = (i * 137.5) % 1;
-    const pos = (i / count) * (direction === 'horizontal' ? height : width);
-    const len = 120 + seed * 260;
-    const start = (direction === 'horizontal' ? width : height) * (1 - p * 1.4) + seed * 80;
-    return { pos, len, start, strokeW: 2 + (i % 3) * 1.5 };
+  const lines = Array.from({ length: count }).map((_, i) => {
+    const offset = 80 + i * (1080 / count);
+    const length = 120 + ((i * 37) % 240);
+    const thickness = 2 + (i % 3);
+    const speed = ((dt * 65 + i * 40) % 1920) - 200;
+    return { offset, length, thickness, speed };
   });
+
+  return (
+    <div
+      style={{
+        position: 'absolute',
+        inset: 0,
+        pointerEvents: 'none',
+        zIndex: 38,
+        opacity,
+      }}
+    >
+      {lines.map((l, idx) =>
+        direction === 'horizontal' ? (
+          <div
+            key={idx}
+            style={{
+              position: 'absolute',
+              top: l.offset,
+              left: l.speed,
+              width: l.length,
+              height: l.thickness,
+              backgroundColor: color,
+              borderRadius: l.thickness,
+            }}
+          />
+        ) : (
+          <div
+            key={idx}
+            style={{
+              position: 'absolute',
+              left: l.offset,
+              top: l.speed,
+              width: l.thickness,
+              height: l.length,
+              backgroundColor: color,
+              borderRadius: l.thickness,
+            }}
+          />
+        )
+      )}
+    </div>
+  );
+};
+
+export const DoodleUnderline: React.FC<{
+  x: number;
+  y: number;
+  width?: number;
+  at?: string | number;
+  color?: string;
+}> = ({ x, y, width = 240, at, color = COLOR_CRIMSON }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const cueF = useCue(at) ?? 12;
+  if (frame < cueF) return null;
+
+  const p = spring({ frame: frame - cueF, fps, config: { damping: 14, stiffness: 140 } });
+  if (p <= 0.02) return null;
+
+  const steps = 30;
+  const currentSteps = Math.max(2, Math.floor(steps * Math.min(1, p)));
+  const points: [number, number, number][] = [];
+  for (let i = 0; i <= currentSteps; i++) {
+    const t = i / steps;
+    const px = x + t * width;
+    const py = y + Math.sin(t * Math.PI) * 5 + (i % 2 === 0 ? 1 : -1) * 1.5;
+    const pressure = 0.5 + 0.3 * Math.sin(t * Math.PI);
+    points.push([px, py, pressure]);
+  }
+  const outline = getStroke(points, { size: 6, thinning: 0.4, smoothing: 0.6, streamline: 0.5 });
+  const pathData = strokeToSvgPath(outline);
 
   return (
     <svg
@@ -337,285 +470,40 @@ export const SpeedLines: React.FC<{
         width: '100%',
         height: '100%',
         pointerEvents: 'none',
-        zIndex: 25,
-        opacity,
+        zIndex: 36,
       }}
     >
-      {lines.map((ln, idx) => {
-        if (direction === 'horizontal') {
-          return (
-            <line
-              key={idx}
-              x1={ln.start}
-              y1={ln.pos}
-              x2={ln.start + ln.len}
-              y2={ln.pos}
-              stroke={color}
-              strokeWidth={ln.strokeW}
-              strokeLinecap="round"
-            />
-          );
-        } else {
-          return (
-            <line
-              key={idx}
-              x1={ln.pos}
-              y1={ln.start}
-              x2={ln.pos}
-              y2={ln.start + ln.len}
-              stroke={color}
-              strokeWidth={ln.strokeW}
-              strokeLinecap="round"
-            />
-          );
-        }
-      })}
+      <path d={pathData} fill={color} opacity={0.92} />
     </svg>
   );
 };
 
-/**
- * 5. <FloatingPopScore>:
- * Spring-mass popup badge (+3 SHARDS!, 0.2s TRASHED!, 4.5× PRICE!) with scale punch and upward drift.
- */
-export const FloatingPopScore: React.FC<{
-  text: string;
-  cx: number;
-  cy: number;
-  at?: string | number;
-  color?: string;
-  subtext?: string;
-  rotation?: number;
-}> = ({ text, cx, cy, at, color = COLOR_CRIMSON, subtext, rotation = -3 }) => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const cueF = useCue(at) ?? 0;
-
-  if (frame < cueF) return null;
-
-  const pop = spring({ frame: frame - cueF, fps, config: { damping: 11, stiffness: 180, mass: 0.65 } });
-  if (pop <= 0.02) return null;
-
-  // Scale punch: 0 -> 1.32 overshoot -> settling to 1.0
-  const scale = interpolate(pop, [0, 0.6, 1], [0.2, 1.32, 1.0]);
-  const elapsed = frame - cueF;
-  const floatUp = Math.min(28, elapsed * 1.2);
-
-  return (
-    <div
-      style={{
-        position: 'absolute',
-        left: cx,
-        top: cy - floatUp,
-        transform: `translate(-50%, -50%) rotate(${rotation}deg) scale(${scale})`,
-        zIndex: 40,
-        pointerEvents: 'none',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-      }}
-    >
-      <div
-        style={{
-          background: color,
-          color: '#FFFFFF',
-          padding: '10px 24px',
-          borderRadius: 14,
-          border: '3px solid #111111',
-          boxShadow: SHADOW_DEEP,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: 2,
-        }}
-      >
-        <span style={{ ...mono(22, '#FFFFFF'), fontWeight: 900, letterSpacing: '0.04em', textShadow: '0 2px 4px rgba(0,0,0,0.4)' }}>
-          {text}
-        </span>
-        {subtext && (
-          <span style={{ ...serif(14, 'rgba(255,255,255,0.92)', 700), marginTop: -2 }}>
-            {subtext}
-          </span>
-        )}
-      </div>
-    </div>
-  );
-};
-
-/**
- * 6. <DoodleUnderline>:
- * Hand-drawn pressure-sensitive double-stroke underline using perfect-freehand.
- */
-export const DoodleUnderline: React.FC<{
-  x: number;
-  y: number;
-  width: number;
-  at?: string | number;
-  color?: string;
-  strokeWidth?: number;
-}> = ({ x, y, width, at, color = COLOR_CRIMSON, strokeWidth = 7 }) => {
-  const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  const cueF = useCue(at) ?? 0;
-
-  const p = frame >= cueF ? spring({ frame: frame - cueF, fps, config: { damping: 14, stiffness: 140 } }) : 0;
-  if (p <= 0.02) return null;
-
-  // Primary expressive underline stroke
-  const points1: [number, number, number][] = [];
-  const steps1 = 28;
-  const curSteps1 = Math.max(3, Math.floor(steps1 * Math.min(1, p)));
-  for (let i = 0; i <= curSteps1; i++) {
-    const t = i / steps1;
-    const px = x + t * width;
-    const py = y + Math.sin(t * Math.PI) * 5 + (t * 2);
-    const pressure = 0.4 + 0.35 * Math.sin(t * Math.PI);
-    points1.push([px, py, pressure]);
-  }
-  const outline1 = getStroke(points1, { size: strokeWidth, thinning: 0.35, smoothing: 0.65, streamline: 0.5 });
-  const path1 = strokeToSvgPath(outline1);
-
-  // Secondary offset stroke (double-marker underline)
-  const p2 = frame >= cueF + 4 ? spring({ frame: frame - (cueF + 4), fps, config: { damping: 14, stiffness: 140 } }) : 0;
-  let path2 = '';
-  if (p2 > 0.02) {
-    const points2: [number, number, number][] = [];
-    const steps2 = 24;
-    const curSteps2 = Math.max(3, Math.floor(steps2 * Math.min(1, p2)));
-    for (let i = 0; i <= curSteps2; i++) {
-      const t = i / steps2;
-      const px = x + t * (width * 0.92);
-      const py = y + 7 + Math.sin(t * Math.PI) * 4;
-      const pressure = 0.35 + 0.3 * Math.sin(t * Math.PI);
-      points2.push([px, py, pressure]);
-    }
-    const outline2 = getStroke(points2, { size: strokeWidth * 0.8, thinning: 0.4, smoothing: 0.65, streamline: 0.5 });
-    path2 = strokeToSvgPath(outline2);
-  }
-
-  return (
-    <svg style={{ position: 'absolute', left: 0, top: 0, width: '100%', height: '100%', pointerEvents: 'none', zIndex: 30 }}>
-      <path d={path1} fill={color} opacity={0.94} />
-      {path2 && <path d={path2} fill={color} opacity={0.78} />}
-    </svg>
-  );
-};
-
-/**
- * 7. <SpecularSheen>:
- * Diagonal glossy specular highlight sweep across tactile surfaces on reveal or impact.
- */
 export const SpecularSheen: React.FC<{
+  width?: number;
+  height?: number;
   at?: string | number;
-  width?: number | string;
-  height?: number | string;
-}> = ({ at, width = '100%', height = '100%' }) => {
+}> = ({ width = 1060, height = 540, at }) => {
   const frame = useCurrentFrame();
-  const cueF = useCue(at) ?? 0;
+  const cueF = useCue(at) ?? 20;
+  if (frame < cueF || frame > cueF + 30) return null;
 
-  if (frame < cueF || frame > cueF + 24) return null;
-
-  const elapsed = frame - cueF;
-  const p = elapsed / 24;
-  const left = interpolate(p, [0, 1], [-120, 240]);
+  const dt = frame - cueF;
+  const p = dt / 30;
+  const x = interpolate(p, [0, 1], [-200, width + 200]);
 
   return (
     <div
       style={{
         position: 'absolute',
-        left: 0,
         top: 0,
-        width,
+        left: x,
+        width: 140,
         height,
-        overflow: 'hidden',
+        background: 'linear-gradient(90deg, transparent, rgba(255,255,255,0.45), transparent)',
+        transform: 'skewX(-25deg)',
         pointerEvents: 'none',
-        borderRadius: 'inherit',
-        zIndex: 20,
+        zIndex: 30,
       }}
-    >
-      <div
-        style={{
-          position: 'absolute',
-          top: -50,
-          left: `${left}%`,
-          width: 80,
-          height: '200%',
-          background: 'linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.65) 50%, rgba(255,255,255,0) 100%)',
-          transform: 'rotate(25deg)',
-          filter: 'blur(3px)',
-        }}
-      />
-    </div>
-  );
-};
-
-/**
- * 8. <Tactile3DBlock>:
- * Chunky toy-like card with thick 3D extruded lip, spring press-down, specular sheen sweep, and white hit-flash.
- */
-export const Tactile3DBlock: React.FC<{
-  width: number;
-  height: number;
-  bg?: string;
-  lipColor?: string;
-  at?: string | number;
-  children: React.ReactNode;
-  style?: React.CSSProperties;
-  elevation?: number;
-}> = ({
-  width,
-  height,
-  bg = COLOR_IVORY,
-  lipColor = '#DDD7CC',
-  at,
-  children,
-  style,
-  elevation = 11,
-}) => {
-  const triggerFrame = useCue(at) ?? 0;
-  const physics = useGameFeelPhysics(triggerFrame, 24);
-
-  // When hit, block presses down by elevation - 3px, then rebounds
-  const pressY = physics.isHit && (physics.frame - triggerFrame < 6) ? elevation - 3 : 0;
-
-  return (
-    <div
-      style={{
-        position: 'relative',
-        width,
-        height,
-        background: bg,
-        borderRadius: 20,
-        border: '3px solid #111111',
-        boxShadow: `0 ${elevation - pressY}px 0 ${lipColor}, 0 24px 50px rgba(0,0,0,0.62)`,
-        transform: `translate(${physics.shakeX + physics.rattleX}px, ${physics.shakeY + physics.rattleY + pressY}px) scale(${physics.scaleX}, ${physics.scaleY})`,
-        display: 'flex',
-        flexDirection: 'column',
-        overflow: 'hidden',
-        ...style,
-      }}
-    >
-      {/* Specular Sheen Sweep on Impact */}
-      {physics.isHit && <SpecularSheen at={triggerFrame + 4} />}
-
-      {/* Impact Hit Flash Overlay */}
-      {physics.hitFlash && (
-        <div
-          style={{
-            position: 'absolute',
-            left: 0,
-            top: 0,
-            width: '100%',
-            height: '100%',
-            background: '#FFFFFF',
-            opacity: 0.65,
-            pointerEvents: 'none',
-            zIndex: 25,
-          }}
-        />
-      )}
-
-      {children}
-    </div>
+    />
   );
 };
