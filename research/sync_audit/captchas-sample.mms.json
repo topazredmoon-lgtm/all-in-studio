@@ -1,0 +1,813 @@
+{
+ "summary": {
+  "topic": "captchas-sample",
+  "backend": "mms",
+  "lines": 5,
+  "lines_over": 5,
+  "words_over": 34,
+  "heard_extra": 1,
+  "script_missing": 2,
+  "median_line_p90": 0.231,
+  "median_bias": 0.101,
+  "fails": [
+   {
+    "beat": "h00",
+    "over": 6,
+    "worst_word": "Select",
+    "whisper_s": 0.0,
+    "align_s": 0.201
+   },
+   {
+    "beat": "a02",
+    "over": 5,
+    "worst_word": "He",
+    "whisper_s": 0.0,
+    "align_s": 0.14
+   },
+   {
+    "beat": "a03",
+    "over": 11,
+    "worst_word": "Researchers",
+    "whisper_s": 0.0,
+    "align_s": 0.261
+   },
+   {
+    "beat": "a04",
+    "over": 5,
+    "worst_word": "All",
+    "whisper_s": 0.0,
+    "align_s": 0.261
+   },
+   {
+    "beat": "a05",
+    "over": 7,
+    "worst_word": "The",
+    "whisper_s": 0.0,
+    "align_s": 0.381
+   }
+  ]
+ },
+ "rows": [
+  {
+   "beat": "h00",
+   "backend": "mms",
+   "note": null,
+   "n": 8,
+   "p50_ds": 0.118,
+   "p90_ds": 0.201,
+   "max_ds": 0.202,
+   "p50_de": 0.079,
+   "max_de": 0.15,
+   "bias_ds": 0.092,
+   "dropped": [],
+   "extra": [],
+   "worst": [
+    {
+     "word": "all",
+     "whisper_s": 0.48,
+     "whisper_e": 0.8,
+     "align_s": 0.682,
+     "align_e": 0.802,
+     "ds": 0.202,
+     "de": 0.002
+    },
+    {
+     "word": "Select",
+     "whisper_s": 0.0,
+     "whisper_e": 0.48,
+     "align_s": 0.201,
+     "align_e": 0.562,
+     "ds": 0.201,
+     "de": 0.082
+    },
+    {
+     "word": "with",
+     "whisper_s": 1.12,
+     "whisper_e": 1.38,
+     "align_s": 1.283,
+     "align_e": 1.384,
+     "ds": 0.163,
+     "de": 0.004
+    }
+   ],
+   "diffs": [
+    {
+     "word": "Select",
+     "whisper_s": 0.0,
+     "whisper_e": 0.48,
+     "align_s": 0.201,
+     "align_e": 0.562,
+     "ds": 0.201,
+     "de": 0.082
+    },
+    {
+     "word": "all",
+     "whisper_s": 0.48,
+     "whisper_e": 0.8,
+     "align_s": 0.682,
+     "align_e": 0.802,
+     "ds": 0.202,
+     "de": 0.002
+    },
+    {
+     "word": "squares",
+     "whisper_s": 0.8,
+     "whisper_e": 1.12,
+     "align_s": 0.882,
+     "align_e": 1.243,
+     "ds": 0.082,
+     "de": 0.123
+    },
+    {
+     "word": "with",
+     "whisper_s": 1.12,
+     "whisper_e": 1.38,
+     "align_s": 1.283,
+     "align_e": 1.384,
+     "ds": 0.163,
+     "de": 0.004
+    },
+    {
+     "word": "traffic",
+     "whisper_s": 1.38,
+     "whisper_e": 1.66,
+     "align_s": 1.424,
+     "align_e": 1.725,
+     "ds": 0.044,
+     "de": 0.065
+    },
+    {
+     "word": "lights.",
+     "whisper_s": 1.66,
+     "whisper_e": 2.12,
+     "align_s": 1.765,
+     "align_e": 2.045,
+     "ds": 0.105,
+     "de": -0.075
+    },
+    {
+     "word": "Simple,",
+     "whisper_s": 2.98,
+     "whisper_e": 3.04,
+     "align_s": 2.848,
+     "align_e": 3.168,
+     "ds": -0.132,
+     "de": 0.128
+    },
+    {
+     "word": "right?",
+     "whisper_s": 3.28,
+     "whisper_e": 3.5,
+     "align_s": 3.349,
+     "align_e": 3.65,
+     "ds": 0.069,
+     "de": 0.15
+    }
+   ]
+  },
+  {
+   "beat": "a02",
+   "backend": "mms",
+   "note": null,
+   "n": 11,
+   "p50_ds": 0.061,
+   "p90_ds": 0.14,
+   "max_ds": 0.146,
+   "p50_de": 0.014,
+   "max_de": 0.13,
+   "bias_ds": 0.07,
+   "dropped": [],
+   "extra": [],
+   "worst": [
+    {
+     "word": "We",
+     "whisper_s": 2.02,
+     "whisper_e": 2.24,
+     "align_s": 2.166,
+     "align_e": 2.226,
+     "ds": 0.146,
+     "de": -0.014
+    },
+    {
+     "word": "He",
+     "whisper_s": 0.0,
+     "whisper_e": 0.26,
+     "align_s": 0.14,
+     "align_e": 0.221,
+     "ds": 0.14,
+     "de": -0.039
+    },
+    {
+     "word": "all",
+     "whisper_s": 2.36,
+     "whisper_e": 2.62,
+     "align_s": 2.487,
+     "align_e": 2.627,
+     "ds": 0.127,
+     "de": 0.007
+    }
+   ],
+   "diffs": [
+    {
+     "word": "He",
+     "whisper_s": 0.0,
+     "whisper_e": 0.26,
+     "align_s": 0.14,
+     "align_e": 0.221,
+     "ds": 0.14,
+     "de": -0.039
+    },
+    {
+     "word": "is",
+     "whisper_s": 0.26,
+     "whisper_e": 0.36,
+     "align_s": 0.281,
+     "align_e": 0.361,
+     "ds": 0.021,
+     "de": 0.001
+    },
+    {
+     "word": "not",
+     "whisper_s": 0.36,
+     "whisper_e": 0.6,
+     "align_s": 0.421,
+     "align_e": 0.602,
+     "ds": 0.061,
+     "de": 0.002
+    },
+    {
+     "word": "alone.",
+     "whisper_s": 0.6,
+     "whisper_e": 0.92,
+     "align_s": 0.642,
+     "align_e": 1.003,
+     "ds": 0.042,
+     "de": 0.083
+    },
+    {
+     "word": "We",
+     "whisper_s": 2.02,
+     "whisper_e": 2.24,
+     "align_s": 2.166,
+     "align_e": 2.226,
+     "ds": 0.146,
+     "de": -0.014
+    },
+    {
+     "word": "have",
+     "whisper_s": 2.24,
+     "whisper_e": 2.36,
+     "align_s": 2.266,
+     "align_e": 2.406,
+     "ds": 0.026,
+     "de": 0.046
+    },
+    {
+     "word": "all",
+     "whisper_s": 2.36,
+     "whisper_e": 2.62,
+     "align_s": 2.487,
+     "align_e": 2.627,
+     "ds": 0.127,
+     "de": 0.007
+    },
+    {
+     "word": "stared",
+     "whisper_s": 2.62,
+     "whisper_e": 2.94,
+     "align_s": 2.707,
+     "align_e": 3.008,
+     "ds": 0.087,
+     "de": 0.068
+    },
+    {
+     "word": "at",
+     "whisper_s": 2.94,
+     "whisper_e": 3.08,
+     "align_s": 3.028,
+     "align_e": 3.068,
+     "ds": 0.088,
+     "de": -0.012
+    },
+    {
+     "word": "that",
+     "whisper_s": 3.08,
+     "whisper_e": 3.24,
+     "align_s": 3.088,
+     "align_e": 3.229,
+     "ds": 0.008,
+     "de": -0.011
+    },
+    {
+     "word": "corner.",
+     "whisper_s": 3.24,
+     "whisper_e": 3.46,
+     "align_s": 3.269,
+     "align_e": 3.59,
+     "ds": 0.029,
+     "de": 0.13
+    }
+   ]
+  },
+  {
+   "beat": "a03",
+   "backend": "mms",
+   "note": null,
+   "n": 17,
+   "p50_ds": 0.099,
+   "p90_ds": 0.231,
+   "max_ds": 0.261,
+   "p50_de": 0.044,
+   "max_de": 0.215,
+   "bias_ds": 0.126,
+   "dropped": [
+    "ReCAPTCHA"
+   ],
+   "extra": [
+    "re",
+    "CAPTCHA"
+   ],
+   "worst": [
+    {
+     "word": "Researchers",
+     "whisper_s": 0.0,
+     "whisper_e": 0.6,
+     "align_s": 0.261,
+     "align_e": 0.782,
+     "ds": 0.261,
+     "de": 0.182
+    },
+    {
+     "word": "added",
+     "whisper_s": 1.64,
+     "whisper_e": 2.06,
+     "align_s": 1.884,
+     "align_e": 2.104,
+     "ds": 0.244,
+     "de": 0.044
+    },
+    {
+     "word": "at",
+     "whisper_s": 0.6,
+     "whisper_e": 0.92,
+     "align_s": 0.822,
+     "align_e": 0.902,
+     "ds": 0.222,
+     "de": -0.018
+    }
+   ],
+   "diffs": [
+    {
+     "word": "Researchers",
+     "whisper_s": 0.0,
+     "whisper_e": 0.6,
+     "align_s": 0.261,
+     "align_e": 0.782,
+     "ds": 0.261,
+     "de": 0.182
+    },
+    {
+     "word": "at",
+     "whisper_s": 0.6,
+     "whisper_e": 0.92,
+     "align_s": 0.822,
+     "align_e": 0.902,
+     "ds": 0.222,
+     "de": -0.018
+    },
+    {
+     "word": "UC",
+     "whisper_s": 0.92,
+     "whisper_e": 1.18,
+     "align_s": 1.002,
+     "align_e": 1.142,
+     "ds": 0.082,
+     "de": -0.038
+    },
+    {
+     "word": "Irvine",
+     "whisper_s": 1.18,
+     "whisper_e": 1.64,
+     "align_s": 1.343,
+     "align_e": 1.744,
+     "ds": 0.163,
+     "de": 0.104
+    },
+    {
+     "word": "added",
+     "whisper_s": 1.64,
+     "whisper_e": 2.06,
+     "align_s": 1.884,
+     "align_e": 2.104,
+     "ds": 0.244,
+     "de": 0.044
+    },
+    {
+     "word": "it",
+     "whisper_s": 2.06,
+     "whisper_e": 2.22,
+     "align_s": 2.144,
+     "align_e": 2.225,
+     "ds": 0.084,
+     "de": 0.005
+    },
+    {
+     "word": "up,",
+     "whisper_s": 2.22,
+     "whisper_e": 2.64,
+     "align_s": 2.265,
+     "align_e": 2.425,
+     "ds": 0.045,
+     "de": -0.215
+    },
+    {
+     "word": "819 million",
+     "whisper_s": 3.32,
+     "whisper_e": 4.78,
+     "align_s": 3.347,
+     "align_e": 4.93,
+     "ds": 0.027,
+     "de": 0.15
+    },
+    {
+     "word": "hours",
+     "whisper_s": 4.78,
+     "whisper_e": 5.26,
+     "align_s": 4.99,
+     "align_e": 5.351,
+     "ds": 0.21,
+     "de": 0.091
+    },
+    {
+     "word": "on",
+     "whisper_s": 5.26,
+     "whisper_e": 5.58,
+     "align_s": 5.471,
+     "align_e": 5.572,
+     "ds": 0.211,
+     "de": -0.008
+    },
+    {
+     "word": "alone.",
+     "whisper_s": 6.26,
+     "whisper_e": 6.6,
+     "align_s": 6.313,
+     "align_e": 6.714,
+     "ds": 0.053,
+     "de": 0.114
+    },
+    {
+     "word": "That's",
+     "whisper_s": 7.74,
+     "whisper_e": 8.08,
+     "align_s": 7.876,
+     "align_e": 8.057,
+     "ds": 0.136,
+     "de": -0.023
+    },
+    {
+     "word": "That's",
+     "whisper_s": 7.74,
+     "whisper_e": 8.08,
+     "align_s": 7.876,
+     "align_e": 8.057,
+     "ds": 0.136,
+     "de": -0.023
+    },
+    {
+     "word": "more",
+     "whisper_s": 8.08,
+     "whisper_e": 8.22,
+     "align_s": 8.117,
+     "align_e": 8.257,
+     "ds": 0.037,
+     "de": 0.037
+    },
+    {
+     "word": "than",
+     "whisper_s": 8.22,
+     "whisper_e": 8.38,
+     "align_s": 8.277,
+     "align_e": 8.397,
+     "ds": 0.057,
+     "de": 0.017
+    },
+    {
+     "word": "90,000",
+     "whisper_s": 8.38,
+     "whisper_e": 9.14,
+     "align_s": 8.458,
+     "align_e": 9.219,
+     "ds": 0.078,
+     "de": 0.079
+    },
+    {
+     "word": "years.",
+     "whisper_s": 9.14,
+     "whisper_e": 9.42,
+     "align_s": 9.239,
+     "align_e": 9.58,
+     "ds": 0.099,
+     "de": 0.16
+    }
+   ]
+  },
+  {
+   "beat": "a04",
+   "backend": "mms",
+   "note": null,
+   "n": 12,
+   "p50_ds": 0.051,
+   "p90_ds": 0.255,
+   "max_ds": 0.328,
+   "p50_de": 0.033,
+   "max_de": 0.128,
+   "bias_ds": 0.101,
+   "dropped": [],
+   "extra": [],
+   "worst": [
+    {
+     "word": "put",
+     "whisper_s": 3.08,
+     "whisper_e": 3.52,
+     "align_s": 3.408,
+     "align_e": 3.549,
+     "ds": 0.328,
+     "de": 0.029
+    },
+    {
+     "word": "All",
+     "whisper_s": 0.0,
+     "whisper_e": 0.38,
+     "align_s": 0.261,
+     "align_e": 0.381,
+     "ds": 0.261,
+     "de": 0.001
+    },
+    {
+     "word": "didn't",
+     "whisper_s": 0.92,
+     "whisper_e": 1.36,
+     "align_s": 1.123,
+     "align_e": 1.323,
+     "ds": 0.203,
+     "de": -0.037
+    }
+   ],
+   "diffs": [
+    {
+     "word": "All",
+     "whisper_s": 0.0,
+     "whisper_e": 0.38,
+     "align_s": 0.261,
+     "align_e": 0.381,
+     "ds": 0.261,
+     "de": 0.001
+    },
+    {
+     "word": "that",
+     "whisper_s": 0.38,
+     "whisper_e": 0.58,
+     "align_s": 0.421,
+     "align_e": 0.561,
+     "ds": 0.041,
+     "de": -0.019
+    },
+    {
+     "word": "time",
+     "whisper_s": 0.58,
+     "whisper_e": 0.92,
+     "align_s": 0.621,
+     "align_e": 0.942,
+     "ds": 0.041,
+     "de": 0.022
+    },
+    {
+     "word": "didn't",
+     "whisper_s": 0.92,
+     "whisper_e": 1.36,
+     "align_s": 1.123,
+     "align_e": 1.323,
+     "ds": 0.203,
+     "de": -0.037
+    },
+    {
+     "word": "didn't",
+     "whisper_s": 0.92,
+     "whisper_e": 1.36,
+     "align_s": 1.123,
+     "align_e": 1.323,
+     "ds": 0.203,
+     "de": -0.037
+    },
+    {
+     "word": "just",
+     "whisper_s": 1.36,
+     "whisper_e": 1.48,
+     "align_s": 1.343,
+     "align_e": 1.544,
+     "ds": -0.017,
+     "de": 0.064
+    },
+    {
+     "word": "vanish.",
+     "whisper_s": 1.48,
+     "whisper_e": 1.88,
+     "align_s": 1.564,
+     "align_e": 1.965,
+     "ds": 0.084,
+     "de": 0.085
+    },
+    {
+     "word": "Someone",
+     "whisper_s": 2.8,
+     "whisper_e": 3.08,
+     "align_s": 2.747,
+     "align_e": 3.208,
+     "ds": -0.053,
+     "de": 0.128
+    },
+    {
+     "word": "put",
+     "whisper_s": 3.08,
+     "whisper_e": 3.52,
+     "align_s": 3.408,
+     "align_e": 3.549,
+     "ds": 0.328,
+     "de": 0.029
+    },
+    {
+     "word": "it",
+     "whisper_s": 3.52,
+     "whisper_e": 3.64,
+     "align_s": 3.569,
+     "align_e": 3.629,
+     "ds": 0.049,
+     "de": -0.011
+    },
+    {
+     "word": "to",
+     "whisper_s": 3.64,
+     "whisper_e": 3.74,
+     "align_s": 3.669,
+     "align_e": 3.729,
+     "ds": 0.029,
+     "de": -0.011
+    },
+    {
+     "word": "work.",
+     "whisper_s": 3.74,
+     "whisper_e": 3.94,
+     "align_s": 3.789,
+     "align_e": 3.99,
+     "ds": 0.049,
+     "de": 0.05
+    }
+   ]
+  },
+  {
+   "beat": "a05",
+   "backend": "mms",
+   "note": null,
+   "n": 11,
+   "p50_ds": 0.083,
+   "p90_ds": 0.381,
+   "max_ds": 1.207,
+   "p50_de": 0.023,
+   "max_de": 0.116,
+   "bias_ds": 0.2,
+   "dropped": [],
+   "extra": [],
+   "worst": [
+    {
+     "word": "who",
+     "whisper_s": 2.1,
+     "whisper_e": 3.42,
+     "align_s": 3.307,
+     "align_e": 3.407,
+     "ds": 1.207,
+     "de": -0.013
+    },
+    {
+     "word": "The",
+     "whisper_s": 0.0,
+     "whisper_e": 0.48,
+     "align_s": 0.381,
+     "align_e": 0.461,
+     "ds": 0.381,
+     "de": -0.019
+    },
+    {
+     "word": "reality",
+     "whisper_s": 0.78,
+     "whisper_e": 1.28,
+     "align_s": 0.882,
+     "align_e": 1.303,
+     "ds": 0.102,
+     "de": 0.023
+    }
+   ],
+   "diffs": [
+    {
+     "word": "The",
+     "whisper_s": 0.0,
+     "whisper_e": 0.48,
+     "align_s": 0.381,
+     "align_e": 0.461,
+     "ds": 0.381,
+     "de": -0.019
+    },
+    {
+     "word": "dark",
+     "whisper_s": 0.48,
+     "whisper_e": 0.78,
+     "align_s": 0.561,
+     "align_e": 0.802,
+     "ds": 0.081,
+     "de": 0.022
+    },
+    {
+     "word": "reality",
+     "whisper_s": 0.78,
+     "whisper_e": 1.28,
+     "align_s": 0.882,
+     "align_e": 1.303,
+     "ds": 0.102,
+     "de": 0.023
+    },
+    {
+     "word": "of",
+     "whisper_s": 1.28,
+     "whisper_e": 1.48,
+     "align_s": 1.363,
+     "align_e": 1.423,
+     "ds": 0.083,
+     "de": -0.057
+    },
+    {
+     "word": "CAPTCHAs",
+     "whisper_s": 1.48,
+     "whisper_e": 2.1,
+     "align_s": 1.463,
+     "align_e": 1.984,
+     "ds": -0.017,
+     "de": -0.116
+    },
+    {
+     "word": "who",
+     "whisper_s": 2.1,
+     "whisper_e": 3.42,
+     "align_s": 3.307,
+     "align_e": 3.407,
+     "ds": 1.207,
+     "de": -0.013
+    },
+    {
+     "word": "cashed",
+     "whisper_s": 3.42,
+     "whisper_e": 3.74,
+     "align_s": 3.487,
+     "align_e": 3.788,
+     "ds": 0.067,
+     "de": 0.048
+    },
+    {
+     "word": "in",
+     "whisper_s": 3.74,
+     "whisper_e": 3.88,
+     "align_s": 3.808,
+     "align_e": 3.888,
+     "ds": 0.068,
+     "de": 0.008
+    },
+    {
+     "word": "on",
+     "whisper_s": 3.88,
+     "whisper_e": 4.02,
+     "align_s": 3.928,
+     "align_e": 4.008,
+     "ds": 0.048,
+     "de": -0.012
+    },
+    {
+     "word": "every",
+     "whisper_s": 4.02,
+     "whisper_e": 4.3,
+     "align_s": 4.109,
+     "align_e": 4.329,
+     "ds": 0.089,
+     "de": 0.029
+    },
+    {
+     "word": "click",
+     "whisper_s": 4.3,
+     "whisper_e": 4.56,
+     "align_s": 4.389,
+     "align_e": 4.63,
+     "ds": 0.089,
+     "de": 0.07
+    }
+   ]
+  }
+ ]
+}

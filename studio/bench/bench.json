@@ -1,0 +1,520 @@
+{
+ "generated": "2026-10-17T15:13:51+00:00",
+ "topics": [
+  {
+   "id": "agent-with-your-card",
+   "mp4": null,
+   "mp4_mtime": null,
+   "stamp": false,
+   "stamp_fresh": null,
+   "timeline": false,
+   "stills": [],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "NO RENDER YET - this topic is benched, not shipped-able",
+    "NO timeline.json - cannot render (UPG-N4 class); needs build or de-register",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "ai-ban",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\ai-ban\\out\\All-in_ai_ban_sample_v5.mp4",
+   "mp4_mtime": "2026-10-17T18:51:54",
+   "stamp": false,
+   "stamp_fresh": null,
+   "timeline": true,
+   "stills": [
+    "watch.jpg",
+    "sheet_h01_h07.jpg",
+    "sample.jpg",
+    "frame_1.jpg",
+    "frame_0.jpg",
+    "cuts_v5_new.jpg",
+    "cuts_v5_fix.jpg",
+    "cuts_stamp.jpg",
+    "cuts_fix2.jpg",
+    "cuts_f4.jpg"
+   ],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "All-in_ai_ban_sample_v5.mp4 - stamp unreadable - rendered 3h ago",
+    "timeline.json present - can render",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "ai-black-markets",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\ai-black-markets\\out\\ai-black-markets_v3.mp4",
+   "mp4_mtime": "2026-10-09T03:12:12",
+   "stamp": true,
+   "stamp_fresh": false,
+   "timeline": true,
+   "stills": [
+    "watch.jpg",
+    "sheet_x01_r02.jpg",
+    "sheet_w01_k06.jpg",
+    "sheet_j01_p04.jpg",
+    "sheet_i01_v03.jpg",
+    "sheet_h00_s04.jpg",
+    "sample.jpg",
+    "cuts_fix2.jpg",
+    "cuts_fix.jpg",
+    "cuts_all.jpg"
+   ],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "ai-black-markets_v3.mp4 - stamp STALE (sources changed after render) - rendered 211h ago",
+    "timeline.json present - can render",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "ai-grey-zone",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\ai-grey-zone\\out\\ai-grey-zone_v3.mp4",
+   "mp4_mtime": "2026-10-16T19:19:35",
+   "stamp": true,
+   "stamp_fresh": false,
+   "timeline": true,
+   "stills": [
+    "listen.png",
+    "watch.jpg",
+    "cuts_all.jpg"
+   ],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "ai-grey-zone_v3.mp4 - stamp STALE (sources changed after render) - rendered 27h ago",
+    "timeline.json present - can render",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "ai-power-bill",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\ai-power-bill\\out\\ai-power-bill_v2.mp4",
+   "mp4_mtime": "2026-10-17T13:20:58",
+   "stamp": true,
+   "stamp_fresh": false,
+   "timeline": true,
+   "stills": [
+    "listen.png",
+    "watch.jpg",
+    "cuts_all.jpg",
+    "sample.jpg",
+    "frame_2.jpg",
+    "frame_1.jpg",
+    "frame_0.jpg"
+   ],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "ai-power-bill_v2.mp4 - stamp STALE (sources changed after render) - rendered 9h ago",
+    "timeline.json present - can render",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "apply-button",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\apply-button\\out\\apply-button_v5.mp4",
+   "mp4_mtime": "2026-10-17T18:55:30",
+   "stamp": true,
+   "stamp_fresh": false,
+   "timeline": true,
+   "stills": [
+    "listen.png",
+    "watch.jpg",
+    "cuts_all.jpg"
+   ],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "apply-button_v5.mp4 - stamp STALE (sources changed after render) - rendered 3h ago",
+    "timeline.json present - can render",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "captchas-3min",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\captchas-3min\\out\\captchas-3min_v8.mp4",
+   "mp4_mtime": "2026-10-08T01:02:01",
+   "stamp": true,
+   "stamp_fresh": false,
+   "timeline": true,
+   "stills": [
+    "v8_all.jpg",
+    "watch.jpg",
+    "cuts_all.jpg",
+    "chk_v7.jpg",
+    "chk_125.5.jpg",
+    "chk_69.5.jpg",
+    "chk_64.5.jpg",
+    "chk_12.6.jpg",
+    "v6_96_157.jpg",
+    "v6_36_96.jpg"
+   ],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "captchas-3min_v8.mp4 - stamp STALE (sources changed after render) - rendered 237h ago",
+    "timeline.json present - can render",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "captchas-full",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\captchas-full\\out\\captchas-full_v5.mp4",
+   "mp4_mtime": "2026-10-09T01:53:30",
+   "stamp": true,
+   "stamp_fresh": false,
+   "timeline": true,
+   "stills": [
+    "watch.jpg",
+    "cuts_v3new.jpg",
+    "v2_check.jpg",
+    "hook_v4.jpg",
+    "sample_v4.jpg",
+    "hyd.jpg",
+    "frame_2.jpg",
+    "frame_1.jpg",
+    "frame_0.jpg",
+    "cuts_clips.jpg"
+   ],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "captchas-full_v5.mp4 - stamp STALE (sources changed after render) - rendered 212h ago",
+    "timeline.json present - can render",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "captchas-sample",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\captchas-sample\\out\\captchas-sample_v1.mp4",
+   "mp4_mtime": "2026-10-14T08:15:13",
+   "stamp": true,
+   "stamp_fresh": false,
+   "timeline": true,
+   "stills": [
+    "listen.png",
+    "watch.jpg"
+   ],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "captchas-sample_v1.mp4 - stamp STALE (sources changed after render) - rendered 86h ago",
+    "timeline.json present - can render",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "china-ai-underground",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\china-ai-underground\\out\\All-in_china_ai_underground_sample.mp4",
+   "mp4_mtime": "2026-10-17T18:51:56",
+   "stamp": false,
+   "stamp_fresh": null,
+   "timeline": true,
+   "stills": [
+    "watch.jpg",
+    "sample.jpg",
+    "cuts_c.jpg",
+    "cuts_b.jpg",
+    "cuts_all.jpg"
+   ],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "All-in_china_ai_underground_sample.mp4 - stamp unreadable - rendered 3h ago",
+    "timeline.json present - can render",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "elon-musk",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\elon-musk\\out\\elon-musk_v2.mp4",
+   "mp4_mtime": "2026-10-13T17:01:44",
+   "stamp": true,
+   "stamp_fresh": false,
+   "timeline": true,
+   "stills": [
+    "watch.jpg",
+    "sample.jpg",
+    "cuts_all.jpg",
+    "frame_4.jpg",
+    "frame_3.jpg",
+    "frame_2.jpg",
+    "frame_1.jpg",
+    "frame_0.jpg"
+   ],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "elon-musk_v2.mp4 - stamp STALE (sources changed after render) - rendered 101h ago",
+    "timeline.json present - can render",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "grey-matter",
+   "mp4": null,
+   "mp4_mtime": null,
+   "stamp": false,
+   "stamp_fresh": null,
+   "timeline": false,
+   "stills": [],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "NO RENDER YET - this topic is benched, not shipped-able",
+    "NO timeline.json - cannot render (UPG-N4 class); needs build or de-register",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "greyhat-ai",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\greyhat-ai\\out\\greyhat-ai_v1.mp4",
+   "mp4_mtime": "2026-10-14T04:00:44",
+   "stamp": true,
+   "stamp_fresh": false,
+   "timeline": true,
+   "stills": [
+    "listen.png",
+    "watch.jpg",
+    "sample.jpg",
+    "frame.jpg",
+    "frame_1.jpg",
+    "frame_0.jpg",
+    "cuts_all.jpg"
+   ],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "greyhat-ai_v1.mp4 - stamp STALE (sources changed after render) - rendered 90h ago",
+    "timeline.json present - can render",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "how-to-break-an-ai",
+   "mp4": null,
+   "mp4_mtime": null,
+   "stamp": false,
+   "stamp_fresh": null,
+   "timeline": false,
+   "stills": [],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "NO RENDER YET - this topic is benched, not shipped-able",
+    "NO timeline.json - cannot render (UPG-N4 class); needs build or de-register",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "lying-machine",
+   "mp4": null,
+   "mp4_mtime": null,
+   "stamp": false,
+   "stamp_fresh": null,
+   "timeline": false,
+   "stills": [],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "NO RENDER YET - this topic is benched, not shipped-able",
+    "NO timeline.json - cannot render (UPG-N4 class); needs build or de-register",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "microwave-trading",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\microwave-trading\\out\\microwave-trading_v9.mp4",
+   "mp4_mtime": "2026-10-16T17:52:58",
+   "stamp": true,
+   "stamp_fresh": false,
+   "timeline": true,
+   "stills": [
+    "listen.png",
+    "watch.jpg",
+    "cuts_all.jpg",
+    "sheet_85.jpg"
+   ],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "microwave-trading_v9.mp4 - stamp STALE (sources changed after render) - rendered 28h ago",
+    "timeline.json present - can render",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "new-ai-reasoning",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\new-ai-reasoning\\out\\new-ai-reasoning_v9.mp4",
+   "mp4_mtime": "2026-10-16T18:13:22",
+   "stamp": true,
+   "stamp_fresh": false,
+   "timeline": true,
+   "stills": [
+    "listen.png",
+    "watch.jpg",
+    "cuts_all.jpg",
+    "test_term_1.jpg",
+    "test_term_0.jpg",
+    "cut_inspect_v4_9.jpg",
+    "cut_inspect_v4_8.jpg",
+    "cut_inspect_v4_7.jpg",
+    "cut_inspect_v4_6.jpg",
+    "cut_inspect_v4_5.jpg"
+   ],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "new-ai-reasoning_v9.mp4 - stamp STALE (sources changed after render) - rendered 28h ago",
+    "timeline.json present - can render",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "poisoned-well",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\poisoned-well\\out\\All-in_poisoned-well_sample.mp4",
+   "mp4_mtime": "2026-10-15T05:08:02",
+   "stamp": false,
+   "stamp_fresh": null,
+   "timeline": true,
+   "stills": [],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "All-in_poisoned-well_sample.mp4 - stamp unreadable - rendered 65h ago",
+    "timeline.json present - can render",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "stolen-voices",
+   "mp4": null,
+   "mp4_mtime": null,
+   "stamp": false,
+   "stamp_fresh": null,
+   "timeline": false,
+   "stills": [],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "NO RENDER YET - this topic is benched, not shipped-able",
+    "NO timeline.json - cannot render (UPG-N4 class); needs build or de-register",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "surveillance-pricing",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\surveillance-pricing\\out\\surveillance-pricing_v1.mp4",
+   "mp4_mtime": "2026-10-14T01:57:02",
+   "stamp": true,
+   "stamp_fresh": false,
+   "timeline": true,
+   "stills": [
+    "watch.jpg"
+   ],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "surveillance-pricing_v1.mp4 - stamp STALE (sources changed after render) - rendered 92h ago",
+    "timeline.json present - can render",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "the-ai-cast",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\the-ai-cast\\out\\the-ai-cast_v3.mp4",
+   "mp4_mtime": "2026-10-15T15:08:49",
+   "stamp": true,
+   "stamp_fresh": false,
+   "timeline": true,
+   "stills": [
+    "listen.png",
+    "watch.jpg",
+    "cuts_all.jpg"
+   ],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "the-ai-cast_v3.mp4 - stamp STALE (sources changed after render) - rendered 55h ago",
+    "timeline.json present - can render",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "tokens-explained",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\tokens-explained\\out\\tokens-explained_v5.mp4",
+   "mp4_mtime": "2026-10-17T18:51:08",
+   "stamp": true,
+   "stamp_fresh": false,
+   "timeline": true,
+   "stills": [
+    "listen.png",
+    "watch.jpg",
+    "cuts_all.jpg"
+   ],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "tokens-explained_v5.mp4 - stamp STALE (sources changed after render) - rendered 3h ago",
+    "timeline.json present - can render",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  },
+  {
+   "id": "why-ai-dumber",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\why-ai-dumber\\out\\why-ai-dumber_v3.mp4",
+   "mp4_mtime": "2026-10-13T14:26:48",
+   "stamp": true,
+   "stamp_fresh": false,
+   "timeline": true,
+   "stills": [
+    "watch.jpg",
+    "sample.jpg",
+    "ref_contact.jpg",
+    "frame_3.jpg",
+    "frame_2.jpg",
+    "frame_1.jpg",
+    "frame_0.jpg",
+    "cuts_all.jpg",
+    "listen.png",
+    "frame.jpg"
+   ],
+   "verdicts": [],
+   "n_verdicts": 0,
+   "bullets": [
+    "why-ai-dumber_v3.mp4 - stamp STALE (sources changed after render) - rendered 104h ago",
+    "timeline.json present - can render",
+    "awaiting owner verdict (YES / HOLD / RED)"
+   ],
+   "gate_summary": null
+  }
+ ],
+ "contract": "benched_queue"
+}

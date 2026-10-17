@@ -110,21 +110,27 @@ def resize_for_vlm(path: Path) -> Path:
     return buf.getvalue()
 
 
-def ollama_chat_image(host: str, model: str, image_b64: str) -> str | None:
+def ollama_chat_image(host: str, model: str, image_b64: str, timeout: int = 120) -> str | None:
     """Ask Ollama about one image. Returns text or None on any failure."""
     payload = {
         "model": model,
         "messages": [{"role": "user", "content": VLM_PROMPT, "images": [image_b64]}],
         "stream": False,
-        "options": {"temperature": 0.2, "num_predict": 120},
+        # qwen3-vl is a thinking model: budget must cover reasoning + answer, and when the
+        # server truncates the visible answer the text still sits in message.thinking
+        # (measured 2026-10-17: content empty at num_predict=160 while thinking had 700+).
+        "think": False,
+        "keep_alive": "30m",
+        "options": {"temperature": 0.2, "num_predict": 900},
     }
     try:
         req = Request(host.rstrip("/") + "/api/chat",
                       data=json.dumps(payload).encode("utf-8"),
                       headers={"Content-Type": "application/json"}, method="POST")
-        with urlopen(req, timeout=60) as r:
+        with urlopen(req, timeout=timeout) as r:
             data = json.loads(r.read().decode("utf-8"))
-        return (data.get("message") or {}).get("content", "")
+        msg = data.get("message") or {}
+        return (msg.get("content") or msg.get("thinking") or "") or None
     except (URLError, HTTPError, OSError, ValueError, KeyError) as e:
         print(f"vlm_frame_qa: WARN: Ollama request failed ({type(e).__name__}: {e})", file=sys.stderr)
         return None
@@ -220,6 +226,7 @@ def main():
     ap.add_argument("--frames", type=int, default=DEFAULT_FRAMES, help="Frames to sample")
     ap.add_argument("--ollama-host", default=DEFAULT_HOST, help="Ollama base URL")
     ap.add_argument("--model", default=DEFAULT_MODEL, help="Ollama vision model")
+    ap.add_argument("--timeout", type=int, default=120, help="Per-image Ollama timeout in seconds (cold load can take ~1 min)")
     ap.add_argument("--temp-dir", default=None, help="Frame temp dir (default: system temp)")
     args = ap.parse_args()
 
@@ -246,7 +253,7 @@ def main():
 
     # Try Ollama once to decide mode
     mode = "vlm"
-    test = ollama_chat_image(args.ollama_host, args.model, base64.b64encode(resize_for_vlm(frames[0])).decode("ascii"))
+    test = ollama_chat_image(args.ollama_host, args.model, base64.b64encode(resize_for_vlm(frames[0])).decode("ascii"), timeout=args.timeout)
     if test is None:
         mode = "heuristic"
 
@@ -254,7 +261,7 @@ def main():
     for fp in frames:
         b64 = base64.b64encode(resize_for_vlm(fp)).decode("ascii")
         if mode == "vlm":
-            text = ollama_chat_image(args.ollama_host, args.model, b64)
+            text = ollama_chat_image(args.ollama_host, args.model, b64, timeout=args.timeout)
             res = parse_vlm(text) if text else heuristic_frame_score(fp)
             res["mode"] = "vlm" if text else "heuristic-fallback"
         else:

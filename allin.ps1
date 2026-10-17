@@ -25,8 +25,14 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$KEEP = if ($PSScriptRoot) { $PSScriptRoot } else { Split-Path -Parent $MyInvocation.MyCommand.Path }
-$REPO = Join-Path $KEEP "All-in"
+$CUR = if ($PSScriptRoot) { $PSScriptRoot } else { Split-Path -Parent $MyInvocation.MyCommand.Path }
+if (Test-Path (Join-Path $CUR "All-in")) {
+    $KEEP = $CUR
+    $REPO = Join-Path $KEEP "All-in"
+} else {
+    $REPO = $CUR
+    $KEEP = Split-Path -Parent $REPO
+}
 $VOICE_PY = Join-Path $KEEP "voice\.venv-tts\Scripts\python.exe"
 
 # Configure Studio Environment
@@ -60,6 +66,10 @@ Commands:
   watch <topic>         Audit visual density, edge detection & border clipping on MP4
   selftest              Run syntax and compilation self-test across all studio tools
   ship <topic>          Generate YouTube metadata, chapters, sources & 3 thumbnails (ship_package.py)
+  motion-lint           Static motion-physics lint (UPG-L4): node tools/motion_lint.mjs
+  type-audit            Typography registration + 22px-floor audit (UPG-L2)
+  genome                Extract canonical soul-DNA / genome gate <mp4> (UPG-R2A)
+  bench                 Owner one-click review console (YES/HOLD/RED; UPG-R4/UPG-L5)
   dashboard             Compile studio data and launch Command Center at http://localhost:4321
   daemon                Run continuous autonomous background daemon (research + QA audits + sync)
   auto-research         Trigger immediate autonomous deep research and topic scan
@@ -223,6 +233,46 @@ switch ($Command.ToLower()) {
         if (-not $Topic) { Write-Host "Error: topic required. Usage: .\allin.ps1 sheet <topic> [first_beat] [last_beat]" -ForegroundColor Red; exit 1 }
         Push-Location $REPO
         try { python tools/sheet.py $Topic @ExtraArgs } finally { Pop-Location }
+    }
+
+    # --- T-R2C (UPG-R4 + UPG-L5): owner one-click review console ---
+    "bench" {
+        Push-Location $REPO
+        try {
+            if ($Topic -in @("scan", "gate-ready")) {
+                python tools/benched_queue.py $Topic @ExtraArgs
+            } elseif ($Topic -in @("approve", "hold", "reject")) {
+                if (-not $ExtraArgs) { Write-Host "Error: topic required. Usage: .\allin.ps1 bench <approve|hold|reject> <topic> [--note ...]" -ForegroundColor Red; exit 1 }
+                $noteArgs = @()
+                if ($ExtraArgs.Count -gt 1) { $noteArgs = $ExtraArgs[1..($ExtraArgs.Count - 1)] }
+                python tools/benched_queue.py verdict $ExtraArgs[0] $Topic @noteArgs
+            } else {
+                python tools/benched_queue.py serve --open @ExtraArgs
+            }
+        } finally { Pop-Location }
+    }
+
+    # --- T-R2A (UPG-R2A): canonical-DNA extraction + film-level soul gate ---
+    "genome" {
+        Push-Location $REPO
+        try {
+            if ($Topic -eq "gate") {
+                if (-not $ExtraArgs) { Write-Host "Error: mp4 required. Usage: .\allin.ps1 genome gate <mp4> [--strict]" -ForegroundColor Red; exit 1 }
+                python tools/soul_genome.py gate @ExtraArgs
+            } else {
+                python tools/soul_genome.py extract @ExtraArgs
+            }
+        } finally { Pop-Location }
+    }
+
+    # --- T-R2B (UPG-L4 / UPG-L2): static taste lints (motion + typography) ---
+    "motion-lint" {
+        Push-Location $REPO
+        try { node tools/motion_lint.mjs @ExtraArgs } finally { Pop-Location }
+    }
+    "type-audit" {
+        Push-Location $REPO
+        try { python tools/type_audit.py @ExtraArgs } finally { Pop-Location }
     }
 
     "dashboard" {

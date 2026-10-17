@@ -1,0 +1,1488 @@
+{
+ "tool": "board_forensics",
+ "version": 1,
+ "generated": "2026-10-17T21:30:40",
+ "topic": "microwave-trading",
+ "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\microwave-trading\\out\\microwave-trading_v9.mp4",
+ "fps": 30.0,
+ "every_s": 2.5,
+ "frames_measured": 26,
+ "summary": {
+  "pass": 0,
+  "warn": 20,
+  "fail": 6,
+  "pass_rate": 0.0,
+  "no_fail_rate": 0.7692,
+  "median_score": 70.0,
+  "score_min_floor": 60.0
+ },
+ "by_visual": [
+  {
+   "visual": "Film",
+   "frames": 9,
+   "pass": 0,
+   "warn": 5,
+   "fail": 4,
+   "worst_score": 50.0,
+   "codes": {
+    "TP3_DIM_BOARD": 9,
+    "TP4_TINY_LABELS": 9,
+    "TP1_NO_HERO_MASS": 3
+   },
+   "files": [
+    "engine/src/visuals/cnai.tsx"
+   ]
+  },
+  {
+   "visual": "Bars",
+   "frames": 7,
+   "pass": 0,
+   "warn": 5,
+   "fail": 2,
+   "worst_score": 30.0,
+   "codes": {
+    "TP3_DIM_BOARD": 7,
+    "TP4_TINY_LABELS": 2,
+    "TP1_NO_HERO_MASS": 2,
+    "TP5_EMPTY_BOARD": 2,
+    "TP6_DESATURATED": 1
+   },
+   "files": [
+    "engine/src/ds/kit.tsx"
+   ]
+  },
+  {
+   "visual": "MeterDial",
+   "frames": 3,
+   "pass": 0,
+   "warn": 3,
+   "fail": 0,
+   "worst_score": 50.0,
+   "codes": {
+    "TP3_DIM_BOARD": 1,
+    "TP1_NO_HERO_MASS": 1,
+    "TP5_EMPTY_BOARD": 3,
+    "TP6_DESATURATED": 3
+   },
+   "files": [
+    "engine/src/visuals/ai-power-bill.tsx"
+   ]
+  },
+  {
+   "visual": "Score",
+   "frames": 4,
+   "pass": 0,
+   "warn": 4,
+   "fail": 0,
+   "worst_score": 70.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 1,
+    "TP4_TINY_LABELS": 3,
+    "TP1_NO_HERO_MASS": 3
+   },
+   "files": [
+    "engine/src/visuals/captchas2.tsx"
+   ]
+  },
+  {
+   "visual": "PageQuote",
+   "frames": 4,
+   "pass": 0,
+   "warn": 4,
+   "fail": 0,
+   "worst_score": 80.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 4
+   },
+   "files": [
+    "engine/src/visuals/captchas2.tsx"
+   ]
+  },
+  {
+   "visual": "LineIcon",
+   "frames": 3,
+   "pass": 0,
+   "warn": 3,
+   "fail": 0,
+   "worst_score": 80.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 3
+   },
+   "files": [
+    "engine/src/ds/kit.tsx"
+   ]
+  }
+ ],
+ "by_file": [
+  {
+   "file": "engine/src/visuals/cnai.tsx",
+   "frames": 9,
+   "fail": 4,
+   "warn": 5,
+   "worst_score": 50.0
+  },
+  {
+   "file": "engine/src/ds/kit.tsx",
+   "frames": 10,
+   "fail": 2,
+   "warn": 8,
+   "worst_score": 30.0
+  },
+  {
+   "file": "engine/src/visuals/ai-power-bill.tsx",
+   "frames": 3,
+   "fail": 0,
+   "warn": 3,
+   "worst_score": 50.0
+  },
+  {
+   "file": "engine/src/visuals/captchas2.tsx",
+   "frames": 8,
+   "fail": 0,
+   "warn": 8,
+   "worst_score": 70.0
+  }
+ ],
+ "worst": [
+  {
+   "n": 0,
+   "t": 0.0,
+   "score": 30.0,
+   "state": "FAIL",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=1.16(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=100.0(<=12.5337)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.0(>=1.0)"
+   ],
+   "beat": "b01",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "Bars"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0001,
+    "hero_mass_pct": 0.0,
+    "board_contrast": 1.16,
+    "board_p995_L": 10.59,
+    "flat_slop_frac": 0.0044,
+    "tiny_label_pct": 100.0,
+    "edge_board": 0.0056,
+    "colorfulness": 0.94,
+    "content_frac": 0.0076
+   }
+  },
+  {
+   "n": 1200,
+   "t": 40.0,
+   "score": 40.0,
+   "state": "FAIL",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=4.68(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=100.0(<=12.5337)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.0(>=1.0)"
+   ],
+   "beat": "b05",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "Bars"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0001,
+    "hero_mass_pct": 0.0,
+    "board_contrast": 4.68,
+    "board_p995_L": 52.16,
+    "flat_slop_frac": 0.005,
+    "tiny_label_pct": 100.0,
+    "edge_board": 0.0083,
+    "colorfulness": 42.33,
+    "content_frac": 0.057
+   }
+  },
+  {
+   "n": 675,
+   "t": 22.5,
+   "score": 50.0,
+   "state": "FAIL",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=7.55(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=31.771(<=12.5337)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.524(>=1.0)"
+   ],
+   "beat": "b03",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "Film"
+   ],
+   "img": "microwave-trading/microwave_tower.jpg",
+   "metrics": {
+    "light_frac": 0.0246,
+    "hero_mass_pct": 0.524,
+    "board_contrast": 7.55,
+    "board_p995_L": 66.27,
+    "flat_slop_frac": 0.0302,
+    "tiny_label_pct": 31.771,
+    "edge_board": 0.066,
+    "colorfulness": 16.58,
+    "content_frac": 0.9358
+   }
+  },
+  {
+   "n": 750,
+   "t": 25.0,
+   "score": 50.0,
+   "state": "FAIL",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=7.55(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=19.874(<=12.5337)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.396(>=1.0)"
+   ],
+   "beat": "b03",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "Film"
+   ],
+   "img": "microwave-trading/microwave_tower.jpg",
+   "metrics": {
+    "light_frac": 0.024,
+    "hero_mass_pct": 0.396,
+    "board_contrast": 7.55,
+    "board_p995_L": 66.27,
+    "flat_slop_frac": 0.0319,
+    "tiny_label_pct": 19.874,
+    "edge_board": 0.067,
+    "colorfulness": 16.6,
+    "content_frac": 0.9314
+   }
+  },
+  {
+   "n": 825,
+   "t": 27.5,
+   "score": 50.0,
+   "state": "FAIL",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=7.64(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=29.131(<=12.5337)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.637(>=1.0)"
+   ],
+   "beat": "b03",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "Film"
+   ],
+   "img": "microwave-trading/microwave_tower.jpg",
+   "metrics": {
+    "light_frac": 0.0241,
+    "hero_mass_pct": 0.637,
+    "board_contrast": 7.64,
+    "board_p995_L": 66.67,
+    "flat_slop_frac": 0.0324,
+    "tiny_label_pct": 29.131,
+    "edge_board": 0.0669,
+    "colorfulness": 16.59,
+    "content_frac": 0.9305
+   }
+  },
+  {
+   "n": 900,
+   "t": 30.0,
+   "score": 50.0,
+   "state": "WARN",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=7.37(>=10.1235)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.463(>=1.0)",
+    "TP5_EMPTY_BOARD:light_frac=0.0051(>=0.014)"
+   ],
+   "beat": "b04",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "MeterDial"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0051,
+    "hero_mass_pct": 0.463,
+    "board_contrast": 7.37,
+    "board_p995_L": 65.49,
+    "flat_slop_frac": 0.0004,
+    "tiny_label_pct": 8.58,
+    "edge_board": 0.0065,
+    "colorfulness": 1.11,
+    "content_frac": 0.0147
+   }
+  },
+  {
+   "n": 600,
+   "t": 20.0,
+   "score": 60.0,
+   "state": "FAIL",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=7.55(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=14.099(<=12.5337)"
+   ],
+   "beat": "b03",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "Film"
+   ],
+   "img": "microwave-trading/microwave_tower.jpg",
+   "metrics": {
+    "light_frac": 0.0247,
+    "hero_mass_pct": 1.204,
+    "board_contrast": 7.55,
+    "board_p995_L": 66.27,
+    "flat_slop_frac": 0.0297,
+    "tiny_label_pct": 14.099,
+    "edge_board": 0.0663,
+    "colorfulness": 16.55,
+    "content_frac": 0.9357
+   }
+  },
+  {
+   "n": 375,
+   "t": 12.5,
+   "score": 70.0,
+   "state": "WARN",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=9.41(>=10.1235)",
+    "TP4_TINY_LABELS:edge_board=0.1545(<=0.1276)"
+   ],
+   "beat": "b02",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "Film"
+   ],
+   "img": "microwave-trading/nyse_facade.jpg",
+   "metrics": {
+    "light_frac": 0.2771,
+    "hero_mass_pct": 10.089,
+    "board_contrast": 9.41,
+    "board_p995_L": 73.33,
+    "flat_slop_frac": 0.0098,
+    "tiny_label_pct": 4.644,
+    "edge_board": 0.1545,
+    "colorfulness": 20.53,
+    "content_frac": 0.9812
+   }
+  },
+  {
+   "n": 450,
+   "t": 15.0,
+   "score": 70.0,
+   "state": "WARN",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=9.41(>=10.1235)",
+    "TP4_TINY_LABELS:edge_board=0.1502(<=0.1276)"
+   ],
+   "beat": "b02",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "Film"
+   ],
+   "img": "microwave-trading/nyse_facade.jpg",
+   "metrics": {
+    "light_frac": 0.2649,
+    "hero_mass_pct": 9.332,
+    "board_contrast": 9.41,
+    "board_p995_L": 73.33,
+    "flat_slop_frac": 0.0111,
+    "tiny_label_pct": 4.268,
+    "edge_board": 0.1502,
+    "colorfulness": 21.13,
+    "content_frac": 0.9809
+   }
+  },
+  {
+   "n": 1425,
+   "t": 47.5,
+   "score": 70.0,
+   "state": "WARN",
+   "codes": [
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS"
+   ],
+   "why": [
+    "TP4_TINY_LABELS:tiny_label_pct=37.349(<=12.5337)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.534(>=1.0)"
+   ],
+   "beat": "b06",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "Score"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0153,
+    "hero_mass_pct": 0.534,
+    "board_contrast": 17.28,
+    "board_p995_L": 95.29,
+    "flat_slop_frac": 0.0016,
+    "tiny_label_pct": 37.349,
+    "edge_board": 0.0091,
+    "colorfulness": 17.26,
+    "content_frac": 0.0454
+   }
+  },
+  {
+   "n": 1500,
+   "t": 50.0,
+   "score": 70.0,
+   "state": "WARN",
+   "codes": [
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS"
+   ],
+   "why": [
+    "TP4_TINY_LABELS:tiny_label_pct=41.466(<=12.5337)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.534(>=1.0)"
+   ],
+   "beat": "b06",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "Score"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0153,
+    "hero_mass_pct": 0.534,
+    "board_contrast": 17.12,
+    "board_p995_L": 94.9,
+    "flat_slop_frac": 0.0016,
+    "tiny_label_pct": 41.466,
+    "edge_board": 0.0091,
+    "colorfulness": 17.26,
+    "content_frac": 0.0455
+   }
+  },
+  {
+   "n": 1575,
+   "t": 52.5,
+   "score": 70.0,
+   "state": "WARN",
+   "codes": [
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS"
+   ],
+   "why": [
+    "TP4_TINY_LABELS:tiny_label_pct=35.01(<=12.5337)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.534(>=1.0)"
+   ],
+   "beat": "b06",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "Score"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0153,
+    "hero_mass_pct": 0.534,
+    "board_contrast": 17.28,
+    "board_p995_L": 95.29,
+    "flat_slop_frac": 0.0016,
+    "tiny_label_pct": 35.01,
+    "edge_board": 0.0091,
+    "colorfulness": 17.26,
+    "content_frac": 0.0454
+   }
+  },
+  {
+   "n": 1725,
+   "t": 57.5,
+   "score": 70.0,
+   "state": "WARN",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=9.62(>=10.1235)",
+    "TP4_TINY_LABELS:edge_board=0.1564(<=0.1276)"
+   ],
+   "beat": "b07",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "Film"
+   ],
+   "img": "microwave-trading/nyse_facade.jpg",
+   "metrics": {
+    "light_frac": 0.2763,
+    "hero_mass_pct": 10.545,
+    "board_contrast": 9.62,
+    "board_p995_L": 74.12,
+    "flat_slop_frac": 0.0106,
+    "tiny_label_pct": 3.911,
+    "edge_board": 0.1564,
+    "colorfulness": 20.41,
+    "content_frac": 0.9815
+   }
+  },
+  {
+   "n": 1800,
+   "t": 60.0,
+   "score": 70.0,
+   "state": "WARN",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=9.62(>=10.1235)",
+    "TP4_TINY_LABELS:edge_board=0.1526(<=0.1276)"
+   ],
+   "beat": "b07",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "Film"
+   ],
+   "img": "microwave-trading/nyse_facade.jpg",
+   "metrics": {
+    "light_frac": 0.2728,
+    "hero_mass_pct": 10.595,
+    "board_contrast": 9.62,
+    "board_p995_L": 74.12,
+    "flat_slop_frac": 0.0103,
+    "tiny_label_pct": 4.135,
+    "edge_board": 0.1526,
+    "colorfulness": 20.79,
+    "content_frac": 0.9816
+   }
+  }
+ ],
+ "frames": [
+  {
+   "n": 0,
+   "t": 0.0,
+   "score": 30.0,
+   "state": "FAIL",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=1.16(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=100.0(<=12.5337)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.0(>=1.0)"
+   ],
+   "beat": "b01",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "Bars"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0001,
+    "hero_mass_pct": 0.0,
+    "board_contrast": 1.16,
+    "board_p995_L": 10.59,
+    "flat_slop_frac": 0.0044,
+    "tiny_label_pct": 100.0,
+    "edge_board": 0.0056,
+    "colorfulness": 0.94,
+    "content_frac": 0.0076
+   }
+  },
+  {
+   "n": 75,
+   "t": 2.5,
+   "score": 80.0,
+   "state": "WARN",
+   "codes": [
+    "TP3_DIM_BOARD"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=7.64(>=10.1235)"
+   ],
+   "beat": "b01",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "Bars"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0937,
+    "hero_mass_pct": 4.652,
+    "board_contrast": 7.64,
+    "board_p995_L": 66.67,
+    "flat_slop_frac": 0.0058,
+    "tiny_label_pct": 0.264,
+    "edge_board": 0.0102,
+    "colorfulness": 31.9,
+    "content_frac": 0.1077
+   }
+  },
+  {
+   "n": 150,
+   "t": 5.0,
+   "score": 80.0,
+   "state": "WARN",
+   "codes": [
+    "TP3_DIM_BOARD"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=7.64(>=10.1235)"
+   ],
+   "beat": "b01",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "Bars"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0938,
+    "hero_mass_pct": 4.652,
+    "board_contrast": 7.64,
+    "board_p995_L": 66.67,
+    "flat_slop_frac": 0.0064,
+    "tiny_label_pct": 0.4,
+    "edge_board": 0.0113,
+    "colorfulness": 45.22,
+    "content_frac": 0.1362
+   }
+  },
+  {
+   "n": 225,
+   "t": 7.5,
+   "score": 80.0,
+   "state": "WARN",
+   "codes": [
+    "TP3_DIM_BOARD"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=7.64(>=10.1235)"
+   ],
+   "beat": "b01",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "Bars"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0937,
+    "hero_mass_pct": 4.652,
+    "board_contrast": 7.64,
+    "board_p995_L": 66.67,
+    "flat_slop_frac": 0.0068,
+    "tiny_label_pct": 0.413,
+    "edge_board": 0.0128,
+    "colorfulness": 47.48,
+    "content_frac": 0.1438
+   }
+  },
+  {
+   "n": 300,
+   "t": 10.0,
+   "score": 80.0,
+   "state": "WARN",
+   "codes": [
+    "TP2_FLAT_DARK_BOX"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.5199(<=0.0772)"
+   ],
+   "beat": "b01",
+   "cut": 1,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "Score",
+    "PageQuote"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0922,
+    "hero_mass_pct": 8.52,
+    "board_contrast": 14.37,
+    "board_p995_L": 88.24,
+    "flat_slop_frac": 0.5199,
+    "tiny_label_pct": 1.157,
+    "edge_board": 0.0272,
+    "colorfulness": 24.18,
+    "content_frac": 0.6192
+   }
+  },
+  {
+   "n": 375,
+   "t": 12.5,
+   "score": 70.0,
+   "state": "WARN",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=9.41(>=10.1235)",
+    "TP4_TINY_LABELS:edge_board=0.1545(<=0.1276)"
+   ],
+   "beat": "b02",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "Film"
+   ],
+   "img": "microwave-trading/nyse_facade.jpg",
+   "metrics": {
+    "light_frac": 0.2771,
+    "hero_mass_pct": 10.089,
+    "board_contrast": 9.41,
+    "board_p995_L": 73.33,
+    "flat_slop_frac": 0.0098,
+    "tiny_label_pct": 4.644,
+    "edge_board": 0.1545,
+    "colorfulness": 20.53,
+    "content_frac": 0.9812
+   }
+  },
+  {
+   "n": 450,
+   "t": 15.0,
+   "score": 70.0,
+   "state": "WARN",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=9.41(>=10.1235)",
+    "TP4_TINY_LABELS:edge_board=0.1502(<=0.1276)"
+   ],
+   "beat": "b02",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "Film"
+   ],
+   "img": "microwave-trading/nyse_facade.jpg",
+   "metrics": {
+    "light_frac": 0.2649,
+    "hero_mass_pct": 9.332,
+    "board_contrast": 9.41,
+    "board_p995_L": 73.33,
+    "flat_slop_frac": 0.0111,
+    "tiny_label_pct": 4.268,
+    "edge_board": 0.1502,
+    "colorfulness": 21.13,
+    "content_frac": 0.9809
+   }
+  },
+  {
+   "n": 525,
+   "t": 17.5,
+   "score": 80.0,
+   "state": "WARN",
+   "codes": [
+    "TP2_FLAT_DARK_BOX"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.5586(<=0.0772)"
+   ],
+   "beat": "b02",
+   "cut": 1,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "LineIcon",
+    "PageQuote"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0672,
+    "hero_mass_pct": 6.1,
+    "board_contrast": 11.54,
+    "board_p995_L": 80.39,
+    "flat_slop_frac": 0.5586,
+    "tiny_label_pct": 0.0,
+    "edge_board": 0.0227,
+    "colorfulness": 11.28,
+    "content_frac": 0.5981
+   }
+  },
+  {
+   "n": 600,
+   "t": 20.0,
+   "score": 60.0,
+   "state": "FAIL",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=7.55(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=14.099(<=12.5337)"
+   ],
+   "beat": "b03",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "Film"
+   ],
+   "img": "microwave-trading/microwave_tower.jpg",
+   "metrics": {
+    "light_frac": 0.0247,
+    "hero_mass_pct": 1.204,
+    "board_contrast": 7.55,
+    "board_p995_L": 66.27,
+    "flat_slop_frac": 0.0297,
+    "tiny_label_pct": 14.099,
+    "edge_board": 0.0663,
+    "colorfulness": 16.55,
+    "content_frac": 0.9357
+   }
+  },
+  {
+   "n": 675,
+   "t": 22.5,
+   "score": 50.0,
+   "state": "FAIL",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=7.55(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=31.771(<=12.5337)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.524(>=1.0)"
+   ],
+   "beat": "b03",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "Film"
+   ],
+   "img": "microwave-trading/microwave_tower.jpg",
+   "metrics": {
+    "light_frac": 0.0246,
+    "hero_mass_pct": 0.524,
+    "board_contrast": 7.55,
+    "board_p995_L": 66.27,
+    "flat_slop_frac": 0.0302,
+    "tiny_label_pct": 31.771,
+    "edge_board": 0.066,
+    "colorfulness": 16.58,
+    "content_frac": 0.9358
+   }
+  },
+  {
+   "n": 750,
+   "t": 25.0,
+   "score": 50.0,
+   "state": "FAIL",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=7.55(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=19.874(<=12.5337)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.396(>=1.0)"
+   ],
+   "beat": "b03",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "Film"
+   ],
+   "img": "microwave-trading/microwave_tower.jpg",
+   "metrics": {
+    "light_frac": 0.024,
+    "hero_mass_pct": 0.396,
+    "board_contrast": 7.55,
+    "board_p995_L": 66.27,
+    "flat_slop_frac": 0.0319,
+    "tiny_label_pct": 19.874,
+    "edge_board": 0.067,
+    "colorfulness": 16.6,
+    "content_frac": 0.9314
+   }
+  },
+  {
+   "n": 825,
+   "t": 27.5,
+   "score": 50.0,
+   "state": "FAIL",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=7.64(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=29.131(<=12.5337)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.637(>=1.0)"
+   ],
+   "beat": "b03",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "Film"
+   ],
+   "img": "microwave-trading/microwave_tower.jpg",
+   "metrics": {
+    "light_frac": 0.0241,
+    "hero_mass_pct": 0.637,
+    "board_contrast": 7.64,
+    "board_p995_L": 66.67,
+    "flat_slop_frac": 0.0324,
+    "tiny_label_pct": 29.131,
+    "edge_board": 0.0669,
+    "colorfulness": 16.59,
+    "content_frac": 0.9305
+   }
+  },
+  {
+   "n": 900,
+   "t": 30.0,
+   "score": 50.0,
+   "state": "WARN",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=7.37(>=10.1235)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.463(>=1.0)",
+    "TP5_EMPTY_BOARD:light_frac=0.0051(>=0.014)"
+   ],
+   "beat": "b04",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "MeterDial"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0051,
+    "hero_mass_pct": 0.463,
+    "board_contrast": 7.37,
+    "board_p995_L": 65.49,
+    "flat_slop_frac": 0.0004,
+    "tiny_label_pct": 8.58,
+    "edge_board": 0.0065,
+    "colorfulness": 1.11,
+    "content_frac": 0.0147
+   }
+  },
+  {
+   "n": 975,
+   "t": 32.5,
+   "score": 80.0,
+   "state": "WARN",
+   "codes": [
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP5_EMPTY_BOARD:light_frac=0.013(>=0.014)",
+    "TP6_DESATURATED:colorfulness=2.86(>=5.732)"
+   ],
+   "beat": "b04",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "MeterDial"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.013,
+    "hero_mass_pct": 1.717,
+    "board_contrast": 17.59,
+    "board_p995_L": 95.69,
+    "flat_slop_frac": 0.0034,
+    "tiny_label_pct": 0.0,
+    "edge_board": 0.0214,
+    "colorfulness": 2.86,
+    "content_frac": 0.0403
+   }
+  },
+  {
+   "n": 1050,
+   "t": 35.0,
+   "score": 80.0,
+   "state": "WARN",
+   "codes": [
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP5_EMPTY_BOARD:light_frac=0.0131(>=0.014)",
+    "TP6_DESATURATED:colorfulness=2.85(>=5.732)"
+   ],
+   "beat": "b04",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "MeterDial"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0131,
+    "hero_mass_pct": 1.674,
+    "board_contrast": 17.59,
+    "board_p995_L": 95.69,
+    "flat_slop_frac": 0.0034,
+    "tiny_label_pct": 0.0,
+    "edge_board": 0.0215,
+    "colorfulness": 2.85,
+    "content_frac": 0.0404
+   }
+  },
+  {
+   "n": 1125,
+   "t": 37.5,
+   "score": 80.0,
+   "state": "WARN",
+   "codes": [
+    "TP2_FLAT_DARK_BOX"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.5322(<=0.0772)"
+   ],
+   "beat": "b04",
+   "cut": 1,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "LineIcon",
+    "PageQuote"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0868,
+    "hero_mass_pct": 8.521,
+    "board_contrast": 13.96,
+    "board_p995_L": 87.06,
+    "flat_slop_frac": 0.5322,
+    "tiny_label_pct": 0.609,
+    "edge_board": 0.0286,
+    "colorfulness": 21.75,
+    "content_frac": 0.6156
+   }
+  },
+  {
+   "n": 1200,
+   "t": 40.0,
+   "score": 40.0,
+   "state": "FAIL",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=4.68(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=100.0(<=12.5337)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.0(>=1.0)"
+   ],
+   "beat": "b05",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "Bars"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0001,
+    "hero_mass_pct": 0.0,
+    "board_contrast": 4.68,
+    "board_p995_L": 52.16,
+    "flat_slop_frac": 0.005,
+    "tiny_label_pct": 100.0,
+    "edge_board": 0.0083,
+    "colorfulness": 42.33,
+    "content_frac": 0.057
+   }
+  },
+  {
+   "n": 1275,
+   "t": 42.5,
+   "score": 80.0,
+   "state": "WARN",
+   "codes": [
+    "TP3_DIM_BOARD"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=7.55(>=10.1235)"
+   ],
+   "beat": "b05",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "Bars"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0236,
+    "hero_mass_pct": 2.335,
+    "board_contrast": 7.55,
+    "board_p995_L": 66.27,
+    "flat_slop_frac": 0.0059,
+    "tiny_label_pct": 1.049,
+    "edge_board": 0.0099,
+    "colorfulness": 45.29,
+    "content_frac": 0.0828
+   }
+  },
+  {
+   "n": 1350,
+   "t": 45.0,
+   "score": 80.0,
+   "state": "WARN",
+   "codes": [
+    "TP3_DIM_BOARD"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=7.55(>=10.1235)"
+   ],
+   "beat": "b05",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "Bars"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0236,
+    "hero_mass_pct": 2.335,
+    "board_contrast": 7.55,
+    "board_p995_L": 66.27,
+    "flat_slop_frac": 0.006,
+    "tiny_label_pct": 1.637,
+    "edge_board": 0.0099,
+    "colorfulness": 45.29,
+    "content_frac": 0.0827
+   }
+  },
+  {
+   "n": 1425,
+   "t": 47.5,
+   "score": 70.0,
+   "state": "WARN",
+   "codes": [
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS"
+   ],
+   "why": [
+    "TP4_TINY_LABELS:tiny_label_pct=37.349(<=12.5337)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.534(>=1.0)"
+   ],
+   "beat": "b06",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "Score"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0153,
+    "hero_mass_pct": 0.534,
+    "board_contrast": 17.28,
+    "board_p995_L": 95.29,
+    "flat_slop_frac": 0.0016,
+    "tiny_label_pct": 37.349,
+    "edge_board": 0.0091,
+    "colorfulness": 17.26,
+    "content_frac": 0.0454
+   }
+  },
+  {
+   "n": 1500,
+   "t": 50.0,
+   "score": 70.0,
+   "state": "WARN",
+   "codes": [
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS"
+   ],
+   "why": [
+    "TP4_TINY_LABELS:tiny_label_pct=41.466(<=12.5337)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.534(>=1.0)"
+   ],
+   "beat": "b06",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "Score"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0153,
+    "hero_mass_pct": 0.534,
+    "board_contrast": 17.12,
+    "board_p995_L": 94.9,
+    "flat_slop_frac": 0.0016,
+    "tiny_label_pct": 41.466,
+    "edge_board": 0.0091,
+    "colorfulness": 17.26,
+    "content_frac": 0.0455
+   }
+  },
+  {
+   "n": 1575,
+   "t": 52.5,
+   "score": 70.0,
+   "state": "WARN",
+   "codes": [
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS"
+   ],
+   "why": [
+    "TP4_TINY_LABELS:tiny_label_pct=35.01(<=12.5337)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.534(>=1.0)"
+   ],
+   "beat": "b06",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "Score"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0153,
+    "hero_mass_pct": 0.534,
+    "board_contrast": 17.28,
+    "board_p995_L": 95.29,
+    "flat_slop_frac": 0.0016,
+    "tiny_label_pct": 35.01,
+    "edge_board": 0.0091,
+    "colorfulness": 17.26,
+    "content_frac": 0.0454
+   }
+  },
+  {
+   "n": 1650,
+   "t": 55.0,
+   "score": 80.0,
+   "state": "WARN",
+   "codes": [
+    "TP2_FLAT_DARK_BOX"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.56(<=0.0772)"
+   ],
+   "beat": "b06",
+   "cut": 1,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "LineIcon",
+    "PageQuote"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0655,
+    "hero_mass_pct": 6.109,
+    "board_contrast": 13.83,
+    "board_p995_L": 86.67,
+    "flat_slop_frac": 0.56,
+    "tiny_label_pct": 0.018,
+    "edge_board": 0.0231,
+    "colorfulness": 12.28,
+    "content_frac": 0.6204
+   }
+  },
+  {
+   "n": 1725,
+   "t": 57.5,
+   "score": 70.0,
+   "state": "WARN",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=9.62(>=10.1235)",
+    "TP4_TINY_LABELS:edge_board=0.1564(<=0.1276)"
+   ],
+   "beat": "b07",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "Film"
+   ],
+   "img": "microwave-trading/nyse_facade.jpg",
+   "metrics": {
+    "light_frac": 0.2763,
+    "hero_mass_pct": 10.545,
+    "board_contrast": 9.62,
+    "board_p995_L": 74.12,
+    "flat_slop_frac": 0.0106,
+    "tiny_label_pct": 3.911,
+    "edge_board": 0.1564,
+    "colorfulness": 20.41,
+    "content_frac": 0.9815
+   }
+  },
+  {
+   "n": 1800,
+   "t": 60.0,
+   "score": 70.0,
+   "state": "WARN",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=9.62(>=10.1235)",
+    "TP4_TINY_LABELS:edge_board=0.1526(<=0.1276)"
+   ],
+   "beat": "b07",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "Film"
+   ],
+   "img": "microwave-trading/nyse_facade.jpg",
+   "metrics": {
+    "light_frac": 0.2728,
+    "hero_mass_pct": 10.595,
+    "board_contrast": 9.62,
+    "board_p995_L": 74.12,
+    "flat_slop_frac": 0.0103,
+    "tiny_label_pct": 4.135,
+    "edge_board": 0.1526,
+    "colorfulness": 20.79,
+    "content_frac": 0.9816
+   }
+  },
+  {
+   "n": 1875,
+   "t": 62.5,
+   "score": 70.0,
+   "state": "WARN",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=9.73(>=10.1235)",
+    "TP4_TINY_LABELS:edge_board=0.146(<=0.1276)"
+   ],
+   "beat": "b07",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "Film"
+   ],
+   "img": "microwave-trading/nyse_facade.jpg",
+   "metrics": {
+    "light_frac": 0.2643,
+    "hero_mass_pct": 9.99,
+    "board_contrast": 9.73,
+    "board_p995_L": 74.51,
+    "flat_slop_frac": 0.0113,
+    "tiny_label_pct": 3.976,
+    "edge_board": 0.146,
+    "colorfulness": 21.34,
+    "content_frac": 0.9798
+   }
+  }
+ ]
+}

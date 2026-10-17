@@ -1,0 +1,502 @@
+{
+ "topics": [
+  {
+   "topic": "agent-with-your-card",
+   "lines": 16,
+   "words": 441,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 82,
+   "dropped": 4,
+   "bias_median": 0.069,
+   "residual_p90_median": 0.096
+  },
+  {
+   "topic": "ai-ban",
+   "lines": 57,
+   "words": 1634,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 405,
+   "dropped": 30,
+   "bias_median": 0.079,
+   "residual_p90_median": 0.109
+  },
+  {
+   "topic": "ai-black-markets",
+   "lines": 46,
+   "words": 906,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 199,
+   "dropped": 22,
+   "bias_median": 0.082,
+   "residual_p90_median": 0.096
+  },
+  {
+   "topic": "ai-grey-zone",
+   "lines": 8,
+   "words": 194,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 74,
+   "dropped": 4,
+   "bias_median": 0.107,
+   "residual_p90_median": 0.118
+  },
+  {
+   "topic": "ai-power-bill",
+   "lines": 6,
+   "words": 136,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 38,
+   "dropped": 3,
+   "bias_median": 0.103,
+   "residual_p90_median": 0.118
+  },
+  {
+   "topic": "apply-button",
+   "lines": 7,
+   "words": 184,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 57,
+   "dropped": 4,
+   "bias_median": 0.092,
+   "residual_p90_median": 0.109
+  },
+  {
+   "topic": "captchas-3min",
+   "lines": 24,
+   "words": 314,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 116,
+   "dropped": 10,
+   "bias_median": 0.133,
+   "residual_p90_median": 0.117
+  },
+  {
+   "topic": "captchas-full",
+   "lines": 78,
+   "words": 1155,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 367,
+   "dropped": 28,
+   "bias_median": 0.123,
+   "residual_p90_median": 0.114
+  },
+  {
+   "topic": "captchas-sample",
+   "lines": 5,
+   "words": 58,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 28,
+   "dropped": 2,
+   "bias_median": 0.101,
+   "residual_p90_median": 0.11
+  },
+  {
+   "topic": "china-ai-underground",
+   "lines": 6,
+   "words": 99,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 33,
+   "dropped": 5,
+   "bias_median": 0.105,
+   "residual_p90_median": 0.129
+  },
+  {
+   "topic": "elon-musk",
+   "lines": 18,
+   "words": 327,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 110,
+   "dropped": 8,
+   "bias_median": 0.109,
+   "residual_p90_median": 0.122
+  },
+  {
+   "topic": "greyhat-ai",
+   "lines": 15,
+   "words": 296,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 139,
+   "dropped": 12,
+   "bias_median": 0.145,
+   "residual_p90_median": 0.181
+  },
+  {
+   "topic": "microwave-trading",
+   "lines": 7,
+   "words": 143,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 42,
+   "dropped": 1,
+   "bias_median": 0.108,
+   "residual_p90_median": 0.11
+  },
+  {
+   "topic": "new-ai-reasoning",
+   "lines": 5,
+   "words": 91,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 27,
+   "dropped": 0,
+   "bias_median": 0.119,
+   "residual_p90_median": 0.114
+  },
+  {
+   "topic": "poisoned-well",
+   "lines": 10,
+   "words": 246,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 50,
+   "dropped": 4,
+   "bias_median": 0.082,
+   "residual_p90_median": 0.089
+  },
+  {
+   "topic": "surveillance-pricing",
+   "lines": 17,
+   "words": 345,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 118,
+   "dropped": 2,
+   "bias_median": 0.109,
+   "residual_p90_median": 0.125
+  },
+  {
+   "topic": "the-ai-cast",
+   "lines": 7,
+   "words": 235,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 81,
+   "dropped": 9,
+   "bias_median": 0.096,
+   "residual_p90_median": 0.114
+  },
+  {
+   "topic": "tokens-explained",
+   "lines": 7,
+   "words": 188,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 55,
+   "dropped": 2,
+   "bias_median": 0.097,
+   "residual_p90_median": 0.107
+  },
+  {
+   "topic": "why-ai-dumber",
+   "lines": 23,
+   "words": 323,
+   "words_over_raw": 0,
+   "words_over_after_bias_fix": 106,
+   "dropped": 7,
+   "bias_median": 0.117,
+   "residual_p90_median": 0.107
+  }
+ ],
+ "totals": {
+  "lines": 362,
+  "words": 7315,
+  "words_over_raw": 0,
+  "dropped": 157
+ },
+ "top_dropped": [
+  {
+   "word": "2024,",
+   "count": 5,
+   "example": "ai-grey-zone/a05"
+  },
+  {
+   "word": "license",
+   "count": 4,
+   "example": "ai-ban/k02"
+  },
+  {
+   "word": "u",
+   "count": 3,
+   "example": "ai-ban/e02"
+  },
+  {
+   "word": ".s.",
+   "count": 3,
+   "example": "ai-ban/e02"
+  },
+  {
+   "word": "deep",
+   "count": 3,
+   "example": "ai-ban/f01"
+  },
+  {
+   "word": "gray",
+   "count": 3,
+   "example": "ai-black-markets/g01"
+  },
+  {
+   "word": "ai.",
+   "count": 3,
+   "example": "ai-black-markets/g01"
+  },
+  {
+   "word": "eye",
+   "count": 3,
+   "example": "ai-black-markets/d02"
+  },
+  {
+   "word": "back",
+   "count": 3,
+   "example": "ai-grey-zone/a06"
+  },
+  {
+   "word": "door",
+   "count": 3,
+   "example": "ai-grey-zone/a06"
+  },
+  {
+   "word": "90 ,000",
+   "count": 3,
+   "example": "captchas-3min/a03"
+  },
+  {
+   "word": "recaptcha",
+   "count": 3,
+   "example": "captchas-full/g01"
+  },
+  {
+   "word": "fake.",
+   "count": 2,
+   "example": "ai-ban/f01"
+  },
+  {
+   "word": "gpt",
+   "count": 2,
+   "example": "ai-ban/g01"
+  },
+  {
+   "word": "ai",
+   "count": 2,
+   "example": "ai-ban/p01"
+  },
+  {
+   "word": "an",
+   "count": 2,
+   "example": "ai-black-markets/d02"
+  },
+  {
+   "word": "2025,",
+   "count": 2,
+   "example": "apply-button/j03"
+  },
+  {
+   "word": "recap",
+   "count": 2,
+   "example": "captchas-3min/a03"
+  },
+  {
+   "word": "show",
+   "count": 2,
+   "example": "captchas-3min/a03"
+  },
+  {
+   "word": "captcha.",
+   "count": 2,
+   "example": "captchas-3min/a05"
+  },
+  {
+   "word": "ph",
+   "count": 2,
+   "example": "captchas-3min/o02"
+  },
+  {
+   "word": ".d.",
+   "count": 2,
+   "example": "captchas-3min/o02"
+  },
+  {
+   "word": "louis",
+   "count": 2,
+   "example": "captchas-3min/o02"
+  },
+  {
+   "word": "scan",
+   "count": 2,
+   "example": "captchas-3min/b01"
+  },
+  {
+   "word": "it's",
+   "count": 2,
+   "example": "captchas-full/m01"
+  },
+  {
+   "word": "recapture",
+   "count": 2,
+   "example": "captchas-full/r00b"
+  },
+  {
+   "word": "they're",
+   "count": 2,
+   "example": "captchas-full/r02"
+  },
+  {
+   "word": "24 ,000",
+   "count": 2,
+   "example": "china-ai-underground/n06"
+  },
+  {
+   "word": "2022,",
+   "count": 2,
+   "example": "elon-musk/h00"
+  },
+  {
+   "word": "drone's",
+   "count": 2,
+   "example": "elon-musk/h01"
+  },
+  {
+   "word": "spacex",
+   "count": 2,
+   "example": "elon-musk/a03"
+  },
+  {
+   "word": "by,",
+   "count": 1,
+   "example": "agent-with-your-card/a01"
+  },
+  {
+   "word": "whole",
+   "count": 1,
+   "example": "agent-with-your-card/a03"
+  },
+  {
+   "word": "recognizes,",
+   "count": 1,
+   "example": "agent-with-your-card/a07"
+  },
+  {
+   "word": "10 ,000.",
+   "count": 1,
+   "example": "agent-with-your-card/a12"
+  },
+  {
+   "word": "rumors.",
+   "count": 1,
+   "example": "ai-ban/a01"
+  },
+  {
+   "word": "40 ,000",
+   "count": 1,
+   "example": "ai-ban/b04"
+  },
+  {
+   "word": "learn",
+   "count": 1,
+   "example": "ai-ban/b05"
+  },
+  {
+   "word": "90s,",
+   "count": 1,
+   "example": "ai-ban/d01"
+  },
+  {
+   "word": "zimmerman",
+   "count": 1,
+   "example": "ai-ban/d02"
+  },
+  {
+   "word": "bands",
+   "count": 1,
+   "example": "ai-ban/f04"
+  },
+  {
+   "word": "worm",
+   "count": 1,
+   "example": "ai-ban/g01"
+  },
+  {
+   "word": "$46 ,000",
+   "count": 1,
+   "example": "ai-ban/g02"
+  },
+  {
+   "word": "license.",
+   "count": 1,
+   "example": "ai-ban/k01"
+  },
+  {
+   "word": "2023, two",
+   "count": 1,
+   "example": "ai-ban/k02"
+  },
+  {
+   "word": "open",
+   "count": 1,
+   "example": "ai-ban/p01"
+  },
+  {
+   "word": "metta's",
+   "count": 1,
+   "example": "ai-ban/p02"
+  },
+  {
+   "word": "$1 .5 billion",
+   "count": 1,
+   "example": "ai-ban/q02"
+  },
+  {
+   "word": "licenses,",
+   "count": 1,
+   "example": "ai-ban/r01"
+  },
+  {
+   "word": "sanitized",
+   "count": 1,
+   "example": "ai-ban/r05"
+  },
+  {
+   "word": "license,",
+   "count": 1,
+   "example": "ai-ban/s02"
+  },
+  {
+   "word": "id",
+   "count": 1,
+   "example": "ai-black-markets/s03"
+  },
+  {
+   "word": "eye.",
+   "count": 1,
+   "example": "ai-black-markets/s04"
+  },
+  {
+   "word": "wormgpt",
+   "count": 1,
+   "example": "ai-black-markets/w01"
+  },
+  {
+   "word": "fishing",
+   "count": 1,
+   "example": "ai-black-markets/k01"
+  },
+  {
+   "word": "and",
+   "count": 1,
+   "example": "ai-black-markets/i01"
+  },
+  {
+   "word": "fb",
+   "count": 1,
+   "example": "ai-black-markets/v03"
+  },
+  {
+   "word": "309",
+   "count": 1,
+   "example": "ai-black-markets/j04"
+  },
+  {
+   "word": "fbi",
+   "count": 1,
+   "example": "ai-black-markets/p03"
+  },
+  {
+   "word": "to",
+   "count": 1,
+   "example": "ai-black-markets/p03"
+  }
+ ]
+}

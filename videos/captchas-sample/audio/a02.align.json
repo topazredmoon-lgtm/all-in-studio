@@ -1,0 +1,5 @@
+{
+ "backend": "mms",
+ "when": "2026-10-17T22:43:41",
+ "note": "timings forced-aligned; re-run tools/build.py to propagate"
+}

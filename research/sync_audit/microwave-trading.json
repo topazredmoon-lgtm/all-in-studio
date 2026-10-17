@@ -1,0 +1,1449 @@
+{
+ "tool": "sync_audit",
+ "topic": "microwave-trading",
+ "generated": "2026-10-17T21:37:59",
+ "backend": "stable",
+ "threshold_s": 0.08,
+ "lines": 4,
+ "lines_with_drift": 4,
+ "words_over_threshold": 13,
+ "dropped_words": 1,
+ "topic_p90_ds": 0.199,
+ "fixed": false,
+ "rows": [
+  {
+   "beat": "b01",
+   "words": 27,
+   "backend": "stable",
+   "note": null,
+   "n": 26,
+   "p50_ds": 0.01,
+   "p90_ds": 0.15,
+   "max_ds": 0.32,
+   "p50_de": 0.01,
+   "max_de": 0.5,
+   "bias_ds": 0.027,
+   "dropped": [],
+   "extra": [],
+   "worst": [
+    {
+     "word": "Inside",
+     "whisper_s": 0.0,
+     "whisper_e": 0.44,
+     "align_s": 0.32,
+     "align_e": 0.42,
+     "ds": 0.32,
+     "de": -0.02
+    },
+    {
+     "word": "That",
+     "whisper_s": 6.84,
+     "whisper_e": 7.14,
+     "align_s": 7.06,
+     "align_e": 7.14,
+     "ds": 0.22,
+     "de": 0.0
+    },
+    {
+     "word": "war.",
+     "whisper_s": 10.02,
+     "whisper_e": 10.6,
+     "align_s": 10.24,
+     "align_e": 10.66,
+     "ds": 0.22,
+     "de": 0.06
+    }
+   ],
+   "diffs": [
+    {
+     "word": "Inside",
+     "whisper_s": 0.0,
+     "whisper_e": 0.44,
+     "align_s": 0.32,
+     "align_e": 0.42,
+     "ds": 0.32,
+     "de": -0.02
+    },
+    {
+     "word": "standard",
+     "whisper_s": 0.44,
+     "whisper_e": 0.96,
+     "align_s": 0.42,
+     "align_e": 0.96,
+     "ds": -0.02,
+     "de": 0.0
+    },
+    {
+     "word": "glass",
+     "whisper_s": 0.96,
+     "whisper_e": 1.28,
+     "align_s": 0.96,
+     "align_e": 1.28,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "fiber,",
+     "whisper_s": 1.28,
+     "whisper_e": 1.72,
+     "align_s": 1.28,
+     "align_e": 2.22,
+     "ds": 0.0,
+     "de": 0.5
+    },
+    {
+     "word": "light",
+     "whisper_s": 2.22,
+     "whisper_e": 2.34,
+     "align_s": 2.22,
+     "align_e": 2.34,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "does",
+     "whisper_s": 2.34,
+     "whisper_e": 2.56,
+     "align_s": 2.34,
+     "align_e": 2.54,
+     "ds": 0.0,
+     "de": -0.02
+    },
+    {
+     "word": "not",
+     "whisper_s": 2.56,
+     "whisper_e": 2.78,
+     "align_s": 2.54,
+     "align_e": 2.78,
+     "ds": -0.02,
+     "de": 0.0
+    },
+    {
+     "word": "travel",
+     "whisper_s": 2.78,
+     "whisper_e": 3.08,
+     "align_s": 2.86,
+     "align_e": 3.08,
+     "ds": 0.08,
+     "de": 0.0
+    },
+    {
+     "word": "at",
+     "whisper_s": 3.08,
+     "whisper_e": 3.3,
+     "align_s": 3.08,
+     "align_e": 3.3,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "the",
+     "whisper_s": 3.3,
+     "whisper_e": 3.38,
+     "align_s": 3.3,
+     "align_e": 3.38,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "speed",
+     "whisper_s": 3.38,
+     "whisper_e": 3.6,
+     "align_s": 3.38,
+     "align_e": 3.58,
+     "ds": 0.0,
+     "de": -0.02
+    },
+    {
+     "word": "of",
+     "whisper_s": 3.6,
+     "whisper_e": 3.72,
+     "align_s": 3.58,
+     "align_e": 3.72,
+     "ds": -0.02,
+     "de": 0.0
+    },
+    {
+     "word": "light.",
+     "whisper_s": 3.72,
+     "whisper_e": 4.0,
+     "align_s": 3.72,
+     "align_e": 4.02,
+     "ds": 0.0,
+     "de": 0.02
+    },
+    {
+     "word": "It",
+     "whisper_s": 4.58,
+     "whisper_e": 4.7,
+     "align_s": 4.6,
+     "align_e": 4.7,
+     "ds": 0.02,
+     "de": 0.0
+    },
+    {
+     "word": "slows",
+     "whisper_s": 4.7,
+     "whisper_e": 4.98,
+     "align_s": 4.7,
+     "align_e": 4.96,
+     "ds": 0.0,
+     "de": -0.02
+    },
+    {
+     "word": "down",
+     "whisper_s": 4.98,
+     "whisper_e": 5.42,
+     "align_s": 4.96,
+     "align_e": 5.42,
+     "ds": -0.02,
+     "de": 0.0
+    },
+    {
+     "word": "by",
+     "whisper_s": 5.42,
+     "whisper_e": 5.7,
+     "align_s": 5.42,
+     "align_e": 5.7,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "31%.",
+     "whisper_s": 5.7,
+     "whisper_e": 6.84,
+     "align_s": 5.7,
+     "align_e": 7.04,
+     "ds": 0.0,
+     "de": 0.2
+    },
+    {
+     "word": "That",
+     "whisper_s": 6.84,
+     "whisper_e": 7.14,
+     "align_s": 7.06,
+     "align_e": 7.14,
+     "ds": 0.22,
+     "de": 0.0
+    },
+    {
+     "word": "single",
+     "whisper_s": 7.14,
+     "whisper_e": 7.56,
+     "align_s": 7.14,
+     "align_e": 7.54,
+     "ds": 0.0,
+     "de": -0.02
+    },
+    {
+     "word": "physical",
+     "whisper_s": 7.56,
+     "whisper_e": 7.9,
+     "align_s": 7.54,
+     "align_e": 7.9,
+     "ds": -0.02,
+     "de": 0.0
+    },
+    {
+     "word": "penalty",
+     "whisper_s": 7.9,
+     "whisper_e": 8.48,
+     "align_s": 7.9,
+     "align_e": 8.46,
+     "ds": 0.0,
+     "de": -0.02
+    },
+    {
+     "word": "started",
+     "whisper_s": 8.48,
+     "whisper_e": 8.96,
+     "align_s": 8.46,
+     "align_e": 8.94,
+     "ds": -0.02,
+     "de": -0.02
+    },
+    {
+     "word": "a",
+     "whisper_s": 8.96,
+     "whisper_e": 9.18,
+     "align_s": 8.94,
+     "align_e": 9.16,
+     "ds": -0.02,
+     "de": -0.02
+    },
+    {
+     "word": "$30 billion",
+     "whisper_s": 9.18,
+     "whisper_e": 10.02,
+     "align_s": 9.16,
+     "align_e": 10.24,
+     "ds": -0.02,
+     "de": 0.22
+    },
+    {
+     "word": "war.",
+     "whisper_s": 10.02,
+     "whisper_e": 10.6,
+     "align_s": 10.24,
+     "align_e": 10.66,
+     "ds": 0.22,
+     "de": 0.06
+    }
+   ],
+   "aligned": [
+    {
+     "w": "Inside",
+     "s": 0.32,
+     "e": 0.42
+    },
+    {
+     "w": "standard",
+     "s": 0.42,
+     "e": 0.96
+    },
+    {
+     "w": "glass",
+     "s": 0.96,
+     "e": 1.28
+    },
+    {
+     "w": "fiber,",
+     "s": 1.28,
+     "e": 2.22
+    },
+    {
+     "w": "light",
+     "s": 2.22,
+     "e": 2.34
+    },
+    {
+     "w": "does",
+     "s": 2.34,
+     "e": 2.54
+    },
+    {
+     "w": "not",
+     "s": 2.54,
+     "e": 2.78
+    },
+    {
+     "w": "travel",
+     "s": 2.86,
+     "e": 3.08
+    },
+    {
+     "w": "at",
+     "s": 3.08,
+     "e": 3.3
+    },
+    {
+     "w": "the",
+     "s": 3.3,
+     "e": 3.38
+    },
+    {
+     "w": "speed",
+     "s": 3.38,
+     "e": 3.58
+    },
+    {
+     "w": "of",
+     "s": 3.58,
+     "e": 3.72
+    },
+    {
+     "w": "light.",
+     "s": 3.72,
+     "e": 4.02
+    },
+    {
+     "w": "It",
+     "s": 4.6,
+     "e": 4.7
+    },
+    {
+     "w": "slows",
+     "s": 4.7,
+     "e": 4.96
+    },
+    {
+     "w": "down",
+     "s": 4.96,
+     "e": 5.42
+    },
+    {
+     "w": "by",
+     "s": 5.42,
+     "e": 5.7
+    },
+    {
+     "w": "thirty-one",
+     "s": 5.7,
+     "e": 6.32
+    },
+    {
+     "w": "percent.",
+     "s": 6.32,
+     "e": 7.04
+    },
+    {
+     "w": "That",
+     "s": 7.06,
+     "e": 7.14
+    },
+    {
+     "w": "single",
+     "s": 7.14,
+     "e": 7.54
+    },
+    {
+     "w": "physical",
+     "s": 7.54,
+     "e": 7.9
+    },
+    {
+     "w": "penalty",
+     "s": 7.9,
+     "e": 8.46
+    },
+    {
+     "w": "started",
+     "s": 8.46,
+     "e": 8.94
+    },
+    {
+     "w": "a",
+     "s": 8.94,
+     "e": 9.16
+    },
+    {
+     "w": "thirty-billion-dollar",
+     "s": 9.16,
+     "e": 10.24
+    },
+    {
+     "w": "war.",
+     "s": 10.24,
+     "e": 10.66
+    }
+   ]
+  },
+  {
+   "beat": "b02",
+   "words": 18,
+   "backend": "stable",
+   "note": null,
+   "n": 16,
+   "p50_ds": 0.01,
+   "p90_ds": 0.23,
+   "max_ds": 0.66,
+   "p50_de": 0.01,
+   "max_de": 0.46,
+   "bias_ds": 0.071,
+   "dropped": [
+    "Network"
+   ],
+   "extra": [
+    "Networks"
+   ],
+   "worst": [
+    {
+     "word": "tunneling",
+     "whisper_s": 2.24,
+     "whisper_e": 3.28,
+     "align_s": 2.9,
+     "align_e": 3.28,
+     "ds": 0.66,
+     "de": 0.0
+    },
+    {
+     "word": "Spread",
+     "whisper_s": 0.0,
+     "whisper_e": 0.34,
+     "align_s": 0.32,
+     "align_e": 0.32,
+     "ds": 0.32,
+     "de": -0.02
+    },
+    {
+     "word": "laying",
+     "whisper_s": 4.94,
+     "whisper_e": 5.12,
+     "align_s": 5.08,
+     "align_e": 5.1,
+     "ds": 0.14,
+     "de": -0.02
+    }
+   ],
+   "diffs": [
+    {
+     "word": "Spread",
+     "whisper_s": 0.0,
+     "whisper_e": 0.34,
+     "align_s": 0.32,
+     "align_e": 0.32,
+     "ds": 0.32,
+     "de": -0.02
+    },
+    {
+     "word": "spent",
+     "whisper_s": 0.68,
+     "whisper_e": 1.04,
+     "align_s": 0.7,
+     "align_e": 1.06,
+     "ds": 0.02,
+     "de": 0.02
+    },
+    {
+     "word": "$300 million",
+     "whisper_s": 1.04,
+     "whisper_e": 2.24,
+     "align_s": 1.06,
+     "align_e": 2.7,
+     "ds": 0.02,
+     "de": 0.46
+    },
+    {
+     "word": "tunneling",
+     "whisper_s": 2.24,
+     "whisper_e": 3.28,
+     "align_s": 2.9,
+     "align_e": 3.28,
+     "ds": 0.66,
+     "de": 0.0
+    },
+    {
+     "word": "straight",
+     "whisper_s": 3.28,
+     "whisper_e": 3.6,
+     "align_s": 3.28,
+     "align_e": 3.62,
+     "ds": 0.0,
+     "de": 0.02
+    },
+    {
+     "word": "through",
+     "whisper_s": 3.6,
+     "whisper_e": 3.86,
+     "align_s": 3.62,
+     "align_e": 3.86,
+     "ds": 0.02,
+     "de": 0.0
+    },
+    {
+     "word": "the",
+     "whisper_s": 3.86,
+     "whisper_e": 3.98,
+     "align_s": 3.86,
+     "align_e": 3.98,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "mountains,",
+     "whisper_s": 3.98,
+     "whisper_e": 4.5,
+     "align_s": 3.98,
+     "align_e": 4.93,
+     "ds": 0.0,
+     "de": 0.43
+    },
+    {
+     "word": "laying",
+     "whisper_s": 4.94,
+     "whisper_e": 5.12,
+     "align_s": 5.08,
+     "align_e": 5.1,
+     "ds": 0.14,
+     "de": -0.02
+    },
+    {
+     "word": "glass",
+     "whisper_s": 5.12,
+     "whisper_e": 5.48,
+     "align_s": 5.1,
+     "align_e": 5.46,
+     "ds": -0.02,
+     "de": -0.02
+    },
+    {
+     "word": "from",
+     "whisper_s": 5.48,
+     "whisper_e": 5.76,
+     "align_s": 5.46,
+     "align_e": 5.76,
+     "ds": -0.02,
+     "de": 0.0
+    },
+    {
+     "word": "Chicago",
+     "whisper_s": 5.76,
+     "whisper_e": 6.14,
+     "align_s": 5.76,
+     "align_e": 6.14,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "straight",
+     "whisper_s": 6.14,
+     "whisper_e": 6.62,
+     "align_s": 6.14,
+     "align_e": 6.62,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "to",
+     "whisper_s": 6.62,
+     "whisper_e": 6.9,
+     "align_s": 6.62,
+     "align_e": 6.9,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "New",
+     "whisper_s": 6.9,
+     "whisper_e": 7.0,
+     "align_s": 6.9,
+     "align_e": 7.0,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "Jersey.",
+     "whisper_s": 7.0,
+     "whisper_e": 7.3,
+     "align_s": 7.0,
+     "align_e": 7.28,
+     "ds": 0.0,
+     "de": -0.02
+    }
+   ],
+   "aligned": [
+    {
+     "w": "Spread",
+     "s": 0.32,
+     "e": 0.32
+    },
+    {
+     "w": "Networks",
+     "s": 0.32,
+     "e": 0.7
+    },
+    {
+     "w": "spent",
+     "s": 0.7,
+     "e": 1.06
+    },
+    {
+     "w": "three",
+     "s": 1.06,
+     "e": 1.42
+    },
+    {
+     "w": "hundred",
+     "s": 1.42,
+     "e": 1.76
+    },
+    {
+     "w": "million",
+     "s": 1.76,
+     "e": 2.14
+    },
+    {
+     "w": "dollars",
+     "s": 2.14,
+     "e": 2.7
+    },
+    {
+     "w": "tunneling",
+     "s": 2.9,
+     "e": 3.28
+    },
+    {
+     "w": "straight",
+     "s": 3.28,
+     "e": 3.62
+    },
+    {
+     "w": "through",
+     "s": 3.62,
+     "e": 3.86
+    },
+    {
+     "w": "the",
+     "s": 3.86,
+     "e": 3.98
+    },
+    {
+     "w": "mountains,",
+     "s": 3.98,
+     "e": 4.93
+    },
+    {
+     "w": "laying",
+     "s": 5.08,
+     "e": 5.1
+    },
+    {
+     "w": "glass",
+     "s": 5.1,
+     "e": 5.46
+    },
+    {
+     "w": "from",
+     "s": 5.46,
+     "e": 5.76
+    },
+    {
+     "w": "Chicago",
+     "s": 5.76,
+     "e": 6.14
+    },
+    {
+     "w": "straight",
+     "s": 6.14,
+     "e": 6.62
+    },
+    {
+     "w": "to",
+     "s": 6.62,
+     "e": 6.9
+    },
+    {
+     "w": "New",
+     "s": 6.9,
+     "e": 7.0
+    },
+    {
+     "w": "Jersey.",
+     "s": 7.0,
+     "e": 7.28
+    }
+   ]
+  },
+  {
+   "beat": "b03",
+   "words": 23,
+   "backend": "stable",
+   "note": null,
+   "n": 22,
+   "p50_ds": 0.01,
+   "p90_ds": 0.194,
+   "max_ds": 0.52,
+   "p50_de": 0.0,
+   "max_de": 0.45,
+   "bias_ds": 0.061,
+   "dropped": [],
+   "extra": [],
+   "worst": [
+    {
+     "word": "until",
+     "whisper_s": 2.5,
+     "whisper_e": 3.14,
+     "align_s": 3.02,
+     "align_e": 3.14,
+     "ds": 0.52,
+     "de": 0.0
+    },
+    {
+     "word": "microwave",
+     "whisper_s": 4.18,
+     "whisper_e": 4.8,
+     "align_s": 4.54,
+     "align_e": 4.88,
+     "ds": 0.36,
+     "de": 0.08
+    },
+    {
+     "word": "at",
+     "whisper_s": 6.66,
+     "whisper_e": 6.96,
+     "align_s": 6.86,
+     "align_e": 6.96,
+     "ds": 0.2,
+     "de": 0.0
+    }
+   ],
+   "diffs": [
+    {
+     "word": "that",
+     "whisper_s": 0.0,
+     "whisper_e": 0.16,
+     "align_s": 0.0,
+     "align_e": 0.14,
+     "ds": 0.0,
+     "de": -0.02
+    },
+    {
+     "word": "tunnel",
+     "whisper_s": 0.16,
+     "whisper_e": 0.46,
+     "align_s": 0.14,
+     "align_e": 0.44,
+     "ds": -0.02,
+     "de": -0.02
+    },
+    {
+     "word": "shaved",
+     "whisper_s": 0.46,
+     "whisper_e": 0.88,
+     "align_s": 0.44,
+     "align_e": 0.88,
+     "ds": -0.02,
+     "de": 0.0
+    },
+    {
+     "word": "three",
+     "whisper_s": 0.88,
+     "whisper_e": 1.24,
+     "align_s": 1.02,
+     "align_e": 1.24,
+     "ds": 0.14,
+     "de": 0.0
+    },
+    {
+     "word": "milliseconds",
+     "whisper_s": 1.24,
+     "whisper_e": 1.68,
+     "align_s": 1.24,
+     "align_e": 1.7,
+     "ds": 0.0,
+     "de": 0.02
+    },
+    {
+     "word": "off",
+     "whisper_s": 1.68,
+     "whisper_e": 2.04,
+     "align_s": 1.74,
+     "align_e": 2.04,
+     "ds": 0.06,
+     "de": 0.0
+    },
+    {
+     "word": "the",
+     "whisper_s": 2.04,
+     "whisper_e": 2.2,
+     "align_s": 2.1,
+     "align_e": 2.2,
+     "ds": 0.06,
+     "de": 0.0
+    },
+    {
+     "word": "route",
+     "whisper_s": 2.2,
+     "whisper_e": 2.5,
+     "align_s": 2.2,
+     "align_e": 2.95,
+     "ds": 0.0,
+     "de": 0.45
+    },
+    {
+     "word": "until",
+     "whisper_s": 2.5,
+     "whisper_e": 3.14,
+     "align_s": 3.02,
+     "align_e": 3.14,
+     "ds": 0.52,
+     "de": 0.0
+    },
+    {
+     "word": "someone",
+     "whisper_s": 3.14,
+     "whisper_e": 3.52,
+     "align_s": 3.14,
+     "align_e": 3.52,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "realized",
+     "whisper_s": 3.52,
+     "whisper_e": 4.18,
+     "align_s": 3.52,
+     "align_e": 4.54,
+     "ds": 0.0,
+     "de": 0.36
+    },
+    {
+     "word": "microwave",
+     "whisper_s": 4.18,
+     "whisper_e": 4.8,
+     "align_s": 4.54,
+     "align_e": 4.88,
+     "ds": 0.36,
+     "de": 0.08
+    },
+    {
+     "word": "signals",
+     "whisper_s": 4.8,
+     "whisper_e": 5.46,
+     "align_s": 4.88,
+     "align_e": 5.44,
+     "ds": 0.08,
+     "de": -0.02
+    },
+    {
+     "word": "travel",
+     "whisper_s": 5.46,
+     "whisper_e": 5.94,
+     "align_s": 5.44,
+     "align_e": 5.92,
+     "ds": -0.02,
+     "de": -0.02
+    },
+    {
+     "word": "through",
+     "whisper_s": 5.94,
+     "whisper_e": 6.28,
+     "align_s": 5.92,
+     "align_e": 6.28,
+     "ds": -0.02,
+     "de": 0.0
+    },
+    {
+     "word": "air",
+     "whisper_s": 6.28,
+     "whisper_e": 6.66,
+     "align_s": 6.28,
+     "align_e": 6.62,
+     "ds": 0.0,
+     "de": -0.04
+    },
+    {
+     "word": "at",
+     "whisper_s": 6.66,
+     "whisper_e": 6.96,
+     "align_s": 6.86,
+     "align_e": 6.96,
+     "ds": 0.2,
+     "de": 0.0
+    },
+    {
+     "word": "99 %",
+     "whisper_s": 6.96,
+     "whisper_e": 8.02,
+     "align_s": 6.96,
+     "align_e": 8.02,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "the",
+     "whisper_s": 8.02,
+     "whisper_e": 8.34,
+     "align_s": 8.02,
+     "align_e": 8.34,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "speed",
+     "whisper_s": 8.34,
+     "whisper_e": 8.56,
+     "align_s": 8.34,
+     "align_e": 8.56,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "of",
+     "whisper_s": 8.56,
+     "whisper_e": 8.7,
+     "align_s": 8.56,
+     "align_e": 8.7,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "light.",
+     "whisper_s": 8.7,
+     "whisper_e": 8.94,
+     "align_s": 8.7,
+     "align_e": 8.8,
+     "ds": 0.0,
+     "de": -0.14
+    }
+   ],
+   "aligned": [
+    {
+     "w": "That",
+     "s": 0.0,
+     "e": 0.14
+    },
+    {
+     "w": "tunnel",
+     "s": 0.14,
+     "e": 0.44
+    },
+    {
+     "w": "shaved",
+     "s": 0.44,
+     "e": 0.88
+    },
+    {
+     "w": "three",
+     "s": 1.02,
+     "e": 1.24
+    },
+    {
+     "w": "milliseconds",
+     "s": 1.24,
+     "e": 1.7
+    },
+    {
+     "w": "off",
+     "s": 1.74,
+     "e": 2.04
+    },
+    {
+     "w": "the",
+     "s": 2.1,
+     "e": 2.2
+    },
+    {
+     "w": "route.",
+     "s": 2.2,
+     "e": 2.95
+    },
+    {
+     "w": "Until",
+     "s": 3.02,
+     "e": 3.14
+    },
+    {
+     "w": "someone",
+     "s": 3.14,
+     "e": 3.52
+    },
+    {
+     "w": "realized:",
+     "s": 3.52,
+     "e": 4.54
+    },
+    {
+     "w": "microwave",
+     "s": 4.54,
+     "e": 4.88
+    },
+    {
+     "w": "signals",
+     "s": 4.88,
+     "e": 5.44
+    },
+    {
+     "w": "travel",
+     "s": 5.44,
+     "e": 5.92
+    },
+    {
+     "w": "through",
+     "s": 5.92,
+     "e": 6.28
+    },
+    {
+     "w": "air",
+     "s": 6.28,
+     "e": 6.62
+    },
+    {
+     "w": "at",
+     "s": 6.86,
+     "e": 6.96
+    },
+    {
+     "w": "ninety-nine",
+     "s": 6.96,
+     "e": 7.64
+    },
+    {
+     "w": "percent",
+     "s": 7.64,
+     "e": 8.02
+    },
+    {
+     "w": "the",
+     "s": 8.02,
+     "e": 8.34
+    },
+    {
+     "w": "speed",
+     "s": 8.34,
+     "e": 8.56
+    },
+    {
+     "w": "of",
+     "s": 8.56,
+     "e": 8.7
+    },
+    {
+     "w": "light.",
+     "s": 8.7,
+     "e": 8.8
+    }
+   ]
+  },
+  {
+   "beat": "b04",
+   "words": 23,
+   "backend": "stable",
+   "note": null,
+   "n": 23,
+   "p50_ds": 0.02,
+   "p90_ds": 0.204,
+   "max_ds": 0.38,
+   "p50_de": 0.02,
+   "max_de": 0.44,
+   "bias_ds": -0.012,
+   "dropped": [],
+   "extra": [],
+   "worst": [
+    {
+     "word": "sight.",
+     "whisper_s": 8.84,
+     "whisper_e": 9.1,
+     "align_s": 8.46,
+     "align_e": 9.14,
+     "ds": -0.38,
+     "de": 0.04
+    },
+    {
+     "word": "Almost",
+     "whisper_s": 0.0,
+     "whisper_e": 0.36,
+     "align_s": 0.34,
+     "align_e": 0.34,
+     "ds": 0.34,
+     "de": -0.02
+    },
+    {
+     "word": "of",
+     "whisper_s": 8.7,
+     "whisper_e": 8.84,
+     "align_s": 8.46,
+     "align_e": 9.14,
+     "ds": -0.24,
+     "de": 0.3
+    }
+   ],
+   "diffs": [
+    {
+     "word": "Almost",
+     "whisper_s": 0.0,
+     "whisper_e": 0.36,
+     "align_s": 0.34,
+     "align_e": 0.34,
+     "ds": 0.34,
+     "de": -0.02
+    },
+    {
+     "word": "overnight,",
+     "whisper_s": 0.36,
+     "whisper_e": 0.76,
+     "align_s": 0.34,
+     "align_e": 0.44,
+     "ds": -0.02,
+     "de": -0.32
+    },
+    {
+     "word": "the",
+     "whisper_s": 1.16,
+     "whisper_e": 1.26,
+     "align_s": 1.22,
+     "align_e": 1.26,
+     "ds": 0.06,
+     "de": 0.0
+    },
+    {
+     "word": "cable",
+     "whisper_s": 1.26,
+     "whisper_e": 1.54,
+     "align_s": 1.26,
+     "align_e": 1.54,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "was",
+     "whisper_s": 1.54,
+     "whisper_e": 1.8,
+     "align_s": 1.54,
+     "align_e": 1.8,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "obsolete.",
+     "whisper_s": 1.8,
+     "whisper_e": 2.38,
+     "align_s": 1.8,
+     "align_e": 2.5,
+     "ds": 0.0,
+     "de": 0.12
+    },
+    {
+     "word": "Trading",
+     "whisper_s": 3.12,
+     "whisper_e": 3.32,
+     "align_s": 3.12,
+     "align_e": 3.28,
+     "ds": 0.0,
+     "de": -0.04
+    },
+    {
+     "word": "firms",
+     "whisper_s": 3.32,
+     "whisper_e": 3.76,
+     "align_s": 3.28,
+     "align_e": 3.76,
+     "ds": -0.04,
+     "de": 0.0
+    },
+    {
+     "word": "began",
+     "whisper_s": 3.76,
+     "whisper_e": 4.1,
+     "align_s": 3.76,
+     "align_e": 4.1,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "buying",
+     "whisper_s": 4.1,
+     "whisper_e": 4.46,
+     "align_s": 4.1,
+     "align_e": 4.44,
+     "ds": 0.0,
+     "de": -0.02
+    },
+    {
+     "word": "up",
+     "whisper_s": 4.46,
+     "whisper_e": 4.72,
+     "align_s": 4.44,
+     "align_e": 4.72,
+     "ds": -0.02,
+     "de": 0.0
+    },
+    {
+     "word": "radar",
+     "whisper_s": 4.72,
+     "whisper_e": 5.06,
+     "align_s": 4.78,
+     "align_e": 5.06,
+     "ds": 0.06,
+     "de": 0.0
+    },
+    {
+     "word": "towers",
+     "whisper_s": 5.06,
+     "whisper_e": 5.54,
+     "align_s": 5.06,
+     "align_e": 5.52,
+     "ds": 0.0,
+     "de": -0.02
+    },
+    {
+     "word": "and",
+     "whisper_s": 5.54,
+     "whisper_e": 5.84,
+     "align_s": 5.52,
+     "align_e": 5.84,
+     "ds": -0.02,
+     "de": 0.0
+    },
+    {
+     "word": "farm",
+     "whisper_s": 5.84,
+     "whisper_e": 6.12,
+     "align_s": 5.84,
+     "align_e": 6.12,
+     "ds": 0.0,
+     "de": 0.0
+    },
+    {
+     "word": "fields,",
+     "whisper_s": 6.12,
+     "whisper_e": 6.58,
+     "align_s": 6.12,
+     "align_e": 7.0,
+     "ds": 0.0,
+     "de": 0.42
+    },
+    {
+     "word": "15",
+     "whisper_s": 7.02,
+     "whisper_e": 7.3,
+     "align_s": 7.08,
+     "align_e": 7.28,
+     "ds": 0.06,
+     "de": -0.02
+    },
+    {
+     "word": "steel",
+     "whisper_s": 7.3,
+     "whisper_e": 7.72,
+     "align_s": 7.28,
+     "align_e": 7.7,
+     "ds": -0.02,
+     "de": -0.02
+    },
+    {
+     "word": "towers",
+     "whisper_s": 7.72,
+     "whisper_e": 8.2,
+     "align_s": 7.7,
+     "align_e": 8.18,
+     "ds": -0.02,
+     "de": -0.02
+    },
+    {
+     "word": "in",
+     "whisper_s": 8.2,
+     "whisper_e": 8.48,
+     "align_s": 8.18,
+     "align_e": 8.46,
+     "ds": -0.02,
+     "de": -0.02
+    },
+    {
+     "word": "line",
+     "whisper_s": 8.48,
+     "whisper_e": 8.7,
+     "align_s": 8.46,
+     "align_e": 9.14,
+     "ds": -0.02,
+     "de": 0.44
+    },
+    {
+     "word": "of",
+     "whisper_s": 8.7,
+     "whisper_e": 8.84,
+     "align_s": 8.46,
+     "align_e": 9.14,
+     "ds": -0.24,
+     "de": 0.3
+    },
+    {
+     "word": "sight.",
+     "whisper_s": 8.84,
+     "whisper_e": 9.1,
+     "align_s": 8.46,
+     "align_e": 9.14,
+     "ds": -0.38,
+     "de": 0.04
+    }
+   ],
+   "aligned": [
+    {
+     "w": "Almost",
+     "s": 0.34,
+     "e": 0.34
+    },
+    {
+     "w": "overnight,",
+     "s": 0.34,
+     "e": 0.44
+    },
+    {
+     "w": "the",
+     "s": 1.22,
+     "e": 1.26
+    },
+    {
+     "w": "cable",
+     "s": 1.26,
+     "e": 1.54
+    },
+    {
+     "w": "was",
+     "s": 1.54,
+     "e": 1.8
+    },
+    {
+     "w": "obsolete.",
+     "s": 1.8,
+     "e": 2.5
+    },
+    {
+     "w": "Trading",
+     "s": 3.12,
+     "e": 3.28
+    },
+    {
+     "w": "firms",
+     "s": 3.28,
+     "e": 3.76
+    },
+    {
+     "w": "began",
+     "s": 3.76,
+     "e": 4.1
+    },
+    {
+     "w": "buying",
+     "s": 4.1,
+     "e": 4.44
+    },
+    {
+     "w": "up",
+     "s": 4.44,
+     "e": 4.72
+    },
+    {
+     "w": "radar",
+     "s": 4.78,
+     "e": 5.06
+    },
+    {
+     "w": "towers",
+     "s": 5.06,
+     "e": 5.52
+    },
+    {
+     "w": "and",
+     "s": 5.52,
+     "e": 5.84
+    },
+    {
+     "w": "farm",
+     "s": 5.84,
+     "e": 6.12
+    },
+    {
+     "w": "fields:",
+     "s": 6.12,
+     "e": 7.0
+    },
+    {
+     "w": "fifteen",
+     "s": 7.08,
+     "e": 7.28
+    },
+    {
+     "w": "steel",
+     "s": 7.28,
+     "e": 7.7
+    },
+    {
+     "w": "towers",
+     "s": 7.7,
+     "e": 8.18
+    },
+    {
+     "w": "in",
+     "s": 8.18,
+     "e": 8.46
+    },
+    {
+     "w": "line-of-sight.",
+     "s": 8.46,
+     "e": 9.14
+    }
+   ]
+  }
+ ]
+}

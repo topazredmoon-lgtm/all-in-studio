@@ -1,0 +1,149 @@
+{
+ "tool": "prosody_forge",
+ "topic": "why-ai-dumber",
+ "generated": "2026-10-17T21:49:05",
+ "engine": {
+  "engine": "chatterbox",
+  "ref": "assets/voice/narrator_ref.wav",
+  "ex": 0.55,
+  "beat": "h00",
+  "match": "hash"
+ },
+ "medians": {
+  "f0": 131.0,
+  "spread": 64.0,
+  "lvl": -17.8,
+  "rate": 3.23
+ },
+ "queue": [
+  {
+   "id": "a05",
+   "f0": 130.0,
+   "spread": 60.0,
+   "lvl": -17.7,
+   "rate": 3.04,
+   "rise": 0.2,
+   "flags": [
+    "rising end"
+   ]
+  },
+  {
+   "id": "a09",
+   "f0": 145.0,
+   "spread": 95.0,
+   "lvl": -18.0,
+   "rate": 2.2,
+   "rise": -0.19,
+   "flags": [
+    "f0",
+    "rate"
+   ]
+  },
+  {
+   "id": "a11",
+   "f0": 139.0,
+   "spread": 108.0,
+   "lvl": -18.2,
+   "rate": 2.86,
+   "rise": -0.16,
+   "flags": [
+    "spread"
+   ]
+  },
+  {
+   "id": "a22",
+   "f0": 131.0,
+   "spread": 64.0,
+   "lvl": -16.8,
+   "rate": 3.56,
+   "rise": 0.33,
+   "flags": [
+    "rising end"
+   ]
+  }
+ ],
+ "experiments": [
+  {
+   "beat": "a05",
+   "engine": "chatterbox",
+   "original": {
+    "metrics": {
+     "f0": 130.0,
+     "spread": 60.0,
+     "lvl": -17.7,
+     "rate": 3.04,
+     "rise": 0.2
+    },
+    "flags": [
+     "rising end"
+    ]
+   },
+   "candidates": [
+    {
+     "kind": "ex-0.30",
+     "ex": 0.25,
+     "metrics": {
+      "f0": 119.0,
+      "spread": 55.0,
+      "lvl": -20.0,
+      "rate": 2.81,
+      "rise": 0.06
+     },
+     "flags_after": [],
+     "cleared": [
+      "rising end"
+     ],
+     "new": [],
+     "shift": {
+      "f0": -11.0,
+      "spread": -5.0,
+      "lvl": -2.3,
+      "rate": -0.23,
+      "rise": -0.14
+     },
+     "score": 1,
+     "log_tail": "a05  7.81s | Machines write an enormous share of it now. Product descriptions, reviews, summaries, answ |   WARN a11 part 0: best word match 0.75 for 'By the ninth generation,' |   WARN a11 part 2: be"
+    },
+    {
+     "kind": "ex-0.15",
+     "ex": 0.4,
+     "metrics": {
+      "f0": 119.0,
+      "spread": 40.0,
+      "lvl": -20.0,
+      "rate": 2.79,
+      "rise": -0.03
+     },
+     "flags_after": [],
+     "cleared": [
+      "rising end"
+     ],
+     "new": [],
+     "shift": {
+      "f0": -11.0,
+      "spread": -20.0,
+      "lvl": -2.3,
+      "rate": -0.25,
+      "rise": -0.23
+     },
+     "score": 1,
+     "log_tail": "Narrator reference: assets/voice/narrator_ref.wav (Fenrir Male) | 1 lines to voice | loaded PerthNet (Implicit) at step 250,000 | a05  7.59s | Machines write an enormous share of it now. Product descr"
+    }
+   ],
+   "winner": {
+    "kind": "ex-0.30",
+    "score": 1,
+    "metrics": {
+     "f0": 119.0,
+     "spread": 55.0,
+     "lvl": -20.0,
+     "rate": 2.81,
+     "rise": 0.06
+    },
+    "cleared": [
+     "rising end"
+    ]
+   }
+  }
+ ]
+}

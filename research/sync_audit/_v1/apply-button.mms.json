@@ -1,0 +1,2045 @@
+{
+ "summary": {
+  "topic": "apply-button",
+  "backend": "mms",
+  "lines": 7,
+  "lines_over": 7,
+  "words_over": 102,
+  "dropped_words": 4,
+  "median_line_p90": 0.205,
+  "median_bias": 0.092,
+  "fails": [
+   {
+    "beat": "j01",
+    "over": 10,
+    "worst_word": "200",
+    "whisper_s": 0.34,
+    "align_s": 0.481
+   },
+   {
+    "beat": "j02",
+    "over": 15,
+    "worst_word": "for",
+    "whisper_s": 0.72,
+    "align_s": 0.882
+   },
+   {
+    "beat": "j03",
+    "over": 16,
+    "worst_word": "passed",
+    "whisper_s": 0.44,
+    "align_s": 0.561
+   },
+   {
+    "beat": "j04",
+    "over": 18,
+    "worst_word": "standard",
+    "whisper_s": 0.4,
+    "align_s": 0.501
+   },
+   {
+    "beat": "j05",
+    "over": 16,
+    "worst_word": "does",
+    "whisper_s": 0.48,
+    "align_s": 0.621
+   },
+   {
+    "beat": "j06",
+    "over": 14,
+    "worst_word": "new",
+    "whisper_s": 0.22,
+    "align_s": 0.301
+   },
+   {
+    "beat": "j07",
+    "over": 13,
+    "worst_word": "only",
+    "whisper_s": 0.72,
+    "align_s": 0.941
+   }
+  ]
+ },
+ "rows": [
+  {
+   "beat": "j01",
+   "backend": "mms",
+   "note": null,
+   "n": 24,
+   "p50_ds": 0.071,
+   "p90_ds": 0.183,
+   "max_ds": 0.218,
+   "p50_de": 0.048,
+   "max_de": 0.145,
+   "bias_ds": 0.092,
+   "dropped": [],
+   "extra": [],
+   "worst": [
+    {
+     "word": "opened",
+     "whisper_s": 7.32,
+     "whisper_e": 7.76,
+     "align_s": 7.538,
+     "align_e": 7.819,
+     "ds": 0.218,
+     "de": 0.059
+    },
+    {
+     "word": "eye",
+     "whisper_s": 6.6,
+     "whisper_e": 6.98,
+     "align_s": 6.796,
+     "align_e": 7.037,
+     "ds": 0.196,
+     "de": 0.057
+    },
+    {
+     "word": "this",
+     "whisper_s": 2.06,
+     "whisper_e": 2.38,
+     "align_s": 2.245,
+     "align_e": 2.386,
+     "ds": 0.185,
+     "de": 0.006
+    }
+   ],
+   "diffs": [
+    {
+     "word": "You",
+     "whisper_s": 0.0,
+     "whisper_e": 0.12,
+     "align_s": 0.04,
+     "align_e": 0.12,
+     "ds": 0.04,
+     "de": 0.0
+    },
+    {
+     "word": "sent",
+     "whisper_s": 0.12,
+     "whisper_e": 0.34,
+     "align_s": 0.16,
+     "align_e": 0.361,
+     "ds": 0.04,
+     "de": 0.021
+    },
+    {
+     "word": "200",
+     "whisper_s": 0.34,
+     "whisper_e": 1.0,
+     "align_s": 0.481,
+     "align_e": 1.063,
+     "ds": 0.141,
+     "de": 0.063
+    },
+    {
+     "word": "job",
+     "whisper_s": 1.0,
+     "whisper_e": 1.38,
+     "align_s": 1.143,
+     "align_e": 1.423,
+     "ds": 0.143,
+     "de": 0.043
+    },
+    {
+     "word": "applications",
+     "whisper_s": 1.38,
+     "whisper_e": 2.06,
+     "align_s": 1.504,
+     "align_e": 2.205,
+     "ds": 0.124,
+     "de": 0.145
+    },
+    {
+     "word": "this",
+     "whisper_s": 2.06,
+     "whisper_e": 2.38,
+     "align_s": 2.245,
+     "align_e": 2.386,
+     "ds": 0.185,
+     "de": 0.006
+    },
+    {
+     "word": "spring,",
+     "whisper_s": 2.38,
+     "whisper_e": 2.7,
+     "align_s": 2.446,
+     "align_e": 2.787,
+     "ds": 0.066,
+     "de": 0.087
+    },
+    {
+     "word": "and",
+     "whisper_s": 3.06,
+     "whisper_e": 3.22,
+     "align_s": 3.127,
+     "align_e": 3.228,
+     "ds": 0.067,
+     "de": 0.008
+    },
+    {
+     "word": "you",
+     "whisper_s": 3.22,
+     "whisper_e": 3.34,
+     "align_s": 3.248,
+     "align_e": 3.328,
+     "ds": 0.028,
+     "de": -0.012
+    },
+    {
+     "word": "heard",
+     "whisper_s": 3.34,
+     "whisper_e": 3.56,
+     "align_s": 3.388,
+     "align_e": 3.588,
+     "ds": 0.048,
+     "de": 0.028
+    },
+    {
+     "word": "nothing",
+     "whisper_s": 3.56,
+     "whisper_e": 3.86,
+     "align_s": 3.669,
+     "align_e": 3.949,
+     "ds": 0.109,
+     "de": 0.089
+    },
+    {
+     "word": "back.",
+     "whisper_s": 3.86,
+     "whisper_e": 4.24,
+     "align_s": 3.989,
+     "align_e": 4.29,
+     "ds": 0.129,
+     "de": 0.05
+    },
+    {
+     "word": "You",
+     "whisper_s": 4.8,
+     "whisper_e": 4.94,
+     "align_s": 4.831,
+     "align_e": 4.932,
+     "ds": 0.031,
+     "de": -0.008
+    },
+    {
+     "word": "blamed",
+     "whisper_s": 4.94,
+     "whisper_e": 5.18,
+     "align_s": 4.952,
+     "align_e": 5.272,
+     "ds": 0.012,
+     "de": 0.092
+    },
+    {
+     "word": "your",
+     "whisper_s": 5.18,
+     "whisper_e": 5.38,
+     "align_s": 5.293,
+     "align_e": 5.393,
+     "ds": 0.113,
+     "de": 0.013
+    },
+    {
+     "word": "resume,",
+     "whisper_s": 5.38,
+     "whisper_e": 5.72,
+     "align_s": 5.413,
+     "align_e": 5.854,
+     "ds": 0.033,
+     "de": 0.134
+    },
+    {
+     "word": "but",
+     "whisper_s": 6.08,
+     "whisper_e": 6.22,
+     "align_s": 6.155,
+     "align_e": 6.255,
+     "ds": 0.075,
+     "de": 0.035
+    },
+    {
+     "word": "a",
+     "whisper_s": 6.22,
+     "whisper_e": 6.34,
+     "align_s": 6.275,
+     "align_e": 6.295,
+     "ds": 0.055,
+     "de": -0.045
+    },
+    {
+     "word": "human",
+     "whisper_s": 6.34,
+     "whisper_e": 6.6,
+     "align_s": 6.375,
+     "align_e": 6.676,
+     "ds": 0.035,
+     "de": 0.076
+    },
+    {
+     "word": "eye",
+     "whisper_s": 6.6,
+     "whisper_e": 6.98,
+     "align_s": 6.796,
+     "align_e": 7.037,
+     "ds": 0.196,
+     "de": 0.057
+    },
+    {
+     "word": "never",
+     "whisper_s": 6.98,
+     "whisper_e": 7.32,
+     "align_s": 7.157,
+     "align_e": 7.418,
+     "ds": 0.177,
+     "de": 0.098
+    },
+    {
+     "word": "opened",
+     "whisper_s": 7.32,
+     "whisper_e": 7.76,
+     "align_s": 7.538,
+     "align_e": 7.819,
+     "ds": 0.218,
+     "de": 0.059
+    },
+    {
+     "word": "your",
+     "whisper_s": 7.76,
+     "whisper_e": 7.92,
+     "align_s": 7.839,
+     "align_e": 7.939,
+     "ds": 0.079,
+     "de": 0.019
+    },
+    {
+     "word": "file.",
+     "whisper_s": 7.92,
+     "whisper_e": 8.2,
+     "align_s": 7.979,
+     "align_e": 8.34,
+     "ds": 0.059,
+     "de": 0.14
+    }
+   ]
+  },
+  {
+   "beat": "j02",
+   "backend": "mms",
+   "note": null,
+   "n": 27,
+   "p50_ds": 0.114,
+   "p90_ds": 0.205,
+   "max_ds": 0.274,
+   "p50_de": 0.04,
+   "max_de": 0.181,
+   "bias_ds": 0.088,
+   "dropped": [],
+   "extra": [],
+   "worst": [
+    {
+     "word": "Nearly",
+     "whisper_s": 3.42,
+     "whisper_e": 3.42,
+     "align_s": 3.146,
+     "align_e": 3.426,
+     "ds": -0.274,
+     "de": 0.006
+    },
+    {
+     "word": "that",
+     "whisper_s": 1.4,
+     "whisper_e": 1.82,
+     "align_s": 1.663,
+     "align_e": 1.803,
+     "ds": 0.263,
+     "de": -0.017
+    },
+    {
+     "word": "before",
+     "whisper_s": 9.18,
+     "whisper_e": 9.62,
+     "align_s": 9.398,
+     "align_e": 9.678,
+     "ds": 0.218,
+     "de": 0.058
+    }
+   ],
+   "diffs": [
+    {
+     "word": "you",
+     "whisper_s": 0.0,
+     "whisper_e": 0.12,
+     "align_s": 0.04,
+     "align_e": 0.12,
+     "ds": 0.04,
+     "de": 0.0
+    },
+    {
+     "word": "have",
+     "whisper_s": 0.12,
+     "whisper_e": 0.24,
+     "align_s": 0.14,
+     "align_e": 0.24,
+     "ds": 0.02,
+     "de": 0.0
+    },
+    {
+     "word": "been",
+     "whisper_s": 0.24,
+     "whisper_e": 0.4,
+     "align_s": 0.26,
+     "align_e": 0.381,
+     "ds": 0.02,
+     "de": -0.019
+    },
+    {
+     "word": "writing",
+     "whisper_s": 0.4,
+     "whisper_e": 0.72,
+     "align_s": 0.421,
+     "align_e": 0.822,
+     "ds": 0.021,
+     "de": 0.102
+    },
+    {
+     "word": "for",
+     "whisper_s": 0.72,
+     "whisper_e": 1.02,
+     "align_s": 0.882,
+     "align_e": 1.002,
+     "ds": 0.162,
+     "de": -0.018
+    },
+    {
+     "word": "a",
+     "whisper_s": 1.02,
+     "whisper_e": 1.16,
+     "align_s": 1.042,
+     "align_e": 1.062,
+     "ds": 0.022,
+     "de": -0.098
+    },
+    {
+     "word": "reader",
+     "whisper_s": 1.16,
+     "whisper_e": 1.4,
+     "align_s": 1.142,
+     "align_e": 1.423,
+     "ds": -0.018,
+     "de": 0.023
+    },
+    {
+     "word": "that",
+     "whisper_s": 1.4,
+     "whisper_e": 1.82,
+     "align_s": 1.663,
+     "align_e": 1.803,
+     "ds": 0.263,
+     "de": -0.017
+    },
+    {
+     "word": "cannot",
+     "whisper_s": 1.82,
+     "whisper_e": 2.18,
+     "align_s": 1.863,
+     "align_e": 2.244,
+     "ds": 0.043,
+     "de": 0.064
+    },
+    {
+     "word": "read.",
+     "whisper_s": 2.18,
+     "whisper_e": 2.58,
+     "align_s": 2.324,
+     "align_e": 2.585,
+     "ds": 0.144,
+     "de": 0.005
+    },
+    {
+     "word": "Nearly",
+     "whisper_s": 3.42,
+     "whisper_e": 3.42,
+     "align_s": 3.146,
+     "align_e": 3.426,
+     "ds": -0.274,
+     "de": 0.006
+    },
+    {
+     "word": "99 %",
+     "whisper_s": 3.42,
+     "whisper_e": 4.52,
+     "align_s": 3.567,
+     "align_e": 4.589,
+     "ds": 0.147,
+     "de": 0.069
+    },
+    {
+     "word": "of",
+     "whisper_s": 4.52,
+     "whisper_e": 4.68,
+     "align_s": 4.589,
+     "align_e": 4.649,
+     "ds": 0.069,
+     "de": -0.031
+    },
+    {
+     "word": "Fortune,",
+     "whisper_s": 4.68,
+     "whisper_e": 5.08,
+     "align_s": 4.709,
+     "align_e": 5.15,
+     "ds": 0.029,
+     "de": 0.07
+    },
+    {
+     "word": "500",
+     "whisper_s": 5.5,
+     "whisper_e": 5.9,
+     "align_s": 5.49,
+     "align_e": 6.031,
+     "ds": -0.01,
+     "de": 0.131
+    },
+    {
+     "word": "employers,",
+     "whisper_s": 5.9,
+     "whisper_e": 6.56,
+     "align_s": 6.071,
+     "align_e": 6.672,
+     "ds": 0.171,
+     "de": 0.112
+    },
+    {
+     "word": "run",
+     "whisper_s": 6.9,
+     "whisper_e": 7.2,
+     "align_s": 7.053,
+     "align_e": 7.234,
+     "ds": 0.153,
+     "de": 0.034
+    },
+    {
+     "word": "an",
+     "whisper_s": 7.2,
+     "whisper_e": 7.42,
+     "align_s": 7.314,
+     "align_e": 7.374,
+     "ds": 0.114,
+     "de": -0.046
+    },
+    {
+     "word": "automated",
+     "whisper_s": 7.42,
+     "whisper_e": 7.98,
+     "align_s": 7.554,
+     "align_e": 8.115,
+     "ds": 0.134,
+     "de": 0.135
+    },
+    {
+     "word": "statistical",
+     "whisper_s": 7.98,
+     "whisper_e": 8.68,
+     "align_s": 8.175,
+     "align_e": 8.796,
+     "ds": 0.195,
+     "de": 0.116
+    },
+    {
+     "word": "sieve",
+     "whisper_s": 8.68,
+     "whisper_e": 9.18,
+     "align_s": 8.877,
+     "align_e": 9.197,
+     "ds": 0.197,
+     "de": 0.017
+    },
+    {
+     "word": "before",
+     "whisper_s": 9.18,
+     "whisper_e": 9.62,
+     "align_s": 9.398,
+     "align_e": 9.678,
+     "ds": 0.218,
+     "de": 0.058
+    },
+    {
+     "word": "any",
+     "whisper_s": 9.62,
+     "whisper_e": 9.84,
+     "align_s": 9.718,
+     "align_e": 9.838,
+     "ds": 0.098,
+     "de": -0.002
+    },
+    {
+     "word": "recruiter",
+     "whisper_s": 9.84,
+     "whisper_e": 10.3,
+     "align_s": 9.919,
+     "align_e": 10.319,
+     "ds": 0.079,
+     "de": 0.019
+    },
+    {
+     "word": "opens",
+     "whisper_s": 10.3,
+     "whisper_e": 10.68,
+     "align_s": 10.48,
+     "align_e": 10.78,
+     "ds": 0.18,
+     "de": 0.1
+    },
+    {
+     "word": "a",
+     "whisper_s": 10.68,
+     "whisper_e": 10.86,
+     "align_s": 10.8,
+     "align_e": 10.82,
+     "ds": 0.12,
+     "de": -0.04
+    },
+    {
+     "word": "folder.",
+     "whisper_s": 10.86,
+     "whisper_e": 11.08,
+     "align_s": 10.9,
+     "align_e": 11.261,
+     "ds": 0.04,
+     "de": 0.181
+    }
+   ]
+  },
+  {
+   "beat": "j03",
+   "backend": "mms",
+   "note": null,
+   "n": 28,
+   "p50_ds": 0.104,
+   "p90_ds": 0.208,
+   "max_ds": 0.503,
+   "p50_de": 0.054,
+   "max_de": 0.212,
+   "bias_ds": 0.117,
+   "dropped": [
+    "144",
+    "2025,"
+   ],
+   "extra": [],
+   "worst": [
+    {
+     "word": "to",
+     "whisper_s": 2.42,
+     "whisper_e": 3.06,
+     "align_s": 2.923,
+     "align_e": 2.983,
+     "ds": 0.503,
+     "de": -0.077
+    },
+    {
+     "word": "to",
+     "whisper_s": 3.74,
+     "whisper_e": 4.2,
+     "align_s": 4.084,
+     "align_e": 4.164,
+     "ds": 0.344,
+     "de": -0.036
+    },
+    {
+     "word": "was",
+     "whisper_s": 12.08,
+     "whisper_e": 12.44,
+     "align_s": 12.332,
+     "align_e": 12.432,
+     "ds": 0.252,
+     "de": -0.008
+    }
+   ],
+   "diffs": [
+    {
+     "word": "New",
+     "whisper_s": 0.0,
+     "whisper_e": 0.2,
+     "align_s": 0.06,
+     "align_e": 0.2,
+     "ds": 0.06,
+     "de": 0.0
+    },
+    {
+     "word": "York",
+     "whisper_s": 0.2,
+     "whisper_e": 0.44,
+     "align_s": 0.24,
+     "align_e": 0.48,
+     "ds": 0.04,
+     "de": 0.04
+    },
+    {
+     "word": "passed",
+     "whisper_s": 0.44,
+     "whisper_e": 0.88,
+     "align_s": 0.561,
+     "align_e": 0.941,
+     "ds": 0.121,
+     "de": 0.061
+    },
+    {
+     "word": "local",
+     "whisper_s": 0.88,
+     "whisper_e": 1.24,
+     "align_s": 1.021,
+     "align_e": 1.321,
+     "ds": 0.141,
+     "de": 0.081
+    },
+    {
+     "word": "law",
+     "whisper_s": 1.24,
+     "whisper_e": 1.6,
+     "align_s": 1.401,
+     "align_e": 1.602,
+     "ds": 0.161,
+     "de": 0.002
+    },
+    {
+     "word": "to",
+     "whisper_s": 2.42,
+     "whisper_e": 3.06,
+     "align_s": 2.923,
+     "align_e": 2.983,
+     "ds": 0.503,
+     "de": -0.077
+    },
+    {
+     "word": "force",
+     "whisper_s": 3.06,
+     "whisper_e": 3.28,
+     "align_s": 3.083,
+     "align_e": 3.363,
+     "ds": 0.023,
+     "de": 0.083
+    },
+    {
+     "word": "companies",
+     "whisper_s": 3.28,
+     "whisper_e": 3.74,
+     "align_s": 3.383,
+     "align_e": 3.864,
+     "ds": 0.103,
+     "de": 0.124
+    },
+    {
+     "word": "to",
+     "whisper_s": 3.74,
+     "whisper_e": 4.2,
+     "align_s": 4.084,
+     "align_e": 4.164,
+     "ds": 0.344,
+     "de": -0.036
+    },
+    {
+     "word": "audit",
+     "whisper_s": 4.2,
+     "whisper_e": 4.5,
+     "align_s": 4.304,
+     "align_e": 4.545,
+     "ds": 0.104,
+     "de": 0.045
+    },
+    {
+     "word": "these",
+     "whisper_s": 4.5,
+     "whisper_e": 4.8,
+     "align_s": 4.605,
+     "align_e": 4.845,
+     "ds": 0.105,
+     "de": 0.045
+    },
+    {
+     "word": "hiring",
+     "whisper_s": 4.8,
+     "whisper_e": 5.26,
+     "align_s": 4.905,
+     "align_e": 5.345,
+     "ds": 0.105,
+     "de": 0.085
+    },
+    {
+     "word": "algorithms",
+     "whisper_s": 5.26,
+     "whisper_e": 5.88,
+     "align_s": 5.425,
+     "align_e": 6.026,
+     "ds": 0.165,
+     "de": 0.146
+    },
+    {
+     "word": "for",
+     "whisper_s": 5.88,
+     "whisper_e": 6.18,
+     "align_s": 6.066,
+     "align_e": 6.186,
+     "ds": 0.186,
+     "de": 0.006
+    },
+    {
+     "word": "bias.",
+     "whisper_s": 6.18,
+     "whisper_e": 6.52,
+     "align_s": 6.226,
+     "align_e": 6.667,
+     "ds": 0.046,
+     "de": 0.147
+    },
+    {
+     "word": "But",
+     "whisper_s": 7.22,
+     "whisper_e": 7.32,
+     "align_s": 7.227,
+     "align_e": 7.307,
+     "ds": 0.007,
+     "de": -0.013
+    },
+    {
+     "word": "when",
+     "whisper_s": 7.32,
+     "whisper_e": 7.44,
+     "align_s": 7.327,
+     "align_e": 7.447,
+     "ds": 0.007,
+     "de": 0.007
+    },
+    {
+     "word": "state",
+     "whisper_s": 7.44,
+     "whisper_e": 7.72,
+     "align_s": 7.507,
+     "align_e": 7.788,
+     "ds": 0.067,
+     "de": 0.068
+    },
+    {
+     "word": "auditors",
+     "whisper_s": 7.72,
+     "whisper_e": 8.28,
+     "align_s": 7.868,
+     "align_e": 8.328,
+     "ds": 0.148,
+     "de": 0.048
+    },
+    {
+     "word": "checked",
+     "whisper_s": 8.28,
+     "whisper_e": 8.62,
+     "align_s": 8.428,
+     "align_e": 8.689,
+     "ds": 0.148,
+     "de": 0.069
+    },
+    {
+     "word": "the",
+     "whisper_s": 8.62,
+     "whisper_e": 8.82,
+     "align_s": 8.729,
+     "align_e": 8.809,
+     "ds": 0.109,
+     "de": -0.011
+    },
+    {
+     "word": "results",
+     "whisper_s": 8.82,
+     "whisper_e": 9.16,
+     "align_s": 8.849,
+     "align_e": 9.269,
+     "ds": 0.029,
+     "de": 0.109
+    },
+    {
+     "word": "in",
+     "whisper_s": 9.16,
+     "whisper_e": 9.42,
+     "align_s": 9.349,
+     "align_e": 9.409,
+     "ds": 0.189,
+     "de": -0.011
+    },
+    {
+     "word": "December",
+     "whisper_s": 9.42,
+     "whisper_e": 9.74,
+     "align_s": 9.449,
+     "align_e": 9.83,
+     "ds": 0.029,
+     "de": 0.09
+    },
+    {
+     "word": "the",
+     "whisper_s": 11.5,
+     "whisper_e": 11.6,
+     "align_s": 11.491,
+     "align_e": 11.571,
+     "ds": -0.009,
+     "de": -0.029
+    },
+    {
+     "word": "enforcement",
+     "whisper_s": 11.6,
+     "whisper_e": 12.08,
+     "align_s": 11.632,
+     "align_e": 12.292,
+     "ds": 0.032,
+     "de": 0.212
+    },
+    {
+     "word": "was",
+     "whisper_s": 12.08,
+     "whisper_e": 12.44,
+     "align_s": 12.332,
+     "align_e": 12.432,
+     "ds": 0.252,
+     "de": -0.008
+    },
+    {
+     "word": "broken.",
+     "whisper_s": 12.44,
+     "whisper_e": 12.74,
+     "align_s": 12.492,
+     "align_e": 12.873,
+     "ds": 0.052,
+     "de": 0.133
+    }
+   ]
+  },
+  {
+   "beat": "j04",
+   "backend": "mms",
+   "note": null,
+   "n": 24,
+   "p50_ds": 0.133,
+   "p90_ds": 0.233,
+   "max_ds": 0.28,
+   "p50_de": 0.065,
+   "max_de": 0.204,
+   "bias_ds": 0.134,
+   "dropped": [
+    "zero, 80,"
+   ],
+   "extra": [],
+   "worst": [
+    {
+     "word": "without",
+     "whisper_s": 9.3,
+     "whisper_e": 9.8,
+     "align_s": 9.58,
+     "align_e": 9.861,
+     "ds": 0.28,
+     "de": 0.061
+    },
+    {
+     "word": "an",
+     "whisper_s": 1.54,
+     "whisper_e": 1.88,
+     "align_s": 1.804,
+     "align_e": 1.864,
+     "ds": 0.264,
+     "de": -0.016
+    },
+    {
+     "word": "far",
+     "whisper_s": 7.9,
+     "whisper_e": 8.36,
+     "align_s": 8.137,
+     "align_e": 8.378,
+     "ds": 0.237,
+     "de": 0.018
+    }
+   ],
+   "diffs": [
+    {
+     "word": "The",
+     "whisper_s": 0.0,
+     "whisper_e": 0.14,
+     "align_s": 0.02,
+     "align_e": 0.1,
+     "ds": 0.02,
+     "de": -0.04
+    },
+    {
+     "word": "federal",
+     "whisper_s": 0.14,
+     "whisper_e": 0.4,
+     "align_s": 0.16,
+     "align_e": 0.461,
+     "ds": 0.02,
+     "de": 0.061
+    },
+    {
+     "word": "standard",
+     "whisper_s": 0.4,
+     "whisper_e": 1.0,
+     "align_s": 0.501,
+     "align_e": 1.022,
+     "ds": 0.101,
+     "de": 0.022
+    },
+    {
+     "word": "requires",
+     "whisper_s": 1.0,
+     "whisper_e": 1.54,
+     "align_s": 1.223,
+     "align_e": 1.744,
+     "ds": 0.223,
+     "de": 0.204
+    },
+    {
+     "word": "an",
+     "whisper_s": 1.54,
+     "whisper_e": 1.88,
+     "align_s": 1.804,
+     "align_e": 1.864,
+     "ds": 0.264,
+     "de": -0.016
+    },
+    {
+     "word": "adverse",
+     "whisper_s": 1.88,
+     "whisper_e": 2.34,
+     "align_s": 1.964,
+     "align_e": 2.445,
+     "ds": 0.084,
+     "de": 0.105
+    },
+    {
+     "word": "impact",
+     "whisper_s": 2.34,
+     "whisper_e": 2.88,
+     "align_s": 2.545,
+     "align_e": 2.926,
+     "ds": 0.205,
+     "de": 0.046
+    },
+    {
+     "word": "ratio",
+     "whisper_s": 2.88,
+     "whisper_e": 3.44,
+     "align_s": 2.986,
+     "align_e": 3.367,
+     "ds": 0.106,
+     "de": -0.073
+    },
+    {
+     "word": "above",
+     "whisper_s": 3.44,
+     "whisper_e": 3.76,
+     "align_s": 3.587,
+     "align_e": 3.828,
+     "ds": 0.147,
+     "de": 0.068
+    },
+    {
+     "word": "but",
+     "whisper_s": 5.24,
+     "whisper_e": 5.36,
+     "align_s": 5.271,
+     "align_e": 5.371,
+     "ds": 0.031,
+     "de": 0.011
+    },
+    {
+     "word": "automated",
+     "whisper_s": 5.36,
+     "whisper_e": 5.84,
+     "align_s": 5.491,
+     "align_e": 5.952,
+     "ds": 0.131,
+     "de": 0.112
+    },
+    {
+     "word": "keyword",
+     "whisper_s": 5.84,
+     "whisper_e": 6.3,
+     "align_s": 6.013,
+     "align_e": 6.393,
+     "ds": 0.173,
+     "de": 0.093
+    },
+    {
+     "word": "filters",
+     "whisper_s": 6.3,
+     "whisper_e": 6.88,
+     "align_s": 6.453,
+     "align_e": 6.894,
+     "ds": 0.153,
+     "de": 0.014
+    },
+    {
+     "word": "routinely",
+     "whisper_s": 6.88,
+     "whisper_e": 7.34,
+     "align_s": 7.015,
+     "align_e": 7.496,
+     "ds": 0.135,
+     "de": 0.156
+    },
+    {
+     "word": "crash",
+     "whisper_s": 7.34,
+     "whisper_e": 7.9,
+     "align_s": 7.556,
+     "align_e": 7.997,
+     "ds": 0.216,
+     "de": 0.097
+    },
+    {
+     "word": "far",
+     "whisper_s": 7.9,
+     "whisper_e": 8.36,
+     "align_s": 8.137,
+     "align_e": 8.378,
+     "ds": 0.237,
+     "de": 0.018
+    },
+    {
+     "word": "below",
+     "whisper_s": 8.36,
+     "whisper_e": 8.62,
+     "align_s": 8.458,
+     "align_e": 8.638,
+     "ds": 0.098,
+     "de": 0.018
+    },
+    {
+     "word": "that",
+     "whisper_s": 8.62,
+     "whisper_e": 8.82,
+     "align_s": 8.678,
+     "align_e": 8.838,
+     "ds": 0.058,
+     "de": 0.018
+    },
+    {
+     "word": "threshold",
+     "whisper_s": 8.82,
+     "whisper_e": 9.3,
+     "align_s": 8.879,
+     "align_e": 9.4,
+     "ds": 0.059,
+     "de": 0.1
+    },
+    {
+     "word": "without",
+     "whisper_s": 9.3,
+     "whisper_e": 9.8,
+     "align_s": 9.58,
+     "align_e": 9.861,
+     "ds": 0.28,
+     "de": 0.061
+    },
+    {
+     "word": "raising",
+     "whisper_s": 9.8,
+     "whisper_e": 10.16,
+     "align_s": 9.921,
+     "align_e": 10.261,
+     "ds": 0.121,
+     "de": 0.101
+    },
+    {
+     "word": "a",
+     "whisper_s": 10.16,
+     "whisper_e": 10.4,
+     "align_s": 10.322,
+     "align_e": 10.342,
+     "ds": 0.162,
+     "de": -0.058
+    },
+    {
+     "word": "single",
+     "whisper_s": 10.4,
+     "whisper_e": 10.66,
+     "align_s": 10.442,
+     "align_e": 10.742,
+     "ds": 0.042,
+     "de": 0.082
+    },
+    {
+     "word": "flag.",
+     "whisper_s": 10.66,
+     "whisper_e": 11.06,
+     "align_s": 10.803,
+     "align_e": 11.183,
+     "ds": 0.143,
+     "de": 0.123
+    }
+   ]
+  },
+  {
+   "beat": "j05",
+   "backend": "mms",
+   "note": null,
+   "n": 27,
+   "p50_ds": 0.083,
+   "p90_ds": 0.178,
+   "max_ds": 0.327,
+   "p50_de": 0.062,
+   "max_de": 0.172,
+   "bias_ds": 0.092,
+   "dropped": [],
+   "extra": [],
+   "worst": [
+    {
+     "word": "or",
+     "whisper_s": 6.1,
+     "whisper_e": 6.52,
+     "align_s": 6.427,
+     "align_e": 6.527,
+     "ds": 0.327,
+     "de": 0.007
+    },
+    {
+     "word": "silently",
+     "whisper_s": 8.36,
+     "whisper_e": 8.92,
+     "align_s": 8.569,
+     "align_e": 9.03,
+     "ds": 0.209,
+     "de": 0.11
+    },
+    {
+     "word": "you",
+     "whisper_s": 9.4,
+     "whisper_e": 9.7,
+     "align_s": 9.59,
+     "align_e": 9.69,
+     "ds": 0.19,
+     "de": -0.01
+    }
+   ],
+   "diffs": [
+    {
+     "word": "The",
+     "whisper_s": 0.0,
+     "whisper_e": 0.12,
+     "align_s": 0.02,
+     "align_e": 0.1,
+     "ds": 0.02,
+     "de": -0.02
+    },
+    {
+     "word": "machine",
+     "whisper_s": 0.12,
+     "whisper_e": 0.48,
+     "align_s": 0.12,
+     "align_e": 0.581,
+     "ds": 0.0,
+     "de": 0.101
+    },
+    {
+     "word": "does",
+     "whisper_s": 0.48,
+     "whisper_e": 0.74,
+     "align_s": 0.621,
+     "align_e": 0.761,
+     "ds": 0.141,
+     "de": 0.021
+    },
+    {
+     "word": "not",
+     "whisper_s": 0.74,
+     "whisper_e": 1.0,
+     "align_s": 0.821,
+     "align_e": 1.001,
+     "ds": 0.081,
+     "de": 0.001
+    },
+    {
+     "word": "evaluate",
+     "whisper_s": 1.0,
+     "whisper_e": 1.54,
+     "align_s": 1.061,
+     "align_e": 1.602,
+     "ds": 0.061,
+     "de": 0.062
+    },
+    {
+     "word": "talent.",
+     "whisper_s": 1.54,
+     "whisper_e": 1.92,
+     "align_s": 1.622,
+     "align_e": 2.022,
+     "ds": 0.082,
+     "de": 0.102
+    },
+    {
+     "word": "It",
+     "whisper_s": 2.48,
+     "whisper_e": 2.6,
+     "align_s": 2.523,
+     "align_e": 2.603,
+     "ds": 0.043,
+     "de": 0.003
+    },
+    {
+     "word": "matches",
+     "whisper_s": 2.6,
+     "whisper_e": 2.96,
+     "align_s": 2.623,
+     "align_e": 2.983,
+     "ds": 0.023,
+     "de": 0.023
+    },
+    {
+     "word": "text",
+     "whisper_s": 2.96,
+     "whisper_e": 3.26,
+     "align_s": 3.043,
+     "align_e": 3.344,
+     "ds": 0.083,
+     "de": 0.084
+    },
+    {
+     "word": "strings.",
+     "whisper_s": 3.26,
+     "whisper_e": 3.66,
+     "align_s": 3.384,
+     "align_e": 3.784,
+     "ds": 0.124,
+     "de": 0.124
+    },
+    {
+     "word": "If",
+     "whisper_s": 4.32,
+     "whisper_e": 4.42,
+     "align_s": 4.325,
+     "align_e": 4.405,
+     "ds": 0.005,
+     "de": -0.015
+    },
+    {
+     "word": "your",
+     "whisper_s": 4.42,
+     "whisper_e": 4.56,
+     "align_s": 4.425,
+     "align_e": 4.545,
+     "ds": 0.005,
+     "de": -0.015
+    },
+    {
+     "word": "file",
+     "whisper_s": 4.56,
+     "whisper_e": 4.86,
+     "align_s": 4.605,
+     "align_e": 4.925,
+     "ds": 0.045,
+     "de": 0.065
+    },
+    {
+     "word": "uses",
+     "whisper_s": 4.86,
+     "whisper_e": 5.2,
+     "align_s": 5.005,
+     "align_e": 5.266,
+     "ds": 0.145,
+     "de": 0.066
+    },
+    {
+     "word": "text",
+     "whisper_s": 5.2,
+     "whisper_e": 5.58,
+     "align_s": 5.346,
+     "align_e": 5.666,
+     "ds": 0.146,
+     "de": 0.086
+    },
+    {
+     "word": "boxes",
+     "whisper_s": 5.58,
+     "whisper_e": 6.1,
+     "align_s": 5.726,
+     "align_e": 6.267,
+     "ds": 0.146,
+     "de": 0.167
+    },
+    {
+     "word": "or",
+     "whisper_s": 6.1,
+     "whisper_e": 6.52,
+     "align_s": 6.427,
+     "align_e": 6.527,
+     "ds": 0.327,
+     "de": 0.007
+    },
+    {
+     "word": "complex",
+     "whisper_s": 6.52,
+     "whisper_e": 7.0,
+     "align_s": 6.607,
+     "align_e": 7.048,
+     "ds": 0.087,
+     "de": 0.048
+    },
+    {
+     "word": "columns,",
+     "whisper_s": 7.0,
+     "whisper_e": 7.56,
+     "align_s": 7.148,
+     "align_e": 7.688,
+     "ds": 0.148,
+     "de": 0.128
+    },
+    {
+     "word": "the",
+     "whisper_s": 8.02,
+     "whisper_e": 8.08,
+     "align_s": 7.989,
+     "align_e": 8.069,
+     "ds": -0.031,
+     "de": -0.011
+    },
+    {
+     "word": "parser",
+     "whisper_s": 8.08,
+     "whisper_e": 8.36,
+     "align_s": 8.089,
+     "align_e": 8.449,
+     "ds": 0.009,
+     "de": 0.089
+    },
+    {
+     "word": "silently",
+     "whisper_s": 8.36,
+     "whisper_e": 8.92,
+     "align_s": 8.569,
+     "align_e": 9.03,
+     "ds": 0.209,
+     "de": 0.11
+    },
+    {
+     "word": "rejects",
+     "whisper_s": 8.92,
+     "whisper_e": 9.4,
+     "align_s": 9.09,
+     "align_e": 9.55,
+     "ds": 0.17,
+     "de": 0.15
+    },
+    {
+     "word": "you",
+     "whisper_s": 9.4,
+     "whisper_e": 9.7,
+     "align_s": 9.59,
+     "align_e": 9.69,
+     "ds": 0.19,
+     "de": -0.01
+    },
+    {
+     "word": "within",
+     "whisper_s": 9.7,
+     "whisper_e": 9.96,
+     "align_s": 9.75,
+     "align_e": 9.971,
+     "ds": 0.05,
+     "de": 0.011
+    },
+    {
+     "word": "90",
+     "whisper_s": 9.96,
+     "whisper_e": 10.28,
+     "align_s": 10.051,
+     "align_e": 10.291,
+     "ds": 0.091,
+     "de": 0.011
+    },
+    {
+     "word": "seconds.",
+     "whisper_s": 10.28,
+     "whisper_e": 10.62,
+     "align_s": 10.371,
+     "align_e": 10.792,
+     "ds": 0.091,
+     "de": 0.172
+    }
+   ]
+  },
+  {
+   "beat": "j06",
+   "backend": "mms",
+   "note": null,
+   "n": 25,
+   "p50_ds": 0.082,
+   "p90_ds": 0.227,
+   "max_ds": 0.509,
+   "p50_de": 0.036,
+   "max_de": 0.184,
+   "bias_ds": 0.112,
+   "dropped": [
+    "$1 ,500"
+   ],
+   "extra": [
+    "fifteen hundred dollars"
+   ],
+   "worst": [
+    {
+     "word": "a",
+     "whisper_s": 3.7,
+     "whisper_e": 4.26,
+     "align_s": 4.209,
+     "align_e": 4.229,
+     "ds": 0.509,
+     "de": -0.031
+    },
+    {
+     "word": "face",
+     "whisper_s": 1.9,
+     "whisper_e": 2.32,
+     "align_s": 2.145,
+     "align_e": 2.425,
+     "ds": 0.245,
+     "de": 0.105
+    },
+    {
+     "word": "up,",
+     "whisper_s": 8.44,
+     "whisper_e": 8.8,
+     "align_s": 8.678,
+     "align_e": 8.819,
+     "ds": 0.238,
+     "de": 0.019
+    }
+   ],
+   "diffs": [
+    {
+     "word": "Under",
+     "whisper_s": 0.0,
+     "whisper_e": 0.22,
+     "align_s": 0.04,
+     "align_e": 0.241,
+     "ds": 0.04,
+     "de": 0.021
+    },
+    {
+     "word": "new",
+     "whisper_s": 0.22,
+     "whisper_e": 0.46,
+     "align_s": 0.301,
+     "align_e": 0.421,
+     "ds": 0.081,
+     "de": -0.039
+    },
+    {
+     "word": "city",
+     "whisper_s": 0.46,
+     "whisper_e": 0.66,
+     "align_s": 0.501,
+     "align_e": 0.661,
+     "ds": 0.041,
+     "de": 0.001
+    },
+    {
+     "word": "penalties,",
+     "whisper_s": 0.66,
+     "whisper_e": 1.28,
+     "align_s": 0.742,
+     "align_e": 1.283,
+     "ds": 0.082,
+     "de": 0.003
+    },
+    {
+     "word": "companies",
+     "whisper_s": 1.7,
+     "whisper_e": 1.9,
+     "align_s": 1.623,
+     "align_e": 2.084,
+     "ds": -0.077,
+     "de": 0.184
+    },
+    {
+     "word": "face",
+     "whisper_s": 1.9,
+     "whisper_e": 2.32,
+     "align_s": 2.145,
+     "align_e": 2.425,
+     "ds": 0.245,
+     "de": 0.105
+    },
+    {
+     "word": "fines",
+     "whisper_s": 2.32,
+     "whisper_e": 2.82,
+     "align_s": 2.485,
+     "align_e": 2.946,
+     "ds": 0.165,
+     "de": 0.126
+    },
+    {
+     "word": "of",
+     "whisper_s": 2.82,
+     "whisper_e": 3.08,
+     "align_s": 2.986,
+     "align_e": 3.046,
+     "ds": 0.166,
+     "de": -0.034
+    },
+    {
+     "word": "a",
+     "whisper_s": 3.7,
+     "whisper_e": 4.26,
+     "align_s": 4.209,
+     "align_e": 4.229,
+     "ds": 0.509,
+     "de": -0.031
+    },
+    {
+     "word": "day",
+     "whisper_s": 4.26,
+     "whisper_e": 4.48,
+     "align_s": 4.289,
+     "align_e": 4.51,
+     "ds": 0.029,
+     "de": 0.03
+    },
+    {
+     "word": "for",
+     "whisper_s": 4.48,
+     "whisper_e": 4.8,
+     "align_s": 4.69,
+     "align_e": 4.81,
+     "ds": 0.21,
+     "de": 0.01
+    },
+    {
+     "word": "unannounced,",
+     "whisper_s": 4.8,
+     "whisper_e": 5.46,
+     "align_s": 4.89,
+     "align_e": 5.512,
+     "ds": 0.09,
+     "de": 0.052
+    },
+    {
+     "word": "automated",
+     "whisper_s": 5.56,
+     "whisper_e": 6.0,
+     "align_s": 5.632,
+     "align_e": 6.113,
+     "ds": 0.072,
+     "de": 0.113
+    },
+    {
+     "word": "screening.",
+     "whisper_s": 6.0,
+     "whisper_e": 6.46,
+     "align_s": 6.173,
+     "align_e": 6.614,
+     "ds": 0.173,
+     "de": 0.154
+    },
+    {
+     "word": "But",
+     "whisper_s": 7.12,
+     "whisper_e": 7.2,
+     "align_s": 7.115,
+     "align_e": 7.215,
+     "ds": -0.005,
+     "de": 0.015
+    },
+    {
+     "word": "until",
+     "whisper_s": 7.2,
+     "whisper_e": 7.48,
+     "align_s": 7.235,
+     "align_e": 7.516,
+     "ds": 0.035,
+     "de": 0.036
+    },
+    {
+     "word": "enforcement",
+     "whisper_s": 7.48,
+     "whisper_e": 8.02,
+     "align_s": 7.576,
+     "align_e": 8.177,
+     "ds": 0.096,
+     "de": 0.157
+    },
+    {
+     "word": "catches",
+     "whisper_s": 8.02,
+     "whisper_e": 8.44,
+     "align_s": 8.217,
+     "align_e": 8.598,
+     "ds": 0.197,
+     "de": 0.158
+    },
+    {
+     "word": "up,",
+     "whisper_s": 8.44,
+     "whisper_e": 8.8,
+     "align_s": 8.678,
+     "align_e": 8.819,
+     "ds": 0.238,
+     "de": 0.019
+    },
+    {
+     "word": "you",
+     "whisper_s": 9.1,
+     "whisper_e": 9.24,
+     "align_s": 9.159,
+     "align_e": 9.26,
+     "ds": 0.059,
+     "de": 0.02
+    },
+    {
+     "word": "must",
+     "whisper_s": 9.24,
+     "whisper_e": 9.44,
+     "align_s": 9.28,
+     "align_e": 9.5,
+     "ds": 0.04,
+     "de": 0.06
+    },
+    {
+     "word": "write",
+     "whisper_s": 9.44,
+     "whisper_e": 9.72,
+     "align_s": 9.54,
+     "align_e": 9.841,
+     "ds": 0.1,
+     "de": 0.121
+    },
+    {
+     "word": "for",
+     "whisper_s": 9.72,
+     "whisper_e": 9.96,
+     "align_s": 9.881,
+     "align_e": 9.981,
+     "ds": 0.161,
+     "de": 0.021
+    },
+    {
+     "word": "the",
+     "whisper_s": 9.96,
+     "whisper_e": 10.08,
+     "align_s": 10.001,
+     "align_e": 10.081,
+     "ds": 0.041,
+     "de": 0.001
+    },
+    {
+     "word": "machine.",
+     "whisper_s": 10.08,
+     "whisper_e": 10.34,
+     "align_s": 10.081,
+     "align_e": 10.502,
+     "ds": 0.001,
+     "de": 0.162
+    }
+   ]
+  },
+  {
+   "beat": "j07",
+   "backend": "mms",
+   "note": null,
+   "n": 29,
+   "p50_ds": 0.066,
+   "p90_ds": 0.182,
+   "max_ds": 0.432,
+   "p50_de": 0.049,
+   "max_de": 0.192,
+   "bias_ds": 0.088,
+   "dropped": [],
+   "extra": [],
+   "worst": [
+    {
+     "word": "that",
+     "whisper_s": 7.82,
+     "whisper_e": 8.36,
+     "align_s": 8.252,
+     "align_e": 8.372,
+     "ds": 0.432,
+     "de": 0.012
+    },
+    {
+     "word": "only",
+     "whisper_s": 0.72,
+     "whisper_e": 1.1,
+     "align_s": 0.941,
+     "align_e": 1.162,
+     "ds": 0.221,
+     "de": 0.062
+    },
+    {
+     "word": "of",
+     "whisper_s": 2.46,
+     "whisper_e": 2.72,
+     "align_s": 2.644,
+     "align_e": 2.704,
+     "ds": 0.184,
+     "de": -0.016
+    }
+   ],
+   "diffs": [
+    {
+     "word": "A",
+     "whisper_s": 0.0,
+     "whisper_e": 0.12,
+     "align_s": 0.04,
+     "align_e": 0.06,
+     "ds": 0.04,
+     "de": -0.06
+    },
+    {
+     "word": "human",
+     "whisper_s": 0.12,
+     "whisper_e": 0.46,
+     "align_s": 0.16,
+     "align_e": 0.461,
+     "ds": 0.04,
+     "de": 0.001
+    },
+    {
+     "word": "being",
+     "whisper_s": 0.46,
+     "whisper_e": 0.72,
+     "align_s": 0.521,
+     "align_e": 0.781,
+     "ds": 0.061,
+     "de": 0.061
+    },
+    {
+     "word": "only",
+     "whisper_s": 0.72,
+     "whisper_e": 1.1,
+     "align_s": 0.941,
+     "align_e": 1.162,
+     "ds": 0.221,
+     "de": 0.062
+    },
+    {
+     "word": "reads",
+     "whisper_s": 1.1,
+     "whisper_e": 1.52,
+     "align_s": 1.282,
+     "align_e": 1.602,
+     "ds": 0.182,
+     "de": 0.082
+    },
+    {
+     "word": "the",
+     "whisper_s": 1.52,
+     "whisper_e": 1.8,
+     "align_s": 1.642,
+     "align_e": 1.743,
+     "ds": 0.122,
+     "de": -0.057
+    },
+    {
+     "word": "seventh",
+     "whisper_s": 1.8,
+     "whisper_e": 2.1,
+     "align_s": 1.823,
+     "align_e": 2.183,
+     "ds": 0.023,
+     "de": 0.083
+    },
+    {
+     "word": "version",
+     "whisper_s": 2.1,
+     "whisper_e": 2.46,
+     "align_s": 2.223,
+     "align_e": 2.584,
+     "ds": 0.123,
+     "de": 0.124
+    },
+    {
+     "word": "of",
+     "whisper_s": 2.46,
+     "whisper_e": 2.72,
+     "align_s": 2.644,
+     "align_e": 2.704,
+     "ds": 0.184,
+     "de": -0.016
+    },
+    {
+     "word": "your",
+     "whisper_s": 2.72,
+     "whisper_e": 2.82,
+     "align_s": 2.724,
+     "align_e": 2.844,
+     "ds": 0.004,
+     "de": 0.024
+    },
+    {
+     "word": "story.",
+     "whisper_s": 2.82,
+     "whisper_e": 3.18,
+     "align_s": 2.864,
+     "align_e": 3.185,
+     "ds": 0.044,
+     "de": 0.005
+    },
+    {
+     "word": "Now",
+     "whisper_s": 3.82,
+     "whisper_e": 3.98,
+     "align_s": 3.805,
+     "align_e": 4.026,
+     "ds": -0.015,
+     "de": 0.046
+    },
+    {
+     "word": "that",
+     "whisper_s": 3.98,
+     "whisper_e": 4.2,
+     "align_s": 4.106,
+     "align_e": 4.226,
+     "ds": 0.126,
+     "de": 0.026
+    },
+    {
+     "word": "you",
+     "whisper_s": 4.2,
+     "whisper_e": 4.36,
+     "align_s": 4.266,
+     "align_e": 4.346,
+     "ds": 0.066,
+     "de": -0.014
+    },
+    {
+     "word": "understand",
+     "whisper_s": 4.36,
+     "whisper_e": 4.9,
+     "align_s": 4.426,
+     "align_e": 4.987,
+     "ds": 0.066,
+     "de": 0.087
+    },
+    {
+     "word": "the",
+     "whisper_s": 4.9,
+     "whisper_e": 5.1,
+     "align_s": 5.007,
+     "align_e": 5.087,
+     "ds": 0.107,
+     "de": -0.013
+    },
+    {
+     "word": "statistical",
+     "whisper_s": 5.1,
+     "whisper_e": 5.66,
+     "align_s": 5.107,
+     "align_e": 5.728,
+     "ds": 0.007,
+     "de": 0.068
+    },
+    {
+     "word": "sieve,",
+     "whisper_s": 5.66,
+     "whisper_e": 6.1,
+     "align_s": 5.808,
+     "align_e": 6.149,
+     "ds": 0.148,
+     "de": 0.049
+    },
+    {
+     "word": "you",
+     "whisper_s": 6.5,
+     "whisper_e": 6.56,
+     "align_s": 6.469,
+     "align_e": 6.549,
+     "ds": -0.031,
+     "de": -0.011
+    },
+    {
+     "word": "can",
+     "whisper_s": 6.56,
+     "whisper_e": 6.7,
+     "align_s": 6.569,
+     "align_e": 6.71,
+     "ds": 0.009,
+     "de": 0.01
+    },
+    {
+     "word": "format",
+     "whisper_s": 6.7,
+     "whisper_e": 7.08,
+     "align_s": 6.79,
+     "align_e": 7.17,
+     "ds": 0.09,
+     "de": 0.09
+    },
+    {
+     "word": "an",
+     "whisper_s": 7.08,
+     "whisper_e": 7.26,
+     "align_s": 7.19,
+     "align_e": 7.25,
+     "ds": 0.11,
+     "de": -0.01
+    },
+    {
+     "word": "application",
+     "whisper_s": 7.26,
+     "whisper_e": 7.82,
+     "align_s": 7.311,
+     "align_e": 8.012,
+     "ds": 0.051,
+     "de": 0.192
+    },
+    {
+     "word": "that",
+     "whisper_s": 7.82,
+     "whisper_e": 8.36,
+     "align_s": 8.252,
+     "align_e": 8.372,
+     "ds": 0.432,
+     "de": 0.012
+    },
+    {
+     "word": "makes",
+     "whisper_s": 8.36,
+     "whisper_e": 8.58,
+     "align_s": 8.412,
+     "align_e": 8.652,
+     "ds": 0.052,
+     "de": 0.072
+    },
+    {
+     "word": "it",
+     "whisper_s": 8.58,
+     "whisper_e": 8.78,
+     "align_s": 8.693,
+     "align_e": 8.773,
+     "ds": 0.113,
+     "de": -0.007
+    },
+    {
+     "word": "through",
+     "whisper_s": 8.78,
+     "whisper_e": 9.02,
+     "align_s": 8.853,
+     "align_e": 9.113,
+     "ds": 0.073,
+     "de": 0.093
+    },
+    {
+     "word": "the",
+     "whisper_s": 9.02,
+     "whisper_e": 9.22,
+     "align_s": 9.113,
+     "align_e": 9.193,
+     "ds": 0.093,
+     "de": -0.027
+    },
+    {
+     "word": "gate.",
+     "whisper_s": 9.22,
+     "whisper_e": 9.4,
+     "align_s": 9.233,
+     "align_e": 9.554,
+     "ds": 0.013,
+     "de": 0.154
+    }
+   ]
+  }
+ ]
+}

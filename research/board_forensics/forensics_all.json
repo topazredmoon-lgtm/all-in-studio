@@ -1,0 +1,3657 @@
+{
+ "tool": "board_forensics",
+ "mode": "all",
+ "generated": "2026-10-17T21:32:14",
+ "topics": [
+  {
+   "topic": "ai-ban",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\ai-ban\\out\\All-in_ai_ban_sample_v5.mp4",
+   "summary": {
+    "pass": 8,
+    "warn": 7,
+    "fail": 10,
+    "pass_rate": 0.32,
+    "no_fail_rate": 0.6,
+    "median_score": 80.0,
+    "score_min_floor": 60.0
+   }
+  },
+  {
+   "topic": "ai-black-markets",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\ai-black-markets\\out\\All-in_ai_black_markets_full.mp4",
+   "summary": {
+    "pass": 6,
+    "warn": 85,
+    "fail": 45,
+    "pass_rate": 0.0441,
+    "no_fail_rate": 0.6691,
+    "median_score": 60.0,
+    "score_min_floor": 60.0
+   }
+  },
+  {
+   "topic": "ai-grey-zone",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\ai-grey-zone\\out\\ai-grey-zone_v3.mp4",
+   "summary": {
+    "pass": 4,
+    "warn": 26,
+    "fail": 3,
+    "pass_rate": 0.1212,
+    "no_fail_rate": 0.9091,
+    "median_score": 70.0,
+    "score_min_floor": 60.0
+   }
+  },
+  {
+   "topic": "ai-power-bill",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\ai-power-bill\\out\\ai-power-bill_v2.mp4",
+   "summary": {
+    "pass": 7,
+    "warn": 13,
+    "fail": 4,
+    "pass_rate": 0.2917,
+    "no_fail_rate": 0.8333,
+    "median_score": 80.0,
+    "score_min_floor": 60.0
+   }
+  },
+  {
+   "topic": "apply-button",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\apply-button\\out\\apply-button_v5.mp4",
+   "summary": {
+    "pass": 19,
+    "warn": 9,
+    "fail": 5,
+    "pass_rate": 0.5758,
+    "no_fail_rate": 0.8485,
+    "median_score": 100.0,
+    "score_min_floor": 60.0
+   }
+  },
+  {
+   "topic": "captchas-3min",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\captchas-3min\\out\\All-in_captchas_3min_v6.mp4",
+   "summary": {
+    "pass": 28,
+    "warn": 22,
+    "fail": 1,
+    "pass_rate": 0.549,
+    "no_fail_rate": 0.9804,
+    "median_score": 100.0,
+    "score_min_floor": 60.0
+   }
+  },
+  {
+   "topic": "captchas-full",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\captchas-full\\out\\All-in_captchas_full_v3.mp4",
+   "summary": {
+    "pass": 72,
+    "warn": 101,
+    "fail": 10,
+    "pass_rate": 0.3934,
+    "no_fail_rate": 0.9454,
+    "median_score": 90.0,
+    "score_min_floor": 60.0
+   }
+  },
+  {
+   "topic": "captchas-sample",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\captchas-sample\\out\\captchas-sample_v1.mp4",
+   "summary": {
+    "pass": 6,
+    "warn": 2,
+    "fail": 4,
+    "pass_rate": 0.5,
+    "no_fail_rate": 0.6667,
+    "median_score": 95.0,
+    "score_min_floor": 60.0
+   }
+  },
+  {
+   "topic": "china-ai-underground",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\china-ai-underground\\out\\All-in_china_ai_underground_sample.mp4",
+   "summary": {
+    "pass": 0,
+    "warn": 9,
+    "fail": 12,
+    "pass_rate": 0.0,
+    "no_fail_rate": 0.4286,
+    "median_score": 50.0,
+    "score_min_floor": 60.0
+   }
+  },
+  {
+   "topic": "elon-musk",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\elon-musk\\out\\elon-musk_v2_comp.mp4",
+   "summary": {
+    "pass": 0,
+    "warn": 18,
+    "fail": 50,
+    "pass_rate": 0.0,
+    "no_fail_rate": 0.2647,
+    "median_score": 40.0,
+    "score_min_floor": 60.0
+   }
+  },
+  {
+   "topic": "greyhat-ai",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\greyhat-ai\\out\\greyhat-ai_v1.mp4",
+   "summary": {
+    "pass": 0,
+    "warn": 46,
+    "fail": 22,
+    "pass_rate": 0.0,
+    "no_fail_rate": 0.6765,
+    "median_score": 60.0,
+    "score_min_floor": 60.0
+   }
+  },
+  {
+   "topic": "microwave-trading",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\microwave-trading\\out\\microwave-trading_v9.mp4",
+   "summary": {
+    "pass": 0,
+    "warn": 20,
+    "fail": 6,
+    "pass_rate": 0.0,
+    "no_fail_rate": 0.7692,
+    "median_score": 70.0,
+    "score_min_floor": 60.0
+   }
+  },
+  {
+   "topic": "new-ai-reasoning",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\new-ai-reasoning\\out\\new-ai-reasoning_v9.mp4",
+   "summary": {
+    "pass": 0,
+    "warn": 15,
+    "fail": 2,
+    "pass_rate": 0.0,
+    "no_fail_rate": 0.8824,
+    "median_score": 80.0,
+    "score_min_floor": 60.0
+   }
+  },
+  {
+   "topic": "poisoned-well",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\poisoned-well\\out\\All-in_poisoned-well_sample.mp4",
+   "summary": {
+    "pass": 6,
+    "warn": 9,
+    "fail": 23,
+    "pass_rate": 0.1579,
+    "no_fail_rate": 0.3947,
+    "median_score": 60.0,
+    "score_min_floor": 60.0
+   }
+  },
+  {
+   "topic": "surveillance-pricing",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\surveillance-pricing\\out\\surveillance-pricing_v1.mp4",
+   "summary": {
+    "pass": 0,
+    "warn": 44,
+    "fail": 21,
+    "pass_rate": 0.0,
+    "no_fail_rate": 0.6769,
+    "median_score": 60.0,
+    "score_min_floor": 60.0
+   }
+  },
+  {
+   "topic": "the-ai-cast",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\the-ai-cast\\out\\the-ai-cast_v3.mp4",
+   "summary": {
+    "pass": 0,
+    "warn": 21,
+    "fail": 21,
+    "pass_rate": 0.0,
+    "no_fail_rate": 0.5,
+    "median_score": 50.0,
+    "score_min_floor": 60.0
+   }
+  },
+  {
+   "topic": "tokens-explained",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\tokens-explained\\out\\tokens-explained_v5.mp4",
+   "summary": {
+    "pass": 24,
+    "warn": 8,
+    "fail": 0,
+    "pass_rate": 0.75,
+    "no_fail_rate": 1.0,
+    "median_score": 100.0,
+    "score_min_floor": 60.0
+   }
+  },
+  {
+   "topic": "why-ai-dumber",
+   "mp4": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\why-ai-dumber\\out\\All-in_why_ai_dumber_v2.mp4",
+   "summary": {
+    "pass": 1,
+    "warn": 17,
+    "fail": 8,
+    "pass_rate": 0.0385,
+    "no_fail_rate": 0.6923,
+    "median_score": 60.0,
+    "score_min_floor": 60.0
+   }
+  }
+ ],
+ "ranking_by_visual": [
+  {
+   "visual": "LineIcon",
+   "frames": 686,
+   "fail": 179,
+   "warn": 425,
+   "worst_score": 10.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 58,
+    "TP4_TINY_LABELS": 247,
+    "TP1_NO_HERO_MASS": 562,
+    "TP5_EMPTY_BOARD": 548,
+    "TP6_DESATURATED": 76,
+    "TP3_DIM_BOARD": 364
+   },
+   "files": [
+    "engine/src/ds/kit.tsx"
+   ],
+   "topics": [
+    "ai-ban",
+    "ai-black-markets",
+    "ai-power-bill",
+    "captchas-3min",
+    "captchas-full",
+    "elon-musk",
+    "greyhat-ai",
+    "microwave-trading",
+    "new-ai-reasoning",
+    "surveillance-pricing",
+    "the-ai-cast"
+   ]
+  },
+  {
+   "visual": "FieldCard",
+   "frames": 19,
+   "fail": 19,
+   "warn": 0,
+   "worst_score": 10.0,
+   "codes": {
+    "TP3_DIM_BOARD": 19,
+    "TP4_TINY_LABELS": 19,
+    "TP1_NO_HERO_MASS": 15,
+    "TP5_EMPTY_BOARD": 19,
+    "TP2_FLAT_DARK_BOX": 8,
+    "TP6_DESATURATED": 1
+   },
+   "files": [
+    "engine/src/ds/kit.tsx"
+   ],
+   "topics": [
+    "elon-musk"
+   ]
+  },
+  {
+   "visual": "PhoneChat",
+   "frames": 16,
+   "fail": 13,
+   "warn": 3,
+   "worst_score": 10.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 14,
+    "TP3_DIM_BOARD": 12,
+    "TP1_NO_HERO_MASS": 15,
+    "TP5_EMPTY_BOARD": 15,
+    "TP6_DESATURATED": 11,
+    "TP4_TINY_LABELS": 11
+   },
+   "files": [
+    "engine/src/visuals/aiban.tsx"
+   ],
+   "topics": [
+    "ai-ban",
+    "apply-button",
+    "the-ai-cast"
+   ]
+  },
+  {
+   "visual": "Film",
+   "frames": 49,
+   "fail": 13,
+   "warn": 31,
+   "worst_score": 30.0,
+   "codes": {
+    "TP3_DIM_BOARD": 22,
+    "TP4_TINY_LABELS": 40,
+    "TP6_DESATURATED": 18,
+    "TP2_FLAT_DARK_BOX": 4,
+    "TP1_NO_HERO_MASS": 6,
+    "TP5_EMPTY_BOARD": 1
+   },
+   "files": [
+    "engine/src/visuals/cnai.tsx"
+   ],
+   "topics": [
+    "ai-power-bill",
+    "apply-button",
+    "china-ai-underground",
+    "microwave-trading",
+    "new-ai-reasoning",
+    "the-ai-cast",
+    "tokens-explained"
+   ]
+  },
+  {
+   "visual": "GeofenceMap",
+   "frames": 12,
+   "fail": 12,
+   "warn": 0,
+   "worst_score": 40.0,
+   "codes": {
+    "TP3_DIM_BOARD": 12,
+    "TP4_TINY_LABELS": 12,
+    "TP1_NO_HERO_MASS": 12,
+    "TP5_EMPTY_BOARD": 12
+   },
+   "files": [
+    "engine/src/visuals/musk.tsx"
+   ],
+   "topics": [
+    "elon-musk"
+   ]
+  },
+  {
+   "visual": "StarlinkShell",
+   "frames": 10,
+   "fail": 10,
+   "warn": 0,
+   "worst_score": 40.0,
+   "codes": {
+    "TP3_DIM_BOARD": 10,
+    "TP4_TINY_LABELS": 10,
+    "TP1_NO_HERO_MASS": 10,
+    "TP5_EMPTY_BOARD": 10
+   },
+   "files": [
+    "engine/src/visuals/musk.tsx"
+   ],
+   "topics": [
+    "elon-musk"
+   ]
+  },
+  {
+   "visual": "CallGrid",
+   "frames": 13,
+   "fail": 9,
+   "warn": 4,
+   "worst_score": 20.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 12,
+    "TP3_DIM_BOARD": 9,
+    "TP4_TINY_LABELS": 3,
+    "TP1_NO_HERO_MASS": 13,
+    "TP5_EMPTY_BOARD": 13
+   },
+   "files": [
+    "engine/src/visuals/aibm.tsx"
+   ],
+   "topics": [
+    "ai-black-markets",
+    "the-ai-cast"
+   ]
+  },
+  {
+   "visual": "Score",
+   "frames": 37,
+   "fail": 9,
+   "warn": 28,
+   "worst_score": 20.0,
+   "codes": {
+    "TP4_TINY_LABELS": 27,
+    "TP1_NO_HERO_MASS": 32,
+    "TP2_FLAT_DARK_BOX": 13,
+    "TP3_DIM_BOARD": 8,
+    "TP5_EMPTY_BOARD": 9
+   },
+   "files": [
+    "engine/src/visuals/captchas2.tsx"
+   ],
+   "topics": [
+    "ai-grey-zone",
+    "captchas-full",
+    "microwave-trading",
+    "new-ai-reasoning",
+    "the-ai-cast"
+   ]
+  },
+  {
+   "visual": "IconRow",
+   "frames": 72,
+   "fail": 9,
+   "warn": 53,
+   "worst_score": 30.0,
+   "codes": {
+    "TP1_NO_HERO_MASS": 59,
+    "TP5_EMPTY_BOARD": 42,
+    "TP2_FLAT_DARK_BOX": 2,
+    "TP4_TINY_LABELS": 13,
+    "TP3_DIM_BOARD": 19,
+    "TP6_DESATURATED": 6
+   },
+   "files": [
+    "engine/src/ds/kit.tsx"
+   ],
+   "topics": [
+    "ai-ban",
+    "ai-black-markets",
+    "ai-grey-zone",
+    "captchas-3min",
+    "captchas-full",
+    "elon-musk",
+    "the-ai-cast"
+   ]
+  },
+  {
+   "visual": "ChatBox",
+   "frames": 11,
+   "fail": 8,
+   "warn": 1,
+   "worst_score": 10.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 9,
+    "TP4_TINY_LABELS": 8,
+    "TP1_NO_HERO_MASS": 8,
+    "TP5_EMPTY_BOARD": 8,
+    "TP3_DIM_BOARD": 5,
+    "TP6_DESATURATED": 3
+   },
+   "files": [
+    "engine/src/visuals/aibm.tsx"
+   ],
+   "topics": [
+    "ai-ban",
+    "ai-black-markets"
+   ]
+  },
+  {
+   "visual": "PhoneCall",
+   "frames": 13,
+   "fail": 8,
+   "warn": 5,
+   "worst_score": 40.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 8,
+    "TP4_TINY_LABELS": 10,
+    "TP1_NO_HERO_MASS": 13,
+    "TP5_EMPTY_BOARD": 7,
+    "TP6_DESATURATED": 1
+   },
+   "files": [
+    "engine/src/visuals/aibm.tsx"
+   ],
+   "topics": [
+    "ai-black-markets",
+    "the-ai-cast"
+   ]
+  },
+  {
+   "visual": "BetaWaiver",
+   "frames": 9,
+   "fail": 7,
+   "warn": 2,
+   "worst_score": 30.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 9,
+    "TP5_EMPTY_BOARD": 9,
+    "TP3_DIM_BOARD": 7,
+    "TP4_TINY_LABELS": 5
+   },
+   "files": [
+    "engine/src/visuals/musk.tsx"
+   ],
+   "topics": [
+    "elon-musk"
+   ]
+  },
+  {
+   "visual": "Bars",
+   "frames": 20,
+   "fail": 6,
+   "warn": 14,
+   "worst_score": 30.0,
+   "codes": {
+    "TP3_DIM_BOARD": 18,
+    "TP4_TINY_LABELS": 6,
+    "TP1_NO_HERO_MASS": 12,
+    "TP5_EMPTY_BOARD": 12,
+    "TP2_FLAT_DARK_BOX": 1,
+    "TP6_DESATURATED": 2
+   },
+   "files": [
+    "engine/src/ds/kit.tsx"
+   ],
+   "topics": [
+    "ai-black-markets",
+    "ai-grey-zone",
+    "captchas-full",
+    "microwave-trading",
+    "new-ai-reasoning",
+    "the-ai-cast"
+   ]
+  },
+  {
+   "visual": "AccountWall",
+   "frames": 6,
+   "fail": 6,
+   "warn": 0,
+   "worst_score": 30.0,
+   "codes": {
+    "TP3_DIM_BOARD": 6,
+    "TP4_TINY_LABELS": 6,
+    "TP1_NO_HERO_MASS": 6,
+    "TP5_EMPTY_BOARD": 6,
+    "TP6_DESATURATED": 3
+   },
+   "files": [
+    "engine/src/visuals/cnai.tsx"
+   ],
+   "topics": [
+    "china-ai-underground",
+    "the-ai-cast"
+   ]
+  },
+  {
+   "visual": "SensorPurge",
+   "frames": 11,
+   "fail": 5,
+   "warn": 6,
+   "worst_score": 10.0,
+   "codes": {
+    "TP3_DIM_BOARD": 6,
+    "TP1_NO_HERO_MASS": 11,
+    "TP5_EMPTY_BOARD": 11,
+    "TP6_DESATURATED": 2,
+    "TP4_TINY_LABELS": 10,
+    "TP2_FLAT_DARK_BOX": 4
+   },
+   "files": [
+    "engine/src/visuals/musk.tsx"
+   ],
+   "topics": [
+    "elon-musk"
+   ]
+  },
+  {
+   "visual": "PW_A04",
+   "frames": 5,
+   "fail": 5,
+   "warn": 0,
+   "worst_score": 10.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 5,
+    "TP4_TINY_LABELS": 5,
+    "TP3_DIM_BOARD": 2,
+    "TP1_NO_HERO_MASS": 1,
+    "TP5_EMPTY_BOARD": 2,
+    "TP6_DESATURATED": 2
+   },
+   "files": [
+    "engine/src/visuals/poisoned-well-b.tsx"
+   ],
+   "topics": [
+    "poisoned-well"
+   ]
+  },
+  {
+   "visual": "Listing",
+   "frames": 7,
+   "fail": 5,
+   "warn": 2,
+   "worst_score": 40.0,
+   "codes": {
+    "TP3_DIM_BOARD": 2,
+    "TP1_NO_HERO_MASS": 7,
+    "TP5_EMPTY_BOARD": 4,
+    "TP2_FLAT_DARK_BOX": 5,
+    "TP4_TINY_LABELS": 5,
+    "TP6_DESATURATED": 2
+   },
+   "files": [
+    "engine/src/visuals/aibm.tsx"
+   ],
+   "topics": [
+    "ai-black-markets"
+   ]
+  },
+  {
+   "visual": "PowerCluster",
+   "frames": 5,
+   "fail": 5,
+   "warn": 0,
+   "worst_score": 40.0,
+   "codes": {
+    "TP3_DIM_BOARD": 5,
+    "TP4_TINY_LABELS": 5,
+    "TP1_NO_HERO_MASS": 5,
+    "TP5_EMPTY_BOARD": 5
+   },
+   "files": [
+    "engine/src/visuals/musk.tsx"
+   ],
+   "topics": [
+    "elon-musk"
+   ]
+  },
+  {
+   "visual": "PW_A03",
+   "frames": 5,
+   "fail": 4,
+   "warn": 1,
+   "worst_score": 0.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 5,
+    "TP4_TINY_LABELS": 5,
+    "TP1_NO_HERO_MASS": 3,
+    "TP3_DIM_BOARD": 2,
+    "TP5_EMPTY_BOARD": 2,
+    "TP6_DESATURATED": 1
+   },
+   "files": [
+    "engine/src/visuals/poisoned-well.tsx"
+   ],
+   "topics": [
+    "poisoned-well"
+   ]
+  },
+  {
+   "visual": "StealerLog",
+   "frames": 5,
+   "fail": 4,
+   "warn": 1,
+   "worst_score": 10.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 4,
+    "TP3_DIM_BOARD": 1,
+    "TP4_TINY_LABELS": 4,
+    "TP1_NO_HERO_MASS": 5,
+    "TP5_EMPTY_BOARD": 3,
+    "TP6_DESATURATED": 1
+   },
+   "files": [
+    "engine/src/visuals/aibm.tsx"
+   ],
+   "topics": [
+    "ai-black-markets"
+   ]
+  },
+  {
+   "visual": "DossierDoc",
+   "frames": 6,
+   "fail": 4,
+   "warn": 1,
+   "worst_score": 30.0,
+   "codes": {
+    "TP3_DIM_BOARD": 4,
+    "TP4_TINY_LABELS": 4,
+    "TP1_NO_HERO_MASS": 4,
+    "TP5_EMPTY_BOARD": 4,
+    "TP6_DESATURATED": 2
+   },
+   "files": [
+    "engine/src/ds/evidence.tsx"
+   ],
+   "topics": [
+    "captchas-sample"
+   ]
+  },
+  {
+   "visual": "MetricChart",
+   "frames": 4,
+   "fail": 4,
+   "warn": 0,
+   "worst_score": 30.0,
+   "codes": {
+    "TP3_DIM_BOARD": 4,
+    "TP4_TINY_LABELS": 4,
+    "TP1_NO_HERO_MASS": 4,
+    "TP5_EMPTY_BOARD": 4,
+    "TP6_DESATURATED": 1
+   },
+   "files": [
+    "engine/src/ds/evidence.tsx"
+   ],
+   "topics": [
+    "captchas-sample"
+   ]
+  },
+  {
+   "visual": "DragonDependency",
+   "frames": 4,
+   "fail": 4,
+   "warn": 0,
+   "worst_score": 30.0,
+   "codes": {
+    "TP3_DIM_BOARD": 4,
+    "TP4_TINY_LABELS": 4,
+    "TP1_NO_HERO_MASS": 4,
+    "TP5_EMPTY_BOARD": 4,
+    "TP6_DESATURATED": 3
+   },
+   "files": [
+    "engine/src/visuals/musk.tsx"
+   ],
+   "topics": [
+    "elon-musk"
+   ]
+  },
+  {
+   "visual": "PayloadRatio",
+   "frames": 6,
+   "fail": 4,
+   "warn": 2,
+   "worst_score": 40.0,
+   "codes": {
+    "TP3_DIM_BOARD": 6,
+    "TP4_TINY_LABELS": 4,
+    "TP1_NO_HERO_MASS": 6,
+    "TP5_EMPTY_BOARD": 6
+   },
+   "files": [
+    "engine/src/visuals/musk.tsx"
+   ],
+   "topics": [
+    "elon-musk"
+   ]
+  },
+  {
+   "visual": "PW_C02",
+   "frames": 4,
+   "fail": 3,
+   "warn": 1,
+   "worst_score": 0.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 4,
+    "TP3_DIM_BOARD": 2,
+    "TP4_TINY_LABELS": 3,
+    "TP5_EMPTY_BOARD": 2,
+    "TP6_DESATURATED": 2,
+    "TP1_NO_HERO_MASS": 1
+   },
+   "files": [
+    "engine/src/visuals/poisoned-well-b.tsx"
+   ],
+   "topics": [
+    "poisoned-well"
+   ]
+  },
+  {
+   "visual": "PageQuote",
+   "frames": 27,
+   "fail": 3,
+   "warn": 22,
+   "worst_score": 10.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 25,
+    "TP3_DIM_BOARD": 3,
+    "TP4_TINY_LABELS": 2,
+    "TP1_NO_HERO_MASS": 3,
+    "TP6_DESATURATED": 5,
+    "TP5_EMPTY_BOARD": 2
+   },
+   "files": [
+    "engine/src/visuals/captchas2.tsx"
+   ],
+   "topics": [
+    "ai-grey-zone",
+    "ai-power-bill",
+    "apply-button",
+    "captchas-full",
+    "microwave-trading",
+    "new-ai-reasoning",
+    "the-ai-cast",
+    "tokens-explained"
+   ]
+  },
+  {
+   "visual": "PW_A02",
+   "frames": 4,
+   "fail": 3,
+   "warn": 1,
+   "worst_score": 10.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 4,
+    "TP3_DIM_BOARD": 2,
+    "TP4_TINY_LABELS": 3,
+    "TP1_NO_HERO_MASS": 2,
+    "TP6_DESATURATED": 1
+   },
+   "files": [
+    "engine/src/visuals/poisoned-well.tsx"
+   ],
+   "topics": [
+    "poisoned-well"
+   ]
+  },
+  {
+   "visual": "JournalPlate",
+   "frames": 4,
+   "fail": 3,
+   "warn": 1,
+   "worst_score": 10.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 3,
+    "TP3_DIM_BOARD": 4,
+    "TP1_NO_HERO_MASS": 4,
+    "TP5_EMPTY_BOARD": 4,
+    "TP6_DESATURATED": 4,
+    "TP4_TINY_LABELS": 2
+   },
+   "files": [
+    "engine/src/ds/plates/journalPlate.tsx"
+   ],
+   "topics": [
+    "why-ai-dumber"
+   ]
+  },
+  {
+   "visual": "PressStack",
+   "frames": 4,
+   "fail": 3,
+   "warn": 1,
+   "worst_score": 10.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 3,
+    "TP5_EMPTY_BOARD": 4,
+    "TP3_DIM_BOARD": 3,
+    "TP4_TINY_LABELS": 3,
+    "TP1_NO_HERO_MASS": 3,
+    "TP6_DESATURATED": 3
+   },
+   "files": [
+    "engine/src/ds/plates/pressStack.tsx"
+   ],
+   "topics": [
+    "why-ai-dumber"
+   ]
+  },
+  {
+   "visual": "Cctv",
+   "frames": 5,
+   "fail": 3,
+   "warn": 2,
+   "worst_score": 20.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 2,
+    "TP4_TINY_LABELS": 5,
+    "TP3_DIM_BOARD": 3,
+    "TP1_NO_HERO_MASS": 3,
+    "TP5_EMPTY_BOARD": 3,
+    "TP6_DESATURATED": 1
+   },
+   "files": [
+    "engine/src/visuals/cnai.tsx"
+   ],
+   "topics": [
+    "china-ai-underground"
+   ]
+  },
+  {
+   "visual": "PW_B02",
+   "frames": 3,
+   "fail": 3,
+   "warn": 0,
+   "worst_score": 30.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 3,
+    "TP3_DIM_BOARD": 2,
+    "TP1_NO_HERO_MASS": 3,
+    "TP5_EMPTY_BOARD": 2,
+    "TP6_DESATURATED": 2,
+    "TP4_TINY_LABELS": 1
+   },
+   "files": [
+    "engine/src/visuals/poisoned-well-b.tsx"
+   ],
+   "topics": [
+    "poisoned-well"
+   ]
+  },
+  {
+   "visual": "CalendarCard",
+   "frames": 32,
+   "fail": 3,
+   "warn": 26,
+   "worst_score": 40.0,
+   "codes": {
+    "TP3_DIM_BOARD": 5,
+    "TP1_NO_HERO_MASS": 11,
+    "TP5_EMPTY_BOARD": 17,
+    "TP6_DESATURATED": 11,
+    "TP2_FLAT_DARK_BOX": 20,
+    "TP4_TINY_LABELS": 3
+   },
+   "files": [
+    "engine/src/ds/kit.tsx"
+   ],
+   "topics": [
+    "ai-black-markets",
+    "ai-grey-zone",
+    "captchas-3min",
+    "captchas-full",
+    "why-ai-dumber"
+   ]
+  },
+  {
+   "visual": "PJMGridSurge",
+   "frames": 3,
+   "fail": 3,
+   "warn": 0,
+   "worst_score": 40.0,
+   "codes": {
+    "TP3_DIM_BOARD": 3,
+    "TP4_TINY_LABELS": 3,
+    "TP1_NO_HERO_MASS": 3,
+    "TP5_EMPTY_BOARD": 3
+   },
+   "files": [
+    "engine/src/visuals/ai-power-bill.tsx"
+   ],
+   "topics": [
+    "ai-power-bill"
+   ]
+  },
+  {
+   "visual": "RouteMap",
+   "frames": 3,
+   "fail": 3,
+   "warn": 0,
+   "worst_score": 40.0,
+   "codes": {
+    "TP3_DIM_BOARD": 3,
+    "TP4_TINY_LABELS": 3,
+    "TP1_NO_HERO_MASS": 3,
+    "TP5_EMPTY_BOARD": 3
+   },
+   "files": [
+    "engine/src/visuals/cnai.tsx"
+   ],
+   "topics": [
+    "china-ai-underground"
+   ]
+  },
+  {
+   "visual": "Blocked",
+   "frames": 3,
+   "fail": 2,
+   "warn": 0,
+   "worst_score": 10.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 2,
+    "TP3_DIM_BOARD": 2,
+    "TP4_TINY_LABELS": 2,
+    "TP1_NO_HERO_MASS": 2,
+    "TP5_EMPTY_BOARD": 2,
+    "TP6_DESATURATED": 1
+   },
+   "files": [
+    "engine/src/visuals/captchas2.tsx"
+   ],
+   "topics": [
+    "captchas-full",
+    "the-ai-cast"
+   ]
+  },
+  {
+   "visual": "Channel",
+   "frames": 2,
+   "fail": 2,
+   "warn": 0,
+   "worst_score": 20.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 2,
+    "TP4_TINY_LABELS": 2,
+    "TP1_NO_HERO_MASS": 2,
+    "TP5_EMPTY_BOARD": 2,
+    "TP3_DIM_BOARD": 1
+   },
+   "files": [
+    "engine/src/visuals/aibm.tsx"
+   ],
+   "topics": [
+    "ai-black-markets"
+   ]
+  },
+  {
+   "visual": "PW_B01",
+   "frames": 4,
+   "fail": 2,
+   "warn": 2,
+   "worst_score": 20.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 4,
+    "TP3_DIM_BOARD": 1,
+    "TP4_TINY_LABELS": 2,
+    "TP1_NO_HERO_MASS": 2,
+    "TP5_EMPTY_BOARD": 1
+   },
+   "files": [
+    "engine/src/visuals/poisoned-well-b.tsx"
+   ],
+   "topics": [
+    "poisoned-well"
+   ]
+  },
+  {
+   "visual": "Bubble",
+   "frames": 18,
+   "fail": 2,
+   "warn": 12,
+   "worst_score": 30.0,
+   "codes": {
+    "TP4_TINY_LABELS": 6,
+    "TP1_NO_HERO_MASS": 13,
+    "TP5_EMPTY_BOARD": 9,
+    "TP2_FLAT_DARK_BOX": 3,
+    "TP3_DIM_BOARD": 4,
+    "TP6_DESATURATED": 5
+   },
+   "files": [
+    "engine/src/ds/kit.tsx"
+   ],
+   "topics": [
+    "ai-black-markets",
+    "ai-power-bill",
+    "captchas-3min",
+    "captchas-full",
+    "the-ai-cast"
+   ]
+  },
+  {
+   "visual": "Flow",
+   "frames": 16,
+   "fail": 2,
+   "warn": 14,
+   "worst_score": 40.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 2,
+    "TP4_TINY_LABELS": 2,
+    "TP1_NO_HERO_MASS": 15,
+    "TP6_DESATURATED": 8,
+    "TP3_DIM_BOARD": 9,
+    "TP5_EMPTY_BOARD": 12
+   },
+   "files": [
+    "engine/src/ds/kit.tsx"
+   ],
+   "topics": [
+    "ai-black-markets",
+    "captchas-full",
+    "the-ai-cast"
+   ]
+  },
+  {
+   "visual": "MeterDial",
+   "frames": 14,
+   "fail": 1,
+   "warn": 13,
+   "worst_score": 20.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 2,
+    "TP3_DIM_BOARD": 3,
+    "TP4_TINY_LABELS": 1,
+    "TP1_NO_HERO_MASS": 3,
+    "TP6_DESATURATED": 13,
+    "TP5_EMPTY_BOARD": 12
+   },
+   "files": [
+    "engine/src/visuals/ai-power-bill.tsx"
+   ],
+   "topics": [
+    "ai-power-bill",
+    "microwave-trading",
+    "new-ai-reasoning"
+   ]
+  },
+  {
+   "visual": "Photo",
+   "frames": 15,
+   "fail": 1,
+   "warn": 6,
+   "worst_score": 20.0,
+   "codes": {
+    "TP6_DESATURATED": 3,
+    "TP2_FLAT_DARK_BOX": 2,
+    "TP3_DIM_BOARD": 2,
+    "TP4_TINY_LABELS": 1,
+    "TP1_NO_HERO_MASS": 2,
+    "TP5_EMPTY_BOARD": 2
+   },
+   "files": [
+    "engine/src/visuals/captchas.tsx"
+   ],
+   "topics": [
+    "captchas-3min",
+    "captchas-full",
+    "captchas-sample"
+   ]
+  },
+  {
+   "visual": "PW_C01",
+   "frames": 2,
+   "fail": 1,
+   "warn": 1,
+   "worst_score": 20.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 2,
+    "TP3_DIM_BOARD": 1,
+    "TP4_TINY_LABELS": 1,
+    "TP1_NO_HERO_MASS": 1,
+    "TP5_EMPTY_BOARD": 1
+   },
+   "files": [
+    "engine/src/visuals/poisoned-well-b.tsx"
+   ],
+   "topics": [
+    "poisoned-well"
+   ]
+  },
+  {
+   "visual": "Shop",
+   "frames": 10,
+   "fail": 1,
+   "warn": 8,
+   "worst_score": 30.0,
+   "codes": {
+    "TP1_NO_HERO_MASS": 9,
+    "TP5_EMPTY_BOARD": 9,
+    "TP6_DESATURATED": 3,
+    "TP2_FLAT_DARK_BOX": 2,
+    "TP3_DIM_BOARD": 2,
+    "TP4_TINY_LABELS": 2
+   },
+   "files": [
+    "engine/src/visuals/aibm.tsx"
+   ],
+   "topics": [
+    "ai-black-markets"
+   ]
+  },
+  {
+   "visual": "LoginCard",
+   "frames": 5,
+   "fail": 1,
+   "warn": 3,
+   "worst_score": 30.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 4,
+    "TP4_TINY_LABELS": 1,
+    "TP1_NO_HERO_MASS": 1,
+    "TP5_EMPTY_BOARD": 2,
+    "TP6_DESATURATED": 3
+   },
+   "files": [
+    "engine/src/visuals/aibm.tsx"
+   ],
+   "topics": [
+    "ai-black-markets"
+   ]
+  },
+  {
+   "visual": "BluntPencil",
+   "frames": 2,
+   "fail": 1,
+   "warn": 1,
+   "worst_score": 30.0,
+   "codes": {
+    "TP3_DIM_BOARD": 2,
+    "TP4_TINY_LABELS": 1,
+    "TP1_NO_HERO_MASS": 2,
+    "TP5_EMPTY_BOARD": 2,
+    "TP6_DESATURATED": 1
+   },
+   "files": [
+    "engine/src/ds/plates/bluntPencil.tsx"
+   ],
+   "topics": [
+    "why-ai-dumber"
+   ]
+  },
+  {
+   "visual": "CloudingGlass",
+   "frames": 3,
+   "fail": 1,
+   "warn": 1,
+   "worst_score": 30.0,
+   "codes": {
+    "TP1_NO_HERO_MASS": 2,
+    "TP5_EMPTY_BOARD": 2,
+    "TP3_DIM_BOARD": 1,
+    "TP4_TINY_LABELS": 1,
+    "TP6_DESATURATED": 1
+   },
+   "files": [
+    "engine/src/ds/plates/cloudingGlass.tsx"
+   ],
+   "topics": [
+    "why-ai-dumber"
+   ]
+  },
+  {
+   "visual": "TwoWords",
+   "frames": 38,
+   "fail": 1,
+   "warn": 10,
+   "worst_score": 40.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 5,
+    "TP5_EMPTY_BOARD": 4,
+    "TP6_DESATURATED": 5,
+    "TP3_DIM_BOARD": 3,
+    "TP4_TINY_LABELS": 2,
+    "TP1_NO_HERO_MASS": 2
+   },
+   "files": [
+    "engine/src/visuals/captchas.tsx"
+   ],
+   "topics": [
+    "captchas-3min",
+    "captchas-full"
+   ]
+  },
+  {
+   "visual": "Captcha4",
+   "frames": 34,
+   "fail": 1,
+   "warn": 7,
+   "worst_score": 40.0,
+   "codes": {
+    "TP6_DESATURATED": 5,
+    "TP1_NO_HERO_MASS": 6,
+    "TP2_FLAT_DARK_BOX": 2,
+    "TP4_TINY_LABELS": 1,
+    "TP5_EMPTY_BOARD": 5,
+    "TP3_DIM_BOARD": 1
+   },
+   "files": [
+    "engine/src/visuals/captchas.tsx"
+   ],
+   "topics": [
+    "captchas-3min",
+    "captchas-full",
+    "captchas-sample"
+   ]
+  },
+  {
+   "visual": "PW_H01",
+   "frames": 4,
+   "fail": 1,
+   "warn": 3,
+   "worst_score": 40.0,
+   "codes": {
+    "TP3_DIM_BOARD": 3,
+    "TP1_NO_HERO_MASS": 3,
+    "TP5_EMPTY_BOARD": 3,
+    "TP4_TINY_LABELS": 2
+   },
+   "files": [
+    "engine/src/visuals/poisoned-well.tsx"
+   ],
+   "topics": [
+    "poisoned-well"
+   ]
+  },
+  {
+   "visual": "PW_A01",
+   "frames": 2,
+   "fail": 1,
+   "warn": 0,
+   "worst_score": 40.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 1,
+    "TP3_DIM_BOARD": 1,
+    "TP4_TINY_LABELS": 1
+   },
+   "files": [
+    "engine/src/visuals/poisoned-well.tsx"
+   ],
+   "topics": [
+    "poisoned-well"
+   ]
+  },
+  {
+   "visual": "LabelSwap",
+   "frames": 3,
+   "fail": 1,
+   "warn": 2,
+   "worst_score": 60.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 2,
+    "TP4_TINY_LABELS": 2
+   },
+   "files": [
+    "engine/src/visuals/cnai.tsx"
+   ],
+   "topics": [
+    "china-ai-underground"
+   ]
+  },
+  {
+   "visual": "FaceSwap",
+   "frames": 2,
+   "fail": 0,
+   "warn": 2,
+   "worst_score": 50.0,
+   "codes": {
+    "TP4_TINY_LABELS": 1,
+    "TP1_NO_HERO_MASS": 2,
+    "TP5_EMPTY_BOARD": 2,
+    "TP6_DESATURATED": 1
+   },
+   "files": [
+    "engine/src/visuals/aibm.tsx"
+   ],
+   "topics": [
+    "ai-black-markets"
+   ]
+  },
+  {
+   "visual": "HomeAC",
+   "frames": 1,
+   "fail": 0,
+   "warn": 1,
+   "worst_score": 50.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 1,
+    "TP1_NO_HERO_MASS": 1,
+    "TP5_EMPTY_BOARD": 1,
+    "TP6_DESATURATED": 1
+   },
+   "files": [
+    "engine/src/visuals/ai-power-bill.tsx"
+   ],
+   "topics": [
+    "ai-power-bill"
+   ]
+  },
+  {
+   "visual": "PageCrop",
+   "frames": 8,
+   "fail": 0,
+   "warn": 5,
+   "worst_score": 50.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 4,
+    "TP1_NO_HERO_MASS": 2,
+    "TP5_EMPTY_BOARD": 2,
+    "TP6_DESATURATED": 3
+   },
+   "files": [
+    "engine/src/visuals/captchas.tsx"
+   ],
+   "topics": [
+    "captchas-3min",
+    "captchas-full"
+   ]
+  },
+  {
+   "visual": "PaperRiver",
+   "frames": 3,
+   "fail": 0,
+   "warn": 3,
+   "worst_score": 50.0,
+   "codes": {
+    "TP3_DIM_BOARD": 1,
+    "TP1_NO_HERO_MASS": 1,
+    "TP5_EMPTY_BOARD": 3,
+    "TP6_DESATURATED": 1,
+    "TP2_FLAT_DARK_BOX": 2
+   },
+   "files": [
+    "engine/src/ds/plates/paperRiver.tsx"
+   ],
+   "topics": [
+    "why-ai-dumber"
+   ]
+  },
+  {
+   "visual": "JugCup",
+   "frames": 1,
+   "fail": 0,
+   "warn": 1,
+   "worst_score": 50.0,
+   "codes": {
+    "TP4_TINY_LABELS": 1,
+    "TP1_NO_HERO_MASS": 1,
+    "TP5_EMPTY_BOARD": 1,
+    "TP6_DESATURATED": 1
+   },
+   "files": [
+    "engine/src/ds/plates/jugCup.tsx"
+   ],
+   "topics": [
+    "why-ai-dumber"
+   ]
+  },
+  {
+   "visual": "Checkbox",
+   "frames": 16,
+   "fail": 0,
+   "warn": 8,
+   "worst_score": 60.0,
+   "codes": {
+    "TP6_DESATURATED": 4,
+    "TP4_TINY_LABELS": 2,
+    "TP1_NO_HERO_MASS": 3,
+    "TP5_EMPTY_BOARD": 3,
+    "TP2_FLAT_DARK_BOX": 2,
+    "TP3_DIM_BOARD": 1
+   },
+   "files": [
+    "engine/src/visuals/captchas.tsx"
+   ],
+   "topics": [
+    "captchas-3min",
+    "captchas-full"
+   ]
+  },
+  {
+   "visual": "Alembic",
+   "frames": 3,
+   "fail": 0,
+   "warn": 3,
+   "worst_score": 60.0,
+   "codes": {
+    "TP4_TINY_LABELS": 1,
+    "TP1_NO_HERO_MASS": 3,
+    "TP5_EMPTY_BOARD": 3,
+    "TP3_DIM_BOARD": 1
+   },
+   "files": [
+    "engine/src/ds/plates/alembic.tsx"
+   ],
+   "topics": [
+    "why-ai-dumber"
+   ]
+  },
+  {
+   "visual": "Ouroboros",
+   "frames": 3,
+   "fail": 0,
+   "warn": 3,
+   "worst_score": 60.0,
+   "codes": {
+    "TP1_NO_HERO_MASS": 3,
+    "TP5_EMPTY_BOARD": 3,
+    "TP6_DESATURATED": 1,
+    "TP3_DIM_BOARD": 1
+   },
+   "files": [
+    "engine/src/ds/plates/ouroboros.tsx"
+   ],
+   "topics": [
+    "why-ai-dumber"
+   ]
+  },
+  {
+   "visual": "BellJar",
+   "frames": 2,
+   "fail": 0,
+   "warn": 2,
+   "worst_score": 60.0,
+   "codes": {
+    "TP3_DIM_BOARD": 2,
+    "TP1_NO_HERO_MASS": 2,
+    "TP5_EMPTY_BOARD": 2
+   },
+   "files": [
+    "engine/src/ds/plates/bellJar.tsx"
+   ],
+   "topics": [
+    "why-ai-dumber"
+   ]
+  },
+  {
+   "visual": "Polaroid",
+   "frames": 20,
+   "fail": 0,
+   "warn": 13,
+   "worst_score": 70.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 7,
+    "TP6_DESATURATED": 7,
+    "TP5_EMPTY_BOARD": 1
+   },
+   "files": [
+    "engine/src/ds/kit.tsx"
+   ],
+   "topics": [
+    "apply-button",
+    "captchas-3min",
+    "captchas-full",
+    "captchas-sample",
+    "the-ai-cast",
+    "tokens-explained"
+   ]
+  },
+  {
+   "visual": "MousePath",
+   "frames": 7,
+   "fail": 0,
+   "warn": 6,
+   "worst_score": 70.0,
+   "codes": {
+    "TP6_DESATURATED": 4,
+    "TP1_NO_HERO_MASS": 5,
+    "TP5_EMPTY_BOARD": 5
+   },
+   "files": [
+    "engine/src/visuals/captchas2.tsx"
+   ],
+   "topics": [
+    "captchas-full",
+    "the-ai-cast"
+   ]
+  },
+  {
+   "visual": "TwoHands",
+   "frames": 1,
+   "fail": 0,
+   "warn": 1,
+   "worst_score": 70.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 1,
+    "TP5_EMPTY_BOARD": 1
+   },
+   "files": [
+    "engine/src/ds/plates/twoHands.tsx"
+   ],
+   "topics": [
+    "why-ai-dumber"
+   ]
+  },
+  {
+   "visual": "Flag",
+   "frames": 2,
+   "fail": 0,
+   "warn": 2,
+   "worst_score": 80.0,
+   "codes": {
+    "TP4_TINY_LABELS": 2
+   },
+   "files": [
+    "engine/src/visuals/aiban.tsx"
+   ],
+   "topics": [
+    "ai-ban"
+   ]
+  },
+  {
+   "visual": "JobPortalCard",
+   "frames": 7,
+   "fail": 0,
+   "warn": 4,
+   "worst_score": 80.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 4
+   },
+   "files": [
+    "engine/src/ds/tactile.tsx"
+   ],
+   "topics": [
+    "ai-grey-zone",
+    "apply-button"
+   ]
+  },
+  {
+   "visual": "BackupGen",
+   "frames": 2,
+   "fail": 0,
+   "warn": 2,
+   "worst_score": 80.0,
+   "codes": {
+    "TP1_NO_HERO_MASS": 2,
+    "TP5_EMPTY_BOARD": 2
+   },
+   "files": [
+    "engine/src/visuals/ai-power-bill.tsx"
+   ],
+   "topics": [
+    "ai-power-bill"
+   ]
+  },
+  {
+   "visual": "Stopwatch",
+   "frames": 4,
+   "fail": 0,
+   "warn": 1,
+   "worst_score": 80.0,
+   "codes": {
+    "TP2_FLAT_DARK_BOX": 1
+   },
+   "files": [
+    "engine/src/visuals/captchas.tsx"
+   ],
+   "topics": [
+    "captchas-3min",
+    "captchas-full"
+   ]
+  },
+  {
+   "visual": "PhotoType",
+   "frames": 3,
+   "fail": 0,
+   "warn": 1,
+   "worst_score": 90.0,
+   "codes": {
+    "TP6_DESATURATED": 1
+   },
+   "files": [
+    "engine/src/visuals/captchas2.tsx"
+   ],
+   "topics": [
+    "captchas-full"
+   ]
+  },
+  {
+   "visual": "ForensicStamp",
+   "frames": 2,
+   "fail": 0,
+   "warn": 1,
+   "worst_score": 90.0,
+   "codes": {
+    "TP6_DESATURATED": 1
+   },
+   "files": [
+    "engine/src/ds/evidence.tsx"
+   ],
+   "topics": [
+    "captchas-sample"
+   ]
+  },
+  {
+   "visual": "Hearing",
+   "frames": 2,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/visuals/aiban.tsx"
+   ],
+   "topics": [
+    "ai-ban"
+   ]
+  },
+  {
+   "visual": "Pieces",
+   "frames": 1,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/visuals/aiban.tsx"
+   ],
+   "topics": [
+    "ai-ban"
+   ]
+  },
+  {
+   "visual": "UtilityBillCard",
+   "frames": 2,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/ds/tactile.tsx"
+   ],
+   "topics": [
+    "ai-grey-zone"
+   ]
+  },
+  {
+   "visual": "UtilityStatement",
+   "frames": 2,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/visuals/ai-power-bill.tsx"
+   ],
+   "topics": [
+    "ai-power-bill"
+   ]
+  },
+  {
+   "visual": "ATSScanner",
+   "frames": 8,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/visuals/apply-button.tsx"
+   ],
+   "topics": [
+    "apply-button"
+   ]
+  },
+  {
+   "visual": "FunnelSieve",
+   "frames": 5,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/visuals/apply-button.tsx"
+   ],
+   "topics": [
+    "apply-button"
+   ]
+  },
+  {
+   "visual": "FourFifthsDial",
+   "frames": 5,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/visuals/apply-button.tsx"
+   ],
+   "topics": [
+    "apply-button"
+   ]
+  },
+  {
+   "visual": "Square",
+   "frames": 6,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/visuals/captchas.tsx"
+   ],
+   "topics": [
+    "captchas-3min",
+    "captchas-full",
+    "captchas-sample"
+   ]
+  },
+  {
+   "visual": "Receipt",
+   "frames": 2,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/visuals/captchas.tsx"
+   ],
+   "topics": [
+    "captchas-3min",
+    "captchas-full"
+   ]
+  },
+  {
+   "visual": "Translate",
+   "frames": 5,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/visuals/captchas.tsx"
+   ],
+   "topics": [
+    "captchas-3min",
+    "captchas-full"
+   ]
+  },
+  {
+   "visual": "HouseNumber",
+   "frames": 1,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/visuals/captchas2.tsx"
+   ],
+   "topics": [
+    "captchas-full"
+   ]
+  },
+  {
+   "visual": "Labels",
+   "frames": 1,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/visuals/captchas2.tsx"
+   ],
+   "topics": [
+    "captchas-full"
+   ]
+  },
+  {
+   "visual": "Outline",
+   "frames": 1,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/visuals/captchas2.tsx"
+   ],
+   "topics": [
+    "captchas-full"
+   ]
+  },
+  {
+   "visual": "PW_H02",
+   "frames": 5,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/visuals/poisoned-well.tsx"
+   ],
+   "topics": [
+    "poisoned-well"
+   ]
+  },
+  {
+   "visual": "StrawberrySlicer",
+   "frames": 9,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/ds/tactile.tsx",
+    "engine/src/visuals/tokens-explained.tsx"
+   ],
+   "topics": [
+    "tokens-explained"
+   ]
+  },
+  {
+   "visual": "BlindCounter",
+   "frames": 4,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/visuals/tokens-explained.tsx"
+   ],
+   "topics": [
+    "tokens-explained"
+   ]
+  },
+  {
+   "visual": "VectorObservatory",
+   "frames": 2,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/visuals/tokens-explained.tsx"
+   ],
+   "topics": [
+    "tokens-explained"
+   ]
+  },
+  {
+   "visual": "MemoryBelt",
+   "frames": 4,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/visuals/tokens-explained.tsx"
+   ],
+   "topics": [
+    "tokens-explained"
+   ]
+  },
+  {
+   "visual": "TokenTaxMeter",
+   "frames": 5,
+   "fail": 0,
+   "warn": 0,
+   "worst_score": 100.0,
+   "codes": {},
+   "files": [
+    "engine/src/visuals/tokens-explained.tsx"
+   ],
+   "topics": [
+    "tokens-explained"
+   ]
+  }
+ ],
+ "ranking_by_file": [
+  {
+   "file": "engine/src/ds/kit.tsx",
+   "frames": 883,
+   "fail": 220,
+   "warn": 557,
+   "worst_score": 10.0
+  },
+  {
+   "file": "engine/src/visuals/musk.tsx",
+   "frames": 57,
+   "fail": 47,
+   "warn": 10,
+   "worst_score": 10.0
+  },
+  {
+   "file": "engine/src/visuals/aibm.tsx",
+   "frames": 68,
+   "fail": 38,
+   "warn": 26,
+   "worst_score": 10.0
+  },
+  {
+   "file": "engine/src/visuals/cnai.tsx",
+   "frames": 66,
+   "fail": 26,
+   "warn": 35,
+   "worst_score": 20.0
+  },
+  {
+   "file": "engine/src/visuals/poisoned-well-b.tsx",
+   "frames": 18,
+   "fail": 14,
+   "warn": 4,
+   "worst_score": 0.0
+  },
+  {
+   "file": "engine/src/visuals/captchas2.tsx",
+   "frames": 80,
+   "fail": 14,
+   "warn": 57,
+   "worst_score": 10.0
+  },
+  {
+   "file": "engine/src/visuals/aiban.tsx",
+   "frames": 21,
+   "fail": 13,
+   "warn": 5,
+   "worst_score": 10.0
+  },
+  {
+   "file": "engine/src/visuals/poisoned-well.tsx",
+   "frames": 20,
+   "fail": 9,
+   "warn": 5,
+   "worst_score": 0.0
+  },
+  {
+   "file": "engine/src/ds/evidence.tsx",
+   "frames": 12,
+   "fail": 8,
+   "warn": 2,
+   "worst_score": 30.0
+  },
+  {
+   "file": "engine/src/visuals/ai-power-bill.tsx",
+   "frames": 22,
+   "fail": 4,
+   "warn": 16,
+   "worst_score": 20.0
+  },
+  {
+   "file": "engine/src/ds/plates/journalPlate.tsx",
+   "frames": 4,
+   "fail": 3,
+   "warn": 1,
+   "worst_score": 10.0
+  },
+  {
+   "file": "engine/src/ds/plates/pressStack.tsx",
+   "frames": 4,
+   "fail": 3,
+   "warn": 1,
+   "worst_score": 10.0
+  },
+  {
+   "file": "engine/src/visuals/captchas.tsx",
+   "frames": 128,
+   "fail": 3,
+   "warn": 37,
+   "worst_score": 20.0
+  },
+  {
+   "file": "engine/src/ds/plates/bluntPencil.tsx",
+   "frames": 2,
+   "fail": 1,
+   "warn": 1,
+   "worst_score": 30.0
+  },
+  {
+   "file": "engine/src/ds/plates/cloudingGlass.tsx",
+   "frames": 3,
+   "fail": 1,
+   "warn": 1,
+   "worst_score": 30.0
+  },
+  {
+   "file": "engine/src/ds/plates/paperRiver.tsx",
+   "frames": 3,
+   "fail": 0,
+   "warn": 3,
+   "worst_score": 50.0
+  },
+  {
+   "file": "engine/src/ds/plates/jugCup.tsx",
+   "frames": 1,
+   "fail": 0,
+   "warn": 1,
+   "worst_score": 50.0
+  },
+  {
+   "file": "engine/src/ds/plates/alembic.tsx",
+   "frames": 3,
+   "fail": 0,
+   "warn": 3,
+   "worst_score": 60.0
+  },
+  {
+   "file": "engine/src/ds/plates/ouroboros.tsx",
+   "frames": 3,
+   "fail": 0,
+   "warn": 3,
+   "worst_score": 60.0
+  },
+  {
+   "file": "engine/src/ds/plates/bellJar.tsx",
+   "frames": 2,
+   "fail": 0,
+   "warn": 2,
+   "worst_score": 60.0
+  },
+  {
+   "file": "engine/src/ds/plates/twoHands.tsx",
+   "frames": 1,
+   "fail": 0,
+   "warn": 1,
+   "worst_score": 70.0
+  },
+  {
+   "file": "engine/src/ds/tactile.tsx",
+   "frames": 8,
+   "fail": 0,
+   "warn": 4,
+   "worst_score": 80.0
+  }
+ ],
+ "worst_frames": [
+  {
+   "n": 1275,
+   "t": 42.5,
+   "score": 0.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.2272(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=5.15(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=100.0(<=12.5337)"
+   ],
+   "beat": "a03",
+   "cut": 3,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "PW_A03"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0046,
+    "hero_mass_pct": 0.034,
+    "board_contrast": 5.15,
+    "board_p995_L": 54.9,
+    "flat_slop_frac": 0.2272,
+    "tiny_label_pct": 100.0,
+    "edge_board": 0.1642,
+    "colorfulness": 2.95,
+    "content_frac": 0.729
+   },
+   "topic": "poisoned-well"
+  },
+  {
+   "n": 2700,
+   "t": 90.0,
+   "score": 0.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.2325(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=4.55(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=100.0(<=12.5337)"
+   ],
+   "beat": "c02",
+   "cut": 3,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "PW_C02"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0021,
+    "hero_mass_pct": 0.009,
+    "board_contrast": 4.55,
+    "board_p995_L": 51.37,
+    "flat_slop_frac": 0.2325,
+    "tiny_label_pct": 100.0,
+    "edge_board": 0.1726,
+    "colorfulness": 2.52,
+    "content_frac": 0.6997
+   },
+   "topic": "poisoned-well"
+  },
+  {
+   "n": 75,
+   "t": 2.5,
+   "score": 10.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.1283(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=6.03(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=54.46(<=12.5337)"
+   ],
+   "beat": "h01",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "PhoneChat"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.006,
+    "hero_mass_pct": 0.308,
+    "board_contrast": 6.03,
+    "board_p995_L": 59.22,
+    "flat_slop_frac": 0.1283,
+    "tiny_label_pct": 54.46,
+    "edge_board": 0.0102,
+    "colorfulness": 2.54,
+    "content_frac": 0.1655
+   },
+   "topic": "ai-ban"
+  },
+  {
+   "n": 3600,
+   "t": 120.0,
+   "score": 10.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.232(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=1.52(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=100.0(<=12.5337)"
+   ],
+   "beat": "w02",
+   "cut": 0,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "ChatBox",
+    "LineIcon"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0018,
+    "hero_mass_pct": 0.164,
+    "board_contrast": 1.52,
+    "board_p995_L": 20.78,
+    "flat_slop_frac": 0.232,
+    "tiny_label_pct": 100.0,
+    "edge_board": 0.0118,
+    "colorfulness": 3.63,
+    "content_frac": 0.2607
+   },
+   "topic": "ai-black-markets"
+  },
+  {
+   "n": 4125,
+   "t": 137.5,
+   "score": 10.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.2171(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=1.47(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=26.449(<=12.5337)"
+   ],
+   "beat": "w04",
+   "cut": 1,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "ChatBox",
+    "LineIcon"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0023,
+    "hero_mass_pct": 0.603,
+    "board_contrast": 1.47,
+    "board_p995_L": 19.61,
+    "flat_slop_frac": 0.2171,
+    "tiny_label_pct": 26.449,
+    "edge_board": 0.0111,
+    "colorfulness": 2.52,
+    "content_frac": 0.2578
+   },
+   "topic": "ai-black-markets"
+  },
+  {
+   "n": 7125,
+   "t": 237.5,
+   "score": 10.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.2997(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=6.68(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=67.559(<=12.5337)"
+   ],
+   "beat": "i02",
+   "cut": 0,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "LineIcon",
+    "StealerLog"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.007,
+    "hero_mass_pct": 0.262,
+    "board_contrast": 6.68,
+    "board_p995_L": 62.35,
+    "flat_slop_frac": 0.2997,
+    "tiny_label_pct": 67.559,
+    "edge_board": 0.0158,
+    "colorfulness": 3.75,
+    "content_frac": 0.3244
+   },
+   "topic": "ai-black-markets"
+  },
+  {
+   "n": 10725,
+   "t": 357.5,
+   "score": 10.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.2173(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=6.52(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=16.57(<=12.5337)"
+   ],
+   "beat": "j02",
+   "cut": 2,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "LineIcon",
+    "ChatBox"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0053,
+    "hero_mass_pct": 0.55,
+    "board_contrast": 6.52,
+    "board_p995_L": 61.57,
+    "flat_slop_frac": 0.2173,
+    "tiny_label_pct": 16.57,
+    "edge_board": 0.0143,
+    "colorfulness": 5.01,
+    "content_frac": 0.2692
+   },
+   "topic": "ai-black-markets"
+  },
+  {
+   "n": 1425,
+   "t": 47.5,
+   "score": 10.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.0807(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=3.1(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=44.099(<=12.5337)"
+   ],
+   "beat": "j05",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "PhoneChat"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0044,
+    "hero_mass_pct": 0.363,
+    "board_contrast": 3.1,
+    "board_p995_L": 40.78,
+    "flat_slop_frac": 0.0807,
+    "tiny_label_pct": 44.099,
+    "edge_board": 0.008,
+    "colorfulness": 2.11,
+    "content_frac": 0.1059
+   },
+   "topic": "apply-button"
+  },
+  {
+   "n": 1500,
+   "t": 50.0,
+   "score": 10.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.0806(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=3.06(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=44.099(<=12.5337)"
+   ],
+   "beat": "j05",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "PhoneChat"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0044,
+    "hero_mass_pct": 0.363,
+    "board_contrast": 3.06,
+    "board_p995_L": 40.39,
+    "flat_slop_frac": 0.0806,
+    "tiny_label_pct": 44.099,
+    "edge_board": 0.008,
+    "colorfulness": 2.07,
+    "content_frac": 0.1054
+   },
+   "topic": "apply-button"
+  },
+  {
+   "n": 1575,
+   "t": 52.5,
+   "score": 10.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.0806(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=3.06(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=44.099(<=12.5337)"
+   ],
+   "beat": "j05",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "PhoneChat"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0044,
+    "hero_mass_pct": 0.363,
+    "board_contrast": 3.06,
+    "board_p995_L": 40.39,
+    "flat_slop_frac": 0.0806,
+    "tiny_label_pct": 44.099,
+    "edge_board": 0.008,
+    "colorfulness": 2.07,
+    "content_frac": 0.1054
+   },
+   "topic": "apply-button"
+  },
+  {
+   "n": 1650,
+   "t": 55.0,
+   "score": 10.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.0806(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=3.06(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=44.075(<=12.5337)"
+   ],
+   "beat": "j05",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "PhoneChat"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0044,
+    "hero_mass_pct": 0.363,
+    "board_contrast": 3.06,
+    "board_p995_L": 40.39,
+    "flat_slop_frac": 0.0806,
+    "tiny_label_pct": 44.075,
+    "edge_board": 0.008,
+    "colorfulness": 2.08,
+    "content_frac": 0.1054
+   },
+   "topic": "apply-button"
+  },
+  {
+   "n": 15750,
+   "t": 525.0,
+   "score": 10.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.1817(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=3.88(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=67.63(<=12.5337)"
+   ],
+   "beat": "v05",
+   "cut": null,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "LineIcon",
+    "Blocked"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0044,
+    "hero_mass_pct": 0.301,
+    "board_contrast": 3.88,
+    "board_p995_L": 46.67,
+    "flat_slop_frac": 0.1817,
+    "tiny_label_pct": 67.63,
+    "edge_board": 0.0121,
+    "colorfulness": 1.47,
+    "content_frac": 0.1937
+   },
+   "topic": "captchas-full"
+  },
+  {
+   "n": 2700,
+   "t": 90.0,
+   "score": 10.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.0787(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=1.72(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=100.0(<=12.5337)"
+   ],
+   "beat": "a08",
+   "cut": 1,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "SensorPurge",
+    "FieldCard"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0,
+    "hero_mass_pct": 0.0,
+    "board_contrast": 1.72,
+    "board_p995_L": 24.31,
+    "flat_slop_frac": 0.0787,
+    "tiny_label_pct": 100.0,
+    "edge_board": 0.0094,
+    "colorfulness": 2.85,
+    "content_frac": 0.0994
+   },
+   "topic": "elon-musk"
+  },
+  {
+   "n": 900,
+   "t": 30.0,
+   "score": 10.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.1755(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=8.21(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=40.008(<=12.5337)"
+   ],
+   "beat": "a02",
+   "cut": 1,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "PW_A02"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0232,
+    "hero_mass_pct": 0.603,
+    "board_contrast": 8.21,
+    "board_p995_L": 69.02,
+    "flat_slop_frac": 0.1755,
+    "tiny_label_pct": 40.008,
+    "edge_board": 0.1691,
+    "colorfulness": 5.71,
+    "content_frac": 0.747
+   },
+   "topic": "poisoned-well"
+  },
+  {
+   "n": 1725,
+   "t": 57.5,
+   "score": 10.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.2907(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=4.48(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=79.519(<=12.5337)"
+   ],
+   "beat": "a04",
+   "cut": 5,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "PW_A04"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0046,
+    "hero_mass_pct": 0.904,
+    "board_contrast": 4.48,
+    "board_p995_L": 50.98,
+    "flat_slop_frac": 0.2907,
+    "tiny_label_pct": 79.519,
+    "edge_board": 0.0101,
+    "colorfulness": 3.87,
+    "content_frac": 0.8184
+   },
+   "topic": "poisoned-well"
+  },
+  {
+   "n": 2925,
+   "t": 97.5,
+   "score": 10.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.2573(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=2.5(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=62.718(<=12.5337)"
+   ],
+   "beat": "c07",
+   "cut": 1,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "PhoneChat",
+    "PageQuote"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0026,
+    "hero_mass_pct": 0.128,
+    "board_contrast": 2.5,
+    "board_p995_L": 34.9,
+    "flat_slop_frac": 0.2573,
+    "tiny_label_pct": 62.718,
+    "edge_board": 0.0156,
+    "colorfulness": 3.09,
+    "content_frac": 0.0439
+   },
+   "topic": "the-ai-cast"
+  },
+  {
+   "n": 450,
+   "t": 15.0,
+   "score": 10.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.0911(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=1.52(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=100.0(<=12.5337)"
+   ],
+   "beat": "a02",
+   "cut": null,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "JournalPlate"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0025,
+    "hero_mass_pct": 0.184,
+    "board_contrast": 1.52,
+    "board_p995_L": 20.78,
+    "flat_slop_frac": 0.0911,
+    "tiny_label_pct": 100.0,
+    "edge_board": 0.0077,
+    "colorfulness": 3.59,
+    "content_frac": 0.103
+   },
+   "topic": "why-ai-dumber"
+  },
+  {
+   "n": 525,
+   "t": 17.5,
+   "score": 10.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.091(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=1.54(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=100.0(<=12.5337)"
+   ],
+   "beat": "a02",
+   "cut": null,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "JournalPlate"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0025,
+    "hero_mass_pct": 0.184,
+    "board_contrast": 1.54,
+    "board_p995_L": 21.18,
+    "flat_slop_frac": 0.091,
+    "tiny_label_pct": 100.0,
+    "edge_board": 0.0065,
+    "colorfulness": 3.61,
+    "content_frac": 0.1025
+   },
+   "topic": "why-ai-dumber"
+  },
+  {
+   "n": 1125,
+   "t": 37.5,
+   "score": 10.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.136(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=3.72(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=100.0(<=12.5337)"
+   ],
+   "beat": "a05",
+   "cut": null,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "PressStack"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0031,
+    "hero_mass_pct": 0.352,
+    "board_contrast": 3.72,
+    "board_p995_L": 45.49,
+    "flat_slop_frac": 0.136,
+    "tiny_label_pct": 100.0,
+    "edge_board": 0.01,
+    "colorfulness": 2.2,
+    "content_frac": 0.1605
+   },
+   "topic": "why-ai-dumber"
+  },
+  {
+   "n": 1200,
+   "t": 40.0,
+   "score": 10.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.1361(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=3.72(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=100.0(<=12.5337)"
+   ],
+   "beat": "a05",
+   "cut": null,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "PressStack"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0031,
+    "hero_mass_pct": 0.352,
+    "board_contrast": 3.72,
+    "board_p995_L": 45.49,
+    "flat_slop_frac": 0.1361,
+    "tiny_label_pct": 100.0,
+    "edge_board": 0.01,
+    "colorfulness": 2.2,
+    "content_frac": 0.1605
+   },
+   "topic": "why-ai-dumber"
+  },
+  {
+   "n": 1200,
+   "t": 40.0,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.1144(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=9.52(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=31.535(<=12.5337)"
+   ],
+   "beat": "h04",
+   "cut": 0,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "PhoneChat",
+    "LineIcon"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0085,
+    "hero_mass_pct": 0.509,
+    "board_contrast": 9.52,
+    "board_p995_L": 73.73,
+    "flat_slop_frac": 0.1144,
+    "tiny_label_pct": 31.535,
+    "edge_board": 0.0133,
+    "colorfulness": 6.17,
+    "content_frac": 0.1541
+   },
+   "topic": "ai-ban"
+  },
+  {
+   "n": 1275,
+   "t": 42.5,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.1144(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=9.62(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=31.534(<=12.5337)"
+   ],
+   "beat": "h04",
+   "cut": 0,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "PhoneChat",
+    "LineIcon"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0086,
+    "hero_mass_pct": 0.509,
+    "board_contrast": 9.62,
+    "board_p995_L": 74.12,
+    "flat_slop_frac": 0.1144,
+    "tiny_label_pct": 31.534,
+    "edge_board": 0.0133,
+    "colorfulness": 6.25,
+    "content_frac": 0.1541
+   },
+   "topic": "ai-ban"
+  },
+  {
+   "n": 0,
+   "t": 0.0,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.1259(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=4.61(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=26.417(<=12.5337)"
+   ],
+   "beat": "h00",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "CallGrid"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0031,
+    "hero_mass_pct": 0.287,
+    "board_contrast": 4.61,
+    "board_p995_L": 51.76,
+    "flat_slop_frac": 0.1259,
+    "tiny_label_pct": 26.417,
+    "edge_board": 0.0223,
+    "colorfulness": 11.57,
+    "content_frac": 0.1605
+   },
+   "topic": "ai-black-markets"
+  },
+  {
+   "n": 3750,
+   "t": 125.0,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.2018(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=5.51(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=53.097(<=12.5337)"
+   ],
+   "beat": "w02",
+   "cut": 1,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "LineIcon",
+    "ChatBox"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0052,
+    "hero_mass_pct": 0.442,
+    "board_contrast": 5.51,
+    "board_p995_L": 56.86,
+    "flat_slop_frac": 0.2018,
+    "tiny_label_pct": 53.097,
+    "edge_board": 0.02,
+    "colorfulness": 18.89,
+    "content_frac": 0.2672
+   },
+   "topic": "ai-black-markets"
+  },
+  {
+   "n": 3900,
+   "t": 130.0,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.1216(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=1.74(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=100.0(<=12.5337)"
+   ],
+   "beat": "w03",
+   "cut": 1,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "Channel",
+    "LineIcon"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0001,
+    "hero_mass_pct": 0.001,
+    "board_contrast": 1.74,
+    "board_p995_L": 24.71,
+    "flat_slop_frac": 0.1216,
+    "tiny_label_pct": 100.0,
+    "edge_board": 0.0093,
+    "colorfulness": 7.31,
+    "content_frac": 0.1364
+   },
+   "topic": "ai-black-markets"
+  },
+  {
+   "n": 4575,
+   "t": 152.5,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.1918(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=5.51(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=53.026(<=12.5337)"
+   ],
+   "beat": "w05",
+   "cut": 0,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "LineIcon",
+    "ChatBox"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0052,
+    "hero_mass_pct": 0.442,
+    "board_contrast": 5.51,
+    "board_p995_L": 56.86,
+    "flat_slop_frac": 0.1918,
+    "tiny_label_pct": 53.026,
+    "edge_board": 0.0214,
+    "colorfulness": 18.45,
+    "content_frac": 0.2684
+   },
+   "topic": "ai-black-markets"
+  },
+  {
+   "n": 14475,
+   "t": 482.5,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.3258(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=4.74(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=100.0(<=12.5337)"
+   ],
+   "beat": "r01",
+   "cut": 2,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "CallGrid"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0032,
+    "hero_mass_pct": 0.255,
+    "board_contrast": 4.74,
+    "board_p995_L": 52.55,
+    "flat_slop_frac": 0.3258,
+    "tiny_label_pct": 100.0,
+    "edge_board": 0.0272,
+    "colorfulness": 24.54,
+    "content_frac": 0.4451
+   },
+   "topic": "ai-black-markets"
+  },
+  {
+   "n": 825,
+   "t": 27.5,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.3062(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=8.7(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=13.048(<=12.5337)"
+   ],
+   "beat": "a02",
+   "cut": 0,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "Score",
+    "Score"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0103,
+    "hero_mass_pct": 0.66,
+    "board_contrast": 8.7,
+    "board_p995_L": 70.59,
+    "flat_slop_frac": 0.3062,
+    "tiny_label_pct": 13.048,
+    "edge_board": 0.0187,
+    "colorfulness": 14.29,
+    "content_frac": 0.3418
+   },
+   "topic": "ai-grey-zone"
+  },
+  {
+   "n": 150,
+   "t": 5.0,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.5528(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=5.73(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=45.299(<=12.5337)"
+   ],
+   "beat": "b01",
+   "cut": 1,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "MeterDial",
+    "PageQuote"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0591,
+    "hero_mass_pct": 0.074,
+    "board_contrast": 5.73,
+    "board_p995_L": 58.04,
+    "flat_slop_frac": 0.5528,
+    "tiny_label_pct": 45.299,
+    "edge_board": 0.0049,
+    "colorfulness": 3.15,
+    "content_frac": 0.0755
+   },
+   "topic": "ai-power-bill"
+  },
+  {
+   "n": 1725,
+   "t": 57.5,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.0807(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=4.94(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=44.099(<=12.5337)"
+   ],
+   "beat": "j05",
+   "cut": 0,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "PhoneChat"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0044,
+    "hero_mass_pct": 0.363,
+    "board_contrast": 4.94,
+    "board_p995_L": 53.73,
+    "flat_slop_frac": 0.0807,
+    "tiny_label_pct": 44.099,
+    "edge_board": 0.0113,
+    "colorfulness": 12.54,
+    "content_frac": 0.1133
+   },
+   "topic": "apply-button"
+  },
+  {
+   "n": 5925,
+   "t": 197.5,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.1303(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=5.15(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=100.0(<=12.5337)"
+   ],
+   "beat": "g03",
+   "cut": 1,
+   "kind": "board",
+   "layout": "full",
+   "visuals": [
+    "Photo"
+   ],
+   "img": "captchas/ch_r00_streetview-car-googleplex.jpg",
+   "metrics": {
+    "light_frac": 0.0019,
+    "hero_mass_pct": 0.0,
+    "board_contrast": 5.15,
+    "board_p995_L": 54.9,
+    "flat_slop_frac": 0.1303,
+    "tiny_label_pct": 100.0,
+    "edge_board": 0.0395,
+    "colorfulness": 18.33,
+    "content_frac": 0.5472
+   },
+   "topic": "captchas-full"
+  },
+  {
+   "n": 1425,
+   "t": 47.5,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP3_DIM_BOARD:board_contrast=4.74(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=100.0(<=12.5337)",
+    "TP1_NO_HERO_MASS:hero_mass_pct=0.0(>=1.0)"
+   ],
+   "beat": "n03",
+   "cut": 1,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "Cctv"
+   ],
+   "img": "cnai/dcenter.jpg",
+   "metrics": {
+    "light_frac": 0.0,
+    "hero_mass_pct": 0.0,
+    "board_contrast": 4.74,
+    "board_p995_L": 52.55,
+    "flat_slop_frac": 0.064,
+    "tiny_label_pct": 100.0,
+    "edge_board": 0.1528,
+    "colorfulness": 4.93,
+    "content_frac": 0.7943
+   },
+   "topic": "china-ai-underground"
+  },
+  {
+   "n": 2550,
+   "t": 85.0,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.0995(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=6.03(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=91.03(<=12.5337)"
+   ],
+   "beat": "a08",
+   "cut": 0,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "SensorPurge",
+    "FieldCard"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0057,
+    "hero_mass_pct": 0.223,
+    "board_contrast": 6.03,
+    "board_p995_L": 59.22,
+    "flat_slop_frac": 0.0995,
+    "tiny_label_pct": 91.03,
+    "edge_board": 0.0219,
+    "colorfulness": 7.89,
+    "content_frac": 0.2004
+   },
+   "topic": "elon-musk"
+  },
+  {
+   "n": 2625,
+   "t": 87.5,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.0982(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=4.81(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=89.054(<=12.5337)"
+   ],
+   "beat": "a08",
+   "cut": 0,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "SensorPurge",
+    "FieldCard"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0047,
+    "hero_mass_pct": 0.223,
+    "board_contrast": 4.81,
+    "board_p995_L": 52.94,
+    "flat_slop_frac": 0.0982,
+    "tiny_label_pct": 89.054,
+    "edge_board": 0.0237,
+    "colorfulness": 9.55,
+    "content_frac": 0.2037
+   },
+   "topic": "elon-musk"
+  },
+  {
+   "n": 2775,
+   "t": 92.5,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.1001(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=5.15(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=87.811(<=12.5337)"
+   ],
+   "beat": "a08",
+   "cut": 1,
+   "kind": "board",
+   "layout": "split",
+   "visuals": [
+    "SensorPurge",
+    "FieldCard"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.005,
+    "hero_mass_pct": 0.231,
+    "board_contrast": 5.15,
+    "board_p995_L": 54.9,
+    "flat_slop_frac": 0.1001,
+    "tiny_label_pct": 87.811,
+    "edge_board": 0.0232,
+    "colorfulness": 9.86,
+    "content_frac": 0.196
+   },
+   "topic": "elon-musk"
+  },
+  {
+   "n": 1425,
+   "t": 47.5,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.3929(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=9.73(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=90.464(<=12.5337)"
+   ],
+   "beat": "a03",
+   "cut": 6,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "PW_A03"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0089,
+    "hero_mass_pct": 0.358,
+    "board_contrast": 9.73,
+    "board_p995_L": 74.51,
+    "flat_slop_frac": 0.3929,
+    "tiny_label_pct": 90.464,
+    "edge_board": 0.008,
+    "colorfulness": 9.51,
+    "content_frac": 0.5729
+   },
+   "topic": "poisoned-well"
+  },
+  {
+   "n": 1800,
+   "t": 60.0,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.2101(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=5.36(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=95.193(<=12.5337)"
+   ],
+   "beat": "a04",
+   "cut": 6,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "PW_A04"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0053,
+    "hero_mass_pct": 1.068,
+    "board_contrast": 5.36,
+    "board_p995_L": 56.08,
+    "flat_slop_frac": 0.2101,
+    "tiny_label_pct": 95.193,
+    "edge_board": 0.0321,
+    "colorfulness": 3.35,
+    "content_frac": 0.7256
+   },
+   "topic": "poisoned-well"
+  },
+  {
+   "n": 1875,
+   "t": 62.5,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.312(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=6.6(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=40.151(<=12.5337)"
+   ],
+   "beat": "b01",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "PW_B01"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0133,
+    "hero_mass_pct": 0.658,
+    "board_contrast": 6.6,
+    "board_p995_L": 61.96,
+    "flat_slop_frac": 0.312,
+    "tiny_label_pct": 40.151,
+    "edge_board": 0.0889,
+    "colorfulness": 9.0,
+    "content_frac": 0.5395
+   },
+   "topic": "poisoned-well"
+  },
+  {
+   "n": 2475,
+   "t": 82.5,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP1_NO_HERO_MASS",
+    "TP5_EMPTY_BOARD"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.1755(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=9.73(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=95.294(<=12.5337)"
+   ],
+   "beat": "c01",
+   "cut": 2,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "PW_C01"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0124,
+    "hero_mass_pct": 0.054,
+    "board_contrast": 9.73,
+    "board_p995_L": 74.51,
+    "flat_slop_frac": 0.1755,
+    "tiny_label_pct": 95.294,
+    "edge_board": 0.1057,
+    "colorfulness": 21.65,
+    "content_frac": 0.7107
+   },
+   "topic": "poisoned-well"
+  },
+  {
+   "n": 2550,
+   "t": 85.0,
+   "score": 20.0,
+   "state": "FAIL",
+   "codes": [
+    "TP2_FLAT_DARK_BOX",
+    "TP3_DIM_BOARD",
+    "TP4_TINY_LABELS",
+    "TP5_EMPTY_BOARD",
+    "TP6_DESATURATED"
+   ],
+   "why": [
+    "TP2_FLAT_DARK_BOX:flat_slop_frac=0.1559(<=0.0772)",
+    "TP3_DIM_BOARD:board_contrast=8.7(>=10.1235)",
+    "TP4_TINY_LABELS:tiny_label_pct=84.747(<=12.5337)"
+   ],
+   "beat": "c02",
+   "cut": 0,
+   "kind": "board",
+   "layout": "scene",
+   "visuals": [
+    "PW_C02"
+   ],
+   "img": null,
+   "metrics": {
+    "light_frac": 0.0062,
+    "hero_mass_pct": 1.043,
+    "board_contrast": 8.7,
+    "board_p995_L": 70.59,
+    "flat_slop_frac": 0.1559,
+    "tiny_label_pct": 84.747,
+    "edge_board": 0.0177,
+    "colorfulness": 3.13,
+    "content_frac": 0.8128
+   },
+   "topic": "poisoned-well"
+  }
+ ]
+}

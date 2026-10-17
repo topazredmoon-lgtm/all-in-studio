@@ -1,0 +1,134 @@
+{
+ "tool": "prosody_forge",
+ "topic": "ai-ban",
+ "generated": "2026-10-17T22:45:47",
+ "engine": {
+  "engine": "kokoro",
+  "voice": "af_heart",
+  "speed": 0.95,
+  "beat": "h01",
+  "match": "hash"
+ },
+ "medians": {
+  "f0": 198.0,
+  "spread": 92.0,
+  "lvl": -20.0,
+  "rate": 3.56
+ },
+ "queue": [
+  {
+   "id": "h01",
+   "f0": 199.0,
+   "spread": 93.0,
+   "lvl": -20.0,
+   "rate": 5.03,
+   "rise": -0.09,
+   "flags": [
+    "rate"
+   ]
+  },
+  {
+   "id": "a02",
+   "f0": 202.0,
+   "spread": 102.0,
+   "lvl": -20.0,
+   "rate": 5.35,
+   "rise": -0.14,
+   "flags": [
+    "rate"
+   ]
+  },
+  {
+   "id": "d04",
+   "f0": 200.0,
+   "spread": 94.0,
+   "lvl": -20.0,
+   "rate": 3.06,
+   "rise": 0.12,
+   "flags": [
+    "rising end"
+   ]
+  },
+  {
+   "id": "k01",
+   "f0": 197.0,
+   "spread": 97.0,
+   "lvl": -20.0,
+   "rate": 4.41,
+   "rise": 0.13,
+   "flags": [
+    "rising end"
+   ]
+  },
+  {
+   "id": "t03",
+   "f0": 199.0,
+   "spread": 93.0,
+   "lvl": -20.0,
+   "rate": 5.03,
+   "rise": -0.09,
+   "flags": [
+    "rate"
+   ]
+  }
+ ],
+ "experiments": [
+  {
+   "beat": "d04",
+   "engine": "kokoro",
+   "original": {
+    "metrics": {
+     "f0": 200.0,
+     "spread": 94.0,
+     "lvl": -20.0,
+     "rate": 3.06,
+     "rise": 0.12
+    },
+    "flags": [
+     "rising end"
+    ]
+   },
+   "candidates": [
+    {
+     "kind": "comma-to-period (phrasing)",
+     "text": "With AI. Washington reached for the same playbook. In January twenty twenty-five, the Commerce Department put export controls on the weights of the most powerful closed models. Four months later, the new administration scrapped them.",
+     "metrics": {
+      "f0": 203.0,
+      "spread": 94.0,
+      "lvl": -20.0,
+      "rate": 3.04,
+      "rise": 0.08
+     },
+     "flags_after": [],
+     "cleared": [
+      "rising end"
+     ],
+     "new": [],
+     "shift": {
+      "f0": 3.0,
+      "spread": 0.0,
+      "lvl": 0.0,
+      "rate": -0.02,
+      "rise": -0.04
+     },
+     "score": 1,
+     "log_tail": "t01 10.80s | Right now, ordinary people can still download and run powerful AI at home. That window is  | t02 10.37s | Because if this goes the wrong way, running your own AI won't be called programmi"
+    }
+   ],
+   "winner": {
+    "kind": "comma-to-period (phrasing)",
+    "score": 1,
+    "metrics": {
+     "f0": 203.0,
+     "spread": 94.0,
+     "lvl": -20.0,
+     "rate": 3.04,
+     "rise": 0.08
+    },
+    "cleared": [
+     "rising end"
+    ]
+   }
+  }
+ ]
+}

@@ -12,6 +12,7 @@ const FACES: [string, string, string][] = [
   ['AllinSerif', 'fonts/source-serif-4-latin-standard-italic.woff2', 'italic'],
   ['AllinSans', 'fonts/archivo-latin-standard-normal.woff2', 'normal'],
   ['AllinHand', 'fonts/shantell-sans-var.woff2', 'normal'],
+  ['AllinFraunces', 'fonts/fraunces-var-full.ttf', 'normal'], // UPG-R9 close (DEF-L3): full-axis variable, prints/receipts serif
 ];
 const STATIC: [string, string, string][] = [
   ['AllinBody', 'fonts/inter-400.woff2', '400'],
