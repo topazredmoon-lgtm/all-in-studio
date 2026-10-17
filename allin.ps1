@@ -293,7 +293,7 @@ switch ($Command.ToLower()) {
             if ($currentBranch -ne "main") {
                 git push origin "${currentBranch}:main"
             }
-            Write-Host "`n[SUCCESS] Studio synchronized to private GitHub repository (https://github.com/zza4-ai/all-in-studio)!" -ForegroundColor Green
+            Write-Host "`n[SUCCESS] Studio synchronized to private GitHub repository (https://github.com/topazredmoon-lgtm/all-in-studio)!" -ForegroundColor Green
         } finally {
             Pop-Location
         }
