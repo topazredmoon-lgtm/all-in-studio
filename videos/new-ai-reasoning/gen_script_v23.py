@@ -1,0 +1,183 @@
+"""Generates canonical v23 + Lesson #84 script for new-ai-reasoning.
+- >= 60% full/scene hero visuals, <= 40% split, max 1 consecutive split.
+- Real CC/PD photos via Film (layout: "scene"): nairobi_skyline.jpg, office_cubicles.jpg.
+- Voice: Kokoro af_heart at 0.95 speed, master v23.
+- Word ceiling <= 10 words per cut. Zero banned plates.
+"""
+import json
+from pathlib import Path
+
+HERE = Path(__file__).parent
+OUT = HERE / "script.json"
+
+DATA = {
+    "video_id": "new-ai-reasoning",
+    "title": "THE GHOST ARMY · The Invisible Humans Behind AI",
+    "voice": {
+        "name": "af_heart",
+        "speed": 0.95
+    },
+    "master": "v23",
+    "pace": {
+        "lead": 0.2,
+        "gap": 0.45,
+        "min_beat": 2.4,
+        "to_clip": 0.25,
+        "after_clip": 0.45,
+        "end_pad": 2.0
+    },
+    "beats": [
+        {
+            "id": "h01",
+            "act": "01 THE FANTASY",
+            "vo": "Silicon Valley sells a fantasy of pure autonomous intelligence. Software that thinks and creates without human hands.",
+            "shot": {
+                "cuts": [
+                    {
+                        "layout": "full",
+                        "hero": {
+                            "v": "Score",
+                            "at": "intelligence",
+                            "dropAt": "without"
+                        },
+                        "cap": "the fantasy of *autonomous* ai"
+                    },
+                    {
+                        "at": "hands",
+                        "layout": "split",
+                        "L": {
+                            "v": "LineIcon",
+                            "name": "robot",
+                            "label": "synthetic code"
+                        },
+                        "R": {
+                            "v": "PageQuote",
+                            "enter": "hands",
+                            "words": "software creates *without human hands*",
+                            "at": "hands",
+                            "plate": "Valley Pitch"
+                        },
+                        "cap": "pure *autonomous* software"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "a02",
+            "act": "02 THE GHOST ARMY",
+            "vo": "Behind the curtain, the machine disappears. Every frontier model is steered by outsourced workers in Nairobi and Manila.",
+            "shot": {
+                "cuts": [
+                    {
+                        "layout": "scene",
+                        "hero": {
+                            "v": "Film",
+                            "img": "new-ai-reasoning/nairobi_skyline.jpg",
+                            "exhibit": {"t": "NAIROBI DATA LABS"},
+                            "tag": {"t": "outsourced labelers", "at": "Nairobi"},
+                            "credit": "Wikimedia Commons"
+                        },
+                        "cap": "stationed in *nairobi and manila*"
+                    },
+                    {
+                        "at": "workers",
+                        "layout": "split",
+                        "L": {
+                            "v": "LineIcon",
+                            "name": "worker",
+                            "label": "human workforce"
+                        },
+                        "R": {
+                            "v": "PageQuote",
+                            "enter": "workers",
+                            "words": "steered by *outsourced workers*",
+                            "at": "workers",
+                            "plate": "Labor Report"
+                        },
+                        "cap": "an invisible army of *workers*"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "a03",
+            "act": "03 THE TWO DOLLAR WAGE",
+            "vo": "Earning less than two dollars an hour, they spend twelve-hour shifts sorting toxic prompts and correcting AI reasoning errors.",
+            "shot": {
+                "cuts": [
+                    {
+                        "layout": "scene",
+                        "hero": {
+                            "v": "Film",
+                            "img": "new-ai-reasoning/office_cubicles.jpg",
+                            "exhibit": {"t": "LABELING WORKSTATION"},
+                            "tag": {"t": "two dollars an hour", "at": "hour"},
+                            "credit": "Wikimedia Commons"
+                        },
+                        "cap": "earning *two dollars* an hour"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "a04",
+            "act": "04 THE WAGE GAP",
+            "vo": "Tech giants save millions while invisible human workers quietly train the machine to replace human jobs.",
+            "shot": {
+                "cuts": [
+                    {
+                        "layout": "full",
+                        "hero": {
+                            "v": "Bars",
+                            "at": "save",
+                            "bars": [
+                                {"v": 180, "label": "engineer", "tag": "$180/hr", "c": "teal"},
+                                {"v": 2, "label": "labeler", "tag": "$2/hr", "c": "red", "at": "workers"}
+                            ]
+                        },
+                        "cap": "the *ninety-nine percent* discount"
+                    },
+                    {
+                        "at": "train",
+                        "layout": "split",
+                        "L": {
+                            "v": "Score",
+                            "at": "train",
+                            "dropAt": "replace"
+                        },
+                        "R": {
+                            "v": "PageQuote",
+                            "enter": "train",
+                            "words": "human hands *behind the curtain*",
+                            "at": "machine",
+                            "plate": "Contract Terms"
+                        },
+                        "cap": "humans *power the model*"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "a05",
+            "act": "05 THE GHOST MACHINE",
+            "vo": "When you ask the chatbot a question, you are not talking to artificial intelligence: you are talking to a ghost army.",
+            "shot": {
+                "cuts": [
+                    {
+                        "layout": "full",
+                        "hero": {
+                            "v": "MeterDial",
+                            "at": "talking",
+                            "spinAt": "army"
+                        },
+                        "cap": "the machine is a *ghost army*"
+                    }
+                ]
+            }
+        }
+    ]
+}
+
+if __name__ == "__main__":
+    OUT.write_text(json.dumps(DATA, indent=2), encoding="utf-8")
+    print(f"Wrote {len(DATA['beats'])} beats to {OUT}")

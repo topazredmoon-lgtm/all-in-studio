@@ -1,0 +1,52 @@
+{
+  "courthouse.jpg": {
+    "file": "the-ai-cast/courthouse.jpg",
+    "title": "File:Baltimore City Courthouse.jpg",
+    "author": "Queen of Hearts",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Clarence_M._Mitchell_Jr._Courthouse,_1907_publication.jpg",
+    "size_bytes": 503465,
+    "width": 1920,
+    "height": 1439
+  },
+  "hongkong_arup.jpg": {
+    "file": "the-ai-cast/hongkong_arup.jpg",
+    "title": "File:Hong Kong Skyline Restitch - Dec 2007.jpg",
+    "author": "Diliff",
+    "license": "CC BY 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Hong_Kong_Skyline_Restitch_-_Dec_2007.jpg",
+    "size_bytes": 557418,
+    "width": 1920,
+    "height": 833
+  },
+  "school_police.jpg": {
+    "file": "the-ai-cast/school_police.jpg",
+    "title": "File:Baltimore Police Department Chevy Caprice PPV New Paint Scheme.jpg",
+    "author": "GoBlue85",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Baltimore_Police_Department_Chevy_Caprice_PPV_New_Paint_Scheme.jpg",
+    "size_bytes": 684001,
+    "width": 1920,
+    "height": 1038
+  },
+  "server_datacenter.jpg": {
+    "file": "the-ai-cast/server_datacenter.jpg",
+    "title": "File:Datacenter Server Racks (22370909788).jpg",
+    "author": "Tony Webster",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Datacenter_Server_Racks_(22370909788).jpg",
+    "size_bytes": 527513,
+    "width": 1920,
+    "height": 1280
+  },
+  "cmu_campus.jpg": {
+    "file": "the-ai-cast/cmu_campus.jpg",
+    "title": "File:The Cut, Carnegie Mellon University.jpg",
+    "author": "Sdkb",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:The_Cut,_Carnegie_Mellon_University.jpg",
+    "size_bytes": 945416,
+    "width": 1920,
+    "height": 1446
+  }
+}

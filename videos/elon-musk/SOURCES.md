@@ -1,0 +1,12 @@
+# SOURCES · The Dark Reality of Elon Musk
+
+| ID | Fact Spoken | Source Document | Date | Verification / Notes |
+|---|---|---|---|---|
+| s01 | Black Sea naval drone attack cutoff around Crimea | Walter Isaacson, *Elon Musk*, Simon & Schuster, Chapter 68 ("The Black Sea") | Sep 2023 / Sep 2022 event | Confirmed by Musk on X (refused emergency activation of Starlink to Sevastopol). |
+| s02 | 10,000 active satellites; Starlink operates >6,000 (>60% of all satellites in LEO) | CelesTrak / Jonathan's Space Report (Jonathan McDowell), Satellite Catalog | 2024 | Starlink operates ~6,400 active low Earth orbit satellites of ~10,000 total global active satellites (~62%). |
+| s03 | SpaceX launched ~87% of all orbital payload mass globally in 2024 | BryceTech *Global Spaceflight Launch Reports* (Q1-Q4 2024); Astronomic orbital index | 2024 | SpaceX launched >1,300 metric tons of upmass in 2024; China ~160 tons; rest of world ~50 tons. |
+| s04 | NASA has zero domestic alternatives for crew transport after Starliner thruster failure | NASA Office of Inspector General / Commercial Crew Program Audits; Starliner CFT Return Review | Aug 2024 | Astronauts Williams and Wilmore returned on SpaceX Crew Dragon after Boeing Starliner deemed uncrewed return. |
+| s05 | Radar removed from Tesla fleet in May 2021; Ultrasonics purged in October 2022 | Tesla official support bulletins: "Tesla Vision Transition" | May 2021 / Oct 2022 | Removal of forward radar on Model 3/Y, followed by elimination of 12 ultrasonic sonar sensors worldwide. |
+| s06 | NHTSA phantom braking investigation logged 750+ sudden deceleration complaints | NHTSA Office of Defects Investigation, Preliminary Evaluation PE22-022 | 2022-2023 | Investigation into unexpected brake activation in Tesla vehicles operating on camera-only Autopilot. |
+| s07 | FSD Beta Terms of Service: Driver maintains 100% legal liability at all times | Tesla FSD Beta Release Notes & Customer Agreement (Section 4); NHTSA Safety Recall 23V-838 | 2023-2024 | "Full Self-Driving (Supervised)" requires hands on wheel and shifts all legal liability to vehicle operator. |
+| s08 | Corporate governance structure: No outside board control across private entities | Delaware Chancery Court ruling (Tornetta v. Musk); corporate filings | Jan 2024 | Chancellor McCormick ruling documenting lack of independent board oversight across Musk leadership structure. |

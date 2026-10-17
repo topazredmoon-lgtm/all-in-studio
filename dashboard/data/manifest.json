@@ -1,0 +1,1239 @@
+[
+  {
+    "id": "_template",
+    "title": "_TEMPLATE",
+    "beats": 0,
+    "words": 0,
+    "total_cuts": 0,
+    "full_scene_pct": 0,
+    "split_pct": 0,
+    "max_consecutive_splits": 0,
+    "line_icon_count": 0,
+    "line_icon_faceoff": false,
+    "cadence_pass": null,
+    "outputs": [],
+    "qa": [],
+    "has_script_md": false,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": false,
+    "status": "STUDIO TEMPLATE",
+    "badge": "dead",
+    "desc": "Topic scaffold template"
+  },
+  {
+    "id": "agent-with-your-card",
+    "title": "THE AGENT WITH YOUR CARD",
+    "beats": 16,
+    "words": 442,
+    "total_cuts": 0,
+    "full_scene_pct": 0,
+    "split_pct": 0,
+    "max_consecutive_splits": 0,
+    "line_icon_count": 0,
+    "line_icon_faceoff": false,
+    "cadence_pass": null,
+    "outputs": [],
+    "qa": [],
+    "has_script_md": true,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": false,
+    "status": "CONCEPT DRAFTED",
+    "badge": "todo",
+    "desc": "Autonomous wallet agent script"
+  },
+  {
+    "id": "ai-ban",
+    "title": "THE COMING AI BAN \u00b7 full film",
+    "beats": 75,
+    "words": 1644,
+    "total_cuts": 157,
+    "full_scene_pct": 65.6,
+    "split_pct": 34.4,
+    "max_consecutive_splits": 1,
+    "line_icon_count": 44,
+    "line_icon_faceoff": false,
+    "cadence_pass": true,
+    "outputs": [
+      {
+        "name": "All-in_ai_ban_sample_v5.mp4",
+        "path": "videos/ai-ban/out/All-in_ai_ban_sample_v5.mp4",
+        "size": 11028405,
+        "dur": 74.066667,
+        "mtime": 1791836261.30858
+      },
+      {
+        "name": "All-in_ai_ban_sample_2min.mp4",
+        "path": "videos/ai-ban/out/All-in_ai_ban_sample_2min.mp4",
+        "size": 19107142,
+        "dur": 128.0,
+        "mtime": 1791836261.2918034
+      },
+      {
+        "name": "All-in_ai_ban_sample_1min_v4.mp4",
+        "path": "videos/ai-ban/out/All-in_ai_ban_sample_1min_v4.mp4",
+        "size": 16459240,
+        "dur": 72.1,
+        "mtime": 1791836261.2718582
+      },
+      {
+        "name": "All-in_ai_ban_sample.mp4",
+        "path": "videos/ai-ban/out/All-in_ai_ban_sample.mp4",
+        "size": 16866291,
+        "dur": 66.233333,
+        "mtime": 1791836261.2526002
+      },
+      {
+        "name": "All-in_ai_ban_full.mp4",
+        "path": "videos/ai-ban/out/All-in_ai_ban_full.mp4",
+        "size": 20005523,
+        "dur": 774.8,
+        "mtime": 1791836261.2324364
+      }
+    ],
+    "qa": [
+      "videos/ai-ban/qa/cuts_all.jpg",
+      "videos/ai-ban/qa/cuts_f1.jpg",
+      "videos/ai-ban/qa/cuts_f2.jpg",
+      "videos/ai-ban/qa/cuts_f3.jpg",
+      "videos/ai-ban/qa/cuts_f4.jpg",
+      "videos/ai-ban/qa/cuts_fix2.jpg",
+      "videos/ai-ban/qa/cuts_stamp.jpg",
+      "videos/ai-ban/qa/cuts_v5_fix.jpg",
+      "videos/ai-ban/qa/cuts_v5_new.jpg",
+      "videos/ai-ban/qa/frame_0.jpg",
+      "videos/ai-ban/qa/frame_1.jpg",
+      "videos/ai-ban/qa/sample.jpg",
+      "videos/ai-ban/qa/sheet_h01_h07.jpg",
+      "videos/ai-ban/qa/watch.jpg"
+    ],
+    "has_script_md": true,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": true,
+    "status": "FULL FILM DELIVERED",
+    "badge": "live",
+    "desc": "Full film delivered (12:54, 75 beats)"
+  },
+  {
+    "id": "ai-black-markets",
+    "title": "THE DARK REALITY OF AI'S BLACK MARKETS",
+    "beats": 60,
+    "words": 943,
+    "total_cuts": 105,
+    "full_scene_pct": 18.1,
+    "split_pct": 81.9,
+    "max_consecutive_splits": 20,
+    "line_icon_count": 113,
+    "line_icon_faceoff": true,
+    "cadence_pass": false,
+    "outputs": [
+      {
+        "name": "All-in_ai_black_markets_full.mp4",
+        "path": "videos/ai-black-markets/out/All-in_ai_black_markets_full.mp4",
+        "size": 18353543,
+        "dur": 495.533333,
+        "mtime": 1791836787.6915276
+      },
+      {
+        "name": "All-in_ai_black_markets_sample.mp4",
+        "path": "videos/ai-black-markets/out/All-in_ai_black_markets_sample.mp4",
+        "size": 5111866,
+        "dur": 93.433333,
+        "mtime": 1791490380.5564823
+      },
+      {
+        "name": "ai-black-markets_v3.mp4",
+        "path": "videos/ai-black-markets/out/ai-black-markets_v3.mp4",
+        "size": 64378342,
+        "dur": 93.433333,
+        "mtime": 1791490332.4730644
+      },
+      {
+        "name": "ai-black-markets_v2.mp4",
+        "path": "videos/ai-black-markets/out/ai-black-markets_v2.mp4",
+        "size": 64296010,
+        "dur": 93.433333,
+        "mtime": 1791489942.0825286
+      },
+      {
+        "name": "ai-black-markets_v1.mp4",
+        "path": "videos/ai-black-markets/out/ai-black-markets_v1.mp4",
+        "size": 64296010,
+        "dur": 93.433333,
+        "mtime": 1791489385.9626656
+      }
+    ],
+    "qa": [
+      "videos/ai-black-markets/qa/clips_new.jpg",
+      "videos/ai-black-markets/qa/clips_new2.jpg",
+      "videos/ai-black-markets/qa/clips_new3.jpg",
+      "videos/ai-black-markets/qa/cuts_all.jpg",
+      "videos/ai-black-markets/qa/cuts_fix.jpg",
+      "videos/ai-black-markets/qa/cuts_fix2.jpg",
+      "videos/ai-black-markets/qa/sample.jpg",
+      "videos/ai-black-markets/qa/sheet_h00_s04.jpg",
+      "videos/ai-black-markets/qa/sheet_i01_v03.jpg",
+      "videos/ai-black-markets/qa/sheet_j01_p04.jpg",
+      "videos/ai-black-markets/qa/sheet_w01_k06.jpg",
+      "videos/ai-black-markets/qa/sheet_x01_r02.jpg",
+      "videos/ai-black-markets/qa/watch.jpg"
+    ],
+    "has_script_md": false,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": true,
+    "status": "DEAD / RETIRED",
+    "badge": "dead",
+    "desc": "Killed by owner 2026-10-11. Never build."
+  },
+  {
+    "id": "ai-grey-zone",
+    "title": "AI GREY ZONE",
+    "beats": 8,
+    "words": 202,
+    "total_cuts": 16,
+    "full_scene_pct": 68.8,
+    "split_pct": 31.2,
+    "max_consecutive_splits": 1,
+    "line_icon_count": 0,
+    "line_icon_faceoff": false,
+    "cadence_pass": true,
+    "outputs": [
+      {
+        "name": "ai-grey-zone_v3.mp4",
+        "path": "videos/ai-grey-zone/out/ai-grey-zone_v3.mp4",
+        "size": 9770533,
+        "dur": 81.833333,
+        "mtime": 1792153175.788224
+      },
+      {
+        "name": "ai-grey-zone_v2.mp4",
+        "path": "videos/ai-grey-zone/out/ai-grey-zone_v2.mp4",
+        "size": 10705492,
+        "dur": 92.666667,
+        "mtime": 1792026789.093319
+      },
+      {
+        "name": "ai-grey-zone_v1.mp4",
+        "path": "videos/ai-grey-zone/out/ai-grey-zone_v1.mp4",
+        "size": 10662723,
+        "dur": 92.666667,
+        "mtime": 1792026477.854452
+      }
+    ],
+    "qa": [
+      "videos/ai-grey-zone/qa/cuts_all.jpg",
+      "videos/ai-grey-zone/qa/listen.png",
+      "videos/ai-grey-zone/qa/watch.jpg"
+    ],
+    "has_script_md": true,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": true,
+    "status": "SCRIPT DRAFTED",
+    "badge": "todo",
+    "desc": "Script drafted (1,300 words), needs CC clips"
+  },
+  {
+    "id": "ai-power-bill",
+    "title": "the price of the prompt",
+    "beats": 6,
+    "words": 140,
+    "total_cuts": 9,
+    "full_scene_pct": 66.7,
+    "split_pct": 33.3,
+    "max_consecutive_splits": 1,
+    "line_icon_count": 1,
+    "line_icon_faceoff": false,
+    "cadence_pass": true,
+    "outputs": [
+      {
+        "name": "ai-power-bill_v2.mp4",
+        "path": "videos/ai-power-bill/out/ai-power-bill_v2.mp4",
+        "size": 40460958,
+        "dur": 58.966667,
+        "mtime": 1792218058.0502641
+      },
+      {
+        "name": "ai-power-bill_v1.mp4",
+        "path": "videos/ai-power-bill/out/ai-power-bill_v1.mp4",
+        "size": 40443150,
+        "dur": 58.966667,
+        "mtime": 1792144970.9024014
+      }
+    ],
+    "qa": [
+      "videos/ai-power-bill/qa/cuts_all.jpg",
+      "videos/ai-power-bill/qa/frame_0.jpg",
+      "videos/ai-power-bill/qa/frame_1.jpg",
+      "videos/ai-power-bill/qa/frame_2.jpg",
+      "videos/ai-power-bill/qa/listen.png",
+      "videos/ai-power-bill/qa/sample.jpg",
+      "videos/ai-power-bill/qa/watch.jpg"
+    ],
+    "has_script_md": false,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": true,
+    "status": "PRODUCED & VERIFIED",
+    "badge": "live",
+    "desc": "Master v1 shipped (8/8 QA Pass, Lesson #84 standard)"
+  },
+  {
+    "id": "apply-button",
+    "title": "the dark reality of the apply button",
+    "beats": 7,
+    "words": 193,
+    "total_cuts": 10,
+    "full_scene_pct": 80.0,
+    "split_pct": 20.0,
+    "max_consecutive_splits": 1,
+    "line_icon_count": 0,
+    "line_icon_faceoff": false,
+    "cadence_pass": true,
+    "outputs": [
+      {
+        "name": "apply-button_v4.mp4",
+        "path": "videos/apply-button/out/apply-button_v4.mp4",
+        "size": 42899206,
+        "dur": 81.333333,
+        "mtime": 1792236100.9370372
+      },
+      {
+        "name": "apply-button_v3.mp4",
+        "path": "videos/apply-button/out/apply-button_v3.mp4",
+        "size": 41518039,
+        "dur": 81.333333,
+        "mtime": 1792227641.3530016
+      },
+      {
+        "name": "apply-button_v2.mp4",
+        "path": "videos/apply-button/out/apply-button_v2.mp4",
+        "size": 33764356,
+        "dur": 81.333333,
+        "mtime": 1792217274.9269283
+      },
+      {
+        "name": "apply-button_v1.mp4",
+        "path": "videos/apply-button/out/apply-button_v1.mp4",
+        "size": 33710646,
+        "dur": 81.333333,
+        "mtime": 1792143756.9322155
+      }
+    ],
+    "qa": [
+      "videos/apply-button/qa/cuts_all.jpg",
+      "videos/apply-button/qa/listen.png",
+      "videos/apply-button/qa/watch.jpg"
+    ],
+    "has_script_md": false,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": true,
+    "status": "PRODUCED & VERIFIED",
+    "badge": "live",
+    "desc": "Master v1 shipped (8/8 QA Pass, Lesson #84 standard)"
+  },
+  {
+    "id": "captchas-3min",
+    "title": "THE DARK REALITY OF CAPTCHAS \u00b7 3-min All-in sample",
+    "beats": 27,
+    "words": 325,
+    "total_cuts": 27,
+    "full_scene_pct": 63.0,
+    "split_pct": 37.0,
+    "max_consecutive_splits": 1,
+    "line_icon_count": 6,
+    "line_icon_faceoff": false,
+    "cadence_pass": true,
+    "outputs": [
+      {
+        "name": "All-in_captchas_3min_v6.mp4",
+        "path": "videos/captchas-3min/out/All-in_captchas_3min_v6.mp4",
+        "size": 13192869,
+        "dur": 156.6,
+        "mtime": 1791396428.0470386
+      },
+      {
+        "name": "captchas-3min_v8.mp4",
+        "path": "videos/captchas-3min/out/captchas-3min_v8.mp4",
+        "size": 112900696,
+        "dur": 156.6,
+        "mtime": 1791396121.0723252
+      },
+      {
+        "name": "All-in_captchas_3min_v5.mp4",
+        "path": "videos/captchas-3min/out/All-in_captchas_3min_v5.mp4",
+        "size": 25025822,
+        "dur": 156.6,
+        "mtime": 1791394993.639033
+      },
+      {
+        "name": "captchas-3min_v7.mp4",
+        "path": "videos/captchas-3min/out/captchas-3min_v7.mp4",
+        "size": 111270752,
+        "dur": 156.6,
+        "mtime": 1791394888.7462234
+      },
+      {
+        "name": "All-in_captchas_3min_v4.mp4",
+        "path": "videos/captchas-3min/out/All-in_captchas_3min_v4.mp4",
+        "size": 16091541,
+        "dur": 175.066667,
+        "mtime": 1791386666.5404925
+      },
+      {
+        "name": "All-in_captchas_3min_v3.mp4",
+        "path": "videos/captchas-3min/out/All-in_captchas_3min_v3.mp4",
+        "size": 18017396,
+        "dur": 175.066667,
+        "mtime": 1791384430.4277442
+      },
+      {
+        "name": "All-in_captchas_3min_sample.mp4",
+        "path": "videos/captchas-3min/out/All-in_captchas_3min_sample.mp4",
+        "size": 20038406,
+        "dur": 175.066667,
+        "mtime": 1791382606.5169244
+      }
+    ],
+    "qa": [
+      "videos/captchas-3min/qa/chk_12.6.jpg",
+      "videos/captchas-3min/qa/chk_125.5.jpg",
+      "videos/captchas-3min/qa/chk_64.5.jpg",
+      "videos/captchas-3min/qa/chk_69.5.jpg",
+      "videos/captchas-3min/qa/chk_v7.jpg",
+      "videos/captchas-3min/qa/cuts_all.jpg",
+      "videos/captchas-3min/qa/cuts_fix1.jpg",
+      "videos/captchas-3min/qa/e1.jpg",
+      "videos/captchas-3min/qa/e12.jpg",
+      "videos/captchas-3min/qa/e2.jpg",
+      "videos/captchas-3min/qa/open.jpg",
+      "videos/captchas-3min/qa/review1.jpg",
+      "videos/captchas-3min/qa/review2.jpg",
+      "videos/captchas-3min/qa/review3.jpg",
+      "videos/captchas-3min/qa/sheet_30.jpg",
+      "videos/captchas-3min/qa/sheet_6.jpg",
+      "videos/captchas-3min/qa/sheet_85.jpg",
+      "videos/captchas-3min/qa/v6_0_36.jpg",
+      "videos/captchas-3min/qa/v6_36_96.jpg",
+      "videos/captchas-3min/qa/v6_96_157.jpg",
+      "videos/captchas-3min/qa/v8_all.jpg",
+      "videos/captchas-3min/qa/watch.jpg"
+    ],
+    "has_script_md": false,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": true,
+    "status": "BENCHMARK COMPLETE",
+    "badge": "live",
+    "desc": "Studio benchmark (v6/v8)"
+  },
+  {
+    "id": "captchas-full",
+    "title": "THE DARK REALITY OF CAPTCHAS \u00b7 full film",
+    "beats": 97,
+    "words": 1187,
+    "total_cuts": 99,
+    "full_scene_pct": 66.7,
+    "split_pct": 33.3,
+    "max_consecutive_splits": 1,
+    "line_icon_count": 23,
+    "line_icon_faceoff": false,
+    "cadence_pass": true,
+    "outputs": [
+      {
+        "name": "All-in_captchas_full_v3.mp4",
+        "path": "videos/captchas-full/out/All-in_captchas_full_v3.mp4",
+        "size": 19723390,
+        "dur": 663.466667,
+        "mtime": 1791487057.2186003
+      },
+      {
+        "name": "captchas-full_v5.mp4",
+        "path": "videos/captchas-full/out/captchas-full_v5.mp4",
+        "size": 466836526,
+        "dur": 663.466667,
+        "mtime": 1791485610.901714
+      },
+      {
+        "name": "All-in_captchas_full_v2.mp4",
+        "path": "videos/captchas-full/out/All-in_captchas_full_v2.mp4",
+        "size": 20400249,
+        "dur": 582.933333,
+        "mtime": 1791414280.039457
+      },
+      {
+        "name": "captchas-full_v4.mp4",
+        "path": "videos/captchas-full/out/captchas-full_v4.mp4",
+        "size": 430487335,
+        "dur": 582.933333,
+        "mtime": 1791413153.040255
+      },
+      {
+        "name": "All-in_captchas_full_v1.mp4",
+        "path": "videos/captchas-full/out/All-in_captchas_full_v1.mp4",
+        "size": 18408361,
+        "dur": 488.333333,
+        "mtime": 1791406548.6995187
+      },
+      {
+        "name": "captchas-full_v3.mp4",
+        "path": "videos/captchas-full/out/captchas-full_v3.mp4",
+        "size": 312535525,
+        "dur": 488.333333,
+        "mtime": 1791406179.9606335
+      }
+    ],
+    "qa": [
+      "videos/captchas-full/qa/cuts_all.jpg",
+      "videos/captchas-full/qa/cuts_clips.jpg",
+      "videos/captchas-full/qa/cuts_fix1.jpg",
+      "videos/captchas-full/qa/cuts_v3new.jpg",
+      "videos/captchas-full/qa/fr2_0.jpg",
+      "videos/captchas-full/qa/fr2_1.jpg",
+      "videos/captchas-full/qa/fr2_2.jpg",
+      "videos/captchas-full/qa/fr2_grid.jpg",
+      "videos/captchas-full/qa/fr_0.jpg",
+      "videos/captchas-full/qa/fr_1.jpg",
+      "videos/captchas-full/qa/fr_2.jpg",
+      "videos/captchas-full/qa/fr_3.jpg",
+      "videos/captchas-full/qa/fr_grid.jpg",
+      "videos/captchas-full/qa/frame_0.jpg",
+      "videos/captchas-full/qa/frame_1.jpg",
+      "videos/captchas-full/qa/frame_2.jpg",
+      "videos/captchas-full/qa/hook_v4.jpg",
+      "videos/captchas-full/qa/hyd.jpg",
+      "videos/captchas-full/qa/sample_v4.jpg",
+      "videos/captchas-full/qa/send_check.jpg",
+      "videos/captchas-full/qa/sheet_act1_new.jpg",
+      "videos/captchas-full/qa/sheet_b06_m03.jpg",
+      "videos/captchas-full/qa/sheet_h00_o07.jpg",
+      "videos/captchas-full/qa/sheet_m04_u03.jpg",
+      "videos/captchas-full/qa/sheet_v00_f04.jpg",
+      "videos/captchas-full/qa/v1_every12s.jpg",
+      "videos/captchas-full/qa/v2_check.jpg",
+      "videos/captchas-full/qa/v2_every12s.jpg",
+      "videos/captchas-full/qa/v3_bus.jpg",
+      "videos/captchas-full/qa/v3_check.jpg",
+      "videos/captchas-full/qa/v3_clock.jpg",
+      "videos/captchas-full/qa/watch.jpg"
+    ],
+    "has_script_md": false,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": true,
+    "status": "BENCHMARK COMPLETE",
+    "badge": "live",
+    "desc": "Studio reference film (v2/v3)"
+  },
+  {
+    "id": "captchas-sample",
+    "title": "THE DARK REALITY OF CAPTCHAS \u00b7 DeepMind Voice & Motion Graphics Sample",
+    "beats": 6,
+    "words": 68,
+    "total_cuts": 2,
+    "full_scene_pct": 100.0,
+    "split_pct": 0.0,
+    "max_consecutive_splits": 0,
+    "line_icon_count": 0,
+    "line_icon_faceoff": false,
+    "cadence_pass": null,
+    "outputs": [
+      {
+        "name": "captchas-sample_v1.mp4",
+        "path": "videos/captchas-sample/out/captchas-sample_v1.mp4",
+        "size": 32331706,
+        "dur": 39.833333,
+        "mtime": 1791940513.6482003
+      }
+    ],
+    "qa": [
+      "videos/captchas-sample/qa/listen.png",
+      "videos/captchas-sample/qa/watch.jpg"
+    ],
+    "has_script_md": false,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": true,
+    "status": "BENCHMARK SAMPLE",
+    "badge": "live",
+    "desc": "Voice & motion sample"
+  },
+  {
+    "id": "china-ai-underground",
+    "title": "THE UNDERGROUND OF CHINESE AI \u00b7 1-min sample",
+    "beats": 8,
+    "words": 120,
+    "total_cuts": 14,
+    "full_scene_pct": 100.0,
+    "split_pct": 0.0,
+    "max_consecutive_splits": 0,
+    "line_icon_count": 0,
+    "line_icon_faceoff": false,
+    "cadence_pass": true,
+    "outputs": [
+      {
+        "name": "All-in_china_ai_underground_sample.mp4",
+        "path": "videos/china-ai-underground/out/All-in_china_ai_underground_sample.mp4",
+        "size": 15526010,
+        "dur": 76.733333,
+        "mtime": 1791836826.56697
+      }
+    ],
+    "qa": [
+      "videos/china-ai-underground/qa/cuts_all.jpg",
+      "videos/china-ai-underground/qa/cuts_b.jpg",
+      "videos/china-ai-underground/qa/cuts_c.jpg",
+      "videos/china-ai-underground/qa/sample.jpg",
+      "videos/china-ai-underground/qa/watch.jpg"
+    ],
+    "has_script_md": false,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": true,
+    "status": "SAMPLE DELIVERED",
+    "badge": "ready",
+    "desc": "Sample delivered, ready for 8m expansion"
+  },
+  {
+    "id": "elon-musk",
+    "title": "THE DARK REALITY OF ELON MUSK",
+    "beats": 18,
+    "words": 360,
+    "total_cuts": 34,
+    "full_scene_pct": 67.6,
+    "split_pct": 32.4,
+    "max_consecutive_splits": 1,
+    "line_icon_count": 8,
+    "line_icon_faceoff": false,
+    "cadence_pass": true,
+    "outputs": [
+      {
+        "name": "elon-musk_v2_comp.mp4",
+        "path": "videos/elon-musk/out/elon-musk_v2_comp.mp4",
+        "size": 8036027,
+        "dur": 168.3,
+        "mtime": 1791885823.430464
+      },
+      {
+        "name": "elon-musk_v2.mp4",
+        "path": "videos/elon-musk/out/elon-musk_v2.mp4",
+        "size": 98040755,
+        "dur": 168.3,
+        "mtime": 1791885704.4587128
+      },
+      {
+        "name": "elon-musk_v1.mp4",
+        "path": "videos/elon-musk/out/elon-musk_v1.mp4",
+        "size": 98084865,
+        "dur": 168.3,
+        "mtime": 1791884179.1075685
+      }
+    ],
+    "qa": [
+      "videos/elon-musk/qa/cuts_all.jpg",
+      "videos/elon-musk/qa/frame_0.jpg",
+      "videos/elon-musk/qa/frame_1.jpg",
+      "videos/elon-musk/qa/frame_2.jpg",
+      "videos/elon-musk/qa/frame_3.jpg",
+      "videos/elon-musk/qa/frame_4.jpg",
+      "videos/elon-musk/qa/sample.jpg",
+      "videos/elon-musk/qa/watch.jpg"
+    ],
+    "has_script_md": false,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": true,
+    "status": "CINEMA SAMPLE DELIVERED",
+    "badge": "ready",
+    "desc": "Sample delivered (35 cuts, 7 bespoke visuals)"
+  },
+  {
+    "id": "grey-matter",
+    "title": "GREY MATTER",
+    "beats": 0,
+    "words": 0,
+    "total_cuts": 0,
+    "full_scene_pct": 0,
+    "split_pct": 0,
+    "max_consecutive_splits": 0,
+    "line_icon_count": 0,
+    "line_icon_faceoff": false,
+    "cadence_pass": null,
+    "outputs": [],
+    "qa": [],
+    "has_script_md": true,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": false,
+    "status": "RESEARCH",
+    "badge": "todo",
+    "desc": "Dark patterns in generative UX"
+  },
+  {
+    "id": "greyhat-ai",
+    "title": "THE SCIENCE OF GREYHAT AI \u00b7 METHODS AND MATHEMATICS",
+    "beats": 15,
+    "words": 318,
+    "total_cuts": 0,
+    "full_scene_pct": 0,
+    "split_pct": 0,
+    "max_consecutive_splits": 0,
+    "line_icon_count": 0,
+    "line_icon_faceoff": false,
+    "cadence_pass": null,
+    "outputs": [
+      {
+        "name": "greyhat-ai_v1.mp4",
+        "path": "videos/greyhat-ai/out/greyhat-ai_v1.mp4",
+        "size": 94579719,
+        "dur": 168.833333,
+        "mtime": 1791925244.8229034
+      }
+    ],
+    "qa": [
+      "videos/greyhat-ai/qa/cuts_all.jpg",
+      "videos/greyhat-ai/qa/frame.jpg",
+      "videos/greyhat-ai/qa/frame_0.jpg",
+      "videos/greyhat-ai/qa/frame_1.jpg",
+      "videos/greyhat-ai/qa/listen.png",
+      "videos/greyhat-ai/qa/sample.jpg",
+      "videos/greyhat-ai/qa/watch.jpg"
+    ],
+    "has_script_md": false,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": true,
+    "status": "1-MIN SAMPLE DELIVERED",
+    "badge": "ready",
+    "desc": "1-min sample delivered (6/6 QA Pass)"
+  },
+  {
+    "id": "how-to-break-an-ai",
+    "title": "HOW TO BREAK AN AI",
+    "beats": 0,
+    "words": 0,
+    "total_cuts": 0,
+    "full_scene_pct": 0,
+    "split_pct": 0,
+    "max_consecutive_splits": 0,
+    "line_icon_count": 0,
+    "line_icon_faceoff": false,
+    "cadence_pass": null,
+    "outputs": [],
+    "qa": [],
+    "has_script_md": true,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": false,
+    "status": "RESEARCH",
+    "badge": "todo",
+    "desc": "Adversarial prompt injection research"
+  },
+  {
+    "id": "lying-machine",
+    "title": "LYING MACHINE",
+    "beats": 0,
+    "words": 0,
+    "total_cuts": 0,
+    "full_scene_pct": 0,
+    "split_pct": 0,
+    "max_consecutive_splits": 0,
+    "line_icon_count": 0,
+    "line_icon_faceoff": false,
+    "cadence_pass": null,
+    "outputs": [],
+    "qa": [],
+    "has_script_md": true,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": false,
+    "status": "RESEARCH",
+    "badge": "todo",
+    "desc": "LLM sycophancy & confabulation"
+  },
+  {
+    "id": "microwave-trading",
+    "title": "THE SPEED OF GREED \u00b7 The 3-Nanosecond War",
+    "beats": 7,
+    "words": 147,
+    "total_cuts": 11,
+    "full_scene_pct": 63.6,
+    "split_pct": 36.4,
+    "max_consecutive_splits": 1,
+    "line_icon_count": 3,
+    "line_icon_faceoff": false,
+    "cadence_pass": true,
+    "outputs": [
+      {
+        "name": "microwave-trading_v9.mp4",
+        "path": "videos/microwave-trading/out/microwave-trading_v9.mp4",
+        "size": 64141081,
+        "dur": 64.133333,
+        "mtime": 1792147978.686175
+      },
+      {
+        "name": "All-in_microwave-trading_v9.mp4",
+        "path": "../deliverables/All-in_microwave-trading_v9.mp4",
+        "size": 64141081,
+        "dur": 64.133333,
+        "mtime": 1792147978.686175
+      },
+      {
+        "name": "microwave-trading_v8.mp4",
+        "path": "videos/microwave-trading/out/microwave-trading_v8.mp4",
+        "size": 16221733,
+        "dur": 118.3,
+        "mtime": 1791951608.8785474
+      },
+      {
+        "name": "All-in_microwave-trading_sample.mp4",
+        "path": "../deliverables/All-in_microwave-trading_sample.mp4",
+        "size": 16221733,
+        "dur": 118.3,
+        "mtime": 1791951608.8785474
+      },
+      {
+        "name": "microwave-trading_v7.mp4",
+        "path": "videos/microwave-trading/out/microwave-trading_v7.mp4",
+        "size": 16228448,
+        "dur": 118.3,
+        "mtime": 1791951349.3816583
+      },
+      {
+        "name": "microwave-trading_v6.mp4",
+        "path": "videos/microwave-trading/out/microwave-trading_v6.mp4",
+        "size": 16230827,
+        "dur": 118.3,
+        "mtime": 1791951084.705063
+      },
+      {
+        "name": "microwave-trading_v5.mp4",
+        "path": "videos/microwave-trading/out/microwave-trading_v5.mp4",
+        "size": 16233889,
+        "dur": 118.3,
+        "mtime": 1791950664.101048
+      },
+      {
+        "name": "microwave-trading_v4.mp4",
+        "path": "videos/microwave-trading/out/microwave-trading_v4.mp4",
+        "size": 16139656,
+        "dur": 118.3,
+        "mtime": 1791949067.707132
+      },
+      {
+        "name": "microwave-trading_v3.mp4",
+        "path": "videos/microwave-trading/out/microwave-trading_v3.mp4",
+        "size": 16151487,
+        "dur": 118.3,
+        "mtime": 1791948408.3152874
+      },
+      {
+        "name": "microwave-trading_v2.mp4",
+        "path": "videos/microwave-trading/out/microwave-trading_v2.mp4",
+        "size": 19626883,
+        "dur": 118.3,
+        "mtime": 1791946732.276476
+      },
+      {
+        "name": "microwave-trading_v1.mp4",
+        "path": "videos/microwave-trading/out/microwave-trading_v1.mp4",
+        "size": 20024759,
+        "dur": 118.3,
+        "mtime": 1791945536.5983362
+      }
+    ],
+    "qa": [
+      "videos/microwave-trading/qa/cuts_all.jpg",
+      "videos/microwave-trading/qa/listen.png",
+      "videos/microwave-trading/qa/sheet_85.jpg",
+      "videos/microwave-trading/qa/watch.jpg"
+    ],
+    "has_script_md": false,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": true,
+    "status": "PRODUCED & VERIFIED",
+    "badge": "live",
+    "desc": "Master v9 shipped (8/8 QA Pass, Lesson #84 standard)"
+  },
+  {
+    "id": "new-ai-reasoning",
+    "title": "THE GHOST ARMY \u00b7 The Invisible Humans Behind AI",
+    "beats": 5,
+    "words": 91,
+    "total_cuts": 8,
+    "full_scene_pct": 62.5,
+    "split_pct": 37.5,
+    "max_consecutive_splits": 1,
+    "line_icon_count": 2,
+    "line_icon_faceoff": false,
+    "cadence_pass": true,
+    "outputs": [
+      {
+        "name": "new-ai-reasoning_v9.mp4",
+        "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v9.mp4",
+        "size": 37401063,
+        "dur": 40.3,
+        "mtime": 1792149202.0837648
+      },
+      {
+        "name": "new-ai-reasoning_v8.mp4",
+        "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v8.mp4",
+        "size": 10769581,
+        "dur": 49.933333,
+        "mtime": 1792006529.8335526
+      },
+      {
+        "name": "new-ai-reasoning_v7.mp4",
+        "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v7.mp4",
+        "size": 10718927,
+        "dur": 49.933333,
+        "mtime": 1792005871.064546
+      },
+      {
+        "name": "new-ai-reasoning_v6.mp4",
+        "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v6.mp4",
+        "size": 7264310,
+        "dur": 49.933333,
+        "mtime": 1792004682.1675856
+      },
+      {
+        "name": "new-ai-reasoning_v5.mp4",
+        "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v5.mp4",
+        "size": 8603614,
+        "dur": 55.933333,
+        "mtime": 1791993402.9379957
+      },
+      {
+        "name": "new-ai-reasoning_v4.mp4",
+        "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v4.mp4",
+        "size": 8493656,
+        "dur": 55.933333,
+        "mtime": 1791992865.8486922
+      },
+      {
+        "name": "new-ai-reasoning_v3.mp4",
+        "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v3.mp4",
+        "size": 8785079,
+        "dur": 55.666667,
+        "mtime": 1791991306.4457679
+      },
+      {
+        "name": "All-in_new_ai_sample.mp4",
+        "path": "videos/new-ai-reasoning/out/All-in_new_ai_sample.mp4",
+        "size": 8908823,
+        "dur": 64.9,
+        "mtime": 1791989244.8338501
+      },
+      {
+        "name": "new-ai-reasoning_v2.mp4",
+        "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v2.mp4",
+        "size": 8908823,
+        "dur": 64.9,
+        "mtime": 1791989244.8338501
+      },
+      {
+        "name": "new-ai-reasoning_v1.mp4",
+        "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v1.mp4",
+        "size": 12835412,
+        "dur": 86.133333,
+        "mtime": 1791987353.728475
+      }
+    ],
+    "qa": [
+      "videos/new-ai-reasoning/qa/cut_inspect_0.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_1.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_2.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_3.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_4.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_5.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_6.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_7.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_8.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_9.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_v4_0.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_v4_1.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_v4_2.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_v4_3.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_v4_4.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_v4_5.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_v4_6.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_v4_7.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_v4_8.jpg",
+      "videos/new-ai-reasoning/qa/cut_inspect_v4_9.jpg",
+      "videos/new-ai-reasoning/qa/cuts_all.jpg",
+      "videos/new-ai-reasoning/qa/frame_test.jpg",
+      "videos/new-ai-reasoning/qa/listen.png",
+      "videos/new-ai-reasoning/qa/test_term_0.jpg",
+      "videos/new-ai-reasoning/qa/test_term_1.jpg",
+      "videos/new-ai-reasoning/qa/watch.jpg"
+    ],
+    "has_script_md": false,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": true,
+    "status": "SAMPLE BUILT",
+    "badge": "ready",
+    "desc": "The Ghost Army sample (v1-v8)"
+  },
+  {
+    "id": "poisoned-well",
+    "title": "THE POISONED WELL \u00b7 How Anyone Can Secretly Reprogram the AI You Trust",
+    "beats": 10,
+    "words": 258,
+    "total_cuts": 46,
+    "full_scene_pct": 100.0,
+    "split_pct": 0.0,
+    "max_consecutive_splits": 0,
+    "line_icon_count": 0,
+    "line_icon_faceoff": false,
+    "cadence_pass": true,
+    "outputs": [
+      {
+        "name": "All-in_poisoned-well_sample.mp4",
+        "path": "videos/poisoned-well/out/All-in_poisoned-well_sample.mp4",
+        "size": 31038559,
+        "dur": 94.42,
+        "mtime": 1792015682.3300796
+      }
+    ],
+    "qa": [],
+    "has_script_md": false,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": true,
+    "status": "SAMPLE BUILT",
+    "badge": "ready",
+    "desc": "Data poisoning sample built"
+  },
+  {
+    "id": "stolen-voices",
+    "title": "STOLEN VOICES",
+    "beats": 16,
+    "words": 356,
+    "total_cuts": 0,
+    "full_scene_pct": 0,
+    "split_pct": 0,
+    "max_consecutive_splits": 0,
+    "line_icon_count": 0,
+    "line_icon_faceoff": false,
+    "cadence_pass": null,
+    "outputs": [],
+    "qa": [],
+    "has_script_md": false,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": false,
+    "status": "SCRIPT IN WORK",
+    "badge": "todo",
+    "desc": "Voice clone rights script in progress"
+  },
+  {
+    "id": "surveillance-pricing",
+    "title": "THE DEATH OF THE PRICE TAG \u00b7 SURVEILLANCE PRICING",
+    "beats": 17,
+    "words": 375,
+    "total_cuts": 0,
+    "full_scene_pct": 0,
+    "split_pct": 0,
+    "max_consecutive_splits": 0,
+    "line_icon_count": 0,
+    "line_icon_faceoff": false,
+    "cadence_pass": null,
+    "outputs": [
+      {
+        "name": "surveillance-pricing_v1.mp4",
+        "path": "videos/surveillance-pricing/out/surveillance-pricing_v1.mp4",
+        "size": 90012810,
+        "dur": 160.933333,
+        "mtime": 1791917822.0057373
+      }
+    ],
+    "qa": [
+      "videos/surveillance-pricing/qa/watch.jpg"
+    ],
+    "has_script_md": false,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": true,
+    "status": "SAMPLE BUILT",
+    "badge": "ready",
+    "desc": "The Death of the Price Tag sample (v1)"
+  },
+  {
+    "id": "the-ai-cast",
+    "title": "the dark reality of the ai cast",
+    "beats": 7,
+    "words": 248,
+    "total_cuts": 14,
+    "full_scene_pct": 78.6,
+    "split_pct": 21.4,
+    "max_consecutive_splits": 1,
+    "line_icon_count": 1,
+    "line_icon_faceoff": false,
+    "cadence_pass": true,
+    "outputs": [
+      {
+        "name": "the-ai-cast_v3.mp4",
+        "path": "videos/the-ai-cast/out/the-ai-cast_v3.mp4",
+        "size": 44008031,
+        "dur": 103.366667,
+        "mtime": 1792051729.7379017
+      },
+      {
+        "name": "the-ai-cast_v2.mp4",
+        "path": "videos/the-ai-cast/out/the-ai-cast_v2.mp4",
+        "size": 8536761,
+        "dur": 86.966667,
+        "mtime": 1792042443.809749
+      },
+      {
+        "name": "the-ai-cast_v1.mp4",
+        "path": "videos/the-ai-cast/out/the-ai-cast_v1.mp4",
+        "size": 10235471,
+        "dur": 98.633333,
+        "mtime": 1792036313.87007
+      }
+    ],
+    "qa": [
+      "videos/the-ai-cast/qa/cuts_all.jpg",
+      "videos/the-ai-cast/qa/listen.png",
+      "videos/the-ai-cast/qa/watch.jpg"
+    ],
+    "has_script_md": false,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": true,
+    "status": "PRODUCED & SHIPPED",
+    "badge": "live",
+    "desc": "Master v3 shipped (7/7 QA Pass, 79% full/scene)"
+  },
+  {
+    "id": "tokens-explained",
+    "title": "how tokens break artificial intelligence",
+    "beats": 7,
+    "words": 188,
+    "total_cuts": 10,
+    "full_scene_pct": 80.0,
+    "split_pct": 20.0,
+    "max_consecutive_splits": 1,
+    "line_icon_count": 0,
+    "line_icon_faceoff": false,
+    "cadence_pass": true,
+    "outputs": [
+      {
+        "name": "tokens-explained_v4.mp4",
+        "path": "videos/tokens-explained/out/tokens-explained_v4.mp4",
+        "size": 36667969,
+        "dur": 79.033333,
+        "mtime": 1792235872.6757066
+      },
+      {
+        "name": "tokens-explained_v3.mp4",
+        "path": "videos/tokens-explained/out/tokens-explained_v3.mp4",
+        "size": 34886383,
+        "dur": 79.033333,
+        "mtime": 1792226861.3394504
+      },
+      {
+        "name": "tokens-explained_v2.mp4",
+        "path": "videos/tokens-explained/out/tokens-explained_v2.mp4",
+        "size": 24656650,
+        "dur": 79.033333,
+        "mtime": 1792217671.6099143
+      },
+      {
+        "name": "tokens-explained_v1.mp4",
+        "path": "videos/tokens-explained/out/tokens-explained_v1.mp4",
+        "size": 24643144,
+        "dur": 79.033333,
+        "mtime": 1792144459.116381
+      }
+    ],
+    "qa": [
+      "videos/tokens-explained/qa/cuts_all.jpg",
+      "videos/tokens-explained/qa/listen.png",
+      "videos/tokens-explained/qa/watch.jpg"
+    ],
+    "has_script_md": false,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": true,
+    "status": "PRODUCED & VERIFIED",
+    "badge": "live",
+    "desc": "Master v1 shipped (8/8 QA Pass, Lesson #84 standard)"
+  },
+  {
+    "id": "why-ai-dumber",
+    "title": "WHY AI MODELS GET DUMBER - engraving-plate sample (v3)",
+    "beats": 23,
+    "words": 367,
+    "total_cuts": 0,
+    "full_scene_pct": 0,
+    "split_pct": 0,
+    "max_consecutive_splits": 0,
+    "line_icon_count": 0,
+    "line_icon_faceoff": false,
+    "cadence_pass": null,
+    "outputs": [
+      {
+        "name": "why-ai-dumber_v3.mp4",
+        "path": "videos/why-ai-dumber/out/why-ai-dumber_v3.mp4",
+        "size": 93706540,
+        "dur": 152.166667,
+        "mtime": 1791876408.5177822
+      },
+      {
+        "name": "All-in_why_ai_dumber_v2.mp4",
+        "path": "videos/why-ai-dumber/out/All-in_why_ai_dumber_v2.mp4",
+        "size": 16919016,
+        "dur": 64.066667,
+        "mtime": 1791844606.4564662
+      },
+      {
+        "name": "why-ai-dumber_v2.mp4",
+        "path": "videos/why-ai-dumber/out/why-ai-dumber_v2.mp4",
+        "size": 35767531,
+        "dur": 64.066667,
+        "mtime": 1791844522.3502707
+      },
+      {
+        "name": "All-in_why_ai_dumber_sample.mp4",
+        "path": "videos/why-ai-dumber/out/All-in_why_ai_dumber_sample.mp4",
+        "size": 1508221,
+        "dur": 55.1,
+        "mtime": 1791841507.5259228
+      },
+      {
+        "name": "why-ai-dumber_v1.mp4",
+        "path": "videos/why-ai-dumber/out/why-ai-dumber_v1.mp4",
+        "size": 30899609,
+        "dur": 55.1,
+        "mtime": 1791841430.9477599
+      }
+    ],
+    "qa": [
+      "videos/why-ai-dumber/qa/cuts_all.jpg",
+      "videos/why-ai-dumber/qa/frame.jpg",
+      "videos/why-ai-dumber/qa/frame_0.jpg",
+      "videos/why-ai-dumber/qa/frame_1.jpg",
+      "videos/why-ai-dumber/qa/frame_2.jpg",
+      "videos/why-ai-dumber/qa/frame_3.jpg",
+      "videos/why-ai-dumber/qa/listen.png",
+      "videos/why-ai-dumber/qa/ref_contact.jpg",
+      "videos/why-ai-dumber/qa/sample.jpg",
+      "videos/why-ai-dumber/qa/watch.jpg"
+    ],
+    "has_script_md": false,
+    "has_sources_md": true,
+    "has_licences_md": true,
+    "has_master_wav": true,
+    "status": "v2/v3 SAMPLE BUILT",
+    "badge": "ready",
+    "desc": "v2/v3 sample built"
+  }
+]

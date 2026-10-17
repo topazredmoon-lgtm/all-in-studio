@@ -46,6 +46,30 @@ stream URL above), seeking by video timestamp, so no audio offset applies; times
 | c01 `aiban/god_deepfake.mp4` (hook), still `fake_face.jpg` | A deepfake (a well-known actress's face and a cloned voice) says "It's crucial to remain skeptical and not blindly trust everything you see or hear." Then the presenter: "So what you just saw is actually an example of a deepfake." Picture cropped and zoomed to the face on the slide | "GenAI in the Battle of Security: Attacks, Defenses, and the Laws Shaping AI's Future", German OWASP Day 2024, https://media.ccc.de/v/god2024-56275-genai-in-the-battle-of-sec , HD mp4, source 89.78 to 104.18 s (clip in 6.1 s, out 15.9 s) | CC BY-SA 4.0 (event page: "Licensed to the public under https://creativecommons.org/licenses/by-sa/4.0/") | Niklas Bunzel, Raphael Frick (Fraunhofer SIT), CC BY-SA 4.0, via media.ccc.de; on-screen plate plus the description block | **Low for Content ID** (not a news or label upload). **Medium-low residual**: the deepfake shows a real celebrity's likeness (made by the researchers to demonstrate deepfakes). Used to illustrate deepfakes and never named or implied to be her. Owner to decide; fallback is the Fed clip as the hook |
 | c02 `aiban/fed_altman2.mp4`, still `fed_altman.jpg` | Sam Altman: "You say a challenge phrase and they just do it. That is a crazy thing to still be doing. AI has fully defeated that." | Fed fireside chat with Vice Chair for Supervision Bowman, Integrated Review of the Capital Framework for Large Banks Conference, 22 Jul 2025. Page https://www.federalreserve.gov/conferences/integrated-review-of-the-capital-framework-for-large-banks.htm ; Fed Brightcove video 6375976055112; source 984.20 to 990.80 s. Wording checked against the Fed's own transcript ("...or do something else. You say a challenge phrase and they just do it.") | Public domain: Federal Reserve Board's own production. federalreserve.gov/disclaimer.htm: "Unless otherwise indicated, information on Board's website is in the public domain and may be copied and distributed without permission." | "Federal Reserve Board video, 22 July 2025" (plate) | **Low**. Residual: a news outlet re-airing the same feed could hold a Content ID reference; dispute with the Fed source if claimed |
 
+
+## Master Table: 18 Clips in Delivered Full Film (`All-in_ai_ban_full.mp4`)
+
+| Slot | File | Description / Speaker | Source / Event | Licence | Risk |
+|---|---|---|---|---|---|
+| c01 | `god_deepfake.mp4` | Deepfake celebrity face + reveal | German OWASP Day 2024 (Fraunhofer SIT) | CC BY-SA 4.0 | Low (Residual likeness) |
+| cB | `cc_llm_refuse.mp4` | LLM refusal demo | Anykey · Hacker Hotel 2025 | CC BY 4.0 | Low |
+| cF | `cc_gai_voice.mp4` | Voice cloning demonstration | Bunzel & Frick · GoD 2024 | CC BY-SA 4.0 | Low |
+| cG | `cc_vibe_aibuild.mp4` | Scammer AI tooling | Chiao-Lin Yu · 39C3 | CC BY 4.0 | Low |
+| cH | `cc_nk_ai.mp4` | North Korean IT worker impersonation | Simon Wijckmans · EMF 2026 | CC BY-SA 4.0 | Low |
+| cR | `cc_vibe_company.mp4` | Scam boiler-room organization | Chiao-Lin Yu · 39C3 | CC BY 4.0 | Low |
+| cA | `senate_fears.mp4` | Altman: "My worst fears..." | Senate Judiciary (May 2023) | Public Domain (US Gov) | Low |
+| cP | `senate_licence2.mp4` | Altman: "Form a new agency..." | Senate Judiciary (May 2023) | Public Domain (US Gov) | Low |
+| cP2 | `senate_marcus.mp4` | Marcus: "Technocracy and oligarchy" | Senate Judiciary (May 2023) | Public Domain (US Gov) | Low |
+| c02 | `fed_altman2.mp4` | Altman on voice auth defeated | Federal Reserve Fireside (Jul 2025) | Public Domain (US Gov) | Low |
+| cD | `cc_crypto_munition.mp4` | Encryption as munitions (90s) | Pyro · Chaos Comm Camp 2023 | CC BY 4.0 | Low |
+| cK | `cc_anonymity.mp4` | Anonymity and digital ID | Thomas Lohninger · 37C3 | CC BY 4.0 | Low |
+| cM | `cc_chip_security.mp4` | Warren on Chip Security Act | Senate Banking (Jun 2026) | Public Domain (US Gov) | Low |
+| cN | `cc_open_models.mp4` | Tuning open weights | Anykey · Hacker Hotel 2025 | CC BY 4.0 | Low |
+| cQ | `cc_stole_work.mp4` | "They stole that from us" | Kate Devlin · EMF 2026 | CC BY-SA 4.0 | Low-Medium (Slide art) |
+| cR2 | `cc_drone_swarm.mp4` | Autonomous drone swarms | Leonard · 39C3 | CC BY 4.0 | Low (German army paper) |
+| cS | `cc_ai_act.mp4` | EU AI Act risk levels | Fraunhofer SIT · GoD 2024 | CC BY-SA 4.0 | Low |
+| cT | `cc_run_local.mp4` | DeepSeek running in 4GB | Anykey · Hacker Hotel 2025 | CC BY 4.0 | Low |
+
 ## Clips for the full film, slot search (2026-10-11, `videos/ai-ban/clips4_spec.json`, cut by `tools/cc_cut.py`; raw talks in `.cc-src/aiban3/`, not in git)
 All clips: audio/mp4 offset measured 0.00 s; hall/stream audio checked in 50 ms windows for sentence start and end.
 

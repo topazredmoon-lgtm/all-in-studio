@@ -7,7 +7,7 @@ Every video adds to `VISUALS.md` (what it invented) and `LEARNINGS.md` (what rev
 
 | Part | Source | What was taken |
 |---|---|---|
-| **The kit: Design System Reels "minimal"** (owner, 2026-10-07 on v4: "the beautiful design system … u did not even use it nor upgraded it") | https://claude.ai/artifact/KtY7VLmHddAf5qHgr95RAK (featured design "minimal"; local copies `research/disgn-systems/`) | Its pacing (a new picture every 1–3 s), thin line-art drawings that draw on at their word (person, robot, gate, desk, eye, book, envelope, doc), the tiny act kicker top-left (red number), single objects centred on the board, almost no words. Merged on top of v23 (it was built from v23's look, so both agree). Code: `engine/src/ds/kit.tsx`. |
+| **The kit: Design System Reels "minimal"** (owner, 2026-10-07 on v4: "the beautiful design system … u did not even use it nor upgraded it") | Featured design "minimal" (local copies `research/disgn-systems/`; online artifact: https://claude.ai/artifact/KtY7VLmHddAf5qHgr95RAK) | Its pacing (a new picture every 1–3 s), thin line-art drawings that draw on at their word (person, robot, gate, desk, eye, book, envelope, doc), the tiny act kicker top-left (red number), single objects centred on the board, almost no words. Merged on top of v23 (it was built from v23's look, so both agree). Code: `engine/src/ds/kit.tsx`. |
 | **The base system: v23 itself** | `Desktop/captchas_v23_PERFECTED.mp4`, rendered by jolly-bell (`takeover` branch: `src/theme.ts`, `src/AmbientLayer.tsx`, `src/primitives/Caption.tsx`, `ChapterCard.tsx`, `domains/mockups/VideoEmbed.tsx`); frames in `research/v23/` | Owner, 2026-10-07: "the designs and style copied from captchas_v23_PERFECTED.mp4". "Signal" stays retired. Since v5 (owner, 2026-10-07 evening) the reels' featured "minimal" design is merged on top as the kit (next row). |
 | The board and the split | v23 (measured on its frames) | Warm black board, 96 px dot grid at 10 %, rounded registration corners, vignette; two objects with wide air, centres x 520 / 1400, y 450, about 575 px wide; hand caption at the bottom (bottom 75 px) with one red keyword; real artefacts over drawings |
 | Tokens and type | jolly-bell takeover, v3 design system (`src/design/`, DECISIONS T002–T004, T013) | "Newsprint at night" palette (stage, raised, paper, one red); Source Serif 4 / Archivo / IBM Plex Mono; 24 px floor; paper only for physical evidence; caption set in Archivo, never a hand font; honesty plates; hard cuts |
@@ -66,13 +66,14 @@ Owner's words: "i dont want big text in an emptu screen … especially not cente
 
 | layout | use it for | rules |
 |---|---|---|
-| `split` | **the default** (v23) | Left = the subject, on screen from frame 0. Right = the evidence, it lands on its word (`enter`). Panels are laid out at 700 × 540 and drawn at 0.82 scale, centred at x 520 / 1400, y 450. Card title sits inside the card, top-left; the source is a quiet mono line under the card. |
-| `full` | one idea that needs the whole width: a flow, an acronym, a timeline, a proof page | One panel 1640 wide. Caption optional. |
-| `full` + `glow: "red"` | **banned since v6** for big type | A hook is a picture (the real captcha being solved, a crowd of drawings) with the number as a tag. |
-| `chapter` | **banned since v6** (text on an empty board) | Open an act on a picture with its caption; the act kicker top-left names it. |
+| `full` | **the hero standard** (≥ 55% with `scene` & `clip`) | One strong, beautifully centered visual on the v23 board with wide breathing room (authentic UI widget, flow, bars, proof document, or account wall). Never a lone LineIcon. |
+| `scene` | **documentary immersion** | Full-frame authentic CC/PD photography (`Film` with slow subtle drift, `Hearing`, `Cctv`, `RouteMap`) with archival metadata stamp ("EXHIBIT", date, location). |
+| `split` | side-by-side comparison (**capped at ≤ 45%**, max 2 consecutive) | Left = the subject, on screen from frame 0. Right = the evidence, landing on cue (`enter`). Panels at 700 × 540, centred at x 520 / 1400. Never L: LineIcon + R: LineIcon. |
 | `clip` | archival footage | Full frame, v23 broadcast plate at the top ("● SPEAKER // SOURCE" … "HISTORICAL RECORD // 1080P"), no caption, frozen at the cut. |
+| `chapter` | **banned since v6** (text on an empty board) | Open an act on a picture with its caption; the act kicker top-left names it. |
 
-Rhythm (v5, measured on v23 and the minimal reel): **something new on screen every 2–3 s**. A beat (one or two spoken sentences) is cut into `cuts` that hard-cut on their cue words; each cut is one idea, one picture, one caption. v5 captchas-3min: 48 shots in 2:37, 2.8 s average outside clips. Open on the thing everyone recognises, doing something, in frame 0 (a real captcha being solved), then hand to a real person within 4 s. No dead air: lead 0.2 s, gap 0.45 s between lines (was 0.5 / 1.1: 40 s of silence in 3 min). Clip plates show for 3 s, then the footage plays alone. Never the same drawing twice in a video.
+Rhythm (2026-10-15 standard): **something new on screen every 2–3 s**. A beat (one or two spoken sentences) is cut into `cuts` that hard-cut on their cue words; each cut is one idea, one picture, one caption. Layout cadence: **≥ 55% full/scene/clip, ≤ 45% split (max 2 consecutive splits)**. Whenever narration names a real case, person, court, city, university, company, or date, it must show **WHO AND WHAT** (real CC/PD photos from Wikimedia Commons in `engine/public/<slug>/` + authentic UI receipts, with `LineIcon` strictly capped at ≤ 25%).
+
 
 ## Word sync (the core rule)
 
@@ -117,6 +118,14 @@ Motion: fade-only entrances, cue lead 4 frames, counters 40 frames, stamps 6 fra
 4. A visual that works across topics (a counter, a timeline, a quote slip) graduates from `visuals/<topic>.tsx` into `ds/` so the next video can use the pattern with new content.
 
 
+
+### Engraving Plates (`engine/src/ds/engrave.tsx`, added 2026-10-13)
+The high-craft artistic register when `LineIcon` pictograms are too simplistic for serious metaphors.
+Full specification, rules, cutting schedules, and reference cut (`ouroboros.tsx`): see `PLATES.md`.
+- Three weights (`CONTOUR` 4.6, `INNER` 2.8, `DETAIL` 1.5).
+- Volume drawn through `<Hatch>` and `<Stipple>`, light from upper left.
+- Inked on along its length via `useCutIn`/`Plate`.
+
 ## The kit (`ds/kit.tsx`, v5) — minimal print merged with v23's objects
 
 | Object | Use it for | Rules |
@@ -137,3 +146,42 @@ Motion: fade-only entrances, cue lead 4 frames, counters 40 frames, stamps 6 fra
 
 Third-party UI is re-created at its true look and checked against real footage (v5 opening: reCAPTCHA's 4 × 4 "squares" challenge is ONE photo cut into 16 squares, header "Select all squares with / traffic lights / If there are none, click skip", blue round checks on picked squares that shrink inside a white border, reload / audio / info icons, blue VERIFY; compared frame by frame with the WSJ clip). The 3 × 3 variant ("Select all images with") uses 9 separate photos; never mix the two.
 | `tag` (any visual, `ds/layouts.tsx`) | a number or name that belongs to a picture | Handwritten red, 46 px, ≤ 24 characters, small arrow up, lands on its word. |
+
+## Haute-Couture Tactile Kit (`ds/tactile.tsx`, Lesson #85 · 2026-10-16)
+
+The definitive professional tactile visual kit replacing amateur programmer-art (no dark-on-dark `#161411` on `#0E0C0B` boxes, no walls of small text, no crude wireframes):
+
+| Component | Visual Surface & Contrast | Motion & Interactive Physics |
+|---|---|---|
+| `TactileCursor` | Realistic SVG cursor (`#FFFFFF`, stroke `#111111`) with deep shadow | Natural mass/damping spring curve; expands red click ripple ring (`#E63946`) on cue word. |
+| `JobPortalCard` | Crisp white card (`#FFFFFF`) with vivid blue header (`#0A66C2`) and `SHADOW_DEEP` | Resume PDF skeleton line with live keyword score, interactive action button flipping to auto-rejection on mouse click. |
+| `StrawberrySlicer` | Crisp white card (`#FFFFFF`) with `cl100k_base` tokenizer tag | Letters split into 3 tactile numbered token bricks (`interpolate([0, 1], [0, 26])`) turning dark with red border and token IDs. |
+| `UtilityBillCard` | Warm parchment `#F6F2E8` rotated `-0.8deg` with `SHADOW_DEEP` | Monthly statement with skeleton delivery rows and animated red gradient highlighter sweep across capacity surcharge. |
+
+## Neuro-Perceptual Psychology Kit (`ds/psychology.tsx`, Lesson #86 · 2026-10-17)
+
+Eliminates viewer cognitive effort, phonological loop overload, and ocular strain:
+
+| Component | Psychological Principle | Implementation |
+|---|---|---|
+| `SmoothStage` | Continuous Tracking & Pre-Attentive Spotlight | 0.35Hz 3D micro-float + gentle breathing so visual pixels never habituate or freeze. |
+| `TactileCard` | Figure-Ground Segregation | Warm ivory `#F7F3EA` / crisp white `#FFFFFF` (1060×540) floating with `SHADOW_DEEP`. Permanently bans dark-on-dark `#161411` boxes. |
+| `SkeletonBars` | Mayer's Split-Attention & Redundancy Prevention | Soft `#E2DDD2` rounded bars replace secondary paragraphs so eyes do not fight voice narration. |
+| `HandInkCircle` | Posner Spatial Cueing | Hand-drawn pressure-sensitive crimson ink circle (perfect-freehand) circling focal metrics/words on cue. |
+| `TactileCursor` | Interactive Intent & Causality | Spring-mass cursor with red click ripples (`#E63946`) explaining why actions happen. |
+
+## Game-Feel "Juice" Motion Physics Kit (`ds/juice.tsx`, Lesson #87 · 2026-10-17)
+
+Infuses @motionbykrit's signature Game-Feel / "Juice" Motion Physics into every cut:
+
+| Primitive | Physics Principle | Visual & Mechanical Behavior |
+|---|---|---|
+| `useGameFeelPhysics` | Anticipation Wind-Up & Rebound Shake | 6-frame sinusoidal rattle (`rattleX, rattleY`), squash & stretch (`scaleX: 1.28, scaleY: 0.76` -> `0.88 / 1.15`), and decaying camera shake (`shakeX, shakeY`). |
+| `ImpactBurst` | Radial Particle Dispersion & Shockwaves | 14 radial diamond particles + 2 expanding shockwave rings with thinning & opacity decay. |
+| `VolumetricGodRays` | Epic Rotating Light Reveal | Rotating conic/linear gradient beams bursting from behind focal cards on cue. |
+| `SpeedLines` | Velocity Dash Streaks | High-velocity directional streak lines running in direction of dash/cut motion. |
+| `FloatingPopScore` | HUD Score Punch & Floating Drift | Spring-mass popup badge (`+3 SHARDS!`, `0.2s TRASHED!`, `4.5× PRICE HIKE!`) with `-3deg` tilt, scale-punch (`1.32 -> 1.0`), and upward drift (`translateY(-24px)`). |
+| `DoodleUnderline` | Editorial Double-Marker Emphasis | Hand-drawn pressure-sensitive double-stroke underline (perfect-freehand) curving under key focal phrases. |
+| `Tactile3DBlock` | Chunky Toy Depth & Impact Flash | Chunky card with 11px 3D bottom lip, press-down hit recoil, animated diagonal `SpecularSheen` sweep, and white impact flash. |
+
+

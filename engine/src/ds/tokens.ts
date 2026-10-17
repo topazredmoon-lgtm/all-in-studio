@@ -31,6 +31,14 @@ export const color = {
   marker: 'rgba(255,210,63,0.80)',
   uiBlue: '#4A90E2', // reCAPTCHA's own UI blue, only inside re-created UI
   teal: '#4FB286',
+  // V-CRAFT (Nemotron): paper/film textures baked by tools/make_grain.py.
+  // Blend per engine/public/tex/tex_manifest.json: multiply 6-10% on parchment
+  // cards only (PageQuote / UtilityStatement / receipt-crop frame). NEVER on
+  // white UI cards (JobPortalCard stays SaaS-crisp), never on stage/clip.
+  tex: {
+    grain: 'tex/film_grain_baked.png',
+    paper: 'tex/paper_tooth.png',
+  } as const,
 } as const;
 
 export const font = {
@@ -39,6 +47,7 @@ export const font = {
   body: 'AllinBody, Arial, sans-serif', // Inter: re-created UI only, small body
   display: 'AllinMono, Consolas, monospace',
   serif: 'AllinSerif, Georgia, serif', // Source Serif 4: quotes and documents only
+  fraunces: 'AllinFraunces, "Fraunces", Georgia, serif', // V-CRAFT (Nemotron/UPG-R9): receipts & display serif with optical axis; owner ships woff2 to engine/public/fonts offline
   sans: 'AllinBody, Arial, sans-serif',
 } as const;
 

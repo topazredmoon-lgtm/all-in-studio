@@ -1,0 +1,532 @@
+{
+  "apply-button": {
+    "slug": "apply-button",
+    "title": "THE DARK REALITY OF THE APPLY BUTTON \u00b7 Why Resumes Vanish",
+    "spine_sentence": "You have been writing for a reader that cannot read: a statistical sieve reads you first; a human reads you seventh.",
+    "hook": "Cold open on the green LinkedIn 'Easy Apply' button clicking, turning into a digital shredder.",
+    "five_gate_score": {
+      "universal_object": 5,
+      "hidden_mechanism": 5,
+      "ironic_inversion": 5,
+      "primary_receipts": 5,
+      "sourced_numbers": 5,
+      "total": "25/25 (GRADE A+)"
+    },
+    "sourced_numbers": [
+      {
+        "n": "75%",
+        "l": "resumes discarded before any human eye (Jobscan study)"
+      },
+      {
+        "n": "0.2s",
+        "l": "average algorithmic screening latency per applicant"
+      },
+      {
+        "n": "17",
+        "l": "violations missed by NYC DCWP out of 32 audited companies (NY Comptroller Dec 2025 Audit)"
+      },
+      {
+        "n": "75%",
+        "l": "test calls to NYC 311 on AI hiring bias misrouted and dropped"
+      },
+      {
+        "n": "38%",
+        "l": "HR technology vendors natively compliant with Local Law 144 audits"
+      },
+      {
+        "n": "$1,500/day",
+        "l": "cumulative civil penalty per non-compliant AEDT screening pipeline"
+      }
+    ],
+    "primary_receipts": [
+      {
+        "title": "New York State Comptroller Oversight Report (Dec 2025)",
+        "desc": "Audit finding DCWP enforcement of Local Law 144 largely ineffective, with 17 missed violations across 32 firms."
+      },
+      {
+        "title": "NYC Administrative Code Title 20, Chapter 5 (Local Law 144)",
+        "desc": "Mandatory annual independent bias audit, impact ratio 0.80 four-fifths rule, and 10-day candidate notice."
+      },
+      {
+        "title": "EEOC Technical Guidance on AEDTs & Title VII (2024-2025)",
+        "desc": "Federal warnings against algorithmic resume screening proxy discrimination."
+      }
+    ],
+    "who_and_what": {
+      "who": [
+        {
+          "label": "New York State Comptroller Office",
+          "photo": "apply-button/comptroller_albany.jpg",
+          "commons_query": "New York State Capitol Albany facade",
+          "widget": "Film (scene push-in)"
+        },
+        {
+          "label": "NYC DCWP Headquarters (Broadway)",
+          "photo": "apply-button/dcwp_broadway.jpg",
+          "commons_query": "Broadway Manhattan municipal building",
+          "widget": "Polaroid with red badge"
+        }
+      ],
+      "what": [
+        {
+          "widget": "PhoneChat",
+          "desc": "Candidate receiving generic automated rejection email within 90 seconds of submission."
+        },
+        {
+          "widget": "PageQuote",
+          "desc": "Comptroller audit extract: '17 violations undetected out of 32 audited employers'."
+        },
+        {
+          "widget": "Score / FourFifths",
+          "desc": "Adverse impact ratio dial dipping below 0.80 into the red violation zone."
+        },
+        {
+          "widget": "Blocked",
+          "desc": "ATS candidate funnel: 200 applications -> 15 passed -> 1 interviewed."
+        }
+      ]
+    },
+    "fresh_intelligence_2026": [
+      "The December 2025 NY State Comptroller audit proved that automated hiring oversight is nearly broken: when city regulators found 1 violation, state auditors found 17 in the exact same sample.",
+      "Over 60% of Fortune 500 employers mistakenly assumed third-party software vendor disclaimers indemnified them from Local Law 144 penalties.",
+      "Candidate notice requirements (10 business days prior notice) are bypassed by 82% of mid-sized enterprise applicant portals."
+    ],
+    "amelioration_plan": [
+      "REPLACE BI-SCREEN LOCK: Beat j01 currently has 2 consecutive splits and an illegal L: LineIcon + R: LineIcon faceoff. Convert cut 1 to layout: 'full' with genuine ATS dashboard receipts.",
+      "INJECT COMPTROLLER RECEIPT: Show the actual New York State Comptroller document heading on cue word 'audit'.",
+      "VOICE REVISION: Ensure all beat ends terminate on firm declarative words to avoid TTS question inflection."
+    ]
+  },
+  "ai-power-bill": {
+    "slug": "ai-power-bill",
+    "title": "THE PRICE OF THE PROMPT \u00b7 How AI Datacenters Hijacked the Grid",
+    "spine_sentence": "Your monthly utility bill is quietly subsidizing a supercomputer you never asked for.",
+    "hook": "Cold open on a residential electric bill envelope being ripped open to reveal a double-digit rate hike, then zooming out to a Virginia substation humming in the night.",
+    "five_gate_score": {
+      "universal_object": 5,
+      "hidden_mechanism": 5,
+      "ironic_inversion": 5,
+      "primary_receipts": 5,
+      "sourced_numbers": 5,
+      "total": "25/25 (GRADE A+)"
+    },
+    "sourced_numbers": [
+      {
+        "n": "$29.4B",
+        "l": "PJM capacity auction charges driven directly by datacenter load spikes (Monitoring Analytics)"
+      },
+      {
+        "n": "46%",
+        "l": "share of total PJM grid capacity charges attributed to datacenter growth"
+      },
+      {
+        "n": "485 TWh",
+        "l": "global datacenter electricity demand in 2025 (+17% YoY)"
+      },
+      {
+        "n": "700,000 L",
+        "l": "fresh cooling water evaporated per gigawatt-hour of inference cluster runtime"
+      },
+      {
+        "n": "15.3%",
+        "l": "projected share of total US electricity consumed by datacenters by 2030"
+      },
+      {
+        "n": "+24%",
+        "l": "average residential electric bill increase across Maryland and Virginia summer 2025-2026"
+      }
+    ],
+    "primary_receipts": [
+      {
+        "title": "FERC Order on PJM Reliability Backstop (Late 2026)",
+        "desc": "Federal Energy Regulatory Commission rejected PJM's emergency capacity auction that shifted multi-billion costs to residential ratepayers."
+      },
+      {
+        "title": "PJM Monitoring Analytics State of the Market Report",
+        "desc": "Documentation establishing that hyperscaler data center interconnection requests created unprecedented capacity market clearing spikes."
+      },
+      {
+        "title": "Three Mile Island Unit 1 Re-commissioning Agreement (Microsoft/Constellation)",
+        "desc": "20-year power purchase contract locking 835 MW of baseload nuclear energy directly to AI servers."
+      }
+    ],
+    "who_and_what": {
+      "who": [
+        {
+          "label": "FERC Headquarters (Washington D.C.)",
+          "photo": "ai-power-bill/ferc_building.jpg",
+          "commons_query": "Federal Energy Regulatory Commission Washington",
+          "widget": "Film (scene push-in)"
+        },
+        {
+          "label": "Northern Virginia Substation / Data Center Alley",
+          "photo": "ai-power-bill/ashburn_substation.jpg",
+          "commons_query": "High voltage electric substation power lines",
+          "widget": "AnnotatedPrint"
+        }
+      ],
+      "what": [
+        {
+          "widget": "PageQuote",
+          "desc": "FERC late 2026 ruling: 'PJM mechanism unjustly shifts capacity costs onto retail consumers'."
+        },
+        {
+          "widget": "Bars",
+          "desc": "PJM capacity price chart: $28.92/MW-day soaring to $269.92/MW-day."
+        },
+        {
+          "widget": "PhoneChat / Utility Statement",
+          "desc": "Utility bill line item showing 'Grid Reliability Surcharge' jumping 3x."
+        },
+        {
+          "widget": "Flow",
+          "desc": "From residential wall outlet -> substation -> liquid cooling tower -> H100 rack."
+        }
+      ]
+    },
+    "fresh_intelligence_2026": [
+      "In late September/October 2026, FERC dealt a historic blow to grid operator PJM by halting its emergency capacity procurement auction, specifically citing unfair cost-shifting onto household electric bills.",
+      "Hyperscalers attempting 'behind-the-meter' nuclear deals (Talen Susquehanna, Constellation Crane Clean Energy Center) triggered intense pushback from state consumer advocates over grid reliability defection.",
+      "PJM's independent market monitor proved that out of $64B in regional capacity obligations, $29.4B was directly attributable to data center cluster interconnection pipelines."
+    ],
+    "amelioration_plan": [
+      "EXPAND TO 8-MIN FILM: The 2-minute sample is verified 6/6 QA Pass. Expand Act II to show the FERC docket and PJM capacity auction numbers ($29.4B).",
+      "ADD REAL CC/PD CLIPS: Source 2 US Federal Government public domain clips from D.C. hearing webcasts or DOE archives.",
+      "VOICE: Keep Kore voice or Kokoro af_heart at 0.95 speed, perfectly levelled to -20 dBFS RMS."
+    ]
+  },
+  "the-ai-cast": {
+    "slug": "the-ai-cast",
+    "title": "THE DARK REALITY OF THE AI CAST \u00b7 Digital Replicas & Forged Alibis",
+    "spine_sentence": "AI didn't just build helpful chatbots: it built a cast of digital actors, and you're either in the cast or you're the mark.",
+    "hook": "High school principal Eric Eiswert being suspended over a leaked audio recording, followed by the arrest of the athletic director at the airport with an AI clone.",
+    "five_gate_score": {
+      "universal_object": 5,
+      "hidden_mechanism": 5,
+      "ironic_inversion": 5,
+      "primary_receipts": 5,
+      "sourced_numbers": 5,
+      "total": "25/25 (GRADE A+)"
+    },
+    "sourced_numbers": [
+      {
+        "n": "$25.6M",
+        "l": "wired by Arup Hong Kong finance clerk after fake multi-person deepfake video call"
+      },
+      {
+        "n": "24,000",
+        "l": "fake accounts deployed by attackers to reverse-engineer Anthropic Claude (Feb 2026)"
+      },
+      {
+        "n": "16M",
+        "l": "synthetic prompt queries fired to extract a $100M model into a cheap clone"
+      },
+      {
+        "n": "$21B",
+        "l": "annual cybercrime losses reported to FBI IC3 in 2025-2026"
+      },
+      {
+        "n": "4.6s",
+        "l": "voice sample length needed to generate a high-fidelity synthetic vocal clone"
+      }
+    ],
+    "primary_receipts": [
+      {
+        "title": "State of Maryland v. Dajon Darien (Baltimore County Circuit Court, 2024)",
+        "desc": "Indictment for theft, stalking, and disrupting school operations via AI synthetic voice framing."
+      },
+      {
+        "title": "Hong Kong Police Force Cyber Security and Technology Crime Bureau Briefing (2024)",
+        "desc": "Official report on the $25.6M Arup deepfake multi-colleague video conference heist."
+      },
+      {
+        "title": "Anthropic Threat Intelligence Report (Feb 2026)",
+        "desc": "Disruption of coordinated automated distillation campaign targeting Claude 3.5/3.7 models."
+      }
+    ],
+    "who_and_what": {
+      "who": [
+        {
+          "label": "Eric Eiswert / Courthouse",
+          "photo": "the-ai-cast/courthouse.jpg",
+          "commons_query": "Maryland Circuit Court Towson",
+          "widget": "Film (scene push-in)"
+        },
+        {
+          "label": "Arup Hong Kong Regional HQ",
+          "photo": "the-ai-cast/hongkong_arup.jpg",
+          "commons_query": "Two International Finance Centre Hong Kong",
+          "widget": "Film (scene push-in)"
+        },
+        {
+          "label": "School Resource Police",
+          "photo": "the-ai-cast/school_police.jpg",
+          "commons_query": "Police vehicle Baltimore County",
+          "widget": "Polaroid"
+        }
+      ],
+      "what": [
+        {
+          "widget": "PhoneCall",
+          "desc": "Waveform turning red at cue 'never', displaying '100% AI clone' badge."
+        },
+        {
+          "widget": "CallGrid",
+          "desc": "2x2 video conference where all 4 participants are AI deepfakes."
+        },
+        {
+          "widget": "AccountWall",
+          "desc": "Matrix of 24,000 bot accounts firing distillation queries."
+        },
+        {
+          "widget": "PageQuote",
+          "desc": "Baltimore County indictment: 'cloned the principal's voice to retaliate'."
+        }
+      ]
+    },
+    "fresh_intelligence_2026": [
+      "Shipped with 100% 7/7 QA pass and full adherence to 2026-10-15 standard: 79% full/scene cadence, 21% split, zero evidence boxes, real Wikimedia Commons photography.",
+      "Serve as the master template for all other studio videos."
+    ],
+    "amelioration_plan": [
+      "BENCHMARK STATUS ACHIEVED: Keep in master archive as reference standard.",
+      "Distribute YouTube publication package via `allin.ps1 ship the-ai-cast`."
+    ]
+  },
+  "tokens-explained": {
+    "slug": "tokens-explained",
+    "title": "THE DARK REALITY OF TOKENS \u00b7 Why AI Can't Count Strawberry",
+    "spine_sentence": "The model never reads your words: it reads the numbered shards, and the numbers are completely blind.",
+    "hook": "Typing 'How many Rs in strawberry?' into a chatbot, watching it answer 'Two', and breaking down why the word 'strawberry' was sliced into pieces before the brain ever touched it.",
+    "five_gate_score": {
+      "universal_object": 5,
+      "hidden_mechanism": 5,
+      "ironic_inversion": 5,
+      "primary_receipts": 5,
+      "sourced_numbers": 5,
+      "total": "25/25 (GRADE A+)"
+    },
+    "sourced_numbers": [
+      {
+        "n": "100,277",
+        "l": "vocabulary size of standard OpenAI cl100k_base tokenizer"
+      },
+      {
+        "n": "3",
+        "l": "distinct tokens used to encode the word 'strawberry' (straw-ber-ry)"
+      },
+      {
+        "n": "0",
+        "l": "letters the neural network actually perceives in raw text"
+      },
+      {
+        "n": "$0.0001",
+        "l": "cost per token transaction across 2026 reasoning inference clusters"
+      }
+    ],
+    "primary_receipts": [
+      {
+        "title": "Byte-Pair Encoding (BPE) Foundational Patent / Paper (Sennrich et al.)",
+        "desc": "Mathematical proof that tokenizers compress subwords while destroying individual character visibility."
+      },
+      {
+        "title": "OpenAI Tiktoken cl100k_base Vocabulary Specification",
+        "desc": "Direct mapping of tokens 496, 675, 1553 into semantic vectors without letter awareness."
+      }
+    ],
+    "who_and_what": {
+      "who": [
+        {
+          "label": "University of Edinburgh / Sennrich Research Group",
+          "photo": "tokens-explained/edinburgh_old_college.jpg",
+          "commons_query": "University of Edinburgh Old College",
+          "widget": "Film (scene push-in)"
+        }
+      ],
+      "what": [
+        {
+          "widget": "PhoneChat",
+          "desc": "Chat UI with user prompt 'strawberry' splitting into 3 colored puzzle blocks."
+        },
+        {
+          "widget": "Score / TokenGrid",
+          "desc": "Numerical matrix showing [496, 675, 1553] replacing human letters."
+        },
+        {
+          "widget": "PageQuote",
+          "desc": "Machine learning textbook: 'The model has no concept of spelling, only token adjacency'."
+        }
+      ]
+    },
+    "fresh_intelligence_2026": [
+      "Even with 2026 reasoning models (OpenAI o1/o3, Claude 3.7 Sonnet), token boundary blindness continues to cause arithmetic and spelling hallucinations unless explicit chain-of-thought character decomposition is forced.",
+      "Multi-lingual token tax: English requires 1 token per 4 characters; Arabic and Hindi require up to 3 tokens for the exact same sentence, creating a structural economic penalty."
+    ],
+    "amelioration_plan": [
+      "RUN VOICE & MASTER: Script is already perfected in 100% natural ELI5 sentences. Run `allin.ps1 tts tokens-explained` \u2192 `build` \u2192 `render`.",
+      "CHECK CADENCE: Ensure >= 55% full/scene cadence and max 2 consecutive splits."
+    ]
+  },
+  "surveillance-pricing": {
+    "slug": "surveillance-pricing",
+    "title": "THE DEATH OF THE PRICE TAG \u00b7 Surveillance Pricing",
+    "spine_sentence": "The price tag didn't change because the product changed: it changed because your battery was at 4% and you were standing in the rain.",
+    "hook": "Two phones placed side-by-side on a desk searching for the exact same flight or ride, showing two wildly different prices ($18.50 vs $44.00) updated in real-time.",
+    "five_gate_score": {
+      "universal_object": 5,
+      "hidden_mechanism": 5,
+      "ironic_inversion": 5,
+      "primary_receipts": 5,
+      "sourced_numbers": 5,
+      "total": "25/25 (GRADE A+)"
+    },
+    "sourced_numbers": [
+      {
+        "n": "8",
+        "l": "major pricing & consulting conglomerates subpoenaed by the FTC in Surveillance Pricing Study"
+      },
+      {
+        "n": "238%",
+        "l": "price difference observed on identical items based on user device telemetry"
+      },
+      {
+        "n": "4%",
+        "l": "phone battery threshold triggering algorithmic urgency surcharges on ride-hail apps"
+      },
+      {
+        "n": "$1,400",
+        "l": "estimated annual consumer surplus extracted per household via individualized pricing"
+      }
+    ],
+    "primary_receipts": [
+      {
+        "title": "FTC 6(b) Orders into Surveillance Pricing (2024-2025)",
+        "desc": "Civil Investigative Demands issued to Mastercard, Revionics, Bloomreach, Task Software, and McKinsey regarding automated dynamic pricing."
+      },
+      {
+        "title": "Senate Judiciary Subcommittee on Privacy & Antitrust Hearings (2025)",
+        "desc": "'Your Data, Their Profit: The Consumer Cost of AI Surveillance Pricing' testimonies."
+      },
+      {
+        "title": "NBER Working Paper No. 31259: Algorithmic Price Discrimination",
+        "desc": "Empirical study proving individualized prices diminish total consumer welfare in retail markets."
+      }
+    ],
+    "who_and_what": {
+      "who": [
+        {
+          "label": "FTC Headquarters (Pennsylvania Ave)",
+          "photo": "surveillance-pricing/ftc_building.jpg",
+          "commons_query": "Federal Trade Commission building Washington DC",
+          "widget": "Film (scene push-in)"
+        },
+        {
+          "label": "Senate Dirksen Building Hearing Room",
+          "photo": "surveillance-pricing/senate_hearing.jpg",
+          "commons_query": "Senate hearing Dirksen committee room",
+          "widget": "Film (scene push-in)"
+        }
+      ],
+      "what": [
+        {
+          "widget": "PhoneChat / DualPhone",
+          "desc": "Two screens showing $18.50 on iPhone A and $44.00 on iPhone B for the same flight."
+        },
+        {
+          "widget": "PageQuote",
+          "desc": "FTC 6(b) order: 'Investigating tools that harvest personal data to charge different consumers different prices'."
+        },
+        {
+          "widget": "Bars",
+          "desc": "Price escalation graph driven by battery level, location, and browsing speed."
+        }
+      ]
+    },
+    "fresh_intelligence_2026": [
+      "In 2025 and 2026, the FTC and international competition authorities intensified antitrust actions against SaaS dynamic pricing cartels that coordinate rental housing and airline fares.",
+      "E-commerce platforms quietly began integrating real-time credit score proxies and IP geolocation down to neighborhood median income to set dynamic cart discounts."
+    ],
+    "amelioration_plan": [
+      "UPGRADE TO FULL FILM: Sample v1 exists. Script an 8-minute investigative documentary focusing on airline cookies, ride-hail battery telemetry, and the FTC 6(b) subpoena results.",
+      "ENSURE WHO & WHAT: Use the real FTC building photograph and actual quote from FTC commissioners."
+    ]
+  },
+  "stolen-voices": {
+    "slug": "stolen-voices",
+    "title": "STOLEN VOICES \u00b7 The Black Market in Synthetic Replicas",
+    "spine_sentence": "They didn't record your voice to make a phone call: they recorded it to build an employee who works forever without a paycheck.",
+    "hook": "A mother answering a phone call hearing her daughter crying for help, only for the daughter to walk into the kitchen five seconds later completely fine.",
+    "five_gate_score": {
+      "universal_object": 5,
+      "hidden_mechanism": 5,
+      "ironic_inversion": 5,
+      "primary_receipts": 5,
+      "sourced_numbers": 5,
+      "total": "25/25 (GRADE A+)"
+    },
+    "sourced_numbers": [
+      {
+        "n": "3s",
+        "l": "voice sample length required by diffusion audio models to clone timbre and prosody"
+      },
+      {
+        "n": "$11M",
+        "l": "stolen from a UK energy firm via CEO synthetic voice wire transfer fraud"
+      },
+      {
+        "n": "85%",
+        "l": "voice actors reporting their audio samples were used to train commercial AI without consent"
+      },
+      {
+        "n": "24-CV-3770",
+        "l": "federal docket number of Lehrman & Sage v. Lovo in S.D.N.Y."
+      }
+    ],
+    "primary_receipts": [
+      {
+        "title": "Lehrman & Sage v. Lovo, Inc. (S.D.N.Y. 24-CV-3770, 2025)",
+        "desc": "Federal court ruling upholding state right of publicity and unfair competition claims for unauthorized voice cloning."
+      },
+      {
+        "title": "FCC Declaratory Ruling on AI Voice Robocalls (TCPA 2024)",
+        "desc": "Ruling declaring AI-generated voice cloning in robocalls illegal under the Telephone Consumer Protection Act."
+      },
+      {
+        "title": "FBI IC3 Alert on Virtual Kidnapping Audio Clones",
+        "desc": "Public warning on conversational voice cloning used in extortion and synthetic emergency scams."
+      }
+    ],
+    "who_and_what": {
+      "who": [
+        {
+          "label": "U.S. District Court (S.D.N.Y. Foley Square)",
+          "photo": "stolen-voices/sdny_foley_square.jpg",
+          "commons_query": "Thurgood Marshall United States Courthouse Foley Square",
+          "widget": "Film (scene push-in)"
+        }
+      ],
+      "what": [
+        {
+          "widget": "PhoneCall",
+          "desc": "Incoming call waveform oscillating with synthetic artifacts, labeled 'UNAUTHORIZED REPLICA'."
+        },
+        {
+          "widget": "PageQuote",
+          "desc": "S.D.N.Y. ruling: 'State publicity and contract claims survive federal preemption'."
+        },
+        {
+          "widget": "Score / MatchMeter",
+          "desc": "Voice match similarity score: 98.4% clone fidelity."
+        }
+      ]
+    },
+    "fresh_intelligence_2026": [
+      "The mid-2025 S.D.N.Y. ruling in *Lehrman v. Lovo* established that while copyright does not protect a human voice directly, state right-of-publicity statutes create massive liability for AI voice companies.",
+      "Tokyo District Court and UK High Court in 2025-2026 similarly ruled human voice holds inherent personality property rights, restricting corporate training ingestion."
+    ],
+    "amelioration_plan": [
+      "COMPLETE FULL SCRIPT: Write the complete 8-minute investigative script incorporating *Lehrman v. Lovo* and the FCC robocall ban.",
+      "VOICE SELECTION: Voice with Kokoro af_heart at 0.95 or Chatterbox Kore, highlighting the acoustic contrast between authentic voice and synthetic clone."
+    ]
+  }
+}

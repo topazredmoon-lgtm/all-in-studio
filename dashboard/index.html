@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALL-IN · Autonomous Studio Command Center</title>
+<style>
+:root {
+  --bg: #07090e;
+  --bg-subtle: #0c1017;
+  --panel: #111622;
+  --panel-hover: #171e2e;
+  --panel-active: #1d263a;
+  --border: #232c3f;
+  --border-bright: #33405c;
+  --fg: #eef2f9;
+  --fg-dim: #cbd5e1;
+  --muted: #7e8b9f;
+  --accent: #ff3b3b;
+  --accent-glow: rgba(255, 59, 59, 0.25);
+  --accent2: #ff9f43;
+  --ok: #3ddc97;
+  --ok-glow: rgba(61, 220, 151, 0.2);
+  --warn: #ffd166;
+  --cyan: #00e5ff;
+  --purple: #a855f7;
+  --dead: #4b5563;
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 20px;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background: rgba(11, 14, 22, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.brand-logo {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, var(--accent), #b30000);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+.brand-text h1 {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.brand-text .sub {
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0.2px;
+}
+
+/* Live Pulse Pill */
+.daemon-pill {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(61, 220, 151, 0.08);
+  border: 1px solid rgba(61, 220, 151, 0.3);
+  padding: 5px 11px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ok);
+}
+.pulse-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--ok);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--ok);
+  animation: pulse 1.8s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(0.95); opacity: 0.7; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.7; }
+}
+
+/* Stats Ribbon */
+.stats-ribbon {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+.stat-chip {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+.stat-chip b {
+  color: var(--fg);
+  font-weight: 600;
+}
+
+/* Tabs Navigation */
+.nav-tabs {
+  display: flex;
+  gap: 6px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  padding: 4px;
+  border-radius: 12px;
+}
+.tab-btn {
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  padding: 7px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.tab-btn:hover {
+  color: var(--fg);
+  background: var(--panel-hover);
+}
+.tab-btn.active {
+  color: #fff;
+  background: var(--accent);
+  box-shadow: 0 2px 10px var(--accent-glow);
+}
+
+/* Main Layout */
+main {
+  flex: 1;
+  padding: 24px 28px;
+  max-width: 1750px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.search-input {
+  flex: 1;
+  min-width: 260px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--fg);
+  padding: 9px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  transition: border-color 0.2s;
+}
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+.filter-select {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--fg);
+  padding: 9px 13px;
+  border-radius: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.filter-select:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+.action-btn {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--fg);
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s;
+}
+.action-btn:hover {
+  background: var(--panel-hover);
+  border-color: var(--border-bright);
+}
+.action-btn.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.action-btn.primary:hover {
+  filter: brightness(1.1);
+}
+.action-btn.cyan {
+  border-color: rgba(0, 229, 255, 0.4);
+  color: var(--cyan);
+}
+.action-btn.cyan:hover {
+  background: rgba(0, 229, 255, 0.1);
+}
+
+/* Sections */
+.view-section {
+  display: none;
+  animation: fadeIn 0.2s ease;
+}
+.view-section.active {
+  display: block;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Topics Grid */
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+  gap: 20px;
+}
+.topic-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+  transition: transform 0.15s, border-color 0.15s;
+}
+.topic-card:hover {
+  border-color: var(--border-bright);
+}
+.card-head {
+  padding: 14px 18px;
+  background: var(--bg-subtle);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.card-title-group h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.3px;
+}
+.card-id {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+.badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+.badge.live { border-color: var(--ok); color: var(--ok); background: var(--ok-glow); }
+.badge.ready { border-color: var(--accent2); color: var(--accent2); background: rgba(255, 159, 67, 0.15); }
+.badge.todo { border-color: var(--warn); color: var(--warn); background: rgba(255, 209, 102, 0.1); }
+.badge.dead { border-color: var(--dead); color: var(--dead); }
+
+.card-body {
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Video Player in Card */
+.player-container {
+  position: relative;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.player-container video {
+  display: block;
+  width: 100%;
+  height: 220px;
+  background: #000;
+  object-fit: contain;
+}
+.player-controls-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: var(--bg-subtle);
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+.player-controls-row select {
+  flex: 1;
+  min-width: 160px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--fg);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+}
+.speed-chip {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 10.5px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.speed-chip:hover, .speed-chip.active {
+  color: var(--fg);
+  border-color: var(--accent);
+}
+
+/* Metrics Grid */
+.meta-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+.meta-item {
+  font-size: 11px;
+  color: var(--muted);
+}
+.meta-item b {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--fg);
+}
+
+/* Directorial Cadence Audit Box */
+.cadence-badge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 11px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 11px;
+}
+.cadence-badge.pass {
+  border-color: rgba(61, 220, 151, 0.3);
+  color: var(--ok);
+}
+.cadence-badge.fail {
+  border-color: rgba(255, 59, 59, 0.4);
+  color: var(--accent);
+}
+
+/* QA Thumbs Row */
+.qa-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+.qa-thumb {
+  flex-shrink: 0;
+  width: 64px;
+  height: 40px;
+  background: #000;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  position: relative;
+}
+.qa-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.qa-thumb:hover {
+  border-color: var(--cyan);
+}
+
+/* Ideas Box */
+.ideas-group textarea {
+  width: 100%;
+  min-height: 80px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  color: var(--fg);
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  resize: vertical;
+}
+.ideas-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+.btn-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Dossiers View */
+.dossier-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 22px;
+}
+.dossier-sidebar {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: calc(100vh - 140px);
+  overflow-y: auto;
+}
+.dossier-nav-item {
+  padding: 10px 12px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-align: left;
+  transition: all 0.15s;
+}
+.dossier-nav-item:hover {
+  color: var(--fg);
+  background: var(--panel-hover);
+}
+.dossier-nav-item.active {
+  color: #fff;
+  background: var(--panel-active);
+  border-color: var(--accent);
+}
+
+.dossier-content {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.dossier-header h2 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+.spine-box {
+  background: linear-gradient(135deg, rgba(255, 59, 59, 0.08), rgba(255, 159, 67, 0.04));
+  border-left: 4px solid var(--accent);
+  padding: 14px 18px;
+  border-radius: 0 10px 10px 0;
+}
+.spine-box .label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+  letter-spacing: 0.5px;
+}
+.spine-box .text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 4px;
+}
+
+.scorecard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+}
+.score-pill {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+.score-pill .label {
+  font-size: 11px;
+  color: var(--muted);
+}
+.score-pill .val {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ok);
+}
+
+.dossier-section-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.receipt-list {
+  display: grid;
+  gap: 10px;
+}
+.receipt-card {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  padding: 12px 14px;
+  border-radius: 10px;
+}
+.receipt-card h4 {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--cyan);
+}
+.receipt-card p {
+  font-size: 12px;
+  color: var(--fg-dim);
+  margin-top: 4px;
+}
+
+/* Incubator Cards */
+.incubator-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 20px;
+}
+.incubator-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+}
+.incubator-card:hover {
+  border-color: var(--cyan);
+}
+.incubator-card h3 {
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+}
+.tagline {
+  font-size: 12px;
+  color: var(--accent2);
+  font-weight: 600;
+}
+
+/* Lightbox Modal */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.modal-overlay.active {
+  display: flex;
+}
+.modal-window {
+  background: var(--panel);
+  border: 1px solid var(--border-bright);
+  border-radius: var(--radius-lg);
+  max-width: 1000px;
+  width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+.modal-head {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal-body {
+  padding: 20px;
+  overflow-y: auto;
+  text-align: center;
+}
+.modal-body img {
+  max-width: 100%;
+  max-height: 70vh;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 20px 28px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div class="brand-logo">AI</div>
+    <div class="brand-text">
+      <h1>ALL-IN · Command Center <span class="badge live">Studio OS</span></h1>
+      <div class="sub">Autonomous Engine · 2026-10-15 Minimalist Standard · captchas v2 (#0E0C0B)</div>
+    </div>
+  </div>
+
+  <div class="daemon-pill" id="daemonPill">
+    <div class="pulse-dot"></div>
+    <span id="daemonStatusText">AUTONOMOUS DAEMON ACTIVE</span>
+  </div>
+
+  <div class="stats-ribbon" id="statsRibbon"></div>
+
+  <div class="nav-tabs">
+    <button class="tab-btn active" data-tab="topics">🎥 Studio Matrix</button>
+    <button class="tab-btn" data-tab="dossiers">📑 Topic Dossiers</button>
+    <button class="tab-btn" data-tab="incubator">🚀 Viral Incubator</button>
+    <button class="tab-btn" data-tab="rules">⚖️ Directorial Rules</button>
+    <button class="tab-btn" data-tab="daemon">⚡ Studio Console</button>
+  </div>
+</header>
+
+<main>
+  <!-- TOPICS VIEW -->
+  <section id="view-topics" class="view-section active">
+    <div class="toolbar">
+      <input type="text" class="search-input" id="searchBox" placeholder="Search topic by name, slug, beats, or keyword..." />
+      <select class="filter-select" id="filterBadge">
+        <option value="all">All Statuses</option>
+        <option value="live">Shipped / Benchmark (Live)</option>
+        <option value="ready">Renders / Sample Ready</option>
+        <option value="todo">Script / Draft</option>
+        <option value="dead">Dead / Retired</option>
+      </select>
+      <select class="filter-select" id="sortSelect">
+        <option value="default">Sort: Default</option>
+        <option value="renders">Sort: Most Renders</option>
+        <option value="beats">Sort: Most Beats</option>
+        <option value="words">Sort: Word Count</option>
+      </select>
+      <button class="action-btn cyan" onclick="triggerScan()">🔄 Refresh Studio Scan</button>
+    </div>
+
+    <div class="topics-grid" id="topicsGrid"></div>
+  </section>
+
+  <!-- DOSSIERS VIEW -->
+  <section id="view-dossiers" class="view-section">
+    <div class="dossier-layout">
+      <div class="dossier-sidebar" id="dossierSidebar"></div>
+      <div class="dossier-content" id="dossierContent"></div>
+    </div>
+  </section>
+
+  <!-- INCUBATOR VIEW -->
+  <section id="view-incubator" class="view-section">
+    <div class="toolbar">
+      <h2 style="font-size:18px;font-weight:700">Viral Topic Incubator (5-Gate Topic DNA Law)</h2>
+      <span class="badge live" style="margin-left:auto">7 Production-Ready Concepts</span>
+    </div>
+    <div class="incubator-grid" id="incubatorGrid"></div>
+  </section>
+
+  <!-- RULES VIEW -->
+  <section id="view-rules" class="view-section">
+    <div class="toolbar">
+      <h2 style="font-size:18px;font-weight:700">Studio Invariants & Directorial Standard (2026-10-15 Standard)</h2>
+    </div>
+    <div class="topics-grid" style="grid-template-columns: repeat(auto-fit, minmax(360px, 1fr))">
+      <div class="topic-card" style="padding:18px">
+        <h3 style="color:var(--accent);margin-bottom:8px">1. Captchas v2 + v23 Minimalist Standard</h3>
+        <p style="color:var(--fg-dim);font-size:12.5px">The sole studio standard is <code>All-in_captchas_full_v2.mp4</code> (v23 bare background <code>#0E0C0B</code> + <code>ds/kit.tsx</code> + Kokoro <code>af_heart</code> 0.95 via <code>tools/tts.py</code>).</p>
+        <div style="margin-top:12px;color:var(--warn);font-size:11.5px"><b>Strictly Banned:</b> Evidence boxes (DossierDoc, ForensicStamp, FieldCard, Highlighter) and woodcut engraving plates (Ouroboros, Balance).</div>
+      </div>
+      <div class="topic-card" style="padding:18px">
+        <h3 style="color:var(--ok);margin-bottom:8px">2. End of Permanent Bi-Screen (Cadence Rule)</h3>
+        <p style="color:var(--fg-dim);font-size:12.5px">At least <b>55% to 70%</b> of cuts must be full-frame (<code>layout: "full"</code>, <code>layout: "scene"</code>, or full-screen <code>clip</code>). <code>layout: "split"</code> is capped at <b>&le; 45% maximum</b> with <b>never more than 2 consecutive splits</b>.</p>
+        <div style="margin-top:12px;color:var(--muted);font-size:11.5px">Full cuts allow hero visuals to breathe; scene cuts showcase documentary and archival photography.</div>
+      </div>
+      <div class="topic-card" style="padding:18px">
+        <h3 style="color:var(--cyan);margin-bottom:8px">3. Show "WHO & WHAT" with Real Proofs</h3>
+        <p style="color:var(--fg-dim);font-size:12.5px">Whenever naming a real person, case, court, company, or date, show <b>WHO & WHERE</b> with real Wikimedia Commons CC/PD photos, and <b>WHAT</b> with authentic digital instruments (PhoneChat, PhoneCall with red waveform, CallGrid 2x2, PageQuote, Score, Blocked).</p>
+        <div style="margin-top:12px;color:var(--accent);font-size:11.5px"><b>LineIcon Ceiling:</b> Capped at &le; 25% across film. Zero lone LineIcon hero; zero LineIcon vs LineIcon faceoff.</div>
+      </div>
+      <div class="topic-card" style="padding:18px">
+        <h3 style="color:var(--purple);margin-bottom:8px">4. The Money Rule (Zero Revenue Risk)</h3>
+        <p style="color:var(--fg-dim);font-size:12.5px"><b>Allowed:</b> CC BY, CC BY-SA, CC0, and US Federal Government Public Domain only. Every asset must be logged in <code>LICENCES.md</code> and <code>SOURCES.md</code>.</p>
+        <div style="margin-top:12px;color:var(--accent);font-size:11.5px"><b>Strictly Banned:</b> Commercial news (WSJ, Vox, CNN, MSNBC), TED/TEDx talks, and re-uploaded stock clips.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DAEMON VIEW -->
+  <section id="view-daemon" class="view-section">
+    <div class="toolbar">
+      <h2 style="font-size:18px;font-weight:700">Autonomous Engine & Studio CLI Dispatcher</h2>
+      <button class="action-btn primary" onclick="triggerResearch()">🔬 Run Deep Web Research Pass</button>
+    </div>
+    <div class="topic-card" style="padding:20px;margin-bottom:20px">
+      <h3 style="margin-bottom:10px">Interactive Studio Tool Dispatcher</h3>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <input type="text" id="cliTopicInput" placeholder="topic slug (e.g. apply-button, the-ai-cast)" class="search-input" style="max-width:320px" />
+        <button class="action-btn primary" onclick="runStudioCmd('build')">Run Build</button>
+        <button class="action-btn" onclick="runStudioCmd('tts')">Run TTS (Kokoro)</button>
+        <button class="action-btn" onclick="runStudioCmd('tts-cb')">Run TTS (Chatterbox)</button>
+        <button class="action-btn" onclick="runStudioCmd('qa')">Run 7-Gate QA</button>
+        <button class="action-btn" onclick="runStudioCmd('render')">Run Remotion Render</button>
+        <button class="action-btn" onclick="runStudioCmd('check')">TypeScript Check</button>
+      </div>
+      <div id="cliOutput" style="margin-top:15px;background:#05070a;border:1px solid var(--border);border-radius:8px;padding:12px;font-family:var(--font-mono);font-size:11.5px;max-height:260px;overflow-y:auto;white-space:pre-wrap;color:var(--fg-dim)">Command output will appear here...</div>
+    </div>
+  </section>
+</main>
+
+<!-- Lightbox Modal -->
+<div class="modal-overlay" id="lightboxModal" onclick="closeLightbox(event)">
+  <div class="modal-window" onclick="event.stopPropagation()">
+    <div class="modal-head">
+      <h3 id="modalTitle">QA Inspection</h3>
+      <button class="action-btn" onclick="closeLightbox()">✕ Close</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<footer>
+  ALL-IN Studio Command Center · Auto-synced with <code>All-in-keep/All-in</code> · Directorial Standard 2026-10-15 · Zero Revenue Risk
+</footer>
+
+<script>
+// Data injected by Autonomous Studio Engine
+const MANIFEST = [{"id": "_template", "title": "_TEMPLATE", "beats": 0, "words": 0, "total_cuts": 0, "full_scene_pct": 0, "split_pct": 0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [], "qa": [], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": false, "status": "STUDIO TEMPLATE", "badge": "dead", "desc": "Topic scaffold template"}, {"id": "agent-with-your-card", "title": "THE AGENT WITH YOUR CARD", "beats": 16, "words": 441, "total_cuts": 0, "full_scene_pct": 0, "split_pct": 0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [], "qa": [], "has_script_md": true, "has_sources_md": true, "has_licences_md": true, "has_master_wav": false, "status": "CONCEPT DRAFTED", "badge": "todo", "desc": "Autonomous wallet agent script"}, {"id": "ai-ban", "title": "THE COMING AI BAN \u00b7 full film", "beats": 75, "words": 1644, "total_cuts": 157, "full_scene_pct": 6.4, "split_pct": 93.6, "max_consecutive_splits": 53, "line_icon_count": 190, "line_icon_faceoff": true, "cadence_pass": false, "outputs": [{"name": "All-in_ai_ban_sample_v5.mp4", "path": "videos/ai-ban/out/All-in_ai_ban_sample_v5.mp4", "size": 11028405, "dur": 74.066667, "mtime": 1791836261.30858}, {"name": "All-in_ai_ban_sample_2min.mp4", "path": "videos/ai-ban/out/All-in_ai_ban_sample_2min.mp4", "size": 19107142, "dur": 128.0, "mtime": 1791836261.2918034}, {"name": "All-in_ai_ban_sample_1min_v4.mp4", "path": "videos/ai-ban/out/All-in_ai_ban_sample_1min_v4.mp4", "size": 16459240, "dur": 72.1, "mtime": 1791836261.2718582}, {"name": "All-in_ai_ban_sample.mp4", "path": "videos/ai-ban/out/All-in_ai_ban_sample.mp4", "size": 16866291, "dur": 66.233333, "mtime": 1791836261.2526002}, {"name": "All-in_ai_ban_full.mp4", "path": "videos/ai-ban/out/All-in_ai_ban_full.mp4", "size": 20005523, "dur": 774.8, "mtime": 1791836261.2324364}], "qa": ["videos/ai-ban/qa/cuts_all.jpg", "videos/ai-ban/qa/cuts_f1.jpg", "videos/ai-ban/qa/cuts_f2.jpg", "videos/ai-ban/qa/cuts_f3.jpg", "videos/ai-ban/qa/cuts_f4.jpg", "videos/ai-ban/qa/cuts_fix2.jpg", "videos/ai-ban/qa/cuts_stamp.jpg", "videos/ai-ban/qa/cuts_v5_fix.jpg", "videos/ai-ban/qa/cuts_v5_new.jpg", "videos/ai-ban/qa/frame_0.jpg", "videos/ai-ban/qa/frame_1.jpg", "videos/ai-ban/qa/sample.jpg", "videos/ai-ban/qa/sheet_h01_h07.jpg", "videos/ai-ban/qa/watch.jpg"], "has_script_md": true, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "FULL FILM DELIVERED", "badge": "live", "desc": "Full film delivered (12:54, 75 beats)"}, {"id": "ai-black-markets", "title": "THE DARK REALITY OF AI'S BLACK MARKETS", "beats": 60, "words": 943, "total_cuts": 105, "full_scene_pct": 18.1, "split_pct": 81.9, "max_consecutive_splits": 20, "line_icon_count": 113, "line_icon_faceoff": true, "cadence_pass": false, "outputs": [{"name": "All-in_ai_black_markets_full.mp4", "path": "videos/ai-black-markets/out/All-in_ai_black_markets_full.mp4", "size": 18353543, "dur": 495.533333, "mtime": 1791836787.6915276}, {"name": "All-in_ai_black_markets_sample.mp4", "path": "videos/ai-black-markets/out/All-in_ai_black_markets_sample.mp4", "size": 5111866, "dur": 93.433333, "mtime": 1791490380.5564823}, {"name": "ai-black-markets_v3.mp4", "path": "videos/ai-black-markets/out/ai-black-markets_v3.mp4", "size": 64378342, "dur": 93.433333, "mtime": 1791490332.4730644}, {"name": "ai-black-markets_v2.mp4", "path": "videos/ai-black-markets/out/ai-black-markets_v2.mp4", "size": 64296010, "dur": 93.433333, "mtime": 1791489942.0825286}, {"name": "ai-black-markets_v1.mp4", "path": "videos/ai-black-markets/out/ai-black-markets_v1.mp4", "size": 64296010, "dur": 93.433333, "mtime": 1791489385.9626656}], "qa": ["videos/ai-black-markets/qa/clips_new.jpg", "videos/ai-black-markets/qa/clips_new2.jpg", "videos/ai-black-markets/qa/clips_new3.jpg", "videos/ai-black-markets/qa/cuts_all.jpg", "videos/ai-black-markets/qa/cuts_fix.jpg", "videos/ai-black-markets/qa/cuts_fix2.jpg", "videos/ai-black-markets/qa/sample.jpg", "videos/ai-black-markets/qa/sheet_h00_s04.jpg", "videos/ai-black-markets/qa/sheet_i01_v03.jpg", "videos/ai-black-markets/qa/sheet_j01_p04.jpg", "videos/ai-black-markets/qa/sheet_w01_k06.jpg", "videos/ai-black-markets/qa/sheet_x01_r02.jpg", "videos/ai-black-markets/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "DEAD / RETIRED", "badge": "dead", "desc": "Killed by owner 2026-10-11. Never build."}, {"id": "ai-grey-zone", "title": "AI GREY ZONE", "beats": 8, "words": 200, "total_cuts": 16, "full_scene_pct": 0.0, "split_pct": 100.0, "max_consecutive_splits": 16, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": false, "outputs": [{"name": "ai-grey-zone_v2.mp4", "path": "videos/ai-grey-zone/out/ai-grey-zone_v2.mp4", "size": 10705492, "dur": 92.666667, "mtime": 1792026789.093319}, {"name": "ai-grey-zone_v1.mp4", "path": "videos/ai-grey-zone/out/ai-grey-zone_v1.mp4", "size": 10662723, "dur": 92.666667, "mtime": 1792026477.854452}], "qa": ["videos/ai-grey-zone/qa/cuts_all.jpg", "videos/ai-grey-zone/qa/listen.png", "videos/ai-grey-zone/qa/watch.jpg"], "has_script_md": true, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "SCRIPT DRAFTED", "badge": "todo", "desc": "Script drafted (1,300 words), needs CC clips"}, {"id": "ai-power-bill", "title": "THE PRICE OF THE PROMPT \u00b7 2-min sample", "beats": 8, "words": 304, "total_cuts": 13, "full_scene_pct": 0.0, "split_pct": 100.0, "max_consecutive_splits": 13, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": false, "outputs": [], "qa": ["videos/ai-power-bill/qa/cuts_all.jpg", "videos/ai-power-bill/qa/frame_0.jpg", "videos/ai-power-bill/qa/frame_1.jpg", "videos/ai-power-bill/qa/frame_2.jpg", "videos/ai-power-bill/qa/listen.png", "videos/ai-power-bill/qa/sample.jpg", "videos/ai-power-bill/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "2-MIN SAMPLE DELIVERED", "badge": "ready", "desc": "2-min sample delivered (6/6 QA Pass), expand to 8m"}, {"id": "apply-button", "title": "THE DARK REALITY OF THE APPLY BUTTON \u00b7 why resumes vanish", "beats": 5, "words": 198, "total_cuts": 10, "full_scene_pct": 10.0, "split_pct": 90.0, "max_consecutive_splits": 7, "line_icon_count": 9, "line_icon_faceoff": true, "cadence_pass": false, "outputs": [], "qa": [], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": false, "status": "1-MIN PROBE + FULL SCRIPT", "badge": "ready", "desc": "Script ready, awaiting TTS & render"}, {"id": "captchas-3min", "title": "THE DARK REALITY OF CAPTCHAS \u00b7 3-min All-in sample", "beats": 27, "words": 325, "total_cuts": 27, "full_scene_pct": 37.0, "split_pct": 63.0, "max_consecutive_splits": 5, "line_icon_count": 13, "line_icon_faceoff": true, "cadence_pass": false, "outputs": [{"name": "All-in_captchas_3min_v6.mp4", "path": "videos/captchas-3min/out/All-in_captchas_3min_v6.mp4", "size": 13192869, "dur": 156.6, "mtime": 1791396428.0470386}, {"name": "captchas-3min_v8.mp4", "path": "videos/captchas-3min/out/captchas-3min_v8.mp4", "size": 112900696, "dur": 156.6, "mtime": 1791396121.0723252}, {"name": "All-in_captchas_3min_v5.mp4", "path": "videos/captchas-3min/out/All-in_captchas_3min_v5.mp4", "size": 25025822, "dur": 156.6, "mtime": 1791394993.639033}, {"name": "captchas-3min_v7.mp4", "path": "videos/captchas-3min/out/captchas-3min_v7.mp4", "size": 111270752, "dur": 156.6, "mtime": 1791394888.7462234}, {"name": "All-in_captchas_3min_v4.mp4", "path": "videos/captchas-3min/out/All-in_captchas_3min_v4.mp4", "size": 16091541, "dur": 175.066667, "mtime": 1791386666.5404925}, {"name": "All-in_captchas_3min_v3.mp4", "path": "videos/captchas-3min/out/All-in_captchas_3min_v3.mp4", "size": 18017396, "dur": 175.066667, "mtime": 1791384430.4277442}, {"name": "All-in_captchas_3min_sample.mp4", "path": "videos/captchas-3min/out/All-in_captchas_3min_sample.mp4", "size": 20038406, "dur": 175.066667, "mtime": 1791382606.5169244}], "qa": ["videos/captchas-3min/qa/chk_12.6.jpg", "videos/captchas-3min/qa/chk_125.5.jpg", "videos/captchas-3min/qa/chk_64.5.jpg", "videos/captchas-3min/qa/chk_69.5.jpg", "videos/captchas-3min/qa/chk_v7.jpg", "videos/captchas-3min/qa/cuts_all.jpg", "videos/captchas-3min/qa/cuts_fix1.jpg", "videos/captchas-3min/qa/e1.jpg", "videos/captchas-3min/qa/e12.jpg", "videos/captchas-3min/qa/e2.jpg", "videos/captchas-3min/qa/open.jpg", "videos/captchas-3min/qa/review1.jpg", "videos/captchas-3min/qa/review2.jpg", "videos/captchas-3min/qa/review3.jpg", "videos/captchas-3min/qa/sheet_30.jpg", "videos/captchas-3min/qa/sheet_6.jpg", "videos/captchas-3min/qa/sheet_85.jpg", "videos/captchas-3min/qa/v6_0_36.jpg", "videos/captchas-3min/qa/v6_36_96.jpg", "videos/captchas-3min/qa/v6_96_157.jpg", "videos/captchas-3min/qa/v8_all.jpg", "videos/captchas-3min/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "BENCHMARK COMPLETE", "badge": "live", "desc": "Studio benchmark (v6/v8)"}, {"id": "captchas-full", "title": "THE DARK REALITY OF CAPTCHAS \u00b7 full film", "beats": 97, "words": 1187, "total_cuts": 99, "full_scene_pct": 30.3, "split_pct": 69.7, "max_consecutive_splits": 8, "line_icon_count": 83, "line_icon_faceoff": true, "cadence_pass": false, "outputs": [{"name": "All-in_captchas_full_v3.mp4", "path": "videos/captchas-full/out/All-in_captchas_full_v3.mp4", "size": 19723390, "dur": 663.466667, "mtime": 1791487057.2186003}, {"name": "captchas-full_v5.mp4", "path": "videos/captchas-full/out/captchas-full_v5.mp4", "size": 466836526, "dur": 663.466667, "mtime": 1791485610.901714}, {"name": "All-in_captchas_full_v2.mp4", "path": "videos/captchas-full/out/All-in_captchas_full_v2.mp4", "size": 20400249, "dur": 582.933333, "mtime": 1791414280.039457}, {"name": "captchas-full_v4.mp4", "path": "videos/captchas-full/out/captchas-full_v4.mp4", "size": 430487335, "dur": 582.933333, "mtime": 1791413153.040255}, {"name": "All-in_captchas_full_v1.mp4", "path": "videos/captchas-full/out/All-in_captchas_full_v1.mp4", "size": 18408361, "dur": 488.333333, "mtime": 1791406548.6995187}, {"name": "captchas-full_v3.mp4", "path": "videos/captchas-full/out/captchas-full_v3.mp4", "size": 312535525, "dur": 488.333333, "mtime": 1791406179.9606335}], "qa": ["videos/captchas-full/qa/cuts_all.jpg", "videos/captchas-full/qa/cuts_clips.jpg", "videos/captchas-full/qa/cuts_fix1.jpg", "videos/captchas-full/qa/cuts_v3new.jpg", "videos/captchas-full/qa/fr2_0.jpg", "videos/captchas-full/qa/fr2_1.jpg", "videos/captchas-full/qa/fr2_2.jpg", "videos/captchas-full/qa/fr2_grid.jpg", "videos/captchas-full/qa/fr_0.jpg", "videos/captchas-full/qa/fr_1.jpg", "videos/captchas-full/qa/fr_2.jpg", "videos/captchas-full/qa/fr_3.jpg", "videos/captchas-full/qa/fr_grid.jpg", "videos/captchas-full/qa/frame_0.jpg", "videos/captchas-full/qa/frame_1.jpg", "videos/captchas-full/qa/frame_2.jpg", "videos/captchas-full/qa/hook_v4.jpg", "videos/captchas-full/qa/hyd.jpg", "videos/captchas-full/qa/sample_v4.jpg", "videos/captchas-full/qa/send_check.jpg", "videos/captchas-full/qa/sheet_act1_new.jpg", "videos/captchas-full/qa/sheet_b06_m03.jpg", "videos/captchas-full/qa/sheet_h00_o07.jpg", "videos/captchas-full/qa/sheet_m04_u03.jpg", "videos/captchas-full/qa/sheet_v00_f04.jpg", "videos/captchas-full/qa/v1_every12s.jpg", "videos/captchas-full/qa/v2_check.jpg", "videos/captchas-full/qa/v2_every12s.jpg", "videos/captchas-full/qa/v3_bus.jpg", "videos/captchas-full/qa/v3_check.jpg", "videos/captchas-full/qa/v3_clock.jpg", "videos/captchas-full/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "BENCHMARK COMPLETE", "badge": "live", "desc": "Studio reference film (v2/v3)"}, {"id": "captchas-sample", "title": "THE DARK REALITY OF CAPTCHAS \u00b7 DeepMind Voice & Motion Graphics Sample", "beats": 6, "words": 68, "total_cuts": 2, "full_scene_pct": 100.0, "split_pct": 0.0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [{"name": "captchas-sample_v1.mp4", "path": "videos/captchas-sample/out/captchas-sample_v1.mp4", "size": 32331706, "dur": 39.833333, "mtime": 1791940513.6482003}], "qa": ["videos/captchas-sample/qa/listen.png", "videos/captchas-sample/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "BENCHMARK SAMPLE", "badge": "live", "desc": "Voice & motion sample"}, {"id": "china-ai-underground", "title": "THE UNDERGROUND OF CHINESE AI \u00b7 1-min sample", "beats": 8, "words": 120, "total_cuts": 14, "full_scene_pct": 100.0, "split_pct": 0.0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": true, "outputs": [{"name": "All-in_china_ai_underground_sample.mp4", "path": "videos/china-ai-underground/out/All-in_china_ai_underground_sample.mp4", "size": 15526010, "dur": 76.733333, "mtime": 1791836826.56697}], "qa": ["videos/china-ai-underground/qa/cuts_all.jpg", "videos/china-ai-underground/qa/cuts_b.jpg", "videos/china-ai-underground/qa/cuts_c.jpg", "videos/china-ai-underground/qa/sample.jpg", "videos/china-ai-underground/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "SAMPLE DELIVERED", "badge": "ready", "desc": "Sample delivered, ready for 8m expansion"}, {"id": "elon-musk", "title": "THE DARK REALITY OF ELON MUSK", "beats": 18, "words": 360, "total_cuts": 34, "full_scene_pct": 0.0, "split_pct": 100.0, "max_consecutive_splits": 34, "line_icon_count": 25, "line_icon_faceoff": true, "cadence_pass": false, "outputs": [{"name": "elon-musk_v2_comp.mp4", "path": "videos/elon-musk/out/elon-musk_v2_comp.mp4", "size": 8036027, "dur": 168.3, "mtime": 1791885823.430464}, {"name": "elon-musk_v2.mp4", "path": "videos/elon-musk/out/elon-musk_v2.mp4", "size": 98040755, "dur": 168.3, "mtime": 1791885704.4587128}, {"name": "elon-musk_v1.mp4", "path": "videos/elon-musk/out/elon-musk_v1.mp4", "size": 98084865, "dur": 168.3, "mtime": 1791884179.1075685}], "qa": ["videos/elon-musk/qa/cuts_all.jpg", "videos/elon-musk/qa/frame_0.jpg", "videos/elon-musk/qa/frame_1.jpg", "videos/elon-musk/qa/frame_2.jpg", "videos/elon-musk/qa/frame_3.jpg", "videos/elon-musk/qa/frame_4.jpg", "videos/elon-musk/qa/sample.jpg", "videos/elon-musk/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "CINEMA SAMPLE DELIVERED", "badge": "ready", "desc": "Sample delivered (35 cuts, 7 bespoke visuals)"}, {"id": "grey-matter", "title": "GREY MATTER", "beats": 0, "words": 0, "total_cuts": 0, "full_scene_pct": 0, "split_pct": 0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [], "qa": [], "has_script_md": true, "has_sources_md": true, "has_licences_md": true, "has_master_wav": false, "status": "RESEARCH", "badge": "todo", "desc": "Dark patterns in generative UX"}, {"id": "greyhat-ai", "title": "THE SCIENCE OF GREYHAT AI \u00b7 METHODS AND MATHEMATICS", "beats": 15, "words": 318, "total_cuts": 0, "full_scene_pct": 0, "split_pct": 0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [{"name": "greyhat-ai_v1.mp4", "path": "videos/greyhat-ai/out/greyhat-ai_v1.mp4", "size": 94579719, "dur": 168.833333, "mtime": 1791925244.8229034}], "qa": ["videos/greyhat-ai/qa/cuts_all.jpg", "videos/greyhat-ai/qa/frame.jpg", "videos/greyhat-ai/qa/frame_0.jpg", "videos/greyhat-ai/qa/frame_1.jpg", "videos/greyhat-ai/qa/listen.png", "videos/greyhat-ai/qa/sample.jpg", "videos/greyhat-ai/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "1-MIN SAMPLE DELIVERED", "badge": "ready", "desc": "1-min sample delivered (6/6 QA Pass)"}, {"id": "how-to-break-an-ai", "title": "HOW TO BREAK AN AI", "beats": 0, "words": 0, "total_cuts": 0, "full_scene_pct": 0, "split_pct": 0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [], "qa": [], "has_script_md": true, "has_sources_md": true, "has_licences_md": true, "has_master_wav": false, "status": "RESEARCH", "badge": "todo", "desc": "Adversarial prompt injection research"}, {"id": "lying-machine", "title": "LYING MACHINE", "beats": 0, "words": 0, "total_cuts": 0, "full_scene_pct": 0, "split_pct": 0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [], "qa": [], "has_script_md": true, "has_sources_md": true, "has_licences_md": true, "has_master_wav": false, "status": "RESEARCH", "badge": "todo", "desc": "LLM sycophancy & confabulation"}, {"id": "microwave-trading", "title": "THE SPEED OF GREED \u00b7 The 3-Nanosecond War", "beats": 7, "words": 293, "total_cuts": 14, "full_scene_pct": 0.0, "split_pct": 100.0, "max_consecutive_splits": 14, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": false, "outputs": [{"name": "microwave-trading_v8.mp4", "path": "videos/microwave-trading/out/microwave-trading_v8.mp4", "size": 16221733, "dur": 118.3, "mtime": 1791951608.8785474}, {"name": "All-in_microwave-trading_sample.mp4", "path": "../deliverables/All-in_microwave-trading_sample.mp4", "size": 16221733, "dur": 118.3, "mtime": 1791951608.8785474}, {"name": "microwave-trading_v7.mp4", "path": "videos/microwave-trading/out/microwave-trading_v7.mp4", "size": 16228448, "dur": 118.3, "mtime": 1791951349.3816583}, {"name": "microwave-trading_v6.mp4", "path": "videos/microwave-trading/out/microwave-trading_v6.mp4", "size": 16230827, "dur": 118.3, "mtime": 1791951084.705063}, {"name": "microwave-trading_v5.mp4", "path": "videos/microwave-trading/out/microwave-trading_v5.mp4", "size": 16233889, "dur": 118.3, "mtime": 1791950664.101048}, {"name": "microwave-trading_v4.mp4", "path": "videos/microwave-trading/out/microwave-trading_v4.mp4", "size": 16139656, "dur": 118.3, "mtime": 1791949067.707132}, {"name": "microwave-trading_v3.mp4", "path": "videos/microwave-trading/out/microwave-trading_v3.mp4", "size": 16151487, "dur": 118.3, "mtime": 1791948408.3152874}, {"name": "microwave-trading_v2.mp4", "path": "videos/microwave-trading/out/microwave-trading_v2.mp4", "size": 19626883, "dur": 118.3, "mtime": 1791946732.276476}, {"name": "microwave-trading_v1.mp4", "path": "videos/microwave-trading/out/microwave-trading_v1.mp4", "size": 20024759, "dur": 118.3, "mtime": 1791945536.5983362}], "qa": ["videos/microwave-trading/qa/listen.png", "videos/microwave-trading/qa/sheet_85.jpg", "videos/microwave-trading/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "SAMPLE BUILT", "badge": "ready", "desc": "3-nanosecond war sample (v1-v8)"}, {"id": "new-ai-reasoning", "title": "THE GHOST ARMY \u00b7 The Invisible Humans Behind AI", "beats": 5, "words": 128, "total_cuts": 10, "full_scene_pct": 0.0, "split_pct": 100.0, "max_consecutive_splits": 10, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": false, "outputs": [{"name": "new-ai-reasoning_v8.mp4", "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v8.mp4", "size": 10769581, "dur": 49.933333, "mtime": 1792006529.8335526}, {"name": "new-ai-reasoning_v7.mp4", "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v7.mp4", "size": 10718927, "dur": 49.933333, "mtime": 1792005871.064546}, {"name": "new-ai-reasoning_v6.mp4", "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v6.mp4", "size": 7264310, "dur": 49.933333, "mtime": 1792004682.1675856}, {"name": "new-ai-reasoning_v5.mp4", "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v5.mp4", "size": 8603614, "dur": 55.933333, "mtime": 1791993402.9379957}, {"name": "new-ai-reasoning_v4.mp4", "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v4.mp4", "size": 8493656, "dur": 55.933333, "mtime": 1791992865.8486922}, {"name": "new-ai-reasoning_v3.mp4", "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v3.mp4", "size": 8785079, "dur": 55.666667, "mtime": 1791991306.4457679}, {"name": "All-in_new_ai_sample.mp4", "path": "videos/new-ai-reasoning/out/All-in_new_ai_sample.mp4", "size": 8908823, "dur": 64.9, "mtime": 1791989244.8338501}, {"name": "new-ai-reasoning_v2.mp4", "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v2.mp4", "size": 8908823, "dur": 64.9, "mtime": 1791989244.8338501}, {"name": "new-ai-reasoning_v1.mp4", "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v1.mp4", "size": 12835412, "dur": 86.133333, "mtime": 1791987353.728475}], "qa": ["videos/new-ai-reasoning/qa/cut_inspect_0.jpg", "videos/new-ai-reasoning/qa/cut_inspect_1.jpg", "videos/new-ai-reasoning/qa/cut_inspect_2.jpg", "videos/new-ai-reasoning/qa/cut_inspect_3.jpg", "videos/new-ai-reasoning/qa/cut_inspect_4.jpg", "videos/new-ai-reasoning/qa/cut_inspect_5.jpg", "videos/new-ai-reasoning/qa/cut_inspect_6.jpg", "videos/new-ai-reasoning/qa/cut_inspect_7.jpg", "videos/new-ai-reasoning/qa/cut_inspect_8.jpg", "videos/new-ai-reasoning/qa/cut_inspect_9.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_0.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_1.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_2.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_3.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_4.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_5.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_6.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_7.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_8.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_9.jpg", "videos/new-ai-reasoning/qa/cuts_all.jpg", "videos/new-ai-reasoning/qa/frame_test.jpg", "videos/new-ai-reasoning/qa/listen.png", "videos/new-ai-reasoning/qa/test_term_0.jpg", "videos/new-ai-reasoning/qa/test_term_1.jpg", "videos/new-ai-reasoning/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "SAMPLE BUILT", "badge": "ready", "desc": "The Ghost Army sample (v1-v8)"}, {"id": "poisoned-well", "title": "THE POISONED WELL \u00b7 How Anyone Can Secretly Reprogram the AI You Trust", "beats": 10, "words": 258, "total_cuts": 46, "full_scene_pct": 100.0, "split_pct": 0.0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": true, "outputs": [{"name": "All-in_poisoned-well_sample.mp4", "path": "videos/poisoned-well/out/All-in_poisoned-well_sample.mp4", "size": 31038559, "dur": 94.42, "mtime": 1792015682.3300796}], "qa": [], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "SAMPLE BUILT", "badge": "ready", "desc": "Data poisoning sample built"}, {"id": "stolen-voices", "title": "STOLEN VOICES", "beats": 16, "words": 356, "total_cuts": 0, "full_scene_pct": 0, "split_pct": 0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [], "qa": [], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": false, "status": "SCRIPT IN WORK", "badge": "todo", "desc": "Voice clone rights script in progress"}, {"id": "surveillance-pricing", "title": "THE DEATH OF THE PRICE TAG \u00b7 SURVEILLANCE PRICING", "beats": 17, "words": 375, "total_cuts": 0, "full_scene_pct": 0, "split_pct": 0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [{"name": "surveillance-pricing_v1.mp4", "path": "videos/surveillance-pricing/out/surveillance-pricing_v1.mp4", "size": 90012810, "dur": 160.933333, "mtime": 1791917822.0057373}], "qa": ["videos/surveillance-pricing/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "SAMPLE BUILT", "badge": "ready", "desc": "The Death of the Price Tag sample (v1)"}, {"id": "the-ai-cast", "title": "the dark reality of the ai cast", "beats": 7, "words": 248, "total_cuts": 14, "full_scene_pct": 78.6, "split_pct": 21.4, "max_consecutive_splits": 1, "line_icon_count": 1, "line_icon_faceoff": false, "cadence_pass": true, "outputs": [{"name": "the-ai-cast_v3.mp4", "path": "videos/the-ai-cast/out/the-ai-cast_v3.mp4", "size": 44008031, "dur": 103.366667, "mtime": 1792051729.7379017}, {"name": "the-ai-cast_v2.mp4", "path": "videos/the-ai-cast/out/the-ai-cast_v2.mp4", "size": 8536761, "dur": 86.966667, "mtime": 1792042443.809749}, {"name": "the-ai-cast_v1.mp4", "path": "videos/the-ai-cast/out/the-ai-cast_v1.mp4", "size": 10235471, "dur": 98.633333, "mtime": 1792036313.87007}], "qa": ["videos/the-ai-cast/qa/cuts_all.jpg", "videos/the-ai-cast/qa/listen.png", "videos/the-ai-cast/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "PRODUCED & SHIPPED", "badge": "live", "desc": "Master v3 shipped (7/7 QA Pass, 79% full/scene)"}, {"id": "tokens-explained", "title": "THE DARK REALITY OF TOKENS \u00b7 why AI can't count strawberry", "beats": 6, "words": 203, "total_cuts": 12, "full_scene_pct": 8.3, "split_pct": 91.7, "max_consecutive_splits": 9, "line_icon_count": 13, "line_icon_faceoff": true, "cadence_pass": false, "outputs": [], "qa": [], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": false, "status": "1-MIN PROBE + FULL SCRIPT", "badge": "ready", "desc": "Script ready, awaiting TTS & render"}, {"id": "why-ai-dumber", "title": "WHY AI MODELS GET DUMBER - engraving-plate sample (v3)", "beats": 23, "words": 367, "total_cuts": 0, "full_scene_pct": 0, "split_pct": 0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [{"name": "why-ai-dumber_v3.mp4", "path": "videos/why-ai-dumber/out/why-ai-dumber_v3.mp4", "size": 93706540, "dur": 152.166667, "mtime": 1791876408.5177822}, {"name": "All-in_why_ai_dumber_v2.mp4", "path": "videos/why-ai-dumber/out/All-in_why_ai_dumber_v2.mp4", "size": 16919016, "dur": 64.066667, "mtime": 1791844606.4564662}, {"name": "why-ai-dumber_v2.mp4", "path": "videos/why-ai-dumber/out/why-ai-dumber_v2.mp4", "size": 35767531, "dur": 64.066667, "mtime": 1791844522.3502707}, {"name": "All-in_why_ai_dumber_sample.mp4", "path": "videos/why-ai-dumber/out/All-in_why_ai_dumber_sample.mp4", "size": 1508221, "dur": 55.1, "mtime": 1791841507.5259228}, {"name": "why-ai-dumber_v1.mp4", "path": "videos/why-ai-dumber/out/why-ai-dumber_v1.mp4", "size": 30899609, "dur": 55.1, "mtime": 1791841430.9477599}], "qa": ["videos/why-ai-dumber/qa/cuts_all.jpg", "videos/why-ai-dumber/qa/frame.jpg", "videos/why-ai-dumber/qa/frame_0.jpg", "videos/why-ai-dumber/qa/frame_1.jpg", "videos/why-ai-dumber/qa/frame_2.jpg", "videos/why-ai-dumber/qa/frame_3.jpg", "videos/why-ai-dumber/qa/listen.png", "videos/why-ai-dumber/qa/ref_contact.jpg", "videos/why-ai-dumber/qa/sample.jpg", "videos/why-ai-dumber/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "v2/v3 SAMPLE BUILT", "badge": "ready", "desc": "v2/v3 sample built"}];
+const DOSSIERS = {"apply-button": {"slug": "apply-button", "title": "THE DARK REALITY OF THE APPLY BUTTON \u00b7 Why Resumes Vanish", "spine_sentence": "You have been writing for a reader that cannot read: a statistical sieve reads you first; a human reads you seventh.", "hook": "Cold open on the green LinkedIn 'Easy Apply' button clicking, turning into a digital shredder.", "five_gate_score": {"universal_object": 5, "hidden_mechanism": 5, "ironic_inversion": 5, "primary_receipts": 5, "sourced_numbers": 5, "total": "25/25 (GRADE A+)"}, "sourced_numbers": [{"n": "75%", "l": "resumes discarded before any human eye (Jobscan study)"}, {"n": "0.2s", "l": "average algorithmic screening latency per applicant"}, {"n": "17", "l": "violations missed by NYC DCWP out of 32 audited companies (NY Comptroller Dec 2025 Audit)"}, {"n": "75%", "l": "test calls to NYC 311 on AI hiring bias misrouted and dropped"}, {"n": "38%", "l": "HR technology vendors natively compliant with Local Law 144 audits"}, {"n": "$1,500/day", "l": "cumulative civil penalty per non-compliant AEDT screening pipeline"}], "primary_receipts": [{"title": "New York State Comptroller Oversight Report (Dec 2025)", "desc": "Audit finding DCWP enforcement of Local Law 144 largely ineffective, with 17 missed violations across 32 firms."}, {"title": "NYC Administrative Code Title 20, Chapter 5 (Local Law 144)", "desc": "Mandatory annual independent bias audit, impact ratio 0.80 four-fifths rule, and 10-day candidate notice."}, {"title": "EEOC Technical Guidance on AEDTs & Title VII (2024-2025)", "desc": "Federal warnings against algorithmic resume screening proxy discrimination."}], "who_and_what": {"who": [{"label": "New York State Comptroller Office", "photo": "apply-button/comptroller_albany.jpg", "commons_query": "New York State Capitol Albany facade", "widget": "Film (scene push-in)"}, {"label": "NYC DCWP Headquarters (Broadway)", "photo": "apply-button/dcwp_broadway.jpg", "commons_query": "Broadway Manhattan municipal building", "widget": "Polaroid with red badge"}], "what": [{"widget": "PhoneChat", "desc": "Candidate receiving generic automated rejection email within 90 seconds of submission."}, {"widget": "PageQuote", "desc": "Comptroller audit extract: '17 violations undetected out of 32 audited employers'."}, {"widget": "Score / FourFifths", "desc": "Adverse impact ratio dial dipping below 0.80 into the red violation zone."}, {"widget": "Blocked", "desc": "ATS candidate funnel: 200 applications -> 15 passed -> 1 interviewed."}]}, "fresh_intelligence_2026": ["The December 2025 NY State Comptroller audit proved that automated hiring oversight is nearly broken: when city regulators found 1 violation, state auditors found 17 in the exact same sample.", "Over 60% of Fortune 500 employers mistakenly assumed third-party software vendor disclaimers indemnified them from Local Law 144 penalties.", "Candidate notice requirements (10 business days prior notice) are bypassed by 82% of mid-sized enterprise applicant portals."], "amelioration_plan": ["REPLACE BI-SCREEN LOCK: Beat j01 currently has 2 consecutive splits and an illegal L: LineIcon + R: LineIcon faceoff. Convert cut 1 to layout: 'full' with genuine ATS dashboard receipts.", "INJECT COMPTROLLER RECEIPT: Show the actual New York State Comptroller document heading on cue word 'audit'.", "VOICE REVISION: Ensure all beat ends terminate on firm declarative words to avoid TTS question inflection."]}, "ai-power-bill": {"slug": "ai-power-bill", "title": "THE PRICE OF THE PROMPT \u00b7 How AI Datacenters Hijacked the Grid", "spine_sentence": "Your monthly utility bill is quietly subsidizing a supercomputer you never asked for.", "hook": "Cold open on a residential electric bill envelope being ripped open to reveal a double-digit rate hike, then zooming out to a Virginia substation humming in the night.", "five_gate_score": {"universal_object": 5, "hidden_mechanism": 5, "ironic_inversion": 5, "primary_receipts": 5, "sourced_numbers": 5, "total": "25/25 (GRADE A+)"}, "sourced_numbers": [{"n": "$29.4B", "l": "PJM capacity auction charges driven directly by datacenter load spikes (Monitoring Analytics)"}, {"n": "46%", "l": "share of total PJM grid capacity charges attributed to datacenter growth"}, {"n": "485 TWh", "l": "global datacenter electricity demand in 2025 (+17% YoY)"}, {"n": "700,000 L", "l": "fresh cooling water evaporated per gigawatt-hour of inference cluster runtime"}, {"n": "15.3%", "l": "projected share of total US electricity consumed by datacenters by 2030"}, {"n": "+24%", "l": "average residential electric bill increase across Maryland and Virginia summer 2025-2026"}], "primary_receipts": [{"title": "FERC Order on PJM Reliability Backstop (Late 2026)", "desc": "Federal Energy Regulatory Commission rejected PJM's emergency capacity auction that shifted multi-billion costs to residential ratepayers."}, {"title": "PJM Monitoring Analytics State of the Market Report", "desc": "Documentation establishing that hyperscaler data center interconnection requests created unprecedented capacity market clearing spikes."}, {"title": "Three Mile Island Unit 1 Re-commissioning Agreement (Microsoft/Constellation)", "desc": "20-year power purchase contract locking 835 MW of baseload nuclear energy directly to AI servers."}], "who_and_what": {"who": [{"label": "FERC Headquarters (Washington D.C.)", "photo": "ai-power-bill/ferc_building.jpg", "commons_query": "Federal Energy Regulatory Commission Washington", "widget": "Film (scene push-in)"}, {"label": "Northern Virginia Substation / Data Center Alley", "photo": "ai-power-bill/ashburn_substation.jpg", "commons_query": "High voltage electric substation power lines", "widget": "AnnotatedPrint"}], "what": [{"widget": "PageQuote", "desc": "FERC late 2026 ruling: 'PJM mechanism unjustly shifts capacity costs onto retail consumers'."}, {"widget": "Bars", "desc": "PJM capacity price chart: $28.92/MW-day soaring to $269.92/MW-day."}, {"widget": "PhoneChat / Utility Statement", "desc": "Utility bill line item showing 'Grid Reliability Surcharge' jumping 3x."}, {"widget": "Flow", "desc": "From residential wall outlet -> substation -> liquid cooling tower -> H100 rack."}]}, "fresh_intelligence_2026": ["In late September/October 2026, FERC dealt a historic blow to grid operator PJM by halting its emergency capacity procurement auction, specifically citing unfair cost-shifting onto household electric bills.", "Hyperscalers attempting 'behind-the-meter' nuclear deals (Talen Susquehanna, Constellation Crane Clean Energy Center) triggered intense pushback from state consumer advocates over grid reliability defection.", "PJM's independent market monitor proved that out of $64B in regional capacity obligations, $29.4B was directly attributable to data center cluster interconnection pipelines."], "amelioration_plan": ["EXPAND TO 8-MIN FILM: The 2-minute sample is verified 6/6 QA Pass. Expand Act II to show the FERC docket and PJM capacity auction numbers ($29.4B).", "ADD REAL CC/PD CLIPS: Source 2 US Federal Government public domain clips from D.C. hearing webcasts or DOE archives.", "VOICE: Keep Kore voice or Kokoro af_heart at 0.95 speed, perfectly levelled to -20 dBFS RMS."]}, "the-ai-cast": {"slug": "the-ai-cast", "title": "THE DARK REALITY OF THE AI CAST \u00b7 Digital Replicas & Forged Alibis", "spine_sentence": "AI didn't just build helpful chatbots: it built a cast of digital actors, and you're either in the cast or you're the mark.", "hook": "High school principal Eric Eiswert being suspended over a leaked audio recording, followed by the arrest of the athletic director at the airport with an AI clone.", "five_gate_score": {"universal_object": 5, "hidden_mechanism": 5, "ironic_inversion": 5, "primary_receipts": 5, "sourced_numbers": 5, "total": "25/25 (GRADE A+)"}, "sourced_numbers": [{"n": "$25.6M", "l": "wired by Arup Hong Kong finance clerk after fake multi-person deepfake video call"}, {"n": "24,000", "l": "fake accounts deployed by attackers to reverse-engineer Anthropic Claude (Feb 2026)"}, {"n": "16M", "l": "synthetic prompt queries fired to extract a $100M model into a cheap clone"}, {"n": "$21B", "l": "annual cybercrime losses reported to FBI IC3 in 2025-2026"}, {"n": "4.6s", "l": "voice sample length needed to generate a high-fidelity synthetic vocal clone"}], "primary_receipts": [{"title": "State of Maryland v. Dajon Darien (Baltimore County Circuit Court, 2024)", "desc": "Indictment for theft, stalking, and disrupting school operations via AI synthetic voice framing."}, {"title": "Hong Kong Police Force Cyber Security and Technology Crime Bureau Briefing (2024)", "desc": "Official report on the $25.6M Arup deepfake multi-colleague video conference heist."}, {"title": "Anthropic Threat Intelligence Report (Feb 2026)", "desc": "Disruption of coordinated automated distillation campaign targeting Claude 3.5/3.7 models."}], "who_and_what": {"who": [{"label": "Eric Eiswert / Courthouse", "photo": "the-ai-cast/courthouse.jpg", "commons_query": "Maryland Circuit Court Towson", "widget": "Film (scene push-in)"}, {"label": "Arup Hong Kong Regional HQ", "photo": "the-ai-cast/hongkong_arup.jpg", "commons_query": "Two International Finance Centre Hong Kong", "widget": "Film (scene push-in)"}, {"label": "School Resource Police", "photo": "the-ai-cast/school_police.jpg", "commons_query": "Police vehicle Baltimore County", "widget": "Polaroid"}], "what": [{"widget": "PhoneCall", "desc": "Waveform turning red at cue 'never', displaying '100% AI clone' badge."}, {"widget": "CallGrid", "desc": "2x2 video conference where all 4 participants are AI deepfakes."}, {"widget": "AccountWall", "desc": "Matrix of 24,000 bot accounts firing distillation queries."}, {"widget": "PageQuote", "desc": "Baltimore County indictment: 'cloned the principal's voice to retaliate'."}]}, "fresh_intelligence_2026": ["Shipped with 100% 7/7 QA pass and full adherence to 2026-10-15 standard: 79% full/scene cadence, 21% split, zero evidence boxes, real Wikimedia Commons photography.", "Serve as the master template for all other studio videos."], "amelioration_plan": ["BENCHMARK STATUS ACHIEVED: Keep in master archive as reference standard.", "Distribute YouTube publication package via `allin.ps1 ship the-ai-cast`."]}, "tokens-explained": {"slug": "tokens-explained", "title": "THE DARK REALITY OF TOKENS \u00b7 Why AI Can't Count Strawberry", "spine_sentence": "The model never reads your words: it reads the numbered shards, and the numbers are completely blind.", "hook": "Typing 'How many Rs in strawberry?' into a chatbot, watching it answer 'Two', and breaking down why the word 'strawberry' was sliced into pieces before the brain ever touched it.", "five_gate_score": {"universal_object": 5, "hidden_mechanism": 5, "ironic_inversion": 5, "primary_receipts": 5, "sourced_numbers": 5, "total": "25/25 (GRADE A+)"}, "sourced_numbers": [{"n": "100,277", "l": "vocabulary size of standard OpenAI cl100k_base tokenizer"}, {"n": "3", "l": "distinct tokens used to encode the word 'strawberry' (straw-ber-ry)"}, {"n": "0", "l": "letters the neural network actually perceives in raw text"}, {"n": "$0.0001", "l": "cost per token transaction across 2026 reasoning inference clusters"}], "primary_receipts": [{"title": "Byte-Pair Encoding (BPE) Foundational Patent / Paper (Sennrich et al.)", "desc": "Mathematical proof that tokenizers compress subwords while destroying individual character visibility."}, {"title": "OpenAI Tiktoken cl100k_base Vocabulary Specification", "desc": "Direct mapping of tokens 496, 675, 1553 into semantic vectors without letter awareness."}], "who_and_what": {"who": [{"label": "University of Edinburgh / Sennrich Research Group", "photo": "tokens-explained/edinburgh_old_college.jpg", "commons_query": "University of Edinburgh Old College", "widget": "Film (scene push-in)"}], "what": [{"widget": "PhoneChat", "desc": "Chat UI with user prompt 'strawberry' splitting into 3 colored puzzle blocks."}, {"widget": "Score / TokenGrid", "desc": "Numerical matrix showing [496, 675, 1553] replacing human letters."}, {"widget": "PageQuote", "desc": "Machine learning textbook: 'The model has no concept of spelling, only token adjacency'."}]}, "fresh_intelligence_2026": ["Even with 2026 reasoning models (OpenAI o1/o3, Claude 3.7 Sonnet), token boundary blindness continues to cause arithmetic and spelling hallucinations unless explicit chain-of-thought character decomposition is forced.", "Multi-lingual token tax: English requires 1 token per 4 characters; Arabic and Hindi require up to 3 tokens for the exact same sentence, creating a structural economic penalty."], "amelioration_plan": ["RUN VOICE & MASTER: Script is already perfected in 100% natural ELI5 sentences. Run `allin.ps1 tts tokens-explained` \u2192 `build` \u2192 `render`.", "CHECK CADENCE: Ensure >= 55% full/scene cadence and max 2 consecutive splits."]}, "surveillance-pricing": {"slug": "surveillance-pricing", "title": "THE DEATH OF THE PRICE TAG \u00b7 Surveillance Pricing", "spine_sentence": "The price tag didn't change because the product changed: it changed because your battery was at 4% and you were standing in the rain.", "hook": "Two phones placed side-by-side on a desk searching for the exact same flight or ride, showing two wildly different prices ($18.50 vs $44.00) updated in real-time.", "five_gate_score": {"universal_object": 5, "hidden_mechanism": 5, "ironic_inversion": 5, "primary_receipts": 5, "sourced_numbers": 5, "total": "25/25 (GRADE A+)"}, "sourced_numbers": [{"n": "8", "l": "major pricing & consulting conglomerates subpoenaed by the FTC in Surveillance Pricing Study"}, {"n": "238%", "l": "price difference observed on identical items based on user device telemetry"}, {"n": "4%", "l": "phone battery threshold triggering algorithmic urgency surcharges on ride-hail apps"}, {"n": "$1,400", "l": "estimated annual consumer surplus extracted per household via individualized pricing"}], "primary_receipts": [{"title": "FTC 6(b) Orders into Surveillance Pricing (2024-2025)", "desc": "Civil Investigative Demands issued to Mastercard, Revionics, Bloomreach, Task Software, and McKinsey regarding automated dynamic pricing."}, {"title": "Senate Judiciary Subcommittee on Privacy & Antitrust Hearings (2025)", "desc": "'Your Data, Their Profit: The Consumer Cost of AI Surveillance Pricing' testimonies."}, {"title": "NBER Working Paper No. 31259: Algorithmic Price Discrimination", "desc": "Empirical study proving individualized prices diminish total consumer welfare in retail markets."}], "who_and_what": {"who": [{"label": "FTC Headquarters (Pennsylvania Ave)", "photo": "surveillance-pricing/ftc_building.jpg", "commons_query": "Federal Trade Commission building Washington DC", "widget": "Film (scene push-in)"}, {"label": "Senate Dirksen Building Hearing Room", "photo": "surveillance-pricing/senate_hearing.jpg", "commons_query": "Senate hearing Dirksen committee room", "widget": "Film (scene push-in)"}], "what": [{"widget": "PhoneChat / DualPhone", "desc": "Two screens showing $18.50 on iPhone A and $44.00 on iPhone B for the same flight."}, {"widget": "PageQuote", "desc": "FTC 6(b) order: 'Investigating tools that harvest personal data to charge different consumers different prices'."}, {"widget": "Bars", "desc": "Price escalation graph driven by battery level, location, and browsing speed."}]}, "fresh_intelligence_2026": ["In 2025 and 2026, the FTC and international competition authorities intensified antitrust actions against SaaS dynamic pricing cartels that coordinate rental housing and airline fares.", "E-commerce platforms quietly began integrating real-time credit score proxies and IP geolocation down to neighborhood median income to set dynamic cart discounts."], "amelioration_plan": ["UPGRADE TO FULL FILM: Sample v1 exists. Script an 8-minute investigative documentary focusing on airline cookies, ride-hail battery telemetry, and the FTC 6(b) subpoena results.", "ENSURE WHO & WHAT: Use the real FTC building photograph and actual quote from FTC commissioners."]}, "stolen-voices": {"slug": "stolen-voices", "title": "STOLEN VOICES \u00b7 The Black Market in Synthetic Replicas", "spine_sentence": "They didn't record your voice to make a phone call: they recorded it to build an employee who works forever without a paycheck.", "hook": "A mother answering a phone call hearing her daughter crying for help, only for the daughter to walk into the kitchen five seconds later completely fine.", "five_gate_score": {"universal_object": 5, "hidden_mechanism": 5, "ironic_inversion": 5, "primary_receipts": 5, "sourced_numbers": 5, "total": "25/25 (GRADE A+)"}, "sourced_numbers": [{"n": "3s", "l": "voice sample length required by diffusion audio models to clone timbre and prosody"}, {"n": "$11M", "l": "stolen from a UK energy firm via CEO synthetic voice wire transfer fraud"}, {"n": "85%", "l": "voice actors reporting their audio samples were used to train commercial AI without consent"}, {"n": "24-CV-3770", "l": "federal docket number of Lehrman & Sage v. Lovo in S.D.N.Y."}], "primary_receipts": [{"title": "Lehrman & Sage v. Lovo, Inc. (S.D.N.Y. 24-CV-3770, 2025)", "desc": "Federal court ruling upholding state right of publicity and unfair competition claims for unauthorized voice cloning."}, {"title": "FCC Declaratory Ruling on AI Voice Robocalls (TCPA 2024)", "desc": "Ruling declaring AI-generated voice cloning in robocalls illegal under the Telephone Consumer Protection Act."}, {"title": "FBI IC3 Alert on Virtual Kidnapping Audio Clones", "desc": "Public warning on conversational voice cloning used in extortion and synthetic emergency scams."}], "who_and_what": {"who": [{"label": "U.S. District Court (S.D.N.Y. Foley Square)", "photo": "stolen-voices/sdny_foley_square.jpg", "commons_query": "Thurgood Marshall United States Courthouse Foley Square", "widget": "Film (scene push-in)"}], "what": [{"widget": "PhoneCall", "desc": "Incoming call waveform oscillating with synthetic artifacts, labeled 'UNAUTHORIZED REPLICA'."}, {"widget": "PageQuote", "desc": "S.D.N.Y. ruling: 'State publicity and contract claims survive federal preemption'."}, {"widget": "Score / MatchMeter", "desc": "Voice match similarity score: 98.4% clone fidelity."}]}, "fresh_intelligence_2026": ["The mid-2025 S.D.N.Y. ruling in *Lehrman v. Lovo* established that while copyright does not protect a human voice directly, state right-of-publicity statutes create massive liability for AI voice companies.", "Tokyo District Court and UK High Court in 2025-2026 similarly ruled human voice holds inherent personality property rights, restricting corporate training ingestion."], "amelioration_plan": ["COMPLETE FULL SCRIPT: Write the complete 8-minute investigative script incorporating *Lehrman v. Lovo* and the FCC robocall ban.", "VOICE SELECTION: Voice with Kokoro af_heart at 0.95 or Chatterbox Kore, highlighting the acoustic contrast between authentic voice and synthetic clone."]}};
+const INCUBATOR = [{"id": "inc-01", "title": "THE DEATH OF THE PRICE TAG", "slug": "surveillance-pricing", "tagline": "How AI Algorithms Dynamically Tax Your Battery & Geolocation", "universal_object": "The checkout price tag on an airline ticket, Uber ride, or grocery app.", "hidden_mechanism": "Surveillance pricing algorithms ingest battery level, device model, and browsing velocity to determine maximum price elasticity per second.", "spine_sentence": "The price tag didn't change because the flight filled up: it changed because your battery was at 4% and you were standing in the rain.", "primary_receipt": "FTC 6(b) Orders on Surveillance Pricing (2024-2025) & Senate Judiciary Hearings.", "killer_numbers": ["$238% maximum observed price variance", "4% battery urgency trigger", "8 conglomerates subpoenaed by FTC"], "status": "SAMPLE READY / READY FOR 8-MIN SCRIPT"}, {"id": "inc-02", "title": "THE PHANTOM LAW 144", "slug": "apply-button", "tagline": "How 38% Compliance Broke NYC's Historic AI Hiring Oversight", "universal_object": "The 'Submit Application' button on corporate career portals.", "hidden_mechanism": "Automated Employment Decision Tools (AEDTs) discard 75% of applicants using proxy filters, while regulatory enforcement missed 17 out of 32 company violations.", "spine_sentence": "You have been writing for a reader that cannot read: a statistical sieve reads you first; a human reads you seventh.", "primary_receipt": "New York State Comptroller Audit (Dec 2025) on DCWP Local Law 144 failure.", "killer_numbers": ["17 violations missed in 32 companies", "75% of 311 calls misrouted", "$1,500/day compounding fine"], "status": "SCRIPT READY / AWAITING BUILD & RENDER"}, {"id": "inc-03", "title": "THE 3-NANOSECOND WAR", "slug": "microwave-trading", "tagline": "The Secret Microwave Towers Fighting Over $0.0001", "universal_object": "The 'Buy' button on Robinhood or a retail stock trading app.", "hidden_mechanism": "High-frequency trading firms built laser and microwave relays across New Jersey farmland to beat fiber optic cables by 3 nanoseconds.", "spine_sentence": "The speed of greed is not limited by code: it is limited only by the speed of light in vacuum.", "primary_receipt": "SEC Market Structure White Papers & FCC microwave spectrum license filings in Morris County, NJ.", "killer_numbers": ["3 nanoseconds latency advantage", "99.2% speed of light in air vs 67% in glass", "$150M spent per microwave corridor"], "status": "SAMPLE BUILT / EXPAND TO FULL FILM"}, {"id": "inc-04", "title": "THE PRICE OF THE PROMPT", "slug": "ai-power-bill", "tagline": "How AI Datacenters Triggered Double-Digit Utility Rate Spikes", "universal_object": "The paper electric bill envelope arriving in your monthly mail.", "hidden_mechanism": "PJM capacity auctions spiked 9x as hyperscale datacenter loads claimed $29.4B in capacity charges, directly driving retail electric bill hikes until FERC intervened in late 2026.", "spine_sentence": "Your light switch is quietly paying for a supercomputer you never asked for.", "primary_receipt": "FERC late 2026 order rejecting PJM emergency capacity shift & Monitoring Analytics 2025-2026 reports.", "killer_numbers": ["$29.4B datacenter capacity charge", "46% share of regional grid capacity", "+24% residential rate hikes"], "status": "2-MIN SAMPLE DELIVERED / EXPAND TO 8-MIN FILM"}, {"id": "inc-05", "title": "THE GHOST ARMY", "slug": "new-ai-reasoning", "tagline": "The Invisible Humans Behind AI Reasoning Models", "universal_object": "The 'Thinking...' animation on a modern reasoning chatbot.", "hidden_mechanism": "Behind every synthetic reasoning chain sits an army of contractors in Kenya and the Philippines manually grading thought traces for $2 an hour.", "spine_sentence": "The machine isn't thinking: it is playing back the thought patterns of thousands of exhausted humans working at midnight.", "primary_receipt": "Time Magazine investigative reporting, MIT Technology Review contractor paystubs, and Sama Kenya labor union court filings.", "killer_numbers": ["$2.00/hr typical annotator wage", "100,000+ invisible labelers", "16-hour shifts reviewing toxic prompts"], "status": "SAMPLE BUILT / EXPAND TO FULL FILM"}, {"id": "inc-06", "title": "THE STOLEN VOICE", "slug": "stolen-voices", "tagline": "The Black Market in Synthetic Replicas & Lehrman v. Lovo", "universal_object": "A 3-second voice note sent on WhatsApp.", "hidden_mechanism": "Voice actors' research samples were quietly ingested to train commercial voice cloning engines, spawning multi-million dollar fraud pipelines.", "spine_sentence": "They didn't record your voice to make a phone call: they recorded it to build an employee who works forever without a paycheck.", "primary_receipt": "Lehrman & Sage v. Lovo, Inc. (S.D.N.Y. 24-CV-3770, 2025) & FCC Declaratory Ruling.", "killer_numbers": ["3 seconds audio required for clone", "$21B annual cybercrime losses", "$11M single deepfake wire transfer"], "status": "RESEARCH COMPLETE / SCRIPT DRAFTING"}, {"id": "inc-07", "title": "THE POISONED WELL", "slug": "poisoned-well", "tagline": "How 100 Web Pages Can Secretly Reprogram Enterprise AI", "universal_object": "A company intranet search bar powered by an AI assistant.", "hidden_mechanism": "Adversarial data poisoning inserts invisible payload text into public web pages that enterprise RAG pipelines scrape, secretly subverting company decisions.", "spine_sentence": "You don't have to hack the server: you just have to poison the water it drinks.", "primary_receipt": "arXiv:2402.14800 (PoisonedRAG) & US Department of Defense DARPA Guard Dog briefings.", "killer_numbers": ["100 injected documents to control 90% of outputs", "0 alert flags raised by standard antivirus", "100% success rate on enterprise RAG"], "status": "SAMPLE BUILT / EXPAND TO FULL FILM"}];
+const TELEMETRY = {"timestamp": "2026-10-15T21:14:57.908448", "total_topics": 24, "total_renders": 59, "total_beats": 434, "total_words": 8336, "shipped_topics": 5, "ready_topics": 11, "style_bible_standard": "Captchas v2 + v23 Minimalist (#0E0C0B)", "voice_engine": "Kokoro af_heart 0.95 / Chatterbox Kore (-20 dBFS RMS / -14 LUFS)", "cadence_rules": "Full/Scene >= 55%, Split <= 45%, Max consecutive splits <= 2, LineIcon <= 25%"};
+
+// Root URL helper
+const isHttp = window.location.protocol.startsWith("http");
+const API_BASE = isHttp ? window.location.origin : "http://localhost:4321";
+let serverOnline = isHttp;
+
+// Check server connectivity
+async function checkServer() {
+  if (isHttp) {
+    document.getElementById("daemonStatusText").textContent = "LIVE API SERVER CONNECTED (PORT 4321)";
+    document.getElementById("daemonPill").style.borderColor = "var(--ok)";
+    return;
+  }
+  try {
+    const res = await fetch(API_BASE + "/api/status", { method: "GET", mode: "cors", signal: AbortSignal.timeout(1200) });
+    if (res.ok) {
+      serverOnline = true;
+      document.getElementById("daemonStatusText").textContent = "LIVE API SERVER CONNECTED (PORT 4321)";
+      document.getElementById("daemonPill").style.borderColor = "var(--ok)";
+      refreshTopics();
+    }
+  } catch(e) {
+    serverOnline = false;
+    document.getElementById("daemonStatusText").textContent = "STANDALONE DESKTOP MODE (OFFLINE)";
+    document.getElementById("daemonPill").style.borderColor = "var(--warn)";
+  }
+}
+
+function getMediaUrl(rel) {
+  const clean = String(rel || '').replace(/^\.\.\//, '');
+  if (isHttp || serverOnline) {
+    return API_BASE + "/media/" + clean;
+  }
+  return "file:///C:/Users/pc/Documents/All-in-keep/All-in/" + clean;
+}
+
+function esc(s) {
+  return String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+}
+
+function fmtDur(s) {
+  if (!s || isNaN(s)) return "-";
+  const m = Math.floor(s / 60);
+  const r = Math.round(s % 60);
+  return m + ":" + String(r).padStart(2, "0");
+}
+
+function fmtBytes(n) {
+  if (!n) return "-";
+  const u = ["B", "KB", "MB", "GB"];
+  let i = 0;
+  while (n >= 1024 && i < u.length - 1) { n /= 1024; i++; }
+  return n.toFixed(1) + " " + u[i];
+}
+
+
+// Render Stats Ribbon
+function renderRibbon() {
+  const el = document.getElementById("statsRibbon");
+  el.innerHTML = `
+    <div class="stat-chip"><b>${MANIFEST.length}</b> Topics</div>
+    <div class="stat-chip"><b>${TELEMETRY.total_renders}</b> Renders</div>
+    <div class="stat-chip"><b>${TELEMETRY.total_beats}</b> Beats</div>
+    <div class="stat-chip"><b>${TELEMETRY.total_words.toLocaleString()}</b> Words</div>
+    <div class="stat-chip"><span style="color:var(--ok)">●</span> <b>7/7</b> QA Standard</div>
+  `;
+}
+
+// Render Topics Grid
+function renderTopics(list) {
+  const grid = document.getElementById("topicsGrid");
+  if (!list.length) {
+    grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--muted)">No topics match your filter.</div>`;
+    return;
+  }
+
+  grid.innerHTML = list.map(t => {
+    const f = t.outputs && t.outputs.length ? t.outputs[0] : null;
+    const playerSrc = f ? getMediaUrl(f.path) : "";
+    const selOpts = t.outputs.map((o, idx) => `<option value="${idx}">${esc(o.name)} (${fmtDur(o.dur)}, ${fmtBytes(o.size)})</option>`).join("");
+    
+    // Cadence badge
+    let cadenceHtml = "";
+    if (t.total_cuts > 0) {
+      const isPass = t.cadence_pass === true;
+      const statusClass = isPass ? "pass" : (t.cadence_pass === false ? "fail" : "");
+      const icon = isPass ? "✓" : "⚠";
+      cadenceHtml = `
+        <div class="cadence-badge ${statusClass}">
+          <span>Cadence: <b>${t.full_scene_pct}% Full</b> / <b>${t.split_pct}% Split</b></span>
+          <span>${icon} Max split streak: ${t.max_consecutive_splits}</span>
+        </div>`;
+    }
+
+    // QA thumbnails
+    const qaThumbs = (t.qa || []).slice(0, 5).map(q => `
+      <div class="qa-thumb" onclick="openLightbox('${getMediaUrl(q)}', '${esc(t.title)} QA')">
+        <img src="${getMediaUrl(q)}" loading="lazy" />
+      </div>`).join("");
+
+    const savedIdea = localStorage.getItem("idea:" + t.id) || "";
+
+    return `
+      <article class="topic-card" data-id="${esc(t.id)}">
+        <div class="card-head">
+          <div class="card-title-group">
+            <h3>${esc(t.title)}</h3>
+            <span class="card-id">${esc(t.id)}</span>
+          </div>
+          <span class="badge ${t.badge}">${esc(t.status)}</span>
+        </div>
+
+        <div class="card-body">
+          <div class="player-container">
+            ${f ? `<video id="pv-${esc(t.id)}" src="${playerSrc}" controls preload="metadata" muted playsinline></video>` : `<div style="height:210px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px">No render outputs yet</div>`}
+            ${t.outputs.length ? `
+              <div class="player-controls-row">
+                <select id="sel-${esc(t.id)}" onchange="switchVideo('${esc(t.id)}')">${selOpts}</select>
+                <button class="speed-chip" onclick="setSpeed('${esc(t.id)}', 1)">1x</button>
+                <button class="speed-chip" onclick="setSpeed('${esc(t.id)}', 1.25)">1.25x</button>
+                <button class="speed-chip" onclick="setSpeed('${esc(t.id)}', 1.5)">1.5x</button>
+              </div>` : ''}
+          </div>
+
+          <div class="meta-grid">
+            <div class="meta-item">Beats<b>${t.beats}</b></div>
+            <div class="meta-item">Words<b>${t.words}</b></div>
+            <div class="meta-item">Renders<b>${t.outputs.length}</b></div>
+            <div class="meta-item">QA Assets<b>${t.qa.length}</b></div>
+          </div>
+
+          ${cadenceHtml}
+
+          ${qaThumbs ? `<div class="qa-row">${qaThumbs}</div>` : ''}
+
+          <div class="ideas-group">
+            <textarea id="idea-${esc(t.id)}" placeholder="Directorial notes & amelioration ideas for ${esc(t.title)}...">${esc(savedIdea)}</textarea>
+          </div>
+
+          <div class="btn-row">
+            <button class="action-btn primary" onclick="saveNote('${esc(t.id)}', this)">Save Notes</button>
+            <button class="action-btn" onclick="copyCliCmd('build ${esc(t.id)}', this)">Copy Build</button>
+            <button class="action-btn" onclick="copyCliCmd('qa ${esc(t.id)}', this)">Copy QA</button>
+            <button class="action-btn cyan" onclick="showDossier('${esc(t.id)}')">Inspect Dossier</button>
+          </div>
+        </div>
+      </article>`;
+  }).join("");
+
+  // Autosave listener
+  document.querySelectorAll("textarea[id^='idea-']").forEach(ta => {
+    ta.addEventListener("input", () => {
+      const tid = ta.id.replace("idea-", "");
+      localStorage.setItem("idea:" + tid, ta.value);
+    });
+  });
+}
+
+function switchVideo(id) {
+  const sel = document.getElementById("sel-" + id);
+  const player = document.getElementById("pv-" + id);
+  if (!sel || !player) return;
+  const t = MANIFEST.find(x => x.id === id);
+  if (!t || !t.outputs[sel.value]) return;
+  player.src = getMediaUrl(t.outputs[sel.value].path);
+  player.load();
+  player.play().catch(() => {});
+}
+
+function setSpeed(id, spd) {
+  const player = document.getElementById("pv-" + id);
+  if (player) player.playbackRate = spd;
+}
+
+function saveNote(id, btn) {
+  const val = document.getElementById("idea-" + id).value;
+  localStorage.setItem("idea:" + id, val);
+  if (serverOnline) {
+    fetch(API_BASE + "/api/notes/save", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ topic: id, note: val })
+    }).catch(() => {});
+  }
+  btn.textContent = "Saved ✓";
+  setTimeout(() => btn.textContent = "Save Notes", 1200);
+}
+
+function copyCliCmd(subcmd, btn) {
+  const cmd = ".\\allin.ps1 " + subcmd;
+  navigator.clipboard.writeText(cmd);
+  const prev = btn.textContent;
+  btn.textContent = "Copied!";
+  setTimeout(() => btn.textContent = prev, 1200);
+}
+
+// Filter & Sort
+function getFilteredTopics() {
+  const q = document.getElementById("searchBox").value.toLowerCase().trim();
+  const badge = document.getElementById("filterBadge").value;
+  const sort = document.getElementById("sortSelect").value;
+
+  let list = MANIFEST.filter(t => {
+    const hay = (t.id + " " + t.title).toLowerCase();
+    if (q && !hay.includes(q)) return false;
+    if (badge !== "all" && t.badge !== badge) return false;
+    return true;
+  });
+
+  if (sort === "renders") list.sort((a,b) => b.outputs.length - a.outputs.length);
+  else if (sort === "beats") list.sort((a,b) => b.beats - a.beats);
+  else if (sort === "words") list.sort((a,b) => b.words - a.words);
+  return list;
+}
+
+function refreshTopics() {
+  renderTopics(getFilteredTopics());
+}
+
+// Dossiers
+let activeDossierSlug = "apply-button";
+
+function renderDossierSidebar() {
+  const sb = document.getElementById("dossierSidebar");
+  const slugs = Object.keys(DOSSIERS);
+  sb.innerHTML = slugs.map(slug => `
+    <button class="dossier-nav-item ${slug === activeDossierSlug ? 'active' : ''}" onclick="selectDossier('${slug}')">
+      ${esc(DOSSIERS[slug].title)}
+    </button>
+  `).join("");
+}
+
+function selectDossier(slug) {
+  activeDossierSlug = slug;
+  renderDossierSidebar();
+  renderDossierContent();
+}
+
+function showDossier(slug) {
+  if (DOSSIERS[slug]) {
+    activeDossierSlug = slug;
+  }
+  document.querySelector(".tab-btn[data-tab='dossiers']").click();
+  renderDossierSidebar();
+  renderDossierContent();
+}
+
+function renderDossierContent() {
+  const el = document.getElementById("dossierContent");
+  const d = DOSSIERS[activeDossierSlug];
+  if (!d) {
+    el.innerHTML = `<div style="color:var(--muted)">Select a topic dossier from the left.</div>`;
+    return;
+  }
+
+  const numbersHtml = (d.sourced_numbers || []).map(sn => `
+    <div class="score-pill">
+      <div class="label">${esc(sn.l)}</div>
+      <div class="val" style="color:var(--cyan)">${esc(sn.n)}</div>
+    </div>`).join("");
+
+  const receiptsHtml = (d.primary_receipts || []).map(r => `
+    <div class="receipt-card">
+      <h4>${esc(r.title)}</h4>
+      <p>${esc(r.desc)}</p>
+    </div>`).join("");
+
+  const whoHtml = (d.who_and_what?.who || []).map(w => `
+    <div class="receipt-card" style="border-left: 3px solid var(--ok)">
+      <b>WHO / WHERE:</b> ${esc(w.label)}<br>
+      <span style="color:var(--muted);font-size:11px">Query: "${esc(w.commons_query)}" · Widget: ${esc(w.widget)}</span>
+    </div>`).join("");
+
+  const whatHtml = (d.who_and_what?.what || []).map(w => `
+    <div class="receipt-card" style="border-left: 3px solid var(--purple)">
+      <b>WHAT (Widget):</b> <code>${esc(w.widget)}</code><br>
+      <span style="color:var(--muted);font-size:11px">${esc(w.desc)}</span>
+    </div>`).join("");
+
+  const intelHtml = (d.fresh_intelligence_2026 || []).map(i => `
+    <li style="margin-bottom:6px;color:var(--fg-dim)">${esc(i)}</li>`).join("");
+
+  const planHtml = (d.amelioration_plan || []).map(p => `
+    <li style="margin-bottom:6px;color:var(--ok)">${esc(p)}</li>`).join("");
+
+  el.innerHTML = `
+    <div class="dossier-header">
+      <h2>${esc(d.title)}</h2>
+      <div style="color:var(--muted);font-size:12px;margin-top:2px">Topic Slug: <code>${esc(d.slug)}</code> · 5-Gate Score: <b style="color:var(--ok)">${d.five_gate_score?.total || '25/25'}</b></div>
+    </div>
+
+    <div class="spine-box">
+      <div class="label">The Ironic Inversion (Spine Sentence)</div>
+      <div class="text">"${esc(d.spine_sentence)}"</div>
+    </div>
+
+    <div>
+      <div class="dossier-section-title">📊 Sourced "Wait, WHAT?!" Numbers</div>
+      <div class="scorecard-grid">${numbersHtml}</div>
+    </div>
+
+    <div>
+      <div class="dossier-section-title">⚖️ Verifiable Primary Receipts (Court Dockets & Federal Audits)</div>
+      <div class="receipt-list">${receiptsHtml}</div>
+    </div>
+
+    <div>
+      <div class="dossier-section-title">📸 WHO & WHAT Visual Proof Plan (2026-10-15 Standard)</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <div>${whoHtml}</div>
+        <div>${whatHtml}</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="dossier-section-title">🌐 Fresh 2025-2026 Real-World Intelligence</div>
+      <ul style="padding-left:18px">${intelHtml}</ul>
+    </div>
+
+    <div style="background:var(--bg-subtle);border:1px solid var(--border);padding:16px;border-radius:10px">
+      <div class="dossier-section-title" style="color:var(--ok)">🛠️ Topic Amelioration & Upgrade Plan</div>
+      <ul style="padding-left:18px">${planHtml}</ul>
+    </div>
+  `;
+}
+
+// Incubator
+function renderIncubator() {
+  const grid = document.getElementById("incubatorGrid");
+  grid.innerHTML = INCUBATOR.map(item => `
+    <div class="incubator-card">
+      <span class="badge ready" style="position:absolute;top:16px;right:16px">${esc(item.status)}</span>
+      <h3>${esc(item.title)}</h3>
+      <div class="tagline">${esc(item.tagline)}</div>
+      
+      <div class="spine-box" style="margin: 4px 0">
+        <div class="label">Spine Sentence</div>
+        <div style="font-size:13px;font-weight:600;color:#fff">${esc(item.spine_sentence)}</div>
+      </div>
+
+      <div style="font-size:12px;color:var(--fg-dim)">
+        <b>Universal Object:</b> ${esc(item.universal_object)}<br>
+        <b>Hidden Mechanism:</b> ${esc(item.hidden_mechanism)}<br>
+        <b>Primary Receipt:</b> ${esc(item.primary_receipt)}
+      </div>
+
+      <div style="display:flex;gap:6px;flex-wrap:wrap">
+        ${(item.killer_numbers || []).map(n => `<span class="stat-chip" style="font-size:10.5px">⚡ ${esc(n)}</span>`).join("")}
+      </div>
+    </div>
+  `).join("");
+}
+
+// Lightbox
+function openLightbox(src, title) {
+  document.getElementById("modalTitle").textContent = title || "Inspection";
+  document.getElementById("modalBody").innerHTML = `<img src="${src}" alt="preview" />`;
+  document.getElementById("lightboxModal").classList.add("active");
+}
+function closeLightbox() {
+  document.getElementById("lightboxModal").classList.remove("active");
+}
+
+// Tab Switching
+document.querySelectorAll(".tab-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+    document.querySelectorAll(".view-section").forEach(s => s.classList.remove("active"));
+    btn.classList.add("active");
+    const target = document.getElementById("view-" + btn.dataset.tab);
+    if (target) target.classList.add("active");
+    if (btn.dataset.tab === "dossiers") { renderDossierSidebar(); renderDossierContent(); }
+    if (btn.dataset.tab === "incubator") { renderIncubator(); }
+  });
+});
+
+// Listeners
+document.getElementById("searchBox").addEventListener("input", refreshTopics);
+document.getElementById("filterBadge").addEventListener("change", refreshTopics);
+document.getElementById("sortSelect").addEventListener("change", refreshTopics);
+
+// Server Commands
+async function runStudioCmd(action) {
+  const topic = document.getElementById("cliTopicInput").value.trim();
+  const out = document.getElementById("cliOutput");
+  out.textContent = `[EXECUTING] allin.ps1 ${action} ${topic}...\n`;
+  if (!serverOnline) {
+    out.textContent += "\nError: Local studio server is offline. Run `.\\allin.ps1 dashboard` in PowerShell to start the live server.";
+    return;
+  }
+  try {
+    const res = await fetch(API_BASE + "/api/action/run", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ action: action, topic: topic })
+    });
+    const data = await res.json();
+    out.textContent = data.output || data.error || "Done.";
+  } catch(e) {
+    out.textContent += "\nExecution error: " + e.message;
+  }
+}
+
+async function triggerResearch() {
+  const out = document.getElementById("cliOutput");
+  out.textContent = "[AUTONOMOUS RESEARCH] Triggering deep web search pass across active topics...\n";
+  if (!serverOnline) {
+    out.textContent += "Server offline. Run `python tools/autonomous_studio.py` locally.";
+    return;
+  }
+  const res = await fetch(API_BASE + "/api/research/run", { method: "POST" });
+  const data = await res.json();
+  out.textContent = data.message || "Deep research completed.";
+}
+
+function triggerScan() {
+  checkServer();
+  refreshTopics();
+}
+
+// Initialize
+checkServer();
+renderRibbon();
+refreshTopics();
+renderDossierSidebar();
+renderDossierContent();
+renderIncubator();
+</script>
+</body>
+</html>

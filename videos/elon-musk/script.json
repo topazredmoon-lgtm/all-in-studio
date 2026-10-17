@@ -1,0 +1,639 @@
+{
+  "id": "elon-musk",
+  "title": "THE DARK REALITY OF ELON MUSK",
+  "voice": {
+    "name": "af_heart",
+    "speed": 0.95
+  },
+  "master": "v23",
+  "pace": {
+    "lead": 0.2,
+    "gap": 0.45,
+    "min_beat": 2.4,
+    "to_clip": 0.25,
+    "after_clip": 0.45,
+    "end_pad": 2.0
+  },
+  "beats": [
+    {
+      "id": "h00",
+      "vo": "In September 2022, a secret naval assault crossed the Black Sea. Submarine drones, packed with explosives, were closing in on the Russian fleet.",
+      "say": "In September 2022, a secret naval assault crossed the Black Sea. || Submarine drones, packed with explosives, were closing in on the Russian fleet.",
+      "ex": 0.75,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "full",
+            "cap": "a *secret strike* in the dark",
+            "hero": {
+              "v": "GeofenceMap",
+              "surface": "bare",
+              "droneAt": "naval"
+            },
+            "at": "fleet"
+          },
+          {
+            "layout": "full",
+            "cap": "closing in on the *fleet*",
+            "at": "Submarine",
+            "hero": {
+              "v": "Score",
+              "sub": "METRIC",
+              "label": "TRIGGER",
+              "val": "ACTIVE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "h01",
+      "vo": "Then, miles from the target, the screens went dead. The drones lost signal, stalled in the water, and washed ashore harmlessly.",
+      "say": "Then, miles from the target, the screens went dead. | The drones lost signal, stalled in the water, and washed ashore harmlessly.",
+      "ex": 0.8,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "full",
+            "cap": "the screens *went dead*",
+            "hero": {
+              "v": "GeofenceMap",
+              "surface": "bare",
+              "cutAt": "dead"
+            },
+            "at": "harmlessly"
+          },
+          {
+            "layout": "full",
+            "cap": "the drones *lost signal*",
+            "at": "drones",
+            "hero": {
+              "v": "Score",
+              "sub": "METRIC",
+              "label": "TRIGGER",
+              "val": "ACTIVE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "a01",
+      "vo": "No military jammed them. The Ukrainian commanders didn't call it off. One private citizen in Texas simply turned off the satellites.",
+      "say": "No military jammed them. | The Ukrainian commanders didn't call it off. || One private citizen in Texas, simply turned off the satellites.",
+      "ex": 0.75,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "full",
+            "cap": "no military *jammed them*",
+            "hero": {
+              "v": "Bars",
+              "bars": [
+                {
+                  "v": 78,
+                  "tag": "Capacity"
+                },
+                {
+                  "v": 45,
+                  "tag": "Active"
+                }
+              ]
+            },
+            "at": "satellites"
+          },
+          {
+            "layout": "full",
+            "cap": "one man *turned off* the sky",
+            "at": "One",
+            "hero": {
+              "v": "Score",
+              "sub": "METRIC",
+              "label": "TRIGGER",
+              "val": "ACTIVE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "a02",
+      "vo": "We are told competition drives technology. But look up tonight. There are roughly ten thousand active satellites orbiting planet Earth.",
+      "say": "We are told competition drives technology. | But look up tonight. || There are roughly ten thousand active satellites orbiting planet Earth.",
+      "ex": 0.7,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "full",
+            "cap": "look up *tonight*",
+            "hero": {
+              "v": "IconRow",
+              "name": "shield",
+              "n": 6,
+              "cols": 6
+            },
+            "at": "Earth"
+          },
+          {
+            "layout": "full",
+            "cap": "ten thousand *satellites* above",
+            "at": "There",
+            "hero": {
+              "v": "StarlinkShell",
+              "surface": "bare",
+              "satAt": "satellites"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "a03",
+      "vo": "SpaceX owns more than sixty percent of them. More than all other nations, militaries, and corporations on Earth combined.",
+      "say": "Space X owns more than sixty percent of them. || More than all other nations, militaries, and corporations on Earth, combined.",
+      "ex": 0.8,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "full",
+            "cap": "*sixty percent* in one hand",
+            "hero": {
+              "v": "Score",
+              "sub": "METRIC",
+              "label": "TRIGGER",
+              "val": "ACTIVE"
+            },
+            "at": "combined"
+          },
+          {
+            "layout": "full",
+            "cap": "more than *all nations combined*",
+            "at": "more#2",
+            "hero": {
+              "v": "StarlinkShell",
+              "surface": "bare",
+              "monopolyAt": "combined"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "a04",
+      "vo": "And it is not just internet dishes. It is the ability to leave the planet.",
+      "say": "And it is not just internet dishes. || It is the ability to leave the planet.",
+      "ex": 0.75,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "split",
+            "L": {
+              "v": "LineIcon",
+              "surface": "bare",
+              "name": "radar",
+              "label": "starlink dish"
+            },
+            "R": {
+              "v": "PageQuote",
+              "text": "And it is not just",
+              "enter": "planet"
+            },
+            "cap": "not just *internet dishes*"
+          },
+          {
+            "layout": "full",
+            "cap": "the only way *off the planet*",
+            "at": "It#2",
+            "hero": {
+              "v": "Score",
+              "sub": "METRIC",
+              "label": "GLOBE",
+              "val": "ACTIVE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "a05",
+      "vo": "Last year, SpaceX launched eighty-seven percent of all payload mass into orbit globally. China launched ten percent. The rest of the world shared scraps.",
+      "say": "Last year, Space X launched eighty-seven percent of all payload mass into orbit globally. | China launched ten percent. | The rest of the world, shared scraps.",
+      "ex": 0.8,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "split",
+            "L": {
+              "v": "PayloadRatio",
+              "surface": "bare",
+              "massAt": "87"
+            },
+            "R": {
+              "v": "PageQuote",
+              "text": "Field investigation",
+              "enter": "scraps"
+            },
+            "cap": "*eighty-seven percent* of all mass"
+          },
+          {
+            "layout": "full",
+            "cap": "the rest shared *scraps*",
+            "at": "China",
+            "hero": {
+              "v": "Score",
+              "sub": "METRIC",
+              "label": "TRIGGER",
+              "val": "ACTIVE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "a06",
+      "vo": "When NASA needs to fly American astronauts to the Space Station, Boeing failed. The United States government has zero alternative.",
+      "say": "When NASA needs to fly American astronauts to the Space Station, Boeing failed. || The United States government has zero alternative.",
+      "ex": 0.75,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "split",
+            "L": {
+              "v": "DragonDependency",
+              "surface": "bare",
+              "crewAt": "astronauts"
+            },
+            "R": {
+              "v": "LineIcon",
+              "surface": "bare",
+              "name": "person",
+              "label": "astronauts",
+              "plate": "nasa commercial crew",
+              "enter": "alternative"
+            },
+            "cap": "when boeing *failed*"
+          },
+          {
+            "layout": "full",
+            "cap": "*zero* domestic backup",
+            "at": "United",
+            "hero": {
+              "v": "Score",
+              "sub": "METRIC",
+              "label": "TRIGGER",
+              "val": "ACTIVE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "a07",
+      "vo": "Down on the highway, the exact same unilateral gamble sits in traffic next to you.",
+      "say": "Down on the highway, the exact same unilateral gamble sits in traffic next to you.",
+      "ex": 0.7,
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "LineIcon",
+          "surface": "bare",
+          "name": "car",
+          "label": "fleet"
+        },
+        "R": {
+          "v": "SensorPurge",
+          "surface": "bare",
+          "enter": "exact",
+          "plate": "tesla vision transition"
+        },
+        "cap": "the gamble *next to you*"
+      }
+    },
+    {
+      "id": "a08",
+      "vo": "In May 2021, Elon ordered radar stripped from every Tesla vehicle. In 2022, he purged the ultrasonic sonar sensors.",
+      "say": "In May 2021, Elon ordered radar stripped from every Tesla vehicle. || In 2022, he purged the ultrasonic sonar sensors.",
+      "ex": 0.75,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "full",
+            "cap": "radar *stripped away*",
+            "hero": {
+              "v": "SensorPurge",
+              "surface": "bare",
+              "radarAt": "radar"
+            },
+            "at": "sensors"
+          },
+          {
+            "layout": "full",
+            "cap": "sonar sensors *purged*",
+            "at": "In#2",
+            "hero": {
+              "v": "Score",
+              "sub": "METRIC",
+              "label": "TRIGGER",
+              "val": "ACTIVE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "a09",
+      "vo": "His engineers warned him cameras alone get blinded by direct sunlight, fog, and rain. The sensors were removed anyway.",
+      "say": "His engineers warned him cameras alone get blinded by direct sunlight, fog, and rain. || The sensors were removed anyway.",
+      "ex": 0.75,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "split",
+            "L": {
+              "v": "SensorPurge",
+              "surface": "bare",
+              "glareAt": "blinded"
+            },
+            "R": {
+              "v": "LineIcon",
+              "surface": "bare",
+              "name": "warning",
+              "mark": "no",
+              "label": "blinded",
+              "plate": "internal engineering memo",
+              "enter": "anyway"
+            },
+            "cap": "cameras *blinded* by rain"
+          },
+          {
+            "layout": "full",
+            "cap": "removed *anyway*",
+            "at": "sensors",
+            "hero": {
+              "v": "Score",
+              "sub": "METRIC",
+              "label": "TRIGGER",
+              "val": "ACTIVE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "a10",
+      "vo": "Federal investigators logged hundreds of phantom braking crashes where cars slammed the brakes at highway speeds for shadows.",
+      "say": "Federal investigators logged hundreds of phantom braking crashes, where cars slammed the brakes at highway speeds, for shadows.",
+      "ex": 0.8,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "split",
+            "L": {
+              "v": "PageQuote",
+              "text": "Field investigation"
+            },
+            "R": {
+              "v": "LineIcon",
+              "surface": "bare",
+              "name": "car",
+              "label": "tesla fleet",
+              "enter": "shadows"
+            },
+            "cap": "hundreds of *phantom crashes*"
+          },
+          {
+            "layout": "full",
+            "cap": "slamming brakes *for shadows*",
+            "at": "where",
+            "hero": {
+              "v": "SensorPurge",
+              "surface": "bare",
+              "glareAt": "brakes"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "a11",
+      "vo": "He calls it Full Self-Driving. But open the beta agreement you tap accept on.",
+      "say": "He calls it Full Self-Driving. || But open the beta agreement you tap accept on.",
+      "ex": 0.75,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "split",
+            "L": {
+              "v": "BetaWaiver",
+              "surface": "bare",
+              "nagAt": "full"
+            },
+            "R": {
+              "v": "LineIcon",
+              "surface": "bare",
+              "name": "car",
+              "label": "supervised",
+              "enter": "accept"
+            },
+            "cap": "he calls it *self-driving*"
+          },
+          {
+            "layout": "full",
+            "cap": "the *beta agreement* trap",
+            "at": "But",
+            "hero": {
+              "v": "Score",
+              "sub": "METRIC",
+              "label": "TRIGGER",
+              "val": "ACTIVE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "a12",
+      "vo": "Section four: you must maintain control every microsecond. If the car crashes, you are one hundred percent legally liable.",
+      "say": "Section four: you must maintain control every microsecond. || If the car crashes, you are one hundred percent legally liable.",
+      "ex": 0.8,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "split",
+            "L": {
+              "v": "BetaWaiver",
+              "surface": "bare",
+              "reactAt": "control"
+            },
+            "R": {
+              "v": "PageQuote",
+              "text": "Field investigation",
+              "enter": "liable"
+            },
+            "cap": "maintain control *every moment*"
+          },
+          {
+            "layout": "full",
+            "cap": "you take *all the blame*",
+            "at": "If",
+            "hero": {
+              "v": "Score",
+              "sub": "METRIC",
+              "label": "TRIGGER",
+              "val": "ACTIVE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "a13",
+      "vo": "If the algorithm succeeds, it is his genius. When it fails on the highway, you take the felony.",
+      "say": "If the algorithm succeeds, it is his genius. || When it fails on the highway, you take the felony.",
+      "ex": 0.85,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "split",
+            "L": {
+              "v": "LineIcon",
+              "surface": "bare",
+              "name": "person",
+              "label": "his genius",
+              "plate": "commercial PR"
+            },
+            "R": {
+              "v": "PageQuote",
+              "text": "If the algorithm succeeds, it",
+              "enter": "felony"
+            },
+            "cap": "his algorithm, *his genius*"
+          },
+          {
+            "layout": "full",
+            "cap": "his genius, *your felony*",
+            "at": "When",
+            "hero": {
+              "v": "BetaWaiver",
+              "surface": "bare",
+              "waiverAt": "felony"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "a14",
+      "vo": "Satellites. Rockets. Cars. The public square. Artificial intelligence.",
+      "say": "Satellites. | Rockets. | Cars. | The public square. || Artificial intelligence.",
+      "ex": 0.75,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "split",
+            "L": {
+              "v": "PowerCluster",
+              "surface": "bare",
+              "hubAt": "satellites"
+            },
+            "R": {
+              "v": "IconRow",
+              "surface": "bare",
+              "name": "rocket",
+              "n": 3,
+              "cols": 3,
+              "enter": "intelligence"
+            },
+            "cap": "satellites, *rockets, cars*"
+          },
+          {
+            "layout": "full",
+            "cap": "an *empire* of infrastructure",
+            "at": "the",
+            "hero": {
+              "v": "Score",
+              "sub": "METRIC",
+              "label": "TRIGGER",
+              "val": "ACTIVE"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "a15",
+      "vo": "In history, power this vast was held by empires with treaties and parliaments. Today, it sits with one man and no board of directors.",
+      "say": "In history, power this vast was held by empires with treaties and parliaments. || Today, it sits with one man, and no board of directors.",
+      "ex": 0.8,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "split",
+            "L": {
+              "v": "LineIcon",
+              "surface": "bare",
+              "name": "building",
+              "label": "parliaments",
+              "plate": "sovereign states"
+            },
+            "R": {
+              "v": "PageQuote",
+              "text": "In history, power this vast",
+              "enter": "directors"
+            },
+            "cap": "empires held by *parliaments*"
+          },
+          {
+            "layout": "full",
+            "cap": "no treaties, *no board*",
+            "at": "Today",
+            "hero": {
+              "v": "PowerCluster",
+              "surface": "bare",
+              "hubAt": "one"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "a16",
+      "vo": "The dark reality isn't that he might fail. It's that our world has built no backup if he does.",
+      "say": "The dark reality isn't that he might fail. || It's that our world has built no backup, if he does.",
+      "ex": 0.85,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "split",
+            "L": {
+              "v": "GeofenceMap",
+              "surface": "bare",
+              "cutAt": "dark"
+            },
+            "R": {
+              "v": "LineIcon",
+              "surface": "bare",
+              "name": "warning",
+              "mark": "?",
+              "label": "might fail",
+              "plate": "single point of failure",
+              "enter": "does"
+            },
+            "cap": "the *dark reality*"
+          },
+          {
+            "layout": "full",
+            "cap": "we built *no backup*",
+            "at": "It's",
+            "hero": {
+              "v": "Score",
+              "sub": "METRIC",
+              "label": "TRIGGER",
+              "val": "ACTIVE"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

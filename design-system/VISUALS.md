@@ -1,8 +1,57 @@
+
+## Shared Engraving Plates (`engine/src/ds/plates/`)
+The 22 high-craft woodcut engraving plates available to all videos via `ds/plates`:
+
+| Plate | Subject | Cinematic Meaning |
+|---|---|---|
+| `Ouroboros` | Serpent swallowing its tail | Recursive AI training on its own output / closed feedback loops (Reference Cut). |
+| `Alembic` | Alchemical distillation flask | Distillation attacks, extracting model capabilities into smaller clones. |
+| `Balance` | Classical scales of justice | Weighing risk vs utility; regulatory burden favoring monopolies. |
+| `BellJar` | Scientific vacuum bell jar | Controlled lab environments, unconsenting public experiments. |
+| `BluntPencil` | Worn graphite stub pencil | Deleting the fail-safes; loss of fine human precision. |
+| `CastOfACast` | Degraded classical plaster cast | Generation loss across recursive copies; fine details dissolving first. |
+| `CloudingGlass` | Oxidized, smoky magnifying glass | Loss of transparency, black-box obscurity. |
+| `Compass` | Navigational brass drafting divider | Geofencing, location verification, export control borders. |
+| `CopyStack` | Reams of mimeographed paper | Mass generation, synthetic data flooding the open web. |
+| `Delta` | Braided river mouth / delta | Divergence between open-source models and closed corporate AI. |
+| `DeskLamp` | Vintage green glass shade lamp | Auditing, compliance scrutiny, investigations. |
+| `DriftingCourse` | Nautical course drifting off bearing | Satellites, private orbital assets, escaping regulatory orbit. |
+| `JournalPlate` | Stitched leather binding ledger | Unbroken chain of custody, unalterable historical logs. |
+| `JugCup` | Earthenware jug pouring into cup | Pouring data from one model to another. |
+| `Meadow` | Wild tallgrass pasture | The open internet commons before web-scraping enclosures. |
+| `PaperRiver` | Winding river made of printed leaves | Continuous flow of documents, leaks, and disclosures. |
+| `PressStack` | Heavy iron industrial screw press | Crushing corporate pressure; regulatory capture. |
+| `RustingGate` | Ornate iron gate with broken latch | Frictionless borders; perimeter security rules falling apart. |
+| `SeedVault` | Vault doors safeguarding seed specimens | Safeguarding human-written heritage from synthetic contamination. |
+| `TowerRabbits` | Perpendicular church tower with rabbits | Nature paper finding (OPT-125m model collapse to jackrabbit tails). |
+| `TwoHands` | Engraved human hands reaching/clasping | Human authorship, authentic consent, the human touch. |
+| `Well` | Deep masonry well with wooden bucket | The foundational training data commons. |
+
 # Visual catalogue
 
 Every topic visual ever generated, so the next video knows what exists, what worked, and what must not be repeated as filler.
 Status: `new` (built, not yet reviewed by the owner) · `kept` (owner liked it) · `fix` (owner note pending) · `retired`.
 Patterns marked ⇧ are general enough to graduate into `engine/src/ds/` once the owner keeps them.
+
+## elon-musk (2026-10-13, 2-min cinema sample) · `visuals/musk.tsx`
+
+Bespoke vector graphics adhering to "Say the line, point at the thing it names" and Left/Right split evidence grammar.
+
+| Visual | Picture | Used for (beat · cue) | Status |
+|---|---|---|---|
+| `StarlinkShell` | Earth horizon globe, 4 orbital shells at 550 km, animated orbiting satellites, downlink beams to ground dish, active count & 62% monopoly badge | Low Earth Orbit constellation monopoly (h01, a03) | new |
+| `PayloadRatio` | Side-by-side launch chokepoint: vehicle stack with booster mass fraction vs global mass-to-orbit comparison bars (SpaceX 87% vs China/US/Europe) | Global orbital payload mass monopoly (a04, a05) | new |
+| `SensorPurge` | Top-down Tesla Model 3/Y blueprint: forward radar struck out (2021), 12 ultrasonic sonar sensors struck out (2022), 8 camera FOV vision cones, glare/rain blind spot warnings | Tesla vision gamble & sensor deletion (a07, a08) | new |
+| `GeofenceMap` | Detailed vector map of Black Sea & Crimea, Sevastopol naval base marker, Ukrainian naval drone attack route, 100km Starlink geofence boundary & cutoff alert | Cold open Black Sea military geofence cutoff (h00, h01) | new |
+| `BetaWaiver` | Telemetry panel: steering wheel nag ("APPLY SLIGHT TURNING FORCE", 0.8s reaction window, cabin eye tracking) + FSD Beta legal disclaimer with 100% DRIVER LIABILITY red rubber stamp | Driver liability transfer & autonomous illusion (a10, a11) | new |
+| `DragonDependency` | NASA astronaut helmet/capsule vs grounded Starliner, showing 0 domestic US alternative crew carriers | NASA domestic human spaceflight dependence (a06) | new |
+| `PowerCluster` | Central executive key connecting SpaceX, Starlink, Tesla, xAI, and X/Twitter into an unchecked infrastructure web | The unchecked private monopoly matrix (a13, a14) | new |
+| `LineIcon radar` ⇧ | Circular radar display with concentric range rings, rotating sweep arm, and blip | Naval tracking, radar sensors, dishes (h00, a04) | new |
+| `LineIcon target` ⇧ | Concentric target bullseye with precision cross ticks and red center point | Military target, naval fleet base (h00) | new |
+| `LineIcon crosshair` ⇧ | Segmented sniper reticle with center gap, axis tick marks, red reticle | Signal lost / weapon cutoff tracking (h01) | new |
+| `LineIcon warning` ⇧ | Bold warning hazard triangle with red exclamation point | Sensor failure, blinding, unchecked unilateral risk (a01, a09, a10, a16) | new |
+| `LineIcon globe` ⇧ | Wireframe planet Earth with latitudes, longitudes, and red orbital satellite ring | Orbital space, global satellites, planetary comparison (a02, a03, a04) | new |
+| `LineIcon rocket` ⇧ | Modern space launch vehicle with nosecone, side fins, capsule porthole, and exhaust plume | Heavy orbital lift, launch market dominance (a05, a14) | new |
 
 ## why-ai-dumber v2 (2026-10-13, ~1-min sample) · `visuals/aidumber.tsx` + 3 new `ds/kit.tsx` primitives
 
@@ -23,9 +72,20 @@ pass. Voice: Chatterbox (`tools/tts_cb.py`), not Kokoro af_heart — matches the
 af_heart (LEARNINGS 47-48); per-beat `ex` varied so the narrator isn't one flat level; 3 lines rewritten to drop
 trailing clauses that made v1's Kokoro take rise like a question on a statement (`voice_check.py` flagged a05/a06b/a08).
 
-## ai-black-markets (2026-10-11, the 8:15 full film) · `visuals/aibm.tsx`
+## china-ai-underground (2026-10-11 sample) · `visuals/cnai.tsx`
+Case-file visual grammar, full-bleed scene layout, EXHIBIT A/B stamps, and Natural Earth PD mapping.
 
-60 beats, ~120 shots, 14 CC clips. All `new` (the owner has seen only the 1:30 sample).
+| Visual | Picture | Used for (beat · cue) | Status |
+|---|---|---|---|
+| `Film` | archival film look, reel frame, date stamp | historical footage, background contexts | kept |
+| `Cctv` | surveillance camera overlay with timestamp / REC tag | hair dryer server label swap caught on camera | kept |
+| `LabelSwap` | server chassis with peelable serial tag replacement | Supermicro label fraud mechanism | kept |
+| `RouteMap` | Natural Earth 110m land outline + route vector | smuggling route (US -> TW -> SE Asia -> CN) | kept |
+| `AccountWall` | grid of automated bot avatars & credential tiles | Anthropic distillation attack (24k fake accounts) | kept |
+
+## ai-black-markets (2026-10-11) · `visuals/aibm.tsx` · [RETIRED / TOPIC KILLED]
+
+Topic killed by owner on 2026-10-11. Visuals kept for historical reference and code scavenging only (reused in ai-ban).
 
 | Visual | Picture | Used for (beat · cue) |
 |---|---|---|

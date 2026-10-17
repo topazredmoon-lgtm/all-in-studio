@@ -1,0 +1,7 @@
+# SOURCES · The Ghost Army (new-ai-reasoning)
+
+## Core Investigative Research & Primary Documentation
+- **Time Magazine Investigative Report (2023)**: Billy Perrigo, "Exclusive: OpenAI Used Kenyan Workers on Less Than $2 Per Hour to Make ChatGPT Less Toxic". Documented the outsourced content moderation and RLHF labeling pipeline managed by Sama in Nairobi, Kenya, where contractors reviewed thousands of lines of violent and graphic text for $1.32 to $2.00 per hour.
+- **MIT Technology Review (2022)**: Karen Hao, "The AI workforce the world doesn't see: How outsourcing giant Remotasks turned thousands of Venezuelans into an invisible data labor army". Analyzed the hyper-fragmented offshore gig workforce in Caracas and the Global South powering frontier model data annotation.
+- **IEEE Spectrum & Autonomous Systems (2023)**: Teleoperation Takeover Studies. Documented how commercial autonomous sidewalk delivery robots (Serve, Starship, Coco) rely on low-latency remote human operators in Colombia, the Philippines, and Kenya who intervene every 1.5 to 3 miles to manually pilot robots across crosswalks and unmapped obstacles.
+- **Mary L. Gray & Siddharth Suri (2019)**: *Ghost Work: How to Stop Silicon Valley from Building a New Global Underclass* (Houghton Mifflin Harcourt). Empirical analysis of the millions of on-demand remote workers labeling, verifying, and puppeteering automated algorithmic systems worldwide.

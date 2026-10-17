@@ -1,7 +1,12 @@
 """Timeline + master audio: python tools/build.py <video_id>
 -> engine/src/videos/<id>/timeline.json  (beats with frame starts, durations, shot spec, word cues in frames)
 -> videos/<id>/master.wav                 (48 kHz stereo: mastered narration + clips + one-shot SFX + optional ducked music bed)
-Adapted from not-so-dark-times tools/build.py (same pacing model, same narration mastering)."""
+
+Upgrades (2026-10-14):
+- Narration mastering runs on continuous speech segments (with short 0.25s pads) rather than a timeline filled with 10-15s clip silence holes, preventing EBU R128 `loudnorm` / compressor pumping after archival clips.
+- Resamples any non-24kHz voice files safely before mastering.
+- Uses strict word/inflection cue matching (matching `lint_cues.py`) so SFX cues never fire early on prefix collisions.
+"""
 import json, re, subprocess, sys
 from pathlib import Path
 import numpy as np, soundfile as sf
@@ -10,19 +15,31 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 import sfx
 
+if len(sys.argv) < 2 or sys.argv[1] in ("--help", "-h", "help"):
+    print(__doc__.strip())
+    vids = sorted([p.name for p in (ROOT / "videos").iterdir() if p.is_dir() and not p.name.startswith(("_", "."))])
+    print(f"\nAvailable topics:\n  {', '.join(vids)}")
+    sys.exit(0)
+
 vid = sys.argv[1]
+vdir = ROOT / "videos" / vid
+if not vdir.is_dir():
+    sys.exit(f"Error: topic '{vid}' not found in videos/. Available: {', '.join(sorted(p.name for p in (ROOT / 'videos').iterdir() if p.is_dir()))}")
+
 # owner rule: no text-led shot ever reaches a render (tools/lint_text.py)
 if subprocess.run([sys.executable, str(ROOT / "tools" / "lint_text.py"), vid]).returncode: sys.exit("lint_text failed: fix the shots above")
 # word sync: every cue word must be spoken in its beat (tools/lint_cues.py)
 if subprocess.run([sys.executable, str(ROOT / "tools" / "lint_cues.py"), vid]).returncode: sys.exit("lint_cues failed: fix the cue words above")
 # clips start and end on sentence boundaries, never mid-word (owner note 2026-10-08b; tools/lint_clips.py)
 if subprocess.run([sys.executable, str(ROOT / "tools" / "lint_clips.py"), vid]).returncode: sys.exit("lint_clips failed: move the clip in/out points above")
+# human-like taste & motion physics: 7-gate taste & juice gatekeeper (tools/taste_audit.py)
+if subprocess.run([sys.executable, str(ROOT / "tools" / "taste_audit.py"), vid]).returncode: sys.exit("taste_audit failed: fix taste/physics requirements above")
 FPS, SR = 30, 48000
-script = json.loads((ROOT / "videos" / vid / "script.json").read_text(encoding="utf-8"))
+script = json.loads((vdir / "script.json").read_text(encoding="utf-8"))
 P = {"lead": 0.5, "gap": 1.1, "min_beat": 3.6, "to_clip": 0.3, "after_clip": 0.9, "end_pad": 2.5, **script.get("pace", {})}
-adir = ROOT / "videos" / vid / "audio"
+adir = vdir / "audio"
 pub = ROOT / "engine" / "public"
-tmp = ROOT / "videos" / vid / "tmp"; tmp.mkdir(exist_ok=True)
+tmp = vdir / "tmp"; tmp.mkdir(exist_ok=True)
 
 def ff(*args):
     subprocess.run(["ffmpeg", "-loglevel", "error", "-y", *args], check=True)
@@ -36,9 +53,6 @@ for i, b in enumerate(script["beats"]):
         seg = tmp / f"{b['id']}.wav"
         stem = pub / c["src"].rsplit(".", 1)[0]
         if c.get("roll", True) and stem.with_suffix(".words.json").exists():
-            # Owner 2026-10-11: word-tight chops + a frozen last frame looked "amateurish". Let the speaker breathe:
-            # picture and room sound start up to 0.45 s before the first word and run up to 0.7 s after the last one,
-            # never into a neighbouring word; sound fades in/out over those rolls; the next line starts in the fade-out.
             ws = json.loads(stem.with_suffix(".words.json").read_text(encoding="utf-8"))
             fdur = sf.info(str(stem.with_suffix(".wav"))).duration
             ws = [w for w in ws if w["e"] - w["s"] >= 0.01]  # drop Whisper's zero-length stamps
@@ -59,8 +73,8 @@ for i, b in enumerate(script["beats"]):
         beats.append({"id": b["id"], "start": round(t * FPS), "dur": round(dur * FPS), "clip": {**c, "from": round(a0, 3), "to": round(a1, 3), "speechAt": round(pre, 3)}})
         print(f"{b['id']}: pre-roll {pre:.2f}s, post-roll {post:.2f}s, {d:.1f}s on screen")
     else:
-        meta = json.loads((adir / f"{b['id']}.json").read_text())
-        words = json.loads((adir / f"{b['id']}.words.json").read_text())
+        meta = json.loads((adir / f"{b['id']}.json").read_text(encoding="utf-8"))
+        words = json.loads((adir / f"{b['id']}.words.json").read_text(encoding="utf-8"))
         gap = P["to_clip"] if (nxt and "clip" in nxt) else (P["gap"] if nxt else P["end_pad"])
         if nxt and "gap" in b: gap = float(b["gap"])
         dur = max(float(b.get("min", P["min_beat"])), P["lead"] + meta["dur"] + gap)
@@ -74,21 +88,54 @@ for a, b in zip(beats, beats[1:]):
     a["dur"] = b["start"] - a["start"]
 beats[-1]["dur"] = total - beats[-1]["start"]
 
-# --- narration (24k mono) -> mastered 48k stereo (v23 / nsdt chain)
-n24 = np.zeros(int(t * 24000) + 24000, dtype=np.float32)
+# --- narration (24k mono) -> mastered 48k stereo without clip-silence pumping
+VO_SR = 24000
+PAD_24 = int(0.25 * VO_SR)
+vo_chunks = []
+vo_slices = []  # (timeline_start_sec, concat_start_48k, concat_len_48k)
+cursor_24 = 0
+
 for kind, path, start in placements:
-    if kind != "vo": continue
-    a, sr = sf.read(path, dtype="float32"); s = int(start * sr); n24[s:s + len(a)] += a
-sf.write(tmp / "narr_raw.wav", n24, 24000)
+    if kind != "vo":
+        continue
+    a, sr = sf.read(path, dtype="float32")
+    if a.ndim > 1:
+        a = a.mean(axis=1)
+    if sr != VO_SR:
+        new_len = int(round(len(a) * VO_SR / sr))
+        a = np.interp(np.linspace(0, len(a) - 1, new_len), np.arange(len(a)), a).astype(np.float32)
+    vo_chunks.append(a)
+    vo_chunks.append(np.zeros(PAD_24, dtype=np.float32))
+    vo_slices.append((start, cursor_24 * 2, len(a) * 2))
+    cursor_24 += len(a) + PAD_24
+
 CHAIN = {  # "cinema" (owner 2026-10-11, "no cinema soul"): chest warmth, presence, a firm compressor so every word lands, de-essed
     "v23": "highpass=f=75,equalizer=f=220:t=q:w=1.0:g=1.6,equalizer=f=3800:t=q:w=0.9:g=1.2,loudnorm=I=-16:TP=-1.5:LRA=11",
     "cinema": "highpass=f=65,equalizer=f=120:t=q:w=0.9:g=2.5,equalizer=f=380:t=q:w=1.2:g=-2,equalizer=f=4200:t=q:w=1.0:g=2.2,"
               "acompressor=threshold=-22dB:ratio=3.2:attack=4:release=90:makeup=2,deesser=i=0.35,loudnorm=I=-15:TP=-1.5:LRA=8",
 }
-ff("-i", str(tmp / "narr_raw.wav"), "-af", CHAIN[script.get("master", "v23")] + ",aresample=48000", "-ac", "2", str(tmp / "narr.wav"))
-mix, _ = sf.read(tmp / "narr.wav", dtype="float32")
+
 need = int(t * SR) + SR
-if len(mix) < need: mix = np.vstack([mix, np.zeros((need - len(mix), 2), dtype=np.float32)])
+mix = np.zeros((need, 2), dtype=np.float32)
+
+if vo_chunks:
+    vo_concat = np.concatenate(vo_chunks)
+    sf.write(tmp / "narr_raw.wav", vo_concat, VO_SR)
+    ff("-i", str(tmp / "narr_raw.wav"), "-af", CHAIN[script.get("master", "v23")] + ",aresample=48000", "-ac", "2", str(tmp / "narr.wav"))
+    vo_master, _ = sf.read(tmp / "narr.wav", dtype="float32")
+    fade_len = int(0.012 * SR)
+    fade_in = np.linspace(0, 1, fade_len, dtype=np.float32)[:, None]
+    fade_out = np.linspace(1, 0, fade_len, dtype=np.float32)[:, None]
+    for start_sec, c_start, c_len in vo_slices:
+        seg = vo_master[c_start : min(len(vo_master), c_start + c_len)].copy()
+        if len(seg) > 2 * fade_len:
+            seg[:fade_len] *= fade_in
+            seg[-fade_len:] *= fade_out
+        s_idx = int(start_sec * SR)
+        e_idx = min(len(mix), s_idx + len(seg))
+        if e_idx > s_idx:
+            mix[s_idx:e_idx] += seg[: e_idx - s_idx]
+
 narr_env = np.abs(mix[:, 0]).copy()
 for kind, path, start in placements:
     if kind != "clip": continue
@@ -98,14 +145,24 @@ for kind, path, start in placements:
 mix = mix[: int(t * SR)]; narr_env = narr_env[: len(mix)]
 
 # --- one-shot SFX, only on a visible physical action (owner: no whooshes, no drones). shot.sfx = [{"k": "thud|click|tick", "at": "word"}]
+ALLOWED_SUFFIXES = {"s", "es", "d", "ed", "ing", "er", "ers", "ly"}
+norm_w = lambda s: re.sub(r"[^a-z0-9$%]", "", str(s).lower())
+
 def cue(b, key, fb):
     if isinstance(key, (int, float)): return key
     if not key: return fb
-    k, _, nth = str(key).partition("#"); k = re.sub(r"[^a-z0-9$%]", "", k.lower()); seen = 0
+    k, _, nth = str(key).partition("#"); k = norm_w(k); target_n = int(nth or 1)
+    seen = 0
     for w in b.get("words", []):
-        if re.sub(r"[^a-z0-9$%]", "", w["w"].lower()).startswith(k):
+        wn = norm_w(w["w"])
+        if wn == k or (len(k) >= 4 and wn.startswith(k) and wn[len(k):] in ALLOWED_SUFFIXES):
             seen += 1
-            if seen >= int(nth or 1): return max(0, w["f"] - 4)
+            if seen >= target_n: return max(0, w["f"] - 4)
+    seen = 0
+    for w in b.get("words", []):
+        if norm_w(w["w"]).startswith(k):
+            seen += 1
+            if seen >= target_n: return max(0, w["f"] - 4)
     return fb
 
 fx = np.zeros(len(mix)); mutes = []

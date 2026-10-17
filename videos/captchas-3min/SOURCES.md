@@ -1,3 +1,6 @@
+> [!NOTE]
+> **Cut v6 Alignment**: In the final approved v6 cut (`All-in_captchas_3min_v6.mp4`), all audio is clean voice-only (no music bed) and visuals are strictly picture-led.
+
 # SOURCES · captchas-3min
 
 Script and voiced lines: not-so-dark-times `captchas-p2` (unchanged), whose facts were verified there (`not-so-dark-times/videos/captchas*/SOURCES.md`).

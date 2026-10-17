@@ -1,0 +1,1458 @@
+[2026-10-15 21:12:51] Studio data compiled: 24 topics, 59 renders, 434 beats.
+[2026-10-15 21:13:07] Studio data compiled: 24 topics, 59 renders, 434 beats.
+[2026-10-15 21:13:07] Successfully exported Command Center to: C:\Users\pc\Documents\All-in-keep\All-in\dashboard\index.html
+[2026-10-15 21:13:07] Successfully exported Command Center to: C:\Users\pc\Documents\All-in-keep\deliverables\All-in Dashboard\index.html
+[2026-10-15 21:13:07] Successfully exported Command Center to: C:\Users\pc\Desktop\All-in Dashboard\index.html
+[2026-10-15 21:14:57] Studio data compiled: 24 topics, 59 renders, 434 beats.
+[2026-10-15 21:14:57] Successfully exported Command Center to: C:\Users\pc\Documents\All-in-keep\All-in\dashboard\index.html
+[2026-10-15 21:14:57] Successfully exported Command Center to: C:\Users\pc\Documents\All-in-keep\deliverables\All-in Dashboard\index.html
+[2026-10-15 21:14:57] Successfully exported Command Center to: C:\Users\pc\Desktop\All-in Dashboard\index.html
+[2026-10-15 21:51:46] Studio data compiled: 24 topics, 59 renders, 434 beats.
+[2026-10-15 21:51:46] Saved All-in/studio_data.json
+[2026-10-15 21:51:46] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\All-in\index.html
+[2026-10-15 21:51:46] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\index.html
+[2026-10-15 21:51:46] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\deliverables\All-in Dashboard\index.html
+[2026-10-15 21:51:46] Successfully spliced Studio OS data into: C:\Users\pc\Desktop\All-in Dashboard\index.html
+[2026-10-16 17:05:30] Studio data compiled: 24 topics, 62 renders, 435 beats.
+[2026-10-16 17:05:30] Saved All-in/studio_data.json
+[2026-10-16 17:05:30] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\All-in\index.html
+[2026-10-16 17:05:30] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\index.html
+[2026-10-16 17:05:30] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\deliverables\All-in Dashboard\index.html
+[2026-10-16 17:05:30] Successfully spliced Studio OS data into: C:\Users\pc\Desktop\All-in Dashboard\index.html
+[2026-10-16 17:06:08] Studio data compiled: 24 topics, 62 renders, 435 beats.
+[2026-10-16 17:06:08] Saved All-in/studio_data.json
+[2026-10-16 17:06:08] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\All-in\index.html
+[2026-10-16 17:06:08] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\index.html
+[2026-10-16 17:06:08] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\deliverables\All-in Dashboard\index.html
+[2026-10-16 17:06:08] Successfully spliced Studio OS data into: C:\Users\pc\Desktop\All-in Dashboard\index.html
+[2026-10-16 17:38:40] [AutoWorker] ============================================================
+[2026-10-16 17:38:40] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: microwave-trading
+[2026-10-16 17:38:40] [AutoWorker] ============================================================
+[2026-10-16 17:38:40] [AutoWorker] Step 1: Running lint_text on microwave-trading...
+[2026-10-16 17:38:41] [AutoWorker] PASS [lint_text].
+[2026-10-16 17:38:41] [AutoWorker] Step 2: Running taste_audit on microwave-trading...
+[2026-10-16 17:38:41] [AutoWorker] PASS [taste_audit].
+[2026-10-16 17:38:41] [AutoWorker] Step 3: Running TTS narration on microwave-trading...
+[2026-10-16 17:40:58] [AutoWorker] PASS [tts].
+[2026-10-16 17:40:58] [AutoWorker] Step 4: Running voice_check on microwave-trading...
+[2026-10-16 17:41:00] [AutoWorker] FAIL [voice_check] for microwave-trading:
+line    pitch spread  level   w/s    end
+b01       194     93  -20.0  2.84   -15%
+b02       202     86  -20.0  2.62    +0%
+b03       202     94  -20.0  2.57   -20%
+b04       192    100  -20.0  3.06   -12%
+b05       197     75  -20.0  3.12    -1%
+b06       207     90  -20.0  2.95    +1%
+b07       195     98  -20.0  4.18    +9%  ! rate
+1 line(s) flagged
+
+[2026-10-16 17:43:50] [AutoWorker] ============================================================
+[2026-10-16 17:43:50] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: microwave-trading
+[2026-10-16 17:43:50] [AutoWorker] ============================================================
+[2026-10-16 17:43:51] [AutoWorker] Step 1: Running lint_text on microwave-trading...
+[2026-10-16 17:43:51] [AutoWorker] PASS [lint_text].
+[2026-10-16 17:43:51] [AutoWorker] Step 2: Running taste_audit on microwave-trading...
+[2026-10-16 17:43:51] [AutoWorker] PASS [taste_audit].
+[2026-10-16 17:43:51] [AutoWorker] Step 3: Running TTS narration on microwave-trading...
+[2026-10-16 17:43:52] [AutoWorker] PASS [tts].
+[2026-10-16 17:43:52] [AutoWorker] Step 4: Running voice_check on microwave-trading...
+[2026-10-16 17:43:55] [AutoWorker] PASS [voice_check].
+[2026-10-16 17:43:55] [AutoWorker] Step 5: Building timeline and master audio for microwave-trading...
+[2026-10-16 17:43:58] [AutoWorker] PASS [build].
+[2026-10-16 17:43:58] [AutoWorker] Step 6: Rendering cutstills for microwave-trading...
+[2026-10-16 17:44:59] [AutoWorker] FAIL [cutstills] for microwave-trading:
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+SymbolicateableError [TypeError]: Cannot read properties of undefined (reading 'map')
+    at Bars (http://localhost:3000/bundle.js:5659:19)
+    at renderWithHooks (http://localhost:3000/bundle.js:17626:21)
+    at updateFunctionComponent (http://localhost:3000/bundle.js:19780:15)
+    at beginWork (http://localhost:3000/bundle.j
+[2026-10-16 17:54:28] Studio data compiled: 24 topics, 64 renders, 435 beats.
+[2026-10-16 17:54:28] Saved All-in/studio_data.json
+[2026-10-16 17:54:28] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\All-in\index.html
+[2026-10-16 17:54:28] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\index.html
+[2026-10-16 17:54:28] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\deliverables\All-in Dashboard\index.html
+[2026-10-16 17:54:28] Successfully spliced Studio OS data into: C:\Users\pc\Desktop\All-in Dashboard\index.html
+[2026-10-16 17:56:34] [AutoWorker] === All-in Studio Continuous Autonomous Engine Activated ===
+[2026-10-16 17:56:34] [AutoWorker] Operating autonomously 24/7: Scanning backlog, auto-healing, rendering, and auditing.
+[2026-10-16 17:56:34] [AutoWorker] --- [Cycle 1] Scanning studio backlog for topic initiatives ---
+[2026-10-16 17:56:42] [AutoWorker] Active improvement priority queue: ['agent-with-your-card', 'ai-ban', 'ai-grey-zone', 'captchas-3min', 'captchas-full']
+[2026-10-16 17:56:42] [AutoWorker] Initiating autonomous improvement on: agent-with-your-card
+[2026-10-16 17:56:42] [AutoWorker] ============================================================
+[2026-10-16 17:56:42] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: agent-with-your-card
+[2026-10-16 17:56:42] [AutoWorker] ============================================================
+[2026-10-16 17:56:42] [AutoWorker] agent-with-your-card fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 17:56:42] [AutoWorker] Auto-healed agent-with-your-card script parameters and cadence.
+[2026-10-16 17:56:42] [AutoWorker] Step 1: Running lint_text on agent-with-your-card...
+[2026-10-16 17:56:42] [AutoWorker] FAIL [lint_text] for agent-with-your-card:
+FAIL [text] a01: 3 consecutive 'split' cuts in a row! Owner rule (2026-10-15): 'i dont like the bi-screen left and right kinda permanent format. IT MUST BE MORE PLEASANT AND PREMIUM PRO TO WATCH'. Alternate with 'full' or 'scene' hero cuts.
+FAIL [text] a02: 4 consecutive 'split' cuts in a row! Owner rule (2026-10-15): 'i dont like the bi-screen left and right kinda permanent format. IT MUST BE MOR
+[2026-10-16 17:56:42] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 17:56:57] [AutoWorker] Initiating autonomous improvement on: ai-ban
+[2026-10-16 17:56:57] [AutoWorker] ============================================================
+[2026-10-16 17:56:57] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: ai-ban
+[2026-10-16 17:56:57] [AutoWorker] ============================================================
+[2026-10-16 17:56:58] [AutoWorker] ai-ban fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 17:56:58] [AutoWorker] Auto-healed ai-ban script parameters and cadence.
+[2026-10-16 17:56:58] [AutoWorker] Step 1: Running lint_text on ai-ban...
+[2026-10-16 17:56:58] [AutoWorker] FAIL [lint_text] for ai-ban:
+FAIL [text] h03.0: lone LineIcon ('people') centered in 'full' layout looks bare/slop. Use a rich full-stage visual (Film/Print/Polaroid/BlogProof/PhoneChat/PhoneCall/CallGrid/Captcha4/Flow/Bars/IconRow/Score/MousePath).
+FAIL [text] h03.2: lone LineIcon ('clock') centered in 'full' layout looks bare/slop. Use a rich full-stage visual (Film/Print/Polaroid/BlogProof/PhoneChat/PhoneCall/CallGrid/Capt
+[2026-10-16 17:56:58] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 17:57:13] [AutoWorker] Initiating autonomous improvement on: ai-grey-zone
+[2026-10-16 17:57:13] [AutoWorker] ============================================================
+[2026-10-16 17:57:13] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: ai-grey-zone
+[2026-10-16 17:57:13] [AutoWorker] ============================================================
+[2026-10-16 17:57:14] [AutoWorker] ai-grey-zone fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 17:57:14] [AutoWorker] Auto-healing ai-grey-zone using gen_sample_2min.py...
+[2026-10-16 17:57:14] [AutoWorker] Auto-healed ai-grey-zone with gen_sample_2min.py.
+[2026-10-16 17:57:14] [AutoWorker] Step 1: Running lint_text on ai-grey-zone...
+[2026-10-16 17:57:14] [AutoWorker] FAIL [lint_text] for ai-grey-zone:
+FAIL [text] h01.0: banned woodcut engraving plate 'GuardrailGate' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] h01.0: banned woodcut engraving plate 'HiddenPrompt' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] h01.1: banned woodcut engraving plate 'GuardrailGate' (owner retired woodcut plates; use captchas_full_v2 kit
+[2026-10-16 17:57:14] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 17:57:29] [AutoWorker] Initiating autonomous improvement on: captchas-3min
+[2026-10-16 17:57:29] [AutoWorker] ============================================================
+[2026-10-16 17:57:29] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-3min
+[2026-10-16 17:57:29] [AutoWorker] ============================================================
+[2026-10-16 17:57:29] [AutoWorker] captchas-3min fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 17:57:29] [AutoWorker] Auto-healed captchas-3min script parameters and cadence.
+[2026-10-16 17:57:29] [AutoWorker] Step 1: Running lint_text on captchas-3min...
+[2026-10-16 17:57:29] [AutoWorker] FAIL [lint_text] for captchas-3min:
+FAIL [text] o01: narration mentions real-world WHO/WHAT ('Yahoo' in 'It starts in the year two thousand, at Yahoo. Robots were signing up f'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [t
+[2026-10-16 17:57:29] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 17:57:44] [AutoWorker] Initiating autonomous improvement on: captchas-full
+[2026-10-16 17:57:44] [AutoWorker] ============================================================
+[2026-10-16 17:57:44] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-full
+[2026-10-16 17:57:44] [AutoWorker] ============================================================
+[2026-10-16 17:57:45] [AutoWorker] captchas-full fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 17:57:45] [AutoWorker] Auto-healed captchas-full script parameters and cadence.
+[2026-10-16 17:57:45] [AutoWorker] Step 1: Running lint_text on captchas-full...
+[2026-10-16 17:57:45] [AutoWorker] FAIL [lint_text] for captchas-full:
+FAIL [text] a05b: both sides of split are bare LineIcons ('person' + 'cash'). Owner rule (2026-10-15): avoid random stray icon slop; pair with a real photo, UI widget, Bubble, or PageQuote.
+FAIL [text] o01: narration mentions real-world WHO/WHAT ('Yahoo' in 'It starts in the year two thousand, at Yahoo. Robots were signing up f'...), but visuals only use generic icons/calendar ('stray slop'). Owne
+[2026-10-16 17:57:45] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 17:58:00] [AutoWorker] Initiating autonomous improvement on: captchas-sample
+[2026-10-16 17:58:00] [AutoWorker] ============================================================
+[2026-10-16 17:58:00] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-sample
+[2026-10-16 17:58:00] [AutoWorker] ============================================================
+[2026-10-16 17:58:01] [AutoWorker] captchas-sample fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 17:58:01] [AutoWorker] Auto-healed captchas-sample script parameters and cadence.
+[2026-10-16 17:58:01] [AutoWorker] Step 1: Running lint_text on captchas-sample...
+[2026-10-16 17:58:01] [AutoWorker] FAIL [lint_text] for captchas-sample:
+FAIL [text] a03: banned boxy card 'DossierDoc' (ds/evidence.tsx is retired; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] a03: banned boxy card 'MetricChart' (ds/evidence.tsx is retired; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] a03: narration mentions real-world WHO/WHAT ('UC Irvine' in 'Researchers at UC Irvine added it up. | Eight hundred nineteen million'...), but visuals
+[2026-10-16 17:58:01] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 17:58:16] [AutoWorker] Initiating autonomous improvement on: china-ai-underground
+[2026-10-16 17:58:16] [AutoWorker] ============================================================
+[2026-10-16 17:58:16] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: china-ai-underground
+[2026-10-16 17:58:16] [AutoWorker] ============================================================
+[2026-10-16 17:58:16] [AutoWorker] china-ai-underground fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 17:58:16] [AutoWorker] Auto-healed china-ai-underground script parameters and cadence.
+[2026-10-16 17:58:16] [AutoWorker] Step 1: Running lint_text on china-ai-underground...
+[2026-10-16 17:58:17] [AutoWorker] PASS [lint_text].
+[2026-10-16 17:58:17] [AutoWorker] Step 2: Running taste_audit on china-ai-underground...
+[2026-10-16 17:58:17] [AutoWorker] FAIL [taste_audit] for china-ai-underground:
+WARN [taste] h01.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] n05.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] n02.0: Static cut warning! No internal animat
+[2026-10-16 17:58:17] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 17:58:32] [AutoWorker] Initiating autonomous improvement on: elon-musk
+[2026-10-16 17:58:32] [AutoWorker] ============================================================
+[2026-10-16 17:58:32] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: elon-musk
+[2026-10-16 17:58:32] [AutoWorker] ============================================================
+[2026-10-16 17:58:33] [AutoWorker] elon-musk fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 17:58:33] [AutoWorker] Auto-healed elon-musk script parameters and cadence.
+[2026-10-16 17:58:33] [AutoWorker] Step 1: Running lint_text on elon-musk...
+[2026-10-16 17:58:33] [AutoWorker] FAIL [lint_text] for elon-musk:
+FAIL [text] h00: narration mentions real-world WHO/WHAT ('2022' in 'In September 2022, a secret naval assault crossed the Black Sea. || Su'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [te
+[2026-10-16 17:58:33] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 17:58:48] [AutoWorker] Initiating autonomous improvement on: greyhat-ai
+[2026-10-16 17:58:48] [AutoWorker] ============================================================
+[2026-10-16 17:58:48] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: greyhat-ai
+[2026-10-16 17:58:48] [AutoWorker] ============================================================
+[2026-10-16 17:58:49] [AutoWorker] greyhat-ai fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 17:58:49] [AutoWorker] Auto-healed greyhat-ai script parameters and cadence.
+[2026-10-16 17:58:49] [AutoWorker] Step 1: Running lint_text on greyhat-ai...
+[2026-10-16 17:58:49] [AutoWorker] FAIL [lint_text] for greyhat-ai:
+FAIL [text] h01: both sides of split are bare LineIcons ('brain' + 'target'). Owner rule (2026-10-15): avoid random stray icon slop; pair with a real photo, UI widget, Bubble, or PageQuote.
+FAIL [text] h02: both sides of split are bare LineIcons ('shield' + 'warning'). Owner rule (2026-10-15): avoid random stray icon slop; pair with a real photo, UI widget, Bubble, or PageQuote.
+FAIL [text] h03: 3
+[2026-10-16 17:58:49] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 17:59:04] [AutoWorker] Initiating autonomous improvement on: poisoned-well
+[2026-10-16 17:59:04] [AutoWorker] ============================================================
+[2026-10-16 17:59:04] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: poisoned-well
+[2026-10-16 17:59:04] [AutoWorker] ============================================================
+[2026-10-16 17:59:04] [AutoWorker] poisoned-well fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 17:59:04] [AutoWorker] Auto-healed poisoned-well script parameters and cadence.
+[2026-10-16 17:59:04] [AutoWorker] Step 1: Running lint_text on poisoned-well...
+[2026-10-16 17:59:05] [AutoWorker] FAIL [lint_text] for poisoned-well:
+FAIL [text] h02: narration mentions real-world WHO/WHAT ('2025' in 'In 2025, reporters found research papers hiding a secret message, in w'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [te
+[2026-10-16 17:59:05] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 17:59:20] [AutoWorker] Initiating autonomous improvement on: stolen-voices
+[2026-10-16 17:59:20] [AutoWorker] ============================================================
+[2026-10-16 17:59:20] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: stolen-voices
+[2026-10-16 17:59:20] [AutoWorker] ============================================================
+[2026-10-16 17:59:20] [AutoWorker] stolen-voices fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 17:59:20] [AutoWorker] Auto-healed stolen-voices script parameters and cadence.
+[2026-10-16 17:59:20] [AutoWorker] Step 1: Running lint_text on stolen-voices...
+[2026-10-16 17:59:20] [AutoWorker] FAIL [lint_text] for stolen-voices:
+FAIL [text] a01: 3 consecutive 'split' cuts in a row! Owner rule (2026-10-15): 'i dont like the bi-screen left and right kinda permanent format. IT MUST BE MORE PLEASANT AND PREMIUM PRO TO WATCH'. Alternate with 'full' or 'scene' hero cuts.
+FAIL [text] a02: 4 consecutive 'split' cuts in a row! Owner rule (2026-10-15): 'i dont like the bi-screen left and right kinda permanent format. IT MUST BE MOR
+[2026-10-16 17:59:20] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 17:59:35] [AutoWorker] Initiating autonomous improvement on: surveillance-pricing
+[2026-10-16 17:59:35] [AutoWorker] ============================================================
+[2026-10-16 17:59:35] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: surveillance-pricing
+[2026-10-16 17:59:35] [AutoWorker] ============================================================
+[2026-10-16 17:59:35] [AutoWorker] surveillance-pricing fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 17:59:35] [AutoWorker] Auto-healed surveillance-pricing script parameters and cadence.
+[2026-10-16 17:59:35] [AutoWorker] Step 1: Running lint_text on surveillance-pricing...
+[2026-10-16 17:59:36] [AutoWorker] FAIL [lint_text] for surveillance-pricing:
+FAIL [text] h01: both sides of split are bare LineIcons ('laptop' + 'coin'). Owner rule (2026-10-15): avoid random stray icon slop; pair with a real photo, UI widget, Bubble, or PageQuote.
+FAIL [text] h02: both sides of split are bare LineIcons ('laptop' + 'cash'). Owner rule (2026-10-15): avoid random stray icon slop; pair with a real photo, UI widget, Bubble, or PageQuote.
+FAIL [text] h03: 3 con
+[2026-10-16 17:59:36] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 17:59:51] [AutoWorker] Initiating autonomous improvement on: the-ai-cast
+[2026-10-16 17:59:51] [AutoWorker] ============================================================
+[2026-10-16 17:59:51] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: the-ai-cast
+[2026-10-16 17:59:51] [AutoWorker] ============================================================
+[2026-10-16 17:59:52] [AutoWorker] the-ai-cast fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 17:59:52] [AutoWorker] Step 1: Running lint_text on the-ai-cast...
+[2026-10-16 17:59:53] [AutoWorker] PASS [lint_text].
+[2026-10-16 17:59:53] [AutoWorker] Step 2: Running taste_audit on the-ai-cast...
+[2026-10-16 17:59:54] [AutoWorker] FAIL [taste_audit] for the-ai-cast:
+FAIL [taste] c02.0: On-screen word ceiling exceeded! Found 18 words on screen (max 12). Owner Lesson #84 mandate: the picture shows physical mechanisms; the voice tells the story! Shorten quotes/labels.
+FAIL [taste] c07.1: On-screen word ceiling exceeded! Found 19 words on screen (max 12). Owner Lesson #84 mandate: the picture shows physical mechanisms; the voice tells the story! Shorten quotes/la
+[2026-10-16 17:59:54] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:00:09] [AutoWorker] Initiating autonomous improvement on: why-ai-dumber
+[2026-10-16 18:00:09] [AutoWorker] ============================================================
+[2026-10-16 18:00:09] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: why-ai-dumber
+[2026-10-16 18:00:09] [AutoWorker] ============================================================
+[2026-10-16 18:00:09] [AutoWorker] why-ai-dumber fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:00:09] [AutoWorker] Auto-healed why-ai-dumber script parameters and cadence.
+[2026-10-16 18:00:09] [AutoWorker] Step 1: Running lint_text on why-ai-dumber...
+[2026-10-16 18:00:09] [AutoWorker] FAIL [lint_text] for why-ai-dumber:
+FAIL [text] h00: banned woodcut engraving plate 'BluntPencil' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] a01: banned woodcut engraving plate 'CloudingGlass' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] a02: banned woodcut engraving plate 'JournalPlate' (owner retired woodcut plates; use captchas_full_v2 kit + real 
+[2026-10-16 18:00:09] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:00:24] [AutoWorker] Completed full backlog pass. Sleeping 30s before next continuous scan...
+[2026-10-16 18:00:54] [AutoWorker] --- [Cycle 2] Scanning studio backlog for topic initiatives ---
+[2026-10-16 18:01:16] [AutoWorker] Active improvement priority queue: ['agent-with-your-card', 'ai-ban', 'ai-grey-zone', 'captchas-3min', 'captchas-full']
+[2026-10-16 18:01:16] [AutoWorker] Initiating autonomous improvement on: agent-with-your-card
+[2026-10-16 18:01:16] [AutoWorker] ============================================================
+[2026-10-16 18:01:16] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: agent-with-your-card
+[2026-10-16 18:01:16] [AutoWorker] ============================================================
+[2026-10-16 18:01:17] [AutoWorker] agent-with-your-card fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:01:17] [AutoWorker] Step 1: Running lint_text on agent-with-your-card...
+[2026-10-16 18:01:17] [AutoWorker] FAIL [lint_text] for agent-with-your-card:
+FAIL [text] a01: 3 consecutive 'split' cuts in a row! Owner rule (2026-10-15): 'i dont like the bi-screen left and right kinda permanent format. IT MUST BE MORE PLEASANT AND PREMIUM PRO TO WATCH'. Alternate with 'full' or 'scene' hero cuts.
+FAIL [text] a02: 4 consecutive 'split' cuts in a row! Owner rule (2026-10-15): 'i dont like the bi-screen left and right kinda permanent format. IT MUST BE MOR
+[2026-10-16 18:01:17] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:01:32] [AutoWorker] Initiating autonomous improvement on: ai-ban
+[2026-10-16 18:01:32] [AutoWorker] ============================================================
+[2026-10-16 18:01:32] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: ai-ban
+[2026-10-16 18:01:32] [AutoWorker] ============================================================
+[2026-10-16 18:01:34] [AutoWorker] ai-ban fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:01:34] [AutoWorker] Step 1: Running lint_text on ai-ban...
+[2026-10-16 18:01:34] [AutoWorker] FAIL [lint_text] for ai-ban:
+FAIL [text] h03.0: lone LineIcon ('people') centered in 'full' layout looks bare/slop. Use a rich full-stage visual (Film/Print/Polaroid/BlogProof/PhoneChat/PhoneCall/CallGrid/Captcha4/Flow/Bars/IconRow/Score/MousePath).
+FAIL [text] h03.2: lone LineIcon ('clock') centered in 'full' layout looks bare/slop. Use a rich full-stage visual (Film/Print/Polaroid/BlogProof/PhoneChat/PhoneCall/CallGrid/Capt
+[2026-10-16 18:01:34] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:01:49] [AutoWorker] Initiating autonomous improvement on: ai-grey-zone
+[2026-10-16 18:01:49] [AutoWorker] ============================================================
+[2026-10-16 18:01:49] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: ai-grey-zone
+[2026-10-16 18:01:49] [AutoWorker] ============================================================
+[2026-10-16 18:01:53] [AutoWorker] ai-grey-zone fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:01:53] [AutoWorker] Auto-healing ai-grey-zone using gen_sample_2min.py...
+[2026-10-16 18:01:53] [AutoWorker] Auto-healed ai-grey-zone with gen_sample_2min.py.
+[2026-10-16 18:01:53] [AutoWorker] Step 1: Running lint_text on ai-grey-zone...
+[2026-10-16 18:01:54] [AutoWorker] FAIL [lint_text] for ai-grey-zone:
+FAIL [text] h01.0: banned woodcut engraving plate 'GuardrailGate' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] h01.0: banned woodcut engraving plate 'HiddenPrompt' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] h01.1: banned woodcut engraving plate 'GuardrailGate' (owner retired woodcut plates; use captchas_full_v2 kit
+[2026-10-16 18:01:54] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:02:09] [AutoWorker] Initiating autonomous improvement on: captchas-3min
+[2026-10-16 18:02:09] [AutoWorker] ============================================================
+[2026-10-16 18:02:09] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-3min
+[2026-10-16 18:02:09] [AutoWorker] ============================================================
+[2026-10-16 18:02:10] [AutoWorker] captchas-3min fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:02:10] [AutoWorker] Step 1: Running lint_text on captchas-3min...
+[2026-10-16 18:02:12] [AutoWorker] FAIL [lint_text] for captchas-3min:
+FAIL [text] o01: narration mentions real-world WHO/WHAT ('Yahoo' in 'It starts in the year two thousand, at Yahoo. Robots were signing up f'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [t
+[2026-10-16 18:02:12] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:02:27] [AutoWorker] Initiating autonomous improvement on: captchas-full
+[2026-10-16 18:02:27] [AutoWorker] ============================================================
+[2026-10-16 18:02:27] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-full
+[2026-10-16 18:02:27] [AutoWorker] ============================================================
+[2026-10-16 18:02:28] [AutoWorker] captchas-full fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:02:28] [AutoWorker] Step 1: Running lint_text on captchas-full...
+[2026-10-16 18:02:29] [AutoWorker] FAIL [lint_text] for captchas-full:
+FAIL [text] a05b: both sides of split are bare LineIcons ('person' + 'cash'). Owner rule (2026-10-15): avoid random stray icon slop; pair with a real photo, UI widget, Bubble, or PageQuote.
+FAIL [text] o01: narration mentions real-world WHO/WHAT ('Yahoo' in 'It starts in the year two thousand, at Yahoo. Robots were signing up f'...), but visuals only use generic icons/calendar ('stray slop'). Owne
+[2026-10-16 18:02:29] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:02:44] [AutoWorker] Initiating autonomous improvement on: captchas-sample
+[2026-10-16 18:02:44] [AutoWorker] ============================================================
+[2026-10-16 18:02:44] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-sample
+[2026-10-16 18:02:44] [AutoWorker] ============================================================
+[2026-10-16 18:02:44] [AutoWorker] captchas-sample fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:02:44] [AutoWorker] Step 1: Running lint_text on captchas-sample...
+[2026-10-16 18:02:44] [AutoWorker] FAIL [lint_text] for captchas-sample:
+FAIL [text] a03: banned boxy card 'DossierDoc' (ds/evidence.tsx is retired; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] a03: banned boxy card 'MetricChart' (ds/evidence.tsx is retired; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] a03: narration mentions real-world WHO/WHAT ('UC Irvine' in 'Researchers at UC Irvine added it up. | Eight hundred nineteen million'...), but visuals
+[2026-10-16 18:02:44] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:02:59] [AutoWorker] Initiating autonomous improvement on: china-ai-underground
+[2026-10-16 18:02:59] [AutoWorker] ============================================================
+[2026-10-16 18:02:59] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: china-ai-underground
+[2026-10-16 18:02:59] [AutoWorker] ============================================================
+[2026-10-16 18:03:00] [AutoWorker] china-ai-underground fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:03:00] [AutoWorker] Step 1: Running lint_text on china-ai-underground...
+[2026-10-16 18:03:00] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:03:00] [AutoWorker] Step 2: Running taste_audit on china-ai-underground...
+[2026-10-16 18:03:01] [AutoWorker] FAIL [taste_audit] for china-ai-underground:
+WARN [taste] h01.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] n05.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] n02.0: Static cut warning! No internal animat
+[2026-10-16 18:03:01] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:03:16] [AutoWorker] Initiating autonomous improvement on: elon-musk
+[2026-10-16 18:03:16] [AutoWorker] ============================================================
+[2026-10-16 18:03:16] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: elon-musk
+[2026-10-16 18:03:16] [AutoWorker] ============================================================
+[2026-10-16 18:03:17] [AutoWorker] elon-musk fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:03:17] [AutoWorker] Step 1: Running lint_text on elon-musk...
+[2026-10-16 18:03:17] [AutoWorker] FAIL [lint_text] for elon-musk:
+FAIL [text] h00: narration mentions real-world WHO/WHAT ('2022' in 'In September 2022, a secret naval assault crossed the Black Sea. || Su'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [te
+[2026-10-16 18:03:17] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:03:32] [AutoWorker] Initiating autonomous improvement on: greyhat-ai
+[2026-10-16 18:03:32] [AutoWorker] ============================================================
+[2026-10-16 18:03:32] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: greyhat-ai
+[2026-10-16 18:03:32] [AutoWorker] ============================================================
+[2026-10-16 18:03:33] [AutoWorker] greyhat-ai fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:03:33] [AutoWorker] Step 1: Running lint_text on greyhat-ai...
+[2026-10-16 18:03:33] [AutoWorker] FAIL [lint_text] for greyhat-ai:
+FAIL [text] h01: both sides of split are bare LineIcons ('brain' + 'target'). Owner rule (2026-10-15): avoid random stray icon slop; pair with a real photo, UI widget, Bubble, or PageQuote.
+FAIL [text] h02: both sides of split are bare LineIcons ('shield' + 'warning'). Owner rule (2026-10-15): avoid random stray icon slop; pair with a real photo, UI widget, Bubble, or PageQuote.
+FAIL [text] h03: 3
+[2026-10-16 18:03:33] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:03:48] [AutoWorker] Initiating autonomous improvement on: poisoned-well
+[2026-10-16 18:03:48] [AutoWorker] ============================================================
+[2026-10-16 18:03:48] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: poisoned-well
+[2026-10-16 18:03:48] [AutoWorker] ============================================================
+[2026-10-16 18:03:49] [AutoWorker] poisoned-well fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:03:49] [AutoWorker] Step 1: Running lint_text on poisoned-well...
+[2026-10-16 18:03:49] [AutoWorker] FAIL [lint_text] for poisoned-well:
+FAIL [text] h02: narration mentions real-world WHO/WHAT ('2025' in 'In 2025, reporters found research papers hiding a secret message, in w'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [te
+[2026-10-16 18:03:49] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:04:04] [AutoWorker] Initiating autonomous improvement on: stolen-voices
+[2026-10-16 18:04:04] [AutoWorker] ============================================================
+[2026-10-16 18:04:04] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: stolen-voices
+[2026-10-16 18:04:04] [AutoWorker] ============================================================
+[2026-10-16 18:04:04] [AutoWorker] stolen-voices fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:04:04] [AutoWorker] Step 1: Running lint_text on stolen-voices...
+[2026-10-16 18:04:04] [AutoWorker] FAIL [lint_text] for stolen-voices:
+FAIL [text] a01: 3 consecutive 'split' cuts in a row! Owner rule (2026-10-15): 'i dont like the bi-screen left and right kinda permanent format. IT MUST BE MORE PLEASANT AND PREMIUM PRO TO WATCH'. Alternate with 'full' or 'scene' hero cuts.
+FAIL [text] a02: 4 consecutive 'split' cuts in a row! Owner rule (2026-10-15): 'i dont like the bi-screen left and right kinda permanent format. IT MUST BE MOR
+[2026-10-16 18:04:04] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:04:19] [AutoWorker] Initiating autonomous improvement on: surveillance-pricing
+[2026-10-16 18:04:19] [AutoWorker] ============================================================
+[2026-10-16 18:04:19] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: surveillance-pricing
+[2026-10-16 18:04:19] [AutoWorker] ============================================================
+[2026-10-16 18:04:20] [AutoWorker] surveillance-pricing fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:04:20] [AutoWorker] Step 1: Running lint_text on surveillance-pricing...
+[2026-10-16 18:04:20] [AutoWorker] FAIL [lint_text] for surveillance-pricing:
+FAIL [text] h01: both sides of split are bare LineIcons ('laptop' + 'coin'). Owner rule (2026-10-15): avoid random stray icon slop; pair with a real photo, UI widget, Bubble, or PageQuote.
+FAIL [text] h02: both sides of split are bare LineIcons ('laptop' + 'cash'). Owner rule (2026-10-15): avoid random stray icon slop; pair with a real photo, UI widget, Bubble, or PageQuote.
+FAIL [text] h03: 3 con
+[2026-10-16 18:04:20] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:04:35] [AutoWorker] Initiating autonomous improvement on: the-ai-cast
+[2026-10-16 18:04:35] [AutoWorker] ============================================================
+[2026-10-16 18:04:35] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: the-ai-cast
+[2026-10-16 18:04:35] [AutoWorker] ============================================================
+[2026-10-16 18:04:36] [AutoWorker] the-ai-cast fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:04:36] [AutoWorker] Step 1: Running lint_text on the-ai-cast...
+[2026-10-16 18:04:36] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:04:36] [AutoWorker] Step 2: Running taste_audit on the-ai-cast...
+[2026-10-16 18:04:37] [AutoWorker] FAIL [taste_audit] for the-ai-cast:
+FAIL [taste] c02.0: On-screen word ceiling exceeded! Found 18 words on screen (max 12). Owner Lesson #84 mandate: the picture shows physical mechanisms; the voice tells the story! Shorten quotes/labels.
+FAIL [taste] c07.1: On-screen word ceiling exceeded! Found 19 words on screen (max 12). Owner Lesson #84 mandate: the picture shows physical mechanisms; the voice tells the story! Shorten quotes/la
+[2026-10-16 18:04:37] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:04:52] [AutoWorker] Initiating autonomous improvement on: why-ai-dumber
+[2026-10-16 18:04:52] [AutoWorker] ============================================================
+[2026-10-16 18:04:52] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: why-ai-dumber
+[2026-10-16 18:04:52] [AutoWorker] ============================================================
+[2026-10-16 18:04:53] [AutoWorker] why-ai-dumber fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:04:53] [AutoWorker] Step 1: Running lint_text on why-ai-dumber...
+[2026-10-16 18:04:53] [AutoWorker] FAIL [lint_text] for why-ai-dumber:
+FAIL [text] h00: banned woodcut engraving plate 'BluntPencil' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] a01: banned woodcut engraving plate 'CloudingGlass' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] a02: banned woodcut engraving plate 'JournalPlate' (owner retired woodcut plates; use captchas_full_v2 kit + real 
+[2026-10-16 18:04:53] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:05:08] [AutoWorker] Completed full backlog pass. Sleeping 30s before next continuous scan...
+[2026-10-16 18:05:38] [AutoWorker] --- [Cycle 3] Scanning studio backlog for topic initiatives ---
+[2026-10-16 18:05:57] [AutoWorker] Active improvement priority queue: ['agent-with-your-card', 'ai-ban', 'ai-grey-zone', 'captchas-3min', 'captchas-full']
+[2026-10-16 18:05:57] [AutoWorker] Initiating autonomous improvement on: agent-with-your-card
+[2026-10-16 18:05:57] [AutoWorker] ============================================================
+[2026-10-16 18:05:57] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: agent-with-your-card
+[2026-10-16 18:05:57] [AutoWorker] ============================================================
+[2026-10-16 18:05:58] [AutoWorker] agent-with-your-card fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:05:58] [AutoWorker] Step 1: Running lint_text on agent-with-your-card...
+[2026-10-16 18:05:58] [AutoWorker] FAIL [lint_text] for agent-with-your-card:
+FAIL [text] a01: 3 consecutive 'split' cuts in a row! Owner rule (2026-10-15): 'i dont like the bi-screen left and right kinda permanent format. IT MUST BE MORE PLEASANT AND PREMIUM PRO TO WATCH'. Alternate with 'full' or 'scene' hero cuts.
+FAIL [text] a02: 4 consecutive 'split' cuts in a row! Owner rule (2026-10-15): 'i dont like the bi-screen left and right kinda permanent format. IT MUST BE MOR
+[2026-10-16 18:05:58] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:06:13] [AutoWorker] Initiating autonomous improvement on: ai-ban
+[2026-10-16 18:06:13] [AutoWorker] ============================================================
+[2026-10-16 18:06:13] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: ai-ban
+[2026-10-16 18:06:13] [AutoWorker] ============================================================
+[2026-10-16 18:06:14] [AutoWorker] ai-ban fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:06:14] [AutoWorker] Step 1: Running lint_text on ai-ban...
+[2026-10-16 18:06:15] [AutoWorker] FAIL [lint_text] for ai-ban:
+FAIL [text] h03.0: lone LineIcon ('people') centered in 'full' layout looks bare/slop. Use a rich full-stage visual (Film/Print/Polaroid/BlogProof/PhoneChat/PhoneCall/CallGrid/Captcha4/Flow/Bars/IconRow/Score/MousePath).
+FAIL [text] h03.2: lone LineIcon ('clock') centered in 'full' layout looks bare/slop. Use a rich full-stage visual (Film/Print/Polaroid/BlogProof/PhoneChat/PhoneCall/CallGrid/Capt
+[2026-10-16 18:06:15] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:06:30] [AutoWorker] Initiating autonomous improvement on: ai-grey-zone
+[2026-10-16 18:06:30] [AutoWorker] ============================================================
+[2026-10-16 18:06:30] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: ai-grey-zone
+[2026-10-16 18:06:30] [AutoWorker] ============================================================
+[2026-10-16 18:06:30] [AutoWorker] ai-grey-zone fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:06:30] [AutoWorker] Auto-healing ai-grey-zone using gen_sample_2min.py...
+[2026-10-16 18:06:30] [AutoWorker] Auto-healed ai-grey-zone with gen_sample_2min.py.
+[2026-10-16 18:06:30] [AutoWorker] Step 1: Running lint_text on ai-grey-zone...
+[2026-10-16 18:06:31] [AutoWorker] FAIL [lint_text] for ai-grey-zone:
+FAIL [text] h01.0: banned woodcut engraving plate 'GuardrailGate' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] h01.0: banned woodcut engraving plate 'HiddenPrompt' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] h01.1: banned woodcut engraving plate 'GuardrailGate' (owner retired woodcut plates; use captchas_full_v2 kit
+[2026-10-16 18:06:31] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:06:46] [AutoWorker] Initiating autonomous improvement on: captchas-3min
+[2026-10-16 18:06:55] [AutoWorker] ============================================================
+[2026-10-16 18:06:55] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-3min
+[2026-10-16 18:06:55] [AutoWorker] ============================================================
+[2026-10-16 18:06:56] [AutoWorker] captchas-3min fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:06:56] [AutoWorker] Step 1: Running lint_text on captchas-3min...
+[2026-10-16 18:06:56] [AutoWorker] FAIL [lint_text] for captchas-3min:
+FAIL [text] o01: narration mentions real-world WHO/WHAT ('Yahoo' in 'It starts in the year two thousand, at Yahoo. Robots were signing up f'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [t
+[2026-10-16 18:06:56] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:07:11] [AutoWorker] Initiating autonomous improvement on: captchas-full
+[2026-10-16 18:07:11] [AutoWorker] ============================================================
+[2026-10-16 18:07:11] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-full
+[2026-10-16 18:07:11] [AutoWorker] ============================================================
+[2026-10-16 18:07:12] [AutoWorker] captchas-full fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:07:13] [AutoWorker] Step 1: Running lint_text on captchas-full...
+[2026-10-16 18:07:13] [AutoWorker] FAIL [lint_text] for captchas-full:
+FAIL [text] a05b: both sides of split are bare LineIcons ('person' + 'cash'). Owner rule (2026-10-15): avoid random stray icon slop; pair with a real photo, UI widget, Bubble, or PageQuote.
+FAIL [text] o01: narration mentions real-world WHO/WHAT ('Yahoo' in 'It starts in the year two thousand, at Yahoo. Robots were signing up f'...), but visuals only use generic icons/calendar ('stray slop'). Owne
+[2026-10-16 18:07:13] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:07:28] [AutoWorker] Initiating autonomous improvement on: captchas-sample
+[2026-10-16 18:07:28] [AutoWorker] ============================================================
+[2026-10-16 18:07:28] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-sample
+[2026-10-16 18:07:28] [AutoWorker] ============================================================
+[2026-10-16 18:07:41] [AutoWorker] captchas-sample fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:07:41] [AutoWorker] Step 1: Running lint_text on captchas-sample...
+[2026-10-16 18:07:42] [AutoWorker] FAIL [lint_text] for captchas-sample:
+FAIL [text] a03: banned boxy card 'DossierDoc' (ds/evidence.tsx is retired; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] a03: banned boxy card 'MetricChart' (ds/evidence.tsx is retired; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] a03: narration mentions real-world WHO/WHAT ('UC Irvine' in 'Researchers at UC Irvine added it up. | Eight hundred nineteen million'...), but visuals
+[2026-10-16 18:07:42] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:07:57] [AutoWorker] Initiating autonomous improvement on: china-ai-underground
+[2026-10-16 18:07:57] [AutoWorker] ============================================================
+[2026-10-16 18:07:57] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: china-ai-underground
+[2026-10-16 18:07:57] [AutoWorker] ============================================================
+[2026-10-16 18:10:52] [AutoWorker] Auto-healed agent-with-your-card script parameters, visuals, and cadence.
+[2026-10-16 18:11:43] [AutoWorker] Auto-healed agent-with-your-card script parameters, visuals, and cadence.
+[2026-10-16 18:14:31] Studio data compiled: 24 topics, 65 renders, 435 beats.
+[2026-10-16 18:14:31] Saved All-in/studio_data.json
+[2026-10-16 18:14:31] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\All-in\index.html
+[2026-10-16 18:14:31] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\index.html
+[2026-10-16 18:14:31] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\deliverables\All-in Dashboard\index.html
+[2026-10-16 18:14:31] Successfully spliced Studio OS data into: C:\Users\pc\Desktop\All-in Dashboard\index.html
+[2026-10-16 18:15:05] [AutoWorker] === All-in Studio Continuous Autonomous Engine Activated ===
+[2026-10-16 18:15:05] [AutoWorker] Operating autonomously 24/7: Scanning backlog, auto-healing, rendering, and auditing.
+[2026-10-16 18:15:05] [AutoWorker] --- [Cycle 1] Scanning studio backlog for topic initiatives ---
+[2026-10-16 18:15:25] [AutoWorker] Active improvement priority queue: ['agent-with-your-card', 'ai-ban', 'ai-grey-zone', 'captchas-3min', 'captchas-full']
+[2026-10-16 18:15:25] [AutoWorker] Initiating autonomous improvement on: agent-with-your-card
+[2026-10-16 18:15:25] [AutoWorker] ============================================================
+[2026-10-16 18:15:25] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: agent-with-your-card
+[2026-10-16 18:15:25] [AutoWorker] ============================================================
+[2026-10-16 18:15:26] [AutoWorker] agent-with-your-card fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:15:26] [AutoWorker] Auto-healed agent-with-your-card script parameters, visuals, and cadence.
+[2026-10-16 18:15:26] [AutoWorker] Step 1: Running lint_text on agent-with-your-card...
+[2026-10-16 18:15:26] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:15:26] [AutoWorker] Step 2: Running taste_audit on agent-with-your-card...
+[2026-10-16 18:15:26] [AutoWorker] PASS [taste_audit].
+[2026-10-16 18:15:26] [AutoWorker] Step 3: Running TTS narration on agent-with-your-card...
+[2026-10-16 18:20:26] [AutoWorker] Error advancing agent-with-your-card: Command '['C:\\Python314\\python.exe', 'tools/tts.py', 'agent-with-your-card']' timed out after 300 seconds
+[2026-10-16 18:20:26] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:20:41] [AutoWorker] Initiating autonomous improvement on: ai-ban
+[2026-10-16 18:20:41] [AutoWorker] ============================================================
+[2026-10-16 18:20:41] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: ai-ban
+[2026-10-16 18:20:41] [AutoWorker] ============================================================
+[2026-10-16 18:20:43] [AutoWorker] ai-ban fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:20:43] [AutoWorker] Auto-healed ai-ban script parameters, visuals, and cadence.
+[2026-10-16 18:20:43] [AutoWorker] Step 1: Running lint_text on ai-ban...
+[2026-10-16 18:20:43] [AutoWorker] FAIL [lint_text] for ai-ban:
+FAIL [text] h02.3: lone LineIcon ('people') centered in 'full' layout looks bare/slop. Use a rich full-stage visual (Film/Print/Polaroid/BlogProof/PhoneChat/PhoneCall/CallGrid/Captcha4/Flow/Bars/IconRow/Score/MousePath).
+FAIL [text] a01.1: lone LineIcon ('newspaper') centered in 'full' layout looks bare/slop. Use a rich full-stage visual (Film/Print/Polaroid/BlogProof/PhoneChat/PhoneCall/CallGrid/
+[2026-10-16 18:20:43] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:20:58] [AutoWorker] Initiating autonomous improvement on: ai-grey-zone
+[2026-10-16 18:20:58] [AutoWorker] ============================================================
+[2026-10-16 18:20:58] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: ai-grey-zone
+[2026-10-16 18:20:58] [AutoWorker] ============================================================
+[2026-10-16 18:20:58] [AutoWorker] ai-grey-zone fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:20:58] [AutoWorker] Auto-healing ai-grey-zone using gen_sample_2min.py...
+[2026-10-16 18:20:58] [AutoWorker] Auto-healed ai-grey-zone with gen_sample_2min.py.
+[2026-10-16 18:20:58] [AutoWorker] Step 1: Running lint_text on ai-grey-zone...
+[2026-10-16 18:20:59] [AutoWorker] FAIL [lint_text] for ai-grey-zone:
+FAIL [text] h01.0: banned woodcut engraving plate 'GuardrailGate' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] h01.0: banned woodcut engraving plate 'HiddenPrompt' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] h01.1: banned woodcut engraving plate 'GuardrailGate' (owner retired woodcut plates; use captchas_full_v2 kit
+[2026-10-16 18:20:59] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:21:14] [AutoWorker] Initiating autonomous improvement on: captchas-3min
+[2026-10-16 18:21:14] [AutoWorker] ============================================================
+[2026-10-16 18:21:14] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-3min
+[2026-10-16 18:21:14] [AutoWorker] ============================================================
+[2026-10-16 18:21:14] [AutoWorker] captchas-3min fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:21:14] [AutoWorker] Auto-healed captchas-3min script parameters, visuals, and cadence.
+[2026-10-16 18:21:14] [AutoWorker] Step 1: Running lint_text on captchas-3min...
+[2026-10-16 18:21:14] [AutoWorker] FAIL [lint_text] for captchas-3min:
+FAIL [text] a03.0: lone LineIcon ('doc') centered in 'full' layout looks bare/slop. Use a rich full-stage visual (Film/Print/Polaroid/BlogProof/PhoneChat/PhoneCall/CallGrid/Captcha4/Flow/Bars/IconRow/Score/MousePath).
+FAIL [text] o01: narration mentions real-world WHO/WHAT ('Yahoo' in 'It starts in the year two thousand, at Yahoo. Robots were signing up f'...), but visuals only use generic icons/c
+[2026-10-16 18:21:14] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:21:29] [AutoWorker] Initiating autonomous improvement on: captchas-full
+[2026-10-16 18:21:29] [AutoWorker] ============================================================
+[2026-10-16 18:21:29] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-full
+[2026-10-16 18:21:29] [AutoWorker] ============================================================
+[2026-10-16 18:21:30] [AutoWorker] captchas-full fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:21:30] [AutoWorker] Auto-healed captchas-full script parameters, visuals, and cadence.
+[2026-10-16 18:21:30] [AutoWorker] Step 1: Running lint_text on captchas-full...
+[2026-10-16 18:21:30] [AutoWorker] FAIL [lint_text] for captchas-full:
+FAIL [text] a03.0: lone LineIcon ('doc') centered in 'full' layout looks bare/slop. Use a rich full-stage visual (Film/Print/Polaroid/BlogProof/PhoneChat/PhoneCall/CallGrid/Captcha4/Flow/Bars/IconRow/Score/MousePath).
+FAIL [text] a05b: lone LineIcon ('person') centered in 'full' layout looks bare/slop. Use a rich full-stage visual (Film/Print/Polaroid/BlogProof/PhoneChat/PhoneCall/CallGrid/Captcha
+[2026-10-16 18:21:30] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:21:45] [AutoWorker] Initiating autonomous improvement on: captchas-sample
+[2026-10-16 18:21:45] [AutoWorker] ============================================================
+[2026-10-16 18:21:45] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-sample
+[2026-10-16 18:21:45] [AutoWorker] ============================================================
+[2026-10-16 18:21:45] [AutoWorker] captchas-sample fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:21:45] [AutoWorker] Auto-healed captchas-sample script parameters, visuals, and cadence.
+[2026-10-16 18:21:45] [AutoWorker] Step 1: Running lint_text on captchas-sample...
+[2026-10-16 18:21:45] [AutoWorker] FAIL [lint_text] for captchas-sample:
+FAIL [text] a03: PageQuote alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] a04: banned boxy card 'ForensicStamp' (ds/evidence.tsx is retired; use captchas_full_v2 kit + real photos/UI)
+lint_text captchas-sample: 2 FAIL, 0 WARN (6 visual cuts, max consecutive splits=1)
+
+[2026-10-16 18:21:45] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:22:00] [AutoWorker] Initiating autonomous improvement on: china-ai-underground
+[2026-10-16 18:22:00] [AutoWorker] ============================================================
+[2026-10-16 18:22:00] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: china-ai-underground
+[2026-10-16 18:22:00] [AutoWorker] ============================================================
+[2026-10-16 18:22:01] [AutoWorker] china-ai-underground fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:22:01] [AutoWorker] Step 1: Running lint_text on china-ai-underground...
+[2026-10-16 18:22:01] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:22:01] [AutoWorker] Step 2: Running taste_audit on china-ai-underground...
+[2026-10-16 18:22:02] [AutoWorker] FAIL [taste_audit] for china-ai-underground:
+WARN [taste] h01.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] n05.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] n02.0: Static cut warning! No internal animat
+[2026-10-16 18:22:02] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:22:17] [AutoWorker] Initiating autonomous improvement on: elon-musk
+[2026-10-16 18:22:17] [AutoWorker] ============================================================
+[2026-10-16 18:22:17] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: elon-musk
+[2026-10-16 18:22:17] [AutoWorker] ============================================================
+[2026-10-16 18:22:17] [AutoWorker] elon-musk fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:22:17] [AutoWorker] Auto-healed elon-musk script parameters, visuals, and cadence.
+[2026-10-16 18:22:17] [AutoWorker] Step 1: Running lint_text on elon-musk...
+[2026-10-16 18:22:17] [AutoWorker] FAIL [lint_text] for elon-musk:
+FAIL [text] a01.0: lone LineIcon ('person') centered in 'full' layout looks bare/slop. Use a rich full-stage visual (Film/Print/Polaroid/BlogProof/PhoneChat/PhoneCall/CallGrid/Captcha4/Flow/Bars/IconRow/Score/MousePath).
+FAIL [text] a02.0: lone LineIcon ('eye') centered in 'full' layout looks bare/slop. Use a rich full-stage visual (Film/Print/Polaroid/BlogProof/PhoneChat/PhoneCall/CallGrid/Captch
+[2026-10-16 18:22:17] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:22:32] [AutoWorker] Initiating autonomous improvement on: greyhat-ai
+[2026-10-16 18:22:32] [AutoWorker] ============================================================
+[2026-10-16 18:22:32] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: greyhat-ai
+[2026-10-16 18:22:32] [AutoWorker] ============================================================
+[2026-10-16 18:22:33] [AutoWorker] greyhat-ai fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:22:33] [AutoWorker] Auto-healed greyhat-ai script parameters, visuals, and cadence.
+[2026-10-16 18:22:33] [AutoWorker] Step 1: Running lint_text on greyhat-ai...
+[2026-10-16 18:22:33] [AutoWorker] FAIL [lint_text] for greyhat-ai:
+FAIL [text] h01: lone LineIcon ('brain') centered in 'full' layout looks bare/slop. Use a rich full-stage visual (Film/Print/Polaroid/BlogProof/PhoneChat/PhoneCall/CallGrid/Captcha4/Flow/Bars/IconRow/Score/MousePath).
+FAIL [text] h03: lone LineIcon ('chip') centered in 'full' layout looks bare/slop. Use a rich full-stage visual (Film/Print/Polaroid/BlogProof/PhoneChat/PhoneCall/CallGrid/Captcha4/F
+[2026-10-16 18:22:33] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:22:48] [AutoWorker] Initiating autonomous improvement on: poisoned-well
+[2026-10-16 18:22:48] [AutoWorker] ============================================================
+[2026-10-16 18:22:48] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: poisoned-well
+[2026-10-16 18:22:48] [AutoWorker] ============================================================
+[2026-10-16 18:22:49] [AutoWorker] poisoned-well fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:22:49] [AutoWorker] Step 1: Running lint_text on poisoned-well...
+[2026-10-16 18:22:49] [AutoWorker] FAIL [lint_text] for poisoned-well:
+FAIL [text] h02: narration mentions real-world WHO/WHAT ('2025' in 'In 2025, reporters found research papers hiding a secret message, in w'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [te
+[2026-10-16 18:22:49] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:23:04] [AutoWorker] Initiating autonomous improvement on: stolen-voices
+[2026-10-16 18:23:04] [AutoWorker] ============================================================
+[2026-10-16 18:23:04] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: stolen-voices
+[2026-10-16 18:23:04] [AutoWorker] ============================================================
+[2026-10-16 18:23:04] [AutoWorker] stolen-voices fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:23:04] [AutoWorker] Auto-healed stolen-voices script parameters, visuals, and cadence.
+[2026-10-16 18:23:04] [AutoWorker] Step 1: Running lint_text on stolen-voices...
+[2026-10-16 18:23:04] [AutoWorker] FAIL [lint_text] for stolen-voices:
+FAIL [text] a08: narration mentions real-world WHO/WHAT ('worker' in 'In twenty twenty-four, a finance worker at a global firm wired out twe'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [
+[2026-10-16 18:23:04] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:23:19] [AutoWorker] Initiating autonomous improvement on: surveillance-pricing
+[2026-10-16 18:23:19] [AutoWorker] ============================================================
+[2026-10-16 18:23:19] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: surveillance-pricing
+[2026-10-16 18:23:19] [AutoWorker] ============================================================
+[2026-10-16 18:23:20] [AutoWorker] surveillance-pricing fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:23:20] [AutoWorker] Auto-healed surveillance-pricing script parameters, visuals, and cadence.
+[2026-10-16 18:23:20] [AutoWorker] Step 1: Running lint_text on surveillance-pricing...
+[2026-10-16 18:23:20] [AutoWorker] FAIL [lint_text] for surveillance-pricing:
+FAIL [text] h01: lone LineIcon ('laptop') centered in 'full' layout looks bare/slop. Use a rich full-stage visual (Film/Print/Polaroid/BlogProof/PhoneChat/PhoneCall/CallGrid/Captcha4/Flow/Bars/IconRow/Score/MousePath).
+FAIL [text] h03: lone LineIcon ('power') centered in 'full' layout looks bare/slop. Use a rich full-stage visual (Film/Print/Polaroid/BlogProof/PhoneChat/PhoneCall/CallGrid/Captcha4
+[2026-10-16 18:23:20] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:23:35] [AutoWorker] Initiating autonomous improvement on: the-ai-cast
+[2026-10-16 18:23:35] [AutoWorker] ============================================================
+[2026-10-16 18:23:35] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: the-ai-cast
+[2026-10-16 18:23:35] [AutoWorker] ============================================================
+[2026-10-16 18:23:35] [AutoWorker] the-ai-cast fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:23:36] [AutoWorker] Auto-healed the-ai-cast script parameters, visuals, and cadence.
+[2026-10-16 18:23:36] [AutoWorker] Step 1: Running lint_text on the-ai-cast...
+[2026-10-16 18:23:36] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:23:36] [AutoWorker] Step 2: Running taste_audit on the-ai-cast...
+[2026-10-16 18:23:36] [AutoWorker] FAIL [taste_audit] for the-ai-cast:
+FAIL [taste] c02.0: On-screen word ceiling exceeded! Found 18 words on screen (max 12). Owner Lesson #84 mandate: the picture shows physical mechanisms; the voice tells the story! Shorten quotes/labels.
+FAIL [taste] c07.1: On-screen word ceiling exceeded! Found 19 words on screen (max 12). Owner Lesson #84 mandate: the picture shows physical mechanisms; the voice tells the story! Shorten quotes/la
+[2026-10-16 18:23:36] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:23:51] [AutoWorker] Initiating autonomous improvement on: why-ai-dumber
+[2026-10-16 18:23:51] [AutoWorker] ============================================================
+[2026-10-16 18:23:51] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: why-ai-dumber
+[2026-10-16 18:23:51] [AutoWorker] ============================================================
+[2026-10-16 18:23:52] [AutoWorker] why-ai-dumber fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:23:52] [AutoWorker] Auto-healed why-ai-dumber script parameters, visuals, and cadence.
+[2026-10-16 18:23:52] [AutoWorker] Step 1: Running lint_text on why-ai-dumber...
+[2026-10-16 18:23:52] [AutoWorker] FAIL [lint_text] for why-ai-dumber:
+FAIL [text] h00: PageQuote alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] a02: PageQuote alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] a03: banned woodcut engraving plate 'PaperRiver' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] a04: banned woodcut engraving plate 'TwoHands' (owner retired woodcut plates; u
+[2026-10-16 18:23:52] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:24:07] [AutoWorker] Completed full backlog pass. Sleeping 30s before next continuous scan...
+[2026-10-16 18:24:37] [AutoWorker] --- [Cycle 2] Scanning studio backlog for topic initiatives ---
+[2026-10-16 18:24:45] [AutoWorker] Active improvement priority queue: ['ai-ban', 'ai-grey-zone', 'captchas-3min', 'captchas-full', 'captchas-sample']
+[2026-10-16 18:24:45] [AutoWorker] Initiating autonomous improvement on: ai-ban
+[2026-10-16 18:24:45] [AutoWorker] ============================================================
+[2026-10-16 18:24:45] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: ai-ban
+[2026-10-16 18:24:45] [AutoWorker] ============================================================
+[2026-10-16 18:24:45] [AutoWorker] ai-ban fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:24:45] [AutoWorker] Auto-healed ai-ban script parameters, visuals, and cadence.
+[2026-10-16 18:24:45] [AutoWorker] Step 1: Running lint_text on ai-ban...
+[2026-10-16 18:24:45] [AutoWorker] FAIL [lint_text] for ai-ban:
+FAIL [text] b05.0: Bubble alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] d04.1: CalendarCard alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] r03.0: CalendarCard alone in 'full' layout; pair it with a picture in a 'split'
+lint_text ai-ban: 3 FAIL, 0 WARN (157 visual cuts, max consecutive splits=1)
+
+[2026-10-16 18:24:45] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:25:01] [AutoWorker] Initiating autonomous improvement on: ai-grey-zone
+[2026-10-16 18:25:01] [AutoWorker] ============================================================
+[2026-10-16 18:25:01] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: ai-grey-zone
+[2026-10-16 18:25:01] [AutoWorker] ============================================================
+[2026-10-16 18:25:02] [AutoWorker] ai-grey-zone fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:25:02] [AutoWorker] Auto-healing ai-grey-zone using gen_sample_2min.py...
+[2026-10-16 18:25:02] [AutoWorker] Auto-healed ai-grey-zone with gen_sample_2min.py.
+[2026-10-16 18:25:02] [AutoWorker] Step 1: Running lint_text on ai-grey-zone...
+[2026-10-16 18:25:02] [AutoWorker] FAIL [lint_text] for ai-grey-zone:
+FAIL [text] h01.0: banned woodcut engraving plate 'GuardrailGate' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] h01.0: banned woodcut engraving plate 'HiddenPrompt' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] h01.1: banned woodcut engraving plate 'GuardrailGate' (owner retired woodcut plates; use captchas_full_v2 kit
+[2026-10-16 18:25:02] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:25:17] [AutoWorker] Initiating autonomous improvement on: captchas-3min
+[2026-10-16 18:25:17] [AutoWorker] ============================================================
+[2026-10-16 18:25:17] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-3min
+[2026-10-16 18:25:17] [AutoWorker] ============================================================
+[2026-10-16 18:25:18] [AutoWorker] captchas-3min fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:25:18] [AutoWorker] Auto-healed captchas-3min script parameters, visuals, and cadence.
+[2026-10-16 18:25:18] [AutoWorker] Step 1: Running lint_text on captchas-3min...
+[2026-10-16 18:25:18] [AutoWorker] FAIL [lint_text] for captchas-3min:
+FAIL [text] o01: narration mentions real-world WHO/WHAT ('Yahoo' in 'It starts in the year two thousand, at Yahoo. Robots were signing up f'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [t
+[2026-10-16 18:25:18] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:25:33] [AutoWorker] Initiating autonomous improvement on: captchas-full
+[2026-10-16 18:25:33] [AutoWorker] ============================================================
+[2026-10-16 18:25:33] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-full
+[2026-10-16 18:25:33] [AutoWorker] ============================================================
+[2026-10-16 18:25:34] [AutoWorker] captchas-full fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:25:34] [AutoWorker] Auto-healed captchas-full script parameters, visuals, and cadence.
+[2026-10-16 18:25:34] [AutoWorker] Step 1: Running lint_text on captchas-full...
+[2026-10-16 18:25:34] [AutoWorker] FAIL [lint_text] for captchas-full:
+FAIL [text] o01.0: CalendarCard alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] o01: narration mentions real-world WHO/WHAT ('Yahoo' in 'It starts in the year two thousand, at Yahoo. Robots were signing up f'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogPr
+[2026-10-16 18:25:34] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:25:49] [AutoWorker] Initiating autonomous improvement on: captchas-sample
+[2026-10-16 18:25:49] [AutoWorker] ============================================================
+[2026-10-16 18:25:49] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-sample
+[2026-10-16 18:25:49] [AutoWorker] ============================================================
+[2026-10-16 18:25:49] [AutoWorker] captchas-sample fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:25:49] [AutoWorker] Step 1: Running lint_text on captchas-sample...
+[2026-10-16 18:25:49] [AutoWorker] FAIL [lint_text] for captchas-sample:
+FAIL [text] a03: PageQuote alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] a04: banned boxy card 'ForensicStamp' (ds/evidence.tsx is retired; use captchas_full_v2 kit + real photos/UI)
+lint_text captchas-sample: 2 FAIL, 0 WARN (6 visual cuts, max consecutive splits=1)
+
+[2026-10-16 18:25:49] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:26:04] [AutoWorker] Initiating autonomous improvement on: china-ai-underground
+[2026-10-16 18:26:04] [AutoWorker] ============================================================
+[2026-10-16 18:26:04] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: china-ai-underground
+[2026-10-16 18:26:04] [AutoWorker] ============================================================
+[2026-10-16 18:26:05] [AutoWorker] china-ai-underground fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:26:05] [AutoWorker] Step 1: Running lint_text on china-ai-underground...
+[2026-10-16 18:26:05] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:26:05] [AutoWorker] Step 2: Running taste_audit on china-ai-underground...
+[2026-10-16 18:26:05] [AutoWorker] FAIL [taste_audit] for china-ai-underground:
+WARN [taste] h01.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] n05.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] n02.0: Static cut warning! No internal animat
+[2026-10-16 18:26:05] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:26:20] [AutoWorker] Initiating autonomous improvement on: elon-musk
+[2026-10-16 18:26:20] [AutoWorker] ============================================================
+[2026-10-16 18:26:20] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: elon-musk
+[2026-10-16 18:26:20] [AutoWorker] ============================================================
+[2026-10-16 18:26:21] [AutoWorker] elon-musk fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:26:21] [AutoWorker] Auto-healed elon-musk script parameters, visuals, and cadence.
+[2026-10-16 18:26:21] [AutoWorker] Step 1: Running lint_text on elon-musk...
+[2026-10-16 18:26:21] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:26:21] [AutoWorker] Step 2: Running taste_audit on elon-musk...
+[2026-10-16 18:26:22] [AutoWorker] FAIL [taste_audit] for elon-musk:
+WARN [taste] a01.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] a02.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+FAIL [taste] a01.0: Visual repeat! Cut uses same visual si
+[2026-10-16 18:26:22] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:26:37] [AutoWorker] Initiating autonomous improvement on: greyhat-ai
+[2026-10-16 18:26:37] [AutoWorker] ============================================================
+[2026-10-16 18:26:37] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: greyhat-ai
+[2026-10-16 18:26:37] [AutoWorker] ============================================================
+[2026-10-16 18:26:37] [AutoWorker] greyhat-ai fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:26:37] [AutoWorker] Auto-healed greyhat-ai script parameters, visuals, and cadence.
+[2026-10-16 18:26:37] [AutoWorker] Step 1: Running lint_text on greyhat-ai...
+[2026-10-16 18:26:38] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:26:38] [AutoWorker] Step 2: Running taste_audit on greyhat-ai...
+[2026-10-16 18:26:38] [AutoWorker] FAIL [taste_audit] for greyhat-ai:
+WARN [taste] h02: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] h03: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] a01: Static cut warning! No internal animated cue
+[2026-10-16 18:26:38] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:26:53] [AutoWorker] Initiating autonomous improvement on: poisoned-well
+[2026-10-16 18:26:53] [AutoWorker] ============================================================
+[2026-10-16 18:26:53] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: poisoned-well
+[2026-10-16 18:26:53] [AutoWorker] ============================================================
+[2026-10-16 18:26:53] [AutoWorker] poisoned-well fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:26:53] [AutoWorker] Step 1: Running lint_text on poisoned-well...
+[2026-10-16 18:26:53] [AutoWorker] FAIL [lint_text] for poisoned-well:
+FAIL [text] h02: narration mentions real-world WHO/WHAT ('2025' in 'In 2025, reporters found research papers hiding a secret message, in w'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [te
+[2026-10-16 18:26:53] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:27:08] [AutoWorker] Initiating autonomous improvement on: stolen-voices
+[2026-10-16 18:27:08] [AutoWorker] ============================================================
+[2026-10-16 18:27:08] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: stolen-voices
+[2026-10-16 18:27:08] [AutoWorker] ============================================================
+[2026-10-16 18:27:09] [AutoWorker] stolen-voices fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:27:09] [AutoWorker] Auto-healed stolen-voices script parameters, visuals, and cadence.
+[2026-10-16 18:27:09] [AutoWorker] Step 1: Running lint_text on stolen-voices...
+[2026-10-16 18:27:09] [AutoWorker] FAIL [lint_text] for stolen-voices:
+FAIL [text] a08: narration mentions real-world WHO/WHAT ('worker' in 'In twenty twenty-four, a finance worker at a global firm wired out twe'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [
+[2026-10-16 18:27:09] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:27:24] [AutoWorker] Initiating autonomous improvement on: surveillance-pricing
+[2026-10-16 18:27:24] [AutoWorker] ============================================================
+[2026-10-16 18:27:24] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: surveillance-pricing
+[2026-10-16 18:27:24] [AutoWorker] ============================================================
+[2026-10-16 18:27:24] [AutoWorker] surveillance-pricing fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:27:24] [AutoWorker] Auto-healed surveillance-pricing script parameters, visuals, and cadence.
+[2026-10-16 18:27:24] [AutoWorker] Step 1: Running lint_text on surveillance-pricing...
+[2026-10-16 18:27:24] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:27:24] [AutoWorker] Step 2: Running taste_audit on surveillance-pricing...
+[2026-10-16 18:27:24] [AutoWorker] FAIL [taste_audit] for surveillance-pricing:
+WARN [taste] h02: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] h03: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] a01: Static cut warning! No internal animated cue
+[2026-10-16 18:27:24] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:27:39] [AutoWorker] Initiating autonomous improvement on: the-ai-cast
+[2026-10-16 18:27:39] [AutoWorker] ============================================================
+[2026-10-16 18:27:39] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: the-ai-cast
+[2026-10-16 18:27:39] [AutoWorker] ============================================================
+[2026-10-16 18:27:40] [AutoWorker] the-ai-cast fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:27:40] [AutoWorker] Step 1: Running lint_text on the-ai-cast...
+[2026-10-16 18:27:40] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:27:40] [AutoWorker] Step 2: Running taste_audit on the-ai-cast...
+[2026-10-16 18:27:41] [AutoWorker] FAIL [taste_audit] for the-ai-cast:
+FAIL [taste] c02.0: On-screen word ceiling exceeded! Found 18 words on screen (max 12). Owner Lesson #84 mandate: the picture shows physical mechanisms; the voice tells the story! Shorten quotes/labels.
+FAIL [taste] c07.1: On-screen word ceiling exceeded! Found 19 words on screen (max 12). Owner Lesson #84 mandate: the picture shows physical mechanisms; the voice tells the story! Shorten quotes/la
+[2026-10-16 18:27:41] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:27:56] [AutoWorker] Initiating autonomous improvement on: why-ai-dumber
+[2026-10-16 18:27:56] [AutoWorker] ============================================================
+[2026-10-16 18:27:56] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: why-ai-dumber
+[2026-10-16 18:27:56] [AutoWorker] ============================================================
+[2026-10-16 18:27:56] [AutoWorker] why-ai-dumber fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:27:56] [AutoWorker] Step 1: Running lint_text on why-ai-dumber...
+[2026-10-16 18:27:56] [AutoWorker] FAIL [lint_text] for why-ai-dumber:
+FAIL [text] h00: PageQuote alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] a02: PageQuote alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] a03: banned woodcut engraving plate 'PaperRiver' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] a04: banned woodcut engraving plate 'TwoHands' (owner retired woodcut plates; u
+[2026-10-16 18:27:56] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:28:11] [AutoWorker] Initiating autonomous improvement on: agent-with-your-card
+[2026-10-16 18:28:11] [AutoWorker] ============================================================
+[2026-10-16 18:28:11] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: agent-with-your-card
+[2026-10-16 18:28:11] [AutoWorker] ============================================================
+[2026-10-16 18:28:12] [AutoWorker] Step 1: Running lint_text on agent-with-your-card...
+[2026-10-16 18:28:12] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:28:12] [AutoWorker] Step 2: Running taste_audit on agent-with-your-card...
+[2026-10-16 18:28:12] [AutoWorker] PASS [taste_audit].
+[2026-10-16 18:28:12] [AutoWorker] Step 3: Running TTS narration on agent-with-your-card...
+[2026-10-16 18:33:12] [AutoWorker] Error advancing agent-with-your-card: Command '['C:\\Python314\\python.exe', 'tools/tts.py', 'agent-with-your-card']' timed out after 300 seconds
+[2026-10-16 18:33:12] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:33:28] [AutoWorker] Completed full backlog pass. Sleeping 30s before next continuous scan...
+[2026-10-16 18:33:58] [AutoWorker] --- [Cycle 3] Scanning studio backlog for topic initiatives ---
+[2026-10-16 18:34:16] [AutoWorker] Active improvement priority queue: ['ai-ban', 'ai-grey-zone', 'captchas-3min', 'captchas-full', 'captchas-sample']
+[2026-10-16 18:34:16] [AutoWorker] Initiating autonomous improvement on: ai-ban
+[2026-10-16 18:34:16] [AutoWorker] ============================================================
+[2026-10-16 18:34:16] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: ai-ban
+[2026-10-16 18:34:16] [AutoWorker] ============================================================
+[2026-10-16 18:34:17] [AutoWorker] ai-ban fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:34:17] [AutoWorker] Auto-healed ai-ban script parameters, visuals, and cadence.
+[2026-10-16 18:34:17] [AutoWorker] Step 1: Running lint_text on ai-ban...
+[2026-10-16 18:34:18] [AutoWorker] FAIL [lint_text] for ai-ban:
+FAIL [text] b05.0: Bubble alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] d04.1: CalendarCard alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] r03.0: CalendarCard alone in 'full' layout; pair it with a picture in a 'split'
+lint_text ai-ban: 3 FAIL, 0 WARN (157 visual cuts, max consecutive splits=1)
+
+[2026-10-16 18:34:18] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:34:33] [AutoWorker] Initiating autonomous improvement on: ai-grey-zone
+[2026-10-16 18:34:33] [AutoWorker] ============================================================
+[2026-10-16 18:34:33] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: ai-grey-zone
+[2026-10-16 18:34:33] [AutoWorker] ============================================================
+[2026-10-16 18:34:34] [AutoWorker] ai-grey-zone fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:34:34] [AutoWorker] Auto-healing ai-grey-zone using gen_sample_2min.py...
+[2026-10-16 18:34:34] [AutoWorker] Auto-healed ai-grey-zone with gen_sample_2min.py.
+[2026-10-16 18:34:34] [AutoWorker] Step 1: Running lint_text on ai-grey-zone...
+[2026-10-16 18:34:34] [AutoWorker] FAIL [lint_text] for ai-grey-zone:
+FAIL [text] h01.0: banned woodcut engraving plate 'GuardrailGate' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] h01.0: banned woodcut engraving plate 'HiddenPrompt' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] h01.1: banned woodcut engraving plate 'GuardrailGate' (owner retired woodcut plates; use captchas_full_v2 kit
+[2026-10-16 18:34:34] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:34:49] [AutoWorker] Initiating autonomous improvement on: captchas-3min
+[2026-10-16 18:34:49] [AutoWorker] ============================================================
+[2026-10-16 18:34:49] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-3min
+[2026-10-16 18:34:49] [AutoWorker] ============================================================
+[2026-10-16 18:34:51] [AutoWorker] captchas-3min fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:34:51] [AutoWorker] Step 1: Running lint_text on captchas-3min...
+[2026-10-16 18:34:51] [AutoWorker] FAIL [lint_text] for captchas-3min:
+FAIL [text] o01: narration mentions real-world WHO/WHAT ('Yahoo' in 'It starts in the year two thousand, at Yahoo. Robots were signing up f'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [t
+[2026-10-16 18:34:51] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:35:06] [AutoWorker] Initiating autonomous improvement on: captchas-full
+[2026-10-16 18:35:06] [AutoWorker] ============================================================
+[2026-10-16 18:35:06] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-full
+[2026-10-16 18:35:06] [AutoWorker] ============================================================
+[2026-10-16 18:35:10] [AutoWorker] captchas-full fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:35:10] [AutoWorker] Auto-healed captchas-full script parameters, visuals, and cadence.
+[2026-10-16 18:35:10] [AutoWorker] Step 1: Running lint_text on captchas-full...
+[2026-10-16 18:35:10] [AutoWorker] FAIL [lint_text] for captchas-full:
+FAIL [text] o01.0: CalendarCard alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] o01: narration mentions real-world WHO/WHAT ('Yahoo' in 'It starts in the year two thousand, at Yahoo. Robots were signing up f'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogPr
+[2026-10-16 18:35:10] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:35:26] [AutoWorker] Initiating autonomous improvement on: captchas-sample
+[2026-10-16 18:35:26] [AutoWorker] ============================================================
+[2026-10-16 18:35:26] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-sample
+[2026-10-16 18:35:26] [AutoWorker] ============================================================
+[2026-10-16 18:35:26] [AutoWorker] captchas-sample fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:35:26] [AutoWorker] Step 1: Running lint_text on captchas-sample...
+[2026-10-16 18:35:26] [AutoWorker] FAIL [lint_text] for captchas-sample:
+FAIL [text] a03: PageQuote alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] a04: banned boxy card 'ForensicStamp' (ds/evidence.tsx is retired; use captchas_full_v2 kit + real photos/UI)
+lint_text captchas-sample: 2 FAIL, 0 WARN (6 visual cuts, max consecutive splits=1)
+
+[2026-10-16 18:35:26] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:35:41] [AutoWorker] Initiating autonomous improvement on: china-ai-underground
+[2026-10-16 18:35:41] [AutoWorker] ============================================================
+[2026-10-16 18:35:41] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: china-ai-underground
+[2026-10-16 18:35:41] [AutoWorker] ============================================================
+[2026-10-16 18:35:42] [AutoWorker] china-ai-underground fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:35:42] [AutoWorker] Step 1: Running lint_text on china-ai-underground...
+[2026-10-16 18:35:42] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:35:42] [AutoWorker] Step 2: Running taste_audit on china-ai-underground...
+[2026-10-16 18:35:42] [AutoWorker] FAIL [taste_audit] for china-ai-underground:
+WARN [taste] h01.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] n05.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] n02.0: Static cut warning! No internal animat
+[2026-10-16 18:35:42] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:35:57] [AutoWorker] Initiating autonomous improvement on: elon-musk
+[2026-10-16 18:35:57] [AutoWorker] ============================================================
+[2026-10-16 18:35:57] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: elon-musk
+[2026-10-16 18:35:57] [AutoWorker] ============================================================
+[2026-10-16 18:35:58] [AutoWorker] elon-musk fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:35:58] [AutoWorker] Auto-healed elon-musk script parameters, visuals, and cadence.
+[2026-10-16 18:35:58] [AutoWorker] Step 1: Running lint_text on elon-musk...
+[2026-10-16 18:35:58] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:35:58] [AutoWorker] Step 2: Running taste_audit on elon-musk...
+[2026-10-16 18:35:59] [AutoWorker] FAIL [taste_audit] for elon-musk:
+WARN [taste] a01.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] a02.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+FAIL [taste] a01.0: Visual repeat! Cut uses same visual si
+[2026-10-16 18:35:59] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:36:14] [AutoWorker] Initiating autonomous improvement on: greyhat-ai
+[2026-10-16 18:36:14] [AutoWorker] ============================================================
+[2026-10-16 18:36:14] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: greyhat-ai
+[2026-10-16 18:36:14] [AutoWorker] ============================================================
+[2026-10-16 18:36:14] [AutoWorker] greyhat-ai fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:36:14] [AutoWorker] Auto-healed greyhat-ai script parameters, visuals, and cadence.
+[2026-10-16 18:36:14] [AutoWorker] Step 1: Running lint_text on greyhat-ai...
+[2026-10-16 18:36:15] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:36:15] [AutoWorker] Step 2: Running taste_audit on greyhat-ai...
+[2026-10-16 18:36:15] [AutoWorker] FAIL [taste_audit] for greyhat-ai:
+WARN [taste] h02: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] h03: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] a01: Static cut warning! No internal animated cue
+[2026-10-16 18:36:15] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:36:30] [AutoWorker] Initiating autonomous improvement on: poisoned-well
+[2026-10-16 18:36:30] [AutoWorker] ============================================================
+[2026-10-16 18:36:30] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: poisoned-well
+[2026-10-16 18:36:30] [AutoWorker] ============================================================
+[2026-10-16 18:36:30] [AutoWorker] poisoned-well fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:36:30] [AutoWorker] Step 1: Running lint_text on poisoned-well...
+[2026-10-16 18:36:30] [AutoWorker] FAIL [lint_text] for poisoned-well:
+FAIL [text] h02: narration mentions real-world WHO/WHAT ('2025' in 'In 2025, reporters found research papers hiding a secret message, in w'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [te
+[2026-10-16 18:36:30] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:36:45] [AutoWorker] Initiating autonomous improvement on: stolen-voices
+[2026-10-16 18:36:45] [AutoWorker] ============================================================
+[2026-10-16 18:36:45] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: stolen-voices
+[2026-10-16 18:36:45] [AutoWorker] ============================================================
+[2026-10-16 18:36:47] [AutoWorker] stolen-voices fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:36:47] [AutoWorker] Step 1: Running lint_text on stolen-voices...
+[2026-10-16 18:36:47] [AutoWorker] FAIL [lint_text] for stolen-voices:
+FAIL [text] a08: narration mentions real-world WHO/WHAT ('worker' in 'In twenty twenty-four, a finance worker at a global firm wired out twe'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [
+[2026-10-16 18:36:47] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:37:02] [AutoWorker] Initiating autonomous improvement on: surveillance-pricing
+[2026-10-16 18:37:02] [AutoWorker] ============================================================
+[2026-10-16 18:37:02] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: surveillance-pricing
+[2026-10-16 18:37:02] [AutoWorker] ============================================================
+[2026-10-16 18:37:02] [AutoWorker] surveillance-pricing fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:37:02] [AutoWorker] Auto-healed surveillance-pricing script parameters, visuals, and cadence.
+[2026-10-16 18:37:02] [AutoWorker] Step 1: Running lint_text on surveillance-pricing...
+[2026-10-16 18:37:02] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:37:02] [AutoWorker] Step 2: Running taste_audit on surveillance-pricing...
+[2026-10-16 18:37:02] [AutoWorker] FAIL [taste_audit] for surveillance-pricing:
+WARN [taste] h02: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] h03: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] a01: Static cut warning! No internal animated cue
+[2026-10-16 18:37:02] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:37:17] [AutoWorker] Initiating autonomous improvement on: the-ai-cast
+[2026-10-16 18:37:17] [AutoWorker] ============================================================
+[2026-10-16 18:37:17] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: the-ai-cast
+[2026-10-16 18:37:17] [AutoWorker] ============================================================
+[2026-10-16 18:37:20] [AutoWorker] the-ai-cast fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:37:20] [AutoWorker] Step 1: Running lint_text on the-ai-cast...
+[2026-10-16 18:37:20] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:37:20] [AutoWorker] Step 2: Running taste_audit on the-ai-cast...
+[2026-10-16 18:37:23] [AutoWorker] FAIL [taste_audit] for the-ai-cast:
+FAIL [taste] c02.0: On-screen word ceiling exceeded! Found 18 words on screen (max 12). Owner Lesson #84 mandate: the picture shows physical mechanisms; the voice tells the story! Shorten quotes/labels.
+FAIL [taste] c07.1: On-screen word ceiling exceeded! Found 19 words on screen (max 12). Owner Lesson #84 mandate: the picture shows physical mechanisms; the voice tells the story! Shorten quotes/la
+[2026-10-16 18:37:23] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:37:38] [AutoWorker] Initiating autonomous improvement on: why-ai-dumber
+[2026-10-16 18:37:38] [AutoWorker] ============================================================
+[2026-10-16 18:37:38] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: why-ai-dumber
+[2026-10-16 18:37:38] [AutoWorker] ============================================================
+[2026-10-16 18:37:39] [AutoWorker] why-ai-dumber fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:37:39] [AutoWorker] Step 1: Running lint_text on why-ai-dumber...
+[2026-10-16 18:37:39] [AutoWorker] FAIL [lint_text] for why-ai-dumber:
+FAIL [text] h00: PageQuote alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] a02: PageQuote alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] a03: banned woodcut engraving plate 'PaperRiver' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] a04: banned woodcut engraving plate 'TwoHands' (owner retired woodcut plates; u
+[2026-10-16 18:37:39] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:37:54] [AutoWorker] Initiating autonomous improvement on: agent-with-your-card
+[2026-10-16 18:37:54] [AutoWorker] ============================================================
+[2026-10-16 18:37:54] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: agent-with-your-card
+[2026-10-16 18:37:54] [AutoWorker] ============================================================
+[2026-10-16 18:37:54] [AutoWorker] Step 1: Running lint_text on agent-with-your-card...
+[2026-10-16 18:37:54] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:37:54] [AutoWorker] Step 2: Running taste_audit on agent-with-your-card...
+[2026-10-16 18:37:54] [AutoWorker] PASS [taste_audit].
+[2026-10-16 18:37:54] [AutoWorker] Step 3: Running TTS narration on agent-with-your-card...
+[2026-10-16 18:39:56] [AutoWorker] PASS [tts].
+[2026-10-16 18:39:56] [AutoWorker] Step 4: Running voice_check on agent-with-your-card...
+[2026-10-16 18:39:59] [AutoWorker] FAIL [voice_check] for agent-with-your-card:
+line    pitch spread  level   w/s    end
+h01       202     97  -20.0  3.22    -2%
+h02       198     94  -20.0  4.26   -10%
+a01       197     87  -20.0  3.52   -39%
+a02       200     92  -20.0  3.92   +12%  ! rising end
+a03       197    103  -20.0  3.59    +7%
+a04       197     94  -20.0  3.49   -20%
+a05       200     91  -20.0  3.79   -12%
+a06       207     97  -20.0  4.36    -9%
+a07       207    
+[2026-10-16 18:39:59] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:40:14] [AutoWorker] Completed full backlog pass. Sleeping 30s before next continuous scan...
+[2026-10-16 18:40:44] [AutoWorker] --- [Cycle 4] Scanning studio backlog for topic initiatives ---
+[2026-10-16 18:40:55] [AutoWorker] Active improvement priority queue: ['ai-ban', 'ai-grey-zone', 'captchas-3min', 'captchas-full', 'captchas-sample']
+[2026-10-16 18:40:55] [AutoWorker] Initiating autonomous improvement on: ai-ban
+[2026-10-16 18:40:55] [AutoWorker] ============================================================
+[2026-10-16 18:40:55] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: ai-ban
+[2026-10-16 18:40:55] [AutoWorker] ============================================================
+[2026-10-16 18:40:56] [AutoWorker] ai-ban fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:40:56] [AutoWorker] Auto-healed ai-ban script parameters, visuals, and cadence.
+[2026-10-16 18:40:56] [AutoWorker] Step 1: Running lint_text on ai-ban...
+[2026-10-16 18:40:57] [AutoWorker] FAIL [lint_text] for ai-ban:
+FAIL [text] b05.0: Bubble alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] d04.1: CalendarCard alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] r03.0: CalendarCard alone in 'full' layout; pair it with a picture in a 'split'
+lint_text ai-ban: 3 FAIL, 0 WARN (157 visual cuts, max consecutive splits=1)
+
+[2026-10-16 18:40:57] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:41:12] [AutoWorker] Initiating autonomous improvement on: ai-grey-zone
+[2026-10-16 18:41:12] [AutoWorker] ============================================================
+[2026-10-16 18:41:12] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: ai-grey-zone
+[2026-10-16 18:41:12] [AutoWorker] ============================================================
+[2026-10-16 18:41:12] [AutoWorker] ai-grey-zone fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:41:12] [AutoWorker] Auto-healing ai-grey-zone using gen_sample_2min.py...
+[2026-10-16 18:41:12] [AutoWorker] Auto-healed ai-grey-zone with gen_sample_2min.py.
+[2026-10-16 18:41:12] [AutoWorker] Step 1: Running lint_text on ai-grey-zone...
+[2026-10-16 18:41:13] [AutoWorker] FAIL [lint_text] for ai-grey-zone:
+FAIL [text] h01.0: banned woodcut engraving plate 'GuardrailGate' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] h01.0: banned woodcut engraving plate 'HiddenPrompt' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] h01.1: banned woodcut engraving plate 'GuardrailGate' (owner retired woodcut plates; use captchas_full_v2 kit
+[2026-10-16 18:41:13] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:41:28] [AutoWorker] Initiating autonomous improvement on: captchas-3min
+[2026-10-16 18:41:28] [AutoWorker] ============================================================
+[2026-10-16 18:41:28] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-3min
+[2026-10-16 18:41:28] [AutoWorker] ============================================================
+[2026-10-16 18:41:29] [AutoWorker] captchas-3min fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:41:29] [AutoWorker] Step 1: Running lint_text on captchas-3min...
+[2026-10-16 18:41:29] [AutoWorker] FAIL [lint_text] for captchas-3min:
+FAIL [text] o01: narration mentions real-world WHO/WHAT ('Yahoo' in 'It starts in the year two thousand, at Yahoo. Robots were signing up f'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [t
+[2026-10-16 18:41:29] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:41:44] [AutoWorker] Initiating autonomous improvement on: captchas-full
+[2026-10-16 18:41:44] [AutoWorker] ============================================================
+[2026-10-16 18:41:44] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-full
+[2026-10-16 18:41:44] [AutoWorker] ============================================================
+[2026-10-16 18:41:45] [AutoWorker] captchas-full fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:41:45] [AutoWorker] Auto-healed captchas-full script parameters, visuals, and cadence.
+[2026-10-16 18:41:45] [AutoWorker] Step 1: Running lint_text on captchas-full...
+[2026-10-16 18:41:45] [AutoWorker] FAIL [lint_text] for captchas-full:
+FAIL [text] o01.0: CalendarCard alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] o01: narration mentions real-world WHO/WHAT ('Yahoo' in 'It starts in the year two thousand, at Yahoo. Robots were signing up f'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogPr
+[2026-10-16 18:41:45] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:42:00] [AutoWorker] Initiating autonomous improvement on: captchas-sample
+[2026-10-16 18:42:00] [AutoWorker] ============================================================
+[2026-10-16 18:42:00] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-sample
+[2026-10-16 18:42:00] [AutoWorker] ============================================================
+[2026-10-16 18:42:00] [AutoWorker] captchas-sample fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:42:00] [AutoWorker] Step 1: Running lint_text on captchas-sample...
+[2026-10-16 18:42:01] [AutoWorker] FAIL [lint_text] for captchas-sample:
+FAIL [text] a03: PageQuote alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] a04: banned boxy card 'ForensicStamp' (ds/evidence.tsx is retired; use captchas_full_v2 kit + real photos/UI)
+lint_text captchas-sample: 2 FAIL, 0 WARN (6 visual cuts, max consecutive splits=1)
+
+[2026-10-16 18:42:01] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:42:16] [AutoWorker] Initiating autonomous improvement on: china-ai-underground
+[2026-10-16 18:42:16] [AutoWorker] ============================================================
+[2026-10-16 18:42:16] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: china-ai-underground
+[2026-10-16 18:42:16] [AutoWorker] ============================================================
+[2026-10-16 18:42:16] [AutoWorker] china-ai-underground fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:42:16] [AutoWorker] Step 1: Running lint_text on china-ai-underground...
+[2026-10-16 18:42:16] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:42:16] [AutoWorker] Step 2: Running taste_audit on china-ai-underground...
+[2026-10-16 18:42:17] [AutoWorker] FAIL [taste_audit] for china-ai-underground:
+WARN [taste] h01.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] n05.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] n02.0: Static cut warning! No internal animat
+[2026-10-16 18:42:17] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:42:32] [AutoWorker] Initiating autonomous improvement on: elon-musk
+[2026-10-16 18:42:32] [AutoWorker] ============================================================
+[2026-10-16 18:42:32] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: elon-musk
+[2026-10-16 18:42:32] [AutoWorker] ============================================================
+[2026-10-16 18:42:32] [AutoWorker] elon-musk fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:42:32] [AutoWorker] Auto-healed elon-musk script parameters, visuals, and cadence.
+[2026-10-16 18:42:32] [AutoWorker] Step 1: Running lint_text on elon-musk...
+[2026-10-16 18:42:32] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:42:32] [AutoWorker] Step 2: Running taste_audit on elon-musk...
+[2026-10-16 18:42:33] [AutoWorker] FAIL [taste_audit] for elon-musk:
+WARN [taste] a01.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] a02.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+FAIL [taste] a01.0: Visual repeat! Cut uses same visual si
+[2026-10-16 18:42:33] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:42:48] [AutoWorker] Initiating autonomous improvement on: greyhat-ai
+[2026-10-16 18:42:48] [AutoWorker] ============================================================
+[2026-10-16 18:42:48] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: greyhat-ai
+[2026-10-16 18:42:48] [AutoWorker] ============================================================
+[2026-10-16 18:42:48] [AutoWorker] greyhat-ai fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:42:48] [AutoWorker] Auto-healed greyhat-ai script parameters, visuals, and cadence.
+[2026-10-16 18:42:48] [AutoWorker] Step 1: Running lint_text on greyhat-ai...
+[2026-10-16 18:42:48] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:42:48] [AutoWorker] Step 2: Running taste_audit on greyhat-ai...
+[2026-10-16 18:42:49] [AutoWorker] FAIL [taste_audit] for greyhat-ai:
+WARN [taste] h02: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] h03: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] a01: Static cut warning! No internal animated cue
+[2026-10-16 18:42:49] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:43:04] [AutoWorker] Initiating autonomous improvement on: poisoned-well
+[2026-10-16 18:43:04] [AutoWorker] ============================================================
+[2026-10-16 18:43:04] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: poisoned-well
+[2026-10-16 18:43:04] [AutoWorker] ============================================================
+[2026-10-16 18:43:05] [AutoWorker] poisoned-well fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:43:05] [AutoWorker] Step 1: Running lint_text on poisoned-well...
+[2026-10-16 18:43:05] [AutoWorker] FAIL [lint_text] for poisoned-well:
+FAIL [text] h02: narration mentions real-world WHO/WHAT ('2025' in 'In 2025, reporters found research papers hiding a secret message, in w'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [te
+[2026-10-16 18:43:05] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:43:20] [AutoWorker] Initiating autonomous improvement on: stolen-voices
+[2026-10-16 18:43:20] [AutoWorker] ============================================================
+[2026-10-16 18:43:20] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: stolen-voices
+[2026-10-16 18:43:20] [AutoWorker] ============================================================
+[2026-10-16 18:43:20] [AutoWorker] stolen-voices fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:43:20] [AutoWorker] Step 1: Running lint_text on stolen-voices...
+[2026-10-16 18:43:20] [AutoWorker] FAIL [lint_text] for stolen-voices:
+FAIL [text] a08: narration mentions real-world WHO/WHAT ('worker' in 'In twenty twenty-four, a finance worker at a global firm wired out twe'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [
+[2026-10-16 18:43:20] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:43:35] [AutoWorker] Initiating autonomous improvement on: surveillance-pricing
+[2026-10-16 18:43:35] [AutoWorker] ============================================================
+[2026-10-16 18:43:35] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: surveillance-pricing
+[2026-10-16 18:43:35] [AutoWorker] ============================================================
+[2026-10-16 18:43:35] [AutoWorker] surveillance-pricing fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:43:35] [AutoWorker] Auto-healed surveillance-pricing script parameters, visuals, and cadence.
+[2026-10-16 18:43:35] [AutoWorker] Step 1: Running lint_text on surveillance-pricing...
+[2026-10-16 18:43:35] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:43:35] [AutoWorker] Step 2: Running taste_audit on surveillance-pricing...
+[2026-10-16 18:43:36] [AutoWorker] FAIL [taste_audit] for surveillance-pricing:
+WARN [taste] h02: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] h03: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] a01: Static cut warning! No internal animated cue
+[2026-10-16 18:43:36] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:43:51] [AutoWorker] Initiating autonomous improvement on: the-ai-cast
+[2026-10-16 18:43:51] [AutoWorker] ============================================================
+[2026-10-16 18:43:51] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: the-ai-cast
+[2026-10-16 18:43:51] [AutoWorker] ============================================================
+[2026-10-16 18:43:52] [AutoWorker] the-ai-cast fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:43:52] [AutoWorker] Step 1: Running lint_text on the-ai-cast...
+[2026-10-16 18:43:52] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:43:52] [AutoWorker] Step 2: Running taste_audit on the-ai-cast...
+[2026-10-16 18:43:52] [AutoWorker] FAIL [taste_audit] for the-ai-cast:
+FAIL [taste] c02.0: On-screen word ceiling exceeded! Found 18 words on screen (max 12). Owner Lesson #84 mandate: the picture shows physical mechanisms; the voice tells the story! Shorten quotes/labels.
+FAIL [taste] c07.1: On-screen word ceiling exceeded! Found 19 words on screen (max 12). Owner Lesson #84 mandate: the picture shows physical mechanisms; the voice tells the story! Shorten quotes/la
+[2026-10-16 18:43:52] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:44:07] [AutoWorker] Initiating autonomous improvement on: why-ai-dumber
+[2026-10-16 18:44:08] [AutoWorker] ============================================================
+[2026-10-16 18:44:08] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: why-ai-dumber
+[2026-10-16 18:44:08] [AutoWorker] ============================================================
+[2026-10-16 18:44:08] [AutoWorker] why-ai-dumber fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:44:08] [AutoWorker] Step 1: Running lint_text on why-ai-dumber...
+[2026-10-16 18:44:08] [AutoWorker] FAIL [lint_text] for why-ai-dumber:
+FAIL [text] h00: PageQuote alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] a02: PageQuote alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] a03: banned woodcut engraving plate 'PaperRiver' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] a04: banned woodcut engraving plate 'TwoHands' (owner retired woodcut plates; u
+[2026-10-16 18:44:08] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:44:23] [AutoWorker] Initiating autonomous improvement on: agent-with-your-card
+[2026-10-16 18:44:23] [AutoWorker] ============================================================
+[2026-10-16 18:44:23] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: agent-with-your-card
+[2026-10-16 18:44:23] [AutoWorker] ============================================================
+[2026-10-16 18:44:23] [AutoWorker] Step 1: Running lint_text on agent-with-your-card...
+[2026-10-16 18:44:23] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:44:23] [AutoWorker] Step 2: Running taste_audit on agent-with-your-card...
+[2026-10-16 18:44:23] [AutoWorker] PASS [taste_audit].
+[2026-10-16 18:44:23] [AutoWorker] Step 3: Running TTS narration on agent-with-your-card...
+[2026-10-16 18:44:24] [AutoWorker] PASS [tts].
+[2026-10-16 18:44:24] [AutoWorker] Step 4: Running voice_check on agent-with-your-card...
+[2026-10-16 18:44:25] [AutoWorker] FAIL [voice_check] for agent-with-your-card:
+line    pitch spread  level   w/s    end
+h01       202     97  -20.0  3.22    -2%
+h02       198     94  -20.0  4.26   -10%
+a01       197     87  -20.0  3.52   -39%
+a02       200     92  -20.0  3.92   +12%  ! rising end
+a03       197    103  -20.0  3.59    +7%
+a04       197     94  -20.0  3.49   -20%
+a05       200     91  -20.0  3.79   -12%
+a06       207     97  -20.0  4.36    -9%
+a07       207    
+[2026-10-16 18:44:25] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:44:40] [AutoWorker] Completed full backlog pass. Sleeping 30s before next continuous scan...
+[2026-10-16 18:45:10] [AutoWorker] --- [Cycle 5] Scanning studio backlog for topic initiatives ---
+[2026-10-16 18:45:20] [AutoWorker] Active improvement priority queue: ['ai-ban', 'ai-grey-zone', 'captchas-3min', 'captchas-full', 'captchas-sample']
+[2026-10-16 18:45:20] [AutoWorker] Initiating autonomous improvement on: ai-ban
+[2026-10-16 18:45:20] [AutoWorker] ============================================================
+[2026-10-16 18:45:20] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: ai-ban
+[2026-10-16 18:45:20] [AutoWorker] ============================================================
+[2026-10-16 18:45:21] [AutoWorker] ai-ban fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:45:21] [AutoWorker] Auto-healed ai-ban script parameters, visuals, and cadence.
+[2026-10-16 18:45:21] [AutoWorker] Step 1: Running lint_text on ai-ban...
+[2026-10-16 18:45:21] [AutoWorker] FAIL [lint_text] for ai-ban:
+FAIL [text] b05.0: Bubble alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] d04.1: CalendarCard alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] r03.0: CalendarCard alone in 'full' layout; pair it with a picture in a 'split'
+lint_text ai-ban: 3 FAIL, 0 WARN (157 visual cuts, max consecutive splits=1)
+
+[2026-10-16 18:45:21] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:45:36] [AutoWorker] Initiating autonomous improvement on: ai-grey-zone
+[2026-10-16 18:45:36] [AutoWorker] ============================================================
+[2026-10-16 18:45:36] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: ai-grey-zone
+[2026-10-16 18:45:36] [AutoWorker] ============================================================
+[2026-10-16 18:45:36] [AutoWorker] ai-grey-zone fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:45:36] [AutoWorker] Auto-healing ai-grey-zone using gen_sample_2min.py...
+[2026-10-16 18:45:36] [AutoWorker] Auto-healed ai-grey-zone with gen_sample_2min.py.
+[2026-10-16 18:45:36] [AutoWorker] Step 1: Running lint_text on ai-grey-zone...
+[2026-10-16 18:45:36] [AutoWorker] FAIL [lint_text] for ai-grey-zone:
+FAIL [text] h01.0: banned woodcut engraving plate 'GuardrailGate' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] h01.0: banned woodcut engraving plate 'HiddenPrompt' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] h01.1: banned woodcut engraving plate 'GuardrailGate' (owner retired woodcut plates; use captchas_full_v2 kit
+[2026-10-16 18:45:36] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:45:51] [AutoWorker] Initiating autonomous improvement on: captchas-3min
+[2026-10-16 18:45:51] [AutoWorker] ============================================================
+[2026-10-16 18:45:51] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-3min
+[2026-10-16 18:45:51] [AutoWorker] ============================================================
+[2026-10-16 18:45:52] [AutoWorker] captchas-3min fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:45:52] [AutoWorker] Step 1: Running lint_text on captchas-3min...
+[2026-10-16 18:45:52] [AutoWorker] FAIL [lint_text] for captchas-3min:
+FAIL [text] o01: narration mentions real-world WHO/WHAT ('Yahoo' in 'It starts in the year two thousand, at Yahoo. Robots were signing up f'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [t
+[2026-10-16 18:45:52] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:46:07] [AutoWorker] Initiating autonomous improvement on: captchas-full
+[2026-10-16 18:46:07] [AutoWorker] ============================================================
+[2026-10-16 18:46:07] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-full
+[2026-10-16 18:46:07] [AutoWorker] ============================================================
+[2026-10-16 18:46:08] [AutoWorker] captchas-full fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:46:08] [AutoWorker] Auto-healed captchas-full script parameters, visuals, and cadence.
+[2026-10-16 18:46:08] [AutoWorker] Step 1: Running lint_text on captchas-full...
+[2026-10-16 18:46:08] [AutoWorker] FAIL [lint_text] for captchas-full:
+FAIL [text] o01.0: CalendarCard alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] o01: narration mentions real-world WHO/WHAT ('Yahoo' in 'It starts in the year two thousand, at Yahoo. Robots were signing up f'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogPr
+[2026-10-16 18:46:08] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:46:23] [AutoWorker] Initiating autonomous improvement on: captchas-sample
+[2026-10-16 18:46:23] [AutoWorker] ============================================================
+[2026-10-16 18:46:23] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-sample
+[2026-10-16 18:46:23] [AutoWorker] ============================================================
+[2026-10-16 18:46:23] [AutoWorker] captchas-sample fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:46:23] [AutoWorker] Step 1: Running lint_text on captchas-sample...
+[2026-10-16 18:46:23] [AutoWorker] FAIL [lint_text] for captchas-sample:
+FAIL [text] a03: PageQuote alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] a04: banned boxy card 'ForensicStamp' (ds/evidence.tsx is retired; use captchas_full_v2 kit + real photos/UI)
+lint_text captchas-sample: 2 FAIL, 0 WARN (6 visual cuts, max consecutive splits=1)
+
+[2026-10-16 18:46:23] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:46:38] [AutoWorker] Initiating autonomous improvement on: china-ai-underground
+[2026-10-16 18:46:38] [AutoWorker] ============================================================
+[2026-10-16 18:46:38] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: china-ai-underground
+[2026-10-16 18:46:38] [AutoWorker] ============================================================
+[2026-10-16 18:46:38] [AutoWorker] china-ai-underground fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:46:38] [AutoWorker] Step 1: Running lint_text on china-ai-underground...
+[2026-10-16 18:46:39] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:46:39] [AutoWorker] Step 2: Running taste_audit on china-ai-underground...
+[2026-10-16 18:46:39] [AutoWorker] FAIL [taste_audit] for china-ai-underground:
+WARN [taste] h01.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] n05.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] n02.0: Static cut warning! No internal animat
+[2026-10-16 18:46:39] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:46:54] [AutoWorker] Initiating autonomous improvement on: elon-musk
+[2026-10-16 18:46:54] [AutoWorker] ============================================================
+[2026-10-16 18:46:54] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: elon-musk
+[2026-10-16 18:46:54] [AutoWorker] ============================================================
+[2026-10-16 18:46:54] [AutoWorker] elon-musk fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:46:54] [AutoWorker] Auto-healed elon-musk script parameters, visuals, and cadence.
+[2026-10-16 18:46:54] [AutoWorker] Step 1: Running lint_text on elon-musk...
+[2026-10-16 18:46:54] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:46:54] [AutoWorker] Step 2: Running taste_audit on elon-musk...
+[2026-10-16 18:46:55] [AutoWorker] FAIL [taste_audit] for elon-musk:
+WARN [taste] a01.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] a02.0: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+FAIL [taste] a01.0: Visual repeat! Cut uses same visual si
+[2026-10-16 18:46:55] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:47:10] [AutoWorker] Initiating autonomous improvement on: greyhat-ai
+[2026-10-16 18:47:10] [AutoWorker] ============================================================
+[2026-10-16 18:47:10] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: greyhat-ai
+[2026-10-16 18:47:10] [AutoWorker] ============================================================
+[2026-10-16 18:47:10] [AutoWorker] greyhat-ai fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:47:10] [AutoWorker] Auto-healed greyhat-ai script parameters, visuals, and cadence.
+[2026-10-16 18:47:10] [AutoWorker] Step 1: Running lint_text on greyhat-ai...
+[2026-10-16 18:47:10] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:47:10] [AutoWorker] Step 2: Running taste_audit on greyhat-ai...
+[2026-10-16 18:47:11] [AutoWorker] FAIL [taste_audit] for greyhat-ai:
+WARN [taste] h02: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] h03: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] a01: Static cut warning! No internal animated cue
+[2026-10-16 18:47:11] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:47:26] [AutoWorker] Initiating autonomous improvement on: poisoned-well
+[2026-10-16 18:47:26] [AutoWorker] ============================================================
+[2026-10-16 18:47:26] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: poisoned-well
+[2026-10-16 18:47:26] [AutoWorker] ============================================================
+[2026-10-16 18:47:26] [AutoWorker] poisoned-well fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:47:26] [AutoWorker] Step 1: Running lint_text on poisoned-well...
+[2026-10-16 18:47:26] [AutoWorker] FAIL [lint_text] for poisoned-well:
+FAIL [text] h02: narration mentions real-world WHO/WHAT ('2025' in 'In 2025, reporters found research papers hiding a secret message, in w'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [te
+[2026-10-16 18:47:26] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:47:41] [AutoWorker] Initiating autonomous improvement on: stolen-voices
+[2026-10-16 18:47:41] [AutoWorker] ============================================================
+[2026-10-16 18:47:41] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: stolen-voices
+[2026-10-16 18:47:41] [AutoWorker] ============================================================
+[2026-10-16 18:47:42] [AutoWorker] stolen-voices fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:47:42] [AutoWorker] Step 1: Running lint_text on stolen-voices...
+[2026-10-16 18:47:43] [AutoWorker] FAIL [lint_text] for stolen-voices:
+FAIL [text] a08: narration mentions real-world WHO/WHAT ('worker' in 'In twenty twenty-four, a finance worker at a global firm wired out twe'...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+FAIL [
+[2026-10-16 18:47:43] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:47:58] [AutoWorker] Initiating autonomous improvement on: surveillance-pricing
+[2026-10-16 18:47:58] [AutoWorker] ============================================================
+[2026-10-16 18:47:58] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: surveillance-pricing
+[2026-10-16 18:47:58] [AutoWorker] ============================================================
+[2026-10-16 18:47:58] [AutoWorker] surveillance-pricing fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:47:58] [AutoWorker] Auto-healed surveillance-pricing script parameters, visuals, and cadence.
+[2026-10-16 18:47:58] [AutoWorker] Step 1: Running lint_text on surveillance-pricing...
+[2026-10-16 18:47:58] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:47:58] [AutoWorker] Step 2: Running taste_audit on surveillance-pricing...
+[2026-10-16 18:47:58] [AutoWorker] FAIL [taste_audit] for surveillance-pricing:
+WARN [taste] h02: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] h03: Static cut warning! No internal animated cue word ('at', 'enter', 'ringAt', etc.) detected. Ensure widget actively reacts or triggers on spoken words.
+WARN [taste] a01: Static cut warning! No internal animated cue
+[2026-10-16 18:47:58] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:48:13] [AutoWorker] Initiating autonomous improvement on: the-ai-cast
+[2026-10-16 18:48:13] [AutoWorker] ============================================================
+[2026-10-16 18:48:13] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: the-ai-cast
+[2026-10-16 18:48:14] [AutoWorker] ============================================================
+[2026-10-16 18:48:15] [AutoWorker] the-ai-cast fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:48:15] [AutoWorker] Step 1: Running lint_text on the-ai-cast...
+[2026-10-16 18:48:15] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:48:15] [AutoWorker] Step 2: Running taste_audit on the-ai-cast...
+[2026-10-16 18:48:18] [AutoWorker] FAIL [taste_audit] for the-ai-cast:
+FAIL [taste] c02.0: On-screen word ceiling exceeded! Found 18 words on screen (max 12). Owner Lesson #84 mandate: the picture shows physical mechanisms; the voice tells the story! Shorten quotes/labels.
+FAIL [taste] c07.1: On-screen word ceiling exceeded! Found 19 words on screen (max 12). Owner Lesson #84 mandate: the picture shows physical mechanisms; the voice tells the story! Shorten quotes/la
+[2026-10-16 18:48:18] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:48:33] [AutoWorker] Initiating autonomous improvement on: why-ai-dumber
+[2026-10-16 18:48:33] [AutoWorker] ============================================================
+[2026-10-16 18:48:33] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: why-ai-dumber
+[2026-10-16 18:48:33] [AutoWorker] ============================================================
+[2026-10-16 18:48:34] [AutoWorker] why-ai-dumber fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 18:48:34] [AutoWorker] Step 1: Running lint_text on why-ai-dumber...
+[2026-10-16 18:48:34] [AutoWorker] FAIL [lint_text] for why-ai-dumber:
+FAIL [text] h00: PageQuote alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] a02: PageQuote alone in 'full' layout; pair it with a picture in a 'split'
+FAIL [text] a03: banned woodcut engraving plate 'PaperRiver' (owner retired woodcut plates; use captchas_full_v2 kit + real photos/UI)
+FAIL [text] a04: banned woodcut engraving plate 'TwoHands' (owner retired woodcut plates; u
+[2026-10-16 18:48:34] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:48:49] [AutoWorker] Initiating autonomous improvement on: agent-with-your-card
+[2026-10-16 18:48:49] [AutoWorker] ============================================================
+[2026-10-16 18:48:49] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: agent-with-your-card
+[2026-10-16 18:48:50] [AutoWorker] ============================================================
+[2026-10-16 18:48:51] [AutoWorker] Step 1: Running lint_text on agent-with-your-card...
+[2026-10-16 18:48:51] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:48:51] [AutoWorker] Step 2: Running taste_audit on agent-with-your-card...
+[2026-10-16 18:48:51] [AutoWorker] PASS [taste_audit].
+[2026-10-16 18:48:51] [AutoWorker] Step 3: Running TTS narration on agent-with-your-card...
+[2026-10-16 18:48:54] [AutoWorker] PASS [tts].
+[2026-10-16 18:48:54] [AutoWorker] Step 4: Running voice_check on agent-with-your-card...
+[2026-10-16 18:48:56] [AutoWorker] PASS [voice_check].
+[2026-10-16 18:48:56] [AutoWorker] Step 5: Building timeline and master audio for agent-with-your-card...
+[2026-10-16 18:48:59] [AutoWorker] Cue mismatch detected during build. Auto-aligning cues to Whisper...
+[2026-10-16 18:48:59] [AutoWorker] FAIL [build] for agent-with-your-card:
+lint_text agent-with-your-card: 0 FAIL, 0 WARN (16 visual cuts, max consecutive splits=1)
+FAIL [cue] h01: cut at '0' opens on an empty board (every object waits for a word); draw one at frame 0
+FAIL [cue] a01: cut at '0' opens on an empty board (every object waits for a word); draw one at frame 0
+FAIL [cue] a02.hero.enter = 'Once' not spoken. Heard: You(0.0s) handed(0.1s) it(0.4s) your(0.6s) world
+[2026-10-16 18:48:59] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 18:49:14] [AutoWorker] Completed full backlog pass. Sleeping 30s before next continuous scan...
+[2026-10-16 18:50:11] [AutoWorker] Auto-healed ai-ban script parameters, visuals, and cadence.
+[2026-10-16 18:50:51] [AutoWorker] Auto-healed ai-ban script parameters, visuals, and cadence.
+[2026-10-16 18:50:58] [AutoWorker] Auto-healed the-ai-cast script parameters, visuals, and cadence.
+[2026-10-16 18:52:30] [AutoWorker] Auto-healed the-ai-cast script parameters, visuals, and cadence.
+[2026-10-16 18:52:41] [AutoWorker] Auto-healed captchas-full script parameters, visuals, and cadence.
+[2026-10-16 18:52:50] [AutoWorker] Auto-healed captchas-3min script parameters, visuals, and cadence.
+[2026-10-16 18:52:59] [AutoWorker] Auto-healing ai-grey-zone using gen_sample_2min.py...
+[2026-10-16 18:52:59] [AutoWorker] Auto-healed ai-grey-zone with gen_sample_2min.py.
+[2026-10-16 18:53:49] [AutoWorker] Auto-refreshing ai-grey-zone using gen_sample_2min.py...
+[2026-10-16 18:53:49] [AutoWorker] Auto-healed ai-grey-zone script parameters, visuals, and cadence.
+[2026-10-16 18:54:58] [AutoWorker] ============================================================
+[2026-10-16 18:54:58] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: ai-grey-zone
+[2026-10-16 18:54:58] [AutoWorker] ============================================================
+[2026-10-16 18:54:58] [AutoWorker] Step 1: Running lint_text on ai-grey-zone...
+[2026-10-16 18:54:59] [AutoWorker] PASS [lint_text].
+[2026-10-16 18:54:59] [AutoWorker] Step 2: Running taste_audit on ai-grey-zone...
+[2026-10-16 18:54:59] [AutoWorker] PASS [taste_audit].
+[2026-10-16 18:54:59] [AutoWorker] Step 3: Running TTS narration on ai-grey-zone...
+[2026-10-16 19:22:41] [AutoWorker] Disk hygiene executed. Caches cleaned.
+[2026-10-16 19:23:03] Studio data compiled: 24 topics, 66 renders, 435 beats.
+[2026-10-16 19:23:03] Saved All-in/studio_data.json
+[2026-10-16 19:23:03] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\All-in\index.html
+[2026-10-16 19:23:03] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\index.html
+[2026-10-16 19:23:03] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\deliverables\All-in Dashboard\index.html
+[2026-10-16 19:23:03] Successfully spliced Studio OS data into: C:\Users\pc\Desktop\All-in Dashboard\index.html
+[2026-10-16 19:23:15] [AutoWorker] === All-in Studio Continuous Autonomous Engine Activated ===
+[2026-10-16 19:23:15] [AutoWorker] Operating autonomously 24/7: Scanning backlog, auto-healing, rendering, and auditing.
+[2026-10-16 19:23:15] [AutoWorker] --- [Cycle 1] Scanning studio backlog for topic initiatives ---
+[2026-10-16 19:23:30] [AutoWorker] Active improvement priority queue: ['captchas-sample', 'china-ai-underground', 'elon-musk', 'greyhat-ai', 'poisoned-well']
+[2026-10-16 19:23:30] [AutoWorker] Initiating autonomous improvement on: captchas-sample
+[2026-10-16 19:23:30] [AutoWorker] ============================================================
+[2026-10-16 19:23:30] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: captchas-sample
+[2026-10-16 19:23:30] [AutoWorker] ============================================================
+[2026-10-16 19:23:30] [AutoWorker] captchas-sample fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 19:23:30] [AutoWorker] Auto-healed captchas-sample script parameters, visuals, and cadence.
+[2026-10-16 19:23:30] [AutoWorker] Step 1: Running lint_text on captchas-sample...
+[2026-10-16 19:23:30] [AutoWorker] FAIL [lint_text] for captchas-sample:
+FAIL [text] a04: banned boxy card 'ForensicStamp' (ds/evidence.tsx is retired; use captchas_full_v2 kit + real photos/UI)
+lint_text captchas-sample: 1 FAIL, 0 WARN (6 visual cuts, max consecutive splits=1)
+
+[2026-10-16 19:23:30] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 19:23:45] [AutoWorker] Initiating autonomous improvement on: china-ai-underground
+[2026-10-16 19:23:45] [AutoWorker] ============================================================
+[2026-10-16 19:23:45] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: china-ai-underground
+[2026-10-16 19:23:46] [AutoWorker] ============================================================
+[2026-10-16 19:23:46] [AutoWorker] china-ai-underground fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 19:23:46] [AutoWorker] Auto-healed china-ai-underground script parameters, visuals, and cadence.
+[2026-10-16 19:23:46] [AutoWorker] Step 1: Running lint_text on china-ai-underground...
+[2026-10-16 19:23:46] [AutoWorker] FAIL [lint_text] for china-ai-underground:
+FAIL [text] n05: narration mentions real-world WHO/WHAT ('China' in "And DeepSeek, China's shock A I model? || Washington has a word for it"...), but visuals only use generic icons/calendar ('stray slop'). Owner rule (2026-10-15): show WHO and WHAT with real images (Film/Print/Polaroid/AnnotatedPrint/BlogProof) or concrete UI evidence (PhoneChat/PhoneCall/CallGrid/PageQuote/Score/Blocked)!
+lint_te
+[2026-10-16 19:23:46] [AutoWorker] Pausing 15s before advancing next topic...
+[2026-10-16 19:24:01] [AutoWorker] Initiating autonomous improvement on: elon-musk
+[2026-10-16 19:24:01] [AutoWorker] ============================================================
+[2026-10-16 19:24:02] [AutoWorker]  [AUTONOMOUS ENGINE] IMPROVING TOPIC: elon-musk
+[2026-10-16 19:24:02] [AutoWorker] ============================================================
+[2026-10-16 19:24:03] [AutoWorker] elon-musk fails initial taste/lint audits. Triggering AutoHealer...
+[2026-10-16 19:24:03] [AutoWorker] Auto-healed elon-musk script parameters, visuals, and cadence.
+[2026-10-16 19:24:03] [AutoWorker] Step 1: Running lint_text on elon-musk...
+[2026-10-16 19:24:04] [AutoWorker] PASS [lint_text].
+[2026-10-16 19:24:04] [AutoWorker] Step 2: Running taste_audit on elon-musk...
+[2026-10-16 19:24:06] [AutoWorker] PASS [taste_audit].
+[2026-10-16 19:24:06] [AutoWorker] Step 3: Running TTS narration on elon-musk...
+[2026-10-17 13:22:22] Studio data compiled: 24 topics, 69 renders, 435 beats.
+[2026-10-17 13:22:22] Saved All-in/studio_data.json
+[2026-10-17 13:22:22] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\All-in\index.html
+[2026-10-17 13:22:22] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\index.html
+[2026-10-17 13:22:22] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\deliverables\All-in Dashboard\index.html
+[2026-10-17 13:22:22] Successfully spliced Studio OS data into: C:\Users\pc\Desktop\All-in Dashboard\index.html
+[2026-10-17 16:06:05] Studio data compiled: 24 topics, 71 renders, 435 beats.
+[2026-10-17 16:06:05] Saved All-in/studio_data.json
+[2026-10-17 16:06:05] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\All-in\index.html
+[2026-10-17 16:06:05] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\index.html
+[2026-10-17 16:06:05] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\deliverables\All-in Dashboard\index.html
+[2026-10-17 16:06:05] Successfully spliced Studio OS data into: C:\Users\pc\Desktop\All-in Dashboard\index.html
+[2026-10-17 18:22:50] Studio data compiled: 24 topics, 73 renders, 435 beats.
+[2026-10-17 18:22:50] Saved All-in/studio_data.json
+[2026-10-17 18:22:50] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\All-in\index.html
+[2026-10-17 18:22:50] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\index.html
+[2026-10-17 18:22:50] Successfully spliced Studio OS data into: C:\Users\pc\Documents\All-in-keep\deliverables\All-in Dashboard\index.html
+[2026-10-17 18:22:50] Successfully spliced Studio OS data into: C:\Users\pc\Desktop\All-in Dashboard\index.html

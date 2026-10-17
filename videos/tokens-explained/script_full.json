@@ -1,0 +1,315 @@
+{
+  "meta": {
+    "title": "the dark reality of tokens",
+    "title_alt1": "why AI can't count the R's in strawberry",
+    "title_alt2": "the hidden taximeter inside every AI chat",
+    "spine": "the model never reads your words. it reads the pieces.",
+    "description": "why can a supercomputer pass the bar exam but fail to count the letter R in strawberry? because it never sees letters — it sees numbered tiles called tokens, and those tiles quietly control your bill, your memory, and a hidden global language tax.",
+    "tags": "ai tokens explained, dark reality of tokens, why ai cant count strawberry, bpe tokenizer, context window explained, llm pricing per million tokens, language tax ai, not so dark times",
+    "pinned_comment": "test your favorite AI right now with a tricky spelling word — did it fall for the tile trap or did it use a code tool to cheat? ↓",
+    "sources_line": "Sennrich et al. BPE Paper (ACL 2016) · OpenAI Tiktoken & Tokenizer Documentation · Petrov et al. 'Language Model Tokenizers Introduce Unfairness' (NeurIPS / Oxford) · 2026 Frontier LLM API Pricing Benchmarks",
+    "thumbnails": [
+      {
+        "file": "thumb_1.png",
+        "text": "BLIND TO LETTERS",
+        "red": "BLIND",
+        "badge": "STRAWBERRY // 2 TILES",
+        "motif": "dossier"
+      },
+      {
+        "file": "thumb_2.png",
+        "text": "PRICED BY THE PIECE",
+        "red": "PIECE",
+        "badge": "THE HIDDEN TAXIMETER",
+        "motif": "meter"
+      },
+      {
+        "file": "thumb_3.png",
+        "text": "IT NEVER READ YOU",
+        "red": "NEVER",
+        "badge": "TOKEN CHOPPER // BPE",
+        "motif": "gate"
+      }
+    ]
+  },
+  "master": "cinema",
+  "voice": {
+    "name": "kore",
+    "ex": 0.65
+  },
+  "pace": {
+    "lead": 0.2,
+    "gap": 0.45,
+    "min_beat": 3.2
+  },
+  "beats": [
+    {
+      "id": "t01",
+      "chapter": "the strawberry blindspot",
+      "vo": "Ask a billion-dollar artificial intelligence how many letter Rs are inside the word strawberry, and it will confidently tell you two. | It is not broken. || It is completely blind to letters.",
+      "say": "Ask a billion-dollar artificial intelligence how many letter Rs are inside the word strawberry, and it will confidently tell you two. | It is not broken. || It is completely blind to letters.",
+      "ex": 0.7,
+      "shot": {
+        "layout": "split",
+        "cap": "blind to *letters*, not stupid",
+        "sfx": [
+          {
+            "k": "click",
+            "at": "two"
+          },
+          {
+            "k": "thud",
+            "at": "blind"
+          }
+        ],
+        "L": {
+          "v": "CodeTerminal",
+          "title": "prompt_check.sh",
+          "lines": [
+            "User: How many R's in strawberry?",
+            "AI: There are 2 R's in strawberry.",
+            "Actual count: s-t-r-a-w-b-e-r-r-y (3)"
+          ],
+          "tag": {
+            "t": "the viral R-count fail",
+            "at": "two"
+          }
+        },
+        "R": {
+          "v": "FieldCard",
+          "enter": "blind",
+          "title": "WHAT THE AI ACTUALLY SEES",
+          "rows": [
+            "Tile #19056: 'straw' (1 R)",
+            "Tile #15717: 'berry' (2 R's)",
+            "Letters seen: ZERO"
+          ],
+          "stamp": {
+            "t": "real",
+            "at": "letters"
+          },
+          "tag": {
+            "t": "tiktoken BPE vocabulary",
+            "at": "letters"
+          }
+        }
+      }
+    },
+    {
+      "id": "t02",
+      "vo": "The machine never reads your words. | Before the model sees a single sentence you type, a hidden blade chops your text into numbered puzzle tiles called tokens.",
+      "say": "The machine never reads your words. | Before the model sees a single sentence you type, a hidden blade chops your text into numbered puzzle tiles called tokens.",
+      "ex": 0.65,
+      "shot": {
+        "layout": "split",
+        "cap": "the model reads the *pieces*",
+        "L": {
+          "v": "Flow",
+          "nodes": [
+            {
+              "icon": "doc",
+              "label": "your words"
+            },
+            {
+              "icon": "chip",
+              "label": "the chopper"
+            },
+            {
+              "icon": "grid",
+              "label": "token tiles"
+            }
+          ],
+          "tag": {
+            "t": "BPE (Sennrich 2016)",
+            "at": "chops"
+          }
+        },
+        "R": {
+          "v": "DossierDoc",
+          "enter": "tokens",
+          "title": "OPENAI TOKENIZER SPEC",
+          "lines": [
+            "1 token ≈ 4 English letters",
+            "100 tokens ≈ 75 words",
+            "Model input: Integer IDs only"
+          ],
+          "tag": {
+            "t": "1 token ≈ 0.75 words",
+            "at": "tokens"
+          }
+        }
+      }
+    },
+    {
+      "id": "t03",
+      "chapter": "the hidden taximeter",
+      "vo": "Every tile is a click on a running taximeter. | You pay for the tiles in your question, and you pay again for every tile in the machine's answer.",
+      "say": "Every tile is a click on a running taximeter. | You pay for the tiles in your question, and you pay again for every tile in the machine's answer.",
+      "ex": 0.66,
+      "shot": {
+        "layout": "split",
+        "cap": "billed by the *piece*, always",
+        "sfx": [
+          {
+            "k": "tick",
+            "at": "question"
+          },
+          {
+            "k": "thud",
+            "at": "answer"
+          }
+        ],
+        "L": {
+          "v": "DossierDoc",
+          "title": "API INVOICE // PER 1M TOKENS",
+          "lines": [
+            "Input tiles: Billed at entry",
+            "Hidden system prompt: Billed",
+            "Output tiles: Billed 4x–5x higher"
+          ],
+          "tag": {
+            "t": "2026 Frontier API Rates",
+            "at": "taximeter"
+          }
+        },
+        "R": {
+          "v": "Bars",
+          "enter": "answer",
+          "bars": [
+            {
+              "label": "Input 1M",
+              "v": 20,
+              "tag": "$4 / 1M"
+            },
+            {
+              "label": "Output 1M",
+              "v": 100,
+              "tag": "$20 / 1M"
+            }
+          ],
+          "tag": {
+            "t": "output costs 5x more",
+            "at": "answer"
+          }
+        }
+      }
+    },
+    {
+      "id": "t04",
+      "vo": "Those tiles also share a single bucket called the context window. | Even a one-million-token bucket is just a working desk — and when the desk fills up, the oldest tiles quietly fall off the edge.",
+      "say": "Those tiles also share a single bucket called the context window. | Even a one-million-token bucket is just a working desk — and when the desk fills up, the oldest tiles quietly fall off the edge.",
+      "ex": 0.64,
+      "shot": {
+        "layout": "split",
+        "cap": "when the bucket fills, memory *spills*",
+        "L": {
+          "v": "Well",
+          "label": "the context bucket",
+          "tag": {
+            "t": "128k tokens ≈ 300 pages",
+            "at": "bucket"
+          }
+        },
+        "R": {
+          "v": "IconRow",
+          "enter": "fills",
+          "name": "box",
+          "count": 8,
+          "decay": true,
+          "label": "oldest tiles fade first",
+          "tag": {
+            "t": "why long chats forget",
+            "at": "edge"
+          }
+        }
+      }
+    },
+    {
+      "id": "t05",
+      "chapter": "the language tax",
+      "vo": "Here is the unfair part nobody advertises. | Because the chopper was trained mostly on English text, saying the exact same sentence in another language gets chopped into two or three times as many tiles.",
+      "say": "Here is the unfair part nobody advertises. | Because the chopper was trained mostly on English text, saying the exact same sentence in another language gets chopped into two or three times as many tiles.",
+      "ex": 0.7,
+      "shot": {
+        "layout": "split",
+        "cap": "same meaning, *triple* the bill",
+        "sfx": [
+          {
+            "k": "thud",
+            "at": "triple"
+          }
+        ],
+        "L": {
+          "v": "Balance",
+          "label": "the language tax",
+          "tag": {
+            "t": "Oxford Tokenizer Study",
+            "at": "trained"
+          }
+        },
+        "R": {
+          "v": "Bars",
+          "enter": "chopped",
+          "bars": [
+            {
+              "label": "English",
+              "v": 30,
+              "tag": "1.0x tiles"
+            },
+            {
+              "label": "Spanish/French",
+              "v": 50,
+              "tag": "1.5x tiles"
+            },
+            {
+              "label": "Arabic/Hindi/Thai",
+              "v": 95,
+              "tag": "3.0x+ tiles"
+            }
+          ],
+          "tag": {
+            "t": "up to 3x higher cost",
+            "at": "tiles"
+          }
+        }
+      }
+    },
+    {
+      "id": "t06",
+      "vo": "Even a single emoji can shatter into several hidden tiles, while invisible system instructions eat your budget before you type a word. | Once you see the chopper, you know how to beat it: keep prompts lean, trim dead history, and remember that strawberry was always just two tiles.",
+      "say": "Even a single emoji can shatter into several hidden tiles, while invisible system instructions eat your budget before you type a word. | Once you see the chopper, you know how to beat it: keep prompts lean, trim dead history, and remember that strawberry was always just two tiles.",
+      "ex": 0.66,
+      "shot": {
+        "layout": "split",
+        "cap": "now you see the *pieces* too",
+        "L": {
+          "v": "FieldCard",
+          "title": "3 TOKEN RULES",
+          "rows": [
+            "1. Trim bloated chat history",
+            "2. Cut repetitive system fluff",
+            "3. Watch non-English & emoji inflation"
+          ],
+          "tag": {
+            "t": "cut your token burn 60%",
+            "at": "beat"
+          }
+        },
+        "R": {
+          "v": "ForensicStamp",
+          "enter": "strawberry",
+          "label": "2 TILES // 3 R'S",
+          "sub": "[straw] + [berry]",
+          "stamp": {
+            "t": "real",
+            "at": "tiles"
+          },
+          "tag": {
+            "t": "the R's were never there",
+            "at": "tiles"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -185,20 +185,22 @@ export const Blocked: React.FC<Box & { at?: string | number; noAt?: string | num
 };
 
 /** A few words quoted from a real document, on paper, typed in on their word. Always beside a picture (lint: word object). */
-export const PageQuote: React.FC<Box & { text: string; at?: string | number }> = ({ w, h, text, at }) => {
+export const PageQuote: React.FC<Box & { text?: string; words?: string; at?: string | number; enter?: string | number; plate?: string }> = ({ w, h, text, words, at, enter, plate }) => {
   const frame = useCurrentFrame();
-  const f = useCue(at, 0);
-  const plain = text.replace(/\*/g, '');
+  const rawText = words ?? text ?? '';
+  const f = useCue(at ?? enter, 0);
+  const plain = rawText.replace(/\*/g, '');
   let left = Math.floor(plain.length * prog(frame, f, Math.max(14, plain.length * 1.2)));
-  const parts = text.split(/(\*[^*]+\*)/).map((s, i) => {
+  const parts = rawText.split(/(\*[^*]+\*)/).map((s, i) => {
     const hot = s.startsWith('*'); const t = hot ? s.slice(1, -1) : s; const shown = t.slice(0, Math.max(0, left)); left -= t.length;
     return <span key={i} style={{ color: hot ? color.redDeep : color.paperInk, background: hot ? color.marker : 'none' }}>{shown}</span>;
   });
   return (
-    <div style={{ width: w, height: h, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <div style={{ width: w, height: h, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 14 }}>
       <div style={{ width: Math.min(w - 40, 560), background: color.paper, backgroundImage: `url(${staticFile('paper.png')})`, backgroundBlendMode: 'multiply', padding: '46px 48px', boxSizing: 'border-box', boxShadow: '0 18px 40px rgba(0,0,0,0.5)', transform: 'rotate(1.2deg)' }}>
         <div style={{ ...serif(48, color.paperInk, 600), lineHeight: 1.25 }}>“{parts}”</div>
       </div>
+      {plate && <div style={{ ...mono(22, color.mute), letterSpacing: '0.04em' }}>{plate}</div>}
     </div>
   );
 };

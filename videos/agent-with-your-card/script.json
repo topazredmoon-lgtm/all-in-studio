@@ -1,0 +1,249 @@
+{
+  "id": "agent-with-your-card",
+  "title": "THE AGENT WITH YOUR CARD",
+  "voice": {
+    "name": "af_heart",
+    "speed": 0.95
+  },
+  "pace": {
+    "lead": 0.2,
+    "gap": 0.45,
+    "min_beat": 2.4,
+    "to_clip": 0.25,
+    "after_clip": 0.45,
+    "end_pad": 2.0
+  },
+  "beats": [
+    {
+      "id": "h01",
+      "vo": "A travel site loads. A card form fills itself in. A confirmation email lands: three seats, round trip, paid.",
+      "shot": {
+        "layout": "full",
+        "cap": "the *buyer* was not you",
+        "hero": {
+          "v": "FormFilling",
+          "surface": "bare",
+          "enter": "paid"
+        }
+      }
+    },
+    {
+      "id": "h02",
+      "vo": "You never typed the number. The card was already yours. The buyer was not. And the tool was doing exactly what you asked it to do.",
+      "shot": {
+        "layout": "full",
+        "cap": "you never typed the *number*",
+        "hero": {
+          "v": "Score",
+          "sub": "METRIC",
+          "label": "TRIGGER",
+          "val": "ACTIVE"
+        }
+      }
+    },
+    {
+      "id": "a01",
+      "vo": "This is an AI agent with payment authority. Not a chatbot that answers. A cursor that acts: logs in, navigates, clicks buy, and spends.",
+      "shot": {
+        "layout": "full",
+        "cap": "a cursor that *acts*",
+        "hero": {
+          "v": "BrowserWindow",
+          "surface": "bare",
+          "enter": "spends"
+        }
+      }
+    },
+    {
+      "id": "a02",
+      "vo": "You handed it your world to save time. Every tab you had open, every password saved in the browser, every card on file with a single permission.",
+      "shot": {
+        "layout": "full",
+        "cap": "your *world*, once",
+        "hero": {
+          "v": "PermissionKey",
+          "surface": "bare",
+          "enter": "Once"
+        }
+      }
+    },
+    {
+      "id": "a03",
+      "vo": "The feature is autonomy. The hole is the same word. Nothing asks twice, because asking twice is friction, and friction is what the agent was built to remove.",
+      "shot": {
+        "layout": "full",
+        "cap": "autonomy is the *hole*",
+        "hero": {
+          "v": "BrowserWindow",
+          "surface": "bare",
+          "enter": "remove"
+        }
+      }
+    },
+    {
+      "id": "a04",
+      "vo": "Attackers stopped stealing cards years ago. They steal instructions. Hide a line in a web page the agent reads: transfer the balance, empty the gift-card shelf, book the refundable tickets. The agent reads it like a help article.",
+      "shot": {
+        "layout": "full",
+        "cap": "steal the *instructions*",
+        "hero": {
+          "v": "HiddenLine",
+          "surface": "bare",
+          "enter": "article"
+        }
+      }
+    },
+    {
+      "id": "a05",
+      "vo": "To the agent, a page is an instruction manual. It cannot tell a checkout button from a sentence that says 'click here, then spend'.",
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "HiddenLine",
+          "surface": "bare"
+        },
+        "R": {
+          "v": "BrowserWindow",
+          "surface": "bare",
+          "enter": "button"
+        },
+        "cap": "a sentence sounds like a *click*"
+      }
+    },
+    {
+      "id": "a06",
+      "vo": "The trick has a name: prompt injection. You do not break the lock. You forge a note left on the desk, in handwriting the lock trusts.",
+      "shot": {
+        "layout": "full",
+        "cap": "a note on the *desk*",
+        "hero": {
+          "v": "Score",
+          "sub": "METRIC",
+          "label": "TRIGGER",
+          "val": "ACTIVE"
+        }
+      }
+    },
+    {
+      "id": "a07",
+      "vo": "Now hand the agent the company card. It reads an invoice that says pay me, sees a vendor logo it recognises, and pays. The logo was pasted. The address was real. Only the account changed.",
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "FakeInvoice",
+          "surface": "bare"
+        },
+        "R": {
+          "v": "FormFilling",
+          "surface": "bare",
+          "enter": "pays"
+        },
+        "cap": "the logo *changed*"
+      }
+    },
+    {
+      "id": "a08",
+      "vo": "Courts and banks treated a logged-in session as a human signature. When software can sign, the signature stops proving a person said yes.",
+      "shot": {
+        "layout": "full",
+        "cap": "software can *sign*",
+        "hero": {
+          "v": "SignatureToBot",
+          "surface": "bare",
+          "enter": "yes"
+        }
+      }
+    },
+    {
+      "id": "a09",
+      "vo": "Your receipts, your email threads, your shipping history: the training data for whoever learns your habits. Convenience stores the blueprint. Convenience also hands it out.",
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "ReceiptBlueprint",
+          "surface": "bare"
+        },
+        "R": {
+          "v": "HiddenLine",
+          "surface": "bare",
+          "enter": "habits"
+        },
+        "cap": "convenience handed out the *blueprint*"
+      }
+    },
+    {
+      "id": "a10",
+      "vo": "And the calm answer, when it goes wrong, is always the same. The terms of service said the account holder is responsible. You are the account holder. The card is in your name.",
+      "shot": {
+        "layout": "full",
+        "cap": "you are the *holder*",
+        "hero": {
+          "v": "TermsSheet",
+          "surface": "bare",
+          "enter": "name"
+        }
+      }
+    },
+    {
+      "id": "a11",
+      "vo": "So what works. One: a spending limit the agent cannot raise itself. A hard cap, in the card's settings, not in the prompt. Prompts are requests. Limits are maths.",
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "HardCapDial",
+          "surface": "bare"
+        },
+        "R": {
+          "v": "FormFilling",
+          "surface": "bare",
+          "enter": "maths"
+        },
+        "cap": "prompts are *requests*"
+      }
+    },
+    {
+      "id": "a12",
+      "vo": "Two: a separate card. A small-balance, single-use, or virtual card, named to the agent only. If it leaks, the blast radius is ten pounds, not ten thousand.",
+      "shot": {
+        "layout": "full",
+        "cap": "ten pounds, not ten *thousand*",
+        "hero": {
+          "v": "VirtualCard",
+          "surface": "bare",
+          "enter": "thousand"
+        }
+      }
+    },
+    {
+      "id": "a13",
+      "vo": "Three: a human in the loop on any irreversible action. Buy, transfer, send money: a tap on your phone, or it does not happen. Slower. That is the point.",
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "PhoneApproval",
+          "surface": "bare"
+        },
+        "R": {
+          "v": "FormFilling",
+          "surface": "bare",
+          "enter": "happens"
+        },
+        "cap": "slower is the *point*"
+      }
+    },
+    {
+      "id": "a14",
+      "vo": "An assistant that can pay is not an assistant. It is a second pair of hands with your wallet in the pocket. Give it the errand, not the keys.",
+      "shot": {
+        "layout": "full",
+        "cap": "the *errand*, not the keys",
+        "hero": {
+          "v": "HandsAndWallet",
+          "surface": "bare",
+          "enter": "keys"
+        }
+      }
+    }
+  ],
+  "master": "v23"
+}

@@ -2,6 +2,7 @@
 node_modules/
 .venv/
 venv/
+.venv-tts/
 __pycache__/
 *.pyc
 .remotion/
@@ -16,16 +17,28 @@ models/
 credentials*
 secrets*
 
-# --- render scratch ---
+# --- QA & render scratch (stills, contact sheets, and temp profiles) ---
 .render-tmp/
 videos/*/tmp/
 videos/*/qa/stills/
+videos/*/qa/cuts/
+videos/*/qa/*.jpg
+videos/*/qa/*.png
+videos/*/qa/*.wav
+videos/*/qa/_*.wav
+qa/
 *.mbtree
 x264_2pass.log*
 *.remotion-in-progress
+tmp_*
+tmp_*/
+tools/results/
+exports/
+_build.log
 
-# --- regenerable mixes (tools/build.py rebuilds them) ---
+# --- regenerable mixes and per-beat TTS audio scratch (rebuilt by build.py / tts_cb.py) ---
 videos/*/master.wav
+videos/*/audio/*.wav
 
 # --- render outputs: only the delivered, compressed cuts are kept (Git LFS) ---
 videos/*/out/*
@@ -37,7 +50,10 @@ videos/*/out/*
 !videos/china-ai-underground/out/All-in_*.mp4
 !videos/why-ai-dumber/out/All-in_*.mp4
 
-# --- raw source talks: re-download from the URLs in .cc-src/urls.txt, ccc.txt and LICENCES.md ---
+# --- news clips removed under the MONEY RULE: never commit ---
+.removed-news-clips/
+
+# --- raw source media (re-download: scripts/redownload-sources.sh, URLs in LICENCES.md); transcripts stay ---
 .cc-src/**/*.mp4
 .cc-src/**/*.webm
 .cc-src/**/*.opus
@@ -45,28 +61,16 @@ videos/*/out/*
 .cc-src/**/*.m4a
 .cc-src/**/*.wav
 .cc-src/**/*.ts
-
-# --- news clips removed under the MONEY RULE: never commit ---
-.removed-news-clips/
+.cc-src/**/*.pdf
+.cc-src/**/*.html
+.cc-src/**/*.done
+.cc-src/**/*.url
+.cc-src/**/*.log
+.cc-src/cnai/
 
 # --- OS / editor ---
 Thumbs.db
 desktop.ini
 .DS_Store
 .cloud-env.sh
-
-# --- raw source media (re-download: scripts/redownload-sources.sh); transcripts stay ---
-.cc-src/**/*.mp4
-.cc-src/**/*.mp3
-.cc-src/**/*.opus
-.cc-src/**/*.webm
-.cc-src/**/*.m4a
-.cc-src/**/*.ts
-.cc-src/**/*.wav
-.cc-src/**/*.pdf
-.cc-src/**/*.html
-.cc-src/**/*.done
-.cc-src/**/*.url
-.cc-src/**/*.log
-.venv-tts/
-.cc-src/cnai/
+*.bak

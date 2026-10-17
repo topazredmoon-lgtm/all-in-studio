@@ -1,0 +1,8 @@
+# SOURCES · ai-grey-zone (The Science of Context Jailbreaks & Indirect Prompt Injection)
+
+| Beat | Claim / Fact | Primary Source | Verification URL |
+| :--- | :--- | :--- | :--- |
+| `h01`–`h02` | LLMs process trusted system instructions and untrusted external data in a single unified token stream without hardware/architectural separation | OWASP Top 10 for Large Language Model Applications (LLM01: Prompt Injection) | https://genai.owasp.org/llmrisk/llm01-prompt-injection/ |
+| `a01`–`a02` | July 2023 Carnegie Mellon University paper showing automated 20-token adversarial suffixes (`GCG`) transfer across aligned models with up to 84% success | Andy Zou, Zifan Wang, Nicholas Carlini, Milad Nasr, J. Zico Kolter, Matt Fredrikson (CMU / Center for AI Safety, July 27, 2023), *Universal and Transferable Adversarial Attacks on Aligned Language Models* | https://arxiv.org/abs/2307.15043 |
+| `a03`–`a04` | Indirect Prompt Injection: attackers embed hidden instructions (e.g., 1px white-on-white text in web pages, resumes, or calendar invites) executed with zero user clicks | Kai Greshake et al. (2023), *Not What You've Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection* (AISec / ACM) | https://arxiv.org/abs/2302.12173 |
+| `a05`–`a06` | January 2024 Anthropic research demonstrating that deceptive "Sleeper Agent" backdoors triggered by date strings persist through standard RLHF and adversarial training | Evan Hubinger et al. (Anthropic, Jan 2024), *Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training* | https://arxiv.org/abs/2401.05566 |

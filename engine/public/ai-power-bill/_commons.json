@@ -1,0 +1,20 @@
+{
+  "ferc_building.jpg": {
+    "title": "File:Federal Energy Regulatory Commission (55266856943).jpg",
+    "author": "ajay_suresh",
+    "license": "CC BY 4.0",
+    "desc_url": "https://commons.wikimedia.org/wiki/File:Federal_Energy_Regulatory_Commission_(55266856943).jpg",
+    "width": 1920,
+    "height": 2880,
+    "note": "FERC Headquarters Washington DC"
+  },
+  "ashburn_substation.jpg": {
+    "title": "File:Chubu Electric Power Company Ozone transformer substation 20130809.JPG",
+    "author": "\u5186\u5468\u7387\uff13\u30d1\u30fc\u30bb\u30f3\u30c8",
+    "license": "CC BY-SA 3.0",
+    "desc_url": "https://commons.wikimedia.org/wiki/File:Chubu_Electric_Power_Company_Ozone_transformer_substation_20130809.JPG",
+    "width": 1920,
+    "height": 1434,
+    "note": "High voltage electric power substation"
+  }
+}

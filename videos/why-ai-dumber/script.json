@@ -1,307 +1,406 @@
 {
- "id": "why-ai-dumber",
- "title": "WHY AI MODELS GET DUMBER · design-system v2 sample",
- "voice": {
-  "engine": "chatterbox",
-  "name": "chatterbox-fenrir",
-  "ref": "assets/voice/narrator_ref.wav",
-  "cfg": 0.35
- },
- "pace": {
-  "lead": 0.15,
-  "gap": 0.35,
-  "min_beat": 2.2,
-  "to_clip": 0.2,
-  "after_clip": 0.3,
-  "end_pad": 1.6
- },
- "master": "cinema",
- "beats": [
-  {
-   "id": "h00",
-   "vo": "Ever feel like your AI is getting a little dumber?",
-   "ex": 0.55,
-   "shot": {
-    "layout": "full",
-    "hero": {
-     "v": "LineIcon",
-     "surface": "bare",
-     "name": "robot",
-     "mark": "?",
-     "markAt": "dumber",
-     "label": "your ai",
-     "size": 360
-    },
-    "cap": "your ai, *getting dumber*?",
-    "act": "01 the feeling"
-   }
+  "id": "why-ai-dumber",
+  "title": "WHY AI MODELS GET DUMBER - engraving-plate sample (v3)",
+  "voice": {
+    "name": "af_heart",
+    "speed": 0.95
   },
-  {
-   "id": "a01",
-   "vo": "You are not imagining it. Researchers found a real reason.",
-   "ex": 0.45,
-   "shot": {
-    "layout": "split",
-    "L": {
-     "v": "LineIcon",
-     "surface": "bare",
-     "name": "eye",
-     "label": "you"
-    },
-    "R": {
-     "v": "LineIcon",
-     "surface": "bare",
-     "name": "doc",
-     "mark": "ok",
-     "markAt": "reason",
-     "label": "study"
-    },
-    "cap": "a *real* reason",
-    "act": "01 the feeling"
-   }
+  "pace": {
+    "lead": 0.2,
+    "gap": 0.45,
+    "min_beat": 2.4,
+    "to_clip": 0.25,
+    "after_clip": 0.45,
+    "end_pad": 2.0
   },
-  {
-   "id": "a02",
-   "vo": "AI itself is now writing huge parts of the internet.",
-   "say": "AI itself | is now writing huge parts of the internet.",
-   "ex": 0.5,
-   "shot": {
-    "layout": "full",
-    "hero": {
-     "v": "FieldCard",
-     "surface": "bare",
-     "rows": [
-      {
-       "label": "the internet",
-       "value": "ai-written",
-       "icon": "robot",
-       "at": "internet"
+  "master": "v23",
+  "beats": [
+    {
+      "id": "h00",
+      "vo": "Ever get the feeling your AI is a little duller than it used to be?",
+      "ex": 0.55,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "PageQuote",
+          "text": "Model output degraded",
+          "at": "duller"
+        },
+        "cap": "your ai, a little *duller*",
+        "act": "01 the feeling"
       }
-     ],
-     "kicker": "the open web"
     },
-    "cap": "ai *writes* the internet",
-    "act": "02 the loop"
-   }
-  },
-  {
-   "id": "a02b",
-   "vo": "Blog posts, product reviews, even comments: a lot of it is written by AI.",
-   "say": "Blog posts, product reviews, even comments: || a lot of it is written by AI.",
-   "ex": 0.55,
-   "shot": {
-    "layout": "full",
-    "hero": {
-     "v": "FieldCard",
-     "surface": "bare",
-     "rows": [
-      {
-       "label": "blog posts",
-       "value": "ai",
-       "icon": "robot",
-       "at": "posts"
-      },
-      {
-       "label": "reviews",
-       "value": "ai",
-       "icon": "robot",
-       "at": "reviews"
-      },
-      {
-       "label": "comments",
-       "value": "ai",
-       "icon": "robot",
-       "at": "comments"
+    {
+      "id": "a01",
+      "vo": "You ask it something simple, and what comes back is thinner. Vaguer. Mush.",
+      "say": "You ask it something simple, | and what comes back is thinner. | Vaguer. | Mush.",
+      "ex": 0.5,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "Bars",
+          "bars": [
+            {
+              "v": 68,
+              "tag": "Drift"
+            }
+          ],
+          "at": "mush"
+        },
+        "cap": "thinner. vaguer. *mush*",
+        "act": "01 the feeling"
       }
-     ],
-     "kicker": "written by"
     },
-    "cap": "written by *ai*, not people",
-    "act": "02 the loop"
-   }
-  },
-  {
-   "id": "a03",
-   "vo": "AI writes it, the internet hosts it, and the next model trains on it.",
-   "ex": 0.6,
-   "shot": {
-    "layout": "full",
-    "hero": {
-     "v": "Loop",
-     "surface": "bare",
-     "nodes": [
-      {
-       "icon": "robot",
-       "label": "ai writes"
-      },
-      {
-       "icon": "cloud",
-       "label": "goes online",
-       "at": "hosts"
-      },
-      {
-       "icon": "robot",
-       "label": "trains again",
-       "at": "trains"
+    {
+      "id": "a02",
+      "vo": "You are not imagining it. There is a paper in Nature about exactly this, and the mechanism is strange.",
+      "say": "You are not imagining it. || There is a paper in Nature about exactly this, | and the mechanism is strange.",
+      "ex": 0.5,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "PageQuote",
+          "text": "Published benchmark",
+          "at": "paper"
+        },
+        "cap": "there is a *paper* on this",
+        "act": "01 the feeling"
       }
-     ],
-     "loopAt": "it#3"
     },
-    "cap": "trained on *itself*",
-    "act": "02 the loop"
-   }
-  },
-  {
-   "id": "a04",
-   "vo": "In 2024, Nature ran the experiment: feed a model only AI-made data, again and again.",
-   "say": "In twenty twenty four, Nature ran the experiment: | feed a model only AI-made data, again and again.",
-   "ex": 0.5,
-   "shot": {
-    "layout": "split",
-    "L": {
-     "v": "CalendarCard",
-     "surface": "bare",
-     "year": "2024",
-     "plate": "nature · shumailov et al. · 24 jul 2024"
-    },
-    "R": {
-     "v": "LineIcon",
-     "surface": "bare",
-     "name": "doc",
-     "label": "the experiment",
-     "labelAt": "experiment"
-    },
-    "cap": "the *study*, 2024",
-    "act": "02 the loop"
-   }
-  },
-  {
-   "id": "a05",
-   "vo": "Within a few generations, it forgot the real world. Rare, true facts were the first to go.",
-   "say": "Within a few generations, it forgot the real world. || Rare, true facts were the first to go.",
-   "ex": 0.6,
-   "shot": {
-    "layout": "full",
-    "hero": {
-     "v": "Copier",
-     "surface": "bare",
-     "gens": 4,
-     "at": "generations",
-     "every": 22,
-     "plate": "illustration · based on nature, shumailov et al. 2024"
-    },
-    "cap": "*rare facts*, faded first",
-    "act": "03 the cost"
-   }
-  },
-  {
-   "id": "a06",
-   "vo": "That means the tools you already rely on could quietly get worse, with nobody changing a thing.",
-   "ex": 0.5,
-   "shot": {
-    "layout": "split",
-    "L": {
-     "v": "LineIcon",
-     "surface": "bare",
-     "name": "laptop",
-     "label": "your tools"
-    },
-    "R": {
-     "v": "LineIcon",
-     "surface": "bare",
-     "name": "person",
-     "mark": "?",
-     "markAt": "worse",
-     "label": "you"
-    },
-    "cap": "quietly *gets worse*",
-    "act": "03 the cost"
-   }
-  },
-  {
-   "id": "a06b",
-   "vo": "No hack. No villain. It happens on its own.",
-   "say": "No hack. | No villain. | It happens on its own.",
-   "ex": 0.5,
-   "shot": {
-    "layout": "split",
-    "L": {
-     "v": "LineIcon",
-     "surface": "bare",
-     "name": "shield",
-     "label": "no hack"
-    },
-    "R": {
-     "v": "LineIcon",
-     "surface": "bare",
-     "name": "person",
-     "mark": "no",
-     "markAt": "villain",
-     "label": "no villain"
-    },
-    "cap": "no *hack*, no villain",
-    "act": "03 the cost"
-   }
-  },
-  {
-   "id": "a07",
-   "vo": "Scientists call it model collapse: the system quietly eating its own tail.",
-   "ex": 0.65,
-   "shot": {
-    "layout": "split",
-    "L": {
-     "v": "LineIcon",
-     "surface": "bare",
-     "name": "robot"
-    },
-    "R": {
-     "v": "LineIcon",
-     "surface": "bare",
-     "name": "spiral",
-     "mark": "no",
-     "markAt": "collapse",
-     "label": "model collapse",
-     "tAt": "tail"
-    },
-    "cap": "*model collapse*",
-    "act": "03 the cost"
-   }
-  },
-  {
-   "id": "a08",
-   "vo": "So the next time your AI feels a little worse, now you know the reason.",
-   "say": "So the next time your AI feels a little worse | — now you know the reason.",
-   "ex": 0.6,
-   "shot": {
-    "layout": "split",
-    "L": {
-     "v": "LineIcon",
-     "surface": "bare",
-     "name": "robot",
-     "mark": "?",
-     "markAt": "worse",
-     "label": "your ai"
-    },
-    "R": {
-     "v": "Bars",
-     "surface": "bare",
-     "bars": [
-      {
-       "v": 3,
-       "t": "before",
-       "c": "red"
-      },
-      {
-       "v": 1,
-       "t": "now",
-       "c": "red",
-       "at": "worse"
+    {
+      "id": "a03",
+      "vo": "To learn anything at all, a model has to eat the internet. Every page, every post, every review.",
+      "say": "To learn anything at all, a model has to eat the internet. || Every page, every post, every review.",
+      "ex": 0.55,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "PaperRiver",
+          "surface": "bare",
+          "at": "internet"
+        },
+        "cap": "it has to *eat* the internet",
+        "act": "02 the loop"
       }
-     ]
     },
-    "cap": "now you know the *reason*",
-    "act": "03 the cost"
-   }
-  }
- ]
+    {
+      "id": "a04",
+      "vo": "But the internet is not written only by people any more.",
+      "ex": 0.5,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "TwoHands",
+          "surface": "bare",
+          "at": "people"
+        },
+        "cap": "not written only by *people*",
+        "act": "02 the loop"
+      }
+    },
+    {
+      "id": "a05",
+      "vo": "Machines write an enormous share of it now. Product descriptions, reviews, summaries, answers.",
+      "say": "Machines write an enormous share of it now. || Product descriptions, reviews, summaries, answers.",
+      "ex": 0.55,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "PressStack",
+          "surface": "bare",
+          "at": "share"
+        },
+        "cap": "machines write *most* of it",
+        "act": "02 the loop"
+      }
+    },
+    {
+      "id": "a06",
+      "vo": "So the next model learns from pages the last model wrote.",
+      "ex": 0.5,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "JugCup",
+          "surface": "bare",
+          "at": "wrote"
+        },
+        "cap": "it learns from what it *wrote*",
+        "act": "02 the loop"
+      }
+    },
+    {
+      "id": "a07",
+      "vo": "A machine writes it. The web keeps it. The next machine drinks it straight back in.",
+      "say": "A machine writes it. | The web keeps it. | The next machine drinks it straight back in.",
+      "ex": 0.6,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "Alembic",
+          "surface": "bare",
+          "at": "drinks"
+        },
+        "cap": "and *drinks* it back in",
+        "act": "02 the loop"
+      }
+    },
+    {
+      "id": "a08",
+      "vo": "Scientists have a name for what that does. Model collapse. A system eating its own tail.",
+      "say": "Scientists have a name for what that does. || Model collapse. || A system eating its own tail.",
+      "ex": 0.65,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "Bars",
+          "bars": [
+            {
+              "v": 85,
+              "tag": "Loop"
+            }
+          ],
+          "at": "collapse"
+        },
+        "cap": "*model collapse*",
+        "act": "02 the loop"
+      }
+    },
+    {
+      "id": "a09",
+      "vo": "In twenty twenty-four, researchers sealed the loop on purpose, and watched what happened.",
+      "say": "In twenty twenty four, researchers sealed the loop on purpose, | and watched what happened.",
+      "ex": 0.5,
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "BellJar",
+          "surface": "bare",
+          "at": "sealed"
+        },
+        "R": {
+          "v": "CalendarCard",
+          "surface": "bare",
+          "year": "2024",
+          "at": "2024"
+        },
+        "cap": "they *sealed* the loop",
+        "act": "03 the experiment"
+      }
+    },
+    {
+      "id": "a10",
+      "vo": "They trained a model on its own output. Then trained the next one on that. Again, and again.",
+      "say": "They trained a model on its own output. | Then trained the next one on that. | Again, and again.",
+      "ex": 0.55,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "CopyStack",
+          "surface": "bare",
+          "at": "trained",
+          "dropAt": "again"
+        },
+        "cap": "a copy of a *copy*",
+        "act": "03 the experiment"
+      }
+    },
+    {
+      "id": "a11",
+      "vo": "By the ninth generation, a small model given a passage about English church towers was writing about jackrabbit tail colours.",
+      "say": "By the ninth generation, | a small model given a passage about English church towers | was writing about jackrabbit tail colours.",
+      "ex": 0.6,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "TowerRabbits",
+          "surface": "bare",
+          "at": "jackrabbit",
+          "plate": "after the experiment in nature, shumailov et al. 2024"
+        },
+        "cap": "towers became *jackrabbits*",
+        "act": "03 the experiment"
+      }
+    },
+    {
+      "id": "a12",
+      "vo": "The rare things went first. The odd fact, the unusual word, the one in a thousand case.",
+      "say": "The rare things went first. || The odd fact, the unusual word, the one in a thousand case.",
+      "ex": 0.55,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "Meadow",
+          "surface": "bare",
+          "at": "rare"
+        },
+        "cap": "the *rare* things went first",
+        "act": "03 the experiment"
+      }
+    },
+    {
+      "id": "a13",
+      "vo": "What survives is the middle. The average, of the average, of the average.",
+      "say": "What survives is the middle. || The average, | of the average, | of the average.",
+      "ex": 0.5,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "Delta",
+          "surface": "bare",
+          "at": "middle"
+        },
+        "cap": "only the *middle* survives",
+        "act": "03 the experiment"
+      }
+    },
+    {
+      "id": "a14",
+      "vo": "This is not a bug anybody can patch. It is what happens when a copy becomes the source.",
+      "say": "This is not a bug anybody can patch. || It is what happens when a copy becomes the source.",
+      "ex": 0.6,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "CastOfACast",
+          "surface": "bare",
+          "at": "copy"
+        },
+        "cap": "the *copy* became the source",
+        "act": "04 what it costs you"
+      }
+    },
+    {
+      "id": "a15",
+      "vo": "No hack. No villain. Nobody has to do a single thing wrong.",
+      "say": "No hack. | No villain. | Nobody has to do a single thing wrong.",
+      "ex": 0.5,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "RustingGate",
+          "surface": "bare",
+          "at": "villain"
+        },
+        "cap": "no hack, no *villain*",
+        "act": "04 what it costs you"
+      }
+    },
+    {
+      "id": "a16",
+      "vo": "The machine just drinks its own output, and nobody is watching the well.",
+      "ex": 0.55,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "Well",
+          "surface": "bare",
+          "at": "well"
+        },
+        "cap": "nobody is watching the *well*",
+        "act": "04 what it costs you"
+      }
+    },
+    {
+      "id": "a17",
+      "vo": "And this is already inside the tools you use every day.",
+      "ex": 0.55,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "DeskLamp",
+          "surface": "bare",
+          "at": "tools"
+        },
+        "cap": "already in your *tools*",
+        "act": "04 what it costs you"
+      }
+    },
+    {
+      "id": "a18",
+      "vo": "It will not arrive as an error. It arrives as an answer that is slightly, confidently wrong.",
+      "say": "It will not arrive as an error. || It arrives as an answer that is slightly, | confidently wrong.",
+      "ex": 0.6,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "Compass",
+          "surface": "bare",
+          "at": "wrong"
+        },
+        "cap": "confidently *wrong*",
+        "act": "04 what it costs you"
+      }
+    },
+    {
+      "id": "a19",
+      "vo": "Which is the kind of wrong nobody catches.",
+      "ex": 0.5,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "DriftingCourse",
+          "surface": "bare",
+          "at": "catches"
+        },
+        "cap": "the wrong nobody *catches*",
+        "act": "04 what it costs you"
+      }
+    },
+    {
+      "id": "a20",
+      "vo": "There are fixes. Keep human writing. Label what the machines made. Pay for the real thing.",
+      "say": "There are fixes. || Keep human writing. | Label what the machines made. | Pay for the real thing.",
+      "ex": 0.5,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "SeedVault",
+          "surface": "bare",
+          "at": "fixes"
+        },
+        "cap": "there *are* fixes",
+        "act": "04 what it costs you"
+      }
+    },
+    {
+      "id": "a21",
+      "vo": "Every one of those costs money. The loop costs nothing.",
+      "say": "Every one of those costs money. || The loop costs nothing.",
+      "ex": 0.55,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "Score",
+          "sub": "METRIC",
+          "label": "PARITY",
+          "val": "0.54",
+          "at": "nothing"
+        },
+        "cap": "the loop costs *nothing*",
+        "act": "04 what it costs you"
+      }
+    },
+    {
+      "id": "a22",
+      "vo": "So the next time your AI feels a little duller, you know what it has been eating.",
+      "say": "So the next time your AI feels a little duller | - you know what it has been eating.",
+      "ex": 0.6,
+      "shot": {
+        "layout": "full",
+        "hero": {
+          "v": "Bars",
+          "bars": [
+            {
+              "v": 85,
+              "tag": "Loop"
+            }
+          ],
+          "at": "eating"
+        },
+        "cap": "what it has been *eating*",
+        "act": "04 what it costs you"
+      }
+    }
+  ]
 }

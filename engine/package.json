@@ -4,18 +4,26 @@
   "type": "module",
   "scripts": {
     "studio": "remotion studio src/index.ts",
+    "check": "tsc --noEmit",
     "stills": "node ../tools/stills.mjs",
     "render": "node ../tools/render.mjs"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.526",
     "@remotion/cli": "4.0.526",
+    "@remotion/noise": "^4.0.536",
+    "@remotion/paths": "^4.0.536",
     "@remotion/renderer": "4.0.526",
+    "flubber": "^0.4.2",
+    "gsap": "^3.15.0",
+    "perfect-freehand": "^1.2.3",
     "react": "19.3.0",
     "react-dom": "19.3.0",
-    "remotion": "4.0.526"
+    "remotion": "4.0.526",
+    "roughjs": "^4.6.6"
   },
   "devDependencies": {
+    "@types/flubber": "^0.4.0",
     "@types/react": "^19.0.0",
     "typescript": "^5.0.0"
   }

@@ -10,13 +10,30 @@ import numpy as np, soundfile as sf
 
 ROOT = Path(__file__).resolve().parent.parent
 # Cloud: scripts/cloud-setup.sh downloads to models/kokoro and sets KOKORO_MODELS in .cloud-env.sh
-MODELS = Path(os.environ.get("KOKORO_MODELS", r"C:\Users\pc\Documents\antigravity\jolly-bell\models"))
+MODELS = Path(os.environ.get("KOKORO_MODELS", str(Path(__file__).resolve().parents[2] / "voice" / "kokoro-models")))
+if "HF_HOME" not in os.environ:
+    os.environ["HF_HOME"] = str(Path(__file__).resolve().parents[2] / "voice" / "hf-cache")
+if "HF_HUB_OFFLINE" not in os.environ:
+    os.environ["HF_HUB_OFFLINE"] = "1"
+if "PYTHONIOENCODING" not in os.environ:
+    os.environ["PYTHONIOENCODING"] = "utf-8"
+
+if len(sys.argv) < 2 or sys.argv[1] in ("--help", "-h", "help"):
+    print(__doc__.strip())
+    vids = sorted([p.name for p in (ROOT / "videos").iterdir() if p.is_dir() and not p.name.startswith(("_", "."))])
+    print(f"\nAvailable topics:\n  {', '.join(vids)}")
+    sys.exit(0)
+
 vid = sys.argv[1]
+vdir = ROOT / "videos" / vid
+if not vdir.is_dir():
+    sys.exit(f"Error: topic '{vid}' not found in videos/. Available: {', '.join(sorted(p.name for p in (ROOT / 'videos').iterdir() if p.is_dir()))}")
+
 # --out <dir>: write somewhere other than videos/<id>/audio (e.g. audio_kokoro for the voice A/B); build.py reads audio/
 OUT = sys.argv[sys.argv.index("--out") + 1] if "--out" in sys.argv else "audio"
-script = json.loads((ROOT / "videos" / vid / "script.json").read_text(encoding="utf-8"))
+script = json.loads((vdir / "script.json").read_text(encoding="utf-8"))
 voice = script["voice"]["name"]; speed = script["voice"]["speed"]
-out = ROOT / "videos" / vid / OUT; out.mkdir(parents=True, exist_ok=True)
+out = vdir / OUT; out.mkdir(parents=True, exist_ok=True)
 
 SQ = {",": 0.30, ";": 0.30, ":": 0.32, "-": 0.30, ".": 0.50, "?": 0.52, "!": 0.50, "": 0.18}  # max inner silence (s) after a word ending in ...
 SQ_V = 2  # v2 (2026-10-11): + per-line level matching
@@ -42,8 +59,11 @@ if not todo: sys.exit(0)
 
 from kokoro_onnx import Kokoro
 from faster_whisper import WhisperModel
+import ctranslate2
 k = Kokoro(str(MODELS / "kokoro-official.onnx"), str(MODELS / "voices-v1.0.bin"))
-wm = WhisperModel("small.en", device="cpu", compute_type="int8")  # base.en dropped line-final words (u00 "Humans.", k02) after the squeeze
+_dev = "cuda" if ctranslate2.get_cuda_device_count() > 0 else "cpu"
+_comp = "float16" if _dev == "cuda" else "int8"
+wm = WhisperModel("small.en", device=_dev, compute_type=_comp)
 
 def trim(a, sr, thr=0.008):
     idx = np.where(np.abs(a) > thr)[0]
@@ -101,4 +121,6 @@ for b, text, h, voiced in todo:
     (out / f"{b['id']}.words.json").write_text(json.dumps(words))
     (out / f"{b['id']}.json").write_text(json.dumps({"hash": h, "dur": len(audio) / sr, "sr": sr, "sq": SQ_V}))
     heard = " ".join(w["w"] for w in words)
-    print(f"{b['id']} {len(audio)/sr:5.2f}s | {heard[:90]}")
+    print(f"{b['id']} {len(audio)/sr:5.2f}s | {heard[:90]}", flush=True)
+
+print("Kokoro TTS complete.", flush=True)

@@ -27,8 +27,9 @@ const S = (p: number, c: string = color.ink, sw = 4): React.SVGProps<SVGPathElem
 // ---------------------------------------------------------------- line art (viewBox 200 × 200)
 export type IconName = 'person' | 'robot' | 'gateOpen' | 'gateShut' | 'hourglass' | 'doc' | 'envelope' | 'desk' | 'eye' | 'book' | 'coin' | 'contract' | 'cursor' | 'people'
   | 'cash' | 'church' | 'car' | 'camera' | 'flag' | 'pin' | 'map' | 'box' | 'grid' | 'checkbox' | 'checkbox2' | 'cloud' | 'building' | 'browser' | 'clock'
-  | 'worker' | 'monitor' | 'laptop' | 'fingerprint' | 'shield' | 'cookie' | 'key' | 'face' | 'iris' | 'newspaper'
-  | 'lock' | 'chip' | 'idcard' | 'brain' | 'missile' | 'tank' | 'bars' | 'fire' | 'power' | 'spiral';
+  | 'worker' | 'monitor' | 'laptop' | 'phone' | 'fingerprint' | 'shield' | 'cookie' | 'key' | 'face' | 'iris' | 'newspaper'
+  | 'lock' | 'chip' | 'idcard' | 'brain' | 'missile' | 'tank' | 'bars' | 'fire' | 'power' | 'spiral'
+  | 'radar' | 'target' | 'crosshair' | 'warning' | 'globe' | 'rocket';
 
 /** A spiral winding inward to a vanishing point (viewBox 200×200, centre 100,100): anything collapsing in on itself. */
 const spiralPoint = (u: number, turns = 2.4, r0 = 88) => {
@@ -85,6 +86,7 @@ const art = (name: IconName, p: number, t: number): React.ReactNode => {
     case 'worker': return <g><rect x={92} y={54} width={90} height={64} rx={4} {...(S(p) as any)} /><path d="M122 54 L122 118 M152 54 L152 118 M92 86 L182 86" {...S(p, color.mute, 3)} /><rect x={126} y={90} width={22} height={24} fill={red} opacity={p} /><circle cx={50} cy={66} r={16} {...(S(p) as any)} /><path d="M50 82 L50 134 M50 98 L94 112 M50 134 L36 182 M50 134 L72 182 M12 140 L190 140 M137 118 L137 140" {...S(p)} /></g>;
     case 'monitor': return <g><rect x={28} y={36} width={144} height={104} rx={6} {...(S(p) as any)} /><path d="M76 36 L76 140 M124 36 L124 140 M28 70.6 L172 70.6 M28 105.3 L172 105.3" {...S(p, color.mute, 3)} /><rect x={80} y={74} width={40} height={28} fill={red} opacity={p} /><path d="M100 140 L100 164 M70 168 L130 168" {...S(p)} /></g>;
     case 'laptop': return <g><rect x={44} y={46} width={112} height={80} rx={6} {...(S(p) as any)} /><path d="M24 142 L176 142 L164 160 L36 160 Z" {...S(p)} /><circle cx={100} cy={86} r={12} {...(S(p, red, 5) as any)} /></g>;
+    case 'phone': return <g><rect x={54} y={24} width={92} height={152} rx={14} {...(S(p) as any)} /><rect x={66} y={42} width={68} height={112} rx={6} {...(S(p, color.mute, 3) as any)} /><path d="M86 32 L114 32" {...S(p, color.mute, 3)} /><rect x={76} y={64} width={48} height={20} rx={4} fill={red} opacity={p} /><path d="M90 164 L110 164" {...S(p, color.ink, 4)} /></g>;
     case 'fingerprint': return <g><path d="M46 132 Q38 42 100 40 Q162 42 154 132" {...S(p)} /><path d="M62 156 Q56 62 100 60 Q144 62 138 156" {...S(p)} /><path d="M78 168 Q74 82 100 80 Q126 82 122 168" {...S(p, red, 5)} /><path d="M92 172 Q90 102 100 100 Q110 102 108 172" {...S(p)} /></g>;
     case 'shield': return <g><path d="M100 22 L166 46 L166 98 C166 140 138 166 100 182 C62 166 34 140 34 98 L34 46 Z" {...S(p)} /><rect x={80} y={96} width={40} height={36} rx={4} {...(S(p, red, 5) as any)} /><path d="M86 96 L86 84 A14 14 0 0 1 114 84 L114 96" {...S(p, red, 5)} /></g>;
     case 'cookie': return <g><path d="M164 84 A66 66 0 1 1 116 36 A18 18 0 0 0 140 60 A18 18 0 0 0 164 84 Z" {...S(p)} />{[[72, 82], [104, 120], [70, 136], [128, 150], [96, 82]].map(([x, y], i) => <circle key={i} cx={x} cy={y} r={7} fill={i % 2 ? color.ink : red} opacity={p} />)}</g>;
@@ -103,6 +105,73 @@ const art = (name: IconName, p: number, t: number): React.ReactNode => {
     case 'newspaper': return <g><rect x={28} y={32} width={144} height={140} rx={4} {...(S(p) as any)} /><path d="M44 56 L156 56" {...S(p, red, 9)} /><path d="M44 82 L94 82 M44 100 L94 100 M44 118 L94 118 M44 136 L94 136 M106 82 L156 82 M106 100 L156 100 M106 118 L156 118 M106 136 L140 136" {...S(p, color.mute, 4)} /></g>;
     // ---- added for why-ai-dumber (2026-10-13): a process collapsing in on itself, winding to nothing
     case 'spiral': return <g><path d={SPIRAL_D} {...S(p)} />{t > 0 && t < 1 && (() => { const [x, y] = spiralPoint(t); return <circle cx={x} cy={y} r={7} fill={red} opacity={p} />; })()}</g>;
+    // ---- added for technical/defense/space/sensors topics (2026-10-13)
+    case 'radar': return (
+      <g>
+        <circle cx={100} cy={100} r={74} {...(S(p) as any)} />
+        <circle cx={100} cy={100} r={46} {...(S(p, color.mute, 2.5) as any)} />
+        <circle cx={100} cy={100} r={20} {...(S(p, color.mute, 2) as any)} />
+        <path d="M26 100 L174 100 M100 26 L100 174" {...S(p, color.mute, 2.5)} />
+        <g transform={`rotate(${360 * t} 100 100)`}><path d="M100 100 L152 48" {...S(p, red, 5)} /></g>
+        <circle cx={136} cy={66} r={5} fill={red} opacity={p} />
+        <circle cx={72} cy={134} r={4} fill={color.ink} opacity={p} />
+      </g>
+    );
+    case 'target': return (
+      <g>
+        <circle cx={100} cy={100} r={72} {...(S(p) as any)} />
+        <circle cx={100} cy={100} r={44} {...(S(p, color.mute, 3) as any)} />
+        <circle cx={100} cy={100} r={18} {...(S(p, red, 5) as any)} />
+        <circle cx={100} cy={100} r={7} fill={red} opacity={p} />
+        <path d="M100 14 L100 36 M100 164 L100 186 M14 100 L36 100 M164 100 L186 100" {...S(p, color.ink, 4)} />
+      </g>
+    );
+    case 'crosshair': return (
+      <g>
+        <circle cx={100} cy={100} r={64} {...(S(p) as any)} />
+        <path d="M100 20 L100 76 M100 124 L100 180 M20 100 L76 100 M124 100 L180 100" {...S(p, red, 5)} />
+        <circle cx={100} cy={100} r={14} {...(S(p, red, 3) as any)} />
+        <circle cx={100} cy={100} r={4} fill={red} opacity={p} />
+        <path d="M100 48 L94 48 M100 64 L94 64 M100 136 L94 136 M100 152 L94 152 M48 100 L48 94 M64 100 L64 94 M136 100 L136 94 M152 100 L152 94" {...S(p, color.mute, 3)} />
+      </g>
+    );
+    case 'warning': return (
+      <g>
+        <path d="M100 24 L180 172 L20 172 Z" {...S(p, color.ink, 5)} />
+        <path d="M100 68 L100 124" {...S(p, red, 7)} />
+        <circle cx={100} cy={148} r={6} fill={red} opacity={p} />
+      </g>
+    );
+    case 'globe': return (
+      <g>
+        <circle cx={100} cy={100} r={72} {...(S(p) as any)} />
+        <path d="M28 100 L172 100" {...S(p, color.mute, 3)} />
+        <ellipse cx={100} cy={100} rx={36} ry={72} {...(S(p, color.mute, 3) as any)} />
+        <path d="M42 64 Q100 80 158 64 M42 136 Q100 120 158 136" {...S(p, color.mute, 3)} />
+        <ellipse cx={100} cy={100} rx={84} ry={28} transform="rotate(-25 100 100)" {...(S(p, red, 4) as any)} />
+        <circle cx={170} cy={70} r={4.5} fill={red} opacity={p} />
+      </g>
+    );
+    case 'rocket': return (
+      <g>
+        <path d="M100 20 C114 42 120 70 120 100 L120 154 L80 154 L80 100 C80 70 86 42 100 20 Z" {...S(p, color.ink, 4)} />
+        <path d="M80 126 L56 162 L80 154 M120 126 L144 162 L120 154" {...S(p, color.ink, 4)} />
+        <circle cx={100} cy={68} r={10} {...(S(p, red, 4) as any)} />
+        <path d="M86 154 L90 166 L110 166 L114 154" {...S(p, color.mute, 3)} />
+        <path d="M92 166 L100 190 L108 166" {...S(p, red, 5)} />
+      </g>
+    );
+    default: {
+      console.warn(`[kit.tsx] unknown icon "${name}" requested`);
+      return (
+        <g>
+          <rect x={30} y={30} width={140} height={140} rx={8} stroke={red} strokeWidth={3} strokeDasharray="6 6" fill="none" />
+          <text x={100} y={108} textAnchor="middle" fill={red} fontSize={18} fontFamily={font.mono}>
+            {name}
+          </text>
+        </g>
+      );
+    }
   }
 };
 
@@ -123,8 +192,8 @@ export const LineIcon: React.FC<Box & { name: IconName; at?: string | number; si
         {mark && (
           <svg width={s * 0.34} height={s * 0.34} viewBox="0 0 40 40" style={{ position: 'absolute', right: -s * 0.06, top: -s * 0.02, opacity: mp, transform: `scale(${1.3 - 0.3 * mp})` }}>
             {mark === '?' ? <text x={20} y={33} textAnchor="middle" fontFamily={font.hand} fontWeight={800} fontSize={40} fill={color.red}>?</text>
-              : <><circle cx={20} cy={20} r={18} fill={mark === 'ok' ? color.go : color.red} />
-                {mark === 'ok' ? <path d="M11 21 l6 6 l12 -14" stroke="#fff" strokeWidth={4} fill="none" strokeLinecap="round" strokeLinejoin="round" />
+              : <><circle cx={20} cy={20} r={18} fill={(mark === 'ok' || (mark as string) === 'yes') ? color.go : color.red} />
+                {(mark === 'ok' || (mark as string) === 'yes') ? <path d="M11 21 l6 6 l12 -14" stroke="#fff" strokeWidth={4} fill="none" strokeLinecap="round" strokeLinejoin="round" />
                   : <path d="M13 13 L27 27 M27 13 L13 27" stroke="#fff" strokeWidth={4} strokeLinecap="round" />}</>}
           </svg>
         )}
@@ -135,7 +204,9 @@ export const LineIcon: React.FC<Box & { name: IconName; at?: string | number; si
 };
 
 /** Several drawings that appear one after another (robots multiplying, strangers agreeing). */
-export const IconRow: React.FC<Box & { name: IconName; n: number; at?: string | number; every?: number; cols?: number; mark?: 'ok' | 'no'; marks?: ('ok' | 'no')[]; hot?: number; morph?: boolean; morphAt?: string | number; decay?: boolean }> = ({ w, h, name, n, at, every = 4, cols, mark: mark1, marks, hot, morph, morphAt, decay }) => {
+export const IconRow: React.FC<Box & { name?: IconName; kind?: IconName; n: number; at?: string | number; every?: number; cols?: number; mark?: 'ok' | 'no'; marks?: ('ok' | 'no')[]; hot?: number; highlight?: number; morph?: boolean; morphAt?: string | number; decay?: boolean }> = ({ w, h, name: nameProp, kind, n, at, every = 4, cols, mark: mark1, marks, hot: hotProp, highlight, morph, morphAt, decay }) => {
+  const name = (nameProp ?? kind ?? 'person') as IconName;
+  const hot = hotProp ?? highlight;
   const frame = useCurrentFrame();
   const f = useCue(at, 0);
   const { dur } = useBeat();
@@ -230,19 +301,24 @@ export const Bubble: React.FC<Box & { text: string; at?: string | number; by?: s
 };
 
 /** v23 bar chart: two or three bars (red = humans, teal = machines), heights rising on their words, a one-word label under each. */
-export const Bars: React.FC<Box & { bars: { v: number; t: string; at?: string | number; c?: 'red' | 'teal' }[] }> = ({ w, h, bars }) => {
+export const Bars: React.FC<Box & { bars: { v: number; t?: string; tag?: string; label?: string; at?: string | number; c?: 'red' | 'teal' }[]; at?: (string | number)[] }> = ({ w, h, bars, at }) => {
   const frame = useCurrentFrame();
-  const fs = bars.map((b) => useCue(b.at, 0)); // eslint-disable-line react-hooks/rules-of-hooks
+  const fs = bars.map((b, i) => useCue(b.at ?? at?.[i], 0)); // eslint-disable-line react-hooks/rules-of-hooks
   const max = Math.max(...bars.map((b) => b.v));
-  const bw = 140, ch = h - 120;
+  const bw = 140, ch = h - 140;
   return (
     <div style={{ width: w, height: h, display: 'flex', alignItems: 'flex-end', justifyContent: 'center', gap: 70, borderBottom: `2px solid ${color.hairStrong}`, boxSizing: 'border-box', paddingBottom: 0 }}>
-      {bars.map((b, i) => (
-        <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <div style={{ ...mono(30, b.c === 'teal' ? color.teal : color.red), whiteSpace: 'nowrap', marginBottom: 14, opacity: prog(frame, fs[i] + 10, 10) }}>{b.t}</div>
-          <div style={{ width: bw, height: (ch * b.v / max) * prog(frame, fs[i], 20), background: b.c === 'teal' ? color.teal : color.red, borderRadius: '4px 4px 0 0' }} />
-        </div>
-      ))}
+      {bars.map((b, i) => {
+        const topText = b.tag ?? b.t ?? (b.label ? `${b.v}` : '');
+        const botText = b.label && (b.tag || b.t) ? b.label : undefined;
+        return (
+          <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <div style={{ ...mono(30, b.c === 'teal' ? color.teal : color.red), whiteSpace: 'nowrap', marginBottom: 14, opacity: prog(frame, fs[i] + 10, 10) }}>{topText}</div>
+            <div style={{ width: bw, height: (ch * b.v / max) * prog(frame, fs[i], 20), background: b.c === 'teal' ? color.teal : color.red, borderRadius: '4px 4px 0 0' }} />
+            {botText && <div style={{ ...mono(22, color.mute), marginTop: 10, whiteSpace: 'nowrap' }}>{botText}</div>}
+          </div>
+        );
+      })}
     </div>
   );
 };
@@ -321,7 +397,7 @@ export const Flow: React.FC<Box & { nodes: { icon: IconName; label?: string; at?
               </svg>
             )}
             <div style={{ position: 'absolute', left: cx - s / 2, top: cy - s / 2, width: s, height: s, opacity: Math.min(1, p * 2) }}>
-              <svg width={s} height={s} viewBox="0 0 200 200" style={{ overflow: 'visible' }}>{(PEN = 250 / s, art(nd.icon, p, 1))}</svg>
+              <svg width={s} height={s} viewBox="0 0 200 200" style={{ overflow: 'visible' }}>{(PEN = 250 / s, art(nd.icon ?? (nd as any).name ?? (nd as any).kind, p, 1))}</svg>
             </div>
             {nd.label && <div style={{ position: 'absolute', left: cx - slot / 2, width: slot, top: cy + s / 2 + 18, textAlign: 'center', ...mono(28, i === n - 1 ? color.red : color.mute), opacity: p }}>{nd.label}</div>}
           </React.Fragment>
@@ -379,7 +455,7 @@ export const Loop: React.FC<Box & { nodes: { icon: IconName; label?: string; at?
         const out = i === 0 ? -1 : y > cy ? 1 : -1; // label on the outside of the ring
         return (
           <div key={i} style={{ position: 'absolute', left: x - s / 2, top: y - s / 2, width: s, height: s, opacity: Math.min(1, p * 2) }}>
-            <svg width={s} height={s} viewBox="0 0 200 200" style={{ overflow: 'visible' }}>{(PEN = 250 / s, art(nd.icon, p, 1))}</svg>
+            <svg width={s} height={s} viewBox="0 0 200 200" style={{ overflow: 'visible' }}>{(PEN = 250 / s, art(nd.icon ?? (nd as any).name ?? (nd as any).kind, p, 1))}</svg>
             {nd.label && <div style={{ position: 'absolute', left: -20, right: -20, [out > 0 ? 'top' : 'bottom']: s + 10, textAlign: 'center', ...mono(26, i === nodes.length - 1 ? color.red : color.mute), opacity: p } as React.CSSProperties}>{nd.label}</div>}
           </div>
         );
@@ -423,17 +499,35 @@ export const Copier: React.FC<Box & { gens: number; at?: string | number; every?
 // ---------------------------------------------------------------- field card (why-ai-dumber, 2026-10-13)
 /** A quiet spec sheet: a row of label → value pairs that fill in on their words, each with a small drawing or a
  *  pass/fail mark. For any beat that is really a short list read out loud (what changed, what passed, what's inside). */
-export const FieldCard: React.FC<Box & { kicker?: string; rows: { label: string; value: string; icon?: IconName; mark?: 'ok' | 'no'; at?: string | number }[] }> = ({ w, h, kicker, rows }) => {
+export const FieldCard: React.FC<
+  Box & {
+    kicker?: string;
+    title?: string;
+    rows?: { label: string; value: string; icon?: IconName; mark?: 'ok' | 'no'; at?: string | number }[];
+    k1?: string;
+    v1?: string;
+    k2?: string;
+    v2?: string;
+  }
+> = ({ w, h, kicker, title, rows, k1, v1, k2, v2 }) => {
   const frame = useCurrentFrame();
-  const fs = rows.map((r) => useCue(r.at, 0)); // eslint-disable-line react-hooks/rules-of-hooks
+  const { words } = useBeat();
+  const heading = kicker ?? title;
+  const items = rows && rows.length > 0
+    ? rows.map((r: any) => typeof r === 'string' ? { label: r, value: '' } : r)
+    : [
+        ...(k1 ? [{ label: k1, value: v1 ?? '' }] : []),
+        ...(k2 ? [{ label: k2, value: v2 ?? '' }] : []),
+      ];
   const cw = Math.min(w - 20, 640);
   return (
     <div style={{ width: w, height: h, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       <div style={{ width: cw, background: color.raised, border: `1.5px solid ${color.hairStrong}`, borderRadius: 10, boxShadow: '0 18px 40px rgba(0,0,0,0.45)', overflow: 'hidden' }}>
-        {kicker && <div style={{ padding: '18px 26px 0' }}><span style={mono(20, color.mute)}>{kicker}</span></div>}
+        {heading && <div style={{ padding: '18px 26px 0' }}><span style={mono(20, color.mute)}>{heading}</span></div>}
         <div style={{ padding: '18px 26px 22px', display: 'flex', flexDirection: 'column', gap: 20 }}>
-          {rows.map((r, i) => {
-            const p = prog(frame, fs[i], 10);
+          {items.map((r, i) => {
+            const f = cueFrameOf(words, r.at, 0);
+            const p = prog(frame, f, 10);
             const s = 30;
             return (
               <div key={i} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 24, opacity: Math.min(1, p * 2) }}>
@@ -451,3 +545,6 @@ export const FieldCard: React.FC<Box & { kicker?: string; rows: { label: string;
     </div>
   );
 };
+
+// Re-export Register B editorial evidence and motion graphics components
+export * from './evidence';

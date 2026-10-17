@@ -1,0 +1,240 @@
+{
+  "id": "captchas-sample",
+  "title": "THE DARK REALITY OF CAPTCHAS \u00b7 DeepMind Voice & Motion Graphics Sample",
+  "voice": {
+    "name": "af_heart",
+    "speed": 0.95
+  },
+  "pace": {
+    "lead": 0.2,
+    "gap": 0.45,
+    "min_beat": 2.4,
+    "to_clip": 0.25,
+    "after_clip": 0.45,
+    "end_pad": 2.0
+  },
+  "beats": [
+    {
+      "id": "h00",
+      "vo": "Select all squares with traffic lights. Simple, right?",
+      "say": "Select all squares with traffic lights. | Simple, right?",
+      "shot": {
+        "cuts": [
+          {
+            "layout": "full",
+            "hero": {
+              "v": "Captcha4",
+              "surface": "bare",
+              "img": "captchas/traffic_1.jpg",
+              "iw": 960,
+              "ih": 1536,
+              "crop": {
+                "x": 140,
+                "y": 100,
+                "s": 800
+              },
+              "target": "traffic lights",
+              "picks": [
+                0,
+                1,
+                4,
+                5,
+                9,
+                7,
+                11
+              ],
+              "pickAt": "traffic",
+              "every": 6
+            },
+            "at": "right"
+          },
+          {
+            "layout": "full",
+            "hero": {
+              "v": "Score",
+              "sub": "METRIC",
+              "label": "TRIGGER",
+              "val": "ACTIVE"
+            },
+            "cap": "simple, *right?*",
+            "at": "Simple"
+          }
+        ],
+        "sfx": [
+          {
+            "k": "click",
+            "at": "traffic",
+            "plus": 0
+          },
+          {
+            "k": "click",
+            "at": "traffic",
+            "plus": 6
+          },
+          {
+            "k": "click",
+            "at": "traffic",
+            "plus": 12
+          },
+          {
+            "k": "click",
+            "at": "traffic",
+            "plus": 18
+          },
+          {
+            "k": "click",
+            "at": "traffic",
+            "plus": 24
+          },
+          {
+            "k": "click",
+            "at": "traffic",
+            "plus": 30
+          },
+          {
+            "k": "click",
+            "at": "traffic",
+            "plus": 36
+          }
+        ],
+        "act": "01 the little box"
+      }
+    },
+    {
+      "id": "c01",
+      "clip": {
+        "src": "captchas/cc_wm15_annoying.mp4",
+        "from": 0.15,
+        "to": 9.26,
+        "plate": "Luis von Ahn \u00b7 CAPTCHA co-inventor \u00b7 Wikimania 2015"
+      }
+    },
+    {
+      "id": "a02",
+      "vo": "He is not alone. We have all stared at that corner.",
+      "say": "He is not alone. || We have all stared at that corner.",
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "Captcha4",
+          "surface": "bare",
+          "img": "captchas/traffic_1.jpg",
+          "iw": 960,
+          "ih": 1536,
+          "crop": {
+            "x": 140,
+            "y": 100,
+            "s": 800
+          },
+          "target": "traffic lights",
+          "picks": [
+            0,
+            1,
+            4,
+            5,
+            9,
+            7,
+            11
+          ],
+          "pickAt": -60,
+          "every": 0,
+          "ring": 10,
+          "ringAt": -30
+        },
+        "R": {
+          "v": "Square",
+          "surface": "bare",
+          "img": "captchas/traffic_1.jpg",
+          "iw": 960,
+          "ih": 1536,
+          "crop": {
+            "x": 140,
+            "y": 100,
+            "s": 800
+          },
+          "target": "traffic lights",
+          "tile": 10,
+          "mark": {
+            "x": -0.04,
+            "y": 0.0,
+            "w": 0.2,
+            "h": 0.98
+          },
+          "at": "corner",
+          "q": "count?",
+          "qAt": "corner",
+          "enter": "stared",
+          "reveal": true
+        },
+        "cap": "we've all stared at *that corner*",
+        "act": "01 the little box"
+      }
+    },
+    {
+      "id": "a03",
+      "vo": "Researchers at UC Irvine added it up. Eight hundred nineteen million hours on reCAPTCHA alone. That's more than ninety thousand years.",
+      "say": "Researchers at UC Irvine added it up. | Eight hundred nineteen million hours on re-CAPTCHA alone. || That's more than ninety thousand years.",
+      "shot": {
+        "layout": "full",
+        "cap": "researchers *added it up*",
+        "act": "01 the little box",
+        "hero": {
+          "v": "Score",
+          "sub": "RECORD",
+          "label": "DOCUMENT",
+          "val": "CITED"
+        },
+        "at": "years"
+      }
+    },
+    {
+      "id": "a04",
+      "vo": "All that time didn't just vanish. Someone put it to work.",
+      "say": "All that time didn't just vanish. | Someone put it to work.",
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "Polaroid",
+          "surface": "bare",
+          "img": "captchas/ch_v00_hand-on-mouse.jpg",
+          "name": "user click stream",
+          "notes": [
+            {
+              "t": "unpaid labor",
+              "at": "work"
+            }
+          ]
+        },
+        "R": {
+          "v": "ForensicStamp",
+          "surface": "bare",
+          "text": "UNPAID LABOR",
+          "at": "work",
+          "rotate": -6,
+          "scale": 1.2
+        },
+        "cap": "someone put it to *work*",
+        "act": "01 the little box"
+      }
+    },
+    {
+      "id": "a05",
+      "vo": "The dark reality of captchas. Who cashed in on every click?",
+      "say": "The dark reality of CAPTCHAs. || Who cashed in on every click?",
+      "shot": {
+        "layout": "full",
+        "cap": "the *dark reality* of captchas",
+        "act": "01 the little box",
+        "hero": {
+          "v": "Photo",
+          "surface": "bare",
+          "img": "captchas/ch_b00_ia-book-scanner.jpg",
+          "plate": "book scanner \u00b7 dvortygirl \u00b7 cc by-sa 4.0",
+          "gray": true
+        },
+        "at": "click"
+      }
+    }
+  ],
+  "master": "v23"
+}

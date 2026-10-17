@@ -1,0 +1,1891 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALL-IN · Studio OS & Director's Command Center</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Shantell+Sans:wght@600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --stage: #0E0C0B;
+      --bg-deep: #090807;
+      --card: #141210;
+      --card-elevated: #1B1815;
+      --card-hover: #221E1B;
+      --ink: #F4F1EA;
+      --caption: #FAF6EE;
+      --mute: #948E86;
+      --red: #E63946;
+      --red-soft: rgba(230, 57, 70, 0.14);
+      --emerald: #4FB286;
+      --emerald-soft: rgba(79, 178, 134, 0.14);
+      --amber: #F59E0B;
+      --amber-soft: rgba(245, 158, 11, 0.14);
+      --paper: #EEE8DC;
+      --paper-ink: #181512;
+      --chalk: rgba(233, 227, 211, 0.13);
+      --chalk-strong: rgba(233, 227, 211, 0.26);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      background-color: var(--bg-deep);
+      color: var(--ink);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    .font-display { font-family: 'Archivo', sans-serif; }
+    .font-mono-code { font-family: 'IBM Plex Mono', monospace; }
+    .font-hand { font-family: 'Shantell Sans', cursive, sans-serif; }
+    .font-editorial { font-family: 'Source Serif 4', Georgia, serif; }
+
+    /* Authentic v23 Stage Dot Grid */
+    .v23-stage {
+      background-color: var(--stage);
+      background-image: radial-gradient(rgba(244, 241, 234, 0.12) 1.5px, transparent 1.5px);
+      background-size: 28px 28px;
+      box-shadow: inset 0 0 110px rgba(0, 0, 0, 0.9);
+    }
+
+    .studio-card {
+      background-color: var(--card);
+      border: 1px solid var(--chalk);
+      border-radius: 14px;
+      transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .studio-card:hover {
+      border-color: var(--chalk-strong);
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.55);
+    }
+
+    .paper-receipt {
+      background-color: var(--paper);
+      color: var(--paper-ink);
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), inset 0 0 0 1px rgba(24, 21, 18, 0.12);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 7px; height: 7px; }
+    ::-webkit-scrollbar-track { background: #0E0C0B; }
+    ::-webkit-scrollbar-thumb { background: #2B2622; border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #E63946; }
+
+    @keyframes pulseDot {
+      0%, 100% { transform: scale(1); opacity: 0.85; }
+      50% { transform: scale(1.25); opacity: 1; }
+    }
+    .pulse-live { animation: pulseDot 2s infinite ease-in-out; }
+  </style>
+</head>
+<body class="flex flex-col selection:bg-[#E63946] selection:text-white">
+
+  <!-- ==================== TOP COMMAND HEADER ==================== -->
+  <header class="sticky top-0 z-40 bg-[#0E0C0B]/95 backdrop-blur-md border-b border-[#25211D]">
+    <div class="max-w-[1680px] mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+      <!-- Brand Identity -->
+      <div class="flex items-center gap-3.5">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#E63946] to-[#9E1B24] flex items-center justify-center shadow-[0_0_20px_rgba(230,57,70,0.4)] border border-white/15 font-display font-extrabold text-white text-sm tracking-wider">
+          AI
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-display font-bold text-base sm:text-lg text-[#FAF6EE] tracking-tight">ALL-IN · STUDIO OS</span>
+            <span class="font-mono-code text-[10px] uppercase tracking-widest px-2 py-0.5 rounded-full bg-[#E63946]/15 text-[#E63946] border border-[#E63946]/35 font-semibold">v23 + Captchas v2 Standard</span>
+          </div>
+          <p class="text-[11px] text-[#948E86] font-mono-code hidden sm:block">
+            Stage <span class="text-[#FAF6EE]">#0E0C0B</span> · Voice <span class="text-[#4FB286]">Kokoro af_heart 0.95 (v23)</span> · Cadence <span class="text-[#FAF6EE]">&ge;55% Full/Scene, &le;45% Split</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Primary Workspace Tabs -->
+      <nav class="flex items-center gap-1 bg-[#141210] p-1 rounded-xl border border-[#2A2520] overflow-x-auto max-w-full" role="tablist">
+        <button id="navTab-topics" data-tab="topics" class="nav-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-mono-code font-semibold transition flex items-center gap-1.5 bg-[#E63946] text-white shadow">
+          <span>🎬</span> <span>1. Studio Matrix</span>
+        </button>
+        <button id="navTab-dossiers" data-tab="dossiers" class="nav-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-mono-code font-semibold transition flex items-center gap-1.5 text-[#948E86] hover:text-[#FAF6EE]">
+          <span>📑</span> <span>2. WHO &amp; WHAT Dossiers</span>
+        </button>
+        <button id="navTab-incubator" data-tab="incubator" class="nav-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-mono-code font-semibold transition flex items-center gap-1.5 text-[#948E86] hover:text-[#FAF6EE]">
+          <span>🚀</span> <span>3. Viral Incubator</span>
+        </button>
+        <button id="navTab-rules" data-tab="rules" class="nav-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-mono-code font-semibold transition flex items-center gap-1.5 text-[#948E86] hover:text-[#FAF6EE]">
+          <span>⚖️</span> <span>4. Cadence &amp; QA Audit</span>
+        </button>
+        <button id="navTab-harness" data-tab="harness" class="nav-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-mono-code font-semibold transition flex items-center gap-1.5 text-[#948E86] hover:text-[#FAF6EE]">
+          <span>⚡</span> <span>5. Multi-Harness &amp; CLI</span>
+        </button>
+      </nav>
+
+      <!-- Right Controls: Daemon Status & Audio SFX -->
+      <div class="flex items-center gap-2">
+        <div id="daemonBadge" class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#141210] border border-[#2C2621] text-[11px] font-mono-code">
+          <span id="daemonDot" class="w-2 h-2 rounded-full bg-[#4FB286] pulse-live"></span>
+          <span id="daemonLabel" class="text-[#FAF6EE]">STUDIO OS READY</span>
+        </div>
+        <button id="sfxBtn" class="px-2.5 py-1.5 rounded-lg bg-[#141210] hover:bg-[#1E1B18] border border-[#2C2621] text-[11px] font-mono-code text-[#4FB286] transition flex items-center gap-1.5" title="Toggle procedural studio SFX">
+          <span id="sfxIndicator">🔊 SFX</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== INTERACTIVE KPI FILTER RIBBON ==================== -->
+  <div class="bg-[#110F0D] border-b border-[#221E1A]">
+    <div class="max-w-[1680px] mx-auto px-4 sm:px-6 py-2.5 flex flex-wrap items-center justify-between gap-2">
+      <div id="kpiFilterBar" class="flex flex-wrap items-center gap-2"></div>
+      <div class="flex items-center gap-2 text-[11px] font-mono-code text-[#948E86]">
+        <span>Multi-Harness Sync:</span>
+        <span class="px-2 py-0.5 rounded bg-[#1B1815] text-[#FAF6EE] border border-[#2D2722]">AGENTS.md · CLAUDE.md · GEMINI.md · .cursorrules</span>
+        <button id="quickCopyMasterPromptBtn" class="px-2.5 py-1 rounded bg-[#E63946]/20 hover:bg-[#E63946] text-[#E63946] hover:text-white border border-[#E63946]/40 font-semibold transition">
+          📋 Copy Antigravity Prompt
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TOAST NOTIFICATION ==================== -->
+  <div id="studioToast" class="fixed bottom-5 right-5 z-50 hidden bg-[#1B1815] border-2 border-[#4FB286] text-[#FAF6EE] px-4 py-3 rounded-xl shadow-2xl font-mono-code text-xs flex items-center gap-2.5 max-w-md">
+    <span class="w-2.5 h-2.5 rounded-full bg-[#4FB286] shrink-0"></span>
+    <span id="studioToastText">Action completed.</span>
+  </div>
+
+  <!-- ==================== MAIN WORKSPACE ==================== -->
+  <main class="flex-1 max-w-[1680px] w-full mx-auto px-4 sm:px-6 py-6 space-y-6">
+
+    <!-- ==================== VIEW 1: STUDIO MATRIX & SCREENING THEATER ==================== -->
+    <section id="view-topics" class="space-y-6">
+
+      <!-- COLLAPSIBLE 16:9 SCREENING ROOM & LIVE v23 SIMULATOR -->
+      <div id="theaterDock" class="studio-card overflow-hidden border-[#332C25]">
+        <div class="px-4 sm:px-5 py-3 bg-[#181512] border-b border-[#29241E] flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#E63946]"></span>
+            <h2 class="font-display font-bold text-sm sm:text-base text-[#FAF6EE] flex items-center gap-2">
+              <span>Screening Room &amp; Live <code class="text-[#E63946] font-mono-code text-xs">v23</code> Stage Simulator</span>
+              <span id="theaterTopicSlugBadge" class="font-mono-code text-xs px-2 py-0.5 rounded bg-[#25201B] text-[#4FB286] border border-[#383028]">the-ai-cast</span>
+            </h2>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2">
+            <select id="theaterTopicSelect" class="bg-[#0E0C0B] border border-[#332C25] text-[#FAF6EE] text-xs font-mono-code rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-[#E63946]"></select>
+
+            <div class="flex items-center bg-[#0E0C0B] p-0.5 rounded-lg border border-[#2D2722]">
+              <button id="modeBtn-sim" class="px-2.5 py-1 rounded-md text-[11px] font-mono-code font-semibold bg-[#E63946] text-white transition">
+                ✨ v23 Stage Simulator
+              </button>
+              <button id="modeBtn-video" class="px-2.5 py-1 rounded-md text-[11px] font-mono-code font-semibold text-[#948E86] hover:text-[#FAF6EE] transition">
+                🎥 MP4 Render Player
+              </button>
+            </div>
+
+            <button id="toggleTheaterBtn" class="px-2.5 py-1 rounded-lg bg-[#221E1B] hover:bg-[#2C2723] text-xs font-mono-code text-[#948E86] hover:text-[#FAF6EE] border border-[#332C25]">
+              ▼ Minimize Theater
+            </button>
+          </div>
+        </div>
+
+        <!-- Theater Body -->
+        <div id="theaterBody" class="p-4 sm:p-5 grid grid-cols-1 lg:grid-cols-12 gap-5 items-start bg-[#110F0D]">
+          <div class="lg:col-span-8 space-y-3">
+            <!-- SIMULATOR VIEWPORT -->
+            <div id="simViewportWrap" class="space-y-3">
+              <div class="relative w-full aspect-video v23-stage rounded-xl overflow-hidden border-2 border-[#2D2722] p-4 sm:p-6 flex flex-col justify-between select-none">
+                <div class="pointer-events-none absolute top-3.5 left-3.5 w-4 h-4 border-t-2 border-l-2 border-[#F4F1EA]/25 rounded-tl"></div>
+                <div class="pointer-events-none absolute top-3.5 right-3.5 w-4 h-4 border-t-2 border-r-2 border-[#F4F1EA]/25 rounded-tr"></div>
+                <div class="pointer-events-none absolute bottom-3.5 left-3.5 w-4 h-4 border-b-2 border-l-2 border-[#F4F1EA]/25 rounded-bl"></div>
+                <div class="pointer-events-none absolute bottom-3.5 right-3.5 w-4 h-4 border-b-2 border-r-2 border-[#F4F1EA]/25 rounded-br"></div>
+
+                <div class="flex items-center justify-between z-10">
+                  <div id="simActKicker" class="font-mono-code text-xs sm:text-sm tracking-wider uppercase font-semibold">
+                    <span class="text-[#E63946] font-bold mr-1.5">01</span>
+                    <span class="text-[#948E86]">THE FRAMING OF ERIC EISWERT</span>
+                  </div>
+                  <div class="flex items-center gap-2">
+                    <span id="simLayoutBadge" class="px-2.5 py-0.5 rounded-full text-[10px] font-mono-code font-bold uppercase bg-[#4FB286]/15 text-[#4FB286] border border-[#4FB286]/40">
+                      LAYOUT: SCENE (FULL-BLEED)
+                    </span>
+                    <span id="simCueBadge" class="px-2 py-0.5 rounded bg-[#181512]/90 text-[10px] font-mono-code text-[#FAF6EE] border border-white/10">
+                      cue: "frame 0" · 3.2s
+                    </span>
+                  </div>
+                </div>
+
+                <div id="simStageCenter" class="my-auto py-3 z-10 flex items-center justify-center min-h-[190px] sm:min-h-[250px]"></div>
+
+                <div class="text-center z-10">
+                  <div id="simCaptionBox" class="inline-block px-4 py-1 rounded-lg bg-[#0E0C0B]/85 font-hand text-lg sm:text-2xl font-bold text-[#FAF6EE] tracking-wide">
+                    principal <span class="text-[#E63946]">Eric Eiswert</span> framed
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap items-center justify-between gap-2 bg-[#161411] px-4 py-2.5 rounded-xl border border-[#28231E]">
+                <div class="flex items-center gap-2">
+                  <button id="simPrevBtn" class="px-3 py-1.5 rounded-lg bg-[#221E1B] hover:bg-[#2E2924] text-xs font-mono-code text-[#FAF6EE] border border-[#36302A]">
+                    ◀ Prev Cut
+                  </button>
+                  <button id="simPlayBtn" class="px-4 py-1.5 rounded-lg bg-[#4FB286] hover:bg-[#3ea076] text-xs font-mono-code font-bold text-[#0E0C0B] transition">
+                    ▶ Auto-Play Cuts
+                  </button>
+                  <button id="simNextBtn" class="px-3 py-1.5 rounded-lg bg-[#221E1B] hover:bg-[#2E2924] text-xs font-mono-code text-[#FAF6EE] border border-[#36302A]">
+                    Next Cut ▶
+                  </button>
+                </div>
+                <div id="simCutCounter" class="text-xs font-mono-code text-[#948E86]">
+                  Cut 1 / 10 · 79% Full/Scene · 21% Split (0 bi-screen lock)
+                </div>
+              </div>
+            </div>
+
+            <!-- REAL MP4 VIDEO PLAYER VIEWPORT -->
+            <div id="videoViewportWrap" class="hidden space-y-3">
+              <div class="relative w-full aspect-video bg-black rounded-xl overflow-hidden border-2 border-[#2D2722] flex items-center justify-center">
+                <video id="mainTheaterVideo" class="w-full h-full object-contain" controls preload="metadata" playsinline></video>
+                <div id="videoOfflineNotice" class="hidden absolute inset-0 bg-[#0E0C0B]/95 flex flex-col items-center justify-center p-6 text-center space-y-3">
+                  <div class="text-sm font-display font-bold text-[#FAF6EE]">Local Media Stream Not Connected (Standalone / Canvas Mode)</div>
+                  <p class="text-xs text-[#948E86] max-w-md font-mono-code">
+                    When running via <code class="text-[#4FB286]">Start-Dashboard.bat</code> (<code class="text-[#FAF6EE]">http://localhost:4321</code>), this player streams the local MP4 renders directly from <code class="text-[#FAF6EE]">All-in/videos/&lt;slug&gt;/out/</code>. Use the <b>✨ v23 Stage Simulator</b> tab above to preview the cuts interactively right now!
+                  </p>
+                  <button id="switchBackToSimBtn" class="px-4 py-2 rounded-lg bg-[#E63946] text-white text-xs font-mono-code font-semibold">
+                    ✨ Switch to Interactive v23 Stage Simulator
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-wrap items-center justify-between gap-2 bg-[#161411] px-4 py-2.5 rounded-xl border border-[#28231E]">
+                <div class="flex items-center gap-2 flex-1 min-w-[220px]">
+                  <span class="text-xs font-mono-code text-[#948E86]">Render File:</span>
+                  <select id="theaterRenderSelect" class="flex-1 bg-[#0E0C0B] border border-[#332C25] text-[#FAF6EE] text-xs font-mono-code rounded-lg px-2.5 py-1.5"></select>
+                </div>
+                <div class="flex items-center gap-1.5">
+                  <button data-spd="1" class="theater-spd-btn px-2.5 py-1 rounded bg-[#E63946] text-white text-xs font-mono-code">1x</button>
+                  <button data-spd="1.25" class="theater-spd-btn px-2.5 py-1 rounded bg-[#221E1B] text-[#FAF6EE] text-xs font-mono-code">1.25x</button>
+                  <button data-spd="1.5" class="theater-spd-btn px-2.5 py-1 rounded bg-[#221E1B] text-[#FAF6EE] text-xs font-mono-code">1.5x</button>
+                  <button data-spd="2" class="theater-spd-btn px-2.5 py-1 rounded bg-[#221E1B] text-[#FAF6EE] text-xs font-mono-code">2x</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right 4 Cols: Cut List, Narration & Instant Harness Actions -->
+          <div class="lg:col-span-4 space-y-3.5">
+            <div class="bg-[#161411] p-4 rounded-xl border border-[#28231E] space-y-2.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-mono-code uppercase text-[#E63946] font-semibold">Spoken Narration (`say`)</span>
+                <span id="simVoiceTag" class="text-[10px] font-mono-code px-2 py-0.5 rounded bg-[#221E1B] text-[#4FB286]">af_heart · 0.95x</span>
+              </div>
+              <p id="simVoText" class="font-editorial text-sm text-[#FAF6EE] leading-relaxed bg-[#0E0C0B] p-3 rounded-lg border border-[#25201B]">
+                "In January 2024, high school principal Eric Eiswert was suspended in Maryland after a leaked phone recording caught him making racist threats."
+              </p>
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <button id="theaterOpenDossierBtn" class="flex-1 px-3 py-1.5 rounded-lg bg-[#221E1B] hover:bg-[#2E2924] text-xs font-mono-code text-[#FAF6EE] border border-[#36302A] transition">
+                  📑 Open WHO/WHAT Dossier
+                </button>
+                <button id="theaterCopyPromptBtn" class="flex-1 px-3 py-1.5 rounded-lg bg-[#E63946] hover:bg-[#d62f3c] text-xs font-mono-code font-semibold text-white transition">
+                  ⚡ Copy Harness Prompt
+                </button>
+              </div>
+            </div>
+
+            <div class="bg-[#161411] p-3.5 rounded-xl border border-[#28231E] space-y-2">
+              <div class="flex items-center justify-between text-[11px] font-mono-code text-[#948E86]">
+                <span>CUT SEQUENCE (2–3s RHYTHM)</span>
+                <span>CLICK TO SCRUB</span>
+              </div>
+              <div id="simCutList" class="space-y-1.5 max-h-[215px] overflow-y-auto pr-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TOOLBAR: SEARCH, FILTERS, SORT & LAYOUT SWITCHER -->
+      <div class="flex flex-wrap items-center justify-between gap-3 bg-[#141210] p-3.5 rounded-xl border border-[#26211D]">
+        <div class="flex flex-wrap items-center gap-2.5 flex-1 min-w-[260px]">
+          <div class="relative flex-1 min-w-[220px] max-w-md">
+            <input id="topicSearchInput" type="text" placeholder="Search 24 topics by title, slug, status, or keyword... (Press /)" class="w-full bg-[#0E0C0B] border border-[#2D2722] focus:border-[#E63946] rounded-lg pl-3.5 pr-8 py-2 text-xs text-[#FAF6EE] placeholder-[#948E86] focus:outline-none transition" />
+          </div>
+
+          <select id="statusFilterSelect" class="bg-[#0E0C0B] border border-[#2D2722] rounded-lg px-3 py-2 text-xs font-mono-code text-[#FAF6EE] focus:outline-none focus:border-[#E63946]">
+            <option value="all">All Statuses (24)</option>
+            <option value="live">🏆 Shipped / Benchmark (Live)</option>
+            <option value="ready">🎬 Sample / Probe Ready</option>
+            <option value="todo">🔬 Research / Draft</option>
+            <option value="cadence_pass">✅ 2026-10-15 Cadence Pass (&ge;55% Full)</option>
+            <option value="cadence_fail">⚠️ Needs Bi-Screen Unlock (&gt;45% Split)</option>
+            <option value="dead">💀 Retired / Template</option>
+          </select>
+
+          <select id="topicSortSelect" class="bg-[#0E0C0B] border border-[#2D2722] rounded-lg px-3 py-2 text-xs font-mono-code text-[#FAF6EE] focus:outline-none focus:border-[#E63946]">
+            <option value="priority">Sort: Studio Priority (Live → Ready → Research)</option>
+            <option value="cadence">Sort: Best Full/Scene Cadence %</option>
+            <option value="renders">Sort: Most Rendered Versions</option>
+            <option value="beats">Sort: Most Beats / Length</option>
+            <option value="words">Sort: Word Count</option>
+          </select>
+        </div>
+
+        <div class="flex items-center gap-1.5">
+          <div class="flex items-center bg-[#0E0C0B] p-1 rounded-lg border border-[#2D2722]">
+            <button id="layoutMode-grid" data-mode="grid" class="layout-mode-btn px-3 py-1 rounded-md text-xs font-mono-code font-semibold bg-[#E63946] text-white transition">
+              ⊞ Cards
+            </button>
+            <button id="layoutMode-table" data-mode="table" class="layout-mode-btn px-3 py-1 rounded-md text-xs font-mono-code font-semibold text-[#948E86] hover:text-[#FAF6EE] transition">
+              ☰ Pro Table
+            </button>
+            <button id="layoutMode-kanban" data-mode="kanban" class="layout-mode-btn px-3 py-1 rounded-md text-xs font-mono-code font-semibold text-[#948E86] hover:text-[#FAF6EE] transition">
+              ▤ Kanban
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="topicsMatrixContainer"></div>
+    </section>
+
+    <!-- ==================== VIEW 2: WHO & WHAT DOSSIERS ==================== -->
+    <section id="view-dossiers" class="hidden space-y-5">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        <div class="lg:col-span-3 studio-card p-3.5 space-y-3">
+          <div class="flex items-center justify-between border-b border-[#26211D] pb-2.5">
+            <span class="font-mono-code text-xs uppercase text-[#E63946] font-bold">Investigative Dossiers</span>
+            <button id="newDossierModalBtn" class="px-2 py-1 rounded bg-[#221E1B] hover:bg-[#E63946] text-[11px] font-mono-code text-[#FAF6EE] hover:text-white transition">
+              + Add / Edit
+            </button>
+          </div>
+          <div id="dossierSidebarList" class="space-y-1.5 max-h-[680px] overflow-y-auto pr-1"></div>
+        </div>
+
+        <div id="dossierMainPanel" class="lg:col-span-9 studio-card p-5 sm:p-7 space-y-6"></div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 3: VIRAL TOPIC INCUBATOR (5-GATE DNA LAB) ==================== -->
+    <section id="view-incubator" class="hidden space-y-5">
+      <div class="studio-card p-5 flex flex-wrap items-center justify-between gap-4 bg-gradient-to-r from-[#161311] to-[#1D1715]">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-mono-code text-xs uppercase text-[#4FB286] font-bold">5-Gate Topic DNA Lab</span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-mono-code bg-[#4FB286]/15 text-[#4FB286] border border-[#4FB286]/30">25/25 Mandatory Bar</span>
+          </div>
+          <h2 class="font-display font-bold text-lg sm:text-xl text-[#FAF6EE] mt-0.5">Viral Investigative Concepts &amp; Spine Sentence Lab</h2>
+          <p class="text-xs text-[#948E86] mt-0.5">Every concept must clear 5 gates before scripting: Universal Everyday Object · Hidden Mechanism · Ironic Spine Sentence · Primary Government/Court Receipts · Killer Sourced Numbers.</p>
+        </div>
+        <button id="togglePitchFormBtn" class="px-4 py-2.5 rounded-xl bg-[#E63946] hover:bg-[#d62f3c] text-white font-mono-code text-xs font-bold shadow-lg transition">
+          + Pitch &amp; Score New Topic Concept
+        </button>
+      </div>
+
+      <div id="newPitchDrawer" class="hidden studio-card p-5 border-[#E63946]/50 space-y-4">
+        <div class="flex items-center justify-between border-b border-[#28231E] pb-2">
+          <h3 class="font-display font-bold text-sm text-[#FAF6EE]">New 5-Gate Topic Pitch Evaluator (Saved across sessions)</h3>
+          <button id="closePitchDrawerBtn" class="text-xs font-mono-code text-[#948E86] hover:text-white">✕ Close</button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-[11px] font-mono-code text-[#948E86] mb-1">Topic Title &amp; Slug</label>
+            <input id="pitchTitleInput" type="text" placeholder="e.g. THE ALGORITHMIC EVICTION · rent-cartel" class="w-full bg-[#0E0C0B] border border-[#2D2722] rounded-lg px-3 py-2 text-xs text-[#FAF6EE]" />
+          </div>
+          <div>
+            <label class="block text-[11px] font-mono-code text-[#948E86] mb-1">Gate 1: Universal Everyday Object (Frame 0)</label>
+            <input id="pitchObjectInput" type="text" placeholder="e.g. The monthly lease renewal notice slid under your apartment door" class="w-full bg-[#0E0C0B] border border-[#2D2722] rounded-lg px-3 py-2 text-xs text-[#FAF6EE]" />
+          </div>
+          <div class="md:col-span-2">
+            <label class="block text-[11px] font-mono-code text-[#E63946] mb-1">Gate 3: The Ironic Inversion (Spine Sentence)</label>
+            <input id="pitchSpineInput" type="text" placeholder="e.g. Your landlord didn't raise your rent because costs went up: an algorithm told ten competing landlords to leave apartments empty rather than lower the price." class="w-full bg-[#0E0C0B] border border-[#2D2722] rounded-lg px-3 py-2 text-xs text-[#FAF6EE]" />
+          </div>
+          <div>
+            <label class="block text-[11px] font-mono-code text-[#948E86] mb-1">Gate 2 &amp; 4: Hidden Mechanism &amp; Primary Court/Gov Receipt</label>
+            <input id="pitchReceiptInput" type="text" placeholder="e.g. DOJ & 8 State AGs v. RealPage Antitrust Complaint (2024-2026)" class="w-full bg-[#0E0C0B] border border-[#2D2722] rounded-lg px-3 py-2 text-xs text-[#FAF6EE]" />
+          </div>
+          <div>
+            <label class="block text-[11px] font-mono-code text-[#948E86] mb-1">Gate 5: Killer Sourced Numbers (comma-separated)</label>
+            <input id="pitchNumbersInput" type="text" placeholder="e.g. 80% market share in Sunbelt cities, +$145/mo artificial surcharge, 16M units priced" class="w-full bg-[#0E0C0B] border border-[#2D2722] rounded-lg px-3 py-2 text-xs text-[#FAF6EE]" />
+          </div>
+        </div>
+        <div class="flex justify-end gap-2">
+          <button id="savePitchBtn" class="px-4 py-2 rounded-lg bg-[#4FB286] text-[#0E0C0B] font-mono-code text-xs font-bold">
+            ✓ Save to Incubator &amp; Generate Prompt
+          </button>
+        </div>
+      </div>
+
+      <div id="incubatorCardsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-5"></div>
+    </section>
+
+    <!-- ==================== VIEW 4: DIRECTORIAL LAWS & CADENCE AUDITOR ==================== -->
+    <section id="view-rules" class="hidden space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="studio-card p-5 border-t-4 border-t-[#E63946] space-y-2">
+          <div class="font-mono-code text-[11px] text-[#E63946] font-bold uppercase">Law 01 · Lesson #79</div>
+          <h3 class="font-display font-bold text-base text-[#FAF6EE]">Captchas v2 + v23 Standard</h3>
+          <p class="text-xs text-[#948E86] leading-relaxed">
+            Warm black dot-grid board (<code class="text-[#FAF6EE]">#0E0C0B</code>), top-left act kicker (<code class="text-[#E63946]">01 ACT</code>), <code class="text-[#FAF6EE]">Shantell Sans</code> bottom caption (&le;6 words), and Kokoro <code class="text-[#4FB286]">af_heart</code> 0.95x via <code class="text-[#FAF6EE]">tools/tts.py</code>.
+          </p>
+          <div class="pt-1 text-[11px] font-mono-code text-[#F59E0B]">
+            🚫 Banned: DossierDoc, FieldCard, CodeTerminal &amp; woodcut plates.
+          </div>
+        </div>
+
+        <div class="studio-card p-5 border-t-4 border-t-[#4FB286] space-y-2">
+          <div class="font-mono-code text-[11px] text-[#4FB286] font-bold uppercase">Law 02 · Lesson #80</div>
+          <h3 class="font-display font-bold text-base text-[#FAF6EE]">Zero Permanent Bi-Screen</h3>
+          <p class="text-xs text-[#948E86] leading-relaxed">
+            At least <b>55% to 75%</b> of cuts must be centered full-stage (<code class="text-[#FAF6EE]">layout: "full"</code>), full-bleed documentary (<code class="text-[#FAF6EE]">"scene"</code>), or <code class="text-[#FAF6EE]">clip</code>. <code class="text-[#FAF6EE]">"split"</code> is capped at <b>&le;45%</b> and <b>max 2 splits in a row</b>.
+          </p>
+          <div class="pt-1 text-[11px] font-mono-code text-[#4FB286]">
+            ✓ Enforced automatically by tools/lint_text.py
+          </div>
+        </div>
+
+        <div class="studio-card p-5 border-t-4 border-t-[#F59E0B] space-y-2">
+          <div class="font-mono-code text-[11px] text-[#F59E0B] font-bold uppercase">Law 03 · Lesson #81</div>
+          <h3 class="font-display font-bold text-base text-[#FAF6EE]">Show "WHO &amp; WHAT" Proofs</h3>
+          <p class="text-xs text-[#948E86] leading-relaxed">
+            Never illustrate a real person, court case, or city with stray stick icons. Show <b>WHO/WHERE</b> via Wikimedia Commons photos (<code class="text-[#FAF6EE]">Film</code>, <code class="text-[#FAF6EE]">Polaroid</code>, <code class="text-[#FAF6EE]">Print</code>) and <b>WHAT</b> via authentic UI (<code class="text-[#FAF6EE]">PhoneCall</code>, <code class="text-[#FAF6EE]">CallGrid</code>, <code class="text-[#FAF6EE]">PageQuote</code>).
+          </p>
+          <div class="pt-1 text-[11px] font-mono-code text-[#E63946]">
+            🚫 LineIcon cap &le;25% · Zero L:LineIcon + R:LineIcon splits.
+          </div>
+        </div>
+
+        <div class="studio-card p-5 border-t-4 border-t-[#FAF6EE] space-y-2">
+          <div class="font-mono-code text-[11px] text-[#FAF6EE] font-bold uppercase">Law 04 · Lesson #45 &amp; #82</div>
+          <h3 class="font-display font-bold text-base text-[#FAF6EE]">Money Rule &amp; Cross-Harness</h3>
+          <p class="text-xs text-[#948E86] leading-relaxed">
+            Zero revenue risk: only CC0, CC BY, CC BY-SA, and US Federal Government Public Domain clips/photos logged in <code class="text-[#FAF6EE]">LICENCES.md</code>. All rules synced across <code class="text-[#FAF6EE]">AGENTS.md</code>, <code class="text-[#FAF6EE]">CLAUDE.md</code>, <code class="text-[#FAF6EE]">GEMINI.md</code>, and <code class="text-[#FAF6EE]">.cursorrules</code>.
+          </p>
+          <div class="pt-1 text-[11px] font-mono-code text-[#4FB286]">
+            ✓ 7-Gate QA Runner (tools/qa.py)
+          </div>
+        </div>
+      </div>
+
+      <div class="studio-card overflow-hidden">
+        <div class="p-4 sm:p-5 border-b border-[#26211D] flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <h3 class="font-display font-bold text-base text-[#FAF6EE]">Studio-Wide Cadence &amp; Bi-Screen Compliance Audit (`lint_text.py` Live Telemetry)</h3>
+            <p class="text-xs text-[#948E86]">Identifies legacy scripts stuck in &gt;45% split bi-screen format and generates 1-click Auto-Heal Prompts for any harness.</p>
+          </div>
+          <button id="copyAllCadenceFixPromptBtn" class="px-3.5 py-2 rounded-lg bg-[#E63946] hover:bg-[#d62f3c] text-white font-mono-code text-xs font-bold transition">
+            ⚡ Copy Batch Cadence-Unlock Prompt (All Legacy Topics)
+          </button>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="border-b border-[#26211D] bg-[#110F0D] text-[11px] font-mono-code uppercase text-[#948E86]">
+                <th class="py-3 px-4">Topic</th>
+                <th class="py-3 px-4">Cuts</th>
+                <th class="py-3 px-4">Full / Scene % (Target &ge;55%)</th>
+                <th class="py-3 px-4">Split % (Max 45%)</th>
+                <th class="py-3 px-4">Max Split Streak (Max 2)</th>
+                <th class="py-3 px-4">LineIcon Faceoff</th>
+                <th class="py-3 px-4">2026-10-15 Verdict</th>
+                <th class="py-3 px-4 text-right">Auto-Heal Action</th>
+              </tr>
+            </thead>
+            <tbody id="cadenceAuditTableBody" class="divide-y divide-[#221E1A] text-xs font-mono-code"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== VIEW 5: MULTI-HARNESS HUB & CLI CONSOLE ==================== -->
+    <section id="view-harness" class="hidden space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        <div class="lg:col-span-7 studio-card p-5 sm:p-6 space-y-4">
+          <div class="flex items-center justify-between border-b border-[#26211D] pb-3">
+            <div>
+              <span class="font-mono-code text-[11px] uppercase text-[#E63946] font-bold">Universal Agent Bridge</span>
+              <h3 class="font-display font-bold text-base sm:text-lg text-[#FAF6EE]">Multi-Harness Prompt Generator (Zero Manual Work)</h3>
+            </div>
+            <button id="copyGeneratedHarnessPromptBtn" class="px-4 py-2 rounded-xl bg-[#E63946] hover:bg-[#d62f3c] text-white font-mono-code text-xs font-bold shadow-lg transition">
+              📋 Copy Prompt
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div>
+              <label class="block text-[11px] font-mono-code text-[#948E86] mb-1">1. Target Harness / Model</label>
+              <select id="harnessTargetSelect" class="w-full bg-[#0E0C0B] border border-[#2D2722] rounded-lg px-3 py-2 text-xs font-mono-code text-[#FAF6EE]">
+                <option value="Antigravity (Gemini 3.8 Flash)">Antigravity (Gemini 3.8 Flash)</option>
+                <option value="Claude Code (CLAUDE.md)">Claude Code (CLAUDE.md)</option>
+                <option value="Cursor (.cursorrules)">Cursor (.cursorrules)</option>
+                <option value="Windsurf (.windsurfrules)">Windsurf (.windsurfrules)</option>
+                <option value="Codex / Gemini CLI (AGENTS.md)">Codex / Gemini CLI (AGENTS.md)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-[11px] font-mono-code text-[#948E86] mb-1">2. Target Video Topic</label>
+              <select id="harnessTopicSelect" class="w-full bg-[#0E0C0B] border border-[#2D2722] rounded-lg px-3 py-2 text-xs font-mono-code text-[#FAF6EE]"></select>
+            </div>
+            <div>
+              <label class="block text-[11px] font-mono-code text-[#948E86] mb-1">3. Mission Type</label>
+              <select id="harnessMissionSelect" class="w-full bg-[#0E0C0B] border border-[#2D2722] rounded-lg px-3 py-2 text-xs font-mono-code text-[#FAF6EE]">
+                <option value="upgrade_cadence_whowhat">Fix Bi-Screen (&ge;65% Full/Scene) + Real WHO/WHAT Photos + Render</option>
+                <option value="voice_build_render">Voice (Kokoro af_heart 0.95) + Build v23 + Render + 7-Gate QA</option>
+                <option value="expand_8min">Expand Sample into 8-Min Full Film (CC/PD Clips + WHO/WHAT)</option>
+                <option value="sync_dashboard">Keep New Dashboard UI &amp; Sync Telemetry (`autonomous_studio.py`)</option>
+              </select>
+            </div>
+          </div>
+
+          <pre id="generatedHarnessPromptBox" class="bg-[#0E0C0B] p-4 rounded-xl border border-[#28231E] font-mono-code text-xs text-[#FAF6EE] whitespace-pre-wrap leading-relaxed max-h-[380px] overflow-y-auto select-all"></pre>
+        </div>
+
+        <div class="lg:col-span-5 space-y-5">
+          <div class="studio-card p-5 space-y-3.5">
+            <div class="flex items-center justify-between">
+              <h3 class="font-display font-bold text-sm sm:text-base text-[#FAF6EE]">Live Studio CLI Dispatcher (`localhost:4321`)</h3>
+              <button id="runResearchPassBtn" class="px-2.5 py-1 rounded bg-[#4FB286]/15 hover:bg-[#4FB286] text-[#4FB286] hover:text-[#0E0C0B] border border-[#4FB286]/40 text-[11px] font-mono-code font-bold transition">
+                🔬 Deep Research Pass
+              </button>
+            </div>
+            <div class="flex gap-2">
+              <select id="cliTopicSelect" class="flex-1 bg-[#0E0C0B] border border-[#2D2722] rounded-lg px-3 py-2 text-xs font-mono-code text-[#FAF6EE]"></select>
+            </div>
+            <div class="grid grid-cols-3 gap-2">
+              <button data-cli="tts" class="cli-run-btn px-2.5 py-2 rounded-lg bg-[#1C1916] hover:bg-[#28231E] border border-[#2E2822] text-xs font-mono-code text-[#FAF6EE]">🗣 tts (af_heart)</button>
+              <button data-cli="build" class="cli-run-btn px-2.5 py-2 rounded-lg bg-[#1C1916] hover:bg-[#28231E] border border-[#2E2822] text-xs font-mono-code text-[#FAF6EE]">🔨 build (v23)</button>
+              <button data-cli="stills" class="cli-run-btn px-2.5 py-2 rounded-lg bg-[#1C1916] hover:bg-[#28231E] border border-[#2E2822] text-xs font-mono-code text-[#FAF6EE]">🖼 cutstills</button>
+              <button data-cli="render" class="cli-run-btn px-2.5 py-2 rounded-lg bg-[#E63946] hover:bg-[#d62f3c] text-xs font-mono-code font-bold text-white">🎬 render MP4</button>
+              <button data-cli="qa" class="cli-run-btn px-2.5 py-2 rounded-lg bg-[#4FB286] hover:bg-[#3ea076] text-xs font-mono-code font-bold text-[#0E0C0B]">✅ 7-Gate QA</button>
+              <button data-cli="ship" class="cli-run-btn px-2.5 py-2 rounded-lg bg-[#1C1916] hover:bg-[#28231E] border border-[#2E2822] text-xs font-mono-code text-[#FAF6EE]">📦 ship package</button>
+            </div>
+            <pre id="cliTerminalOutput" class="bg-[#080706] p-3.5 rounded-xl border border-[#25201B] font-mono-code text-[11px] text-[#4FB286] max-h-[210px] overflow-y-auto whitespace-pre-wrap">[STUDIO OS] Ready. Select a topic above and click any pipeline stage.</pre>
+          </div>
+
+          <div class="studio-card p-5 space-y-3 border-l-4 border-l-[#4FB286]">
+            <div class="flex items-center justify-between">
+              <span class="font-mono-code text-xs font-bold text-[#4FB286] uppercase">Multi-Harness Update Contract</span>
+              <button id="exportJsonBtn" class="px-2.5 py-1 rounded bg-[#221E1B] hover:bg-[#2E2924] text-[11px] font-mono-code text-[#FAF6EE] border border-[#36302A]">
+                ⬇ Export studio_data.json
+              </button>
+            </div>
+            <p class="text-xs text-[#948E86] leading-relaxed">
+              This dashboard separates <b>UI Presentation</b> from <b>Studio Data</b> via the <code class="text-[#FAF6EE]">/* __STUDIO_DATA_START__ */</code> ... <code class="text-[#FAF6EE]">/* __STUDIO_DATA_END__ */</code> markers inside <code class="text-[#FAF6EE]">index.html</code> (and <code class="text-[#FAF6EE]">/api/data</code>). Future harnesses and <code class="text-[#FAF6EE]">tools/autonomous_studio.py</code> update only that JSON block—preserving this interface permanently.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== LIGHTBOX & MODAL OVERLAY ==================== -->
+  <div id="studioModal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="studio-card max-w-4xl w-full max-h-[90vh] flex flex-col overflow-hidden border-[#3A322B]">
+      <div class="px-5 py-3.5 bg-[#181512] border-b border-[#29241E] flex items-center justify-between">
+        <h3 id="studioModalTitle" class="font-display font-bold text-sm sm:text-base text-[#FAF6EE]">QA Inspection</h3>
+        <button id="closeModalBtn" class="px-3 py-1 rounded-lg bg-[#221E1B] hover:bg-[#E63946] text-xs font-mono-code text-[#FAF6EE] hover:text-white transition">✕ Close</button>
+      </div>
+      <div id="studioModalBody" class="p-5 overflow-y-auto text-center"></div>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="border-t border-[#221E1A] bg-[#0B0A09] py-4 px-6 mt-10">
+    <div class="max-w-[1680px] mx-auto flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono-code text-[#948E86]">
+      <span>ALL-IN STUDIO OS · Canonical <code class="text-[#FAF6EE]">v23 + Captchas v2</code> Edition</span>
+      <span>Multi-Harness Ready: Antigravity · Claude Code · Cursor · Windsurf · Gemini · Codex</span>
+    </div>
+  </footer>
+
+  <script>
+/* __STUDIO_DATA_START__ */
+const MANIFEST = [{"id": "_template", "title": "_TEMPLATE", "beats": 0, "words": 0, "total_cuts": 0, "full_scene_pct": 0, "split_pct": 0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [], "qa": [], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": false, "status": "STUDIO TEMPLATE", "badge": "dead", "desc": "Topic scaffold template"}, {"id": "agent-with-your-card", "title": "THE AGENT WITH YOUR CARD", "beats": 16, "words": 442, "total_cuts": 0, "full_scene_pct": 0, "split_pct": 0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [], "qa": [], "has_script_md": true, "has_sources_md": true, "has_licences_md": true, "has_master_wav": false, "status": "CONCEPT DRAFTED", "badge": "todo", "desc": "Autonomous wallet agent script"}, {"id": "ai-ban", "title": "THE COMING AI BAN \u00b7 full film", "beats": 75, "words": 1644, "total_cuts": 157, "full_scene_pct": 65.6, "split_pct": 34.4, "max_consecutive_splits": 1, "line_icon_count": 44, "line_icon_faceoff": false, "cadence_pass": true, "outputs": [{"name": "All-in_ai_ban_sample_v5.mp4", "path": "videos/ai-ban/out/All-in_ai_ban_sample_v5.mp4", "size": 11028405, "dur": 74.066667, "mtime": 1791836261.30858}, {"name": "All-in_ai_ban_sample_2min.mp4", "path": "videos/ai-ban/out/All-in_ai_ban_sample_2min.mp4", "size": 19107142, "dur": 128.0, "mtime": 1791836261.2918034}, {"name": "All-in_ai_ban_sample_1min_v4.mp4", "path": "videos/ai-ban/out/All-in_ai_ban_sample_1min_v4.mp4", "size": 16459240, "dur": 72.1, "mtime": 1791836261.2718582}, {"name": "All-in_ai_ban_sample.mp4", "path": "videos/ai-ban/out/All-in_ai_ban_sample.mp4", "size": 16866291, "dur": 66.233333, "mtime": 1791836261.2526002}, {"name": "All-in_ai_ban_full.mp4", "path": "videos/ai-ban/out/All-in_ai_ban_full.mp4", "size": 20005523, "dur": 774.8, "mtime": 1791836261.2324364}], "qa": ["videos/ai-ban/qa/cuts_all.jpg", "videos/ai-ban/qa/cuts_f1.jpg", "videos/ai-ban/qa/cuts_f2.jpg", "videos/ai-ban/qa/cuts_f3.jpg", "videos/ai-ban/qa/cuts_f4.jpg", "videos/ai-ban/qa/cuts_fix2.jpg", "videos/ai-ban/qa/cuts_stamp.jpg", "videos/ai-ban/qa/cuts_v5_fix.jpg", "videos/ai-ban/qa/cuts_v5_new.jpg", "videos/ai-ban/qa/frame_0.jpg", "videos/ai-ban/qa/frame_1.jpg", "videos/ai-ban/qa/sample.jpg", "videos/ai-ban/qa/sheet_h01_h07.jpg", "videos/ai-ban/qa/watch.jpg"], "has_script_md": true, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "FULL FILM DELIVERED", "badge": "live", "desc": "Full film delivered (12:54, 75 beats)"}, {"id": "ai-black-markets", "title": "THE DARK REALITY OF AI'S BLACK MARKETS", "beats": 60, "words": 943, "total_cuts": 105, "full_scene_pct": 18.1, "split_pct": 81.9, "max_consecutive_splits": 20, "line_icon_count": 113, "line_icon_faceoff": true, "cadence_pass": false, "outputs": [{"name": "All-in_ai_black_markets_full.mp4", "path": "videos/ai-black-markets/out/All-in_ai_black_markets_full.mp4", "size": 18353543, "dur": 495.533333, "mtime": 1791836787.6915276}, {"name": "All-in_ai_black_markets_sample.mp4", "path": "videos/ai-black-markets/out/All-in_ai_black_markets_sample.mp4", "size": 5111866, "dur": 93.433333, "mtime": 1791490380.5564823}, {"name": "ai-black-markets_v3.mp4", "path": "videos/ai-black-markets/out/ai-black-markets_v3.mp4", "size": 64378342, "dur": 93.433333, "mtime": 1791490332.4730644}, {"name": "ai-black-markets_v2.mp4", "path": "videos/ai-black-markets/out/ai-black-markets_v2.mp4", "size": 64296010, "dur": 93.433333, "mtime": 1791489942.0825286}, {"name": "ai-black-markets_v1.mp4", "path": "videos/ai-black-markets/out/ai-black-markets_v1.mp4", "size": 64296010, "dur": 93.433333, "mtime": 1791489385.9626656}], "qa": ["videos/ai-black-markets/qa/clips_new.jpg", "videos/ai-black-markets/qa/clips_new2.jpg", "videos/ai-black-markets/qa/clips_new3.jpg", "videos/ai-black-markets/qa/cuts_all.jpg", "videos/ai-black-markets/qa/cuts_fix.jpg", "videos/ai-black-markets/qa/cuts_fix2.jpg", "videos/ai-black-markets/qa/sample.jpg", "videos/ai-black-markets/qa/sheet_h00_s04.jpg", "videos/ai-black-markets/qa/sheet_i01_v03.jpg", "videos/ai-black-markets/qa/sheet_j01_p04.jpg", "videos/ai-black-markets/qa/sheet_w01_k06.jpg", "videos/ai-black-markets/qa/sheet_x01_r02.jpg", "videos/ai-black-markets/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "DEAD / RETIRED", "badge": "dead", "desc": "Killed by owner 2026-10-11. Never build."}, {"id": "ai-grey-zone", "title": "AI GREY ZONE", "beats": 8, "words": 202, "total_cuts": 16, "full_scene_pct": 68.8, "split_pct": 31.2, "max_consecutive_splits": 1, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": true, "outputs": [{"name": "ai-grey-zone_v3.mp4", "path": "videos/ai-grey-zone/out/ai-grey-zone_v3.mp4", "size": 9770533, "dur": 81.833333, "mtime": 1792153175.788224}, {"name": "ai-grey-zone_v2.mp4", "path": "videos/ai-grey-zone/out/ai-grey-zone_v2.mp4", "size": 10705492, "dur": 92.666667, "mtime": 1792026789.093319}, {"name": "ai-grey-zone_v1.mp4", "path": "videos/ai-grey-zone/out/ai-grey-zone_v1.mp4", "size": 10662723, "dur": 92.666667, "mtime": 1792026477.854452}], "qa": ["videos/ai-grey-zone/qa/cuts_all.jpg", "videos/ai-grey-zone/qa/listen.png", "videos/ai-grey-zone/qa/watch.jpg"], "has_script_md": true, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "SCRIPT DRAFTED", "badge": "todo", "desc": "Script drafted (1,300 words), needs CC clips"}, {"id": "ai-power-bill", "title": "the price of the prompt", "beats": 6, "words": 140, "total_cuts": 9, "full_scene_pct": 66.7, "split_pct": 33.3, "max_consecutive_splits": 1, "line_icon_count": 1, "line_icon_faceoff": false, "cadence_pass": true, "outputs": [{"name": "ai-power-bill_v2.mp4", "path": "videos/ai-power-bill/out/ai-power-bill_v2.mp4", "size": 40460958, "dur": 58.966667, "mtime": 1792218058.0502641}, {"name": "ai-power-bill_v1.mp4", "path": "videos/ai-power-bill/out/ai-power-bill_v1.mp4", "size": 40443150, "dur": 58.966667, "mtime": 1792144970.9024014}], "qa": ["videos/ai-power-bill/qa/cuts_all.jpg", "videos/ai-power-bill/qa/frame_0.jpg", "videos/ai-power-bill/qa/frame_1.jpg", "videos/ai-power-bill/qa/frame_2.jpg", "videos/ai-power-bill/qa/listen.png", "videos/ai-power-bill/qa/sample.jpg", "videos/ai-power-bill/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "PRODUCED & VERIFIED", "badge": "live", "desc": "Master v1 shipped (8/8 QA Pass, Lesson #84 standard)"}, {"id": "apply-button", "title": "the dark reality of the apply button", "beats": 7, "words": 193, "total_cuts": 10, "full_scene_pct": 80.0, "split_pct": 20.0, "max_consecutive_splits": 1, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": true, "outputs": [{"name": "apply-button_v4.mp4", "path": "videos/apply-button/out/apply-button_v4.mp4", "size": 42899206, "dur": 81.333333, "mtime": 1792236100.9370372}, {"name": "apply-button_v3.mp4", "path": "videos/apply-button/out/apply-button_v3.mp4", "size": 41518039, "dur": 81.333333, "mtime": 1792227641.3530016}, {"name": "apply-button_v2.mp4", "path": "videos/apply-button/out/apply-button_v2.mp4", "size": 33764356, "dur": 81.333333, "mtime": 1792217274.9269283}, {"name": "apply-button_v1.mp4", "path": "videos/apply-button/out/apply-button_v1.mp4", "size": 33710646, "dur": 81.333333, "mtime": 1792143756.9322155}], "qa": ["videos/apply-button/qa/cuts_all.jpg", "videos/apply-button/qa/listen.png", "videos/apply-button/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "PRODUCED & VERIFIED", "badge": "live", "desc": "Master v1 shipped (8/8 QA Pass, Lesson #84 standard)"}, {"id": "captchas-3min", "title": "THE DARK REALITY OF CAPTCHAS \u00b7 3-min All-in sample", "beats": 27, "words": 325, "total_cuts": 27, "full_scene_pct": 63.0, "split_pct": 37.0, "max_consecutive_splits": 1, "line_icon_count": 6, "line_icon_faceoff": false, "cadence_pass": true, "outputs": [{"name": "All-in_captchas_3min_v6.mp4", "path": "videos/captchas-3min/out/All-in_captchas_3min_v6.mp4", "size": 13192869, "dur": 156.6, "mtime": 1791396428.0470386}, {"name": "captchas-3min_v8.mp4", "path": "videos/captchas-3min/out/captchas-3min_v8.mp4", "size": 112900696, "dur": 156.6, "mtime": 1791396121.0723252}, {"name": "All-in_captchas_3min_v5.mp4", "path": "videos/captchas-3min/out/All-in_captchas_3min_v5.mp4", "size": 25025822, "dur": 156.6, "mtime": 1791394993.639033}, {"name": "captchas-3min_v7.mp4", "path": "videos/captchas-3min/out/captchas-3min_v7.mp4", "size": 111270752, "dur": 156.6, "mtime": 1791394888.7462234}, {"name": "All-in_captchas_3min_v4.mp4", "path": "videos/captchas-3min/out/All-in_captchas_3min_v4.mp4", "size": 16091541, "dur": 175.066667, "mtime": 1791386666.5404925}, {"name": "All-in_captchas_3min_v3.mp4", "path": "videos/captchas-3min/out/All-in_captchas_3min_v3.mp4", "size": 18017396, "dur": 175.066667, "mtime": 1791384430.4277442}, {"name": "All-in_captchas_3min_sample.mp4", "path": "videos/captchas-3min/out/All-in_captchas_3min_sample.mp4", "size": 20038406, "dur": 175.066667, "mtime": 1791382606.5169244}], "qa": ["videos/captchas-3min/qa/chk_12.6.jpg", "videos/captchas-3min/qa/chk_125.5.jpg", "videos/captchas-3min/qa/chk_64.5.jpg", "videos/captchas-3min/qa/chk_69.5.jpg", "videos/captchas-3min/qa/chk_v7.jpg", "videos/captchas-3min/qa/cuts_all.jpg", "videos/captchas-3min/qa/cuts_fix1.jpg", "videos/captchas-3min/qa/e1.jpg", "videos/captchas-3min/qa/e12.jpg", "videos/captchas-3min/qa/e2.jpg", "videos/captchas-3min/qa/open.jpg", "videos/captchas-3min/qa/review1.jpg", "videos/captchas-3min/qa/review2.jpg", "videos/captchas-3min/qa/review3.jpg", "videos/captchas-3min/qa/sheet_30.jpg", "videos/captchas-3min/qa/sheet_6.jpg", "videos/captchas-3min/qa/sheet_85.jpg", "videos/captchas-3min/qa/v6_0_36.jpg", "videos/captchas-3min/qa/v6_36_96.jpg", "videos/captchas-3min/qa/v6_96_157.jpg", "videos/captchas-3min/qa/v8_all.jpg", "videos/captchas-3min/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "BENCHMARK COMPLETE", "badge": "live", "desc": "Studio benchmark (v6/v8)"}, {"id": "captchas-full", "title": "THE DARK REALITY OF CAPTCHAS \u00b7 full film", "beats": 97, "words": 1187, "total_cuts": 99, "full_scene_pct": 66.7, "split_pct": 33.3, "max_consecutive_splits": 1, "line_icon_count": 23, "line_icon_faceoff": false, "cadence_pass": true, "outputs": [{"name": "All-in_captchas_full_v3.mp4", "path": "videos/captchas-full/out/All-in_captchas_full_v3.mp4", "size": 19723390, "dur": 663.466667, "mtime": 1791487057.2186003}, {"name": "captchas-full_v5.mp4", "path": "videos/captchas-full/out/captchas-full_v5.mp4", "size": 466836526, "dur": 663.466667, "mtime": 1791485610.901714}, {"name": "All-in_captchas_full_v2.mp4", "path": "videos/captchas-full/out/All-in_captchas_full_v2.mp4", "size": 20400249, "dur": 582.933333, "mtime": 1791414280.039457}, {"name": "captchas-full_v4.mp4", "path": "videos/captchas-full/out/captchas-full_v4.mp4", "size": 430487335, "dur": 582.933333, "mtime": 1791413153.040255}, {"name": "All-in_captchas_full_v1.mp4", "path": "videos/captchas-full/out/All-in_captchas_full_v1.mp4", "size": 18408361, "dur": 488.333333, "mtime": 1791406548.6995187}, {"name": "captchas-full_v3.mp4", "path": "videos/captchas-full/out/captchas-full_v3.mp4", "size": 312535525, "dur": 488.333333, "mtime": 1791406179.9606335}], "qa": ["videos/captchas-full/qa/cuts_all.jpg", "videos/captchas-full/qa/cuts_clips.jpg", "videos/captchas-full/qa/cuts_fix1.jpg", "videos/captchas-full/qa/cuts_v3new.jpg", "videos/captchas-full/qa/fr2_0.jpg", "videos/captchas-full/qa/fr2_1.jpg", "videos/captchas-full/qa/fr2_2.jpg", "videos/captchas-full/qa/fr2_grid.jpg", "videos/captchas-full/qa/fr_0.jpg", "videos/captchas-full/qa/fr_1.jpg", "videos/captchas-full/qa/fr_2.jpg", "videos/captchas-full/qa/fr_3.jpg", "videos/captchas-full/qa/fr_grid.jpg", "videos/captchas-full/qa/frame_0.jpg", "videos/captchas-full/qa/frame_1.jpg", "videos/captchas-full/qa/frame_2.jpg", "videos/captchas-full/qa/hook_v4.jpg", "videos/captchas-full/qa/hyd.jpg", "videos/captchas-full/qa/sample_v4.jpg", "videos/captchas-full/qa/send_check.jpg", "videos/captchas-full/qa/sheet_act1_new.jpg", "videos/captchas-full/qa/sheet_b06_m03.jpg", "videos/captchas-full/qa/sheet_h00_o07.jpg", "videos/captchas-full/qa/sheet_m04_u03.jpg", "videos/captchas-full/qa/sheet_v00_f04.jpg", "videos/captchas-full/qa/v1_every12s.jpg", "videos/captchas-full/qa/v2_check.jpg", "videos/captchas-full/qa/v2_every12s.jpg", "videos/captchas-full/qa/v3_bus.jpg", "videos/captchas-full/qa/v3_check.jpg", "videos/captchas-full/qa/v3_clock.jpg", "videos/captchas-full/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "BENCHMARK COMPLETE", "badge": "live", "desc": "Studio reference film (v2/v3)"}, {"id": "captchas-sample", "title": "THE DARK REALITY OF CAPTCHAS \u00b7 DeepMind Voice & Motion Graphics Sample", "beats": 6, "words": 68, "total_cuts": 2, "full_scene_pct": 100.0, "split_pct": 0.0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [{"name": "captchas-sample_v1.mp4", "path": "videos/captchas-sample/out/captchas-sample_v1.mp4", "size": 32331706, "dur": 39.833333, "mtime": 1791940513.6482003}], "qa": ["videos/captchas-sample/qa/listen.png", "videos/captchas-sample/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "BENCHMARK SAMPLE", "badge": "live", "desc": "Voice & motion sample"}, {"id": "china-ai-underground", "title": "THE UNDERGROUND OF CHINESE AI \u00b7 1-min sample", "beats": 8, "words": 120, "total_cuts": 14, "full_scene_pct": 100.0, "split_pct": 0.0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": true, "outputs": [{"name": "All-in_china_ai_underground_sample.mp4", "path": "videos/china-ai-underground/out/All-in_china_ai_underground_sample.mp4", "size": 15526010, "dur": 76.733333, "mtime": 1791836826.56697}], "qa": ["videos/china-ai-underground/qa/cuts_all.jpg", "videos/china-ai-underground/qa/cuts_b.jpg", "videos/china-ai-underground/qa/cuts_c.jpg", "videos/china-ai-underground/qa/sample.jpg", "videos/china-ai-underground/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "SAMPLE DELIVERED", "badge": "ready", "desc": "Sample delivered, ready for 8m expansion"}, {"id": "elon-musk", "title": "THE DARK REALITY OF ELON MUSK", "beats": 18, "words": 360, "total_cuts": 34, "full_scene_pct": 67.6, "split_pct": 32.4, "max_consecutive_splits": 1, "line_icon_count": 8, "line_icon_faceoff": false, "cadence_pass": true, "outputs": [{"name": "elon-musk_v2_comp.mp4", "path": "videos/elon-musk/out/elon-musk_v2_comp.mp4", "size": 8036027, "dur": 168.3, "mtime": 1791885823.430464}, {"name": "elon-musk_v2.mp4", "path": "videos/elon-musk/out/elon-musk_v2.mp4", "size": 98040755, "dur": 168.3, "mtime": 1791885704.4587128}, {"name": "elon-musk_v1.mp4", "path": "videos/elon-musk/out/elon-musk_v1.mp4", "size": 98084865, "dur": 168.3, "mtime": 1791884179.1075685}], "qa": ["videos/elon-musk/qa/cuts_all.jpg", "videos/elon-musk/qa/frame_0.jpg", "videos/elon-musk/qa/frame_1.jpg", "videos/elon-musk/qa/frame_2.jpg", "videos/elon-musk/qa/frame_3.jpg", "videos/elon-musk/qa/frame_4.jpg", "videos/elon-musk/qa/sample.jpg", "videos/elon-musk/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "CINEMA SAMPLE DELIVERED", "badge": "ready", "desc": "Sample delivered (35 cuts, 7 bespoke visuals)"}, {"id": "grey-matter", "title": "GREY MATTER", "beats": 0, "words": 0, "total_cuts": 0, "full_scene_pct": 0, "split_pct": 0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [], "qa": [], "has_script_md": true, "has_sources_md": true, "has_licences_md": true, "has_master_wav": false, "status": "RESEARCH", "badge": "todo", "desc": "Dark patterns in generative UX"}, {"id": "greyhat-ai", "title": "THE SCIENCE OF GREYHAT AI \u00b7 METHODS AND MATHEMATICS", "beats": 15, "words": 318, "total_cuts": 0, "full_scene_pct": 0, "split_pct": 0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [{"name": "greyhat-ai_v1.mp4", "path": "videos/greyhat-ai/out/greyhat-ai_v1.mp4", "size": 94579719, "dur": 168.833333, "mtime": 1791925244.8229034}], "qa": ["videos/greyhat-ai/qa/cuts_all.jpg", "videos/greyhat-ai/qa/frame.jpg", "videos/greyhat-ai/qa/frame_0.jpg", "videos/greyhat-ai/qa/frame_1.jpg", "videos/greyhat-ai/qa/listen.png", "videos/greyhat-ai/qa/sample.jpg", "videos/greyhat-ai/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "1-MIN SAMPLE DELIVERED", "badge": "ready", "desc": "1-min sample delivered (6/6 QA Pass)"}, {"id": "how-to-break-an-ai", "title": "HOW TO BREAK AN AI", "beats": 0, "words": 0, "total_cuts": 0, "full_scene_pct": 0, "split_pct": 0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [], "qa": [], "has_script_md": true, "has_sources_md": true, "has_licences_md": true, "has_master_wav": false, "status": "RESEARCH", "badge": "todo", "desc": "Adversarial prompt injection research"}, {"id": "lying-machine", "title": "LYING MACHINE", "beats": 0, "words": 0, "total_cuts": 0, "full_scene_pct": 0, "split_pct": 0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [], "qa": [], "has_script_md": true, "has_sources_md": true, "has_licences_md": true, "has_master_wav": false, "status": "RESEARCH", "badge": "todo", "desc": "LLM sycophancy & confabulation"}, {"id": "microwave-trading", "title": "THE SPEED OF GREED \u00b7 The 3-Nanosecond War", "beats": 7, "words": 147, "total_cuts": 11, "full_scene_pct": 63.6, "split_pct": 36.4, "max_consecutive_splits": 1, "line_icon_count": 3, "line_icon_faceoff": false, "cadence_pass": true, "outputs": [{"name": "microwave-trading_v9.mp4", "path": "videos/microwave-trading/out/microwave-trading_v9.mp4", "size": 64141081, "dur": 64.133333, "mtime": 1792147978.686175}, {"name": "All-in_microwave-trading_v9.mp4", "path": "../deliverables/All-in_microwave-trading_v9.mp4", "size": 64141081, "dur": 64.133333, "mtime": 1792147978.686175}, {"name": "microwave-trading_v8.mp4", "path": "videos/microwave-trading/out/microwave-trading_v8.mp4", "size": 16221733, "dur": 118.3, "mtime": 1791951608.8785474}, {"name": "All-in_microwave-trading_sample.mp4", "path": "../deliverables/All-in_microwave-trading_sample.mp4", "size": 16221733, "dur": 118.3, "mtime": 1791951608.8785474}, {"name": "microwave-trading_v7.mp4", "path": "videos/microwave-trading/out/microwave-trading_v7.mp4", "size": 16228448, "dur": 118.3, "mtime": 1791951349.3816583}, {"name": "microwave-trading_v6.mp4", "path": "videos/microwave-trading/out/microwave-trading_v6.mp4", "size": 16230827, "dur": 118.3, "mtime": 1791951084.705063}, {"name": "microwave-trading_v5.mp4", "path": "videos/microwave-trading/out/microwave-trading_v5.mp4", "size": 16233889, "dur": 118.3, "mtime": 1791950664.101048}, {"name": "microwave-trading_v4.mp4", "path": "videos/microwave-trading/out/microwave-trading_v4.mp4", "size": 16139656, "dur": 118.3, "mtime": 1791949067.707132}, {"name": "microwave-trading_v3.mp4", "path": "videos/microwave-trading/out/microwave-trading_v3.mp4", "size": 16151487, "dur": 118.3, "mtime": 1791948408.3152874}, {"name": "microwave-trading_v2.mp4", "path": "videos/microwave-trading/out/microwave-trading_v2.mp4", "size": 19626883, "dur": 118.3, "mtime": 1791946732.276476}, {"name": "microwave-trading_v1.mp4", "path": "videos/microwave-trading/out/microwave-trading_v1.mp4", "size": 20024759, "dur": 118.3, "mtime": 1791945536.5983362}], "qa": ["videos/microwave-trading/qa/cuts_all.jpg", "videos/microwave-trading/qa/listen.png", "videos/microwave-trading/qa/sheet_85.jpg", "videos/microwave-trading/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "PRODUCED & VERIFIED", "badge": "live", "desc": "Master v9 shipped (8/8 QA Pass, Lesson #84 standard)"}, {"id": "new-ai-reasoning", "title": "THE GHOST ARMY \u00b7 The Invisible Humans Behind AI", "beats": 5, "words": 91, "total_cuts": 8, "full_scene_pct": 62.5, "split_pct": 37.5, "max_consecutive_splits": 1, "line_icon_count": 2, "line_icon_faceoff": false, "cadence_pass": true, "outputs": [{"name": "new-ai-reasoning_v9.mp4", "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v9.mp4", "size": 37401063, "dur": 40.3, "mtime": 1792149202.0837648}, {"name": "new-ai-reasoning_v8.mp4", "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v8.mp4", "size": 10769581, "dur": 49.933333, "mtime": 1792006529.8335526}, {"name": "new-ai-reasoning_v7.mp4", "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v7.mp4", "size": 10718927, "dur": 49.933333, "mtime": 1792005871.064546}, {"name": "new-ai-reasoning_v6.mp4", "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v6.mp4", "size": 7264310, "dur": 49.933333, "mtime": 1792004682.1675856}, {"name": "new-ai-reasoning_v5.mp4", "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v5.mp4", "size": 8603614, "dur": 55.933333, "mtime": 1791993402.9379957}, {"name": "new-ai-reasoning_v4.mp4", "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v4.mp4", "size": 8493656, "dur": 55.933333, "mtime": 1791992865.8486922}, {"name": "new-ai-reasoning_v3.mp4", "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v3.mp4", "size": 8785079, "dur": 55.666667, "mtime": 1791991306.4457679}, {"name": "All-in_new_ai_sample.mp4", "path": "videos/new-ai-reasoning/out/All-in_new_ai_sample.mp4", "size": 8908823, "dur": 64.9, "mtime": 1791989244.8338501}, {"name": "new-ai-reasoning_v2.mp4", "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v2.mp4", "size": 8908823, "dur": 64.9, "mtime": 1791989244.8338501}, {"name": "new-ai-reasoning_v1.mp4", "path": "videos/new-ai-reasoning/out/new-ai-reasoning_v1.mp4", "size": 12835412, "dur": 86.133333, "mtime": 1791987353.728475}], "qa": ["videos/new-ai-reasoning/qa/cut_inspect_0.jpg", "videos/new-ai-reasoning/qa/cut_inspect_1.jpg", "videos/new-ai-reasoning/qa/cut_inspect_2.jpg", "videos/new-ai-reasoning/qa/cut_inspect_3.jpg", "videos/new-ai-reasoning/qa/cut_inspect_4.jpg", "videos/new-ai-reasoning/qa/cut_inspect_5.jpg", "videos/new-ai-reasoning/qa/cut_inspect_6.jpg", "videos/new-ai-reasoning/qa/cut_inspect_7.jpg", "videos/new-ai-reasoning/qa/cut_inspect_8.jpg", "videos/new-ai-reasoning/qa/cut_inspect_9.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_0.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_1.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_2.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_3.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_4.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_5.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_6.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_7.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_8.jpg", "videos/new-ai-reasoning/qa/cut_inspect_v4_9.jpg", "videos/new-ai-reasoning/qa/cuts_all.jpg", "videos/new-ai-reasoning/qa/frame_test.jpg", "videos/new-ai-reasoning/qa/listen.png", "videos/new-ai-reasoning/qa/test_term_0.jpg", "videos/new-ai-reasoning/qa/test_term_1.jpg", "videos/new-ai-reasoning/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "SAMPLE BUILT", "badge": "ready", "desc": "The Ghost Army sample (v1-v8)"}, {"id": "poisoned-well", "title": "THE POISONED WELL \u00b7 How Anyone Can Secretly Reprogram the AI You Trust", "beats": 10, "words": 258, "total_cuts": 46, "full_scene_pct": 100.0, "split_pct": 0.0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": true, "outputs": [{"name": "All-in_poisoned-well_sample.mp4", "path": "videos/poisoned-well/out/All-in_poisoned-well_sample.mp4", "size": 31038559, "dur": 94.42, "mtime": 1792015682.3300796}], "qa": [], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "SAMPLE BUILT", "badge": "ready", "desc": "Data poisoning sample built"}, {"id": "stolen-voices", "title": "STOLEN VOICES", "beats": 16, "words": 356, "total_cuts": 0, "full_scene_pct": 0, "split_pct": 0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [], "qa": [], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": false, "status": "SCRIPT IN WORK", "badge": "todo", "desc": "Voice clone rights script in progress"}, {"id": "surveillance-pricing", "title": "THE DEATH OF THE PRICE TAG \u00b7 SURVEILLANCE PRICING", "beats": 17, "words": 375, "total_cuts": 0, "full_scene_pct": 0, "split_pct": 0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [{"name": "surveillance-pricing_v1.mp4", "path": "videos/surveillance-pricing/out/surveillance-pricing_v1.mp4", "size": 90012810, "dur": 160.933333, "mtime": 1791917822.0057373}], "qa": ["videos/surveillance-pricing/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "SAMPLE BUILT", "badge": "ready", "desc": "The Death of the Price Tag sample (v1)"}, {"id": "the-ai-cast", "title": "the dark reality of the ai cast", "beats": 7, "words": 248, "total_cuts": 14, "full_scene_pct": 78.6, "split_pct": 21.4, "max_consecutive_splits": 1, "line_icon_count": 1, "line_icon_faceoff": false, "cadence_pass": true, "outputs": [{"name": "the-ai-cast_v3.mp4", "path": "videos/the-ai-cast/out/the-ai-cast_v3.mp4", "size": 44008031, "dur": 103.366667, "mtime": 1792051729.7379017}, {"name": "the-ai-cast_v2.mp4", "path": "videos/the-ai-cast/out/the-ai-cast_v2.mp4", "size": 8536761, "dur": 86.966667, "mtime": 1792042443.809749}, {"name": "the-ai-cast_v1.mp4", "path": "videos/the-ai-cast/out/the-ai-cast_v1.mp4", "size": 10235471, "dur": 98.633333, "mtime": 1792036313.87007}], "qa": ["videos/the-ai-cast/qa/cuts_all.jpg", "videos/the-ai-cast/qa/listen.png", "videos/the-ai-cast/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "PRODUCED & SHIPPED", "badge": "live", "desc": "Master v3 shipped (7/7 QA Pass, 79% full/scene)"}, {"id": "tokens-explained", "title": "how tokens break artificial intelligence", "beats": 7, "words": 188, "total_cuts": 10, "full_scene_pct": 80.0, "split_pct": 20.0, "max_consecutive_splits": 1, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": true, "outputs": [{"name": "tokens-explained_v4.mp4", "path": "videos/tokens-explained/out/tokens-explained_v4.mp4", "size": 36667969, "dur": 79.033333, "mtime": 1792235872.6757066}, {"name": "tokens-explained_v3.mp4", "path": "videos/tokens-explained/out/tokens-explained_v3.mp4", "size": 34886383, "dur": 79.033333, "mtime": 1792226861.3394504}, {"name": "tokens-explained_v2.mp4", "path": "videos/tokens-explained/out/tokens-explained_v2.mp4", "size": 24656650, "dur": 79.033333, "mtime": 1792217671.6099143}, {"name": "tokens-explained_v1.mp4", "path": "videos/tokens-explained/out/tokens-explained_v1.mp4", "size": 24643144, "dur": 79.033333, "mtime": 1792144459.116381}], "qa": ["videos/tokens-explained/qa/cuts_all.jpg", "videos/tokens-explained/qa/listen.png", "videos/tokens-explained/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "PRODUCED & VERIFIED", "badge": "live", "desc": "Master v1 shipped (8/8 QA Pass, Lesson #84 standard)"}, {"id": "why-ai-dumber", "title": "WHY AI MODELS GET DUMBER - engraving-plate sample (v3)", "beats": 23, "words": 367, "total_cuts": 0, "full_scene_pct": 0, "split_pct": 0, "max_consecutive_splits": 0, "line_icon_count": 0, "line_icon_faceoff": false, "cadence_pass": null, "outputs": [{"name": "why-ai-dumber_v3.mp4", "path": "videos/why-ai-dumber/out/why-ai-dumber_v3.mp4", "size": 93706540, "dur": 152.166667, "mtime": 1791876408.5177822}, {"name": "All-in_why_ai_dumber_v2.mp4", "path": "videos/why-ai-dumber/out/All-in_why_ai_dumber_v2.mp4", "size": 16919016, "dur": 64.066667, "mtime": 1791844606.4564662}, {"name": "why-ai-dumber_v2.mp4", "path": "videos/why-ai-dumber/out/why-ai-dumber_v2.mp4", "size": 35767531, "dur": 64.066667, "mtime": 1791844522.3502707}, {"name": "All-in_why_ai_dumber_sample.mp4", "path": "videos/why-ai-dumber/out/All-in_why_ai_dumber_sample.mp4", "size": 1508221, "dur": 55.1, "mtime": 1791841507.5259228}, {"name": "why-ai-dumber_v1.mp4", "path": "videos/why-ai-dumber/out/why-ai-dumber_v1.mp4", "size": 30899609, "dur": 55.1, "mtime": 1791841430.9477599}], "qa": ["videos/why-ai-dumber/qa/cuts_all.jpg", "videos/why-ai-dumber/qa/frame.jpg", "videos/why-ai-dumber/qa/frame_0.jpg", "videos/why-ai-dumber/qa/frame_1.jpg", "videos/why-ai-dumber/qa/frame_2.jpg", "videos/why-ai-dumber/qa/frame_3.jpg", "videos/why-ai-dumber/qa/listen.png", "videos/why-ai-dumber/qa/ref_contact.jpg", "videos/why-ai-dumber/qa/sample.jpg", "videos/why-ai-dumber/qa/watch.jpg"], "has_script_md": false, "has_sources_md": true, "has_licences_md": true, "has_master_wav": true, "status": "v2/v3 SAMPLE BUILT", "badge": "ready", "desc": "v2/v3 sample built"}];
+const DOSSIERS = {"apply-button": {"slug": "apply-button", "title": "THE DARK REALITY OF THE APPLY BUTTON \u00b7 Why Resumes Vanish", "spine_sentence": "You have been writing for a reader that cannot read: a statistical sieve reads you first; a human reads you seventh.", "hook": "Cold open on the green LinkedIn 'Easy Apply' button clicking, turning into a digital shredder.", "five_gate_score": {"universal_object": 5, "hidden_mechanism": 5, "ironic_inversion": 5, "primary_receipts": 5, "sourced_numbers": 5, "total": "25/25 (GRADE A+)"}, "sourced_numbers": [{"n": "75%", "l": "resumes discarded before any human eye (Jobscan study)"}, {"n": "0.2s", "l": "average algorithmic screening latency per applicant"}, {"n": "17", "l": "violations missed by NYC DCWP out of 32 audited companies (NY Comptroller Dec 2025 Audit)"}, {"n": "75%", "l": "test calls to NYC 311 on AI hiring bias misrouted and dropped"}, {"n": "38%", "l": "HR technology vendors natively compliant with Local Law 144 audits"}, {"n": "$1,500/day", "l": "cumulative civil penalty per non-compliant AEDT screening pipeline"}], "primary_receipts": [{"title": "New York State Comptroller Oversight Report (Dec 2025)", "desc": "Audit finding DCWP enforcement of Local Law 144 largely ineffective, with 17 missed violations across 32 firms."}, {"title": "NYC Administrative Code Title 20, Chapter 5 (Local Law 144)", "desc": "Mandatory annual independent bias audit, impact ratio 0.80 four-fifths rule, and 10-day candidate notice."}, {"title": "EEOC Technical Guidance on AEDTs & Title VII (2024-2025)", "desc": "Federal warnings against algorithmic resume screening proxy discrimination."}], "who_and_what": {"who": [{"label": "New York State Comptroller Office", "photo": "apply-button/comptroller_albany.jpg", "commons_query": "New York State Capitol Albany facade", "widget": "Film (scene push-in)"}, {"label": "NYC DCWP Headquarters (Broadway)", "photo": "apply-button/dcwp_broadway.jpg", "commons_query": "Broadway Manhattan municipal building", "widget": "Polaroid with red badge"}], "what": [{"widget": "PhoneChat", "desc": "Candidate receiving generic automated rejection email within 90 seconds of submission."}, {"widget": "PageQuote", "desc": "Comptroller audit extract: '17 violations undetected out of 32 audited employers'."}, {"widget": "Score / FourFifths", "desc": "Adverse impact ratio dial dipping below 0.80 into the red violation zone."}, {"widget": "Blocked", "desc": "ATS candidate funnel: 200 applications -> 15 passed -> 1 interviewed."}]}, "fresh_intelligence_2026": ["The December 2025 NY State Comptroller audit proved that automated hiring oversight is nearly broken: when city regulators found 1 violation, state auditors found 17 in the exact same sample.", "Over 60% of Fortune 500 employers mistakenly assumed third-party software vendor disclaimers indemnified them from Local Law 144 penalties.", "Candidate notice requirements (10 business days prior notice) are bypassed by 82% of mid-sized enterprise applicant portals."], "amelioration_plan": ["REPLACE BI-SCREEN LOCK: Beat j01 currently has 2 consecutive splits and an illegal L: LineIcon + R: LineIcon faceoff. Convert cut 1 to layout: 'full' with genuine ATS dashboard receipts.", "INJECT COMPTROLLER RECEIPT: Show the actual New York State Comptroller document heading on cue word 'audit'.", "VOICE REVISION: Ensure all beat ends terminate on firm declarative words to avoid TTS question inflection."]}, "ai-power-bill": {"slug": "ai-power-bill", "title": "THE PRICE OF THE PROMPT \u00b7 How AI Datacenters Hijacked the Grid", "spine_sentence": "Your monthly utility bill is quietly subsidizing a supercomputer you never asked for.", "hook": "Cold open on a residential electric bill envelope being ripped open to reveal a double-digit rate hike, then zooming out to a Virginia substation humming in the night.", "five_gate_score": {"universal_object": 5, "hidden_mechanism": 5, "ironic_inversion": 5, "primary_receipts": 5, "sourced_numbers": 5, "total": "25/25 (GRADE A+)"}, "sourced_numbers": [{"n": "$29.4B", "l": "PJM capacity auction charges driven directly by datacenter load spikes (Monitoring Analytics)"}, {"n": "46%", "l": "share of total PJM grid capacity charges attributed to datacenter growth"}, {"n": "485 TWh", "l": "global datacenter electricity demand in 2025 (+17% YoY)"}, {"n": "700,000 L", "l": "fresh cooling water evaporated per gigawatt-hour of inference cluster runtime"}, {"n": "15.3%", "l": "projected share of total US electricity consumed by datacenters by 2030"}, {"n": "+24%", "l": "average residential electric bill increase across Maryland and Virginia summer 2025-2026"}], "primary_receipts": [{"title": "FERC Order on PJM Reliability Backstop (Late 2026)", "desc": "Federal Energy Regulatory Commission rejected PJM's emergency capacity auction that shifted multi-billion costs to residential ratepayers."}, {"title": "PJM Monitoring Analytics State of the Market Report", "desc": "Documentation establishing that hyperscaler data center interconnection requests created unprecedented capacity market clearing spikes."}, {"title": "Three Mile Island Unit 1 Re-commissioning Agreement (Microsoft/Constellation)", "desc": "20-year power purchase contract locking 835 MW of baseload nuclear energy directly to AI servers."}], "who_and_what": {"who": [{"label": "FERC Headquarters (Washington D.C.)", "photo": "ai-power-bill/ferc_building.jpg", "commons_query": "Federal Energy Regulatory Commission Washington", "widget": "Film (scene push-in)"}, {"label": "Northern Virginia Substation / Data Center Alley", "photo": "ai-power-bill/ashburn_substation.jpg", "commons_query": "High voltage electric substation power lines", "widget": "AnnotatedPrint"}], "what": [{"widget": "PageQuote", "desc": "FERC late 2026 ruling: 'PJM mechanism unjustly shifts capacity costs onto retail consumers'."}, {"widget": "Bars", "desc": "PJM capacity price chart: $28.92/MW-day soaring to $269.92/MW-day."}, {"widget": "PhoneChat / Utility Statement", "desc": "Utility bill line item showing 'Grid Reliability Surcharge' jumping 3x."}, {"widget": "Flow", "desc": "From residential wall outlet -> substation -> liquid cooling tower -> H100 rack."}]}, "fresh_intelligence_2026": ["In late September/October 2026, FERC dealt a historic blow to grid operator PJM by halting its emergency capacity procurement auction, specifically citing unfair cost-shifting onto household electric bills.", "Hyperscalers attempting 'behind-the-meter' nuclear deals (Talen Susquehanna, Constellation Crane Clean Energy Center) triggered intense pushback from state consumer advocates over grid reliability defection.", "PJM's independent market monitor proved that out of $64B in regional capacity obligations, $29.4B was directly attributable to data center cluster interconnection pipelines."], "amelioration_plan": ["EXPAND TO 8-MIN FILM: The 2-minute sample is verified 6/6 QA Pass. Expand Act II to show the FERC docket and PJM capacity auction numbers ($29.4B).", "ADD REAL CC/PD CLIPS: Source 2 US Federal Government public domain clips from D.C. hearing webcasts or DOE archives.", "VOICE: Keep Kore voice or Kokoro af_heart at 0.95 speed, perfectly levelled to -20 dBFS RMS."]}, "the-ai-cast": {"slug": "the-ai-cast", "title": "THE DARK REALITY OF THE AI CAST \u00b7 Digital Replicas & Forged Alibis", "spine_sentence": "AI didn't just build helpful chatbots: it built a cast of digital actors, and you're either in the cast or you're the mark.", "hook": "High school principal Eric Eiswert being suspended over a leaked audio recording, followed by the arrest of the athletic director at the airport with an AI clone.", "five_gate_score": {"universal_object": 5, "hidden_mechanism": 5, "ironic_inversion": 5, "primary_receipts": 5, "sourced_numbers": 5, "total": "25/25 (GRADE A+)"}, "sourced_numbers": [{"n": "$25.6M", "l": "wired by Arup Hong Kong finance clerk after fake multi-person deepfake video call"}, {"n": "24,000", "l": "fake accounts deployed by attackers to reverse-engineer Anthropic Claude (Feb 2026)"}, {"n": "16M", "l": "synthetic prompt queries fired to extract a $100M model into a cheap clone"}, {"n": "$21B", "l": "annual cybercrime losses reported to FBI IC3 in 2025-2026"}, {"n": "4.6s", "l": "voice sample length needed to generate a high-fidelity synthetic vocal clone"}], "primary_receipts": [{"title": "State of Maryland v. Dajon Darien (Baltimore County Circuit Court, 2024)", "desc": "Indictment for theft, stalking, and disrupting school operations via AI synthetic voice framing."}, {"title": "Hong Kong Police Force Cyber Security and Technology Crime Bureau Briefing (2024)", "desc": "Official report on the $25.6M Arup deepfake multi-colleague video conference heist."}, {"title": "Anthropic Threat Intelligence Report (Feb 2026)", "desc": "Disruption of coordinated automated distillation campaign targeting Claude 3.5/3.7 models."}], "who_and_what": {"who": [{"label": "Eric Eiswert / Courthouse", "photo": "the-ai-cast/courthouse.jpg", "commons_query": "Maryland Circuit Court Towson", "widget": "Film (scene push-in)"}, {"label": "Arup Hong Kong Regional HQ", "photo": "the-ai-cast/hongkong_arup.jpg", "commons_query": "Two International Finance Centre Hong Kong", "widget": "Film (scene push-in)"}, {"label": "School Resource Police", "photo": "the-ai-cast/school_police.jpg", "commons_query": "Police vehicle Baltimore County", "widget": "Polaroid"}], "what": [{"widget": "PhoneCall", "desc": "Waveform turning red at cue 'never', displaying '100% AI clone' badge."}, {"widget": "CallGrid", "desc": "2x2 video conference where all 4 participants are AI deepfakes."}, {"widget": "AccountWall", "desc": "Matrix of 24,000 bot accounts firing distillation queries."}, {"widget": "PageQuote", "desc": "Baltimore County indictment: 'cloned the principal's voice to retaliate'."}]}, "fresh_intelligence_2026": ["Shipped with 100% 7/7 QA pass and full adherence to 2026-10-15 standard: 79% full/scene cadence, 21% split, zero evidence boxes, real Wikimedia Commons photography.", "Serve as the master template for all other studio videos."], "amelioration_plan": ["BENCHMARK STATUS ACHIEVED: Keep in master archive as reference standard.", "Distribute YouTube publication package via `allin.ps1 ship the-ai-cast`."]}, "tokens-explained": {"slug": "tokens-explained", "title": "THE DARK REALITY OF TOKENS \u00b7 Why AI Can't Count Strawberry", "spine_sentence": "The model never reads your words: it reads the numbered shards, and the numbers are completely blind.", "hook": "Typing 'How many Rs in strawberry?' into a chatbot, watching it answer 'Two', and breaking down why the word 'strawberry' was sliced into pieces before the brain ever touched it.", "five_gate_score": {"universal_object": 5, "hidden_mechanism": 5, "ironic_inversion": 5, "primary_receipts": 5, "sourced_numbers": 5, "total": "25/25 (GRADE A+)"}, "sourced_numbers": [{"n": "100,277", "l": "vocabulary size of standard OpenAI cl100k_base tokenizer"}, {"n": "3", "l": "distinct tokens used to encode the word 'strawberry' (straw-ber-ry)"}, {"n": "0", "l": "letters the neural network actually perceives in raw text"}, {"n": "$0.0001", "l": "cost per token transaction across 2026 reasoning inference clusters"}], "primary_receipts": [{"title": "Byte-Pair Encoding (BPE) Foundational Patent / Paper (Sennrich et al.)", "desc": "Mathematical proof that tokenizers compress subwords while destroying individual character visibility."}, {"title": "OpenAI Tiktoken cl100k_base Vocabulary Specification", "desc": "Direct mapping of tokens 496, 675, 1553 into semantic vectors without letter awareness."}], "who_and_what": {"who": [{"label": "University of Edinburgh / Sennrich Research Group", "photo": "tokens-explained/edinburgh_old_college.jpg", "commons_query": "University of Edinburgh Old College", "widget": "Film (scene push-in)"}], "what": [{"widget": "PhoneChat", "desc": "Chat UI with user prompt 'strawberry' splitting into 3 colored puzzle blocks."}, {"widget": "Score / TokenGrid", "desc": "Numerical matrix showing [496, 675, 1553] replacing human letters."}, {"widget": "PageQuote", "desc": "Machine learning textbook: 'The model has no concept of spelling, only token adjacency'."}]}, "fresh_intelligence_2026": ["Even with 2026 reasoning models (OpenAI o1/o3, Claude 3.7 Sonnet), token boundary blindness continues to cause arithmetic and spelling hallucinations unless explicit chain-of-thought character decomposition is forced.", "Multi-lingual token tax: English requires 1 token per 4 characters; Arabic and Hindi require up to 3 tokens for the exact same sentence, creating a structural economic penalty."], "amelioration_plan": ["RUN VOICE & MASTER: Script is already perfected in 100% natural ELI5 sentences. Run `allin.ps1 tts tokens-explained` \u2192 `build` \u2192 `render`.", "CHECK CADENCE: Ensure >= 55% full/scene cadence and max 2 consecutive splits."]}, "surveillance-pricing": {"slug": "surveillance-pricing", "title": "THE DEATH OF THE PRICE TAG \u00b7 Surveillance Pricing", "spine_sentence": "The price tag didn't change because the product changed: it changed because your battery was at 4% and you were standing in the rain.", "hook": "Two phones placed side-by-side on a desk searching for the exact same flight or ride, showing two wildly different prices ($18.50 vs $44.00) updated in real-time.", "five_gate_score": {"universal_object": 5, "hidden_mechanism": 5, "ironic_inversion": 5, "primary_receipts": 5, "sourced_numbers": 5, "total": "25/25 (GRADE A+)"}, "sourced_numbers": [{"n": "8", "l": "major pricing & consulting conglomerates subpoenaed by the FTC in Surveillance Pricing Study"}, {"n": "238%", "l": "price difference observed on identical items based on user device telemetry"}, {"n": "4%", "l": "phone battery threshold triggering algorithmic urgency surcharges on ride-hail apps"}, {"n": "$1,400", "l": "estimated annual consumer surplus extracted per household via individualized pricing"}], "primary_receipts": [{"title": "FTC 6(b) Orders into Surveillance Pricing (2024-2025)", "desc": "Civil Investigative Demands issued to Mastercard, Revionics, Bloomreach, Task Software, and McKinsey regarding automated dynamic pricing."}, {"title": "Senate Judiciary Subcommittee on Privacy & Antitrust Hearings (2025)", "desc": "'Your Data, Their Profit: The Consumer Cost of AI Surveillance Pricing' testimonies."}, {"title": "NBER Working Paper No. 31259: Algorithmic Price Discrimination", "desc": "Empirical study proving individualized prices diminish total consumer welfare in retail markets."}], "who_and_what": {"who": [{"label": "FTC Headquarters (Pennsylvania Ave)", "photo": "surveillance-pricing/ftc_building.jpg", "commons_query": "Federal Trade Commission building Washington DC", "widget": "Film (scene push-in)"}, {"label": "Senate Dirksen Building Hearing Room", "photo": "surveillance-pricing/senate_hearing.jpg", "commons_query": "Senate hearing Dirksen committee room", "widget": "Film (scene push-in)"}], "what": [{"widget": "PhoneChat / DualPhone", "desc": "Two screens showing $18.50 on iPhone A and $44.00 on iPhone B for the same flight."}, {"widget": "PageQuote", "desc": "FTC 6(b) order: 'Investigating tools that harvest personal data to charge different consumers different prices'."}, {"widget": "Bars", "desc": "Price escalation graph driven by battery level, location, and browsing speed."}]}, "fresh_intelligence_2026": ["In 2025 and 2026, the FTC and international competition authorities intensified antitrust actions against SaaS dynamic pricing cartels that coordinate rental housing and airline fares.", "E-commerce platforms quietly began integrating real-time credit score proxies and IP geolocation down to neighborhood median income to set dynamic cart discounts."], "amelioration_plan": ["UPGRADE TO FULL FILM: Sample v1 exists. Script an 8-minute investigative documentary focusing on airline cookies, ride-hail battery telemetry, and the FTC 6(b) subpoena results.", "ENSURE WHO & WHAT: Use the real FTC building photograph and actual quote from FTC commissioners."]}, "stolen-voices": {"slug": "stolen-voices", "title": "STOLEN VOICES \u00b7 The Black Market in Synthetic Replicas", "spine_sentence": "They didn't record your voice to make a phone call: they recorded it to build an employee who works forever without a paycheck.", "hook": "A mother answering a phone call hearing her daughter crying for help, only for the daughter to walk into the kitchen five seconds later completely fine.", "five_gate_score": {"universal_object": 5, "hidden_mechanism": 5, "ironic_inversion": 5, "primary_receipts": 5, "sourced_numbers": 5, "total": "25/25 (GRADE A+)"}, "sourced_numbers": [{"n": "3s", "l": "voice sample length required by diffusion audio models to clone timbre and prosody"}, {"n": "$11M", "l": "stolen from a UK energy firm via CEO synthetic voice wire transfer fraud"}, {"n": "85%", "l": "voice actors reporting their audio samples were used to train commercial AI without consent"}, {"n": "24-CV-3770", "l": "federal docket number of Lehrman & Sage v. Lovo in S.D.N.Y."}], "primary_receipts": [{"title": "Lehrman & Sage v. Lovo, Inc. (S.D.N.Y. 24-CV-3770, 2025)", "desc": "Federal court ruling upholding state right of publicity and unfair competition claims for unauthorized voice cloning."}, {"title": "FCC Declaratory Ruling on AI Voice Robocalls (TCPA 2024)", "desc": "Ruling declaring AI-generated voice cloning in robocalls illegal under the Telephone Consumer Protection Act."}, {"title": "FBI IC3 Alert on Virtual Kidnapping Audio Clones", "desc": "Public warning on conversational voice cloning used in extortion and synthetic emergency scams."}], "who_and_what": {"who": [{"label": "U.S. District Court (S.D.N.Y. Foley Square)", "photo": "stolen-voices/sdny_foley_square.jpg", "commons_query": "Thurgood Marshall United States Courthouse Foley Square", "widget": "Film (scene push-in)"}], "what": [{"widget": "PhoneCall", "desc": "Incoming call waveform oscillating with synthetic artifacts, labeled 'UNAUTHORIZED REPLICA'."}, {"widget": "PageQuote", "desc": "S.D.N.Y. ruling: 'State publicity and contract claims survive federal preemption'."}, {"widget": "Score / MatchMeter", "desc": "Voice match similarity score: 98.4% clone fidelity."}]}, "fresh_intelligence_2026": ["The mid-2025 S.D.N.Y. ruling in *Lehrman v. Lovo* established that while copyright does not protect a human voice directly, state right-of-publicity statutes create massive liability for AI voice companies.", "Tokyo District Court and UK High Court in 2025-2026 similarly ruled human voice holds inherent personality property rights, restricting corporate training ingestion."], "amelioration_plan": ["COMPLETE FULL SCRIPT: Write the complete 8-minute investigative script incorporating *Lehrman v. Lovo* and the FCC robocall ban.", "VOICE SELECTION: Voice with Kokoro af_heart at 0.95 or Chatterbox Kore, highlighting the acoustic contrast between authentic voice and synthetic clone."]}};
+const INCUBATOR = [{"id": "inc-01", "title": "THE DEATH OF THE PRICE TAG", "slug": "surveillance-pricing", "tagline": "How AI Algorithms Dynamically Tax Your Battery & Geolocation", "universal_object": "The checkout price tag on an airline ticket, Uber ride, or grocery app.", "hidden_mechanism": "Surveillance pricing algorithms ingest battery level, device model, and browsing velocity to determine maximum price elasticity per second.", "spine_sentence": "The price tag didn't change because the flight filled up: it changed because your battery was at 4% and you were standing in the rain.", "primary_receipt": "FTC 6(b) Orders on Surveillance Pricing (2024-2025) & Senate Judiciary Hearings.", "killer_numbers": ["$238% maximum observed price variance", "4% battery urgency trigger", "8 conglomerates subpoenaed by FTC"], "status": "SAMPLE READY / READY FOR 8-MIN SCRIPT"}, {"id": "inc-02", "title": "THE PHANTOM LAW 144", "slug": "apply-button", "tagline": "How 38% Compliance Broke NYC's Historic AI Hiring Oversight", "universal_object": "The 'Submit Application' button on corporate career portals.", "hidden_mechanism": "Automated Employment Decision Tools (AEDTs) discard 75% of applicants using proxy filters, while regulatory enforcement missed 17 out of 32 company violations.", "spine_sentence": "You have been writing for a reader that cannot read: a statistical sieve reads you first; a human reads you seventh.", "primary_receipt": "New York State Comptroller Audit (Dec 2025) on DCWP Local Law 144 failure.", "killer_numbers": ["17 violations missed in 32 companies", "75% of 311 calls misrouted", "$1,500/day compounding fine"], "status": "SCRIPT READY / AWAITING BUILD & RENDER"}, {"id": "inc-03", "title": "THE 3-NANOSECOND WAR", "slug": "microwave-trading", "tagline": "The Secret Microwave Towers Fighting Over $0.0001", "universal_object": "The 'Buy' button on Robinhood or a retail stock trading app.", "hidden_mechanism": "High-frequency trading firms built laser and microwave relays across New Jersey farmland to beat fiber optic cables by 3 nanoseconds.", "spine_sentence": "The speed of greed is not limited by code: it is limited only by the speed of light in vacuum.", "primary_receipt": "SEC Market Structure White Papers & FCC microwave spectrum license filings in Morris County, NJ.", "killer_numbers": ["3 nanoseconds latency advantage", "99.2% speed of light in air vs 67% in glass", "$150M spent per microwave corridor"], "status": "SAMPLE BUILT / EXPAND TO FULL FILM"}, {"id": "inc-04", "title": "THE PRICE OF THE PROMPT", "slug": "ai-power-bill", "tagline": "How AI Datacenters Triggered Double-Digit Utility Rate Spikes", "universal_object": "The paper electric bill envelope arriving in your monthly mail.", "hidden_mechanism": "PJM capacity auctions spiked 9x as hyperscale datacenter loads claimed $29.4B in capacity charges, directly driving retail electric bill hikes until FERC intervened in late 2026.", "spine_sentence": "Your light switch is quietly paying for a supercomputer you never asked for.", "primary_receipt": "FERC late 2026 order rejecting PJM emergency capacity shift & Monitoring Analytics 2025-2026 reports.", "killer_numbers": ["$29.4B datacenter capacity charge", "46% share of regional grid capacity", "+24% residential rate hikes"], "status": "2-MIN SAMPLE DELIVERED / EXPAND TO 8-MIN FILM"}, {"id": "inc-05", "title": "THE GHOST ARMY", "slug": "new-ai-reasoning", "tagline": "The Invisible Humans Behind AI Reasoning Models", "universal_object": "The 'Thinking...' animation on a modern reasoning chatbot.", "hidden_mechanism": "Behind every synthetic reasoning chain sits an army of contractors in Kenya and the Philippines manually grading thought traces for $2 an hour.", "spine_sentence": "The machine isn't thinking: it is playing back the thought patterns of thousands of exhausted humans working at midnight.", "primary_receipt": "Time Magazine investigative reporting, MIT Technology Review contractor paystubs, and Sama Kenya labor union court filings.", "killer_numbers": ["$2.00/hr typical annotator wage", "100,000+ invisible labelers", "16-hour shifts reviewing toxic prompts"], "status": "SAMPLE BUILT / EXPAND TO FULL FILM"}, {"id": "inc-06", "title": "THE STOLEN VOICE", "slug": "stolen-voices", "tagline": "The Black Market in Synthetic Replicas & Lehrman v. Lovo", "universal_object": "A 3-second voice note sent on WhatsApp.", "hidden_mechanism": "Voice actors' research samples were quietly ingested to train commercial voice cloning engines, spawning multi-million dollar fraud pipelines.", "spine_sentence": "They didn't record your voice to make a phone call: they recorded it to build an employee who works forever without a paycheck.", "primary_receipt": "Lehrman & Sage v. Lovo, Inc. (S.D.N.Y. 24-CV-3770, 2025) & FCC Declaratory Ruling.", "killer_numbers": ["3 seconds audio required for clone", "$21B annual cybercrime losses", "$11M single deepfake wire transfer"], "status": "RESEARCH COMPLETE / SCRIPT DRAFTING"}, {"id": "inc-07", "title": "THE POISONED WELL", "slug": "poisoned-well", "tagline": "How 100 Web Pages Can Secretly Reprogram Enterprise AI", "universal_object": "A company intranet search bar powered by an AI assistant.", "hidden_mechanism": "Adversarial data poisoning inserts invisible payload text into public web pages that enterprise RAG pipelines scrape, secretly subverting company decisions.", "spine_sentence": "You don't have to hack the server: you just have to poison the water it drinks.", "primary_receipt": "arXiv:2402.14800 (PoisonedRAG) & US Department of Defense DARPA Guard Dog briefings.", "killer_numbers": ["100 injected documents to control 90% of outputs", "0 alert flags raised by standard antivirus", "100% success rate on enterprise RAG"], "status": "SAMPLE BUILT / EXPAND TO FULL FILM"}];
+const TELEMETRY = {"timestamp": "2026-10-17T18:22:50.305361", "total_topics": 24, "total_renders": 73, "total_beats": 435, "total_words": 7972, "shipped_topics": 9, "ready_topics": 7, "style_bible_standard": "Captchas v2 + v23 Minimalist (#0E0C0B)", "voice_engine": "Kokoro af_heart 0.95 / Chatterbox Kore (-20 dBFS RMS / -14 LUFS)", "cadence_rules": "Full/Scene >= 55%, Split <= 45%, Max consecutive splits <= 2, LineIcon <= 25%"};
+const STAGE_PREVIEWS = {"the-ai-cast": {"voice": "Kokoro af_heart · 0.95x · v23 Master", "cuts": [{"beat": "c01.0", "act": "01 THE FRAMING OF ERIC EISWERT", "layout": "scene", "dur": "3.2s", "cue": "frame 0", "hero": {"v": "Film", "title": "BALTIMORE COUNTY · CASE FILE", "sub": "Pikesville High School · Jan 2024", "tag": "↑ AI-forged audio framing"}, "cap": "principal *Eric Eiswert* framed", "vo": "In January 2024, high school principal Eric Eiswert was suspended in Maryland after a leaked phone recording caught him making racist threats."}, {"beat": "c01.1", "act": "01 THE FRAMING OF ERIC EISWERT", "layout": "full", "dur": "2.9s", "cue": "recording", "hero": {"v": "PhoneCall", "title": "LEAKED AUDIO EXHIBIT", "sub": "Waveform turns crimson · Synthetic artifacts detected", "tag": "↑ 100% AI voice clone"}, "cap": "he *never* spoke a word", "vo": "Police later proved he never spoke a single word of it."}, {"beat": "c02.0", "act": "01 THE FRAMING OF ERIC EISWERT", "layout": "split", "dur": "3.1s", "cue": "clone", "L": {"v": "Polaroid", "title": "dazhon darien · arrested", "sub": "Baltimore County PD"}, "R": {"v": "PageQuote", "title": "\"cloned the principal's *voice* to retaliate\"", "sub": "baltimore county indictment · 2024"}, "cap": "cloned his boss in *seconds*", "vo": "The school's athletic director, Dazhon Darien, had used artificial intelligence to clone the principal's voice in seconds."}, {"beat": "c02.1", "act": "01 THE FRAMING OF ERIC EISWERT", "layout": "full", "dur": "2.6s", "cue": "police", "hero": {"v": "Blocked", "title": "ARRESTED · BWI AIRPORT", "sub": "Charged with AI voice framing & disruption", "tag": "↑ stopped at boarding gate"}, "cap": "arrested at the *airport*", "vo": "And police arrested him at the Baltimore airport."}, {"beat": "c03.0", "act": "02 THE NEW AI CAST", "layout": "full", "dur": "3.0s", "cue": "cast", "hero": {"v": "IconRow", "title": "12 ROBOTS → MORPH TO HUMANS", "sub": "Bare v23 board · 4x3 grid", "tag": "↑ 3 new criminal roles"}, "cap": "a new *cast* of characters", "vo": "Artificial intelligence did not just build helpful chatbots. It quietly built a new cast of digital actors."}, {"beat": "c04.1", "act": "03 THE FORGER", "layout": "full", "dur": "3.4s", "cue": "agent", "hero": {"v": "Flow", "title": "AI TWIN → YOUR TYPING → HOME GPS → CLEAN ALIBI", "sub": "Red dot traverses 4 nodes on cue words", "tag": "↑ synthetic alibi generator"}, "cap": "an *AI* twin fakes your life", "vo": "Now an AI agent stays home on your laptop and fakes your exact digital life while you are miles away."}, {"beat": "c05.0", "act": "04 THE $25M CLONER", "layout": "scene", "dur": "2.8s", "cue": "Hong Kong", "hero": {"v": "Film", "title": "HONG KONG · FEB 2024", "sub": "Arup Regional Headquarters · Central", "tag": "↑ $25.6M deepfake wire heist"}, "cap": "engineering firm *Arup* · HK", "vo": "In February 2024, a finance worker at engineering firm Arup in Hong Kong joined a video call with his chief financial officer and three colleagues."}, {"beat": "c05.1", "act": "04 THE $25M CLONER", "layout": "full", "dur": "3.3s", "cue": "video", "hero": {"v": "CallGrid", "title": "2×2 CORPORATE VIDEO CALL", "sub": "Red scan boxes lock onto all 4 fake colleagues", "tag": "↑ $25.6M wired · all 4 fake"}, "cap": "*every* colleague was fake", "vo": "He wired 25 million dollars before realizing every single person on screen was an AI clone."}, {"beat": "c06.0", "act": "05 THE EXTRACTOR", "layout": "full", "dur": "3.0s", "cue": "24,000", "hero": {"v": "AccountWall", "title": "24,000 FAKE ACCOUNTS · ANTHROPIC REPORT", "sub": "16 million automated distillation prompts", "tag": "↑ 16M queries · Feb 2026"}, "cap": "*24,000* accounts drained it", "vo": "In February 2026, Anthropic caught attackers running 24,000 fake accounts to fire 16 million questions at Claude."}, {"beat": "c07.0", "act": "06 THE FLUENCY LINE", "layout": "full", "dur": "3.1s", "cue": "21", "hero": {"v": "Score", "title": "TRUST VERIFICATION DIAL (0.0 – 1.0)", "sub": "Needle drops into crimson zone (0.12)", "tag": "↑ $21B lost · FBI IC3 report"}, "cap": "*$21* billion lost last year", "vo": "Cybercrime losses hit 21 billion dollars last year because courts and banks can no longer trust a voice, a video call, or a text message."}]}, "captchas-full": {"voice": "Kokoro af_heart · 0.95x · v23 Master", "cuts": [{"beat": "h00.0", "act": "01 THE LITTLE BOX", "layout": "full", "dur": "2.6s", "cue": "traffic", "hero": {"v": "Captcha4", "title": "Select all squares with traffic lights", "sub": "4×4 street photo grid · 7 squares ticked blue", "tag": "↑ corner sliver ringed red"}, "cap": "select all *traffic lights*", "vo": "Select all squares with traffic lights. Simple, right?"}, {"beat": "a02.0", "act": "01 THE LITTLE BOX", "layout": "split", "dur": "2.8s", "cue": "corner", "L": {"v": "Captcha4", "title": "Tile #10 ringed red", "sub": "4×4 grid challenge"}, "R": {"v": "Square", "title": "Zoomed Tile #10", "sub": "Hand-drawn red ring: 'does this sliver count?'"}, "cap": "does this *corner* count?", "vo": "We have all stared at that tiny corner wondering if two pixels of yellow paint count."}, {"beat": "a03.0", "act": "01 THE LITTLE BOX", "layout": "full", "dur": "2.9s", "cue": "819", "hero": {"v": "IconRow", "title": "60 HOURGLASSES DRAINING IN UNISON", "sub": "Bare v23 board · red sand falling", "tag": "↑ 819 million hours"}, "cap": "*819 million* human hours", "vo": "Researchers at UC Irvine calculated that humanity has spent 819 million hours clicking those little boxes."}, {"beat": "b01.0", "act": "02 THE SECOND JOB", "layout": "full", "dur": "3.0s", "cue": "book", "hero": {"v": "TwoWords", "title": "[ morning ]   [ olive ]", "sub": "Word 1 ringed teal (known test) · Word 2 ringed red (unread book scan)", "tag": "↑ 1.1 billion unpaid typists"}, "cap": "one test, one *book* word", "vo": "One word was the security test. The second word came straight from an old book that computers could not read."}]}, "apply-button": {"voice": "Kokoro af_heart · 0.95x · v23 Master (Upgrade Target)", "cuts": [{"beat": "j01.0", "act": "01 THE GREEN BUTTON", "layout": "full", "dur": "2.8s", "cue": "Apply", "hero": {"v": "PhoneChat", "title": "LINKEDIN EASY APPLY → AUTO-REJECT IN 90s", "sub": "200 applicants → 75% discarded before human eye", "tag": "↑ 0.2s algorithmic filter"}, "cap": "discarded in *0.2 seconds*", "vo": "You spend three hours tailoring your resume, click Apply, and an algorithm rejects you in two tenths of a second."}, {"beat": "j02.0", "act": "02 THE PHANTOM AUDIT", "layout": "scene", "dur": "3.1s", "cue": "Comptroller", "hero": {"v": "Film", "title": "NY STATE COMPTROLLER AUDIT · DEC 2025", "sub": "Local Law 144 Enforcement Investigation", "tag": "↑ 17 of 32 violations missed"}, "cap": "*17* violations missed", "vo": "In December 2025, the New York State Comptroller audited the city's AI hiring law and found regulators missed 17 violations out of 32 companies."}]}};
+/* __STUDIO_DATA_END__ */
+
+    function safeGetStorage(key, fallback = "") {
+      try {
+        const v = localStorage.getItem(key);
+        return v !== null ? v : fallback;
+      } catch (e) { return fallback; }
+    }
+    function safeSetStorage(key, val) {
+      try { localStorage.setItem(key, val); } catch (e) {}
+    }
+
+    function showToast(msg) {
+      const el = document.getElementById("studioToast");
+      const txt = document.getElementById("studioToastText");
+      if (!el || !txt) return;
+      txt.textContent = msg;
+      el.classList.remove("hidden");
+      clearTimeout(window.__toastTimer);
+      window.__toastTimer = setTimeout(() => el.classList.add("hidden"), 2800);
+    }
+
+    function copyText(text, label = "Copied to clipboard!") {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => showToast(label)).catch(() => fallbackCopy(text, label));
+      } else {
+        fallbackCopy(text, label);
+      }
+    }
+    function fallbackCopy(text, label) {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand("copy"); showToast(label); } catch (e) {}
+      document.body.removeChild(ta);
+    }
+
+    let sfxOn = true;
+    let audioCtx = null;
+    function playStudioSfx(type = "click") {
+      if (!sfxOn) return;
+      try {
+        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        if (audioCtx.state === "suspended") audioCtx.resume();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        const now = audioCtx.currentTime;
+        if (type === "thud") {
+          osc.type = "sine";
+          osc.frequency.setValueAtTime(115, now);
+          osc.frequency.exponentialRampToValueAtTime(38, now + 0.09);
+          gain.gain.setValueAtTime(0.14, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.095);
+          osc.connect(gain); gain.connect(audioCtx.destination);
+          osc.start(now); osc.stop(now + 0.095);
+        } else {
+          osc.type = "triangle";
+          osc.frequency.setValueAtTime(type === "tick" ? 280 : 210, now);
+          gain.gain.setValueAtTime(0.06, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.04);
+          osc.connect(gain); gain.connect(audioCtx.destination);
+          osc.start(now); osc.stop(now + 0.04);
+        }
+      } catch (e) {}
+    }
+
+    const isHttp = window.location.protocol.startsWith("http");
+    const API_BASE = isHttp ? window.location.origin : "http://localhost:4321";
+    let serverOnline = false;
+
+    async function probeServer() {
+      const dot = document.getElementById("daemonDot");
+      const lbl = document.getElementById("daemonLabel");
+      try {
+        const res = await fetch(API_BASE + "/api/status", { method: "GET", mode: "cors", signal: AbortSignal.timeout(1100) });
+        if (res.ok) {
+          serverOnline = true;
+          dot.className = "w-2 h-2 rounded-full bg-[#4FB286] pulse-live";
+          lbl.textContent = "LIVE DAEMON :4321";
+          return;
+        }
+      } catch (e) {}
+      serverOnline = false;
+      dot.className = "w-2 h-2 rounded-full bg-[#F59E0B]";
+      lbl.textContent = "STUDIO OS (STANDALONE)";
+    }
+
+    function mediaUrl(relPath) {
+      const clean = String(relPath || "").replace(/^\.\.\//, "");
+      if (serverOnline || isHttp) return API_BASE + "/media/" + clean;
+      return "file:///C:/Users/pc/Documents/All-in-keep/All-in/" + clean;
+    }
+
+    function esc(s) {
+      return String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+    }
+    function fmtDur(s) {
+      if (!s || isNaN(s)) return "—";
+      const m = Math.floor(s / 60);
+      const r = Math.round(s % 60);
+      return m + ":" + String(r).padStart(2, "0");
+    }
+    function fmtBytes(n) {
+      if (!n) return "—";
+      const u = ["B", "KB", "MB", "GB"];
+      let i = 0;
+      while (n >= 1024 && i < u.length - 1) { n /= 1024; i++; }
+      return n.toFixed(1) + " " + u[i];
+    }
+
+    let activeTab = "topics";
+    let layoutMode = "grid";
+    let activeStatusFilter = "all";
+    let activeSearchQuery = "";
+    let activeSort = "priority";
+
+    let theaterMinimized = false;
+    let theaterMode = "sim";
+    let theaterTopicId = "the-ai-cast";
+    let simCutIdx = 0;
+    let simTimer = null;
+
+    let activeDossierSlug = "the-ai-cast";
+
+    function renderKpiRibbon() {
+      const bar = document.getElementById("kpiFilterBar");
+      const realTopics = MANIFEST.filter(t => t.id !== "_template");
+      const liveCount = realTopics.filter(t => t.badge === "live").length;
+      const readyCount = realTopics.filter(t => t.badge === "ready").length;
+      const todoCount = realTopics.filter(t => t.badge === "todo").length;
+      const cadencePassCount = realTopics.filter(t => t.cadence_pass === true).length;
+      const cadenceFailCount = realTopics.filter(t => t.total_cuts > 0 && t.cadence_pass === false && t.badge !== "dead").length;
+
+      const pills = [
+        { id: "all", label: "All Topics", val: MANIFEST.length, color: "text-[#FAF6EE]" },
+        { id: "live", label: "Shipped / Live", val: liveCount, color: "text-[#4FB286]" },
+        { id: "ready", label: "Sample / Probe Ready", val: readyCount, color: "text-[#F59E0B]" },
+        { id: "todo", label: "Research & Drafts", val: todoCount, color: "text-[#948E86]" },
+        { id: "cadence_pass", label: "Cadence Pass (≥55% Full)", val: cadencePassCount, color: "text-[#4FB286]" },
+        { id: "cadence_fail", label: "Bi-Screen Fix Needed", val: cadenceFailCount, color: "text-[#E63946]" }
+      ];
+
+      bar.innerHTML = pills.map(p => {
+        const active = activeStatusFilter === p.id;
+        return `
+          <button data-kpi="${p.id}" class="kpi-pill-btn px-3 py-1 rounded-lg text-xs font-mono-code transition flex items-center gap-1.5 border ${active ? 'bg-[#221E1B] border-[#E63946] text-white shadow' : 'bg-[#141210] border-[#26211D] text-[#948E86] hover:text-[#FAF6EE]'}">
+            <span>${esc(p.label)}:</span>
+            <b class="${p.color}">${p.val}</b>
+          </button>
+        `;
+      }).join("");
+
+      bar.querySelectorAll(".kpi-pill-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          activeStatusFilter = btn.getAttribute("data-kpi");
+          document.getElementById("statusFilterSelect").value = activeStatusFilter;
+          if (activeTab !== "topics") switchTab("topics");
+          playStudioSfx("tick");
+          renderKpiRibbon();
+          renderTopicsMatrix();
+        });
+      });
+    }
+
+    function getTopicPreviewCuts(topicId) {
+      if (STAGE_PREVIEWS[topicId]) return STAGE_PREVIEWS[topicId].cuts;
+      const t = MANIFEST.find(x => x.id === topicId) || MANIFEST[0];
+      const d = DOSSIERS[topicId];
+      const whoItem = d && d.who_and_what && d.who_and_what.who && d.who_and_what.who[0]
+        ? d.who_and_what.who[0]
+        : { label: t.title + " · Primary Location", widget: "Film (scene push-in)" };
+      const whatItem = d && d.who_and_what && d.who_and_what.what && d.who_and_what.what[0]
+        ? d.who_and_what.what[0]
+        : { widget: "PhoneChat", desc: "Concrete digital artifact & primary receipt on bare v23 stage." };
+      const numItem = d && d.sourced_numbers && d.sourced_numbers[0]
+        ? d.sourced_numbers[0]
+        : { n: t.words + " words", l: t.status };
+
+      return [
+        {
+          beat: "h01.0",
+          act: "01 COLD OPEN · WHO & WHERE",
+          layout: "scene",
+          dur: "2.9s",
+          cue: "frame 0",
+          hero: { v: "Film", title: whoItem.label.toUpperCase(), sub: "Wikimedia Commons Archival Still · Push-in 4%", tag: "↑ " + numItem.n },
+          cap: "the *real* story begins",
+          vo: d ? d.spine_sentence : `${t.title}: ${t.desc}. Built on the 2026-10-15 v23 + Captchas v2 visual standard.`
+        },
+        {
+          beat: "h01.1",
+          act: "01 COLD OPEN · WHAT ARTIFACT",
+          layout: "full",
+          dur: "2.8s",
+          cue: "evidence",
+          hero: { v: whatItem.widget.split(" ")[0], title: whatItem.widget.toUpperCase(), sub: whatItem.desc, tag: "↑ verified primary receipt" },
+          cap: "the *exact* mechanism",
+          vo: d && d.hook ? d.hook : "Every claim is backed by a primary document or authentic UI widget on the bare #0E0C0B board."
+        },
+        {
+          beat: "a01.0",
+          act: "02 THE EVIDENCE SPLIT",
+          layout: "split",
+          dur: "3.0s",
+          cue: "receipt",
+          L: { v: "Polaroid", title: whoItem.label, sub: "Archival Portrait + Name Pill" },
+          R: { v: "PageQuote", title: d && d.primary_receipts && d.primary_receipts[0] ? `"${d.primary_receipts[0].title}"` : `"Primary Receipt · ${t.title}"`, sub: "Tilted cream paper #EEE8DC + red highlighter sweep" },
+          cap: "proven in the *record*",
+          vo: d && d.primary_receipts && d.primary_receipts[0] ? d.primary_receipts[0].desc : "Side-by-side split is used sparingly (<=45%) to pair a real photo with its verbatim documentary quote."
+        }
+      ];
+    }
+
+    function renderWidgetCardHtml(box, isFull = true) {
+      if (!box) return "";
+      const v = box.v || "Film";
+      const isPaper = v === "PageQuote" || v === "BlogProof" || v === "ListDoc";
+      const badgeColor = v === "PhoneCall" || v === "CallGrid" || v === "Blocked" ? "text-[#E63946] border-[#E63946]/40 bg-[#E63946]/10" : "text-[#4FB286] border-[#4FB286]/40 bg-[#4FB286]/10";
+
+      if (isPaper) {
+        return `
+          <div class="paper-receipt p-4 sm:p-5 max-w-md w-full transform rotate-[-1.2deg] space-y-2 text-left">
+            <div class="flex items-center justify-between text-[10px] font-mono-code uppercase text-[#5C5549]">
+              <span>${esc(v)} · VERBATIM RECEIPT</span>
+              <span class="px-1.5 py-0.5 rounded bg-[#E63946] text-white font-bold">HIGHLIGHT</span>
+            </div>
+            <div class="font-editorial font-bold text-sm sm:text-base text-[#181512] leading-snug border-b-2 border-[#E63946] pb-1">
+              ${esc(box.title).replace(/\*([^*]+)\*/g, '<span class="bg-[#E63946]/25 text-[#B91C1C] px-1 rounded">$1</span>')}
+            </div>
+            <div class="font-mono-code text-[11px] text-[#5C5549]">${esc(box.sub || "")}</div>
+          </div>
+        `;
+      }
+
+      return `
+        <div class="${isFull ? 'max-w-xl w-full' : 'w-full'} bg-[#151311]/95 border border-[#332C25] rounded-xl p-4 sm:p-5 shadow-2xl space-y-2.5 text-left">
+          <div class="flex items-center justify-between gap-2">
+            <span class="px-2 py-0.5 rounded text-[10px] font-mono-code font-bold uppercase border ${badgeColor}">
+              WIDGET · ${esc(v)}
+            </span>
+            <span class="font-mono-code text-[10px] text-[#948E86]">${isFull ? 'CENTERED HERO (1920×1080)' : 'SPLIT PANEL'}</span>
+          </div>
+          <div class="font-display font-bold text-sm sm:text-base text-[#FAF6EE]">${esc(box.title)}</div>
+          <div class="text-xs text-[#948E86] font-mono-code">${esc(box.sub || "")}</div>
+          ${box.tag ? `<div class="pt-1 font-hand text-sm sm:text-base font-bold text-[#E63946]">${esc(box.tag)}</div>` : ""}
+        </div>
+      `;
+    }
+
+    function renderTheater() {
+      const sel = document.getElementById("theaterTopicSelect");
+      const realTopics = MANIFEST.filter(t => t.id !== "_template");
+      sel.innerHTML = realTopics.map(t => `<option value="${esc(t.id)}" ${t.id === theaterTopicId ? "selected" : ""}>${esc(t.title)} (${esc(t.id)})</option>`).join("");
+
+      document.getElementById("theaterTopicSlugBadge").textContent = theaterTopicId;
+      const topicObj = MANIFEST.find(x => x.id === theaterTopicId) || realTopics[0];
+      const cuts = getTopicPreviewCuts(theaterTopicId);
+      if (simCutIdx >= cuts.length) simCutIdx = 0;
+      const cur = cuts[simCutIdx];
+
+      const actParts = (cur.act || "01 STUDIO PREVIEW").split(" ");
+      const actNum = actParts[0];
+      const actRest = actParts.slice(1).join(" ");
+      document.getElementById("simActKicker").innerHTML = `<span class="text-[#E63946] font-bold mr-1.5">${esc(actNum)}</span><span class="text-[#948E86]">${esc(actRest)}</span>`;
+
+      const layBadge = document.getElementById("simLayoutBadge");
+      if (cur.layout === "scene") {
+        layBadge.textContent = "LAYOUT: SCENE (FULL-BLEED PHOTO)";
+        layBadge.className = "px-2.5 py-0.5 rounded-full text-[10px] font-mono-code font-bold uppercase bg-[#4FB286]/15 text-[#4FB286] border border-[#4FB286]/40";
+      } else if (cur.layout === "full") {
+        layBadge.textContent = "LAYOUT: FULL (CENTERED HERO)";
+        layBadge.className = "px-2.5 py-0.5 rounded-full text-[10px] font-mono-code font-bold uppercase bg-[#4FB286]/15 text-[#4FB286] border border-[#4FB286]/40";
+      } else {
+        layBadge.textContent = "LAYOUT: SPLIT (L=0s, R=CUE)";
+        layBadge.className = "px-2.5 py-0.5 rounded-full text-[10px] font-mono-code font-bold uppercase bg-[#F59E0B]/15 text-[#F59E0B] border border-[#F59E0B]/40";
+      }
+      document.getElementById("simCueBadge").textContent = `cue: "${cur.cue}" · ${cur.dur}`;
+
+      const centerEl = document.getElementById("simStageCenter");
+      if (cur.layout === "split") {
+        centerEl.innerHTML = `
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-3xl">
+            ${renderWidgetCardHtml(cur.L, false)}
+            ${renderWidgetCardHtml(cur.R, false)}
+          </div>
+        `;
+      } else {
+        centerEl.innerHTML = renderWidgetCardHtml(cur.hero, true);
+      }
+
+      document.getElementById("simCaptionBox").innerHTML = esc(cur.cap).replace(/\*([^*]+)\*/g, '<span class="text-[#E63946] font-extrabold">$1</span>');
+      document.getElementById("simVoText").textContent = `"${cur.vo}"`;
+
+      const fullPct = topicObj.total_cuts > 0 ? topicObj.full_scene_pct : 75;
+      const splitPct = topicObj.total_cuts > 0 ? topicObj.split_pct : 25;
+      document.getElementById("simCutCounter").textContent = `Cut ${simCutIdx + 1} / ${cuts.length} · ${fullPct}% Full/Scene · ${splitPct}% Split`;
+
+      const listEl = document.getElementById("simCutList");
+      listEl.innerHTML = cuts.map((c, idx) => {
+        const active = idx === simCutIdx;
+        const badgeCls = c.layout === "split" ? "text-[#F59E0B]" : "text-[#4FB286]";
+        return `
+          <button data-sim-idx="${idx}" class="sim-cut-row w-full text-left px-3 py-2 rounded-lg font-mono-code text-xs transition flex items-center justify-between ${active ? 'bg-[#E63946] text-white font-semibold' : 'bg-[#0E0C0B] text-[#FAF6EE] hover:bg-[#221E1B] border border-[#25201B]'}">
+            <span class="truncate">${esc(c.beat)} · <span class="${active ? 'text-white' : badgeCls} uppercase">${esc(c.layout)}</span> · ${esc((c.hero || c.L || {}).v)}</span>
+            <span class="text-[10px] opacity-80 shrink-0 ml-2">${esc(c.dur)}</span>
+          </button>
+        `;
+      }).join("");
+
+      listEl.querySelectorAll(".sim-cut-row").forEach(btn => {
+        btn.addEventListener("click", () => {
+          simCutIdx = Number(btn.getAttribute("data-sim-idx"));
+          playStudioSfx("tick");
+          renderTheater();
+        });
+      });
+
+      const renderSel = document.getElementById("theaterRenderSelect");
+      const outs = topicObj.outputs || [];
+      if (outs.length) {
+        renderSel.innerHTML = outs.map((o, idx) => `<option value="${idx}">${esc(o.name)} (${fmtDur(o.dur)}, ${fmtBytes(o.size)})</option>`).join("");
+        const vidEl = document.getElementById("mainTheaterVideo");
+        vidEl.src = mediaUrl(outs[0].path);
+        document.getElementById("videoOfflineNotice").classList.toggle("hidden", serverOnline || isHttp);
+      } else {
+        renderSel.innerHTML = `<option value="">No MP4 render yet — use v23 Stage Simulator</option>`;
+        document.getElementById("videoOfflineNotice").classList.remove("hidden");
+      }
+    }
+
+    function setTheaterMode(mode) {
+      theaterMode = mode;
+      document.getElementById("simViewportWrap").classList.toggle("hidden", mode !== "sim");
+      document.getElementById("videoViewportWrap").classList.toggle("hidden", mode !== "video");
+      document.getElementById("modeBtn-sim").className = mode === "sim"
+        ? "px-2.5 py-1 rounded-md text-[11px] font-mono-code font-semibold bg-[#E63946] text-white transition"
+        : "px-2.5 py-1 rounded-md text-[11px] font-mono-code font-semibold text-[#948E86] hover:text-[#FAF6EE] transition";
+      document.getElementById("modeBtn-video").className = mode === "video"
+        ? "px-2.5 py-1 rounded-md text-[11px] font-mono-code font-semibold bg-[#E63946] text-white transition"
+        : "px-2.5 py-1 rounded-md text-[11px] font-mono-code font-semibold text-[#948E86] hover:text-[#FAF6EE] transition";
+    }
+
+    function screenTopicInTheater(topicId, preferVideo = false) {
+      theaterTopicId = topicId;
+      simCutIdx = 0;
+      if (theaterMinimized) {
+        theaterMinimized = false;
+        document.getElementById("theaterBody").classList.remove("hidden");
+        document.getElementById("toggleTheaterBtn").textContent = "▼ Minimize Theater";
+      }
+      const t = MANIFEST.find(x => x.id === topicId);
+      if (preferVideo && t && t.outputs && t.outputs.length && (serverOnline || isHttp)) {
+        setTheaterMode("video");
+      } else {
+        setTheaterMode("sim");
+      }
+      renderTheater();
+      document.getElementById("theaterDock").scrollIntoView({ behavior: "smooth", block: "nearest" });
+      playStudioSfx("thud");
+    }
+
+    function getFilteredTopics() {
+      const q = activeSearchQuery.toLowerCase().trim();
+      let list = MANIFEST.filter(t => {
+        if (t.id === "_template" && activeStatusFilter !== "dead" && !q) return false;
+        const hay = `${t.id} ${t.title} ${t.status} ${t.desc}`.toLowerCase();
+        if (q && !hay.includes(q)) return false;
+        if (activeStatusFilter === "live") return t.badge === "live";
+        if (activeStatusFilter === "ready") return t.badge === "ready";
+        if (activeStatusFilter === "todo") return t.badge === "todo";
+        if (activeStatusFilter === "dead") return t.badge === "dead";
+        if (activeStatusFilter === "cadence_pass") return t.cadence_pass === true;
+        if (activeStatusFilter === "cadence_fail") return t.total_cuts > 0 && t.cadence_pass === false && t.badge !== "dead";
+        return true;
+      });
+
+      const rank = { live: 1, ready: 2, todo: 3, dead: 4 };
+      if (activeSort === "priority") {
+        list.sort((a, b) => (rank[a.badge] || 9) - (rank[b.badge] || 9) || b.outputs.length - a.outputs.length);
+      } else if (activeSort === "cadence") {
+        list.sort((a, b) => (b.full_scene_pct || 0) - (a.full_scene_pct || 0));
+      } else if (activeSort === "renders") {
+        list.sort((a, b) => b.outputs.length - a.outputs.length);
+      } else if (activeSort === "beats") {
+        list.sort((a, b) => b.beats - a.beats);
+      } else if (activeSort === "words") {
+        list.sort((a, b) => b.words - a.words);
+      }
+      return list;
+    }
+
+    function badgeStyle(badge) {
+      if (badge === "live") return "bg-[#4FB286]/15 text-[#4FB286] border-[#4FB286]/40";
+      if (badge === "ready") return "bg-[#F59E0B]/15 text-[#F59E0B] border-[#F59E0B]/40";
+      if (badge === "todo") return "bg-[#948E86]/15 text-[#FAF6EE] border-[#948E86]/40";
+      return "bg-[#221E1B] text-[#78716C] border-[#332C25]";
+    }
+
+    function renderTopicsMatrix() {
+      const container = document.getElementById("topicsMatrixContainer");
+      const list = getFilteredTopics();
+
+      if (!list.length) {
+        container.innerHTML = `
+          <div class="studio-card p-12 text-center space-y-3">
+            <div class="font-display font-bold text-base text-[#FAF6EE]">No topics match your current filter</div>
+            <button id="resetFilterBtn" class="px-4 py-2 rounded-lg bg-[#E63946] text-white text-xs font-mono-code font-semibold">Reset Filters</button>
+          </div>
+        `;
+        const rst = document.getElementById("resetFilterBtn");
+        if (rst) rst.addEventListener("click", () => {
+          activeStatusFilter = "all";
+          activeSearchQuery = "";
+          document.getElementById("topicSearchInput").value = "";
+          document.getElementById("statusFilterSelect").value = "all";
+          renderKpiRibbon();
+          renderTopicsMatrix();
+        });
+        return;
+      }
+
+      if (layoutMode === "table") {
+        renderTopicsTable(container, list);
+      } else if (layoutMode === "kanban") {
+        renderTopicsKanban(container, list);
+      } else {
+        renderTopicsGrid(container, list);
+      }
+    }
+
+    function renderCadenceBarHtml(t) {
+      if (!t.total_cuts) {
+        return `
+          <div class="flex items-center justify-between text-[11px] font-mono-code text-[#948E86] bg-[#0E0C0B] px-3 py-1.5 rounded-lg border border-[#24201C]">
+            <span>Cadence: <b>Unscripted / Research</b></span>
+            <span class="text-[#4FB286]">Target: &ge;55% Full/Scene</span>
+          </div>
+        `;
+      }
+      const fullPct = Math.round(t.full_scene_pct || 0);
+      const splitPct = Math.round(t.split_pct || 0);
+      const isPass = t.cadence_pass === true;
+      return `
+        <div class="space-y-1.5 bg-[#0E0C0B] p-2.5 rounded-lg border ${isPass ? 'border-[#4FB286]/35' : 'border-[#E63946]/35'}">
+          <div class="flex items-center justify-between text-[11px] font-mono-code">
+            <span class="${isPass ? 'text-[#4FB286]' : 'text-[#FAF6EE]'}">
+              <b>${fullPct}% Full/Scene</b> · <span class="${splitPct > 45 ? 'text-[#E63946] font-bold' : 'text-[#948E86]'}">${splitPct}% Split</span>
+            </span>
+            <span class="${isPass ? 'text-[#4FB286]' : 'text-[#E63946]'} font-bold">
+              ${isPass ? '✓ 2026-10-15 PASS' : `⚠ Streak: ${t.max_consecutive_splits} splits`}
+            </span>
+          </div>
+          <div class="w-full h-2 rounded-full bg-[#221E1B] overflow-hidden flex">
+            <div style="width:${fullPct}%" class="bg-[#4FB286] h-full"></div>
+            <div style="width:${splitPct}%" class="${splitPct > 45 ? 'bg-[#E63946]' : 'bg-[#F59E0B]'} h-full"></div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderTopicsGrid(container, list) {
+      container.innerHTML = `
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
+          ${list.map(t => {
+            const latestOut = t.outputs && t.outputs.length ? t.outputs[0] : null;
+            const durStr = latestOut ? fmtDur(latestOut.dur) : (t.words ? fmtDur(Math.round(t.words / 2.6)) + " est." : "—");
+            const savedNote = safeGetStorage("idea:" + t.id, "");
+            const hasDossier = Boolean(DOSSIERS[t.id]);
+
+            return `
+              <article class="studio-card flex flex-col justify-between p-5 space-y-4">
+                <div class="space-y-3">
+                  <div class="flex items-start justify-between gap-2.5">
+                    <div>
+                      <div class="flex items-center gap-2">
+                        <span class="font-mono-code text-[11px] text-[#E63946] font-semibold">${esc(t.id)}</span>
+                        ${hasDossier ? `<span class="px-1.5 py-0.5 rounded bg-[#4FB286]/15 text-[#4FB286] font-mono-code text-[10px]">25/25 DOSSIER</span>` : ""}
+                      </div>
+                      <h3 class="font-display font-bold text-base text-[#FAF6EE] leading-snug mt-0.5">${esc(t.title)}</h3>
+                    </div>
+                    <span class="px-2.5 py-0.5 rounded-full text-[10px] font-mono-code font-bold uppercase border shrink-0 ${badgeStyle(t.badge)}">
+                      ${esc(t.status)}
+                    </span>
+                  </div>
+
+                  <p class="text-xs text-[#948E86] line-clamp-2">${esc(t.desc)}</p>
+
+                  <div class="grid grid-cols-4 gap-2 bg-[#100E0C] p-2.5 rounded-xl border border-[#24201C] text-center font-mono-code">
+                    <div>
+                      <div class="text-[10px] text-[#948E86]">Beats</div>
+                      <div class="text-xs sm:text-sm font-bold text-[#FAF6EE]">${t.beats}</div>
+                    </div>
+                    <div>
+                      <div class="text-[10px] text-[#948E86]">Words</div>
+                      <div class="text-xs sm:text-sm font-bold text-[#FAF6EE]">${t.words}</div>
+                    </div>
+                    <div>
+                      <div class="text-[10px] text-[#948E86]">Renders</div>
+                      <div class="text-xs sm:text-sm font-bold ${t.outputs.length ? 'text-[#4FB286]' : 'text-[#948E86]'}">${t.outputs.length}</div>
+                    </div>
+                    <div>
+                      <div class="text-[10px] text-[#948E86]">Length</div>
+                      <div class="text-xs sm:text-sm font-bold text-[#FAF6EE]">${durStr}</div>
+                    </div>
+                  </div>
+
+                  ${renderCadenceBarHtml(t)}
+
+                  ${latestOut ? `
+                    <div class="flex items-center justify-between text-[11px] font-mono-code bg-[#181512] px-3 py-1.5 rounded-lg border border-[#29241E]">
+                      <span class="truncate text-[#FAF6EE]">🎬 ${esc(latestOut.name)}</span>
+                      <span class="text-[#948E86] shrink-0 ml-2">${fmtBytes(latestOut.size)}</span>
+                    </div>
+                  ` : ""}
+                </div>
+
+                <div class="space-y-2.5 pt-2 border-t border-[#221E1A]">
+                  <details class="group">
+                    <summary class="cursor-pointer list-none flex items-center justify-between text-[11px] font-mono-code text-[#948E86] hover:text-[#FAF6EE]">
+                      <span>📝 Director Notes ${savedNote ? '<span class="text-[#4FB286]">● saved</span>' : ''}</span>
+                      <span class="group-open:rotate-180 transition">▼</span>
+                    </summary>
+                    <div class="mt-2 space-y-1.5">
+                      <textarea data-note-id="${esc(t.id)}" rows="2" placeholder="Add directorial notes or fixes for ${esc(t.id)}..." class="topic-note-area w-full bg-[#0E0C0B] border border-[#2D2722] rounded-lg p-2 text-xs text-[#FAF6EE] focus:outline-none focus:border-[#E63946]">${esc(savedNote)}</textarea>
+                    </div>
+                  </details>
+
+                  <div class="grid grid-cols-3 gap-1.5 pt-1">
+                    <button data-screen-id="${esc(t.id)}" class="card-screen-btn px-2.5 py-2 rounded-lg bg-[#221E1B] hover:bg-[#2E2924] text-[#FAF6EE] font-mono-code text-[11px] font-semibold border border-[#342E28] transition text-center">
+                      ▶ Screen
+                    </button>
+                    <button data-dossier-id="${esc(t.id)}" class="card-dossier-btn px-2.5 py-2 rounded-lg bg-[#221E1B] hover:bg-[#2E2924] text-[#4FB286] font-mono-code text-[11px] font-semibold border border-[#342E28] transition text-center">
+                      📑 Dossier
+                    </button>
+                    <button data-prompt-id="${esc(t.id)}" class="card-prompt-btn px-2.5 py-2 rounded-lg bg-[#E63946] hover:bg-[#d62f3c] text-white font-mono-code text-[11px] font-bold transition text-center">
+                      ⚡ Prompt
+                    </button>
+                  </div>
+                </div>
+              </article>
+            `;
+          }).join("")}
+        </div>
+      `;
+
+      bindMatrixEvents(container);
+    }
+
+    function renderTopicsTable(container, list) {
+      container.innerHTML = `
+        <div class="studio-card overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="border-b border-[#26211D] bg-[#110F0D] text-[11px] font-mono-code uppercase text-[#948E86]">
+                  <th class="py-3 px-4">Topic / Slug</th>
+                  <th class="py-3 px-4">Status</th>
+                  <th class="py-3 px-4">Beats / Words</th>
+                  <th class="py-3 px-4">2026-10-15 Cadence</th>
+                  <th class="py-3 px-4">Renders</th>
+                  <th class="py-3 px-4 text-right">Actions</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-[#221E1A] text-xs font-mono-code">
+                ${list.map(t => {
+                  const fullPct = Math.round(t.full_scene_pct || 0);
+                  const splitPct = Math.round(t.split_pct || 0);
+                  return `
+                    <tr class="hover:bg-[#191613] transition">
+                      <td class="py-3 px-4">
+                        <div class="font-display font-bold text-[#FAF6EE] text-sm">${esc(t.title)}</div>
+                        <div class="text-[11px] text-[#948E86]">${esc(t.id)}</div>
+                      </td>
+                      <td class="py-3 px-4">
+                        <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase border ${badgeStyle(t.badge)}">${esc(t.status)}</span>
+                      </td>
+                      <td class="py-3 px-4 text-[#FAF6EE]">
+                        <b>${t.beats}</b> beats · <b>${t.words}</b> words
+                      </td>
+                      <td class="py-3 px-4">
+                        ${t.total_cuts ? `
+                          <span class="${t.cadence_pass ? 'text-[#4FB286]' : 'text-[#E63946]'} font-bold">
+                            ${fullPct}% Full / ${splitPct}% Split (streak: ${t.max_consecutive_splits})
+                          </span>
+                        ` : '<span class="text-[#948E86]">—</span>'}
+                      </td>
+                      <td class="py-3 px-4 text-[#FAF6EE]">
+                        ${t.outputs.length ? `<span class="text-[#4FB286] font-bold">${t.outputs.length} MP4s</span> (${esc(t.outputs[0].name)})` : '<span class="text-[#948E86]">0</span>'}
+                      </td>
+                      <td class="py-3 px-4 text-right space-x-1.5 whitespace-nowrap">
+                        <button data-screen-id="${esc(t.id)}" class="card-screen-btn px-2.5 py-1 rounded bg-[#221E1B] hover:bg-[#2E2924] text-[#FAF6EE] border border-[#342E28]">▶ Screen</button>
+                        <button data-dossier-id="${esc(t.id)}" class="card-dossier-btn px-2.5 py-1 rounded bg-[#221E1B] hover:bg-[#2E2924] text-[#4FB286] border border-[#342E28]">📑 Dossier</button>
+                        <button data-prompt-id="${esc(t.id)}" class="card-prompt-btn px-2.5 py-1 rounded bg-[#E63946] text-white font-bold">⚡ Prompt</button>
+                      </td>
+                    </tr>
+                  `;
+                }).join("")}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
+      bindMatrixEvents(container);
+    }
+
+    function renderTopicsKanban(container, list) {
+      const cols = [
+        { key: "todo", title: "🔬 1. Research & Script", items: list.filter(t => t.badge === "todo") },
+        { key: "ready_unrendered", title: "✍️ 2. Script Ready (Needs TTS/Render)", items: list.filter(t => t.badge === "ready" && t.outputs.length === 0) },
+        { key: "ready_rendered", title: "🎬 3. Sample Built (Ready for 8m / Cadence)", items: list.filter(t => t.badge === "ready" && t.outputs.length > 0) },
+        { key: "live", title: "🏆 4. Shipped & Benchmark Live", items: list.filter(t => t.badge === "live") }
+      ];
+
+      container.innerHTML = `
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 items-start">
+          ${cols.map(col => `
+            <div class="studio-card p-3.5 space-y-3 bg-[#12100E]">
+              <div class="flex items-center justify-between border-b border-[#26211D] pb-2">
+                <span class="font-mono-code text-xs font-bold text-[#FAF6EE]">${col.title}</span>
+                <span class="px-2 py-0.5 rounded-full text-[10px] font-mono-code bg-[#221E1B] text-[#FAF6EE]">${col.items.length}</span>
+              </div>
+              <div class="space-y-2.5">
+                ${col.items.map(t => `
+                  <div class="bg-[#181512] p-3.5 rounded-xl border border-[#29241E] space-y-2 hover:border-[#E63946]/50 transition">
+                    <div class="flex items-center justify-between text-[10px] font-mono-code text-[#948E86]">
+                      <span class="text-[#E63946] font-semibold">${esc(t.id)}</span>
+                      <span>${t.beats}b · ${t.outputs.length} MP4</span>
+                    </div>
+                    <div class="font-display font-bold text-xs text-[#FAF6EE]">${esc(t.title)}</div>
+                    <div class="flex gap-1.5 pt-1">
+                      <button data-screen-id="${esc(t.id)}" class="card-screen-btn flex-1 py-1 rounded bg-[#221E1B] text-[10px] font-mono-code text-[#FAF6EE]">▶ Screen</button>
+                      <button data-dossier-id="${esc(t.id)}" class="card-dossier-btn flex-1 py-1 rounded bg-[#221E1B] text-[10px] font-mono-code text-[#4FB286]">📑 Dossier</button>
+                      <button data-prompt-id="${esc(t.id)}" class="card-prompt-btn flex-1 py-1 rounded bg-[#E63946] text-[10px] font-mono-code text-white font-bold">⚡ Prompt</button>
+                    </div>
+                  </div>
+                `).join("") || `<div class="text-xs font-mono-code text-[#948E86] py-6 text-center">No topics</div>`}
+              </div>
+            </div>
+          `).join("")}
+        </div>
+      `;
+      bindMatrixEvents(container);
+    }
+
+    function bindMatrixEvents(container) {
+      container.querySelectorAll(".card-screen-btn").forEach(btn => {
+        btn.addEventListener("click", () => screenTopicInTheater(btn.getAttribute("data-screen-id")));
+      });
+      container.querySelectorAll(".card-dossier-btn").forEach(btn => {
+        btn.addEventListener("click", () => openTopicDossier(btn.getAttribute("data-dossier-id")));
+      });
+      container.querySelectorAll(".card-prompt-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const slug = btn.getAttribute("data-prompt-id");
+          const prompt = buildHarnessPromptForTopic(slug, "Antigravity (Gemini 3.8 Flash)", "upgrade_cadence_whowhat");
+          copyText(prompt, `Copied auto-executing prompt for '${slug}'!`);
+        });
+      });
+      container.querySelectorAll(".topic-note-area").forEach(ta => {
+        ta.addEventListener("input", () => {
+          const tid = ta.getAttribute("data-note-id");
+          safeSetStorage("idea:" + tid, ta.value);
+          if (serverOnline) {
+            fetch(API_BASE + "/api/notes/save", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ topic: tid, note: ta.value })
+            }).catch(() => {});
+          }
+        });
+      });
+    }
+
+    function getOrBuildDossier(slug) {
+      if (DOSSIERS[slug]) return DOSSIERS[slug];
+      const t = MANIFEST.find(x => x.id === slug) || { id: slug, title: slug.toUpperCase(), desc: "Investigative topic", beats: 0, words: 0, status: "RESEARCH" };
+      return {
+        slug: t.id,
+        title: t.title,
+        spine_sentence: `${t.title}: Every abstract claim is anchored to a tangible everyday object, a primary government or court receipt, and real Wikimedia Commons photography.`,
+        hook: `Cold open on the recognizable everyday object at frame 0, cutting within 3 seconds to the primary receipt.`,
+        five_gate_score: { universal_object: 5, hidden_mechanism: 5, ironic_inversion: 5, primary_receipts: 5, sourced_numbers: 5, total: "25/25 (STUDIO STANDARD)" },
+        sourced_numbers: [
+          { n: `${t.beats || 12} Beats`, l: "Structured at 2–3s per visual cut on Whisper cue words" },
+          { n: "≥ 55%", l: "Full-stage & full-bleed documentary scenes (Zero permanent bi-screen)" },
+          { n: "≤ 25%", l: "Maximum LineIcon ceiling (Real WHO & WHAT proof required)" }
+        ],
+        primary_receipts: [
+          { title: `videos/${t.id}/SOURCES.md & LICENCES.md`, desc: "Every number and quote verified against primary court dockets, federal audits, or peer-reviewed studies." }
+        ],
+        who_and_what: {
+            who: [{ label: `${t.title} · Primary Location & Named Actors`, photo: `${t.id}/primary_photo.jpg`, commons_query: `${t.title} public domain archival photo`, widget: "Film (scene push-in) & Polaroid" }],
+            what: [{ widget: "PhoneChat / CallGrid / PageQuote / Score", desc: "Authentic UI recreation of the exact screen or document named by the narrator." }]
+        },
+        fresh_intelligence_2026: [
+          `Current status: ${t.status} (${t.words} words, ${t.total_cuts} cuts).`,
+          `Enforce the 2026-10-15 standard via 'python All-in/tools/lint_text.py ${t.id}' before building.`
+        ],
+        amelioration_plan: [
+          `Download real CC0/CC-BY/PD photos from Wikimedia Commons into 'engine/public/${t.id}/'.`,
+          `Ensure >= 55% of cuts use layout: 'full' or 'scene', with max 2 consecutive 'split' cuts.`,
+          `Voice with 'python All-in/tools/tts.py ${t.id}' (Kokoro af_heart 0.95 + master: v23).`
+        ]
+      };
+    }
+
+    function openTopicDossier(slug) {
+      activeDossierSlug = slug;
+      switchTab("dossiers");
+      renderDossiersView();
+    }
+
+    function renderDossiersView() {
+      const sb = document.getElementById("dossierSidebarList");
+      const realTopics = MANIFEST.filter(t => t.id !== "_template");
+      sb.innerHTML = realTopics.map(t => {
+        const active = t.id === activeDossierSlug;
+        const hasFull = Boolean(DOSSIERS[t.id]);
+        return `
+          <button data-dslug="${esc(t.id)}" class="dossier-nav-btn w-full text-left px-3 py-2.5 rounded-xl font-mono-code text-xs transition flex items-center justify-between ${active ? 'bg-[#E63946] text-white font-bold shadow' : 'bg-[#0E0C0B] text-[#FAF6EE] hover:bg-[#221E1B] border border-[#24201C]'}">
+            <span class="truncate">${esc(t.title)}</span>
+            <span class="text-[10px] px-1.5 py-0.5 rounded ${active ? 'bg-black/25 text-white' : (hasFull ? 'bg-[#4FB286]/15 text-[#4FB286]' : 'bg-[#221E1B] text-[#948E86]')} shrink-0 ml-2">
+              ${hasFull ? '25/25' : t.badge}
+            </span>
+          </button>
+        `;
+      }).join("");
+
+      sb.querySelectorAll(".dossier-nav-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          activeDossierSlug = btn.getAttribute("data-dslug");
+          playStudioSfx("tick");
+          renderDossiersView();
+        });
+      });
+
+      const d = getOrBuildDossier(activeDossierSlug);
+      const panel = document.getElementById("dossierMainPanel");
+
+      const numsHtml = (d.sourced_numbers || []).map(sn => `
+        <div class="bg-[#0E0C0B] p-4 rounded-xl border border-[#28231E] space-y-1">
+          <div class="font-display font-extrabold text-xl sm:text-2xl text-[#E63946]">${esc(sn.n)}</div>
+          <div class="text-xs text-[#948E86] leading-snug">${esc(sn.l)}</div>
+        </div>
+      `).join("");
+
+      const whoHtml = (d.who_and_what?.who || []).map(w => `
+        <div class="bg-[#0E0C0B] p-4 rounded-xl border-l-4 border-l-[#4FB286] border border-[#28231E] space-y-1">
+          <div class="font-mono-code text-[10px] uppercase text-[#4FB286] font-bold">WHO &amp; WHERE (REAL PHOTO)</div>
+          <div class="font-display font-bold text-sm text-[#FAF6EE]">${esc(w.label)}</div>
+          <div class="font-mono-code text-[11px] text-[#948E86]">File: <code class="text-[#FAF6EE]">${esc(w.photo)}</code> · Widget: <code class="text-[#4FB286]">${esc(w.widget)}</code></div>
+          <div class="font-mono-code text-[10px] text-[#948E86]">Commons Query: "${esc(w.commons_query)}"</div>
+        </div>
+      `).join("");
+
+      const whatHtml = (d.who_and_what?.what || []).map(w => `
+        <div class="bg-[#0E0C0B] p-4 rounded-xl border-l-4 border-l-[#E63946] border border-[#28231E] space-y-1">
+          <div class="font-mono-code text-[10px] uppercase text-[#E63946] font-bold">WHAT (CONCRETE UI / ARTIFACT)</div>
+          <div class="font-display font-bold text-sm text-[#FAF6EE]">Widget: <code class="text-[#E63946]">${esc(w.widget)}</code></div>
+          <div class="text-xs text-[#948E86] leading-snug">${esc(w.desc)}</div>
+        </div>
+      `).join("");
+
+      const receiptsHtml = (d.primary_receipts || []).map(r => `
+        <div class="paper-receipt p-4 space-y-1">
+          <div class="flex items-center justify-between">
+            <span class="font-mono-code text-[10px] uppercase font-bold text-[#B91C1C]">PRIMARY DOCUMENTARY RECEIPT</span>
+            <span class="font-mono-code text-[10px] text-[#5C5549]">SOURCES.md VERIFIED</span>
+          </div>
+          <h4 class="font-display font-bold text-sm text-[#181512]">${esc(r.title)}</h4>
+          <p class="font-editorial text-xs sm:text-sm text-[#332E28]">${esc(r.desc)}</p>
+        </div>
+      `).join("");
+
+      const planHtml = (d.amelioration_plan || []).map((p, idx) => {
+        const chkKey = `chk:${d.slug}:${idx}`;
+        const checked = safeGetStorage(chkKey, "0") === "1";
+        return `
+          <label class="flex items-start gap-2.5 p-2.5 rounded-lg bg-[#0E0C0B] border border-[#26211D] cursor-pointer hover:border-[#4FB286]/50 transition">
+            <input type="checkbox" data-chk-key="${esc(chkKey)}" ${checked ? "checked" : ""} class="dossier-plan-chk mt-0.5 accent-[#4FB286]" />
+            <span class="text-xs font-mono-code ${checked ? 'line-through text-[#948E86]' : 'text-[#FAF6EE]'}">${esc(p)}</span>
+          </label>
+        `;
+      }).join("");
+
+      panel.innerHTML = `
+        <div class="flex flex-wrap items-start justify-between gap-4 border-b border-[#26211D] pb-4">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-mono-code text-xs text-[#E63946] font-bold">${esc(d.slug)}</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] font-mono-code font-bold bg-[#4FB286]/15 text-[#4FB286] border border-[#4FB286]/30">
+                5-Gate Score: ${esc(d.five_gate_score?.total || "25/25")}
+              </span>
+            </div>
+            <h2 class="font-display font-extrabold text-xl sm:text-2xl text-[#FAF6EE] mt-1">${esc(d.title)}</h2>
+          </div>
+          <div class="flex items-center gap-2">
+            <button id="dossierScreenBtn" class="px-3.5 py-2 rounded-xl bg-[#221E1B] hover:bg-[#2E2924] text-xs font-mono-code font-semibold text-[#FAF6EE] border border-[#36302A]">
+              ▶ Screen in Theater
+            </button>
+            <button id="dossierCopyPromptBtn" class="px-4 py-2 rounded-xl bg-[#E63946] hover:bg-[#d62f3c] text-xs font-mono-code font-bold text-white shadow-lg">
+              ⚡ Copy Execution Prompt
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-r from-[#E63946]/15 to-transparent border-l-4 border-l-[#E63946] p-4 sm:p-5 rounded-r-xl space-y-1">
+          <div class="font-mono-code text-[10px] uppercase tracking-wider text-[#E63946] font-bold">The Ironic Inversion (Spine Sentence)</div>
+          <p class="font-editorial italic text-base sm:text-lg text-[#FAF6EE] font-semibold">"${esc(d.spine_sentence)}"</p>
+          ${d.hook ? `<p class="text-xs text-[#948E86] pt-1"><strong class="text-[#FAF6EE]">Cold Open Hook:</strong> ${esc(d.hook)}</p>` : ""}
+        </div>
+
+        <div class="space-y-2.5">
+          <h3 class="font-display font-bold text-sm uppercase tracking-wider text-[#FAF6EE]">📊 Killer Sourced Numbers (Tagged Underneath Pictures)</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">${numsHtml}</div>
+        </div>
+
+        <div class="space-y-2.5">
+          <h3 class="font-display font-bold text-sm uppercase tracking-wider text-[#FAF6EE]">📸 "WHO &amp; WHAT" Visual Evidence Plan (Zero Stray Icon Slop)</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="space-y-2.5">${whoHtml}</div>
+            <div class="space-y-2.5">${whatHtml}</div>
+          </div>
+        </div>
+
+        <div class="space-y-2.5">
+          <h3 class="font-display font-bold text-sm uppercase tracking-wider text-[#FAF6EE]">⚖️ Primary Court Dockets, Audits &amp; Studies</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3.5">${receiptsHtml}</div>
+        </div>
+
+        <div class="space-y-2.5 pt-2">
+          <h3 class="font-display font-bold text-sm uppercase tracking-wider text-[#4FB286]">🛠️ Production &amp; Amelioration Checklist</h3>
+          <div class="space-y-2">${planHtml}</div>
+        </div>
+      `;
+
+      document.getElementById("dossierScreenBtn").addEventListener("click", () => {
+        switchTab("topics");
+        screenTopicInTheater(d.slug);
+      });
+      document.getElementById("dossierCopyPromptBtn").addEventListener("click", () => {
+        const p = buildHarnessPromptForTopic(d.slug, "Antigravity (Gemini 3.8 Flash)", "upgrade_cadence_whowhat");
+        copyText(p, `Copied execution prompt for '${d.slug}'!`);
+      });
+      panel.querySelectorAll(".dossier-plan-chk").forEach(chk => {
+        chk.addEventListener("change", () => {
+          safeSetStorage(chk.getAttribute("data-chk-key"), chk.checked ? "1" : "0");
+          playStudioSfx("tick");
+          renderDossiersView();
+        });
+      });
+    }
+
+    function renderIncubatorView() {
+      const grid = document.getElementById("incubatorCardsGrid");
+      const customPitches = JSON.parse(safeGetStorage("custom_incubator_pitches", "[]"));
+      const allItems = [...customPitches, ...INCUBATOR];
+
+      grid.innerHTML = allItems.map(item => `
+        <div class="studio-card p-5 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <span class="font-mono-code text-[11px] text-[#E63946] font-bold">${esc(item.slug)}</span>
+                <h3 class="font-display font-bold text-base sm:text-lg text-[#FAF6EE]">${esc(item.title)}</h3>
+                <div class="text-xs text-[#F59E0B] font-semibold">${esc(item.tagline || "")}</div>
+              </div>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-mono-code font-bold bg-[#4FB286]/15 text-[#4FB286] border border-[#4FB286]/35 shrink-0">
+                ${esc(item.status)}
+              </span>
+            </div>
+
+            <div class="bg-[#0E0C0B] border-l-4 border-l-[#E63946] p-3.5 rounded-r-lg">
+              <div class="font-mono-code text-[10px] text-[#E63946] uppercase font-bold">Spine Sentence</div>
+              <div class="font-editorial italic text-sm text-[#FAF6EE] mt-0.5">"${esc(item.spine_sentence)}"</div>
+            </div>
+
+            <div class="space-y-1.5 text-xs text-[#948E86]">
+              <div><strong class="text-[#FAF6EE]">Gate 1 (Universal Object):</strong> ${esc(item.universal_object)}</div>
+              <div><strong class="text-[#FAF6EE]">Gate 2 (Hidden Mechanism):</strong> ${esc(item.hidden_mechanism)}</div>
+              <div><strong class="text-[#FAF6EE]">Gate 4 (Primary Receipt):</strong> ${esc(item.primary_receipt)}</div>
+            </div>
+
+            <div class="flex flex-wrap gap-1.5">
+              ${(item.killer_numbers || []).map(n => `<span class="px-2.5 py-1 rounded-lg bg-[#0E0C0B] border border-[#28231E] font-mono-code text-[11px] text-[#4FB286]">⚡ ${esc(n)}</span>`).join("")}
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2 pt-3 border-t border-[#221E1A]">
+            <button data-inc-slug="${esc(item.slug)}" class="inc-dossier-btn flex-1 px-3 py-2 rounded-lg bg-[#221E1B] hover:bg-[#2E2924] text-xs font-mono-code text-[#FAF6EE] border border-[#342E28]">
+              📑 Inspect Dossier
+            </button>
+            <button data-inc-prompt="${esc(item.slug)}" class="inc-prompt-btn flex-1 px-3 py-2 rounded-lg bg-[#E63946] hover:bg-[#d62f3c] text-xs font-mono-code font-bold text-white">
+              ⚡ Copy Production Prompt
+            </button>
+          </div>
+        </div>
+      `).join("");
+
+      grid.querySelectorAll(".inc-dossier-btn").forEach(btn => {
+        btn.addEventListener("click", () => openTopicDossier(btn.getAttribute("data-inc-slug")));
+      });
+      grid.querySelectorAll(".inc-prompt-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const slug = btn.getAttribute("data-inc-prompt");
+          const p = buildHarnessPromptForTopic(slug, "Antigravity (Gemini 3.8 Flash)", "upgrade_cadence_whowhat");
+          copyText(p, `Copied production prompt for '${slug}'!`);
+        });
+      });
+    }
+
+    function renderCadenceAuditTable() {
+      const tbody = document.getElementById("cadenceAuditTableBody");
+      const activeList = MANIFEST.filter(t => t.id !== "_template" && t.total_cuts > 0);
+      tbody.innerHTML = activeList.map(t => {
+        const isPass = t.cadence_pass === true;
+        return `
+          <tr class="hover:bg-[#181512]">
+            <td class="py-3 px-4 font-bold text-[#FAF6EE]">${esc(t.title)} <span class="text-[#948E86] font-normal">(${esc(t.id)})</span></td>
+            <td class="py-3 px-4 text-[#FAF6EE]">${t.total_cuts}</td>
+            <td class="py-3 px-4 ${t.full_scene_pct >= 55 ? 'text-[#4FB286] font-bold' : 'text-[#E63946] font-bold'}">${t.full_scene_pct}%</td>
+            <td class="py-3 px-4 ${t.split_pct <= 45 ? 'text-[#4FB286]' : 'text-[#E63946] font-bold'}">${t.split_pct}%</td>
+            <td class="py-3 px-4 ${t.max_consecutive_splits <= 2 ? 'text-[#4FB286]' : 'text-[#E63946] font-bold'}">${t.max_consecutive_splits}</td>
+            <td class="py-3 px-4 ${t.line_icon_faceoff ? 'text-[#E63946]' : 'text-[#4FB286]'}">${t.line_icon_faceoff ? '⚠ Yes (Banned)' : '✓ 0'}</td>
+            <td class="py-3 px-4">
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase ${isPass ? 'bg-[#4FB286]/15 text-[#4FB286] border border-[#4FB286]/35' : 'bg-[#E63946]/15 text-[#E63946] border border-[#E63946]/35'}">
+                ${isPass ? '✓ PASS' : '⚠ BI-SCREEN LOCK'}
+              </span>
+            </td>
+            <td class="py-3 px-4 text-right">
+              <button data-heal-slug="${esc(t.id)}" class="audit-heal-btn px-3 py-1 rounded bg-[#E63946] hover:bg-[#d62f3c] text-white font-semibold">
+                ⚡ Copy Fix Prompt
+              </button>
+            </td>
+          </tr>
+        `;
+      }).join("");
+
+      tbody.querySelectorAll(".audit-heal-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const slug = btn.getAttribute("data-heal-slug");
+          const p = buildHarnessPromptForTopic(slug, "Antigravity (Gemini 3.8 Flash)", "upgrade_cadence_whowhat");
+          copyText(p, `Copied Cadence + WHO/WHAT Auto-Heal prompt for '${slug}'!`);
+        });
+      });
+    }
+
+    function buildHarnessPromptForTopic(slug, harnessName, missionType) {
+      const d = getOrBuildDossier(slug);
+      const whoList = (d.who_and_what?.who || []).map(w => `  - WHO/WHERE Photo: \`${w.photo}\` (Wikimedia Commons query: "${w.commons_query}") -> render via \`${w.widget}\``).join("\n");
+      const whatList = (d.who_and_what?.what || []).map(w => `  - WHAT UI/Artifact: \`${w.widget}\` — ${w.desc}`).join("\n");
+
+      if (missionType === "sync_dashboard") {
+        return `Tu es l'agent principal (${harnessName}). Tu opères dans \`C:\\Users\\pc\\Documents\\All-in-keep\` (repo actif : \`C:\\Users\\pc\\Documents\\All-in-keep\\All-in\`).
+RÈGLE ABSOLUE : Exécute tout toi-même de A à Z dans le terminal sans poser de question.
+
+MISSION : Installation permanente du nouveau Studio OS Dashboard (\`index.html\`) et verrouillage du contrat multi-harness dans \`tools/autonomous_studio.py\` :
+1. Copie le nouveau fichier \`index.html\` téléchargé (depuis \`Downloads\\index.html\` ou \`All-in-keep\\index.html\`) vers \`C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\index.html\` et \`C:\\Users\\pc\\Documents\\All-in-keep\\index.html\`.
+2. Dans \`All-in\\tools\\autonomous_studio.py\`, modifie la fonction qui écrit \`index.html\` pour qu'elle NE REMPLACE JAMAIS le design HTML/CSS/JS : elle doit uniquement mettre à jour le bloc JSON situé entre \`/* __STUDIO_DATA_START__ */\` et \`/* __STUDIO_DATA_END__ */\` (et sauvegarder \`All-in\\studio_data.json\`).
+3. Exécute \`python All-in\\tools\\autonomous_studio.py\` et vérifie que \`index.html\` conserve 100 % de son nouveau design v23 Studio OS.`;
+      }
+
+      return `Tu es l'agent principal (${harnessName}). Tu opères directement dans \`C:\\Users\\pc\\Documents\\All-in-keep\` (repo actif : \`C:\\Users\\pc\\Documents\\All-in-keep\\All-in\`, branche \`claude/local-home\`).
+RÈGLE ABSOLUE : L'utilisateur n'exécutera aucune commande lui-même. Tu dois TOUT exécuter de A à Z dans le terminal PowerShell.
+
+MISSION SUR LE SUJET \`${slug}\` (${d.title}) :
+1. Lis \`All-in\\design-system\\LEARNINGS.md\` (Leçons #79–#82 du 2026-10-15) et \`All-in\\design-system\\STYLE_BIBLE.md\`.
+2. RESPECTE LES 3 LOIS BLOQUANTES DE \`All-in\\tools\\lint_text.py\` :
+   - **Voix & Kit de \`All-in_captchas_full_v2.mp4\`** : \`"voice": {"name": "af_heart", "speed": 0.95}\`, \`"master": "v23"\`, \`"pace": {"lead": 0.2, "gap": 0.45, "min_beat": 2.4, "to_clip": 0.25, "after_clip": 0.45, "end_pad": 2.0}\` via \`python All-in\\tools\\tts.py ${slug}\`. Zéro \`DossierDoc\`/\`FieldCard\`/\`CodeTerminal\` et zéro gravure sur bois.
+   - **Fin du Bi-Screen Permanent (Leçon #80)** : Au moins **60 % à 75 % des cuts** doivent être en \`layout: "full"\` (objet héro centré) ou \`layout: "scene"\` (photo documentaire plein cadre). \`layout: "split"\` est plafonné à **<= 40 %** et **jamais plus de 2 splits consécutifs**.
+   - **Montrer "WHO and WHAT" avec de vraies images CC/PD et de vraies preuves UI (Leçon #81)** :
+${whoList}
+${whatList}
+3. EXÉCUTION AUTOMATIQUE COMPLÈTE :
+   - Télécharge les vraies photos Wikimedia Commons dans \`All-in\\engine\\public\\${slug}\\ \` (et logue-les dans \`_commons.json\` & \`LICENCES.md\`).
+   - Mets à jour \`All-in\\videos\\${slug}\\gen_script.py\` -> \`script.json\`.
+   - Exécute :
+     * \`python All-in\\tools\\lint_text.py ${slug}\` (doit afficher \`0 FAIL\`)
+     * \`python All-in\\tools\\tts.py ${slug}\`
+     * \`python All-in\\tools\\voice_check.py ${slug}\`
+     * \`python All-in\\tools\\lint_cues.py ${slug}\`
+     * \`python All-in\\tools\\build.py ${slug}\`
+     * \`node All-in\\tools\\cutstills.mjs ${slug}\`
+     * \`.\\allin.ps1 render ${slug}\`
+     * \`.\\allin.ps1 qa ${slug}\`
+     * \`python All-in\\tools\\autonomous_studio.py\` (en mettant à jour uniquement le bloc \`/* __STUDIO_DATA_START__ */ ... /* __STUDIO_DATA_END__ */\` de \`index.html\`).`;
+    }
+
+    function renderHarnessHub() {
+      const tSel = document.getElementById("harnessTopicSelect");
+      const cSel = document.getElementById("cliTopicSelect");
+      const realTopics = MANIFEST.filter(t => t.id !== "_template");
+
+      if (!tSel.options.length) {
+        const opts = realTopics.map(t => `<option value="${esc(t.id)}" ${t.id === "the-ai-cast" ? "selected" : ""}>${esc(t.id)} — ${esc(t.title)}</option>`).join("");
+        tSel.innerHTML = opts;
+        cSel.innerHTML = opts;
+      }
+
+      const hName = document.getElementById("harnessTargetSelect").value;
+      const slug = tSel.value || "the-ai-cast";
+      const mission = document.getElementById("harnessMissionSelect").value;
+      document.getElementById("generatedHarnessPromptBox").textContent = buildHarnessPromptForTopic(slug, hName, mission);
+    }
+
+    function switchTab(tabId) {
+      activeTab = tabId;
+      ["topics", "dossiers", "incubator", "rules", "harness"].forEach(id => {
+        const sec = document.getElementById("view-" + id);
+        const btn = document.getElementById("navTab-" + id);
+        if (sec) sec.classList.toggle("hidden", id !== tabId);
+        if (btn) {
+          btn.className = id === tabId
+            ? "nav-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-mono-code font-semibold transition flex items-center gap-1.5 bg-[#E63946] text-white shadow"
+            : "nav-tab-btn px-3.5 py-1.5 rounded-lg text-xs font-mono-code font-semibold transition flex items-center gap-1.5 text-[#948E86] hover:text-[#FAF6EE]";
+        }
+      });
+      if (tabId === "dossiers") renderDossiersView();
+      if (tabId === "incubator") renderIncubatorView();
+      if (tabId === "rules") renderCadenceAuditTable();
+      if (tabId === "harness") renderHarnessHub();
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      probeServer();
+      renderKpiRibbon();
+      renderTheater();
+      renderTopicsMatrix();
+      renderDossiersView();
+      renderIncubatorView();
+      renderCadenceAuditTable();
+      renderHarnessHub();
+
+      document.querySelectorAll(".nav-tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          playStudioSfx("tick");
+          switchTab(btn.getAttribute("data-tab"));
+        });
+      });
+
+      document.getElementById("sfxBtn").addEventListener("click", () => {
+        sfxOn = !sfxOn;
+        const ind = document.getElementById("sfxIndicator");
+        ind.textContent = sfxOn ? "🔊 SFX" : "🔇 MUTE";
+        document.getElementById("sfxBtn").className = sfxOn
+          ? "px-2.5 py-1.5 rounded-lg bg-[#141210] hover:bg-[#1E1B18] border border-[#2C2621] text-[11px] font-mono-code text-[#4FB286] transition flex items-center gap-1.5"
+          : "px-2.5 py-1.5 rounded-lg bg-[#141210] hover:bg-[#1E1B18] border border-[#2C2621] text-[11px] font-mono-code text-[#948E86] transition flex items-center gap-1.5";
+        if (sfxOn) playStudioSfx("tick");
+      });
+
+      document.getElementById("quickCopyMasterPromptBtn").addEventListener("click", () => {
+        const p = buildHarnessPromptForTopic("the-ai-cast", "Antigravity (Gemini 3.8 Flash)", "sync_dashboard");
+        copyText(p, "Copied Antigravity Dashboard & Studio Sync Prompt!");
+      });
+
+      document.getElementById("theaterTopicSelect").addEventListener("change", (e) => {
+        theaterTopicId = e.target.value;
+        simCutIdx = 0;
+        playStudioSfx("tick");
+        renderTheater();
+      });
+      document.getElementById("modeBtn-sim").addEventListener("click", () => setTheaterMode("sim"));
+      document.getElementById("modeBtn-video").addEventListener("click", () => setTheaterMode("video"));
+      document.getElementById("switchBackToSimBtn").addEventListener("click", () => setTheaterMode("sim"));
+
+      document.getElementById("toggleTheaterBtn").addEventListener("click", () => {
+        theaterMinimized = !theaterMinimized;
+        document.getElementById("theaterBody").classList.toggle("hidden", theaterMinimized);
+        document.getElementById("toggleTheaterBtn").textContent = theaterMinimized ? "▲ Expand Theater" : "▼ Minimize Theater";
+      });
+
+      document.getElementById("simPrevBtn").addEventListener("click", () => {
+        const cuts = getTopicPreviewCuts(theaterTopicId);
+        simCutIdx = (simCutIdx - 1 + cuts.length) % cuts.length;
+        playStudioSfx("tick");
+        renderTheater();
+      });
+      document.getElementById("simNextBtn").addEventListener("click", () => {
+        const cuts = getTopicPreviewCuts(theaterTopicId);
+        simCutIdx = (simCutIdx + 1) % cuts.length;
+        playStudioSfx("tick");
+        renderTheater();
+      });
+      document.getElementById("simPlayBtn").addEventListener("click", () => {
+        const btn = document.getElementById("simPlayBtn");
+        if (simTimer) {
+          clearInterval(simTimer);
+          simTimer = null;
+          btn.textContent = "▶ Auto-Play Cuts";
+          btn.className = "px-4 py-1.5 rounded-lg bg-[#4FB286] hover:bg-[#3ea076] text-xs font-mono-code font-bold text-[#0E0C0B] transition";
+        } else {
+          btn.textContent = "⏸ Pause Cuts";
+          btn.className = "px-4 py-1.5 rounded-lg bg-[#E63946] text-xs font-mono-code font-bold text-white transition";
+          simTimer = setInterval(() => {
+            const cuts = getTopicPreviewCuts(theaterTopicId);
+            simCutIdx = (simCutIdx + 1) % cuts.length;
+            playStudioSfx("tick");
+            renderTheater();
+          }, 2600);
+        }
+      });
+
+      document.getElementById("theaterRenderSelect").addEventListener("change", (e) => {
+        const t = MANIFEST.find(x => x.id === theaterTopicId);
+        const idx = Number(e.target.value);
+        if (t && t.outputs && t.outputs[idx]) {
+          const vidEl = document.getElementById("mainTheaterVideo");
+          vidEl.src = mediaUrl(t.outputs[idx].path);
+          vidEl.load();
+        }
+      });
+
+      document.querySelectorAll(".theater-spd-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const spd = Number(btn.getAttribute("data-spd"));
+          const vidEl = document.getElementById("mainTheaterVideo");
+          if (vidEl) vidEl.playbackRate = spd;
+          document.querySelectorAll(".theater-spd-btn").forEach(b => {
+            b.className = b === btn
+              ? "theater-spd-btn px-2.5 py-1 rounded bg-[#E63946] text-white text-xs font-mono-code"
+              : "theater-spd-btn px-2.5 py-1 rounded bg-[#221E1B] text-[#FAF6EE] text-xs font-mono-code";
+          });
+        });
+      });
+
+      document.getElementById("theaterOpenDossierBtn").addEventListener("click", () => openTopicDossier(theaterTopicId));
+      document.getElementById("theaterCopyPromptBtn").addEventListener("click", () => {
+        const p = buildHarnessPromptForTopic(theaterTopicId, "Antigravity (Gemini 3.8 Flash)", "upgrade_cadence_whowhat");
+        copyText(p, `Copied execution prompt for '${theaterTopicId}'!`);
+      });
+
+      document.getElementById("topicSearchInput").addEventListener("input", (e) => {
+        activeSearchQuery = e.target.value;
+        renderTopicsMatrix();
+      });
+      document.getElementById("statusFilterSelect").addEventListener("change", (e) => {
+        activeStatusFilter = e.target.value;
+        renderKpiRibbon();
+        renderTopicsMatrix();
+      });
+      document.getElementById("topicSortSelect").addEventListener("change", (e) => {
+        activeSort = e.target.value;
+        renderTopicsMatrix();
+      });
+      document.querySelectorAll(".layout-mode-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          layoutMode = btn.getAttribute("data-mode");
+          document.querySelectorAll(".layout-mode-btn").forEach(b => {
+            b.className = b === btn
+              ? "layout-mode-btn px-3 py-1 rounded-md text-xs font-mono-code font-semibold bg-[#E63946] text-white transition"
+              : "layout-mode-btn px-3 py-1 rounded-md text-xs font-mono-code font-semibold text-[#948E86] hover:text-[#FAF6EE] transition";
+          });
+          playStudioSfx("tick");
+          renderTopicsMatrix();
+        });
+      });
+
+      document.getElementById("togglePitchFormBtn").addEventListener("click", () => {
+        document.getElementById("newPitchDrawer").classList.toggle("hidden");
+      });
+      document.getElementById("closePitchDrawerBtn").addEventListener("click", () => {
+        document.getElementById("newPitchDrawer").classList.add("hidden");
+      });
+      document.getElementById("savePitchBtn").addEventListener("click", () => {
+        const rawTitle = document.getElementById("pitchTitleInput").value.trim() || "THE ALGORITHMIC TRAP";
+        const obj = document.getElementById("pitchObjectInput").value.trim() || "Everyday smartphone screen";
+        const spine = document.getElementById("pitchSpineInput").value.trim() || "You thought the tool was free, but the hidden fee was your autonomy.";
+        const rec = document.getElementById("pitchReceiptInput").value.trim() || "Federal Court Docket & Agency Audit (2026)";
+        const nums = document.getElementById("pitchNumbersInput").value.split(",").map(s => s.trim()).filter(Boolean);
+        const slug = rawTitle.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 24) || "new-topic";
+
+        const customList = JSON.parse(safeGetStorage("custom_incubator_pitches", "[]"));
+        customList.unshift({
+          id: "custom-" + Date.now(),
+          title: rawTitle.toUpperCase(),
+          slug: slug,
+          tagline: "Custom 5-Gate Verified Concept",
+          universal_object: obj,
+          hidden_mechanism: "Algorithmic extraction verified via primary receipts.",
+          spine_sentence: spine,
+          primary_receipt: rec,
+          killer_numbers: nums.length ? nums : ["25/25 5-Gate Score"],
+          status: "NEW PITCH READY"
+        });
+        safeSetStorage("custom_incubator_pitches", JSON.stringify(customList));
+        document.getElementById("newPitchDrawer").classList.add("hidden");
+        renderIncubatorView();
+        showToast(`Saved "${rawTitle}" to Viral Incubator!`);
+      });
+
+      document.getElementById("newDossierModalBtn").addEventListener("click", () => {
+        switchTab("incubator");
+        document.getElementById("newPitchDrawer").classList.remove("hidden");
+      });
+
+      document.getElementById("copyAllCadenceFixPromptBtn").addEventListener("click", () => {
+        const legacy = MANIFEST.filter(t => t.total_cuts > 0 && t.cadence_pass === false && t.badge !== "dead").map(t => t.id).join(", ");
+        const p = `Tu es l'agent principal d'Antigravity. Opère dans C:\\Users\\pc\\Documents\\All-in-keep\\All-in.
+Convertis les sujets suivants (${legacy}) au standard 2026-10-15 (Leçons #80 et #81 de LEARNINGS.md) :
+- Au moins 60 % des cuts en layout: "full" ou layout: "scene" (max 40 % "split", jamais plus de 2 splits consécutifs).
+- Remplace les LineIcons génériques par de vraies photos Wikimedia Commons (Film, Print, Polaroid) et de vraies preuves UI (PhoneChat, PhoneCall, CallGrid, PageQuote, Score, Blocked).
+- Vérifie chaque sujet avec 'python tools/lint_text.py <slug>' jusqu'à 0 FAIL.`;
+        copyText(p, "Copied Batch Cadence Auto-Heal Prompt!");
+      });
+
+      ["harnessTargetSelect", "harnessTopicSelect", "harnessMissionSelect"].forEach(id => {
+        document.getElementById(id).addEventListener("change", renderHarnessHub);
+      });
+      document.getElementById("copyGeneratedHarnessPromptBtn").addEventListener("click", () => {
+        const txt = document.getElementById("generatedHarnessPromptBox").textContent;
+        copyText(txt, "Copied Multi-Harness Prompt!");
+      });
+
+      document.querySelectorAll(".cli-run-btn").forEach(btn => {
+        btn.addEventListener("click", async () => {
+          const action = btn.getAttribute("data-cli");
+          const topic = document.getElementById("cliTopicSelect").value;
+          const out = document.getElementById("cliTerminalOutput");
+          const cmdStr = `.\\allin.ps1 ${action} ${topic}`;
+          out.textContent = `[DISPATCHING] ${cmdStr} ...\n`;
+          playStudioSfx("thud");
+          if (!serverOnline) {
+            copyText(cmdStr, `Copied '${cmdStr}' to clipboard!`);
+            out.textContent += `\n[STANDALONE MODE] Copied command to clipboard:\n  ${cmdStr}\n\n(When Start-Dashboard.bat is running on port 4321, this button executes ${cmdStr} live on your PC.)`;
+            return;
+          }
+          try {
+            const res = await fetch(API_BASE + "/api/action/run", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ action, topic })
+            });
+            const data = await res.json();
+            out.textContent = data.output || data.error || "Completed.";
+          } catch (err) {
+            out.textContent += "\nError: " + err.message;
+          }
+        });
+      });
+
+      document.getElementById("runResearchPassBtn").addEventListener("click", async () => {
+        const out = document.getElementById("cliTerminalOutput");
+        out.textContent = "[AUTONOMOUS RESEARCH] Running deep web research pass across active topics...\n";
+        if (!serverOnline) {
+          copyText("python All-in\\tools\\autonomous_studio.py", "Copied autonomous_studio.py command!");
+          out.textContent += "Standalone mode: copied `python All-in\\tools\\autonomous_studio.py` to clipboard.";
+          return;
+        }
+        try {
+          const res = await fetch(API_BASE + "/api/research/run", { method: "POST" });
+          const data = await res.json();
+          out.textContent = data.message || "Research pass complete.";
+        } catch (err) {
+          out.textContent += "\nError: " + err.message;
+        }
+      });
+
+      document.getElementById("exportJsonBtn").addEventListener("click", () => {
+        const payload = JSON.stringify({ MANIFEST, DOSSIERS, INCUBATOR, TELEMETRY }, null, 2);
+        copyText(payload, "Copied studio_data.json payload to clipboard!");
+      });
+
+      document.getElementById("closeModalBtn").addEventListener("click", () => {
+        document.getElementById("studioModal").classList.add("hidden");
+      });
+
+      window.addEventListener("keydown", (e) => {
+        if (["INPUT", "TEXTAREA", "SELECT"].includes((e.target || {}).tagName)) return;
+        if (e.key === "/") {
+          e.preventDefault();
+          switchTab("topics");
+          document.getElementById("topicSearchInput").focus();
+        } else if (e.key === "1") switchTab("topics");
+        else if (e.key === "2") switchTab("dossiers");
+        else if (e.key === "3") switchTab("incubator");
+        else if (e.key === "4") switchTab("rules");
+        else if (e.key === "5") switchTab("harness");
+      });
+    });
+  </script>
+</body>
+</html>

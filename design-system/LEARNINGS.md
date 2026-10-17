@@ -1,7 +1,167 @@
+# All-in Studio — Institutional Memory (`LEARNINGS.md`)
+
+> **CROSS-HARNESS MANDATE (Antigravity, Claude Code, Cursor, Windsurf, Gemini, Codex)**:
+> Every single owner review or correction MUST be logged at the top of this file AND turned into an automated check in `tools/lint_text.py`, `tools/lint_cues.py`, `tools/lint_clips.py`, or `tools/voice_check.py` in the exact same turn. Memory alone is never trusted; the build tools enforce every lesson below on every future video.
+
+## 2026-10-17 · owner on Game-Feel Motion Physics, "Juice" & Visual Punch (@motionbykrit Standard)
+
+Owner, verbatim:
+*"i saw a new sample, it does not feel pleasant for the eyes enough. the viewer should not have to make his brain do effort to watch the video. it should be really smooth and catchy all the way everywhere. use psychology to design and change everything please"*
+(Directorial Mandate: Infuse @motionbykrit's signature Game-Feel / "Juice" Motion Physics into every cut).
+
+87. **Game-Feel "Juice" Motion Physics Engine (`engine/src/ds/juice.tsx`)**:
+    - **@motionbykrit's 3 Signature Motion Breakdown Cycles**:
+      1. *Dash Physics (`useGameFeelPhysics` + `<SpeedLines>`)*:
+         - Anticipation pullback (`-14px` wind-up with sinusoidal rattle `Math.sin(dt * 3.2) * 3.5`).
+         - Heavy Squash & Stretch (`scaleX: 1.28, scaleY: 0.76` squash on hit -> `scaleX: 0.88, scaleY: 1.15` stretch rebound).
+         - High-velocity streaky speed lines (`<SpeedLines direction="horizontal"|"vertical">`).
+         - Sharp deceleration overshoot settling to 1.0.
+      2. *Satisfying Pickups & Counters (`<ImpactBurst>` + `<FloatingPopScore>`)*:
+         - 14 radial diamond particles flying outward + 2 expanding shockwave rings with thinning & opacity decay.
+         - Spring-mass popup badges (`<FloatingPopScore text="+3 SHARDS!" />`, `<FloatingPopScore text="0.2s TRASHED!" />`, `<FloatingPopScore text="4.5× PRICE HIKE!" />`) with `-3deg` tilt, scale-punch (`1.32 -> 1.0`), and floating upward drift.
+         - HUD counter scale-punching on every tick.
+         - Micro camera-shake (`shakeX, shakeY`) on impact.
+      3. *Epic Reveal Physics (`<VolumetricGodRays>` + `<Tactile3DBlock>` + `<DoodleUnderline>`)*:
+         - Anticipation tremble for 6 frames before major cue words.
+         - Volumetric rotating god-rays (`<VolumetricGodRays>`) bursting from behind focal cards.
+         - 3D toy-like extruded block depth (`<Tactile3DBlock>` with 11px bottom lip + animated diagonal `<SpecularSheen>` sweep).
+         - Double-stroke hand-drawn marker emphasis (`<DoodleUnderline>`) under key focal phrases.
+    - **Automated Verification**:
+      - `tools/taste_audit.py` enforces Gate 8: `>= 4/8` active Juice primitives in bespoke visual files.
+
+## 2026-10-17 · owner on Cognitive Effort, Neuro-Perceptual Smoothness & Zero-Brain-Strain Visuals (`tokens-explained` & `apply-button`)
+
+Owner, verbatim:
+*"i saw a new sample, it does not feel pleasant for the eyes enough. the viewer should not have to make his brain do effort to watch the video. it should be really smooth and catchy all the way everywhere. use psychology to design and change everything please"*
+
+86. **Neuro-Perceptual Smoothness, Zero-Effort Viewing & Mayer's Cognitive Load Laws (`engine/src/ds/psychology.tsx`)**:
+    - **4 Root Failures of Cognitive Effort**:
+      1. *Ocular Strain from Dark-on-Dark Boxes (`Figure-Ground Failure`)*: 92% pitch-black stage with tiny dark `#161411` cards and microscopic text creates extreme pupil strain. Every cut must feature high-contrast warm ivory (`#F7F3EA`) or crisp white (`#FFFFFF`) floating cards with `SHADOW_DEEP` on warm black `#0E0C0B`.
+      2. *Dual-Channel Phonological Overload (Mayer's Split-Attention & Redundancy)*: The viewer cannot read 5–7 text cards while listening to the narrator. Replace all small secondary text with soft `#E2DDD2` `<SkeletonBars>`, keeping only ONE massive focal typography (36px–72px).
+      3. *Amateur Stick-Icon + Empty Bubble Splits*: Banned forever (`LineIcon + Bubble`). Use tangible interactive physical widgets (`StrawberrySlicer`, `BlindCounter`, `MemoryBelt`, `TokenTaxMeter`, `ATSScanner`, `FourFifthsDial`, `FunnelSieve`, `JobPortalCard`).
+      4. *Attentional Habituation (8–10s Static Holds)*: Superior colliculus stops tracking when pixels freeze. `<SmoothStage>` provides continuous 0.35Hz 3D micro-float + subtle breathing, ensuring no frame is ever completely static.
+
+## 2026-10-16 · owner on Visual Aesthetic, End of Amateur Programmer-Art & Shared Haute-Couture Tactile Kit (`engine/src/ds/tactile.tsx`)
+
+Owner, verbatim:
+*"ive looked at some vids, the designs must feel better and pleasing to look at, and less amateur"*
+
+85. **End of Amateur Programmer-Art & Universal Haute-Couture Tactile Kit (`engine/src/ds/tactile.tsx`)**:
+    - **Root Cause of "Amateur Programmer-Art"**:
+      1. *Dark-on-Dark Boxes (`#161411` on `#0E0C0B`)*: Lacks physical pop; feels like an uninspired developer terminal or flat dashboard.
+      2. *Tiny Unreadable Text*: Cramming 10+ lines of small text into cards ruins comprehension.
+      3. *Childish Wireframe SVG*: Thin gray borders and crude `<rect>` / `<circle>` primitives.
+      4. *Stiff Linear Motion*: Visuals popping in without organic easing, spring physics, or cursor interaction.
+    - **Haute-Couture Tactile Laws (`All-in_captchas_full_v2.mp4` & Vox/Harris Standard)**:
+      - **High-Contrast Physical Surfaces**: Tangible objects float on the warm black `#0E0C0B` board with deep layered drop shadows (`SHADOW_DEEP = "0 30px 70px rgba(0,0,0,0.82), 0 8px 22px rgba(0,0,0,0.55)"`). Use crisp white cards (`#FFFFFF`) with vivid headers (`#0A66C2`) or slanted warm parchment (`#F6F2E8` / `#EEE8DC`).
+      - **Skeleton Context + Giant Punchy Focal Point**: Surround one central, massive typographic statement (36px–64px in `Archivo` / `Source Serif 4`) with soft, blurred skeleton lines (`#E2DDD2`).
+      - **Realistic Cursor & Spring Physics**: Use `TactileCursor` with realistic mass/damping spring motion, click scaling, and vibrant red click ripple wave (`#E63946`) that pings exactly on the cue word.
+      - **Canonical Haute-Couture Components in `engine/src/ds/tactile.tsx`**:
+        - `JobPortalCard`: Authentic white easy-apply portal (role title, company, resume skeleton with live keyword score, animated rejection button, realistic mouse click).
+        - `StrawberrySlicer`: High-contrast tokenizer card showing human letter view splitting into physical numbered token bricks with `cl100k_base` IDs.
+        - `UtilityBillCard`: Cream parchment monthly statement rotated `-0.8deg` with animated red highlighter sweep across the capacity rate surcharge.
+    - **Automated Quality Check**: Enforced in `tools/taste_audit.py` to prevent dark-on-dark box slop and require tactile component standards.
+
+## 2026-10-16 · owner on Autonomous Studio Overhaul, Human-Like Taste, Motion Liveness, Word Ceiling <= 12 words & Classy Tactile Innovation
+
+Owner, verbatim:
+*"i am not happy with how the project is going. it must be much much smarter and autonomous. i want real quality videos worked and refined with human-like taste and auto check and review every single detail and innovate classy and neat stuff. just a fix, but keep working for hours autonomous and take initiatives."*
+
+84. **Autonomous Initiative, Human-Like Taste, Motion Liveness, Word Ceiling <= 12 Words & Classy Tactile Innovation**:
+    - **Autonomous Initiative & Hours of Work**: The studio daemon (`tools/autonomous_worker.py` + `tools/autonomous_studio.py`) must operate autonomously for hours, actively taking initiatives across the backlog: refining scripts, sourcing Wikimedia Commons CC/PD photos, generating voice, compiling timelines, rendering cutstills, auditing taste, rendering MP4s, and cleaning temporary chunks. Never sit idle or wait for line-by-line prompting.
+    - **Human-Like Taste & Cadence Breathing**:
+      - `full` + `scene` + `clip` MUST represent **>= 60% of cuts**; `split` is capped at **<= 40%**; **max consecutive splits <= 1**.
+      - Zero face-to-face line icons (`L: LineIcon` + `R: LineIcon` is permanently banned).
+      - No fake text boxes under new names (banned `ComptrollerDocket`, `FERCDocket`, etc.). Use `Film` (`layout: "scene"`, real Commons photograph) + `PageQuote` (paper slip `#EEE8DC` with at most 6-8 words in `Source Serif 4` and animated red highlight).
+      - **On-Screen Word Ceiling**: Every cut is strictly capped at **<= 12 words displayed on screen** (excluding `cap`). The picture shows physical mechanisms; the voice tells the story!
+    - **Motion Liveness Gate (Enforced in `tools/taste_audit.py`)**:
+      - A cut must never be a frozen PowerPoint slide. For every cut, stills at `15%` and `85%` of cut duration must exhibit measurable motion difference (`np.mean(np.abs(f85 - f15)) >= threshold`).
+      - Negative space margin (>= 80px border air) is strictly checked on `full` and `split` cuts, and correctly exempted on `scene` (`Film`) and `clip` full-frame cuts.
+    - **Classy Tactile Widgets (ELI5, Zero Academic Slop)**:
+      - Complex technical topics MUST be made immediately intuitive through physical, tactile metaphors:
+        - `tokens-explained`: `StrawberrySlicer` (word `strawberry` cut into numbered bricks `[straw 496][ber 675][ry 1553]`), `BlindCounter` (AI counting letters on number boxes with magnifying glass -> wrong), `MemoryBelt` (conveyor belt pushing old tokens off into void), `TokenTaxMeter` (token cost comparison coins).
+        - `apply-button`: `ATSScanner` (resume laser scan turning text into match % score), `FourFifthsDial` (mechanical gauge dipping below 0.80 into violation), `FunnelSieve` (200 applicant light dots dropped into discard).
+        - `ai-power-bill`: `UtilityStatement` (authentic bill with surcharge line-item highlight), `PJMGridSurge` (capacity auction price jump).
+    - **Disk Hygiene**: Render MP4 only when all 8 QA gates pass; delete `.render-tmp/<slug>_*` immediately after render and QA.
+    - **Preserve Studio OS Dashboard Contract (Lesson #83)**: Never overwrite `index.html` structure; update only between `/* __STUDIO_DATA_START__ */` and `/* __STUDIO_DATA_END__ */`.
+
+## 2026-10-15 · owner on `the-ai-cast` v2 → Permanent Cross-Harness Learning, No Permanent Left/Right Bi-Screen, and Show "WHO AND WHAT" with Real Images & UI (No Stray Slop)
+
+Owner, verbatim:
+1. *"ok it got the video delivered but the visuals were terrible. i said i wanna go back to the visuals type and everything type like the one in video attached [All-in_captchas_full_v2.mp4]. same voice also."*
+2. *"i hope every single one of my inputs and reviews, here on in antigravity or in another new harness somewhen in the future WILL MAKE THE PROJECT LEARN FROM IT FOR THE NEW FUTURES VIDEOS AS WELL! obviously!"*
+3. *"i dont like the bi-screen left and right kinda permanent format. IT MUST BE MORE PLEASANT AND PREMIUM PRO TO WATCH PLEASE"*
+4. *"i know this is just a sample, maybe its not the same for the full video but just to be sure i guess ill mention this to avoid things like: for example : the woman in the courtroom mentioned, should obviously show WHO AND WHAT, with images etc i guess, not just a random stray slop and what not"*
+
+79. **Voice & Base Visual Kit (`All-in_captchas_full_v2.mp4` Standard)**:
+    - The canonical voice is **`tools/tts.py`** (**Kokoro `af_heart` at `speed: 0.95`**, `"master": "v23"`, `lead: 0.2`, `gap: 0.45`). Never use `tts_cb.py` (`kore`/`fenrir`) or `"master": "cinema"` unless explicitly requested.
+    - The boxy `ds/evidence.tsx` components (`DossierDoc`, `ForensicStamp`, `FieldCard`, `CodeTerminal`, `MetricChart`, `Highlighter`) and the 19th-century woodcut engraving plates (`ds/engrave.tsx`, `Ouroboros`, `Balance`, `GuardrailGate`, etc.) are **permanently banned** in `tools/lint_text.py`.
+80. **Kill the Permanent Left/Right Bi-Screen (`split` <= 45%, Max 2 Consecutive Splits)**:
+    - Lesson 76's old `split >= 60%` rule in `lint_text.py` caused every video to become an exhausting, mechanical 50/50 left-right bi-screen from start to finish.
+    - **New Hard Rule (enforced in `tools/lint_text.py`)**:
+      - **Full-stage compositions (`layout: "full"` and `layout: "scene"`) + real `clip`s MUST represent at least 55% of all cuts** (`split` is capped at **max 45%** of cuts).
+      - **Never put more than 2 `layout: "split"` cuts in a row** (`max_consecutive_splits <= 2`). After 1–2 splits, open the screen back up to a centered full-stage hero visual (`layout: "full"`), a full-bleed documentary photo (`layout: "scene"`), or a full-screen `clip`.
+      - When `layout: "full"` is used, the centered `hero` must be a substantial, pleasurable visual (`Captcha4`, `PhoneChat`, `PhoneCall`, `CallGrid`, `Print`, `Film`, `BlogProof`, `Flow`, `Bars`, `Score`, `MousePath`, `IconRow`, `AccountWall`, `RouteMap`), never a lone word object (`Bubble`, `CalendarCard`, `PageQuote`) or a tiny bare icon.
+81. **Show "WHO and WHAT" with Real Images & Specific UI Evidence — Zero "Random Stray Slop"**:
+    - When the narrator mentions a real-world person, courtroom case, place, company, or dated incident (e.g. a courtroom deepfake case, the $25.6M Hong Kong Arup video call, Carnegie Mellon's study, Anthropic's distillation report), showing a generic `CalendarCard("2026")` next to a generic `LineIcon("phone")` or stick-figure `LineIcon("person")` is **banned as "stray slop"**.
+    - **New Hard Rule (enforced in `tools/lint_text.py`)**:
+      - **Name the real case/person/place in the script** (no vague anonymous parables when real cases exist).
+      - **Show WHO and WHERE with real licensed photographs** downloaded from Wikimedia Commons into `engine/public/<slug>/` (logged in `_commons.json` & `LICENCES.md`) rendered via `Film` (`layout: "scene"`), `Print`, `Polaroid`, `AnnotatedPrint`, `Hearing`, or `BlogProof`.
+      - **Show WHAT with the concrete UI/document artifact** (`PhoneChat` displaying the actual forged text messages, `PhoneCall` showing the cloned voice call waveform turning red, `CallGrid` showing the 2x2 deepfake video call, `BlogProof` / `PageQuote` showing the verbatim court record or study headline).
+      - `LineIcon` stick drawings are capped at **<= 25% of visual objects**, are **never allowed on both sides of a `split` (`L: LineIcon` + `R: LineIcon` is banned)**, and **cannot be the only visual on a beat that names a real-world person, court, place, or dated event**.
+83. **Studio OS Dashboard Multi-Harness Contract (`index.html` + `tools/autonomous_studio.py`, 2026-10-15)**:
+    - Owner, verbatim: *"some agent made this dashboard but its rly not that good : i want somthing very pleasant and pro to look at and interact with. i guess many other new harnesses and models will work on keeping it updated also for info."*
+    - **Hard Rule**: `index.html` uses the canonical `v23` Studio OS design (Screening Room + Interactive `v23` Stage Simulator, Cards/Table/Kanban views, 24 WHO/WHAT Dossiers, 5-Gate Incubator Pitch Evaluator, Cadence Audit Table, and Multi-Harness Prompt Generator).
+    - **Data-Only Splicing (`/* __STUDIO_DATA_START__ */` ... `/* __STUDIO_DATA_END__ */`)**: *Never overwrite the HTML/CSS/JS design of `index.html`. To update studio telemetry, topics, dossiers, or incubator items from any harness or model, update ONLY the JSON block between `/* __STUDIO_DATA_START__ */` and `/* __STUDIO_DATA_END__ */` (or run `python tools/autonomous_studio.py`).* Neither `tools/autonomous_studio.py` nor any future harness/model may ever overwrite the HTML/CSS/JS of `index.html` with a raw template! When updating telemetry, topics, dossiers, or incubator items, always splice ONLY the JSON block between `/* __STUDIO_DATA_START__ */` and `/* __STUDIO_DATA_END__ */` (preserving `STAGE_PREVIEWS` and the entire UI).
+
+82. **Cross-Harness Persistence (`AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.cursorrules`, `.windsurfrules`)**:
+    - Every harness entrypoint file in both `All-in-keep/` and `All-in/` points to `design-system/LEARNINGS.md`, `design-system/DESIGN.md`, `design-system/STYLE_BIBLE.md`, and `PLAYBOOK.md`, and mandates that every new owner note be written into `LEARNINGS.md` and enforced in `tools/lint_text.py` before any build runs.
+
 # Learnings log
 
 Newest first. Each entry: what happened, the lesson, where it now lives (code or DESIGN.md).
 Owner notes go here verbatim (dated) the same turn they arrive; general rules are then promoted into DESIGN.md / `ds/`.
+
+## 2026-10-14 · ai-power-bill 2-min sample build notes (no owner notes this turn — build discipline)
+81. **Plates: cut-in schedule vs. motion are two clocks.** Tying a plate's cutting schedule to a dramatic cue
+    word (`Plate at={litAt}`) left its panel empty for seconds at every cut; `watch.py` failed three near-empty
+    screens (b03, b06, b09). Fix in `engine/src/visuals/ai-power-bill.tsx`: silhouette cuts in at frame 0
+    (`Plate` with no `at`), and only the motion + the red wait for the word (`useCue` resolved in the component
+    body). Rule written into `design-system/PLATES.md` → "The schedule rule".
+82. **listen.py hallucinated on the end pad.** Whisper (large-v3-turbo) heard repeats + "Thank you." on the
+    trailing silence of the last beat and reported WER 0.78 on a clean line; the master and mp4 tails were
+    verified clean by hand. Fix in `tools/listen.py`: each beat's window now ends at the beat's last spoken
+    word (from the timeline's word cues) + 0.25 s. Audio was never wrong; the gate was.
+83. **Cue words come from Whisper's digit forms.** "twenty twenty-three" is heard as "2023", "twenty percent"
+    as "20", "fifteen minutes" as "15 minutes"; and a cue on "you" fires early on "your". ai-power-bill's build
+    failed 9 cue checks until re-anchored (`2023`, `20`, `15`, `never`, `gave`, `diesel`, `years`). Lesson: after
+    every voice pass, read each beat's `Heard:` line from lint_cues and cue the exact form; prefer words that
+    cannot prefix-match an earlier word.
+84. **New register in use: Kore voice + engraving plates.** `assets/voice/ref_female_kore.wav` voices the
+    sample (AGENTS.md 2026-10-14: "the premier studio voice"); plates and editorial documents (the utility
+    statement, the DOE order) carry the picture instead of LineIcon grammar. voice_check needed 4 iterations
+    on ai-power-bill (single-word endings lilt: "Within fifteen minutes." kept rising as a question; full
+    declarative clauses end flat) — matches why-ai-dumber item 76.
+
+## Topic Index
+- **Hooks & Dramatic Pacing**: 48, 51, 60, 64, 65, 67, 68, 69, 72, 74
+- **Voice & Acoustic Pacing**: 45, 49, 62, 63, 76, 77
+- **Clip Editing & Rights Protection (Money Rule)**: 41, 46, 52, 60, 61, 78
+- **Visual Metaphors & Art Direction (Plates)**: 71, 74, 75
+- **Multi-session & Git Coordination**: 53, 57, 71
+
+## 2026-10-13 · owner review of prior sample (abandoned left/right split & off-topic drawings)
+Owner, verbatim: "in the sample i also did not find the spirit of the original videos when it showed lot of stuff side to side, instead u just draw one drawing in the center... you are right so then fix everything, then improve everything and do not do mistakes again. also make sure that if another model or another harness works on this folder, that it wont make mistakes. after skeleton refining and polish is done and verified. give a 2min sample"
+79. **Left/Right split (side-to-side) is the mandatory foundation.** The prior sample abandoned the core All-in studio grammar
+    by putting a single plate centered in an empty `full` layout, killing the side-by-side evidence comparison that defined
+    captchas v6 and v23. Rule: Default layout is ALWAYS `split` (≥ 65% of shots). Left = the subject on screen from frame 0;
+    Right = the evidence landing on its cue word (`enter`), something new every 2-3 s. `full` is strictly reserved for
+    widescreen flows/maps that genuinely require 1600+ px. A single centered plate on an empty board is banned.
+80. **"Say the line, point at the thing it names" (no metaphor drift or plate reuse).** The prior sample committed a fatal
+    error by reusing model-collapse woodcut plates from `why-ai-dumber` (sailing ships, Roman busts, ouroboros) to talk about
+    Elon Musk, Starlink, rockets, and Tesla. Zero tolerance for metaphor drift. Every drawing MUST depict the literal
+    concrete nouns named in the narration (satellites, rockets, sensor purges, geofence maps, telemetry). Never reach for
+    an existing metaphor plate from another film. Every new topic gets bespoke topic visuals in `engine/src/visuals/<slug>.tsx`.
 
 ## 2026-10-13 · owner review of why-ai-dumber v1 (relayed by the coordinator session, not verbatim — logged as received)
 Coordinator's paraphrase of the owner's note: "the animations were great, but it needs NEW designs, much more visual
@@ -304,3 +464,5 @@ Owner review of v2 (Signal) on 2026-10-07, applied in v3 (minimal print):
 16. Keep the left/right split. → `split` stays the default layout.
 17. Switching fonts (Archivo → IBM Plex Mono) widened numbers: "200,000,000" clipped its card. → BigCount sizes for mono width (0.74 em per glyph). Check every panel after any font change.
 18. Owner, 2026-10-07 (on v3): "i want the designs and style copied from captchas_v23_PERFECTED.mp4, not these." The disgn-systems "minimal" reel was a reinterpretation, not v23. → The base is now v23 copied from its own source (jolly-bell `theme.ts`, `AmbientLayer`, `Caption`, `ChapterCard`, `VideoEmbed` plate) and checked against its frames (`research/v23/frames/`). Lesson: when the owner names a reference file, copy from that file and its source code, never from a derivative.
+
+Owner direction, 2026-10-14: “super lame topic, try with :  "the greyhat and black areas of modern AI, METHODS AND THE SCIENCE BEHIND IT!"” → Pivoted to a research-led AI security explainer centered on methods and underlying science.

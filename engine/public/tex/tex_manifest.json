@@ -1,0 +1,25 @@
+{
+  "tool": "tools/make_grain.py (track V-CRAFT)",
+  "seed": 1337,
+  "blend_rule": "Composite rule (keep subtle!): paper texture @ multiply 6-10% opacity on parchment cards only (PageQuote, UtilityStatement, receipts crop frame, BillReceipt). NEVER on white UI cards (JobPortalCard stays SaaS-crisp), never on stage/clip. film_grain @ multiply 6-10% on the full board.",
+  "preferred_source": "ambientCG Paper001 / Paper005 / CardboardSet001 (CC0) - swap in later, same blend rule",
+  "textures": {
+    "film_grain_baked.png": {
+      "path": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\engine\\public\\tex\\film_grain_baked.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "blend": "multiply 6-10% on stage/clip"
+    },
+    "paper_tooth.png": {
+      "path": "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\engine\\public\\tex\\paper_tooth.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "blend": "multiply 6-10% on parchment cards only"
+    }
+  },
+  "usage": "engine/src/ds/tokens.ts `color.tex` references these; Remotion <Image> components apply mix-blend-mode multiply at 6-10% opacity, pre-baked so render is deterministic and offline."
+}

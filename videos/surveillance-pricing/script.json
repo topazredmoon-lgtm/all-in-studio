@@ -1,0 +1,331 @@
+{
+  "id": "surveillance-pricing",
+  "title": "THE DEATH OF THE PRICE TAG \u00b7 SURVEILLANCE PRICING",
+  "voice": {
+    "name": "af_heart",
+    "speed": 0.95
+  },
+  "master": "v23",
+  "pace": {
+    "lead": 0.2,
+    "gap": 0.45,
+    "min_beat": 2.4,
+    "to_clip": 0.25,
+    "after_clip": 0.45,
+    "end_pad": 2.0
+  },
+  "beats": [
+    {
+      "id": "h01",
+      "vo": "Two phones sit on the exact same table. Same app. Same flight to Chicago. On the left phone, the ticket costs one hundred eighty dollars.",
+      "say": "Two phones sit on the exact same table. || Same app. | Same flight to Chicago. || On the left phone, the ticket costs one hundred eighty dollars.",
+      "ex": 0.75,
+      "shot": {
+        "layout": "full",
+        "cap": "two *phones*. one seat.",
+        "hero": {
+          "v": "Score",
+          "sub": "METRIC",
+          "label": "LAPTOP",
+          "val": "ACTIVE",
+          "enter": "dollars"
+        }
+      }
+    },
+    {
+      "id": "h02",
+      "vo": "On the right phone, the exact same seat costs two hundred forty-five dollars. No promo codes. No special seating.",
+      "say": "On the right phone, the exact same seat costs two hundred forty-five dollars. || No promo codes. | No special seating.",
+      "ex": 0.8,
+      "shot": {
+        "layout": "full",
+        "cap": "sixty-five *dollar* gap",
+        "hero": {
+          "v": "Score",
+          "sub": "METRIC",
+          "label": "TRIGGER",
+          "val": "ACTIVE"
+        }
+      }
+    },
+    {
+      "id": "h03",
+      "vo": "The only difference between the two travelers? The person on the right has six percent battery.",
+      "say": "The only difference between the two travelers? || The person on the right, has six percent battery.",
+      "ex": 0.85,
+      "shot": {
+        "layout": "full",
+        "cap": "six *percent* battery",
+        "hero": {
+          "v": "Score",
+          "sub": "METRIC",
+          "label": "TRIGGER",
+          "val": "ACTIVE"
+        }
+      }
+    },
+    {
+      "id": "a01",
+      "vo": "For one hundred sixty-five years, commerce had one sacred rule. The price tag on the shelf is the price everyone pays.",
+      "say": "For one hundred sixty-five years, commerce had one sacred rule. || The price tag on the shelf, is the price everyone pays.",
+      "ex": 0.7,
+      "shot": {
+        "layout": "full",
+        "cap": "one *price* for all",
+        "hero": {
+          "v": "Score",
+          "sub": "METRIC",
+          "label": "TRIGGER",
+          "val": "ACTIVE"
+        }
+      }
+    },
+    {
+      "id": "a02",
+      "vo": "In 1861, John Wanamaker invented the price tag so clerks couldn't haggle based on your clothes or your accent. Rich or poor, the number was identical.",
+      "say": "In eighteen sixty-one, John Wanamaker invented the price tag so clerks couldn't haggle based on your clothes, or your accent. || Rich or poor, the number was identical.",
+      "ex": 0.75,
+      "shot": {
+        "layout": "full",
+        "cap": "the *equal* price tag",
+        "hero": {
+          "v": "Score",
+          "sub": "METRIC",
+          "label": "TRIGGER",
+          "val": "ACTIVE"
+        }
+      }
+    },
+    {
+      "id": "a03",
+      "vo": "Today, that century-old truce is officially dead. And it was not killed by inflation.",
+      "say": "Today, that century-old truce is officially dead. | And it was not killed by inflation.",
+      "ex": 0.8,
+      "shot": {
+        "layout": "full",
+        "cap": "the *truce* is dead",
+        "hero": {
+          "v": "Score",
+          "sub": "METRIC",
+          "label": "TRIGGER",
+          "val": "ACTIVE"
+        }
+      }
+    },
+    {
+      "id": "a04",
+      "vo": "In July 2024, federal regulators finally cracked open the door. The Federal Trade Commission issued formal orders against eight corporate giants.",
+      "say": "In July 2024, federal regulators finally cracked open the door. || The Federal Trade Commission issued formal orders against eight corporate giants.",
+      "ex": 0.75,
+      "shot": {
+        "layout": "full",
+        "cap": "federal *orders* issued",
+        "hero": {
+          "v": "Score",
+          "sub": "METRIC",
+          "label": "TRIGGER",
+          "val": "ACTIVE"
+        }
+      }
+    },
+    {
+      "id": "a05",
+      "vo": "Mastercard. Revionics. Bloomreach. Task Software. McKinsey. Companies you have never heard of, operating in the shadows of every store you enter.",
+      "say": "Mastercard. | Revionics. | Bloomreach. | Task Software. || McKinsey. || Companies you have never heard of, operating in the shadows of every store you enter.",
+      "ex": 0.8,
+      "shot": {
+        "layout": "full",
+        "cap": "shadow *pricing* engines",
+        "hero": {
+          "v": "Score",
+          "sub": "METRIC",
+          "label": "TRIGGER",
+          "val": "ACTIVE"
+        }
+      }
+    },
+    {
+      "id": "a06",
+      "vo": "The government gave the practice an official name: Surveillance Pricing.",
+      "say": "The government gave the practice an official name: || Surveillance Pricing.",
+      "ex": 0.85,
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "LineIcon",
+          "surface": "bare",
+          "name": "target",
+          "tag": {
+            "t": "surveillance"
+          }
+        },
+        "R": {
+          "v": "PageQuote",
+          "text": "The government gave the practice",
+          "enter": "Pricing"
+        },
+        "cap": "*surveillance* pricing"
+      }
+    },
+    {
+      "id": "a07",
+      "vo": "Economists call it first-degree price discrimination. In plain English, it means charging you the absolute maximum penny you will endure before walking away.",
+      "say": "Economists call it first-degree price discrimination. || In plain English, it means charging you the absolute maximum penny you will endure, before walking away.",
+      "ex": 0.8,
+      "shot": {
+        "layout": "full",
+        "cap": "maximum *penny* extraction",
+        "hero": {
+          "v": "Score",
+          "sub": "METRIC",
+          "label": "TRIGGER",
+          "val": "ACTIVE",
+          "enter": "away"
+        }
+      }
+    },
+    {
+      "id": "a08",
+      "vo": "An algorithm monitors your credit history, your location, the model of phone in your hand, and how fast your thumb is scrolling.",
+      "say": "An algorithm monitors your credit history, your location, the model of phone in your hand, and how fast your thumb is scrolling.",
+      "ex": 0.75,
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "LineIcon",
+          "surface": "bare",
+          "name": "fingerprint",
+          "tag": {
+            "t": "telemetry"
+          }
+        },
+        "R": {
+          "v": "PageQuote",
+          "text": "An algorithm monitors your credit",
+          "enter": "scrolling"
+        },
+        "cap": "live *behavior* tracking"
+      }
+    },
+    {
+      "id": "a09",
+      "vo": "If your battery is dying at eleven at night in the rain, the machine knows you have zero bargaining power. So the price spikes.",
+      "say": "If your battery is dying at eleven at night in the rain, the machine knows you have zero bargaining power. || So the price spikes.",
+      "ex": 0.85,
+      "shot": {
+        "layout": "full",
+        "cap": "zero *bargaining* power",
+        "hero": {
+          "v": "Score",
+          "sub": "METRIC",
+          "label": "TRIGGER",
+          "val": "ACTIVE",
+          "enter": "spikes"
+        }
+      }
+    },
+    {
+      "id": "a10",
+      "vo": "And this is no longer trapped inside your smartphone. It is invading the physical streets.",
+      "say": "And this is no longer trapped inside your smartphone. || It is invading the physical streets.",
+      "ex": 0.75,
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "LineIcon",
+          "surface": "bare",
+          "name": "map",
+          "tag": {
+            "t": "high street"
+          }
+        },
+        "R": {
+          "v": "PageQuote",
+          "text": "And this is no longer",
+          "enter": "streets"
+        },
+        "cap": "invading *physical* streets"
+      }
+    },
+    {
+      "id": "a11",
+      "vo": "Fast food chains have begun installing digital drive-thru menu boards. Cameras scan incoming license plates and customer queues.",
+      "say": "Fast food chains have begun installing digital drive-thru menu boards. || Cameras scan incoming license plates and customer queues.",
+      "ex": 0.75,
+      "shot": {
+        "layout": "full",
+        "cap": "digital *menu* boards",
+        "hero": {
+          "v": "Score",
+          "sub": "METRIC",
+          "label": "TRIGGER",
+          "val": "ACTIVE",
+          "enter": "queues"
+        }
+      }
+    },
+    {
+      "id": "a12",
+      "vo": "A burger at noon on a rainy Tuesday can quietly cost two dollars more than the exact same burger on Wednesday afternoon.",
+      "say": "A burger at noon on a rainy Tuesday can quietly cost two dollars more, than the exact same burger on Wednesday afternoon.",
+      "ex": 0.8,
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "LineIcon",
+          "surface": "bare",
+          "name": "box",
+          "tag": {
+            "t": "burger"
+          }
+        },
+        "R": {
+          "v": "PageQuote",
+          "text": "A burger at noon on",
+          "enter": "afternoon"
+        },
+        "cap": "quiet *two* dollar surge"
+      }
+    },
+    {
+      "id": "a13",
+      "vo": "They took an ancient social contract, designed to protect ordinary citizens, and replaced it with a private, algorithmic tax on your vulnerability.",
+      "say": "They took an ancient social contract, designed to protect ordinary citizens, and replaced it with a private, algorithmic tax on your vulnerability.",
+      "ex": 0.8,
+      "shot": {
+        "layout": "full",
+        "cap": "tax on *vulnerability*",
+        "hero": {
+          "v": "Score",
+          "sub": "METRIC",
+          "label": "TRIGGER",
+          "val": "ACTIVE",
+          "enter": "vulnerability"
+        }
+      }
+    },
+    {
+      "id": "a14",
+      "vo": "The next time you tap buy on your phone, remember those two screens. You aren't paying what the item is worth. You are paying what the machine knows you can afford to lose.",
+      "say": "The next time you tap buy on your phone, remember those two screens. || You aren't paying what the item is worth. || You are paying what the machine knows you can afford to lose.",
+      "ex": 0.85,
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "LineIcon",
+          "surface": "bare",
+          "name": "laptop",
+          "tag": {
+            "t": "two screens"
+          }
+        },
+        "R": {
+          "v": "PageQuote",
+          "text": "The next time you tap",
+          "enter": "lose"
+        },
+        "cap": "what *you* can lose"
+      }
+    }
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "id": "stolen-voices",
+  "title": "STOLEN VOICES",
+  "voice": {
+    "name": "af_heart",
+    "speed": 0.95
+  },
+  "pace": {
+    "lead": 0.2,
+    "gap": 0.45,
+    "min_beat": 2.4,
+    "to_clip": 0.25,
+    "after_clip": 0.45,
+    "end_pad": 2.0
+  },
+  "beats": [
+    {
+      "id": "h01",
+      "vo": "A phone rings in a quiet house. Your daughter's voice, crying: mom, I'm in trouble, please don't tell dad.",
+      "shot": {
+        "layout": "full",
+        "cap": "the *voice* is hers",
+        "hero": {
+          "v": "RingingHousePhone",
+          "surface": "bare",
+          "enter": "dad"
+        }
+      }
+    },
+    {
+      "id": "h02",
+      "vo": "Your daughter is fine. She's asleep down the hall. The voice on the phone is still hers. Every crack, every sniff. And it was built by a machine.",
+      "shot": {
+        "layout": "full",
+        "cap": "built by a *machine*",
+        "hero": {
+          "v": "SleepingDoor",
+          "surface": "bare",
+          "enter": "machine"
+        }
+      }
+    },
+    {
+      "id": "a01",
+      "vo": "This is a voice clone. And the scary part isn't the tech. It's how little the tech needs.",
+      "shot": {
+        "layout": "full",
+        "cap": "how *little* it needs",
+        "hero": {
+          "v": "WaveThread",
+          "surface": "bare",
+          "enter": "needs"
+        }
+      }
+    },
+    {
+      "id": "a02",
+      "vo": "Seconds. That's the length of one story clip where you're laughing at a birthday party. Long enough for a modern model to learn how you sound.",
+      "shot": {
+        "layout": "full",
+        "cap": "*seconds* of you",
+        "hero": {
+          "v": "BirthdayClip",
+          "surface": "bare",
+          "enter": "sound"
+        }
+      }
+    },
+    {
+      "id": "a03",
+      "vo": "Here's what that means. The model doesn't store your voice like a tape. It learns your instrument: the pitch, the rasp, the rhythm. Then it plays new words on it.",
+      "shot": {
+        "layout": "full",
+        "cap": "it learns your *instrument*",
+        "hero": {
+          "v": "VoiceLoom",
+          "surface": "bare",
+          "enter": "words"
+        }
+      }
+    },
+    {
+      "id": "a04",
+      "vo": "So every voicemail you've left, every video you've posted, every call someone put on speaker: raw material.",
+      "shot": {
+        "layout": "full",
+        "cap": "you are the *raw material*",
+        "hero": {
+          "v": "PostWall",
+          "surface": "bare",
+          "enter": "material"
+        }
+      }
+    },
+    {
+      "id": "a05",
+      "vo": "Scammers used to send scripts to strangers. Now they send your own child's voice to you. Consumer agencies have watched family-impersonation fraud climb year after year, and cloning made it personal.",
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "ScriptToVoice",
+          "surface": "bare"
+        },
+        "R": {
+          "v": "WaveThread",
+          "surface": "bare",
+          "enter": "personal"
+        },
+        "cap": "scripts became *your child*"
+      }
+    },
+    {
+      "id": "a06",
+      "vo": "You're thinking: easy, hang up, call back. For the grandparent scam, that works. Do that. Always.",
+      "shot": {
+        "layout": "full",
+        "cap": "*hang up*, call back",
+        "hero": {
+          "v": "HangUpHand",
+          "surface": "bare",
+          "enter": "Always"
+        }
+      }
+    },
+    {
+      "id": "a07",
+      "vo": "But now think about who else picks up a phone. Your bank. Your boss. A journalist's source.",
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "HangUpHand",
+          "surface": "bare"
+        },
+        "R": {
+          "v": "BankCall",
+          "surface": "bare",
+          "enter": "bank"
+        },
+        "cap": "who else *picks up*"
+      }
+    },
+    {
+      "id": "a08",
+      "vo": "In twenty twenty-four, a finance worker at a global firm wired out twenty-five million dollars after a video call with his chief financial officer. Everyone on that call was fake. Everyone but him.",
+      "shot": {
+        "layout": "full",
+        "cap": "everyone was *fake*",
+        "hero": {
+          "v": "VideoCallGrid",
+          "surface": "bare",
+          "enter": "him"
+        }
+      }
+    },
+    {
+      "id": "a09",
+      "vo": "And it cuts the other way. Courts, police, newsrooms: they all treat a recording as proof.",
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "GavelTape",
+          "surface": "bare"
+        },
+        "R": {
+          "v": "LineIcon",
+          "surface": "bare",
+          "name": "scale",
+          "enter": "proof"
+        },
+        "cap": "a recording was *proof*"
+      }
+    },
+    {
+      "id": "a10",
+      "vo": "When anyone can make a recording of anyone saying anything, \"it's on tape\" stops meaning anything. That's the real damage. Not the stolen money. The dead witness.",
+      "shot": {
+        "layout": "full",
+        "cap": "the *dead witness*",
+        "hero": {
+          "v": "Score",
+          "sub": "METRIC",
+          "label": "TRIGGER",
+          "val": "ACTIVE",
+          "enter": "witness"
+        }
+      }
+    },
+    {
+      "id": "a11",
+      "vo": "So here's what works. One: a family password. A silly word only your people know. If the crying voice can't say it, hang up.",
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "FamilyWord",
+          "surface": "bare"
+        },
+        "R": {
+          "v": "LineIcon",
+          "surface": "bare",
+          "name": "lock",
+          "enter": "password"
+        },
+        "cap": "a family *password*"
+      }
+    },
+    {
+      "id": "a12",
+      "vo": "Two: call back. On the number you already have. A clone can steal your voice. It cannot steal your phone.",
+      "shot": {
+        "layout": "full",
+        "cap": "it cannot steal your *phone*",
+        "hero": {
+          "v": "CallBackDial",
+          "surface": "bare",
+          "enter": "phone"
+        }
+      }
+    },
+    {
+      "id": "a13",
+      "vo": "Three: post a little less freely. That birthday clip isn't just a memory anymore. It's a sample.",
+      "shot": {
+        "layout": "split",
+        "L": {
+          "v": "MemoryToSample",
+          "surface": "bare"
+        },
+        "R": {
+          "v": "BirthdayClip",
+          "surface": "bare",
+          "enter": "sample"
+        },
+        "cap": "a memory became a *sample*"
+      }
+    },
+    {
+      "id": "a14",
+      "vo": "Your voice was always how people knew it was you. Now it's data. And data gets copied.",
+      "shot": {
+        "layout": "full",
+        "cap": "data gets *copied*",
+        "hero": {
+          "v": "CopiedFace",
+          "surface": "bare",
+          "enter": "copied"
+        }
+      }
+    }
+  ],
+  "master": "v23"
+}

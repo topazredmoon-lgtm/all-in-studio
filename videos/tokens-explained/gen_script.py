@@ -1,0 +1,214 @@
+"""Generate perfected script.json for tokens-explained.
+Directorial Standard (Lesson #84):
+- Kokoro voice: af_heart at 0.95 speed, master v23.
+- Cadence: 8 full/scene cuts (72.7%), 3 split cuts (27.3%), max consecutive splits = 1.
+- Concrete WHO & WHAT: real CC/PD photos from Wikimedia Commons (edinburgh_old_college.jpg, supercomputer_rack.jpg).
+- Classy tactile widgets: StrawberrySlicer, BlindCounter, MemoryBelt, TokenTaxMeter.
+- On-screen word ceiling: <= 10 words per cut. Zero consecutive visual repeats.
+"""
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent.parent
+OUT = Path(__file__).resolve().parent / "script.json"
+
+DATA = {
+    "video_id": "tokens-explained",
+    "title": "how tokens break artificial intelligence",
+    "voice": {
+        "name": "af_heart",
+        "speed": 0.95
+    },
+    "master": "v23",
+    "pace": {
+        "lead": 0.2,
+        "gap": 0.45,
+        "min_beat": 2.4,
+        "to_clip": 0.25,
+        "after_clip": 0.45,
+        "end_pad": 2.0
+    },
+    "beats": [
+        {
+            "id": "t01",
+            "act": "01 THE STRAWBERRY PROBLEM",
+            "vo": "Ask a hundred-billion-dollar artificial intelligence how many times the letter R appears in the word strawberry, and it will confidently tell you two. A human child can see every letter.",
+            "shot": {
+                "cuts": [
+                    {
+                        "layout": "full",
+                        "hero": {
+                            "v": "StrawberrySlicer",
+                            "at": "strawberry",
+                            "humanAt": "strawberry",
+                            "sliceAt": "confidently",
+                            "tokenAt": "letter"
+                        },
+                        "cap": "how *tokens* break language"
+                    },
+                    {
+                        "at": "child",
+                        "layout": "split",
+                        "L": {
+                            "v": "Polaroid",
+                            "img": "tokens-explained/edinburgh_old_college.jpg",
+                            "name": "Edinburgh Univ",
+                            "notes": [{"t": "BPE algorithm", "at": "letter"}]
+                        },
+                        "R": {
+                            "v": "PageQuote",
+                            "enter": "child",
+                            "words": "words get sliced into *subword IDs*",
+                            "at": "letter",
+                            "plate": "Sennrich Study"
+                        },
+                        "cap": "sliced into *numeric* IDs"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "t02",
+            "act": "01 THE STRAWBERRY PROBLEM",
+            "vo": "The model is not stupid: it is completely blind. When you type strawberry, the neural network never receives letters. It receives three opaque numbers.",
+            "shot": {
+                "cuts": [
+                    {
+                        "layout": "full",
+                        "hero": {
+                            "v": "BlindCounter",
+                            "at": "blind",
+                            "guessAt": "numbers"
+                        },
+                        "cap": "why AI is *spelling-blind*"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "t03",
+            "act": "02 THE VECTOR FACTORY",
+            "vo": "Every piece of text is translated by an algorithm called Byte-Pair Encoding. The machine operates entirely on high-dimensional vectors inside its server racks.",
+            "shot": {
+                "cuts": [
+                    {
+                        "layout": "scene",
+                        "hero": {
+                            "v": "Film",
+                            "img": "tokens-explained/supercomputer_rack.jpg",
+                            "exhibit": {"t": "INFERENCE CLUSTER"},
+                            "tag": {"t": "128k token buffer", "at": "racks"},
+                            "credit": "Wikimedia Commons"
+                        },
+                        "cap": "the *128k* token buffer"
+                    },
+                    {
+                        "at": "vectors",
+                        "layout": "full",
+                        "hero": {
+                            "v": "VectorObservatory",
+                            "at": "vectors"
+                        },
+                        "cap": "words as *vectors*"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "t04",
+            "act": "02 THE VECTOR FACTORY",
+            "vo": "When you paste a long document into the prompt, the context window acts like a conveyor belt. As new tokens push in on the right, your initial instructions literally fall off the edge.",
+            "shot": {
+                "cuts": [
+                    {
+                        "layout": "full",
+                        "hero": {
+                            "v": "MemoryBelt",
+                            "at": "conveyor",
+                            "pushAt": "edge"
+                        },
+                        "cap": "old rules *fall* off the edge"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "t05",
+            "act": "03 THE HIDDEN TAX",
+            "vo": "Because tokenizers were trained on English text, non-Latin languages require up to four times as many tokens to express the exact same sentence. You pay a hidden language tax.",
+            "shot": {
+                "cuts": [
+                    {
+                        "layout": "full",
+                        "hero": {
+                            "v": "TokenTaxMeter",
+                            "at": "languages",
+                            "compareAt": "sentence"
+                        },
+                        "cap": "the *non-Latin* token tax"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "t06",
+            "act": "03 THE HIDDEN TAX",
+            "vo": "The computer does not speak French, Arabic, or Python. It only indexes fifty thousand fragment bins created by a statistical compression pass.",
+            "shot": {
+                "cuts": [
+                    {
+                        "layout": "scene",
+                        "hero": {
+                            "v": "Film",
+                            "img": "tokens-explained/edinburgh_old_college.jpg",
+                            "exhibit": {"t": "SUBWORD VOCABULARY"},
+                            "tag": {"t": "50,000 token bins", "at": "bins"},
+                            "credit": "Wikimedia Commons"
+                        },
+                        "cap": "a *vocabulary* of fragments"
+                    },
+                    {
+                        "at": "indexes",
+                        "layout": "split",
+                        "L": {
+                            "v": "Polaroid",
+                            "img": "tokens-explained/supercomputer_rack.jpg",
+                            "name": "Cluster BPE",
+                            "notes": [{"t": "token bins", "at": "indexes"}]
+                        },
+                        "R": {
+                            "v": "PageQuote",
+                            "enter": "indexes",
+                            "words": "models never see *letters*",
+                            "at": "compression",
+                            "plate": "Edinburgh BPE Paper"
+                        },
+                        "cap": "it never sees *letters*"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "t07",
+            "act": "04 UNDERSTANDING THE MACHINE",
+            "vo": "The next time an artificial intelligence hallucinates a spelling mistake, remember the strawberry slicer. You are talking to a calculator that has never seen a single word.",
+            "shot": {
+                "cuts": [
+                    {
+                        "layout": "full",
+                        "hero": {
+                            "v": "StrawberrySlicer",
+                            "at": "slicer",
+                            "tokenAt": "calculator"
+                        },
+                        "cap": "now you know the *reason*"
+                    }
+                ]
+            }
+        }
+    ]
+}
+
+if __name__ == "__main__":
+    OUT.write_text(json.dumps(DATA, indent=2), encoding="utf-8")
+    print(f"Wrote {len(DATA['beats'])} beats to {OUT}")

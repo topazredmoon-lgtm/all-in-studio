@@ -1,6 +1,7 @@
 // node tools/cutstills.mjs <video_id> [at=0.8] [beats=a02,a03] [--sheet name]
 // One still per CUT (beats with `cuts` hard-cut on cue words), at `at` of the cut's length, plus a numbered contact sheet
 // videos/<id>/qa/cuts_<name>.jpg (6 per row, 320 × 180, label = beat/cut and seconds). Look at it before any render.
+// Upgrades (2026-10-14): Shared Webpack bundle cache (`bundle_<bundleHash>`), strict cue matching, and GPU `gl: 'angle'`.
 import { createRequire } from 'module';
 import { execFileSync } from 'child_process';
 import fs from 'fs';
@@ -8,6 +9,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const TMP = path.join(ROOT, '.render-tmp');
+fs.mkdirSync(TMP, { recursive: true });
 const ENGINE = path.join(ROOT, 'engine');
 const require = createRequire(path.join(ENGINE, 'package.json'));
 const { bundle } = require('@remotion/bundler');
@@ -16,17 +19,30 @@ const { renderStill, selectComposition } = require('@remotion/renderer');
 const args = process.argv.slice(2).filter((a, i, all) => !a.startsWith('--') && all[i - 1] !== '--sheet');
 const sheetName = process.argv.includes('--sheet') ? process.argv[process.argv.indexOf('--sheet') + 1] : 'all';
 const [vid, atArg, onlyArg] = args;
+if (!vid || vid === '--help' || vid === '-h') {
+  console.log('Usage: node tools/cutstills.mjs <video_id> [at=0.8] [beats=a02,a03] [--sheet name]');
+  process.exit(0);
+}
 const at = Number(atArg ?? 0.8);
 const only = onlyArg ? onlyArg.split(',') : null;
 const tl = JSON.parse(fs.readFileSync(path.join(ENGINE, 'src/videos', vid, 'timeline.json'), 'utf8'));
-const norm = (s) => s.toLowerCase().replace(/[^a-z0-9$%]/g, '');
+const norm = (s) => String(s).toLowerCase().replace(/[^a-z0-9$%]/g, '');
+const ALLOWED_SUFFIXES = new Set(['s', 'es', 'd', 'ed', 'ing', 'er', 'ers', 'ly']);
+const matchWord = (wn, kn) => wn === kn || (kn.length >= 4 && wn.startsWith(kn) && ALLOWED_SUFFIXES.has(wn.slice(kn.length)));
+
 const cue = (words, key, fb) => {
   if (typeof key === 'number') return key;
   if (!key) return fb;
-  const [k, nth] = String(key).split('#'); let seen = 0;
-  for (const w of words) if (norm(w.w).startsWith(norm(k)) && ++seen >= Number(nth ?? 1)) return Math.max(0, w.f - 4);
+  const [kRaw, nth] = String(key).split('#');
+  const k = norm(kRaw);
+  const targetN = Number(nth ?? 1);
+  let seen = 0;
+  for (const w of words) if (matchWord(norm(w.w), k) && ++seen >= targetN) return Math.max(0, w.f - 4);
+  seen = 0;
+  for (const w of words) if (norm(w.w).startsWith(k) && ++seen >= targetN) return Math.max(0, w.f - 4);
   return fb;
 };
+
 const shots = [];
 for (const b of tl.beats) {
   if (only && !only.includes(b.id)) continue;
@@ -38,14 +54,28 @@ for (const b of tl.beats) {
     if (e > s) shots.push({ id: `${b.id}.${i}`, frame: b.start + s + Math.min(e - s - 2, Math.round((e - s) * at)), len: (e - s) / tl.fps });
   });
 }
+
 const dir = path.join(ROOT, 'videos', vid, 'qa', 'cuts');
 fs.mkdirSync(dir, { recursive: true });
-const serveUrl = await bundle({ entryPoint: path.join(ENGINE, 'src/index.ts'), publicDir: path.join(ENGINE, 'public') });
-const composition = await selectComposition({ browserExecutable: process.env.REMOTION_BROWSER || null, serveUrl, id: vid });
+const bundleHash = execFileSync('python', [path.join(ROOT, 'tools', 'srchash.py'), vid, '--bundle']).toString().trim();
+const bundleDir = path.join(TMP, `bundle_${bundleHash}`);
+const chromiumOptions = { gl: 'angle' };
+let serveUrl = bundleDir;
+if (!fs.existsSync(path.join(bundleDir, 'index.html'))) {
+  serveUrl = await bundle({ entryPoint: path.join(ENGINE, 'src/index.ts'), publicDir: path.join(ENGINE, 'public'), outDir: bundleDir });
+}
+let composition;
+try {
+  composition = await selectComposition({ browserExecutable: process.env.REMOTION_BROWSER || null, serveUrl, id: vid, chromiumOptions });
+} catch {
+  serveUrl = await bundle({ entryPoint: path.join(ENGINE, 'src/index.ts'), publicDir: path.join(ENGINE, 'public'), outDir: bundleDir });
+  composition = await selectComposition({ browserExecutable: process.env.REMOTION_BROWSER || null, serveUrl, id: vid, chromiumOptions });
+}
+
 const files = [];
 for (const s of shots) {
   const out = path.join(dir, `${s.id}.jpg`);
-  await renderStill({ browserExecutable: process.env.REMOTION_BROWSER || null, serveUrl, composition, frame: s.frame, output: out, imageFormat: 'jpeg', jpegQuality: 80, scale: 1 / 3 });
+  await renderStill({ browserExecutable: process.env.REMOTION_BROWSER || null, serveUrl, composition, frame: s.frame, output: out, imageFormat: 'jpeg', jpegQuality: 80, scale: 1 / 3, chromiumOptions });
   files.push({ out, label: `${s.id}  ${(s.frame / tl.fps).toFixed(1)}s${s.len ? `  (${s.len.toFixed(1)}s)` : ''}` });
   process.stdout.write(`${s.id} `);
 }

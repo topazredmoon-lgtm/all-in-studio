@@ -1,0 +1,114 @@
+[
+  {
+    "id": "inc-01",
+    "title": "THE DEATH OF THE PRICE TAG",
+    "slug": "surveillance-pricing",
+    "tagline": "How AI Algorithms Dynamically Tax Your Battery & Geolocation",
+    "universal_object": "The checkout price tag on an airline ticket, Uber ride, or grocery app.",
+    "hidden_mechanism": "Surveillance pricing algorithms ingest battery level, device model, and browsing velocity to determine maximum price elasticity per second.",
+    "spine_sentence": "The price tag didn't change because the flight filled up: it changed because your battery was at 4% and you were standing in the rain.",
+    "primary_receipt": "FTC 6(b) Orders on Surveillance Pricing (2024-2025) & Senate Judiciary Hearings.",
+    "killer_numbers": [
+      "$238% maximum observed price variance",
+      "4% battery urgency trigger",
+      "8 conglomerates subpoenaed by FTC"
+    ],
+    "status": "SAMPLE READY / READY FOR 8-MIN SCRIPT"
+  },
+  {
+    "id": "inc-02",
+    "title": "THE PHANTOM LAW 144",
+    "slug": "apply-button",
+    "tagline": "How 38% Compliance Broke NYC's Historic AI Hiring Oversight",
+    "universal_object": "The 'Submit Application' button on corporate career portals.",
+    "hidden_mechanism": "Automated Employment Decision Tools (AEDTs) discard 75% of applicants using proxy filters, while regulatory enforcement missed 17 out of 32 company violations.",
+    "spine_sentence": "You have been writing for a reader that cannot read: a statistical sieve reads you first; a human reads you seventh.",
+    "primary_receipt": "New York State Comptroller Audit (Dec 2025) on DCWP Local Law 144 failure.",
+    "killer_numbers": [
+      "17 violations missed in 32 companies",
+      "75% of 311 calls misrouted",
+      "$1,500/day compounding fine"
+    ],
+    "status": "SCRIPT READY / AWAITING BUILD & RENDER"
+  },
+  {
+    "id": "inc-03",
+    "title": "THE 3-NANOSECOND WAR",
+    "slug": "microwave-trading",
+    "tagline": "The Secret Microwave Towers Fighting Over $0.0001",
+    "universal_object": "The 'Buy' button on Robinhood or a retail stock trading app.",
+    "hidden_mechanism": "High-frequency trading firms built laser and microwave relays across New Jersey farmland to beat fiber optic cables by 3 nanoseconds.",
+    "spine_sentence": "The speed of greed is not limited by code: it is limited only by the speed of light in vacuum.",
+    "primary_receipt": "SEC Market Structure White Papers & FCC microwave spectrum license filings in Morris County, NJ.",
+    "killer_numbers": [
+      "3 nanoseconds latency advantage",
+      "99.2% speed of light in air vs 67% in glass",
+      "$150M spent per microwave corridor"
+    ],
+    "status": "SAMPLE BUILT / EXPAND TO FULL FILM"
+  },
+  {
+    "id": "inc-04",
+    "title": "THE PRICE OF THE PROMPT",
+    "slug": "ai-power-bill",
+    "tagline": "How AI Datacenters Triggered Double-Digit Utility Rate Spikes",
+    "universal_object": "The paper electric bill envelope arriving in your monthly mail.",
+    "hidden_mechanism": "PJM capacity auctions spiked 9x as hyperscale datacenter loads claimed $29.4B in capacity charges, directly driving retail electric bill hikes until FERC intervened in late 2026.",
+    "spine_sentence": "Your light switch is quietly paying for a supercomputer you never asked for.",
+    "primary_receipt": "FERC late 2026 order rejecting PJM emergency capacity shift & Monitoring Analytics 2025-2026 reports.",
+    "killer_numbers": [
+      "$29.4B datacenter capacity charge",
+      "46% share of regional grid capacity",
+      "+24% residential rate hikes"
+    ],
+    "status": "2-MIN SAMPLE DELIVERED / EXPAND TO 8-MIN FILM"
+  },
+  {
+    "id": "inc-05",
+    "title": "THE GHOST ARMY",
+    "slug": "new-ai-reasoning",
+    "tagline": "The Invisible Humans Behind AI Reasoning Models",
+    "universal_object": "The 'Thinking...' animation on a modern reasoning chatbot.",
+    "hidden_mechanism": "Behind every synthetic reasoning chain sits an army of contractors in Kenya and the Philippines manually grading thought traces for $2 an hour.",
+    "spine_sentence": "The machine isn't thinking: it is playing back the thought patterns of thousands of exhausted humans working at midnight.",
+    "primary_receipt": "Time Magazine investigative reporting, MIT Technology Review contractor paystubs, and Sama Kenya labor union court filings.",
+    "killer_numbers": [
+      "$2.00/hr typical annotator wage",
+      "100,000+ invisible labelers",
+      "16-hour shifts reviewing toxic prompts"
+    ],
+    "status": "SAMPLE BUILT / EXPAND TO FULL FILM"
+  },
+  {
+    "id": "inc-06",
+    "title": "THE STOLEN VOICE",
+    "slug": "stolen-voices",
+    "tagline": "The Black Market in Synthetic Replicas & Lehrman v. Lovo",
+    "universal_object": "A 3-second voice note sent on WhatsApp.",
+    "hidden_mechanism": "Voice actors' research samples were quietly ingested to train commercial voice cloning engines, spawning multi-million dollar fraud pipelines.",
+    "spine_sentence": "They didn't record your voice to make a phone call: they recorded it to build an employee who works forever without a paycheck.",
+    "primary_receipt": "Lehrman & Sage v. Lovo, Inc. (S.D.N.Y. 24-CV-3770, 2025) & FCC Declaratory Ruling.",
+    "killer_numbers": [
+      "3 seconds audio required for clone",
+      "$21B annual cybercrime losses",
+      "$11M single deepfake wire transfer"
+    ],
+    "status": "RESEARCH COMPLETE / SCRIPT DRAFTING"
+  },
+  {
+    "id": "inc-07",
+    "title": "THE POISONED WELL",
+    "slug": "poisoned-well",
+    "tagline": "How 100 Web Pages Can Secretly Reprogram Enterprise AI",
+    "universal_object": "A company intranet search bar powered by an AI assistant.",
+    "hidden_mechanism": "Adversarial data poisoning inserts invisible payload text into public web pages that enterprise RAG pipelines scrape, secretly subverting company decisions.",
+    "spine_sentence": "You don't have to hack the server: you just have to poison the water it drinks.",
+    "primary_receipt": "arXiv:2402.14800 (PoisonedRAG) & US Department of Defense DARPA Guard Dog briefings.",
+    "killer_numbers": [
+      "100 injected documents to control 90% of outputs",
+      "0 alert flags raised by standard antivirus",
+      "100% success rate on enterprise RAG"
+    ],
+    "status": "SAMPLE BUILT / EXPAND TO FULL FILM"
+  }
+]

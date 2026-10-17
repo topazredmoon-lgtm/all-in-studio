@@ -1,0 +1,270 @@
+{
+  "meta": {
+    "title": "the dark reality of the apply button",
+    "title_alt1": "why 75% of resumes vanish in 0.2 seconds",
+    "title_alt2": "a machine reads you first (and how to beat it)",
+    "spine": "you have been writing for a reader that cannot read.",
+    "description": "you sent 200 applications and heard nothing back. it wasn't your experience — it was the parser. here is what happens in the 0.2 seconds after you click 'apply', the lawsuits forcing the gate open, and the 4 rules that get your file to a real human.",
+    "tags": "applicant tracking system, dark reality of job applications, ats resume filter, why resumes get rejected, mobley v workday, nyc local law 144, ai hiring score, not so dark times",
+    "pinned_comment": "how many applications did you send in your last job search before a real human replied? ↓",
+    "sources_line": "Harvard Business School 'Hidden Workers' Study (Fuller et al.) · Jobscan Fortune 500 ATS Report · The Ladders 7.4s Eye-Tracking Study · Mobley v. Workday (N.D. Cal.) · NYC Local Law 144 · EU AI Act Annex III · HireVue 2021 Facial Analysis Discontinuation",
+    "thumbnails": [
+      {
+        "file": "thumb_1.png",
+        "text": "HUMANS NEVER SAW IT",
+        "red": "NEVER",
+        "badge": "0.2 SECONDS // AUTO-REJECT",
+        "motif": "gate"
+      },
+      {
+        "file": "thumb_2.png",
+        "text": "SEVENTH IN LINE",
+        "red": "SEVENTH",
+        "badge": "THE ATS SIEVE // 75% GONE",
+        "motif": "dossier"
+      },
+      {
+        "file": "thumb_3.png",
+        "text": "UNPARSED NOT UNSEEN",
+        "red": "UNPARSED",
+        "badge": "BEAT THE PARSER",
+        "motif": "meter"
+      }
+    ]
+  },
+  "master": "cinema",
+  "voice": {
+    "name": "kore",
+    "ex": 0.65
+  },
+  "pace": {
+    "lead": 0.2,
+    "gap": 0.45,
+    "min_beat": 3.2
+  },
+  "beats": [
+    {
+      "id": "j01",
+      "chapter": "two hundred clicks",
+      "vo": "You sent out two hundred job applications this spring, and you got zero replies. | You blamed your experience, and you rewrote your summary three times. || But a human being never saw your file.",
+      "say": "You sent out two hundred job applications this spring, and you got zero replies. | You blamed your experience, and you rewrote your summary three times. || But a human being never saw your file.",
+      "ex": 0.68,
+      "shot": {
+        "layout": "split",
+        "cap": "200 clicks, *zero* human eyes",
+        "sfx": [
+          {
+            "k": "click",
+            "at": "two"
+          },
+          {
+            "k": "thud",
+            "at": "never"
+          }
+        ],
+        "L": {
+          "v": "IconRow",
+          "name": "doc",
+          "count": 9,
+          "decay": true,
+          "label": "200 applications sent",
+          "tag": {
+            "t": "0 replies received",
+            "at": "zero"
+          }
+        },
+        "R": {
+          "v": "ForensicStamp",
+          "enter": "never",
+          "label": "UNREAD BY HUMANS",
+          "sub": "filtered in 0.2 seconds",
+          "stamp": {
+            "t": "real",
+            "at": "file"
+          },
+          "tag": {
+            "t": "75% rejected pre-human",
+            "at": "file"
+          }
+        }
+      }
+    },
+    {
+      "id": "j02",
+      "vo": "You have been writing your resume for a reader that cannot read. | Nearly ninety-nine percent of Fortune five hundred companies run an automated sieve called an Applicant Tracking System before a recruiter ever opens a folder.",
+      "say": "You have been writing your resume for a reader that cannot read. | Nearly ninety-nine percent of Fortune five hundred companies run an automated sieve called an Applicant Tracking System before a recruiter ever opens a folder.",
+      "ex": 0.65,
+      "shot": {
+        "layout": "split",
+        "cap": "a *sieve* reads you first",
+        "L": {
+          "v": "Flow",
+          "nodes": [
+            {
+              "icon": "doc",
+              "label": "your resume"
+            },
+            {
+              "icon": "grid",
+              "label": "ATS parser"
+            },
+            {
+              "icon": "person",
+              "label": "recruiter #7"
+            }
+          ],
+          "tag": {
+            "t": "98.8% Fortune 500 share",
+            "at": "ninety"
+          }
+        },
+        "R": {
+          "v": "Bars",
+          "enter": "sieve",
+          "bars": [
+            {
+              "label": "Auto-Filtered",
+              "v": 75,
+              "tag": "75% binned"
+            },
+            {
+              "label": "Human Glance",
+              "v": 25,
+              "tag": "7.4s glance"
+            }
+          ],
+          "tag": {
+            "t": "Jobscan / Ladders Study",
+            "at": "folder"
+          }
+        }
+      }
+    },
+    {
+      "id": "j03",
+      "chapter": "the parser rewrite",
+      "vo": "When you click apply, the parser strips away your layout and chops your career into a flat string of database slots. | If you used a two-column table or wrote customer where the job post wrote client, your score drops below the line in silence.",
+      "say": "When you click apply, the parser strips away your layout and chops your career into a flat string of database slots. | If you used a two-column table or wrote customer where the job post wrote client, your score drops below the line in silence.",
+      "ex": 0.66,
+      "shot": {
+        "layout": "split",
+        "cap": "one wrong noun closes the *door*",
+        "L": {
+          "v": "CodeTerminal",
+          "title": "ats_parser.log",
+          "lines": [
+            "input: resume_2col.pdf",
+            "table_parse: FAILED (scrambled)",
+            "keyword 'client_success': MISSING",
+            "rank_score: 42/100 -> AUTO_REJECT"
+          ],
+          "tag": {
+            "t": "tables jam the parser",
+            "at": "strips"
+          }
+        },
+        "R": {
+          "v": "DossierDoc",
+          "enter": "score",
+          "title": "SILENT REJECTION",
+          "lines": [
+            "No error message shown",
+            "6-month gap penalized",
+            "Recruiter inbox: Never reached"
+          ],
+          "stamp": {
+            "t": "real",
+            "at": "silence"
+          },
+          "tag": {
+            "t": "HBS Hidden Workers Study",
+            "at": "silence"
+          }
+        }
+      }
+    },
+    {
+      "id": "j04",
+      "chapter": "the audit rebellion",
+      "vo": "Even worse, when companies get sued for age or disability bias, they point at the software vendor as a shield. | That is why New York City passed Local Law one forty-four forcing public bias audits, and Europe classified hiring AI as high-risk.",
+      "say": "Even worse, when companies get sued for age or disability bias, they point at the software vendor as a shield. | That is why New York City passed Local Law one forty-four forcing public bias audits, and Europe classified hiring AI as high-risk.",
+      "ex": 0.66,
+      "shot": {
+        "layout": "split",
+        "cap": "the law forced the *gate* open",
+        "sfx": [
+          {
+            "k": "thud",
+            "at": "sued"
+          }
+        ],
+        "L": {
+          "v": "Balance",
+          "label": "Mobley v. Workday",
+          "tag": {
+            "t": "N.D. Cal. AI Bias Suit",
+            "at": "sued"
+          }
+        },
+        "R": {
+          "v": "FieldCard",
+          "enter": "New",
+          "title": "THE NEW HIRING LAWS",
+          "rows": [
+            "NYC Local Law 144 (Mandatory Audits)",
+            "EU AI Act Annex III (High-Risk Class)",
+            "Illinois AI Video Interview Act"
+          ],
+          "tag": {
+            "t": "you can demand the audit",
+            "at": "high"
+          }
+        }
+      }
+    },
+    {
+      "id": "j05",
+      "vo": "So stop writing for one reader and start writing for two. | Use a single-column file, mirror the exact nouns from the top third of the job post, label any career gap plainly, and remember: you were never invisible — you were just unparsed.",
+      "say": "So stop writing for one reader and start writing for two. | Use a single-column file, mirror the exact nouns from the top third of the job post, label any career gap plainly, and remember: you were never invisible — you were just unparsed.",
+      "ex": 0.66,
+      "shot": {
+        "layout": "split",
+        "cap": "you were *unparsed*, not unseen",
+        "sfx": [
+          {
+            "k": "click",
+            "at": "unparsed"
+          }
+        ],
+        "L": {
+          "v": "FieldCard",
+          "title": "BEAT THE SIEVE",
+          "rows": [
+            "1. Single-column plain layout",
+            "2. Mirror exact job-post nouns",
+            "3. Label any date gap explicitly",
+            "4. Ask which AI tool scored you"
+          ],
+          "tag": {
+            "t": "write for both readers",
+            "at": "two"
+          }
+        },
+        "R": {
+          "v": "ForensicStamp",
+          "enter": "invisible",
+          "label": "PARSED // PASSED",
+          "sub": "reaches human chair #7",
+          "stamp": {
+            "t": "real",
+            "at": "unparsed"
+          },
+          "tag": {
+            "t": "now you hold the key",
+            "at": "unparsed"
+          }
+        }
+      }
+    }
+  ]
+}

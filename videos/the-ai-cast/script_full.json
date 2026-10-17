@@ -1,0 +1,494 @@
+{
+  "meta": {
+    "title": "THE NEW AI CAST",
+    "title_alt1": "the dark reality of the AI alibi",
+    "title_alt2": "how $50 of AI broke the justice system",
+    "spine": "AI didn't build tools. it built a cast — and you're either in it or you're scenery.",
+    "description": "from fake digital alibis that fool police to 3-second voice clones and $50 API heists, AI is splitting the world into two groups: the people who know how the machine works, and the marks who pay for it.",
+    "tags": "the new ai cast, ai alibi, dark reality of ai, virtual kidnapping fbi, model extraction attack, deepfake court evidence, adversarial patches cctv, not so dark times, tech documentary, ai crime 2026",
+    "pinned_comment": "do you and your family have a secret codeword for emergency calls yet? if not, pick one tonight (and don't write it in this comment!) ↓",
+    "sources_line": "ABC7 Deepfake Texts Investigation (Jan 2026) · NCSC Courts Threat Advisory (Feb 2026) · Kennedys Law '86% Fake' Analysis (Jan 2026) · SSRN 'Your Honor, Video Lies' (R. Lee, 2026) · FBI IC3 2025 Internet Crime Report ($21B, Apr 2026) · Praetorian & CSA 16M-Query Model Extraction Study (Mar 2026) · NDSS / TechCrunch Adversarial CCTV Evasion (Aug 2026)",
+    "thumbnails": [
+      {
+        "file": "thumb_1.png",
+        "text": "THE NEW AI CAST",
+        "red": "CAST",
+        "badge": "EXHIBIT A // THE RESHUFFLE",
+        "motif": "dossier"
+      },
+      {
+        "file": "thumb_2.png",
+        "text": "YOUR PHONE LIED",
+        "red": "LIED",
+        "badge": "COURT EXHIBIT // 86% FAKE",
+        "motif": "gate"
+      },
+      {
+        "file": "thumb_3.png",
+        "text": "$50 STOLE $100M",
+        "red": "$50",
+        "badge": "16M QUERIES // API HEIST",
+        "motif": "meter"
+      }
+    ]
+  },
+  "master": "cinema",
+  "voice": {
+    "name": "kore",
+    "ex": 0.66
+  },
+  "pace": {
+    "lead": 0.2,
+    "gap": 0.45,
+    "min_beat": 3.2
+  },
+  "beats": [
+    {
+      "id": "c01",
+      "chapter": "the courtroom trap",
+      "vo": "In January twenty twenty-six, a woman sat in a Philadelphia courtroom while a phone played the text messages that put her in jail. | There was only one problem. || Nobody ever typed those texts.",
+      "say": "In January twenty twenty-six, a woman sat in a Philadelphia courtroom while a phone played the text messages that put her in jail. | There was only one problem. || Nobody ever typed those texts.",
+      "ex": 0.72,
+      "shot": {
+        "layout": "split",
+        "cap": "the texts were *never* typed",
+        "sfx": [
+          {
+            "k": "thud",
+            "at": "jail"
+          }
+        ],
+        "L": {
+          "v": "DossierDoc",
+          "title": "COURT EXHIBIT // TEXT LOG",
+          "lines": [
+            "Sender: Verified Number",
+            "Timestamp: 02:14 AM",
+            "Status: Admitted in Court"
+          ],
+          "tag": {
+            "t": "ABC7 Jan 2026 case",
+            "at": "courtroom"
+          }
+        },
+        "R": {
+          "v": "ForensicStamp",
+          "enter": "problem",
+          "label": "100% SYNTHETIC",
+          "sub": "fabricated by an AI tool",
+          "stamp": {
+            "t": "real",
+            "at": "typed"
+          },
+          "tag": {
+            "t": "never typed by human",
+            "at": "typed"
+          }
+        }
+      }
+    },
+    {
+      "id": "c02",
+      "vo": "Artificial intelligence did not just build new tools for everyone. | It quietly built a whole new cast of characters. || And by the end of this video, you will know whether you are in the cast, or just part of the scenery.",
+      "say": "Artificial intelligence did not just build new tools for everyone. | It quietly built a whole new cast of characters. || And by the end of this video, you will know whether you are in the cast, or just part of the scenery.",
+      "ex": 0.68,
+      "shot": {
+        "layout": "split",
+        "cap": "the new *AI* cast",
+        "sfx": [
+          {
+            "k": "click",
+            "at": "cast"
+          }
+        ],
+        "L": {
+          "v": "FieldCard",
+          "title": "THE NEW AI CAST",
+          "rows": [
+            "The Forger (Alibis)",
+            "The Cloner (3s Voice)",
+            "The Extractor ($50 Heist)",
+            "The Blinder (CCTV Patch)"
+          ],
+          "tag": {
+            "t": "4 new criminal roles",
+            "at": "cast"
+          }
+        },
+        "R": {
+          "v": "LineIcon",
+          "name": "eye",
+          "enter": "scenery",
+          "mark": "?",
+          "label": "the mark",
+          "tag": {
+            "t": "cast or scenery?",
+            "at": "scenery"
+          }
+        }
+      }
+    },
+    {
+      "id": "c03",
+      "chapter": "the unbreakable alibi",
+      "vo": "Meet the first member of the cast: The Forger. | Today, police use your phone's location pings, your typing speed, and your music history to prove where you were during a crime.",
+      "say": "Meet the first member of the cast: The Forger. | Today, police use your phone's location pings, your typing speed, and your music history to prove where you were during a crime.",
+      "ex": 0.62,
+      "shot": {
+        "layout": "split",
+        "cap": "how police prove your *alibi*",
+        "L": {
+          "v": "LineIcon",
+          "name": "pin",
+          "label": "GPS + metadata",
+          "tag": {
+            "t": "digital footprint",
+            "at": "location"
+          }
+        },
+        "R": {
+          "v": "FieldCard",
+          "enter": "typing",
+          "title": "DIGITAL EXHAUST",
+          "rows": [
+            "GPS tower pings",
+            "Keystroke rhythm",
+            "App & music logs"
+          ],
+          "tag": {
+            "t": "treated as truth",
+            "at": "crime"
+          }
+        }
+      }
+    },
+    {
+      "id": "c04",
+      "vo": "So smart criminals stopped hiding their phones. | Instead, they run an AI agent that fakes months of their exact typing rhythm and location pings while they commit a crime somewhere else.",
+      "say": "So smart criminals stopped hiding their phones. | Instead, they run an AI agent that fakes months of their exact typing rhythm and location pings while they commit a crime somewhere else.",
+      "ex": 0.68,
+      "shot": {
+        "layout": "split",
+        "cap": "the phone *swore* you were home",
+        "sfx": [
+          {
+            "k": "thud",
+            "at": "fakes"
+          }
+        ],
+        "L": {
+          "v": "Flow",
+          "nodes": [
+            {
+              "icon": "robot",
+              "label": "AI twin"
+            },
+            {
+              "icon": "laptop",
+              "label": "fake pings"
+            },
+            {
+              "icon": "building",
+              "label": "court docket"
+            }
+          ],
+          "tag": {
+            "t": "SSRN 2026 Alibi Study",
+            "at": "agent"
+          }
+        },
+        "R": {
+          "v": "DossierDoc",
+          "enter": "fakes",
+          "title": "ALIBI VERIFIED",
+          "lines": [
+            "Phone at home: 100% match",
+            "Typing cadence: 99.4% match",
+            "Verdict: Suspect cleared"
+          ],
+          "stamp": {
+            "t": "real",
+            "at": "crime"
+          },
+          "tag": {
+            "t": "the unbreakable alibi",
+            "at": "crime"
+          }
+        }
+      }
+    },
+    {
+      "id": "c05",
+      "chapter": "the 3-second voice heist",
+      "vo": "Next in the cast is The Cloner. | It now takes just three seconds of your voice from a public social media video to clone your exact tone and panic.",
+      "say": "Next in the cast is The Cloner. | It now takes just three seconds of your voice from a public social media video to clone your exact tone and panic.",
+      "ex": 0.7,
+      "shot": {
+        "layout": "split",
+        "cap": "*three* seconds to steal a voice",
+        "L": {
+          "v": "LineIcon",
+          "name": "camera",
+          "label": "public reel",
+          "tag": {
+            "t": "3 seconds of audio",
+            "at": "three"
+          }
+        },
+        "R": {
+          "v": "Copier",
+          "enter": "clone",
+          "gens": 3,
+          "label": "voice clone",
+          "tag": {
+            "t": "FBI Kidnapping PSA",
+            "at": "panic"
+          }
+        }
+      }
+    },
+    {
+      "id": "c06",
+      "vo": "And then there is The Extractor. | You do not need to hack a server to steal a hundred-million-dollar AI model anymore. || You just pay fifty dollars for sixteen million API questions, and the model hands you its own brain.",
+      "say": "And then there is The Extractor. | You do not need to hack a server to steal a hundred-million-dollar AI model anymore. || You just pay fifty dollars for sixteen million A P I questions, and the model hands you its own brain.",
+      "ex": 0.72,
+      "shot": {
+        "layout": "split",
+        "cap": "$50 steals a *$100M* model",
+        "sfx": [
+          {
+            "k": "click",
+            "at": "fifty"
+          },
+          {
+            "k": "thud",
+            "at": "brain"
+          }
+        ],
+        "L": {
+          "v": "Bars",
+          "bars": [
+            {
+              "label": "Training Cost",
+              "v": 100,
+              "tag": "$100,000,000"
+            },
+            {
+              "label": "API Extraction",
+              "v": 5,
+              "tag": "$50 in queries"
+            }
+          ],
+          "tag": {
+            "t": "Praetorian / CSA 2026",
+            "at": "fifty"
+          }
+        },
+        "R": {
+          "v": "CodeTerminal",
+          "enter": "sixteen",
+          "title": "model_extract.py",
+          "lines": [
+            "queries_sent: 16,000,000",
+            "api_bill: $48.50",
+            "weights_cloned: 99.1%"
+          ],
+          "tag": {
+            "t": "16M query heist",
+            "at": "brain"
+          }
+        }
+      }
+    },
+    {
+      "id": "c07",
+      "chapter": "the reshuffle",
+      "vo": "meanwhile, courts and police cannot tell what is real anymore. | Cybercrime losses hit twenty-one billion dollars last year, because a new dividing line is splitting the world in two: fluency.",
+      "say": "Meanwhile, courts and police cannot tell what is real anymore. | Cybercrime losses hit twenty-one billion dollars last year, because a new dividing line is splitting the world in two: fluency.",
+      "ex": 0.66,
+      "shot": {
+        "layout": "split",
+        "cap": "86% fake, *100%* admissible",
+        "L": {
+          "v": "Balance",
+          "label": "courtroom proof",
+          "tag": {
+            "t": "NCSC Feb 2026 Warning",
+            "at": "courts"
+          }
+        },
+        "R": {
+          "v": "DossierDoc",
+          "enter": "twenty",
+          "title": "FBI IC3 REPORT",
+          "lines": [
+            "Total losses: $21 Billion",
+            "Kennedys Law: 86% fake",
+            "Detection reliability: Failing"
+          ],
+          "stamp": {
+            "t": "real",
+            "at": "fluency"
+          },
+          "tag": {
+            "t": "$21B lost (FBI 2026)",
+            "at": "twenty"
+          }
+        }
+      }
+    },
+    {
+      "id": "c08",
+      "chapter": "the blinder",
+      "vo": "Meet the fourth member of the crew: The Blinder. | Researchers showed that wearing a printed psychedelic patch on a jacket mathematically blinds surveillance cameras, forcing the AI to see a potted plant instead of a person.",
+      "say": "Meet the fourth member of the crew: The Blinder. | Researchers showed that wearing a printed psychedelic patch on a jacket mathematically blinds surveillance cameras, forcing the AI to see a potted plant instead of a person.",
+      "ex": 0.65,
+      "shot": {
+        "layout": "split",
+        "cap": "a $10 shirt *blinds* CCTV",
+        "L": {
+          "v": "LineIcon",
+          "name": "camera",
+          "mark": "no",
+          "at": "blinds",
+          "label": "AI camera",
+          "tag": {
+            "t": "NDSS / TechCrunch 2026",
+            "at": "blinds"
+          }
+        },
+        "R": {
+          "v": "FieldCard",
+          "enter": "forcing",
+          "title": "OBJECT DETECTOR OUTPUT",
+          "rows": [
+            "Human confidence: 0.02%",
+            "Potted plant: 94.8%",
+            "Status: Target ignored"
+          ],
+          "tag": {
+            "t": "adversarial pixel noise",
+            "at": "person"
+          }
+        }
+      }
+    },
+    {
+      "id": "c09",
+      "chapter": "the fluency caste line",
+      "vo": "I will be honest with you: this is the part that bothers me the most. | The line between the people who profit and the people who get tricked is no longer money or geography. || It is whether you understand how the machine works.",
+      "say": "I will be honest with you: this is the part that bothers me the most. | The line between the people who profit and the people who get tricked is no longer money or geography. || It is whether you understand how the machine works.",
+      "ex": 0.7,
+      "shot": {
+        "layout": "split",
+        "cap": "the line is *fluency*, not money",
+        "L": {
+          "v": "PressStack",
+          "label": "the reshuffle",
+          "tag": {
+            "t": "moats erased for $50",
+            "at": "profit"
+          }
+        },
+        "R": {
+          "v": "Loop",
+          "enter": "tricked",
+          "nodes": [
+            {
+              "icon": "robot",
+              "label": "AI tool"
+            },
+            {
+              "icon": "key",
+              "label": "fluency"
+            },
+            {
+              "icon": "shield",
+              "label": "protection"
+            }
+          ],
+          "tag": {
+            "t": "the new dividing line",
+            "at": "machine"
+          }
+        }
+      }
+    },
+    {
+      "id": "c10",
+      "chapter": "how to beat the cast",
+      "vo": "But the cast has a fatal weakness, and the courts are finally catching up. | New cryptographic standards like C2PA lock provenance directly into real photos at the camera sensor, and three simple habits protect you today.",
+      "say": "But the cast has a fatal weakness, and the courts are finally catching up. | New cryptographic standards like C 2 P A lock provenance directly into real photos at the camera sensor, and three simple habits protect you today.",
+      "ex": 0.62,
+      "shot": {
+        "layout": "split",
+        "cap": "three moves that *beat* the cast",
+        "L": {
+          "v": "JournalPlate",
+          "label": "cryptographic proof",
+          "tag": {
+            "t": "IBA / C2PA 2026 Rule",
+            "at": "catching"
+          }
+        },
+        "R": {
+          "v": "FieldCard",
+          "enter": "three",
+          "title": "YOUR 3 MOVES",
+          "rows": [
+            "1. Set a family voice codeword",
+            "2. Treat metadata as testimony",
+            "3. Master one AI tool deeply"
+          ],
+          "tag": {
+            "t": "codeword beats clones",
+            "at": "protect"
+          }
+        }
+      }
+    },
+    {
+      "id": "c11",
+      "vo": "Next time that courtroom phone rings with a panicked voice, ask for your family's secret codeword. | Silence on the line. || Because the new cast was never chosen by blood or money — it was chosen by curiosity, and watching this just put you inside it.",
+      "say": "Next time that courtroom phone rings with a panicked voice, ask for your family's secret codeword. | Silence on the line. || Because the new cast was never chosen by blood or money — it was chosen by curiosity, and watching this just put you inside it.",
+      "ex": 0.7,
+      "shot": {
+        "layout": "split",
+        "cap": "the cast *cannot* answer back",
+        "sfx": [
+          {
+            "k": "thud",
+            "at": "curiosity"
+          }
+        ],
+        "L": {
+          "v": "DossierDoc",
+          "title": "COURT EXHIBIT // CLOSED",
+          "lines": [
+            "Challenge: Family Codeword",
+            "Caller response: [SILENCE]",
+            "Clone defeated in 2 seconds"
+          ],
+          "tag": {
+            "t": "the tell: silence",
+            "at": "Silence"
+          }
+        },
+        "R": {
+          "v": "ForensicStamp",
+          "enter": "curiosity",
+          "label": "YOU ARE CAST",
+          "sub": "chosen by curiosity",
+          "stamp": {
+            "t": "real",
+            "at": "inside"
+          },
+          "tag": {
+            "t": "curiosity is the key",
+            "at": "inside"
+          }
+        }
+      }
+    }
+  ]
+}

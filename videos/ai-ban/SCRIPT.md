@@ -1,3 +1,60 @@
+# THE COMING AI BAN · Delivered Full Film Script (12:54)
+
+Delivered cut: `videos/ai-ban/out/All-in_ai_ban_full.mp4` (775 s / 12:54, 75 beats, 18 clips).
+Based on the owner's `owner_script.txt` (scenes 01-18), with facts verified in `SOURCES.md` and clips cleared in `LICENCES.md`.
+Features REAL and NOT YET stamps on screen for critical-viewer rigor.
+
+## Delivered 14-Act Film Structure
+### Act 01 THE BAN
+- **Summary**: sample v5, approved by owner. The cold open on phone AI and deepfakes.
+
+### Act 02 THE BLUEPRINT
+- **Summary**: The financial panic, Arup Hong Kong $25.6M deepfake heist.
+
+### Act 03 THE PLAYBOOK
+- **Summary**: Crypto wars precedent (1996 munition classification) and PGP.
+
+### Act 04 THE PANIC
+- **Summary**: Banking system vulnerabilities and Altman's warning to the Fed.
+
+### Act 05 THE PROOF
+- **Summary**: The five pieces: real-name ID, chip tracking, weights, licensing, kill-switches.
+
+### Act 06 THE BLACK MARKET
+- **Summary**: WormGPT, FraudGPT, jailbreaks, and fine-tuning stripping for under $200.
+
+### Act 07 THE LICENCE
+- **Summary**: Altman asking Senate for a federal AI licensing agency (regulatory capture).
+
+### Act 08 THE CHIPS
+- **Summary**: Chip Security Act (Warren/Cotton) and location tracking on GPUs.
+
+### Act 09 OPEN SOURCE
+- **Summary**: Weights export control (Jan 2025 rule), Hugging Face, DeepSeek R1 in 4GB.
+
+### Act 10 THE BETRAYAL
+- **Summary**: The stolen commons: trained on pirated books ($1.5B Anthropic settlement).
+
+### Act 11 THE HEIST
+- **Summary**: Two internets: raw power for institutions, sanitised toys for ordinary people.
+
+### Act 12 THE FUTURE
+- **Summary**: Drone swarms, EU AI Act, real-identity enforcement.
+
+### Act 13 THE TIMELINE
+- **Summary**: How the pieces snap shut over the coming years.
+
+### Act 14 THE CHOICE
+- **Summary**: The callback to encryption: ordinary people fought back, code is speech.
+
+
+---
+
+## Appendix: Superseded Early Draft (Rejected 2026-10-11)
+
+> [!NOTE]
+> The draft below was the initial 8-act proposal opening with the 2023 Senate hearing. It was explicitly rejected by the owner (LEARNINGS 67-71) for opening with "old people at a dais" rather than immediate stakes for the viewer. Retained for historical provenance only.
+
 # THE COMING AI BAN · rewrite plan (2026-10-11)
 
 Base: the owner's `owner_script.txt` (spine kept: the ban, the deepfake bank panic, open weights, chips, Big Tech's

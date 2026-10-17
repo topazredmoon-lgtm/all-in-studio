@@ -10,7 +10,7 @@ type One =
   | { layout: 'scene'; hero: VisualSpec; cap?: string; act?: string }
   | { layout: 'chapter'; no: string; title: string; img?: string; credit?: string; focus?: string; at?: string };
 /** A beat is one shot, or several `cuts` that hard-cut on their cue words (v23 / minimal pacing: something new every 2–3 s). */
-export type Shot = (One | { cuts: (One & { at?: string | number })[]; act?: string }) & { sfx?: unknown[]; act?: string };
+export type Shot = (One | { cuts: (One & { at?: string | number; punch?: boolean })[]; act?: string }) & { sfx?: unknown[]; act?: string };
 export type Beat = { id: string; start: number; dur: number; words?: Word[]; shot?: Shot; clip?: { src: string; from: number; to: number; plate?: string; plateAt?: number; hold?: number } };
 export type Timeline = { fps: number; total: number; beats: Beat[] };
 
@@ -29,7 +29,7 @@ const Punch: React.FC<{ children: React.ReactNode; on: boolean }> = ({ children,
   return <AbsoluteFill style={{ opacity: 0.4 + 0.6 * p }}>{children}</AbsoluteFill>;
 };
 
-const Cuts: React.FC<{ reg: Registry; cuts: (One & { at?: string | number })[]; act?: string }> = ({ reg, cuts, act }) => {
+const Cuts: React.FC<{ reg: Registry; cuts: (One & { at?: string | number; punch?: boolean })[]; act?: string }> = ({ reg, cuts, act }) => {
   const { words, dur } = useBeat();
   const starts = cuts.map((c, i) => (i === 0 ? 0 : cueFrame(words, c.at, Math.round((dur * i) / cuts.length))));
   return (
@@ -42,7 +42,7 @@ const Cuts: React.FC<{ reg: Registry; cuts: (One & { at?: string | number })[]; 
         return (
           <Sequence key={i} from={from} durationInFrames={to - from} name={`cut${i}`}>
             <BeatCtx.Provider value={{ words: words.map((w) => ({ ...w, f: w.f - from })), dur: to - from }}>
-              <Punch on={i > 0}>{renderOne(reg, c, act)}</Punch>
+              <Punch on={i > 0 && c.punch !== false}>{renderOne(reg, c, act)}</Punch>
             </BeatCtx.Provider>
           </Sequence>
         );

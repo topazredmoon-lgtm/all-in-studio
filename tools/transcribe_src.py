@@ -1,8 +1,14 @@
 """Transcribe long source recordings (talks) to find clip candidates.
 python tools/transcribe_src.py <file> [<file> ...]  -> <file>.segments.txt ("[start-end] text" per Whisper segment)
 Word timing for the final cut comes later from tools/clip_words.py on the cut clip."""
-import sys
+import os, sys
 from pathlib import Path
+
+if "HF_HOME" not in os.environ:
+    os.environ["HF_HOME"] = str(Path(__file__).resolve().parents[2] / "voice" / "hf-cache")
+if "HF_HUB_OFFLINE" not in os.environ:
+    os.environ["HF_HUB_OFFLINE"] = "1"
+
 from faster_whisper import WhisperModel
 
 try:

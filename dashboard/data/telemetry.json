@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-10-17T18:22:50.305361",
+  "total_topics": 24,
+  "total_renders": 73,
+  "total_beats": 435,
+  "total_words": 7972,
+  "shipped_topics": 9,
+  "ready_topics": 7,
+  "style_bible_standard": "Captchas v2 + v23 Minimalist (#0E0C0B)",
+  "voice_engine": "Kokoro af_heart 0.95 / Chatterbox Kore (-20 dBFS RMS / -14 LUFS)",
+  "cadence_rules": "Full/Scene >= 55%, Split <= 45%, Max consecutive splits <= 2, LineIcon <= 25%"
+}

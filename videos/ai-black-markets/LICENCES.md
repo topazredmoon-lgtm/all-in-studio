@@ -1,3 +1,6 @@
+> [!WARNING]
+> **TOPIC RETIRED / DEAD (2026-10-11)**: The owner killed this topic ("unwatchable", "cette vieille video de merde"). Never build, polish, or publish. Retained solely for reference and asset scavenging (clips reused in `ai-ban`).
+
 # Licences · ai-black-markets (full film, 2026-10-11; sample 2026-10-09)
 
 Owner's TOP RULE: no clip may cost revenue. Every clip below is an openly licensed conference recording from media.ccc.de;

@@ -1,0 +1,38 @@
+{
+  "nairobi_skyline.jpg": {
+    "title": "File:Aerial view of the Nairobi skyline from the KICC rooftop at golden hour.jpg",
+    "author": "Lebu Ayiga",
+    "license": "CC BY-SA 4.0",
+    "desc_url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Nairobi_skyline_from_the_KICC_rooftop_at_golden_hour.jpg",
+    "width": 1920,
+    "height": 1440,
+    "note": "Nairobi central business district skyline"
+  },
+  "data_lab.jpg": {
+    "title": "File:1996 Healthcare Computer-Assisted Instruction Directory (IA 1996CAIDirectory).pdf",
+    "author": "Stewart, Scott Alan",
+    "license": "Public domain",
+    "desc_url": "https://commons.wikimedia.org/wiki/File:1996_Healthcare_Computer-Assisted_Instruction_Directory_(IA_1996CAIDirectory).pdf",
+    "width": 1920,
+    "height": 2437,
+    "note": "computer training room lab workstations"
+  },
+  "call_center.jpg": {
+    "title": "File:Computer Entertainer 7-12.pdf",
+    "author": "Computer Entertainer (Marylou Badeaux and Celeste Dolan)",
+    "license": "CC BY 4.0",
+    "desc_url": "https://commons.wikimedia.org/wiki/File:Computer_Entertainer_7-12.pdf",
+    "width": 1920,
+    "height": 2485,
+    "note": "call center office workstations computers"
+  },
+  "office_cubicles.jpg": {
+    "title": "File:Engineer update - USACE-p16021coll8-2125.pdf",
+    "author": "United States. Army. Corps of Engineers; United States. Army. Corps of Engineers. Public Affairs Office",
+    "license": "Public domain",
+    "desc_url": "https://commons.wikimedia.org/wiki/File:Engineer_update_-_USACE-p16021coll8-2125.pdf",
+    "width": 1920,
+    "height": 2510,
+    "note": "office interior cubicles workstations"
+  }
+}

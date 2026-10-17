@@ -1,0 +1,127 @@
+{
+  "_meta": {
+    "calibrated": "2026-10-16T21:23:34",
+    "soul_source": [
+      "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\captchas-full\\out\\All-in_captchas_full_v2.mp4",
+      "C:\\Users\\pc\\Documents\\All-in-keep\\All-in\\videos\\captchas-full\\qa\\cuts"
+    ],
+    "n_frames": 90,
+    "bands": {
+      "chapter_top": 0.09,
+      "caption_top": 0.76
+    },
+    "rule": "value = soul_pNN * k, clamped to ANCHOR_POLICY absolute bounds",
+    "anchor_policy": {
+      "light_frac": [
+        20,
+        0.9,
+        0.01,
+        null
+      ],
+      "hero_mass_pct": [
+        20,
+        0.9,
+        1.0,
+        null
+      ],
+      "board_contrast": [
+        10,
+        0.85,
+        8.0,
+        null
+      ],
+      "flat_slop_frac": [
+        90,
+        1.8,
+        null,
+        0.15
+      ],
+      "tiny_label_pct": [
+        90,
+        1.5,
+        null,
+        45.0
+      ],
+      "colorfulness": [
+        10,
+        0.8,
+        4.0,
+        null
+      ],
+      "edge_board": [
+        90,
+        1.5,
+        null,
+        0.15
+      ]
+    },
+    "decision": "FAIL if >= 2 of ['flat_slop_frac', 'tiny_label_pct', 'board_contrast'] fire; diagnostics only WARN; empty board always FAIL",
+    "transition_content": 0.005,
+    "soul_score_p10": 60.0,
+    "soul_score_median": 100.0
+  },
+  "light_frac": {
+    "dir": ">=",
+    "value": 0.014,
+    "anchor": "soul_p20*0.9",
+    "soul_mean": 0.2144,
+    "soul_p10": 0.0087,
+    "soul_median": 0.1022,
+    "soul_p90": 0.8937
+  },
+  "hero_mass_pct": {
+    "dir": ">=",
+    "value": 1.0,
+    "anchor": "soul_p20*0.9",
+    "soul_mean": 20.021,
+    "soul_p10": 0.5016,
+    "soul_median": 9.2565,
+    "soul_p90": 92.0006
+  },
+  "board_contrast": {
+    "dir": ">=",
+    "value": 10.1235,
+    "anchor": "soul_p10*0.85",
+    "soul_mean": 17.0156,
+    "soul_p10": 11.91,
+    "soul_median": 19.52,
+    "soul_p90": 19.52
+  },
+  "flat_slop_frac": {
+    "dir": "<=",
+    "value": 0.0772,
+    "anchor": "soul_p90*1.8",
+    "soul_mean": 0.0156,
+    "soul_p10": 0.0002,
+    "soul_median": 0.0058,
+    "soul_p90": 0.0429
+  },
+  "tiny_label_pct": {
+    "dir": "<=",
+    "value": 12.5337,
+    "anchor": "soul_p90*1.5",
+    "soul_mean": 2.2706,
+    "soul_p10": 0.0,
+    "soul_median": 0.023,
+    "soul_p90": 8.3558
+  },
+  "colorfulness": {
+    "dir": ">=",
+    "value": 5.732,
+    "anchor": "soul_p10*0.8",
+    "soul_mean": 20.2779,
+    "soul_p10": 7.165,
+    "soul_median": 14.815,
+    "soul_p90": 39.227
+  },
+  "edge_board": {
+    "dir": "<=",
+    "value": 0.1276,
+    "anchor": "soul_p90*1.5",
+    "soul_mean": 0.0353,
+    "soul_p10": 0.0108,
+    "soul_median": 0.024,
+    "soul_p90": 0.0851
+  },
+  "score_min": 60.0
+}

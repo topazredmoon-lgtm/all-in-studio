@@ -67,3 +67,10 @@ SOURCE video time around each `t0..t1` (seeking the .ts by timestamp, so no drif
 the last word's end in the spec as `t0`/`t1` and run it without `--probe`: 1.5 s of real room sound is kept either side so
 `build.py` can roll in/out (LEARNINGS 60). Then `tools/clip_words.py <topic>`; in `gen_script.py` a clip's `from`/`to` =
 the first/last word in the clip file, `plateAt` = when the named person is on camera.
+
+
+## US Senate HLS Stream Patterns & IDs (Public Domain)
+- Webcast stream archive pattern: `https://www-senate-gov-msl3archive.akamaized.net/<comm>/<comm>MMDDYY_1/master.m3u8`
+- Live/media pattern: `https://www-senate-gov-media-srs.akamaized.net/hls/live/<id>/<comm>/<file>/master.m3u8`
+- Committee IDs: Banking `2036799`, Commerce `2036779`, Foreign `2036794`, Judiciary `2036788`, Armed Services `2036800`.
+- Measure video/audio offsets using `tools/cc_cut.py` or timestamp seek via `tools/win_cut.py` (which keeps 1.5s room either side for pro breathing room).

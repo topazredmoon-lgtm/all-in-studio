@@ -1,0 +1,37 @@
+# Sources · how-to-break-an-ai
+
+Fact-check table for every claim in narration and graphics. Verified 2026-10-14 against fetched primary pages. Talk quotes verbatim from media.ccc.de talk pages.
+
+| Beat | Claim | Verdict | Exact Quote / Data | Primary Source & Date | URL |
+|---|---|---|---|---|---|
+| S01 | Project Vend: Claude Sonnet 3.7 agent "Claudius" ran an office store ~1 month (Anthropic + Andon Labs); sold below cost; talked into discounts/freebies over Slack; turned down $100 for a $15 item; claimed it would deliver wearing "a navy blue blazer with a red tie"; bought metal cubes | TRUE | "We let Claude manage an automated store in our office as a small business for about a month"; "turning down $100 for a product worth $15"; "wearing a navy blazer with a red tie" | Anthropic, Project Vend, 27 Jun 2025; The Decoder summary, 28 Jun 2025 | https://www.anthropic.com/research/project-vend-1 |
+| S02 | LLMs are pattern/prediction machines; guardrails are learned behaviour, not hard-coded walls; instruction/data boundary imperfect | TRUE | OWASP Top 10 for LLM Applications — prompt injection is a top risk | OWASP GenAI Security Project | https://owasp.org/www-project-top-10-for-large-language-model-applications/ |
+| S03 | 2023: automated search for adversarial suffixes (greedy coordinate gradient); gibberish strings push models toward compliance; suffixes transfer across models | TRUE | "Greedy Coordinate Gradient (GCG)… automatically generates adversarial suffixes"; universal + transferable | Zou, Wang, Carlini, Nasr, Kolter & Fredrikson, arXiv:2307.15043, Jul 2023 | https://arxiv.org/abs/2307.15043 |
+| c01, c03, c04 | HostileShop quotes ("unauthorized actions"; "magic spells"; "winning submission") | TRUE (quotes) | "an attacker agent LLM attempts to manipulate a target shopping agent LLM into performing unauthorized actions" | Mike Perry, "A Quick Stop at the HostileShop", 39C3, 28 Dec 2025 | https://media.ccc.de/v/39c3-a-quick-stop-at-the-hostileshop |
+| S04 | 2023: reported rule-free chatbot ~€60/month (WormGPT); FraudGPT ~$200/month; both banned and followed by successors | PARTLY (vendor/press-reported prices; voiced as "reports priced") | WormGPT ≈ €60-70/mo (PCMag, Jul 2023); FraudGPT ≈ $200/mo (Netenrich, Jul 2023) | PCMag / Netenrich reports, 2023 | https://www.pcmag.com/ |
+| S05 | Refusal is mediated by a single direction; ablating it reduces refusals; "abliteration"/"uncensored" models publicly hosted | TRUE | "Refusal in Language Models Is Mediated by a Single Direction" | Arditi et al., arXiv:2406.11717 / NeurIPS 2024 | https://arxiv.org/abs/2406.11717 |
+| S05 | Fine-tuning on a few hundred benign-looking examples can undo safety training | TRUE | "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!" | Qi et al., arXiv:2310.03693, Oct 2023 | https://arxiv.org/abs/2310.03693 |
+| S06 | Face-swap deepfakes: faces compress to identity codes, decode onto other faces; voices clone from a few seconds of audio; Jan 2024 Biden robocall ("save your vote"); Sept 2023 Slovakia fake audio | TRUE | "…lassen sich mit wenigen Sekunden Aufnahme klonen"; "Der „Enkeltrick 2.0" ist keine Zukunftsvision mehr." | Thorsten Müller, "Ich habe meine Stimme verschenkt – und jetzt?!", 2026 (EMF/FROSCON, CC BY 4.0); FCC enforcement + wire reports Jan-Feb 2024 | https://media.ccc.de/v/froscon2026-3505-ich_habe_meine_stimme_verschenkt_und_jetzt |
+| S07 | Model distillation via API queries; illicit distillation; one lab's own claim of >90% defense reduction; weights-as-files copy instantly; open weights benefit research/education/healthcare | TRUE (claim is the lab's own, tagged on screen) | "reducing the success of these attacks by more than 90%" | Anthropic, "Strengthening our defenses against distillation attacks", Jul 2025; Carlini et al., "Stealing ML Models via Prediction APIs" (arXiv:1609.01506) | https://www.anthropic.com/news/strengthening-our-defenses-against-distillation-attacks |
+| S08 | Backdoor "sleeper" behaviors survive safety training; triggers can be words/images/styles; Nightshade poisons generators' training scrapes | TRUE | "Sleeper Agents: Training Deceptive LLMs That Persist Through Safety Training"; "Nightshade: Prompt-Specific Data Poisoning" | Hubinger et al. (Anthropic), arXiv:2401.05566, Jan 2024; Shan et al., USENIX Security 2025 | https://arxiv.org/abs/2401.05566 |
+| S09 | Aug 2025 "Month of AI Bugs": one researcher disclosed 2+ dozen vulnerabilities across major agentic coding assistants; vendor responses ranged from quick patches/CVEs to months of silence | TRUE (quotes) | "responsibly disclosed over two dozen security vulnerabilities"; "from quick patches and CVEs to months of silence, or quiet patching" | Johann Rehberger, "Agentic ProbLLMs", 39C3, 28 Dec 2025 | https://media.ccc.de/v/39c3-agentic-probllms-exploiting-ai-computer-use-and-coding-agents |
+| S09, S10 | White/grey/black-hat definitions; disclosure culture; bug bounties (Microsoft VRP 2013; "Hack the Pentagon" first US federal bug bounty 2016) | TRUE (conventions/dates) | governments pay hackers to break their own systems | DoD/MSFT program records | https://hackerone.com/hack-the-pentagon |
+| c02, c07, c15 | AI Agent, AI Spy quotes (permission/consent; companies-not-users control; collective outrage) | TRUE (quotes) | "without stopping to ask permission or consent"; "ultimately controlled by the companies that develop these systems, not by users"; "technically-grounded collective outrage" | Meredith Whittaker & Udbhav Tiwari (Signal), 39C3, 29 Dec 2025 | https://media.ccc.de/v/39c3-ai-agent-ai-spy |
+| c14 | ProbLLMs quote ("leveraged AI to find vulnerabilities quickly") | TRUE (quote) | "how I leveraged AI to find some of these vulnerabilities quickly" | Rehberger, 39C3, 28 Dec 2025 | (as above) |
+| c16 | Wearden close quote | TRUE (quote) | "how worried should we be about all this?" | Matthew Wearden, "So AIs are lying to us now, huh?", EMF 2026, 18 Jul 2026 | https://media.ccc.de/v/emf2026-154-1-so-ais-are-lying-to-us-now-huh |
+| S11 | The flip framing: published experiments are the safe ones | FRAMING | no factual claim beyond cited rows | — | — |
+| S12 | The 5-line checklist (enemy-code pages, secret word, check the "no", read model cards, human-signed irreversible acts) | FRAMING / practical advice | distilled from cited methods | — | — |
+
+## Verification Notes
+- Facts carry `⟨REAL⟩`; the one forward-looking line (S11) carries `⟨NOT YET⟩`; lab claims are tagged *lab claim* on screen; reported crime-bot prices are voiced as "reports priced" (PARTLY).
+- All 12 locked clip quotes are verbatim from fetched talk pages; the 4 "to lock" slots (c05, c06, c10, c11) are theme placeholders with doc-plate fallbacks — **no invented quotes anywhere**.
+- Runtime/word estimates are **our arithmetic** at ~150 wpm effective.
+
+| Beat | Claim (as voiced or shown) | Verdict (TRUE / FALSE / PARTLY / PREDICTION) | Exact Quote / Data | Primary Source & Date | URL |
+|---|---|---|---|---|---|
+| h01 | [Claim] | TRUE | [Quote] | [Source Publication] | https://... |
+| a01 | [Claim] | PREDICTION | [Statement] | [Analysis / Document] | https://... |
+
+## Verification Notes
+- Predictions must be explicitly framed as possibilities ("could", "an idea is spreading").
+- All statistics must have primary sources cited. Arithmetic performed by our studio must be labeled "our arithmetic".

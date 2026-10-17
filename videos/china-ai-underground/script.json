@@ -1,391 +1,362 @@
 {
- "id": "china-ai-underground",
- "title": "THE UNDERGROUND OF CHINESE AI · 1-min sample",
- "voice": {
-  "engine": "chatterbox",
-  "name": "chatterbox-fenrir",
-  "ref": "assets/voice/narrator_ref.wav",
-  "cfg": 0.35
- },
- "master": "cinema",
- "pace": {
-  "lead": 0.15,
-  "gap": 0.35,
-  "min_beat": 2.2,
-  "to_clip": 0.2,
-  "after_clip": 0.3,
-  "end_pad": 1.6
- },
- "beats": [
-  {
-   "id": "c01",
-   "clip": {
-    "src": "cnai/pd_banks.mp4",
-    "from": 1.75,
-    "to": 13.62,
-    "plate": "Sen. Jim Banks · Senate Banking Committee · 11 Jun 2026"
-   }
+  "id": "china-ai-underground",
+  "title": "THE UNDERGROUND OF CHINESE AI \u00b7 1-min sample",
+  "voice": {
+    "name": "af_heart",
+    "speed": 0.95
   },
-  {
-   "id": "h01",
-   "vo": "Exhibit A. The most wanted chip on Earth. Nvidia's Blackwell. China is not allowed to buy it.",
-   "say": "Exhibit A. | The most wanted chip on Earth. || Nvidia's Blackwell. | And China is not allowed to buy it.",
-   "ex": 0.6,
-   "shot": {
-    "cuts": [
-     {
-      "layout": "scene",
-      "hero": {
-       "v": "Film",
-       "img": "cnai/b200.jpg",
-       "focus": "45% 45%",
-       "z": [
-        1.12,
-        1.24
-       ],
-       "credit": "photo: Pokiiri · CC BY-SA 4.0",
-       "exhibit": {
-        "t": "exhibit a",
-        "at": "Exhibit"
-       }
-      },
-      "cap": "the most *wanted* chip"
-     },
-     {
-      "layout": "scene",
-      "hero": {
-       "v": "Film",
-       "img": "cnai/b200.jpg",
-       "focus": "30% 80%",
-       "z": [
-        1.9,
-        2.05
-       ],
-       "pan": [
-        -1.5,
-        0
-       ],
-       "grade": "warm",
-       "credit": "photo: Pokiiri · CC BY-SA 4.0",
-       "marks": [
-        {
-         "x": 0.55,
-         "y": 0.45,
-         "rx": 0.22,
-         "ry": 0.3,
-         "at": "Blackwell",
-         "t": "blackwell",
-         "side": "l"
-        }
-       ]
-      },
-      "cap": "nvidia's *blackwell*",
-      "at": "Blackwell"
-     },
-     {
-      "layout": "scene",
-      "hero": {
-       "v": "Film",
-       "img": "cnai/gb200.jpg",
-       "focus": "50% 22%",
-       "z": [
-        1.0,
-        1.08
-       ],
-       "grade": "bw",
-       "credit": "photo: Pokiiri · CC BY-SA 4.0",
-       "stamp": {
-        "t": "not for china",
-        "at": "allowed",
-        "y": 0.42
-       }
-      },
-      "cap": "*not allowed* in china",
-      "at": "China"
-     }
-    ],
-    "sfx": [
-     {
-      "k": "thud",
-      "at": "allowed"
-     }
-    ]
-   }
+  "master": "v23",
+  "pace": {
+    "lead": 0.2,
+    "gap": 0.45,
+    "min_beat": 2.4,
+    "to_clip": 0.25,
+    "after_clip": 0.45,
+    "end_pad": 2.0
   },
-  {
-   "id": "n05",
-   "vo": "And DeepSeek, China's shock A.I. model? Washington has a word for it.",
-   "say": "And DeepSeek, China's shock A I model? || Washington has a word for it.",
-   "ex": 0.65,
-   "shot": {
-    "cuts": [
-     {
-      "layout": "scene",
-      "hero": {
-       "v": "Film",
-       "img": "cnai/gpucluster.jpg",
-       "focus": "50% 35%",
-       "z": [
-        1.0,
-        1.1
-       ],
-       "grade": "neon",
-       "credit": "photo: ChrisDag · CC BY 2.0"
-      },
-      "cap": "and *deepseek*?"
-     }
-    ]
-   }
-  },
-  {
-   "id": "c03",
-   "clip": {
-    "src": "cnai/pd_lutnick.mp4",
-    "from": 2.0,
-    "to": 13.38,
-    "plate": "Howard Lutnick · Commerce Secretary nominee · Senate Commerce · 29 Jan 2025"
-   }
-  },
-  {
-   "id": "n02",
-   "vo": "So how do you smuggle a chip like that?",
-   "say": "So, how do you smuggle a chip like that?",
-   "ex": 0.7,
-   "shot": {
-    "cuts": [
-     {
-      "layout": "scene",
-      "hero": {
-       "v": "RouteMap",
-       "legs": [
-        [
-         "sanjose",
-         "malaysia",
-         "how"
+  "beats": [
+    {
+      "id": "c01",
+      "clip": {
+        "src": "cnai/pd_banks.mp4",
+        "from": 1.75,
+        "to": 13.62,
+        "plate": "Sen. Jim Banks \u00b7 Senate Banking Committee \u00b7 11 Jun 2026"
+      }
+    },
+    {
+      "id": "h01",
+      "vo": "Exhibit A. The most wanted chip on Earth. Nvidia's Blackwell. China is not allowed to buy it.",
+      "say": "Exhibit A. | The most wanted chip on Earth. || Nvidia's Blackwell. | And China is not allowed to buy it.",
+      "ex": 0.6,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "scene",
+            "hero": {
+              "v": "Film",
+              "img": "cnai/b200.jpg",
+              "focus": "45% 45%",
+              "z": [
+                1.12,
+                1.24
+              ],
+              "credit": "photo: Pokiiri \u00b7 CC BY-SA 4.0",
+              "exhibit": {
+                "t": "exhibit a",
+                "at": "Exhibit"
+              }
+            },
+            "cap": "the most *wanted* chip",
+            "at": "allowed"
+          },
+          {
+            "layout": "scene",
+            "hero": {
+              "v": "Bars",
+              "bars": [
+                {
+                  "v": 78,
+                  "tag": "Capacity"
+                },
+                {
+                  "v": 45,
+                  "tag": "Active"
+                }
+              ]
+            },
+            "cap": "nvidia's *blackwell*",
+            "at": "Blackwell"
+          },
+          {
+            "layout": "scene",
+            "hero": {
+              "v": "Film",
+              "img": "cnai/gb200.jpg",
+              "focus": "50% 22%",
+              "z": [
+                1.0,
+                1.08
+              ],
+              "grade": "bw",
+              "credit": "photo: Pokiiri \u00b7 CC BY-SA 4.0",
+              "stamp": {
+                "t": "not for china",
+                "at": "allowed",
+                "y": 0.42
+              }
+            },
+            "cap": "*not allowed* in china",
+            "at": "China"
+          }
         ],
-        [
-         "malaysia",
-         "shenzhen",
-         "chip"
+        "sfx": [
+          {
+            "k": "thud",
+            "at": "allowed"
+          }
         ]
-       ],
-       "names": {
-        "sanjose": "USA",
-        "taiwan": "Taiwan",
-        "malaysia": "SE Asia",
-        "shenzhen": "China"
-       },
-       "zoom": [
-        1.0,
-        1.08
-       ]
-      },
-      "cap": "but *how*?"
-     }
-    ]
-   }
-  },
-  {
-   "id": "n03",
-   "vo": "Exhibit B. A hair dryer. Prosecutors say a security camera caught the trick.",
-   "say": "Exhibit B. || A hair dryer. || Federal prosecutors say a security camera caught the trick.",
-   "ex": 0.65,
-   "shot": {
-    "cuts": [
-     {
-      "layout": "scene",
-      "hero": {
-       "v": "Cctv",
-       "img": "cnai/warehouse.jpg",
-       "focus": "50% 60%",
-       "cam": "CAM 04",
-       "swap": {
-        "heatAt": "hair"
-       },
-       "exhibit": {
-        "t": "exhibit b",
-        "at": "Exhibit"
-       },
-       "credit": "photo: rawpixel · CC0"
-      },
-      "cap": "a *hair dryer*"
-     },
-     {
-      "layout": "scene",
-      "hero": {
-       "v": "Cctv",
-       "img": "cnai/dcenter.jpg",
-       "cam": "CAM 07",
-       "clock": "02:31:44",
-       "credit": "photo: cbowns · CC BY-SA 2.0"
-      },
-      "cap": "caught on *camera*",
-      "at": "security"
-     }
-    ]
-   }
-  },
-  {
-   "id": "n04",
-   "vo": "Heat the serial label. Peel it off a real server. Stick it on a fake. The fakes stay behind for the inspectors. The real servers? China. Half a billion dollars' worth, in a few weeks.",
-   "say": "Heat the serial label. | Peel it off a real server. | Stick it on a fake. || The fakes stay behind, for the inspectors. | The real servers? || China. | Half a billion dollars' worth, in a few weeks.",
-   "ex": 0.7,
-   "shot": {
-    "cuts": [
-     {
-      "layout": "scene",
-      "hero": {
-       "v": "LabelSwap",
-       "surface": "bare",
-       "heatAt": "Heat",
-       "peelAt": "Peel",
-       "stickAt": "stick"
-      },
-      "cap": "heat. peel. *stick*."
-     },
-     {
-      "layout": "scene",
-      "hero": {
-       "v": "Cctv",
-       "img": "cnai/dcenter.jpg",
-       "focus": "50% 40%",
-       "cam": "CAM 07",
-       "clock": "02:33:02",
-       "swap": {
-        "peelAt": 0,
-        "stickAt": 1,
-        "goAt": "real"
-       },
-       "credit": "photo: cbowns · CC BY-SA 2.0"
-      },
-      "cap": "fakes for the *inspectors*",
-      "at": "fakes"
-     },
-     {
-      "layout": "scene",
-      "hero": {
-       "v": "RouteMap",
-       "legs": [
-        [
-         "sanjose",
-         "taiwan",
-         0
-        ],
-        [
-         "taiwan",
-         "malaysia",
-         12
-        ],
-        [
-         "malaysia",
-         "shenzhen",
-         "China"
+      }
+    },
+    {
+      "id": "n05",
+      "vo": "And DeepSeek, China's shock A.I. model? Washington has a word for it.",
+      "say": "And DeepSeek, China's shock A I model? || Washington has a word for it.",
+      "ex": 0.65,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "scene",
+            "hero": {
+              "v": "IconRow",
+              "name": "shield",
+              "n": 6,
+              "cols": 6
+            },
+            "cap": "and *deepseek*?",
+            "at": "word"
+          }
         ]
-       ],
-       "names": {
-        "sanjose": "USA",
-        "taiwan": "Taiwan",
-        "malaysia": "SE Asia",
-        "shenzhen": "China"
-       },
-       "zoom": [
-        1.05,
-        1.0
-       ]
-      },
-      "cap": "*half a billion* in weeks",
-      "at": "China"
-     }
-    ]
-   }
-  },
-  {
-   "id": "n06",
-   "vo": "Smuggled chips. Stolen answers. Twenty-four thousand fake accounts. This is the underground of Chinese A.I.",
-   "say": "Smuggled chips. | Stolen answers. | Twenty-four thousand fake accounts. || This is the underground of Chinese A I.",
-   "ex": 0.6,
-   "shot": {
-    "cuts": [
-     {
-      "layout": "scene",
-      "hero": {
-       "v": "Film",
-       "img": "cnai/h100a.jpg",
-       "focus": "62% 58%",
-       "z": [
-        1.17,
-        1.27
-       ],
-       "grade": "bw",
-       "credit": "photo: 极客湾Geekerwan · CC BY 3.0",
-       "stamp": {
-        "t": "smuggled",
-        "at": "Smuggled",
-        "y": 0.45,
-        "rot": -6
-       }
-      },
-      "cap": "smuggled *chips*"
-     },
-     {
-      "layout": "scene",
-      "hero": {
-       "v": "Film",
-       "img": "cnai/servers.jpg",
-       "focus": "50% 50%",
-       "z": [
-        1.04,
-        1.12
-       ],
-       "grade": "cold",
-       "credit": "photo: bugeaters · CC BY 2.0",
-       "stamp": {
-        "t": "stolen",
-        "at": "Stolen",
-        "y": 0.45,
-        "rot": 5
-       }
-      },
-      "cap": "stolen *answers*",
-      "at": "Stolen"
-     },
-     {
-      "layout": "scene",
-      "hero": {
-       "v": "AccountWall",
-       "at": "24"
-      },
-      "cap": "*24,000* fake accounts",
-      "at": "24"
-     },
-     {
-      "layout": "scene",
-      "hero": {
-       "v": "Film",
-       "img": "cnai/b200.jpg",
-       "focus": "45% 45%",
-       "z": [
-        1.24,
-        1.34
-       ],
-       "grade": "bw",
-       "credit": "photo: Pokiiri · CC BY-SA 4.0"
-      },
-      "cap": "the *underground* of chinese AI",
-      "at": "This"
-     }
-    ],
-    "sfx": [
-     {
-      "k": "thud",
-      "at": "Smuggled"
-     },
-     {
-      "k": "thud",
-      "at": "Stolen"
-     }
-    ]
-   }
-  }
- ]
+      }
+    },
+    {
+      "id": "c03",
+      "clip": {
+        "src": "cnai/pd_lutnick.mp4",
+        "from": 2.0,
+        "to": 13.38,
+        "plate": "Howard Lutnick \u00b7 Commerce Secretary nominee \u00b7 Senate Commerce \u00b7 29 Jan 2025"
+      }
+    },
+    {
+      "id": "n02",
+      "vo": "So how do you smuggle a chip like that?",
+      "say": "So, how do you smuggle a chip like that?",
+      "ex": 0.7,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "scene",
+            "hero": {
+              "v": "RouteMap",
+              "legs": [
+                [
+                  "sanjose",
+                  "malaysia",
+                  "how"
+                ],
+                [
+                  "malaysia",
+                  "shenzhen",
+                  "chip"
+                ]
+              ],
+              "names": {
+                "sanjose": "USA",
+                "taiwan": "Taiwan",
+                "malaysia": "SE Asia",
+                "shenzhen": "China"
+              },
+              "zoom": [
+                1.0,
+                1.08
+              ]
+            },
+            "cap": "but *how*?",
+            "at": "that"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n03",
+      "vo": "Exhibit B. A hair dryer. Prosecutors say a security camera caught the trick.",
+      "say": "Exhibit B. || A hair dryer. || Federal prosecutors say a security camera caught the trick.",
+      "ex": 0.65,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "scene",
+            "hero": {
+              "v": "Cctv",
+              "img": "cnai/warehouse.jpg",
+              "focus": "50% 60%",
+              "cam": "CAM 04",
+              "swap": {
+                "heatAt": "hair"
+              },
+              "exhibit": {
+                "t": "exhibit b",
+                "at": "Exhibit"
+              },
+              "credit": "photo: rawpixel \u00b7 CC0"
+            },
+            "cap": "a *hair dryer*",
+            "at": "trick"
+          },
+          {
+            "layout": "scene",
+            "hero": {
+              "v": "Score",
+              "sub": "METRIC",
+              "label": "TRIGGER",
+              "val": "ACTIVE"
+            },
+            "cap": "caught on *camera*",
+            "at": "security"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n04",
+      "vo": "Heat the serial label. Peel it off a real server. Stick it on a fake. The fakes stay behind for the inspectors. The real servers? China. Half a billion dollars' worth, in a few weeks.",
+      "say": "Heat the serial label. | Peel it off a real server. | Stick it on a fake. || The fakes stay behind, for the inspectors. | The real servers? || China. | Half a billion dollars' worth, in a few weeks.",
+      "ex": 0.7,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "scene",
+            "hero": {
+              "v": "LabelSwap",
+              "surface": "bare",
+              "heatAt": "Heat",
+              "peelAt": "Peel",
+              "stickAt": "stick"
+            },
+            "cap": "heat. peel. *stick*.",
+            "at": "weeks"
+          },
+          {
+            "layout": "scene",
+            "hero": {
+              "v": "Cctv",
+              "img": "cnai/dcenter.jpg",
+              "focus": "50% 40%",
+              "cam": "CAM 07",
+              "clock": "02:33:02",
+              "swap": {
+                "peelAt": 0,
+                "stickAt": 1,
+                "goAt": "real"
+              },
+              "credit": "photo: cbowns \u00b7 CC BY-SA 2.0"
+            },
+            "cap": "fakes for the *inspectors*",
+            "at": "fakes"
+          },
+          {
+            "layout": "scene",
+            "hero": {
+              "v": "RouteMap",
+              "legs": [
+                [
+                  "sanjose",
+                  "taiwan",
+                  0
+                ],
+                [
+                  "taiwan",
+                  "malaysia",
+                  12
+                ],
+                [
+                  "malaysia",
+                  "shenzhen",
+                  "China"
+                ]
+              ],
+              "names": {
+                "sanjose": "USA",
+                "taiwan": "Taiwan",
+                "malaysia": "SE Asia",
+                "shenzhen": "China"
+              },
+              "zoom": [
+                1.05,
+                1.0
+              ]
+            },
+            "cap": "*half a billion* in weeks",
+            "at": "China"
+          }
+        ]
+      }
+    },
+    {
+      "id": "n06",
+      "vo": "Smuggled chips. Stolen answers. Twenty-four thousand fake accounts. This is the underground of Chinese A.I.",
+      "say": "Smuggled chips. | Stolen answers. | Twenty-four thousand fake accounts. || This is the underground of Chinese A I.",
+      "ex": 0.6,
+      "shot": {
+        "cuts": [
+          {
+            "layout": "scene",
+            "hero": {
+              "v": "Film",
+              "img": "cnai/h100a.jpg",
+              "focus": "62% 58%",
+              "z": [
+                1.17,
+                1.27
+              ],
+              "grade": "bw",
+              "credit": "photo: \u6781\u5ba2\u6e7eGeekerwan \u00b7 CC BY 3.0",
+              "stamp": {
+                "t": "smuggled",
+                "at": "Smuggled",
+                "y": 0.45,
+                "rot": -6
+              }
+            },
+            "cap": "smuggled *chips*",
+            "at": "A.I"
+          },
+          {
+            "layout": "scene",
+            "hero": {
+              "v": "UtilityBillCard"
+            },
+            "cap": "stolen *answers*",
+            "at": "Stolen"
+          },
+          {
+            "layout": "scene",
+            "hero": {
+              "v": "AccountWall",
+              "at": "24"
+            },
+            "cap": "*24,000* fake accounts",
+            "at": "24"
+          },
+          {
+            "layout": "scene",
+            "hero": {
+              "v": "Film",
+              "img": "cnai/b200.jpg",
+              "focus": "45% 45%",
+              "z": [
+                1.24,
+                1.34
+              ],
+              "grade": "bw",
+              "credit": "photo: Pokiiri \u00b7 CC BY-SA 4.0"
+            },
+            "cap": "the *underground* of chinese AI",
+            "at": "This"
+          }
+        ],
+        "sfx": [
+          {
+            "k": "thud",
+            "at": "Smuggled"
+          },
+          {
+            "k": "thud",
+            "at": "Stolen"
+          }
+        ]
+      }
+    }
+  ]
 }

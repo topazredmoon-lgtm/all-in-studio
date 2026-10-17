@@ -1,3 +1,6 @@
+> [!WARNING]
+> **TOPIC RETIRED / DEAD (2026-10-11)**: The owner killed this topic ("unwatchable", "cette vieille video de merde"). Never build, polish, or publish. Retained solely for reference and asset scavenging (clips reused in `ai-ban`).
+
 # Sources · ai-black-markets (sample 2026-10-09, full film 2026-10-11)
 
 | Claim (as voiced) | Source | Checked |

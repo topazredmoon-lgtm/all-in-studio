@@ -34,18 +34,29 @@ export type Word = { w: string; f: number };
 export const BeatCtx = createContext<{ words: Word[]; dur: number }>({ words: [], dur: 300 });
 export const useBeat = () => useContext(BeatCtx);
 const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9$%]/g, '');
+const ALLOWED_SUFFIXES = new Set(['s', 'es', 'd', 'ed', 'ing', 'er', 'ers', 'ly']);
+const matchWord = (wn: string, kn: string) =>
+  wn === kn || (kn.length >= 4 && wn.startsWith(kn) && ALLOWED_SUFFIXES.has(wn.slice(kn.length)));
 
 /** Frame where `key` is spoken (minus the cue lead). Numbers pass through. "word#2" = 2nd occurrence. Missing word = fallback. */
 export const cueFrame = (words: Word[], key: string | number | undefined, fallback: number): number => {
   if (typeof key === 'number') return key;
-  if (!key) return fallback;
+  if (!key || typeof key !== 'string') return fallback;
   const [k, nth] = key.split('#');
   const want = norm(k);
+  const targetN = Number(nth ?? 1);
   let seen = 0;
+  for (const w of words) {
+    if (matchWord(norm(w.w), want)) {
+      seen++;
+      if (seen >= targetN) return Math.max(0, w.f - motion.cueLead);
+    }
+  }
+  seen = 0;
   for (const w of words) {
     if (norm(w.w).startsWith(want)) {
       seen++;
-      if (seen >= Number(nth ?? 1)) return Math.max(0, w.f - motion.cueLead);
+      if (seen >= targetN) return Math.max(0, w.f - motion.cueLead);
     }
   }
   return fallback;
