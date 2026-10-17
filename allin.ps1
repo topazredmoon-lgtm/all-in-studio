@@ -288,9 +288,12 @@ switch ($Command.ToLower()) {
             }
 
             $currentBranch = (git branch --show-current).Trim()
-            Write-Host "Pushing to private GitHub repo ($currentBranch)..." -ForegroundColor Yellow
+            Write-Host "Pushing to private GitHub repo ($currentBranch & main)..." -ForegroundColor Yellow
             git push origin $currentBranch
-            Write-Host "`n[SUCCESS] Studio synchronized to private GitHub repository!" -ForegroundColor Green
+            if ($currentBranch -ne "main") {
+                git push origin "${currentBranch}:main"
+            }
+            Write-Host "`n[SUCCESS] Studio synchronized to private GitHub repository (https://github.com/zza4-ai/all-in-studio)!" -ForegroundColor Green
         } finally {
             Pop-Location
         }

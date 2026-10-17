@@ -1,8 +1,8 @@
 {
   "telemetry": {
-    "timestamp": "2026-10-17T18:22:50.305361",
+    "timestamp": "2026-10-17T18:56:48.080255",
     "total_topics": 24,
-    "total_renders": 73,
+    "total_renders": 75,
     "total_beats": 435,
     "total_words": 7972,
     "shipped_topics": 9,
@@ -74,35 +74,35 @@
           "path": "videos/ai-ban/out/All-in_ai_ban_sample_v5.mp4",
           "size": 11028405,
           "dur": 74.066667,
-          "mtime": 1791836261.30858
+          "mtime": 1792237914.9261885
         },
         {
           "name": "All-in_ai_ban_sample_2min.mp4",
           "path": "videos/ai-ban/out/All-in_ai_ban_sample_2min.mp4",
           "size": 19107142,
           "dur": 128.0,
-          "mtime": 1791836261.2918034
+          "mtime": 1792237914.8783345
         },
         {
           "name": "All-in_ai_ban_sample_1min_v4.mp4",
           "path": "videos/ai-ban/out/All-in_ai_ban_sample_1min_v4.mp4",
           "size": 16459240,
           "dur": 72.1,
-          "mtime": 1791836261.2718582
+          "mtime": 1792237914.8082447
         },
         {
           "name": "All-in_ai_ban_sample.mp4",
           "path": "videos/ai-ban/out/All-in_ai_ban_sample.mp4",
           "size": 16866291,
           "dur": 66.233333,
-          "mtime": 1791836261.2526002
+          "mtime": 1792237914.7552397
         },
         {
           "name": "All-in_ai_ban_full.mp4",
           "path": "videos/ai-ban/out/All-in_ai_ban_full.mp4",
           "size": 20005523,
           "dur": 774.8,
-          "mtime": 1791836261.2324364
+          "mtime": 1792237914.703799
         }
       ],
       "qa": [
@@ -147,7 +147,7 @@
           "path": "videos/ai-black-markets/out/All-in_ai_black_markets_full.mp4",
           "size": 18353543,
           "dur": 495.533333,
-          "mtime": 1791836787.6915276
+          "mtime": 1792237916.222481
         },
         {
           "name": "All-in_ai_black_markets_sample.mp4",
@@ -307,6 +307,13 @@
       "line_icon_faceoff": false,
       "cadence_pass": true,
       "outputs": [
+        {
+          "name": "apply-button_v5.mp4",
+          "path": "videos/apply-button/out/apply-button_v5.mp4",
+          "size": 45757112,
+          "dur": 81.333333,
+          "mtime": 1792238130.534248
+        },
         {
           "name": "apply-button_v4.mp4",
           "path": "videos/apply-button/out/apply-button_v4.mp4",
@@ -593,7 +600,7 @@
           "path": "videos/china-ai-underground/out/All-in_china_ai_underground_sample.mp4",
           "size": 15526010,
           "dur": 76.733333,
-          "mtime": 1791836826.56697
+          "mtime": 1792237916.7111607
         }
       ],
       "qa": [
@@ -1139,6 +1146,13 @@
       "cadence_pass": true,
       "outputs": [
         {
+          "name": "tokens-explained_v5.mp4",
+          "path": "videos/tokens-explained/out/tokens-explained_v5.mp4",
+          "size": 39855362,
+          "dur": 79.033333,
+          "mtime": 1792237868.9931045
+        },
+        {
           "name": "tokens-explained_v4.mp4",
           "path": "videos/tokens-explained/out/tokens-explained_v4.mp4",
           "size": 36667969,
@@ -1194,6 +1208,20 @@
       "cadence_pass": null,
       "outputs": [
         {
+          "name": "All-in_why_ai_dumber_v2.mp4",
+          "path": "videos/why-ai-dumber/out/All-in_why_ai_dumber_v2.mp4",
+          "size": 16919016,
+          "dur": 64.066667,
+          "mtime": 1792237917.257302
+        },
+        {
+          "name": "All-in_why_ai_dumber_sample.mp4",
+          "path": "videos/why-ai-dumber/out/All-in_why_ai_dumber_sample.mp4",
+          "size": 1508221,
+          "dur": 55.1,
+          "mtime": 1792237917.1749065
+        },
+        {
           "name": "why-ai-dumber_v3.mp4",
           "path": "videos/why-ai-dumber/out/why-ai-dumber_v3.mp4",
           "size": 93706540,
@@ -1201,25 +1229,11 @@
           "mtime": 1791876408.5177822
         },
         {
-          "name": "All-in_why_ai_dumber_v2.mp4",
-          "path": "videos/why-ai-dumber/out/All-in_why_ai_dumber_v2.mp4",
-          "size": 16919016,
-          "dur": 64.066667,
-          "mtime": 1791844606.4564662
-        },
-        {
           "name": "why-ai-dumber_v2.mp4",
           "path": "videos/why-ai-dumber/out/why-ai-dumber_v2.mp4",
           "size": 35767531,
           "dur": 64.066667,
           "mtime": 1791844522.3502707
-        },
-        {
-          "name": "All-in_why_ai_dumber_sample.mp4",
-          "path": "videos/why-ai-dumber/out/All-in_why_ai_dumber_sample.mp4",
-          "size": 1508221,
-          "dur": 55.1,
-          "mtime": 1791841507.5259228
         },
         {
           "name": "why-ai-dumber_v1.mp4",
